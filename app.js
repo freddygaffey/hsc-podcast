@@ -2275,15 +2275,21 @@
       const byYear = {};
       prefixes.forEach((p) => { const y = yMap[p] || "Other"; (byYear[y] || (byYear[y] = [])).push(p); });
       const years = [...yOrder.filter((y) => byYear[y]), ...Object.keys(byYear).filter((y) => !yOrder.includes(y))];
-      const subjHead = multiSubject
-        ? `<label class="mix-subject-lbl"><input type="checkbox" class="mix-subject-cb" data-subject="${s.id}" checked> ${s.name}</label>`
-        : "";
-      return `<div class="mix-subject">${subjHead}
-        ${years.map((y) => `
+      const inner = years.map((y) => `
           <div class="mix-year-lbl">${y}</div>
           ${byYear[y].map((p) => `<label class="mix-topic"><input type="checkbox" class="mix-topic-cb" data-subject="${s.id}" value="${s.id + TOPIC_SEP + p}" checked> ${groupNameFor(s.id, p)}</label>`).join("")}
-        `).join("")}
-      </div>`;
+        `).join("");
+      // Single subject: no collapsible wrapper. Multiple: a collapsed dropdown per subject.
+      if (!multiSubject) return `<div class="mix-subject">${inner}</div>`;
+      return `<details class="mix-subject">
+        <summary class="mix-subject-sum">
+          <input type="checkbox" class="mix-subject-cb" data-subject="${s.id}" checked>
+          <span class="mix-subject-name">${s.name}</span>
+          <span class="mix-subject-count">${prefixes.length}</span>
+          <span class="mix-sum-chev">&#8250;</span>
+        </summary>
+        <div class="mix-subject-body">${inner}</div>
+      </details>`;
     }).join("");
 
     reviewContent.innerHTML = `
@@ -2333,11 +2339,14 @@
     reviewContent.querySelectorAll(".mix-scope-btn").forEach((b) =>
       b.addEventListener("click", () =>
         reviewContent.querySelectorAll(".mix-scope-btn").forEach((x) => x.classList.toggle("sel", x === b))));
-    // A subject-level checkbox toggles all of that subject's topic checkboxes.
-    reviewContent.querySelectorAll(".mix-subject-cb").forEach((cb) =>
+    // A subject-level checkbox toggles all of that subject's topic checkboxes — and its
+    // click must not also open/close the <details> dropdown it sits inside.
+    reviewContent.querySelectorAll(".mix-subject-cb").forEach((cb) => {
+      cb.addEventListener("click", (e) => e.stopPropagation());
       cb.addEventListener("change", () =>
         reviewContent.querySelectorAll(`.mix-topic-cb[data-subject="${cb.dataset.subject}"]`)
-          .forEach((c) => { c.checked = cb.checked; })));
+          .forEach((c) => { c.checked = cb.checked; }));
+    });
     reviewContent.querySelectorAll(".review-mix-btns .review-pill").forEach((b) =>
       b.addEventListener("click", () => {
         const keys = [...reviewContent.querySelectorAll(".mix-topic-cb:checked")].map((cb) => cb.value);
