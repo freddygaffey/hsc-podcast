@@ -57,15 +57,18 @@ list_episodes() {
     | sed 's@/script\.md$@@' | sort
 }
 
-# Needs rendering if it has a script.md and either no .m4a yet, or script.md is newer than the
-# newest .m4a (edited since the last render). The helpers still do per-voice skipping, so this
-# is just a cheap gate to avoid spinning up the renderer when nothing changed.
+# Needs rendering if it has a script.md and any expected NARRATOR voice is missing or older than
+# the script. We check each narrator voice individually rather than "any .m4a newer than the
+# script" — otherwise an episode that only got the Eloquence (zz_eloquence_*) tracks would look
+# done forever and the neural voices would never be (re)rendered. The helpers still do per-voice
+# skipping downstream, so this is just a cheap gate to avoid spinning up the renderer for nothing.
 needs_render() {
-  local ep="$1" newest
+  local ep="$1" v
   [[ -f "$ep/script.md" ]] || return 1
-  newest="$(ls -t "$ep"/*.m4a 2>/dev/null | head -1 || true)"
-  [[ -z "$newest" ]] && return 0
-  [[ "$ep/script.md" -nt "$newest" ]] && return 0
+  for v in "${NARRATORS[@]}"; do
+    [[ -f "$ep/$v.m4a" ]] || return 0          # narrator voice missing entirely
+    [[ "$ep/script.md" -nt "$ep/$v.m4a" ]] && return 0   # script edited since this voice rendered
+  done
   return 1
 }
 
