@@ -1,14 +1,18 @@
-[
-  {
-    "AllowedOrigins": [
-      "https://hsc.pebnum.com",
-      "https://hsc-podcast-unified.pages.dev",
-      "https://phy.pebnum.com",
-      "https://se.pebnum.com"
-    ],
-    "AllowedMethods": ["GET", "HEAD"],
-    "AllowedHeaders": ["range", "content-type"],
-    "ExposeHeaders": ["content-length", "content-range", "accept-ranges", "etag"],
-    "MaxAgeSeconds": 86400
-  }
-]
+{
+  "rules": [
+    {
+      "allowed": {
+        "origins": [
+          "https://hsc.pebnum.com",
+          "https://hsc-podcast-unified.pages.dev",
+          "https://phy.pebnum.com",
+          "https://se.pebnum.com"
+        ],
+        "methods": ["GET", "HEAD"],
+        "headers": ["range", "content-type"]
+      },
+      "exposeHeaders": ["content-length", "content-range", "accept-ranges", "etag"],
+      "maxAgeSeconds": 86400
+    }
+  ]
+}
