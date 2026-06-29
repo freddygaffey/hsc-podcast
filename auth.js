@@ -12,7 +12,11 @@
   // Set after deploying auth-worker (e.g. https://hsc-podcast-auth.<acct>.workers.dev).
   const AUTH_API = "https://hsc-podcast-auth.fredgaffey08.workers.dev";
 
-  const SUBJECT = location.hostname.includes("phy") ? "phy" : "se";
+  // Unified app: one sync channel "hsc" (the synced blob already namespaces data per
+  // subject as subject:epId). Legacy hosts keep their original per-app channels.
+  const SUBJECT = location.hostname.includes("phy") ? "phy"
+                : location.hostname.startsWith("se.") ? "se"
+                : "hsc";
   const SESSION_KEY = "podcast-sync-session";
   const LASTID_KEY = "podcast-sync-lastid-" + SUBJECT;
   const PROGRESS_KEY = "podcast-progress";

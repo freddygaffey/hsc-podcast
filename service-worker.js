@@ -146,8 +146,10 @@ self.addEventListener('fetch', (e) => {
     return;
   }
 
-  // Audio. Range requests (iOS <audio>) are served from a downloaded full body when
-  // available; plain GETs (speed engine + downloads) are cache-first in DOWNLOADS.
+  // Audio (.m4a). Now served cross-origin from R2 (audio.hsc.pebnum.com/<subject>/…),
+  // so this matches by extension regardless of origin and runs BEFORE the same-origin
+  // checks below. Range requests (iOS <audio>) are served from a downloaded full body
+  // when available; plain GETs (speed engine + downloads) are cache-first in DOWNLOADS.
   if (path.endsWith('.m4a')) {
     if (req.headers.get('Range')) e.respondWith(rangeFromCache(req));
     else e.respondWith(cacheFirst(req, DOWNLOADS));
