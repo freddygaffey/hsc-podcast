@@ -34,6 +34,21 @@ def _subject_root(path):
 
 
 @functools.lru_cache(maxsize=None)
+def _textbook_pages(subject_root):
+    """printed-page -> token set, from any local textbook/*/pages.jsonl (gitignored book text).
+    Empty when the book isn't present locally (e.g. CI) — then textbook text isn't cross-checked."""
+    pages = {}
+    for f in Path(subject_root).glob("textbook/*/pages.jsonl"):
+        for line in f.read_text().splitlines():
+            try:
+                r = json.loads(line)
+            except Exception:  # noqa: BLE001
+                continue
+            pages[r.get("page")] = frozenset(_norm(r.get("text")).split())
+    return pages
+
+
+@functools.lru_cache(maxsize=None)
 def _papers_index(subject_root):
     """Every real past-paper question for a subject, as (norm_text, token_set). Cached."""
     idx = []
@@ -88,10 +103,22 @@ def check_provenance(qs, path, is_paper):
             elif not _matches_a_real_paper(q, papers):
                 errs.append(f"{qid}: source.origin={origin} ({s.get('ref')}) but no matching "
                             f"question text found in {subj}/papers/ — possible fabricated provenance")
-        elif origin == "textbook" and s.get("url"):
-            if subj and not (subj / s["url"]).exists():
+        elif origin == "textbook":
+            if s.get("url") and subj and not (subj / s["url"]).exists():
                 errs.append(f"{qid}: textbook source.url '{s['url']}' does not exist under {subj}/ "
-                            f"— omit the url (cite by page) or add the scan")
+                            f"— render the cited page (tools/ingest_textbook.py render) or omit the url")
+            pages = _textbook_pages(str(subj)) if subj else {}
+            pg = s.get("page")
+            if pages:  # book is digitized locally → verify the page exists and the text relates
+                if pg not in pages:
+                    errs.append(f"{qid}: textbook cites page {pg} but that page isn't in the "
+                                f"digitized textbook — possible fabricated page reference")
+                else:
+                    qt = set(_norm(q.get("q")).split()) | set(_norm(q.get("explanation")).split())
+                    overlap = len(qt & pages[pg]) / len(qt) if qt else 0
+                    if overlap < 0.2:
+                        errs.append(f"{qid}: textbook cites page {pg} but the question barely "
+                                    f"overlaps that page's text ({overlap:.0%}) — wrong page?")
     return errs
 
 

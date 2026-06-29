@@ -18,3 +18,13 @@ tools/.upload-state.json
 
 # OS / editor cruft
 .DS_Store
+
+# === Textbook sources (copyright) ===
+# Raw textbook PDFs and the extracted full-text index are LOCAL ONLY — the whole book must
+# never be committed or downloadable from the repo. Only individual cited page images
+# (content/*/sources/**) are exposed, and those are served login-gated. See
+# content/_template-subject/sources/README.md.
+content/*/textbook/**/*.pdf
+content/*/textbook/**/*.PDF
+content/*/textbook/**/pages.jsonl
+content/*/textbook/**/*.txt
