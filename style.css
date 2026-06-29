@@ -433,6 +433,51 @@ button, select, input { font-family: inherit; }
 }
 
 /* ── Module list ────────────────────────────────────────── */
+/* --- Subject picker (landing screen) --- */
+.subjects-intro { margin: 4px 0 22px; }
+.subjects-title { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 4px; }
+.subjects-sub { color: var(--text-dim); font-size: 15px; margin: 0; }
+
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+.subject-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  text-align: left;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg-card);
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.05s ease;
+}
+.subject-tile:hover { border-color: var(--accent); background: var(--bg-elevated); }
+.subject-tile:active { transform: scale(0.99); }
+.subject-name { font-weight: 700; font-size: 17px; }
+.subject-meta { font-size: 13px; color: var(--text-dim); }
+.subject-track {
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--border);
+  overflow: hidden;
+  margin-top: 4px;
+}
+.subject-fill {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
 .module {
   border: 1px solid var(--border);
   border-radius: 12px;
