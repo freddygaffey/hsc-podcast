@@ -10,7 +10,12 @@
         "Backups, eXploits, Incident response, Recovery"
       ],
       "answer": 0,
-      "explanation": "B-X-I-R is the umbrella hook for the whole user-action vulnerability list: Broken authentication and session management, Cross-site attacks, Invalid forwarding and redirecting, and Race conditions. Part 1 covers the X and the I (cross-site attacks and invalid redirects); Part 2 takes the B and the R. Option D mixes in the survival lifecycle (harden, breach handling, recovery) from a different part of the recap, not the vulnerability list."
+      "explanation": "B-X-I-R is the umbrella hook for the whole user-action vulnerability list: Broken authentication and session management, Cross-site attacks, Invalid forwarding and redirecting, and Race conditions. Part 1 covers the X and the I (cross-site attacks and invalid redirects); Part 2 takes the B and the R. Option D mixes in the survival lifecycle (harden, breach handling, recovery) from a different part of the recap, not the vulnerability list.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1802p1-q02",
@@ -22,7 +27,12 @@
         "Active, passive, and chained XSS"
       ],
       "answer": 1,
-      "explanation": "The episode names exactly three types: reflected XSS (script arrives on a request and is immediately echoed back), stored or persistent XSS (script is saved on the server and served to everyone who views the page), and DOM-based XSS (the injection happens entirely in client-side JavaScript). Option C is tempting because XSS involves client and server, but those are not the named categories."
+      "explanation": "The episode names exactly three types: reflected XSS (script arrives on a request and is immediately echoed back), stored or persistent XSS (script is saved on the server and served to everyone who views the page), and DOM-based XSS (the injection happens entirely in client-side JavaScript). Option C is tempting because XSS involves client and server, but those are not the named categories.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1802p1-q03",
@@ -34,7 +44,12 @@
         "The root cause is untrusted input placed into a page without encoding so the browser runs it as script; the fix is output encoding (escaping) the input on the way into the page"
       ],
       "answer": 3,
-      "explanation": "XSS occurs when untrusted input is echoed into a page without encoding, so the browser interprets it as executable script instead of text. The primary fix is output encoding (escaping), which converts dangerous characters to harmless HTML entities so a less-than sign displays as text rather than starting a tag. This is the same disease as SQL injection — input becoming code — just in the browser instead of the database."
+      "explanation": "XSS occurs when untrusted input is echoed into a page without encoding, so the browser interprets it as executable script instead of text. The primary fix is output encoding (escaping), which converts dangerous characters to harmless HTML entities so a less-than sign displays as text rather than starting a tag. This is the same disease as SQL injection — input becoming code — just in the browser instead of the database.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1802p1-q04",
@@ -46,7 +61,12 @@
         "It permanently corrupts the server's database files"
       ],
       "answer": 1,
-      "explanation": "Stored XSS saves the script on the server — in a comment, profile, or forum post — and then serves it to everyone who views that page, hitting every viewer automatically with no clicking required. Reflected XSS, by contrast, requires the attacker to trick a victim into clicking a crafted link. Option A is wrong because any XSS type can steal a session cookie; it is the automatic, every-viewer reach that makes stored XSS the worst."
+      "explanation": "Stored XSS saves the script on the server — in a comment, profile, or forum post — and then serves it to everyone who views that page, hitting every viewer automatically with no clicking required. Reflected XSS, by contrast, requires the attacker to trick a victim into clicking a crafted link. Option A is wrong because any XSS type can steal a session cookie; it is the automatic, every-viewer reach that makes stored XSS the worst.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1802p1-q05",
@@ -58,7 +78,12 @@
         "The attacker intercepts the connection and decrypts the session cookie in transit"
       ],
       "answer": 2,
-      "explanation": "CSRF tricks a logged-in user's browser into sending a request the user never intended to a site where they are already authenticated. A hidden form or image on a malicious page fires a request to the bank's transfer endpoint, and the browser helpfully attaches the bank session cookie automatically, so the bank sees a valid authenticated request. The attacker never sees the password or cookie (eliminating A and D) — they ride the existing session."
+      "explanation": "CSRF tricks a logged-in user's browser into sending a request the user never intended to a site where they are already authenticated. A hidden form or image on a malicious page fires a request to the bank's transfer endpoint, and the browser helpfully attaches the bank session cookie automatically, so the bank sees a valid authenticated request. The attacker never sees the password or cookie (eliminating A and D) — they ride the existing session.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1802p1-q06",
@@ -70,7 +95,12 @@
         "XSS injects a Script that runs in the victim's browser; CSRF injects no script but forges a request that rides the victim's already-authenticated session"
       ],
       "answer": 3,
-      "explanation": "The episode's hook is 'XSS injects a Script; CSRF rides a Session.' XSS runs code as you by injecting script into the page; CSRF injects no code at all — it forges a request that abuses the trust the server already has in your authenticated browser. Option B is the exact reversal, which is the most common exam trap; getting the inject-script-versus-forge-request direction right is the mark."
+      "explanation": "The episode's hook is 'XSS injects a Script; CSRF rides a Session.' XSS runs code as you by injecting script into the page; CSRF injects no code at all — it forges a request that abuses the trust the server already has in your authenticated browser. Option B is the exact reversal, which is the most common exam trap; getting the inject-script-versus-forge-request direction right is the mark.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1802p1-q07",
@@ -82,7 +112,12 @@
         "It blocks all requests that do not come from a mobile device"
       ],
       "answer": 1,
-      "explanation": "The server generates a secret, unpredictable token, embeds it in each legitimate form, and requires it back on every state-changing request, validating it server-side. Because the same-origin policy stops the attacker's cross-origin page from reading the token, a forged request cannot include the correct value and is rejected. This distinguishes genuine requests (which carry the token) from forged ones (which cannot) — naming the token, that the attacker can't read it, and server-side validation is the mark."
+      "explanation": "The server generates a secret, unpredictable token, embeds it in each legitimate form, and requires it back on every state-changing request, validating it server-side. Because the same-origin policy stops the attacker's cross-origin page from reading the token, a forged request cannot include the correct value and is rejected. This distinguishes genuine requests (which carry the token) from forged ones (which cannot) — naming the token, that the attacker can't read it, and server-side validation is the mark.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1802p1-q08",
@@ -94,7 +129,12 @@
         "The app exposes its internal file paths in error messages, leaking source code"
       ],
       "answer": 2,
-      "explanation": "An open redirect occurs when an app blindly redirects to whatever URL the request supplies. An attacker crafts a link that genuinely starts at your trusted domain — so the victim trusts and clicks it — but a redirect parameter sends them onward to a convincing fake login page that harvests credentials. It is gold for phishing because the link starts at the real domain, and the trap is treating it as harmless when it is a real phishing enabler."
+      "explanation": "An open redirect occurs when an app blindly redirects to whatever URL the request supplies. An attacker crafts a link that genuinely starts at your trusted domain — so the victim trusts and clicks it — but a redirect parameter sends them onward to a convincing fake login page that harvests credentials. It is gold for phishing because the link starts at the real domain, and the trap is treating it as harmless when it is a real phishing enabler.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1802p1-q09",
@@ -106,7 +146,12 @@
         "Because authentication only protects against XSS, not CSRF"
       ],
       "answer": 1,
-      "explanation": "CSRF rides an already-authenticated session, so requiring the user to be logged in relies on the very thing the attack abuses — the forged request is sent precisely because the browser is authenticated. A strong answer instead names an anti-CSRF token (a secret the attacker cannot read or forge), explains why it is rejected, and reinforces with SameSite cookies set to Strict and re-authentication for high-value transfers. The token plus the why is the mark."
+      "explanation": "CSRF rides an already-authenticated session, so requiring the user to be logged in relies on the very thing the attack abuses — the forged request is sent precisely because the browser is authenticated. A strong answer instead names an anti-CSRF token (a secret the attacker cannot read or forge), explains why it is rejected, and reinforces with SameSite cookies set to Strict and re-authentication for high-value transfers. The token plus the why is the mark.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1802p1-q10",
@@ -118,7 +163,12 @@
         "All three features are vulnerable to SQL injection and are fixed by parameterised queries"
       ],
       "answer": 0,
-      "explanation": "The comment feature is vulnerable to stored XSS (a saved script runs in every viewer's browser), fixed by output-encoding comments on display plus a Content Security Policy. The money-transfer feature is vulnerable to CSRF (a forged request from a logged-in browser), fixed by an anti-CSRF token plus SameSite cookies. The post-login redirect is vulnerable to an open redirect, fixed by validating the destination against an allow-list of internal locations — matching each feature to its specific vulnerability and targeted fix is full marks."
+      "explanation": "The comment feature is vulnerable to stored XSS (a saved script runs in every viewer's browser), fixed by output-encoding comments on display plus a Content Security Policy. The money-transfer feature is vulnerable to CSRF (a forged request from a logged-in browser), fixed by an anti-CSRF token plus SameSite cookies. The post-login redirect is vulnerable to an open redirect, fixed by validating the destination against an allow-list of internal locations — matching each feature to its specific vulnerability and targeted fix is full marks.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

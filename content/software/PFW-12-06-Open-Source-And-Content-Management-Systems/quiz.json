@@ -10,7 +10,12 @@
         "Linux, Community, Collaboration"
       ],
       "answer": 0,
-      "explanation": "The three pillars are Licence, Community, and Contribution — L-C-C. The Licence is the legal grant governing use, the Community (maintainers, contributors, users) sustains the project, and Contribution is the fork-branch-pull-request workflow. The tempting 'Licence, Code, Community' swaps the heaviest-examined pillar's partner 'Contribution' for the vaguer 'Code'."
+      "explanation": "The three pillars are Licence, Community, and Contribution — L-C-C. The Licence is the legal grant governing use, the Community (maintainers, contributors, users) sustains the project, and Contribution is the fork-branch-pull-request workflow. The tempting 'Licence, Code, Community' swaps the heaviest-examined pillar's partner 'Contribution' for the vaguer 'Code'.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1206-q02",
@@ -22,7 +27,12 @@
         "Open source is only used for small hobby projects, so reliability is not a concern"
       ],
       "answer": 1,
-      "explanation": "The episode kills two myths in its first minute: open source is not 'free of cost' (it is free as in freedom, not necessarily price) and it is not low-quality or insecure (critical web servers, languages, and operating systems run on it). Openness is a strength, not a weakness, precisely because the code is open to inspection. Option A is the named trap the script warns against."
+      "explanation": "The episode kills two myths in its first minute: open source is not 'free of cost' (it is free as in freedom, not necessarily price) and it is not low-quality or insecure (critical web servers, languages, and operating systems run on it). Openness is a strength, not a weakness, precisely because the code is open to inspection. Option A is the named trap the script warns against.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1206-q03",
@@ -34,7 +44,12 @@
         "Permissive licences apply only to web frameworks while copyleft licences apply only to operating systems"
       ],
       "answer": 2,
-      "explanation": "Permissive is Polite — use it freely, even in proprietary products, just keep the attribution notice. Copyleft is Contagious — the GPL spreads its openness, so a distributed derivative must also be open-sourced. The first option confuses licence type with price, but both families are typically free of cost; the real distinction is what you may do with the code in a closed product."
+      "explanation": "Permissive is Polite — use it freely, even in proprietary products, just keep the attribution notice. Copyleft is Contagious — the GPL spreads its openness, so a distributed derivative must also be open-sourced. The first option confuses licence type with price, but both families are typically free of cost; the real distinction is what you may do with the code in a closed product.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1206-q04",
@@ -46,7 +61,12 @@
         "If you build on and distribute a copyleft (GPL) library, the copyleft terms can require you to release your own source code under the GPL, destroying your closed-source commercial model; a permissive (MIT/Apache) library lets you keep your product closed"
       ],
       "answer": 3,
-      "explanation": "Copyleft is contagious: distributing a proprietary product built on GPL code can legally require your derivative work to be open-sourced too, ending your closed-source model. A permissive MIT or Apache library allows proprietary use, so it is the safe choice for a commercial product. Ignoring licence obligations is a named trap and a real legal risk, not a performance or royalty issue."
+      "explanation": "Copyleft is contagious: distributing a proprietary product built on GPL code can legally require your derivative work to be open-sourced too, ending your closed-source model. A permissive MIT or Apache library allows proprietary use, so it is the safe choice for a commercial product. Ignoring licence obligations is a named trap and a real legal risk, not a performance or royalty issue.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1206-q05",
@@ -58,7 +78,12 @@
         "The internal process a company uses to ship software updates to its own customers"
       ],
       "answer": 2,
-      "explanation": "The software supply chain is the dependency chain: your app depends on a library, which depends on another, down to a tiny one maintained by one person in their spare time. Because you trust code you did not write, this is an attack surface — the openness that lets thousands inspect the code is a strength, but the trust model can be exploited. The first option confuses it with a physical hardware supply chain."
+      "explanation": "The software supply chain is the dependency chain: your app depends on a library, which depends on another, down to a tiny one maintained by one person in their spare time. Because you trust code you did not write, this is an attack surface — the openness that lets thousands inspect the code is a strength, but the trust model can be exploited. The first option confuses it with a physical hardware supply chain.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1206-q06",
@@ -70,7 +95,12 @@
         "That an attacker spent two years gaining a struggling maintainer's trust, became a co-maintainer, and slipped a backdoor into a widely-used compression library, nearly compromising SSH logins on millions of servers — showing the trust model is itself an attack surface"
       ],
       "answer": 3,
-      "explanation": "The xz backdoor shows the supply-chain risk concretely: an attacker earned the trust of an overworked maintainer, became a co-maintainer, and quietly inserted a backdoor used across Linux that nearly compromised secure-shell logins before one engineer caught it by accident. It demonstrates that the trust model is an attack surface, not that open source is unusable or immune. This case study pays off later in Secure Software Architecture."
+      "explanation": "The xz backdoor shows the supply-chain risk concretely: an attacker earned the trust of an overworked maintainer, became a co-maintainer, and quietly inserted a backdoor used across Linux that nearly compromised secure-shell logins before one engineer caught it by accident. It demonstrates that the trust model is an attack surface, not that open source is unusable or immune. This case study pays off later in Secure Software Architecture.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1206-q07",
@@ -82,7 +112,12 @@
         "A database engine for storing transactions, prevalent because it scales to millions of records"
       ],
       "answer": 2,
-      "explanation": "A CMS lets people create, manage, and publish web content through an admin interface without writing code for every change — WordPress alone powers a large fraction of all websites. Its prevalence comes from enabling non-technical users (office staff, small-business owners) to update sites and from a huge plugin ecosystem that adds features without custom development. The CMS itself is built from a database, a template engine, and an admin front end."
+      "explanation": "A CMS lets people create, manage, and publish web content through an admin interface without writing code for every change — WordPress alone powers a large fraction of all websites. Its prevalence comes from enabling non-technical users (office staff, small-business owners) to update sites and from a huge plugin ecosystem that adds features without custom development. The CMS itself is built from a database, a template engine, and an admin front end.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1206-q08",
@@ -94,7 +129,12 @@
         "Hosted requires advanced coding skills while self-hosted requires none"
       ],
       "answer": 0,
-      "explanation": "The trade is convenience and managed security versus control and responsibility. Hosted offloads security updates, backups, and scaling to the provider at the cost of customisation and ongoing fees; self-hosted gives full control and data ownership but you carry the security and maintenance burden. The 'hosted is always free' option is wrong because both involve cost — hosted is a subscription, self-hosted is hosting plus your time."
+      "explanation": "The trade is convenience and managed security versus control and responsibility. Hosted offloads security updates, backups, and scaling to the provider at the cost of customisation and ongoing fees; self-hosted gives full control and data ownership but you carry the security and maintenance burden. The 'hosted is always free' option is wrong because both involve cost — hosted is a subscription, self-hosted is hosting plus your time.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1206-q09",
@@ -106,7 +146,12 @@
         "A hosted CMS, because the non-technical owner cannot safely handle security updates, backups, and server maintenance, which the provider manages for them at a predictable cost, accepting reduced customisation as a worthwhile trade-off"
       ],
       "answer": 3,
-      "explanation": "The strong answer drives the recommendation from the client's capability and the security responsibility: a hosted CMS manages security updates, backups, and maintenance the owner cannot safely meet, at a predictable monthly cost, with reduced customisation as an acceptable trade-off. The 'self-hosted because more powerful' option is the weak answer the script flags — it argues from raw power and ignores who is running the site."
+      "explanation": "The strong answer drives the recommendation from the client's capability and the security responsibility: a hosted CMS manages security updates, backups, and maintenance the owner cannot safely meet, at a predictable monthly cost, with reduced customisation as an acceptable trade-off. The 'self-hosted because more powerful' option is the weak answer the script flags — it argues from raw power and ignores who is running the site.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1206-q10",
@@ -118,7 +163,12 @@
         "The only fix is to switch the entire site to a copyleft licence"
       ],
       "answer": 1,
-      "explanation": "A self-hosted CMS with many plugins is a large attack surface, and out-of-date or abandoned plugins are one of the most common ways small sites get hacked — the same supply-chain problem, just inside the CMS. The mark-earning security point is patching discipline: keep the CMS core and all plugins updated and remove unmaintained ones. This links directly to the patching taught in Secure Software Architecture, not to licensing (D) or appearance (C)."
+      "explanation": "A self-hosted CMS with many plugins is a large attack surface, and out-of-date or abandoned plugins are one of the most common ways small sites get hacked — the same supply-chain problem, just inside the CMS. The mark-earning security point is patching discipline: keep the CMS core and all plugins updated and remove unmaintained ones. This links directly to the patching taught in Secure Software Architecture, not to licensing (D) or appearance (C).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

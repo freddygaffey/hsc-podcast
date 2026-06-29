@@ -10,7 +10,12 @@
         "Define, design, develop, and decommission the whole solution"
       ],
       "answer": 1,
-      "explanation": "The script's year-in-one-sentence is 'make it work' (Programming for the Web), 'make it secure' (Secure Software Architecture), 'make it smart' (Software Automation), and 'run the project that ships it well' (the Software Engineering Project). Option A swaps the security and automation themes for 'fast' and 'cheap', which are not the module themes. Recognising that every integrated exam question is a slice of this sentence is the point of the synthesis module."
+      "explanation": "The script's year-in-one-sentence is 'make it work' (Programming for the Web), 'make it secure' (Secure Software Architecture), 'make it smart' (Software Automation), and 'run the project that ships it well' (the Software Engineering Project). Option A swaps the security and automation themes for 'fast' and 'cheap', which are not the module themes. Recognising that every integrated exam question is a slice of this sentence is the point of the synthesis module.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2699-q02",
@@ -22,7 +27,12 @@
         "Criteria, Evaluation, Review"
       ],
       "answer": 0,
-      "explanation": "C-E-R is Criteria (drawn from the requirements and the C-U-P-S quality criteria), Evidence (test results and synthesised feedback, comparing actual versus expected), and Reflection (on maintainability and lessons learned). The tempting Collect/Evaluate/Report option blurs C-E-R with the feedback mnemonic C-S-A (Collect, Synthesise, Act); the script keeps them distinct — C-S-A handles feedback, C-E-R is the overall evaluation judgement."
+      "explanation": "C-E-R is Criteria (drawn from the requirements and the C-U-P-S quality criteria), Evidence (test results and synthesised feedback, comparing actual versus expected), and Reflection (on maintainability and lessons learned). The tempting Collect/Evaluate/Report option blurs C-E-R with the feedback mnemonic C-S-A (Collect, Synthesise, Act); the script keeps them distinct — C-S-A handles feedback, C-E-R is the overall evaluation judgement.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2699-q03",
@@ -34,7 +44,12 @@
         "Confidentiality, Identity, Availability, Authorisation, Auditing, Accountability"
       ],
       "answer": 2,
-      "explanation": "CIA-AAA is Confidentiality, Integrity, Availability, Authentication, Authorisation, Accountability — the script calls it 'the big one' from Secure Software Architecture and the security-dump hook. The distractors substitute near-synonyms like Access, Control, or Auditing for the precise syllabus terms; getting the exact words matters because the integrated exam rewards naming each of the six elements."
+      "explanation": "CIA-AAA is Confidentiality, Integrity, Availability, Authentication, Authorisation, Accountability — the script calls it 'the big one' from Secure Software Architecture and the security-dump hook. The distractors substitute near-synonyms like Access, Control, or Auditing for the precise syllabus terms; getting the exact words matters because the integrated exam rewards naming each of the six elements.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2699-q04",
@@ -46,7 +61,12 @@
         "QA prevents defects across the whole process, while testing is an activity within QA that detects defects by executing test cases"
       ],
       "answer": 3,
-      "explanation": "The script's exact distinction is 'QA prevents, testing detects' — quality assurance is the overall process (the three Cs: Criteria, Continual checking, Compliance) that prevents defects, and testing is one activity inside QA that detects defects by comparing actual with expected output. The 'testing prevents, QA detects' option reverses the relationship, which is the most common trap the script flags; QA is the umbrella, testing sits underneath it."
+      "explanation": "The script's exact distinction is 'QA prevents, testing detects' — quality assurance is the overall process (the three Cs: Criteria, Continual checking, Compliance) that prevents defects, and testing is one activity inside QA that detects defects by comparing actual with expected output. The 'testing prevents, QA detects' option reverses the relationship, which is the most common trap the script flags; QA is the umbrella, testing sits underneath it.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2699-q05",
@@ -58,7 +78,12 @@
         "Phased runs old and new together, pilot splits by feature, and parallel splits by user group"
       ],
       "answer": 1,
-      "explanation": "The script states it plainly in the traps section: phased splits the rollout by feature, pilot splits by user group, and parallel runs both the old and new systems at once. The distractors mix up the split criteria — confusing phased, pilot, and parallel is a named cross-module trap. Direct cut-over (the 'Di' in DiP-PP) is the cheap-but-risky big-bang option the script warns against for high-risk systems like Knight Capital and Denver."
+      "explanation": "The script states it plainly in the traps section: phased splits the rollout by feature, pilot splits by user group, and parallel runs both the old and new systems at once. The distractors mix up the split criteria — confusing phased, pilot, and parallel is a named cross-module trap. Direct cut-over (the 'Di' in DiP-PP) is the cheap-but-risky big-bang option the script warns against for high-risk systems like Knight Capital and Denver.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2699-q06",
@@ -70,7 +95,12 @@
         "Hashing lets administrators recover the original password when a user forgets it"
       ],
       "answer": 2,
-      "explanation": "The script's password rule is that passwords should be salted and hashed, not encrypted, because hashing is one-way — a stolen database still cannot reveal the originals — while encryption is two-way and reversible. The 'administrators recover the password' option describes recoverability, which is exactly what you do NOT want for passwords; the inability to reverse a hash is the whole point. 'Hash is encryption' is one of the named cross-module traps."
+      "explanation": "The script's password rule is that passwords should be salted and hashed, not encrypted, because hashing is one-way — a stolen database still cannot reveal the originals — while encryption is two-way and reversible. The 'administrators recover the password' option describes recoverability, which is exactly what you do NOT want for passwords; the inability to reverse a hash is the whole point. 'Hash is encryption' is one of the named cross-module traps.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2699-q07",
@@ -82,7 +112,12 @@
         "Use diverse representative data, measure fairness metrics per group, and keep a human in the loop so a teacher reviews every flag"
       ],
       "answer": 3,
-      "explanation": "The script's responsible-AI judgement is representative data, per-group fairness metrics, and human oversight — a teacher reviews every flag and there is never an automated consequence, making the model decision support, not a decision maker. The 'trust the neutral algorithm' option walks into two traps the script names: 'the algorithm is neutral' (it mirrors its data, S-H-L-M) and the fact that high overall accuracy can hide deep unfairness to a group. Letting the model act automatically is the opposite of the required human-in-the-loop safeguard."
+      "explanation": "The script's responsible-AI judgement is representative data, per-group fairness metrics, and human oversight — a teacher reviews every flag and there is never an automated consequence, making the model decision support, not a decision maker. The 'trust the neutral algorithm' option walks into two traps the script names: 'the algorithm is neutral' (it mirrors its data, S-H-L-M) and the fact that high overall accuracy can hide deep unfairness to a group. Letting the model act automatically is the opposite of the required human-in-the-loop safeguard.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2699-q08",
@@ -94,7 +129,12 @@
         "Pure Agile with no documentation, because resident feedback is the only thing that matters"
       ],
       "answer": 2,
-      "explanation": "The script's model answer recommends WAgile (defensibly) — Waterfall stage-gates for the governance and compliance side, Agile sprints for the resident-facing reporting interface that benefits from feedback — always explaining the 'when and how'. Pure Waterfall and 'Agile means no docs' are both named as false traps. The script also rejects direct cut-over for a public system, eliminating option B; WAgile's strength is matching each approach to where it fits."
+      "explanation": "The script's model answer recommends WAgile (defensibly) — Waterfall stage-gates for the governance and compliance side, Agile sprints for the resident-facing reporting interface that benefits from feedback — always explaining the 'when and how'. Pure Waterfall and 'Agile means no docs' are both named as false traps. The script also rejects direct cut-over for a public system, eliminating option B; WAgile's strength is matching each approach to where it fits.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2699-q09",
@@ -106,7 +146,12 @@
         "All three failed because they adopted Agile instead of Waterfall"
       ],
       "answer": 1,
-      "explanation": "The script's explicit through-line is that all three failures happened in the process — Denver in defining and planning (unbounded scope, infeasible plan, direct big-bang cut-over), Healthcare.gov across defining, planning and testing (frozen flawed requirements, no load test), and Knight Capital in version control and deployment (dead code, no rollback) — not in clever code. The lesson the course closes on is 'justify, manage, document', which is why blaming the language or the methodology label (options A and D) misses the point."
+      "explanation": "The script's explicit through-line is that all three failures happened in the process — Denver in defining and planning (unbounded scope, infeasible plan, direct big-bang cut-over), Healthcare.gov across defining, planning and testing (frozen flawed requirements, no load test), and Knight Capital in version control and deployment (dead code, no rollback) — not in clever code. The lesson the course closes on is 'justify, manage, document', which is why blaming the language or the methodology label (options A and D) misses the point.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2699-q10",
@@ -118,7 +163,12 @@
         "Choose direct cut-over to save time and dedicate the answer to the AI feature alone"
       ],
       "answer": 0,
-      "explanation": "The script identifies the meta-trap as 'answering a four-module scenario from only one module', and the fix is to reach across all four — the SEE process spine plus the web, security and responsible-AI dimensions — always asking 'where do the other three modules touch this?'. For the hospital brief that means WAgile plus pilot-then-parallel, CIA-AAA and V-S-E security, an ML no-show predictor with bias checks and a human in the loop, and C-E-R evaluation. Breadth across modules tied together by the project process is exactly the synthesis the integrated exam rewards."
+      "explanation": "The script identifies the meta-trap as 'answering a four-module scenario from only one module', and the fix is to reach across all four — the SEE process spine plus the web, security and responsible-AI dimensions — always asking 'where do the other three modules touch this?'. For the hospital brief that means WAgile plus pilot-then-parallel, CIA-AAA and V-S-E security, an ML no-show predictor with bias checks and a human in the loop, and C-E-R evaluation. Breadth across modules tied together by the project process is exactly the synthesis the integrated exam rewards.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

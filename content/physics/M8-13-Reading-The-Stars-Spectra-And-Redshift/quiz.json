@@ -10,7 +10,12 @@
         "A cold solid at room temperature"
       ],
       "answer": 1,
-      "explanation": "A hot, dense body (solid, liquid or high-pressure gas) emits black-body radiation at all wavelengths — an unbroken rainbow. A hot LOW-density gas (A) gives an emission (bright-line) spectrum instead; the split is about density, not just temperature."
+      "explanation": "A hot, dense body (solid, liquid or high-pressure gas) emits black-body radiation at all wavelengths — an unbroken rainbow. A hot LOW-density gas (A) gives an emission (bright-line) spectrum instead; the split is about density, not just temperature.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m813-q02",
@@ -22,7 +27,12 @@
         "Because interstellar dust removes most of the star's light"
       ],
       "answer": 1,
-      "explanation": "The dense hot interior radiates a continuous black-body spectrum; as that light passes through the cooler, less-dense atmosphere, atoms there absorb their own wavelengths, leaving dark absorption lines. Saying 'a hot gas makes emission lines' (A) is the density trap — a hot DENSE body makes a continuum."
+      "explanation": "The dense hot interior radiates a continuous black-body spectrum; as that light passes through the cooler, less-dense atmosphere, atoms there absorb their own wavelengths, leaving dark absorption lines. Saying 'a hot gas makes emission lines' (A) is the density trap — a hot DENSE body makes a continuum.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m813-q03",
@@ -34,7 +44,12 @@
         "Absorption lines are always twice the wavelength of emission lines"
       ],
       "answer": 1,
-      "explanation": "Emission (a fall down between two levels) and absorption (a jump up between the same two levels) involve the same energy gap, hence the same photon energy and wavelength. This is why a dark line and a bright line at the same wavelength fingerprint the same element."
+      "explanation": "Emission (a fall down between two levels) and absorption (a jump up between the same two levels) involve the same energy gap, hence the same photon energy and wavelength. This is why a dark line and a bright line at the same wavelength fingerprint the same element.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m813-q04",
@@ -46,7 +61,12 @@
         "The total number of absorption lines present"
       ],
       "answer": 2,
-      "explanation": "Temperature is read from the shape of the continuous black-body background: hotter stars peak at shorter, bluer wavelengths; cooler stars peak redder. Line identity gives composition and line shift gives velocity — keeping these three distinct is the key skill."
+      "explanation": "Temperature is read from the shape of the continuous black-body background: hotter stars peak at shorter, bluer wavelengths; cooler stars peak redder. Line identity gives composition and line shift gives velocity — keeping these three distinct is the key skill.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m813-q05",
@@ -58,7 +78,12 @@
         "It is made mostly of iron"
       ],
       "answer": 1,
-      "explanation": "Bluer (shorter-wavelength) peak means hotter; redder (longer-wavelength) peak means cooler. This is the trap people reverse — on a tap red means hot, but in physics blue is hotter. A blueSHIFT (C) would indicate approach, but a blue PEAK indicates high temperature."
+      "explanation": "Bluer (shorter-wavelength) peak means hotter; redder (longer-wavelength) peak means cooler. This is the trap people reverse — on a tap red means hot, but in physics blue is hotter. A blueSHIFT (C) would indicate approach, but a blue PEAK indicates high temperature.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m813-q06",
@@ -70,7 +95,12 @@
         "Distance from Earth"
       ],
       "answer": 2,
-      "explanation": "OBAFGKM runs from hottest, bluest (O) to coolest, reddest (M). The letters were assigned before the ordering principle was understood, then rearranged into temperature order — hence the odd-looking sequence. The Sun is a class G star."
+      "explanation": "OBAFGKM runs from hottest, bluest (O) to coolest, reddest (M). The letters were assigned before the ordering principle was understood, then rearranged into temperature order — hence the odd-looking sequence. The Sun is a class G star.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m813-q07",
@@ -82,7 +112,12 @@
         "The star is composed of different elements than expected"
       ],
       "answer": 1,
-      "explanation": "A redshift — the whole line pattern slid toward longer wavelengths while keeping its spacing — means the source is receding. Doppler shift gives the radial velocity (along the line of sight) only; the pattern shifting bodily, not changing internally, is how you know it is motion, not a different element."
+      "explanation": "A redshift — the whole line pattern slid toward longer wavelengths while keeping its spacing — means the source is receding. Doppler shift gives the radial velocity (along the line of sight) only; the pattern shifting bodily, not changing internally, is how you know it is motion, not a different element.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m813-q08",
@@ -94,7 +129,12 @@
         "She invented the spectroscope used to record stellar spectra"
       ],
       "answer": 1,
-      "explanation": "Payne-Gaposchkin recognised that an absorption line's strength depends strongly on the star's temperature (which sets which energy levels and ionisation states are populated), not just on abundance. Correcting for this, she showed stars are mostly hydrogen and helium — overturning the iron-rich-Sun belief. She interpreted existing lines; she did not discover them (A)."
+      "explanation": "Payne-Gaposchkin recognised that an absorption line's strength depends strongly on the star's temperature (which sets which energy levels and ionisation states are populated), not just on abundance. Correcting for this, she showed stars are mostly hydrogen and helium — overturning the iron-rich-Sun belief. She interpreted existing lines; she did not discover them (A).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m813-q09",
@@ -106,7 +146,12 @@
         "Galaxies are blueshifted, showing the universe is contracting"
       ],
       "answer": 1,
-      "explanation": "Merely 'moving away' (A) is only motion and earns little. The strong answer adds that redshift increases with distance (velocity proportional to distance, Hubble's law) — the signature of space itself stretching uniformly, with no centre. The 'central point' picture (C) is the explosion misconception that expansion replaces."
+      "explanation": "Merely 'moving away' (A) is only motion and earns little. The strong answer adds that redshift increases with distance (velocity proportional to distance, Hubble's law) — the signature of space itself stretching uniformly, with no centre. The 'central point' picture (C) is the explosion misconception that expansion replaces.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m813-q10",
@@ -118,7 +163,12 @@
         "Because the age must come out in parsecs"
       ],
       "answer": 1,
-      "explanation": "\\(H = v/d\\); when velocity (km s⁻¹) is divided by distance (km), the kilometres cancel and \\(H\\) has units of s⁻¹. Since \\(t = 1/H\\), the reciprocal of an inverse second is a second (a time), giving the age. If the length units don't cancel, \\(1/H\\) is not a time at all."
+      "explanation": "\\(H = v/d\\); when velocity (km s⁻¹) is divided by distance (km), the kilometres cancel and \\(H\\) has units of s⁻¹. Since \\(t = 1/H\\), the reciprocal of an inverse second is a second (a time), giving the age. If the length units don't cancel, \\(1/H\\) is not a time at all.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

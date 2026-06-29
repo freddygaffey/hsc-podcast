@@ -10,7 +10,12 @@
         "The acceleration of a charge by an electric field"
       ],
       "answer": 0,
-      "explanation": "The motor effect is the action of a force on a current-carrying conductor placed in an external magnetic field. Option B describes electromagnetic induction (the reverse situation), not the motor effect."
+      "explanation": "The motor effect is the action of a force on a current-carrying conductor placed in an external magnetic field. Option B describes electromagnetic induction (the reverse situation), not the motor effect.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m605-q02",
@@ -22,7 +27,12 @@
         "Because like magnetic poles repel each other"
       ],
       "answer": 2,
-      "explanation": "The \"explain why\" answer is the two-field interaction: the wire's circular field superimposes on the external field, reinforcing it on one side and cancelling it on the other; the net force points from the stronger-field region to the weaker. Quoting the formula (A) or the hand rule (B) is not an explanation and earns almost nothing."
+      "explanation": "The \"explain why\" answer is the two-field interaction: the wire's circular field superimposes on the external field, reinforcing it on one side and cancelling it on the other; the net force points from the stronger-field region to the weaker. Quoting the formula (A) or the hand rule (B) is not an explanation and earns almost nothing.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m605-q03",
@@ -34,7 +44,12 @@
         "The external field magnetises the wire's electrons"
       ],
       "answer": 1,
-      "explanation": "A current is a stream of moving charges, and each moving charge in a magnetic field feels a sideways force. The force on the whole wire is the sum of all those individual forces — the macroscopic version of the single-charge force \\(F = qvB\\sin\\theta\\)."
+      "explanation": "A current is a stream of moving charges, and each moving charge in a magnetic field feels a sideways force. The force on the whole wire is the sum of all those individual forces — the macroscopic version of the single-charge force \\(F = qvB\\sin\\theta\\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m605-q04",
@@ -46,7 +61,12 @@
         "The angle between the current and the electron drift"
       ],
       "answer": 2,
-      "explanation": "\\(\\theta\\) is the angle between the conductor (the current direction) and the magnetic field lines — not the angle to the force. Using the wrong angle collapses the calculation."
+      "explanation": "\\(\\theta\\) is the angle between the conductor (the current direction) and the magnetic field lines — not the angle to the force. Using the wrong angle collapses the calculation.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m605-q05",
@@ -58,7 +78,12 @@
         "The current is zero"
       ],
       "answer": 1,
-      "explanation": "Since \\(F \\propto \\sin\\theta\\), the force is maximum at \\(\\theta = 90^\\circ\\) (\\(\\sin 90^\\circ = 1\\)) and zero at \\(\\theta = 0^\\circ\\) (\\(\\sin 0^\\circ = 0\\)). Students often guess that \"lined up\" means maximum — it is exactly backwards."
+      "explanation": "Since \\(F \\propto \\sin\\theta\\), the force is maximum at \\(\\theta = 90^\\circ\\) (\\(\\sin 90^\\circ = 1\\)) and zero at \\(\\theta = 0^\\circ\\) (\\(\\sin 0^\\circ = 0\\)). Students often guess that \"lined up\" means maximum — it is exactly backwards.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m605-q06",
@@ -70,7 +95,12 @@
         "The field becomes zero near a parallel wire"
       ],
       "answer": 1,
-      "explanation": "When the wire lies along the field, the moving charges drift parallel to \\(B\\), so there is no perpendicular velocity component — nothing for the field to push sideways against (\\(\\sin 0^\\circ = 0\\)). Equivalently, there is no strong-side/weak-side asymmetry across the field."
+      "explanation": "When the wire lies along the field, the moving charges drift parallel to \\(B\\), so there is no perpendicular velocity component — nothing for the field to push sideways against (\\(\\sin 0^\\circ = 0\\)). Equivalently, there is no strong-side/weak-side asymmetry across the field.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m605-q07",
@@ -82,7 +112,12 @@
         "Ignore the current direction entirely"
       ],
       "answer": 1,
-      "explanation": "The push rule is defined for conventional current (the way positive charge would move), which is opposite to electron drift. Convert electron flow to conventional current first, or your force comes out exactly backwards."
+      "explanation": "The push rule is defined for conventional current (the way positive charge would move), which is opposite to electron drift. Convert electron flow to conventional current first, or your force comes out exactly backwards.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m605-q08",
@@ -94,7 +129,12 @@
         "\\(6.0\\ \\mathrm{N}\\)"
       ],
       "answer": 0,
-      "explanation": "Convert: \\(L = 8.0\\times10^{-2}\\ \\mathrm{m}\\), \\(I = 3.0\\times10^{-2}\\ \\mathrm{A}\\). At \\(90^\\circ\\), \\(F = BIL = (0.25)(3.0\\times10^{-2})(8.0\\times10^{-2}) = 6.0\\times10^{-4}\\ \\mathrm{N}\\). Failing to convert cm and mA is the usual error."
+      "explanation": "Convert: \\(L = 8.0\\times10^{-2}\\ \\mathrm{m}\\), \\(I = 3.0\\times10^{-2}\\ \\mathrm{A}\\). At \\(90^\\circ\\), \\(F = BIL = (0.25)(3.0\\times10^{-2})(8.0\\times10^{-2}) = 6.0\\times10^{-4}\\ \\mathrm{N}\\). Failing to convert cm and mA is the usual error.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m605-q09",
@@ -106,7 +146,12 @@
         "Along the field, in the direction of conventional current"
       ],
       "answer": 2,
-      "explanation": "The force is perpendicular to both the current and the field. If both lie in the plane of the page, the force points into or out of the page — never along the page. The right-hand push rule picks which of the two."
+      "explanation": "The force is perpendicular to both the current and the field. If both lie in the plane of the page, the force points into or out of the page — never along the page. The right-hand push rule picks which of the two.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m605-q10",
@@ -118,7 +163,12 @@
         "Halving the length of wire in the field"
       ],
       "answer": 1,
-      "explanation": "Since \\(F = BIL\\sin\\theta\\), the force is directly proportional to \\(B\\), so doubling \\(B\\) doubles the force (as would doubling \\(I\\) or \\(L\\)). Halving \\(I\\) or \\(L\\) halves it, and going from \\(90^\\circ\\) to \\(30^\\circ\\) reduces \\(\\sin\\theta\\) from 1 to 0.5, also halving it."
+      "explanation": "Since \\(F = BIL\\sin\\theta\\), the force is directly proportional to \\(B\\), so doubling \\(B\\) doubles the force (as would doubling \\(I\\) or \\(L\\)). Halving \\(I\\) or \\(L\\) halves it, and going from \\(90^\\circ\\) to \\(30^\\circ\\) reduces \\(\\sin\\theta\\) from 1 to 0.5, also halving it.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

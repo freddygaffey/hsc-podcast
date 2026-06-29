@@ -10,7 +10,12 @@
         "Light waves push electrons out by the pressure of their amplitude"
       ],
       "answer": 1,
-      "explanation": "Einstein's master key is the one-photon-one-electron collision: the whole photon energy is delivered in a single hit, all or nothing. This explains the no-delay and threshold observations the wave model could not."
+      "explanation": "Einstein's master key is the one-photon-one-electron collision: the whole photon energy is delivered in a single hit, all or nothing. This explains the no-delay and threshold observations the wave model could not.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m712-q02",
@@ -22,7 +27,12 @@
         "\\(K_{\\max} = hf \\times \\phi\\)"
       ],
       "answer": 1,
-      "explanation": "By conservation of energy, photon energy = work function + kinetic energy, so \\(K_{\\max} = hf - \\phi\\). The photon energy in is shared between escaping the metal (\\(\\phi\\)) and the leftover kinetic energy."
+      "explanation": "By conservation of energy, photon energy = work function + kinetic energy, so \\(K_{\\max} = hf - \\phi\\). The photon energy in is shared between escaping the metal (\\(\\phi\\)) and the leftover kinetic energy.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m712-q03",
@@ -34,7 +44,12 @@
         "The total energy stored in the metal's electrons"
       ],
       "answer": 1,
-      "explanation": "The work function \\(\\phi\\) (or \\(W\\)) is the minimum energy needed to free a surface electron. It is an energy (joules or eV), not a frequency — quoting it in hertz is a classic error."
+      "explanation": "The work function \\(\\phi\\) (or \\(W\\)) is the minimum energy needed to free a surface electron. It is an energy (joules or eV), not a frequency — quoting it in hertz is a classic error.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m712-q04",
@@ -46,7 +61,12 @@
         "Gradient = negative work function; x-intercept = Planck's constant; y-intercept = threshold frequency"
       ],
       "answer": 1,
-      "explanation": "Comparing \\(K_{\\max} = hf - \\phi\\) with \\(y = mx + c\\): the gradient is \\(h\\), the x-intercept (where \\(K_{\\max}=0\\)) is the threshold frequency, and the y-intercept is \\(-\\phi\\). Remember 'GIN'."
+      "explanation": "Comparing \\(K_{\\max} = hf - \\phi\\) with \\(y = mx + c\\): the gradient is \\(h\\), the x-intercept (where \\(K_{\\max}=0\\)) is the threshold frequency, and the y-intercept is \\(-\\phi\\). Remember 'GIN'.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m712-q05",
@@ -58,7 +78,12 @@
         "Y's line is shallower and shifted left"
       ],
       "answer": 1,
-      "explanation": "The gradient is Planck's constant — a universal constant identical for every metal — so all photoelectric lines are parallel. A larger work function shifts the line right (higher threshold) and down (more negative intercept). Converging or differently-sloped lines are the headline error."
+      "explanation": "The gradient is Planck's constant — a universal constant identical for every metal — so all photoelectric lines are parallel. A larger work function shifts the line right (higher threshold) and down (more negative intercept). Converging or differently-sloped lines are the headline error.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m712-q06",
@@ -70,7 +95,12 @@
         "2.92 eV; 2.92 V"
       ],
       "answer": 1,
-      "explanation": "\\(K_{\\max} = hf - \\phi = 2.92 - 1.67 = 1.25\\,\\mathrm{eV}\\). Since \\(K_{\\max} = eV_0\\) and energy is in eV, the stopping voltage reads straight across as 1.25 V."
+      "explanation": "\\(K_{\\max} = hf - \\phi = 2.92 - 1.67 = 1.25\\,\\mathrm{eV}\\). Since \\(K_{\\max} = eV_0\\) and energy is in eV, the stopping voltage reads straight across as 1.25 V.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m712-q07",
@@ -82,7 +112,12 @@
         "Low-frequency photons are reflected by the metal surface"
       ],
       "answer": 1,
-      "explanation": "Because an electron can only take energy from one photon at a time, if each photon's \\(hf\\) is below \\(\\phi\\), none can free an electron — regardless of intensity or duration. The threshold is where \\(hf_0 = \\phi\\), so \\(f_0 = \\phi/h\\)."
+      "explanation": "Because an electron can only take energy from one photon at a time, if each photon's \\(hf\\) is below \\(\\phi\\), none can free an electron — regardless of intensity or duration. The threshold is where \\(hf_0 = \\phi\\), so \\(f_0 = \\phi/h\\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m712-q08",
@@ -94,7 +129,12 @@
         "He invented the photomultiplier tube to count single photons"
       ],
       "answer": 1,
-      "explanation": "Millikan set out to disprove Einstein but instead confirmed the linear prediction, with gradient equal to Planck's constant. That same \\(h\\) had already been found from black-body radiation — two unrelated experiments agreeing on a constant of nature validates the quantum model."
+      "explanation": "Millikan set out to disprove Einstein but instead confirmed the linear prediction, with gradient equal to Planck's constant. That same \\(h\\) had already been found from black-body radiation — two unrelated experiments agreeing on a constant of nature validates the quantum model.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m712-q09",
@@ -106,7 +146,12 @@
         "The photoelectric effect uses heat while thermionic emission uses light"
       ],
       "answer": 1,
-      "explanation": "Both processes must supply at least the work function to free an electron; the difference is the energy source — thermal energy (heat) for thermionic emission, a single photon for the photoelectric effect."
+      "explanation": "Both processes must supply at least the work function to free an electron; the difference is the energy source — thermal energy (heat) for thermionic emission, a single photon for the photoelectric effect.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m712-q10",
@@ -118,7 +163,12 @@
         "Light is neither a wave nor a particle but a form of heat"
       ],
       "answer": 2,
-      "explanation": "Both bodies of evidence are watertight: you cannot explain a dark interference fringe with particles, nor the threshold frequency with a wave. Light is a quantum object showing wave behaviour in some experiments and particle behaviour in others."
+      "explanation": "Both bodies of evidence are watertight: you cannot explain a dark interference fringe with particles, nor the threshold frequency with a wave. Light is a quantum object showing wave behaviour in some experiments and particle behaviour in others.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

@@ -10,7 +10,12 @@
         "Linear regression, K-means clustering, and K-nearest neighbour"
       ],
       "answer": 1,
-      "explanation": "The syllabus names exactly three: linear regression, logistic regression, and K-nearest neighbour, captured by the mnemonic L-L-K (the two L's of the regressions plus the K of K-nearest). Polynomial regression is a fourth that the building dot-point adds ('L-L-K plus polynomial'), but it is not one of the named core three (eliminates A)."
+      "explanation": "The syllabus names exactly three: linear regression, logistic regression, and K-nearest neighbour, captured by the mnemonic L-L-K (the two L's of the regressions plus the K of K-nearest). Polynomial regression is a fourth that the building dot-point adds ('L-L-K plus polynomial'), but it is not one of the named core three (eliminates A).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2101-q02",
@@ -22,7 +27,12 @@
         "It fits a curve so it can capture relationships that bend"
       ],
       "answer": 0,
-      "explanation": "Linear regression predicts a continuous number by fitting the best straight line through the data — output equals a slope times the input plus an intercept, with the slope and intercept being the learned parameters (weights). Thresholding a probability (B) is logistic regression, comparison to similar examples (C) is K-nearest neighbour, and fitting a curve (D) is polynomial regression."
+      "explanation": "Linear regression predicts a continuous number by fitting the best straight line through the data — output equals a slope times the input plus an intercept, with the slope and intercept being the learned parameters (weights). Thresholding a probability (B) is logistic regression, comparison to similar examples (C) is K-nearest neighbour, and fitting a curve (D) is polynomial regression.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2101-q03",
@@ -34,7 +44,12 @@
         "It requires a service worker to run, which students often forget to add"
       ],
       "answer": 1,
-      "explanation": "The name actively misleads: despite the word 'regression', logistic regression is classification — it predicts a category, typically a yes-or-no, by passing a weighted sum through the sigmoid to produce a probability between 0 and 1 and thresholding it. The marquee line is 'linear predicts a number; logistic predicts a yes-or-no'. Speed (A) and curving data (B) are not the issue, and the service worker (D) belongs to a different topic entirely."
+      "explanation": "The name actively misleads: despite the word 'regression', logistic regression is classification — it predicts a category, typically a yes-or-no, by passing a weighted sum through the sigmoid to produce a probability between 0 and 1 and thresholding it. The marquee line is 'linear predicts a number; logistic predicts a yes-or-no'. Speed (A) and curving data (B) are not the issue, and the service worker (D) belongs to a different topic entirely.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2101-q04",
@@ -46,7 +61,12 @@
         "It takes any number and maps it to a value between 0 and 1, read as a probability that is then thresholded into a class"
       ],
       "answer": 3,
-      "explanation": "The sigmoid is the S-shaped squashing function that takes any number and maps it to a value between 0 and 1, read as a probability; if the probability is above one-half you predict yes, below you predict no. It is the same activation function met on a neuron last chapter. Fitting a curve (C) describes polynomial regression and measuring distance (D) describes K-nearest neighbour."
+      "explanation": "The sigmoid is the S-shaped squashing function that takes any number and maps it to a value between 0 and 1, read as a probability; if the probability is above one-half you predict yes, below you predict no. It is the same activation function met on a neuron last chapter. Fitting a curve (C) describes polynomial regression and measuring distance (D) describes K-nearest neighbour.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2101-q05",
@@ -58,7 +78,12 @@
         "It fits a high-degree curve that passes through every training point"
       ],
       "answer": 2,
-      "explanation": "K-nearest neighbour predicts by finding the K training examples closest (most similar) to the new point and letting them vote (majority class) or average (numeric value) — 'tell me your neighbours and I'll tell you who you are'. K is simply how many neighbours you consult. Crucially it does not fit a line or a curve (eliminates A and D); it predicts purely by comparison."
+      "explanation": "K-nearest neighbour predicts by finding the K training examples closest (most similar) to the new point and letting them vote (majority class) or average (numeric value) — 'tell me your neighbours and I'll tell you who you are'. K is simply how many neighbours you consult. Crucially it does not fit a line or a curve (eliminates A and D); it predicts purely by comparison.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2101-q06",
@@ -70,7 +95,12 @@
         "Both tasks use logistic regression because both are predictions"
       ],
       "answer": 2,
-      "explanation": "The tell is the output type every time: a number means linear, a yes-or-no (a category) means logistic. Temperature in degrees is a continuous number, so linear regression; rain or no rain is a binary category, so logistic regression. The trap is reasoning 'logistic, because it predicts the rain amount' — rain amount in millimetres would be linear, but rain-or-not is logistic."
+      "explanation": "The tell is the output type every time: a number means linear, a yes-or-no (a category) means logistic. Temperature in degrees is a continuous number, so linear regression; rain or no rain is a binary category, so logistic regression. The trap is reasoning 'logistic, because it predicts the rain amount' — rain amount in millimetres would be linear, but rain-or-not is logistic.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2101-q07",
@@ -82,7 +112,12 @@
         "fit applies the sigmoid function; predict applies the straight-line equation"
       ],
       "answer": 2,
-      "explanation": "Fit then predict is the universal shape of a model object: fit takes the training data and learns the parameters (slope and intercept, or weights, held as attributes), while predict takes a new input and applies those learned parameters to return a prediction. This is exactly the dot-fit/dot-predict interface scikit-learn uses. Option A reverses the two roles, which is the most tempting confusion."
+      "explanation": "Fit then predict is the universal shape of a model object: fit takes the training data and learns the parameters (slope and intercept, or weights, held as attributes), while predict takes a new input and applies those learned parameters to return a prediction. This is exactly the dot-fit/dot-predict interface scikit-learn uses. Option A reverses the two roles, which is the most tempting confusion.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2101-q08",
@@ -94,7 +129,12 @@
         "Overfitting is when training takes too many epochs; polynomial regression always needs the most epochs"
       ],
       "answer": 1,
-      "explanation": "Overfitting is when a model learns the training data too well — memorising its noise and quirks rather than the general pattern — so it scores brilliantly on training data but fails on new, unseen data. A high-degree polynomial can contort itself to pass through every single training point (zero training error) while matching only noise. Option A describes the opposite failure, underfitting — a model too simple to capture the real pattern."
+      "explanation": "Overfitting is when a model learns the training data too well — memorising its noise and quirks rather than the general pattern — so it scores brilliantly on training data but fails on new, unseen data. A high-degree polynomial can contort itself to pass through every single training point (zero training error) while matching only noise. Option A describes the opposite failure, underfitting — a model too simple to capture the real pattern.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2101-q09",
@@ -106,7 +146,12 @@
         "Because the sigmoid function only works on data the model has not yet seen"
       ],
       "answer": 2,
-      "explanation": "A model can memorise its training data, so scoring it on that same data tells you nothing about whether it actually learned the pattern — a pure overfitter can still get a perfect training score. The train-test split holds back a separate test set the model never sees during training; strong performance there is real evidence of generalisation, and a big train-much-greater-than-test gap reveals overfitting. The point is not test-set size (A) but unseen data."
+      "explanation": "A model can memorise its training data, so scoring it on that same data tells you nothing about whether it actually learned the pattern — a pure overfitter can still get a perfect training score. The train-test split holds back a separate test set the model never sees during training; strong performance there is real evidence of generalisation, and a big train-much-greater-than-test gap reveals overfitting. The point is not test-set size (A) but unseen data.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2101-q10",
@@ -118,7 +163,12 @@
         "The model is working correctly; an 18-point gap between training and test scores is normal and expected"
       ],
       "answer": 2,
-      "explanation": "The large gap between high training accuracy (98%) and low test accuracy (60%) is the signature of overfitting — the model memorised the training data rather than learning the general pattern. The fixes the exam wants are to simplify the model (a lower-degree polynomial, limiting tree depth/pruning), gather more training data, or apply regularisation. This is the same overconfidence that cost Zillow hundreds of millions when its overfitted model met a changed market, so the gap is not normal (D)."
+      "explanation": "The large gap between high training accuracy (98%) and low test accuracy (60%) is the signature of overfitting — the model memorised the training data rather than learning the general pattern. The fixes the exam wants are to simplify the model (a lower-degree polynomial, limiting tree depth/pruning), gather more training data, or apply regularisation. This is the same overconfidence that cost Zillow hundreds of millions when its overfitted model met a changed market, so the gap is not normal (D).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

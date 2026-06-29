@@ -10,7 +10,12 @@
         "They could not be detected reliably"
       ],
       "answer": 1,
-      "explanation": "Fundamental particles are meant to be a small, clean set from which everything is built. A hundred 'fundamental' things is the absence of an answer, not an answer — it hinted that these particles were really combinations of something more basic, which turned out to be quarks."
+      "explanation": "Fundamental particles are meant to be a small, clean set from which everything is built. A hundred 'fundamental' things is the absence of an answer, not an answer — it hinted that these particles were really combinations of something more basic, which turned out to be quarks.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "quarks-q02",
@@ -22,7 +27,12 @@
         "A new type of accelerator built at Brookhaven"
       ],
       "answer": 1,
-      "explanation": "One slot at the tip of the baryon decuplet was empty. The pattern was so tight that Gell-Mann predicted the missing particle's charge (-1), strangeness (-3) and mass. Its discovery at Brookhaven in 1964, with exactly those properties, confirmed the Eightfold Way — a prediction, not mere bookkeeping."
+      "explanation": "One slot at the tip of the baryon decuplet was empty. The pattern was so tight that Gell-Mann predicted the missing particle's charge (-1), strangeness (-3) and mass. Its discovery at Brookhaven in 1964, with exactly those properties, confirmed the Eightfold Way — a prediction, not mere bookkeeping.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "quarks-q03",
@@ -34,7 +44,12 @@
         "\\( -1 \\)"
       ],
       "answer": 1,
-      "explanation": "\\(+\\tfrac{2}{3} + \\tfrac{2}{3} - \\tfrac{1}{3} = +\\tfrac{3}{3} = +1\\), the observed proton charge. The neutron (up, down, down) gives \\(+\\tfrac{2}{3} - \\tfrac{1}{3} - \\tfrac{1}{3} = 0\\). The fractional quark charges combine to the whole-number charges we actually observe."
+      "explanation": "\\(+\\tfrac{2}{3} + \\tfrac{2}{3} - \\tfrac{1}{3} = +\\tfrac{3}{3} = +1\\), the observed proton charge. The neutron (up, down, down) gives \\(+\\tfrac{2}{3} - \\tfrac{1}{3} - \\tfrac{1}{3} = 0\\). The fractional quark charges combine to the whole-number charges we actually observe.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "quarks-q04",
@@ -46,7 +61,12 @@
         "Gell-Mann himself never published the idea"
       ],
       "answer": 1,
-      "explanation": "Every particle ever seen carried a whole-number multiple of \\(e\\). Quarks needed fractional charges (\\(\\pm\\tfrac{1}{3}, \\pm\\tfrac{2}{3}\\)), and no free quark turned up in any search. To most physicists they were an accounting trick of the symmetry algebra — until deep inelastic scattering showed otherwise."
+      "explanation": "Every particle ever seen carried a whole-number multiple of \\(e\\). Quarks needed fractional charges (\\(\\pm\\tfrac{1}{3}, \\pm\\tfrac{2}{3}\\)), and no free quark turned up in any search. To most physicists they were an accounting trick of the symmetry algebra — until deep inelastic scattering showed otherwise.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "quarks-q05",
@@ -58,7 +78,12 @@
         "Only high-energy electrons can pass through liquid hydrogen"
       ],
       "answer": 1,
-      "explanation": "By de Broglie, \\(\\lambda = h/p\\); higher momentum means shorter wavelength. To resolve sub-proton structure you need a wavelength smaller than ~1 fm, which demands electrons of several GeV and beyond — exactly why SLAC accelerated electrons up to 20 GeV."
+      "explanation": "By de Broglie, \\(\\lambda = h/p\\); higher momentum means shorter wavelength. To resolve sub-proton structure you need a wavelength smaller than ~1 fm, which demands electrons of several GeV and beyond — exactly why SLAC accelerated electrons up to 20 GeV.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "quarks-q06",
@@ -70,7 +95,12 @@
         "The photoelectric effect experiment"
       ],
       "answer": 1,
-      "explanation": "Just as Rutherford fired alpha particles at gold foil and saw large-angle scattering revealing a small hard nucleus, SLAC fired electrons at protons and saw unexpectedly frequent large-angle (deep inelastic) scattering — revealing small, hard, point-like objects (quarks) inside the proton."
+      "explanation": "Just as Rutherford fired alpha particles at gold foil and saw large-angle scattering revealing a small hard nucleus, SLAC fired electrons at protons and saw unexpectedly frequent large-angle (deep inelastic) scattering — revealing small, hard, point-like objects (quarks) inside the proton.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "quarks-q07",
@@ -82,7 +112,12 @@
         "The protons were completely destroyed before any scattering occurred"
       ],
       "answer": 1,
-      "explanation": "The hard scatters did not fall away as a soft blob would require — electrons bounced off at large angles far more often than predicted. The only explanation, echoing Rutherford, was small hard point-like kernels inside the proton: the quarks. The proton was a 'bag of marbles', not a smooth ball."
+      "explanation": "The hard scatters did not fall away as a soft blob would require — electrons bounced off at large angles far more often than predicted. The only explanation, echoing Rutherford, was small hard point-like kernels inside the proton: the quarks. The proton was a 'bag of marbles', not a smooth ball.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "quarks-q08",
@@ -94,7 +129,12 @@
         "The electromagnetic force binds them too tightly"
       ],
       "answer": 1,
-      "explanation": "Unlike gravity or electromagnetism, the strong force between quarks does not fade with distance — the flux-tube energy keeps growing as you pull them apart. Eventually that energy (via \\(E=mc^2\\)) creates a new quark-antiquark pair at the break point, giving new colour-neutral particles instead of a free quark. You can never win."
+      "explanation": "Unlike gravity or electromagnetism, the strong force between quarks does not fade with distance — the flux-tube energy keeps growing as you pull them apart. Eventually that energy (via \\(E=mc^2\\)) creates a new quark-antiquark pair at the break point, giving new colour-neutral particles instead of a free quark. You can never win.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "quarks-q09",
@@ -106,7 +146,12 @@
         "The strong force becomes infinite at short range"
       ],
       "answer": 1,
-      "explanation": "Asymptotic freedom means the strong force nearly vanishes at very short distances and high energies, so closely packed quarks rattle around almost freely — exactly why Feynman's partons appeared free in the violent SLAC scatters. Conversely the force is strong at long range, which causes confinement."
+      "explanation": "Asymptotic freedom means the strong force nearly vanishes at very short distances and high energies, so closely packed quarks rattle around almost freely — exactly why Feynman's partons appeared free in the violent SLAC scatters. Conversely the force is strong at long range, which causes confinement.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "quarks-q10",
@@ -118,7 +163,12 @@
         "Two quarks held by gravity"
       ],
       "answer": 1,
-      "explanation": "A baryon is three quarks bound by the strong force in a colour-neutral (red+green+blue) bundle — the proton (uud) and neutron (udd) are baryons. A quark-antiquark pair, by contrast, is a meson. A lone quark is never colour-neutral, so it cannot exist alone."
+      "explanation": "A baryon is three quarks bound by the strong force in a colour-neutral (red+green+blue) bundle — the proton (uud) and neutron (udd) are baryons. A quark-antiquark pair, by contrast, is a meson. A lone quark is never colour-neutral, so it cannot exist alone.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

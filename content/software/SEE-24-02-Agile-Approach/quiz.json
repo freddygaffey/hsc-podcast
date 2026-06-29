@@ -10,7 +10,12 @@
         "Documentation-driven, with comprehensive specifications signed off up front"
       ],
       "answer": 0,
-      "explanation": "Agile develops software iteratively and incrementally, so its rate of developing is incremental and continuous — working software is delivered frequently in short cycles rather than in one big drop. Option B and option C describe Waterfall ('Waterfall Falls once'), where value arrives sequentially and all at the end, not Agile's looping delivery."
+      "explanation": "Agile develops software iteratively and incrementally, so its rate of developing is incremental and continuous — working software is delivered frequently in short cycles rather than in one big drop. Option B and option C describe Waterfall ('Waterfall Falls once'), where value arrives sequentially and all at the end, not Agile's looping delivery.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2402-q02",
@@ -22,7 +27,12 @@
         "\"In order to [goal], the developer must [task] before [deadline].\""
       ],
       "answer": 1,
-      "explanation": "A user story captures a feature from the user's point of view in the fixed template 'As a [role], I want [functionality], so that [benefit]' — the role, the want, and the why. Option A is the Given-When-Then format used for acceptance criteria or test scenarios, not the user story structure itself, which is the classic exam trap."
+      "explanation": "A user story captures a feature from the user's point of view in the fixed template 'As a [role], I want [functionality], so that [benefit]' — the role, the want, and the why. Option A is the Given-When-Then format used for acceptance criteria or test scenarios, not the user story structure itself, which is the classic exam trap.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2402-q03",
@@ -34,7 +44,12 @@
         "Product, Sprint, Roles, Responsibilities"
       ],
       "answer": 2,
-      "explanation": "P-S-R-R names the four ceremonies: Plan (sprint planning), Standup (the daily fifteen-minute sync), Review (demonstrating the increment to stakeholders), and Retro (the retrospective on the team's process). Option A is tempting because 'Sprint' and 'Release' sound Agile, but the ceremonies are specifically the structured meetings — Plan, Standup, Review, Retro — not the artefacts."
+      "explanation": "P-S-R-R names the four ceremonies: Plan (sprint planning), Standup (the daily fifteen-minute sync), Review (demonstrating the increment to stakeholders), and Retro (the retrospective on the team's process). Option A is tempting because 'Sprint' and 'Release' sound Agile, but the ceremonies are specifically the structured meetings — Plan, Standup, Review, Retro — not the artefacts.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2402-q04",
@@ -46,7 +61,12 @@
         "The sprint must be completed within a single working day to maintain momentum"
       ],
       "answer": 2,
-      "explanation": "Time-boxed means the iteration has a fixed length, typically two weeks, that cannot be extended — when the box closes, the sprint ends regardless of progress, and unfinished work goes back into the backlog. Option A inverts this: extending the sprint to fit the work defeats the steady, predictable rhythm that time-boxing exists to create."
+      "explanation": "Time-boxed means the iteration has a fixed length, typically two weeks, that cannot be extended — when the box closes, the sprint ends regardless of progress, and unfinished work goes back into the backlog. Option A inverts this: extending the sprint to fit the work defeats the steady, predictable rhythm that time-boxing exists to create.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2402-q05",
@@ -58,7 +78,12 @@
         "The review and retrospective both demonstrate the product, but to different audiences"
       ],
       "answer": 2,
-      "explanation": "The distinction the exam loves: the Review is about the PRODUCT — demoing the working increment to stakeholders and gathering feedback — while the Retro is about the PROCESS — the team reflecting on what to start, stop, and continue to improve how it works. Option B swaps the standup's job (surfacing blockers) into the review, and confuses the two ceremonies the marker most wants you to keep separate."
+      "explanation": "The distinction the exam loves: the Review is about the PRODUCT — demoing the working increment to stakeholders and gathering feedback — while the Retro is about the PROCESS — the team reflecting on what to start, stop, and continue to improve how it works. Option B swaps the standup's job (surfacing blockers) into the review, and confuses the two ceremonies the marker most wants you to keep separate.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2402-q06",
@@ -70,7 +95,12 @@
         "Agile values working software over comprehensive documentation, but 'over' does not mean 'instead of' — it still plans every sprint and documents lightly and continuously"
       ],
       "answer": 3,
-      "explanation": "Agile values working software over comprehensive documentation and responding to change over following a plan, but 'over' is a preference, not a replacement — it plans every single sprint and documents lightly and continuously rather than in giant upfront tomes. In an exam you should write 'Agile uses lighter, evolving documentation produced as needed', never 'Agile has no documentation', which is the trap that loses marks."
+      "explanation": "Agile values working software over comprehensive documentation and responding to change over following a plan, but 'over' is a preference, not a replacement — it plans every single sprint and documents lightly and continuously rather than in giant upfront tomes. In an exam you should write 'Agile uses lighter, evolving documentation produced as needed', never 'Agile has no documentation', which is the trap that loses marks.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2402-q07",
@@ -82,7 +112,12 @@
         "Dropping any ceremony or practice a team finds inconvenient during a sprint"
       ],
       "answer": 1,
-      "explanation": "Method tailoring means adapting Agile practices — such as shortening sprints, adjusting ceremonies, or blending Scrum's sprints with Kanban's continuous flow — to suit the team, project, and context instead of following one recipe rigidly. Option D is the misconception to avoid: tailoring requires judgement and is a strength of Agile's flexibility, not a licence to abandon discipline."
+      "explanation": "Method tailoring means adapting Agile practices — such as shortening sprints, adjusting ceremonies, or blending Scrum's sprints with Kanban's continuous flow — to suit the team, project, and context instead of following one recipe rigidly. Option D is the misconception to avoid: tailoring requires judgement and is a strength of Agile's flexibility, not a licence to abandon discipline.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2402-q08",
@@ -94,7 +129,12 @@
         "Both embrace change equally, differing only in how much documentation they produce"
       ],
       "answer": 2,
-      "explanation": "Waterfall gathers client feedback late, near the end, and resists change once a phase is signed off, so late changes trigger expensive backflows; Agile gathers feedback every sprint review and embraces change at every iteration. This contrast across feedback timing and change-handling is captured by the paired hooks 'Waterfall Falls once' (one pass, late feedback) and 'Agile Goes around' (looping, continuous feedback)."
+      "explanation": "Waterfall gathers client feedback late, near the end, and resists change once a phase is signed off, so late changes trigger expensive backflows; Agile gathers feedback every sprint review and embraces change at every iteration. This contrast across feedback timing and change-handling is captured by the paired hooks 'Waterfall Falls once' (one pass, late feedback) and 'Agile Goes around' (looping, continuous feedback).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2402-q09",
@@ -106,7 +146,12 @@
         "The sprint is paused and extended until the schema dependency is resolved"
       ],
       "answer": 1,
-      "explanation": "The daily standup's job is to surface blockers fast, not to solve them in the meeting — in the worked example the dependency is flagged and then unblocked the same day outside the fifteen-minute sync. Option A is the common mistake: the standup is a strict fifteen-minute synchronisation, so problem-solving happens afterwards, keeping the meeting short."
+      "explanation": "The daily standup's job is to surface blockers fast, not to solve them in the meeting — in the worked example the dependency is flagged and then unblocked the same day outside the fifteen-minute sync. Option A is the common mistake: the standup is a strict fifteen-minute synchronisation, so problem-solving happens afterwards, keeping the meeting short.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2402-q10",
@@ -118,7 +163,12 @@
         "Either approach works equally well, since both deliver the same software in the end"
       ],
       "answer": 2,
-      "explanation": "The defining condition is rapidly changing requirements, so Agile is more appropriate: its iterative sprints embrace change at every iteration and surface it through continuous sprint-review feedback, whereas Waterfall would force costly backflows each time a requirement shifts. Option A is a true description of Waterfall's strengths, but predictability and documentation are not what this project needs — matching the recommendation to the changing-requirements condition is what earns the marks."
+      "explanation": "The defining condition is rapidly changing requirements, so Agile is more appropriate: its iterative sprints embrace change at every iteration and surface it through continuous sprint-review feedback, whereas Waterfall would force costly backflows each time a requirement shifts. Option A is a true description of Waterfall's strengths, but predictability and documentation are not what this project needs — matching the recommendation to the changing-requirements condition is what earns the marks.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

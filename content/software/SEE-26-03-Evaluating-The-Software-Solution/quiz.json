@@ -10,7 +10,12 @@
         "Compare, Execute, Report"
       ],
       "answer": 1,
-      "explanation": "C-E-R is the marquee evaluation mnemonic for the whole module: Criteria (the measurable standards you judge against), Evidence (the proof from tests and feedback), and Reflection (looking back on maintainability, deployment, and lessons learned). Every strong evaluation has all three. Option A confuses this with the C-U-P-S quality criteria, which are only one part of the 'C' in C-E-R."
+      "explanation": "C-E-R is the marquee evaluation mnemonic for the whole module: Criteria (the measurable standards you judge against), Evidence (the proof from tests and feedback), and Reflection (looking back on maintainability, deployment, and lessons learned). Every strong evaluation has all three. Option A confuses this with the C-U-P-S quality criteria, which are only one part of the 'C' in C-E-R.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2603-q02",
@@ -22,7 +27,12 @@
         "Recommend improvements to the code without reference to the original requirements"
       ],
       "answer": 2,
-      "explanation": "To 'evaluate' means to weigh up strengths and weaknesses against a yardstick (the criteria) with proof, then reach a conclusion. The script's single biggest trap-killer is that evaluation is NOT 'it works' — writing 'the program runs and does what I wanted' earns a band four. Option A is exactly that trap, and option B is testing, which only produces evidence rather than the judgement evaluation demands."
+      "explanation": "To 'evaluate' means to weigh up strengths and weaknesses against a yardstick (the criteria) with proof, then reach a conclusion. The script's single biggest trap-killer is that evaluation is NOT 'it works' — writing 'the program runs and does what I wanted' earns a band four. Option A is exactly that trap, and option B is testing, which only produces evidence rather than the judgement evaluation demands.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2603-q03",
@@ -34,7 +44,12 @@
         "Correctness, Uptime, Performance, Stability"
       ],
       "answer": 0,
-      "explanation": "C-U-P-S — Correctness, Usability, Performance, Security — comes from quality assurance (24-06) and supplies the measurable standards you evaluate against. The script stresses that QA criteria become the evaluation criteria. The other options swap in plausible-sounding but incorrect non-functional terms that are not the four named in the syllabus."
+      "explanation": "C-U-P-S — Correctness, Usability, Performance, Security — comes from quality assurance (24-06) and supplies the measurable standards you evaluate against. The script stresses that QA criteria become the evaluation criteria. The other options swap in plausible-sounding but incorrect non-functional terms that are not the four named in the syllabus.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2603-q04",
@@ -46,7 +61,12 @@
         "It measures how fast the program runs so that performance can be judged"
       ],
       "answer": 1,
-      "explanation": "For each test the expected output is derived from the requirement and the actual output is what the system produced; a match is evidence the criterion is met, while a discrepancy is a finding to analyse for its gap, severity, and likely cause. This turns evaluation from a subjective opinion into an evidence-based judgement and directly tests correctness, the C of C-U-P-S. A discrepancy is a finding, not a failure to hide — so option A, which treats all output as proof of correctness, is wrong."
+      "explanation": "For each test the expected output is derived from the requirement and the actual output is what the system produced; a match is evidence the criterion is met, while a discrepancy is a finding to analyse for its gap, severity, and likely cause. This turns evaluation from a subjective opinion into an evidence-based judgement and directly tests correctness, the C of C-U-P-S. A discrepancy is a finding, not a failure to hide — so option A, which treats all output as proof of correctness, is wrong.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2603-q05",
@@ -58,7 +78,12 @@
         "Reporting that the feature works overall because most tests passed"
       ],
       "answer": 2,
-      "explanation": "Discrepancy analysis means stating the expected, the actual, the size of the gap, its severity, and the likely cause — for example, 'expected: conflict detected; actual: no conflicts detected; high severity; likely a logic error in the conflict-detection branch a path test should have caught.' Hiding a slow or wrong result (options B and D) is the weak, band-four move; evaluation rewards honest judgement with evidence, not pretending everything passed."
+      "explanation": "Discrepancy analysis means stating the expected, the actual, the size of the gap, its severity, and the likely cause — for example, 'expected: conflict detected; actual: no conflicts detected; high severity; likely a logic error in the conflict-detection branch a path test should have caught.' Hiding a slow or wrong result (options B and D) is the weak, band-four move; evaluation rewards honest judgement with evidence, not pretending everything passed.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2603-q06",
@@ -70,7 +95,12 @@
         "State that the search works and move on to the next test case"
       ],
       "answer": 1,
-      "explanation": "It is a fail against that criterion, and evaluation means saying so honestly: 'actual 3.1 s against an expected under 2 s, so the performance criterion is not met; the 1.1 s gap is likely an un-indexed query; recommendation is to add an index.' That compares actual versus expected, judges against the criterion, analyses the cause, and recommends a fix. Options A, C, and D all hide the slow result or fall back on 'search works', which is the weak answer the script warns against."
+      "explanation": "It is a fail against that criterion, and evaluation means saying so honestly: 'actual 3.1 s against an expected under 2 s, so the performance criterion is not met; the 1.1 s gap is likely an un-indexed query; recommendation is to add an index.' That compares actual versus expected, judges against the criterion, analyses the cause, and recommends a fix. Options A, C, and D all hide the slow result or fall back on 'search works', which is the weak answer the script warns against.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2603-q07",
@@ -82,7 +112,12 @@
         "Testing only checks security, whereas evaluation only checks performance"
       ],
       "answer": 2,
-      "explanation": "Testing is the activity of running test cases to detect defects and gather data, such as comparing actual and expected outputs. Evaluation is the broader judgement of the solution's overall effectiveness against its criteria, using test results as one source of evidence alongside synthesised feedback, plus reflection. In short, testing produces evidence; evaluation interprets it — option B reverses these two roles."
+      "explanation": "Testing is the activity of running test cases to detect defects and gather data, such as comparing actual and expected outputs. Evaluation is the broader judgement of the solution's overall effectiveness against its criteria, using test results as one source of evidence alongside synthesised feedback, plus reflection. In short, testing produces evidence; evaluation interprets it — option B reverses these two roles.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2603-q08",
@@ -94,7 +129,12 @@
         "Maintainability, deployment readiness, and lessons learned for next time"
       ],
       "answer": 3,
-      "explanation": "Reflection is a third of the hook and considers the bigger picture: maintainability (is the code documented and structured to extend), deployment readiness (backups and rollback in place), and lessons learned. A reflection such as 'the modular structure makes this easy to extend, though error-handling test coverage is a gap' is the kind of mature judgement markers reward. The most tempting wrong option is the total number of test cases and their pass rate, but that is test data which belongs under Evidence, not Reflection."
+      "explanation": "Reflection is a third of the hook and considers the bigger picture: maintainability (is the code documented and structured to extend), deployment readiness (backups and rollback in place), and lessons learned. A reflection such as 'the modular structure makes this easy to extend, though error-handling test coverage is a gap' is the kind of mature judgement markers reward. The most tempting wrong option is the total number of test cases and their pass rate, but that is test data which belongs under Evidence, not Reflection.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2603-q09",
@@ -106,7 +146,12 @@
         "I-E-P — Interactive, E-commerce, PWA"
       ],
       "answer": 2,
-      "explanation": "C-E-R and M-A-I (Measure, Audit, Improve, from SSA 19-04) are the same idea in different clothes: measure against criteria, audit the evidence, improve from the reflection. Noting this cross-module echo shows synthesis across the course. C-S-A is the feedback-analysis hook from 26-02 (the source of one evidence stream), not the security loop, so option A is the tempting trap."
+      "explanation": "C-E-R and M-A-I (Measure, Audit, Improve, from SSA 19-04) are the same idea in different clothes: measure against criteria, audit the evidence, improve from the reflection. Noting this cross-module echo shows synthesis across the course. C-S-A is the feedback-analysis hook from 26-02 (the source of one evidence stream), not the security loop, so option A is the tempting trap.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2603-q10",
@@ -118,7 +163,12 @@
         "It is strong because reflection on maintainability is not required for checkout features"
       ],
       "answer": 1,
-      "explanation": "This is the classic band-four answer: no criteria stated, no evidence, no judgement, no reflection. A band-six response restates the measurable criterion, presents evidence from actual-versus-expected testing (e.g. 'two steps, but 5.4 s against an expected under 5 s'), and synthesised feedback, reaches an honest judgement of partial effectiveness, and reflects on maintainability and lessons. Option A mistakes 'it works' for evaluation, which the script identifies as the single biggest trap."
+      "explanation": "This is the classic band-four answer: no criteria stated, no evidence, no judgement, no reflection. A band-six response restates the measurable criterion, presents evidence from actual-versus-expected testing (e.g. 'two steps, but 5.4 s against an expected under 5 s'), and synthesised feedback, reaches an honest judgement of partial effectiveness, and reflects on maintainability and lessons. Option A mistakes 'it works' for evaluation, which the script identifies as the single biggest trap.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

@@ -10,7 +10,12 @@
         "Multi-platform, Interactive, Secure, Open-source"
       ],
       "answer": 0,
-      "explanation": "MISO — Manifest, Installable, Service worker, Offline — names the four components that turn an ordinary website into a PWA. The manifest is the how of installation and installable is the what; the service worker is the how of offline and offline is the result. Distractors like 'Mobile' and 'Standalone' borrow real PWA vocabulary but are not the four MISO components."
+      "explanation": "MISO — Manifest, Installable, Service worker, Offline — names the four components that turn an ordinary website into a PWA. The manifest is the how of installation and installable is the what; the service worker is the how of offline and offline is the result. Distractors like 'Mobile' and 'Standalone' borrow real PWA vocabulary but are not the four MISO components.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1304-q02",
@@ -22,7 +27,12 @@
         "A cache of the app shell files that lets the app load without a network connection"
       ],
       "answer": 1,
-      "explanation": "The manifest is a small JSON file that describes the app to the browser — its name, icons, theme colour, and crucially a 'standalone' display mode — which is what lets the browser install the app to the home screen. The script frames the manifest as the 'how' of installation. Option A describes the service worker, and option D describes what the service worker's cache does, not the manifest."
+      "explanation": "The manifest is a small JSON file that describes the app to the browser — its name, icons, theme colour, and crucially a 'standalone' display mode — which is what lets the browser install the app to the home screen. The script frames the manifest as the 'how' of installation. Option A describes the service worker, and option D describes what the service worker's cache does, not the manifest.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1304-q03",
@@ -34,7 +44,12 @@
         "It re-downloads the whole page from a nearby CDN edge server whenever the connection drops"
       ],
       "answer": 2,
-      "explanation": "A service worker is a background script that acts as a programmable proxy: it intercepts every network request and decides whether to fetch from the network or serve a cached copy. On first visit it caches the app shell (HTML, CSS, JavaScript, icons); when the network is gone it serves those cached files instead of failing. The mark-earning sentence from the script is that it 'enables offline functionality by intercepting network requests and serving previously cached resources when the network is unavailable.'"
+      "explanation": "A service worker is a background script that acts as a programmable proxy: it intercepts every network request and decides whether to fetch from the network or serve a cached copy. On first visit it caches the app shell (HTML, CSS, JavaScript, icons); when the network is gone it serves those cached files instead of failing. The mark-earning sentence from the script is that it 'enables offline functionality by intercepting network requests and serving previously cached resources when the network is unavailable.'",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1304-q04",
@@ -46,7 +61,12 @@
         "The push-notification messages queued for delivery while offline"
       ],
       "answer": 2,
-      "explanation": "The script defines the app shell as the app's essential files — the HTML, CSS, JavaScript, and icons — which the service worker caches on first load so the app can still open offline. The app shell is the structure of the app, not the user's content; new data the user creates offline is queued and synced separately. Confusing the shell with user data (option A) misses what is actually cached for offline loading."
+      "explanation": "The script defines the app shell as the app's essential files — the HTML, CSS, JavaScript, and icons — which the service worker caches on first load so the app can still open offline. The app shell is the structure of the app, not the user's content; new data the user creates offline is queued and synced separately. Confusing the shell with user data (option A) misses what is actually cached for offline loading.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1304-q05",
@@ -58,7 +78,12 @@
         "A responsive website adapts its layout to screen size (appearance), while a PWA is additionally installable via a manifest and works offline via a service worker (capability)"
       ],
       "answer": 3,
-      "explanation": "This is the module's most persistent trap. Responsive design is about appearance — layout adapting across screen sizes — and an ordinary website can be responsive. A PWA is distinguished by capability: installable through a manifest and offline through a service worker. A site can be fully responsive without being a PWA, which is why the 'no meaningful difference' option is wrong, and the appearance-versus-capability contrast is the discriminating mark."
+      "explanation": "This is the module's most persistent trap. Responsive design is about appearance — layout adapting across screen sizes — and an ordinary website can be responsive. A PWA is distinguished by capability: installable through a manifest and offline through a service worker. A site can be fully responsive without being a PWA, which is why the 'no meaningful difference' option is wrong, and the appearance-versus-capability contrast is the discriminating mark.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1304-q06",
@@ -70,7 +95,12 @@
         "Performance caching stores user data while offline caching stores only images"
       ],
       "answer": 1,
-      "explanation": "The script stresses it is the 'same mechanism, repurposed.' Last episode caching stored assets so they did not have to be re-downloaded, making repeat visits faster; a service worker caches the app shell with the exact same idea but serves the cache when there is no network at all, turning a performance trick into offline capability. The progression is caching for speed, then caching for offline — not two separate or competing mechanisms."
+      "explanation": "The script stresses it is the 'same mechanism, repurposed.' Last episode caching stored assets so they did not have to be re-downloaded, making repeat visits faster; a service worker caches the app shell with the exact same idea but serves the cache when there is no network at all, turning a performance trick into offline capability. The progression is caching for speed, then caching for offline — not two separate or competing mechanisms.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1304-q07",
@@ -82,7 +112,12 @@
         "HTTPS is only needed so the app can appear in the device's app store"
       ],
       "answer": 0,
-      "explanation": "A service worker can intercept and modify all of the app's network traffic, which is powerful and security-sensitive, so browsers insist the app is served over HTTPS to ensure the connection and the service worker cannot be tampered with. This ties back to secure transport — TLS on port 443, the 'Tasty' in Dogs Take Tasty Hambones. The requirement is about tamper protection, not display mode (A) or app-store listing (D)."
+      "explanation": "A service worker can intercept and modify all of the app's network traffic, which is powerful and security-sensitive, so browsers insist the app is served over HTTPS to ensure the connection and the service worker cannot be tampered with. This ties back to secure transport — TLS on port 443, the 'Tasty' in Dogs Take Tasty Hambones. The requirement is about tamper protection, not display mode (A) or app-store listing (D).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1304-q08",
@@ -94,7 +129,12 @@
         "The app shell cannot be made accessible because it loads from a cache rather than the network"
       ],
       "answer": 1,
-      "explanation": "The script names this as a trap: never neglect accessibility in the PWA shell. Because a PWA looks like a native app, it raises the design bar rather than excusing it, and WCAG's POUR principles still apply — keyboard operability, sufficient contrast, text alternatives, and announcing state changes like 'you are now offline' to screen readers. A PWA that isn't accessible has failed inclusivity, full stop, so the lead's reasoning is exactly backwards."
+      "explanation": "The script names this as a trap: never neglect accessibility in the PWA shell. Because a PWA looks like a native app, it raises the design bar rather than excusing it, and WCAG's POUR principles still apply — keyboard operability, sufficient contrast, text alternatives, and announcing state changes like 'you are now offline' to screen readers. A PWA that isn't accessible has failed inclusivity, full stop, so the lead's reasoning is exactly backwards.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1304-q09",
@@ -106,7 +146,12 @@
         "Add push notifications, a database, and a login system"
       ],
       "answer": 1,
-      "explanation": "The script's worked example gives exactly three additions, straight from MISO: add a web app manifest so the browser can install it, register a service worker that intercepts network requests, and in that service worker cache the app shell on first load. Option A lists the C-C-C-L performance toolkit from the previous episode, which speeds the site up but does not make it a PWA. The three MISO additions are what create installability and offline capability."
+      "explanation": "The script's worked example gives exactly three additions, straight from MISO: add a web app manifest so the browser can install it, register a service worker that intercepts network requests, and in that service worker cache the app shell on first load. Option A lists the C-C-C-L performance toolkit from the previous episode, which speeds the site up but does not make it a PWA. The three MISO additions are what create installability and offline capability.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1304-q10",
@@ -118,7 +163,12 @@
         "Force the user to reload the page until the connection is restored"
       ],
       "answer": 2,
-      "explanation": "Feedback matters extra in a PWA: because it works offline you must clearly tell the user when they are offline and that their changes will sync later — silent failure is terrible UX. The accessible fix combines C-FAN-H feedback with POUR by showing a visible banner and announcing the state change to screen readers, while queued offline data syncs on reconnection. Removing offline support or disabling the service worker throws away the PWA's core capability rather than fixing the feedback problem."
+      "explanation": "Feedback matters extra in a PWA: because it works offline you must clearly tell the user when they are offline and that their changes will sync later — silent failure is terrible UX. The accessible fix combines C-FAN-H feedback with POUR by showing a visible banner and announcing the state change to screen readers, while queued offline data syncs on reconnection. Removing offline support or disabling the service worker throws away the PWA's core capability rather than fixing the feedback problem.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

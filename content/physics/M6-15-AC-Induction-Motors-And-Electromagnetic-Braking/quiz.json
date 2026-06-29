@@ -10,7 +10,12 @@
         "Permanent magnets are physically spun by a small motor"
       ],
       "answer": 1,
-      "explanation": "Because the three currents peak at different instants, the vector sum of the three coil fields points in a continuously changing direction, sweeping round the stator. A single coil on AC only oscillates back and forth along one axis — it does not rotate."
+      "explanation": "Because the three currents peak at different instants, the vector sum of the three coil fields points in a continuously changing direction, sweeping round the stator. A single coil on AC only oscillates back and forth along one axis — it does not rotate.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m615-q02",
@@ -22,7 +27,12 @@
         "Both magnitude and direction pulsing randomly"
       ],
       "answer": 1,
-      "explanation": "The rotating field is of fixed strength whose direction goes round and round — like a clock's second hand that never speeds up or slows. It is not a field that pulses bigger and smaller."
+      "explanation": "The rotating field is of fixed strength whose direction goes round and round — like a clock's second hand that never speeds up or slows. It is not a field that pulses bigger and smaller.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m615-q03",
@@ -34,7 +44,12 @@
         "The speed of the eddy currents in the core"
       ],
       "answer": 1,
-      "explanation": "Synchronous speed is the speed of the rotating field, set by the supply frequency. At 50 Hz it is 50 rotations per second, which for a single pole-pair is \\( 50 \\times 60 = 3000\\,\\mathrm{rpm} \\)."
+      "explanation": "Synchronous speed is the speed of the rotating field, set by the supply frequency. At 50 Hz it is 50 rotations per second, which for a single pole-pair is \\( 50 \\times 60 = 3000\\,\\mathrm{rpm} \\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m615-q04",
@@ -46,7 +61,12 @@
         "iv → iii → ii → i"
       ],
       "answer": 1,
-      "explanation": "Rotating field sweeps past the bars (iii) → relative motion changes the flux (ii) → Faraday induces a current in the short-circuited bars (i) → the motor effect gives a force, aimed by Lenz's law to drag the rotor in the field's direction (iv). 'Rotating round, Faraday's force, Lenz follows.'"
+      "explanation": "Rotating field sweeps past the bars (iii) → relative motion changes the flux (ii) → Faraday induces a current in the short-circuited bars (i) → the motor effect gives a force, aimed by Lenz's law to drag the rotor in the field's direction (iv). 'Rotating round, Faraday's force, Lenz follows.'",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m615-q05",
@@ -58,7 +78,12 @@
         "The end rings disconnect at high speed"
       ],
       "answer": 1,
-      "explanation": "If the rotor matched the field, the relative motion would be zero, so the flux would stop changing, so (by Faraday) no EMF and no current, so no force and no torque. The rotor would immediately slow and fall behind — it must always run slightly slower (it 'slips')."
+      "explanation": "If the rotor matched the field, the relative motion would be zero, so the flux would stop changing, so (by Faraday) no EMF and no current, so no force and no torque. The rotor would immediately slow and fall behind — it must always run slightly slower (it 'slips').",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m615-q06",
@@ -70,7 +95,12 @@
         "The frequency mismatch between the three phases"
       ],
       "answer": 1,
-      "explanation": "Slip is not a fault — without it there is no relative motion and no torque. It is also self-regulating: a heavier load slows the rotor, increasing slip, which speeds the flux change, raising the induced current and torque to meet the load automatically."
+      "explanation": "Slip is not a fault — without it there is no relative motion and no torque. It is also self-regulating: a heavier load slows the rotor, increasing slip, which speeds the flux change, raising the induced current and torque to meet the load automatically.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m615-q07",
@@ -82,7 +112,12 @@
         "All eddy currents are useful and are encouraged everywhere"
       ],
       "answer": 1,
-      "explanation": "The induced currents in the short-circuited rotor bars are exactly what produce the force and torque. The same alternating flux also induces wasteful currents in the solid iron core, which only heat it — these are suppressed by laminating the core. Laminations do NOT reduce the torque-producing bar currents."
+      "explanation": "The induced currents in the short-circuited rotor bars are exactly what produce the force and torque. The same alternating flux also induces wasteful currents in the solid iron core, which only heat it — these are suppressed by laminating the core. Laminations do NOT reduce the torque-producing bar currents.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m615-q08",
@@ -94,7 +129,12 @@
         "The conductor is repelled by a like magnetic pole"
       ],
       "answer": 1,
-      "explanation": "A conductor moving through a field has a changing flux, inducing eddy currents (Faraday). By Lenz's law these oppose the change — the motion — producing a braking force. The kinetic energy is dissipated as heat (\\( I^2R \\)) in the conductor."
+      "explanation": "A conductor moving through a field has a changing flux, inducing eddy currents (Faraday). By Lenz's law these oppose the change — the motion — producing a braking force. The kinetic energy is dissipated as heat (\\( I^2R \\)) in the conductor.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m615-q09",
@@ -106,7 +146,12 @@
         "Friction takes over and stops it instantly"
       ],
       "answer": 1,
-      "explanation": "Faster motion gives a faster flux change, larger eddy currents, and a larger force. As speed drops the force drops, approaching zero at rest — so the brake tapers off smoothly (its great virtue) but cannot deliver the final stop, which is why a friction brake is usually added."
+      "explanation": "Faster motion gives a faster flux change, larger eddy currents, and a larger force. As speed drops the force drops, approaching zero at rest — so the brake tapers off smoothly (its great virtue) but cannot deliver the final stop, which is why a friction brake is usually added.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m615-q10",
@@ -118,7 +163,12 @@
         "A motor stores energy; a generator releases it"
       ],
       "answer": 1,
-      "explanation": "A motor turns electrical energy into rotational kinetic (mechanical) energy; a generator turns mechanical kinetic energy into electrical energy. They are the same device run in opposite directions — the exam tests the direction of conversion, so name both forms."
+      "explanation": "A motor turns electrical energy into rotational kinetic (mechanical) energy; a generator turns mechanical kinetic energy into electrical energy. They are the same device run in opposite directions — the exam tests the direction of conversion, so name both forms.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

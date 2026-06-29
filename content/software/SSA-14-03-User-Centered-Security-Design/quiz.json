@@ -10,7 +10,12 @@
         "Usable systems are inherently insecure because convenience requires removing controls"
       ],
       "answer": 2,
-      "explanation": "The paradox is that more friction is NOT more secure: when security is hard to use, users work around it, and those workarounds introduce new vulnerabilities, so usability is itself a security requirement. The chain to remember is 'hard to use, so worked around, so insecure'. Option A is the named trap — the naive belief that more steps equals more security — which the paradox directly refutes."
+      "explanation": "The paradox is that more friction is NOT more secure: when security is hard to use, users work around it, and those workarounds introduce new vulnerabilities, so usability is itself a security requirement. The chain to remember is 'hard to use, so worked around, so insecure'. Option A is the named trap — the naive belief that more steps equals more security — which the paradox directly refutes.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1403-q02",
@@ -22,7 +27,12 @@
         "Confidentiality, Integrity, Availability, and Authentication"
       ],
       "answer": 1,
-      "explanation": "Users vary along Skill (technical understanding), Device (smartphone-only logins exclude some users), Context (public Wi-Fi, shared family computers), and Ability (accessibility for users with disabilities). Option C lists parts of STRIDE — threat modelling from the previous episode — and option D lists security properties formalised next chapter, so both are real syllabus terms applied to the wrong question."
+      "explanation": "Users vary along Skill (technical understanding), Device (smartphone-only logins exclude some users), Context (public Wi-Fi, shared family computers), and Ability (accessibility for users with disabilities). Option C lists parts of STRIDE — threat modelling from the previous episode — and option D lists security properties formalised next chapter, so both are real syllabus terms applied to the wrong question.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1403-q03",
@@ -34,7 +44,12 @@
         "The policy applied only to administrators, leaving ordinary user accounts unprotected"
       ],
       "answer": 1,
-      "explanation": "The complexity policy exceeded users' capability to comply, so they bypassed it — writing passwords in plain sight and using predictable increments. The human workaround created a worse vulnerability than weak passwords would have, decreasing security rather than increasing it. This is the security-usability paradox in action: difficult security became bypassed security."
+      "explanation": "The complexity policy exceeded users' capability to comply, so they bypassed it — writing passwords in plain sight and using predictable increments. The human workaround created a worse vulnerability than weak passwords would have, decreasing security rather than increasing it. This is the security-usability paradox in action: difficult security became bypassed security.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1403-q04",
@@ -46,7 +61,12 @@
         "Users must complete a security tutorial before the default settings unlock"
       ],
       "answer": 2,
-      "explanation": "'Secure default' means a user who does nothing is still protected without needing expertise; 'easy right path' means the secure way is the easiest way, so users have no incentive to find an insecure shortcut. Naming both halves is the mark. Option A inverts the principle by making security an opt-in for experts, which the episode explicitly rejects."
+      "explanation": "'Secure default' means a user who does nothing is still protected without needing expertise; 'easy right path' means the secure way is the easiest way, so users have no incentive to find an insecure shortcut. Naming both halves is the mark. Option A inverts the principle by making security an opt-in for experts, which the episode explicitly rejects.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1403-q05",
@@ -58,7 +78,12 @@
         "Recoverable security — assuming people make mistakes and giving safe recovery paths instead of a permanent lockout"
       ],
       "answer": 3,
-      "explanation": "'Survive' is recoverable security: it assumes users make mistakes and provides account recovery options rather than a permanent lockout that could lose someone a financial-aid deadline. Option A is 'Show' (transparency), option B is 'Scale' (progressive security), and option C is 'Guide' (contextual guidance) — all four are real features in the mnemonic, but only Survive matches the recovery-from-mistakes idea."
+      "explanation": "'Survive' is recoverable security: it assumes users make mistakes and provides account recovery options rather than a permanent lockout that could lose someone a financial-aid deadline. Option A is 'Show' (transparency), option B is 'Scale' (progressive security), and option C is 'Guide' (contextual guidance) — all four are real features in the mnemonic, but only Survive matches the recovery-from-mistakes idea.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1403-q06",
@@ -70,7 +95,12 @@
         "A user persona is a marketing tool, while an abuse case is a legal compliance document"
       ],
       "answer": 2,
-      "explanation": "A persona asks 'what does Alex want to do?' to keep security usable; an abuse case asks 'how would an attacker exploit this?' to keep security effective — good design needs both, modelled simultaneously. Option A reverses the two definitions, which is the most tempting trap because both terms sound similar. User-centred design is not naive: you design for the legitimate user and against the abuser at the same time."
+      "explanation": "A persona asks 'what does Alex want to do?' to keep security usable; an abuse case asks 'how would an attacker exploit this?' to keep security effective — good design needs both, modelled simultaneously. Option A reverses the two definitions, which is the most tempting trap because both terms sound similar. User-centred design is not naive: you design for the legitimate user and against the abuser at the same time.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1403-q07",
@@ -82,7 +112,12 @@
         "Training is effective, but it should be delivered annually rather than once"
       ],
       "answer": 1,
-      "explanation": "The weak answer is the named trap: it blames the human for a design failure instead of fixing the design, so the unusable policy stays in place and the bypass continues. The strong answer reframes the failure as a design problem — allowing passphrases, removing arbitrary changes, adding live guidance and MFA — so the human succeeds. 'Design failure, not user failure' is the whole lesson."
+      "explanation": "The weak answer is the named trap: it blames the human for a design failure instead of fixing the design, so the unusable policy stays in place and the bypass continues. The strong answer reframes the failure as a design problem — allowing passphrases, removing arbitrary changes, adding live guidance and MFA — so the human succeeds. 'Design failure, not user failure' is the whole lesson.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1403-q08",
@@ -94,7 +129,12 @@
         "Force users onto a single smartphone-only login method to standardise the experience"
       ],
       "answer": 2,
-      "explanation": "Progressive security matches authentication strength to the risk of each action, so frequent low-risk tasks stay frictionless while irreversible high-impact actions get stronger checks. Option B repeats the 'more friction equals more secure' trap, which causes users to circumvent the control. Option D fails the Device axis by excluding users without a suitable smartphone."
+      "explanation": "Progressive security matches authentication strength to the risk of each action, so frequent low-risk tasks stay frictionless while irreversible high-impact actions get stronger checks. Option B repeats the 'more friction equals more secure' trap, which causes users to circumvent the control. Option D fails the Device axis by excluding users without a suitable smartphone.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1403-q09",
@@ -106,7 +146,12 @@
         "A responsive layout and faster page-load times"
       ],
       "answer": 0,
-      "explanation": "The grade-tampering abuse case is countered by authorisation checks (verifying the user is permitted to perform the action) plus audit logging (recording the attempt) — the accountability and authorisation properties met formally next chapter as part of CIA-AAA. Data minimisation (option C) is the response to the identity-thief harvesting abuse case, not grade tampering, so it targets the wrong threat."
+      "explanation": "The grade-tampering abuse case is countered by authorisation checks (verifying the user is permitted to perform the action) plus audit logging (recording the attempt) — the accountability and authorisation properties met formally next chapter as part of CIA-AAA. Data minimisation (option C) is the response to the identity-thief harvesting abuse case, not grade tampering, so it targets the wrong threat.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1403-q10",
@@ -118,7 +163,12 @@
         "Because usability testing is the cheapest phase of the software development life cycle"
       ],
       "answer": 1,
-      "explanation": "Usability is a security property because the most technically secure design can be the least secure system in practice if real users bypass it — and their bypasses create vulnerabilities worse than the original threat. This is the band-six insight at the heart of the episode. Option C is true in general (it links to inclusive design) but it is not the reason usability counts as a security requirement here."
+      "explanation": "Usability is a security property because the most technically secure design can be the least secure system in practice if real users bypass it — and their bypasses create vulnerabilities worse than the original threat. This is the band-six insight at the heart of the episode. Option C is true in general (it links to inclusive design) but it is not the reason usability counts as a security requirement here.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

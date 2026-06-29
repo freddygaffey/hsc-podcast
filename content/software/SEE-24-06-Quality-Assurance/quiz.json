@@ -10,7 +10,12 @@
         "Requirements, Design, Implementation"
       ],
       "answer": 0,
-      "explanation": "The three syllabus elements are the three Cs: Criteria (defining measurable quality standards), Continual checking (verifying requirements are met throughout the lifecycle), and Compliance (meeting legally mandated requirements). Correctness, Usability and Performance (option B) are part of C-U-P-S, which sits inside only the first C — Criteria — so they are a sub-hook, not the three top-level elements."
+      "explanation": "The three syllabus elements are the three Cs: Criteria (defining measurable quality standards), Continual checking (verifying requirements are met throughout the lifecycle), and Compliance (meeting legally mandated requirements). Correctness, Usability and Performance (option B) are part of C-U-P-S, which sits inside only the first C — Criteria — so they are a sub-hook, not the three top-level elements.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2406-q02",
@@ -22,7 +27,12 @@
         "Testing is the broad process that ensures quality, and quality assurance is one activity that runs test cases within it"
       ],
       "answer": 2,
-      "explanation": "QA is the process; testing is one activity inside it. QA is process-oriented — standards, reviews, criteria and continual checking across the whole project to prevent defects — whereas testing executes test cases against the built software to detect defects. Option A is the classic conflation error the marker hunts for (a band-three answer); option D reverses the relationship. The contrast to state is process-versus-activity and prevent-versus-detect, with QA as the larger container."
+      "explanation": "QA is the process; testing is one activity inside it. QA is process-oriented — standards, reviews, criteria and continual checking across the whole project to prevent defects — whereas testing executes test cases against the built software to detect defects. Option A is the classic conflation error the marker hunts for (a band-three answer); option D reverses the relationship. The contrast to state is process-versus-activity and prevent-versus-detect, with QA as the larger container.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2406-q03",
@@ -34,7 +44,12 @@
         "Consistency, Uptime, Portability, Scalability"
       ],
       "answer": 1,
-      "explanation": "C-U-P-S — Correctness, Usability, Performance, Security — is the sub-hook inside the first C (Criteria) and names the four core quality criteria. Correctness means the software does what it should accurately; Usability means it is intuitive and accessible; Performance means it operates efficiently within acceptable limits; Security means it protects data and access. Compliance (option A) is the separate third C, not part of C-U-P-S."
+      "explanation": "C-U-P-S — Correctness, Usability, Performance, Security — is the sub-hook inside the first C (Criteria) and names the four core quality criteria. Correctness means the software does what it should accurately; Usability means it is intuitive and accessible; Performance means it operates efficiently within acceptable limits; Security means it protects data and access. Compliance (option A) is the separate third C, not part of C-U-P-S.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2406-q04",
@@ -46,7 +61,12 @@
         "It means quality is verified against the criteria throughout the development lifecycle by multiple people, so defects are caught early when they are cheap to fix, rather than in a single check at the end"
       ],
       "answer": 3,
-      "explanation": "Continual checking means verifying against the criteria at every stage — requirements, design, implementation and testing reviews — not a one-off check at the end. This is shift-left applied to quality: the earlier and more often you check, the cheaper the fixes. Option C describes treating QA as a final-stage gate, which is exactly Trap three named in the episode."
+      "explanation": "Continual checking means verifying against the criteria at every stage — requirements, design, implementation and testing reviews — not a one-off check at the end. This is shift-left applied to quality: the earlier and more often you check, the cheaper the fixes. Option C describes treating QA as a final-stage gate, which is exactly Trap three named in the episode.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2406-q05",
@@ -58,7 +78,12 @@
         "The first refers to usability and the second refers to performance, which is a more important criterion"
       ],
       "answer": 2,
-      "explanation": "Quality criteria must be clear and measurable, established at the project start. 'Usable' is weak because it cannot be objectively checked, while 'complete grade entry in under five minutes' is a testable target — the same testable conditions as acceptance criteria from episode one. Option D is wrong because both statements concern usability; the distinction is measurability, not which C-U-P-S criterion is used."
+      "explanation": "Quality criteria must be clear and measurable, established at the project start. 'Usable' is weak because it cannot be objectively checked, while 'complete grade entry in under five minutes' is a testable target — the same testable conditions as acceptance criteria from episode one. Option D is wrong because both statements concern usability; the distinction is measurability, not which C-U-P-S criterion is used.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2406-q06",
@@ -70,7 +95,12 @@
         "It requires that all software pass system and acceptance testing before release"
       ],
       "answer": 0,
-      "explanation": "Compliance is a non-negotiable quality criterion driven by law. The Privacy Act 1988 mandates protection of personal information, proper consent, and the ability to access or delete data — which is privacy-by-design, the P-E-R concept from Secure Software Architecture 16-02 as law. Option B is the exact trap the marker warns against: compliance is legally mandated, not optional, and cannot be traded against the schedule like a feature."
+      "explanation": "Compliance is a non-negotiable quality criterion driven by law. The Privacy Act 1988 mandates protection of personal information, proper consent, and the ability to access or delete data — which is privacy-by-design, the P-E-R concept from Secure Software Architecture 16-02 as law. Option B is the exact trap the marker warns against: compliance is legally mandated, not optional, and cannot be traded against the schedule like a feature.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2406-q07",
@@ -82,7 +112,12 @@
         "Both QA and testing detect defects, and neither prevents them"
       ],
       "answer": 1,
-      "explanation": "The memory line from the episode is: QA prevents defects through good process; testing detects defects in the product. QA is the broad framework of standards, reviews and continual checking aimed at stopping defects from occurring, while testing is the activity that finds defects once code is built. Option A reverses the two, which is the most tempting error because the words are correct but assigned to the wrong concept."
+      "explanation": "The memory line from the episode is: QA prevents defects through good process; testing detects defects in the product. QA is the broad framework of standards, reviews and continual checking aimed at stopping defects from occurring, while testing is the activity that finds defects once code is built. Option A reverses the two, which is the most tempting error because the words are correct but assigned to the wrong concept.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2406-q08",
@@ -94,7 +129,12 @@
         "A customer can complete checkout in under three steps with clear error messages, verified by usability testing"
       ],
       "answer": 1,
-      "explanation": "A band-six criterion follows the structure criterion, measurable target, and check. Option B names a measurable security standard (TLS, no plaintext, PCI handling, logging) with a verification method (security review), matching the worked example. Option A is too vague to test ('be secure'), while options C and D are well-formed criteria but address Performance and Usability, not Security."
+      "explanation": "A band-six criterion follows the structure criterion, measurable target, and check. Option B names a measurable security standard (TLS, no plaintext, PCI handling, logging) with a verification method (security review), matching the worked example. Option A is too vague to test ('be secure'), while options C and D are well-formed criteria but address Performance and Usability, not Security.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2406-q09",
@@ -106,7 +146,12 @@
         "Because WCAG is a performance standard and the system is therefore too slow for users"
       ],
       "answer": 2,
-      "explanation": "This is Trap two from the episode: a system can pass every functional test and still fail QA because it breaches a legal requirement. Accessibility under the Disability Discrimination Act 1992 and WCAG is a non-negotiable, designed-in quality criterion (the POUR principles as law), so failing it means the system is not high-quality. Option D is wrong because WCAG governs accessibility, not performance — colour contrast has nothing to do with speed."
+      "explanation": "This is Trap two from the episode: a system can pass every functional test and still fail QA because it breaches a legal requirement. Accessibility under the Disability Discrimination Act 1992 and WCAG is a non-negotiable, designed-in quality criterion (the POUR principles as law), so failing it means the system is not high-quality. Option D is wrong because WCAG governs accessibility, not performance — colour contrast has nothing to do with speed.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2406-q10",
@@ -118,7 +163,12 @@
         "Define measurable C-U-P-S criteria from the requirements, verify against them continually through reviews and aligned testing at every stage, and address mandatory compliance such as the Privacy Act and WCAG — with testing being one activity within the process"
       ],
       "answer": 3,
-      "explanation": "A full QA answer is structured around the three Cs: measurable criteria drawn from requirements (C-U-P-S), continual multi-stage checking through reviews and aligned testing so defects are caught early, and mandatory compliance such as the Privacy Act and WCAG. Option A treats QA as a one-off final test (Trap three), and option B conflates QA with testing (Trap one) — both lose marks. Option C is project management from an earlier episode, not quality assurance."
+      "explanation": "A full QA answer is structured around the three Cs: measurable criteria drawn from requirements (C-U-P-S), continual multi-stage checking through reviews and aligned testing so defects are caught early, and mandatory compliance such as the Privacy Act and WCAG. Option A treats QA as a one-off final test (Trap three), and option B conflates QA with testing (Trap one) — both lose marks. Option C is project management from an earlier episode, not quality assurance.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

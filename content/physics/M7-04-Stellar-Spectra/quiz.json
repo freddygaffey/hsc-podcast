@@ -10,7 +10,12 @@
         "A set of bright lines with no continuous background"
       ],
       "answer": 1,
-      "explanation": "A stellar spectrum is an absorption spectrum superimposed on a continuous one: the hot, dense interior produces the continuous black-body background, and the cooler outer atmosphere absorbs specific wavelengths, producing the dark lines."
+      "explanation": "A stellar spectrum is an absorption spectrum superimposed on a continuous one: the hot, dense interior produces the continuous black-body background, and the cooler outer atmosphere absorbs specific wavelengths, producing the dark lines.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m704-q02",
@@ -22,7 +27,12 @@
         "The width of the absorption lines"
       ],
       "answer": 1,
-      "explanation": "Temperature is read from the peak of the continuous (black-body) spectrum via Wien's law. The line pattern gives composition, the shift gives velocity, and the line width gives rotation/density — these must be kept separate."
+      "explanation": "Temperature is read from the peak of the continuous (black-body) spectrum via Wien's law. The line pattern gives composition, the shift gives velocity, and the line width gives rotation/density — these must be kept separate.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m704-q03",
@@ -34,7 +44,12 @@
         "Blue"
       ],
       "answer": 3,
-      "explanation": "Blue stars are hottest; red stars are coolest (the Sun, yellow, is in between). By Wien's law a hotter star peaks at a shorter wavelength, pushing its emission toward the blue end. This is the reverse of everyday 'red = hot' intuition."
+      "explanation": "Blue stars are hottest; red stars are coolest (the Sun, yellow, is in between). By Wien's law a hotter star peaks at a shorter wavelength, pushing its emission toward the blue end. This is the reverse of everyday 'red = hot' intuition.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m704-q04",
@@ -46,7 +61,12 @@
         "From how much the whole spectrum is shifted"
       ],
       "answer": 1,
-      "explanation": "Each element absorbs at a unique fixed set of wavelengths. Comparing the dark-line positions in the star's spectrum with laboratory reference spectra identifies which elements are present (mostly hydrogen and helium), and line strengths give their relative abundances."
+      "explanation": "Each element absorbs at a unique fixed set of wavelengths. Comparing the dark-line positions in the star's spectrum with laboratory reference spectra identifies which elements are present (mostly hydrogen and helium), and line strengths give their relative abundances.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m704-q05",
@@ -58,7 +78,12 @@
         "The star is rotating rapidly"
       ],
       "answer": 1,
-      "explanation": "A blueshift means the wavelengths are compressed because the star is moving toward us. Moving away stretches the wavelengths (redshift). The shift moves the whole pattern bodily, unlike broadening, which only widens each line."
+      "explanation": "A blueshift means the wavelengths are compressed because the star is moving toward us. Moving away stretches the wavelengths (redshift). The shift moves the whole pattern bodily, unlike broadening, which only widens each line.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m704-q06",
@@ -70,7 +95,12 @@
         "The rotational velocity only"
       ],
       "answer": 2,
-      "explanation": "The Doppler shift reveals only the radial component — motion directly toward or away from us. The tangential velocity must be found from proper motion, and the true velocity is the vector sum of the two. Claiming it gives the full speed loses a mark."
+      "explanation": "The Doppler shift reveals only the radial component — motion directly toward or away from us. The tangential velocity must be found from proper motion, and the true velocity is the vector sum of the two. Claiming it gives the full speed loses a mark.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m704-q07",
@@ -82,7 +112,12 @@
         "It removes the absorption lines entirely"
       ],
       "answer": 2,
-      "explanation": "One rotating limb moves toward us (blueshift) and the other away (redshift). Since we cannot resolve the disc, the light combines and each line is smeared across a range of wavelengths — it widens (broadens) but stays centred. Faster spin gives broader lines."
+      "explanation": "One rotating limb moves toward us (blueshift) and the other away (redshift). Since we cannot resolve the disc, the light combines and each line is smeared across a range of wavelengths — it widens (broadens) but stays centred. Faster spin gives broader lines.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m704-q08",
@@ -94,7 +129,12 @@
         "Broadening caused by very high temperature; shown most by blue stars"
       ],
       "answer": 1,
-      "explanation": "In a denser outer layer atoms collide more frequently, jolting their energy levels so they absorb over a wider band — pressure broadening. It is most pronounced in smaller, denser stars; a low-density red giant shows narrow, sharp lines."
+      "explanation": "In a denser outer layer atoms collide more frequently, jolting their energy levels so they absorb over a wider band — pressure broadening. It is most pronounced in smaller, denser stars; a low-density red giant shows narrow, sharp lines.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m704-q09",
@@ -106,7 +146,12 @@
         "Because broadening only occurs in instruments, not in real stars"
       ],
       "answer": 1,
-      "explanation": "Two different mechanisms — rapid rotation and high density — produce the same symptom of a wider line. Observing broad lines alone is ambiguous; astronomers must use additional analysis to decide whether rotation or pressure broadening is responsible."
+      "explanation": "Two different mechanisms — rapid rotation and high density — produce the same symptom of a wider line. Observing broad lines alone is ambiguous; astronomers must use additional analysis to decide whether rotation or pressure broadening is responsible.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m704-q10",
@@ -118,7 +163,12 @@
         "Both effects only change the brightness of the lines, not their position or width"
       ],
       "answer": 1,
-      "explanation": "A shift (from translational/radial velocity) slides the entire pattern toward blue or red while each line stays sharp. Broadening (from rotation or density) widens each line about its original centre. Confusing the two is the most common error in this topic."
+      "explanation": "A shift (from translational/radial velocity) slides the entire pattern toward blue or red while each line stays sharp. Broadening (from rotation or density) widens each line about its original centre. Confusing the two is the most common error in this topic.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

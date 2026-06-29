@@ -10,7 +10,12 @@
         "Confidentiality, Identity, Access, Authentication, Authorisation, Auditing — where Authentication, Authorisation and Auditing are 'what we protect'"
       ],
       "answer": 0,
-      "explanation": "C-I-A is the triad — Confidentiality, Integrity, Availability — answering 'what are we protecting?', and A-A-A is the triple-A — Authentication, Authorisation, Accountability — answering 'how do we protect it?'. Option B swaps the two groups around, which is the tempting mistake. The script tells you to dump C-I-A-A-A in the exam margin the moment you are allowed to write, so you never blank under pressure."
+      "explanation": "C-I-A is the triad — Confidentiality, Integrity, Availability — answering 'what are we protecting?', and A-A-A is the triple-A — Authentication, Authorisation, Accountability — answering 'how do we protect it?'. Option B swaps the two groups around, which is the tempting mistake. The script tells you to dump C-I-A-A-A in the exam margin the moment you are allowed to write, so you never blank under pressure.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1501-q02",
@@ -22,7 +27,12 @@
         "It verifies that users are who they claim to be, delivered mainly through multi-factor authentication"
       ],
       "answer": 2,
-      "explanation": "Confidentiality means information is accessible only to those authorised to see it — preventing unauthorised disclosure — achieved mainly through encryption (at rest and in transit) and access controls. Option A describes integrity, not confidentiality; the script stresses keeping the two distinct rather than blurring them into 'keeping data safe'. The one-line version is: confidentiality is preventing unauthorised disclosure."
+      "explanation": "Confidentiality means information is accessible only to those authorised to see it — preventing unauthorised disclosure — achieved mainly through encryption (at rest and in transit) and access controls. Option A describes integrity, not confidentiality; the script stresses keeping the two distinct rather than blurring them into 'keeping data safe'. The one-line version is: confidentiality is preventing unauthorised disclosure.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1501-q03",
@@ -34,7 +44,12 @@
         "Because hashing verifies a user's identity before granting them access to a record"
       ],
       "answer": 1,
-      "explanation": "Integrity is about detecting unauthorised modification, and the script explains that you hash the data, store the fingerprint, and re-hash later — mismatched fingerprints reveal tampering. Option A confuses hashing with encryption; the callback 'hashing is one-way, encryption is two-way' is exactly the distinction the script draws. Hashing detects change, it does not hide data."
+      "explanation": "Integrity is about detecting unauthorised modification, and the script explains that you hash the data, store the fingerprint, and re-hash later — mismatched fingerprints reveal tampering. Option A confuses hashing with encryption; the callback 'hashing is one-way, encryption is two-way' is exactly the distinction the script draws. Hashing detects change, it does not hide data.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1501-q04",
@@ -46,7 +61,12 @@
         "Confidentiality is about who can read the data; integrity is about whether the data can be changed"
       ],
       "answer": 3,
-      "explanation": "The script states the distinction directly: confidentiality is about who can read the data, integrity is about whether the data can be changed — secrecy versus trustworthiness. Option A reverses the two, which is the classic trap. They fail independently: a spy who reads but changes nothing breaks confidentiality while integrity holds; a vandal who scrambles a file they cannot read breaks integrity while confidentiality holds."
+      "explanation": "The script states the distinction directly: confidentiality is about who can read the data, integrity is about whether the data can be changed — secrecy versus trustworthiness. Option A reverses the two, which is the classic trap. They fail independently: a spy who reads but changes nothing breaks confidentiality while integrity holds; a vandal who scrambles a file they cannot read breaks integrity while confidentiality holds.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1501-q05",
@@ -58,7 +78,12 @@
         "Threat: a denial-of-service attack; control: rate limiting combined with redundancy and failover"
       ],
       "answer": 3,
-      "explanation": "Availability means keeping the service reachable, and the script names a denial-of-service flood as the threat, countered by rate limiting to throttle the flood plus redundancy and failover so a backup takes over. Option C names a real threat and control, but eavesdropping and encryption-in-transit belong to confidentiality, not availability. Match the control to the property the threat attacks."
+      "explanation": "Availability means keeping the service reachable, and the script names a denial-of-service flood as the threat, countered by rate limiting to throttle the flood plus redundancy and failover so a backup takes over. Option C names a real threat and control, but eavesdropping and encryption-in-transit belong to confidentiality, not availability. Match the control to the property the threat attacks.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1501-q06",
@@ -70,7 +95,12 @@
         "Authentication logs what a user did; authorisation proves they cannot deny it"
       ],
       "answer": 2,
-      "explanation": "Authentication is verifying who you are and comes first; authorisation determines what you are allowed to do and comes second — 'who, then what'. Option A reverses the two, and the script flags the marker's red flag of using the words interchangeably or writing 'the system authorises the user's login' when you mean authenticates. Lock in the order: authenticate, then authorise."
+      "explanation": "Authentication is verifying who you are and comes first; authorisation determines what you are allowed to do and comes second — 'who, then what'. Option A reverses the two, and the script flags the marker's red flag of using the words interchangeably or writing 'the system authorises the user's login' when you mean authenticates. Lock in the order: authenticate, then authorise.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1501-q07",
@@ -82,7 +112,12 @@
         "Identity, permission, traceability, and non-repudiation"
       ],
       "answer": 0,
-      "explanation": "The script lists three classic factors plus a fourth — something you Know (a password or PIN), something you Have (a phone or hardware token), something you Are (a biometric), and somewhere you Are (location, like an IP restriction). Combining two or more of these is multi-factor authentication, so stealing one factor isn't enough. Option D lists the triple-A outcomes, not the authentication factors."
+      "explanation": "The script lists three classic factors plus a fourth — something you Know (a password or PIN), something you Have (a phone or hardware token), something you Are (a biometric), and somewhere you Are (location, like an IP restriction). Combining two or more of these is multi-factor authentication, so stealing one factor isn't enough. Option D lists the triple-A outcomes, not the authentication factors.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1501-q08",
@@ -94,7 +129,12 @@
         "It logs every security-relevant action traceably, with non-repudiation making an action undeniable"
       ],
       "answer": 3,
-      "explanation": "Accountability means every security-relevant action is logged and traceable to a specific user — answering 'who did what, and when?' — and its components include audit logging, non-repudiation, forensic analysis and compliance reporting. Non-repudiation specifically makes an action undeniable, which a digital signature delivers. Option A describes authorisation, the property that decides what a user may do, not the after-the-fact record."
+      "explanation": "Accountability means every security-relevant action is logged and traceable to a specific user — answering 'who did what, and when?' — and its components include audit logging, non-repudiation, forensic analysis and compliance reporting. Non-repudiation specifically makes an action undeniable, which a digital signature delivers. Option A describes authorisation, the property that decides what a user may do, not the after-the-fact record.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1501-q09",
@@ -106,7 +146,12 @@
         "Confirm the teacher role may write grades, confirm it is the teacher, log the change, then write the grade"
       ],
       "answer": 2,
-      "explanation": "The triple-A pipeline runs as authenticate, authorise, act, log: the system confirms it is the teacher (authentication), confirms the teacher role may write grades (authorisation), writes the grade (act), then records the change in the audit log (accountability). Option B acts before authorising, which would let an unpermitted change through. Narrating this four-step flow — who, then what, then act, then record — answers any 'how do they work together' question."
+      "explanation": "The triple-A pipeline runs as authenticate, authorise, act, log: the system confirms it is the teacher (authentication), confirms the teacher role may write grades (authorisation), writes the grade (act), then records the change in the audit log (accountability). Option B acts before authorising, which would let an unpermitted change through. Narrating this four-step flow — who, then what, then act, then record — answers any 'how do they work together' question.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1501-q10",
@@ -118,7 +163,12 @@
         "Confidentiality is maintained by rate-limiting login attempts and running redundant servers so the service stays online"
       ],
       "answer": 1,
-      "explanation": "A band-six answer names the property, the control, and the effect: confidentiality is upheld by encrypting account data at rest and using TLS in transit so intercepted or stolen data cannot be read by an unauthorised party. Option A is the script's example of a weak answer — it names no property and no mechanism. Options C and D apply real controls but to integrity (hashing) and availability (rate limiting and redundancy), not confidentiality."
+      "explanation": "A band-six answer names the property, the control, and the effect: confidentiality is upheld by encrypting account data at rest and using TLS in transit so intercepted or stolen data cannot be read by an unauthorised party. Option A is the script's example of a weak answer — it names no property and no mechanism. Options C and D apply real controls but to integrity (hashing) and availability (rate limiting and redundancy), not confidentiality.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

@@ -10,7 +10,12 @@
         "SELECT, WHERE, FROM, GROUP BY, ORDER BY, HAVING"
       ],
       "answer": 0,
-      "explanation": "The clause order is SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, captured by the mnemonic 'So Few Workers Go Home On-time'. This order is not optional — SQL enforces it, so writing GROUP BY before WHERE or ORDER BY in the middle is a syntax error that costs marks. Correct order is itself the mark on a recall question."
+      "explanation": "The clause order is SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, captured by the mnemonic 'So Few Workers Go Home On-time'. This order is not optional — SQL enforces it, so writing GROUP BY before WHERE or ORDER BY in the middle is a syntax error that costs marks. Correct order is itself the mark on a recall question.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1302-q02",
@@ -22,7 +27,12 @@
         "WINDOW — the clause that defines an aggregate window"
       ],
       "answer": 1,
-      "explanation": "'Workers' maps to WHERE, which filters individual rows using conditions, AND, OR, LIKE for pattern matching, and BETWEEN for ranges. The full hook is So (SELECT), Few (FROM), Workers (WHERE), Go (GROUP BY), Home (HAVING), On-time (ORDER BY). The other options invent clauses the episode never names."
+      "explanation": "'Workers' maps to WHERE, which filters individual rows using conditions, AND, OR, LIKE for pattern matching, and BETWEEN for ranges. The full hook is So (SELECT), Few (FROM), Workers (WHERE), Go (GROUP BY), Home (HAVING), On-time (ORDER BY). The other options invent clauses the episode never names.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1302-q03",
@@ -34,7 +44,12 @@
         "GROUP BY combines two tables on a shared key so their rows can be summarised together"
       ],
       "answer": 2,
-      "explanation": "GROUP BY collapses many rows into groups and is used with an aggregate function — COUNT, SUM, AVG, MAX, MIN — to summarise each group, and every non-aggregated field in the SELECT must appear in the GROUP BY. GROUP BY without an aggregate is pointless. The option describing filtering groups on an aggregate actually describes HAVING, and the option about combining two tables describes a JOIN — both are tempting because they are nearby clauses, but neither is what GROUP BY does."
+      "explanation": "GROUP BY collapses many rows into groups and is used with an aggregate function — COUNT, SUM, AVG, MAX, MIN — to summarise each group, and every non-aggregated field in the SELECT must appear in the GROUP BY. GROUP BY without an aggregate is pointless. The option describing filtering groups on an aggregate actually describes HAVING, and the option about combining two tables describes a JOIN — both are tempting because they are nearby clauses, but neither is what GROUP BY does.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1302-q04",
@@ -46,7 +61,12 @@
         "WHERE filters individual rows before grouping and cannot reference an aggregate; HAVING filters groups after aggregation and can test an aggregate such as COUNT"
       ],
       "answer": 3,
-      "explanation": "WHERE filters individual rows before any grouping happens, so it cannot see an aggregate like COUNT because that does not exist yet; HAVING filters groups after aggregation, so it can test 'COUNT of posts greater than five'. The tempting wrong option reverses the two — saying WHERE filters groups after aggregation — which is the most common trap students fall into. Naming 'before grouping versus after, on an aggregate' is the discriminating mark."
+      "explanation": "WHERE filters individual rows before any grouping happens, so it cannot see an aggregate like COUNT because that does not exist yet; HAVING filters groups after aggregation, so it can test 'COUNT of posts greater than five'. The tempting wrong option reverses the two — saying WHERE filters groups after aggregation — which is the most common trap students fall into. Naming 'before grouping versus after, on an aggregate' is the discriminating mark.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1302-q05",
@@ -58,7 +78,12 @@
         "A LEFT JOIN, because it drops users with no posts to keep the result set small"
       ],
       "answer": 1,
-      "explanation": "A LEFT JOIN returns all rows from the left table plus matches from the right where they exist, with nulls where they do not — so all users appear, including those with zero posts. An INNER JOIN returns only rows that match in both tables, which would silently drop the post-less users — the exact trap the exam tests. The hook is: INNER keeps only matches in both; LEFT keeps everything on the left."
+      "explanation": "A LEFT JOIN returns all rows from the left table plus matches from the right where they exist, with nulls where they do not — so all users appear, including those with zero posts. An INNER JOIN returns only rows that match in both tables, which would silently drop the post-less users — the exact trap the exam tests. The hook is: INNER keeps only matches in both; LEFT keeps everything on the left.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1302-q06",
@@ -70,7 +95,12 @@
         "An author-id field in posts that is a foreign key pointing at the primary key id in users"
       ],
       "answer": 3,
-      "explanation": "A relational database splits data into related tables linked by keys: a post carries an author-id that is a foreign key pointing at the primary key id in the users table, and a JOIN recombines them. The tempting wrong option reverses the key roles — the foreign key lives in posts and references the primary key in users, not the other way around. This is the Year 11 entity-relationship modelling made real."
+      "explanation": "A relational database splits data into related tables linked by keys: a post carries an author-id that is a foreign key pointing at the primary key id in the users table, and a JOIN recombines them. The tempting wrong option reverses the key roles — the foreign key lives in posts and references the primary key in users, not the other way around. This is the Year 11 entity-relationship modelling made real.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1302-q07",
@@ -82,7 +112,12 @@
         "The web framework automatically trusts any input that contains an SQL keyword such as OR"
       ],
       "answer": 0,
-      "explanation": "The attack works because the input and the command are combined into one string, so the database cannot tell where your instruction ends and the user's data begins — a quote in the input closes your string early and the rest is read as SQL. For example, input like x' OR '1'='1 makes the WHERE clause always true and returns every row. The vulnerability is about mixing data and command, not memory or speed."
+      "explanation": "The attack works because the input and the command are combined into one string, so the database cannot tell where your instruction ends and the user's data begins — a quote in the input closes your string early and the rest is read as SQL. For example, input like x' OR '1'='1 makes the WHERE clause always true and returns every row. The vulnerability is about mixing data and command, not memory or speed.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1302-q08",
@@ -94,7 +129,12 @@
         "It escapes every quote in the input by doubling it before the string is concatenated into the query"
       ],
       "answer": 2,
-      "explanation": "A parameterised query (prepared statement) writes the query with a placeholder, such as a question mark, where the value goes, and passes the actual value separately, so the database treats it strictly as data and never as executable SQL — a quote in the input is just a quote in a string. The mark-earning phrase is that it separates the SQL command from the user-supplied data. Keyword-blocking (A) and escaping quotes (D) are weaker, error-prone defences the episode does not endorse."
+      "explanation": "A parameterised query (prepared statement) writes the query with a placeholder, such as a question mark, where the value goes, and passes the actual value separately, so the database treats it strictly as data and never as executable SQL — a quote in the input is just a quote in a string. The mark-earning phrase is that it separates the SQL command from the user-supplied data. Keyword-blocking (A) and escaping quotes (D) are weaker, error-prone defences the episode does not endorse.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1302-q09",
@@ -106,7 +146,12 @@
         "An ORM eliminates the need to know SQL entirely, while raw SQL is only used in databases that do not support objects"
       ],
       "answer": 1,
-      "explanation": "An ORM maps classes to tables and objects to rows and generates the SQL for you, improving productivity, readability and database portability, but adds an abstraction layer with performance overhead and can generate inefficient queries; raw SQL gives maximum control and performance at the cost of more verbose, error-prone code. The named trap in options A and D is the idea that an ORM removes the need to understand SQL — it does not, because only someone who knows the underlying SQL can fix a slow generated query."
+      "explanation": "An ORM maps classes to tables and objects to rows and generates the SQL for you, improving productivity, readability and database portability, but adds an abstraction layer with performance overhead and can generate inefficient queries; raw SQL gives maximum control and performance at the cost of more verbose, error-prone code. The named trap in options A and D is the idea that an ORM removes the need to understand SQL — it does not, because only someone who knows the underlying SQL can fix a slow generated query.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1302-q10",
@@ -118,7 +163,12 @@
         "Use a hybrid: the ORM for the routine CRUD operations and raw SQL for the complex, performance-critical sales report"
       ],
       "answer": 3,
-      "explanation": "The episode's real-world judgement is that the best approach is usually hybrid: an ORM for routine CRUD where its productivity and auto-parameterisation shine, and raw SQL for complex or performance-critical reporting where its control and efficiency matter. The 'raw SQL for everything' option is wrong because ORMs handle joins and relationships well, and the 'concatenate user input' option is the named trap of string-concatenation that causes SQL injection. Recommending the hybrid and justifying it by matching each tool to its strength is the full-mark answer."
+      "explanation": "The episode's real-world judgement is that the best approach is usually hybrid: an ORM for routine CRUD where its productivity and auto-parameterisation shine, and raw SQL for complex or performance-critical reporting where its control and efficiency matter. The 'raw SQL for everything' option is wrong because ORMs handle joins and relationships well, and the 'concatenate user input' option is the named trap of string-concatenation that causes SQL injection. Recommending the hybrid and justifying it by matching each tool to its strength is the full-mark answer.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

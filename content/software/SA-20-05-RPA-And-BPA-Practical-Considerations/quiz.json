@@ -11,7 +11,12 @@
       ],
       "answer": 0,
       "explanation": "The episode's core decision rule is: automate the task with RPA, or rethink the process with BPA — RPA is a Robot doing a Task, BPA is redesigning a Process. The deciding keyword is task versus process. Cost (option A) is a secondary nuance — RPA is the quick tactical patch and BPA the strategic fix — but it is not the keyword that decides the approach.",
-      "type": "recall"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "recall"
     },
     {
       "id": "sa2005-q02",
@@ -24,7 +29,12 @@
       ],
       "answer": 1,
       "explanation": "BRITTLE is the memory hook for RPA's central maintainability risk: the bot works through the user interface — finding fields and buttons by position or label — so the moment a layout, field name, or step changes, it fails. Option A misreads 'brittle' as physical hardware; RPA is software mimicking a human at the screen, and screens change, unlike a stable back-end API.",
-      "type": "recall"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "recall"
     },
     {
       "id": "sa2005-q03",
@@ -37,7 +47,12 @@
       ],
       "answer": 2,
       "explanation": "RPA is typically built on low-code platforms with drag-and-drop visual designers, using bots that read the screen and simulate keyboard and mouse input — sitting on top of existing interfaces with no changes to the underlying applications, which is why it suits legacy systems. Option A describes BPA's deep integration and workflow engine, not RPA.",
-      "type": "describe"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "describe"
     },
     {
       "id": "sa2005-q04",
@@ -50,7 +65,12 @@
       ],
       "answer": 2,
       "explanation": "An RPA bot depends entirely on the screen staying the same: it finds fields and buttons by position or label, so a moved button, renamed field, or changed layout breaks it. This is why RPA drives the volatile Front of Front-Back-Store, whereas a real integration through the Back via an API is far more stable. The encryption option invents a problem that the episode never raises.",
-      "type": "describe"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "describe"
     },
     {
       "id": "sa2005-q05",
@@ -63,7 +83,12 @@
       ],
       "answer": 3,
       "explanation": "A bot acts on systems using credentials, so those credentials must never be hard-coded and should be kept in a secrets manager, and the bot — being a privileged account — must be given least privilege, only the permissions it needs. Option C inverts both controls; least privilege exists precisely to limit damage if the bot is compromised. Validating inputs (VSE) and minding data privacy (PER) are further valid considerations.",
-      "type": "describe"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "describe"
     },
     {
       "id": "sa2005-q06",
@@ -76,7 +101,12 @@
       ],
       "answer": 1,
       "explanation": "RPA is low-code and works on top of existing user interfaces without modifying the systems, which is why it suits legacy applications; BPA connects systems through their proper interfaces and databases with a workflow engine routing approvals and maintaining an audit trail. Option D reverses the two — the workflow engine and audit trail belong to BPA, and drag-and-drop low-code is the RPA hallmark.",
-      "type": "compare"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "compare"
     },
     {
       "id": "sa2005-q07",
@@ -89,7 +119,12 @@
       ],
       "answer": 2,
       "explanation": "The episode frames RPA as the quick win — fast, low-code, no system changes — but a tactical patch that treats the symptom, while BPA is the strategic fix: slower and more expensive, but it actually improves the process by redesigning it, treating the cause. Option A swaps the two; RPA never re-engineers the process, so it cannot be the cause-treating strategic fix.",
-      "type": "compare"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "compare"
     },
     {
       "id": "sa2005-q08",
@@ -102,7 +137,12 @@
       ],
       "answer": 0,
       "explanation": "The tells point to RPA — one repetitive task, systems that cannot be modified, no process change wanted — so a bot that sits on top of the existing interfaces is the right tool. The strong, two-part answer also flags brittleness: because the bot reads those screens, any interface update breaks it, so it needs ongoing maintenance and is not a permanent fix. The final option falls into the trap of treating RPA as a permanent, risk-free solution.",
-      "type": "scenario"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "scenario"
     },
     {
       "id": "sa2005-q09",
@@ -115,7 +155,12 @@
       ],
       "answer": 3,
       "explanation": "Because the loan process spans four systems and several manual approvals, it is a whole end-to-end process rather than a single repetitive task, so BPA — with deep integration, a workflow engine routing approvals, and an audit trail — is the sustainable choice despite higher upfront cost. The first option is the trap: RPA would only bolt brittle bots onto four changing interfaces and would not address the underlying inefficiency.",
-      "type": "scenario"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "scenario"
     },
     {
       "id": "sa2005-q10",
@@ -128,7 +173,12 @@
       ],
       "answer": 1,
       "explanation": "An evaluate answer must weigh both sides then land a judgement: benefits (quick, low-code, frees staff), then costs and risks (brittleness named with its cause, credentials secured under least privilege, employment and reskilling impact), then a justified conditional judgement. Option C is the explicit weak, band-four trap — one-sided, naming nothing, no judgement — that the episode warns against.",
-      "type": "scenario"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "scenario"
     }
   ]
 }

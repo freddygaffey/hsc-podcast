@@ -10,7 +10,12 @@
         "Radius versus luminosity, with radius increasing to the right"
       ],
       "answer": 1,
-      "explanation": "The H-R diagram plots luminosity (brightest at top) against surface temperature or spectral class. The crucial trap: temperature increases to the LEFT, so hot blue O stars are on the left and cool red M stars on the right."
+      "explanation": "The H-R diagram plots luminosity (brightest at top) against surface temperature or spectral class. The crucial trap: temperature increases to the LEFT, so hot blue O stars are on the left and cool red M stars on the right.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m814-q02",
@@ -22,7 +27,12 @@
         "They fuse iron in their cores, releasing extra energy"
       ],
       "answer": 1,
-      "explanation": "Luminosity depends on both temperature and surface area (\\(L \\propto R^2 T^4\\)). A red giant is cool but enormous, so its vast surface area makes the total power output huge. White dwarfs are the opposite: hot but tiny, hence dim."
+      "explanation": "Luminosity depends on both temperature and surface area (\\(L \\propto R^2 T^4\\)). A red giant is cool but enormous, so its vast surface area makes the total power output huge. White dwarfs are the opposite: hot but tiny, hence dim.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m814-q03",
@@ -34,7 +44,12 @@
         "Star X is moving toward us"
       ],
       "answer": 1,
-      "explanation": "Same temperature means temperature cannot explain the brightness difference. Since luminosity depends on both temperature and surface area, the more luminous star must have the larger radius. Naming this principle is the mark-earning move when comparing stellar sizes."
+      "explanation": "Same temperature means temperature cannot explain the brightness difference. Since luminosity depends on both temperature and surface area, the more luminous star must have the larger radius. Naming this principle is the mark-earning move when comparing stellar sizes.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m814-q04",
@@ -46,7 +61,12 @@
         "Neutron degeneracy pressure balancing the strong nuclear force"
       ],
       "answer": 1,
-      "explanation": "A stable main-sequence star is a balance: gravity pulls the star inward, while the radiation (and thermal) pressure from core fusion pushes outward, and the two are equal. When fuel runs low this balance breaks and the core contracts."
+      "explanation": "A stable main-sequence star is a balance: gravity pulls the star inward, while the radiation (and thermal) pressure from core fusion pushes outward, and the two are equal. When fuel runs low this balance breaks and the core contracts.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m814-q05",
@@ -58,7 +78,12 @@
         "Both stars have identical lifetimes regardless of mass"
       ],
       "answer": 1,
-      "explanation": "Greater mass means stronger gravity, requiring faster, hotter fusion to hold the star up — making it bright and blue but burning through fuel disproportionately fast. So despite having more fuel, massive stars 'live fast, die young'."
+      "explanation": "Greater mass means stronger gravity, requiring faster, hotter fusion to hold the star up — making it bright and blue but burning through fuel disproportionately fast. So despite having more fuel, massive stars 'live fast, die young'.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m814-q06",
@@ -70,7 +95,12 @@
         "They are waste products that must be removed"
       ],
       "answer": 2,
-      "explanation": "In the CNO cycle, carbon captures protons and transforms through nitrogen and oxygen isotopes, finally releasing a helium-4 and regenerating the original carbon-12. C, N and O are catalysts — enabling the reaction without net consumption. The fuel is four protons; the product is one helium-4."
+      "explanation": "In the CNO cycle, carbon captures protons and transforms through nitrogen and oxygen isotopes, finally releasing a helium-4 and regenerating the original carbon-12. C, N and O are catalysts — enabling the reaction without net consumption. The fuel is four protons; the product is one helium-4.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m814-q07",
@@ -82,7 +112,12 @@
         "The pp chain produces iron, the CNO cycle produces oxygen"
       ],
       "answer": 1,
-      "explanation": "Both routes have the same net result: \\(4\\,{}^{1}\\mathrm{H} \\to {}^{4}\\mathrm{He} + 2e^{+} + 2\\nu + \\gamma\\). The differences are the pathway, the core temperature required, and that the CNO cycle needs pre-existing carbon — not the products. The CNO cycle does NOT make carbon (A)."
+      "explanation": "Both routes have the same net result: \\(4\\,{}^{1}\\mathrm{H} \\to {}^{4}\\mathrm{He} + 2e^{+} + 2\\nu + \\gamma\\). The differences are the pathway, the core temperature required, and that the CNO cycle needs pre-existing carbon — not the products. The CNO cycle does NOT make carbon (A).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m814-q08",
@@ -94,7 +129,12 @@
         "\\(9.0 \\times 10^{16}\\ \\mathrm{kg}\\)"
       ],
       "answer": 0,
-      "explanation": "Convert first: \\(1.44 \\times 10^{6}\\ \\mathrm{eV} \\times 1.6 \\times 10^{-19} = 2.3 \\times 10^{-13}\\ \\mathrm{J}\\). Then \\(m = E/c^2 = 2.3 \\times 10^{-13} / 9.0 \\times 10^{16} \\approx 2.6 \\times 10^{-30}\\ \\mathrm{kg}\\). The \\(2.3 \\times 10^{-13}\\) value (B) is the energy in joules, not the mass."
+      "explanation": "Convert first: \\(1.44 \\times 10^{6}\\ \\mathrm{eV} \\times 1.6 \\times 10^{-19} = 2.3 \\times 10^{-13}\\ \\mathrm{J}\\). Then \\(m = E/c^2 = 2.3 \\times 10^{-13} / 9.0 \\times 10^{16} \\approx 2.6 \\times 10^{-30}\\ \\mathrm{kg}\\). The \\(2.3 \\times 10^{-13}\\) value (B) is the energy in joules, not the mass.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m814-q09",
@@ -106,7 +146,12 @@
         "Iron is radioactive and decays before it can fuse"
       ],
       "answer": 1,
-      "explanation": "Fusion releases energy only while climbing the curve toward the iron-56 peak (the most tightly bound nucleus). Fusing past iron means descending to lower binding energy per nucleon, which requires energy input. A star cannot power itself this way, so fusion stops at iron — then the iron core collapses, triggering a supernova."
+      "explanation": "Fusion releases energy only while climbing the curve toward the iron-56 peak (the most tightly bound nucleus). Fusing past iron means descending to lower binding energy per nucleon, which requires energy input. A star cannot power itself this way, so fusion stops at iron — then the iron core collapses, triggering a supernova.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m814-q10",
@@ -118,7 +163,12 @@
         "They have always existed and were never created"
       ],
       "answer": 2,
-      "explanation": "The Big Bang made only hydrogen, helium and a trace of lithium; stellar fusion builds elements up to iron. Elements heavier than iron form in supernovae via rapid neutron capture and are scattered into space. 'Iron is the heaviest element' is true only with the qualifier 'made by fusion'."
+      "explanation": "The Big Bang made only hydrogen, helium and a trace of lithium; stellar fusion builds elements up to iron. Elements heavier than iron form in supernovae via rapid neutron capture and are scattered into space. 'Iron is the heaviest element' is true only with the qualifier 'made by fusion'.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

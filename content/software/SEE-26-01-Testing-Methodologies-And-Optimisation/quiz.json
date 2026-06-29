@@ -10,7 +10,12 @@
         "Operations, Security, Acceptance, Errors, Sprint"
       ],
       "answer": 0,
-      "explanation": "O-S-A-E-S ('oh-seas', like surveying the seas before you sail) stands for Objectives, Scope, Approaches, Environments, and Schedule. These are the five components a test plan documents so testing is structured rather than 'just clicking around'. Option B uses plausible synonyms but not the exact syllabus terms the episode names."
+      "explanation": "O-S-A-E-S ('oh-seas', like surveying the seas before you sail) stands for Objectives, Scope, Approaches, Environments, and Schedule. These are the five components a test plan documents so testing is structured rather than 'just clicking around'. Option B uses plausible synonyms but not the exact syllabus terms the episode names.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2601-q02",
@@ -22,7 +27,12 @@
         "QA applies only to non-functional requirements, while testing applies only to functional ones"
       ],
       "answer": 1,
-      "explanation": "The episode states the distinction to hold: 'QA is the process that prevents defects; testing is the activity that detects them.' QA is the overall process-oriented framework (the three Cs from 24-06), and testing is one detecting activity inside it. Option A reverses the two roles, which is the most common trap on this distinguish question."
+      "explanation": "The episode states the distinction to hold: 'QA is the process that prevents defects; testing is the activity that detects them.' QA is the overall process-oriented framework (the three Cs from 24-06), and testing is one detecting activity inside it. Option A reverses the two roles, which is the most common trap on this distinguish question.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2601-q03",
@@ -34,7 +44,12 @@
         "Functional checks one unit, integration checks the whole system, non-functional checks user acceptance"
       ],
       "answer": 2,
-      "explanation": "The hook is 'Functional is what, Integration is together, Non-functional is how well.' Functional testing verifies behaviours against requirements, integration testing verifies interfaces and data flow between modules, and non-functional testing covers performance, security, usability and reliability. Option D confuses test types by purpose with test levels (unit, integration, system, acceptance)."
+      "explanation": "The hook is 'Functional is what, Integration is together, Non-functional is how well.' Functional testing verifies behaviours against requirements, integration testing verifies interfaces and data flow between modules, and non-functional testing covers performance, security, usability and reliability. Option D confuses test types by purpose with test levels (unit, integration, system, acceptance).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2601-q04",
@@ -46,7 +61,12 @@
         "17 invalid, 18 valid, 64 valid, 66 invalid — only the values immediately outside each limit matter"
       ],
       "answer": 0,
-      "explanation": "Boundary value analysis tests just below the minimum, the minimum, just above the minimum, a typical middle value, just below the maximum, the maximum, and just above the maximum: 17 (invalid), 18, 19, 40, 64, 65 (all valid), 66 (invalid). The mark comes from naming the just-below, on, and just-above values for each end. Option B omits the off-by-one catchers (17, 66) — exactly where bugs hide."
+      "explanation": "Boundary value analysis tests just below the minimum, the minimum, just above the minimum, a typical middle value, just below the maximum, the maximum, and just above the maximum: 17 (invalid), 18, 19, 40, 64, 65 (all valid), 66 (invalid). The mark comes from naming the just-below, on, and just-above values for each end. Option B omits the off-by-one catchers (17, 66) — exactly where bugs hide.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2601-q05",
@@ -58,7 +78,12 @@
         "Boundary testing is white box; path testing is black box, since paths are read from the specification"
       ],
       "answer": 2,
-      "explanation": "Boundary testing ('the edges') selects values just-below, on, and just-above each limit where off-by-one errors live, while path testing ('every road through') ensures every branch and decision — and loops at zero, one and many iterations — is exercised. Together they catch the two big bug families. Option D inverts the visibility link: boundary is black box, path is white box."
+      "explanation": "Boundary testing ('the edges') selects values just-below, on, and just-above each limit where off-by-one errors live, while path testing ('every road through') ensures every branch and decision — and loops at zero, one and many iterations — is exercised. Together they catch the two big bug families. Option D inverts the visibility link: boundary is black box, path is white box.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2601-q06",
@@ -70,7 +95,12 @@
         "Path testing requires seeing the internal code to cover its branches, while boundary testing checks behaviour against the spec without viewing the implementation"
       ],
       "answer": 3,
-      "explanation": "The hook is 'Black sees nothing, White sees the code, Grey sees a bit.' Path testing is white box because you need to see the branches to cover them; boundary testing is black box because you check behaviour against the specification without caring how it's implemented. 'Boundary equals black box, path equals white box' is the connection markers love."
+      "explanation": "The hook is 'Black sees nothing, White sees the code, Grey sees a bit.' Path testing is white box because you need to see the branches to cover them; boundary testing is black box because you check behaviour against the specification without caring how it's implemented. 'Boundary equals black box, path equals white box' is the connection markers love.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2601-q07",
@@ -82,7 +112,12 @@
         "SAST examines source code at rest (white box, static); DAST tests the running application from outside (black box, dynamic)"
       ],
       "answer": 3,
-      "explanation": "SAST examines the source code at rest for vulnerabilities — a white-box, static technique — while DAST tests the running application from the outside — a black-box, dynamic technique. This maps cleanly onto the white-box-versus-black-box distinction: static equals source, dynamic equals doing. Option A swaps the two definitions, the most tempting trap."
+      "explanation": "SAST examines the source code at rest for vulnerabilities — a white-box, static technique — while DAST tests the running application from the outside — a black-box, dynamic technique. This maps cleanly onto the white-box-versus-black-box distinction: static equals source, dynamic equals doing. Option A swaps the two definitions, the most tempting trap.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2601-q08",
@@ -94,7 +129,12 @@
         "A grey box testing gap where internal knowledge was not used to guide the test design"
       ],
       "answer": 2,
-      "explanation": "The site was never properly load-tested; load testing is a non-functional performance test that throws realistic peak traffic at the system, and it would have caught the collapse in advance. The lesson is that testing only the happy path while skipping the non-functional load test is how a technically-correct system fails in production. Option A describes Knight Capital — the other failure mode (an untested deployment), not this one."
+      "explanation": "The site was never properly load-tested; load testing is a non-functional performance test that throws realistic peak traffic at the system, and it would have caught the collapse in advance. The lesson is that testing only the happy path while skipping the non-functional load test is how a technically-correct system fails in production. Option A describes Knight Capital — the other failure mode (an untested deployment), not this one.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2601-q09",
@@ -106,7 +146,12 @@
         "Optimise several functions at once to save time, then measure the whole app's speed afterward"
       ],
       "answer": 1,
-      "explanation": "Memoisation caches the lookup's result so repeated calls with the same input return the stored value instead of recomputing — in Python the language-dependent functools cache decorator does this in one line. The responsible discipline is measure-optimise-measure: profile to confirm the bottleneck and record a baseline, apply the fix, then re-time to confirm it helped without breaking correctness. Option D violates the rule by optimising parts that may not be the bottleneck — wasted effort that can hurt readability for no gain."
+      "explanation": "Memoisation caches the lookup's result so repeated calls with the same input return the stored value instead of recomputing — in Python the language-dependent functools cache decorator does this in one line. The responsible discipline is measure-optimise-measure: profile to confirm the bottleneck and record a baseline, apply the fix, then re-time to confirm it helped without breaking correctness. Option D violates the rule by optimising parts that may not be the bottleneck — wasted effort that can hurt readability for no gain.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2601-q10",
@@ -118,7 +163,12 @@
         "It parallelises the recursive calls across multiple processor cores using a language feature"
       ],
       "answer": 2,
-      "explanation": "Naive Fibonacci recomputes the same sub-results thousands of times, an exponential blow-up; memoisation stores each result the first time and returns the cached value after, making it linear. It is 'language-dependent' because Python gives you the functools cache decorator that applies it in one line. The full-mark answer states the before and after — 'reduced from exponential to linear, confirmed by timing' — not just 'I made it faster'."
+      "explanation": "Naive Fibonacci recomputes the same sub-results thousands of times, an exponential blow-up; memoisation stores each result the first time and returns the cached value after, making it linear. It is 'language-dependent' because Python gives you the functools cache decorator that applies it in one line. The full-mark answer states the before and after — 'reduced from exponential to linear, confirmed by timing' — not just 'I made it faster'.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

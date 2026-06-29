@@ -10,7 +10,12 @@
         "He defined the speed of light as an exact constant"
       ],
       "answer": 1,
-      "explanation": "Maxwell unified electricity and magnetism — previously studied as separate phenomena — into one theory described by four equations. Measuring c (Fizeau/Foucault) and detecting EM waves (Hertz) were done by others; the 1983 definition came much later."
+      "explanation": "Maxwell unified electricity and magnetism — previously studied as separate phenomena — into one theory described by four equations. Measuring c (Fizeau/Foucault) and detecting EM waves (Hertz) were done by others; the 1983 definition came much later.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m702-q02",
@@ -22,7 +27,12 @@
         "\\( c = \\mu_0 \\varepsilon_0 \\)"
       ],
       "answer": 1,
-      "explanation": "The speed equals one over the square root of the permeability of free space times the permittivity of free space: \\( c = 1/\\sqrt{\\mu_0 \\varepsilon_0} \\). Note it is the reciprocal of the square root, not the square root itself."
+      "explanation": "The speed equals one over the square root of the permeability of free space times the permittivity of free space: \\( c = 1/\\sqrt{\\mu_0 \\varepsilon_0} \\). Note it is the reciprocal of the square root, not the square root itself.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m702-q03",
@@ -34,7 +44,12 @@
         "Because the prediction came after Hertz had already detected the waves"
       ],
       "answer": 1,
-      "explanation": "The permittivity and permeability are fixed by purely electric and magnetic experiments (capacitors, coils) that have nothing to do with light. Because the matching speed could not have been built in, the agreement is strong evidence that light is itself an electromagnetic wave. The key word is 'independent'."
+      "explanation": "The permittivity and permeability are fixed by purely electric and magnetic experiments (capacitors, coils) that have nothing to do with light. Because the matching speed could not have been built in, the agreement is strong evidence that light is itself an electromagnetic wave. The key word is 'independent'.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m702-q04",
@@ -46,7 +61,12 @@
         "\\( 9.0 \\times 10^{16}\\ \\mathrm{m\\,s^{-1}} \\)"
       ],
       "answer": 0,
-      "explanation": "Multiply: \\( (1.26\\times10^{-6})(8.85\\times10^{-12}) = 1.115\\times10^{-17} \\). Square root: \\( 3.34\\times10^{-9} \\). Reciprocal: \\( 1/(3.34\\times10^{-9}) = 3.0\\times10^{8}\\ \\mathrm{m\\,s^{-1}} \\)."
+      "explanation": "Multiply: \\( (1.26\\times10^{-6})(8.85\\times10^{-12}) = 1.115\\times10^{-17} \\). Square root: \\( 3.34\\times10^{-9} \\). Reciprocal: \\( 1/(3.34\\times10^{-9}) = 3.0\\times10^{8}\\ \\mathrm{m\\,s^{-1}} \\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m702-q05",
@@ -58,7 +78,12 @@
         "Gauss's law for magnetism and the Ampère–Maxwell law"
       ],
       "answer": 1,
-      "explanation": "Faraday's law (changing magnetism makes electricity) and the Ampère–Maxwell law (changing electricity makes magnetism) feed one another indefinitely with no charges or wires present, producing a self-propagating wave. The two Gauss's laws describe how fields relate to charges/monopoles."
+      "explanation": "Faraday's law (changing magnetism makes electricity) and the Ampère–Maxwell law (changing electricity makes magnetism) feed one another indefinitely with no charges or wires present, producing a self-propagating wave. The two Gauss's laws describe how fields relate to charges/monopoles.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m702-q06",
@@ -70,7 +95,12 @@
         "It proved the waves travelled faster than light"
       ],
       "answer": 1,
-      "explanation": "With no battery, the only way to spark the gap is to induce a current, which requires a changing magnetic field threading the loop (Faraday's law). That field arrived across empty space from the transmitter — so an EM wave carried energy across the room. 'No power source' is the heart of the proof."
+      "explanation": "With no battery, the only way to spark the gap is to induce a current, which requires a changing magnetic field threading the loop (Faraday's law). That field arrived across empty space from the transmitter — so an EM wave carried energy across the room. 'No power source' is the heart of the proof.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m702-q07",
@@ -82,7 +112,12 @@
         "A spark only at 45° to the transmitter"
       ],
       "answer": 1,
-      "explanation": "Parallel loop → maximum spark; perpendicular loop (90°) → no spark; in between → an intermediate spark. This is exactly how a polariser/analyser behave, proving the wave has a single plane of vibration and is therefore transverse."
+      "explanation": "Parallel loop → maximum spark; perpendicular loop (90°) → no spark; in between → an intermediate spark. This is exactly how a polariser/analyser behave, proving the wave has a single plane of vibration and is therefore transverse.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m702-q08",
@@ -94,7 +129,12 @@
         "The wavelength equals four times the distance between adjacent nodes"
       ],
       "answer": 1,
-      "explanation": "Adjacent nodes in a standing wave are half a wavelength apart, so \\( \\lambda = 2 \\times (\\text{node spacing}) \\). Forgetting this factor of two halves the calculated speed, giving \\( 1.5\\times10^{8} \\) instead of \\( 3.0\\times10^{8}\\ \\mathrm{m\\,s^{-1}} \\)."
+      "explanation": "Adjacent nodes in a standing wave are half a wavelength apart, so \\( \\lambda = 2 \\times (\\text{node spacing}) \\). Forgetting this factor of two halves the calculated speed, giving \\( 1.5\\times10^{8} \\) instead of \\( 3.0\\times10^{8}\\ \\mathrm{m\\,s^{-1}} \\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m702-q09",
@@ -106,7 +146,12 @@
         "\\( 1.5 \\times 10^{6}\\ \\mathrm{m\\,s^{-1}} \\)"
       ],
       "answer": 1,
-      "explanation": "Wavelength = 2 × 16 mm = 32 mm = \\( 3.2\\times10^{-2}\\ \\mathrm{m} \\). Speed = \\( f\\lambda = (9.4\\times10^{9})(3.2\\times10^{-2}) = 3.0\\times10^{8}\\ \\mathrm{m\\,s^{-1}} \\). Answer A is the trap from forgetting the factor of two."
+      "explanation": "Wavelength = 2 × 16 mm = 32 mm = \\( 3.2\\times10^{-2}\\ \\mathrm{m} \\). Speed = \\( f\\lambda = (9.4\\times10^{9})(3.2\\times10^{-2}) = 3.0\\times10^{8}\\ \\mathrm{m\\,s^{-1}} \\). Answer A is the trap from forgetting the factor of two.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m702-q10",
@@ -118,7 +163,12 @@
         "c changes slightly over time, so any measurement is quickly out of date"
       ],
       "answer": 1,
-      "explanation": "Since 1983 the speed of light is a defined exact value, so it has no measurement uncertainty and cannot be measured more precisely. The metre is now defined from c and the caesium-based second, so improved experiments refine the metre, not c."
+      "explanation": "Since 1983 the speed of light is a defined exact value, so it has no measurement uncertainty and cannot be measured more precisely. The metre is now defined from c and the caesium-based second, so improved experiments refine the metre, not c.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

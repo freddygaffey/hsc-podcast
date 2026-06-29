@@ -10,7 +10,12 @@
         "Half mass times velocity squared, measured in joules"
       ],
       "answer": 1,
-      "explanation": "Momentum is the product of mass and velocity (p = mv), a vector measured in kg m s⁻¹, with the same direction as the velocity. Force times time is impulse, and ½mv² is kinetic energy — distinct quantities. Because momentum is a vector, sign/direction matters in one-dimensional problems."
+      "explanation": "Momentum is the product of mass and velocity (p = mv), a vector measured in kg m s⁻¹, with the same direction as the velocity. Force times time is impulse, and ½mv² is kinetic energy — distinct quantities. Because momentum is a vector, sign/direction matters in one-dimensional problems.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m204-q02",
@@ -22,7 +27,12 @@
         "Impulse equals kinetic energy gained"
       ],
       "answer": 1,
-      "explanation": "Impulse is the change in momentum, equal to the force times the time it acts: Δp = FΔt (in kg m s⁻¹ or N s). It is really Newton's second law in disguise (Ft = mΔv) and equals the area under a force-time graph. Defining impulse as just 'a force' is the common error."
+      "explanation": "Impulse is the change in momentum, equal to the force times the time it acts: Δp = FΔt (in kg m s⁻¹ or N s). It is really Newton's second law in disguise (Ft = mΔv) and equals the area under a force-time graph. Defining impulse as just 'a force' is the common error.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m204-q03",
@@ -34,7 +44,12 @@
         "5 N"
       ],
       "answer": 1,
-      "explanation": "Change in momentum = mΔv = 0.2 × 15 = 3 kg m s⁻¹. Force = Δp/t = 3/0.3 = 10 N. If the catch were slowed to 0.6 s, the same 3 kg m s⁻¹ spread over double the time would halve the force to 5 N — 'extend the time, cut the force', which is why you give with the ball when catching."
+      "explanation": "Change in momentum = mΔv = 0.2 × 15 = 3 kg m s⁻¹. Force = Δp/t = 3/0.3 = 10 N. If the catch were slowed to 0.6 s, the same 3 kg m s⁻¹ spread over double the time would halve the force to 5 N — 'extend the time, cut the force', which is why you give with the ball when catching.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m204-q04",
@@ -46,7 +61,12 @@
         "It conserves the occupant's kinetic energy"
       ],
       "answer": 1,
-      "explanation": "The change in momentum (from full speed to zero) is fixed by the situation. Since impulse = FΔt = Δp, extending the time over which the momentum change occurs reduces the average force — and it is the force that causes injury. Airbags, crumple zones, and bending your knees all extend the stopping time; they do not change the momentum itself."
+      "explanation": "The change in momentum (from full speed to zero) is fixed by the situation. Since impulse = FΔt = Δp, extending the time over which the momentum change occurs reduces the average force — and it is the force that causes injury. Airbags, crumple zones, and bending your knees all extend the stopping time; they do not change the momentum itself.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m204-q05",
@@ -58,7 +78,12 @@
         "Because friction provides an external force"
       ],
       "answer": 1,
-      "explanation": "During the collision, A pushes on B and B pushes back equally and oppositely (Newton's third law), for the same contact time. Since impulse = force × time, the two receive equal and opposite changes in momentum that cancel, so the total stays constant. This requires a closed system (no external net force)."
+      "explanation": "During the collision, A pushes on B and B pushes back equally and oppositely (Newton's third law), for the same contact time. Since impulse = force × time, the two receive equal and opposite changes in momentum that cancel, so the total stays constant. This requires a closed system (no external net force).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m204-q06",
@@ -70,7 +95,12 @@
         "13.3 m s⁻¹"
       ],
       "answer": 1,
-      "explanation": "Momentum before = 1000 × 20 + 0 = 20 000 kg m s⁻¹. After, the combined 2500 kg moves at v: 2500v = 20 000 → v = 8 m s⁻¹ in the original direction. Only masses and velocities are needed — conservation of momentum does it all."
+      "explanation": "Momentum before = 1000 × 20 + 0 = 20 000 kg m s⁻¹. After, the combined 2500 kg moves at v: 2500v = 20 000 → v = 8 m s⁻¹ in the original direction. Only masses and velocities are needed — conservation of momentum does it all.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m204-q07",
@@ -82,7 +112,12 @@
         "0.5 m s⁻¹"
       ],
       "answer": 1,
-      "explanation": "Total momentum starts at zero, so it must stay zero. The bullet's momentum is 0.01 × 400 = 4 kg m s⁻¹ forward, so the rifle must carry 4 kg m s⁻¹ backward: recoil speed = 4/2 = 2 m s⁻¹ backward. Equal and opposite momenta summing to the original zero — this is also why a rocket is pushed forward as it ejects gas."
+      "explanation": "Total momentum starts at zero, so it must stay zero. The bullet's momentum is 0.01 × 400 = 4 kg m s⁻¹ forward, so the rifle must carry 4 kg m s⁻¹ backward: recoil speed = 4/2 = 2 m s⁻¹ backward. Equal and opposite momenta summing to the original zero — this is also why a rocket is pushed forward as it ejects gas.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m204-q08",
@@ -94,7 +129,12 @@
         "Neither momentum nor kinetic energy is conserved in inelastic collisions"
       ],
       "answer": 1,
-      "explanation": "Momentum is conserved in every closed-system collision, elastic or inelastic. The difference is kinetic energy: it is conserved only in elastic collisions, while in inelastic collisions some is transformed into heat, sound and deformation. Assuming kinetic energy is conserved in all collisions is the single most common error."
+      "explanation": "Momentum is conserved in every closed-system collision, elastic or inelastic. The difference is kinetic energy: it is conserved only in elastic collisions, while in inelastic collisions some is transformed into heat, sound and deformation. Assuming kinetic energy is conserved in all collisions is the single most common error.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m204-q09",
@@ -106,7 +146,12 @@
         "4 kg m s⁻¹"
       ],
       "answer": 1,
-      "explanation": "Take the initial direction as positive: initial momentum = 0.5 × 8 = +4; final momentum = 0.5 × (−6) = −3 (rebound reverses direction). Impulse = final − initial = −3 − 4 = −7, i.e. 7 kg m s⁻¹ in the rebound direction. Treating the rebound as positive gives the wrong answer of 1 — the reversal of direction is why the impulse exceeds either momentum alone."
+      "explanation": "Take the initial direction as positive: initial momentum = 0.5 × 8 = +4; final momentum = 0.5 × (−6) = −3 (rebound reverses direction). Impulse = final − initial = −3 − 4 = −7, i.e. 7 kg m s⁻¹ in the rebound direction. Treating the rebound as positive gives the wrong answer of 1 — the reversal of direction is why the impulse exceeds either momentum alone.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m204-q10",
@@ -118,7 +163,12 @@
         "1 m s⁻¹; kinetic energy not conserved"
       ],
       "answer": 1,
-      "explanation": "Momentum: 3 × 4 + 0 = 12 = 4v → v = 3 m s⁻¹. Kinetic energy before = ½ × 3 × 4² = 24 J; after = ½ × 4 × 3² = 18 J. Since 18 J < 24 J, kinetic energy is NOT conserved — the collision is inelastic (the trolleys sticking together is the giveaway), with the 6 J difference transformed into heat, sound and deformation."
+      "explanation": "Momentum: 3 × 4 + 0 = 12 = 4v → v = 3 m s⁻¹. Kinetic energy before = ½ × 3 × 4² = 24 J; after = ½ × 4 × 3² = 18 J. Since 18 J < 24 J, kinetic energy is NOT conserved — the collision is inelastic (the trolleys sticking together is the giveaway), with the 6 J difference transformed into heat, sound and deformation.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

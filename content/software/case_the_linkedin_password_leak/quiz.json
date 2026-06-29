@@ -10,7 +10,12 @@
         "It used a slow hash function, and it stored the salt separately from the database"
       ],
       "answer": 0,
-      "explanation": "The script is explicit that LinkedIn made two mistakes: it chose SHA-1, a fast, general-purpose hash, and its hashes were unsalted. It is a common trap to assume the passwords were stored as plaintext — the script stresses they were NOT, LinkedIn was hashing, just doing it badly. Note that passwords are hashed, not encrypted, so the encryption distractor describes the wrong technique entirely."
+      "explanation": "The script is explicit that LinkedIn made two mistakes: it chose SHA-1, a fast, general-purpose hash, and its hashes were unsalted. It is a common trap to assume the passwords were stored as plaintext — the script stresses they were NOT, LinkedIn was hashing, just doing it badly. Note that passwords are hashed, not encrypted, so the encryption distractor describes the wrong technique entirely.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-linkedin-q02",
@@ -22,7 +27,12 @@
         "It splits the password into pieces stored across several servers"
       ],
       "answer": 1,
-      "explanation": "The script describes a hash function as a 'one-way scrambler' that produces a fixed-length fingerprint with 'no reverse gear' — you can go from password to fingerprint but not back. The most tempting wrong answer is encryption (A), but encryption is two-way and reversible with a key, which is exactly what you do NOT want for a password. The site stores only the fingerprint and re-hashes login attempts to compare."
+      "explanation": "The script describes a hash function as a 'one-way scrambler' that produces a fixed-length fingerprint with 'no reverse gear' — you can go from password to fingerprint but not back. The most tempting wrong answer is encryption (A), but encryption is two-way and reversible with a key, which is exactly what you do NOT want for a password. The site stores only the fingerprint and re-hashes login attempts to compare.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-linkedin-q03",
@@ -34,7 +44,12 @@
         "A slow hash automatically adds a salt to each password as it runs"
       ],
       "answer": 2,
-      "explanation": "Since a hash can't be reversed, attackers recover passwords by guessing candidates, hashing them forwards, and checking for matches. A fast hash like SHA-1 lets them try billions of guesses per second; a slow hash makes each guess expensive, so the same attack would take centuries. The script's line is 'Slow is a feature.' Option D confuses slowness with salting — they are two separate defences."
+      "explanation": "Since a hash can't be reversed, attackers recover passwords by guessing candidates, hashing them forwards, and checking for matches. A fast hash like SHA-1 lets them try billions of guesses per second; a slow hash makes each guess expensive, so the same attack would take centuries. The script's line is 'Slow is a feature.' Option D confuses slowness with salting — they are two separate defences.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-linkedin-q04",
@@ -46,7 +61,12 @@
         "A second password the user must enter to confirm their identity"
       ],
       "answer": 0,
-      "explanation": "The script defines a salt as 'a little chunk of random data — different for every single user — that you mix into the password before you hash it.' Its job is to ensure two users with the same password get different fingerprints. The shared-key distractor is wrong because a salt is unique per user (not shared) and is not a key, and salting is not encryption."
+      "explanation": "The script defines a salt as 'a little chunk of random data — different for every single user — that you mix into the password before you hash it.' Its job is to ensure two users with the same password get different fingerprints. The shared-key distractor is wrong because a salt is unique per user (not shared) and is not a key, and salting is not encryption.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-linkedin-q05",
@@ -58,7 +78,12 @@
         "It makes each user's fingerprint depend on their unique salt, so a table built from plain dictionary words never matches and the attacker must crack each account separately"
       ],
       "answer": 3,
-      "explanation": "A precomputed table maps common passwords to their fingerprints so an attacker can look up stolen hashes instantly. Because each user's salt is mixed in before hashing, none of the table's pre-built fingerprints will match, forcing the attacker to redo all the work for every single user. The script notes salt doesn't make one password uncrackable, but it makes the 'bulk, wholesale, crack-them-all-at-once approach impossible.' The 'slows down the hash' distractor describes a separate defence, not what defeats the table."
+      "explanation": "A precomputed table maps common passwords to their fingerprints so an attacker can look up stolen hashes instantly. Because each user's salt is mixed in before hashing, none of the table's pre-built fingerprints will match, forcing the attacker to redo all the work for every single user. The script notes salt doesn't make one password uncrackable, but it makes the 'bulk, wholesale, crack-them-all-at-once approach impossible.' The 'slows down the hash' distractor describes a separate defence, not what defeats the table.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-linkedin-q06",
@@ -70,7 +95,12 @@
         "Hashing is one-way with no key and no reverse gear, whereas encryption is two-way and designed to be decrypted with a key — so passwords must be hashed, never encrypted"
       ],
       "answer": 3,
-      "explanation": "The script draws this distinction sharply: encryption is two-way and reversible with a key (good for a message you need to read later), while hashing is one-way with no key and no reverse gear. If passwords were encrypted, a stolen key or a careless insider could recover every password in plaintext. The exam rule to carry: 'you hash passwords, you don't encrypt them.' The 'hashing is faster' distractor is misleading — speed is not the reason; in fact, for passwords you want the hash to be slow."
+      "explanation": "The script draws this distinction sharply: encryption is two-way and reversible with a key (good for a message you need to read later), while hashing is one-way with no key and no reverse gear. If passwords were encrypted, a stolen key or a careless insider could recover every password in plaintext. The exam rule to carry: 'you hash passwords, you don't encrypt them.' The 'hashing is faster' distractor is misleading — speed is not the reason; in fact, for passwords you want the hash to be slow.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-linkedin-q07",
@@ -82,7 +112,12 @@
         "A denial-of-service attack — it works by overwhelming the other sites with login attempts"
       ],
       "answer": 1,
-      "explanation": "The script names this credential stuffing: attackers take a leaked username-and-password pair and try it 'on site after site after site,' betting the user reused it. It works because of password reuse, which 'turns one company's breach into your problem,' breaking into accounts on services that were never breached. Phishing (A) is a different attack involving deception, not automated reuse of already-stolen pairs."
+      "explanation": "The script names this credential stuffing: attackers take a leaked username-and-password pair and try it 'on site after site after site,' betting the user reused it. It works because of password reuse, which 'turns one company's breach into your problem,' breaking into accounts on services that were never breached. Phishing (A) is a different attack involving deception, not automated reuse of already-stolen pairs.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-linkedin-q08",
@@ -94,7 +129,12 @@
         "Compress the password, add a shared salt, and verify with a checksum"
       ],
       "answer": 2,
-      "explanation": "The script's three lessons are: passwords must be stored using a one-way hash (never reversible encryption); every password gets a unique per-user salt; and the hash must be slow and expensive on purpose. Get those three right and a stolen database is 'a minor embarrassment instead of a catastrophe.' The encryption distractor is wrong on the first principle — encryption is reversible, which is exactly the danger to avoid."
+      "explanation": "The script's three lessons are: passwords must be stored using a one-way hash (never reversible encryption); every password gets a unique per-user salt; and the hash must be slow and expensive on purpose. Get those three right and a stolen database is 'a minor embarrassment instead of a catastrophe.' The encryption distractor is wrong on the first principle — encryption is reversible, which is exactly the danger to avoid.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-linkedin-q09",
@@ -106,7 +146,12 @@
         "Salts can be reversed, so the attacker can simply remove the salt and use a precomputed table"
       ],
       "answer": 1,
-      "explanation": "Salt and slowness are two separate, complementary defences. The salt forces the attacker to attack each account individually instead of all at once, but with a fast hash they can still run billions of guesses per second against each account, so common passwords are cracked almost instantly. This is precisely why the script lists all three requirements together — one-way hash, unique salt, AND a deliberately slow function. Option D is wrong because salts are not secret values that get 'reversed'; they work even when stored alongside the hash."
+      "explanation": "Salt and slowness are two separate, complementary defences. The salt forces the attacker to attack each account individually instead of all at once, but with a fast hash they can still run billions of guesses per second against each account, so common passwords are cracked almost instantly. This is precisely why the script lists all three requirements together — one-way hash, unique salt, AND a deliberately slow function. Option D is wrong because salts are not secret values that get 'reversed'; they work even when stored alongside the hash.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-linkedin-q10",
@@ -118,7 +163,12 @@
         "About 200 million credentials; the defence is to rely on LinkedIn to salt its hashes in future"
       ],
       "answer": 2,
-      "explanation": "The script states that in 2016 the full extent surfaced as around 117 million credentials — the 2012 figure of 6.5 million had been just the tip. The personal defence is using a different password everywhere, ideally with a password manager, so 'one site's bad day can never become the key to your whole digital life.' The HTTPS and 'rely on LinkedIn' distractors miss the point: the breach spread through password reuse, which is the user's responsibility to defend against, not something HTTPS or LinkedIn's own fixes can solve for you."
+      "explanation": "The script states that in 2016 the full extent surfaced as around 117 million credentials — the 2012 figure of 6.5 million had been just the tip. The personal defence is using a different password everywhere, ideally with a password manager, so 'one site's bad day can never become the key to your whole digital life.' The HTTPS and 'rely on LinkedIn' distractors miss the point: the breach spread through password reuse, which is the user's responsibility to defend against, not something HTTPS or LinkedIn's own fixes can solve for you.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

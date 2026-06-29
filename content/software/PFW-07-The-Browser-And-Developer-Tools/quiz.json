@@ -10,7 +10,12 @@
         "A security engine and a caching engine"
       ],
       "answer": 1,
-      "explanation": "A browser does not just display a page, it runs it using a rendering engine that turns HTML and CSS into pixels, and a JavaScript engine that executes scripts. For example, Chrome uses the Blink rendering engine with the V8 JavaScript engine. Because these engines are built independently across browsers, the same code can behave differently, which is the root of cross-browser compatibility issues."
+      "explanation": "A browser does not just display a page, it runs it using a rendering engine that turns HTML and CSS into pixels, and a JavaScript engine that executes scripts. For example, Chrome uses the Blink rendering engine with the V8 JavaScript engine. Because these engines are built independently across browsers, the same code can behave differently, which is the root of cross-browser compatibility issues.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw07-q02",
@@ -22,7 +27,12 @@
         "Firefox uses Gecko and SpiderMonkey"
       ],
       "answer": 3,
-      "explanation": "The episode names three engine pairings: Chrome uses Blink and V8, Firefox uses Gecko and SpiderMonkey, and Safari uses WebKit and JavaScriptCore. Option D is the correct Firefox pairing. The other options mix engines across the wrong browsers, which is the most common confusion when the names are memorised in isolation."
+      "explanation": "The episode names three engine pairings: Chrome uses Blink and V8, Firefox uses Gecko and SpiderMonkey, and Safari uses WebKit and JavaScriptCore. Option D is the correct Firefox pairing. The other options mix engines across the wrong browsers, which is the most common confusion when the names are memorised in isolation.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw07-q03",
@@ -34,7 +44,12 @@
         "Older browsers cannot run JavaScript, so they fall back to plain HTML"
       ],
       "answer": 1,
-      "explanation": "Because each browser has its own independently built rendering and JavaScript engine, the same HTML, CSS, and JavaScript can be interpreted slightly differently, and a new feature may work in one browser but not yet in another. Naming the engines and the interpret-differently or different-feature-support point is the mark. The same-origin policy (option C) is a separate security boundary, not the cause of visual or behavioural differences."
+      "explanation": "Because each browser has its own independently built rendering and JavaScript engine, the same HTML, CSS, and JavaScript can be interpreted slightly differently, and a new feature may work in one browser but not yet in another. Naming the engines and the interpret-differently or different-feature-support point is the mark. The same-origin policy (option C) is a separate security boundary, not the cause of visual or behavioural differences.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw07-q04",
@@ -46,7 +61,12 @@
         "Errors, Network, Security, Performance"
       ],
       "answer": 2,
-      "explanation": "E-N-S-P stands for Elements, Network, Storage, and Performance, with the Console sitting alongside for messages and errors. Elements inspects the live DOM and CSS, Network shows HTTP requests, Storage shows client-side data, and Performance profiles speed. Mixing in Sources, Profiler, or Security (the other options) breaks the hook and loses the panel-to-problem mapping that earns marks."
+      "explanation": "E-N-S-P stands for Elements, Network, Storage, and Performance, with the Console sitting alongside for messages and errors. Elements inspects the live DOM and CSS, Network shows HTTP requests, Storage shows client-side data, and Performance profiles speed. Mixing in Sources, Profiler, or Security (the other options) breaks the hook and loses the panel-to-problem mapping that earns marks.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw07-q05",
@@ -58,7 +78,12 @@
         "A sluggish page, by profiling slow JavaScript functions"
       ],
       "answer": 0,
-      "explanation": "Elements inspects the live DOM, the Document Object Model, letting you view and temporarily edit the HTML and see exactly which CSS rules apply to any element and why. You use it to diagnose layout and styling problems such as why a box is the wrong size or which rule overrode a colour. Requests belong to Network (B), cookies to Storage (C), and slow functions to Performance (D)."
+      "explanation": "Elements inspects the live DOM, the Document Object Model, letting you view and temporarily edit the HTML and see exactly which CSS rules apply to any element and why. You use it to diagnose layout and styling problems such as why a box is the wrong size or which rule overrode a colour. Requests belong to Network (B), cookies to Storage (C), and slow functions to Performance (D).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw07-q06",
@@ -70,7 +95,12 @@
         "The browser blocked the request under the same-origin policy, so CORS must be configured"
       ],
       "answer": 2,
-      "explanation": "A 500 is a server error: the request reached the server but the back-end code failed while processing it, so the fault lies in the server, not the request or the client. This contrasts with a 404 (wrong or missing endpoint, the request side) and a 401 or 403 (authentication or authorisation). The triage rule is 4xx points at the request or its permissions, while 5xx points at the server's own code."
+      "explanation": "A 500 is a server error: the request reached the server but the back-end code failed while processing it, so the fault lies in the server, not the request or the client. This contrasts with a 404 (wrong or missing endpoint, the request side) and a 401 or 403 (authentication or authorisation). The triage rule is 4xx points at the request or its permissions, while 5xx points at the server's own code.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw07-q07",
@@ -82,7 +112,12 @@
         "Feature detection runs only on the server, while progressive enhancement runs only on the client"
       ],
       "answer": 1,
-      "explanation": "Feature detection checks at run time whether the browser actually supports a feature before using it, which is more reliable than guessing from the browser name. Progressive enhancement builds a baseline experience that works everywhere, then layers enhancements on top only where they are supported. Option A reverses the definitions and confuses feature detection with the brittle browser-detection approach the episode warns against."
+      "explanation": "Feature detection checks at run time whether the browser actually supports a feature before using it, which is more reliable than guessing from the browser name. Progressive enhancement builds a baseline experience that works everywhere, then layers enhancements on top only where they are supported. Option A reverses the definitions and confuses feature detection with the brittle browser-detection approach the episode warns against.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw07-q08",
@@ -94,7 +129,12 @@
         "Open the Console and read JavaScript error messages, since errors are the only cause of slowness"
       ],
       "answer": 1,
-      "explanation": "The strong answer matches symptom to panel: the Network panel and its request waterfall show whether the bottleneck is the network (uncompressed images, too many requests, long download or wait times), while the Performance panel profiles the page to show whether the bottleneck is processing (slow JavaScript and long rendering or paint times). You then read metrics such as largest contentful paint and act on the findings. Clearing cookies (A) or editing CSS (C) does not localise a speed problem."
+      "explanation": "The strong answer matches symptom to panel: the Network panel and its request waterfall show whether the bottleneck is the network (uncompressed images, too many requests, long download or wait times), while the Performance panel profiles the page to show whether the bottleneck is processing (slow JavaScript and long rendering or paint times). You then read metrics such as largest contentful paint and act on the findings. Clearing cookies (A) or editing CSS (C) does not localise a speed problem.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw07-q09",
@@ -106,7 +146,12 @@
         "API keys can only be stored on the client if the site is a progressive web app"
       ],
       "answer": 0,
-      "explanation": "Because the developer tools are in everyone's browser, all client-side code, every value in local storage, and every request and response is fully visible and editable — an attacker uses the same dev tools you do. So you must never hide a secret, API key, or security check in client-side code because users will not look; they will, with one keypress. This is the validate-on-the-server rule seen from the other side: the client is an open book, so the trust boundary sits at the server."
+      "explanation": "Because the developer tools are in everyone's browser, all client-side code, every value in local storage, and every request and response is fully visible and editable — an attacker uses the same dev tools you do. So you must never hide a secret, API key, or security check in client-side code because users will not look; they will, with one keypress. This is the validate-on-the-server rule seen from the other side: the client is an open book, so the trust boundary sits at the server.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw07-q10",
@@ -118,7 +163,12 @@
         "Both 401 and 404 mean the same thing — the back-end code threw an error"
       ],
       "answer": 2,
-      "explanation": "A 401 (or 403) signals an authentication or authorisation problem, linking back to the access-control material, whereas a 404 means the resource or endpoint was not found, which points at a wrong URL in the request itself. Both are 4xx codes, so the fault is on the request or permissions side, not the server. A server-side crash would instead show a 500, which is the distinction option A gets backwards."
+      "explanation": "A 401 (or 403) signals an authentication or authorisation problem, linking back to the access-control material, whereas a 404 means the resource or endpoint was not found, which points at a wrong URL in the request itself. Both are 4xx codes, so the fault is on the request or permissions side, not the server. A server-side crash would instead show a 500, which is the distinction option A gets backwards.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

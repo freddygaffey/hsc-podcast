@@ -10,7 +10,12 @@
         "Adware and a keylogger"
       ],
       "answer": 1,
-      "explanation": "The script states WannaCry was 'two nasty things bolted together': ransomware, which encrypts files and demands payment for the key, and a worm, which spreads by itself from machine to machine with no human help. A virus or trojan (option A) typically still needs a user to run an infected file, whereas the worm component is precisely what let WannaCry spread without anyone clicking anything."
+      "explanation": "The script states WannaCry was 'two nasty things bolted together': ransomware, which encrypts files and demands payment for the key, and a worm, which spreads by itself from machine to machine with no human help. A virus or trojan (option A) typically still needs a user to run an infected file, whereas the worm component is precisely what let WannaCry spread without anyone clicking anything.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-wannacry-q02",
@@ -22,7 +27,12 @@
         "A worm spreads by tricking users into installing fake software, while ransomware spreads through infected USB drives"
       ],
       "answer": 0,
-      "explanation": "Ordinary ransomware spreads 'the boring way' — someone clicks a bad link or opens an infected attachment, infecting one machine. A worm needs no human help: once on one computer it scans the network, finds other vulnerable machines and infects them in a chain reaction. Option C reverses the two — it is the worm, not ordinary ransomware, that produces automatic network-wide spread."
+      "explanation": "Ordinary ransomware spreads 'the boring way' — someone clicks a bad link or opens an infected attachment, infecting one machine. A worm needs no human help: once on one computer it scans the network, finds other vulnerable machines and infects them in a chain reaction. Option C reverses the two — it is the worm, not ordinary ransomware, that produces automatic network-wide spread.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-wannacry-q03",
@@ -34,7 +44,12 @@
         "Shadow Broker, exploiting a flaw in the Windows login service"
       ],
       "answer": 0,
-      "explanation": "The weapon was EternalBlue, which exploited a flaw in SMB — the system Windows computers use to share files and printers over a local network. By sending specially crafted messages to that file-sharing service, an attacker could run code remotely with no login and no permission. Heartbleed (option B) is a real but unrelated OpenSSL vulnerability, and the Shadow Brokers were the group that leaked the tool, not the exploit itself."
+      "explanation": "The weapon was EternalBlue, which exploited a flaw in SMB — the system Windows computers use to share files and printers over a local network. By sending specially crafted messages to that file-sharing service, an attacker could run code remotely with no login and no permission. Heartbleed (option B) is a real but unrelated OpenSSL vulnerability, and the Shadow Brokers were the group that leaked the tool, not the exploit itself.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-wannacry-q04",
@@ -46,7 +61,12 @@
         "It was developed openly by security researchers as a proof of concept and copied by criminals"
       ],
       "answer": 1,
-      "explanation": "EternalBlue was built by the US National Security Agency, which discovered the SMB flaw and kept it as a cyber-weapon instead of reporting it so it could be fixed. The Shadow Brokers stole a cache of NSA tools and dumped them on the public internet, after which someone bolted EternalBlue onto ransomware. This is why the script calls it 'the government's secret skeleton key' that was stolen and handed to the world."
+      "explanation": "EternalBlue was built by the US National Security Agency, which discovered the SMB flaw and kept it as a cyber-weapon instead of reporting it so it could be fixed. The Shadow Brokers stole a cache of NSA tools and dumped them on the public internet, after which someone bolted EternalBlue onto ransomware. This is why the script calls it 'the government's secret skeleton key' that was stolen and handed to the world.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-wannacry-q05",
@@ -58,7 +78,12 @@
         "Because Microsoft had already released a free patch (MS17-010) a full month earlier, so every infected machine was one that had not applied an available fix"
       ],
       "answer": 3,
-      "explanation": "A month before the attack, in March 2017, Microsoft released patch MS17-010 that sealed exactly the hole EternalBlue used — it was free and had been available for weeks. Every computer WannaCry infected was one that had not installed it, which is what makes the tragedy infuriating rather than unavoidable. The failure was not a missing fix but unapplied patching, driven by ageing systems and organisations that put updates off."
+      "explanation": "A month before the attack, in March 2017, Microsoft released patch MS17-010 that sealed exactly the hole EternalBlue used — it was free and had been available for weeks. Every computer WannaCry infected was one that had not installed it, which is what makes the tragedy infuriating rather than unavoidable. The failure was not a missing fix but unapplied patching, driven by ageing systems and organisations that put updates off.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-wannacry-q06",
@@ -70,7 +95,12 @@
         "Authentication, because the attackers stole user logins to access systems"
       ],
       "answer": 2,
-      "explanation": "The script is explicit: 'Ransomware doesn't steal your data; it denies you access to it. The property it destroys is availability.' The files were still there, encrypted, but unreachable — leading to cancelled surgeries and diverted ambulances. It is tempting to choose confidentiality (option A), but ransomware locks data rather than reading or leaking it, which makes availability the property under attack."
+      "explanation": "The script is explicit: 'Ransomware doesn't steal your data; it denies you access to it. The property it destroys is availability.' The files were still there, encrypted, but unreachable — leading to cancelled surgeries and diverted ambulances. It is tempting to choose confidentiality (option A), but ransomware locks data rather than reading or leaking it, which makes availability the property under attack.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-wannacry-q07",
@@ -82,7 +112,12 @@
         "Security teams blocked the Bitcoin payment address, so the ransomware deleted itself"
       ],
       "answer": 2,
-      "explanation": "WannaCry's logic was: try to reach a particular hard-coded nonsense domain; if you cannot reach it, carry on infecting; if you can reach it, stop. Marcus Hutchins registered that unregistered domain for roughly ten dollars, so every new copy worldwide found the address now existed and obediently switched off. This matches Listing 3's pseudocode, where connecting to the domain triggers STOP rather than the encrypt-and-spread branch."
+      "explanation": "WannaCry's logic was: try to reach a particular hard-coded nonsense domain; if you cannot reach it, carry on infecting; if you can reach it, stop. Marcus Hutchins registered that unregistered domain for roughly ten dollars, so every new copy worldwide found the address now existed and obediently switched off. This matches Listing 3's pseudocode, where connecting to the domain triggers STOP rather than the encrypt-and-spread branch.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-wannacry-q08",
@@ -94,7 +129,12 @@
         "Because only patched systems are legally allowed to connect to a hospital network"
       ],
       "answer": 0,
-      "explanation": "The episode's central lesson is that the hard part of security is usually not discovering exotic new flaws but the unglamorous discipline of keeping systems updated and applying patches promptly. The most devastating attacks frequently exploit known vulnerabilities the vendor has already fixed — exactly what happened with MS17-010. Patch management is not IT busywork; on that Friday it was the difference between a hospital that worked and one that did not."
+      "explanation": "The episode's central lesson is that the hard part of security is usually not discovering exotic new flaws but the unglamorous discipline of keeping systems updated and applying patches promptly. The most devastating attacks frequently exploit known vulnerabilities the vendor has already fixed — exactly what happened with MS17-010. Patch management is not IT busywork; on that Friday it was the difference between a hospital that worked and one that did not.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-wannacry-q09",
@@ -106,7 +146,12 @@
         "Wipe the infected machines and restore the files from a recent, clean, offline backup, refusing to pay, because reliable backups make the attacker's leverage evaporate"
       ],
       "answer": 3,
-      "explanation": "The script states that if you have a recent, clean, offline backup, the attacker's leverage evaporates: you wipe the machine, restore from backup, and refuse to negotiate. This is the business continuity and disaster recovery lesson — ransomware is fundamentally an attack on organisations without good backups. Paying the ransom (option A) funds the criminals and offers no guarantee of recovery, whereas tested isolated backups are described as 'your answer to extortion.'"
+      "explanation": "The script states that if you have a recent, clean, offline backup, the attacker's leverage evaporates: you wipe the machine, restore from backup, and refuse to negotiate. This is the business continuity and disaster recovery lesson — ransomware is fundamentally an attack on organisations without good backups. Paying the ransom (option A) funds the criminals and offers no guarantee of recovery, whereas tested isolated backups are described as 'your answer to extortion.'",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-wannacry-q10",
@@ -118,7 +163,12 @@
         "Defence in depth means encrypting all data so that even the organisation cannot read it without a key"
       ],
       "answer": 2,
-      "explanation": "The episode points out that WannaCry got through because three layers failed at once: the flaw was hoarded instead of disclosed, the released patch was not applied, and backups were absent or untested. Defence in depth recognises that prevention will sometimes fail, so multiple independent layers must let you detect, contain and recover when it does — 'the attacker only has to win once; you have to be ready every single day.' Relying on a single control (option B) leaves one point of failure that, once breached, ends the defence entirely."
+      "explanation": "The episode points out that WannaCry got through because three layers failed at once: the flaw was hoarded instead of disclosed, the released patch was not applied, and backups were absent or untested. Defence in depth recognises that prevention will sometimes fail, so multiple independent layers must let you detect, contain and recover when it does — 'the attacker only has to win once; you have to be ready every single day.' Relying on a single control (option B) leaves one point of failure that, once breached, ends the defence entirely.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

@@ -10,7 +10,12 @@
         "Concurrency, Caching, CDN, Latency-tuning"
       ],
       "answer": 0,
-      "explanation": "C-C-C-L stands for Caching, Compression, CDN, and Lazy-loading — the core four levers for reducing page-load time. The other options mix in real-sounding but unrelated terms (compiling, clustering, load-balancing) that the script never names as the toolkit, which is the most common way students lose the recall mark."
+      "explanation": "C-C-C-L stands for Caching, Compression, CDN, and Lazy-loading — the core four levers for reducing page-load time. The other options mix in real-sounding but unrelated terms (compiling, clustering, load-balancing) that the script never names as the toolkit, which is the most common way students lose the recall mark.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1303-q02",
@@ -22,7 +27,12 @@
         "Reduce the number of requests by bundling all files first"
       ],
       "answer": 1,
-      "explanation": "The episode's named professional habit is 'measure before you optimise' — profile the page with developer tools and fix the true bottleneck rather than guessing. Caching aggressively (A) and bundling (D) are real techniques, but applying any of them before measuring is exactly the 'premature optimisation' trap the principle warns against."
+      "explanation": "The episode's named professional habit is 'measure before you optimise' — profile the page with developer tools and fix the true bottleneck rather than guessing. Caching aggressively (A) and bundling (D) are real techniques, but applying any of them before measuring is exactly the 'premature optimisation' trap the principle warns against.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1303-q03",
@@ -34,7 +44,12 @@
         "The Memory panel to find leaks and the Security panel to check certificates"
       ],
       "answer": 2,
-      "explanation": "The script ties measuring to ENSP from episode seven: the Network panel shows which requests are large or slow (usually huge images or a giant JavaScript bundle), and the Performance panel profiles where time actually goes. The Console and Elements panels are real dev-tools panels but are used for debugging and DOM inspection, not for profiling load-time bottlenecks."
+      "explanation": "The script ties measuring to ENSP from episode seven: the Network panel shows which requests are large or slow (usually huge images or a giant JavaScript bundle), and the Performance panel profiles where time actually goes. The Console and Elements panels are real dev-tools panels but are used for debugging and DOM inspection, not for profiling load-time bottlenecks.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1303-q04",
@@ -46,7 +61,12 @@
         "It distributes requests across multiple servers to balance the load"
       ],
       "answer": 2,
-      "explanation": "The mark-earning sentence is that caching stores frequently used data closer to where it is needed so it can be reused without re-fetching or re-computing it — for example a cached query result in Redis, or assets kept in the browser via Cache-Control headers. The load-balancing option describes a different concept, and the encryption option confuses caching with security, which has nothing to do with reuse."
+      "explanation": "The mark-earning sentence is that caching stores frequently used data closer to where it is needed so it can be reused without re-fetching or re-computing it — for example a cached query result in Redis, or assets kept in the browser via Cache-Control headers. The load-balancing option describes a different concept, and the encryption option confuses caching with security, which has nothing to do with reuse.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1303-q05",
@@ -58,7 +78,12 @@
         "It combines several files into one bundle to reduce the number of requests"
       ],
       "answer": 0,
-      "explanation": "Compression shrinks files before they travel over the network: the server uses gzip (or its newer cousin Brotli) on text-based responses — HTML, CSS, JavaScript, JSON — and the browser decompresses them, often cutting transfer size by 60 to 80 percent. The deferring option describes lazy loading, the edge-server option describes a CDN, and the combining option describes bundling — all separate C-C-C-L levers, which is why distinguishing the mechanism matters."
+      "explanation": "Compression shrinks files before they travel over the network: the server uses gzip (or its newer cousin Brotli) on text-based responses — HTML, CSS, JavaScript, JSON — and the browser decompresses them, often cutting transfer size by 60 to 80 percent. The deferring option describes lazy loading, the edge-server option describes a CDN, and the combining option describes bundling — all separate C-C-C-L levers, which is why distinguishing the mechanism matters.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1303-q06",
@@ -70,7 +95,12 @@
         "A CDN and browser caching are identical; CDN is just the marketing name for browser caching"
       ],
       "answer": 1,
-      "explanation": "The episode frames a CDN as 'caching plus geography' — a network of distributed edge servers that serve static assets from a location close to the user (London edge rather than a Sydney origin), reducing latency and offloading the origin. Browser caching instead stores copies on the user's own device. Option C inverts the rule: CDNs are for static, public assets, and private per-user pages must never be publicly cached."
+      "explanation": "The episode frames a CDN as 'caching plus geography' — a network of distributed edge servers that serve static assets from a location close to the user (London edge rather than a Sydney origin), reducing latency and offloading the origin. Browser caching instead stores copies on the user's own device. Option C inverts the rule: CDNs are for static, public assets, and private per-user pages must never be publicly cached.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1303-q07",
@@ -82,7 +112,12 @@
         "CDNs can only cache images, so an HTML account page cannot be stored there at all"
       ],
       "answer": 2,
-      "explanation": "Caching personalised or sensitive content in a shared cache means another user could be served that cached page — a serious data leak, and one of the episode's two named caching failure modes. The rule is to cache static, public assets aggressively but never publicly cache private or per-user data (set 'private, no-store'); the issue is security, not speed or page size."
+      "explanation": "Caching personalised or sensitive content in a shared cache means another user could be served that cached page — a serious data leak, and one of the episode's two named caching failure modes. The rule is to cache static, public assets aggressively but never publicly cache private or per-user data (set 'private, no-store'); the issue is security, not speed or page size.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1303-q08",
@@ -94,7 +129,12 @@
         "It defers non-critical or off-screen resources, such as below-the-fold images and non-essential scripts, until they are needed, prioritising the content the user sees first"
       ],
       "answer": 3,
-      "explanation": "Lazy loading improves the initial load time by deferring non-critical or off-screen resources — below-the-fold images, a comments widget, analytics — until they are actually needed, prioritising the content in the first view. The minification and server-side caching options describe other techniques, and the pre-load-everything option is the opposite of lazy loading and would slow the initial render."
+      "explanation": "Lazy loading improves the initial load time by deferring non-critical or off-screen resources — below-the-fold images, a comments widget, analytics — until they are actually needed, prioritising the content in the first view. The minification and server-side caching options describe other techniques, and the pre-load-everything option is the opposite of lazy loading and would slow the initial render.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1303-q09",
@@ -106,7 +146,12 @@
         "A heavy framework means a big JavaScript bundle, so the build-versus-buy choice has a measurable performance cost — keep the bundle small"
       ],
       "answer": 3,
-      "explanation": "Every separate file is a separate request with its own overhead, so combining CSS or JavaScript into one bundle reduces requests and speeds things up. The interleave is that a heavy framework produces a big JavaScript bundle — the bundle-size load cost — so the build-versus-buy framework decision from episode nine carries a performance consequence you measure here. The 'separate request is faster' option is backwards: more separate requests add overhead, they do not save it."
+      "explanation": "Every separate file is a separate request with its own overhead, so combining CSS or JavaScript into one bundle reduces requests and speeds things up. The interleave is that a heavy framework produces a big JavaScript bundle — the bundle-size load cost — so the build-versus-buy framework decision from episode nine carries a performance consequence you measure here. The 'separate request is faster' option is backwards: more separate requests add overhead, they do not save it.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1303-q10",
@@ -118,7 +163,12 @@
         "Buy a faster origin server so the large images download more quickly to every user"
       ],
       "answer": 1,
-      "explanation": "The full-mark answer measures first — profile with developer tools to confirm the bottlenecks — then names techniques tied to the symptoms: compress and size images plus gzip text (the large images), Cache-Control and a CDN (no caching), and bundling plus lazy loading (many separate JS files). Option C breaks the caching caveat by publicly caching private cart and account data, and option A optimises before measuring, the premature-optimisation trap."
+      "explanation": "The full-mark answer measures first — profile with developer tools to confirm the bottlenecks — then names techniques tied to the symptoms: compress and size images plus gzip text (the large images), Cache-Control and a CDN (no caching), and bundling plus lazy loading (many separate JS files). Option C breaks the caching caveat by publicly caching private cart and account data, and option A optimises before measuring, the premature-optimisation trap.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

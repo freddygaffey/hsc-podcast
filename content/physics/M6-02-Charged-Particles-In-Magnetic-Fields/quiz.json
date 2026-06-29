@@ -10,7 +10,12 @@
         "Both fields act on stationary charges equally"
       ],
       "answer": 1,
-      "explanation": "A stationary charge in an electric field still feels \\(F = qE\\), but a magnetic field exerts no force on a charge at rest — motion is the price of admission. This single fact (from \\(F = qvB\\sin\\theta\\) with \\(v = 0\\)) underlies the whole topic."
+      "explanation": "A stationary charge in an electric field still feels \\(F = qE\\), but a magnetic field exerts no force on a charge at rest — motion is the price of admission. This single fact (from \\(F = qvB\\sin\\theta\\) with \\(v = 0\\)) underlies the whole topic.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m602-q02",
@@ -22,7 +27,12 @@
         "When the velocity is at \\(45^\\circ\\) to the field"
       ],
       "answer": 1,
-      "explanation": "At \\(\\theta = 90^\\circ\\), \\(\\sin\\theta = 1\\) and \\(F = qvB\\) is maximum. At \\(\\theta = 0^\\circ\\) the velocity is along the field, \\(\\sin\\theta = 0\\), and the force vanishes. The trap is measuring the angle from the perpendicular instead of from the field."
+      "explanation": "At \\(\\theta = 90^\\circ\\), \\(\\sin\\theta = 1\\) and \\(F = qvB\\) is maximum. At \\(\\theta = 0^\\circ\\) the velocity is along the field, \\(\\sin\\theta = 0\\), and the force vanishes. The trap is measuring the angle from the perpendicular instead of from the field.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m602-q03",
@@ -34,7 +44,12 @@
         "Because the field strength is constant"
       ],
       "answer": 1,
-      "explanation": "Work requires a force component along the displacement. The magnetic force is always perpendicular to the velocity (the direction of motion), so it does no work. By the work-energy theorem, no work means no change in kinetic energy and therefore no change in speed — only direction changes."
+      "explanation": "Work requires a force component along the displacement. The magnetic force is always perpendicular to the velocity (the direction of motion), so it does no work. By the work-energy theorem, no work means no change in kinetic energy and therefore no change in speed — only direction changes.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m602-q04",
@@ -46,7 +61,12 @@
         "Ignore the field direction entirely"
       ],
       "answer": 1,
-      "explanation": "The right-hand push rule is built for positive charges. For a negative electron the force is the exact opposite of what the right hand gives, so you reverse the result (or point the thumb opposite to the electron's motion, or use the left hand). Reading the palm straight off for an electron is the most common error in this topic."
+      "explanation": "The right-hand push rule is built for positive charges. For a negative electron the force is the exact opposite of what the right hand gives, so you reverse the result (or point the thumb opposite to the electron's motion, or use the left hand). Reading the palm straight off for an electron is the most common error in this topic.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m602-q05",
@@ -58,7 +78,12 @@
         "\\(qV = \\tfrac{1}{2}mv^2\\)"
       ],
       "answer": 1,
-      "explanation": "The magnetic force \\(qvB\\) provides the centripetal force \\(mv^2/r\\), so \\(qvB = mv^2/r\\). Cancelling one factor of \\(v\\) and rearranging gives \\(r = mv/qB\\). Stating that the magnetic force provides the centripetal force, and writing this line, is where the derivation marks are."
+      "explanation": "The magnetic force \\(qvB\\) provides the centripetal force \\(mv^2/r\\), so \\(qvB = mv^2/r\\). Cancelling one factor of \\(v\\) and rearranging gives \\(r = mv/qB\\). Stating that the magnetic force provides the centripetal force, and writing this line, is where the derivation marks are.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m602-q06",
@@ -70,7 +95,12 @@
         "Reverse the direction of the circle"
       ],
       "answer": 1,
-      "explanation": "\\(B\\) is in the denominator, so a stronger field gives a smaller radius. The force is centripetal (inward), so a bigger inward pull means a tighter curl, not a wider one. The trap is assuming more force means a bigger radius."
+      "explanation": "\\(B\\) is in the denominator, so a stronger field gives a smaller radius. The force is centripetal (inward), so a bigger inward pull means a tighter curl, not a wider one. The trap is assuming more force means a bigger radius.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m602-q07",
@@ -82,7 +112,12 @@
         "\\(5.6\\times10^{-1}\\ \\mathrm{m}\\)"
       ],
       "answer": 1,
-      "explanation": "Convert 6.0 mT to \\(6.0\\times10^{-3}\\ \\mathrm{T}\\). Then \\(r = mv/qB = (9.1\\times10^{-31})(5.9\\times10^{6}) / [(1.6\\times10^{-19})(6.0\\times10^{-3})] = 5.6\\times10^{-3}\\ \\mathrm{m}\\) (5.6 mm). Forgetting the millitesla conversion is off by a factor of 1000."
+      "explanation": "Convert 6.0 mT to \\(6.0\\times10^{-3}\\ \\mathrm{T}\\). Then \\(r = mv/qB = (9.1\\times10^{-31})(5.9\\times10^{6}) / [(1.6\\times10^{-19})(6.0\\times10^{-3})] = 5.6\\times10^{-3}\\ \\mathrm{m}\\) (5.6 mm). Forgetting the millitesla conversion is off by a factor of 1000.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m602-q08",
@@ -94,7 +129,12 @@
         "The proton's radius is smaller because it carries more charge"
       ],
       "answer": 2,
-      "explanation": "With \\(r = mv/qB\\) and equal speed, charge magnitude and field, the radius depends only on mass. The proton is about 1836 times more massive than the electron, so its radius is about 1836 times larger; the light electron whips round a much tighter circle."
+      "explanation": "With \\(r = mv/qB\\) and equal speed, charge magnitude and field, the radius depends only on mass. The proton is about 1836 times more massive than the electron, so its radius is about 1836 times larger; the light electron whips round a much tighter circle.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m602-q09",
@@ -106,7 +146,12 @@
         "The period depends on the radius but not the mass"
       ],
       "answer": 1,
-      "explanation": "Substituting \\(r = mv/qB\\) into \\(T = 2\\pi r/v\\) makes \\(v\\) cancel, giving \\(T = 2\\pi m/qB\\). A faster particle travels a proportionally larger circle, so the time per revolution is unchanged. This is the cyclotron principle. Note it is the period — not the radius — that is independent of speed."
+      "explanation": "Substituting \\(r = mv/qB\\) into \\(T = 2\\pi r/v\\) makes \\(v\\) cancel, giving \\(T = 2\\pi m/qB\\). A faster particle travels a proportionally larger circle, so the time per revolution is unchanged. This is the cyclotron principle. Note it is the period — not the radius — that is independent of speed.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m602-q10",
@@ -118,7 +163,12 @@
         "A helix, whereas an electric field gives a straight line"
       ],
       "answer": 1,
-      "explanation": "The perpendicular magnetic force constantly reorients to stay at right angles to the velocity, giving uniform circular motion. The electric force is constant in direction (like gravity), giving a parabola. Writing \"parabola\" for a uniform magnetic field is a lost mark."
+      "explanation": "The perpendicular magnetic force constantly reorients to stay at right angles to the velocity, giving uniform circular motion. The electric force is constant in direction (like gravity), giving a parabola. Writing \"parabola\" for a uniform magnetic field is a lost mark.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

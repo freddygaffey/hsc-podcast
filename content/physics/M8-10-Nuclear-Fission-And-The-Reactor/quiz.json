@@ -10,7 +10,12 @@
         "Two U-235 nuclei collide and fuse into a heavier nucleus, releasing neutrons"
       ],
       "answer": 1,
-      "explanation": "Fission begins with capture: a slow neutron is absorbed by U-235, forming highly unstable U-236, which splits into two mid-sized fragments plus 2–3 free neutrons and about 200 MeV. It is not a brute-force smash (A), nor spontaneous alpha decay (C), nor fusion (D)."
+      "explanation": "Fission begins with capture: a slow neutron is absorbed by U-235, forming highly unstable U-236, which splits into two mid-sized fragments plus 2–3 free neutrons and about 200 MeV. It is not a brute-force smash (A), nor spontaneous alpha decay (C), nor fusion (D).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m810-q02",
@@ -22,7 +27,12 @@
         "Uranium sits at the peak of the curve, so any change releases energy"
       ],
       "answer": 1,
-      "explanation": "Uranium sits low on the right of the curve. Its mid-sized fragments sit higher, closer to the iron-56 peak, so their nucleons are more tightly bound. The gain in total binding energy is released as energy, via mass-energy equivalence."
+      "explanation": "Uranium sits low on the right of the curve. Its mid-sized fragments sit higher, closer to the iron-56 peak, so their nucleons are more tightly bound. The gain in total binding energy is released as energy, via mass-energy equivalence.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m810-q03",
@@ -34,7 +44,12 @@
         "Fast neutrons are repelled by the positive charge of the nucleus"
       ],
       "answer": 1,
-      "explanation": "Fission is about capture, not impact. A slow neutron lingers near the nucleus and is much more likely to be absorbed, forming the unstable U-236. A fast neutron zips past and tends to glance off without being captured. Neutrons are uncharged, so (D) is wrong."
+      "explanation": "Fission is about capture, not impact. A slow neutron lingers near the nucleus and is much more likely to be absorbed, forming the unstable U-236. A fast neutron zips past and tends to glance off without being captured. Neutrons are uncharged, so (D) is wrong.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m810-q04",
@@ -46,7 +61,12 @@
         "4"
       ],
       "answer": 2,
-      "explanation": "Balance mass numbers: \\(235 + 1 = 236\\) on the left; \\(141 + 92 = 233\\) for the named products, leaving \\(236 - 233 = 3\\) mass units, so 3 neutrons. Charge also balances: \\(92 = 56 + 36\\)."
+      "explanation": "Balance mass numbers: \\(235 + 1 = 236\\) on the left; \\(141 + 92 = 233\\) for the named products, leaving \\(236 - 233 = 3\\) mass units, so 3 neutrons. Charge also balances: \\(92 = 56 + 36\\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m810-q05",
@@ -58,7 +78,12 @@
         "A controlled reaction releases more energy per fission than an uncontrolled one"
       ],
       "answer": 2,
-      "explanation": "The individual fission physics is identical. The difference is the neutron economy: held at exactly one further fission per fission gives steady power (a reactor); allowed to exceed one makes fissions multiply almost instantly (a bomb)."
+      "explanation": "The individual fission physics is identical. The difference is the neutron economy: held at exactly one further fission per fission gives steady power (a reactor); allowed to exceed one makes fissions multiply almost instantly (a bomb).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m810-q06",
@@ -70,7 +95,12 @@
         "The mass of uranium-238 that must be added to enrich the fuel"
       ],
       "answer": 1,
-      "explanation": "Below the critical mass too many neutrons leak out through the surface before causing a fission, and the chain fizzles. The critical mass is the minimum amount needed for a self-sustaining chain; a reactor stays just critical, a bomb assembles a supercritical mass."
+      "explanation": "Below the critical mass too many neutrons leak out through the surface before causing a fission, and the chain fizzles. The critical mass is the minimum amount needed for a self-sustaining chain; a reactor stays just critical, a bomb assembles a supercritical mass.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m810-q07",
@@ -82,7 +112,12 @@
         "They carry heat away from the core to drive turbines"
       ],
       "answer": 2,
-      "explanation": "Control rods, made of neutron-absorbing material such as cadmium or boron, absorb neutrons to set the reaction rate. Slowing neutrons (A) is the moderator's job, and carrying heat (D) is the coolant's — confusing the moderator with the control rods is the most common mark-loser."
+      "explanation": "Control rods, made of neutron-absorbing material such as cadmium or boron, absorb neutrons to set the reaction rate. Slowing neutrons (A) is the moderator's job, and carrying heat (D) is the coolant's — confusing the moderator with the control rods is the most common mark-loser.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m810-q08",
@@ -94,7 +129,12 @@
         "The moderator cools the core while the control rods provide fuel"
       ],
       "answer": 1,
-      "explanation": "The moderator (water or graphite) slows neutrons by collisions, making capture more likely and sustaining the chain. The control rods (cadmium, boron) absorb neutrons. Both change the reaction rate but by opposite mechanisms — slow versus absorb."
+      "explanation": "The moderator (water or graphite) slows neutrons by collisions, making capture more likely and sustaining the chain. The control rods (cadmium, boron) absorb neutrons. Both change the reaction rate but by opposite mechanisms — slow versus absorb.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m810-q09",
@@ -106,7 +146,12 @@
         "About 20 million times"
       ],
       "answer": 3,
-      "explanation": "\\(\\frac{200\\ \\mathrm{MeV}}{10\\ \\mathrm{eV}} = \\frac{2 \\times 10^{8}\\ \\mathrm{eV}}{10\\ \\mathrm{eV}} = 2 \\times 10^{7} \\approx 20\\) million times. Chemical burning rearranges outer electrons (eV); fission taps nuclear binding energy (MeV), about a million times greater per particle."
+      "explanation": "\\(\\frac{200\\ \\mathrm{MeV}}{10\\ \\mathrm{eV}} = \\frac{2 \\times 10^{8}\\ \\mathrm{eV}}{10\\ \\mathrm{eV}} = 2 \\times 10^{7} \\approx 20\\) million times. Chemical burning rearranges outer electrons (eV); fission taps nuclear binding energy (MeV), about a million times greater per particle.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m810-q10",
@@ -118,7 +163,12 @@
         "Natural uranium is too pure and must be diluted with U-238"
       ],
       "answer": 0,
-      "explanation": "Natural uranium is about 99.3% U-238 (which does not readily fission with slow neutrons) and only about 0.7% fissile U-235. Power reactors enrich the fuel to roughly 3–5% U-235 so there are enough fissile nuclei to sustain the chain; bomb-grade is around 90%."
+      "explanation": "Natural uranium is about 99.3% U-238 (which does not readily fission with slow neutrons) and only about 0.7% fissile U-235. Power reactors enrich the fuel to roughly 3–5% U-235 so there are enough fissile nuclei to sustain the chain; bomb-grade is around 90%.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

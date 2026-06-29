@@ -10,7 +10,12 @@
         "The mass converted into energy each second as a nucleus decays"
       ],
       "answer": 0,
-      "explanation": "The mass defect is the difference between the combined mass of the separate, free protons and neutrons and the actual mass of the nucleus they form. The assembled nucleus is always lighter than its parts, so the defect is positive. It is not about electrons (B) and the nucleus loses mass on formation, not gains it (C)."
+      "explanation": "The mass defect is the difference between the combined mass of the separate, free protons and neutrons and the actual mass of the nucleus they form. The assembled nucleus is always lighter than its parts, so the defect is positive. It is not about electrons (B) and the nucleus loses mass on formation, not gains it (C).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m809-q02",
@@ -22,7 +27,12 @@
         "Because mass is always destroyed in nuclear reactions"
       ],
       "answer": 1,
-      "explanation": "Special relativity shows mass and energy are equivalent and interconvertible via \\(E = mc^2\\). In a nuclear reaction mass converts to energy, so neither mass alone nor energy alone is conserved — only the combined mass-energy. Saying mass is \"destroyed\" (D) is the misconception the episode warns against; it is converted, not destroyed."
+      "explanation": "Special relativity shows mass and energy are equivalent and interconvertible via \\(E = mc^2\\). In a nuclear reaction mass converts to energy, so neither mass alone nor energy alone is conserved — only the combined mass-energy. Saying mass is \"destroyed\" (D) is the misconception the episode warns against; it is converted, not destroyed.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m809-q03",
@@ -34,7 +44,12 @@
         "The total electrostatic potential energy of the protons"
       ],
       "answer": 2,
-      "explanation": "Binding energy is the energy equivalent of the mass defect. It is the energy released when free nucleons come together to form the nucleus, and equivalently the energy that must be supplied to pull the nucleus completely apart into free nucleons — the same number in two directions."
+      "explanation": "Binding energy is the energy equivalent of the mass defect. It is the energy released when free nucleons come together to form the nucleus, and equivalently the energy that must be supplied to pull the nucleus completely apart into free nucleons — the same number in two directions.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m809-q04",
@@ -46,7 +61,12 @@
         "3.0 × 10⁻¹² MeV"
       ],
       "answer": 1,
-      "explanation": "\\(E_b = \\Delta m \\times 931.5 = 0.0304 \\times 931.5 \\approx 28.3\\ \\mathrm{MeV}\\). The 7.1 MeV value (A) is the binding energy per nucleon (divide by 4). The tiny value (D) comes from wrongly dividing by \\(c^2\\) as well — the 931.5 factor already includes \\(c^2\\)."
+      "explanation": "\\(E_b = \\Delta m \\times 931.5 = 0.0304 \\times 931.5 \\approx 28.3\\ \\mathrm{MeV}\\). The 7.1 MeV value (A) is the binding energy per nucleon (divide by 4). The tiny value (D) comes from wrongly dividing by \\(c^2\\) as well — the 931.5 factor already includes \\(c^2\\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m809-q05",
@@ -58,7 +78,12 @@
         "About 113 MeV per nucleon"
       ],
       "answer": 0,
-      "explanation": "Binding energy per nucleon = total binding energy ÷ mass number = \\(28.3 / 4 \\approx 7.1\\ \\mathrm{MeV}\\) per nucleon. This per-nucleon value, not the total, is the fair measure of stability."
+      "explanation": "Binding energy per nucleon = total binding energy ÷ mass number = \\(28.3 / 4 \\approx 7.1\\ \\mathrm{MeV}\\) per nucleon. This per-nucleon value, not the total, is the fair measure of stability.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m809-q06",
@@ -70,7 +95,12 @@
         "Uranium-238"
       ],
       "answer": 2,
-      "explanation": "The curve rises steeply from light nuclei, peaks at iron-56 at about 8.8 MeV per nucleon, then falls slowly for heavier nuclei. Iron-56 has the highest binding energy per nucleon, so each of its nucleons is the most tightly bound — the \"iron throne\" the whole module builds toward."
+      "explanation": "The curve rises steeply from light nuclei, peaks at iron-56 at about 8.8 MeV per nucleon, then falls slowly for heavier nuclei. Iron-56 has the highest binding energy per nucleon, so each of its nucleons is the most tightly bound — the \"iron throne\" the whole module builds toward.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m809-q07",
@@ -82,7 +112,12 @@
         "Total binding energy ignores the neutrons in the nucleus"
       ],
       "answer": 1,
-      "explanation": "Uranium has a far larger total binding energy than helium just because it has many more nucleons, but it is not more stable. Dividing by the mass number gives a like-for-like measure of how tightly each individual nucleon is held — the quantity that actually determines stability."
+      "explanation": "Uranium has a far larger total binding energy than helium just because it has many more nucleons, but it is not more stable. Dividing by the mass number gives a like-for-like measure of how tightly each individual nucleon is held — the quantity that actually determines stability.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m809-q08",
@@ -94,7 +129,12 @@
         "Both destroy mass, which is forbidden by conservation laws"
       ],
       "answer": 2,
-      "explanation": "Fusion joins light nuclei from the left of the peak into a heavier nucleus higher on the curve; fission splits a heavy nucleus from the right into mid-mass fragments also higher on the curve. In both cases the products move toward iron-56, gaining binding energy per nucleon, and that gain is released as energy."
+      "explanation": "Fusion joins light nuclei from the left of the peak into a heavier nucleus higher on the curve; fission splits a heavy nucleus from the right into mid-mass fragments also higher on the curve. In both cases the products move toward iron-56, gaining binding energy per nucleon, and that gain is released as energy.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m809-q09",
@@ -106,7 +146,12 @@
         "931.5 MeV"
       ],
       "answer": 1,
-      "explanation": "\\(E = \\Delta m \\times 931.5 = 0.0189 \\times 931.5 \\approx 17.6\\ \\mathrm{MeV}\\) per D-T reaction — the famous fusion figure. About 160 MeV (C) is the energy of a uranium fission event, not this fusion."
+      "explanation": "\\(E = \\Delta m \\times 931.5 = 0.0189 \\times 931.5 \\approx 17.6\\ \\mathrm{MeV}\\) per D-T reaction — the famous fusion figure. About 160 MeV (C) is the energy of a uranium fission event, not this fusion.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m809-q10",
@@ -118,7 +163,12 @@
         "It forgets that fission absorbs energy rather than releasing it"
       ],
       "answer": 1,
-      "explanation": "Saying mass is \"destroyed\" breaks conservation language — it is converted into energy. A full-mark answer identifies the mass defect as the source of the missing mass and explains, via the binding-energy-per-nucleon curve, that the products are more tightly bound (closer to iron), which is why they are lighter. Mass-energy equivalence says the energy exists; the curve says why the products lose mass."
+      "explanation": "Saying mass is \"destroyed\" breaks conservation language — it is converted into energy. A full-mark answer identifies the mass defect as the source of the missing mass and explains, via the binding-energy-per-nucleon curve, that the products are more tightly bound (closer to iron), which is why they are lighter. Mass-energy equivalence says the energy exists; the curve says why the products lose mass.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

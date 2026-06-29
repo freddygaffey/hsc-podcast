@@ -10,7 +10,12 @@
         "Eighty plain, four-four-three safe — HTTP, HTTPS, SSH, FTP"
       ],
       "answer": 1,
-      "explanation": "The request journey runs DNS, then TCP, then TLS, then HTTP — recalled as 'Dogs Take Tasty Hambones'. DNS resolves the domain to an IP address, TCP opens the connection, TLS secures it, and HTTP carries the request. 'I Eat Pizza' (I-E-P) is a tempting choice but it lists the three application types, not the request journey."
+      "explanation": "The request journey runs DNS, then TCP, then TLS, then HTTP — recalled as 'Dogs Take Tasty Hambones'. DNS resolves the domain to an IP address, TCP opens the connection, TLS secures it, and HTTP carries the request. 'I Eat Pizza' (I-E-P) is a tempting choice but it lists the three application types, not the request journey.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1299-q02",
@@ -22,7 +27,12 @@
         "It assigns each device a unique port number so traffic reaches the correct service"
       ],
       "answer": 1,
-      "explanation": "DNS is the translator: the domain name is the human-readable label, the IP address is the number, and DNS converts one to the other while caching results under a time-to-live. The classic trap, named in the script, is confusing the IP address with the DNS name — they are the number and the translator, not the same thing. Encryption (option A) is the job of TLS, not DNS."
+      "explanation": "DNS is the translator: the domain name is the human-readable label, the IP address is the number, and DNS converts one to the other while caching results under a time-to-live. The classic trap, named in the script, is confusing the IP address with the DNS name — they are the number and the translator, not the same thing. Encryption (option A) is the job of TLS, not DNS.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1299-q03",
@@ -34,7 +44,12 @@
         "Hashing is one-way and cannot be reversed; encryption is two-way and is designed to be decrypted"
       ],
       "answer": 3,
-      "explanation": "Hash is one-way — it cannot be reversed — while encryption is two-way because it is designed to be decrypted with the correct key. Option A inverts the two, which is exactly the marking error the script warns against. This distinction matters for the school-portal answer, where passwords are hashed (one-way) but the login traffic is encrypted (two-way) over HTTPS."
+      "explanation": "Hash is one-way — it cannot be reversed — while encryption is two-way because it is designed to be decrypted with the correct key. Option A inverts the two, which is exactly the marking error the script warns against. This distinction matters for the school-portal answer, where passwords are hashed (one-way) but the login traffic is encrypted (two-way) over HTTPS.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1299-q04",
@@ -46,7 +61,12 @@
         "Presentation, Logic, Cache — and trust lives in the Cache tier"
       ],
       "answer": 0,
-      "explanation": "The tiers are Front (client-side, in the browser), Back (server-side, routing and business logic) and Store (the database), and trust lives in the Back because the Front is visible and tamperable. The tempting wrong choice puts trust in the Front, but the headline trap of the whole module is that client-side code can be bypassed — only server-side validation can be trusted. Only the Back tier talks to the Store."
+      "explanation": "The tiers are Front (client-side, in the browser), Back (server-side, routing and business logic) and Store (the database), and trust lives in the Back because the Front is visible and tamperable. The tempting wrong choice puts trust in the Front, but the headline trap of the whole module is that client-side code can be bypassed — only server-side validation can be trusted. Only the Back tier talks to the Store.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1299-q05",
@@ -58,7 +78,12 @@
         "Because responsive design and progressive web apps both require server-side rendering to function"
       ],
       "answer": 1,
-      "explanation": "The episode states the trap directly: responsive is appearance, progressive is capability. A PWA is defined by MISO — Manifest, Installable, Service worker, Offline — so its essence is being installable and working offline via a service worker, not just resizing on a phone. A site can be fully responsive without being a PWA, which is why the 'looks good on a phone' description loses marks."
+      "explanation": "The episode states the trap directly: responsive is appearance, progressive is capability. A PWA is defined by MISO — Manifest, Installable, Service worker, Offline — so its essence is being installable and working offline via a service worker, not just resizing on a phone. A site can be fully responsive without being a PWA, which is why the 'looks good on a phone' description loses marks.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1299-q06",
@@ -70,7 +95,12 @@
         "E-commerce requires comprehensive security because it processes money and identity where a breach causes direct financial and legal harm, whereas an interactive site needs only basic protection"
       ],
       "answer": 3,
-      "explanation": "The episode says to drive the comparison from the value of the asset and the consequence of failure: e-commerce protects money and identity, so a breach brings financial loss, legal liability and lost trust, demanding encryption, secure payment handling and authentication. An interactive site's assets are lower-value, so a failure is embarrassing rather than existential. This asset-and-consequence framing is what lifts the comparison into the top band."
+      "explanation": "The episode says to drive the comparison from the value of the asset and the consequence of failure: e-commerce protects money and identity, so a breach brings financial loss, legal liability and lost trust, demanding encryption, secure payment handling and authentication. An interactive site's assets are lower-value, so a failure is embarrassing rather than existential. This asset-and-consequence framing is what lifts the comparison into the top band.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1299-q07",
@@ -82,7 +112,12 @@
         "A framework can only style pages, while a library can only handle behaviour"
       ],
       "answer": 0,
-      "explanation": "The episode's line is 'you call a library; a framework calls you' — that reversal is inversion of control. Option B states it backwards, which is the common confusion the question targets. The related decision is BUILD versus BUY: buy when needs are standard and the timeline is tight, build when needs are unique or performance-critical, always weighing bundle size, learning curve and lock-in."
+      "explanation": "The episode's line is 'you call a library; a framework calls you' — that reversal is inversion of control. Option B states it backwards, which is the common confusion the question targets. The related decision is BUILD versus BUY: buy when needs are standard and the timeline is tight, build when needs are unique or performance-critical, always weighing bundle size, learning curve and lock-in.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1299-q08",
@@ -94,7 +129,12 @@
         "The database returned a 5xx error because server-side validation rejected the payment"
       ],
       "answer": 1,
-      "explanation": "The script's worked answer says the 'not secure' warning means the page is served over plain HTTP on port 80 instead of HTTPS on port 443 — so there is no TLS, no valid certificate, and checkout data would travel as plain text rather than cipher text. For an e-commerce page that is critical, because e-commerce is defined by its security requirement. The slow load (option C) is a separate issue diagnosed with dev tools, not the cause of the security warning."
+      "explanation": "The script's worked answer says the 'not secure' warning means the page is served over plain HTTP on port 80 instead of HTTPS on port 443 — so there is no TLS, no valid certificate, and checkout data would travel as plain text rather than cipher text. For an e-commerce page that is critical, because e-commerce is defined by its security requirement. The slow load (option C) is a separate issue diagnosed with dev tools, not the cause of the security warning.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1299-q09",
@@ -106,7 +146,12 @@
         "A content delivery network, because it caches account data close to each user for faster logins"
       ],
       "answer": 2,
-      "explanation": "The episode recommends an SQL database — a 'Spreadsheet of structured tables' — because user accounts and their relationships are highly structured and need reliable transactions. NoSQL is a 'Notebook of flexible documents' suited to a different data shape, and the script stresses that NoSQL does not make SQL obsolete. A CDN caches content close to users but is not a store for relational account data, and storing accounts on the Front tier would violate the validate-on-the-server rule."
+      "explanation": "The episode recommends an SQL database — a 'Spreadsheet of structured tables' — because user accounts and their relationships are highly structured and need reliable transactions. NoSQL is a 'Notebook of flexible documents' suited to a different data shape, and the script stresses that NoSQL does not make SQL obsolete. A CDN caches content close to users but is not a store for relational account data, and storing accounts on the Front tier would violate the validate-on-the-server rule.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1299-q10",
@@ -118,7 +163,12 @@
         "Because browser vendors, not the W3C, decide the five POUR principles: Perceivable, Operable, Understandable, Robust"
       ],
       "answer": 1,
-      "explanation": "The W3C develops open web standards to keep the web interoperable, but it recommends rather than enforces — that verb is a marking boundary, since adoption is voluntary. Its five concerns are WIPS-M: WAI accessibility, Internationalisation, Privacy, Security and Machine-readable data. Option A uses the right mnemonic but the wrong verb ('mandates'), which is precisely the trap the question tests; POUR (option D) is the WCAG accessibility principle set, not the W3C's five concerns."
+      "explanation": "The W3C develops open web standards to keep the web interoperable, but it recommends rather than enforces — that verb is a marking boundary, since adoption is voluntary. Its five concerns are WIPS-M: WAI accessibility, Internationalisation, Privacy, Security and Machine-readable data. Option A uses the right mnemonic but the wrong verb ('mandates'), which is precisely the trap the question tests; POUR (option D) is the WCAG accessibility principle set, not the W3C's five concerns.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

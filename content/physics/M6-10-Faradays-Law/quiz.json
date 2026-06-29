@@ -10,7 +10,12 @@
         "The total area of the coil alone"
       ],
       "answer": 1,
-      "explanation": "The EMF is proportional to the RATE of change of flux, not the flux itself. A huge but unchanging flux gives zero rate of change and hence zero EMF; a small flux changing fast can give a large EMF. 'Change is everything.'"
+      "explanation": "The EMF is proportional to the RATE of change of flux, not the flux itself. A huge but unchanging flux gives zero rate of change and hence zero EMF; a small flux changing fast can give a large EMF. 'Change is everything.'",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m610-q02",
@@ -22,7 +27,12 @@
         "The magnet must touch the wire to induce an EMF"
       ],
       "answer": 1,
-      "explanation": "A stationary magnet gives a constant flux through the coil. Since nothing is changing, \\( \\Delta\\Phi/\\Delta t = 0 \\), so by Faraday's law the EMF is zero — no matter how strong the magnet is. This is the core 'why change is everything' point."
+      "explanation": "A stationary magnet gives a constant flux through the coil. Since nothing is changing, \\( \\Delta\\Phi/\\Delta t = 0 \\), so by Faraday's law the EMF is zero — no matter how strong the magnet is. This is the core 'why change is everything' point.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m610-q03",
@@ -34,7 +44,12 @@
         "Change the field strength B only — area and angle do not affect flux"
       ],
       "answer": 1,
-      "explanation": "From \\( \\Phi = BA\\cos\\theta \\), changing any of B, A, or \\( \\theta \\) changes the flux. Move a magnet (B), slide a rod on rails to change the enclosed area (A), or rotate the coil to change the angle (\\( \\theta \\)) — all run through the identical induction machinery."
+      "explanation": "From \\( \\Phi = BA\\cos\\theta \\), changing any of B, A, or \\( \\theta \\) changes the flux. Move a magnet (B), slide a rod on rails to change the enclosed area (A), or rotate the coil to change the angle (\\( \\theta \\)) — all run through the identical induction machinery.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m610-q04",
@@ -46,7 +61,12 @@
         "\\( 0.50\\,\\mathrm{V} \\)"
       ],
       "answer": 0,
-      "explanation": "\\( A = 0.25 \\times 0.30 = 0.075\\,\\mathrm{m^2} \\). \\( \\Delta\\Phi = BA - 0 = 0.66 \\times 0.075 = 0.0495\\,\\mathrm{Wb} \\). \\( |\\varepsilon| = N\\Delta\\Phi/\\Delta t = 1 \\times 0.0495/2.0 \\approx 0.025\\,\\mathrm{V} \\)."
+      "explanation": "\\( A = 0.25 \\times 0.30 = 0.075\\,\\mathrm{m^2} \\). \\( \\Delta\\Phi = BA - 0 = 0.66 \\times 0.075 = 0.0495\\,\\mathrm{Wb} \\). \\( |\\varepsilon| = N\\Delta\\Phi/\\Delta t = 1 \\times 0.0495/2.0 \\approx 0.025\\,\\mathrm{V} \\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m610-q05",
@@ -58,7 +78,12 @@
         "Doubled, about \\( 0.050\\,\\mathrm{V} \\)"
       ],
       "answer": 1,
-      "explanation": "Each turn encloses the same changing flux and so has the same induced EMF; the turns are in series, so their EMFs add. With \\( N = 200 \\), the EMF is \\( 200 \\times 0.025 \\approx 5.0\\,\\mathrm{V} \\) — same flux change, more turns, more EMF."
+      "explanation": "Each turn encloses the same changing flux and so has the same induced EMF; the turns are in series, so their EMFs add. With \\( N = 200 \\), the EMF is \\( 200 \\times 0.025 \\approx 5.0\\,\\mathrm{V} \\) — same flux change, more turns, more EMF.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m610-q06",
@@ -70,7 +95,12 @@
         "No EMF can appear if B is constant"
       ],
       "answer": 1,
-      "explanation": "Flux is \\( BA\\cos\\theta \\), not just B. The area fell as the loop shrank, so the flux fell even with B fixed. Constant field does not mean constant flux — this is 'lever A' of the BAT, giving \\( |\\varepsilon| \\approx 0.13\\,\\mathrm{V} \\) here."
+      "explanation": "Flux is \\( BA\\cos\\theta \\), not just B. The area fell as the loop shrank, so the flux fell even with B fixed. Constant field does not mean constant flux — this is 'lever A' of the BAT, giving \\( |\\varepsilon| \\approx 0.13\\,\\mathrm{V} \\) here.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m610-q07",
@@ -82,7 +112,12 @@
         "The strong field creates a large flux → the large flux creates a current"
       ],
       "answer": 1,
-      "explanation": "The correct chain is 'Flux, EMF, Current, if Closed': the moving magnet changes the flux; the changing flux induces an EMF; the EMF drives a current only if the coil forms a complete circuit. Saying 'the magnet makes a current' collapses the chain and loses marks."
+      "explanation": "The correct chain is 'Flux, EMF, Current, if Closed': the moving magnet changes the flux; the changing flux induces an EMF; the EMF drives a current only if the coil forms a complete circuit. Saying 'the magnet makes a current' collapses the chain and loses marks.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m610-q08",
@@ -94,7 +129,12 @@
         "The flux change is cancelled by the open switch"
       ],
       "answer": 1,
-      "explanation": "EMF and current must be kept strictly distinct. The induced EMF exists whether or not the circuit is closed — it is a voltage across the coil's ends. A current only flows if there is a closed conducting loop. 'No circuit, so no EMF' is wrong; there is an EMF, just no current."
+      "explanation": "EMF and current must be kept strictly distinct. The induced EMF exists whether or not the circuit is closed — it is a voltage across the coil's ends. A current only flows if there is a closed conducting loop. 'No circuit, so no EMF' is wrong; there is an EMF, just no current.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m610-q09",
@@ -106,7 +146,12 @@
         "Incorrect, but only because the plate is magnetic"
       ],
       "answer": 1,
-      "explanation": "Induction needs only a conductor and a changing flux, not discrete wires. A changing flux through the plate induces an EMF that drives swirling closed-loop currents through the solid metal — eddy currents. By Lenz's law these oppose the motion (a braking force)."
+      "explanation": "Induction needs only a conductor and a changing flux, not discrete wires. A changing flux through the plate induces an EMF that drives swirling closed-loop currents through the solid metal — eddy currents. By Lenz's law these oppose the motion (a braking force).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m610-q10",
@@ -118,7 +163,12 @@
         "\\( 0.5\\,\\mathrm{V} \\)"
       ],
       "answer": 1,
-      "explanation": "\\( A = 0.20^2 = 0.04\\,\\mathrm{m^2} \\). With the field perpendicular, \\( \\Phi_f = 0.50 \\times 0.04 = 0.02\\,\\mathrm{Wb} \\), \\( \\Phi_i = 0 \\), so \\( \\Delta\\Phi = 0.02\\,\\mathrm{Wb} \\). \\( |\\varepsilon| = 1 \\times 0.02/0.10 = 0.2\\,\\mathrm{V} \\)."
+      "explanation": "\\( A = 0.20^2 = 0.04\\,\\mathrm{m^2} \\). With the field perpendicular, \\( \\Phi_f = 0.50 \\times 0.04 = 0.02\\,\\mathrm{Wb} \\), \\( \\Phi_i = 0 \\), so \\( \\Delta\\Phi = 0.02\\,\\mathrm{Wb} \\). \\( |\\varepsilon| = 1 \\times 0.02/0.10 = 0.2\\,\\mathrm{V} \\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

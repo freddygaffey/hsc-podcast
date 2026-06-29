@@ -10,7 +10,12 @@
         "A standing wave of light trapped between two surfaces"
       ],
       "answer": 1,
-      "explanation": "A photon is a discrete, indivisible quantum of electromagnetic energy with \\(E = hf\\). It is not continuous (the whole quantum idea is that light comes in lumps), and photons are uncharged, ruling out the other options."
+      "explanation": "A photon is a discrete, indivisible quantum of electromagnetic energy with \\(E = hf\\). It is not continuous (the whole quantum idea is that light comes in lumps), and photons are uncharged, ruling out the other options.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m709-q02",
@@ -22,7 +27,12 @@
         "Energy is proportional to the square of the wavelength"
       ],
       "answer": 1,
-      "explanation": "Since \\(E = hc/\\lambda\\), energy is inversely proportional to wavelength — 'short wave, big punch'. A short wavelength is a high-frequency, high-energy photon; a long wavelength is a low-energy photon."
+      "explanation": "Since \\(E = hc/\\lambda\\), energy is inversely proportional to wavelength — 'short wave, big punch'. A short wavelength is a high-frequency, high-energy photon; a long wavelength is a low-energy photon.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m709-q03",
@@ -34,7 +44,12 @@
         "The wavelength of the red light shortens"
       ],
       "answer": 2,
-      "explanation": "Brightness (intensity) is set by the number of photons per second, not the energy per photon. Each red photon's energy is fixed by red's frequency, so a brighter red beam means more photons of the same energy — the trap of 'brighter means more energetic photons' is exactly what the episode warns against."
+      "explanation": "Brightness (intensity) is set by the number of photons per second, not the energy per photon. Each red photon's energy is fixed by red's frequency, so a brighter red beam means more photons of the same energy — the trap of 'brighter means more energetic photons' is exactly what the episode warns against.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m709-q04",
@@ -46,7 +61,12 @@
         "Hertz in 1887, after discovering the photoelectric effect"
       ],
       "answer": 1,
-      "explanation": "Max Planck introduced \\(E = hf\\) in 1900 to fix black-body radiation and thought it just a bookkeeping trick. Einstein, in 1905, gave the photon physical reality. The HSC tests this order, so don't credit Einstein with the equation."
+      "explanation": "Max Planck introduced \\(E = hf\\) in 1900 to fix black-body radiation and thought it just a bookkeeping trick. Einstein, in 1905, gave the photon physical reality. The HSC tests this order, so don't credit Einstein with the equation.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m709-q05",
@@ -58,7 +78,12 @@
         "\\(2.0 \\times 10^{-19}\\,\\mathrm{J}\\)"
       ],
       "answer": 0,
-      "explanation": "\\(E = hc/\\lambda = (6.63\\times10^{-34})(3.0\\times10^{8})/(6.0\\times10^{-7}) = 3.3\\times10^{-19}\\,\\mathrm{J}\\). The \\(10^{-25}\\) distractor forgets to divide by the wavelength."
+      "explanation": "\\(E = hc/\\lambda = (6.63\\times10^{-34})(3.0\\times10^{8})/(6.0\\times10^{-7}) = 3.3\\times10^{-19}\\,\\mathrm{J}\\). The \\(10^{-25}\\) distractor forgets to divide by the wavelength.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m709-q06",
@@ -70,7 +95,12 @@
         "3.2 eV"
       ],
       "answer": 1,
-      "explanation": "To convert joules to eV, divide by \\(1.6\\times10^{-19}\\): \\(3.2\\times10^{-19} / 1.6\\times10^{-19} = 2.0\\,\\mathrm{eV}\\)."
+      "explanation": "To convert joules to eV, divide by \\(1.6\\times10^{-19}\\): \\(3.2\\times10^{-19} / 1.6\\times10^{-19} = 2.0\\,\\mathrm{eV}\\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m709-q07",
@@ -82,7 +112,12 @@
         "40 photons"
       ],
       "answer": 1,
-      "explanation": "The number of photons is total energy divided by energy per photon: \\(4.0\\times10^{-18} / 4.0\\times10^{-19} = 10\\) photons. The units cancel to a pure number, as a photon count must."
+      "explanation": "The number of photons is total energy divided by energy per photon: \\(4.0\\times10^{-18} / 4.0\\times10^{-19} = 10\\) photons. The units cancel to a pure number, as a photon count must.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m709-q08",
@@ -94,7 +129,12 @@
         "Red light travels slower than UV light, so it cannot reach the electrons"
       ],
       "answer": 1,
-      "explanation": "What matters is the energy of each individual photon, set by frequency. A UV photon's high frequency gives it enough energy in one hit; a million feeble red photons are still a million feeble taps. This is the energy-versus-number distinction made visible."
+      "explanation": "What matters is the energy of each individual photon, set by frequency. A UV photon's high frequency gives it enough energy in one hit; a million feeble red photons are still a million feeble taps. This is the energy-versus-number distinction made visible.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m709-q09",
@@ -106,7 +146,12 @@
         "The blue beam, because shorter wavelengths always mean more photons"
       ],
       "answer": 1,
-      "explanation": "Since \\(P = N \\times E_{\\text{photon}}\\) and each red photon carries less energy, the red beam needs more photons per second to match the blue beam's power: \\(N \\propto \\lambda\\), so equal power and redder light means more photons per second."
+      "explanation": "Since \\(P = N \\times E_{\\text{photon}}\\) and each red photon carries less energy, the red beam needs more photons per second to match the blue beam's power: \\(N \\propto \\lambda\\), so equal power and redder light means more photons per second.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m709-q10",
@@ -118,7 +163,12 @@
         "Energy can be split into fractions of a photon when the light is dim"
       ],
       "answer": 1,
-      "explanation": "Quantisation means energy is delivered only in whole lumps of \\(hf\\); a photon hands over its full energy or nothing at all. There is no such thing as half a photon's worth of energy being exchanged."
+      "explanation": "Quantisation means energy is delivered only in whole lumps of \\(hf\\); a photon hands over its full energy or nothing at all. There is no such thing as half a photon's worth of energy being exchanged.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

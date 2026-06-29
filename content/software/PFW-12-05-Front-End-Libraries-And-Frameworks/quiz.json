@@ -10,7 +10,12 @@
         "Component libraries, package managers, and build tools"
       ],
       "answer": 0,
-      "explanation": "The dot-point names exactly three types: frameworks, template engines, and predesigned CSS classes. The mnemonic is F-T-C, 'for the code' — Frameworks for complex apps, Template engines for server-side rendering, CSS classes for ready styling. React, Bootstrap and Jinja (option C) are specific examples of these types, not the type names themselves, so naming them would not earn the recall mark."
+      "explanation": "The dot-point names exactly three types: frameworks, template engines, and predesigned CSS classes. The mnemonic is F-T-C, 'for the code' — Frameworks for complex apps, Template engines for server-side rendering, CSS classes for ready styling. React, Bootstrap and Jinja (option C) are specific examples of these types, not the type names themselves, so naming them would not earn the recall mark.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1205-q02",
@@ -22,7 +27,12 @@
         "A framework runs on the server; a library runs in the browser"
       ],
       "answer": 0,
-      "explanation": "The episode says to memorise it verbatim: 'You call a library; a framework calls you.' With a library your own code is in control and reaches in for a function, whereas a framework provides the structure and calls your code at points it defines. The distinction is not about size or popularity (option B) — that is the very confusion the episode warns against."
+      "explanation": "The episode says to memorise it verbatim: 'You call a library; a framework calls you.' With a library your own code is in control and reaches in for a function, whereas a framework provides the structure and calls your code at points it defines. The distinction is not about size or popularity (option B) — that is the very confusion the episode warns against.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1205-q03",
@@ -34,7 +44,12 @@
         "A library provides styling whereas a framework provides routing and state management"
       ],
       "answer": 2,
-      "explanation": "The discriminating mark is naming inversion of control — who controls the flow. With a library the developer's own code is the boss and calls in; with a framework the framework is the boss and calls your code at defined points (the 'Hollywood principle'). Option D lists real framework features but misses the underlying distinction that the exam rewards, which is about who is in charge of the flow."
+      "explanation": "The discriminating mark is naming inversion of control — who controls the flow. With a library the developer's own code is the boss and calls in; with a framework the framework is the boss and calls your code at defined points (the 'Hollywood principle'). Option D lists real framework features but misses the underlying distinction that the exam rewards, which is about who is in charge of the flow.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1205-q04",
@@ -46,7 +61,12 @@
         "It manages application state and routing for single-page applications"
       ],
       "answer": 1,
-      "explanation": "A template engine lets the server insert real data — a user's name, a list of products — into an HTML template with placeholders and loops, producing finished HTML before sending it. This is server-side rendering, which is why the topic spills onto the Back (server side) even though front-end libraries mostly live on the Front. Option D describes a framework's job (state and routing), not a template engine's."
+      "explanation": "A template engine lets the server insert real data — a user's name, a list of products — into an HTML template with placeholders and loops, producing finished HTML before sending it. This is server-side rendering, which is why the topic spills onto the Back (server side) even though front-end libraries mostly live on the Front. Option D describes a framework's job (state and routing), not a template engine's.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1205-q05",
@@ -58,7 +78,12 @@
         "Component architecture, state management, and routing"
       ],
       "answer": 3,
-      "explanation": "A front-end framework gives you the machinery a big interactive app needs: a component architecture to build the UI from reusable pieces, state management to keep data consistent across the app, and routing to navigate between views. This is what you reach for in a single-page application (SPA) where the page never fully reloads. Option C describes predesigned CSS classes (the 'C' in F-T-C), not a framework."
+      "explanation": "A front-end framework gives you the machinery a big interactive app needs: a component architecture to build the UI from reusable pieces, state management to keep data consistent across the app, and routing to navigate between views. This is what you reach for in a single-page application (SPA) where the page never fully reloads. Option C describes predesigned CSS classes (the 'C' in F-T-C), not a framework.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1205-q06",
@@ -70,7 +95,12 @@
         "When needs are standard, the timeline is tight, and the team already knows the tool"
       ],
       "answer": 3,
-      "explanation": "BUY when needs are standard, the timeline is tight, and the team knows the tool — you gain speed, tested and reliable code, community support, and consistency. Option A is the BUILD case (unique needs, full control, peak performance). Option B is one of the two named traps — 'a framework is always better' — which the episode explicitly says is wrong because it leads to over-engineering."
+      "explanation": "BUY when needs are standard, the timeline is tight, and the team knows the tool — you gain speed, tested and reliable code, community support, and consistency. Option A is the BUILD case (unique needs, full control, peak performance). Option B is one of the two named traps — 'a framework is always better' — which the episode explicitly says is wrong because it leads to over-engineering.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1205-q07",
@@ -82,7 +112,12 @@
         "Predesigned classes replace JavaScript, removing the need for any interactive behaviour"
       ],
       "answer": 1,
-      "explanation": "Predesigned CSS classes are pre-built, pre-styled UI pieces you drop in for instant, professional-looking buttons, cards, and forms — this is the consistency and maintainability of last episode's design tokens and reuse, except someone else already built the system. The trade-off the episode notes is that you pull in the framework's stylesheet, adding bundle size. Option A is wrong because CSS classes are applied on the client, not the server."
+      "explanation": "Predesigned CSS classes are pre-built, pre-styled UI pieces you drop in for instant, professional-looking buttons, cards, and forms — this is the consistency and maintainability of last episode's design tokens and reuse, except someone else already built the system. The trade-off the episode notes is that you pull in the framework's stylesheet, adding bundle size. Option A is wrong because CSS classes are applied on the client, not the server.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1205-q08",
@@ -94,7 +129,12 @@
         "Use a template engine like Jinja, because server-side rendering makes static pages load faster"
       ],
       "answer": 2,
-      "explanation": "For a simple, mostly static page the strong answer is BUILD with vanilla HTML, CSS, and minimal JavaScript — adopting a heavy framework is over-engineering that adds a large bundle to download for a page with little interactive state. Reaching reflexively for React (option A) is exactly the trap the episode names; matching tool weight to problem complexity means simple-and-bespoke equals build. Swapping to a different framework (option B) still over-engineers the page."
+      "explanation": "For a simple, mostly static page the strong answer is BUILD with vanilla HTML, CSS, and minimal JavaScript — adopting a heavy framework is over-engineering that adds a large bundle to download for a page with little interactive state. Reaching reflexively for React (option A) is exactly the trap the episode names; matching tool weight to problem complexity means simple-and-bespoke equals build. Swapping to a different framework (option B) still over-engineers the page.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1205-q09",
@@ -106,7 +146,12 @@
         "Use a template engine for server-side rendering, because dashboards never need client-side interactivity"
       ],
       "answer": 0,
-      "explanation": "This is the complex-and-standard case, so the strong answer is BUY: adopt a framework whose component architecture, state management, and routing handle exactly this complexity, dramatically speeding development and improving maintainability and consistency. Building all that machinery bespoke in vanilla JavaScript (option B) would be slow and error-prone. Predesigned CSS classes (option C) only solve styling, not the shared interactive state that defines this app."
+      "explanation": "This is the complex-and-standard case, so the strong answer is BUY: adopt a framework whose component architecture, state management, and routing handle exactly this complexity, dramatically speeding development and improving maintainability and consistency. Building all that machinery bespoke in vanilla JavaScript (option B) would be slow and error-prone. Predesigned CSS classes (option C) only solve styling, not the shared interactive state that defines this app.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1205-q10",
@@ -118,7 +163,12 @@
         "That frameworks prevent the use of a template engine for server-side rendering"
       ],
       "answer": 2,
-      "explanation": "The cost students forget is the price of adoption: a framework adds bundle size, meaning more JavaScript for the browser to download and execute, which slows the page especially on mobile and slow connections — a direct forward link to episode 13-3 on performance and page-load management. An 'assess' answer needs both sides: the speed and consistency gained against the bundle size, learning curve, and lock-in paid. Licensing cost (option A) is not the bundle-size point the episode stresses here."
+      "explanation": "The cost students forget is the price of adoption: a framework adds bundle size, meaning more JavaScript for the browser to download and execute, which slows the page especially on mobile and slow connections — a direct forward link to episode 13-3 on performance and page-load management. An 'assess' answer needs both sides: the speed and consistency gained against the bundle size, learning curve, and lock-in paid. Licensing cost (option A) is not the bundle-size point the episode stresses here.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

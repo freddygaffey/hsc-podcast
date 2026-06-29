@@ -10,7 +10,12 @@
         "Naming the blocker, time-boxing, and documenting the fix"
       ],
       "answer": 1,
-      "explanation": "The syllabus lists exactly three: looking for a solution online, collaboration with peers, and outsourcing. These map onto the S-P-O escalation ladder (Self/Search, Peers, Outsource/escalate). Option D describes good supporting practices from the episode but is not the three-item syllabus list the question asks for."
+      "explanation": "The syllabus lists exactly three: looking for a solution online, collaboration with peers, and outsourcing. These map onto the S-P-O escalation ladder (Self/Search, Peers, Outsource/escalate). Option D describes good supporting practices from the episode but is not the three-item syllabus list the question asks for.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2505-q02",
@@ -22,7 +27,12 @@
         "Technical, Review, Production"
       ],
       "answer": 2,
-      "explanation": "T-R-P names the three blocker types: Technical (knowledge gaps, integration, performance, dependencies), Resource (missing access, tools, environment, budget) and Process (approval delays, unclear requirements, timeline conflicts). Naming the type is the first move because the type determines the fix. Option B lists specific examples of blockers rather than the three categories themselves."
+      "explanation": "T-R-P names the three blocker types: Technical (knowledge gaps, integration, performance, dependencies), Resource (missing access, tools, environment, budget) and Process (approval delays, unclear requirements, timeline conflicts). Naming the type is the first move because the type determines the fix. Option B lists specific examples of blockers rather than the three categories themselves.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2505-q03",
@@ -34,7 +44,12 @@
         "Specialist — contract an external specialist to investigate the problem"
       ],
       "answer": 0,
-      "explanation": "S is Self and Search: the first rung, where you attempt the problem yourself by reading the official docs, searching the exact error message with technology and version, and checking authoritative sources. Escalating straight to a senior (option B) skips the rung — the ladder is climbed in order. Outsourcing to a specialist (option D) is the O rung, not the S rung."
+      "explanation": "S is Self and Search: the first rung, where you attempt the problem yourself by reading the official docs, searching the exact error message with technology and version, and checking authoritative sources. Escalating straight to a senior (option B) skips the rung — the ladder is climbed in order. Outsourcing to a specialist (option D) is the O rung, not the S rung.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2505-q04",
@@ -46,7 +61,12 @@
         "The snippet may contain a vulnerability, a backdoor, or a dependency with a known CVE, which becomes a supply-chain risk the moment it is added to the project"
       ],
       "answer": 3,
-      "explanation": "Unverified online code can carry a vulnerability, malicious code, or a dependency with a known CVE — the supply-chain risk linked to Secure Software Architecture chapter 19 and the xz-backdoor lesson. The rule is to treat online code as untrusted: read every line, check the source is authoritative and recent, and validate it before use. The formatting and performance options are practical annoyances, not the security/supply-chain risk the episode stresses."
+      "explanation": "Unverified online code can carry a vulnerability, malicious code, or a dependency with a known CVE — the supply-chain risk linked to Secure Software Architecture chapter 19 and the xz-backdoor lesson. The rule is to treat online code as untrusted: read every line, check the source is authoritative and recent, and validate it before use. The formatting and performance options are practical annoyances, not the security/supply-chain risk the episode stresses.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2505-q05",
@@ -58,7 +78,12 @@
         "Version, Deploy, Quality-assure"
       ],
       "answer": 0,
-      "explanation": "V-D-Q — various Views, Delegate by expertise, higher Quality — is the collaboration benefit from Secure Software Architecture 19-01: a peer brings a different view, you delegate to whoever has the expertise, and the result is higher quality. This is why asking is a strength, not an admission of failure. The other options reuse the letters with plausible-sounding but incorrect words."
+      "explanation": "V-D-Q — various Views, Delegate by expertise, higher Quality — is the collaboration benefit from Secure Software Architecture 19-01: a peer brings a different view, you delegate to whoever has the expertise, and the result is higher quality. This is why asking is a strength, not an admission of failure. The other options reuse the letters with plausible-sounding but incorrect words.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2505-q06",
@@ -70,7 +95,12 @@
         "Both resource and process blockers are best solved by searching official documentation"
       ],
       "answer": 2,
-      "explanation": "The episode pairs each blocker type with a fix: a technical blocker you research or pair on, a resource blocker you escalate for access or budget, and a process blocker you fix with communication. Option C states the resource-then-process mapping correctly. Option A wrongly attaches budget escalation to technical blockers, which the episode ties to research and pairing instead."
+      "explanation": "The episode pairs each blocker type with a fix: a technical blocker you research or pair on, a resource blocker you escalate for access or budget, and a process blocker you fix with communication. Option C states the resource-then-process mapping correctly. Option A wrongly attaches budget escalation to technical blockers, which the episode ties to research and pairing instead.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2505-q07",
@@ -82,7 +112,12 @@
         "The strong response skips searching and goes straight to a code review; the weak response over-documents and runs out of time"
       ],
       "answer": 0,
-      "explanation": "The strong (Band 6) response names the blocker, time-boxes self-research to about an hour, escalates quickly to peers because the timeout is on the critical path two days out, then outsources to a senior architect or vendor with a cost-benefit, documenting throughout. The weak (Band 3) response is lone-wolf debugging for six hours with unverified pasted code and no escalation. The option that outsources to the vendor before searching and peering inverts the ladder."
+      "explanation": "The strong (Band 6) response names the blocker, time-boxes self-research to about an hour, escalates quickly to peers because the timeout is on the critical path two days out, then outsources to a senior architect or vendor with a cost-benefit, documenting throughout. The weak (Band 3) response is lone-wolf debugging for six hours with unverified pasted code and no escalation. The option that outsources to the vendor before searching and peering inverts the ladder.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2505-q08",
@@ -94,7 +129,12 @@
         "Ensuring knowledge transfer so the team learns rather than staying dependent"
       ],
       "answer": 3,
-      "explanation": "Outsourcing carries duties — verify credentials, do a cost-benefit against internal development time, plan the integration, and crucially ensure knowledge transfer. The episode states that outsourcing without knowledge transfer just relocates the problem, leaving the team dependent. Cost matters (options A and B), but knowledge transfer is the duty singled out as preventing the problem from merely moving."
+      "explanation": "Outsourcing carries duties — verify credentials, do a cost-benefit against internal development time, plan the integration, and crucially ensure knowledge transfer. The episode states that outsourcing without knowledge transfer just relocates the problem, leaving the team dependent. Cost matters (options A and B), but knowledge transfer is the duty singled out as preventing the problem from merely moving.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2505-q09",
@@ -106,7 +146,12 @@
         "Correct: revert your code with version control. Wrong: document the bug before solving it"
       ],
       "answer": 1,
-      "explanation": "Forty fruitless minutes after a proper search is a reasonable trigger to climb from S to P — pair on it or ask the person who knows the subsystem. The wrong move is staying on the S rung for hours, the lone-wolf trap, which wastes time and risks pasting unverified code in desperation. Jumping straight to outsourcing (option A) skips the peer rung that the situation calls for."
+      "explanation": "Forty fruitless minutes after a proper search is a reasonable trigger to climb from S to P — pair on it or ask the person who knows the subsystem. The wrong move is staying on the S rung for hours, the lone-wolf trap, which wastes time and risks pasting unverified code in desperation. Jumping straight to outsourcing (option A) skips the peer rung that the situation calls for.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2505-q10",
@@ -118,7 +163,12 @@
         "Knight Capital recovered because their team improvised a new escalation chain during the incident"
       ],
       "answer": 2,
-      "explanation": "Knight Capital had no escalation path and no kill switch when a bad deployment began bleeding money — $440 million in 45 minutes — because nobody could pull the plug fast enough. The lesson is to decide escalation triggers (a time-box like 'thirty minutes, then I ask') before the crisis, since inventing one mid-failure is too slow. Option D contradicts the story, which is a failure of escalation, not a recovery."
+      "explanation": "Knight Capital had no escalation path and no kill switch when a bad deployment began bleeding money — $440 million in 45 minutes — because nobody could pull the plug fast enough. The lesson is to decide escalation triggers (a time-box like 'thirty minutes, then I ask') before the crisis, since inventing one mid-failure is too slow. Option D contradicts the story, which is a failure of escalation, not a recovery.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

@@ -10,7 +10,12 @@
         "The nucleus weighed less than the sum of its protons"
       ],
       "answer": 0,
-      "explanation": "Helium has two protons (charge +2) but is four times the mass of hydrogen. Two protons explain the charge but only half the mass, so something heavy and uncharged had to be present in the nucleus."
+      "explanation": "Helium has two protons (charge +2) but is four times the mass of hydrogen. Two protons explain the charge but only half the mass, so something heavy and uncharged had to be present in the nucleus.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "chadwick-q02",
@@ -22,7 +27,12 @@
         "It decayed instantly into photons"
       ],
       "answer": 1,
-      "explanation": "Detection in the 1920s depended on a particle's charge producing a trail of ionisation and curving in a magnetic field. A neutral particle does none of this, so it glides through detectors invisibly."
+      "explanation": "Detection in the 1920s depended on a particle's charge producing a trail of ionisation and curving in a magnetic field. A neutral particle does none of this, so it glides through detectors invisibly.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "chadwick-q03",
@@ -34,7 +44,12 @@
         "They claimed it was alpha particles reflected back"
       ],
       "answer": 2,
-      "explanation": "The radiation was neutral and extremely penetrating, so Bothe and Becker reached for the familiar neutral radiation — gamma rays — estimating about 10 MeV. The radiation was real but the label 'gamma' was wrong."
+      "explanation": "The radiation was neutral and extremely penetrating, so Bothe and Becker reached for the familiar neutral radiation — gamma rays — estimating about 10 MeV. The radiation was real but the label 'gamma' was wrong.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "chadwick-q04",
@@ -46,7 +61,12 @@
         "Wax emits gamma rays when heated"
       ],
       "answer": 1,
-      "explanation": "Paraffin is a hydrocarbon packed with hydrogen nuclei (protons). The mystery radiation knocked these protons out at high speed — several MeV — which was the crucial clue Chadwick later reinterpreted."
+      "explanation": "Paraffin is a hydrocarbon packed with hydrogen nuclei (protons). The mystery radiation knocked these protons out at high speed — several MeV — which was the crucial clue Chadwick later reinterpreted.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "chadwick-q05",
@@ -58,7 +78,12 @@
         "Gamma rays are too heavy to be produced by beryllium"
       ],
       "answer": 1,
-      "explanation": "The gamma-ray hypothesis demanded ~50 MeV per photon to shove protons forward at the measured speed, but the alpha particles supplied only ~5 MeV. You cannot get 50 units of energy from a source holding 5 — it breaks conservation of energy."
+      "explanation": "The gamma-ray hypothesis demanded ~50 MeV per photon to shove protons forward at the measured speed, but the alpha particles supplied only ~5 MeV. You cannot get 50 units of energy from a source holding 5 — it breaks conservation of energy.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "chadwick-q06",
@@ -70,7 +95,12 @@
         "A massive particle is attracted to the proton by gravity"
       ],
       "answer": 1,
-      "explanation": "A photon's momentum is \\(p = E/c\\), tiny for a given energy because \\(c\\) is huge, so it is like a ping-pong ball trying to move a bowling ball. A neutral particle of roughly proton mass transfers nearly all its speed in a head-on elastic collision, like equal billiard balls."
+      "explanation": "A photon's momentum is \\(p = E/c\\), tiny for a given energy because \\(c\\) is huge, so it is like a ping-pong ball trying to move a bowling ball. A neutral particle of roughly proton mass transfers nearly all its speed in a head-on elastic collision, like equal billiard balls.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "chadwick-q07",
@@ -82,7 +112,12 @@
         "He timed how long the radiation took to cross his laboratory"
       ],
       "answer": 1,
-      "explanation": "By firing the radiation at hydrogen and at nitrogen and measuring each recoil speed, Chadwick wrote two elastic-collision equations. Taking their ratio cancels the unknown incoming speed, leaving the neutron's mass in terms of measured quantities."
+      "explanation": "By firing the radiation at hydrogen and at nitrogen and measuring each recoil speed, Chadwick wrote two elastic-collision equations. Taking their ratio cancels the unknown incoming speed, leaving the neutron's mass in terms of measured quantities.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "chadwick-q08",
@@ -94,7 +129,12 @@
         "About equal to an electron's mass"
       ],
       "answer": 2,
-      "explanation": "Chadwick measured roughly 1.15 proton masses — within about 15% of the modern 1.0014 proton masses. The key proven point was that the particle has a mass comparable to a proton and no charge: the neutron."
+      "explanation": "Chadwick measured roughly 1.15 proton masses — within about 15% of the modern 1.0014 proton masses. The key proven point was that the particle has a mass comparable to a proton and no charge: the neutron.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "chadwick-q09",
@@ -106,7 +146,12 @@
         "He suspected the radiation might be electrons after all"
       ],
       "answer": 1,
-      "explanation": "Chadwick's reasoning depended entirely on conservation of energy and momentum, and at the time figures like Bohr questioned whether those classical laws held in nuclear processes. He honestly noted his conclusion stood unless those laws failed — they held."
+      "explanation": "Chadwick's reasoning depended entirely on conservation of energy and momentum, and at the time figures like Bohr questioned whether those classical laws held in nuclear processes. He honestly noted his conclusion stood unless those laws failed — they held.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "chadwick-q10",
@@ -118,7 +163,12 @@
         "Because it decays into protons on contact"
       ],
       "answer": 1,
-      "explanation": "Charged projectiles are repelled by the positive nucleus and must be fired hard to overcome that barrier. A neutron has no charge, so it can approach and enter a nucleus unhindered — which made neutron-induced nuclear fission possible just a few years later."
+      "explanation": "Charged projectiles are repelled by the positive nucleus and must be fired hard to overcome that barrier. A neutron has no charge, so it can approach and enter a nucleus unhindered — which made neutron-induced nuclear fission possible just a few years later.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

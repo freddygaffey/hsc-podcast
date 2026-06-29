@@ -10,7 +10,12 @@
         "The electrons gained energy on reflection"
       ],
       "answer": 1,
-      "explanation": "Particles would scatter in a smooth spray, but the electrons piled up in sharp peaks at particular angles with gaps between — constructive and destructive interference, the unmistakable signature of waves."
+      "explanation": "Particles would scatter in a smooth spray, but the electrons piled up in sharp peaks at particular angles with gaps between — constructive and destructive interference, the unmistakable signature of waves.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "electrondiff-q02",
@@ -22,7 +27,12 @@
         "Only photons can have a wavelength"
       ],
       "answer": 2,
-      "explanation": "De Broglie turned wave-particle duality around: since light, thought to be a wave, also acts as a particle, matter thought to be particles should also have a wave nature. The duality runs both ways and is universal."
+      "explanation": "De Broglie turned wave-particle duality around: since light, thought to be a wave, also acts as a particle, matter thought to be particles should also have a wave nature. The duality runs both ways and is universal.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "electrondiff-q03",
@@ -34,7 +44,12 @@
         "\\(\\lambda = \\dfrac{h v}{m}\\)"
       ],
       "answer": 1,
-      "explanation": "\\(\\lambda = h/p = h/(mv)\\): wavelength equals Planck's constant divided by momentum. Wavelength is inversely proportional to momentum, so heavy, fast objects have undetectably tiny wavelengths."
+      "explanation": "\\(\\lambda = h/p = h/(mv)\\): wavelength equals Planck's constant divided by momentum. Wavelength is inversely proportional to momentum, so heavy, fast objects have undetectably tiny wavelengths.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "electrondiff-q04",
@@ -46,7 +61,12 @@
         "People move too slowly to have any wavelength"
       ],
       "answer": 1,
-      "explanation": "Diffraction is only observable when the wavelength is comparable to the slit spacing. A 54 V electron has a wavelength near the atomic spacing (~0.1 nm), so a crystal diffracts it; a person's de Broglie wavelength is around \\(10^{-35}\\) m, far too small for any opening to reveal."
+      "explanation": "Diffraction is only observable when the wavelength is comparable to the slit spacing. A 54 V electron has a wavelength near the atomic spacing (~0.1 nm), so a crystal diffracts it; a person's de Broglie wavelength is around \\(10^{-35}\\) m, far too small for any opening to reveal.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "electrondiff-q05",
@@ -58,7 +78,12 @@
         "The experiment was repeated thousands of times by the same method"
       ],
       "answer": 1,
-      "explanation": "One road started from the accelerating voltage and de Broglie's formula; the other used only the measured angle and the known nickel atomic spacing. They agreed to better than 2%, two completely independent derivations converging — that is what proof looks like."
+      "explanation": "One road started from the accelerating voltage and de Broglie's formula; the other used only the measured angle and the known nickel atomic spacing. They agreed to better than 2%, two completely independent derivations converging — that is what proof looks like.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "electrondiff-q06",
@@ -70,7 +95,12 @@
         "He fired protons instead of electrons"
       ],
       "answer": 1,
-      "explanation": "Thomson transmitted fast electrons through thin polycrystalline films, producing concentric rings, while Davisson-Germer reflected slow electrons off a single crystal, producing peaks. Two utterly different geometries reaching the same de Broglie wavelength removed any doubt."
+      "explanation": "Thomson transmitted fast electrons through thin polycrystalline films, producing concentric rings, while Davisson-Germer reflected slow electrons off a single crystal, producing peaks. Two utterly different geometries reaching the same de Broglie wavelength removed any doubt.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "electrondiff-q07",
@@ -82,7 +112,12 @@
         "Einstein performed the electron-diffraction experiment himself"
       ],
       "answer": 1,
-      "explanation": "J.J. Thomson discovered the electron and showed it was a particle (Nobel 1906); his son G.P. Thomson showed the electron was a wave (Nobel 1937). One family, two generations, two prizes — one for the particle, one for the wave."
+      "explanation": "J.J. Thomson discovered the electron and showed it was a particle (Nobel 1906); his son G.P. Thomson showed the electron was a wave (Nobel 1937). One family, two generations, two prizes — one for the particle, one for the wave.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "electrondiff-q08",
@@ -94,7 +129,12 @@
         "Electrons can occupy any orbit at all"
       ],
       "answer": 1,
-      "explanation": "Only orbits whose circumference fits a whole number of wavelengths (\\(2\\pi r = n\\lambda\\)) form a stable standing wave. Substituting de Broglie's wavelength yields Bohr's angular-momentum rule — derived rather than merely assumed."
+      "explanation": "Only orbits whose circumference fits a whole number of wavelengths (\\(2\\pi r = n\\lambda\\)) form a stable standing wave. Substituting de Broglie's wavelength yields Bohr's angular-momentum rule — derived rather than merely assumed.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "electrondiff-q09",
@@ -106,7 +146,12 @@
         "The photoelectric equation"
       ],
       "answer": 1,
-      "explanation": "Substituting \\(\\lambda = h/(mv)\\) into \\(2\\pi r = n\\lambda\\) rearranges to \\(mvr = nh/2\\pi\\) — exactly Bohr's quantisation postulate, now derived from the standing-wave picture instead of assumed."
+      "explanation": "Substituting \\(\\lambda = h/(mv)\\) into \\(2\\pi r = n\\lambda\\) rearranges to \\(mvr = nh/2\\pi\\) — exactly Bohr's quantisation postulate, now derived from the standing-wave picture instead of assumed.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "electrondiff-q10",
@@ -118,7 +163,12 @@
         "Nothing; the pattern is an illusion"
       ],
       "answer": 1,
-      "explanation": "Even fired one at a time with only ever one electron in the apparatus, an interference pattern still builds up dot by dot. Each electron interferes with itself: its wave (a wave of probability, per Born) explores all paths, and the electron lands as a particle at one point."
+      "explanation": "Even fired one at a time with only ever one electron in the apparatus, an interference pattern still builds up dot by dot. Each electron interferes with itself: its wave (a wave of probability, per Born) explores all paths, and the electron lands as a particle at one point.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

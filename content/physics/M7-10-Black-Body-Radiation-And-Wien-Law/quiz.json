@@ -10,7 +10,12 @@
         "An object that reflects all radiation and absorbs none"
       ],
       "answer": 1,
-      "explanation": "A black body is a perfect absorber of all incident radiation, and by the thermal-equilibrium argument it must also be a perfect emitter. The 'emits nothing' option is the classic trap — a black body emits a full characteristic spectrum and glows brilliantly when hot."
+      "explanation": "A black body is a perfect absorber of all incident radiation, and by the thermal-equilibrium argument it must also be a perfect emitter. The 'emits nothing' option is the classic trap — a black body emits a full characteristic spectrum and glows brilliantly when hot.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m710-q02",
@@ -22,7 +27,12 @@
         "Because perfect absorbers are always made of black materials that radiate well"
       ],
       "answer": 1,
-      "explanation": "At a steady temperature, conservation of energy requires an object to emit at the same rate it absorbs, or it would heat without limit. A perfect absorber soaks up the maximum at every wavelength, so it must also emit the maximum at every wavelength."
+      "explanation": "At a steady temperature, conservation of energy requires an object to emit at the same rate it absorbs, or it would heat without limit. A perfect absorber soaks up the maximum at every wavelength, so it must also emit the maximum at every wavelength.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m710-q03",
@@ -34,7 +44,12 @@
         "\\(\\lambda_{\\max} = \\dfrac{hc}{T}\\)"
       ],
       "answer": 1,
-      "explanation": "Wien's law is \\(\\lambda_{\\max} T = b\\), i.e. \\(\\lambda_{\\max} = b/T\\). Peak wavelength and absolute temperature are inversely proportional: double the temperature and you halve the peak wavelength."
+      "explanation": "Wien's law is \\(\\lambda_{\\max} T = b\\), i.e. \\(\\lambda_{\\max} = b/T\\). Peak wavelength and absolute temperature are inversely proportional: double the temperature and you halve the peak wavelength.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m710-q04",
@@ -46,7 +61,12 @@
         "About 290 nm, in the ultraviolet"
       ],
       "answer": 0,
-      "explanation": "\\(\\lambda_{\\max} = b/T = 2.9\\times10^{-3}/5800 = 5.0\\times10^{-7}\\,\\mathrm{m} = 500\\,\\mathrm{nm}\\), mid-visible green-yellow — which is why our eyes are most sensitive there."
+      "explanation": "\\(\\lambda_{\\max} = b/T = 2.9\\times10^{-3}/5800 = 5.0\\times10^{-7}\\,\\mathrm{m} = 500\\,\\mathrm{nm}\\), mid-visible green-yellow — which is why our eyes are most sensitive there.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m710-q05",
@@ -58,7 +78,12 @@
         "About 3500 K"
       ],
       "answer": 1,
-      "explanation": "\\(T = b/\\lambda_{\\max} = 2.9\\times10^{-3}/(2.9\\times10^{-7}) = 1.0\\times10^{4}\\,\\mathrm{K}\\). A short peak wavelength means a hot, blue star — 'hot and blue, short and true'."
+      "explanation": "\\(T = b/\\lambda_{\\max} = 2.9\\times10^{-3}/(2.9\\times10^{-7}) = 1.0\\times10^{4}\\,\\mathrm{K}\\). A short peak wavelength means a hot, blue star — 'hot and blue, short and true'.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m710-q06",
@@ -70,7 +95,12 @@
         "Only the colour changes; the total intensity stays the same"
       ],
       "answer": 1,
-      "explanation": "Two features change together: the entire curve rises (the object is brighter at every wavelength) and the peak moves to shorter wavelength, shifting the colour from red toward blue."
+      "explanation": "Two features change together: the entire curve rises (the object is brighter at every wavelength) and the peak moves to shorter wavelength, shifting the colour from red toward blue.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m710-q07",
@@ -82,7 +112,12 @@
         "The observation that the Sun emits dangerous amounts of ultraviolet radiation"
       ],
       "answer": 1,
-      "explanation": "Classical wave theory (Rayleigh–Jeans) predicted intensity rising without limit as wavelength shortened, heading to infinity in the ultraviolet. This violated conservation of energy and contradicted the experimental curve, which peaks then falls."
+      "explanation": "Classical wave theory (Rayleigh–Jeans) predicted intensity rising without limit as wavelength shortened, heading to infinity in the ultraviolet. This violated conservation of energy and contradicted the experimental curve, which peaks then falls.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m710-q08",
@@ -94,7 +129,12 @@
         "He added a correction factor that made the classical infinity finite without changing the physics"
       ],
       "answer": 1,
-      "explanation": "Planck assumed energy is exchanged only in lumps of \\(E = hf\\). Short-wavelength radiation needs large quanta, which are rarely available at a given temperature, so high-frequency emission is suppressed rather than infinite — bending the curve down to match experiment."
+      "explanation": "Planck assumed energy is exchanged only in lumps of \\(E = hf\\). Short-wavelength radiation needs large quanta, which are rarely available at a given temperature, so high-frequency emission is suppressed rather than infinite — bending the curve down to match experiment.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m710-q09",
@@ -106,7 +146,12 @@
         "Because ultraviolet light had not yet been discovered"
       ],
       "answer": 1,
-      "explanation": "The decisive point is that infinite emitted intensity is impossible — no object can radiate infinite power. The classical prediction therefore violated conservation of energy, not just the data, so the theory had to be wrong."
+      "explanation": "The decisive point is that infinite emitted intensity is impossible — no object can radiate infinite power. The classical prediction therefore violated conservation of energy, not just the data, so the theory had to be wrong.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m710-q10",
@@ -118,7 +163,12 @@
         "Because the particles slow down and emit their stored energy as light"
       ],
       "answer": 1,
-      "explanation": "Hot objects glow because their charged particles (electrons and ions) accelerate during vibrations and collisions, and accelerating charges radiate. Higher temperature gives more energetic, higher-frequency accelerations, so more total radiation at shorter peak wavelength."
+      "explanation": "Hot objects glow because their charged particles (electrons and ions) accelerate during vibrations and collisions, and accelerating charges radiate. Higher temperature gives more energetic, higher-frequency accelerations, so more total radiation at shorter peak wavelength.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

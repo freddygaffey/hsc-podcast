@@ -10,7 +10,12 @@
         "The reflection of electrons from a metal; a photoelectron is a reflected light particle"
       ],
       "answer": 1,
-      "explanation": "The photoelectric effect is the ejection of electrons from a metal when light of high enough frequency falls on it. A photoelectron is simply an electron liberated by this process — the name flags that light freed it."
+      "explanation": "The photoelectric effect is the ejection of electrons from a metal when light of high enough frequency falls on it. A photoelectron is simply an electron liberated by this process — the name flags that light freed it.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m711-q02",
@@ -22,7 +27,12 @@
         "The average speed of all the photoelectrons"
       ],
       "answer": 1,
-      "explanation": "The stopping voltage is the reverse voltage that just reduces the photocurrent to zero by turning back even the fastest electron. So \\(K_{\\max} = eV_0\\) — it measures the maximum kinetic energy of the photoelectrons."
+      "explanation": "The stopping voltage is the reverse voltage that just reduces the photocurrent to zero by turning back even the fastest electron. So \\(K_{\\max} = eV_0\\) — it measures the maximum kinetic energy of the photoelectrons.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m711-q03",
@@ -34,7 +44,12 @@
         "Delay grows with brightness; Energy from frequency; Number from frequency; threshold Frequency"
       ],
       "answer": 1,
-      "explanation": "DENF: no Delay (even for faint light), Energy of electrons from frequency, Number of electrons from intensity, and a threshold Frequency below which nothing is emitted."
+      "explanation": "DENF: no Delay (even for faint light), Energy of electrons from frequency, Number of electrons from intensity, and a threshold Frequency below which nothing is emitted.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m711-q04",
@@ -46,7 +61,12 @@
         "16 V"
       ],
       "answer": 0,
-      "explanation": "\\(V_0 = K_{\\max}/e = 2.6\\times10^{-19}/1.6\\times10^{-19} = 1.6\\,\\mathrm{V}\\). Joules divided by coulombs gives volts."
+      "explanation": "\\(V_0 = K_{\\max}/e = 2.6\\times10^{-19}/1.6\\times10^{-19} = 1.6\\,\\mathrm{V}\\). Joules divided by coulombs gives volts.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m711-q05",
@@ -58,7 +78,12 @@
         "Both stay the same"
       ],
       "answer": 1,
-      "explanation": "Intensity sets the number of electrons per second, so doubling it doubles the photocurrent. Maximum kinetic energy depends only on frequency, so with frequency fixed it is unchanged — this is the N and E of DENF."
+      "explanation": "Intensity sets the number of electrons per second, so doubling it doubles the photocurrent. Maximum kinetic energy depends only on frequency, so with frequency fixed it is unchanged — this is the N and E of DENF.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m711-q06",
@@ -70,7 +95,12 @@
         "It predicts a delay only for bright light, but emission is instant"
       ],
       "answer": 1,
-      "explanation": "In the wave picture, energy spreads thinly over the surface, so a single electron should slowly accumulate energy — predicting a delay that lengthens as light dims. Experiment shows instant emission even for faint light, contradicting the prediction."
+      "explanation": "In the wave picture, energy spreads thinly over the surface, so a single electron should slowly accumulate energy — predicting a delay that lengthens as light dims. Experiment shows instant emission even for faint light, contradicting the prediction.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m711-q07",
@@ -82,7 +112,12 @@
         "No electrons should be emitted at any frequency"
       ],
       "answer": 0,
-      "explanation": "Since the wave model ties energy to intensity, any frequency should work given enough brightness or time — predicting no threshold. The observed hard frequency cut-off, untouchable by brightness, cannot be explained by a continuous wave."
+      "explanation": "Since the wave model ties energy to intensity, any frequency should work given enough brightness or time — predicting no threshold. The observed hard frequency cut-off, untouchable by brightness, cannot be explained by a continuous wave.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m711-q08",
@@ -94,7 +129,12 @@
         "It predicts energy depends on the metal; experiment shows it depends on the light"
       ],
       "answer": 1,
-      "explanation": "The wave model says brighter (bigger-amplitude) light gives each electron more energy, with frequency irrelevant. Experiment shows the exact reverse: energy depends on frequency and is independent of intensity."
+      "explanation": "The wave model says brighter (bigger-amplitude) light gives each electron more energy, with frequency irrelevant. Experiment shows the exact reverse: energy depends on frequency and is independent of intensity.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m711-q09",
@@ -106,7 +146,12 @@
         "Energy from frequency"
       ],
       "answer": 2,
-      "explanation": "Brighter light carries more energy, so the wave model can correctly predict that more intensity ejects more electrons per second (N). It gets the other three (D, E, F) wrong."
+      "explanation": "Brighter light carries more energy, so the wave model can correctly predict that more intensity ejects more electrons per second (N). It gets the other three (D, E, F) wrong.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m711-q10",
@@ -118,7 +163,12 @@
         "Calculate the stopping voltage for each observation"
       ],
       "answer": 1,
-      "explanation": "The marks live in the contrast: state what a wave should do, what is actually observed, and that they disagree — three matched pairs for the three failures. Listing the observations alone earns only about half marks."
+      "explanation": "The marks live in the contrast: state what a wave should do, what is actually observed, and that they disagree — three matched pairs for the three failures. Listing the observations alone earns only about half marks.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

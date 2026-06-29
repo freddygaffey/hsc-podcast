@@ -10,7 +10,12 @@
         "Both forces are attractive and act equally over all distances"
       ],
       "answer": 1,
-      "explanation": "The electrostatic (Coulomb) force repels every proton from every other across the whole nucleus, while the strong nuclear force is attractive but only reaches its nearest neighbours (~1 fm). In a large nucleus like uranium, the long-range repulsion nearly overwhelms the short-range binding, leaving it on the edge of stability."
+      "explanation": "The electrostatic (Coulomb) force repels every proton from every other across the whole nucleus, while the strong nuclear force is attractive but only reaches its nearest neighbours (~1 fm). In a large nucleus like uranium, the long-range repulsion nearly overwhelms the short-range binding, leaving it on the edge of stability.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "fission-q02",
@@ -22,7 +27,12 @@
         "Slow neutrons decay into protons before striking the nucleus"
       ],
       "answer": 1,
-      "explanation": "A neutron is uncharged, so it is not repelled; a slow neutron lingers near the nucleus long enough to be captured (a larger cross-section), making the target effectively bigger. A fast neutron tends to glance off. Speed is not needed to overcome repulsion because there is none."
+      "explanation": "A neutron is uncharged, so it is not repelled; a slow neutron lingers near the nucleus long enough to be captured (a larger cross-section), making the target effectively bigger. A fast neutron tends to glance off. Speed is not needed to overcome repulsion because there is none.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "fission-q03",
@@ -34,7 +44,12 @@
         "From the electrostatic potential energy stored in the neutron"
       ],
       "answer": 1,
-      "explanation": "The fission products together weigh slightly less than the original nucleus plus neutron. This mass defect is converted to energy by \\(E = mc^2\\); using \\(1\\ \\mathrm{u} = 931.5\\ \\mathrm{MeV}\\), a defect of ~0.186 u gives ~173 MeV (kinetic), and ~200 MeV total once gammas and fragment decay are included."
+      "explanation": "The fission products together weigh slightly less than the original nucleus plus neutron. This mass defect is converted to energy by \\(E = mc^2\\); using \\(1\\ \\mathrm{u} = 931.5\\ \\mathrm{MeV}\\), a defect of ~0.186 u gives ~173 MeV (kinetic), and ~200 MeV total once gammas and fragment decay are included.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "fission-q04",
@@ -46,7 +61,12 @@
         "Iron is produced directly in every fission reaction"
       ],
       "answer": 1,
-      "explanation": "Uranium sits on the right-hand slope at ~7.6 MeV/nucleon. Its fission fragments lie higher up, nearer the iron-56 peak (~8.5 MeV/nucleon), so they are more tightly bound. The surplus binding energy is released. Fission slides down the right of the curve toward iron; fusion climbs up the left — both head toward iron-56."
+      "explanation": "Uranium sits on the right-hand slope at ~7.6 MeV/nucleon. Its fission fragments lie higher up, nearer the iron-56 peak (~8.5 MeV/nucleon), so they are more tightly bound. The surplus binding energy is released. Fission slides down the right of the curve toward iron; fusion climbs up the left — both head toward iron-56.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "fission-q05",
@@ -58,7 +78,12 @@
         "1.86 MeV"
       ],
       "answer": 1,
-      "explanation": "\\(E = \\Delta m \\times 931.5 = 0.186 \\times 931.5 \\approx 173\\ \\mathrm{MeV}\\), carried mainly as kinetic energy of the fragments. Adding gamma rays and fragment decay brings the total to about 200 MeV per fission."
+      "explanation": "\\(E = \\Delta m \\times 931.5 = 0.186 \\times 931.5 \\approx 173\\ \\mathrm{MeV}\\), carried mainly as kinetic energy of the fragments. Adding gamma rays and fragment decay brings the total to about 200 MeV per fission.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "fission-q06",
@@ -70,7 +95,12 @@
         "\\( k = 0 \\)"
       ],
       "answer": 1,
-      "explanation": "When \\(k = 1\\) (critical), each fission triggers exactly one more, so the chain sustains at a steady level — a controlled reactor. \\(k < 1\\) lets the chain die out; \\(k > 1\\) makes it grow exponentially, the runaway condition of a bomb."
+      "explanation": "When \\(k = 1\\) (critical), each fission triggers exactly one more, so the chain sustains at a steady level — a controlled reactor. \\(k < 1\\) lets the chain die out; \\(k > 1\\) makes it grow exponentially, the runaway condition of a bomb.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "fission-q07",
@@ -82,7 +112,12 @@
         "It cools the core by absorbing gamma rays"
       ],
       "answer": 1,
-      "explanation": "Neutrons emerge fast, but slow neutrons cause fission far more readily. The moderator (light atoms like carbon or hydrogen) slows them by repeated collisions. The counterintuitive part: slowing the neutrons down actually increases the fission rate, because thermal neutrons have a much larger fission cross-section. Control rods (not the moderator) absorb excess neutrons."
+      "explanation": "Neutrons emerge fast, but slow neutrons cause fission far more readily. The moderator (light atoms like carbon or hydrogen) slows them by repeated collisions. The counterintuitive part: slowing the neutrons down actually increases the fission rate, because thermal neutrons have a much larger fission cross-section. Control rods (not the moderator) absorb excess neutrons.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "fission-q08",
@@ -94,7 +129,12 @@
         "To carry heat away to the turbine"
       ],
       "answer": 1,
-      "explanation": "Cadmium and boron are strong neutron absorbers. Inserting the rods soaks up spare neutrons and lowers \\(k\\); withdrawing them lets the reaction build. They are the reactor's throttle and brake. Slowing neutrons is the moderator's job; reflecting them is the reflector's."
+      "explanation": "Cadmium and boron are strong neutron absorbers. Inserting the rods soaks up spare neutrons and lowers \\(k\\); withdrawing them lets the reaction build. They are the reactor's throttle and brake. Slowing neutrons is the moderator's job; reflecting them is the reflector's.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "fission-q09",
@@ -106,7 +146,12 @@
         "Reactor uranium is a different element from bomb uranium"
       ],
       "answer": 1,
-      "explanation": "A bomb needs the chain to grow explosively in about a millionth of a second, which requires highly enriched fuel (>90% U-235). At 3-5% enrichment most neutrons are captured by the abundant non-fissile U-238 before a runaway can build, so a reactor can melt down or suffer a steam explosion but cannot produce a nuclear detonation."
+      "explanation": "A bomb needs the chain to grow explosively in about a millionth of a second, which requires highly enriched fuel (>90% U-235). At 3-5% enrichment most neutrons are captured by the abundant non-fissile U-238 before a runaway can build, so a reactor can melt down or suffer a steam explosion but cannot produce a nuclear detonation.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "fission-q10",
@@ -118,7 +163,12 @@
         "\\( A = 89,\\ Z = 34 \\)"
       ],
       "answer": 0,
-      "explanation": "Conserve mass number: \\(235 + 1 = 141 + A + 3(1)\\), so \\(A = 92\\). Conserve atomic number: \\(92 + 0 = 56 + Z + 3(0)\\), so \\(Z = 36\\). The krypton nucleus is \\({}^{92}_{36}\\mathrm{Kr}\\)."
+      "explanation": "Conserve mass number: \\(235 + 1 = 141 + A + 3(1)\\), so \\(A = 92\\). Conserve atomic number: \\(92 + 0 = 56 + Z + 3(0)\\), so \\(Z = 36\\). The krypton nucleus is \\({}^{92}_{36}\\mathrm{Kr}\\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

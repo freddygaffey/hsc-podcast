@@ -10,7 +10,12 @@
         "Brief, Mock-up, Specification"
       ],
       "answer": 0,
-      "explanation": "The ideation half of the dot-point is B-M-S: Brainstorm to generate a pile of ideas, Mind-map to organise them, then Storyboard the chosen one. The order mirrors the workflow — generate, organise, walk-through. The other options name real software-process terms (backlog, milestone, schema) but they are not the syllabus's three named ideation tools."
+      "explanation": "The ideation half of the dot-point is B-M-S: Brainstorm to generate a pile of ideas, Mind-map to organise them, then Storyboard the chosen one. The order mirrors the workflow — generate, organise, walk-through. The other options name real software-process terms (backlog, milestone, schema) but they are not the syllabus's three named ideation tools.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2302-q02",
@@ -22,7 +27,12 @@
         "Limit the session to ideas that fit the existing data dictionary"
       ],
       "answer": 1,
-      "explanation": "The rule is defer judgement: go for quantity first, accept wild ideas, and only filter later. The reason the exam rewards is the mechanism — premature criticism kills the unusual idea that might have been the good one. Filtering immediately (option A) describes the refinement phase that deliberately comes after generation, not the brainstorm itself."
+      "explanation": "The rule is defer judgement: go for quantity first, accept wild ideas, and only filter later. The reason the exam rewards is the mechanism — premature criticism kills the unusual idea that might have been the good one. Filtering immediately (option A) describes the refinement phase that deliberately comes after generation, not the brainstorm itself.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2302-q03",
@@ -34,7 +44,12 @@
         "It is written at the end of a project to satisfy the documentation requirement"
       ],
       "answer": 2,
-      "explanation": "A data dictionary documents the structure and meaning of every data element (name, type, required, constraints, description) so all stakeholders and developers share one consistent understanding before they build. Its purpose is to remove ambiguity up front, which drives accurate database and validation design. The 'written at the end' option is the trap the script warns about — treating the data dictionary as afterthought paperwork rather than a design tool used first."
+      "explanation": "A data dictionary documents the structure and meaning of every data element (name, type, required, constraints, description) so all stakeholders and developers share one consistent understanding before they build. Its purpose is to remove ambiguity up front, which drives accurate database and validation design. The 'written at the end' option is the trap the script warns about — treating the data dictionary as afterthought paperwork rather than a design tool used first.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2302-q04",
@@ -46,7 +61,12 @@
         "Integer, because prices are always whole numbers of cents"
       ],
       "answer": 2,
-      "explanation": "A price should be a Decimal with fixed precision because floats give rounding errors on money — this interleaves back to handling money in e-commerce. The exam move is to name the type AND justify it: 'Decimal, to avoid floating-point rounding on currency' earns more than just 'Decimal'. Floating-point (option A) is exactly the type the script says to avoid for currency."
+      "explanation": "A price should be a Decimal with fixed precision because floats give rounding errors on money — this interleaves back to handling money in e-commerce. The exam move is to name the type AND justify it: 'Decimal, to avoid floating-point rounding on currency' earns more than just 'Decimal'. Floating-point (option A) is exactly the type the script says to avoid for currency.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2302-q05",
@@ -58,7 +78,12 @@
         "Designing the logic in a language-independent form lets you verify it on paper, where logic errors are far cheaper to fix than after the code is written"
       ],
       "answer": 3,
-      "explanation": "Designing the algorithm first — in NESA pseudocode, a flowchart, or a structure chart — lets the developer reason about and verify the logic before the syntax of a real language gets in the way. This matters because logic errors are far cheaper to identify and fix at the design stage, on paper, than after coding and integration — the same shift-left principle from Secure Software Architecture. Pseudocode does not 'run' at all (option A), so that reasoning is false."
+      "explanation": "Designing the algorithm first — in NESA pseudocode, a flowchart, or a structure chart — lets the developer reason about and verify the logic before the syntax of a real language gets in the way. This matters because logic errors are far cheaper to identify and fix at the design stage, on paper, than after coding and integration — the same shift-left principle from Secure Software Architecture. Pseudocode does not 'run' at all (option A), so that reasoning is false.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2302-q06",
@@ -70,7 +95,12 @@
         "Containerise, Trial, Implement, Migrate"
       ],
       "answer": 0,
-      "explanation": "C-T-I-M — said almost like 'see-tim' — covers the build toolkit: Code generation, Testing and debugging, Installation, and Maintenance. These are the tools across the rest of the build, reminding you that producing a solution is more than just typing. The other options use plausible process words but none match the four stages the dot-point actually lists."
+      "explanation": "C-T-I-M — said almost like 'see-tim' — covers the build toolkit: Code generation, Testing and debugging, Installation, and Maintenance. These are the tools across the rest of the build, reminding you that producing a solution is more than just typing. The other options use plausible process words but none match the four stages the dot-point actually lists.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2302-q07",
@@ -82,7 +112,12 @@
         "A mind-map defines data types; a storyboard defines the algorithm's logic"
       ],
       "answer": 1,
-      "explanation": "A mind-map is a structural tool — a central concept with branches radiating outward, showing relationships that linear lists hide. A storyboard is a narrative tool — it walks the user's journey frame by frame, often with how they feel, to catch usability problems early. Option A simply swaps the two definitions, which is the most tempting trap; the storyboard, not the mind-map, models the journey over time."
+      "explanation": "A mind-map is a structural tool — a central concept with branches radiating outward, showing relationships that linear lists hide. A storyboard is a narrative tool — it walks the user's journey frame by frame, often with how they feel, to catch usability problems early. Option A simply swaps the two definitions, which is the most tempting trap; the storyboard, not the mind-map, models the journey over time.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2302-q08",
@@ -94,7 +129,12 @@
         "Shift-left, because a flaw caught at design is far cheaper to fix than the same flaw caught after the solution is built"
       ],
       "answer": 3,
-      "explanation": "Modelling is shift-left applied to the whole solution: mistakes caught at the modelling stage are nearly free, while the same mistakes caught after building are expensive — roughly sixty-three times cheaper to fix a flaw at design than in production. 'Defer judgement' is a real principle from this episode, but it governs brainstorming, not the cost of fixing modelling errors."
+      "explanation": "Modelling is shift-left applied to the whole solution: mistakes caught at the modelling stage are nearly free, while the same mistakes caught after building are expensive — roughly sixty-three times cheaper to fix a flaw at design than in production. 'Defer judgement' is a real principle from this episode, but it governs brainstorming, not the cost of fixing modelling errors.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2302-q09",
@@ -106,7 +146,12 @@
         "A storyboard documents every data element and its type, removing ambiguity before development"
       ],
       "answer": 1,
-      "explanation": "A storyboard models the user's journey — the sequence of actions and where pain points occur — before any interface exists, so usability problems are caught while they are cheap to fix rather than after effort is spent building the wrong flow. It keeps the design focused on UX (from Programming for the Web) and gives stakeholders something concrete to react to. Option D describes the data dictionary's purpose, not the storyboard's — a classic mix-up between modelling tools."
+      "explanation": "A storyboard models the user's journey — the sequence of actions and where pain points occur — before any interface exists, so usability problems are caught while they are cheap to fix rather than after effort is spent building the wrong flow. It keeps the design focused on UX (from Programming for the Web) and gives stakeholders something concrete to react to. Option D describes the data dictionary's purpose, not the storyboard's — a classic mix-up between modelling tools.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2302-q10",
@@ -118,7 +163,12 @@
         "It schedules the installation script to run each morning on the target environment"
       ],
       "answer": 2,
-      "explanation": "The reminder_sent Boolean stops the SAME reminder firing twice; the algorithm checks it is False before sending and sets it True afterward. Modelling this in the data dictionary up front means the duplicate-send issue is designed away before coding — modelling before building, where fixes are cheap. The 'converts String into a Date' option describes choosing a Date type for due_date, a different data-type decision in the same example."
+      "explanation": "The reminder_sent Boolean stops the SAME reminder firing twice; the algorithm checks it is False before sending and sets it True afterward. Modelling this in the data dictionary up front means the duplicate-send issue is designed away before coding — modelling before building, where fixes are cheap. The 'converts String into a Date' option describes choosing a Date type for due_date, a different data-type decision in the same example.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

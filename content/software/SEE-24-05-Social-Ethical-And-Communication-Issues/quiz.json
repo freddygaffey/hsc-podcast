@@ -10,7 +10,12 @@
         "Interview, Feedback, Negotiation"
       ],
       "answer": 0,
-      "explanation": "I-F-N stands for Involve and empower the client, enable Feedback, and Negotiate — the three communication issues named in the syllabus. The script presents I-F-N as your structure for any 'how do you communicate with the client' question, including the six-marker. The other options use plausible-sounding I-F-N words like 'Identify' and 'Inform' but are not the syllabus terms."
+      "explanation": "I-F-N stands for Involve and empower the client, enable Feedback, and Negotiate — the three communication issues named in the syllabus. The script presents I-F-N as your structure for any 'how do you communicate with the client' question, including the six-marker. The other options use plausible-sounding I-F-N words like 'Identify' and 'Inform' but are not the syllabus terms.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2405-q02",
@@ -22,7 +27,12 @@
         "Protection, Accuracy, Behaviour, Testing"
       ],
       "answer": 2,
-      "explanation": "PABT stands for Privacy, Accessibility, Bias, and Transparency — the four ethical issues in project work, each a callback to another module. Option A is tempting because 'Accountability' and 'Trust' sound ethical, but the syllabus terms the script uses are Accessibility and Transparency. PABT is your checklist of ethical issues for any ethics question."
+      "explanation": "PABT stands for Privacy, Accessibility, Bias, and Transparency — the four ethical issues in project work, each a callback to another module. Option A is tempting because 'Accountability' and 'Trust' sound ethical, but the syllabus terms the script uses are Accessibility and Transparency. PABT is your checklist of ethical issues for any ethics question.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2405-q03",
@@ -34,7 +44,12 @@
         "Explains the social, ethical and legal implications of software engineering on the individual, society and the environment"
       ],
       "answer": 3,
-      "explanation": "The script names the outcome SE-12-05: explains the social, ethical and legal implications of software engineering on the individual, society and the environment. The episode stresses there is no algorithm here — marks come from naming the issues precisely and giving structured answers about working with people, which is exactly what this outcome targets."
+      "explanation": "The script names the outcome SE-12-05: explains the social, ethical and legal implications of software engineering on the individual, society and the environment. The episode stresses there is no algorithm here — marks come from naming the issues precisely and giving structured answers about working with people, which is exactly what this outcome targets.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2405-q04",
@@ -46,7 +61,12 @@
         "Allowing the client to approve the final product before it is released to users"
       ],
       "answer": 2,
-      "explanation": "The script defines empowerment as 'involvement with teeth' — giving the client genuine influence over the outcome so their feedback actually changes the product, not just informing them after a decision is made. Option B describes mere involvement (keeping them informed), which is the weaker idea empowerment goes beyond. Co-design activities, where the client helps make design decisions, are the mechanism."
+      "explanation": "The script defines empowerment as 'involvement with teeth' — giving the client genuine influence over the outcome so their feedback actually changes the product, not just informing them after a decision is made. Option B describes mere involvement (keeping them informed), which is the weaker idea empowerment goes beyond. Co-design activities, where the client helps make design decisions, are the mechanism.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2405-q05",
@@ -58,7 +78,12 @@
         "By recording all client comments in a document for reference after the project ends"
       ],
       "answer": 2,
-      "explanation": "Enabling feedback is a structured, two-way process: multiple channels (surveys, interviews, usability sessions), regular cycles aligned to iterations, categorisation by type and priority, and tracking how feedback changed decisions to close the loop. The single end-of-project survey is the exact trap the script warns against — one overwhelming dump rather than steady cycles. The forward hook for analysing feedback is C-S-A (Collect, Synthesise, Act) in 26-02."
+      "explanation": "Enabling feedback is a structured, two-way process: multiple channels (surveys, interviews, usability sessions), regular cycles aligned to iterations, categorisation by type and priority, and tracking how feedback changed decisions to close the loop. The single end-of-project survey is the exact trap the script warns against — one overwhelming dump rather than steady cycles. The forward hook for analysing feedback is C-S-A (Collect, Synthesise, Act) in 26-02.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2405-q06",
@@ -70,7 +95,12 @@
         "Gather requirements, prioritise features, build a prototype, release"
       ],
       "answer": 1,
-      "explanation": "Negotiation follows four steps: clarify the underlying need (the literal request isn't always the best fix), assess impact and feasibility, explore options (full, simplified, alternative, or defer), and document what was agreed and why. Option A is wrong because negotiation is neither a flat 'no' nor a blanket 'yes' — it is clarify, assess, offer options, document, conducted around the Scope-Time-Cost triangle."
+      "explanation": "Negotiation follows four steps: clarify the underlying need (the literal request isn't always the best fix), assess impact and feasibility, explore options (full, simplified, alternative, or defer), and document what was agreed and why. Option A is wrong because negotiation is neither a flat 'no' nor a blanket 'yes' — it is clarify, assess, offer options, document, conducted around the Scope-Time-Cost triangle.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2405-q07",
@@ -82,7 +112,12 @@
         "A weak approach gathers requirements once at the start and delivers at the end, while a strong approach builds an ongoing partnership with regular demonstrations and co-design"
       ],
       "answer": 3,
-      "explanation": "The script contrasts the weak developer — gathers requirements in week one, disappears for six months, delivers at the end — with the strong developer who builds an ongoing partnership where the client feels heard, informed and in control through regular demonstrations and co-design. The distinguishing factor is continuous involvement versus a one-off, not the communication medium or documentation habits, which are the tempting but incorrect options."
+      "explanation": "The script contrasts the weak developer — gathers requirements in week one, disappears for six months, delivers at the end — with the strong developer who builds an ongoing partnership where the client feels heard, informed and in control through regular demonstrations and co-design. The distinguishing factor is continuous involvement versus a one-off, not the communication medium or documentation habits, which are the tempting but incorrect options.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2405-q08",
@@ -94,7 +129,12 @@
         "Because communication tasks take more time than coding tasks in most project schedules"
       ],
       "answer": 0,
-      "explanation": "The script argues the 'real work is the code' mindset is wrong: history shows projects fail more from poor communication and ignored stakeholders than from technical limits — a project that ignores feedback 'builds the wrong thing efficiently.' Healthcare.gov is cited as failing partly because stakeholder communication broke down. The 'legally required' option invents a mandate the script never claims; the real point is that communication is core engineering discipline, not a nice-to-have."
+      "explanation": "The script argues the 'real work is the code' mindset is wrong: history shows projects fail more from poor communication and ignored stakeholders than from technical limits — a project that ignores feedback 'builds the wrong thing efficiently.' Healthcare.gov is cited as failing partly because stakeholder communication broke down. The 'legally required' option invents a mandate the script never claims; the real point is that communication is core engineering discipline, not a nice-to-have.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2405-q09",
@@ -106,7 +146,12 @@
         "Primarily transparency, since the algorithm's accuracy is the only concern"
       ],
       "answer": 1,
-      "explanation": "The anchor scenario deliberately collides across multiple PABT issues: Privacy (sensitive behavioural data on minors), Bias (a model trained on biased history could unfairly flag groups — 'the algorithm isn't neutral'), and Transparency (an opaque 'at-risk' label with self-fulfilling-prophecy risk), plus competing stakeholder interests (admin wants data, teachers fear bias, parents want help but also privacy, students fear labelling). Options A and C are wrong because they pick a single issue when the scenario's value is that it touches several at once."
+      "explanation": "The anchor scenario deliberately collides across multiple PABT issues: Privacy (sensitive behavioural data on minors), Bias (a model trained on biased history could unfairly flag groups — 'the algorithm isn't neutral'), and Transparency (an opaque 'at-risk' label with self-fulfilling-prophecy risk), plus competing stakeholder interests (admin wants data, teachers fear bias, parents want help but also privacy, students fear labelling). Options A and C are wrong because they pick a single issue when the scenario's value is that it touches several at once.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2405-q10",
@@ -118,7 +163,12 @@
         "Extend the team size so all new features can be delivered within the original deadline"
       ],
       "answer": 2,
-      "explanation": "The correct response is to negotiate, not blanket-refuse or silently accept: clarify the underlying need behind each request, assess impact and feasibility, explain that fixing time and cost while raising scope means something must give, then offer options (simplify, swap a lower-priority feature, or defer to a later phase) and document what is agreed. Option A is a flat 'no' and option B a blanket 'yes' — both rejected by the script. This protects project boundaries while keeping the client in control of priorities, framing the conversation as a shared trade-off."
+      "explanation": "The correct response is to negotiate, not blanket-refuse or silently accept: clarify the underlying need behind each request, assess impact and feasibility, explain that fixing time and cost while raising scope means something must give, then offer options (simplify, swap a lower-priority feature, or defer to a later phase) and document what is agreed. Option A is a flat 'no' and option B a blanket 'yes' — both rejected by the script. This protects project boundaries while keeping the client in control of priorities, framing the conversation as a shared trade-off.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

@@ -10,7 +10,12 @@
         "All elements of the periodic table"
       ],
       "answer": 1,
-      "explanation": "In its first ~20 minutes the universe made roughly 75% hydrogen and 25% helium-4 by mass, plus a trace of lithium, before expansion cooled it below fusion temperatures. Every heavier element — carbon, oxygen, iron, gold — was made later, inside stars."
+      "explanation": "In its first ~20 minutes the universe made roughly 75% hydrogen and 25% helium-4 by mass, plus a trace of lithium, before expansion cooled it below fusion temperatures. Every heavier element — carbon, oxygen, iron, gold — was made later, inside stars.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "stellar-q02",
@@ -22,7 +27,12 @@
         "The Coulomb barrier and quantum tunnelling"
       ],
       "answer": 1,
-      "explanation": "A main sequence star is a tug-of-war fought to a draw: gravity crushing inward against the outward pressure produced by energy pouring out of core fusion. This hydrostatic equilibrium holds the star stable for most of its life, until the core fuel runs out."
+      "explanation": "A main sequence star is a tug-of-war fought to a draw: gravity crushing inward against the outward pressure produced by energy pouring out of core fusion. This hydrostatic equilibrium holds the star stable for most of its life, until the core fuel runs out.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "stellar-q03",
@@ -34,7 +44,12 @@
         "From neutrinos being absorbed by the core"
       ],
       "answer": 1,
-      "explanation": "The helium-4 nucleus weighs about 0.7% less than the four original protons. That tiny mass defect is converted to energy by \\(E = mc^2\\), releasing about 26.7 MeV per completed chain. Because \\(c^2\\) is enormous, even a whisper of lost mass yields a torrent of energy."
+      "explanation": "The helium-4 nucleus weighs about 0.7% less than the four original protons. That tiny mass defect is converted to energy by \\(E = mc^2\\), releasing about 26.7 MeV per completed chain. Because \\(c^2\\) is enormous, even a whisper of lost mass yields a torrent of energy.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "stellar-q04",
@@ -46,7 +61,12 @@
         "They are waste products that poison the reaction"
       ],
       "answer": 2,
-      "explanation": "In the CNO cycle, carbon-12 is regenerated at the end of the cycle — the C, N and O act as catalysts, borrowed and handed back like tongs. The net reaction is identical to the proton-proton chain: four protons in, one helium-4 out, ~26.7 MeV released."
+      "explanation": "In the CNO cycle, carbon-12 is regenerated at the end of the cycle — the C, N and O act as catalysts, borrowed and handed back like tongs. The net reaction is identical to the proton-proton chain: four protons in, one helium-4 out, ~26.7 MeV released.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "stellar-q05",
@@ -58,7 +78,12 @@
         "The proton-proton chain cannot occur above 10 million K"
       ],
       "answer": 1,
-      "explanation": "The CNO rate scales steeply with temperature (~\\(T^{17}\\)) versus ~\\(T^4\\) for the pp-chain. A more massive star has stronger gravity, so a hotter core, which makes the savage CNO cycle take over. Both release the same ~26.7 MeV; the difference is which one dominates at a given temperature."
+      "explanation": "The CNO rate scales steeply with temperature (~\\(T^{17}\\)) versus ~\\(T^4\\) for the pp-chain. A more massive star has stronger gravity, so a hotter core, which makes the savage CNO cycle take over. Both release the same ~26.7 MeV; the difference is which one dominates at a given temperature.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "stellar-q06",
@@ -70,7 +95,12 @@
         "Its chemical composition only"
       ],
       "answer": 1,
-      "explanation": "A star's mass at birth fixes its position on the main sequence: more massive stars have hotter cores, so they are bluer, brighter and sit high on the band, while low-mass stars are cooler, redder and sit low. Mass also dictates lifetime — massive stars 'live fast, die young'."
+      "explanation": "A star's mass at birth fixes its position on the main sequence: more massive stars have hotter cores, so they are bluer, brighter and sit high on the band, while low-mass stars are cooler, redder and sit low. Mass also dictates lifetime — massive stars 'live fast, die young'.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "stellar-q07",
@@ -82,7 +112,12 @@
         "There is no helium left after the main sequence"
       ],
       "answer": 1,
-      "explanation": "Two helium-4 nuclei make beryllium-8, which is wildly unstable and decays back in ~10⁻¹⁷ s. A third helium nucleus must fuse with it in that vanishingly short window. The reaction proceeds readily only because of the Hoyle-state resonance in carbon-12."
+      "explanation": "Two helium-4 nuclei make beryllium-8, which is wildly unstable and decays back in ~10⁻¹⁷ s. A third helium nucleus must fuse with it in that vanishingly short window. The reaction proceeds readily only because of the Hoyle-state resonance in carbon-12.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "stellar-q08",
@@ -94,7 +129,12 @@
         "Observations of the Sun's neutrinos"
       ],
       "answer": 1,
-      "explanation": "Hoyle reasoned backwards from existence: since the universe is full of carbon and we are carbon-based, the slow triple-alpha reaction must be enhanced by a resonance. He predicted a carbon-12 excited state near 7.65 MeV, later confirmed in the lab — reasoning from the cosmos down to a single nucleus."
+      "explanation": "Hoyle reasoned backwards from existence: since the universe is full of carbon and we are carbon-based, the slow triple-alpha reaction must be enhanced by a resonance. He predicted a carbon-12 excited state near 7.65 MeV, later confirmed in the lab — reasoning from the cosmos down to a single nucleus.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "stellar-q09",
@@ -106,7 +146,12 @@
         "Iron immediately decays into lighter elements"
       ],
       "answer": 1,
-      "explanation": "Iron-56 has the highest binding energy per nucleon (~8.79 MeV), the most stable point. Below iron, fusion climbs the curve and releases energy; fusing iron into anything heavier moves to the downhill side and consumes energy. With no energy from fusion, the core can no longer resist gravity."
+      "explanation": "Iron-56 has the highest binding energy per nucleon (~8.79 MeV), the most stable point. Below iron, fusion climbs the curve and releases energy; fusing iron into anything heavier moves to the downhill side and consumes energy. With no energy from fusion, the core can no longer resist gravity.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "stellar-q10",
@@ -118,7 +163,12 @@
         "Fusion of iron releases enough energy to halt collapse"
       ],
       "answer": 1,
-      "explanation": "Above the Chandrasekhar limit (~1.4 solar masses), electron degeneracy pressure fails. The iron core collapses catastrophically — protons and electrons merge into neutrons — and the rebound drives a supernova that scatters the star's elements (and forges elements heavier than iron) across the galaxy."
+      "explanation": "Above the Chandrasekhar limit (~1.4 solar masses), electron degeneracy pressure fails. The iron core collapses catastrophically — protons and electrons merge into neutrons — and the rebound drives a supernova that scatters the star's elements (and forges elements heavier than iron) across the galaxy.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

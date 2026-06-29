@@ -10,7 +10,12 @@
         "The wavelength in the medium times the frequency"
       ],
       "answer": 1,
-      "explanation": "The refractive index is n = c/v, the speed of light in a vacuum divided by its speed in the medium. Because light always travels slower in a medium, n is always greater than 1 (air ≈ 1, water ≈ 1.33, glass ≈ 1.5). A higher index means light travels slower and the medium is 'optically denser'."
+      "explanation": "The refractive index is n = c/v, the speed of light in a vacuum divided by its speed in the medium. Because light always travels slower in a medium, n is always greater than 1 (air ≈ 1, water ≈ 1.33, glass ≈ 1.5). A higher index means light travels slower and the medium is 'optically denser'.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m304-q02",
@@ -22,7 +27,12 @@
         "Speed unchanged; travels straight"
       ],
       "answer": 1,
-      "explanation": "Glass is denser (higher index) than air, so light slows down and bends toward the normal. Entering a less dense medium it would speed up and bend away from the normal. The 'toward the normal entering a denser medium' rule is worth a guaranteed mark — saying 'away' is the common error."
+      "explanation": "Glass is denser (higher index) than air, so light slows down and bends toward the normal. Entering a less dense medium it would speed up and bend away from the normal. The 'toward the normal entering a denser medium' rule is worth a guaranteed mark — saying 'away' is the common error.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m304-q03",
@@ -34,7 +44,12 @@
         "1.5"
       ],
       "answer": 1,
-      "explanation": "By Snell's law n₁ sin i = n₂ sin r: 1 × 0.5 = 1.5 × sin r → sin r = 0.5/1.5 = 0.33 (about 19°). The refracted angle (19°) is smaller than the incident angle (30°), so the ray bends toward the normal, as expected entering a denser medium."
+      "explanation": "By Snell's law n₁ sin i = n₂ sin r: 1 × 0.5 = 1.5 × sin r → sin r = 0.5/1.5 = 0.33 (about 19°). The refracted angle (19°) is smaller than the incident angle (30°), so the ray bends toward the normal, as expected entering a denser medium.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m304-q04",
@@ -46,7 +61,12 @@
         "1×10⁸ m s⁻¹"
       ],
       "answer": 1,
-      "explanation": "Rearranging n = c/v gives v = c/n = 3×10⁸ / 1.5 = 2×10⁸ m s⁻¹. Light travels 1.5 times slower in the glass than in a vacuum. A higher refractive index always means a lower speed — multiplying instead of dividing (giving 4.5×10⁸) would exceed c, which is impossible."
+      "explanation": "Rearranging n = c/v gives v = c/n = 3×10⁸ / 1.5 = 2×10⁸ m s⁻¹. Light travels 1.5 times slower in the glass than in a vacuum. A higher refractive index always means a lower speed — multiplying instead of dividing (giving 4.5×10⁸) would exceed c, which is impossible.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m304-q05",
@@ -58,7 +78,12 @@
         "Any angle, as long as the surface is a mirror"
       ],
       "answer": 1,
-      "explanation": "Total internal reflection needs BOTH: (1) light travelling from a denser (higher-index) to a less dense (lower-index) medium, and (2) an angle of incidence greater than the critical angle. Dropping either condition loses a mark — giving only the angle condition is the most common omission."
+      "explanation": "Total internal reflection needs BOTH: (1) light travelling from a denser (higher-index) to a less dense (lower-index) medium, and (2) an angle of incidence greater than the critical angle. Dropping either condition loses a mark — giving only the angle condition is the most common omission.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m304-q06",
@@ -70,7 +95,12 @@
         "Light travels in a straight line without touching the walls"
       ],
       "answer": 1,
-      "explanation": "Light entering the thin high-index glass fibre hits the internal walls at angles greater than the critical angle (and travels from dense glass to less dense surroundings), so it totally internally reflects repeatedly down the fibre with almost no loss, even around bends. This carries internet/phone data as light pulses and images in endoscopes."
+      "explanation": "Light entering the thin high-index glass fibre hits the internal walls at angles greater than the critical angle (and travels from dense glass to less dense surroundings), so it totally internally reflects repeatedly down the fibre with almost no loss, even around bends. This carries internet/phone data as light pulses and images in endoscopes.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m304-q07",
@@ -82,7 +112,12 @@
         "White light reflects off the prism surface"
       ],
       "answer": 1,
-      "explanation": "The refractive index of glass is slightly higher for shorter wavelengths (violet) than longer ones (red), so each colour refracts by a different amount — violet bends most, red least — fanning white light into a spectrum. This is direct evidence that white light is a mixture of colours, and a rainbow is dispersion on a grand scale."
+      "explanation": "The refractive index of glass is slightly higher for shorter wavelengths (violet) than longer ones (red), so each colour refracts by a different amount — violet bends most, red least — fanning white light into a spectrum. This is direct evidence that white light is a mixture of colours, and a rainbow is dispersion on a grand scale.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m304-q08",
@@ -94,7 +129,12 @@
         "800 lux"
       ],
       "answer": 1,
-      "explanation": "Light intensity obeys the inverse-square law: I₁r₁² = I₂r₂², so 200 × 1² = I₂ × 4² → I₂ = 200/16 = 12.5 lux. The trap is dividing by 4 (giving 50) instead of 4² = 16 — the distance ratio must be squared."
+      "explanation": "Light intensity obeys the inverse-square law: I₁r₁² = I₂r₂², so 200 × 1² = I₂ × 4² → I₂ = 200/16 = 12.5 lux. The trap is dividing by 4 (giving 50) instead of 4² = 16 — the distance ratio must be squared.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m304-q09",
@@ -106,7 +146,12 @@
         "From the incident ray itself"
       ],
       "answer": 1,
-      "explanation": "All angles in optics — incidence, reflection, refraction, and the critical angle — are measured from the normal, the line perpendicular to the surface, not from the surface itself. Measuring from the surface is a classic error that throws off every reflection and Snell's-law calculation."
+      "explanation": "All angles in optics — incidence, reflection, refraction, and the critical angle — are measured from the normal, the line perpendicular to the surface, not from the surface itself. Measuring from the surface is a classic error that throws off every reflection and Snell's-law calculation.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m304-q10",
@@ -118,7 +163,12 @@
         "It is absorbed by the surface"
       ],
       "answer": 1,
-      "explanation": "The critical angle for water-air is about 49°. A beam at 60° exceeds it, and the light is travelling from denser water to less dense air, so both conditions for total internal reflection are met — the light is entirely reflected back down, and the surface acts like a perfect mirror. Below 49° it would instead refract out into the air."
+      "explanation": "The critical angle for water-air is about 49°. A beam at 60° exceeds it, and the light is travelling from denser water to less dense air, so both conditions for total internal reflection are met — the light is entirely reflected back down, and the surface acts like a perfect mirror. Below 49° it would instead refract out into the air.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

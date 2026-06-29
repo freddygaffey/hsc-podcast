@@ -10,7 +10,12 @@
         "\\( 2.2\\ \\mathrm{ns} \\)"
       ],
       "answer": 2,
-      "explanation": "A muon at rest lives, on average, about \\(2.2\\ \\mu\\mathrm{s}\\) (2.2 millionths of a second) before decaying. This is the proper lifetime, measured in the muon's own rest frame where its birth and decay happen at the same place."
+      "explanation": "A muon at rest lives, on average, about \\(2.2\\ \\mu\\mathrm{s}\\) (2.2 millionths of a second) before decaying. This is the proper lifetime, measured in the muon's own rest frame where its birth and decay happen at the same place.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "muon-q02",
@@ -22,7 +27,12 @@
         "All of them, since they move at light speed"
       ],
       "answer": 1,
-      "explanation": "Classically the muons should die more than 14 km short of the ground. The journey is over 20 lifetimes long, and exponential decay leaves an utterly negligible survival fraction. Yet ~10,000 muons per square metre per minute reach sea level, so a classical assumption must be wrong."
+      "explanation": "Classically the muons should die more than 14 km short of the ground. The journey is over 20 lifetimes long, and exponential decay leaves an utterly negligible survival fraction. Yet ~10,000 muons per square metre per minute reach sea level, so a classical assumption must be wrong.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "muon-q03",
@@ -34,7 +44,12 @@
         "Mass and energy are equivalent; momentum is always conserved"
       ],
       "answer": 1,
-      "explanation": "Special relativity rests on two postulates: the laws of physics are identical in every inertial (constant-velocity) frame, and the speed of light in vacuum is the same for every observer regardless of motion. The constancy of light's speed forces time and length to be relative."
+      "explanation": "Special relativity rests on two postulates: the laws of physics are identical in every inertial (constant-velocity) frame, and the speed of light in vacuum is the same for every observer regardless of motion. The constancy of light's speed forces time and length to be relative.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "muon-q04",
@@ -46,7 +61,12 @@
         "It becomes negative"
       ],
       "answer": 2,
-      "explanation": "As \\(v \\to c\\), the term \\(v^2/c^2 \\to 1\\), so \\(1 - v^2/c^2 \\to 0\\) and \\(\\gamma \\to \\infty\\). At low speeds \\(\\gamma \\approx 1\\) and relativistic effects are negligible; near light speed \\(\\gamma\\) blows up, producing dramatic time dilation and length contraction."
+      "explanation": "As \\(v \\to c\\), the term \\(v^2/c^2 \\to 1\\), so \\(1 - v^2/c^2 \\to 0\\) and \\(\\gamma \\to \\infty\\). At low speeds \\(\\gamma \\approx 1\\) and relativistic effects are negligible; near light speed \\(\\gamma\\) blows up, producing dramatic time dilation and length contraction.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "muon-q05",
@@ -58,7 +78,12 @@
         "\\( 330\\ \\mu\\mathrm{s} \\)"
       ],
       "answer": 2,
-      "explanation": "Time dilation gives \\(t = \\gamma t_0 = 15 \\times 2.2\\ \\mu\\mathrm{s} = 33\\ \\mu\\mathrm{s}\\) in Earth's frame. The moving muon's internal clock runs slow by a factor of 15, so from our viewpoint it survives 15 times longer — long enough to cross the ~15 km of atmosphere."
+      "explanation": "Time dilation gives \\(t = \\gamma t_0 = 15 \\times 2.2\\ \\mu\\mathrm{s} = 33\\ \\mu\\mathrm{s}\\) in Earth's frame. The moving muon's internal clock runs slow by a factor of 15, so from our viewpoint it survives 15 times longer — long enough to cross the ~15 km of atmosphere.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "muon-q06",
@@ -70,7 +95,12 @@
         "Gravity pulls it down before it can decay"
       ],
       "answer": 0,
-      "explanation": "In the muon's frame it ages normally, but the atmosphere rushes up length-contracted by the same factor \\(\\gamma\\): \\(L = L_0/\\gamma = 15{,}000/15 = 1000\\ \\mathrm{m}\\). Crossing just ~1 km takes about a lifetime, so it survives. Time dilation (our frame) and length contraction (its frame) give the same outcome."
+      "explanation": "In the muon's frame it ages normally, but the atmosphere rushes up length-contracted by the same factor \\(\\gamma\\): \\(L = L_0/\\gamma = 15{,}000/15 = 1000\\ \\mathrm{m}\\). Crossing just ~1 km takes about a lifetime, so it survives. Time dilation (our frame) and length contraction (its frame) give the same outcome.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "muon-q07",
@@ -82,7 +112,12 @@
         "Zero, all muons had decayed"
       ],
       "answer": 1,
-      "explanation": "They measured 409 ± 9 muons per hour at sea level — close to the relativistic prediction of ~400 and nowhere near the classical ~27. Far more muons survived than classical physics allows, confirming time dilation. The measured dilation factor was 8.8 ± 0.8 against a predicted ~8.4."
+      "explanation": "They measured 409 ± 9 muons per hour at sea level — close to the relativistic prediction of ~400 and nowhere near the classical ~27. Far more muons survived than classical physics allows, confirming time dilation. The measured dilation factor was 8.8 ± 0.8 against a predicted ~8.4.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "muon-q08",
@@ -94,7 +129,12 @@
         "Only the eastbound clock changed; the westbound clock did not"
       ],
       "answer": 1,
-      "explanation": "The eastbound clocks lost ~59 ns and the westbound gained ~273 ns relative to the ground reference, matching the combined special- and general-relativistic predictions. The travelling clocks genuinely experienced different amounts of time — the twin paradox made of caesium and airline seats."
+      "explanation": "The eastbound clocks lost ~59 ns and the westbound gained ~273 ns relative to the ground reference, matching the combined special- and general-relativistic predictions. The travelling clocks genuinely experienced different amounts of time — the twin paradox made of caesium and airline seats.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "muon-q09",
@@ -106,7 +146,12 @@
         "To compensate for signal delay through the atmosphere"
       ],
       "answer": 1,
-      "explanation": "In orbit, weaker gravity (general relativity, +45.8 \\(\\mu\\mathrm{s}\\)/day) outweighs the motion slowdown (special relativity, -7.2 \\(\\mu\\mathrm{s}\\)/day), so the clocks net run fast by ~38 \\(\\mu\\mathrm{s}\\)/day. Engineers pre-set the frequency slightly low so the clock ticks correctly once sped up. Uncorrected, position would drift ~10 km/day."
+      "explanation": "In orbit, weaker gravity (general relativity, +45.8 \\(\\mu\\mathrm{s}\\)/day) outweighs the motion slowdown (special relativity, -7.2 \\(\\mu\\mathrm{s}\\)/day), so the clocks net run fast by ~38 \\(\\mu\\mathrm{s}\\)/day. Engineers pre-set the frequency slightly low so the clock ticks correctly once sped up. Uncorrected, position would drift ~10 km/day.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "muon-q10",
@@ -118,7 +163,12 @@
         "6 s"
       ],
       "answer": 2,
-      "explanation": "Time dilation gives \\(t = \\gamma t_0 = 1.25 \\times 10 = 12.5\\ \\mathrm{s}\\). The moving ship's clock runs slow as seen from Earth, so more time (12.5 s) passes on Earth than the 10 s of proper time aboard the ship. The dilated time is always longer than the proper time."
+      "explanation": "Time dilation gives \\(t = \\gamma t_0 = 1.25 \\times 10 = 12.5\\ \\mathrm{s}\\). The moving ship's clock runs slow as seen from Earth, so more time (12.5 s) passes on Earth than the 10 s of proper time aboard the ship. The dilated time is always longer than the proper time.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

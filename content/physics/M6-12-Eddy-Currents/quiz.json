@@ -10,7 +10,12 @@
         "A steady direct current flowing along the surface of a metal"
       ],
       "answer": 1,
-      "explanation": "An eddy current is defined by what it IS: an induced circulating current flowing in closed loops within the body of a solid conductor due to a changing flux. Option C describes what eddy currents DO (the braking force), not what they are — leading with that loses the definition mark."
+      "explanation": "An eddy current is defined by what it IS: an induced circulating current flowing in closed loops within the body of a solid conductor due to a changing flux. Option C describes what eddy currents DO (the braking force), not what they are — leading with that loses the definition mark.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m612-q02",
@@ -22,7 +27,12 @@
         "Resistance heats the metal, which then creates a current"
       ],
       "answer": 1,
-      "explanation": "Faraday makes the EMF (from the changing flux), the bulk metal swirls the current into closed loops, and Lenz aims it to oppose the change. Lenz does not induce the EMF — that is Faraday's role."
+      "explanation": "Faraday makes the EMF (from the changing flux), the bulk metal swirls the current into closed loops, and Lenz aims it to oppose the change. Lenz does not induce the EMF — that is Faraday's role.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m612-q03",
@@ -34,7 +44,12 @@
         "Because gravity always opposes the motion"
       ],
       "answer": 1,
-      "explanation": "A force aiding the motion would speed the conductor up, increasing the eddy current and the force, building kinetic and electrical energy with no input — a perpetual motion machine, forbidden by conservation of energy. So (by Lenz's law) the force must oppose, acting as a brake."
+      "explanation": "A force aiding the motion would speed the conductor up, increasing the eddy current and the force, building kinetic and electrical energy with no input — a perpetual motion machine, forbidden by conservation of energy. So (by Lenz's law) the force must oppose, acting as a brake.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m612-q04",
@@ -46,7 +61,12 @@
         "Chemical energy in the conductor"
       ],
       "answer": 1,
-      "explanation": "The braking force does negative work, removing kinetic energy, which becomes the electrical energy of the eddy currents and is then dissipated as heat (\\( P = I^2R \\)) as electrons collide with the lattice. The process is irreversible: kinetic → electrical → heat."
+      "explanation": "The braking force does negative work, removing kinetic energy, which becomes the electrical energy of the eddy currents and is then dissipated as heat (\\( P = I^2R \\)) as electrons collide with the lattice. The process is irreversible: kinetic → electrical → heat.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m612-q05",
@@ -58,7 +78,12 @@
         "It only acts at very low speeds"
       ],
       "answer": 1,
-      "explanation": "Faster motion means a faster rate of change of flux, hence a larger EMF, larger eddy current, and larger opposing force. As speed approaches zero the force approaches zero — which is why an eddy-current brake is smooth but cannot deliver the final stop on its own."
+      "explanation": "Faster motion means a faster rate of change of flux, hence a larger EMF, larger eddy current, and larger opposing force. As speed approaches zero the force approaches zero — which is why an eddy-current brake is smooth but cannot deliver the final stop on its own.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m612-q06",
@@ -70,7 +95,12 @@
         "\\( 3.0 \\times 10^{5}\\,\\mathrm{J} \\)"
       ],
       "answer": 0,
-      "explanation": "\\( K_i = \\tfrac12(600)(25)^2 = 187\\,500\\,\\mathrm{J} \\); \\( K_f = \\tfrac12(600)(5)^2 = 7\\,500\\,\\mathrm{J} \\). \\( \\Delta K = 187\\,500 - 7\\,500 = 180\\,000\\,\\mathrm{J} = 1.8\\times10^{5}\\,\\mathrm{J} \\). Option B is the initial KE alone, not the amount removed."
+      "explanation": "\\( K_i = \\tfrac12(600)(25)^2 = 187\\,500\\,\\mathrm{J} \\); \\( K_f = \\tfrac12(600)(5)^2 = 7\\,500\\,\\mathrm{J} \\). \\( \\Delta K = 187\\,500 - 7\\,500 = 180\\,000\\,\\mathrm{J} = 1.8\\times10^{5}\\,\\mathrm{J} \\). Option B is the initial KE alone, not the amount removed.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m612-q07",
@@ -82,7 +112,12 @@
         "The ceramic is a perfect insulator that blocks all heat"
       ],
       "answer": 1,
-      "explanation": "The coil's rapidly changing (AC) field induces eddy currents in the pot, which heats itself by \\( I^2R \\). The heat is generated in the pot, not the surface; the ceramic only warms by conduction back from the hot pot. The 'cooktop heats the pot like a stove' idea is the classic trap."
+      "explanation": "The coil's rapidly changing (AC) field induces eddy currents in the pot, which heats itself by \\( I^2R \\). The heat is generated in the pot, not the surface; the ceramic only warms by conduction back from the hot pot. The 'cooktop heats the pot like a stove' idea is the classic trap.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m612-q08",
@@ -94,7 +129,12 @@
         "The heat, by insulating the core thermally"
       ],
       "answer": 1,
-      "explanation": "The iron MUST still carry the flux — that is the core's job. The insulation blocks the cross-core electrical path of the eddy currents, confining them to many small high-resistance loops, drastically cutting the heat loss. Saying laminations 'block the flux' is the most common error and contradicts the point of the core."
+      "explanation": "The iron MUST still carry the flux — that is the core's job. The insulation blocks the cross-core electrical path of the eddy currents, confining them to many small high-resistance loops, drastically cutting the heat loss. Saying laminations 'block the flux' is the most common error and contradicts the point of the core.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m612-q09",
@@ -106,7 +146,12 @@
         "A walk-through metal detector"
       ],
       "answer": 1,
-      "explanation": "In a transformer core, eddy currents dissipate energy as heat, lowering efficiency — pure loss, so the core is laminated. In braking, cooktops, furnaces and detectors, the energy taken from the motion (or the signal) is exactly what you want, so eddy currents are useful there."
+      "explanation": "In a transformer core, eddy currents dissipate energy as heat, lowering efficiency — pure loss, so the core is laminated. In braking, cooktops, furnaces and detectors, the energy taken from the motion (or the signal) is exactly what you want, so eddy currents are useful there.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m612-q10",
@@ -118,7 +163,12 @@
         "The copper being ferromagnetic and attracting the magnet"
       ],
       "answer": 1,
-      "explanation": "The faster the magnet falls, the larger the eddy currents induced in the pipe walls and the larger the opposing (Lenz's law) force, until the magnetic drag balances gravity and it drifts at near-constant speed — analogous to a skydiver's terminal velocity, but the retarding force is electromagnetic, not air resistance. Copper is not ferromagnetic."
+      "explanation": "The faster the magnet falls, the larger the eddy currents induced in the pipe walls and the larger the opposing (Lenz's law) force, until the magnetic drag balances gravity and it drifts at near-constant speed — analogous to a skydiver's terminal velocity, but the retarding force is electromagnetic, not air resistance. Copper is not ferromagnetic.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

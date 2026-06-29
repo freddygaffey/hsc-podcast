@@ -10,7 +10,12 @@
         "It was the first malware to encrypt files and demand a ransom payment"
       ],
       "answer": 0,
-      "explanation": "Stuxnet is described as the first piece of software historians and researchers call a true weapon — built by a nation-state to cross into an isolated facility and physically destroy centrifuges, not to steal money or secrets. Earlier attacks could only 'attack a computer'; Stuxnet reached out of the digital world and snapped physical metal, which is what makes it a turning point. The financial-theft option is tempting but describes ordinary criminal malware, not Stuxnet's purpose."
+      "explanation": "Stuxnet is described as the first piece of software historians and researchers call a true weapon — built by a nation-state to cross into an isolated facility and physically destroy centrifuges, not to steal money or secrets. Earlier attacks could only 'attack a computer'; Stuxnet reached out of the digital world and snapped physical metal, which is what makes it a turning point. The financial-theft option is tempting but describes ordinary criminal malware, not Stuxnet's purpose.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-stuxnet-q02",
@@ -22,7 +27,12 @@
         "A backup power supply that keeps critical systems running during outages"
       ],
       "answer": 1,
-      "explanation": "An air gap is a literal gap of air between the critical systems and any outside network — no cable, no wireless, no connection of any kind to the internet. Its logic is simple: if there is no wire, the attacker cannot reach you. A firewall still implies a network connection, which is exactly what an air gap removes, so it is the most tempting but wrong choice."
+      "explanation": "An air gap is a literal gap of air between the critical systems and any outside network — no cable, no wireless, no connection of any kind to the internet. Its logic is simple: if there is no wire, the attacker cannot reach you. A firewall still implies a network connection, which is exactly what an air gap removes, so it is the most tempting but wrong choice.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-stuxnet-q03",
@@ -34,7 +44,12 @@
         "It travelled through the facility's power lines as an encoded electrical signal"
       ],
       "answer": 2,
-      "explanation": "The air gap was defeated not by a wire but by a human being on foot. Stuxnet spread on internet-connected computers of contractors and suppliers, then waited on their USB drives until someone carried an infected drive into the secure facility and plugged it in. A USB stick is described as 'a bridge with legs' that doesn't care about the air gap — the gap was real, but the people crossing it daily were the bridge. A wireless transmitter would contradict the whole point of an air gap."
+      "explanation": "The air gap was defeated not by a wire but by a human being on foot. Stuxnet spread on internet-connected computers of contractors and suppliers, then waited on their USB drives until someone carried an infected drive into the secure facility and plugged it in. A USB stick is described as 'a bridge with legs' that doesn't care about the air gap — the gap was real, but the people crossing it daily were the bridge. A wireless transmitter would contradict the whole point of an air gap.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-stuxnet-q04",
@@ -46,7 +61,12 @@
         "A virus that activates exactly zero days after infection; four copies were needed for redundancy"
       ],
       "answer": 2,
-      "explanation": "A zero-day is a flaw the software makers don't know about — there has been 'zero days' to fix it, so no defence exists. They are rare and extremely valuable, and a serious attacker hoards even one. Burning four unpatched flaws on a single operation is the signature of a government with deep pockets and a specific target — 'nobody spends four zero-days on a hobby project.' The 'known but unfixed' option flips the definition and is the key trap."
+      "explanation": "A zero-day is a flaw the software makers don't know about — there has been 'zero days' to fix it, so no defence exists. They are rare and extremely valuable, and a serious attacker hoards even one. Burning four unpatched flaws on a single operation is the signature of a government with deep pockets and a specific target — 'nobody spends four zero-days on a hobby project.' The 'known but unfixed' option flips the definition and is the key trap.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-stuxnet-q05",
@@ -58,7 +78,12 @@
         "An antivirus appliance that scans USB drives before they are plugged in"
       ],
       "answer": 1,
-      "explanation": "A PLC is the small, rugged, specialised computer that sits between the control room and the physical equipment — it tells a motor to spin at a certain speed, opens valves, and reads sensors. It is 'the bridge between code and the physical world.' Stuxnet hunted for one exact PLC configuration and rewrote its code; the control-room monitor is what Stuxnet fed fake readings to, not the PLC itself, which makes that the most tempting wrong answer."
+      "explanation": "A PLC is the small, rugged, specialised computer that sits between the control room and the physical equipment — it tells a motor to spin at a certain speed, opens valves, and reads sensors. It is 'the bridge between code and the physical world.' Stuxnet hunted for one exact PLC configuration and rewrote its code; the control-room monitor is what Stuxnet fed fake readings to, not the PLC itself, which makes that the most tempting wrong answer.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-stuxnet-q06",
@@ -70,7 +95,12 @@
         "It was surgically targeted: it checked its surroundings and only armed when it found one exact configuration of PLC driving motors in the centrifuge frequency range"
       ],
       "answer": 3,
-      "explanation": "Stuxnet spread to a great many ordinary Windows computers worldwide but did nothing on almost all of them. It was hunting for one specific thing — a particular make of industrial controller wired to drive motors spinning within the exact frequency range that matches uranium centrifuges. If it didn't find that precise fingerprint it stayed asleep; only the Natanz setup armed the weapon. The dormancy was deliberate selectivity, not a coding flaw, which rules out the 'poorly written' option."
+      "explanation": "Stuxnet spread to a great many ordinary Windows computers worldwide but did nothing on almost all of them. It was hunting for one specific thing — a particular make of industrial controller wired to drive motors spinning within the exact frequency range that matches uranium centrifuges. If it didn't find that precise fingerprint it stayed asleep; only the Natanz setup armed the weapon. The dormancy was deliberate selectivity, not a coding flaw, which rules out the 'poorly written' option.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-stuxnet-q07",
@@ -82,7 +112,12 @@
         "It cut the power to the centrifuges while triggering false fire alarms in the control room"
       ],
       "answer": 2,
-      "explanation": "Stuxnet rewrote the PLC's code to secretly spin the centrifuges far beyond their limits and then drop them — subtle, intermittent sabotage spread over weeks. At the same time it replayed a pre-recorded picture of normal, healthy operation to the operators' screens. The combination is the key: had it only sabotaged the machines, the screaming centrifuges would have triggered alarms and an emergency stop; the fake readings are what kept the operators from reacting."
+      "explanation": "Stuxnet rewrote the PLC's code to secretly spin the centrifuges far beyond their limits and then drop them — subtle, intermittent sabotage spread over weeks. At the same time it replayed a pre-recorded picture of normal, healthy operation to the operators' screens. The combination is the key: had it only sabotaged the machines, the screaming centrifuges would have triggered alarms and an emergency stop; the fake readings are what kept the operators from reacting.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-stuxnet-q08",
@@ -94,7 +129,12 @@
         "A confidentiality attack reads or steals data; an integrity attack makes the data lie, so the system confidently reports that all is fine while it is being destroyed"
       ],
       "answer": 3,
-      "explanation": "Security usually focuses first on confidentiality — keeping data secret and unread. Stuxnet instead attacked integrity: the trustworthiness of data and the guarantee that what the system tells you is actually true. The script argues this is in some ways more dangerous than theft, because a robbed system knows something is missing, but a system with broken integrity 'confidently tells you everything is fine while it burns.' The two are distinct concepts, not the same thing."
+      "explanation": "Security usually focuses first on confidentiality — keeping data secret and unread. Stuxnet instead attacked integrity: the trustworthiness of data and the guarantee that what the system tells you is actually true. The script argues this is in some ways more dangerous than theft, because a robbed system knows something is missing, but a system with broken integrity 'confidently tells you everything is fine while it burns.' The two are distinct concepts, not the same thing.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-stuxnet-q09",
@@ -106,7 +146,12 @@
         "Connect the PLCs to the internet so the vendor can push security patches automatically"
       ],
       "answer": 2,
-      "explanation": "Stuxnet teaches that the air gap is not magic — it was crossed on foot by a person carrying a USB stick, so controlling who and what crosses the gap matters most. It also teaches that you must ask not just 'can someone steal this data' but 'can someone make this data lie to me,' which means verifying that readings are genuine before trusting them. Adding encryption defends confidentiality, which was never the issue here, so it is the tempting but wrong priority."
+      "explanation": "Stuxnet teaches that the air gap is not magic — it was crossed on foot by a person carrying a USB stick, so controlling who and what crosses the gap matters most. It also teaches that you must ask not just 'can someone steal this data' but 'can someone make this data lie to me,' which means verifying that readings are genuine before trusting them. Adding encryption defends confidentiality, which was never the issue here, so it is the tempting but wrong priority.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-stuxnet-q10",
@@ -118,7 +163,12 @@
         "That physical security is irrelevant once a system has a strong firewall in place"
       ],
       "answer": 1,
-      "explanation": "The script calls this 'a supply-chain lesson in disguise': the attackers didn't go at the fortress directly — they infected the contractors, suppliers and ordinary computers around the target and let a trusted person carry the weapon across. The point is that 'the strongest wall in the world has a gate, and the gate is people.' Banning contractors entirely is impractical and misses the real lesson about securing and verifying the trusted parties who must access the system."
+      "explanation": "The script calls this 'a supply-chain lesson in disguise': the attackers didn't go at the fortress directly — they infected the contractors, suppliers and ordinary computers around the target and let a trusted person carry the weapon across. The point is that 'the strongest wall in the world has a gate, and the gate is people.' Banning contractors entirely is impractical and misses the real lesson about securing and verifying the trusted parties who must access the system.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

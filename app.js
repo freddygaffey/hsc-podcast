@@ -72,6 +72,9 @@
   const defaultVoiceSelect = document.getElementById("default-voice-select");
   const dlAllVoicesToggle = document.getElementById("dl-all-voices");
   const blockMobileToggle = document.getElementById("block-mobile-data");
+  const introTitleToggle = document.getElementById("intro-title");
+  const INTRO_KEY = "podcast-intro";                  // default ON ("0" = off)
+  const introEnabled = () => localStorage.getItem(INTRO_KEY) !== "0";
   const fsrsRetentionSelect = document.getElementById("fsrs-retention");
   const fsrsStepsInput = document.getElementById("fsrs-steps");
   const storageUsageEl = document.getElementById("storage-usage");
@@ -98,6 +101,7 @@
   const episodeTitleEl = document.getElementById("episode-title");
   const episodeContentEl = document.getElementById("episode-content");
   const tabBtns = document.querySelectorAll(".tab-btn");
+  const episodeTabs = document.querySelector(".tabs");
   const advanceToast = document.getElementById("advance-toast");
   const advanceTitleEl = document.getElementById("advance-title");
   const advanceCountdownEl = document.getElementById("advance-countdown");
@@ -841,7 +845,11 @@
     audio.load();
     // Start playback as synchronously as possible (don't wait for loadedmetadata) so that,
     // when auto-advancing in the background, iOS still treats the audio session as active.
-    if (autoplay) audio.play().catch(() => {});
+    if (autoplay) {
+      const introUrl = introEnabled() && currentEpisode && currentEpisode.titleAudio;
+      if (introUrl) playTitleIntro(introUrl, () => { if (token === loadToken) audio.play().catch(() => {}); });
+      else audio.play().catch(() => {});
+    }
     audio.addEventListener("loadedmetadata", () => {
       if (token !== loadToken) return; // a newer load superseded this one
       // Don't resume at the very end (a completed episode has progressPct≈1) — that
@@ -850,6 +858,22 @@
       audio.playbackRate = getCurrentSpeed();
       timeTotal.textContent = fmtTime(audio.duration / getCurrentSpeed());
     }, { once: true });
+  }
+
+  // Play a short break, then speak the episode title (a small clip in the question voice),
+  // then `done()` starts the episode. Falls back to starting immediately on any error so a
+  // missing/failed intro never blocks playback.
+  let introAudioEl = null;
+  function playTitleIntro(url, done) {
+    try {
+      if (introAudioEl) { try { introAudioEl.pause(); } catch {} introAudioEl = null; }
+      const intro = introAudioEl = new Audio(url);
+      let started = false;
+      const go = () => { if (started) return; started = true; introAudioEl = null; done(); };
+      intro.addEventListener("ended", () => setTimeout(go, 400), { once: true }); // gap after title
+      intro.addEventListener("error", go, { once: true });
+      setTimeout(() => { intro.play().catch(go); }, 1200); // the break before the title
+    } catch { done(); }
   }
 
   function switchVoice(index) {
@@ -1141,7 +1165,8 @@
       .map((n) => ep.voices.find((v) => v.name === n))
       .filter(Boolean)
       .map((v) => v.file);
-    [ep.scriptPath, ep.supplementaryPath, ep.quizPath].forEach((p) => { if (p) urls.push(p); });
+    [ep.scriptPath, ep.supplementaryPath, ep.quizPath, ep.pdfPath, ep.mgPdfPath]
+      .forEach((p) => { if (p) urls.push(p); });
     return urls;
   }
 
@@ -1354,6 +1379,7 @@
     populateDefaultVoiceSelect();
     if (dlAllVoicesToggle) dlAllVoicesToggle.checked = localStorage.getItem(DOWNLOAD_ALL_VOICES_KEY) === "1";
     if (blockMobileToggle) blockMobileToggle.checked = blockMobileData();
+    if (introTitleToggle) introTitleToggle.checked = introEnabled();
     if (fsrsRetentionSelect) fsrsRetentionSelect.value = String(fsrsSettings().retention);
     if (fsrsStepsInput) fsrsStepsInput.value = fsrsSettings().steps;
     if (speedUnitSelect) speedUnitSelect.value = speedUnitMode();
@@ -1380,6 +1406,9 @@
   });
   if (dlAllVoicesToggle) dlAllVoicesToggle.addEventListener("change", () => {
     localStorage.setItem(DOWNLOAD_ALL_VOICES_KEY, dlAllVoicesToggle.checked ? "1" : "");
+  });
+  if (introTitleToggle) introTitleToggle.addEventListener("change", () => {
+    localStorage.setItem(INTRO_KEY, introTitleToggle.checked ? "1" : "0");
   });
   if (blockMobileToggle) blockMobileToggle.addEventListener("change", () => {
     // Stored inverted: default (absent) = ON; "0" = off.
@@ -1736,6 +1765,7 @@
   }
 
   function showView(route, episode) {
+    stopPaperTimer(); // leaving any view kills a running paper clock
     Object.entries(views).forEach(([name, el]) => { el.hidden = name !== route; });
     window.scrollTo({ top: 0, behavior: "instant" });
 
@@ -1755,12 +1785,21 @@
       btnBack.textContent = "← Library";
       if (libSearchWrap) setHidden(libSearchWrap, true);
       episodeTitleEl.textContent = episode.title;
+      quizState = null;
+      if (episode.paper) {
+        // Past papers are their own thing: no Script/References/Quiz tabs, no audio player.
+        setHidden(episodeTabs, true);
+        setHidden(episodeContentEl, true);
+        setHidden(quizArea, false);
+        renderPaperView(episode);
+        return;
+      }
+      setHidden(episodeTabs, false);
       // Nudge toward the quiz: once an episode is finished, opening it lands on the
       // Quiz tab (active recall) instead of References. Otherwise show References.
       const finished = getEpisodeProgress(episode.id).completed;
       const tab = finished && episode.quizPath ? "quiz" : "supplementary";
       tabBtns.forEach((b) => b.classList.toggle("active", b.dataset.tab === tab));
-      quizState = null;
       if (tab === "quiz") {
         setHidden(episodeContentEl, true);
         setHidden(quizArea, false);
@@ -1817,6 +1856,44 @@
     } catch (_) {}
   }
 
+  // Group consecutive image-only paragraphs into a swipeable carousel. A lone image is
+  // left as-is; two or more in a row become one carousel (captions from the alt text).
+  function buildCarousels(root) {
+    const isImgPara = (el) => el && el.tagName === "P" && el.children.length === 1 &&
+      el.firstElementChild.tagName === "IMG" && !el.textContent.trim();
+    const kids = [...root.children];
+    let i = 0;
+    while (i < kids.length) {
+      if (!isImgPara(kids[i])) { i++; continue; }
+      const run = [];
+      while (i < kids.length && isImgPara(kids[i])) run.push(kids[i++]);
+      if (run.length < 2) continue;
+      const imgs = run.map((p) => p.firstElementChild);
+      const car = document.createElement("div");
+      car.className = "img-carousel";
+      car.innerHTML = `
+        <div class="carousel-track">
+          ${imgs.map((im) => `<div class="carousel-slide"><img src="${im.getAttribute("src")}" alt="${im.alt || ""}">${im.alt ? `<div class="carousel-cap">${im.alt}</div>` : ""}</div>`).join("")}
+        </div>
+        <button class="carousel-arrow carousel-prev" aria-label="Previous">‹</button>
+        <button class="carousel-arrow carousel-next" aria-label="Next">›</button>
+        <div class="carousel-dots">${imgs.map((_, k) => `<span class="carousel-dot${k === 0 ? " active" : ""}"></span>`).join("")}</div>`;
+      run[0].replaceWith(car);
+      run.slice(1).forEach((p) => p.remove());
+      const track = car.querySelector(".carousel-track");
+      const dots = [...car.querySelectorAll(".carousel-dot")];
+      const slideTo = (k) => track.scrollTo({ left: track.clientWidth * k, behavior: "smooth" });
+      const current = () => Math.round(track.scrollLeft / track.clientWidth);
+      track.addEventListener("scroll", () => {
+        const k = current();
+        dots.forEach((d, j) => d.classList.toggle("active", j === k));
+      }, { passive: true });
+      car.querySelector(".carousel-prev").addEventListener("click", () => slideTo(Math.max(0, current() - 1)));
+      car.querySelector(".carousel-next").addEventListener("click", () => slideTo(Math.min(imgs.length - 1, current() + 1)));
+      dots.forEach((d, k) => d.addEventListener("click", () => slideTo(k)));
+    }
+  }
+
   function enhanceCodeBlocks() {
     episodeContentEl.querySelectorAll("pre").forEach((pre) => {
       const code = pre.querySelector("code");
@@ -1846,6 +1923,7 @@
       const stripped = text.replace(/^---\n[\s\S]*?\n---\n?/, "");
       episodeContentEl.innerHTML = mathSafeParse(stripped);
       enhanceCodeBlocks();
+      buildCarousels(episodeContentEl);
       renderMath(episodeContentEl);
       if (tab === "script") buildTranscriptSync(); else syncParas = null;
       window.scrollTo({ top: 0, behavior: "instant" });
@@ -1996,6 +2074,7 @@
     try {
       const data = await fetch(ep.quizPath).then((r) => r.json());
       data.questions.forEach((q) => { q._ep = ep; }); // tag each question with its episode
+      // Past papers render in their own dedicated view (renderPaperView), never this tab.
       quizState = { ep, allQuestions: data.questions, items: [], questions: [], current: 0, score: 0,
                     answered: false, mode: null, missed: [], container: quizArea, onExit: renderQuizPicker };
       renderQuizPicker();
@@ -2004,13 +2083,54 @@
     }
   }
 
+  // Bucket a question for the type filter (short+extended collapse to "written").
+  function qTypeBucket(q) {
+    return q.type === "short" || q.type === "extended" ? "written" : (q.type || "mc");
+  }
+  function qOrigin(q) {
+    const s = q && q.source;
+    return s && typeof s === "object" ? s.origin : null;
+  }
+  // Does a question pass the picker's current type + origin filters?
+  function quizFilterMatch(q) {
+    const t = quizState.filterType || "all";
+    const o = quizState.filterOrigin || "all";
+    return (t === "all" || qTypeBucket(q) === t) && (o === "all" || qOrigin(q) === o);
+  }
+
   function renderQuizPicker() {
     const { ep, allQuestions } = quizState;
+    if (!quizState.filterType) quizState.filterType = "all";
+    if (!quizState.filterOrigin) quizState.filterOrigin = "all";
     const sr = loadSR();
-    const dueCount = allQuestions.filter((q) => isDue(ep, q)).length;
     const totalAttempts = allQuestions.reduce((n, q) => n + (sr[srKey(ep, q)]?.total || 0), 0);
     const totalCorrect = allQuestions.reduce((n, q) => n + (sr[srKey(ep, q)]?.correct || 0), 0);
     const pct = totalAttempts ? Math.round((totalCorrect / totalAttempts) * 100) : null;
+
+    // Build chip rows only for facets that actually vary in this quiz.
+    const typeLabels = { mc: "Multiple choice", recall: "Active recall", worked: "Worked", written: "Written" };
+    const typeCounts = {};
+    allQuestions.forEach((q) => { const b = qTypeBucket(q); typeCounts[b] = (typeCounts[b] || 0) + 1; });
+    const originCounts = {};
+    allQuestions.forEach((q) => { const o = qOrigin(q); if (o) originCounts[o] = (originCounts[o] || 0) + 1; });
+
+    const chip = (group, val, label, count) =>
+      `<button class="filter-chip${(quizState["filter" + group] || "all") === val ? " sel" : ""}" data-group="${group}" data-val="${val}">${label}${count != null ? ` <span class="chip-n">${count}</span>` : ""}</button>`;
+
+    const typeRow = Object.keys(typeCounts).length > 1
+      ? `<div class="filter-row"><span class="filter-label">Type</span><div class="filter-chips">
+           ${chip("Type", "all", "All")}
+           ${["mc", "recall", "worked", "written"].filter((t) => typeCounts[t]).map((t) => chip("Type", t, typeLabels[t], typeCounts[t])).join("")}
+         </div></div>`
+      : "";
+    const originRow = Object.keys(originCounts).length > 1
+      ? `<div class="filter-row"><span class="filter-label">Source</span><div class="filter-chips">
+           ${chip("Origin", "all", "All")}
+           ${["hsc", "trial", "textbook", "ai"].filter((o) => originCounts[o]).map((o) => chip("Origin", o, (ORIGIN_META[o] || {}).label || o, originCounts[o])).join("")}
+         </div></div>`
+      : "";
+
+    const pool = allQuestions.filter(quizFilterMatch);
 
     quizArea.innerHTML = `
       <div class="quiz-picker">
@@ -2025,25 +2145,23 @@
         <div class="quiz-picker-stats">
           <span class="qps-count">${allQuestions.length} questions</span>
           ${pct !== null ? `<span class="qps-score">${pct}% accuracy</span>` : ""}
-          ${dueCount > 0 ? `<span class="qps-due">${dueCount} due for review</span>` : ""}
         </div>
+        ${typeRow || originRow ? `<div class="quiz-filters">${typeRow}${originRow}</div>` : ""}
         <div class="quiz-modes">
-          <button class="quiz-mode-btn" id="btn-quiz-practice">
+          <button class="quiz-mode-btn" id="btn-quiz-practice"${pool.length ? "" : " disabled"}>
             <div class="qmb-icon">📝</div>
             <div class="qmb-title">Practice</div>
-            <div class="qmb-desc">All ${allQuestions.length} questions, shuffled</div>
-          </button>
-          <button class="quiz-mode-btn${dueCount === 0 ? " qmb-disabled" : ""}" id="btn-quiz-review"${dueCount === 0 ? " disabled" : ""}>
-            <div class="qmb-icon">🔁</div>
-            <div class="qmb-title">Spaced Review</div>
-            <div class="qmb-desc">${dueCount > 0 ? `${dueCount} card${dueCount !== 1 ? "s" : ""} due now` : "Nothing due — check back later"}</div>
+            <div class="qmb-desc">${pool.length} question${pool.length === 1 ? "" : "s"}, shuffled</div>
           </button>
         </div>
       </div>`;
 
+    quizArea.querySelectorAll(".filter-chip").forEach((btn) =>
+      btn.addEventListener("click", () => {
+        quizState["filter" + btn.dataset.group] = btn.dataset.val;
+        renderQuizPicker();
+      }));
     document.getElementById("btn-quiz-practice").addEventListener("click", () => startQuiz("practice"));
-    const reviewBtn = document.getElementById("btn-quiz-review");
-    if (reviewBtn && !reviewBtn.disabled) reviewBtn.addEventListener("click", () => startQuiz("review"));
   }
 
   function shuffle(arr) {
@@ -2057,7 +2175,8 @@
 
   function startQuiz(mode) {
     const { ep, allQuestions } = quizState;
-    const items = mode === "review" ? allQuestions.filter((q) => isDue(ep, q)) : [...allQuestions];
+    const base = allQuestions.filter(quizFilterMatch); // honour the picker's type/source chips
+    const items = mode === "review" ? base.filter((q) => isDue(ep, q)) : [...base];
     beginSession(items, mode);
   }
 
@@ -2065,25 +2184,92 @@
   // the per-episode quiz and the cross-subject Mix quiz alike.
   function beginSession(items, mode) {
     quizState.items = items;
-    quizState.questions = shuffle(items);
+    // Papers are sequential (exam order); every other mode shuffles.
+    quizState.questions = mode === "paper" ? [...items] : shuffle(items);
     quizState.current = 0;
     quizState.score = 0;
     quizState.answered = false;
     quizState.mode = mode;
     quizState.missed = [];
+    quizState.answers = [];
+    if (mode === "paper") startPaperTimer();
     renderQuestion();
+  }
+
+  // --- Provenance / traceability (shared across every question type) ---
+  // Each question carries source = { origin, ref, year?, page?, url? } (see QUIZ_STYLE_GUIDE).
+  // Legacy quizzes used a plain string `source` + `sourceUrl`; both are handled here.
+  const ORIGIN_META = {
+    hsc:      { label: "HSC",          cls: "src-hsc" },
+    trial:    { label: "Trial",        cls: "src-trial" },
+    textbook: { label: "Textbook",     cls: "src-textbook" },
+    ai:       { label: "AI-generated", cls: "src-ai" },
+  };
+  // Small pill shown on the question itself (so AI items are always labelled up front).
+  function sourceBadgeHtml(q) {
+    const s = q && q.source;
+    if (!s || typeof s === "string" || !s.origin) return "";
+    const m = ORIGIN_META[s.origin] || { label: s.origin, cls: "src-other" };
+    return `<span class="src-badge ${m.cls}">${m.label}</span>`;
+  }
+  // Full provenance line + "View source ↗" link, shown in the answer/reveal panel.
+  function sourceLineHtml(q) {
+    const s = q && q.source;
+    if (!s) return "";
+    if (typeof s === "string") { // legacy string form
+      return `<p class="feedback-source">Source: ${
+        q.sourceUrl ? `<a class="paper-dl-link" href="${q.sourceUrl}" download>${s} — ⬇ download paper</a>` : s
+      }</p>`;
+    }
+    if (!s.origin) return "";
+    const m = ORIGIN_META[s.origin] || { label: s.origin };
+    const ref = [s.ref, s.page ? `p.${s.page}` : ""].filter(Boolean).join(", ");
+    const link = s.url
+      ? ` · <a class="src-link" href="${s.url}" target="_blank" rel="noopener noreferrer">View source ↗</a>`
+      : "";
+    const note = s.origin === "ai" ? " — AI-generated, verify against your syllabus" : "";
+    return `<p class="feedback-source">Source: ${m.label}${ref ? " — " + ref : ""}${note}${link}</p>`;
+  }
+
+  // Render the FSRS self-grade buttons (Again/Hard/Good/Easy) into `gradesEl`, then advance on
+  // click. mcCorrect: true/false for objective questions; null → infer from grade (≥ Good = correct).
+  function attachFsrsGrades(gradesEl, ep, q, mcCorrect) {
+    const card = getCard(ep, q);
+    const grades = [
+      { g: 1, label: "Again", cls: "g-again" },
+      { g: 2, label: "Hard", cls: "g-hard" },
+      { g: 3, label: "Good", cls: "g-good" },
+      { g: 4, label: "Easy", cls: "g-easy" },
+    ];
+    gradesEl.innerHTML = grades.map((x) =>
+      `<button class="grade-btn ${x.cls}" data-g="${x.g}"><span class="grade-iv">${fmtInterval(previewDays(card, x.g))}</span><span class="grade-lbl">${x.label}</span></button>`
+    ).join("");
+    gradesEl.querySelectorAll(".grade-btn").forEach((btn) =>
+      btn.addEventListener("click", () => {
+        const g = parseInt(btn.dataset.g, 10);
+        const corr = mcCorrect == null ? g >= 3 : mcCorrect;
+        gradeCard(ep, q, g, corr);
+        updateReviewBadge();
+        advanceQuiz();
+      })
+    );
   }
 
   function renderQuestion() {
     const { questions, current } = quizState;
     const c = quizState.container;
     const q = questions[current];
+    // Type-aware renderers (MC falls through to the default renderer below).
+    if (q.type === "short" || q.type === "extended") return renderWrittenQuestion();
+    if (q.type === "recall") return renderRecallQuestion();
+    if (q.type === "worked") return renderWorkedQuestion();
     const total = questions.length;
 
     c.innerHTML = `
       <div class="quiz-session">
         <div class="quiz-header">
           <button class="quiz-exit-btn" id="btn-quiz-exit">✕ Exit</button>
+          ${quizState.isPaper && quizState.timerMode !== "off" ? `<span class="paper-timer" id="paper-timer"></span>` : ""}
           <span class="quiz-progress-text">${current + 1} / ${total}</span>
         </div>
         <div class="quiz-progress-track">
@@ -2091,9 +2277,11 @@
         </div>
         <div class="quiz-question-wrap">
           ${quizState.mode === "mix" && q._ep ? `<div class="quiz-source">${q._ep.title}</div>` : ""}
+          ${sourceBadgeHtml(q) ? `<div class="quiz-badges">${sourceBadgeHtml(q)}</div>` : ""}
+          ${q.image ? `<img class="quiz-stimulus" src="${q.image}" alt="">` : ""}
           <p class="quiz-q-text">${q.q}</p>
           <div class="quiz-options">
-            ${q.options.map((opt, i) => `<button class="quiz-option" data-index="${i}">${opt}</button>`).join("")}
+            ${(q.options || []).map((opt, i) => `<button class="quiz-option" data-index="${i}">${opt}</button>`).join("")}
           </div>
           <div class="quiz-feedback" id="quiz-feedback" hidden>
             <div class="quiz-feedback-inner" id="quiz-feedback-inner"></div>
@@ -2109,6 +2297,7 @@
     c.querySelectorAll(".quiz-option").forEach((btn) => {
       btn.addEventListener("click", () => handleAnswer(parseInt(btn.dataset.index, 10)));
     });
+    if (quizState.isPaper) onQuestionShown(q);
     renderMath(c); // render math in the question + options
   }
 
@@ -2124,6 +2313,16 @@
 
     if (correct) quizState.score++;
     else quizState.missed.push(q);
+    quizState.answers[current] = { q, chosen, correct };
+
+    // Past papers: simple right/wrong (no FSRS). Record it, then either advance silently
+    // (mark-at-end) or show the answer + a Next button (mark-as-you-go).
+    if (quizState.isPaper) {
+      recordPaperAnswer(ep, q, correct);
+      maybeCompletePaper(ep);
+      if (quizState.markMode === "atend") { advanceQuiz(); return; }
+      return showPaperFeedback(c, chosen, correct, q);
+    }
 
     c.querySelectorAll(".quiz-option").forEach((btn, i) => {
       btn.disabled = true;
@@ -2138,6 +2337,7 @@
         ${correct ? "✓ Correct" : "✗ Incorrect"}
       </div>
       ${q.explanation ? `<p class="feedback-explanation">${q.explanation}</p>` : ""}
+      ${sourceLineHtml(q)}
       <p class="grade-prompt">How well did you know it?</p>`;
     renderMath(inner); // render math in the explanation
 
@@ -2157,6 +2357,7 @@
       btn.addEventListener("click", () => {
         gradeCard(ep, q, parseInt(btn.dataset.g, 10), correct);
         updateReviewBadge();
+        maybeCompletePaper(ep);
         advanceQuiz();
       })
     );
@@ -2174,6 +2375,7 @@
   }
 
   function renderQuizSummary() {
+    if (quizState.isPaper) return renderPaperResults();
     const { score, questions, missed } = quizState;
     const c = quizState.container;
     const total = questions.length;
@@ -2205,6 +2407,501 @@
     });
   }
 
+  // === PAST PAPERS (own view, simple right/wrong tracking, NOT FSRS) ===
+  // Paper progress is deliberately separate from the FSRS spaced-rep store: papers are sat
+  // like mock exams, not flashcards. We record attempted + correct/incorrect (MC) or a
+  // self-mark (written). Wrong MCs can be pushed INTO FSRS later via the results-screen bridge.
+  const PAPER_KEY = "podcast-paper";
+  function loadPaper() { try { return JSON.parse(localStorage.getItem(PAPER_KEY)) || {}; } catch { return {}; } }
+  function savePaper(all) { localStorage.setItem(PAPER_KEY, JSON.stringify(all)); }
+  function paperState(ep, q) { return loadPaper()[srKey(ep, q)] || null; }
+  function recordPaperAnswer(ep, q, correct) {
+    const all = loadPaper(); const k = srKey(ep, q); const prev = all[k] || {};
+    all[k] = { ...prev, type: q.type || "mc", attempted: true, total: (prev.total || 0) + 1, correct: !!correct };
+    savePaper(all);
+  }
+  function recordPaperMark(ep, q, awarded) {
+    const all = loadPaper(); const k = srKey(ep, q); const prev = all[k] || {};
+    all[k] = { ...prev, type: q.type, attempted: true, total: (prev.total || 0) + 1,
+               mark: awarded, outOf: q.marks, correct: q.marks ? awarded / q.marks >= 0.5 : null };
+    savePaper(all);
+  }
+
+  // --- Paper timer (exam-style clock). Counts up; counts DOWN when "Timed" is on. ---
+  function fmtClock(ms) {
+    const neg = ms < 0; const s = Math.floor(Math.abs(ms) / 1000);
+    return `${neg ? "-" : ""}${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+  }
+  function fmtMins(min) {
+    const h = Math.floor(min / 60), m = min % 60;
+    return h ? `${h}h ${m ? m + "m" : ""}`.trim() : `${m}m`;
+  }
+  // Timer modes: "off" · "perq" (each question = marks × minPerMark) · "section" (a countdown
+  // per exam section) · "full" (one countdown of totalMin across the session). Values overridable.
+  function startPaperTimer() {
+    stopPaperTimer();
+    quizState.sessionStart = Date.now();
+    quizState.qStart = quizState.secStart = Date.now();
+    quizState.curSection = null;
+    if (quizState.timerMode !== "off") quizState.timerInterval = setInterval(updatePaperTimer, 1000);
+  }
+  // Called when a new question is shown: (re)start the per-question / per-section clock.
+  function onQuestionShown(q) {
+    if (!quizState || !quizState.isPaper) return;
+    if (quizState.timerMode === "perq") {
+      quizState.qStart = Date.now();
+      quizState.qTarget = Math.max(0.5, (q.marks || 1) * (quizState.minPerMark || 1)) * 60000;
+    } else if (quizState.timerMode === "section") {
+      const sec = q.section || "?";
+      if (sec !== quizState.curSection) {
+        quizState.curSection = sec;
+        quizState.secStart = Date.now();
+        quizState.secTarget = (((quizState.sectionMin || {})[sec]) || 20) * 60000;
+      }
+    }
+    updatePaperTimer();
+  }
+  function updatePaperTimer() {
+    const el = quizState && quizState.container && quizState.container.querySelector("#paper-timer");
+    if (!el || quizState.timerMode === "off") return;
+    let remaining;
+    if (quizState.timerMode === "perq") remaining = (quizState.qTarget || 0) - (Date.now() - quizState.qStart);
+    else if (quizState.timerMode === "section") remaining = (quizState.secTarget || 0) - (Date.now() - quizState.secStart);
+    else remaining = (quizState.totalMin || 0) * 60000 - (Date.now() - quizState.sessionStart);
+    el.textContent = `⏱ ${fmtClock(remaining)}`;
+    el.classList.toggle("timer-over", remaining < 0);
+  }
+  function stopPaperTimer() {
+    if (quizState && quizState.timerInterval) { clearInterval(quizState.timerInterval); quizState.timerInterval = null; }
+  }
+
+  // Locally-saved written-answer drafts, keyed like SR cards (subject:epId::qId).
+  const WRITTEN_KEY = "podcast-written";
+  function loadWritten() { try { return JSON.parse(localStorage.getItem(WRITTEN_KEY)) || {}; } catch { return {}; } }
+  function loadWrittenDraft(ep, q) { return loadWritten()[srKey(ep, q)] || ""; }
+  function saveWrittenDraft(ep, q, text) {
+    const all = loadWritten(); all[srKey(ep, q)] = text;
+    localStorage.setItem(WRITTEN_KEY, JSON.stringify(all));
+  }
+
+  // MC paper feedback: highlight the answer + explanation, then a Next button (no FSRS grades).
+  function showPaperFeedback(c, chosen, correct, q) {
+    c.querySelectorAll(".quiz-option").forEach((btn, i) => {
+      btn.disabled = true;
+      if (i === q.answer) btn.classList.add("opt-correct");
+      else if (i === chosen) btn.classList.add("opt-wrong");
+      else btn.classList.add("opt-dim");
+    });
+    const inner = c.querySelector("#quiz-feedback-inner");
+    inner.innerHTML = `
+      <div class="feedback-verdict ${correct ? "verdict-correct" : "verdict-wrong"}">${correct ? "✓ Correct" : "✗ Incorrect"}</div>
+      ${q.explanation ? `<p class="feedback-explanation">${q.explanation}</p>` : ""}
+      <p class="feedback-source">Answer from the official NESA marking guidelines · explanation written by AI — verify if unsure.</p>`;
+    renderMath(inner);
+    const last = quizState.current + 1 >= quizState.questions.length;
+    const grades = c.querySelector("#quiz-grades");
+    grades.innerHTML = `<button class="paper-next-btn" id="btn-paper-next">${last ? "Finish paper" : "Next question"} →</button>`;
+    grades.querySelector("#btn-paper-next").addEventListener("click", advanceQuiz);
+    setHidden(c.querySelector("#quiz-feedback"), false);
+  }
+
+  // Entry point for a past paper (its own dedicated view, not the episode quiz tab).
+  async function renderPaperView(ep) {
+    quizArea.innerHTML = `<div class="quiz-empty"><p>Loading paper…</p></div>`;
+    try {
+      const data = await fetch(ep.quizPath).then((r) => r.json());
+      data.questions.forEach((q) => { q._ep = ep; });
+      const t = data.time || {};
+      quizState = { ep, allQuestions: data.questions, items: [], questions: [], current: 0, score: 0,
+                    answered: false, mode: null, missed: [], container: quizArea,
+                    onExit: renderPaperConfig, isPaper: true, markMode: "asyougo",
+                    sectionFilter: "all", answers: [], time: data.time || null,
+                    timerMode: "off", minPerMark: 2, totalMin: t.working || 60,
+                    sectionMin: t.sections || null, timerInterval: null };
+      renderPaperConfig();
+    } catch {
+      quizArea.innerHTML = `<div class="quiz-empty"><p>Couldn't load this paper.</p></div>`;
+    }
+  }
+
+  // The paper's config / launch screen: pick marking mode + which sections, then start.
+  function renderPaperConfig() {
+    stopPaperTimer();
+    const { ep, allQuestions } = quizState;
+    const paper = loadPaper();
+    const time = quizState.time;
+    const mc = allQuestions.filter((q) => q.type === "mc");
+    const written = allQuestions.filter((q) => q.type !== "mc");
+    const totalMarks = allQuestions.reduce((n, q) => n + (q.marks || 0), 0);
+    const doneCount = allQuestions.filter((q) => paper[srKey(ep, q)]?.attempted).length;
+    const filter = quizState.sectionFilter || "all";
+    const inFilter = (q) => filter === "all" ? true : filter === "mc" ? q.type === "mc" : q.type !== "mc";
+    const selected = allQuestions.filter(inFilter);
+    const selMarks = selected.reduce((n, q) => n + (q.marks || 0), 0);
+    const typeLabel = (t) => t === "mc" ? "MC" : t === "extended" ? "Ext" : "Short";
+    const rows = allQuestions.map((q, i) => {
+      const st = paper[srKey(ep, q)];
+      const cls = !st || !st.attempted ? "new" : st.correct === false ? "wrong" : "done";
+      const tick = cls === "done" ? "✓" : cls === "wrong" ? "✗" : "";
+      return `<li class="paper-qrow${inFilter(q) ? "" : " pq-off"}" data-i="${i}">
+          <span class="pq-tick pq-${cls}">${tick}</span>
+          <span class="pq-no">Q${q.qNo || i + 1}</span>
+          <span class="pq-type pq-${q.type || "mc"}">${typeLabel(q.type)}</span>
+          <span class="pq-marks">${q.marks || 1} mark${(q.marks || 1) === 1 ? "" : "s"}</span>
+        </li>`;
+    }).join("");
+    quizArea.innerHTML = `
+      <div class="paper-view">
+        <div class="paper-hero">
+          <div class="paper-hero-marks">${totalMarks}<span>marks</span></div>
+          <div class="paper-hero-meta">
+            <div>${allQuestions.length} questions · ${doneCount}/${allQuestions.length} attempted</div>
+            <div class="paper-hero-sections">
+              <span><b>${mc.length}</b> multiple choice</span>
+              <span><b>${written.length}</b> written</span>
+              ${time && time.working ? `<span>⏱ <b>${fmtMins(time.working)}</b> working time</span>` : ""}
+            </div>
+          </div>
+        </div>
+
+        ${ep.pdfPath || ep.mgPdfPath ? `<div class="paper-downloads">
+          ${ep.pdfPath ? `<a class="paper-pdf-link" href="${ep.pdfPath}" target="_blank" rel="noopener" download="${ep.title} — exam paper.pdf">⬇ Exam paper (PDF)</a>` : ""}
+          ${ep.mgPdfPath ? `<a class="paper-pdf-link" href="${ep.mgPdfPath}" target="_blank" rel="noopener" download="${ep.title} — marking guidelines.pdf">⬇ Marking guidelines (PDF)</a>` : ""}
+        </div>` : ""}
+
+        <div class="paper-config">
+          <div class="pc-row">
+            <span class="pc-label">Marking</span>
+            <div class="seg" id="cfg-mark">
+              <button class="seg-btn${quizState.markMode === "asyougo" ? " sel" : ""}" data-mark="asyougo">As I go</button>
+              <button class="seg-btn${quizState.markMode === "atend" ? " sel" : ""}" data-mark="atend">At the end</button>
+            </div>
+          </div>
+          <div class="pc-row">
+            <span class="pc-label">Timer</span>
+            <div class="seg" id="cfg-timer">
+              <button class="seg-btn${quizState.timerMode === "off" ? " sel" : ""}" data-tm="off">Off</button>
+              <button class="seg-btn${quizState.timerMode === "perq" ? " sel" : ""}" data-tm="perq">Per question</button>
+              ${quizState.sectionMin ? `<button class="seg-btn${quizState.timerMode === "section" ? " sel" : ""}" data-tm="section">Per section</button>` : ""}
+              <button class="seg-btn${quizState.timerMode === "full" ? " sel" : ""}" data-tm="full">Whole paper</button>
+            </div>
+          </div>
+          ${quizState.timerMode === "perq" ? `<div class="pc-row">
+            <span class="pc-label">Per mark</span>
+            <span class="pc-num"><input type="number" id="cfg-minpermark" min="0.5" step="0.5" value="${quizState.minPerMark}"> min / mark</span>
+          </div>` : ""}
+          ${quizState.timerMode === "full" ? `<div class="pc-row">
+            <span class="pc-label">Total</span>
+            <span class="pc-num"><input type="number" id="cfg-totalmin" min="1" step="1" value="${quizState.totalMin}"> minutes</span>
+          </div>` : ""}
+          ${quizState.timerMode === "section" && quizState.sectionMin ? `<div class="pc-row">
+            <span class="pc-label">Sections</span>
+            <span class="pc-num pc-sections">${Object.entries(quizState.sectionMin).map(([s, m]) => `${s}: ${m}m`).join(" · ")}</span>
+          </div>` : ""}
+          <div class="pc-row">
+            <span class="pc-label">Include</span>
+            <div class="seg" id="cfg-filter">
+              <button class="seg-btn${filter === "all" ? " sel" : ""}" data-filter="all">Whole paper</button>
+              <button class="seg-btn${filter === "mc" ? " sel" : ""}" data-filter="mc">MC only</button>
+              <button class="seg-btn${filter === "written" ? " sel" : ""}" data-filter="written">Written only</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="paper-start-btn" id="btn-paper-start">Start — ${selected.length} questions · ${selMarks} marks →</button>
+
+        <div class="paper-qlist-head">Questions</div>
+        <ol class="paper-qlist">${rows}</ol>
+      </div>`;
+    quizArea.querySelectorAll("#cfg-mark .seg-btn").forEach((btn) =>
+      btn.addEventListener("click", () => { quizState.markMode = btn.dataset.mark; renderPaperConfig(); }));
+    quizArea.querySelectorAll("#cfg-filter .seg-btn").forEach((btn) =>
+      btn.addEventListener("click", () => { quizState.sectionFilter = btn.dataset.filter; renderPaperConfig(); }));
+    quizArea.querySelectorAll("#cfg-timer .seg-btn").forEach((btn) =>
+      btn.addEventListener("click", () => { quizState.timerMode = btn.dataset.tm; renderPaperConfig(); }));
+    quizArea.querySelector("#cfg-minpermark")?.addEventListener("input", (e) => {
+      const v = parseFloat(e.target.value); if (v > 0) quizState.minPerMark = v;
+    });
+    quizArea.querySelector("#cfg-totalmin")?.addEventListener("input", (e) => {
+      const v = parseInt(e.target.value, 10); if (v > 0) quizState.totalMin = v;
+    });
+    quizArea.querySelector("#btn-paper-start").addEventListener("click", () => {
+      const items = allQuestions.filter(inFilter);
+      if (items.length) beginSession(items, "paper");
+    });
+    quizArea.querySelectorAll(".paper-qrow").forEach((row) =>
+      row.addEventListener("click", () => beginSession([allQuestions[parseInt(row.dataset.i, 10)]], "paper")));
+  }
+
+  // Written (short/extended) question: read stimulus + type an answer, reveal a model answer
+  // and marking criteria, then self-grade out of the marks (which feeds the same SR engine).
+  function renderWrittenQuestion() {
+    const { questions, current } = quizState;
+    const c = quizState.container;
+    const q = questions[current];
+    const ep = q._ep || quizState.ep;
+    const total = questions.length;
+    const mins = Math.max(1, Math.round((q.marks || 1) * 1.8));
+    const narrow = c !== quizArea; // review bottom-sheet → force single column
+    const criteria = Array.isArray(q.criteria) ? q.criteria : [];
+    c.innerHTML = `
+      <div class="quiz-session written-session${narrow ? " written-narrow" : ""}">
+        <div class="quiz-header">
+          <button class="quiz-exit-btn" id="btn-quiz-exit">✕ Exit</button>
+          ${quizState.isPaper && quizState.timerMode !== "off" ? `<span class="paper-timer" id="paper-timer"></span>` : ""}
+          <span class="quiz-progress-text">${current + 1} / ${total}</span>
+        </div>
+        <div class="quiz-progress-track">
+          <div class="quiz-progress-fill" style="width:${Math.round(((current + 1) / total) * 100)}%"></div>
+        </div>
+        <div class="written-grid">
+          <div class="written-stimulus">
+            <div class="written-meta">
+              <span class="pq-no">Q${q.qNo || current + 1}</span>
+              <span class="pq-marks">${q.marks} mark${q.marks === 1 ? "" : "s"}</span>
+              <span class="pq-time">~${mins} min</span>
+              <span class="pq-type pq-${q.type}">${q.type === "extended" ? "Extended response" : "Short answer"}</span>
+            </div>
+            ${q.image ? `<img class="quiz-stimulus" src="${q.image}" alt="">` : ""}
+            <p class="quiz-q-text">${q.q}</p>
+          </div>
+          <div class="written-answer">
+            <textarea class="sync-input written-input" id="written-input" placeholder="Type your answer…"></textarea>
+            <div class="written-actions">
+              <button class="quiz-action-btn quiz-action-secondary" id="btn-written-share">Share / Email</button>
+              <button class="quiz-action-btn" id="btn-written-reveal">Reveal model answer</button>
+            </div>
+            <div class="written-reveal" id="written-reveal" hidden>
+              ${q.modelAnswer ? `<div class="written-model"><div class="wm-h">Model answer</div><div class="wm-body">${q.modelAnswer}</div></div>` : ""}
+              ${criteria.length ? `<div class="written-criteria"><div class="wm-h">Marking criteria</div><ul>${criteria.map((cc) => `<li><span class="wc-marks">${cc.marks}</span><span class="wc-desc">${cc.descriptor}</span></li>`).join("")}</ul></div>` : ""}
+              <p class="feedback-source">Marking criteria from the official NESA guidelines · model answer AI-adapted from the NESA sample answer — verify if unsure.</p>
+              <div class="written-selfgrade">
+                <p class="grade-prompt">Mark yourself out of ${q.marks}</p>
+                <div class="mark-pills">${Array.from({ length: (q.marks || 0) + 1 }, (_, m) => `<button class="mark-pill" data-m="${m}">${m}</button>`).join("")}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`;
+    const ta = c.querySelector("#written-input");
+    ta.value = loadWrittenDraft(ep, q);
+    ta.addEventListener("input", () => saveWrittenDraft(ep, q, ta.value));
+    c.querySelector("#btn-quiz-exit").addEventListener("click", () => { quizState.mode = null; (quizState.onExit || renderQuizPicker)(); });
+    c.querySelector("#btn-written-share").addEventListener("click", () => shareWritten(ep, q, ta.value));
+    c.querySelector("#btn-written-reveal").addEventListener("click", () => {
+      const r = c.querySelector("#written-reveal");
+      setHidden(r, false);
+      renderMath(r);
+    });
+    c.querySelectorAll(".mark-pill").forEach((btn) =>
+      btn.addEventListener("click", () => {
+        c.querySelectorAll(".mark-pill").forEach((b) => b.classList.toggle("sel", b === btn));
+        selfGradeWritten(ep, q, parseInt(btn.dataset.m, 10));
+      }));
+    if (quizState.isPaper) onQuestionShown(q);
+    renderMath(c);
+  }
+
+  // === ACTIVE RECALL ("what's the key point?") — retrieve from memory, reveal, FSRS self-grade. ===
+  function renderRecallQuestion() {
+    const { questions, current } = quizState;
+    const c = quizState.container;
+    const q = questions[current];
+    const ep = q._ep || quizState.ep;
+    const total = questions.length;
+    const points = Array.isArray(q.keyPoints) ? q.keyPoints : [];
+    c.innerHTML = `
+      <div class="quiz-session recall-session">
+        <div class="quiz-header">
+          <button class="quiz-exit-btn" id="btn-quiz-exit">✕ Exit</button>
+          <span class="quiz-progress-text">${current + 1} / ${total}</span>
+        </div>
+        <div class="quiz-progress-track">
+          <div class="quiz-progress-fill" style="width:${Math.round(((current + 1) / total) * 100)}%"></div>
+        </div>
+        <div class="quiz-question-wrap">
+          <div class="quiz-badges"><span class="type-badge type-recall">Active recall</span>${sourceBadgeHtml(q)}</div>
+          ${q.image ? `<img class="quiz-stimulus" src="${q.image}" alt="">` : ""}
+          <p class="quiz-q-text">${q.q}</p>
+          <p class="recall-hint">Say it out loud or jot it down from memory — then check.</p>
+          <button class="quiz-action-btn" id="btn-recall-reveal">Show key points</button>
+          <div class="recall-reveal" id="recall-reveal" hidden>
+            <ul class="recall-points">${points.map((p) => `<li>${p}</li>`).join("")}</ul>
+            ${q.explanation ? `<p class="feedback-explanation">${q.explanation}</p>` : ""}
+            ${sourceLineHtml(q)}
+            <p class="grade-prompt">How well did you recall it?</p>
+            <div class="quiz-grades" id="quiz-grades"></div>
+          </div>
+        </div>
+      </div>`;
+    c.querySelector("#btn-quiz-exit").addEventListener("click", () => { quizState.mode = null; (quizState.onExit || renderQuizPicker)(); });
+    c.querySelector("#btn-recall-reveal").addEventListener("click", (e) => {
+      e.currentTarget.setAttribute("hidden", "");
+      const r = c.querySelector("#recall-reveal");
+      setHidden(r, false);
+      attachFsrsGrades(c.querySelector("#quiz-grades"), ep, q, null); // no objective answer → infer from grade
+      renderMath(r);
+    });
+    renderMath(c);
+  }
+
+  // === WORKED CALCULATION — optional numeric auto-check, then reveal step-by-step working. ===
+  function renderWorkedQuestion() {
+    const { questions, current } = quizState;
+    const c = quizState.container;
+    const q = questions[current];
+    const ep = q._ep || quizState.ep;
+    const total = questions.length;
+    const hasNum = typeof q.answerValue === "number";
+    const steps = Array.isArray(q.working) ? q.working : [];
+    const unit = q.answerUnit ? ` ${q.answerUnit}` : "";
+    c.innerHTML = `
+      <div class="quiz-session worked-session">
+        <div class="quiz-header">
+          <button class="quiz-exit-btn" id="btn-quiz-exit">✕ Exit</button>
+          <span class="quiz-progress-text">${current + 1} / ${total}</span>
+        </div>
+        <div class="quiz-progress-track">
+          <div class="quiz-progress-fill" style="width:${Math.round(((current + 1) / total) * 100)}%"></div>
+        </div>
+        <div class="quiz-question-wrap">
+          <div class="quiz-badges"><span class="type-badge type-worked">Worked</span>${sourceBadgeHtml(q)}</div>
+          ${q.image ? `<img class="quiz-stimulus" src="${q.image}" alt="">` : ""}
+          <p class="quiz-q-text">${q.q}</p>
+          ${q.given ? `<p class="worked-given"><span class="wg-label">Given:</span> ${q.given}</p>` : ""}
+          ${hasNum ? `<div class="worked-input-row">
+              <input class="worked-input" id="worked-input" type="text" inputmode="decimal" placeholder="Your answer" autocomplete="off">
+              ${q.answerUnit ? `<span class="worked-unit">${q.answerUnit}</span>` : ""}
+            </div>` : ""}
+          <button class="quiz-action-btn" id="btn-worked-reveal">${hasNum ? "Check & reveal working" : "Reveal working"}</button>
+          <div class="worked-reveal" id="worked-reveal" hidden>
+            <div class="worked-verdict" id="worked-verdict" hidden></div>
+            <ol class="worked-steps">${steps.map((s) => `<li>${s}</li>`).join("")}</ol>
+            ${q.explanation ? `<p class="feedback-explanation">${q.explanation}</p>` : ""}
+            ${sourceLineHtml(q)}
+            <p class="grade-prompt">How well did you know it?</p>
+            <div class="quiz-grades" id="quiz-grades"></div>
+          </div>
+        </div>
+      </div>`;
+    c.querySelector("#btn-quiz-exit").addEventListener("click", () => { quizState.mode = null; (quizState.onExit || renderQuizPicker)(); });
+    c.querySelector("#btn-worked-reveal").addEventListener("click", (e) => {
+      e.currentTarget.setAttribute("hidden", "");
+      let correct = null;
+      if (hasNum) {
+        const raw = (c.querySelector("#worked-input").value || "").trim();
+        const val = parseFloat(raw);
+        const tol = typeof q.tolerance === "number" ? q.tolerance : 0;
+        const v = c.querySelector("#worked-verdict");
+        if (raw === "" || !isFinite(val)) {
+          correct = null; // didn't attempt the number → leave accuracy to the self-grade
+          v.className = "worked-verdict";
+          v.textContent = `Answer: ${q.answerValue}${unit}`;
+        } else {
+          correct = Math.abs(val - q.answerValue) <= tol;
+          v.className = `worked-verdict ${correct ? "verdict-correct" : "verdict-wrong"}`;
+          v.textContent = correct
+            ? `✓ Correct — ${q.answerValue}${unit}`
+            : `✗ You wrote ${raw}; answer is ${q.answerValue}${unit}`;
+        }
+        setHidden(v, false);
+      }
+      const r = c.querySelector("#worked-reveal");
+      setHidden(r, false);
+      attachFsrsGrades(c.querySelector("#quiz-grades"), ep, q, correct);
+      renderMath(r);
+    });
+    renderMath(c);
+  }
+
+  // Written self-mark — recorded in the simple paper store (NOT FSRS), then advance.
+  function selfGradeWritten(ep, q, awarded) {
+    recordPaperMark(ep, q, awarded);
+    maybeCompletePaper(ep);
+    setTimeout(advanceQuiz, 250);
+  }
+
+  // Share the question + the student's typed answer (Web Share on mobile, mailto fallback).
+  async function shareWritten(ep, q, text) {
+    const body = `${ep.title} — Q${q.qNo || ""} (${q.marks} marks)\n\n${q.q}\n\nMy answer:\n${text || "(blank)"}`;
+    const data = { title: `${ep.title} — Q${q.qNo || ""}`.trim(), text: body };
+    if (navigator.share && (!navigator.canShare || navigator.canShare(data))) {
+      try { await navigator.share(data); return; } catch { return; }
+    }
+    window.location.href = `mailto:?subject=${encodeURIComponent(data.title)}&body=${encodeURIComponent(body)}`;
+  }
+
+  // Mark a paper complete once every question has been attempted.
+  function maybeCompletePaper(ep) {
+    if (!quizState || !quizState.isPaper) return;
+    const p = loadPaper();
+    if (quizState.allQuestions.every((q) => p[srKey(ep, q)]?.attempted)) {
+      saveEpisodeProgress(ep.id, { completed: true });
+    }
+  }
+
+  // Paper results: score + per-question breakdown, plus the opt-in bridge that pushes the
+  // multiple-choice questions you got WRONG into the FSRS spaced-review deck (MC only).
+  function renderPaperResults() {
+    const timeTaken = quizState.timerStart ? Date.now() - quizState.timerStart : 0;
+    stopPaperTimer();
+    const c = quizState.container;
+    const ep = quizState.ep;
+    const qs = quizState.questions;
+    const ans = quizState.answers;
+    const mc = qs.filter((q) => q.type === "mc");
+    const mcCorrect = mc.filter((q) => ans[qs.indexOf(q)]?.correct).length;
+    const written = qs.filter((q) => q.type !== "mc");
+    const wrongMC = mc.filter((q) => { const a = ans[qs.indexOf(q)]; return a && !a.correct; });
+    const pct = mc.length ? Math.round((mcCorrect / mc.length) * 100) : null;
+    const emoji = pct === null ? "📝" : pct >= 80 ? "🏆" : pct >= 60 ? "👍" : "📚";
+    const rows = qs.map((q, i) => {
+      if (q.type !== "mc") {
+        const st = paperState(ep, q);
+        const mk = st && st.mark != null ? `${st.mark}/${st.outOf}` : "attempted";
+        return `<div class="review-row"><div class="rr-head"><span class="pq-no">Q${q.qNo || i + 1}</span>
+            <span class="rr-tag">Written — self-marked ${mk}</span></div></div>`;
+      }
+      const a = ans[i];
+      const correct = a && a.correct;
+      return `<div class="review-row">
+          <div class="rr-head"><span class="pq-no">Q${q.qNo || i + 1}</span>
+            <span class="rr-verdict ${correct ? "verdict-correct" : "verdict-wrong"}">${correct ? "✓ Correct" : "✗ Incorrect"}</span></div>
+          <p class="rr-q">${q.q}</p>
+          <p class="rr-ans">Your answer: ${a && q.options[a.chosen] != null ? q.options[a.chosen] : "—"}</p>
+          ${!correct ? `<p class="rr-ans rr-correct">Correct: ${q.options[q.answer]}</p>` : ""}
+          ${q.explanation ? `<p class="feedback-explanation">${q.explanation}</p>` : ""}
+        </div>`;
+    }).join("");
+    c.innerHTML = `
+      <div class="quiz-summary paper-results">
+        <div class="quiz-summary-score">
+          <div class="summary-emoji">${emoji}</div>
+          <div class="summary-fraction">${mcCorrect}/${mc.length}</div>
+          <div class="summary-pct">multiple choice${written.length ? ` · ${written.length} written attempted` : ""}</div>
+          ${timeTaken ? `<div class="summary-time">⏱ Time taken: ${fmtClock(timeTaken)}</div>` : ""}
+        </div>
+        ${wrongMC.length ? `<button class="quiz-action-btn" id="btn-bridge">↻ Add ${wrongMC.length} wrong question${wrongMC.length > 1 ? "s" : ""} to spaced review</button>` : ""}
+        <div class="review-list">${rows}</div>
+        <div class="quiz-summary-actions">
+          ${wrongMC.length ? `<button class="quiz-action-btn quiz-action-secondary" id="btn-redo-wrong">Redo ${wrongMC.length} I got wrong</button>` : ""}
+          <button class="quiz-action-btn quiz-action-ghost" id="btn-quiz-back">← Back to paper</button>
+        </div>
+      </div>`;
+    const bridge = c.querySelector("#btn-bridge");
+    if (bridge) bridge.addEventListener("click", () => {
+      // grade=1 ("Again") creates a due FSRS card; loadAllQuestions then surfaces these MCs.
+      wrongMC.forEach((q) => gradeCard(ep, q, 1, false));
+      allQuestionsCache = null;
+      updateReviewBadge();
+      bridge.textContent = `✓ Added to spaced review`;
+      bridge.disabled = true;
+    });
+    c.querySelector("#btn-redo-wrong")?.addEventListener("click", () => beginSession(wrongMC, "paper"));
+    renderMath(c);
+    c.querySelector("#btn-quiz-back").addEventListener("click", () => { quizState.mode = null; (quizState.onExit || renderPaperConfig)(); });
+  }
+
   // === END QUIZ ===
 
   // === REVIEW / STUDY HUB (subject-wide: mix quiz, known/learning split, diagnostic) ===
@@ -2218,11 +2915,16 @@
       s.modules.forEach((m) => m.episodes.forEach((e) => {
         if (e.quizPath) list.push({ ep: e, prefix: m.prefix, subject: s.id });
       })));
+    const sr = loadSR();
     const results = await Promise.all(list.map(({ ep, prefix, subject }) =>
       fetch(ep.quizPath).then((r) => (r.ok ? r.json() : null)).then((d) => {
         if (!d || !Array.isArray(d.questions)) return [];
-        d.questions.forEach((q) => { q._ep = ep; q._prefix = prefix; q._subject = subject; });
-        return d.questions;
+        let qs = d.questions;
+        // Past papers stay OUT of the spaced-review hub by default — only the multiple-choice
+        // questions explicitly bridged from a results screen (so they have an FSRS card) appear.
+        if (ep.paper) qs = qs.filter((q) => sr[`${ep.id}::${q.id}`]);
+        qs.forEach((q) => { q._ep = ep; q._prefix = prefix; q._subject = subject; });
+        return qs;
       }).catch(() => [])
     ));
     allQuestionsCache = results.flat();
@@ -2417,10 +3119,33 @@
   document.addEventListener("keydown", (e) => {
     if (!quizState || quizState.mode == null || !quizState.container) return;
     const tag = document.activeElement.tagName;
-    if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
+    if (tag === "INPUT" || tag === "SELECT") return;
+    const c = quizState.container;
+
+    // Past-paper runner keybindings: 1–4 / A–D pick an option; Enter / Space / → advance.
+    if (quizState.isPaper) {
+      if (tag === "TEXTAREA") return; // typing a written answer
+      if (quizState.answered) {
+        if (["Enter", " ", "ArrowRight", "n", "N"].includes(e.key)) {
+          const next = c.querySelector("#btn-paper-next");
+          if (next) { e.preventDefault(); next.click(); }
+        }
+        return;
+      }
+      let idx = -1;
+      const n = parseInt(e.key, 10);
+      if (n >= 1 && n <= 4) idx = n - 1;
+      else if (/^[a-dA-D]$/.test(e.key)) idx = e.key.toLowerCase().charCodeAt(0) - 97;
+      if (idx >= 0) {
+        const opts = c.querySelectorAll(".quiz-option");
+        if (idx < opts.length) { e.preventDefault(); opts[idx].click(); }
+      }
+      return;
+    }
+
+    if (tag === "TEXTAREA") return;
     const n = parseInt(e.key, 10);
     if (!(n >= 1 && n <= 4)) return;
-    const c = quizState.container;
     if (quizState.answered) {
       const btn = c.querySelector(`.grade-btn[data-g="${n}"]`);
       if (btn) { e.preventDefault(); btn.click(); }

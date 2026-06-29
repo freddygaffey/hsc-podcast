@@ -10,7 +10,12 @@
         "The viscosity of air"
       ],
       "answer": 1,
-      "explanation": "Millikan set out to measure the fundamental charge \\(e\\), the charge on one electron. J.J. Thomson had already found the charge-to-mass ratio, but that is two unknowns tangled together; measuring the charge directly was needed to untangle them. The electron's mass came out only as a consequence once \\(e\\) was known."
+      "explanation": "Millikan set out to measure the fundamental charge \\(e\\), the charge on one electron. J.J. Thomson had already found the charge-to-mass ratio, but that is two unknowns tangled together; measuring the charge directly was needed to untangle them. The electron's mass came out only as a consequence once \\(e\\) was known.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "millikan-q02",
@@ -22,7 +27,12 @@
         "The ratio applies only to protons, not electrons"
       ],
       "answer": 1,
-      "explanation": "Thomson measured charge divided by mass — a single ratio holding two unknowns. Just as knowing one number divided by another equals ten does not tell you either number, the ratio could not give the charge by itself. Measuring \\(e\\) directly was the way to unlock both."
+      "explanation": "Thomson measured charge divided by mass — a single ratio holding two unknowns. Just as knowing one number divided by another equals ten does not tell you either number, the ratio could not give the charge by itself. Measuring \\(e\\) directly was the way to unlock both.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "millikan-q03",
@@ -34,7 +44,12 @@
         "Oil is denser, so the droplets fall faster"
       ],
       "answer": 2,
-      "explanation": "Tiny water droplets evaporated within seconds, shrinking and vanishing before a measurement could be made. The graduate student Harvey Fletcher suggested clock oil, which evaporates so slowly that a droplet can be watched for hours, making the measurement possible."
+      "explanation": "Tiny water droplets evaporated within seconds, shrinking and vanishing before a measurement could be made. The graduate student Harvey Fletcher suggested clock oil, which evaporates so slowly that a droplet can be watched for hours, making the measurement possible.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "millikan-q04",
@@ -46,7 +61,12 @@
         "The droplet is too light for gravity to overcome friction at all"
       ],
       "answer": 1,
-      "explanation": "As the droplet speeds up, the upward Stokes drag increases until it exactly equals the weight. With no net force, the droplet falls at a steady terminal velocity. Timing this fall lets Millikan use Stokes' law to find the radius, and hence the mass, of the droplet."
+      "explanation": "As the droplet speeds up, the upward Stokes drag increases until it exactly equals the weight. With no net force, the droplet falls at a steady terminal velocity. Timing this fall lets Millikan use Stokes' law to find the radius, and hence the mass, of the droplet.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "millikan-q05",
@@ -58,7 +78,12 @@
         "\\( mg = 6\\pi \\eta r v \\)"
       ],
       "answer": 0,
-      "explanation": "At balance the upward electric force \\(qE\\) equals the downward weight \\(mg\\), so \\(qE = mg\\). Rearranging with \\(E = V/d\\) gives \\(q = mgd/V\\). The Stokes-law expression (option D) governs the field-OFF stage that gives the mass, not the charge balance."
+      "explanation": "At balance the upward electric force \\(qE\\) equals the downward weight \\(mg\\), so \\(qE = mg\\). Rearranging with \\(E = V/d\\) gives \\(q = mgd/V\\). The Stokes-law expression (option D) governs the field-OFF stage that gives the mass, not the charge balance.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "millikan-q06",
@@ -70,7 +95,12 @@
         "\\( 3.1\\times10^{5}\\ \\mathrm{C} \\)"
       ],
       "answer": 0,
-      "explanation": "The field is \\(E = V/d = 5000/0.016 = 3.125\\times10^{5}\\ \\mathrm{V/m}\\). Then \\(q = mg/E = (6.8\\times10^{-15}\\times9.8)/(3.125\\times10^{5}) \\approx 2.1\\times10^{-19}\\ \\mathrm{C}\\) — about one excess electron's worth within experimental error."
+      "explanation": "The field is \\(E = V/d = 5000/0.016 = 3.125\\times10^{5}\\ \\mathrm{V/m}\\). Then \\(q = mg/E = (6.8\\times10^{-15}\\times9.8)/(3.125\\times10^{5}) \\approx 2.1\\times10^{-19}\\ \\mathrm{C}\\) — about one excess electron's worth within experimental error.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "millikan-q07",
@@ -82,7 +112,12 @@
         "Charge depends on the voltage applied to the plates"
       ],
       "answer": 1,
-      "explanation": "Measured charges were always \\(q = ne\\) for whole numbers \\(n\\) — never a fraction such as 2.5 or 7.3. This shows charge is quantised, existing only in indivisible lumps of the elementary charge \\(e\\). It is the direct evidence that charge, like energy in the quantum revolution, comes in countable packets."
+      "explanation": "Measured charges were always \\(q = ne\\) for whole numbers \\(n\\) — never a fraction such as 2.5 or 7.3. This shows charge is quantised, existing only in indivisible lumps of the elementary charge \\(e\\). It is the direct evidence that charge, like energy in the quantum revolution, comes in countable packets.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "millikan-q08",
@@ -94,7 +129,12 @@
         "To increase the voltage across the plates automatically"
       ],
       "answer": 2,
-      "explanation": "The X-rays ionised the gas, letting a single droplet pick up or lose electrons mid-experiment. Every time its charge changed, it changed by a clean whole-number multiple of \\(e\\) — decisive evidence that charge changes one electron at a time and is quantised."
+      "explanation": "The X-rays ionised the gas, letting a single droplet pick up or lose electrons mid-experiment. Every time its charge changed, it changed by a clean whole-number multiple of \\(e\\) — decisive evidence that charge changes one electron at a time and is quantised.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "millikan-q09",
@@ -106,7 +146,12 @@
         "His plate separation was measured wrongly"
       ],
       "answer": 1,
-      "explanation": "Almost the entire discrepancy traces to the air-viscosity value Millikan took from the literature, which was slightly wrong. Because viscosity enters Stokes' law for the droplet radius, the small error propagated into the final charge. His method and reasoning were sound."
+      "explanation": "Almost the entire discrepancy traces to the air-viscosity value Millikan took from the literature, which was slightly wrong. Because viscosity enters Stokes' law for the droplet radius, the small error propagated into the final charge. His method and reasoning were sound.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "millikan-q10",
@@ -118,7 +163,12 @@
         "Quarks were exactly the subelectrons Ehrenhaft had measured"
       ],
       "answer": 1,
-      "explanation": "Quarks are permanently confined inside protons, neutrons and other particles and cannot be pulled out alone. The charge of any particle you can actually isolate is always a whole-number multiple of \\(e\\) — for example a proton's quarks (\\(+\\tfrac{2}{3},+\\tfrac{2}{3},-\\tfrac{1}{3}\\)) sum to \\(+e\\). Millikan's law holds for every free charge."
+      "explanation": "Quarks are permanently confined inside protons, neutrons and other particles and cannot be pulled out alone. The charge of any particle you can actually isolate is always a whole-number multiple of \\(e\\) — for example a proton's quarks (\\(+\\tfrac{2}{3},+\\tfrac{2}{3},-\\tfrac{1}{3}\\)) sum to \\(+e\\). Millikan's law holds for every free charge.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

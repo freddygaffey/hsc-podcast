@@ -10,7 +10,12 @@
         "Requirements, Budget, and Deadline"
       ],
       "answer": 0,
-      "explanation": "The project management triangle is Scope (how much you build), Time (how long you have), and Cost (the budget and resources) — the hook is simply 'Scope, Time, Cost'. Quality is not a corner; it sits in the middle, squeezed by all three, which is why 'Quality' appears as a tempting wrong corner in option B."
+      "explanation": "The project management triangle is Scope (how much you build), Time (how long you have), and Cost (the budget and resources) — the hook is simply 'Scope, Time, Cost'. Quality is not a corner; it sits in the middle, squeezed by all three, which is why 'Quality' appears as a tempting wrong corner in option B.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2404-q02",
@@ -22,7 +27,12 @@
         "Source code commits, pull requests, and merge conflicts"
       ],
       "answer": 2,
-      "explanation": "A Gantt chart is a visual schedule: bars show each task and its duration laid against a timeline, arrows link dependent tasks, and milestones mark key checkpoints (often diamonds), with shaded bars showing progress. Option B describes Agile tracking artefacts, and option D describes version-control concepts — both are real but belong to different tools, not to what a Gantt chart itself displays."
+      "explanation": "A Gantt chart is a visual schedule: bars show each task and its duration laid against a timeline, arrows link dependent tasks, and milestones mark key checkpoints (often diamonds), with shaded bars showing progress. Option B describes Agile tracking artefacts, and option D describes version-control concepts — both are real but belong to different tools, not to what a Gantt chart itself displays.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2404-q03",
@@ -34,7 +44,12 @@
         "Two tasks must both finish at the same time before a milestone is reached"
       ],
       "answer": 1,
-      "explanation": "Finish-to-start is the default dependency: task B can't start until task A finishes — you can't start coding until the design is approved. The episode notes start-to-start and finish-to-finish exist too, but finish-to-start is the one to know. Option A describes start-to-start and option D describes finish-to-finish, which are the named-but-secondary types."
+      "explanation": "Finish-to-start is the default dependency: task B can't start until task A finishes — you can't start coding until the design is approved. The episode notes start-to-start and finish-to-finish exist too, but finish-to-start is the one to know. Option A describes start-to-start and option D describes finish-to-finish, which are the named-but-secondary types.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2404-q04",
@@ -46,7 +61,12 @@
         "They lie on the longest dependent chain, so any delay to them delays the whole project by the same amount"
       ],
       "answer": 3,
-      "explanation": "The critical path is the longest sequence of dependent tasks, which sets the minimum project duration, so its tasks have zero flexibility — delay one by a week and the entire project slips by a week. Difficulty (option A) is unrelated to slack; slack is purely about whether a task is on the longest chain, where a delay cannot be absorbed."
+      "explanation": "The critical path is the longest sequence of dependent tasks, which sets the minimum project duration, so its tasks have zero flexibility — delay one by a week and the entire project slips by a week. Difficulty (option A) is unrelated to slack; slack is purely about whether a task is on the longest chain, where a delay cannot be absorbed.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2404-q05",
@@ -58,7 +78,12 @@
         "Neither slip affects the finish date as long as the total scope stays the same"
       ],
       "answer": 2,
-      "explanation": "This is the exact reasoning a Gantt stimulus wants: a same-sized slip has opposite consequences depending on the path. On the critical path there is zero slack, so the whole project slips by that amount; off it, within slack, the finish date does not move. Option A reverses the rule — it is the non-critical task that can absorb a delay, not the critical-path one."
+      "explanation": "This is the exact reasoning a Gantt stimulus wants: a same-sized slip has opposite consequences depending on the path. On the critical path there is zero slack, so the whole project slips by that amount; off it, within slack, the finish date does not move. Option A reverses the rule — it is the non-critical task that can absorb a delay, not the critical-path one.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2404-q06",
@@ -70,7 +95,12 @@
         "A-B-C-E, 11 weeks"
       ],
       "answer": 3,
-      "explanation": "There are two paths: A-B-C-E is 2+3+4+2 = 11 weeks, and A-D-E is 2+2+2 = 6 weeks. The critical path is the longest, A-B-C-E at 11 weeks, so the project takes 11 weeks. The 6-week A-D-E option is the shorter path (where D's slack lives), not the critical path that sets the duration."
+      "explanation": "There are two paths: A-B-C-E is 2+3+4+2 = 11 weeks, and A-D-E is 2+2+2 = 6 weeks. The critical path is the longest, A-B-C-E at 11 weeks, so the project takes 11 weeks. The 6-week A-D-E option is the shorter path (where D's slack lives), not the critical path that sets the duration.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2404-q07",
@@ -82,7 +112,12 @@
         "The project cannot finish until D is rescheduled onto the critical path"
       ],
       "answer": 1,
-      "explanation": "D sits on the 6-week path, so it has 5 weeks of slack — E can't start until C finishes at week 9 regardless. A two-week slip on D is fully absorbed, so the finish stays at 11 weeks. Option A is the classic trap of treating every slip as a delay; you must first check whether the slipped task is on the critical path, and D is not."
+      "explanation": "D sits on the 6-week path, so it has 5 weeks of slack — E can't start until C finishes at week 9 regardless. A two-week slip on D is fully absorbed, so the finish stays at 11 weeks. Option A is the classic trap of treating every slip as a delay; you must first check whether the slipped task is on the critical path, and D is not.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2404-q08",
@@ -94,7 +129,12 @@
         "Time must be extended, because scope is the only constraint that can never change"
       ],
       "answer": 0,
-      "explanation": "The triangle's law is that you can't change one constraint without affecting the others. Adding scope while fixing time means cost must rise (more developers) or quality must drop (less testing, documentation, polish) — and if neither is allowed to give, the deadline will slip in reality. The tempting 'nothing has to change' option ignores the triangle entirely; the correct management response is to make the trade-off explicit and negotiate, for example deferring the feature or dropping a lower-priority one."
+      "explanation": "The triangle's law is that you can't change one constraint without affecting the others. Adding scope while fixing time means cost must rise (more developers) or quality must drop (less testing, documentation, polish) — and if neither is allowed to give, the deadline will slip in reality. The tempting 'nothing has to change' option ignores the triangle entirely; the correct management response is to make the trade-off explicit and negotiate, for example deferring the feature or dropping a lower-priority one.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2404-q09",
@@ -106,7 +146,12 @@
         "Recording the final completion date so it can be reported to the client after delivery"
       ],
       "answer": 2,
-      "explanation": "Tracking is continuous: you record completion per task, compare planned versus actual (the gap is the schedule variance), and raise alerts on tasks falling behind — prioritising critical-path ones because they directly threaten the finish date. Option A is the opposite of tracking; project management isn't drawing the schedule once, it's the ongoing comparison of plan to reality — the 'manage' verb of outcome SE-12-09."
+      "explanation": "Tracking is continuous: you record completion per task, compare planned versus actual (the gap is the schedule variance), and raise alerts on tasks falling behind — prioritising critical-path ones because they directly threaten the finish date. Option A is the opposite of tracking; project management isn't drawing the schedule once, it's the ongoing comparison of plan to reality — the 'manage' verb of outcome SE-12-09.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2404-q10",
@@ -118,7 +163,12 @@
         "Trello, because it is a lightweight Kanban-board tool of cards on columns, well suited to a small team"
       ],
       "answer": 3,
-      "explanation": "The exam move is to justify the tool against the project: Trello is the lightweight Kanban-board option (cards on columns) explicitly suited to a small team. Microsoft Project and Primavera P6 are heavyweight tools for large, complex projects, so they are over-engineered here. Version control coordinates code, not the Kanban task board, so it complements rather than replaces Trello."
+      "explanation": "The exam move is to justify the tool against the project: Trello is the lightweight Kanban-board option (cards on columns) explicitly suited to a small team. Microsoft Project and Primavera P6 are heavyweight tools for large, complex projects, so they are over-engineered here. Version control coordinates code, not the Kanban task board, so it complements rather than replaces Trello.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

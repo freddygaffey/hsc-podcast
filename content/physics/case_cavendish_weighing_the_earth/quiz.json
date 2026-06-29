@@ -10,7 +10,12 @@
         "The inverse-square law had not yet been confirmed by observation"
       ],
       "answer": 0,
-      "explanation": "Every gravitational measurement in Newton's day involved the Earth as one of the two masses, so observations (e.g. the Moon's orbit) only pinned down the product \\(G M_{\\text{Earth}}\\). That is one equation with two unknowns, which cannot be separated. The Earth's radius was actually known since antiquity, so B is wrong."
+      "explanation": "Every gravitational measurement in Newton's day involved the Earth as one of the two masses, so observations (e.g. the Moon's orbit) only pinned down the product \\(G M_{\\text{Earth}}\\). That is one equation with two unknowns, which cannot be separated. The Earth's radius was actually known since antiquity, so B is wrong.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "cavendish-q02",
@@ -22,7 +27,12 @@
         "It compared the weight of an object at the equator and at the poles"
       ],
       "answer": 1,
-      "explanation": "By measuring the gravitational pull between two known lab masses (lead balls) at a known separation, Newton's law gives \\(G\\) directly because the Earth never enters the equation. With \\(G\\) known on its own, the old product \\(G M_{\\text{Earth}}\\) can be divided out to reveal the Earth's mass."
+      "explanation": "By measuring the gravitational pull between two known lab masses (lead balls) at a known separation, Newton's law gives \\(G\\) directly because the Earth never enters the equation. With \\(G\\) known on its own, the old product \\(G M_{\\text{Earth}}\\) can be divided out to reveal the Earth's mass.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "cavendish-q03",
@@ -34,7 +44,12 @@
         "By measuring the wire's diameter and looking up its material properties"
       ],
       "answer": 2,
-      "explanation": "The hanging rod is a torsional oscillator with period \\(T = 2\\pi\\sqrt{I/\\kappa}\\). Timing the slow swing gives \\(\\kappa\\) directly without ever applying a known force — the masterstroke of the experiment. The wire resists twisting so feebly that applying a known force was impractical."
+      "explanation": "The hanging rod is a torsional oscillator with period \\(T = 2\\pi\\sqrt{I/\\kappa}\\). Timing the slow swing gives \\(\\kappa\\) directly without ever applying a known force — the masterstroke of the experiment. The wire resists twisting so feebly that applying a known force was impractical.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "cavendish-q04",
@@ -46,7 +61,12 @@
         "The static charge on the balls and the gravitational pull of the Earth"
       ],
       "answer": 0,
-      "explanation": "At rest the gravitational torque pulling the small balls toward the large ones exactly equals the wire's restoring torque \\(\\kappa\\theta\\). Knowing \\(\\kappa\\) and the twist angle \\(\\theta\\) then gives the gravitational force precisely."
+      "explanation": "At rest the gravitational torque pulling the small balls toward the large ones exactly equals the wire's restoring torque \\(\\kappa\\theta\\). Knowing \\(\\kappa\\) and the twist angle \\(\\theta\\) then gives the gravitational force precisely.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "cavendish-q05",
@@ -58,7 +78,12 @@
         "The weight of a basketball"
       ],
       "answer": 0,
-      "explanation": "About \\(170\\) nanonewtons (\\(\\sim 1.7\\times10^{-7}\\) N) is roughly the weight of a single grain of fine sand. This vanishingly small force is the whole point of the story — gravity is by far the weakest fundamental force."
+      "explanation": "About \\(170\\) nanonewtons (\\(\\sim 1.7\\times10^{-7}\\) N) is roughly the weight of a single grain of fine sand. This vanishingly small force is the whole point of the story — gravity is by far the weakest fundamental force.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "cavendish-q06",
@@ -70,7 +95,12 @@
         "Because the Royal Society required experiments to be conducted in isolation"
       ],
       "answer": 1,
-      "explanation": "The signal was so tiny that the experimenter himself was the biggest threat: body warmth caused air currents, and his own mass had a gravitational pull. By sealing the apparatus and reading it remotely, Cavendish removed himself from his own experiment."
+      "explanation": "The signal was so tiny that the experimenter himself was the biggest threat: body warmth caused air currents, and his own mass had a gravitational pull. By sealing the apparatus and reading it remotely, Cavendish removed himself from his own experiment.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "cavendish-q07",
@@ -82,7 +112,12 @@
         "\\(M_{\\text{Earth}} = g G / R^{2}\\)"
       ],
       "answer": 1,
-      "explanation": "Rearranging \\(g = G M_{\\text{Earth}}/R^{2}\\) gives \\(M_{\\text{Earth}} = g R^{2}/G\\). Substituting \\(g = 9.8\\), \\(R = 6.371\\times10^{6}\\) m and \\(G = 6.67\\times10^{-11}\\) yields about \\(6\\times10^{24}\\) kg."
+      "explanation": "Rearranging \\(g = G M_{\\text{Earth}}/R^{2}\\) gives \\(M_{\\text{Earth}} = g R^{2}/G\\). Substituting \\(g = 9.8\\), \\(R = 6.371\\times10^{6}\\) m and \\(G = 6.67\\times10^{-11}\\) yields about \\(6\\times10^{24}\\) kg.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "cavendish-q08",
@@ -94,7 +129,12 @@
         "Water is far denser deep underground than at the surface"
       ],
       "answer": 2,
-      "explanation": "If the whole planet averages 5.5 times the density of water but surface rock is only 2.5–3, the interior must be much heavier than rock — something like iron. This was the first real evidence of a dense metallic core, not directly confirmed by seismology until the 20th century."
+      "explanation": "If the whole planet averages 5.5 times the density of water but surface rock is only 2.5–3, the interior must be much heavier than rock — something like iron. This was the first real evidence of a dense metallic core, not directly confirmed by seismology until the 20th century.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "cavendish-q09",
@@ -106,7 +146,12 @@
         "The acceleration due to gravity; he measured 9.8 exactly"
       ],
       "answer": 1,
-      "explanation": "His paper was titled 'Experiments to Determine the Density of the Earth' — he never calculated \\(G\\). His corrected density of about 5.45 times water sits within roughly 1% of the modern 5.514, an extraordinary result for 1798."
+      "explanation": "His paper was titled 'Experiments to Determine the Density of the Earth' — he never calculated \\(G\\). His corrected density of about 5.45 times water sits within roughly 1% of the modern 5.514, an extraordinary result for 1798.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "cavendish-q10",
@@ -118,7 +163,12 @@
         "Because the metre and kilogram are not defined precisely enough"
       ],
       "answer": 1,
-      "explanation": "Gravity is by far the weakest force and there is no gravity shield, so the gravitational pull of walls, the experimenter, groundwater and distant terrain perturbs every measurement. Modern high-precision experiments even disagree with one another beyond their stated error bars, leaving \\(G\\) uncertain at about 22 parts per million."
+      "explanation": "Gravity is by far the weakest force and there is no gravity shield, so the gravitational pull of walls, the experimenter, groundwater and distant terrain perturbs every measurement. Modern high-precision experiments even disagree with one another beyond their stated error bars, leaving \\(G\\) uncertain at about 22 parts per million.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

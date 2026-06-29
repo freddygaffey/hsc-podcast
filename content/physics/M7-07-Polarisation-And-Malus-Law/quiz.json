@@ -10,7 +10,12 @@
         "Unpolarised light is transverse while polarised light is longitudinal"
       ],
       "answer": 1,
-      "explanation": "Unpolarised light has its electric field oscillating in all planes perpendicular to the direction of propagation; plane-polarised (linearly polarised) light is confined to a single such plane. The defining quantity is the electric field, not the magnetic field."
+      "explanation": "Unpolarised light has its electric field oscillating in all planes perpendicular to the direction of propagation; plane-polarised (linearly polarised) light is confined to a single such plane. The defining quantity is the electric field, not the magnetic field.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m707-q02",
@@ -22,7 +27,12 @@
         "The gravitational field"
       ],
       "answer": 1,
-      "explanation": "By convention the plane of polarisation is defined by the electric field, because it is the electric field that interacts most strongly with the charges in matter (filters, detectors, the eye). Naming the magnetic field instead loses the mark."
+      "explanation": "By convention the plane of polarisation is defined by the electric field, because it is the electric field that interacts most strongly with the charges in matter (filters, detectors, the eye). Naming the magnetic field instead loses the mark.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m707-q03",
@@ -34,7 +44,12 @@
         "It rotates every component into a single plane"
       ],
       "answer": 1,
-      "explanation": "A polarising filter has a transmission axis and passes only the component of the electric field parallel to that axis, absorbing components in all other planes. The emerging light therefore oscillates in a single plane."
+      "explanation": "A polarising filter has a transmission axis and passes only the component of the electric field parallel to that axis, absorbing components in all other planes. The emerging light therefore oscillates in a single plane.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m707-q04",
@@ -46,7 +61,12 @@
         "It depends on how the filter is rotated"
       ],
       "answer": 0,
-      "explanation": "Unpolarised light has its energy spread equally over all planes, so a single filter transmits exactly half the intensity, and this halving is independent of the filter's orientation. The \\( \\cos^2\\theta \\) law applies only to already-polarised light at a second filter."
+      "explanation": "Unpolarised light has its energy spread equally over all planes, so a single filter transmits exactly half the intensity, and this halving is independent of the filter's orientation. The \\( \\cos^2\\theta \\) law applies only to already-polarised light at a second filter.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m707-q05",
@@ -58,7 +78,12 @@
         "Because intensity is proportional to the field amplitude directly"
       ],
       "answer": 1,
-      "explanation": "The transmitted field amplitude is \\( E_0\\cos\\theta \\) (resolving the vector along the axis), but intensity \\( \\propto E^2 \\), so squaring the amplitude squares the cosine: \\( I = I_{\\max}\\cos^2\\theta \\). 'Malus loves to square.'"
+      "explanation": "The transmitted field amplitude is \\( E_0\\cos\\theta \\) (resolving the vector along the axis), but intensity \\( \\propto E^2 \\), so squaring the amplitude squares the cosine: \\( I = I_{\\max}\\cos^2\\theta \\). 'Malus loves to square.'",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m707-q06",
@@ -70,7 +95,12 @@
         "0"
       ],
       "answer": 2,
-      "explanation": "By Malus's law, \\( I = I_{\\max}\\cos^2 60° = I_{\\max}(0.5)^2 = \\tfrac{1}{4}I_{\\max} \\). (Note 45° would give one half, and 30° would give three quarters.)"
+      "explanation": "By Malus's law, \\( I = I_{\\max}\\cos^2 60° = I_{\\max}(0.5)^2 = \\tfrac{1}{4}I_{\\max} \\). (Note 45° would give one half, and 30° would give three quarters.)",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m707-q07",
@@ -82,7 +112,12 @@
         "\\( 0.25\\,I_0 \\)"
       ],
       "answer": 1,
-      "explanation": "The polariser halves the unpolarised light to \\( \\tfrac{1}{2}I_0 \\). The analyser then transmits \\( \\cos^2 30° = 0.75 \\) of that: \\( \\tfrac{1}{2}I_0 \\times 0.75 = 0.375\\,I_0 \\) (37.5%)."
+      "explanation": "The polariser halves the unpolarised light to \\( \\tfrac{1}{2}I_0 \\). The analyser then transmits \\( \\cos^2 30° = 0.75 \\) of that: \\( \\tfrac{1}{2}I_0 \\times 0.75 = 0.375\\,I_0 \\) (37.5%).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m707-q08",
@@ -94,7 +129,12 @@
         "30°"
       ],
       "answer": 1,
-      "explanation": "\\( \\tfrac{1}{4}I_{\\max} = I_{\\max}\\cos^2\\theta \\Rightarrow \\cos^2\\theta = 0.25 \\). Take the square root FIRST: \\( \\cos\\theta = 0.5 \\), so \\( \\theta = \\cos^{-1}(0.5) = 60° \\). Skipping the square root (taking \\( \\cos^{-1}0.25 \\)) wrongly gives ~75.5°."
+      "explanation": "\\( \\tfrac{1}{4}I_{\\max} = I_{\\max}\\cos^2\\theta \\Rightarrow \\cos^2\\theta = 0.25 \\). Take the square root FIRST: \\( \\cos\\theta = 0.5 \\), so \\( \\theta = \\cos^{-1}(0.5) = 60° \\). Skipping the square root (taking \\( \\cos^{-1}0.25 \\)) wrongly gives ~75.5°.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m707-q09",
@@ -106,7 +146,12 @@
         "Because longitudinal waves cannot interfere"
       ],
       "answer": 1,
-      "explanation": "Polarising a wave means restricting its oscillation to one plane, which requires a sideways (transverse) oscillation with multiple possible planes. A longitudinal wave oscillates along the direction of travel and has no transverse plane to filter, so it cannot be polarised. Since light can be polarised, it must be transverse."
+      "explanation": "Polarising a wave means restricting its oscillation to one plane, which requires a sideways (transverse) oscillation with multiple possible planes. A longitudinal wave oscillates along the direction of travel and has no transverse plane to filter, so it cannot be polarised. Since light can be polarised, it must be transverse.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m707-q10",
@@ -118,7 +163,12 @@
         "The light is converted back to unpolarised light"
       ],
       "answer": 1,
-      "explanation": "The middle filter rotates the plane of the polarisation that survives it, so the final filter is no longer fully crossed with the light reaching it and can transmit a component. Removing the middle filter restores total extinction — the classic three-polariser result of Malus's law."
+      "explanation": "The middle filter rotates the plane of the polarisation that survives it, so the final filter is no longer fully crossed with the light reaching it and can transmit a component. Removing the middle filter restores total extinction — the classic three-polariser result of Malus's law.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

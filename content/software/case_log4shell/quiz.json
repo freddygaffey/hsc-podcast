@@ -10,7 +10,12 @@
         "Phishing, where users are tricked into revealing their login details"
       ],
       "answer": 1,
-      "explanation": "The script states the attacker could 'run your own programs on their machine' from a single line of text, and names this capability remote code execution (RCE) — 'about as bad as it gets'. Denial of service only crashes a system; it does not let an attacker run arbitrary code or take full control, which is what made Log4Shell catastrophic."
+      "explanation": "The script states the attacker could 'run your own programs on their machine' from a single line of text, and names this capability remote code execution (RCE) — 'about as bad as it gets'. Denial of service only crashes a system; it does not let an attacker run arbitrary code or take full control, which is what made Log4Shell catastrophic.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-log4shell-q02",
@@ -22,7 +27,12 @@
         "A database engine that stored user records"
       ],
       "answer": 2,
-      "explanation": "Log4Shell lived inside Log4j ('logging for Java'), a free, reliable logging library maintained largely by volunteers and buried inside an enormous fraction of the world's Java software. The script stresses it was a logging library — not a browser, kernel, or database — and that most teams running it had no idea it was even there."
+      "explanation": "Log4Shell lived inside Log4j ('logging for Java'), a free, reliable logging library maintained largely by volunteers and buried inside an enormous fraction of the world's Java software. The script stresses it was a logging library — not a browser, kernel, or database — and that most teams running it had no idea it was even there.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-log4shell-q03",
@@ -34,7 +44,12 @@
         "They emailed a virus attachment that an employee opened"
       ],
       "answer": 2,
-      "explanation": "The script explains the entire attack: the attacker simply gets their malicious string into any field that gets logged (a username, a browser name, a search box, a chat message), and the vulnerable Log4j 'doesn't just write it down — it reads it as an instruction'. No password guessing or break-in is needed because logs record whatever the outside world sends, and the library then acted on it."
+      "explanation": "The script explains the entire attack: the attacker simply gets their malicious string into any field that gets logged (a username, a browser name, a search box, a chat message), and the vulnerable Log4j 'doesn't just write it down — it reads it as an instruction'. No password guessing or break-in is needed because logs record whatever the outside world sends, and the library then acted on it.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-log4shell-q04",
@@ -46,7 +61,12 @@
         "It automatically deleted old logs, erasing evidence of attacks"
       ],
       "answer": 0,
-      "explanation": "The script describes a placeholder that could tell Log4j to 'go and fetch something from another computer over the network and load it in' — intended as a directory lookup, but in practice meaning the library would reach out to an address in the message, download code, and run it. The danger was execution of fetched code, not disk usage or encryption, which is why a harmless-looking convenience became remote code execution."
+      "explanation": "The script describes a placeholder that could tell Log4j to 'go and fetch something from another computer over the network and load it in' — intended as a directory lookup, but in practice meaning the library would reach out to an address in the message, download code, and run it. The danger was execution of fetched code, not disk usage or encryption, which is why a harmless-looking convenience became remote code execution.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-log4shell-q05",
@@ -58,7 +78,12 @@
         "Nine out of ten — severe but with mitigating factors"
       ],
       "answer": 2,
-      "explanation": "Log4Shell was rated a perfect ten out of ten (CVSS 10.0). The script explains the score 'maxed out on all of it' — trivial to exploit (just type a string), devastating in effect (total takeover), and applicable to a huge number of systems. A lower score would imply some mitigating factor, but Log4Shell had none."
+      "explanation": "Log4Shell was rated a perfect ten out of ten (CVSS 10.0). The script explains the score 'maxed out on all of it' — trivial to exploit (just type a string), devastating in effect (total takeover), and applicable to a huge number of systems. A lower score would imply some mitigating factor, but Log4Shell had none.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-log4shell-q06",
@@ -70,7 +95,12 @@
         "Software licences that transfer ownership between companies"
       ],
       "answer": 1,
-      "explanation": "The script defines transitive dependencies as 'the dependencies of your dependencies, the code you're running that you never knowingly chose' — Log4j arrived buried five layers down inside other software. This is why most organisations had 'absolutely no idea' whether they were affected; the vulnerable library was inherited, not deliberately installed."
+      "explanation": "The script defines transitive dependencies as 'the dependencies of your dependencies, the code you're running that you never knowingly chose' — Log4j arrived buried five layers down inside other software. This is why most organisations had 'absolutely no idea' whether they were affected; the vulnerable library was inherited, not deliberately installed.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-log4shell-q07",
@@ -82,7 +112,12 @@
         "Running outdated hardware that could not handle modern security software"
       ],
       "answer": 2,
-      "explanation": "The script's one-sentence summary of the bug is that Log4j 'executed input it should only have stored' — it took text from a stranger and followed commands hidden inside it. The defence is input validation and proper handling of untrusted data: anything from outside is 'guilty until proven innocent'. Encryption and passwords are real controls but address different problems, not the trust-the-input root cause."
+      "explanation": "The script's one-sentence summary of the bug is that Log4j 'executed input it should only have stored' — it took text from a stranger and followed commands hidden inside it. The defence is input validation and proper handling of untrusted data: anything from outside is 'guilty until proven innocent'. Encryption and passwords are real controls but address different problems, not the trust-the-input root cause.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-log4shell-q08",
@@ -94,7 +129,12 @@
         "Patching meant rewriting Log4j from scratch, while hunting meant searching for the original attackers"
       ],
       "answer": 1,
-      "explanation": "The script is explicit: 'The patching wasn't the hard part. Finding all the places that needed patching was the hard part.' Because Log4j was a buried transitive dependency, teams had to tear apart their own software to locate it — 'you can't fix what you don't know you have'. The other options invert this relationship or describe retaliation, which was not the defenders' task."
+      "explanation": "The script is explicit: 'The patching wasn't the hard part. Finding all the places that needed patching was the hard part.' Because Log4j was a buried transitive dependency, teams had to tear apart their own software to locate it — 'you can't fix what you don't know you have'. The other options invert this relationship or describe retaliation, which was not the defenders' task.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-log4shell-q09",
@@ -106,7 +146,12 @@
         "The testing phase, where code is checked before release"
       ],
       "answer": 2,
-      "explanation": "The script frames the response as 'the maintenance phase of the software life cycle, lived at maximum intensity' — not building anything new, but watching for newly discovered flaws and patching fast. Its closing point is that 'the build is the beginning; keeping it alive and safe is most of the work', which is exactly maintenance rather than design, build, or testing."
+      "explanation": "The script frames the response as 'the maintenance phase of the software life cycle, lived at maximum intensity' — not building anything new, but watching for newly discovered flaws and patching fast. Its closing point is that 'the build is the beginning; keeping it alive and safe is most of the work', which is exactly maintenance rather than design, build, or testing.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-log4shell-q10",
@@ -118,7 +163,12 @@
         "Trust the comments because they pass through the company's own form rather than coming from an external system"
       ],
       "answer": 1,
-      "explanation": "The Log4Shell lesson is that input from strangers is 'never, ever to be trusted as a command' — the fix is input validation and proper handling of untrusted data so it stays inert content, exactly as the supplementary pseudocode shows (treat the value as literal text and escape any placeholder syntax). Encryption protects stored data but not against injection; disabling logging throws away a useful record; and trusting input because it came through your own form is precisely the mistake Log4Shell punished."
+      "explanation": "The Log4Shell lesson is that input from strangers is 'never, ever to be trusted as a command' — the fix is input validation and proper handling of untrusted data so it stays inert content, exactly as the supplementary pseudocode shows (treat the value as literal text and escape any placeholder syntax). Encryption protects stored data but not against injection; disabling logging throws away a useful record; and trusting input because it came through your own form is precisely the mistake Log4Shell punished.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

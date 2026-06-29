@@ -10,7 +10,12 @@
         "Compressing the sample shortens its half-life"
       ],
       "answer": 1,
-      "explanation": "Spontaneous means the rate is unaffected by temperature, pressure or chemical state — half-life is a fixed property of the nucleus. Random means you cannot predict when any individual nucleus will decay; only the statistics of huge numbers of nuclei are predictable."
+      "explanation": "Spontaneous means the rate is unaffected by temperature, pressure or chemical state — half-life is a fixed property of the nucleus. Random means you cannot predict when any individual nucleus will decay; only the statistics of huge numbers of nuclei are predictable.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m808-q02",
@@ -22,7 +27,12 @@
         "Because the decay constant doubles each half-life"
       ],
       "answer": 1,
-      "explanation": "The decay rate is proportional to the number of undecayed nuclei. As nuclei are used up the rate drops, which slows the using-up further — a quantity whose rate of decrease is proportional to itself is exactly exponential decay: \\(N = N_0 e^{-\\lambda t}\\)."
+      "explanation": "The decay rate is proportional to the number of undecayed nuclei. As nuclei are used up the rate drops, which slows the using-up further — a quantity whose rate of decrease is proportional to itself is exactly exponential decay: \\(N = N_0 e^{-\\lambda t}\\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m808-q03",
@@ -34,7 +44,12 @@
         "Half the total lifetime of a single nucleus"
       ],
       "answer": 1,
-      "explanation": "Half-life is the time for half the radioactive nuclei to decay, or equivalently for the activity to fall to half. It is NOT the time for the whole sample to disappear — after each half-life only half decays, so the amount keeps halving and never quite reaches zero."
+      "explanation": "Half-life is the time for half the radioactive nuclei to decay, or equivalently for the activity to fall to half. It is NOT the time for the whole sample to disappear — after each half-life only half decays, so the amount keeps halving and never quite reaches zero.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m808-q04",
@@ -46,7 +61,12 @@
         "\\(\\tfrac{1}{6}\\)"
       ],
       "answer": 2,
-      "explanation": "After \\(n\\) half-lives the fraction remaining is \\(\\left(\\tfrac{1}{2}\\right)^n\\). For \\(n=3\\): \\(\\tfrac{1}{2}\\to\\tfrac{1}{4}\\to\\tfrac{1}{8}\\). A common error is to assume the sample is gone after a few half-lives, but an eighth still remains."
+      "explanation": "After \\(n\\) half-lives the fraction remaining is \\(\\left(\\tfrac{1}{2}\\right)^n\\). For \\(n=3\\): \\(\\tfrac{1}{2}\\to\\tfrac{1}{4}\\to\\tfrac{1}{8}\\). A common error is to assume the sample is gone after a few half-lives, but an eighth still remains.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m808-q05",
@@ -58,7 +78,12 @@
         "\\(\\lambda = \\dfrac{1}{2 t_{1/2}}\\)"
       ],
       "answer": 1,
-      "explanation": "\\(\\lambda = \\dfrac{\\ln 2}{t_{1/2}} \\approx \\dfrac{0.693}{t_{1/2}}\\). The two are inversely related: a large decay constant (nuclei likely to decay) means a short half-life, and vice versa."
+      "explanation": "\\(\\lambda = \\dfrac{\\ln 2}{t_{1/2}} \\approx \\dfrac{0.693}{t_{1/2}}\\). The two are inversely related: a large decay constant (nuclei likely to decay) means a short half-life, and vice versa.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m808-q06",
@@ -70,7 +95,12 @@
         "Activity never changes with time"
       ],
       "answer": 1,
-      "explanation": "The amount remaining counts undecayed nuclei (or mass); the activity is decays per second (becquerels). They follow the same exponential law and halve together, but answer different questions — read the verb and give the matching quantity."
+      "explanation": "The amount remaining counts undecayed nuclei (or mass); the activity is decays per second (becquerels). They follow the same exponential law and halve together, but answer different questions — read the verb and give the matching quantity.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m808-q07",
@@ -82,7 +112,12 @@
         "80 minutes"
       ],
       "answer": 2,
-      "explanation": "Count the halvings: 8 → 4 (one), 4 → 2 (two), 2 → 1 (three). That is 3 half-lives × 10 minutes = 30 minutes."
+      "explanation": "Count the halvings: 8 → 4 (one), 4 → 2 (two), 2 → 1 (three). That is 3 half-lives × 10 minutes = 30 minutes.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m808-q08",
@@ -94,7 +129,12 @@
         "About 0 mg"
       ],
       "answer": 1,
-      "explanation": "\\(\\lambda = 0.693/13 = 0.0533\\ \\mathrm{h^{-1}}\\); exponent \\(= -0.0533\\times24 = -1.279\\); \\(e^{-1.279} \\approx 0.278\\); \\(N = 20\\times0.278 \\approx 5.6\\ \\mathrm{mg}\\). (24 h is 1.85 half-lives, so a bit more than a quarter of 20 mg remains.) Always find \\(\\lambda\\) first and keep time units consistent."
+      "explanation": "\\(\\lambda = 0.693/13 = 0.0533\\ \\mathrm{h^{-1}}\\); exponent \\(= -0.0533\\times24 = -1.279\\); \\(e^{-1.279} \\approx 0.278\\); \\(N = 20\\times0.278 \\approx 5.6\\ \\mathrm{mg}\\). (24 h is 1.85 half-lives, so a bit more than a quarter of 20 mg remains.) Always find \\(\\lambda\\) first and keep time units consistent.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m808-q09",
@@ -106,7 +146,12 @@
         "\\(6\\ \\mathrm{h^{-1}}\\)"
       ],
       "answer": 1,
-      "explanation": "\\(100 = 600\\,e^{-6\\lambda} \\Rightarrow \\tfrac{1}{6} = e^{-6\\lambda} \\Rightarrow \\ln(\\tfrac{1}{6}) = -1.792 = -6\\lambda \\Rightarrow \\lambda = 0.299\\). Because the time was in hours, \\(\\lambda\\) is in per hour (\\(\\mathrm{h^{-1}}\\)), not per second — \\(\\lambda\\) and \\(t\\) must carry the same time unit."
+      "explanation": "\\(100 = 600\\,e^{-6\\lambda} \\Rightarrow \\tfrac{1}{6} = e^{-6\\lambda} \\Rightarrow \\ln(\\tfrac{1}{6}) = -1.792 = -6\\lambda \\Rightarrow \\lambda = 0.299\\). Because the time was in hours, \\(\\lambda\\) is in per hour (\\(\\mathrm{h^{-1}}\\)), not per second — \\(\\lambda\\) and \\(t\\) must carry the same time unit.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m808-q10",
@@ -118,7 +163,12 @@
         "Gamma has a longer half-life than alpha so it lasts longer in the body"
       ],
       "answer": 1,
-      "explanation": "'Goldilocks and the Ghost': the half-life must be long enough to inject, travel and scan, yet short enough to clear and minimise dose. Gamma is highly penetrating (escapes to the gamma camera) and weakly ionising (low tissue damage). Alpha is strongly ionising and barely penetrating, so it cannot be detected externally and deposits a damaging dose internally."
+      "explanation": "'Goldilocks and the Ghost': the half-life must be long enough to inject, travel and scan, yet short enough to clear and minimise dose. Gamma is highly penetrating (escapes to the gamma camera) and weakly ionising (low tissue damage). Alpha is strongly ionising and barely penetrating, so it cannot be detected externally and deposits a damaging dose internally.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

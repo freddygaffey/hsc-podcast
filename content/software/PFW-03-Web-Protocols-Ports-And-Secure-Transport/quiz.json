@@ -10,7 +10,12 @@
         "HTTP 443, HTTPS 80, SSH 21, FTP 22"
       ],
       "answer": 1,
-      "explanation": "The chant locks these in: 'eighty plain, four-four-three safe; twenty-two secure shell, twenty-one file.' HTTP runs on 80, HTTPS on 443, SSH (and SFTP riding on it) on 22, and FTP on 21. The tempting trap is mixing HTTP/HTTPS (80 vs 443) or using 23/8080 — those are not the syllabus defaults the exam wants."
+      "explanation": "The chant locks these in: 'eighty plain, four-four-three safe; twenty-two secure shell, twenty-one file.' HTTP runs on 80, HTTPS on 443, SSH (and SFTP riding on it) on 22, and FTP on 21. The tempting trap is mixing HTTP/HTTPS (80 vs 443) or using 23/8080 — those are not the syllabus defaults the exam wants.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw03-q02",
@@ -22,7 +27,12 @@
         "TCP (Transmission Control Protocol)"
       ],
       "answer": 2,
-      "explanation": "TLS — Transport Layer Security — is the current protocol; SSL (Secure Sockets Layer) is its older predecessor. People still say 'SSL certificate' out of habit, but the live protocol is TLS, and the exam expects you to know TLS is current and not write as if the two are identical. SSH is for remote login, not securing web traffic, so it is the wrong concept here."
+      "explanation": "TLS — Transport Layer Security — is the current protocol; SSL (Secure Sockets Layer) is its older predecessor. People still say 'SSL certificate' out of habit, but the live protocol is TLS, and the exam expects you to know TLS is current and not write as if the two are identical. SSH is for remote login, not securing web traffic, so it is the wrong concept here.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw03-q03",
@@ -34,7 +44,12 @@
         "Plain text is HTML; cipher text is the binary version of the same page"
       ],
       "answer": 0,
-      "explanation": "Plain text is legible data, like the password 'myPassword123' sitting there readable, while cipher text is the same data after encryption — scrambled and useless to anyone who intercepts it. The whole job of TLS is to ensure everything between browser and server travels as cipher text. The other options confuse encryption with compression or with client/server direction, which is not what these terms mean."
+      "explanation": "Plain text is legible data, like the password 'myPassword123' sitting there readable, while cipher text is the same data after encryption — scrambled and useless to anyone who intercepts it. The whole job of TLS is to ensure everything between browser and server travels as cipher text. The other options confuse encryption with compression or with client/server direction, which is not what these terms mean.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw03-q04",
@@ -46,7 +61,12 @@
         "Symmetric encryption is used by certificates; asymmetric encryption is used by hash functions"
       ],
       "answer": 1,
-      "explanation": "The memory hook is 'Symmetric is the Same key; Asymmetric is A pair.' Symmetric uses one shared secret key for both directions and is fast, while asymmetric uses a public key to encrypt and a private key to decrypt, solving the key-sharing problem. Option A confuses this with the hashing-versus-encryption distinction; encryption of either kind is two-way."
+      "explanation": "The memory hook is 'Symmetric is the Same key; Asymmetric is A pair.' Symmetric uses one shared secret key for both directions and is fast, while asymmetric uses a public key to encrypt and a private key to decrypt, solving the key-sharing problem. Option A confuses this with the hashing-versus-encryption distinction; encryption of either kind is two-way.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw03-q05",
@@ -58,7 +78,12 @@
         "Browsers only support asymmetric encryption during the handshake and symmetric encryption afterwards for compatibility reasons"
       ],
       "answer": 2,
-      "explanation": "Asymmetric encryption solves 'how do we agree a secret without having met' but is slow, so TLS uses it just once to agree a shared session key, then switches to fast symmetric encryption for the ongoing conversation — best of both. Saying 'asymmetric to exchange the key, symmetric for the bulk data' is the band-six discriminator most students miss. Option A is wrong: symmetric is chosen for speed, not because it is more secure."
+      "explanation": "Asymmetric encryption solves 'how do we agree a secret without having met' but is slow, so TLS uses it just once to agree a shared session key, then switches to fast symmetric encryption for the ongoing conversation — best of both. Saying 'asymmetric to exchange the key, symmetric for the bulk data' is the band-six discriminator most students miss. Option A is wrong: symmetric is chosen for speed, not because it is more secure.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw03-q06",
@@ -70,7 +95,12 @@
         "It authenticates the server's identity and carries the server's public key; the keys, not the certificate, do the encrypting"
       ],
       "answer": 3,
-      "explanation": "A certificate's job is to authenticate — to prove the server is who it claims to be — and to carry the server's public key, signed by a Certificate Authority the browser trusts. Students who write 'the certificate encrypts the data' lose the mark: the keys do the encrypting, not the certificate. The certificate does not generate the session key by itself either — the browser and server negotiate that using the public key."
+      "explanation": "A certificate's job is to authenticate — to prove the server is who it claims to be — and to carry the server's public key, signed by a Certificate Authority the browser trusts. Students who write 'the certificate encrypts the data' lose the mark: the keys do the encrypting, not the certificate. The certificate does not generate the session key by itself either — the browser and server negotiate that using the public key.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw03-q07",
@@ -82,7 +112,12 @@
         "Authentication applies only to administrators; authorisation applies only to regular users"
       ],
       "answer": 0,
-      "explanation": "The hook is 'authentication is who you are; authorisation is what you can do' — identity first, then permission. Logging in with the right password is authentication; being able to view your own orders but not the admin dashboard is authorisation. The tempting trap swaps the two definitions — saying authentication assigns permissions and authorisation checks the password — which is exactly the mistake the similar-sounding words invite."
+      "explanation": "The hook is 'authentication is who you are; authorisation is what you can do' — identity first, then permission. Logging in with the right password is authentication; being able to view your own orders but not the admin dashboard is authorisation. The tempting trap swaps the two definitions — saying authentication assigns permissions and authorisation checks the password — which is exactly the mistake the similar-sounding words invite.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw03-q08",
@@ -94,7 +129,12 @@
         "Hashing and encryption are the same process; 'hash' is just the older word for 'encrypt'"
       ],
       "answer": 1,
-      "explanation": "The most important distinction in the security strand is 'Hash is one-way, Encrypt is two-way.' A hash function produces a fixed-size fingerprint you cannot un-hash, and it is deterministic, so it is used to store passwords safely and check data integrity; encryption is reversible by design so data can be decrypted later. Option D is the exact trap the episode warns separates bands — hashing is not encryption."
+      "explanation": "The most important distinction in the security strand is 'Hash is one-way, Encrypt is two-way.' A hash function produces a fixed-size fingerprint you cannot un-hash, and it is deterministic, so it is used to store passwords safely and check data integrity; encryption is reversible by design so data can be decrypted later. Option D is the exact trap the episode warns separates bands — hashing is not encryption.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw03-q09",
@@ -106,7 +146,12 @@
         "Authenticity and non-repudiation, produced by signing with the sender's private key and verifying with their public key"
       ],
       "answer": 3,
-      "explanation": "A digital signature gives authenticity — proof of who created the message — and non-repudiation, meaning the signer cannot later deny signing it, produced by signing with the private key and verifying with the matching public key. Because the signature is tied to a hash of the content, any tampering makes it fail to verify. The confidentiality-and-availability option names the wrong pair; those are CIA-triad goals, not what a signature delivers."
+      "explanation": "A digital signature gives authenticity — proof of who created the message — and non-repudiation, meaning the signer cannot later deny signing it, produced by signing with the private key and verifying with the matching public key. Because the signature is tied to a hash of the content, any tampering makes it fail to verify. The confidentiality-and-availability option names the wrong pair; those are CIA-triad goals, not what a signature delivers.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw03-q10",
@@ -118,7 +163,12 @@
         "Use SSH on port 22 for the storefront and authorise all users as administrators so checkout is never blocked"
       ],
       "answer": 1,
-      "explanation": "The store must use HTTPS on port 443 with a valid TLS certificate so payment details travel as cipher text and cannot be intercepted, the certificate must come from a trusted Certificate Authority so customers can verify it is not an imposter site, and passwords must be stored as one-way salted hashes to survive a breach. Option A is the e-commerce failure from episode one — a checkout on port 80 exposes card numbers in plain text. Each correct measure counters a specific threat: encryption against interception, certificates against impersonation, hashing against credential theft."
+      "explanation": "The store must use HTTPS on port 443 with a valid TLS certificate so payment details travel as cipher text and cannot be intercepted, the certificate must come from a trusted Certificate Authority so customers can verify it is not an imposter site, and passwords must be stored as one-way salted hashes to survive a breach. Option A is the e-commerce failure from episode one — a checkout on port 80 exposes card numbers in plain text. Each correct measure counters a specific threat: encryption against interception, certificates against impersonation, hashing against credential theft.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

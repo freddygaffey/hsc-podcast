@@ -10,7 +10,12 @@
         "One side is closer to the north pole"
       ],
       "answer": 0,
-      "explanation": "It is one continuous wire, so the current runs up one active side and down the opposite side — antiparallel. With the same external field but opposite currents, the motor-effect forces are equal in size but opposite in direction (one out of the page, one into the page)."
+      "explanation": "It is one continuous wire, so the current runs up one active side and down the opposite side — antiparallel. With the same external field but opposite currents, the motor-effect forces are equal in size but opposite in direction (one out of the page, one into the page).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m606-q02",
@@ -22,7 +27,12 @@
         "Balanced pair with no effect"
       ],
       "answer": 1,
-      "explanation": "Such an arrangement is a couple. It produces a net turning effect (torque) but zero net translational force, so the loop spins on its axle rather than being pushed bodily across the field."
+      "explanation": "Such an arrangement is a couple. It produces a net turning effect (torque) but zero net translational force, so the loop spins on its axle rather than being pushed bodily across the field.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m606-q03",
@@ -34,7 +44,12 @@
         "The field reverses direction"
       ],
       "answer": 2,
-      "explanation": "The active sides stay perpendicular to the field, so the force stays constant at \\(BIL\\). What changes is the lever arm — the perpendicular distance from the axis to the lines of action — so the torque varies purely because of geometry."
+      "explanation": "The active sides stay perpendicular to the field, so the force stays constant at \\(BIL\\). What changes is the lever arm — the perpendicular distance from the axis to the lines of action — so the torque varies purely because of geometry.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m606-q04",
@@ -46,7 +61,12 @@
         "When the coil is stationary"
       ],
       "answer": 1,
-      "explanation": "When the plane of the coil is parallel to the field, the two forces act at the maximum perpendicular distance from the axis, giving maximum lever arm and maximum torque (\\(\\cos 0^\\circ = 1\\))."
+      "explanation": "When the plane of the coil is parallel to the field, the two forces act at the maximum perpendicular distance from the axis, giving maximum lever arm and maximum torque (\\(\\cos 0^\\circ = 1\\)).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m606-q05",
@@ -58,7 +78,12 @@
         "The field becomes zero at that orientation"
       ],
       "answer": 2,
-      "explanation": "The forces are still full strength (\\(BIL\\)), but their lines of action pass through the axis, so the perpendicular distance — and hence the turning effect — is zero. Saying the torque is zero \"because there is no force\" is a marked error."
+      "explanation": "The forces are still full strength (\\(BIL\\)), but their lines of action pass through the axis, so the perpendicular distance — and hence the turning effect — is zero. Saying the torque is zero \"because there is no force\" is a marked error.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m606-q06",
@@ -70,7 +95,12 @@
         "The tesla (T)"
       ],
       "answer": 1,
-      "explanation": "Torque is a force times a perpendicular distance, so its unit is the newton metre. Although a newton metre is dimensionally the same as a joule, torque is not energy and writing joules here is a marked error."
+      "explanation": "Torque is a force times a perpendicular distance, so its unit is the newton metre. Although a newton metre is dimensionally the same as a joule, torque is not energy and writing joules here is a marked error.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m606-q07",
@@ -82,7 +112,12 @@
         "\\(0.025\\ \\mathrm{N\\,m}\\)"
       ],
       "answer": 0,
-      "explanation": "Maximum torque is \\(nBIA\\) (\\(\\cos\\theta = 1\\)): \\(50 \\times 0.25 \\times 2 \\times 4\\times10^{-3} = 0.10\\ \\mathrm{N\\,m}\\)."
+      "explanation": "Maximum torque is \\(nBIA\\) (\\(\\cos\\theta = 1\\)): \\(50 \\times 0.25 \\times 2 \\times 4\\times10^{-3} = 0.10\\ \\mathrm{N\\,m}\\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m606-q08",
@@ -94,7 +129,12 @@
         "The sine form ignores the number of turns"
       ],
       "answer": 1,
-      "explanation": "With \\(\\theta\\) measured to the plane of the coil you use cosine; with \\(\\theta\\) measured to the normal you use sine. The two angles are complementary, so \\(\\cos\\) of one equals \\(\\sin\\) of the other — identical physics. The trap is using the wrong function for the angle the question gives."
+      "explanation": "With \\(\\theta\\) measured to the plane of the coil you use cosine; with \\(\\theta\\) measured to the normal you use sine. The two angles are complementary, so \\(\\cos\\) of one equals \\(\\sin\\) of the other — identical physics. The trap is using the wrong function for the angle the question gives.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m606-q09",
@@ -106,7 +146,12 @@
         "Fewer turns, stronger field, larger current, smaller area"
       ],
       "answer": 1,
-      "explanation": "From \\(\\tau = nBIA\\cos\\theta\\), torque is directly proportional to \\(n\\), \\(B\\), \\(I\\) and \\(A\\). Increasing any of them increases the torque, so increasing all four does. The four torque-boosters are read straight off the formula."
+      "explanation": "From \\(\\tau = nBIA\\cos\\theta\\), torque is directly proportional to \\(n\\), \\(B\\), \\(I\\) and \\(A\\). Increasing any of them increases the torque, so increasing all four does. The four torque-boosters are read straight off the formula.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m606-q10",
@@ -118,7 +163,12 @@
         "The loop overheats and stops"
       ],
       "answer": 1,
-      "explanation": "A bare loop reaches the zero-torque (perpendicular) position, but inertia carries it past. Past that point the forces (unchanged in direction) produce a torque the opposite way, so the loop oscillates rather than rotating. A split-ring commutator fixes this by reversing the current at the dead point."
+      "explanation": "A bare loop reaches the zero-torque (perpendicular) position, but inertia carries it past. Past that point the forces (unchanged in direction) produce a torque the opposite way, so the loop oscillates rather than rotating. A split-ring commutator fixes this by reversing the current at the dead point.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

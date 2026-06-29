@@ -1,0 +1,142 @@
+{
+  "questions": [
+    {
+      "id": "mh205-q01",
+      "type": "mc",
+      "q": "The episode's mnemonic SIRRI lists the ethical and environmental themes of outcome H2.2. Which set correctly unpacks SIRRI?",
+      "options": [
+        "Safety, Innovation, Research, Rights, Industry",
+        "Sustainable technologies, Intellectual property protection, Rights and responsibilities of the designer, Responsibilities to society, Impact on Australian society",
+        "Sustainability, Investment, Risk, Reputation, Influence",
+        "Social trends, IP, Recycling, Reuse, Industry standards"
+      ],
+      "answer": 1,
+      "explanation": "SIRRI is the episode's spine: Sustainable technologies, Intellectual property protection, the Rights and responsibilities of the designer, Responsibilities to society, and Impact on Australian society. The tempting distractors swap in plausible design words (safety, innovation, recycling) that the episode never folded into the acronym.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh205-q02",
+      "type": "mc",
+      "q": "According to the episode, what does it mean that a designer has ethical, not just legal, responsibilities?",
+      "options": [
+        "They must obey every law that applies to their product and nothing more",
+        "They must do what is right, not merely what is permitted, even when that costs the easy or cheap option",
+        "They are legally liable for any harm their product causes consumers",
+        "They must register a patent before releasing any new design"
+      ],
+      "answer": 1,
+      "explanation": "The episode stresses that ethics goes beyond legal compliance: a designer takes an ethical stand, like refusing cheaper materials made with child labour, even though no law forces them to. The 'beyond-the-law' point is exactly what lifts an ethics answer; option A confines the designer to mere legal compliance, which the episode calls insufficient.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh205-q03",
+      "type": "mc",
+      "q": "Which of the following best demonstrates a designer taking an ethical approach when creating a new product?",
+      "options": [
+        "Developing a product that avoids excessive use of resources",
+        "Using innovative technologies to ensure greater uptake in the marketplace",
+        "Targeting the aspirations of clients to develop a product that is easier to use",
+        "Adapting procedures to protect the rights and responsibilities of the designer"
+      ],
+      "answer": 0,
+      "explanation": "An ethical approach considers responsibility to society and the environment, such as avoiding the excessive use of resources to reduce waste and environmental harm. The other options focus on marketability or the designer's own interests rather than ethical responsibility to the wider community and environment.",
+      "source": { "origin": "hsc", "ref": "2023 HSC Design and Technology Q10", "year": 2023 }
+    },
+    {
+      "id": "mh205-q04",
+      "type": "mc",
+      "q": "A corporation has commissioned a designer to develop a new solar-powered, mobile interactive game. What is an ethical way to protect the intellectual property of the new design?",
+      "options": [
+        "The designer applies for a patent.",
+        "The corporation applies for a patent.",
+        "The designer applies for copyright protection.",
+        "The corporation applies for copyright protection."
+      ],
+      "answer": 1,
+      "explanation": "A new functional invention (a solar-powered interactive device) is protected by a patent, not copyright. Because the corporation commissioned and owns the design, the corporation is the party that should apply for the patent.",
+      "source": { "origin": "hsc", "ref": "2024 HSC Design and Technology Q7", "year": 2024 }
+    },
+    {
+      "id": "mh205-q05",
+      "type": "mc",
+      "q": "For the Section three two-example essay 'Analyse the ethical and social implications for designers in creating solutions to world issues', what move turns a weak answer into a strong one?",
+      "options": [
+        "Asserting that designers should be ethical and help people as much as possible",
+        "Picking two of the examples and, for each, analysing the implications, weighing benefits against costs, and reaching a judgement",
+        "Describing one example in exhaustive technical detail",
+        "Listing every theme in SIRRI without applying any of them"
+      ],
+      "answer": 1,
+      "explanation": "The episode warns that 'designers should be ethical and help people' is a vague platitude that caps low. A fifteen-mark answer uses two real examples, analyses the ethical and environmental implications of each by weighing benefits against costs, and reaches a judgement. Using only a single example also caps the mark.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh205-q06",
+      "type": "mc",
+      "q": "The episode offers two case studies as evidence. How does each illustrate ethical and environmental issues?",
+      "options": [
+        "Both Central Park Sydney and the Flow Hive are examples of green marketing outrunning real performance",
+        "Central Park Sydney shows green marketing outrunning real environmental performance, while the Flow Hive shows sustainability and IP protection as genuine strengths",
+        "The Flow Hive shows a green-marketing gap, while Central Park Sydney shows strong IP protection",
+        "Both case studies are examples of child labour in supply chains"
+      ],
+      "answer": 1,
+      "explanation": "The episode contrasts the two: Central Park in Sydney is an ethical-and-environmental gap where green marketing outran real performance, whereas the Flow Hive is a positive case where sustainability and protecting intellectual property were genuine strengths. Mixing the two up (option C) reverses the lesson of each.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh205-q07",
+      "type": "recall",
+      "q": "From memory: name the SIRRI themes a designer must consider, and state what it means that a designer has ethical, not just legal, responsibilities.",
+      "keyPoints": [
+        "SIRRI = Sustainable technologies; Intellectual property protection; Rights and responsibilities of the designer; Responsibilities to society; Impact on Australian society.",
+        "Ethical (not just legal) responsibility means doing what is right, not merely what the law permits.",
+        "It can require hard choices, e.g. refusing cheaper materials made with child labour — the 'beyond-the-law' point is what lifts the answer."
+      ],
+      "explanation": "If you recalled all five SIRRI themes and tied 'ethical' to doing right beyond legal compliance with a hard-choice example, grade yourself Good or Easy. If you only managed 'something about being responsible', grade it Again or Hard.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh205-q08",
+      "type": "recall",
+      "q": "From memory: what is the trap the episode flags in ethics questions, and how do the exam verbs tell you to avoid it?",
+      "keyPoints": [
+        "The trap is answering with platitudes — 'designers should be responsible and care about the environment' — which is assertion, not analysis.",
+        "The verbs are critically analyse and discuss, so you must analyse specific implications, weighing benefits against costs, with real examples.",
+        "You must reach a judgement, and in two-example questions you must actually use two examples — a single example caps the answer."
+      ],
+      "explanation": "The episode's line is 'specific, analysed, judged, two examples'. If you recalled that platitudes cap low and that the verbs demand weighed analysis with a judgement, mark it Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh205-q09",
+      "type": "short",
+      "q": "Explain why protecting intellectual property is both a legal and an ethical issue. (3 marks)",
+      "marks": 3,
+      "modelAnswer": "Protecting intellectual property is a legal issue because patents and copyright are enforceable rights that legally prevent others from copying a design. It is also an ethical issue because using or copying another person's design, idea or cultural property without permission or credit is dishonest and unfair, denying the creator the recognition and reward for their work. A designer therefore has both a legal duty to respect others' intellectual property and an ethical duty not to appropriate ideas, including being especially careful with culturally significant material such as Indigenous designs.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Explains the legal dimension: patents/copyright are enforceable rights that prevent copying." },
+        { "marks": 1, "descriptor": "Explains the ethical dimension: copying without permission or credit is unfair and denies the creator recognition and reward." },
+        { "marks": 1, "descriptor": "Notes the dual legal-and-ethical duty, ideally referencing cultural property such as Indigenous designs." }
+      ],
+      "explanation": "The dual legal-and-ethical framing is the mark the episode highlights. A response that only covers patents (legal) or only fairness (ethical) cannot reach full marks.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh205-q10",
+      "type": "extended",
+      "q": "Complex challenges require designers to be creative in addressing the ongoing needs of society.\n\nAnalyse the ethical and social implications for designers in creating solutions to world issues. In your response, refer to TWO of the following examples: Health, Food production, Living conditions.\n\nYour answer will be assessed on how well you: demonstrate knowledge and understanding relevant to the question; communicate ideas and information using relevant examples; and present a logical and cohesive response.",
+      "marks": 15,
+      "modelAnswer": "Addressing complex challenges in society requires designers to be creative in developing solutions, but when creating solutions to world issues such as health or living conditions, designers must also weigh the ethical and social implications of their designs. In health, the ethical implications include privacy and data security, equity and accessibility, and informed consent, while the social implications include health disparities, stigmatisation and discrimination, and cultural sensitivity. In living conditions, ethical concerns include government support (childcare, housing, medical), capping energy costs, faster introduction of greener technologies, fair wages and the safety, health and wellbeing of displaced communities, while the social implications include the diminishment of living standards, the impact of climate change, housing pressures (relocation, social housing, pop-up and transportable housing) and young adults living at home longer due to cost of living. A comprehensive response judges that by carefully considering these ethical principles and social wellbeing across two such issues, designers can create impactful solutions that meet the diverse needs of society while acting responsibly.",
+      "criteria": [
+        { "marks": "13–15", "descriptor": "Provides a comprehensive analysis of the ethical and social implications for designers in the creation of solutions to world issues; provides a logical and cohesive response; communicates ideas and information using relevant examples; makes detailed reference to TWO alternate world issues facing designers" },
+        { "marks": "10–12", "descriptor": "Provides some analysis of the ethical and social implications facing designers in the creation of solutions to world issues; provides mostly a logical and cohesive response; communicates information using examples; makes reference to TWO alternate world issues facing designers" },
+        { "marks": "7–9", "descriptor": "Provides a sound understanding of the ethical and social implications facing designers in the creation of solutions to world issues; refers to alternate world issues facing designers" },
+        { "marks": "4–6", "descriptor": "Demonstrates a basic understanding of the ethical and/or social implications facing designers in the creation of solutions to world issues" },
+        { "marks": "1–3", "descriptor": "Provides some relevant information" }
+      ],
+      "explanation": "This is the recent-exam question the episode builds the lesson around — the Section three two-example essay. The episode's move: a thesis, a paragraph analysing each of two examples through the ethical and environmental lenses (weighing benefits against costs), then a judgement. Using only one example, or asserting platitudes, caps the mark.",
+      "source": { "origin": "hsc", "ref": "2023 HSC Design and Technology Q15", "year": 2023 }
+    }
+  ]
+}

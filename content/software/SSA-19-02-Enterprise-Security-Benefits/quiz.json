@@ -10,7 +10,12 @@
         "Fewer bugs, faster code, encrypted data, secure logins, and reduced costs"
       ],
       "answer": 1,
-      "explanation": "The dot-point names exactly five enterprise benefits, captured by PIP-PB: Products, Influence, Practices, Productivity, Business interactivity. Option D is the classic trap — those are technical or code-level outcomes, not the organisational and commercial benefits the dot-point asks for."
+      "explanation": "The dot-point names exactly five enterprise benefits, captured by PIP-PB: Products, Influence, Practices, Productivity, Business interactivity. Option D is the classic trap — those are technical or code-level outcomes, not the organisational and commercial benefits the dot-point asks for.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1902-q02",
@@ -22,7 +27,12 @@
         "People, Information, Process, Policy, Budget"
       ],
       "answer": 0,
-      "explanation": "PIP-PB stands for improved Products or services, Influence on future development, improved work Practices, Productivity, and Business interactivity. The episode pictures 'Pip', who is so good at security the whole business runs better and earns a personal best (P-B) every quarter, so you can dump all five into the exam margin."
+      "explanation": "PIP-PB stands for improved Products or services, Influence on future development, improved work Practices, Productivity, and Business interactivity. The episode pictures 'Pip', who is so good at security the whole business runs better and earns a personal best (P-B) every quarter, so you can dump all five into the exam margin.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1902-q03",
@@ -34,7 +44,12 @@
         "Defining each technical security control used to achieve the benefit"
       ],
       "answer": 2,
-      "explanation": "'Explain' demands the mechanism — for each benefit you must say why it follows from secure development, not just name it. Option A confuses 'explain' with 'evaluate' or 'justify', which would ask you to weigh up and rank; the verb here only requires you to give the reason or mechanism behind each benefit."
+      "explanation": "'Explain' demands the mechanism — for each benefit you must say why it follows from secure development, not just name it. Option A confuses 'explain' with 'evaluate' or 'justify', which would ask you to weigh up and rank; the verb here only requires you to give the reason or mechanism behind each benefit.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1902-q04",
@@ -46,7 +61,12 @@
         "By forcing competitors out of the market through stronger encryption"
       ],
       "answer": 1,
-      "explanation": "Secure-by-design makes the product more reliable, with fewer outages and incidents, and protects customer data — a quality customers value, like a bank or health app marketing 'your data is encrypted and protected'. Option A overstates it: the benefit is reliability and trust as part of the value proposition, not an impossible guarantee of zero defects."
+      "explanation": "Secure-by-design makes the product more reliable, with fewer outages and incidents, and protects customer data — a quality customers value, like a bank or health app marketing 'your data is encrypted and protected'. Option A overstates it: the benefit is reliability and trust as part of the value proposition, not an impossible guarantee of zero defects.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1902-q05",
@@ -58,7 +78,12 @@
         "Doing security well establishes reusable secure-by-design patterns, standards and institutional knowledge, so each later project starts from a more secure baseline"
       ],
       "answer": 3,
-      "explanation": "Security done well becomes the default — secure-by-design templates, validated reusable components and threat-modelling habits feed forward into standards and tooling, so the next project starts more secure from day one. The episode frames this as 'shift left' from 14.02 scaled across the whole organisation over time. Option B is out of scope — the benefit is about internal patterns and institutional knowledge, not external law."
+      "explanation": "Security done well becomes the default — secure-by-design templates, validated reusable components and threat-modelling habits feed forward into standards and tooling, so the next project starts more secure from day one. The episode frames this as 'shift left' from 14.02 scaled across the whole organisation over time. Option B is out of scope — the benefit is about internal patterns and institutional knowledge, not external law.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1902-q06",
@@ -70,7 +95,12 @@
         "Because preventing vulnerabilities early avoids the far larger cost of production incidents and rework, and automation plus built-in documentation reduce friction, so developer time goes into building features instead of firefighting"
       ],
       "answer": 3,
-      "explanation": "Prevention is far cheaper than response: a vulnerability caught early by review or a static scan never becomes a production incident eating days of firefighting, and secure-by-default tooling adds little friction while built-in documentation makes audits efficient — so over time the team ships more, not less. This is the 'enabler' argument from 14.01 proven. The audit option is wrong because audits become faster, not eliminated — security is never legally optional."
+      "explanation": "Prevention is far cheaper than response: a vulnerability caught early by review or a static scan never becomes a production incident eating days of firefighting, and secure-by-default tooling adds little friction while built-in documentation makes audits efficient — so over time the team ships more, not less. This is the 'enabler' argument from 14.01 proven. The audit option is wrong because audits become faster, not eliminated — security is never legally optional.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1902-q07",
@@ -82,7 +112,12 @@
         "The number of social media interactions the enterprise's brand generates online"
       ],
       "answer": 2,
-      "explanation": "Business interactivity is the ability to connect, integrate and transact with other parties safely — APIs between companies, shared partner data, online transactions — none of which happen at scale without the trust that security provides. The episode ties this back to e-commerce from Programming for the Web, whose defining feature was secure financial transactions. Option A confuses 'interactivity' with UI responsiveness, the wrong concept entirely."
+      "explanation": "Business interactivity is the ability to connect, integrate and transact with other parties safely — APIs between companies, shared partner data, online transactions — none of which happen at scale without the trust that security provides. The episode ties this back to e-commerce from Programming for the Web, whose defining feature was secure financial transactions. Option A confuses 'interactivity' with UI responsiveness, the wrong concept entirely.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1902-q08",
@@ -94,7 +129,12 @@
         "They are the same benefit described with two different words and cannot be distinguished"
       ],
       "answer": 0,
-      "explanation": "Improved work practices is about the quality and consistency of how the team operates — disciplined habits like review, documentation and clear ownership that raise general engineering discipline, not just security. Productivity is the output consequence over time — fewer incidents and automated checks free time from firefighting so the team ships more. Both are enterprise benefits (eliminating C), and they are distinct (eliminating D)."
+      "explanation": "Improved work practices is about the quality and consistency of how the team operates — disciplined habits like review, documentation and clear ownership that raise general engineering discipline, not just security. Productivity is the output consequence over time — fewer incidents and automated checks free time from firefighting so the team ships more. Both are enterprise benefits (eliminating C), and they are distinct (eliminating D).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1902-q09",
@@ -106,7 +146,12 @@
         "A single unpatched framework vulnerability exposed around 147 million records, and the fallout meant Equifax lost every one of the five benefits — reputation, future development, disciplined practices, productivity and partner trust"
       ],
       "answer": 3,
-      "explanation": "Read in reverse against PIP-PB, Equifax lost all five: product reputation destroyed, future development consumed by remediation, undisciplined practices exposed (a known patch left unapplied), productivity cratered under incident response, and business interactivity collapsed as partners and regulators lost confidence. This counterfactual proves PIP-PB is not abstract. The 'fines only' option understates it — the episode stresses indirect costs like lost trust and reputation usually dominate the direct fines."
+      "explanation": "Read in reverse against PIP-PB, Equifax lost all five: product reputation destroyed, future development consumed by remediation, undisciplined practices exposed (a known patch left unapplied), productivity cratered under incident response, and business interactivity collapsed as partners and regulators lost confidence. This counterfactual proves PIP-PB is not abstract. The 'fines only' option understates it — the episode stresses indirect costs like lost trust and reputation usually dominate the direct fines.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1902-q10",
@@ -118,7 +163,12 @@
         "'The team will spend more time on code review and threat modelling, which is good engineering practice.'"
       ],
       "answer": 2,
-      "explanation": "The skill tested is connecting each security practice to a business consequence — naming PIP-PB and landing every point on the enterprise, not the codebase. Option A is the band-four trap the episode warns about: it never leaves the code and names no enterprise benefit. Option C names the benefit, the mechanism and the organisational payoff, and uses the Equifax counterfactual — that is the band-six answer."
+      "explanation": "The skill tested is connecting each security practice to a business consequence — naming PIP-PB and landing every point on the enterprise, not the codebase. Option A is the band-four trap the episode warns about: it never leaves the code and names no enterprise benefit. Option C names the benefit, the mechanism and the organisational payoff, and uses the Equifax counterfactual — that is the band-six answer.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

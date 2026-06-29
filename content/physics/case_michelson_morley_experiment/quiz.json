@@ -10,7 +10,12 @@
         "The vacuum of empty space itself"
       ],
       "answer": 1,
-      "explanation": "Since every known wave needed a medium, light was thought to travel through the luminiferous aether — a transparent, weightless substance filling the universe and serving as the absolute frame of rest against which all motion could be measured."
+      "explanation": "Since every known wave needed a medium, light was thought to travel through the luminiferous aether — a transparent, weightless substance filling the universe and serving as the absolute frame of rest against which all motion could be measured.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "michelsonmorley-q02",
@@ -22,7 +27,12 @@
         "Because magnetic fields stir the aether"
       ],
       "answer": 1,
-      "explanation": "Just as a motorcyclist feels a wind on a calm day from moving through the air, the Earth orbiting the Sun at ~30 km/s should plough through a stationary aether, producing a detectable aether wind affecting the measured speed of light."
+      "explanation": "Just as a motorcyclist feels a wind on a calm day from moving through the air, the Earth orbiting the Sun at ~30 km/s should plough through a stationary aether, producing a detectable aether wind affecting the measured speed of light.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "michelsonmorley-q03",
@@ -34,7 +44,12 @@
         "By measuring the temperature of the mirrors"
       ],
       "answer": 1,
-      "explanation": "A half-silvered beam splitter divides light into two perpendicular arms. After bouncing back they recombine and interfere. A round-trip time difference of even a fraction of a wavelength shifts the interference fringes — an extraordinarily sensitive measurement."
+      "explanation": "A half-silvered beam splitter divides light into two perpendicular arms. After bouncing back they recombine and interfere. A round-trip time difference of even a fraction of a wavelength shifts the interference fringes — an extraordinarily sensitive measurement.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "michelsonmorley-q04",
@@ -46,7 +61,12 @@
         "To test whether gravity affected the light"
       ],
       "answer": 1,
-      "explanation": "Rotating 90° swaps which arm points into the aether wind and which points across it. The time difference should reverse, causing the fringes to slide. Watching that shift would measure the aether wind."
+      "explanation": "Rotating 90° swaps which arm points into the aether wind and which points across it. The time difference should reverse, causing the fringes to slide. Watching that shift would measure the aether wind.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "michelsonmorley-q05",
@@ -58,7 +78,12 @@
         "The apparatus broke before any reading was taken"
       ],
       "answer": 1,
-      "explanation": "Despite an instrument able to detect ~1/100 of a fringe and an expected shift of ~0.4 fringe, the observed shift was essentially nothing — certainly less than a twentieth, probably less than a fortieth of the prediction. A clean null result."
+      "explanation": "Despite an instrument able to detect ~1/100 of a fringe and an expected shift of ~0.4 fringe, the observed shift was essentially nothing — certainly less than a twentieth, probably less than a fortieth of the prediction. A clean null result.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "michelsonmorley-q06",
@@ -70,7 +95,12 @@
         "That the interferometer was faulty"
       ],
       "answer": 1,
-      "explanation": "The result showed no detectable aether wind: light travelled at the same speed in every direction, implying the Earth is not moving through a stationary aether at its orbital speed — a deeply puzzling outcome at the time."
+      "explanation": "The result showed no detectable aether wind: light travelled at the same speed in every direction, implying the Earth is not moving through a stationary aether at its orbital speed — a deeply puzzling outcome at the time.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "michelsonmorley-q07",
@@ -82,7 +112,12 @@
         "By saying the aether is denser near the Sun"
       ],
       "answer": 1,
-      "explanation": "FitzGerald (and Lorentz, more rigorously) proposed that motion through the aether shrinks an object along its direction of travel by just the right amount to shorten the parallel arm and cancel the slower light — producing a null result while keeping the aether."
+      "explanation": "FitzGerald (and Lorentz, more rigorously) proposed that motion through the aether shrinks an object along its direction of travel by just the right amount to shorten the parallel arm and cancel the slower light — producing a null result while keeping the aether.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "michelsonmorley-q08",
@@ -94,7 +129,12 @@
         "He added a third postulate about gravity"
       ],
       "answer": 1,
-      "explanation": "Lorentz kept the aether and treated the contraction as physically real and local time as a fiction. Einstein threw out the aether, built everything from two postulates, and reinterpreted length contraction and time dilation as properties of spacetime itself — symmetric between observers."
+      "explanation": "Lorentz kept the aether and treated the contraction as physically real and local time as a fiction. Einstein threw out the aether, built everything from two postulates, and reinterpreted length contraction and time dilation as properties of spacetime itself — symmetric between observers.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "michelsonmorley-q09",
@@ -106,7 +146,12 @@
         "Gravity is curvature; and the universe is expanding"
       ],
       "answer": 1,
-      "explanation": "The principle of relativity: the laws of physics are identical in all inertial frames. The constancy of light speed: \\(c\\) in a vacuum is the same for every observer, independent of the motion of source or observer. (Textbooks number them in either order.)"
+      "explanation": "The principle of relativity: the laws of physics are identical in all inertial frames. The constancy of light speed: \\(c\\) in a vacuum is the same for every observer, independent of the motion of source or observer. (Textbooks number them in either order.)",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "michelsonmorley-q10",
@@ -118,7 +163,12 @@
         "They require the aether to be dragged along with the Earth"
       ],
       "answer": 1,
-      "explanation": "The second postulate means light has the same speed in both arms, so there is no time difference. The first means there is no aether rest frame, so the orientation cannot matter. Together they guarantee no fringe shift — the null result is exactly what relativity demands."
+      "explanation": "The second postulate means light has the same speed in both arms, so there is no time difference. The first means there is no aether rest frame, so the orientation cannot matter. Together they guarantee no fringe shift — the null result is exactly what relativity demands.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

@@ -10,7 +10,12 @@
         "That stars contain no hydrogen at all"
       ],
       "answer": 0,
-      "explanation": "Payne showed that stars are overwhelming oceans of hydrogen (and then helium), with all heavier 'metals' as a thin trace. This contradicted the assumption that stars were made of the same rocky, metallic stuff as the Earth."
+      "explanation": "Payne showed that stars are overwhelming oceans of hydrogen (and then helium), with all heavier 'metals' as a thin trace. This contradicted the assumption that stars were made of the same rocky, metallic stuff as the Earth.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "payne-q02",
@@ -22,7 +27,12 @@
         "Because helium had not yet been discovered"
       ],
       "answer": 1,
-      "explanation": "The trap was reading line strength directly as abundance: strong calcium and iron lines in the solar spectrum were taken to mean the Sun is full of those elements. Payne showed line strength depends on temperature and ionisation, not just abundance."
+      "explanation": "The trap was reading line strength directly as abundance: strong calcium and iron lines in the solar spectrum were taken to mean the Sun is full of those elements. Payne showed line strength depends on temperature and ionisation, not just abundance.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "payne-q03",
@@ -34,7 +44,12 @@
         "Newton's law of universal gravitation"
       ],
       "answer": 2,
-      "explanation": "Meghnad Saha's ionisation equation gives, for any element at a given temperature and electron density, the fraction of atoms that are neutral or ionised. This let Payne correct line strengths for temperature and recover true abundances."
+      "explanation": "Meghnad Saha's ionisation equation gives, for any element at a given temperature and electron density, the fraction of atoms that are neutral or ionised. This let Payne correct line strengths for temperature and recover true abundances.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "payne-q04",
@@ -46,7 +61,12 @@
         "Hydrogen only forms in A-type stars"
       ],
       "answer": 1,
-      "explanation": "Visible (Balmer) hydrogen lines need the electron sitting in the n=2 level. A-type stars (~10 000 K) are the sweet spot. In O stars (~40 000 K) hydrogen is ionised to bare protons with no electron to absorb, so the lines fade — not because hydrogen is absent."
+      "explanation": "Visible (Balmer) hydrogen lines need the electron sitting in the n=2 level. A-type stars (~10 000 K) are the sweet spot. In O stars (~40 000 K) hydrogen is ionised to bare protons with no electron to absorb, so the lines fade — not because hydrogen is absent.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "payne-q05",
@@ -58,7 +78,12 @@
         "The distance to the star"
       ],
       "answer": 2,
-      "explanation": "Line strength reflects only the number of atoms in the particular ionisation/excitation state that can absorb, a temperature-dependent fraction of the total — not the total abundance. Inverting this (correcting for temperature) recovers the real abundance."
+      "explanation": "Line strength reflects only the number of atoms in the particular ionisation/excitation state that can absorb, a temperature-dependent fraction of the total — not the total abundance. Inverting this (correcting for temperature) recovers the real abundance.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "payne-q06",
@@ -70,7 +95,12 @@
         "Only elements found in the Earth's core"
       ],
       "answer": 2,
-      "explanation": "To an astronomer, 'metal' means any element heavier than hydrogen and helium — so carbon, oxygen, iron, silicon and calcium are all 'metals'. Payne found hydrogen outweighed all the metals roughly a million to one by number."
+      "explanation": "To an astronomer, 'metal' means any element heavier than hydrogen and helium — so carbon, oxygen, iron, silicon and calcium are all 'metals'. Payne found hydrogen outweighed all the metals roughly a million to one by number.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "payne-q07",
@@ -82,7 +112,12 @@
         "A black-body spectrum already contains the dark lines before the light leaves the core"
       ],
       "answer": 1,
-      "explanation": "The dense interior radiates a continuous black-body rainbow; as that light passes through the cooler, thinner atmosphere, atoms absorb specific wavelengths, biting dark lines out of the continuous background. A thin glowing gas with nothing behind it instead gives bright emission lines."
+      "explanation": "The dense interior radiates a continuous black-body rainbow; as that light passes through the cooler, thinner atmosphere, atoms absorb specific wavelengths, biting dark lines out of the continuous background. A thin glowing gas with nothing behind it instead gives bright emission lines.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "payne-q08",
@@ -94,7 +129,12 @@
         "It is random and has no physical meaning"
       ],
       "answer": 1,
-      "explanation": "Because all main-sequence stars share essentially the same hydrogen-rich composition, the spectral sequence is a thermometer: an O star and an M star look different only because of their different surface temperatures, which ionise different atoms into visibility."
+      "explanation": "Because all main-sequence stars share essentially the same hydrogen-rich composition, the spectral sequence is a thermometer: an O star and an M star look different only because of their different surface temperatures, which ionise different atoms into visibility.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "payne-q09",
@@ -106,7 +146,12 @@
         "The cool red giants above the diagram"
       ],
       "answer": 1,
-      "explanation": "The main sequence is the diagonal strip of hydrogen-burning stars. Payne's discovery — that the fuel is hydrogen — is what made the H-R diagram physically intelligible; where a star lands on the strip is set mainly by its mass."
+      "explanation": "The main sequence is the diagonal strip of hydrogen-burning stars. Payne's discovery — that the fuel is hydrogen — is what made the H-R diagram physically intelligible; where a star lands on the strip is set mainly by its mass.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "payne-q10",
@@ -118,7 +163,12 @@
         "The star forms instantly when two stars collide"
       ],
       "answer": 0,
-      "explanation": "Gravity pulls a cold cloud inward, heating the gas as it falls; at about fifteen million degrees hydrogen fusion ignites, and the outward radiation pressure balances the inward gravitational pull, settling the star onto the main sequence. The fuel that ignites is the hydrogen Payne proved was there."
+      "explanation": "Gravity pulls a cold cloud inward, heating the gas as it falls; at about fifteen million degrees hydrogen fusion ignites, and the outward radiation pressure balances the inward gravitational pull, settling the star onto the main sequence. The fuel that ignites is the hydrogen Payne proved was there.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

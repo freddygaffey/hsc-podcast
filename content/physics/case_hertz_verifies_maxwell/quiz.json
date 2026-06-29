@@ -10,7 +10,12 @@
         "Inventing the radio transmitter"
       ],
       "answer": 1,
-      "explanation": "Maxwell compressed all known electricity and magnetism into a unified set of equations and predicted self-sustaining electromagnetic waves — concluding that light itself is such a wave. He died before any were generated or detected."
+      "explanation": "Maxwell compressed all known electricity and magnetism into a unified set of equations and predicted self-sustaining electromagnetic waves — concluding that light itself is such a wave. He died before any were generated or detected.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "hertz-q02",
@@ -22,7 +27,12 @@
         "The aether drag term"
       ],
       "answer": 0,
-      "explanation": "Maxwell's new displacement current term said a changing electric field alone creates a magnetic field. Combined with Faraday's law (a changing magnetic field creates an electric field), each field continually regenerates the other, allowing a wave to propagate through vacuum."
+      "explanation": "Maxwell's new displacement current term said a changing electric field alone creates a magnetic field. Combined with Faraday's law (a changing magnetic field creates an electric field), each field continually regenerates the other, allowing a wave to propagate through vacuum.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "hertz-q03",
@@ -34,7 +44,12 @@
         "\\(v = \\dfrac{\\mu_0}{\\epsilon_0}\\)"
       ],
       "answer": 2,
-      "explanation": "Maxwell found \\(v = 1/\\sqrt{\\mu_0 \\epsilon_0}\\), where \\(\\mu_0\\) is the permeability and \\(\\epsilon_0\\) the permittivity of free space. Substituting their measured values gave ~\\(3\\times10^8\\) m/s — the speed of light, from constants measured in jars and coils."
+      "explanation": "Maxwell found \\(v = 1/\\sqrt{\\mu_0 \\epsilon_0}\\), where \\(\\mu_0\\) is the permeability and \\(\\epsilon_0\\) the permittivity of free space. Substituting their measured values gave ~\\(3\\times10^8\\) m/s — the speed of light, from constants measured in jars and coils.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "hertz-q04",
@@ -46,7 +61,12 @@
         "Because it showed light needed a medium to travel"
       ],
       "answer": 1,
-      "explanation": "The speed emerged from constants measured in electrical experiments unrelated to light, yet matched the measured speed of light to within a percent or two. This could not be coincidence: light must be an electromagnetic wave, and an invisible spectrum of other frequencies must exist."
+      "explanation": "The speed emerged from constants measured in electrical experiments unrelated to light, yet matched the measured speed of light to within a percent or two. This could not be coincidence: light must be an electromagnetic wave, and an invisible spectrum of other frequencies must exist.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "hertz-q05",
@@ -58,7 +78,12 @@
         "By passing a steady direct current through a long wire"
       ],
       "answer": 1,
-      "explanation": "When the spark jumped, the stored charge surged back and forth along the rod millions of times per second. Each oscillation is an accelerating charge, and Maxwell's theory says accelerating charges radiate electromagnetic waves."
+      "explanation": "When the spark jumped, the stored charge surged back and forth along the rod millions of times per second. Each oscillation is an accelerating charge, and Maxwell's theory says accelerating charges radiate electromagnetic waves.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "hertz-q06",
@@ -70,7 +95,12 @@
         "Conservation of momentum"
       ],
       "answer": 2,
-      "explanation": "The wave's oscillating magnetic field passes through the loop's area; a changing magnetic flux through a loop induces a voltage (Faraday's law). Tuned to resonance, this induced voltage builds up enough to spark across the micrometer gap."
+      "explanation": "The wave's oscillating magnetic field passes through the loop's area; a changing magnetic flux through a loop induces a voltage (Faraday's law). Tuned to resonance, this induced voltage builds up enough to spark across the micrometer gap.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "hertz-q07",
@@ -82,7 +112,12 @@
         "Two wavelengths"
       ],
       "answer": 1,
-      "explanation": "The outgoing and reflected waves superimpose into a standing wave. Adjacent nodes (where the field is always zero and the receiver spark vanishes) are spaced half a wavelength apart, so measuring node-to-node spacing gives \\(\\lambda/2\\)."
+      "explanation": "The outgoing and reflected waves superimpose into a standing wave. Adjacent nodes (where the field is always zero and the receiver spark vanishes) are spaced half a wavelength apart, so measuring node-to-node spacing gives \\(\\lambda/2\\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "hertz-q08",
@@ -94,7 +129,12 @@
         "By weighing the copper rods"
       ],
       "answer": 1,
-      "explanation": "The universal wave equation \\(v = f\\lambda\\) gives the speed. Hertz measured \\(\\lambda\\) from the node spacing and calculated \\(f\\) from the oscillator's L-C resonance; multiplying them gave roughly \\(3\\times10^8\\) m/s, the speed of light."
+      "explanation": "The universal wave equation \\(v = f\\lambda\\) gives the speed. Hertz measured \\(\\lambda\\) from the node spacing and calculated \\(f\\) from the oscillator's L-C resonance; multiplying them gave roughly \\(3\\times10^8\\) m/s, the speed of light.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "hertz-q09",
@@ -106,7 +146,12 @@
         "Absorption"
       ],
       "answer": 2,
-      "explanation": "Only a transverse wave can be polarised. Rotating the loop changed how the wave's transverse fields couple to it, killing or restoring the spark — confirming the waves are transverse, exactly as Maxwell predicted for light."
+      "explanation": "Only a transverse wave can be polarised. Rotating the loop changed how the wave's transverse fields couple to it, killing or restoring the spark — confirming the waves are transverse, exactly as Maxwell predicted for light.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "hertz-q10",
@@ -118,7 +163,12 @@
         "They all require a medium to propagate"
       ],
       "answer": 2,
-      "explanation": "Maxwell's theory allows waves of any frequency, but all travel at the same speed \\(c\\) in a vacuum, related by \\(c = f\\lambda\\). They differ only in frequency and wavelength; in Maxwell's day only visible light and infrared had been observed."
+      "explanation": "Maxwell's theory allows waves of any frequency, but all travel at the same speed \\(c\\) in a vacuum, related by \\(c = f\\lambda\\). They differ only in frequency and wavelength; in Maxwell's day only visible light and infrared had been observed.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

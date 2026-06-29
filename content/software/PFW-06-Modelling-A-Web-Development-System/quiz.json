@@ -10,7 +10,12 @@
         "Request, response, and routing"
       ],
       "answer": 1,
-      "explanation": "The episode coins the memory hook Front, Back, Store: the Front is the client-side front end, the Back is the server-side back end, and the Store is the database. HTML, CSS, and JavaScript (option A) are only the three technologies of the Front tier, not the three tiers themselves. Monolith, microservices, and serverless were deployment patterns from the earlier big-data episode, not the anatomy of the system."
+      "explanation": "The episode coins the memory hook Front, Back, Store: the Front is the client-side front end, the Back is the server-side back end, and the Store is the database. HTML, CSS, and JavaScript (option A) are only the three technologies of the Front tier, not the three tiers themselves. Monolith, microservices, and serverless were deployment patterns from the earlier big-data episode, not the anatomy of the system.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw06-q02",
@@ -22,7 +27,12 @@
         "MongoDB, Redis, and PostgreSQL"
       ],
       "answer": 0,
-      "explanation": "The Front tier runs in the user's browser using HTML for structure and content, CSS for visual styling and layout, and JavaScript for interactive behaviour. Python and Flask belong to the Back tier, while the databases (MongoDB, Redis, PostgreSQL) belong to the Store. The Front handles presentation and interaction only."
+      "explanation": "The Front tier runs in the user's browser using HTML for structure and content, CSS for visual styling and layout, and JavaScript for interactive behaviour. Python and Flask belong to the Back tier, while the databases (MongoDB, Redis, PostgreSQL) belong to the Store. The Front handles presentation and interaction only.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw06-q03",
@@ -34,7 +44,12 @@
         "It runs business logic, and only the Store talks to itself"
       ],
       "answer": 1,
-      "explanation": "The Store is the database, where data is persisted so it survives between requests and between visits, and the Back is the only tier that queries it directly. The Front never touches the database — it always goes through the Back. The episode stresses this boundary is both an architecture fact and a security one."
+      "explanation": "The Store is the database, where data is persisted so it survives between requests and between visits, and the Back is the only tier that queries it directly. The Front never touches the database — it always goes through the Back. The episode stresses this boundary is both an architecture fact and a security one.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw06-q04",
@@ -46,7 +61,12 @@
         "Both run on the server, but client-side is faster because it skips the network"
       ],
       "answer": 2,
-      "explanation": "The mark-earning answer names where each runs, what each is responsible for, and the trust consequence. Because client-side code runs on the user's machine it can be seen and modified, so it cannot be trusted for anything authoritative; server-side runs on a machine the developer controls, so validation and authentication must happen there. Option A is the weak, one-mark answer the episode warns against — true but shallow, because it omits the trust discriminator."
+      "explanation": "The mark-earning answer names where each runs, what each is responsible for, and the trust consequence. Because client-side code runs on the user's machine it can be seen and modified, so it cannot be trusted for anything authoritative; server-side runs on a machine the developer controls, so validation and authentication must happen there. Option A is the weak, one-mark answer the episode warns against — true but shallow, because it omits the trust discriminator.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw06-q05",
@@ -58,7 +78,12 @@
         "Password checks must run in CSS, not JavaScript, to be enforced"
       ],
       "answer": 1,
-      "explanation": "Client-side JavaScript runs on the user's own device and can be disabled or skipped entirely by sending a request directly to the server, so a malicious user can submit a weak value despite the check. The rule from the episode is: client-side validation is for user convenience; server-side validation is for security. The slow-execution and unsupported-field options miss the real point — the front end is visible and tamperable, so the back end must re-check everything."
+      "explanation": "Client-side JavaScript runs on the user's own device and can be disabled or skipped entirely by sending a request directly to the server, so a malicious user can submit a weak value despite the check. The rule from the episode is: client-side validation is for user convenience; server-side validation is for security. The slow-execution and unsupported-field options miss the real point — the front end is visible and tamperable, so the back end must re-check everything.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw06-q06",
@@ -70,7 +95,12 @@
         "Middleware sits in the request path handling cross-cutting concerns like authentication, logging, and rate-limiting, while an API is a defined contract by which components talk to each other"
       ],
       "answer": 3,
-      "explanation": "Middleware is software that sits between parts of the system and handles cross-cutting concerns — authentication, logging, rate-limiting — on the way through. An API (application programming interface) is a defined way for components to talk: the Front calls the Back's API, and the Back might call a third-party API like a payment service. The episode also notes this API boundary between Front and Back is a security boundary, a forward link to Secure Software Architecture."
+      "explanation": "Middleware is software that sits between parts of the system and handles cross-cutting concerns — authentication, logging, rate-limiting — on the way through. An API (application programming interface) is a defined way for components to talk: the Front calls the Back's API, and the Back might call a third-party API like a payment service. The episode also notes this API boundary between Front and Back is a security boundary, a forward link to Secure Software Architecture.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw06-q07",
@@ -82,7 +112,12 @@
         "SQL and NoSQL are identical except SQL is newer and therefore always better"
       ],
       "answer": 2,
-      "explanation": "SQL databases are relational — a Spreadsheet of tables with fixed rows, columns, and a schema and clear relationships (PostgreSQL, MySQL, SQLite). NoSQL stores data flexibly, commonly as documents like JSON objects with no rigid schema (MongoDB, Redis) — a Notebook of free-form entries. Option A reverses the hook, and the newer-is-better claim is the exact trap the episode rejects: NoSQL means 'not only SQL', a different tool, not a replacement."
+      "explanation": "SQL databases are relational — a Spreadsheet of tables with fixed rows, columns, and a schema and clear relationships (PostgreSQL, MySQL, SQLite). NoSQL stores data flexibly, commonly as documents like JSON objects with no rigid schema (MongoDB, Redis) — a Notebook of free-form entries. Option A reverses the hook, and the newer-is-better claim is the exact trap the episode rejects: NoSQL means 'not only SQL', a different tool, not a replacement.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw06-q08",
@@ -94,7 +129,12 @@
         "A social-media activity feed, because the data is large-volume and flexible, with items that may have different fields, which NoSQL's flexible document model and horizontal scaling handle better than a rigid relational schema"
       ],
       "answer": 3,
-      "explanation": "The mark-earning answer names a property of the data, not a vibe: NoSQL is preferable for storing large volumes of flexible, semi-structured data that does not fit a fixed schema, such as a social-media activity feed where each post may carry different fields. The banking and e-commerce orders examples are the opposite — highly structured, related data that needs SQL's reliable ACID transactions. The 'newer and faster' option is the trap the episode explicitly warns against."
+      "explanation": "The mark-earning answer names a property of the data, not a vibe: NoSQL is preferable for storing large volumes of flexible, semi-structured data that does not fit a fixed schema, such as a social-media activity feed where each post may carry different fields. The banking and e-commerce orders examples are the opposite — highly structured, related data that needs SQL's reliable ACID transactions. The 'newer and faster' option is the trap the episode explicitly warns against.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw06-q09",
@@ -106,7 +146,12 @@
         "Neither — store the records only in client-side JavaScript variables in the browser"
       ],
       "answer": 1,
-      "explanation": "The driving requirement is structured, related data with reliable, consistent transactions, which is exactly when the episode says to pick SQL — its relational tables model the customer-order-product relationships and its ACID properties prevent inconsistency. NoSQL suits flexible, high-volume, varied data, not tightly related records that cannot afford inconsistency (eliminating A and C). Storing data only in the browser (option D) violates the rule that only the trusted Back tier persists and handles authoritative data."
+      "explanation": "The driving requirement is structured, related data with reliable, consistent transactions, which is exactly when the episode says to pick SQL — its relational tables model the customer-order-product relationships and its ACID properties prevent inconsistency. NoSQL suits flexible, high-volume, varied data, not tightly related records that cannot afford inconsistency (eliminating A and C). Storing data only in the browser (option D) violates the rule that only the trusted Back tier persists and handles authoritative data.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw06-q10",
@@ -118,7 +163,12 @@
         "All three tiers run inside the user's browser, so any tier can be trusted to handle payment"
       ],
       "answer": 2,
-      "explanation": "This is the integrated full-mark model: the Front renders and sends requests, the Back routes, applies business logic, and is the only tier that queries the Store, and the Store persistently holds the data. Critically, validation and payment logic must run server-side because client-side code is visible and tamperable and cannot be trusted. Option A breaks the core boundary — the Front never touches the database and must never be relied on for payment security."
+      "explanation": "This is the integrated full-mark model: the Front renders and sends requests, the Back routes, applies business logic, and is the only tier that queries the Store, and the Store persistently holds the data. Critically, validation and payment logic must run server-side because client-side code is visible and tamperable and cannot be trusted. Option A breaks the core boundary — the Front never touches the database and must never be relied on for payment security.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

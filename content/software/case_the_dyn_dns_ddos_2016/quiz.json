@@ -10,7 +10,12 @@
         "It distributes incoming traffic across multiple servers to prevent overload"
       ],
       "answer": 0,
-      "explanation": "The episode calls DNS 'the phone book of the internet': computers talk to numbers, not names, so DNS translates a name into the numerical address behind it before any connection can be made. Encryption is a separate concern, and DNS does not host or serve the site's actual pages — Twitter's own servers were fine; only the lookups failed."
+      "explanation": "The episode calls DNS 'the phone book of the internet': computers talk to numbers, not names, so DNS translates a name into the numerical address behind it before any connection can be made. Encryption is a separate concern, and DNS does not host or serve the site's actual pages — Twitter's own servers were fine; only the lookups failed.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-dyn-dns-ddos-2016-q02",
@@ -22,7 +27,12 @@
         "The attack spread a virus from Dyn's servers to every connected website"
       ],
       "answer": 1,
-      "explanation": "Dyn was the shared DNS provider for a huge slice of the web's most-used services, so flooding Dyn meant devices could not get the address for any of them — the sites' own servers kept running perfectly. The trap (option C) confuses DNS lookup with web hosting: Dyn was the phone book, not the host. As the episode puts it, people could not look up the number, so they could not make the call."
+      "explanation": "Dyn was the shared DNS provider for a huge slice of the web's most-used services, so flooding Dyn meant devices could not get the address for any of them — the sites' own servers kept running perfectly. The trap (option C) confuses DNS lookup with web hosting: Dyn was the phone book, not the host. As the episode puts it, people could not look up the number, so they could not make the call.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-dyn-dns-ddos-2016-q03",
@@ -34,7 +44,12 @@
         "'Denial-of-service' means data was stolen and held for ransom; 'distributed' means the ransom was spread across many victims"
       ],
       "answer": 2,
-      "explanation": "The episode breaks the term apart: the goal of denial-of-service is to deny legitimate users the service by making it unavailable, and 'distributed' means the flood comes from many scattered machines at once, so you cannot just block a single source. A tempting wrong answer confuses 'distributed' with multiple attackers, but no data theft or ransom is involved — this attack stole nothing."
+      "explanation": "The episode breaks the term apart: the goal of denial-of-service is to deny legitimate users the service by making it unavailable, and 'distributed' means the flood comes from many scattered machines at once, so you cannot just block a single source. A tempting wrong answer confuses 'distributed' with multiple attackers, but no data theft or ransom is involved — this attack stole nothing.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-dyn-dns-ddos-2016-q04",
@@ -46,7 +61,12 @@
         "A botnet of ordinary hijacked IoT devices such as webcams, baby monitors, routers and DVRs"
       ],
       "answer": 3,
-      "explanation": "The army was made of ordinary internet-connected devices — webcams, baby monitors, home routers and DVRs — that had been silently hijacked into a botnet, a network of infected machines controlled remotely. The whole point of the story is that they did not buy servers or hack data centres; the weapon was the cheap, forgotten gadgets in people's homes."
+      "explanation": "The army was made of ordinary internet-connected devices — webcams, baby monitors, home routers and DVRs — that had been silently hijacked into a botnet, a network of infected machines controlled remotely. The whole point of the story is that they did not buy servers or hack data centres; the weapon was the cheap, forgotten gadgets in people's homes.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-dyn-dns-ddos-2016-q05",
@@ -58,7 +78,12 @@
         "It intercepted and stole the passwords as owners typed them into their devices"
       ],
       "answer": 2,
-      "explanation": "The episode stresses that Mirai was 'almost insultingly simple' — it just guessed passwords, trying a list of around sixty common factory defaults like 'admin/admin' and 'root/root'. Because manufacturers ship identical defaults and almost nobody changes them, device after device let Mirai in. It broke no encryption and used no clever exploit (options A and B), which is exactly what makes the lesson so pointed."
+      "explanation": "The episode stresses that Mirai was 'almost insultingly simple' — it just guessed passwords, trying a list of around sixty common factory defaults like 'admin/admin' and 'root/root'. Because manufacturers ship identical defaults and almost nobody changes them, device after device let Mirai in. It broke no encryption and used no clever exploit (options A and B), which is exactly what makes the lesson so pointed.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-dyn-dns-ddos-2016-q06",
@@ -70,7 +95,12 @@
         "Availability, because the attack made services unreachable for legitimate users without stealing or changing any data"
       ],
       "answer": 3,
-      "explanation": "The episode names this as the textbook picture of an availability attack: it stole nothing, read no data and broke no encryption — it simply made Dyn unreachable so legitimate users could not get to the services they needed. A system can be perfectly confidential and perfectly intact yet useless if nobody can reach it, which is why a denial-of-service attack goes straight for that third pillar, availability."
+      "explanation": "The episode names this as the textbook picture of an availability attack: it stole nothing, read no data and broke no encryption — it simply made Dyn unreachable so legitimate users could not get to the services they needed. A system can be perfectly confidential and perfectly intact yet useless if nobody can reach it, which is why a denial-of-service attack goes straight for that third pillar, availability.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-dyn-dns-ddos-2016-q07",
@@ -82,7 +112,12 @@
         "Dyn used a single password for all of its DNS servers, which the attackers guessed"
       ],
       "answer": 1,
-      "explanation": "A single point of failure is a concentration of risk where one component, if it goes down, takes a huge amount with it — exactly the case when hundreds of sites all relied on Dyn for DNS. Option C is too narrow (the issue was shared dependency, not physical location), and option A overstates it: other DNS providers existed, which is precisely why the fix was to spread the dependency across more than one provider for redundancy."
+      "explanation": "A single point of failure is a concentration of risk where one component, if it goes down, takes a huge amount with it — exactly the case when hundreds of sites all relied on Dyn for DNS. Option C is too narrow (the issue was shared dependency, not physical location), and option A overstates it: other DNS providers existed, which is precisely why the fix was to spread the dependency across more than one provider for redundancy.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-dyn-dns-ddos-2016-q08",
@@ -94,7 +129,12 @@
         "The website companies were careless about redundancy, so only they were harmed while device owners were unaffected"
       ],
       "answer": 0,
-      "explanation": "The episode highlights a sharp twist on responsibility: the owner of a hijacked webcam lost nothing — their camera kept working — while the harm fell on Twitter, Netflix and everyone trying to use them. The principle is that insecure devices are not just a private risk; they become ammunition conscripted into harming others, so security is not purely a personal matter."
+      "explanation": "The episode highlights a sharp twist on responsibility: the owner of a hijacked webcam lost nothing — their camera kept working — while the harm fell on Twitter, Netflix and everyone trying to use them. The principle is that insecure devices are not just a private risk; they become ammunition conscripted into harming others, so security is not purely a personal matter.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-dyn-dns-ddos-2016-q09",
@@ -106,7 +146,12 @@
         "Speed up the device's processor so it can detect and block malicious login attempts"
       ],
       "answer": 2,
-      "explanation": "Mirai succeeded because of insecure defaults and weak authentication, so the fix is to make the secure choice the default and the easy choice: a device that refuses to operate until a real password is set, as in the episode's 'DeviceFirstBoot' design. Encryption protects confidentiality but does nothing about the guessable login that let Mirai in, and a per-unit sticker password is weaker because it still ships in a usable state with a credential the owner may never change."
+      "explanation": "Mirai succeeded because of insecure defaults and weak authentication, so the fix is to make the secure choice the default and the easy choice: a device that refuses to operate until a real password is set, as in the episode's 'DeviceFirstBoot' design. Encryption protects confidentiality but does nothing about the guessable login that let Mirai in, and a per-unit sticker password is weaker because it still ships in a usable state with a credential the owner may never change.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-dyn-dns-ddos-2016-q10",
@@ -118,7 +163,12 @@
         "Use more than one DNS provider so that if the primary is unreachable a secondary can still resolve names, removing the single point of failure"
       ],
       "answer": 3,
-      "explanation": "The structural lesson is the opposite of concentration: spread the dependency and build in redundancy so no single failure can cascade, which is why many affected sites adopted multiple DNS providers after the attack. Moving to one bigger provider just relocates the single point of failure, and forcing users to set strong device passwords, while good security advice in general, does not address this company's own availability risk — the question to keep asking is what one thing, if it fails, takes everything with it."
+      "explanation": "The structural lesson is the opposite of concentration: spread the dependency and build in redundancy so no single failure can cascade, which is why many affected sites adopted multiple DNS providers after the attack. Moving to one bigger provider just relocates the single point of failure, and forcing users to set strong device passwords, while good security advice in general, does not address this company's own availability risk — the question to keep asking is what one thing, if it fails, takes everything with it.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

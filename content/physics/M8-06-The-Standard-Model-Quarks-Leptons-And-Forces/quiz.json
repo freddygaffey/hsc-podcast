@@ -10,7 +10,12 @@
         "Photons are matter particles and electrons are force carriers"
       ],
       "answer": 0,
-      "explanation": "Fermions are the matter building blocks (leptons and quarks); bosons carry the forces (gluons, photons, W and Z). 'Fermions build; bosons bind.'"
+      "explanation": "Fermions are the matter building blocks (leptons and quarks); bosons carry the forces (gluons, photons, W and Z). 'Fermions build; bosons bind.'",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m806-q02",
@@ -22,7 +27,12 @@
         "up, down, left, right, top, bottom"
       ],
       "answer": 1,
-      "explanation": "The six quarks are up, down, charm, strange, top and bottom, in three generations. (Electron/muon/tau and their neutrinos are the six leptons.)"
+      "explanation": "The six quarks are up, down, charm, strange, top and bottom, in three generations. (Electron/muon/tau and their neutrinos are the six leptons.)",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m806-q03",
@@ -34,7 +44,12 @@
         "All quarks are electrically neutral"
       ],
       "answer": 1,
-      "explanation": "The top row of each generation (up, charm, top) carries \\(+\\tfrac{2}{3}e\\) and the bottom row (down, strange, bottom) carries \\(-\\tfrac{1}{3}e\\). These fractional charges are the dent in simple charge quantisation."
+      "explanation": "The top row of each generation (up, charm, top) carries \\(+\\tfrac{2}{3}e\\) and the bottom row (down, strange, bottom) carries \\(-\\tfrac{1}{3}e\\). These fractional charges are the dent in simple charge quantisation.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m806-q04",
@@ -46,7 +61,12 @@
         "Fractional charges only exist at high temperature"
       ],
       "answer": 1,
-      "explanation": "Millikan measured isolatable particles, which all carry whole-number charge. Quarks are confined inside hadrons and never appear alone; the fractional charges of the quarks in any hadron always add to a whole number, so Millikan's rule holds for anything you can isolate."
+      "explanation": "Millikan measured isolatable particles, which all carry whole-number charge. Quarks are confined inside hadrons and never appear alone; the fractional charges of the quarks in any hadron always add to a whole number, so Millikan's rule holds for anything you can isolate.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m806-q05",
@@ -58,7 +78,12 @@
         "A baryon contains no quarks; a meson contains three"
       ],
       "answer": 1,
-      "explanation": "A baryon is three quarks bound together (e.g. the proton, uud); a meson is a quark-antiquark pair (e.g. the pion). Calling a proton a meson, or a baryon 'two quarks', is the most common trap — 'Baryon = Bunch of three'."
+      "explanation": "A baryon is three quarks bound together (e.g. the proton, uud); a meson is a quark-antiquark pair (e.g. the pion). Calling a proton a meson, or a baryon 'two quarks', is the most common trap — 'Baryon = Bunch of three'.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m806-q06",
@@ -70,7 +95,12 @@
         "\\(-\\tfrac{2}{3} - \\tfrac{2}{3} + \\tfrac{1}{3} = -1\\)"
       ],
       "answer": 0,
-      "explanation": "\\(\\left(+\\tfrac{2}{3}\\right) + \\left(+\\tfrac{2}{3}\\right) + \\left(-\\tfrac{1}{3}\\right) = \\dfrac{2+2-1}{3} = \\dfrac{3}{3} = +1\\). The fractional pieces sum to the whole-number charge \\(+1\\) that we measure."
+      "explanation": "\\(\\left(+\\tfrac{2}{3}\\right) + \\left(+\\tfrac{2}{3}\\right) + \\left(-\\tfrac{1}{3}\\right) = \\dfrac{2+2-1}{3} = \\dfrac{3}{3} = +1\\). The fractional pieces sum to the whole-number charge \\(+1\\) that we measure.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m806-q07",
@@ -82,7 +112,12 @@
         "\\(+\\tfrac{1}{3}\\); it has one extra up quark"
       ],
       "answer": 1,
-      "explanation": "\\(\\left(+\\tfrac{2}{3}\\right) + \\left(-\\tfrac{1}{3}\\right) + \\left(-\\tfrac{1}{3}\\right) = 0\\), so the neutron is neutral. The proton (uud) and neutron (udd) differ by one quark; swapping an up for a down (the weak-force flip in beta decay) turns a proton into a neutron."
+      "explanation": "\\(\\left(+\\tfrac{2}{3}\\right) + \\left(-\\tfrac{1}{3}\\right) + \\left(-\\tfrac{1}{3}\\right) = 0\\), so the neutron is neutral. The proton (uud) and neutron (udd) differ by one quark; swapping an up for a down (the weak-force flip in beta decay) turns a proton into a neutron.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m806-q08",
@@ -94,7 +129,12 @@
         "All six quarks and all six leptons equally"
       ],
       "answer": 0,
-      "explanation": "Protons and neutrons are built from up and down quarks, and electrons (leptons) surround the nucleus — all first-generation fermions. The heavier quarks and leptons appear only in cosmic rays, accelerators and decays, not in everyday atoms."
+      "explanation": "Protons and neutrons are built from up and down quarks, and electrons (leptons) surround the nucleus — all first-generation fermions. The heavier quarks and leptons appear only in cosmic rays, accelerators and decays, not in everyday atoms.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m806-q09",
@@ -106,7 +146,12 @@
         "It is carried by W and Z bosons and causes beta decay"
       ],
       "answer": 2,
-      "explanation": "The strong force, carried by gluons, is the strongest of the four forces but acts only over about \\(10^{-15}\\ \\mathrm{m}\\) (nuclear size). It binds quarks inside nucleons, and a residual effect binds protons and neutrons together, overcoming the long-range Coulomb repulsion between protons at short range."
+      "explanation": "The strong force, carried by gluons, is the strongest of the four forces but acts only over about \\(10^{-15}\\ \\mathrm{m}\\) (nuclear size). It binds quarks inside nucleons, and a residual effect binds protons and neutrons together, overcoming the long-range Coulomb repulsion between protons at short range.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m806-q10",
@@ -118,7 +163,12 @@
         "Electric fields steer; magnetic fields slow the particles to make them collide"
       ],
       "answer": 1,
-      "explanation": "Electric fields do work on the charges and accelerate them; magnetic fields exert a force perpendicular to the velocity, steering without changing speed. In the collision the huge kinetic energy is converted to the mass of new particles via \\(E = mc^2\\), so higher energy creates more massive particles. Saying the magnetic field speeds particles up is wrong."
+      "explanation": "Electric fields do work on the charges and accelerate them; magnetic fields exert a force perpendicular to the velocity, steering without changing speed. In the collision the huge kinetic energy is converted to the mass of new particles via \\(E = mc^2\\), so higher energy creates more massive particles. Saying the magnetic field speeds particles up is wrong.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

@@ -10,7 +10,12 @@
         "MySQL, a database engine that stores user credentials"
       ],
       "answer": 0,
-      "explanation": "Heartbleed lived inside OpenSSL, the free, volunteer-maintained open-source library that implements TLS — the protocol behind every secure web connection and the lock icon in your browser. By 2014 it ran on a huge fraction of the world's secure web servers. Apache is web server software, not the encryption library, which makes it the tempting but wrong choice."
+      "explanation": "Heartbleed lived inside OpenSSL, the free, volunteer-maintained open-source library that implements TLS — the protocol behind every secure web connection and the lock icon in your browser. By 2014 it ran on a huge fraction of the world's secure web servers. Apache is web server software, not the encryption library, which makes it the tempting but wrong choice.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-heartbleed-q02",
@@ -22,7 +27,12 @@
         "To compress data so the connection uses less bandwidth"
       ],
       "answer": 1,
-      "explanation": "Encrypted connections are expensive to set up, so once two machines have done the work they keep the line open. The heartbeat lets one machine ask 'still alive?' and get 'still alive' back, keeping the connection warm without sending real data or re-doing the encryption. It does not add a second layer of encryption (option A) — that misunderstands what a heartbeat is for."
+      "explanation": "Encrypted connections are expensive to set up, so once two machines have done the work they keep the line open. The heartbeat lets one machine ask 'still alive?' and get 'still alive' back, keeping the connection warm without sending real data or re-doing the encryption. It does not add a second layer of encryption (option A) — that misunderstands what a heartbeat is for.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-heartbleed-q03",
@@ -34,7 +44,12 @@
         "The private encryption key was hard-coded into the source of the library"
       ],
       "answer": 2,
-      "explanation": "The heartbeat sends data plus a claimed length, and the server should have checked the two agreed — but it didn't. When an attacker sent 'hello' (5 characters) but claimed a length of 64,000, the server kept copying from its own memory far past the real data, scooping up whatever sat next to it. Crucially the encryption maths was fine (eliminating option A); the failure was a missing bounds check in the implementation around it."
+      "explanation": "The heartbeat sends data plus a claimed length, and the server should have checked the two agreed — but it didn't. When an attacker sent 'hello' (5 characters) but claimed a length of 64,000, the server kept copying from its own memory far past the real data, scooping up whatever sat next to it. Crucially the encryption maths was fine (eliminating option A); the failure was a missing bounds check in the implementation around it.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-heartbleed-q04",
@@ -46,7 +61,12 @@
         "The physical location and IP address of every connected user"
       ],
       "answer": 1,
-      "explanation": "Memory is a shared scratchpad, so the leaked 64 KB could contain anything the server had recently touched: other users' credentials as they logged in, private messages, session tokens that let an attacker impersonate a logged-in user, and the crown jewels — the server's private TLS key. Stealing the private key lets an attacker impersonate the site and decrypt recorded traffic, which is why the leak was so severe. Option A understates the damage drastically."
+      "explanation": "Memory is a shared scratchpad, so the leaked 64 KB could contain anything the server had recently touched: other users' credentials as they logged in, private messages, session tokens that let an attacker impersonate a logged-in user, and the crown jewels — the server's private TLS key. Stealing the private key lets an attacker impersonate the site and decrypt recorded traffic, which is why the leak was so severe. Option A understates the damage drastically.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-heartbleed-q05",
@@ -58,7 +78,12 @@
         "A poisoned heartbeat looks completely normal — nothing fails, crashes, or logs — so attackers could exploit it repeatedly and leave no trace"
       ],
       "answer": 3,
-      "explanation": "You normally find a breach by finding its footprints — a failed login, a strange connection, a log entry. A heartbeat request is the most ordinary thing in the world; the server happily did exactly what it was told, so attacks left no error, no alarm, and no log. When Heartbleed was announced nobody could say who had been exploited, so the advice was to assume secrets were already gone. It did not crash servers (option A) — the silence was precisely the problem."
+      "explanation": "You normally find a breach by finding its footprints — a failed login, a strange connection, a log entry. A heartbeat request is the most ordinary thing in the world; the server happily did exactly what it was told, so attacks left no error, no alarm, and no log. When Heartbleed was announced nobody could say who had been exploited, so the advice was to assume secrets were already gone. It did not crash servers (option A) — the silence was precisely the problem.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-heartbleed-q06",
@@ -70,7 +95,12 @@
         "Adding a firewall rule to block all heartbeat messages permanently"
       ],
       "answer": 1,
-      "explanation": "The fix was tiny — a few lines that, before copying data back, check whether the claimed length matches the data actually received; if you claim 64,000 but only sent 5 characters, that's a lie, so refuse and send nothing. It was one absent comparison between 'how much you said' and 'how much there really is'. The protocol did not need rewriting (option A) because the cryptography was never the problem — the implementation's missing sanity check was."
+      "explanation": "The fix was tiny — a few lines that, before copying data back, check whether the claimed length matches the data actually received; if you claim 64,000 but only sent 5 characters, that's a lie, so refuse and send nothing. It was one absent comparison between 'how much you said' and 'how much there really is'. The protocol did not need rewriting (option A) because the cryptography was never the problem — the implementation's missing sanity check was.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-heartbleed-q07",
@@ -82,7 +112,12 @@
         "A memory-management failure — specifically reading past the end of a buffer because no one verified the length"
       ],
       "answer": 3,
-      "explanation": "Heartbleed is, at bottom, a memory-management failure: the classic mistake of reading past the end of a buffer because nobody verified the length. A buffer is a fixed-size region of memory, and disciplined, secure code never reads or writes outside the boundary it was given. This is why secure execution and careful resource management sit at the centre of safe systems programming — it is not an encryption weakness (option A), since the maths of TLS was fine."
+      "explanation": "Heartbleed is, at bottom, a memory-management failure: the classic mistake of reading past the end of a buffer because nobody verified the length. A buffer is a fixed-size region of memory, and disciplined, secure code never reads or writes outside the boundary it was given. This is why secure execution and careful resource management sit at the centre of safe systems programming — it is not an encryption weakness (option A), since the maths of TLS was fine.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-heartbleed-q08",
@@ -94,7 +129,12 @@
         "Encryption is irrelevant once the surrounding code has been tested"
       ],
       "answer": 1,
-      "explanation": "The lock was a good lock — the TLS maths was fine. The flaw was in the housekeeping code handling a side feature, which handed data over before it was ever encrypted and could even leak the private key the encryption relied on. The strength of the cryptography and the safety of the code that wraps it are two different things, and an attacker only needs the weaker of the two. Treating them as one (option A) is exactly the misconception Heartbleed disproves."
+      "explanation": "The lock was a good lock — the TLS maths was fine. The flaw was in the housekeeping code handling a side feature, which handed data over before it was ever encrypted and could even leak the private key the encryption relied on. The strength of the cryptography and the safety of the code that wraps it are two different things, and an attacker only needs the weaker of the two. Treating them as one (option A) is exactly the misconception Heartbleed disproves.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-heartbleed-q09",
@@ -106,7 +146,12 @@
         "Increase the encryption key length so any leaked data is harder to use"
       ],
       "answer": 2,
-      "explanation": "Most testing only checks the happy path — send 'hello', length five, get 'hello' back — but Heartbleed needed someone to ask the rude question: what happens when the input is a lie? Fuzzing does exactly that, hammering the software with malformed input; a fuzzer feeding the heartbeat mismatched lengths would have tripped over the bug almost immediately, and after Heartbleed fuzzing of OpenSSL was ramped up dramatically. Running the normal suite more often (option A) would never test for the dishonest input that exposed this flaw."
+      "explanation": "Most testing only checks the happy path — send 'hello', length five, get 'hello' back — but Heartbleed needed someone to ask the rude question: what happens when the input is a lie? Fuzzing does exactly that, hammering the software with malformed input; a fuzzer feeding the heartbeat mismatched lengths would have tripped over the bug almost immediately, and after Heartbleed fuzzing of OpenSSL was ramped up dramatically. Running the normal suite more often (option A) would never test for the dishonest input that exposed this flaw.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-heartbleed-q10",
@@ -118,7 +163,12 @@
         "The risk only existed because OpenSSL was paid commercial software with restricted access"
       ],
       "answer": 1,
-      "explanation": "Everyone using the same battle-tested library is mostly a strength — more eyes, fewer bugs, no reinventing of dangerous wheels — but it also concentrates risk, so when the thing everyone depends on has a hole, everyone has it simultaneously. The web's plumbing rests on a surprisingly small number of shared components, often maintained by underfunded volunteers. Open-source visibility does not guarantee bug-free code (option C); Heartbleed sat unnoticed from 2011 to 2014 despite being public."
+      "explanation": "Everyone using the same battle-tested library is mostly a strength — more eyes, fewer bugs, no reinventing of dangerous wheels — but it also concentrates risk, so when the thing everyone depends on has a hole, everyone has it simultaneously. The web's plumbing rests on a surprisingly small number of shared components, often maintained by underfunded volunteers. Open-source visibility does not guarantee bug-free code (option C); Heartbleed sat unnoticed from 2011 to 2014 despite being public.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

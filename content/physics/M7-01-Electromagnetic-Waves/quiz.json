@@ -10,7 +10,12 @@
         "Any charge that carries an electric field"
       ],
       "answer": 2,
-      "explanation": "Only an accelerating charge (one whose velocity is changing) radiates an electromagnetic wave. A stationary charge gives only a static electric field, and a charge at constant velocity (a steady DC current) gives only a steady magnetic field — neither radiates."
+      "explanation": "Only an accelerating charge (one whose velocity is changing) radiates an electromagnetic wave. A stationary charge gives only a static electric field, and a charge at constant velocity (a steady DC current) gives only a steady magnetic field — neither radiates.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m701-q02",
@@ -22,7 +27,12 @@
         "DC travels too slowly through the wire to escape as a wave"
       ],
       "answer": 1,
-      "explanation": "A steady DC current is charge at constant velocity, so it is not accelerating and produces only an unchanging field that does not radiate. AC drives the charges back and forth, so they are constantly accelerating, producing the changing fields that regenerate and propagate as a wave."
+      "explanation": "A steady DC current is charge at constant velocity, so it is not accelerating and produces only an unchanging field that does not radiate. AC drives the charges back and forth, so they are constantly accelerating, producing the changing fields that regenerate and propagate as a wave.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m701-q03",
@@ -34,7 +44,12 @@
         "Lenz's law"
       ],
       "answer": 0,
-      "explanation": "Faraday's law (a changing magnetic field induces an electric field) handles that half of the loop. The Ampère–Maxwell law does the reverse — a changing electric field induces a magnetic field. The memory hook FAME: Faraday→Electric, Ampère–Maxwell→Magnetic."
+      "explanation": "Faraday's law (a changing magnetic field induces an electric field) handles that half of the loop. The Ampère–Maxwell law does the reverse — a changing electric field induces a magnetic field. The memory hook FAME: Faraday→Electric, Ampère–Maxwell→Magnetic.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m701-q04",
@@ -46,7 +61,12 @@
         "Only the magnetic field is perpendicular to the direction of travel"
       ],
       "answer": 2,
-      "explanation": "In an EM wave the electric field is perpendicular to the magnetic field, and both are perpendicular to the direction of propagation — three mutually perpendicular directions. Because the oscillations are sideways to the direction of travel, the wave is transverse (and can therefore be polarised)."
+      "explanation": "In an EM wave the electric field is perpendicular to the magnetic field, and both are perpendicular to the direction of propagation — three mutually perpendicular directions. Because the oscillations are sideways to the direction of travel, the wave is transverse (and can therefore be polarised).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m701-q05",
@@ -58,7 +78,12 @@
         "Light travels at a constant speed in a vacuum"
       ],
       "answer": 2,
-      "explanation": "Only a transverse wave has a sideways plane of vibration that can be filtered, so polarisation is direct proof that light is transverse. Reflection and refraction occur for both transverse and longitudinal waves, so they do not by themselves prove the wave is transverse."
+      "explanation": "Only a transverse wave has a sideways plane of vibration that can be filtered, so polarisation is direct proof that light is transverse. Reflection and refraction occur for both transverse and longitudinal waves, so they do not by themselves prove the wave is transverse.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m701-q06",
@@ -70,7 +95,12 @@
         "Its speed is too high for any medium to keep up"
       ],
       "answer": 1,
-      "explanation": "An EM wave is an oscillation of the electric and magnetic fields themselves — the fields are the thing that is waving, so no substance is needed. The aether was hypothesised as such a medium but was never found and is unnecessary; light travels most freely through a vacuum."
+      "explanation": "An EM wave is an oscillation of the electric and magnetic fields themselves — the fields are the thing that is waving, so no substance is needed. The aether was hypothesised as such a medium but was never found and is unnecessary; light travels most freely through a vacuum.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m701-q07",
@@ -82,7 +112,12 @@
         "Because the aether transmits all frequencies equally"
       ],
       "answer": 1,
-      "explanation": "The wave's speed is given by \\( c = 1/\\sqrt{\\mu_0 \\varepsilon_0} \\), depending only on the permittivity and permeability of free space. Since these are fixed properties of the vacuum, the regeneration rate — and hence the speed — is fixed for every EM wave, independent of frequency."
+      "explanation": "The wave's speed is given by \\( c = 1/\\sqrt{\\mu_0 \\varepsilon_0} \\), depending only on the permittivity and permeability of free space. Since these are fixed properties of the vacuum, the regeneration rate — and hence the speed — is fixed for every EM wave, independent of frequency.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m701-q08",
@@ -94,7 +129,12 @@
         "Visible, ultraviolet, X-ray, gamma, infrared, microwave, radio"
       ],
       "answer": 1,
-      "explanation": "In order of increasing frequency (and energy, with shortening wavelength): Radio, Microwave, Infrared, Visible, Ultraviolet, X-ray, Gamma. Mnemonic: Raging Martians Invaded Venus Using X-ray Guns."
+      "explanation": "In order of increasing frequency (and energy, with shortening wavelength): Radio, Microwave, Infrared, Visible, Ultraviolet, X-ray, Gamma. Mnemonic: Raging Martians Invaded Venus Using X-ray Guns.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m701-q09",
@@ -106,7 +146,12 @@
         "\\( 1.0 \\times 10^{-15}\\ \\mathrm{Hz} \\)"
       ],
       "answer": 0,
-      "explanation": "Rearranging \\( c = f\\lambda \\) gives \\( f = c/\\lambda = (3.0 \\times 10^{8})/(3.0 \\times 10^{-7}) = 1.0 \\times 10^{15}\\ \\mathrm{Hz} \\). The numbers divide to 1 and the powers of ten give \\( 10^{8-(-7)} = 10^{15} \\)."
+      "explanation": "Rearranging \\( c = f\\lambda \\) gives \\( f = c/\\lambda = (3.0 \\times 10^{8})/(3.0 \\times 10^{-7}) = 1.0 \\times 10^{15}\\ \\mathrm{Hz} \\). The numbers divide to 1 and the powers of ten give \\( 10^{8-(-7)} = 10^{15} \\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m701-q10",
@@ -118,7 +163,12 @@
         "No — light actually keeps travelling at c inside the glass too"
       ],
       "answer": 1,
-      "explanation": "The constant-speed rule is stated 'in a vacuum'. Inside glass the wave's energy is repeatedly absorbed and re-emitted by atoms, and that delay slows the light (measured by the refractive index \\( n = c/v_{\\text{medium}} \\)). The fundamental vacuum speed never changes."
+      "explanation": "The constant-speed rule is stated 'in a vacuum'. Inside glass the wave's energy is repeatedly absorbed and re-emitted by atoms, and that delay slows the light (measured by the refractive index \\( n = c/v_{\\text{medium}} \\)). The fundamental vacuum speed never changes.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

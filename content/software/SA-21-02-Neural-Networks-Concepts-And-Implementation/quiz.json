@@ -10,7 +10,12 @@
         "An algorithm that pushes error backwards through the layers to adjust every weight"
       ],
       "answer": 1,
-      "explanation": "A perceptron is the simplest possible neural network — a single neuron. It multiplies each input by a weight, adds them with a bias to form the weighted sum, and passes that sum through an activation function. Option A describes a multilayer network, not a single perceptron, and option D describes backpropagation; naming the weighted-sum-plus-bias-then-activation computation is what earns the mark."
+      "explanation": "A perceptron is the simplest possible neural network — a single neuron. It multiplies each input by a weight, adds them with a bias to form the weighted sum, and passes that sum through an activation function. Option A describes a multilayer network, not a single perceptron, and option D describes backpropagation; naming the weighted-sum-plus-bias-then-activation computation is what earns the mark.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2102-q02",
@@ -22,7 +27,12 @@
         "The weights are fixed by the programmer and the bias is calculated by the activation function"
       ],
       "answer": 0,
-      "explanation": "The weights are the learned parameters — they express how much each input matters — and the bias acts as an adjustable threshold for the neuron. Option D is the common misconception that weights are hand-set; in fact fit() learns both the weights and the bias through the Predict-Loss-Adjust loop, which is exactly why they are called learned parameters."
+      "explanation": "The weights are the learned parameters — they express how much each input matters — and the bias acts as an adjustable threshold for the neuron. Option D is the common misconception that weights are hand-set; in fact fit() learns both the weights and the bias through the Predict-Loss-Adjust loop, which is exactly why they are called learned parameters.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2102-q03",
@@ -34,7 +44,12 @@
         "1, because both inputs are 1 so the activation always fires"
       ],
       "answer": 1,
-      "explanation": "The weighted sum is 0.5 times 1 plus 0.5 times 1, minus 0.7, which equals 0.3 — that is at least 0, so the step activation outputs 1. Option D is wrong because the perceptron does not fire simply because the inputs are 1; you must compute the weighted sum and compare it to the threshold. Multiply, sum, activate — show the working to earn the mark."
+      "explanation": "The weighted sum is 0.5 times 1 plus 0.5 times 1, minus 0.7, which equals 0.3 — that is at least 0, so the step activation outputs 1. Option D is wrong because the perceptron does not fire simply because the inputs are 1; you must compute the weighted sum and compare it to the threshold. Multiply, sum, activate — show the working to earn the mark.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2102-q04",
@@ -46,7 +61,12 @@
         "It repeatedly adjusts the weights over many epochs until the loss reaches zero"
       ],
       "answer": 0,
-      "explanation": "The forward pass turns inputs into a prediction by running them through the network: multiply each input by its weight, sum with the bias, apply the activation, and feed each layer's output forward as the next layer's input. It is called 'forward' because data flows forward from input to output. The most tempting distractor describes backpropagation, which moves error backwards — the opposite direction."
+      "explanation": "The forward pass turns inputs into a prediction by running them through the network: multiply each input by its weight, sum with the bias, apply the activation, and feed each layer's output forward as the next layer's input. It is called 'forward' because data flows forward from input to output. The most tempting distractor describes backpropagation, which moves error backwards — the opposite direction.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2102-q05",
@@ -58,7 +78,12 @@
         "A chain of activation functions with no weights, where each function transforms the previous output"
       ],
       "answer": 2,
-      "explanation": "A neural network has an input layer (one neuron per feature), one or more hidden layers in the middle, and an output layer that produces the final prediction, with neurons connected by weighted links where the knowledge lives. A single layer with no connections (option A) is wrong because the structure is multiple layers, and the hidden layers are what let a network model relationships a single perceptron never could — the early layers detect simple patterns and later layers combine them into complex features."
+      "explanation": "A neural network has an input layer (one neuron per feature), one or more hidden layers in the middle, and an output layer that produces the final prediction, with neurons connected by weighted links where the knowledge lives. A single layer with no connections (option A) is wrong because the structure is multiple layers, and the hidden layers are what let a network model relationships a single perceptron never could — the early layers detect simple patterns and later layers combine them into complex features.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2102-q06",
@@ -70,7 +95,12 @@
         "Predict, Loss, Adjust"
       ],
       "answer": 3,
-      "explanation": "P-L-A stands for Predict, Loss, Adjust: run a forward pass to predict, compare the output to the known label to measure the loss (how wrong it is), then nudge the weights to reduce that error — repeated over many epochs. The hand-wave answer 'it just learns the patterns' is a band-four non-answer; the marker wants this explicit loop, so reciting Predict-Loss-Adjust gives you the mechanism the question rewards."
+      "explanation": "P-L-A stands for Predict, Loss, Adjust: run a forward pass to predict, compare the output to the known label to measure the loss (how wrong it is), then nudge the weights to reduce that error — repeated over many epochs. The hand-wave answer 'it just learns the patterns' is a band-four non-answer; the marker wants this explicit loop, so reciting Predict-Loss-Adjust gives you the mechanism the question rewards.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2102-q07",
@@ -82,7 +112,12 @@
         "It tries random weights until one combination happens to match the test set, then keeps that combination"
       ],
       "answer": 2,
-      "explanation": "A network learns through repeated Predict-Loss-Adjust cycles: a forward pass produces a prediction, the loss measures how far it is from the label, backpropagation works out each weight's contribution to the error, and gradient descent adjusts the weights to reduce the loss, over many epochs. Option A is the hand-wave trap the episode warns against — it names no loss step and no adjustment, so it scores poorly. Memorising examples (option B) is overfitting, not learning."
+      "explanation": "A network learns through repeated Predict-Loss-Adjust cycles: a forward pass produces a prediction, the loss measures how far it is from the label, backpropagation works out each weight's contribution to the error, and gradient descent adjusts the weights to reduce the loss, over many epochs. Option A is the hand-wave trap the episode warns against — it names no loss step and no adjustment, so it scores poorly. Memorising examples (option B) is overfitting, not learning.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2102-q08",
@@ -94,7 +129,12 @@
         "They are two names for the same single step of running inputs through the network"
       ],
       "answer": 0,
-      "explanation": "Backpropagation is the algorithm that pushes the error backwards through the layers to work out how much each weight contributed to the mistake; gradient descent is the step that nudges each weight downhill in the direction that reduces the error. Option B reverses the two roles. The episode stresses you can name both for polish, but the examinable substance is still the plain Predict-Loss-Adjust loop."
+      "explanation": "Backpropagation is the algorithm that pushes the error backwards through the layers to work out how much each weight contributed to the mistake; gradient descent is the step that nudges each weight downhill in the direction that reduces the error. Option B reverses the two roles. The episode stresses you can name both for polish, but the examinable substance is still the plain Predict-Loss-Adjust loop.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2102-q09",
@@ -106,7 +146,12 @@
         "The error is that weights are biases, and the bias is actually the activation function"
       ],
       "answer": 2,
-      "explanation": "The episode names this muddling of vocabulary as a mark-costing trap: a neuron is a single unit (weighted sum plus activation), a layer is a group of neurons at the same stage, a weight is the learned number on a connection, and the bias is the per-neuron adjustable threshold. Calling the whole network 'a neuron' or calling weights 'neurons' is exactly the common error to avoid — precision here is straightforward marks."
+      "explanation": "The episode names this muddling of vocabulary as a mark-costing trap: a neuron is a single unit (weighted sum plus activation), a layer is a group of neurons at the same stage, a weight is the learned number on a connection, and the bias is the per-neuron adjustable threshold. Calling the whole network 'a neuron' or calling weights 'neurons' is exactly the common error to avoid — precision here is straightforward marks.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "sa2102-q10",
@@ -118,7 +163,12 @@
         "The learning rate is too low; train for far fewer epochs so the weights stay closer to their starting values"
       ],
       "answer": 2,
-      "explanation": "Perfect training accuracy combined with poor real-world performance is the signature of overfitting — the network has memorised the training examples and their noise rather than the general pattern, a greater risk for a very large network because its many weights give it the capacity to memorise. The fix is to simplify the network and validate on an unseen test set, the same train-test-split rule carried over from regression. Option A is the 'bigger is better' fallacy the episode explicitly rejects, since more capacity means more ability to overfit."
+      "explanation": "Perfect training accuracy combined with poor real-world performance is the signature of overfitting — the network has memorised the training examples and their noise rather than the general pattern, a greater risk for a very large network because its many weights give it the capacity to memorise. The fix is to simplify the network and validate on an unseen test set, the same train-test-split rule carried over from regression. Option A is the 'bigger is better' fallacy the episode explicitly rejects, since more capacity means more ability to overfit.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

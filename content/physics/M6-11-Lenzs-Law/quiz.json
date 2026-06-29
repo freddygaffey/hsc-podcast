@@ -10,7 +10,12 @@
         "The induced current always flows clockwise when viewed from the source"
       ],
       "answer": 2,
-      "explanation": "The key word is 'change'. The induced current opposes the change in flux, not the flux and not the magnet. 'Opposes the flux' (A) is wrong when flux is decreasing — then the induced field reinforces the original flux to maintain it."
+      "explanation": "The key word is 'change'. The induced current opposes the change in flux, not the flux and not the magnet. 'Opposes the flux' (A) is wrong when flux is decreasing — then the induced field reinforces the original flux to maintain it.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m611-q02",
@@ -22,7 +27,12 @@
         "That flux can never increase"
       ],
       "answer": 1,
-      "explanation": "The minus sign is Lenz's law written into the maths: it gives the direction (opposing the change). For any magnitude calculation you drop it — it carries direction only, never a number. Reporting a negative EMF in a magnitude answer loses marks."
+      "explanation": "The minus sign is Lenz's law written into the maths: it gives the direction (opposing the change). For any magnitude calculation you drop it — it carries direction only, never a number. Reporting a negative EMF in a magnitude answer loses marks.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m611-q03",
@@ -34,7 +44,12 @@
         "Nothing — both directions are equally valid"
       ],
       "answer": 1,
-      "explanation": "A reinforcing current would accelerate the source, increasing the rate of change of flux, inducing a larger current and force, accelerating it more — a runaway that builds kinetic and electrical energy with no input. That perpetual motion machine violates conservation of energy, so it cannot happen."
+      "explanation": "A reinforcing current would accelerate the source, increasing the rate of change of flux, inducing a larger current and force, accelerating it more — a runaway that builds kinetic and electrical energy with no input. That perpetual motion machine violates conservation of energy, so it cannot happen.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m611-q04",
@@ -46,7 +61,12 @@
         "It is returned to your hand as the magnet rebounds"
       ],
       "answer": 2,
-      "explanation": "The coil opposes the motion, so you do work against it. That mechanical work becomes electrical energy (the induced current), which dissipates as heat via \\( P = I^2R \\). Every joule of induced electrical energy is paid for by a joule of mechanical work — energy is conserved."
+      "explanation": "The coil opposes the motion, so you do work against it. That mechanical work becomes electrical energy (the induced current), which dissipates as heat via \\( P = I^2R \\). Every joule of induced electrical energy is paid for by a joule of mechanical work — energy is conserved.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m611-q05",
@@ -58,7 +78,12 @@
         "It does not matter; flux direction is irrelevant"
       ],
       "answer": 1,
-      "explanation": "To oppose an increase, the induced field points opposite to the external field, trying to stop the flux from rising. (If flux were decreasing, the induced field would instead point the same way as the original, to replace the lost flux.)"
+      "explanation": "To oppose an increase, the induced field points opposite to the external field, trying to stop the flux from rising. (If flux were decreasing, the induced field would instead point the same way as the original, to replace the lost flux.)",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m611-q06",
@@ -70,7 +95,12 @@
         "The magnet is deflected sideways"
       ],
       "answer": 1,
-      "explanation": "A north pole on the coil's near face repels the approaching north pole, opposing the motion that increases the flux. This opposing force is exactly what conservation of energy demands — you must do work to push the magnet in."
+      "explanation": "A north pole on the coil's near face repels the approaching north pole, opposing the motion that increases the flux. This opposing force is exactly what conservation of energy demands — you must do work to push the magnet in.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m611-q07",
@@ -82,7 +112,12 @@
         "No current flows because the ring is solid"
       ],
       "answer": 1,
-      "explanation": "The into-page flux is decreasing, so the induced current must create its own into-page field to replace the leaving flux. By the right-hand grip rule, an into-page field requires a clockwise current (viewed from the front). The current stops once the ring fully exits the field."
+      "explanation": "The into-page flux is decreasing, so the induced current must create its own into-page field to replace the leaving flux. By the right-hand grip rule, an into-page field requires a clockwise current (viewed from the front). The current stops once the ring fully exits the field.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m611-q08",
@@ -94,7 +129,12 @@
         "\\( 31\\,\\mathrm{V} \\)"
       ],
       "answer": 1,
-      "explanation": "\\( A = \\pi (0.10)^2 = 3.14 \\times 10^{-2}\\,\\mathrm{m^2} \\). \\( \\Delta\\Phi = BA = 0.40 \\times 3.14\\times10^{-2} = 1.26\\times10^{-2}\\,\\mathrm{Wb} \\). \\( |\\varepsilon| = N\\Delta\\Phi/\\Delta t = 50 \\times 1.26\\times10^{-2}/0.20 \\approx 3.1\\,\\mathrm{V} \\)."
+      "explanation": "\\( A = \\pi (0.10)^2 = 3.14 \\times 10^{-2}\\,\\mathrm{m^2} \\). \\( \\Delta\\Phi = BA = 0.40 \\times 3.14\\times10^{-2} = 1.26\\times10^{-2}\\,\\mathrm{Wb} \\). \\( |\\varepsilon| = N\\Delta\\Phi/\\Delta t = 50 \\times 1.26\\times10^{-2}/0.20 \\approx 3.1\\,\\mathrm{V} \\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m611-q09",
@@ -106,7 +146,12 @@
         "Faraday applies to coils; Lenz applies only to magnets"
       ],
       "answer": 1,
-      "explanation": "Faraday tells you how big the induced EMF is (turns times rate of change of flux); Lenz tells you which way it points (opposing the change). Together they are the one law of induction, with Lenz appearing as the minus sign in Faraday's equation."
+      "explanation": "Faraday tells you how big the induced EMF is (turns times rate of change of flux); Lenz tells you which way it points (opposing the change). Together they are the one law of induction, with Lenz appearing as the minus sign in Faraday's equation.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m611-q10",
@@ -118,7 +163,12 @@
         "Stops completely above the coil"
       ],
       "answer": 1,
-      "explanation": "The approaching magnet increases the flux; the induced current makes the coil's top face a north pole that repels the magnet, producing an upward force opposing the motion. The magnet decelerates and falls more slowly, with some gravitational PE going into electrical energy and heat."
+      "explanation": "The approaching magnet increases the flux; the induced current makes the coil's top face a north pole that repels the magnet, producing an upward force opposing the motion. The magnet decelerates and falls more slowly, with some gravitational PE going into electrical energy and heat.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

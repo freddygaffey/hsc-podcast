@@ -10,7 +10,12 @@
         "A direct soldered joint at the core"
       ],
       "answer": 1,
-      "explanation": "There is no electrical connection between the coils. Energy crosses the gap as a changing magnetic field carried through the iron core — the process of mutual induction. Writing that the coils are 'connected' misunderstands the device."
+      "explanation": "There is no electrical connection between the coils. Energy crosses the gap as a changing magnetic field carried through the iron core — the process of mutual induction. Writing that the coils are 'connected' misunderstands the device.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m614-q02",
@@ -22,7 +27,12 @@
         "Soft iron is non-magnetic, preventing interference"
       ],
       "answer": 1,
-      "explanation": "Soft iron is ferromagnetic (so it channels and concentrates flux from primary to secondary — good flux linkage) AND magnetises/demagnetises easily, so it can reverse fifty times a second without wasting energy fighting itself. A hard material would resist that."
+      "explanation": "Soft iron is ferromagnetic (so it channels and concentrates flux from primary to secondary — good flux linkage) AND magnetises/demagnetises easily, so it can reverse fifty times a second without wasting energy fighting itself. A hard material would resist that.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m614-q03",
@@ -34,7 +44,12 @@
         "Conduction through the core"
       ],
       "answer": 1,
-      "explanation": "Mutual induction is one coil inducing an EMF in a second, separate coil via a shared changing flux. Self-induction (A) is a coil inducing an EMF in itself (e.g. back-EMF), which is a different phenomenon."
+      "explanation": "Mutual induction is one coil inducing an EMF in a second, separate coil via a shared changing flux. Self-induction (A) is a coil inducing an EMF in itself (e.g. back-EMF), which is a different phenomenon.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m614-q04",
@@ -46,7 +61,12 @@
         "The core blocks direct current"
       ],
       "answer": 1,
-      "explanation": "Faraday's law depends on the RATE of change of flux. Steady DC gives a constant flux, so \\( \\Delta\\Phi/\\Delta t = 0 \\) and no EMF appears in the secondary. (There is only a brief pulse at switch-on and switch-off, when the flux momentarily changes.)"
+      "explanation": "Faraday's law depends on the RATE of change of flux. Steady DC gives a constant flux, so \\( \\Delta\\Phi/\\Delta t = 0 \\) and no EMF appears in the secondary. (There is only a brief pulse at switch-on and switch-off, when the flux momentarily changes.)",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m614-q05",
@@ -58,7 +78,12 @@
         "Only if it is a step-up transformer"
       ],
       "answer": 2,
-      "explanation": "A transformer never changes frequency. The secondary EMF tracks the primary flux in lockstep, so 50 Hz in gives 50 Hz out. The turns ratio sets the voltage amplitude (and inversely the current) but has no effect on frequency."
+      "explanation": "A transformer never changes frequency. The secondary EMF tracks the primary flux in lockstep, so 50 Hz in gives 50 Hz out. The turns ratio sets the voltage amplitude (and inversely the current) but has no effect on frequency.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m614-q06",
@@ -70,7 +95,12 @@
         "Step-down transformer; both voltage and current decrease"
       ],
       "answer": 1,
-      "explanation": "More turns on the secondary means a higher secondary voltage — a step-up transformer. By conservation of energy (\\( V_pI_p = V_sI_s \\)), the current does the opposite of the voltage, so the current steps down. 'More turns, more volts.'"
+      "explanation": "More turns on the secondary means a higher secondary voltage — a step-up transformer. By conservation of energy (\\( V_pI_p = V_sI_s \\)), the current does the opposite of the voltage, so the current steps down. 'More turns, more volts.'",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m614-q07",
@@ -82,7 +112,12 @@
         "1500"
       ],
       "answer": 1,
-      "explanation": "\\( N_p = N_s \\times V_p/V_s = 30 \\times 240/12 = 30 \\times 20 = 600 \\) turns. The primary has more turns than the secondary, consistent with stepping 240 V down to 12 V."
+      "explanation": "\\( N_p = N_s \\times V_p/V_s = 30 \\times 240/12 = 30 \\times 20 = 600 \\) turns. The primary has more turns than the secondary, consistent with stepping 240 V down to 12 V.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m614-q08",
@@ -94,7 +129,12 @@
         "It depends on the turns ratio"
       ],
       "answer": 1,
-      "explanation": "An ideal transformer is 100% efficient, so power out equals power in: \\( V_pI_p = V_sI_s = 6.0\\,\\mathrm{W} \\). You cannot get more power out than you put in — stepping voltage up is always paid for by a proportional drop in current. (A real transformer would draw slightly more than 6.0 W due to losses.)"
+      "explanation": "An ideal transformer is 100% efficient, so power out equals power in: \\( V_pI_p = V_sI_s = 6.0\\,\\mathrm{W} \\). You cannot get more power out than you put in — stepping voltage up is always paid for by a proportional drop in current. (A real transformer would draw slightly more than 6.0 W due to losses.)",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m614-q09",
@@ -106,7 +146,12 @@
         "Increasing the supply frequency"
       ],
       "answer": 1,
-      "explanation": "Eddy currents are induced in the conducting iron core by the changing flux and dissipate heat. Laminating the core (thin insulated layers) breaks the large current loops into small high-resistance ones, slashing the loss. Thicker wire fixes resistive loss; a tight closed core fixes flux leakage — don't scramble the pairings."
+      "explanation": "Eddy currents are induced in the conducting iron core by the changing flux and dissipate heat. Laminating the core (thin insulated layers) breaks the large current loops into small high-resistance ones, slashing the loss. Thicker wire fixes resistive loss; a tight closed core fixes flux leakage — don't scramble the pairings.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m614-q10",
@@ -118,7 +163,12 @@
         "Higher voltage reduces the length of the transmission line needed"
       ],
       "answer": 1,
-      "explanation": "For a fixed power, raising the voltage lowers the current proportionally. Since line loss is \\( I^2R \\), dropping the current to a tenth cuts the loss to a hundredth. This is why high-voltage transmission exists — and it relies on transformers, which only work on AC."
+      "explanation": "For a fixed power, raising the voltage lowers the current proportionally. Since line loss is \\( I^2R \\), dropping the current to a tenth cuts the loss to a hundredth. This is why high-voltage transmission exists — and it relies on transformers, which only work on AC.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

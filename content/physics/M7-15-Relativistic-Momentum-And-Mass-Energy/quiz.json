@@ -10,7 +10,12 @@
         "\\(p = \\dfrac{m_0 v}{c}\\)"
       ],
       "answer": 1,
-      "explanation": "Relativistic momentum is \\(p = \\gamma m_0 v\\). At low speeds \\(\\gamma \\approx 1\\) and it reduces to Newton's \\(p = m_0 v\\), which is why Newtonian physics works for everyday speeds."
+      "explanation": "Relativistic momentum is \\(p = \\gamma m_0 v\\). At low speeds \\(\\gamma \\approx 1\\) and it reduces to Newton's \\(p = m_0 v\\), which is why Newtonian physics works for everyday speeds.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m715-q02",
@@ -22,7 +27,12 @@
         "Because the object would become invisible"
       ],
       "answer": 1,
-      "explanation": "The runaway Lorentz factor is the mechanism: as speed approaches c, \\(\\gamma\\) approaches infinity, so mass and momentum approach infinity, and reaching c would need infinite energy — impossible. Only massless photons travel at c. Simply asserting the speed limit is circular."
+      "explanation": "The runaway Lorentz factor is the mechanism: as speed approaches c, \\(\\gamma\\) approaches infinity, so mass and momentum approach infinity, and reaching c would need infinite energy — impossible. Only massless photons travel at c. Simply asserting the speed limit is circular.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m715-q03",
@@ -34,7 +44,12 @@
         "Into shortening its length further"
       ],
       "answer": 1,
-      "explanation": "Near light speed, energy added goes increasingly into mass rather than speed. The relativistic mass \\(m = \\gamma m_0\\) keeps climbing, so the particle gets harder to push and barely gains speed."
+      "explanation": "Near light speed, energy added goes increasingly into mass rather than speed. The relativistic mass \\(m = \\gamma m_0\\) keeps climbing, so the particle gets harder to push and barely gains speed.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m715-q04",
@@ -46,7 +61,12 @@
         "Mass can only be converted to energy in stars"
       ],
       "answer": 1,
-      "explanation": "Mass and energy are two forms of one thing, interchangeable at the rate \\(c^2\\). Since \\(c^2\\) is about \\(9\\times10^{16}\\), a tiny mass gives a colossal energy. The square is essential — using \\(c\\) instead of \\(c^2\\) is a common error."
+      "explanation": "Mass and energy are two forms of one thing, interchangeable at the rate \\(c^2\\). Since \\(c^2\\) is about \\(9\\times10^{16}\\), a tiny mass gives a colossal energy. The square is essential — using \\(c\\) instead of \\(c^2\\) is a common error.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m715-q05",
@@ -58,7 +78,12 @@
         "\\(2.7\\times10^{-22}\\,\\mathrm{J}\\)"
       ],
       "answer": 1,
-      "explanation": "Both masses convert: total mass \\(= 2\\times9.11\\times10^{-31} = 1.82\\times10^{-30}\\,\\mathrm{kg}\\). \\(E = mc^2 = 1.82\\times10^{-30}\\times9.0\\times10^{16} = 1.64\\times10^{-13}\\,\\mathrm{J}\\) (about 1.022 MeV). Using one mass would be off by a factor of 2."
+      "explanation": "Both masses convert: total mass \\(= 2\\times9.11\\times10^{-31} = 1.82\\times10^{-30}\\,\\mathrm{kg}\\). \\(E = mc^2 = 1.82\\times10^{-30}\\times9.0\\times10^{16} = 1.64\\times10^{-13}\\,\\mathrm{J}\\) (about 1.022 MeV). Using one mass would be off by a factor of 2.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m715-q06",
@@ -70,7 +95,12 @@
         "\\(4.0\\times10^{26}\\,\\mathrm{J}\\)"
       ],
       "answer": 0,
-      "explanation": "Power = (mass lost per second) \\(\\times c^2 = 4.4\\times10^{9}\\times9.0\\times10^{16} = 4.0\\times10^{26}\\,\\mathrm{W}\\). The answer is a power because the mass loss was already per second."
+      "explanation": "Power = (mass lost per second) \\(\\times c^2 = 4.4\\times10^{9}\\times9.0\\times10^{16} = 4.0\\times10^{26}\\,\\mathrm{W}\\). The answer is a power because the mass loss was already per second.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m715-q07",
@@ -82,7 +112,12 @@
         "Annihilation, combustion, fusion"
       ],
       "answer": 1,
-      "explanation": "Matter–antimatter annihilation converts 100% of mass to energy, fusion in stars converts a small but significant fraction, and ordinary combustion converts a negligible fraction. Same equation, wildly different efficiencies."
+      "explanation": "Matter–antimatter annihilation converts 100% of mass to energy, fusion in stars converts a small but significant fraction, and ordinary combustion converts a negligible fraction. Same equation, wildly different efficiencies.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m715-q08",
@@ -94,7 +129,12 @@
         "They demonstrate that gamma decreases at high speed"
       ],
       "answer": 1,
-      "explanation": "Newton predicts a constant force gives constant acceleration and unbounded speed. Instead, near c the same force gives tiny speed gains as momentum and relativistic mass balloon, with speed capped below c — exactly as relativity predicts and nothing like Newton."
+      "explanation": "Newton predicts a constant force gives constant acceleration and unbounded speed. Instead, near c the same force gives tiny speed gains as momentum and relativistic mass balloon, with speed capped below c — exactly as relativity predicts and nothing like Newton.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m715-q09",
@@ -106,7 +146,12 @@
         "Photons carry no energy"
       ],
       "answer": 1,
-      "explanation": "Massless particles such as photons (rest mass = 0) are not subject to the runaway \\(\\gamma\\) barrier that makes massive objects need infinite energy. Massless travels at c; massive never quite does — two sides of one coin."
+      "explanation": "Massless particles such as photons (rest mass = 0) are not subject to the runaway \\(\\gamma\\) barrier that makes massive objects need infinite energy. Massless travels at c; massive never quite does — two sides of one coin.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m715-q10",
@@ -118,7 +163,12 @@
         "The object's atoms multiply"
       ],
       "answer": 1,
-      "explanation": "Relativistic mass increase is an increase in inertia/momentum measured from an external frame — how hard it is to accelerate from outside. In its own rest frame nothing changes; the object does not balloon in size."
+      "explanation": "Relativistic mass increase is an increase in inertia/momentum measured from an external frame — how hard it is to accelerate from outside. In its own rest frame nothing changes; the object does not balloon in size.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

@@ -10,7 +10,12 @@
         "The anode, which is connected to the negative terminal"
       ],
       "answer": 0,
-      "explanation": "Cathode rays originate at the cathode — the negative electrode. The shadow experiments confirm this because the shadow always points away from the cathode. The anode is the positive electrode the rays travel toward; writing that the rays are 'emitted by the anode' is a common error."
+      "explanation": "Cathode rays originate at the cathode — the negative electrode. The shadow experiments confirm this because the shadow always points away from the cathode. The anode is the positive electrode the rays travel toward; writing that the rays are 'emitted by the anode' is a common error.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m801-q02",
@@ -22,7 +27,12 @@
         "At high pressure the magnetic field cannot penetrate the tube"
       ],
       "answer": 1,
-      "explanation": "At low pressure the gas particles are spread out, so the mean free path is long and the electrons can accelerate the full length of the tube without colliding away their energy. At high pressure they would collide almost immediately and never reach the far end."
+      "explanation": "At low pressure the gas particles are spread out, so the mean free path is long and the electrons can accelerate the full length of the tube without colliding away their energy. At high pressure they would collide almost immediately and never reach the far end.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m801-q03",
@@ -34,7 +44,12 @@
         "Photons from the fluorescent glass push electrons back toward the cathode"
       ],
       "answer": 2,
-      "explanation": "The strong field from the high potential difference ionises the gas and liberates electrons from the cathode, then accelerates those free negative electrons toward the anode — the accelerated electrons are the cathode rays. The glow is just gas atoms lighting up where the electrons pass; it is the electrons, not the gas, that travel."
+      "explanation": "The strong field from the high potential difference ionises the gas and liberates electrons from the cathode, then accelerates those free negative electrons toward the anode — the accelerated electrons are the cathode rays. The glow is just gas atoms lighting up where the electrons pass; it is the electrons, not the gas, that travel.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m801-q04",
@@ -46,7 +61,12 @@
         "The rays travel at the speed of light"
       ],
       "answer": 1,
-      "explanation": "A sharp, well-defined shadow can only form if the rays travel in straight lines and are stopped by a solid opaque object. (The shadow pointing away from the cathode is bonus evidence the rays come from the cathode.) Charge and mass come from the field and paddle-wheel experiments, not the cross."
+      "explanation": "A sharp, well-defined shadow can only form if the rays travel in straight lines and are stopped by a solid opaque object. (The shadow pointing away from the cathode is bonus evidence the rays come from the cathode.) Charge and mass come from the field and paddle-wheel experiments, not the cross.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m801-q05",
@@ -58,7 +78,12 @@
         "travel slower than the speed of sound"
       ],
       "answer": 2,
-      "explanation": "To roll a wheel and do mechanical work against friction and gravity, the rays must transfer momentum and kinetic energy — evidence they are particles with mass, not a massless wave. (Modern analysis adds heating effects, but the marks come from the momentum/mass interpretation.)"
+      "explanation": "To roll a wheel and do mechanical work against friction and gravity, the rays must transfer momentum and kinetic energy — evidence they are particles with mass, not a massless wave. (Modern analysis adds heating effects, but the marks come from the momentum/mass interpretation.)",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m801-q06",
@@ -70,7 +95,12 @@
         "move at constant speed"
       ],
       "answer": 1,
-      "explanation": "A charge attracted toward the positive plate must itself be negative, so the conclusion is that cathode rays carry negative charge. Stopping at 'attracted to the positive plate' only restates the observation — the mark is in the word 'negative'."
+      "explanation": "A charge attracted toward the positive plate must itself be negative, so the conclusion is that cathode rays carry negative charge. Stopping at 'attracted to the positive plate' only restates the observation — the mark is in the word 'negative'.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m801-q07",
@@ -82,7 +112,12 @@
         "It shows the rays travel at the speed of light"
       ],
       "answer": 2,
-      "explanation": "A magnetic field only exerts a force on moving charges, and light is not deflected by a magnet. So the beam curving is independent evidence that the rays are charged moving particles, not electromagnetic radiation. The circular path arises because the magnetic force stays perpendicular to the velocity, acting as a centripetal force."
+      "explanation": "A magnetic field only exerts a force on moving charges, and light is not deflected by a magnet. So the beam curving is independent evidence that the rays are charged moving particles, not electromagnetic radiation. The circular path arises because the magnetic force stays perpendicular to the velocity, acting as a centripetal force.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m801-q08",
@@ -94,7 +129,12 @@
         "\\(8.0 \\times 10^{-13}\\ \\mathrm{N}\\)"
       ],
       "answer": 0,
-      "explanation": "\\(F = qvB = (1.6\\times10^{-19})(2.5\\times10^{4})(2.0\\times10^{-2})\\). The front numbers give \\(1.6\\times2.5\\times2.0 = 8.0\\) and the powers of ten give \\((-19)+4+(-2) = -17\\), so \\(F = 8.0 \\times 10^{-17}\\ \\mathrm{N}\\)."
+      "explanation": "\\(F = qvB = (1.6\\times10^{-19})(2.5\\times10^{4})(2.0\\times10^{-2})\\). The front numbers give \\(1.6\\times2.5\\times2.0 = 8.0\\) and the powers of ten give \\((-19)+4+(-2) = -17\\), so \\(F = 8.0 \\times 10^{-17}\\ \\mathrm{N}\\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m801-q09",
@@ -106,7 +146,12 @@
         "The magnetic field of the Earth cancelled the deflection"
       ],
       "answer": 2,
-      "explanation": "The tube was not evacuated well enough; the rays ionised the leftover gas and those ions neutralised the charged plates, cancelling the field — so no deflection occurred. With a better vacuum the field was no longer neutralised and the beam deflected toward the positive plate. The rays were negatively charged all along; the apparatus, not the physics, was at fault."
+      "explanation": "The tube was not evacuated well enough; the rays ionised the leftover gas and those ions neutralised the charged plates, cancelling the field — so no deflection occurred. With a better vacuum the field was no longer neutralised and the beam deflected toward the positive plate. The rays were negatively charged all along; the apparatus, not the physics, was at fault.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m801-q10",
@@ -118,7 +163,12 @@
         "Magnetic field shows mass; Maltese cross shows charge"
       ],
       "answer": 1,
-      "explanation": "The paddle wheel (momentum and work) is the evidence for mass, while deflection toward the positive plate in an electric field and the negative-charge curvature in a magnetic field are the evidence for negative charge. The Maltese cross is supporting evidence for straight-line, particle-stream travel."
+      "explanation": "The paddle wheel (momentum and work) is the evidence for mass, while deflection toward the positive plate in an electric field and the negative-charge curvature in a magnetic field are the evidence for negative charge. The Maltese cross is supporting evidence for straight-line, particle-stream travel.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

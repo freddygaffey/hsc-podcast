@@ -10,7 +10,12 @@
         "A longitudinal electromagnetic wave"
       ],
       "answer": 1,
-      "explanation": "Sound is a longitudinal mechanical wave: a vibrating source creates compressions (high pressure) and rarefactions (low pressure) in the medium, with air molecules oscillating along the direction of travel. Being mechanical, it needs a medium — so there is no sound in a vacuum."
+      "explanation": "Sound is a longitudinal mechanical wave: a vibrating source creates compressions (high pressure) and rarefactions (low pressure) in the medium, with air molecules oscillating along the direction of travel. Being mechanical, it needs a medium — so there is no sound in a vacuum.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m303-q02",
@@ -22,7 +27,12 @@
         "Both are set by frequency"
       ],
       "answer": 1,
-      "explanation": "Pitch is set by frequency (high frequency = high pitch) and loudness by the amplitude/intensity of the pressure variation. They are independent — you can play the same note (same frequency) loudly or softly (different amplitude). Swapping pitch and loudness is the common error."
+      "explanation": "Pitch is set by frequency (high frequency = high pitch) and loudness by the amplitude/intensity of the pressure variation. They are independent — you can play the same note (same frequency) loudly or softly (different amplitude). Swapping pitch and loudness is the common error.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m303-q03",
@@ -34,7 +44,12 @@
         "It is unchanged"
       ],
       "answer": 1,
-      "explanation": "Intensity follows the inverse-square law, I ∝ 1/r². Going from 2 m to 6 m is ×3 the distance, so intensity changes by 1/3² = 1/9. The trap is thinking ×3 distance means ÷3 intensity — it's the square of the distance ratio, so ÷9."
+      "explanation": "Intensity follows the inverse-square law, I ∝ 1/r². Going from 2 m to 6 m is ×3 the distance, so intensity changes by 1/3² = 1/9. The trap is thinking ×3 distance means ÷3 intensity — it's the square of the distance ratio, so ÷9.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m303-q04",
@@ -46,7 +61,12 @@
         "Because the string is longitudinal"
       ],
       "answer": 1,
-      "explanation": "A node is a point of zero displacement. Because the string is clamped at both ends, those points cannot move, so each must be a node. This boundary condition means only standing waves of certain wavelengths fit, the longest being the fundamental that sets the pitch."
+      "explanation": "A node is a point of zero displacement. Because the string is clamped at both ends, those points cannot move, so each must be a node. This boundary condition means only standing waves of certain wavelengths fit, the longest being the fundamental that sets the pitch.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m303-q05",
@@ -58,7 +78,12 @@
         "212 Hz"
       ],
       "answer": 1,
-      "explanation": "For a closed pipe the fundamental wavelength is 4 times the length: λ₀ = 4 × 0.2 = 0.8 m. Then f₀ = v/λ₀ = 340/0.8 = 425 Hz. The key step is the closed-pipe rule (λ₀ = 4L); using 2L (the open-pipe rule) would wrongly give 850 Hz."
+      "explanation": "For a closed pipe the fundamental wavelength is 4 times the length: λ₀ = 4 × 0.2 = 0.8 m. Then f₀ = v/λ₀ = 340/0.8 = 425 Hz. The key step is the closed-pipe rule (λ₀ = 4L); using 2L (the open-pipe rule) would wrongly give 850 Hz.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m303-q06",
@@ -70,7 +95,12 @@
         "Both produce all harmonics"
       ],
       "answer": 1,
-      "explanation": "An open pipe (antinode at each end, λ₀ = 2L) produces all harmonics — every whole-number multiple of the fundamental. A closed pipe (node at the closed end, λ₀ = 4L) produces only the odd harmonics. The missing even harmonics give a closed pipe (e.g. a clarinet) its distinctive hollow tone."
+      "explanation": "An open pipe (antinode at each end, λ₀ = 2L) produces all harmonics — every whole-number multiple of the fundamental. A closed pipe (node at the closed end, λ₀ = 4L) produces only the odd harmonics. The missing even harmonics give a closed pipe (e.g. a clarinet) its distinctive hollow tone.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m303-q07",
@@ -82,7 +112,12 @@
         "One produces sound and the other does not"
       ],
       "answer": 1,
-      "explanation": "The fundamental fixes the pitch (the same note), but each instrument produces a different mix of higher harmonics superposed with it. This blend — the timbre — is what makes them sound different: a flute is nearly a pure fundamental (smooth), while a violin is rich in harmonics (bright)."
+      "explanation": "The fundamental fixes the pitch (the same note), but each instrument produces a different mix of higher harmonics superposed with it. This blend — the timbre — is what makes them sound different: a flute is nearly a pure fundamental (smooth), while a violin is rich in harmonics (bright).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m303-q08",
@@ -94,7 +129,12 @@
         "250 beats per second"
       ],
       "answer": 1,
-      "explanation": "The beat frequency is the magnitude of the difference between the two frequencies: |503 − 500| = 3 beats per second. Beats arise from superposition — the two close frequencies drift in and out of phase, making the loudness pulse. As the frequencies converge, the beats slow down (and stop when equal)."
+      "explanation": "The beat frequency is the magnitude of the difference between the two frequencies: |503 − 500| = 3 beats per second. Beats arise from superposition — the two close frequencies drift in and out of phase, making the loudness pulse. As the frequencies converge, the beats slow down (and stop when equal).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m303-q09",
@@ -106,7 +146,12 @@
         "The siren gets quieter, which lowers the pitch"
       ],
       "answer": 1,
-      "explanation": "As the siren approaches, its motion compresses the wavefronts ahead of it, shortening the received wavelength and raising the observed frequency (higher pitch). As it recedes, the wavefronts stretch, lowering the observed frequency. Crucially the emitted frequency stays constant — only the observed frequency changes."
+      "explanation": "As the siren approaches, its motion compresses the wavefronts ahead of it, shortening the received wavelength and raising the observed frequency (higher pitch). As it recedes, the wavefronts stretch, lowering the observed frequency. Crucially the emitted frequency stays constant — only the observed frequency changes.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m303-q10",
@@ -118,7 +163,12 @@
         "750 Hz"
       ],
       "answer": 1,
-      "explanation": "For an open pipe the fundamental wavelength is twice the length: λ₀ = 2 × 0.34 = 0.68 m. Then f₀ = v/λ₀ = 340/0.68 = 500 Hz (the second harmonic would be 1000 Hz). Using 4L (the closed-pipe rule) would wrongly halve this to 250 Hz."
+      "explanation": "For an open pipe the fundamental wavelength is twice the length: λ₀ = 2 × 0.34 = 0.68 m. Then f₀ = v/λ₀ = 340/0.68 = 500 Hz (the second harmonic would be 1000 Hz). Using 4L (the closed-pipe rule) would wrongly halve this to 250 Hz.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

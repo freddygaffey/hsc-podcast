@@ -10,7 +10,12 @@
         "Einstein predicted it from \\( E = mc^2 \\)"
       ],
       "answer": 1,
-      "explanation": "Dirac's relativistic equation for the electron had negative-energy solutions he interpreted as a particle with the electron's mass but opposite charge — the anti-electron. He predicted it from pure mathematics in 1931, before Anderson observed it in 1932."
+      "explanation": "Dirac's relativistic equation for the electron had negative-energy solutions he interpreted as a particle with the electron's mass but opposite charge — the anti-electron. He predicted it from pure mathematics in 1931, before Anderson observed it in 1932.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pet-q02",
@@ -22,7 +27,12 @@
         "It travelled faster than the speed of light"
       ],
       "answer": 1,
-      "explanation": "The track had an electron's mass (same wispy, low-density trail) but curved the opposite way in the magnetic field, meaning a positive charge. A lead plate let Anderson confirm the direction of travel. A particle as light as an electron but positively charged was Dirac's anti-electron — the positron."
+      "explanation": "The track had an electron's mass (same wispy, low-density trail) but curved the opposite way in the magnetic field, meaning a positive charge. A lead plate let Anderson confirm the direction of travel. A particle as light as an electron but positively charged was Dirac's anti-electron — the positron.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pet-q03",
@@ -34,7 +44,12 @@
         "Zero mass and zero charge"
       ],
       "answer": 1,
-      "explanation": "The positron is the electron's antimatter twin: identical mass (rest energy 0.511 MeV) but opposite charge (+1 instead of -1). This is Dirac's symmetry between matter and antimatter."
+      "explanation": "The positron is the electron's antimatter twin: identical mass (rest energy 0.511 MeV) but opposite charge (+1 instead of -1). This is Dirac's symmetry between matter and antimatter.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pet-q04",
@@ -46,7 +61,12 @@
         "0.511 MeV, carried by an electron and a neutrino"
       ],
       "answer": 1,
-      "explanation": "Each particle has rest energy 0.511 MeV, so total energy released is \\(2 \\times 0.511 = 1.022\\ \\mathrm{MeV}\\), shared equally between two gamma photons of 511 keV each. They are emitted back to back (180 degrees apart)."
+      "explanation": "Each particle has rest energy 0.511 MeV, so total energy released is \\(2 \\times 0.511 = 1.022\\ \\mathrm{MeV}\\), shared equally between two gamma photons of 511 keV each. They are emitted back to back (180 degrees apart).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pet-q05",
@@ -58,7 +78,12 @@
         "Because charge conservation requires two photons"
       ],
       "answer": 1,
-      "explanation": "Just before annihilation the pair is nearly at rest, so total momentum is ~0. Momentum must be conserved, so the photons must carry equal and opposite momenta — two photons back to back. A single photon could never have zero momentum, so one photon is impossible."
+      "explanation": "Just before annihilation the pair is nearly at rest, so total momentum is ~0. Momentum must be conserved, so the photons must carry equal and opposite momenta — two photons back to back. A single photon could never have zero momentum, so one photon is impossible.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pet-q06",
@@ -70,7 +95,12 @@
         "Gravity; the nucleus splits in two"
       ],
       "answer": 1,
-      "explanation": "Beta-plus decay is driven by the weak nuclear force — the only force that changes one particle type into another this way. A proton becomes a neutron, emitting a positron and a neutrino: \\({}^{18}_{9}\\mathrm{F} \\to {}^{18}_{8}\\mathrm{O} + e^+ + \\nu\\). The atomic number drops by one; the mass number is unchanged."
+      "explanation": "Beta-plus decay is driven by the weak nuclear force — the only force that changes one particle type into another this way. A proton becomes a neutron, emitting a positron and a neutrino: \\({}^{18}_{9}\\mathrm{F} \\to {}^{18}_{8}\\mathrm{O} + e^+ + \\nu\\). The atomic number drops by one; the mass number is unchanged.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pet-q07",
@@ -82,7 +112,12 @@
         "FDG is attracted to tumours by magnetism"
       ],
       "answer": 1,
-      "explanation": "Cancer cells are glucose gluttons (the Warburg effect), so they take up the most FDG, which then gets phosphorylated and trapped inside the cell. More trapped fluorine-18 means more positron emission and more annihilations, making tumours glowing hotspots on the reconstructed map."
+      "explanation": "Cancer cells are glucose gluttons (the Warburg effect), so they take up the most FDG, which then gets phosphorylated and trapped inside the cell. More trapped fluorine-18 means more positron emission and more annihilations, making tumours glowing hotspots on the reconstructed map.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pet-q08",
@@ -94,7 +129,12 @@
         "It detects the neutrinos emitted in beta-plus decay"
       ],
       "answer": 1,
-      "explanation": "The positrons annihilate within a millimetre or two inside the body; the scanner never sees them. It detects the two back-to-back 511 keV gamma rays. Two opposite detectors firing within nanoseconds define a line of response — the annihilation happened somewhere on that line. Millions of crossing lines reconstruct the 3D map."
+      "explanation": "The positrons annihilate within a millimetre or two inside the body; the scanner never sees them. It detects the two back-to-back 511 keV gamma rays. Two opposite detectors firing within nanoseconds define a line of response — the annihilation happened somewhere on that line. Millions of crossing lines reconstruct the 3D map.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pet-q09",
@@ -106,7 +146,12 @@
         "About 0%"
       ],
       "answer": 2,
-      "explanation": "After \\(n\\) half-lives the fraction remaining is \\((\\tfrac{1}{2})^n\\). After 6 half-lives: \\((\\tfrac{1}{2})^6 = \\tfrac{1}{64} \\approx 1.6\\%\\). This is why the patient is essentially non-radioactive by the next day, while ~110 min is still long enough to ship the tracer and let cells take it up."
+      "explanation": "After \\(n\\) half-lives the fraction remaining is \\((\\tfrac{1}{2})^n\\). After 6 half-lives: \\((\\tfrac{1}{2})^6 = \\tfrac{1}{64} \\approx 1.6\\%\\). This is why the patient is essentially non-radioactive by the next day, while ~110 min is still long enough to ship the tracer and let cells take it up.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pet-q10",
@@ -118,7 +163,12 @@
         "Conservation of momentum fixes the energy; conservation of energy fixes the direction"
       ],
       "answer": 1,
-      "explanation": "Energy conservation gives each photon a sharp, recognisable 511 keV (half of 1.022 MeV). Momentum conservation, from a near-stationary pair, forces the two photons to fly out in exactly opposite directions. Together these give the scanner its lines of response. Charge is also conserved (0 before, 0 after)."
+      "explanation": "Energy conservation gives each photon a sharp, recognisable 511 keV (half of 1.022 MeV). Momentum conservation, from a near-stationary pair, forces the two photons to fly out in exactly opposite directions. Together these give the scanner its lines of response. Charge is also conserved (0 before, 0 after).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

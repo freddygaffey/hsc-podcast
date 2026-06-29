@@ -10,7 +10,12 @@
         "Frequency, wavelength, amplitude, period"
       ],
       "answer": 1,
-      "explanation": "Any wave can reflect, refract, diffract and superpose. Superposition is the parent of interference, standing waves and resonance. (Conduction, convection and radiation are the three heat-transfer modes, not wave behaviours.)"
+      "explanation": "Any wave can reflect, refract, diffract and superpose. Superposition is the parent of interference, standing waves and resonance. (Conduction, convection and radiation are the three heat-transfer modes, not wave behaviours.)",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m399-q02",
@@ -22,7 +27,12 @@
         "680 m"
       ],
       "answer": 0,
-      "explanation": "From the time graph, f = 1/T = 1/0.002 = 500 Hz. Then λ = v/f = 340/500 = 0.68 m. The time graph gives the period (and frequency); the wave equation then gives the wavelength — the standard two-step recipe."
+      "explanation": "From the time graph, f = 1/T = 1/0.002 = 500 Hz. Then λ = v/f = 340/500 = 0.68 m. The time graph gives the period (and frequency); the wave equation then gives the wavelength — the standard two-step recipe.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m399-q03",
@@ -34,7 +44,12 @@
         "About 60°"
       ],
       "answer": 1,
-      "explanation": "sin iᶜ = n₂/n₁ = 1/1.5 ≈ 0.67, so iᶜ = sin⁻¹(0.67) ≈ 42°. A ray striking above 42° (and going from denser glass to less dense air) undergoes total internal reflection. (Water's critical angle to air is the larger ~49°, since water has a lower index.)"
+      "explanation": "sin iᶜ = n₂/n₁ = 1/1.5 ≈ 0.67, so iᶜ = sin⁻¹(0.67) ≈ 42°. A ray striking above 42° (and going from denser glass to less dense air) undergoes total internal reflection. (Water's critical angle to air is the larger ~49°, since water has a lower index.)",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m399-q04",
@@ -46,7 +61,12 @@
         "Heat is measured in kelvin; temperature in joules"
       ],
       "answer": 1,
-      "explanation": "Temperature is a measure of the average kinetic energy of the particles (a property an object has); heat is energy transferred from a hotter to a colder object because of a temperature difference (energy in transit). An object contains internal energy, not heat. Treating them as synonyms is the classic error."
+      "explanation": "Temperature is a measure of the average kinetic energy of the particles (a property an object has); heat is energy transferred from a hotter to a colder object because of a temperature difference (energy in transit). An object contains internal energy, not heat. Treating them as synonyms is the classic error.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m399-q05",
@@ -58,7 +78,12 @@
         "600 W"
       ],
       "answer": 1,
-      "explanation": "Q/t = kAΔT/d = (0.8 × 2 × 15)/0.004 = 24/0.004 = 6000 W. The large rate is why single-glazed windows lose so much heat — double glazing adds a low-conductivity air gap to cut it. Conduction is faster for high k, large area, large ΔT and small thickness."
+      "explanation": "Q/t = kAΔT/d = (0.8 × 2 × 15)/0.004 = 24/0.004 = 6000 W. The large rate is why single-glazed windows lose so much heat — double glazing adds a low-conductivity air gap to cut it. Conduction is faster for high k, large area, large ΔT and small thickness.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m399-q06",
@@ -70,7 +95,12 @@
         "2 beats per second"
       ],
       "answer": 1,
-      "explanation": "Open-pipe fundamental: λ₀ = 2L = 1.36 m, so f₀ = v/λ₀ = 340/1.36 = 250 Hz. Beat frequency = |254 − 250| = 4 beats per second. This layers three skills — pipe rule, wave equation, then beats."
+      "explanation": "Open-pipe fundamental: λ₀ = 2L = 1.36 m, so f₀ = v/λ₀ = 340/1.36 = 250 Hz. Beat frequency = |254 − 250| = 4 beats per second. This layers three skills — pipe rule, wave equation, then beats.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m399-q07",
@@ -82,7 +112,12 @@
         "All three can cross a vacuum"
       ],
       "answer": 1,
-      "explanation": "Only radiation can cross a vacuum — it is electromagnetic radiation (the same family as light) and needs no medium, which is how the Sun's heat reaches the Earth. Conduction needs a material and convection needs a fluid, so neither works in a vacuum."
+      "explanation": "Only radiation can cross a vacuum — it is electromagnetic radiation (the same family as light) and needs no medium, which is how the Sun's heat reaches the Earth. Conduction needs a material and convection needs a fluid, so neither works in a vacuum.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m399-q08",
@@ -94,7 +129,12 @@
         "6 units"
       ],
       "answer": 1,
-      "explanation": "Intensity obeys the inverse-square law. Going from 2 m to 6 m is ×3 the distance, so intensity falls by 3² = 9: 36/9 = 4 units. The same I ∝ 1/r² law applies to both sound and light. Dividing by 3 instead of 9 is the trap."
+      "explanation": "Intensity obeys the inverse-square law. Going from 2 m to 6 m is ×3 the distance, so intensity falls by 3² = 9: 36/9 = 4 units. The same I ∝ 1/r² law applies to both sound and light. Dividing by 3 instead of 9 is the trap.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m399-q09",
@@ -106,7 +146,12 @@
         "Q = mL for both stages"
       ],
       "answer": 1,
-      "explanation": "Melting is a change of state at constant temperature → Q = mL (latent heat of fusion). Warming the water is a temperature change → Q = mcΔT. For a combined process you compute each stage and add them. Ask 'is the temperature changing, or the state?' to pick the equation."
+      "explanation": "Melting is a change of state at constant temperature → Q = mL (latent heat of fusion). Warming the water is a temperature change → Q = mcΔT. For a combined process you compute each stage and add them. Ask 'is the temperature changing, or the state?' to pick the equation.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m399-q10",
@@ -118,7 +163,12 @@
         "A wave diffracts through the string"
       ],
       "answer": 1,
-      "explanation": "Two identical waves (an incident wave and its reflection) travel in opposite directions and superpose. Where they are always out of phase the displacements cancel — nodes (zero displacement); where always in phase they reinforce — antinodes (maximum). The fixed pattern is a standing wave, which stores energy rather than transporting it."
+      "explanation": "Two identical waves (an incident wave and its reflection) travel in opposite directions and superpose. Where they are always out of phase the displacements cancel — nodes (zero displacement); where always in phase they reinforce — antinodes (maximum). The fixed pattern is a standing wave, which stores energy rather than transporting it.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

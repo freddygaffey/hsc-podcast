@@ -10,7 +10,12 @@
         "Automated tests in a Linux distribution failed during a routine release"
       ],
       "answer": 1,
-      "explanation": "Freund, running database performance tests, noticed that logging in over SSH was costing about half a second more than it should — roughly 600ms versus a usual 100ms. No scanner caught it; the discovery came from one curious engineer wondering why a routine login suddenly burned extra processor time. That tiny performance cost is the only reason the attack was caught before wide release."
+      "explanation": "Freund, running database performance tests, noticed that logging in over SSH was costing about half a second more than it should — roughly 600ms versus a usual 100ms. No scanner caught it; the discovery came from one curious engineer wondering why a routine login suddenly burned extra processor time. That tiny performance cost is the only reason the attack was caught before wide release.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-xz-backdoor-q02",
@@ -22,7 +27,12 @@
         "It is an operating-system kernel, so poisoning it would crash machines on boot"
       ],
       "answer": 2,
-      "explanation": "xz is a tiny, unglamorous compression tool (squeezing data smaller), but it is everywhere in Linux and — through a chain of dependencies — connects to the SSH login server that guards remote access to most internet servers. Its danger came from its position of trust, not from being exciting software. It is not an encryption library or a kernel; that confusion misses why a 'dull little compression tool' mattered so much."
+      "explanation": "xz is a tiny, unglamorous compression tool (squeezing data smaller), but it is everywhere in Linux and — through a chain of dependencies — connects to the SSH login server that guards remote access to most internet servers. Its danger came from its position of trust, not from being exciting software. It is not an encryption library or a kernel; that confusion misses why a 'dull little compression tool' mattered so much.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-xz-backdoor-q03",
@@ -34,7 +44,12 @@
         "They exploited a vulnerability in the project's version-control system to grant themselves access"
       ],
       "answer": 1,
-      "explanation": "The attack began with a relationship, not code. From 2021, Jia Tan made modest, reliable contributions over months and years, while fake personas (sock puppets) on the mailing list complained the lone maintainer was too slow and pressured him to add co-maintainers. Worn down, Lasse Collin gradually handed over real authority. This was social engineering of a community, not a stolen password."
+      "explanation": "The attack began with a relationship, not code. From 2021, Jia Tan made modest, reliable contributions over months and years, while fake personas (sock puppets) on the mailing list complained the lone maintainer was too slow and pressured him to add co-maintainers. Worn down, Lasse Collin gradually handed over real authority. This was social engineering of a community, not a stolen password.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-xz-backdoor-q04",
@@ -46,7 +61,12 @@
         "Source files are too small to contain a backdoor, so the payload had to live in larger test files"
       ],
       "answer": 2,
-      "explanation": "The malice was hidden in the build process and disguised as innocent-looking corrupted 'test data' precisely because reviewers read source code but rarely scrutinise the machinery that compiles it, and almost never inspect binary test files. A hidden script extracted the real payload at build time and wove it into the final library, so the public source looked completely clean. The hiding place was chosen to defeat human review, not for speed or encryption."
+      "explanation": "The malice was hidden in the build process and disguised as innocent-looking corrupted 'test data' precisely because reviewers read source code but rarely scrutinise the machinery that compiles it, and almost never inspect binary test files. A hidden script extracted the real payload at build time and wove it into the final library, so the public source looked completely clean. The hiding place was chosen to defeat human review, not for speed or encryption.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-xz-backdoor-q05",
@@ -58,7 +78,12 @@
         "It mined cryptocurrency in the background, which explained the extra half-second of processing"
       ],
       "answer": 1,
-      "explanation": "The backdoor lay in wait inside SSH and watched for a secret signal — a specific cryptographic key only the attacker possessed. To everyone else the system behaved completely normally, but the keyholder could run their own commands, bypassing all the usual checks, with full control — a skeleton key to a huge share of the internet's servers. It did not steal passwords or disable SSH; it granted targeted, hidden access."
+      "explanation": "The backdoor lay in wait inside SSH and watched for a secret signal — a specific cryptographic key only the attacker possessed. To everyone else the system behaved completely normally, but the keyholder could run their own commands, bypassing all the usual checks, with full control — a skeleton key to a huge share of the internet's servers. It did not steal passwords or disable SSH; it granted targeted, hidden access.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-xz-backdoor-q06",
@@ -70,7 +95,12 @@
         "Because it spread automatically between machines like a self-replicating worm"
       ],
       "answer": 1,
-      "explanation": "A supply-chain attack does not break down your door; it poisons something upstream that you willingly invite inside, with your blessing, as part of a routine update. Your software is a vast tree of other people's code, and every link in that tree is a way in — so the software you depend on is itself an attack surface. This is the opposite of an attacker forcing their way in from outside, which is what the tempting 'guessing passwords' option describes."
+      "explanation": "A supply-chain attack does not break down your door; it poisons something upstream that you willingly invite inside, with your blessing, as part of a routine update. Your software is a vast tree of other people's code, and every link in that tree is a way in — so the software you depend on is itself an attack surface. This is the opposite of an attacker forcing their way in from outside, which is what the tempting 'guessing passwords' option describes.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-xz-backdoor-q07",
@@ -82,7 +112,12 @@
         "Open source had no role either way; the attack and its discovery were both purely technical"
       ],
       "answer": 1,
-      "explanation": "The same model cuts both ways. Open source rests on the labour of volunteers who can be befriended, pressured, and exhausted — which the attacker exploited socially — but its openness means anyone can read the code, and that is exactly how the malice was finally caught in the open. The attacker defeated the human community, not the technology. Open-source code is public, not secret, so the option claiming it was 'secret' misstates the model."
+      "explanation": "The same model cuts both ways. Open source rests on the labour of volunteers who can be befriended, pressured, and exhausted — which the attacker exploited socially — but its openness means anyone can read the code, and that is exactly how the malice was finally caught in the open. The attacker defeated the human community, not the technology. Open-source code is public, not secret, so the option claiming it was 'secret' misstates the model.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-xz-backdoor-q08",
@@ -94,7 +129,12 @@
         "Security is only a concern for brand-new projects that have not yet built a user base"
       ],
       "answer": 2,
-      "explanation": "The xz backdoor was not a flaw in how the code was originally written — it was malice injected during maintenance, into a mature, trusted project, through the slow erosion of who controlled it. Security is not a phase you finish at the start and tick off; it has to live across the whole development life cycle, especially the boring, established stage where a patient adversary expects no one to be watching. Treating security as a start-of-project task is exactly the mindset this attack relied on."
+      "explanation": "The xz backdoor was not a flaw in how the code was originally written — it was malice injected during maintenance, into a mature, trusted project, through the slow erosion of who controlled it. Security is not a phase you finish at the start and tick off; it has to live across the whole development life cycle, especially the boring, established stage where a patient adversary expects no one to be watching. Treating security as a start-of-project task is exactly the mindset this attack relied on.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-xz-backdoor-q09",
@@ -106,7 +146,12 @@
         "Only update the library once per year to reduce how often new code enters the project"
       ],
       "answer": 1,
-      "explanation": "The xz backdoor lived in the build process, so reviewing only the source — or scanning it with antivirus — would have missed it entirely. The defences this attack was designed to slip past are build integrity, reproducible builds (checking the shipped binary genuinely matches the reviewed source), and scrutiny of who holds release authority. Closed source is not immune and updating less often does not address a poisoned release, so those options give false confidence."
+      "explanation": "The xz backdoor lived in the build process, so reviewing only the source — or scanning it with antivirus — would have missed it entirely. The defences this attack was designed to slip past are build integrity, reproducible builds (checking the shipped binary genuinely matches the reviewed source), and scrutiny of who holds release authority. Closed source is not immune and updating less often does not address a poisoned release, so those options give false confidence.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-xz-backdoor-q10",
@@ -118,7 +163,12 @@
         "CVE-2023-3094, rated high but not maximum severity"
       ],
       "answer": 0,
-      "explanation": "After Andres Freund's disclosure on 29 March 2024, the vulnerability was catalogued as CVE-2024-3094 and rated as severe as the scale allows — a CVSS score of 10.0. The maximum rating reflects how close it came: poisoned versions had already reached the testing branches of major Linux distributions, weeks away from rolling out to everyone. The other identifiers belong to different, unrelated vulnerabilities."
+      "explanation": "After Andres Freund's disclosure on 29 March 2024, the vulnerability was catalogued as CVE-2024-3094 and rated as severe as the scale allows — a CVSS score of 10.0. The maximum rating reflects how close it came: poisoned versions had already reached the testing branches of major Linux distributions, weeks away from rolling out to everyone. The other identifiers belong to different, unrelated vulnerabilities.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

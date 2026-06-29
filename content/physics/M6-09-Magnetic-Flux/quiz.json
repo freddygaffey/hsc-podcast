@@ -10,7 +10,12 @@
         "The rate at which a magnetic field changes with time"
       ],
       "answer": 1,
-      "explanation": "Flux is the total amount of field threading a surface — picture the number of field lines passing through the loop. Option A describes field strength B (a property of a point), not flux (a property of an area); the rate of change (D) is what Faraday's law uses, not flux itself."
+      "explanation": "Flux is the total amount of field threading a surface — picture the number of field lines passing through the loop. Option A describes field strength B (a property of a point), not flux (a property of an area); the rate of change (D) is what Faraday's law uses, not flux itself.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m609-q02",
@@ -22,7 +27,12 @@
         "The longest side of the loop"
       ],
       "answer": 2,
-      "explanation": "\\( \\theta \\) is the angle between the field and the area vector — the line sticking straight out of the loop, perpendicular to its plane. Measuring from the plane of the loop (A) is the single most common error and gives answers that are exactly backwards."
+      "explanation": "\\( \\theta \\) is the angle between the field and the area vector — the line sticking straight out of the loop, perpendicular to its plane. Measuring from the plane of the loop (A) is the single most common error and gives answers that are exactly backwards.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m609-q03",
@@ -34,7 +44,12 @@
         "Impossible to determine without the current"
       ],
       "answer": 1,
-      "explanation": "When the field is along the area vector, \\( \\theta = 0 \\), \\( \\cos 0 = 1 \\), so \\( \\Phi = BA \\), the maximum. Every field line threads the loop — the 'window flat to the rain' case. Flux is zero only when the field lies in the plane of the loop (\\( \\theta = 90° \\))."
+      "explanation": "When the field is along the area vector, \\( \\theta = 0 \\), \\( \\cos 0 = 1 \\), so \\( \\Phi = BA \\), the maximum. Every field line threads the loop — the 'window flat to the rain' case. Flux is zero only when the field lies in the plane of the loop (\\( \\theta = 90° \\)).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m609-q04",
@@ -46,7 +61,12 @@
         "Flux density only exists for rotating coils; flux only exists for stationary coils"
       ],
       "answer": 2,
-      "explanation": "'Flux density' is a deliberate exam trap: it means the field strength B in tesla, the flux per unit area, NOT the flux. Flux itself is the total field through a surface, measured in webers. A question asking for 'flux density' wants an answer in tesla."
+      "explanation": "'Flux density' is a deliberate exam trap: it means the field strength B in tesla, the flux per unit area, NOT the flux. Flux itself is the total field through a surface, measured in webers. A question asking for 'flux density' wants an answer in tesla.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m609-q05",
@@ -58,7 +78,12 @@
         "\\( 4.0 \\times 10^{-5}\\,\\mathrm{Wb} \\)"
       ],
       "answer": 0,
-      "explanation": "Convert first: \\( r = 0.080\\,\\mathrm{m} \\), so \\( A = \\pi (0.080)^2 = 0.0201\\,\\mathrm{m^2} \\). With \\( \\theta = 0 \\): \\( \\Phi = 0.20 \\times 0.0201 \\times 1 = 4.0 \\times 10^{-3}\\,\\mathrm{Wb} \\). Option D results from forgetting to convert cm to m before squaring."
+      "explanation": "Convert first: \\( r = 0.080\\,\\mathrm{m} \\), so \\( A = \\pi (0.080)^2 = 0.0201\\,\\mathrm{m^2} \\). With \\( \\theta = 0 \\): \\( \\Phi = 0.20 \\times 0.0201 \\times 1 = 4.0 \\times 10^{-3}\\,\\mathrm{Wb} \\). Option D results from forgetting to convert cm to m before squaring.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m609-q06",
@@ -70,7 +95,12 @@
         "The coil started rotating, inducing a back-EMF"
       ],
       "answer": 2,
-      "explanation": "Neither B nor A changed — only the angle. \\( \\cos 60° = 0.5 \\), so \\( \\Phi = BA \\times 0.5 \\). Tilting the loop means fewer lines pass through it, even though the field is just as strong. This is the whole meaning of the \\( \\cos\\theta \\) factor."
+      "explanation": "Neither B nor A changed — only the angle. \\( \\cos 60° = 0.5 \\), so \\( \\Phi = BA \\times 0.5 \\). Tilting the loop means fewer lines pass through it, even though the field is just as strong. This is the whole meaning of the \\( \\cos\\theta \\) factor.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m609-q07",
@@ -82,7 +112,12 @@
         "When the field strength is at its maximum"
       ],
       "answer": 1,
-      "explanation": "Flux is zero when the field skims across the face — lying in the plane of the loop, so \\( \\theta = 90° \\) and \\( \\cos 90° = 0 \\). 'Window edge-on to the rain' catches nothing. Field perpendicular to the plane (A) is actually the maximum-flux case."
+      "explanation": "Flux is zero when the field skims across the face — lying in the plane of the loop, so \\( \\theta = 90° \\) and \\( \\cos 90° = 0 \\). 'Window edge-on to the rain' catches nothing. Field perpendicular to the plane (A) is actually the maximum-flux case.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m609-q08",
@@ -94,7 +129,12 @@
         "Only changes if the field strength is also changing"
       ],
       "answer": 1,
-      "explanation": "The field strength B and area A are constant, but rotation continuously changes the angle \\( \\theta \\) between the field and the coil's area vector, so \\( \\cos\\theta \\) — and therefore the flux — rises and falls continuously. This changing flux is what makes a rotating coil generate."
+      "explanation": "The field strength B and area A are constant, but rotation continuously changes the angle \\( \\theta \\) between the field and the coil's area vector, so \\( \\cos\\theta \\) — and therefore the flux — rises and falls continuously. This changing flux is what makes a rotating coil generate.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m609-q09",
@@ -106,7 +146,12 @@
         "No, because flux can never induce an EMF under any conditions"
       ],
       "answer": 2,
-      "explanation": "A large but steady flux induces nothing. Only the rate of change of flux produces an EMF (Faraday's law). The flux itself, however enormous, does nothing on its own — this is the central warning of the topic."
+      "explanation": "A large but steady flux induces nothing. Only the rate of change of flux produces an EMF (Faraday's law). The flux itself, however enormous, does nothing on its own — this is the central warning of the topic.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m609-q10",
@@ -118,7 +163,12 @@
         "The newton; \\( 1\\,\\mathrm{N} = 1\\,\\mathrm{Wb\\cdot s} \\)"
       ],
       "answer": 1,
-      "explanation": "Flux is measured in webers, where \\( 1\\,\\mathrm{Wb} = 1\\,\\mathrm{T\\cdot m^2} \\) (one tesla through one square metre). Equivalently, the tesla is webers per square metre — which is exactly why field strength is called the 'flux density'."
+      "explanation": "Flux is measured in webers, where \\( 1\\,\\mathrm{Wb} = 1\\,\\mathrm{T\\cdot m^2} \\) (one tesla through one square metre). Equivalently, the tesla is webers per square metre — which is exactly why field strength is called the 'flux density'.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

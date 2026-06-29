@@ -11,7 +11,12 @@
       ],
       "answer": 0,
       "explanation": "A-A-R-T is the anchor for the six-mark 'describe measures to secure an API' question: Authenticate the caller, Authorise the action, Rate-limit the volume, and Transport-secure with HTTPS. Naming this framework shows the marker you have a structure. The tempting distractor swaps in 'Audit' and 'Tokenise', which are not the four named core measures.",
-      "type": "recall"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "recall"
     },
     {
       "id": "ssa1701-q02",
@@ -24,7 +29,12 @@
       ],
       "answer": 1,
       "explanation": "The script names exactly three credentials a request can carry to prove who is calling: an API key (a long secret identifying the application), a JWT (a signed token carrying identity and permissions for stateless authentication), and OAuth 2.0 (the delegated-authorisation protocol behind 'log in with Google'). Option A lists session and password mechanisms rather than the three API authentication credentials taught here.",
-      "type": "recall"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "recall"
     },
     {
       "id": "ssa1701-q03",
@@ -37,7 +47,12 @@
       ],
       "answer": 2,
       "explanation": "The exam line is that authentication verifies identity (who you are) while authorisation verifies permission for the specific action and resource (what you may do), and an API must enforce both on every request. Option A reverses the two definitions, which is the exact confusion the episode warns against. Remember: authenticated is not authorised.",
-      "type": "compare"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "compare"
     },
     {
       "id": "ssa1701-q04",
@@ -50,7 +65,12 @@
       ],
       "answer": 1,
       "explanation": "This is the classic API breach: the endpoint authenticates the user but never authorises them for that specific order, so any logged-in caller can change the ID and read records they do not own — broken access control, also known as an insecure direct object reference. The fix is a per-request authorisation check confirming ownership or a permitted role, applying least privilege. CORS (D) governs browser origins, not who may access a resource.",
-      "type": "scenario"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "scenario"
     },
     {
       "id": "ssa1701-q05",
@@ -63,7 +83,12 @@
       ],
       "answer": 2,
       "explanation": "The exam line is that rate limiting restricts the number of requests a client may make in a given period, protecting availability against denial-of-service flooding and slowing brute-force and scraping attacks. The mechanism is a token bucket or sliding window, and exceeding the limit returns HTTP 429, 'too many requests'. Option A describes transport security (HTTPS), and B describes authorisation — different measures in A-A-R-T.",
-      "type": "describe"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "describe"
     },
     {
       "id": "ssa1701-q06",
@@ -76,7 +101,12 @@
       ],
       "answer": 3,
       "explanation": "HTTPS is TLS, providing confidentiality in transit assumed by everything else; without it, credentials and data travel as clear text readable by anyone in between, so an API over plain HTTP is 'broken before you've added a single other control'. The rate-limiting distractor confuses transport security with the 'R' in A-A-R-T, and HTTPS does not perform authorisation. This is the hybrid encryption from 15.02 applied to every request and response.",
-      "type": "describe"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "describe"
     },
     {
       "id": "ssa1701-q07",
@@ -89,7 +119,12 @@
       ],
       "answer": 2,
       "explanation": "CORS is a controlled relaxation of the same-origin policy that tells browsers which origins may read responses — it is not an access-control mechanism, and non-browser clients ignore it entirely. The episode flags this as a marker's trap: writing 'we use CORS to stop unauthorised users' is wrong because access control is authentication and authorisation (A-A). A correctly allow-listed CORS policy still does not authenticate or authorise callers (D).",
-      "type": "scenario"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "scenario"
     },
     {
       "id": "ssa1701-q08",
@@ -102,7 +137,12 @@
       ],
       "answer": 3,
       "explanation": "In S-A-F-E sessions, the 'A' is cookie Attributes: HttpOnly blocks client-side JavaScript from reading the cookie, so a cross-site scripting attack cannot steal the session ID. The other options describe the SameSite attribute (anti-CSRF), Fixed lifetime, and the Secure attribute — all real session protections, but each answers a different attribute. The S-A-F-E hook is Strong random IDs, Attributes, Fixed lifetime, re-issue on Escalation.",
-      "type": "describe"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "describe"
     },
     {
       "id": "ssa1701-q09",
@@ -115,7 +155,12 @@
       ],
       "answer": 2,
       "explanation": "The same-origin policy is a browser security rule that by default only allows a page's scripts to read responses from its own origin, blocking other domains — this stops a malicious page quietly calling your bank's API with your logged-in session. CORS is a controlled relaxation: through response headers a server permits specified other origins. Option A reverses the relationship, and neither concept is about encryption (B) or authentication (D).",
-      "type": "compare"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "compare"
     },
     {
       "id": "ssa1701-q10",
@@ -128,7 +173,12 @@
       ],
       "answer": 1,
       "explanation": "A band-six answer structures the response with A-A-R-T plus input handling: authenticate with a signed token, authorise ownership on every request with least privilege (preventing broken access control), rate-limit per user, transport-secure over HTTPS, and validate and sanitise every field via V-S-E. Option A stops at 'logged in' and misuses CORS as access control — the exact weak answer the script contrasts against. Option D trusts a client-supplied user ID, which any caller could tamper with.",
-      "type": "scenario"
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      },
+      "skill": "scenario"
     }
   ]
 }

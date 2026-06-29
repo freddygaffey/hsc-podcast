@@ -10,7 +10,12 @@
         "A single diagram with no explanation"
       ],
       "answer": 1,
-      "explanation": "\"Account for\" means give the reasons and explain cause and effect, and the question demands a comparison, not four descriptions glued together. Writing four separate paragraphs caps low (band four) because it contains no comparison statements."
+      "explanation": "\"Account for\" means give the reasons and explain cause and effect, and the question demands a comparison, not four descriptions glued together. Writing four separate paragraphs caps low (band four) because it contains no comparison statements.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m603-q02",
@@ -22,7 +27,12 @@
         "Whether the particle is heavy or light"
       ],
       "answer": 2,
-      "explanation": "A force fixed in direction (uniform gravity, uniform electric field) gives a parabola and does work; a force always perpendicular to the velocity (magnetic force, circular-orbit gravity) gives a circle and does no work. This single distinction is the engine of the whole comparison."
+      "explanation": "A force fixed in direction (uniform gravity, uniform electric field) gives a parabola and does work; a force always perpendicular to the velocity (magnetic force, circular-orbit gravity) gives a circle and does no work. This single distinction is the engine of the whole comparison.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m603-q03",
@@ -34,7 +44,12 @@
         "The satellite's engines maintain its speed"
       ],
       "answer": 1,
-      "explanation": "In a circular orbit gravity points to the centre while the velocity is tangential — perpendicular. A force perpendicular to the velocity does no work, so the speed and kinetic energy stay constant. (In an elliptical orbit gravity has a component along the motion, so the speed varies.)"
+      "explanation": "In a circular orbit gravity points to the centre while the velocity is tangential — perpendicular. A force perpendicular to the velocity does no work, so the speed and kinetic energy stay constant. (In an elliptical orbit gravity has a component along the motion, so the speed varies.)",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m603-q04",
@@ -46,7 +61,12 @@
         "Because the two cases use different values of \\(g\\) but behave identically"
       ],
       "answer": 1,
-      "explanation": "A projectile moves across a uniform gravitational field (constant force, fixed direction) and traces a parabola. A satellite moves through a radial field that points inward and weakens with distance, acting as a centripetal force and giving a circle (or ellipse). The behaviours differ, so they are listed separately."
+      "explanation": "A projectile moves across a uniform gravitational field (constant force, fixed direction) and traces a parabola. A satellite moves through a radial field that points inward and weakens with distance, acting as a centripetal force and giving a circle (or ellipse). The behaviours differ, so they are listed separately.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m603-q05",
@@ -58,7 +78,12 @@
         "Circular orbit and uniform gravity"
       ],
       "answer": 0,
-      "explanation": "In uniform gravity and a uniform electric field the force is fixed in direction, so when the particle moves along the field, work is done and kinetic energy changes. In a circular orbit and a uniform magnetic field the force stays perpendicular to the velocity, so no work is done and the speed is constant."
+      "explanation": "In uniform gravity and a uniform electric field the force is fixed in direction, so when the particle moves along the field, work is done and kinetic energy changes. In a circular orbit and a uniform magnetic field the force stays perpendicular to the velocity, so no work is done and the speed is constant.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m603-q06",
@@ -70,7 +95,12 @@
         "Both require the particle to be moving at the speed of light"
       ],
       "answer": 1,
-      "explanation": "Forgetting where the force comes from, both have a force perpendicular to the velocity, giving the same three consequences: no work, constant speed, circular path. The geometry sets the path; only the origin of the force differs (gravity vs the magnetic interaction)."
+      "explanation": "Forgetting where the force comes from, both have a force perpendicular to the velocity, giving the same three consequences: no work, constant speed, circular path. The geometry sets the path; only the origin of the force differs (gravity vs the magnetic interaction).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m603-q07",
@@ -82,7 +112,12 @@
         "It drops to zero as the electron circles"
       ],
       "answer": 2,
-      "explanation": "The magnetic force is perpendicular to the velocity and does no work, so the speed is unchanged at \\(5.9\\times10^{6}\\ \\mathrm{m\\,s^{-1}}\\). The field only bends the electron into a circle (here of radius about 5.6 mm). Contrast: the electric field did work and increased the speed."
+      "explanation": "The magnetic force is perpendicular to the velocity and does no work, so the speed is unchanged at \\(5.9\\times10^{6}\\ \\mathrm{m\\,s^{-1}}\\). The field only bends the electron into a circle (here of radius about 5.6 mm). Contrast: the electric field did work and increased the speed.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m603-q08",
@@ -94,7 +129,12 @@
         "An electric field acts only on moving charges"
       ],
       "answer": 1,
-      "explanation": "Both forces are constant in a uniform field and independent of velocity, but the electric force points with the field for a positive charge and against it for a negative charge — so it can attract or repel. Gravity is always attractive. Both, however, do work and give parabolas."
+      "explanation": "Both forces are constant in a uniform field and independent of velocity, but the electric force points with the field for a positive charge and against it for a negative charge — so it can attract or repel. Gravity is always attractive. Both, however, do work and give parabolas.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m603-q09",
@@ -106,7 +146,12 @@
         "Including a diagram"
       ],
       "answer": 1,
-      "explanation": "Writing one paragraph per field produces correct descriptions but no comparison, so it caps low. The mark-earning structure organises by comparison axis — running all scenarios across each axis — and uses linking words like \"whereas\" and \"in contrast\"."
+      "explanation": "Writing one paragraph per field produces correct descriptions but no comparison, so it caps low. The mark-earning structure organises by comparison axis — running all scenarios across each axis — and uses linking words like \"whereas\" and \"in contrast\".",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m603-q10",
@@ -118,7 +163,12 @@
         "All four require the particle to be charged"
       ],
       "answer": 1,
-      "explanation": "In each scenario the relevant force is the net force on the particle, so \\(F = ma\\) applies without exception. The differences live only in the force law itself and the direction of that force relative to the velocity; everything else follows from those two."
+      "explanation": "In each scenario the relevant force is the net force on the particle, so \\(F = ma\\) applies without exception. The differences live only in the force law itself and the direction of that force relative to the velocity; everything else follows from those two.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

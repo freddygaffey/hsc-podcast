@@ -10,7 +10,12 @@
         "Read, Hold, Deliver, Return"
       ],
       "answer": 0,
-      "explanation": "R-H-D-R stands for Route, Handle, Data, Respond: the framework routes the URL to a handler, the handler runs the business logic, it fetches or stores data in the database, and it builds the response. This ordered list is the spine of a 'describe the steps a web server takes to process a dynamic request' question. The other options use real-sounding back-end words but are not the named stages."
+      "explanation": "R-H-D-R stands for Route, Handle, Data, Respond: the framework routes the URL to a handler, the handler runs the business logic, it fetches or stores data in the database, and it builds the response. This ordered list is the spine of a 'describe the steps a web server takes to process a dynamic request' question. The other options use real-sounding back-end words but are not the named stages.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1301-q02",
@@ -22,7 +27,12 @@
         "Web server software stores the database, while the web framework renders the HTML templates"
       ],
       "answer": 2,
-      "explanation": "The mark-earning distinction is that the web server software handles the network connection, raw HTTP parsing and static content, while the web framework runs the routing and business logic for dynamic requests. Option A reverses the two roles, which is the named trap; the episode warns 'don't call Flask a web server or nginx a framework.' They are different layers, not the same one (eliminating B)."
+      "explanation": "The mark-earning distinction is that the web server software handles the network connection, raw HTTP parsing and static content, while the web framework runs the routing and business logic for dynamic requests. Option A reverses the two roles, which is the named trap; the episode warns 'don't call Flask a web server or nginx a framework.' They are different layers, not the same one (eliminating B).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1301-q03",
@@ -34,7 +44,12 @@
         "The response object"
       ],
       "answer": 2,
-      "explanation": "The request object is the framework's object holding everything about the incoming request: the URL, the form data and the headers, and the handler reads the user's query out of it. The session object remembers a logged-in user across requests, and the response object is what you send back, so neither holds the incoming input."
+      "explanation": "The request object is the framework's object holding everything about the incoming request: the URL, the form data and the headers, and the handler reads the user's query out of it. The session object remembers a logged-in user across requests, and the response object is what you send back, so neither holds the incoming input.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1301-q04",
@@ -46,7 +61,12 @@
         "The web server validates all user input so the framework never has to"
       ],
       "answer": 1,
-      "explanation": "The web server is optimised for accepting many connections, serving static files fast and TLS termination (decrypting HTTPS), while the framework is for dynamic logic, so the server takes the load and forwards only dynamic requests. This is separation of responsibilities applied to infrastructure. Option D is wrong because validation must still happen in the back-end handler; the web server does not remove that duty."
+      "explanation": "The web server is optimised for accepting many connections, serving static files fast and TLS termination (decrypting HTTPS), while the framework is for dynamic logic, so the server takes the load and forwards only dynamic requests. This is separation of responsibilities applied to infrastructure. Option D is wrong because validation must still happen in the back-end handler; the web server does not remove that duty.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1301-q05",
@@ -58,7 +78,12 @@
         "It remembers a logged-in user across multiple requests"
       ],
       "answer": 3,
-      "explanation": "The session object remembers a logged-in user across requests, which is what tracks the authenticated user throughout the back-end flow. The most tempting confusion is the request object, which instead holds the form data and headers of the current request. Serving static files and TLS termination are jobs of the web server software, not framework objects."
+      "explanation": "The session object remembers a logged-in user across requests, which is what tracks the authenticated user throughout the back-end flow. The most tempting confusion is the request object, which instead holds the form data and headers of the current request. Serving static files and TLS termination are jobs of the web server software, not framework objects.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1301-q06",
@@ -70,7 +95,12 @@
         "The browser deletes the validation code once the page is closed, so it must be repeated"
       ],
       "answer": 2,
-      "explanation": "Client-side validation runs in the user's browser and can be bypassed, since an attacker can POST straight to the /search endpoint without ever loading your page or running your JavaScript. Client-side validation is convenience; server-side validation is security. The 'too slow' option misframes the issue as speed, but the real problem is that the check can be skipped entirely, allowing unvalidated input to reach the server."
+      "explanation": "Client-side validation runs in the user's browser and can be bypassed, since an attacker can POST straight to the /search endpoint without ever loading your page or running your JavaScript. Client-side validation is convenience; server-side validation is security. The 'too slow' option misframes the issue as speed, but the real problem is that the check can be skipped entirely, allowing unvalidated input to reach the server.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1301-q07",
@@ -82,7 +112,12 @@
         "Both attacks are prevented automatically by the web server's TLS termination"
       ],
       "answer": 2,
-      "explanation": "Gluing raw input into a database query lets an attacker rewrite the query, which is SQL injection; dropping raw input into the HTML you send back lets the attacker's code run in other users' browsers, which is cross-site scripting (XSS). Option A reverses which attack maps to which sink, the classic confusion. TLS only encrypts the connection and does nothing to stop injection (eliminating D)."
+      "explanation": "Gluing raw input into a database query lets an attacker rewrite the query, which is SQL injection; dropping raw input into the HTML you send back lets the attacker's code run in other users' browsers, which is cross-site scripting (XSS). Option A reverses which attack maps to which sink, the classic confusion. TLS only encrypts the connection and does nothing to stop injection (eliminating D).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1301-q08",
@@ -94,7 +129,12 @@
         "Create-Read-Update-Delete maps to UPDATE-SELECT-INSERT-DELETE and to PUT-GET-POST-DELETE"
       ],
       "answer": 1,
-      "explanation": "CRUD lines up as Create-Read-Update-Delete to the SQL commands INSERT-SELECT-UPDATE-DELETE and to the HTTP methods POST-GET-PUT-DELETE. The tempting error in option A swaps INSERT and SELECT (Create is INSERT, not SELECT) and mismatches the verbs. This mapping is a tidy way to remember how HTTP verbs, SQL and data operations correspond, and it forward-links to the databases episode."
+      "explanation": "CRUD lines up as Create-Read-Update-Delete to the SQL commands INSERT-SELECT-UPDATE-DELETE and to the HTTP methods POST-GET-PUT-DELETE. The tempting error in option A swaps INSERT and SELECT (Create is INSERT, not SELECT) and mismatches the verbs. This mapping is a tidy way to remember how HTTP verbs, SQL and data operations correspond, and it forward-links to the databases episode.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1301-q09",
@@ -106,7 +146,12 @@
         "The framework routes /search to the handler, which reads the term from the request object, queries the database, and renders HTML back (R-H-D-R); the key risk is that the search term is untrusted input enabling SQL injection or XSS unless validated and parameterised"
       ],
       "answer": 3,
-      "explanation": "The correct narration is Route, Handle, Data, Respond: the framework routes /search to the handler, which reads the term from the request object, queries the database, then renders the records into an HTML response. The key risk is that the search term is untrusted user input; concatenating it into SQL enables injection and inserting it unescaped into HTML enables XSS, so it must be validated and sanitised with parameterised queries. The template-engine option is wrong because no automatic layer validates the input for you."
+      "explanation": "The correct narration is Route, Handle, Data, Respond: the framework routes /search to the handler, which reads the term from the request object, queries the database, then renders the records into an HTML response. The key risk is that the search term is untrusted user input; concatenating it into SQL enables injection and inserting it unescaped into HTML enables XSS, so it must be validated and sanitised with parameterised queries. The template-engine option is wrong because no automatic layer validates the input for you.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw1301-q10",
@@ -118,7 +163,12 @@
         "Routing URLs to handlers and querying the database"
       ],
       "answer": 0,
-      "explanation": "The syllabus point is that shell scripts handle the surrounding tooling, specifically making files and directories and searching through text (for example mkdir to scaffold a project and grep to search a log file). Rendering templates, sessions, routing and database queries are application-code jobs done by the framework, not the shell-script tooling that sits alongside it."
+      "explanation": "The syllabus point is that shell scripts handle the surrounding tooling, specifically making files and directories and searching through text (for example mkdir to scaffold a project and grep to search a log file). Rendering templates, sessions, routing and database queries are application-code jobs done by the framework, not the shell-script tooling that sits alongside it.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

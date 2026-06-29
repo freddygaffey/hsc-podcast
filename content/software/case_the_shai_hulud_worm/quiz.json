@@ -10,7 +10,12 @@
         "The open-source distribution network"
       ],
       "answer": 0,
-      "explanation": "The episode names this the 'software supply chain' — the chain of trust from author to the machines that run the code. Both the September phishing attack and the worm targeted this chain rather than any bug in the code itself. 'Dependency injection' is a real but unrelated programming concept, not what the episode describes."
+      "explanation": "The episode names this the 'software supply chain' — the chain of trust from author to the machines that run the code. Both the September phishing attack and the worm targeted this chain rather than any bug in the code itself. 'Dependency injection' is a real but unrelated programming concept, not what the episode describes.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-shai-hulud-worm-q02",
@@ -22,7 +27,12 @@
         "An insider at the npm registry sold his account details"
       ],
       "answer": 1,
-      "explanation": "The attacker sent a fake '2FA update' email pointing to npmjs.help — close to, but not, the real npmjs.com. The maintainer entered his username, password, and the live six-digit one-time code on the fake page, and the attacker relayed all three before the code expired. The episode stresses there was no clever bug; a human was simply lied to."
+      "explanation": "The attacker sent a fake '2FA update' email pointing to npmjs.help — close to, but not, the real npmjs.com. The maintainer entered his username, password, and the live six-digit one-time code on the fake page, and the attacker relayed all three before the code expired. The episode stresses there was no clever bug; a human was simply lied to.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-shai-hulud-worm-q03",
@@ -34,7 +44,12 @@
         "The npm registry had no rate limiting, so the attacker copied billions of accounts"
       ],
       "answer": 2,
-      "explanation": "The maintainer controlled microscopic utilities like chalk (~300 million downloads a week) and debug (~47 million), pulled in several layers deep by countless projects that never chose them directly. Compromising one upstream link compromises everyone downstream at once. The 'master encryption key' option wrongly assumes a registry-wide breach rather than one maintainer's account."
+      "explanation": "The maintainer controlled microscopic utilities like chalk (~300 million downloads a week) and debug (~47 million), pulled in several layers deep by countless projects that never chose them directly. Compromising one upstream link compromises everyone downstream at once. The 'master encryption key' option wrongly assumes a registry-wide breach rather than one maintainer's account.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-shai-hulud-worm-q04",
@@ -46,7 +61,12 @@
         "It deleted the contents of the developer's code repositories"
       ],
       "answer": 1,
-      "explanation": "The payload was a 'crypto-clipper' or 'wallet-drainer': it watched for an outgoing crypto transaction and rewrote the recipient to an attacker-controlled address while the on-screen details still looked correct. It picked a pocket quietly rather than smashing a window. Ransomware (option A) is a different attack class entirely."
+      "explanation": "The payload was a 'crypto-clipper' or 'wallet-drainer': it watched for an outgoing crypto transaction and rewrote the recipient to an attacker-controlled address while the on-screen details still looked correct. It picked a pocket quietly rather than smashing a window. Ransomware (option A) is a different attack class entirely.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-shai-hulud-worm-q05",
@@ -58,7 +78,12 @@
         "The attacker only targeted one wealthy victim and ignored everyone else"
       ],
       "answer": 0,
-      "explanation": "The damage was small purely because of speed: within roughly two hours other developers raised the alarm and the maintainer pulled the malicious versions. The defences were not strong — the attacker 'failed' only because a human was driving and got caught fast. The episode's whole point is that this safety net vanishes once no human is involved."
+      "explanation": "The damage was small purely because of speed: within roughly two hours other developers raised the alarm and the maintainer pulled the malicious versions. The defences were not strong — the attacker 'failed' only because a human was driving and got caught fast. The episode's whole point is that this safety net vanishes once no human is involved.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-shai-hulud-worm-q06",
@@ -70,7 +95,12 @@
         "MetaMask, after the crypto wallet it targeted"
       ],
       "answer": 0,
-      "explanation": "The worm was named Shai-Hulud, after the vast sandworm in Frank Herbert's Dune, because it burrowed unseen through the ecosystem and surfaced without warning. Stuxnet and left-pad are real but unrelated incidents, and MetaMask is a wallet type — all tempting distractors."
+      "explanation": "The worm was named Shai-Hulud, after the vast sandworm in Frank Herbert's Dune, because it burrowed unseen through the ecosystem and surfaced without warning. Stuxnet and left-pad are real but unrelated incidents, and MetaMask is a wallet type — all tempting distractors.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-shai-hulud-worm-q07",
@@ -82,7 +112,12 @@
         "It waited for each maintainer to manually publish an update and rode along with it"
       ],
       "answer": 1,
-      "explanation": "On install, a postinstall script ran automatically: it scanned for secrets (npm, GitHub, and cloud tokens) using a credential scanner, exfiltrated them, then used the stolen npm token to log in as the victim and republish a poisoned copy into all of that victim's packages — making each victim a launch pad for the next. No human clicked publish (ruling out D), and it spread through the supply chain, not the OS network stack (ruling out A)."
+      "explanation": "On install, a postinstall script ran automatically: it scanned for secrets (npm, GitHub, and cloud tokens) using a credential scanner, exfiltrated them, then used the stolen npm token to log in as the victim and republish a poisoned copy into all of that victim's packages — making each victim a launch pad for the next. No human clicked publish (ruling out D), and it spread through the supply chain, not the OS network stack (ruling out A).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-shai-hulud-worm-q08",
@@ -94,7 +129,12 @@
         "The worm exploited a clever bug in the code while the phishing attack did not"
       ],
       "answer": 2,
-      "explanation": "The episode's core distinction is human versus automatic: a human attacker (like Qix's) can be caught in two hours, but 'you cannot train a thousand machines not to run an install script.' A worm needs no phishing email and works while everyone sleeps. Neither attack relied on a code bug — both abused trust — so option D is wrong; and the worm's danger was its self-propagation, not the sums stolen."
+      "explanation": "The episode's core distinction is human versus automatic: a human attacker (like Qix's) can be caught in two hours, but 'you cannot train a thousand machines not to run an install script.' A worm needs no phishing email and works while everyone sleeps. Neither attack relied on a code bug — both abused trust — so option D is wrong; and the worm's danger was its self-propagation, not the sums stolen.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-shai-hulud-worm-q09",
@@ -106,7 +146,12 @@
         "It overwrote the victim's published packages with empty files"
       ],
       "answer": 1,
-      "explanation": "The worm created a brand-new PUBLIC repository named 'Shai-Hulud' on the victim's own GitHub account and published the stolen credentials in the open. Theft and public humiliation were the same act — a victim did not just lose its keys, it found its secrets exposed on the internet under its own name."
+      "explanation": "The worm created a brand-new PUBLIC repository named 'Shai-Hulud' on the victim's own GitHub account and published the stolen credentials in the open. Theft and public humiliation were the same act — a victim did not just lose its keys, it found its secrets exposed on the internet under its own name.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-shai-hulud-worm-q10",
@@ -118,7 +163,12 @@
         "Disable two-factor authentication so there is no 2FA code to phish"
       ],
       "answer": 2,
-      "explanation": "The episode names phishing-resistant MFA (defeats a Qix-style con), pinning with integrity checks (a poisoned new release is not pulled in automatically and a swapped-out one is caught at the door), turning off unneeded install scripts (so a postinstall worm cannot run unseen), and checking provenance. Popularity is no shield — chalk at ~300 million a week was exactly what got poisoned — and disabling 2FA is backwards. The deepest lesson: 'your dependencies are part of your software.'"
+      "explanation": "The episode names phishing-resistant MFA (defeats a Qix-style con), pinning with integrity checks (a poisoned new release is not pulled in automatically and a swapped-out one is caught at the door), turning off unneeded install scripts (so a postinstall worm cannot run unseen), and checking provenance. Popularity is no shield — chalk at ~300 million a week was exactly what got poisoned — and disabling 2FA is backwards. The deepest lesson: 'your dependencies are part of your software.'",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

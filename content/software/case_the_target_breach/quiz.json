@@ -10,7 +10,12 @@
         "They bribed an employee inside Target's payment-processing team"
       ],
       "answer": 0,
-      "explanation": "The attackers did not attack Target's well-defended front gate at all. They sent a phishing email to Target's heating and air-conditioning contractor, Fazio Mechanical Services, and malware on the contractor's machines harvested the login credentials the vendor used to connect into Target. Brute-forcing Target directly is the opposite of what happened: the credentials were effectively handed over via the weaker third party."
+      "explanation": "The attackers did not attack Target's well-defended front gate at all. They sent a phishing email to Target's heating and air-conditioning contractor, Fazio Mechanical Services, and malware on the contractor's machines harvested the login credentials the vendor used to connect into Target. Brute-forcing Target directly is the opposite of what happened: the credentials were effectively handed over via the weaker third party.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-target-breach-q02",
@@ -22,7 +27,12 @@
         "Around 70 million card numbers and 40 million people's personal details"
       ],
       "answer": 1,
-      "explanation": "The attackers stole around 40 million credit and debit card numbers, plus the names, addresses, phone numbers and emails of as many as 70 million people on top of that, making it one of the largest retail data breaches in history at the time. Option D inverts the two figures: the 40 million applies to the card numbers and the 70 million to the broader set of personal details."
+      "explanation": "The attackers stole around 40 million credit and debit card numbers, plus the names, addresses, phone numbers and emails of as many as 70 million people on top of that, making it one of the largest retail data breaches in history at the time. Option D inverts the two figures: the 40 million applies to the card numbers and the 70 million to the broader set of personal details.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-target-breach-q03",
@@ -34,7 +44,12 @@
         "The card data was stored on the same physical server as the air-conditioning controls"
       ],
       "answer": 1,
-      "explanation": "In a well-designed network the boring vendor system for monitoring air conditioning and the payment-card systems should live in completely separate, walled-off zones with no path between them. Target's network was, in the relevant ways, flat, so the contractor's foothold became a launch pad and the attackers pivoted sideways toward the registers. The vendor account was not deliberately given register admin rights (option A); the problem was a lack of internal separation, not an explicit grant."
+      "explanation": "In a well-designed network the boring vendor system for monitoring air conditioning and the payment-card systems should live in completely separate, walled-off zones with no path between them. Target's network was, in the relevant ways, flat, so the contractor's foothold became a launch pad and the attackers pivoted sideways toward the registers. The vendor account was not deliberately given register admin rights (option A); the problem was a lack of internal separation, not an explicit grant.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-target-breach-q04",
@@ -46,7 +61,12 @@
         "It intercepted the encrypted network traffic and decrypted it on the attacker's servers"
       ],
       "answer": 2,
-      "explanation": "When a card is swiped, the data must be briefly unencrypted inside the register's memory in order to be processed. The malware was a memory scraper that watched that memory and grabbed each card number in the split second it was readable, before it got passed on and secured. It never had to crack encryption keys; it simply exploited the unavoidable instant when the data was in the clear."
+      "explanation": "When a card is swiped, the data must be briefly unencrypted inside the register's memory in order to be processed. The malware was a memory scraper that watched that memory and grabbed each card number in the split second it was readable, before it got passed on and secured. It never had to crack encryption keys; it simply exploited the unavoidable instant when the data was in the clear.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-target-breach-q05",
@@ -58,7 +78,12 @@
         "The security team acted immediately but the malware was too advanced to remove"
       ],
       "answer": 1,
-      "explanation": "Target had recently installed a sophisticated, expensive monitoring system that detected the suspicious activity and fired alerts correctly. The failure was human and procedural: the people who received those warnings did nothing in time, for reasons including too many alerts and unclear responsibility for who should act. Option A is wrong because the detection technology did its job; it was the response that failed."
+      "explanation": "Target had recently installed a sophisticated, expensive monitoring system that detected the suspicious activity and fired alerts correctly. The failure was human and procedural: the people who received those warnings did nothing in time, for reasons including too many alerts and unclear responsibility for who should act. Option A is wrong because the detection technology did its job; it was the response that failed.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-target-breach-q06",
@@ -70,7 +95,12 @@
         "Your security is only as strong as the security of everyone you give access to; every vendor with a login is part of your attack surface"
       ],
       "answer": 3,
-      "explanation": "A supply-chain attack of the access kind means the attacker targets a weaker third party that holds a key to your systems, rather than attacking you directly. The lesson is that your security is only as strong as the security of everyone you give access to, so every vendor, contractor and partner with a login is part of your attack surface. The software-update option describes a different style of supply-chain attack that is not what happened here."
+      "explanation": "A supply-chain attack of the access kind means the attacker targets a weaker third party that holds a key to your systems, rather than attacking you directly. The lesson is that your security is only as strong as the security of everyone you give access to, so every vendor, contractor and partner with a login is part of your attack surface. The software-update option describes a different style of supply-chain attack that is not what happened here.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-target-breach-q07",
@@ -82,7 +112,12 @@
         "Segmentation applies only to vendors, while least privilege applies only to internal staff"
       ],
       "answer": 0,
-      "explanation": "Segmentation is structural: the network is carved into isolated zones with strict controls on traffic between them, so breaching one zone does not give the run of the whole place. Least privilege is about accounts: every user and system should have the minimum access it needs and nothing more, so a stolen HVAC login would only let an attacker fiddle with the thermostat. Option B swaps the two definitions; they are related but distinct controls, not the same thing (option C)."
+      "explanation": "Segmentation is structural: the network is carved into isolated zones with strict controls on traffic between them, so breaching one zone does not give the run of the whole place. Least privilege is about accounts: every user and system should have the minimum access it needs and nothing more, so a stolen HVAC login would only let an attacker fiddle with the thermostat. Option B swaps the two definitions; they are related but distinct controls, not the same thing (option C).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-target-breach-q08",
@@ -94,7 +129,12 @@
         "Because internal walls stop a fire in one room from burning down the whole building, just as segmentation contains a breach to one zone"
       ],
       "answer": 3,
-      "explanation": "Segmentation is described as the internal walls that stop a fire in one room from burning down the whole building. It contains a breach so that compromising one zone does not give an attacker the run of the entire network, which is exactly what Target lacked when the fire spread from building management to the registers. Segmentation controls reachability between zones; it does not encrypt traffic or merely hide systems."
+      "explanation": "Segmentation is described as the internal walls that stop a fire in one room from burning down the whole building. It contains a breach so that compromising one zone does not give an attacker the run of the entire network, which is exactly what Target lacked when the fire spread from building management to the registers. Segmentation controls reachability between zones; it does not encrypt traffic or merely hide systems.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-target-breach-q09",
@@ -106,7 +146,12 @@
         "Encrypt all stored card data so that alerts are no longer necessary"
       ],
       "answer": 1,
-      "explanation": "The Target lesson is that detection only matters if someone is responsible for watching the alerts, is trusted to act, and actually does. Applying this means clear ownership: a named person whose job it unambiguously is to respond, plus a chain that holds them to it, so an alarm is not just theatre. Buying more tooling (option A) repeats Target's mistake, since the most expensive tooling is worthless if its warnings land in an inbox nobody is accountable for."
+      "explanation": "The Target lesson is that detection only matters if someone is responsible for watching the alerts, is trusted to act, and actually does. Applying this means clear ownership: a named person whose job it unambiguously is to respond, plus a chain that holds them to it, so an alarm is not just theatre. Buying more tooling (option A) repeats Target's mistake, since the most expensive tooling is worthless if its warnings land in an inbox nobody is accountable for.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-target-breach-q10",
@@ -118,7 +163,12 @@
         "Incident response, by writing a faster plan for after a breach happens"
       ],
       "answer": 2,
-      "explanation": "Least privilege says every account should have the minimum access it needs and nothing more, so if a single account is compromised the blast radius is tiny. Confining the supplier's login to just the ordering system means stealing it buys an attacker no path to patient records, directly mirroring how Target's HVAC account should never have reached the registers. Segmentation also helps but is a broader structural change; the question asks for the single principle that most directly limits this one over-permissioned account."
+      "explanation": "Least privilege says every account should have the minimum access it needs and nothing more, so if a single account is compromised the blast radius is tiny. Confining the supplier's login to just the ordering system means stealing it buys an attacker no path to patient records, directly mirroring how Target's HVAC account should never have reached the registers. Segmentation also helps but is a broader structural change; the question asks for the single principle that most directly limits this one over-permissioned account.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

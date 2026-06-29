@@ -10,7 +10,12 @@
         "Variety, Volume, Verification"
       ],
       "answer": 0,
-      "explanation": "Big data is defined by the three Vs: Volume (the sheer amount, terabytes to petabytes), Velocity (the speed it arrives and must be processed), and Variety (the many different forms — text, video, logs, images). The script warns that some textbooks add Veracity, but Volume, Velocity, Variety is the core you must name; option B swaps in Validity and Veracity, which are not the required trio."
+      "explanation": "Big data is defined by the three Vs: Volume (the sheer amount, terabytes to petabytes), Velocity (the speed it arrives and must be processed), and Variety (the many different forms — text, video, logs, images). The script warns that some textbooks add Veracity, but Volume, Velocity, Variety is the core you must name; option B swaps in Validity and Veracity, which are not the required trio.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw04-q02",
@@ -22,7 +27,12 @@
         "Mining, Metadata, Streaming service management"
       ],
       "answer": 3,
-      "explanation": "M-M-S stands for data Mining, Metadata, and Streaming service management — the three syllabus terms for this dot-point, pictured as a bag of M-and-Ms being sorted. The trap is 'Monolith, Microservices, Serverless', which are the three architecture patterns, a different list. The option naming Storage is also wrong, because the episode explicitly contrasts storage against mining."
+      "explanation": "M-M-S stands for data Mining, Metadata, and Streaming service management — the three syllabus terms for this dot-point, pictured as a bag of M-and-Ms being sorted. The trap is 'Monolith, Microservices, Serverless', which are the three architecture patterns, a different list. The option naming Storage is also wrong, because the episode explicitly contrasts storage against mining.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw04-q03",
@@ -34,7 +44,12 @@
         "It fails to mention that big data must always be stored in the cloud"
       ],
       "answer": 1,
-      "explanation": "The episode flags this as a trap in the first sentence: 'lots of data' is incomplete and caps your marks. A full answer states big data refers to datasets so large and complex that traditional processing cannot handle them, characterised by high volume, high velocity, and high variety — naming the three Vs is what earns the higher band. Option C is wrong because volume (large amounts) genuinely is part of the definition; the problem is leaving out velocity and variety."
+      "explanation": "The episode flags this as a trap in the first sentence: 'lots of data' is incomplete and caps your marks. A full answer states big data refers to datasets so large and complex that traditional processing cannot handle them, characterised by high volume, high velocity, and high variety — naming the three Vs is what earns the higher band. Option C is wrong because volume (large amounts) genuinely is part of the definition; the problem is leaving out velocity and variety.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw04-q04",
@@ -46,7 +61,12 @@
         "Attaching descriptive fields to content so it can be searched, such as tagging a film with its genre and cast"
       ],
       "answer": 2,
-      "explanation": "Data mining is the process of analysing large datasets to discover patterns, trends, and relationships that are not obvious — for example, a streaming service mining viewing history to find which shows are watched together and using that for recommendations. Option B describes a normal query (retrieval of something you already know how to ask for), and option D describes metadata. The mark-earning formula is: name the process, then name a concrete web example."
+      "explanation": "Data mining is the process of analysing large datasets to discover patterns, trends, and relationships that are not obvious — for example, a streaming service mining viewing history to find which shows are watched together and using that for recommendations. Option B describes a normal query (retrieval of something you already know how to ask for), and option D describes metadata. The mark-earning formula is: name the process, then name a concrete web example.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw04-q05",
@@ -58,7 +78,12 @@
         "Storage works on small datasets, whereas mining only works on metadata"
       ],
       "answer": 0,
-      "explanation": "Data storage is simply the retention of data for later use, whereas data mining is the analysis of large datasets to discover patterns you did not already know to look for — storage keeps the data, mining extracts insight. The key word is discovery. The episode names 'data mining is storing lots of data' as a marking pitfall because it conflates mining with storage, which makes option B (the reversed definitions) and option C tempting but wrong."
+      "explanation": "Data storage is simply the retention of data for later use, whereas data mining is the analysis of large datasets to discover patterns you did not already know to look for — storage keeps the data, mining extracts insight. The key word is discovery. The episode names 'data mining is storing lots of data' as a marking pitfall because it conflates mining with storage, which makes option B (the reversed definitions) and option C tempting but wrong.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw04-q06",
@@ -70,7 +95,12 @@
         "Data about data — descriptive information such as a film's title, genre, cast, release year, and duration on a streaming catalogue"
       ],
       "answer": 3,
-      "explanation": "Metadata is literally 'data about data' — the descriptive information that organises and describes content to make it findable, such as a film's title, genre, cast, release year, and duration, which powers search, filtering, and recommendations. The 'raw video file' option is the actual content (the opposite of metadata), and the 'discovered pattern' option describes mining. Listing 1 in the supplementary shows this exact split: the video_file is the content, the title/genre/cast block is the metadata."
+      "explanation": "Metadata is literally 'data about data' — the descriptive information that organises and describes content to make it findable, such as a film's title, genre, cast, release year, and duration, which powers search, filtering, and recommendations. The 'raw video file' option is the actual content (the opposite of metadata), and the 'discovered pattern' option describes mining. Listing 1 in the supplementary shows this exact split: the video_file is the content, the title/genre/cast block is the metadata.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw04-q07",
@@ -82,7 +112,12 @@
         "Translating domain names into IP addresses so streams reach the correct server"
       ],
       "answer": 2,
-      "explanation": "Streaming data arrives continuously and must be handled in real time — it is a firehose, and if you cannot keep up you must buffer it or start dropping data. Streaming service management therefore addresses buffering, throughput, and reliability so the service keeps pace with the incoming rate; this is the velocity V made concrete. Listing 3's bounded buffer that drops on overflow illustrates exactly this. Option D describes DNS, a topic from episode two, not streaming management."
+      "explanation": "Streaming data arrives continuously and must be handled in real time — it is a firehose, and if you cannot keep up you must buffer it or start dropping data. Streaming service management therefore addresses buffering, throughput, and reliability so the service keeps pace with the incoming rate; this is the velocity V made concrete. Listing 3's bounded buffer that drops on overflow illustrates exactly this. Option D describes DNS, a topic from episode two, not streaming management.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw04-q08",
@@ -94,7 +129,12 @@
         "Microservices are simpler to deploy and debug than a monolith because there are no network hops between parts"
       ],
       "answer": 1,
-      "explanation": "A monolith is a single deployable unit — simple to develop and test, but you must scale the whole thing and one failure can bring everything down. Microservices split the app into small independent services that can each be scaled separately (a hundred servers for video delivery, two for login) and give fault isolation, but pay with distributed-systems complexity. Option D reverses the trade-off: it is the monolith, not microservices, that avoids network hops and is simpler to debug."
+      "explanation": "A monolith is a single deployable unit — simple to develop and test, but you must scale the whole thing and one failure can bring everything down. Microservices split the app into small independent services that can each be scaled separately (a hundred servers for video delivery, two for login) and give fault isolation, but pay with distributed-systems complexity. Option D reverses the trade-off: it is the monolith, not microservices, that avoids network hops and is simpler to debug.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw04-q09",
@@ -106,7 +146,12 @@
         "Add a single origin server in Sydney and rely on DNS to send all global traffic to it efficiently"
       ],
       "answer": 1,
-      "explanation": "The high volume and velocity of millions of concurrent users break a single monolithic server, so the app is decomposed into independent microservices that scale separately (video delivery far more than login) with fault isolation, while a CDN caches content on edge servers close to users to cut global latency. This maps each big-data property to an architectural decision — the six-mark skill. Option A fails because a monolith forces you to scale the whole app at once, and option D leaves one distant origin under planet-crossing load."
+      "explanation": "The high volume and velocity of millions of concurrent users break a single monolithic server, so the app is decomposed into independent microservices that scale separately (video delivery far more than login) with fault isolation, while a CDN caches content on edge servers close to users to cut global latency. This maps each big-data property to an architectural decision — the six-mark skill. Option A fails because a monolith forces you to scale the whole app at once, and option D leaves one distant origin under planet-crossing load.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw04-q10",
@@ -118,7 +163,12 @@
         "It mirrors a monolith by keeping all content on one origin server, and the trade-off is simplicity over scale"
       ],
       "answer": 1,
-      "explanation": "A CDN caches copies of content on edge servers around the world so a London user is served locally rather than from a Sydney origin — the exact same 'move data closer to the user' idea as the DNS caching from episode two. The episode's planted trade-off is the blast radius: concentrating everything behind shared infrastructure means that if the shared layer fails, an enormous slice of the web fails at once, as in the 2019 Cloudflare outage. Option D is the opposite of a CDN, which distributes rather than centralises content."
+      "explanation": "A CDN caches copies of content on edge servers around the world so a London user is served locally rather than from a Sydney origin — the exact same 'move data closer to the user' idea as the DNS caching from episode two. The episode's planted trade-off is the blast radius: concentrating everything behind shared infrastructure means that if the shared layer fails, an enormous slice of the web fails at once, as in the 2019 Cloudflare outage. Option D is the opposite of a CDN, which distributes rather than centralises content.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

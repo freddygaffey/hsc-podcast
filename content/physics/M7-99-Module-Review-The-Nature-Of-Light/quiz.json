@@ -10,7 +10,12 @@
         "From the frequency of visible light multiplied by Planck's constant"
       ],
       "answer": 1,
-      "explanation": "Maxwell's wave equation gives \\(c = 1/\\sqrt{\\mu_0\\varepsilon_0}\\). These two constants come from electricity and magnetism experiments, yet the result equalled the measured speed of light — leading him to conclude light is an electromagnetic wave. Hertz confirmed it with radio waves in 1887."
+      "explanation": "Maxwell's wave equation gives \\(c = 1/\\sqrt{\\mu_0\\varepsilon_0}\\). These two constants come from electricity and magnetism experiments, yet the result equalled the measured speed of light — leading him to conclude light is an electromagnetic wave. Hertz confirmed it with radio waves in 1887.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m799-q02",
@@ -22,7 +27,12 @@
         "Reflection"
       ],
       "answer": 2,
-      "explanation": "Diffraction and interference prove light is a wave but not its type. Only polarisation proves it is transverse, because only transverse waves can be polarised — a longitudinal wave (like sound) has no sideways plane to filter."
+      "explanation": "Diffraction and interference prove light is a wave but not its type. Only polarisation proves it is transverse, because only transverse waves can be polarised — a longitudinal wave (like sound) has no sideways plane to filter.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m799-q03",
@@ -34,7 +44,12 @@
         "Because dark fringes appear only at the threshold frequency"
       ],
       "answer": 1,
-      "explanation": "Particles can only add up to more light; they cannot cancel to darkness. Waves with a path difference of a whole number plus a half wavelength interfere destructively, producing dark fringes — something only a wave can do."
+      "explanation": "Particles can only add up to more light; they cannot cancel to darkness. Waves with a path difference of a whole number plus a half wavelength interfere destructively, producing dark fringes — something only a wave can do.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m799-q04",
@@ -46,7 +61,12 @@
         "0%"
       ],
       "answer": 1,
-      "explanation": "The first polariser cuts unpolarised light to exactly 50% (Malus's law does NOT apply to the first filter). Then the analyser applies Malus's law: \\(0.5 \\times \\cos^2 60^\\circ = 0.5 \\times 0.25 = 0.125\\), i.e. 12.5%."
+      "explanation": "The first polariser cuts unpolarised light to exactly 50% (Malus's law does NOT apply to the first filter). Then the analyser applies Malus's law: \\(0.5 \\times \\cos^2 60^\\circ = 0.5 \\times 0.25 = 0.125\\), i.e. 12.5%.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m799-q05",
@@ -58,7 +78,12 @@
         "The Sun emitted dangerous UV; Planck blocked it with the aether"
       ],
       "answer": 0,
-      "explanation": "Classical wave theory predicted black-body intensity rising without limit toward short wavelengths (infinite energy — absurd). Planck assumed energy is exchanged only in discrete quanta of \\(hf\\), which suppressed high-frequency emission and matched the peak-and-fall experimental curve."
+      "explanation": "Classical wave theory predicted black-body intensity rising without limit toward short wavelengths (infinite energy — absurd). Planck assumed energy is exchanged only in discrete quanta of \\(hf\\), which suppressed high-frequency emission and matched the peak-and-fall experimental curve.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m799-q06",
@@ -70,7 +95,12 @@
         "None"
       ],
       "answer": 1,
-      "explanation": "The wave model correctly predicts only that brighter light ejects more electrons. It fails on the other three: it predicts a delay (none observed), no threshold (one exists), and energy from intensity (energy actually comes from frequency). Einstein's photon model explains all four."
+      "explanation": "The wave model correctly predicts only that brighter light ejects more electrons. It fails on the other three: it predicts a delay (none observed), no threshold (one exists), and energy from intensity (energy actually comes from frequency). Einstein's photon model explains all four.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m799-q07",
@@ -82,7 +112,12 @@
         "Interference fringes proving light is transverse"
       ],
       "answer": 1,
-      "explanation": "The experiment got a null result — no fringe shift, no aether wind. This killed the aether and supported Einstein's postulate that the speed of light is constant for all observers, the foundation of special relativity."
+      "explanation": "The experiment got a null result — no fringe shift, no aether wind. This killed the aether and supported Einstein's postulate that the speed of light is constant for all observers, the foundation of special relativity.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m799-q08",
@@ -94,7 +129,12 @@
         "The atmosphere has no effect on muons"
       ],
       "answer": 1,
-      "explanation": "Both relativistic frames agree: Earth sees the muon's clock run slow (time dilation), the muon sees a contracted atmosphere (shorter journey). Each independently predicts many more muons survive, confirming relativity."
+      "explanation": "Both relativistic frames agree: Earth sees the muon's clock run slow (time dilation), the muon sees a contracted atmosphere (shorter journey). Each independently predicts many more muons survive, confirming relativity.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m799-q09",
@@ -106,7 +146,12 @@
         "100 m measured; no contraction occurs"
       ],
       "answer": 1,
-      "explanation": "Contracted length \\(= L_0/\\gamma = 100/1.67 = 60\\,\\mathrm{m}\\). The proper length is the 100 m measured in the spacecraft's own rest frame; the Earth observer measures the shorter 60 m."
+      "explanation": "Contracted length \\(= L_0/\\gamma = 100/1.67 = 60\\,\\mathrm{m}\\). The proper length is the 100 m measured in the spacecraft's own rest frame; the Earth observer measures the shorter 60 m.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m799-q10",
@@ -118,7 +163,12 @@
         "The double-slit interference pattern"
       ],
       "answer": 1,
-      "explanation": "The same number — the speed of light — opened the module when Maxwell calculated it from electromagnetism, and became Einstein's first postulate, forcing time dilation, length contraction and mass-energy equivalence. Light is a wave that is also a particle, and its constant speed bends space and time."
+      "explanation": "The same number — the speed of light — opened the module when Maxwell calculated it from electromagnetism, and became Einstein's first postulate, forcing time dilation, length contraction and mass-energy equivalence. Light is a wave that is also a particle, and its constant speed bends space and time.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

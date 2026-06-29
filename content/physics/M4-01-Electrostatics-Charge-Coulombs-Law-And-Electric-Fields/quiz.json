@@ -10,7 +10,12 @@
         "All charges repel each other"
       ],
       "answer": 1,
-      "explanation": "Like charges (two positives or two negatives) repel, while unlike charges (a positive and a negative) attract. This mirrors the rule for magnetic poles. Charging an object means transferring electrons — gaining them makes it negative, losing them makes it positive."
+      "explanation": "Like charges (two positives or two negatives) repel, while unlike charges (a positive and a negative) attract. This mirrors the rule for magnetic poles. Charging an object means transferring electrons — gaining them makes it negative, losing them makes it positive.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m401-q02",
@@ -22,7 +27,12 @@
         "Charge is always conserved in a reaction"
       ],
       "answer": 1,
-      "explanation": "Quantisation means charge exists only in whole-number multiples of the elementary charge (the charge on one electron or proton, ≈1.6×10⁻¹⁹ C) — you cannot have half an elementary charge. This is distinct from conservation (charge can only be transferred, never created or destroyed)."
+      "explanation": "Quantisation means charge exists only in whole-number multiples of the elementary charge (the charge on one electron or proton, ≈1.6×10⁻¹⁹ C) — you cannot have half an elementary charge. This is distinct from conservation (charge can only be transferred, never created or destroyed).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m401-q03",
@@ -34,7 +44,12 @@
         "It depends on the sphere's size"
       ],
       "answer": 1,
-      "explanation": "In charging by conduction the charged object touches the conductor and charge is shared on contact, so the sphere ends up with the same sign as the rod — positive. (By induction, with no contact, it would end up with the opposite sign.) Mixing up conduction and induction is the most common electrostatics error."
+      "explanation": "In charging by conduction the charged object touches the conductor and charge is shared on contact, so the sphere ends up with the same sign as the rod — positive. (By induction, with no contact, it would end up with the opposite sign.) Mixing up conduction and induction is the most common electrostatics error.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m401-q04",
@@ -46,7 +61,12 @@
         "Conduction gives the opposite sign; induction gives the same sign"
       ],
       "answer": 1,
-      "explanation": "Conduction requires direct contact and leaves the object with the SAME sign as the charging object. Induction works without contact — the charged object separates the conductor's charges, which is then earthed and the object removed — leaving the OPPOSITE sign. This contrast (same/contact vs opposite/no-contact) is a classic exam discriminator."
+      "explanation": "Conduction requires direct contact and leaves the object with the SAME sign as the charging object. Induction works without contact — the charged object separates the conductor's charges, which is then earthed and the object removed — leaving the OPPOSITE sign. This contrast (same/contact vs opposite/no-contact) is a classic exam discriminator.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m401-q05",
@@ -58,7 +78,12 @@
         "The force quarters"
       ],
       "answer": 1,
-      "explanation": "By Coulomb's law F ∝ q₁q₂/r². Doubling one charge multiplies the force by 2; doubling the distance divides it by 2² = 4. Combined: 2 × ¼ = ½, so the force becomes half. The two changes don't cancel because charge is a direct factor while distance is squared."
+      "explanation": "By Coulomb's law F ∝ q₁q₂/r². Doubling one charge multiplies the force by 2; doubling the distance divides it by 2² = 4. Combined: 2 × ¼ = ½, so the force becomes half. The two changes don't cancel because charge is a direct factor while distance is squared.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m401-q06",
@@ -70,7 +95,12 @@
         "The charge times distance; E = qr"
       ],
       "answer": 1,
-      "explanation": "Electric field strength is the force per unit positive charge experienced at a point: E = F/q, in newtons per coulomb. The field is a property of the location (it exists with or without a charge there); the force F = Eq is what a specific charge feels. Confusing the field with the force is a common error."
+      "explanation": "Electric field strength is the force per unit positive charge experienced at a point: E = F/q, in newtons per coulomb. The field is a property of the location (it exists with or without a charge there); the force F = Eq is what a specific charge feels. Confusing the field with the force is a common error.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m401-q07",
@@ -82,7 +112,12 @@
         "Lines point toward positive charges"
       ],
       "answer": 1,
-      "explanation": "Field lines start on positive charges and end on negative charges (out of +, into −), never cross (the field has one direction per point), and are closer together where the field is stronger. Around a single positive charge they radiate outward; around a negative charge they point inward."
+      "explanation": "Field lines start on positive charges and end on negative charges (out of +, into −), never cross (the field has one direction per point), and are closer together where the field is stronger. Around a single positive charge they radiate outward; around a negative charge they point inward.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m401-q08",
@@ -94,7 +129,12 @@
         "0.0002 V m⁻¹"
       ],
       "answer": 1,
-      "explanation": "For parallel plates the field is uniform: E = V/d = 100/0.02 = 5000 V m⁻¹ (equivalently N C⁻¹). It has that same value everywhere between the plates. This uniform-field setup is exactly how charged particles are accelerated and deflected in Module 6."
+      "explanation": "For parallel plates the field is uniform: E = V/d = 100/0.02 = 5000 V m⁻¹ (equivalently N C⁻¹). It has that same value everywhere between the plates. This uniform-field setup is exactly how charged particles are accelerated and deflected in Module 6.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m401-q09",
@@ -106,7 +146,12 @@
         "Field strength is measured in newtons; force in newtons per coulomb"
       ],
       "answer": 1,
-      "explanation": "The electric field strength E = F/q is the force per unit charge — a property of the location created by other charges, existing whether or not a charge sits there. The electric force F = Eq is the actual push or pull on a specific charge q placed in the field. The field describes the location; the force describes what happens to a particular charge."
+      "explanation": "The electric field strength E = F/q is the force per unit charge — a property of the location created by other charges, existing whether or not a charge sits there. The electric force F = Eq is the actual push or pull on a specific charge q placed in the field. The field describes the location; the force describes what happens to a particular charge.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m401-q10",
@@ -118,7 +163,12 @@
         "13.3 N"
       ],
       "answer": 1,
-      "explanation": "Using F = Eq = 4000 × 3×10⁻⁶ = 1.2×10⁻² N = 0.012 N. The force on a positive charge points in the field direction (from the positive plate toward the negative plate). Dividing instead of multiplying (giving 1.33×10⁻⁹) is the trap."
+      "explanation": "Using F = Eq = 4000 × 3×10⁻⁶ = 1.2×10⁻² N = 0.012 N. The force on a positive charge points in the field direction (from the positive plate toward the negative plate). Dividing instead of multiplying (giving 1.33×10⁻⁹) is the trap.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

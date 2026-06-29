@@ -10,7 +10,12 @@
         "The width of a single slit"
       ],
       "answer": 1,
-      "explanation": "The geometry gives the extra distance travelled by light from one slit compared with an adjacent slit as \\( d\\sin\\theta \\) — the path difference. Setting it equal to a whole number of wavelengths (\\( m\\lambda \\)) gives the condition for a bright fringe."
+      "explanation": "The geometry gives the extra distance travelled by light from one slit compared with an adjacent slit as \\( d\\sin\\theta \\) — the path difference. Setting it equal to a whole number of wavelengths (\\( m\\lambda \\)) gives the condition for a bright fringe.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m706-q02",
@@ -22,7 +27,12 @@
         "It must equal the slit separation"
       ],
       "answer": 0,
-      "explanation": "A maximum occurs only where a whole number of wavelengths fits into the path difference, so \\( m \\) must be an integer (0 for the central maximum, 1 for first order, etc.). A half-integer path difference gives a dark fringe instead."
+      "explanation": "A maximum occurs only where a whole number of wavelengths fits into the path difference, so \\( m \\) must be an integer (0 for the central maximum, 1 for first order, etc.). A half-integer path difference gives a dark fringe instead.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m706-q03",
@@ -34,7 +44,12 @@
         "The fringes disappear"
       ],
       "answer": 1,
-      "explanation": "Solving for \\( \\sin\\theta = m\\lambda/d \\), the separation \\( d \\) is in the denominator, so a smaller \\( d \\) gives a larger angle. A grating with more lines per millimetre has a smaller \\( d \\) and so a more spread-out pattern."
+      "explanation": "Solving for \\( \\sin\\theta = m\\lambda/d \\), the separation \\( d \\) is in the denominator, so a smaller \\( d \\) gives a larger angle. A grating with more lines per millimetre has a smaller \\( d \\) and so a more spread-out pattern.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m706-q04",
@@ -46,7 +61,12 @@
         "All colours are deflected equally"
       ],
       "answer": 1,
-      "explanation": "Since \\( \\sin\\theta = m\\lambda/d \\), a longer wavelength gives a larger angle, so red (~700 nm) is deflected most. This is the reverse of a prism, where violet is bent most because dispersion there is by refraction, not diffraction."
+      "explanation": "Since \\( \\sin\\theta = m\\lambda/d \\), a longer wavelength gives a larger angle, so red (~700 nm) is deflected most. This is the reverse of a prism, where violet is bent most because dispersion there is by refraction, not diffraction.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m706-q05",
@@ -58,7 +78,12 @@
         "Because it uses monochromatic light only"
       ],
       "answer": 1,
-      "explanation": "A grating has thousands of equally spaced coherent sources. Away from an exact maximum the many waves take every phase and cancel almost completely, leaving sharp bright lines only where all sources are in phase. This sharpness gives the resolution needed to separate spectral lines."
+      "explanation": "A grating has thousands of equally spaced coherent sources. Away from an exact maximum the many waves take every phase and cancel almost completely, leaving sharp bright lines only where all sources are in phase. This sharpness gives the resolution needed to separate spectral lines.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m706-q06",
@@ -70,7 +95,12 @@
         "\\( 5 \\times 10^{-3}\\ \\mathrm{m} \\)"
       ],
       "answer": 2,
-      "explanation": "Convert to lines per metre first: \\( 5000 \\times 100 = 500\\,000 \\) lines/m. Then \\( d = 1/N = 1/500\\,000 = 2 \\times 10^{-6}\\ \\mathrm{m} \\). Forgetting the ×100 conversion or the reciprocal are the two classic errors."
+      "explanation": "Convert to lines per metre first: \\( 5000 \\times 100 = 500\\,000 \\) lines/m. Then \\( d = 1/N = 1/500\\,000 = 2 \\times 10^{-6}\\ \\mathrm{m} \\). Forgetting the ×100 conversion or the reciprocal are the two classic errors.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m706-q07",
@@ -82,7 +112,12 @@
         "About \\( 7° \\)"
       ],
       "answer": 1,
-      "explanation": "\\( \\sin\\theta = m\\lambda/d = (2 \\times 600\\times10^{-9})/(2.5\\times10^{-6}) = 1.2\\times10^{-6}/2.5\\times10^{-6} = 0.48 \\), so \\( \\theta = \\sin^{-1}(0.48) \\approx 29° \\)."
+      "explanation": "\\( \\sin\\theta = m\\lambda/d = (2 \\times 600\\times10^{-9})/(2.5\\times10^{-6}) = 1.2\\times10^{-6}/2.5\\times10^{-6} = 0.48 \\), so \\( \\theta = \\sin^{-1}(0.48) \\approx 29° \\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m706-q08",
@@ -94,7 +129,12 @@
         "\\( x = L/\\sin\\theta \\)"
       ],
       "answer": 1,
-      "explanation": "The small-angle approximation (\\( \\sin\\theta \\approx \\tan\\theta \\approx x/L \\)) only holds for a few degrees. At 9° (and the large angles gratings often give) you must use the true geometry \\( x = L\\tan\\theta \\), having found \\( \\theta \\) from \\( d\\sin\\theta = m\\lambda \\)."
+      "explanation": "The small-angle approximation (\\( \\sin\\theta \\approx \\tan\\theta \\approx x/L \\)) only holds for a few degrees. At 9° (and the large angles gratings often give) you must use the true geometry \\( x = L\\tan\\theta \\), having found \\( \\theta \\) from \\( d\\sin\\theta = m\\lambda \\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m706-q09",
@@ -106,7 +146,12 @@
         "Only a prism produces a spectrum; a grating produces none"
       ],
       "answer": 1,
-      "explanation": "A grating disperses by diffraction, so red (longest wavelength) is deflected most. A prism disperses by refraction, so violet/blue is bent most and red least. The colour order is reversed between the two devices."
+      "explanation": "A grating disperses by diffraction, so red (longest wavelength) is deflected most. A prism disperses by refraction, so violet/blue is bent most and red least. The colour order is reversed between the two devices.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m706-q10",
@@ -118,7 +163,12 @@
         "No — interference proves light is a particle"
       ],
       "answer": 1,
-      "explanation": "Interference and diffraction demonstrate the wave nature of light, but both transverse and longitudinal waves can interfere. Proving light is specifically transverse requires the separate evidence of polarisation (covered in the next episode)."
+      "explanation": "Interference and diffraction demonstrate the wave nature of light, but both transverse and longitudinal waves can interfere. Proving light is specifically transverse requires the separate evidence of polarisation (covered in the next episode).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

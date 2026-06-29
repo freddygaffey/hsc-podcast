@@ -10,7 +10,12 @@
         "1995, a network of around 6 million computers"
       ],
       "answer": 0,
-      "explanation": "The script states Robert Tappan Morris released the worm on the evening of 2 November 1988, onto a network of roughly 60,000 computers connecting universities, research labs, and a few military sites. The worm went on to hit about 10 percent of that network — roughly 6,000 machines — which is the figure students often confuse with the total network size."
+      "explanation": "The script states Robert Tappan Morris released the worm on the evening of 2 November 1988, onto a network of roughly 60,000 computers connecting universities, research labs, and a few military sites. The worm went on to hit about 10 percent of that network — roughly 6,000 machines — which is the figure students often confuse with the total network size.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-morris-worm-q02",
@@ -22,7 +27,12 @@
         "A worm and a virus are the same thing; the terms are interchangeable"
       ],
       "answer": 2,
-      "explanation": "The episode defines a worm as a program that propagates by itself — it finds another computer, breaks in, copies itself over, and repeats automatically with no human in the loop. A virus, by contrast, needs a host file and a person to run it, carrying it along like a passenger. Option B reverses the two definitions, which is the classic trap."
+      "explanation": "The episode defines a worm as a program that propagates by itself — it finds another computer, breaks in, copies itself over, and repeats automatically with no human in the loop. A virus, by contrast, needs a host file and a person to run it, carrying it along like a passenger. Option B reverses the two definitions, which is the classic trap.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-morris-worm-q03",
@@ -34,7 +44,12 @@
         "A program encrypts data with a key that is too short to be secure"
       ],
       "answer": 1,
-      "explanation": "Using the 'box on a form' picture, the episode explains that a buffer is a fixed-size space in memory, and when a program carelessly accepts more data than the buffer was built to hold, the excess spills out and overwrites adjacent memory — including the program's record of what to run next. A crafted overflow lets the attacker's input become the code that runs. The other options describe unrelated failures (disk space, flooding, weak encryption)."
+      "explanation": "Using the 'box on a form' picture, the episode explains that a buffer is a fixed-size space in memory, and when a program carelessly accepts more data than the buffer was built to hold, the excess spills out and overwrites adjacent memory — including the program's record of what to run next. A crafted overflow lets the attacker's input become the code that runs. The other options describe unrelated failures (disk space, flooding, weak encryption).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-morris-worm-q04",
@@ -46,7 +61,12 @@
         "Exploiting a web browser flaw and a corrupted operating system update"
       ],
       "answer": 1,
-      "explanation": "The episode describes two routes in: a buffer overflow in a small network service (one that reported information about logged-in users), and guessing weak passwords from a built-in list of a few hundred common ones, including the username itself as the password. The other options describe modern attack vectors (phishing, USB, browser flaws) that did not feature in this 1988 incident."
+      "explanation": "The episode describes two routes in: a buffer overflow in a small network service (one that reported information about logged-in users), and guessing weak passwords from a built-in list of a few hundred common ones, including the username itself as the password. The other options describe modern attack vectors (phishing, USB, browser flaws) that did not feature in this 1988 incident.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-morris-worm-q05",
@@ -58,7 +78,12 @@
         "The worm encrypted the hard drive of every machine and demanded a ransom"
       ],
       "answer": 1,
-      "explanation": "To stop administrators from faking infection to immunise a machine, Morris made the worm reinfect even an already-infected machine roughly one time in seven. The result was that copies piled up on each machine, each consuming memory and processing power, until the machines seized up entirely. The worm damaged no files and stole nothing (ruling out the deletion and ransom options) — the multiplication itself was the catastrophe."
+      "explanation": "To stop administrators from faking infection to immunise a machine, Morris made the worm reinfect even an already-infected machine roughly one time in seven. The result was that copies piled up on each machine, each consuming memory and processing power, until the machines seized up entirely. The worm damaged no files and stole nothing (ruling out the deletion and ransom options) — the multiplication itself was the catastrophe.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-morris-worm-q06",
@@ -70,7 +95,12 @@
         "Non-repudiation, by making it impossible to trace who sent a message"
       ],
       "answer": 2,
-      "explanation": "The episode stresses that the worm stole nothing and read nothing — it broke no secrets, so confidentiality was untouched. What it destroyed was availability: the simple ability to use the systems, as machines drowned under copies of the worm. The episode calls it the founding example of an availability attack, drawing a straight line to modern attacks that bury services in traffic."
+      "explanation": "The episode stresses that the worm stole nothing and read nothing — it broke no secrets, so confidentiality was untouched. What it destroyed was availability: the simple ability to use the systems, as machines drowned under copies of the worm. The episode calls it the founding example of an availability attack, drawing a straight line to modern attacks that bury services in traffic.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-morris-worm-q07",
@@ -82,7 +112,12 @@
         "Passwords expired too quickly, forcing users to pick ones that were easy to remember"
       ],
       "answer": 1,
-      "explanation": "The worm carried a list of a few hundred common passwords and tried them, plus the username as the password, walking straight in through the front door whenever it guessed correctly. The episode's lesson is that authentication is only as strong as the secret behind it — and it notes this was true in 1988 and remains true in 2026. The other options misstate the facts (passwords were not absent, nor the core issue plain-text storage)."
+      "explanation": "The worm carried a list of a few hundred common passwords and tried them, plus the username as the password, walking straight in through the front door whenever it guessed correctly. The episode's lesson is that authentication is only as strong as the secret behind it — and it notes this was true in 1988 and remains true in 2026. The other options misstate the facts (passwords were not absent, nor the core issue plain-text storage).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-morris-worm-q08",
@@ -94,7 +129,12 @@
         "The first commercial antivirus company, to sell protection software"
       ],
       "answer": 1,
-      "explanation": "The episode explains that the very first coordinated incident-response team — a CERT, or Computer Emergency Response Team — was stood up in direct response to the worm, as a central group to call, coordinate, and organise cleanup when an attack hits. Nearly every country and major organisation now has one, all descending from that first team. The W3C and IETF deal with standards and protocols, not incident response."
+      "explanation": "The episode explains that the very first coordinated incident-response team — a CERT, or Computer Emergency Response Team — was stood up in direct response to the worm, as a central group to call, coordinate, and organise cleanup when an attack hits. Nearly every country and major organisation now has one, all descending from that first team. The W3C and IETF deal with standards and protocols, not incident response.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-morris-worm-q09",
@@ -106,7 +146,12 @@
         "An availability attack — the system was still intact but rendered unusable by being flooded"
       ],
       "answer": 3,
-      "explanation": "The defining feature here is that nothing was stolen or altered — the site was simply made unusable by being flooded, which is exactly the availability attack the Morris worm pioneered. The episode draws a straight line from the worm to modern attacks that knock services offline by burying them in traffic. Buffer overflow and weak passwords were how the worm got in, not what it ultimately did to the systems."
+      "explanation": "The defining feature here is that nothing was stolen or altered — the site was simply made unusable by being flooded, which is exactly the availability attack the Morris worm pioneered. The episode draws a straight line from the worm to modern attacks that knock services offline by burying them in traffic. Buffer overflow and weak passwords were how the worm got in, not what it ultimately did to the systems.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-morris-worm-q10",
@@ -118,7 +163,12 @@
         "Run the service on a faster machine, so it can process oversized input before it crashes"
       ],
       "answer": 1,
-      "explanation": "The worm rode in on a program that accepted input without checking it fit the space reserved for it — a memory-safety failure. The fix the episode and supplementary notes describe is to rigorously guard the boundaries of memory: never accept more input than the buffer can hold, rejecting or truncating anything that exceeds capacity. Encryption, authentication, and faster hardware do not stop an overflow, because the flaw is the missing bounds check on input, not secrecy, identity, or speed."
+      "explanation": "The worm rode in on a program that accepted input without checking it fit the space reserved for it — a memory-safety failure. The fix the episode and supplementary notes describe is to rigorously guard the boundaries of memory: never accept more input than the buffer can hold, rejecting or truncating anything that exceeds capacity. Encryption, authentication, and faster hardware do not stop an overflow, because the flaw is the missing bounds check on input, not secrecy, identity, or speed.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

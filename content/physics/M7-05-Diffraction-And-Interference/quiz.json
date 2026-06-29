@@ -10,7 +10,12 @@
         "The splitting of white light into its component colours"
       ],
       "answer": 1,
-      "explanation": "Diffraction is the spreading of a wave as it passes through a gap or around a barrier. Bending on entering a medium is refraction, cancellation is destructive interference, and splitting into colours is dispersion."
+      "explanation": "Diffraction is the spreading of a wave as it passes through a gap or around a barrier. Bending on entering a medium is refraction, cancellation is destructive interference, and splitting into colours is dispersion.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m705-q02",
@@ -22,7 +27,12 @@
         "To make the light travel faster through the gap"
       ],
       "answer": 2,
-      "explanation": "Significant diffraction — and hence the overlap that allows interference — occurs only when the slit width is comparable to the wavelength. Light's wavelength is just a few hundred nanometres, so the slits must be correspondingly tiny. It has nothing to do with brightness or beam sharpness."
+      "explanation": "Significant diffraction — and hence the overlap that allows interference — occurs only when the slit width is comparable to the wavelength. Light's wavelength is just a few hundred nanometres, so the slits must be correspondingly tiny. It has nothing to do with brightness or beam sharpness.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m705-q03",
@@ -34,7 +44,12 @@
         "They are very close together"
       ],
       "answer": 1,
-      "explanation": "Coherent sources have the same wavelength and a constant phase relationship, so they stay in step over time. This is achieved by lighting both slits with one monochromatic wavefront — two separate lamps would be incoherent and produce no stable pattern."
+      "explanation": "Coherent sources have the same wavelength and a constant phase relationship, so they stay in step over time. This is achieved by lighting both slits with one monochromatic wavefront — two separate lamps would be incoherent and produce no stable pattern.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m705-q04",
@@ -46,7 +61,12 @@
         "Equal to the slit separation"
       ],
       "answer": 0,
-      "explanation": "When the path difference is a whole number of wavelengths the waves arrive in phase (crest meets crest), reinforcing into a bright band. A whole number plus a half gives out-of-phase cancellation and a dark band. 'Whole is bright, half is dark.'"
+      "explanation": "When the path difference is a whole number of wavelengths the waves arrive in phase (crest meets crest), reinforcing into a bright band. A whole number plus a half gives out-of-phase cancellation and a dark band. 'Whole is bright, half is dark.'",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m705-q05",
@@ -58,7 +78,12 @@
         "Because dark bands show light is a transverse wave"
       ],
       "answer": 1,
-      "explanation": "A dark band is a place where light plus light gives no light, produced by destructive interference of crests and troughs. Particles could only ever add to give more light, never cancel — so only the wave model explains dark fringes. (It shows light is a wave, but not specifically that it is transverse.)"
+      "explanation": "A dark band is a place where light plus light gives no light, produced by destructive interference of crests and troughs. Particles could only ever add to give more light, never cancel — so only the wave model explains dark fringes. (It shows light is a wave, but not specifically that it is transverse.)",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m705-q06",
@@ -70,7 +95,12 @@
         "The slit splits each photon into two halves"
       ],
       "answer": 1,
-      "explanation": "By Huygens's Principle every point on a wavefront acts as a source of secondary wavelets. When a wavefront reaches the slits, each slit becomes a fresh source of spreading wavelets — re-radiating the light that was already there, not creating new light."
+      "explanation": "By Huygens's Principle every point on a wavefront acts as a source of secondary wavelets. When a wavefront reaches the slits, each slit becomes a fresh source of spreading wavelets — re-radiating the light that was already there, not creating new light.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m705-q07",
@@ -82,7 +112,12 @@
         "Monochromatic light is required because white light is not coherent"
       ],
       "answer": 1,
-      "explanation": "A single wavelength gives sharp, clean fringes. With white light, each wavelength forms its own pattern at slightly different positions, so the outer fringes smear into little rainbow spectra. The central maximum stays white because there the path difference is zero for every colour at once."
+      "explanation": "A single wavelength gives sharp, clean fringes. With white light, each wavelength forms its own pattern at slightly different positions, so the outer fringes smear into little rainbow spectra. The central maximum stays white because there the path difference is zero for every colour at once.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m705-q08",
@@ -94,7 +129,12 @@
         "Randomly spaced peaks of varying height"
       ],
       "answer": 2,
-      "explanation": "The graph shows a tall central maximum (zero path difference, perfect constructive interference) with evenly spaced maxima of decreasing intensity to each side, and the intensity drops to zero (dark fringes) between the peaks."
+      "explanation": "The graph shows a tall central maximum (zero path difference, perfect constructive interference) with evenly spaced maxima of decreasing intensity to each side, and the intensity drops to zero (dark fringes) between the peaks.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m705-q09",
@@ -106,7 +146,12 @@
         "About \\( 34° \\)"
       ],
       "answer": 0,
-      "explanation": "\\( \\sin\\theta = m\\lambda/d = (1 \\times 589\\times10^{-9})/(1.0\\times10^{-4}) = 5.89\\times10^{-3} \\), so \\( \\theta = \\sin^{-1}(5.89\\times10^{-3}) \\approx 0.34° \\). The very small angle shows the fringes lie close to the central axis."
+      "explanation": "\\( \\sin\\theta = m\\lambda/d = (1 \\times 589\\times10^{-9})/(1.0\\times10^{-4}) = 5.89\\times10^{-3} \\), so \\( \\theta = \\sin^{-1}(5.89\\times10^{-3}) \\approx 0.34° \\). The very small angle shows the fringes lie close to the central axis.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m705-q10",
@@ -118,7 +163,12 @@
         "The energy is converted entirely into heat"
       ],
       "answer": 2,
-      "explanation": "Destructive interference is cancellation, not destruction. Energy is conserved: it is simply redistributed, taken from the dark fringes and piled into the bright ones, so the total light energy is unchanged."
+      "explanation": "Destructive interference is cancellation, not destruction. Energy is conserved: it is simply redistributed, taken from the dark fringes and piled into the bright ones, so the total light energy is unchanged.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

@@ -10,7 +10,12 @@
         "The metal plate becomes warm under illumination"
       ],
       "answer": 1,
-      "explanation": "The wave model predicts that any colour should eventually free electrons if bright enough or given time, so the existence of a hard threshold frequency contradicts it. (The wave model actually does correctly predict that brighter light gives more electrons, so option A is not the failure.)"
+      "explanation": "The wave model predicts that any colour should eventually free electrons if bright enough or given time, so the existence of a hard threshold frequency contradicts it. (The wave model actually does correctly predict that brighter light gives more electrons, so option A is not the failure.)",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "photoelectric-q02",
@@ -22,7 +27,12 @@
         "The wave nature of light"
       ],
       "answer": 1,
-      "explanation": "The equation is conservation of energy for one collision: the photon's energy \\(hf\\) goes into paying the escape cost (work function \\(W\\)) plus the electron's leftover kinetic energy \\(K_{\\max}\\). Energy in equals escape cost plus energy out."
+      "explanation": "The equation is conservation of energy for one collision: the photon's energy \\(hf\\) goes into paying the escape cost (work function \\(W\\)) plus the electron's leftover kinetic energy \\(K_{\\max}\\). Energy in equals escape cost plus energy out.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "photoelectric-q03",
@@ -34,7 +44,12 @@
         "Intensity changes the work function of the metal"
       ],
       "answer": 1,
-      "explanation": "Intensity equals photons per second. More photons of the same frequency means more one-photon-one-electron collisions, hence more electrons. But every photon of that colour carries the identical energy \\(hf\\), so each freed electron emerges with the same maximum kinetic energy."
+      "explanation": "Intensity equals photons per second. More photons of the same frequency means more one-photon-one-electron collisions, hence more electrons. But every photon of that colour carries the identical energy \\(hf\\), so each freed electron emerges with the same maximum kinetic energy.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "photoelectric-q04",
@@ -46,7 +61,12 @@
         "Low-intensity light travels faster than bright light"
       ],
       "answer": 1,
-      "explanation": "A photon delivers all its energy to a single electron in one collision, so the first suitable photon to arrive can free an electron immediately. There is no slow 'bucket filling' as the wave model required — emission is instant if \\(hf \\ge W\\)."
+      "explanation": "A photon delivers all its energy to a single electron in one collision, so the first suitable photon to arrive can free an electron immediately. There is no slow 'bucket filling' as the wave model required — emission is instant if \\(hf \\ge W\\).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "photoelectric-q05",
@@ -58,7 +78,12 @@
         "\\( 0.0\\ \\mathrm{eV} \\) (no emission)"
       ],
       "answer": 0,
-      "explanation": "Photon energy \\(hf = 4.14\\times10^{-15} \\times 7.0\\times10^{14} = 2.9\\ \\mathrm{eV}\\). Then \\(K_{\\max} = hf - W = 2.9 - 2.0 = 0.9\\ \\mathrm{eV}\\). Since \\(hf > W\\), emission does occur."
+      "explanation": "Photon energy \\(hf = 4.14\\times10^{-15} \\times 7.0\\times10^{14} = 2.9\\ \\mathrm{eV}\\). Then \\(K_{\\max} = hf - W = 2.9 - 2.0 = 0.9\\ \\mathrm{eV}\\). Since \\(hf > W\\), emission does occur.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "photoelectric-q06",
@@ -70,7 +95,12 @@
         "\\( f_0 = W - h \\)"
       ],
       "answer": 1,
-      "explanation": "At the threshold the photon just barely frees an electron, so \\(K_{\\max} = 0\\) and \\(hf_0 = W\\), giving \\(f_0 = W/h\\). Below this frequency no single photon carries enough energy to overcome the work function, so no emission occurs at any intensity."
+      "explanation": "At the threshold the photon just barely frees an electron, so \\(K_{\\max} = 0\\) and \\(hf_0 = W\\), giving \\(f_0 = W/h\\). Below this frequency no single photon carries enough energy to overcome the work function, so no emission occurs at any intensity.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "photoelectric-q07",
@@ -82,7 +112,12 @@
         "The speed of light"
       ],
       "answer": 1,
-      "explanation": "Rearranging \\(K_{\\max} = hf - W\\), the graph of \\(K_{\\max}\\) versus \\(f\\) is a straight line of gradient \\(h\\) (Planck's constant), with x-intercept \\(f_0\\) and y-intercept \\(-W\\). The slope is the same for every metal — a signature of the photon model."
+      "explanation": "Rearranging \\(K_{\\max} = hf - W\\), the graph of \\(K_{\\max}\\) versus \\(f\\) is a straight line of gradient \\(h\\) (Planck's constant), with x-intercept \\(f_0\\) and y-intercept \\(-W\\). The slope is the same for every metal — a signature of the photon model.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "photoelectric-q08",
@@ -94,7 +129,12 @@
         "It disproved conservation of energy"
       ],
       "answer": 1,
-      "explanation": "Despite trying to demolish it, Millikan's data fell on the straight lines Einstein predicted, with the slope giving Planck's constant to within ~0.5% of Planck's value from black-body radiation. He inadvertently produced the most precise confirmation of the photoelectric equation."
+      "explanation": "Despite trying to demolish it, Millikan's data fell on the straight lines Einstein predicted, with the slope giving Planck's constant to within ~0.5% of Planck's value from black-body radiation. He inadvertently produced the most precise confirmation of the photoelectric equation.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "photoelectric-q09",
@@ -106,7 +146,12 @@
         "The cell stores light as a continuous wave"
       ],
       "answer": 1,
-      "explanation": "In a solar cell, a photon whose energy exceeds the semiconductor's energy gap frees an electron (just as a photon frees an electron from a metal), and these freed electrons are driven through an external circuit. This is Einstein's 1905 photon idea turned into hardware."
+      "explanation": "In a solar cell, a photon whose energy exceeds the semiconductor's energy gap frees an electron (just as a photon frees an electron from a metal), and these freed electrons are driven through an external circuit. This is Einstein's 1905 photon idea turned into hardware.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "photoelectric-q10",
@@ -118,7 +163,12 @@
         "That electrons orbit the nucleus in fixed paths"
       ],
       "answer": 1,
-      "explanation": "Planck found he could only match black-body data by assuming hot atoms emit energy in discrete lumps of size \\(hf\\), introducing Planck's constant \\(h\\). He believed it was a mathematical trick; Einstein took the lumps to be real particles of light (photons), explaining the photoelectric effect."
+      "explanation": "Planck found he could only match black-body data by assuming hot atoms emit energy in discrete lumps of size \\(hf\\), introducing Planck's constant \\(h\\). He believed it was a mathematical trick; Einstein took the lumps to be real particles of light (photons), explaining the photoelectric effect.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

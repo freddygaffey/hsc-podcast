@@ -10,7 +10,12 @@
         "An encryption module used to protect stored passwords"
       ],
       "answer": 0,
-      "explanation": "The breach centred on an API endpoint — a service window where the app pulls up, asks for a customer's details, and the window hands them back. The database held the data, but it was the unprotected API window in front of it that handed records to anyone who asked. No firewall or encryption flaw was involved."
+      "explanation": "The breach centred on an API endpoint — a service window where the app pulls up, asks for a customer's details, and the window hands them back. The database held the data, but it was the unprotected API window in front of it that handed records to anyone who asked. No firewall or encryption flaw was involved.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-optus-breach-q02",
@@ -22,7 +27,12 @@
         "Authentication checks the password strength, while authorisation logs the request for auditing"
       ],
       "answer": 0,
-      "explanation": "The episode is precise: authentication asks 'who are you?' (proving identity with a login or token), while authorisation asks 'are you allowed to have this particular thing?' (checking permissions). Both are meant to run on every request to the window. The most tempting wrong answer reframes them as encryption, but encryption is a separate protection entirely and was never the issue here."
+      "explanation": "The episode is precise: authentication asks 'who are you?' (proving identity with a login or token), while authorisation asks 'are you allowed to have this particular thing?' (checking permissions). Both are meant to run on every request to the window. The most tempting wrong answer reframes them as encryption, but encryption is a separate protection entirely and was never the issue here.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-optus-breach-q03",
@@ -34,7 +44,12 @@
         "A denial-of-service attack"
       ],
       "answer": 2,
-      "explanation": "Security people have a blunt name for the missing check: a broken access control — the control that should stand at the door checking who comes and goes was not there at all. A zero-day (option A) is an unknown software flaw, which the episode stresses was NOT involved; the attack used no clever exploit, just an open door."
+      "explanation": "Security people have a blunt name for the missing check: a broken access control — the control that should stand at the door checking who comes and goes was not there at all. A zero-day (option A) is an unknown software flaw, which the episode stresses was NOT involved; the attack used no clever exploit, just an open door.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-optus-breach-q04",
@@ -46,7 +61,12 @@
         "Because the numbers went up by one in a predictable line, the attacker could simply count rather than guess — incrementing the number to reach the next customer's record"
       ],
       "answer": 3,
-      "explanation": "Because the identifiers were sequential — one, two, three, four — the attacker did not have to guess; they could just count, changing the number to retrieve each successive record. This is what scaled one exposed record up to roughly 9.8 million. The tempting wrong answer ties it to encryption, but sequential numbering has nothing to do with how data is stored — it only made the records trivially predictable to walk through."
+      "explanation": "Because the identifiers were sequential — one, two, three, four — the attacker did not have to guess; they could just count, changing the number to retrieve each successive record. This is what scaled one exposed record up to roughly 9.8 million. The tempting wrong answer ties it to encryption, but sequential numbering has nothing to do with how data is stored — it only made the records trivially predictable to walk through.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-optus-breach-q05",
@@ -58,7 +78,12 @@
         "A flaw where the database returns objects in the wrong order"
       ],
       "answer": 1,
-      "explanation": "'Direct object reference' means the system lets you point straight at a record using its raw identifier (its number); 'insecure' means it never checks whether you are allowed to point at that one. So you change the number and get a different person's record. It is not an encryption weakness (option A) — the data flowed out in plain readable form precisely because the access check was absent."
+      "explanation": "'Direct object reference' means the system lets you point straight at a record using its raw identifier (its number); 'insecure' means it never checks whether you are allowed to point at that one. So you change the number and get a different person's record. It is not an encryption weakness (option A) — the data flowed out in plain readable form precisely because the access check was absent.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-optus-breach-q06",
@@ -70,7 +95,12 @@
         "Identity documents take up more storage, so more bandwidth was consumed"
       ],
       "answer": 2,
-      "explanation": "When a password leaks you change it and move on, but you cannot change your date of birth or simply re-roll a passport number — reissuing one is slow and expensive. These are the exact details needed to impersonate someone, pass a bank's security questions, and commit identity fraud that follows them for years. That permanence and usefulness for fraud, not encryption or storage size, is what makes the data so dangerous."
+      "explanation": "When a password leaks you change it and move on, but you cannot change your date of birth or simply re-roll a passport number — reissuing one is slow and expensive. These are the exact details needed to impersonate someone, pass a bank's security questions, and commit identity fraud that follows them for years. That permanence and usefulness for fraud, not encryption or storage size, is what makes the data so dangerous.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-optus-breach-q07",
@@ -82,7 +112,12 @@
         "The Optus window failed because of weak encryption, while IDOR is caused by a missing firewall"
       ],
       "answer": 1,
-      "explanation": "The Optus window failed the first check completely — it never even asked who was knocking, an authentication failure. But the episode warns that even a system that does authenticate can still fall to an IDOR: it knows you are customer A, yet hands you customer B's record because nobody verified the requested record belongs to you. They are related but distinct, so calling them identical (option C) misses the second, subtler failure mode."
+      "explanation": "The Optus window failed the first check completely — it never even asked who was knocking, an authentication failure. But the episode warns that even a system that does authenticate can still fall to an IDOR: it knows you are customer A, yet hands you customer B's record because nobody verified the requested record belongs to you. They are related but distinct, so calling them identical (option C) misses the second, subtler failure mode.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-optus-breach-q08",
@@ -94,7 +129,12 @@
         "Rate limiting alone is sufficient to prevent records from being extracted in bulk"
       ],
       "answer": 0,
-      "explanation": "The one rule the whole disaster comes down to is that the lock must be on every single door — not most of them, not the ones that feel important. Secure API design means assuming every endpoint will be found and probed, and putting authentication and authorisation on each by default. Securing only the front entrance is exactly the mistake the episode warns against: attackers come through the side window you forgot, not the door you guarded."
+      "explanation": "The one rule the whole disaster comes down to is that the lock must be on every single door — not most of them, not the ones that feel important. Secure API design means assuming every endpoint will be found and probed, and putting authentication and authorisation on each by default. Securing only the front entrance is exactly the mistake the episode warns against: attackers come through the side window you forgot, not the door you guarded.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-optus-breach-q09",
@@ -106,7 +146,12 @@
         "It is an Insecure Direct Object Reference; the fix is to check, on every request, that the requested account belongs to the authenticated requester (or that they are an administrator) before returning the data"
       ],
       "answer": 3,
-      "explanation": "Authentication is present (the login token), so the gap is authorisation: the endpoint never checks that {id} belongs to the requester — a textbook IDOR. The episode's rule is that whenever a system lets you reach a record by its raw identifier, something must verify the record belongs to that requester. A login token alone is not enough, because a logged-in customer A can still increment the id to read customer B's account."
+      "explanation": "Authentication is present (the login token), so the gap is authorisation: the endpoint never checks that {id} belongs to the requester — a textbook IDOR. The episode's rule is that whenever a system lets you reach a record by its raw identifier, something must verify the record belongs to that requester. A login token alone is not enough, because a logged-in customer A can still increment the id to read customer B's account.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "case-the-optus-breach-q10",
@@ -118,7 +163,12 @@
         "It was sophisticated because the attacker used a zero-day exploit, so the lesson is to patch software faster"
       ],
       "answer": 2,
-      "explanation": "The episode is emphatic that nothing the attacker did was sophisticated: no encryption broken, no password cracked, no employee tricked, no malware planted — they found a window that asked nothing and answered everything, and they counted. Because the data was people's irreplaceable identities, building such a system carries a duty of care, and Australia responded by sharpening privacy law and scaling up penalties. Options claiming encryption-cracking, malware, or a zero-day directly contradict the episode's central point that the attack was strong only because the defences were absent."
+      "explanation": "The episode is emphatic that nothing the attacker did was sophisticated: no encryption broken, no password cracked, no employee tricked, no malware planted — they found a window that asked nothing and answered everything, and they counted. Because the data was people's irreplaceable identities, building such a system carries a duty of care, and Australia responded by sharpening privacy law and scaling up penalties. Options claiming encryption-cracking, malware, or a zero-day directly contradict the episode's central point that the attack was strong only because the defences were absent.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

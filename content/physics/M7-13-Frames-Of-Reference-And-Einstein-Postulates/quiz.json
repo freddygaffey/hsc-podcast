@@ -10,7 +10,12 @@
         "A frame in which the speed of light is zero"
       ],
       "answer": 1,
-      "explanation": "An inertial frame is non-accelerating — at rest or moving at constant velocity — and Newton's first law holds within it. Accelerating frames are non-inertial, where fictitious forces must be invoked."
+      "explanation": "An inertial frame is non-accelerating — at rest or moving at constant velocity — and Newton's first law holds within it. Accelerating frames are non-inertial, where fictitious forces must be invoked.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m713-q02",
@@ -22,7 +27,12 @@
         "Only the speed of light is relative; everything else is absolute"
       ],
       "answer": 1,
-      "explanation": "Galilean relativity makes velocity relative (depends on the observer) but treats time, length, mass and simultaneity as absolute. Special relativity overturns the absoluteness of time and length."
+      "explanation": "Galilean relativity makes velocity relative (depends on the observer) but treats time, length, mass and simultaneity as absolute. Special relativity overturns the absoluteness of time and length.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m713-q03",
@@ -34,7 +44,12 @@
         "The instrument Michelson and Morley used to detect Earth's motion"
       ],
       "answer": 1,
-      "explanation": "Since every other wave needs a medium, 19th-century physicists assumed light travelled through an invisible aether at speed c relative to it — providing the universe's supposed absolute rest frame."
+      "explanation": "Since every other wave needs a medium, 19th-century physicists assumed light travelled through an invisible aether at speed c relative to it — providing the universe's supposed absolute rest frame.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m713-q04",
@@ -46,7 +61,12 @@
         "It proved light needs a medium to travel"
       ],
       "answer": 1,
-      "explanation": "The experiment got the famous null result — no fringe shift in any orientation — indicating no aether wind and that the speed of light is invariant. This is the experimental ground for Einstein's first postulate."
+      "explanation": "The experiment got the famous null result — no fringe shift in any orientation — indicating no aether wind and that the speed of light is invariant. This is the experimental ground for Einstein's first postulate.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m713-q05",
@@ -58,7 +78,12 @@
         "Light always travels at c relative to the aether"
       ],
       "answer": 1,
-      "explanation": "The crucial qualifier 'the same for all observers regardless of the motion of source or observer' is the revolutionary content. Saying merely 'the speed of light is constant' loses the point — and half the marks."
+      "explanation": "The crucial qualifier 'the same for all observers regardless of the motion of source or observer' is the revolutionary content. Saying merely 'the speed of light is constant' loses the point — and half the marks.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m713-q06",
@@ -70,7 +95,12 @@
         "Mass increases with speed"
       ],
       "answer": 1,
-      "explanation": "The second postulate (the principle of relativity) states that all inertial frames are equivalent and the laws of physics are identical in every inertial frame — Galileo's principle promoted to a fundamental law."
+      "explanation": "The second postulate (the principle of relativity) states that all inertial frames are equivalent and the laws of physics are identical in every inertial frame — Galileo's principle promoted to a fundamental law.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m713-q07",
@@ -82,7 +112,12 @@
         "2c"
       ],
       "answer": 1,
-      "explanation": "By the first postulate, the speed of light is independent of the source's motion, so the light reaches Earth at exactly c, not 0.5c + c = 1.5c. Velocities do not add the classical way for light."
+      "explanation": "By the first postulate, the speed of light is independent of the source's motion, so the light reaches Earth at exactly c, not 0.5c + c = 1.5c. Velocities do not add the classical way for light.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m713-q08",
@@ -94,7 +129,12 @@
         "Because the aether distorts measurements"
       ],
       "answer": 1,
-      "explanation": "If both observers measure the same c and speed is distance divided by time, then the metres and seconds must differ between them. Saving the constancy of c requires sacrificing the absoluteness of space and time."
+      "explanation": "If both observers measure the same c and speed is distance divided by time, then the metres and seconds must differ between them. Saving the constancy of c requires sacrificing the absoluteness of space and time.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m713-q09",
@@ -106,7 +146,12 @@
         "The lamp flashes twice for the platform observer"
       ],
       "answer": 1,
-      "explanation": "On the train, equal distances travelled at c make the events simultaneous. From the platform, light still travels at c (postulate 1), but the train moves forward, so the back wall approaches the flash point and light reaches it first — the events are not simultaneous."
+      "explanation": "On the train, equal distances travelled at c make the events simultaneous. From the platform, light still travels at c (postulate 1), but the train moves forward, so the back wall approaches the flash point and light reaches it first — the events are not simultaneous.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m713-q10",
@@ -118,7 +163,12 @@
         "Simultaneity only matters at low speeds"
       ],
       "answer": 1,
-      "explanation": "Simultaneity is relative: observers in relative motion can genuinely disagree about whether two events happened at the same time. This follows directly from the constancy of the speed of light, and is the first crack in absolute time."
+      "explanation": "Simultaneity is relative: observers in relative motion can genuinely disagree about whether two events happened at the same time. This follows directly from the constancy of the speed of light, and is the first crack in absolute time.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

@@ -10,7 +10,12 @@
         "Penetration testing, code review, SAST, DAST, vulnerability assessment"
       ],
       "answer": 1,
-      "explanation": "The chant is the spine of the episode: code review, SAST, DAST, vulnerability assessment, penetration testing — CR, SAST, DAST, VA, PEN — ordered cheap-and-broad to expensive-and-deep. The other orderings shuffle the sequence; the episode is explicit that code review and SAST come early in development, DAST and vulnerability assessment run on the running system, and penetration testing is the deep, periodic human attack last."
+      "explanation": "The chant is the spine of the episode: code review, SAST, DAST, vulnerability assessment, penetration testing — CR, SAST, DAST, VA, PEN — ordered cheap-and-broad to expensive-and-deep. The other orderings shuffle the sequence; the episode is explicit that code review and SAST come early in development, DAST and vulnerability assessment run on the running system, and penetration testing is the deep, periodic human attack last.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1801-q02",
@@ -22,7 +27,12 @@
         "Insecure coding patterns such as string-concatenated SQL, pinpointed to the exact line"
       ],
       "answer": 2,
-      "explanation": "Code review is a human reading source line by line, so it uniquely catches flawed logic and intent — a business-logic flaw no scanner flags because the code is syntactically fine, it is just wrong. Option D describes SAST (insecure patterns by line), option A describes a vulnerability assessment (known unpatched issues), and option B describes penetration testing (demonstrated chained exploits)."
+      "explanation": "Code review is a human reading source line by line, so it uniquely catches flawed logic and intent — a business-logic flaw no scanner flags because the code is syntactically fine, it is just wrong. Option D describes SAST (insecure patterns by line), option A describes a vulnerability assessment (known unpatched issues), and option B describes penetration testing (demonstrated chained exploits).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1801-q03",
@@ -34,7 +44,12 @@
         "SAST and DAST both require a running application, differing only in whether they report false positives"
       ],
       "answer": 0,
-      "explanation": "The exam hook is Static = Source (the code, not running); Dynamic = Doing (the app, running). SAST scans source for dangerous patterns early and by location but yields false positives and misses runtime issues; DAST attacks the live app like a real attacker, finding exploitable runtime and config flaws but late and without a line number. Option B reverses the two definitions, which is the most common trap."
+      "explanation": "The exam hook is Static = Source (the code, not running); Dynamic = Doing (the app, running). SAST scans source for dangerous patterns early and by location but yields false positives and misses runtime issues; DAST attacks the live app like a real attacker, finding exploitable runtime and config flaws but late and without a line number. Option B reverses the two definitions, which is the most common trap.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1801-q04",
@@ -46,7 +61,12 @@
         "Static application security testing (SAST)"
       ],
       "answer": 3,
-      "explanation": "Only SAST runs early on non-running, even incomplete code, scans the source for dangerous patterns like string-built SQL and hard-coded secrets, and reports the exact file and line. DAST and penetration testing both require a running application, and a vulnerability assessment checks the deployed system and its dependencies against databases of known vulnerabilities rather than pinpointing source lines."
+      "explanation": "Only SAST runs early on non-running, even incomplete code, scans the source for dangerous patterns like string-built SQL and hard-coded secrets, and reports the exact file and line. DAST and penetration testing both require a running application, and a vulnerability assessment checks the deployed system and its dependencies against databases of known vulnerabilities rather than pinpointing source lines.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1801-q05",
@@ -58,7 +78,12 @@
         "They are the same activity, differing only in cost"
       ],
       "answer": 1,
-      "explanation": "The difference is breadth versus depth: a vulnerability assessment catalogues what might be wrong across the system (known, unpatched, misconfigured), while a pen test proves what can actually be exploited and how far it reaches by chaining flaws. A pen tester may even use the assessment's list as a starting point. Option A wrongly attributes source-line reading (SAST) to the assessment, and option C confuses the assessment with code review."
+      "explanation": "The difference is breadth versus depth: a vulnerability assessment catalogues what might be wrong across the system (known, unpatched, misconfigured), while a pen test proves what can actually be exploited and how far it reaches by chaining flaws. A pen tester may even use the assessment's list as a starting point. Option A wrongly attributes source-line reading (SAST) to the assessment, and option C confuses the assessment with code review.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1801-q06",
@@ -70,7 +95,12 @@
         "Dynamic application security testing, because it attacks the running application from outside"
       ],
       "answer": 2,
-      "explanation": "A vulnerability assessment uniquely catches the known-and-unpatched: it checks software and its dependencies against databases of published vulnerabilities and produces a prioritised list, so it would have flagged the missing Struts patch — the whole point of the method and the tragedy of the breach. The xz backdoor (not Equifax) is the code-review story, so option B mismatches the case; a pen test or DAST might also have surfaced it, but the assessment is the method purpose-built for it."
+      "explanation": "A vulnerability assessment uniquely catches the known-and-unpatched: it checks software and its dependencies against databases of published vulnerabilities and produces a prioritised list, so it would have flagged the missing Struts patch — the whole point of the method and the tragedy of the breach. The xz backdoor (not Equifax) is the code-review story, so option B mismatches the case; a pen test or DAST might also have surfaced it, but the assessment is the method purpose-built for it.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1801-q07",
@@ -82,7 +112,12 @@
         "It proves real, chained, demonstrated exploits but is the most expensive and skill-intensive and only a snapshot in time, so it complements the cheaper methods that each catch different flaws the others miss"
       ],
       "answer": 3,
-      "explanation": "Penetration testing provides evidence of real-world impact that scanners cannot, but it is expensive, skill-intensive and a point-in-time snapshot, so it sits within a layered strategy where each method catches what the others miss. Option A inverts its cost (it is the most expensive, not cheapest), and option C is wrong because pen testing confirms exploitability at runtime rather than replacing the early source-level methods."
+      "explanation": "Penetration testing provides evidence of real-world impact that scanners cannot, but it is expensive, skill-intensive and a point-in-time snapshot, so it sits within a layered strategy where each method catches what the others miss. Option A inverts its cost (it is the most expensive, not cheapest), and option C is wrong because pen testing confirms exploitability at runtime rather than replacing the early source-level methods.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1801-q08",
@@ -94,7 +129,12 @@
         "Business continuity hardens the system before an attack, while disaster recovery handles the breach during the attack"
       ],
       "answer": 1,
-      "explanation": "Continuity is the broad goal — keeping critical functions running through a disruption, including manual fallback processes and communication — while disaster recovery is the technical-restore subset that gets the IT systems and data back via backups and failover. Option A reverses the two, the classic mix-up the marker is testing. Hardening and breach handling (option D) are separate ideas in the Harden / Breach-handle / Disaster-recover lifecycle."
+      "explanation": "Continuity is the broad goal — keeping critical functions running through a disruption, including manual fallback processes and communication — while disaster recovery is the technical-restore subset that gets the IT systems and data back via backups and failover. Option A reverses the two, the classic mix-up the marker is testing. Hardening and breach handling (option D) are separate ideas in the Harden / Breach-handle / Disaster-recover lifecycle.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1801-q09",
@@ -106,7 +146,12 @@
         "Listing known weaknesses across the system — for example checking for unpatched libraries"
       ],
       "answer": 0,
-      "explanation": "Hardening means shrinking the attack surface before anything happens: remove unused services and accounts, close unnecessary ports, apply least privilege, patch everything, change default passwords, and disable verbose error messages. Option B describes disaster recovery, option C describes breach handling (incident response), and option D describes a vulnerability assessment — all distinct stages of surviving a breach rather than hardening."
+      "explanation": "Hardening means shrinking the attack surface before anything happens: remove unused services and accounts, close unnecessary ports, apply least privilege, patch everything, change default passwords, and disable verbose error messages. Option B describes disaster recovery, option C describes breach handling (incident response), and option D describes a vulnerability assessment — all distinct stages of surviving a breach rather than hardening.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1801-q10",
@@ -118,7 +163,12 @@
         "Use DAST repeatedly in production as the sole method, since attacking the running app is the only way to find real exploitable flaws"
       ],
       "answer": 2,
-      "explanation": "The full-mark answer names all five complementary testing methods used together because each finds different flaws, then covers hardening, breach handling planned in advance, and disaster recovery with tested off-site backups and recovery objectives inside business continuity. Option A fails because 'we tested it' is not 'it's secure' — a pen test is only a snapshot — and options B and D each pick a single layer, ignoring that the methods are complementary and that surviving a breach requires the harden / breach-handle / disaster-recover lifecycle."
+      "explanation": "The full-mark answer names all five complementary testing methods used together because each finds different flaws, then covers hardening, breach handling planned in advance, and disaster recovery with tested off-site backups and recovery objectives inside business continuity. Option A fails because 'we tested it' is not 'it's secure' — a pen test is only a snapshot — and options B and D each pick a single layer, ignoring that the methods are complementary and that surviving a breach requires the harden / breach-handle / disaster-recover lifecycle.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

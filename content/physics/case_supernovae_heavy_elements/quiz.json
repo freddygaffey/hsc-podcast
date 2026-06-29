@@ -10,7 +10,12 @@
         "The speed at which a nucleus decays"
       ],
       "answer": 1,
-      "explanation": "Binding energy per nucleon is the total binding energy divided by the number of nucleons. A higher value means the nucleons are more tightly bound, the nucleus is more stable, and it sits at lower energy. The curve peaks near iron-56."
+      "explanation": "Binding energy per nucleon is the total binding energy divided by the number of nucleons. A higher value means the nucleons are more tightly bound, the nucleus is more stable, and it sits at lower energy. The curve peaks near iron-56.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "supernovae-q02",
@@ -22,7 +27,12 @@
         "The strong force does not act in heavy nuclei"
       ],
       "answer": 1,
-      "explanation": "Iron-56 is at the peak of the binding-energy curve. Fusing lighter nuclei climbs toward the peak and releases energy; fusing iron into something heavier moves down the far side to a less tightly bound, higher-energy product, which requires energy input. So stars cannot power themselves by fusing past iron."
+      "explanation": "Iron-56 is at the peak of the binding-energy curve. Fusing lighter nuclei climbs toward the peak and releases energy; fusing iron into something heavier moves down the far side to a less tightly bound, higher-energy product, which requires energy input. So stars cannot power themselves by fusing past iron.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "supernovae-q03",
@@ -34,7 +44,12 @@
         "Carbon burning, lasting about a thousand years"
       ],
       "answer": 2,
-      "explanation": "Each fusion stage is hotter and faster than the last. Silicon burning, the final stage that builds the iron core, lasts only about one day, compared with millions of years of hydrogen burning. The star races toward core collapse without 'knowing' it."
+      "explanation": "Each fusion stage is hotter and faster than the last. Silicon burning, the final stage that builds the iron core, lasts only about one day, compared with millions of years of hydrogen burning. The star races toward core collapse without 'knowing' it.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "supernovae-q04",
@@ -46,7 +61,12 @@
         "The repulsion between protons"
       ],
       "answer": 1,
-      "explanation": "With fusion ended, the inert iron core is supported by electron degeneracy pressure — a quantum effect from the Pauli exclusion principle, which forbids two electrons sharing the same state. It does not depend on temperature, so it supports even a cold cinder, but only up to a maximum mass."
+      "explanation": "With fusion ended, the inert iron core is supported by electron degeneracy pressure — a quantum effect from the Pauli exclusion principle, which forbids two electrons sharing the same state. It does not depend on temperature, so it supports even a cold cinder, but only up to a maximum mass.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "supernovae-q05",
@@ -58,7 +78,12 @@
         "The maximum size of a neutron star"
       ],
       "answer": 1,
-      "explanation": "Chandrasekhar showed that as mass is piled on, electrons become relativistic and their pressure softens, so there is a maximum mass (~1.4 solar masses) that electron degeneracy pressure can hold up. Above it, collapse cannot be prevented — the trigger for core-collapse supernovae."
+      "explanation": "Chandrasekhar showed that as mass is piled on, electrons become relativistic and their pressure softens, so there is a maximum mass (~1.4 solar masses) that electron degeneracy pressure can hold up. Above it, collapse cannot be prevented — the trigger for core-collapse supernovae.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "supernovae-q06",
@@ -70,7 +95,12 @@
         "Ionisation and recombination"
       ],
       "answer": 1,
-      "explanation": "Electron capture removes the very electrons providing degeneracy pressure (turning them into neutrons and neutrinos), while photodisintegration uses high-energy gamma rays to smash iron nuclei apart — an endothermic process that drains thermal support. Both make the collapse run away."
+      "explanation": "Electron capture removes the very electrons providing degeneracy pressure (turning them into neutrons and neutrinos), while photodisintegration uses high-energy gamma rays to smash iron nuclei apart — an endothermic process that drains thermal support. Both make the collapse run away.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "supernovae-q07",
@@ -82,7 +112,12 @@
         "Magnetic fields from the neutron star"
       ],
       "answer": 1,
-      "explanation": "About 99% of the collapse energy (~10⁴⁶ J) pours out as neutrinos. Though neutrinos barely interact, the material behind the stalled shock is so dense that ~1% are absorbed — enough to reheat and re-energise the shock, which then blows off the star's outer layers."
+      "explanation": "About 99% of the collapse energy (~10⁴⁶ J) pours out as neutrinos. Though neutrinos barely interact, the material behind the stalled shock is so dense that ~1% are absorbed — enough to reheat and re-energise the shock, which then blows off the star's outer layers.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "supernovae-q08",
@@ -94,7 +129,12 @@
         "Radiation — because it is driven by gamma rays"
       ],
       "answer": 1,
-      "explanation": "The 'r' is for rapid neutron capture. Neutrons (being uncharged, with no Coulomb barrier) are captured so quickly that a nucleus absorbs many before it can beta-decay, building extremely neutron-rich nuclei that then cascade up to thorium, uranium and beyond. The slow (s) process, by contrast, stays near stability."
+      "explanation": "The 'r' is for rapid neutron capture. Neutrons (being uncharged, with no Coulomb barrier) are captured so quickly that a nucleus absorbs many before it can beta-decay, building extremely neutron-rich nuclei that then cascade up to thorium, uranium and beyond. The slow (s) process, by contrast, stays near stability.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "supernovae-q09",
@@ -106,7 +146,12 @@
         "The neutrinos were emitted earlier in the star's life"
       ],
       "answer": 1,
-      "explanation": "Neutrinos barely interact, so they stream straight out of the core the instant it collapses. The light is trapped until the shock fights its way out to the star's surface, hours later. Both then cross the ~168,000 light-years at essentially the same speed — the neutrinos simply had a head start out of the gate."
+      "explanation": "Neutrinos barely interact, so they stream straight out of the core the instant it collapses. The light is trapped until the shock fights its way out to the star's surface, hours later. Both then cross the ~168,000 light-years at essentially the same speed — the neutrinos simply had a head start out of the gate.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "supernovae-q10",
@@ -118,7 +163,12 @@
         "A flare on the surface of the Sun"
       ],
       "answer": 1,
-      "explanation": "GW170817 was the merger of two neutron stars — the most neutron-rich environment imaginable. The collision flung out neutron-rich debris in which the r-process forged gold, platinum and (later identified) strontium, producing a glowing kilonova. It confirmed neutron-star mergers as a dominant source of the heaviest elements."
+      "explanation": "GW170817 was the merger of two neutron stars — the most neutron-rich environment imaginable. The collision flung out neutron-rich debris in which the r-process forged gold, platinum and (later identified) strontium, producing a glowing kilonova. It confirmed neutron-star mergers as a dominant source of the heaviest elements.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

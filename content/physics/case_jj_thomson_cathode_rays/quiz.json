@@ -10,7 +10,12 @@
         "That cathode rays are a form of sound"
       ],
       "answer": 1,
-      "explanation": "A sharp shadow of the metal cross appeared on the glowing far wall, showing the rays were blocked by the metal and travelled in straight lines, just as light would cast a shadow."
+      "explanation": "A sharp shadow of the metal cross appeared on the glowing far wall, showing the rays were blocked by the metal and travelled in straight lines, just as light would cast a shadow.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "jjthomson-q02",
@@ -22,7 +27,12 @@
         "The rays were absorbed by the plates"
       ],
       "answer": 1,
-      "explanation": "Hertz saw no deflection, but the cause was poor vacuum: cathode rays ionised the leftover gas, and those ions piled onto the plates and cancelled the electric field. With nothing pushing them, the rays went straight — hiding their charge."
+      "explanation": "Hertz saw no deflection, but the cause was poor vacuum: cathode rays ionised the leftover gas, and those ions piled onto the plates and cancelled the electric field. With nothing pushing them, the rays went straight — hiding their charge.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "jjthomson-q03",
@@ -34,7 +44,12 @@
         "He decided the rays were both waves and particles"
       ],
       "answer": 1,
-      "explanation": "Thomson suspected leftover gas was the problem, so he pumped the tube to a far better vacuum. With little gas to ionise, the electric field survived and the beam bent toward the positive plate — confirming the rays are negatively charged."
+      "explanation": "Thomson suspected leftover gas was the problem, so he pumped the tube to a far better vacuum. With little gas to ionise, the electric field survived and the beam bent toward the positive plate — confirming the rays are negatively charged.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "jjthomson-q04",
@@ -46,7 +61,12 @@
         "\\(v = \\dfrac{1}{EB}\\)"
       ],
       "answer": 1,
-      "explanation": "Balancing \\(qE = qvB\\), the charge cancels, giving \\(v = E/B\\). The speed depends only on the two field strengths the experimenter sets — independent of charge and mass."
+      "explanation": "Balancing \\(qE = qvB\\), the charge cancels, giving \\(v = E/B\\). The speed depends only on the two field strengths the experimenter sets — independent of charge and mass.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "jjthomson-q05",
@@ -58,7 +78,12 @@
         "Air resistance"
       ],
       "answer": 2,
-      "explanation": "A magnetic force acts at right angles to the motion, so it cannot change the speed — only bend the path into a circle. Setting the magnetic force equal to the centripetal force (\\(qvB = mv^2/r\\)) and using the known speed yields the charge-to-mass ratio."
+      "explanation": "A magnetic force acts at right angles to the motion, so it cannot change the speed — only bend the path into a circle. Setting the magnetic force equal to the centripetal force (\\(qvB = mv^2/r\\)) and using the known speed yields the charge-to-mass ratio.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "jjthomson-q06",
@@ -70,7 +95,12 @@
         "The particles had no mass"
       ],
       "answer": 1,
-      "explanation": "Charge sets how strongly the field grips the particle, while mass (inertia) resists being pushed. In the algebra they never separate, so only the ratio \\(q/m\\) emerges. A separate measurement of the charge (later Millikan) is needed to prise them apart."
+      "explanation": "Charge sets how strongly the field grips the particle, while mass (inertia) resists being pushed. In the algebra they never separate, so only the ratio \\(q/m\\) emerges. A separate measurement of the charge (later Millikan) is needed to prise them apart.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "jjthomson-q07",
@@ -82,7 +112,12 @@
         "They had the same colour as hydrogen"
       ],
       "answer": 1,
-      "explanation": "Lenard's results showed the particles slipped through matter for enormous distances. A particle with gigantic charge would grab every atom it passed and stop quickly; gliding through means it interacts weakly — so the explanation is a tiny mass, not a huge charge."
+      "explanation": "Lenard's results showed the particles slipped through matter for enormous distances. A particle with gigantic charge would grab every atom it passed and stop quickly; gliding through means it interacts weakly — so the explanation is a tiny mass, not a huge charge.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "jjthomson-q08",
@@ -94,7 +129,12 @@
         "The particles changed mass with each different gas"
       ],
       "answer": 1,
-      "explanation": "Thomson varied the gas (air, hydrogen, carbon dioxide) and the cathode metal (aluminium, platinum), yet the same charge-to-mass ratio appeared every time. The particle could not be a fragment of any particular substance — it is a building block present in all matter."
+      "explanation": "Thomson varied the gas (air, hydrogen, carbon dioxide) and the cathode metal (aluminium, platinum), yet the same charge-to-mass ratio appeared every time. The particle could not be a fragment of any particular substance — it is a building block present in all matter.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "jjthomson-q09",
@@ -106,7 +146,12 @@
         "It measured the size of the atom"
       ],
       "answer": 1,
-      "explanation": "Millikan suspended charged oil drops by balancing the electric force against gravity (\\(qE = mg\\)) and found charge comes in whole-number multiples of one elementary charge. Dividing that charge by Thomson's q/m ratio gives the electron mass (~\\(9\\times10^{-31}\\) kg)."
+      "explanation": "Millikan suspended charged oil drops by balancing the electric force against gravity (\\(qE = mg\\)) and found charge comes in whole-number multiples of one elementary charge. Dividing that charge by Thomson's q/m ratio gives the electron mass (~\\(9\\times10^{-31}\\) kg).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "jjthomson-q10",
@@ -118,7 +163,12 @@
         "A solar-system model, confirmed by Rutherford"
       ],
       "answer": 1,
-      "explanation": "Thomson pictured electrons embedded in a smeared sphere of positive charge. The Geiger-Marsden experiment found alpha particles bouncing back, impossible if charge were spread softly — so the positive charge must be concentrated in a tiny dense nucleus, overturning the model."
+      "explanation": "Thomson pictured electrons embedded in a smeared sphere of positive charge. The Geiger-Marsden experiment found alpha particles bouncing back, impossible if charge were spread softly — so the positive charge must be concentrated in a tiny dense nucleus, overturning the model.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

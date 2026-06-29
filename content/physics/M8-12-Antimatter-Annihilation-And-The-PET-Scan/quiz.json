@@ -10,7 +10,12 @@
         "A neutral particle emitted alongside beta particles"
       ],
       "answer": 0,
-      "explanation": "A positron is the electron's antiparticle: identical mass (\\(9.11 \\times 10^{-31}\\ \\mathrm{kg}\\)) and equal magnitude of charge, but positive instead of negative. The neutral partner of beta decay (D) is the neutrino."
+      "explanation": "A positron is the electron's antiparticle: identical mass (\\(9.11 \\times 10^{-31}\\ \\mathrm{kg}\\)) and equal magnitude of charge, but positive instead of negative. The neutral partner of beta decay (D) is the neutrino.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m812-q02",
@@ -22,7 +27,12 @@
         "It decreases by 2, because an alpha particle is emitted"
       ],
       "answer": 1,
-      "explanation": "In beta-plus decay a proton converts to a neutron (emitting a positron and neutrino), so the atomic number falls by 1 while the mass number is unchanged. Beta-MINUS decay (A) is the reverse: a neutron becomes a proton and the atomic number rises."
+      "explanation": "In beta-plus decay a proton converts to a neutron (emitting a positron and neutrino), so the atomic number falls by 1 while the mass number is unchanged. Beta-MINUS decay (A) is the reverse: a neutron becomes a proton and the atomic number rises.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m812-q03",
@@ -34,7 +44,12 @@
         "\\({}^{11}_{6}\\mathrm{C} \\to {}^{10}_{6}\\mathrm{C} + {}^{1}_{0}n\\)"
       ],
       "answer": 1,
-      "explanation": "Carbon-11 (Z=6) emits a positron, so a proton becomes a neutron and the daughter is boron-11 (Z=5). Mass number stays 11; charge balances: \\(6 = 5 + 1\\). Option A is beta-minus (wrong direction)."
+      "explanation": "Carbon-11 (Z=6) emits a positron, so a proton becomes a neutron and the daughter is boron-11 (Z=5). Mass number stays 11; charge balances: \\(6 = 5 + 1\\). Option A is beta-minus (wrong direction).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m812-q04",
@@ -46,7 +61,12 @@
         "Because gamma photons can only be created in pairs by the strong force"
       ],
       "answer": 2,
-      "explanation": "Just before annihilation the total momentum is essentially zero. A single photon always carries momentum and can never have zero, so it would violate conservation of momentum. Two equal photons emitted back-to-back have momenta that cancel to zero. Photons are uncharged, so charge (A) is not the issue here."
+      "explanation": "Just before annihilation the total momentum is essentially zero. A single photon always carries momentum and can never have zero, so it would violate conservation of momentum. Two equal photons emitted back-to-back have momenta that cancel to zero. Photons are uncharged, so charge (A) is not the issue here.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m812-q05",
@@ -58,7 +78,12 @@
         "931.5 MeV"
       ],
       "answer": 1,
-      "explanation": "Each particle's rest energy is \\(m_e c^2 = 0.511\\ \\mathrm{MeV}\\). The total released is \\(2m_ec^2 = 1.022\\ \\mathrm{MeV}\\) (option C), shared equally between the two photons, so each carries 0.511 MeV. A common slip is to give 1.022 MeV per photon."
+      "explanation": "Each particle's rest energy is \\(m_e c^2 = 0.511\\ \\mathrm{MeV}\\). The total released is \\(2m_ec^2 = 1.022\\ \\mathrm{MeV}\\) (option C), shared equally between the two photons, so each carries 0.511 MeV. A common slip is to give 1.022 MeV per photon.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m812-q06",
@@ -70,7 +95,12 @@
         "Pair production makes two particles to conserve momentum; annihilation makes two photons to conserve energy"
       ],
       "answer": 0,
-      "explanation": "In pair production a gamma photon becomes an electron and a positron — two particles, one of each charge, to keep total charge zero. In annihilation a pair becomes two photons travelling in opposite directions, needed to conserve momentum. They are reverse processes with different reasons for 'two'."
+      "explanation": "In pair production a gamma photon becomes an electron and a positron — two particles, one of each charge, to keep total charge zero. In annihilation a pair becomes two photons travelling in opposite directions, needed to conserve momentum. They are reverse processes with different reasons for 'two'.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m812-q07",
@@ -82,7 +112,12 @@
         "\\(9.0 \\times 10^{16}\\ \\mathrm{J}\\)"
       ],
       "answer": 1,
-      "explanation": "All the rest mass of both particles converts: \\(E = 2m_ec^2 = 2 \\times (9.11 \\times 10^{-31}) \\times (3.0 \\times 10^{8})^2 = 1.64 \\times 10^{-13}\\ \\mathrm{J}\\). The value \\(8.2 \\times 10^{-14}\\ \\mathrm{J}\\) (A) is the energy of one of the two photons, half the total."
+      "explanation": "All the rest mass of both particles converts: \\(E = 2m_ec^2 = 2 \\times (9.11 \\times 10^{-31}) \\times (3.0 \\times 10^{8})^2 = 1.64 \\times 10^{-13}\\ \\mathrm{J}\\). The value \\(8.2 \\times 10^{-14}\\ \\mathrm{J}\\) (A) is the energy of one of the two photons, half the total.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m812-q08",
@@ -94,7 +129,12 @@
         "Because gamma photons are absorbed more strongly by active tissue"
       ],
       "answer": 1,
-      "explanation": "FDG behaves like glucose, so it gathers wherever the body uses a lot of glucose — fast-metabolising tissue such as tumours and active brain regions. This is why PET images function (metabolic activity), not just anatomy."
+      "explanation": "FDG behaves like glucose, so it gathers wherever the body uses a lot of glucose — fast-metabolising tissue such as tumours and active brain regions. This is why PET images function (metabolic activity), not just anatomy.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m812-q09",
@@ -106,7 +146,12 @@
         "Detecting the positron directly as it leaves the nucleus"
       ],
       "answer": 1,
-      "explanation": "The two annihilation photons travel in opposite directions and strike the surrounding ring on opposite sides at the same instant (coincidence). Because they came from one event, the annihilation lies on the straight line joining the two detectors — the line of response. Millions of these lines are combined to reconstruct the image."
+      "explanation": "The two annihilation photons travel in opposite directions and strike the surrounding ring on opposite sides at the same instant (coincidence). Because they came from one event, the annihilation lies on the straight line joining the two detectors — the line of response. Millions of these lines are combined to reconstruct the image.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m812-q10",
@@ -118,7 +163,12 @@
         "Short-lived isotopes are the only ones that emit positrons"
       ],
       "answer": 1,
-      "explanation": "This is the half-life suitability argument: the isotope must last long enough to inject, distribute and scan, but be short-lived enough to clear the body fast and minimise dose. A longer half-life is worse — more dose and slower clearance — so option A is the misconception to avoid."
+      "explanation": "This is the half-life suitability argument: the isotope must last long enough to inject, distribute and scan, but be short-lived enough to clear the body fast and minimise dose. A longer half-life is worse — more dose and slower clearance — so option A is the misconception to avoid.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

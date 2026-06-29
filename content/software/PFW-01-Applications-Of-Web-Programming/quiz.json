@@ -10,7 +10,12 @@
         "Responsive websites, web services, and cloud applications"
       ],
       "answer": 1,
-      "explanation": "The syllabus names exactly three: interactive websites and webpages, e-commerce, and progressive web apps (PWAs). A useful mnemonic is I-E-P — 'I Eat Pizza' — to recall them in an exam."
+      "explanation": "The syllabus names exactly three: interactive websites and webpages, e-commerce, and progressive web apps (PWAs). A useful mnemonic is I-E-P — 'I Eat Pizza' — to recall them in an exam.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw01-q02",
@@ -22,7 +27,12 @@
         "It can continue to function without an active internet connection"
       ],
       "answer": 2,
-      "explanation": "The defining characteristic of an interactive website is dynamic, client-side content — the page responds to user input immediately (e.g. live search, comments appearing) without fetching a whole new page from the server. Responsive design (option A) is a separate concept about layout."
+      "explanation": "The defining characteristic of an interactive website is dynamic, client-side content — the page responds to user input immediately (e.g. live search, comments appearing) without fetching a whole new page from the server. Responsive design (option A) is a separate concept about layout.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw01-q03",
@@ -34,7 +44,12 @@
         "Security regulations only apply to websites that sell products"
       ],
       "answer": 1,
-      "explanation": "For an interactive blog, a security failure is embarrassing. For e-commerce, it is existential — leaking card numbers brings financial harm, legal penalties, and destroyed trust. The stakes are categorically higher because the asset is money and identity. This 'asset and consequences' framing is what earns Band 6 marks on a comparison question."
+      "explanation": "For an interactive blog, a security failure is embarrassing. For e-commerce, it is existential — leaking card numbers brings financial harm, legal penalties, and destroyed trust. The stakes are categorically higher because the asset is money and identity. This 'asset and consequences' framing is what earns Band 6 marks on a comparison question.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw01-q04",
@@ -46,7 +61,12 @@
         "Push notifications and a native app store listing"
       ],
       "answer": 2,
-      "explanation": "A PWA is defined by being installable (via a web app manifest) and offline-capable (via a service worker). The MISO mnemonic captures the essentials: Manifest, Installable, Service worker, Offline. A site that merely looks good on mobile is responsive, not progressive."
+      "explanation": "A PWA is defined by being installable (via a web app manifest) and offline-capable (via a service worker). The MISO mnemonic captures the essentials: Manifest, Installable, Service worker, Offline. A site that merely looks good on mobile is responsive, not progressive.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw01-q05",
@@ -58,7 +78,12 @@
         "It renders the page layout for different screen sizes"
       ],
       "answer": 1,
-      "explanation": "A service worker is a script the browser keeps running in the background. It intercepts network requests and can serve cached content when offline — this is the mechanism behind offline capability. You must be able to name the service worker as this mechanism, not just say 'it saves data'."
+      "explanation": "A service worker is a script the browser keeps running in the background. It intercepts network requests and can serve cached content when offline — this is the mechanism behind offline capability. You must be able to name the service worker as this mechanism, not just say 'it saves data'.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw01-q06",
@@ -70,7 +95,12 @@
         "PWAs require native code, so they cannot be built with standard web technologies"
       ],
       "answer": 1,
-      "explanation": "This is the most common exam trap. Responsive design controls layout across screen sizes. A PWA is about capability — specifically, installability and offline operation via a service worker. A site can be fully responsive without being a PWA, and vice versa. Confusing these two concepts costs marks."
+      "explanation": "This is the most common exam trap. Responsive design controls layout across screen sizes. A PWA is about capability — specifically, installability and offline operation via a service worker. A site can be fully responsive without being a PWA, and vice versa. Confusing these two concepts costs marks.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw01-q07",
@@ -82,7 +112,12 @@
         "A standard static website, because it does not depend on server-side processing"
       ],
       "answer": 2,
-      "explanation": "The driving requirement is offline functionality. A PWA's service worker lets it run and store data without a connection, then synchronise when coverage returns. An interactive website depends on a live network (eliminates A). E-commerce strengths are about payments, not relevant here (eliminates B). A static site cannot store or process dynamic field data (eliminates D)."
+      "explanation": "The driving requirement is offline functionality. A PWA's service worker lets it run and store data without a connection, then synchronise when coverage returns. An interactive website depends on a live network (eliminates A). E-commerce strengths are about payments, not relevant here (eliminates B). A static site cannot store or process dynamic field data (eliminates D).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw01-q08",
@@ -94,7 +129,12 @@
         "PWAs are always slower than native apps because they run in a browser"
       ],
       "answer": 2,
-      "explanation": "The trade-off that earns marks names both sides: PWAs gain cross-platform reach from one codebase, but pay with implementation complexity (service worker caching logic) and limited support on some platforms (Apple's iOS has historically restricted PWA features compared to Android). 'PWAs are slower' (D) is an oversimplification and not the key syllabus trade-off."
+      "explanation": "The trade-off that earns marks names both sides: PWAs gain cross-platform reach from one codebase, but pay with implementation complexity (service worker caching logic) and limited support on some platforms (Apple's iOS has historically restricted PWA features compared to Android). 'PWAs are slower' (D) is an oversimplification and not the key syllabus trade-off.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw01-q09",
@@ -106,7 +146,12 @@
         "Client-side JavaScript cannot be secured against any type of attack"
       ],
       "answer": 1,
-      "explanation": "Interactive sites run code from the server inside users' browsers and display user-submitted content. If user input is not properly validated, a malicious user can inject script that runs in other users' browsers — this is cross-site scripting (XSS). Interactivity and security pull against each other: the more dynamic a site, the more untrusted input entry points exist."
+      "explanation": "Interactive sites run code from the server inside users' browsers and display user-submitted content. If user input is not properly validated, a malicious user can inject script that runs in other users' browsers — this is cross-site scripting (XSS). Interactivity and security pull against each other: the more dynamic a site, the more untrusted input entry points exist.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "pfw01-q10",
@@ -118,7 +163,12 @@
         "Memory, Input, Storage, Output"
       ],
       "answer": 1,
-      "explanation": "MISO — Manifest, Installable, Service worker, Offline — captures the four essential features that distinguish a PWA from a standard website. In an exam question asking you to 'describe the features that distinguish a PWA', MISO gives you the complete list: it has a web app manifest, it is installable to the home screen, it uses a service worker, and it works offline."
+      "explanation": "MISO — Manifest, Installable, Service worker, Offline — captures the four essential features that distinguish a PWA from a standard website. In an exam question asking you to 'describe the features that distinguish a PWA', MISO gives you the complete list: it has a web app manifest, it is installable to the home screen, it uses a service worker, and it works offline.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

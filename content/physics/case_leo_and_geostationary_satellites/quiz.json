@@ -10,7 +10,12 @@
         "An object pushed outward by centrifugal force"
       ],
       "answer": 1,
-      "explanation": "Fired fast enough horizontally, the cannonball falls toward the Earth but the round surface curves away by the same amount, so it never lands — it falls around the Earth. An orbiting satellite is in continuous free fall."
+      "explanation": "Fired fast enough horizontally, the cannonball falls toward the Earth but the round surface curves away by the same amount, so it never lands — it falls around the Earth. An orbiting satellite is in continuous free fall.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "leogeo-q02",
@@ -22,7 +27,12 @@
         "Because they move faster than the speed of light"
       ],
       "answer": 1,
-      "explanation": "Weightlessness is not the absence of gravity. At ISS altitude \\(g\\) is still ~8.7 N/kg. The astronauts feel weightless because they are falling around the Earth with their craft, experiencing only gravity with no normal force underneath them."
+      "explanation": "Weightlessness is not the absence of gravity. At ISS altitude \\(g\\) is still ~8.7 N/kg. The astronauts feel weightless because they are falling around the Earth with their craft, experiencing only gravity with no normal force underneath them.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "leogeo-q03",
@@ -34,7 +44,12 @@
         "\\(v = \\dfrac{GMm}{r^2}\\)"
       ],
       "answer": 1,
-      "explanation": "Equating \\(GMm/r^2 = mv^2/r\\), the satellite mass cancels and rearranging gives \\(v = \\sqrt{GM/r}\\). The orbital speed depends only on the central mass and the orbital radius, not on the satellite's mass."
+      "explanation": "Equating \\(GMm/r^2 = mv^2/r\\), the satellite mass cancels and rearranging gives \\(v = \\sqrt{GM/r}\\). The orbital speed depends only on the central mass and the orbital radius, not on the satellite's mass.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "leogeo-q04",
@@ -46,7 +61,12 @@
         "Speed increases as the square of the radius"
       ],
       "answer": 2,
-      "explanation": "Since \\(v = \\sqrt{GM/r}\\), a larger \\(r\\) gives a smaller \\(v\\). A low-orbit satellite must travel very fast (~7.7 km/s for the ISS) while a geostationary satellite moves slowly (~3.07 km/s)."
+      "explanation": "Since \\(v = \\sqrt{GM/r}\\), a larger \\(r\\) gives a smaller \\(v\\). A low-orbit satellite must travel very fast (~7.7 km/s for the ISS) while a geostationary satellite moves slowly (~3.07 km/s).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "leogeo-q05",
@@ -58,7 +78,12 @@
         "\\(T^2 \\propto 1/r^3\\)"
       ],
       "answer": 1,
-      "explanation": "Combining \\(v = \\sqrt{GM/r}\\) with \\(v = 2\\pi r/T\\) gives \\(r^3/T^2 = GM/4\\pi^2\\), so \\(T^2 \\propto r^3\\). Fixing the period to one (sidereal) day and solving for \\(r\\) yields the unique geostationary altitude."
+      "explanation": "Combining \\(v = \\sqrt{GM/r}\\) with \\(v = 2\\pi r/T\\) gives \\(r^3/T^2 = GM/4\\pi^2\\), so \\(T^2 \\propto r^3\\). Fixing the period to one (sidereal) day and solving for \\(r\\) yields the unique geostationary altitude.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "leogeo-q06",
@@ -70,7 +95,12 @@
         "About 384 000 km"
       ],
       "answer": 2,
-      "explanation": "Solving Kepler's law for a one-sidereal-day period gives an orbital radius of ~42 164 km from Earth's centre; subtracting Earth's radius (~6378 km) leaves ~35 786 km altitude — the figure Arthur Clarke calculated in 1945."
+      "explanation": "Solving Kepler's law for a one-sidereal-day period gives an orbital radius of ~42 164 km from Earth's centre; subtracting Earth's radius (~6378 km) leaves ~35 786 km altitude — the figure Arthur Clarke calculated in 1945.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "leogeo-q07",
@@ -82,7 +112,12 @@
         "A geosynchronous orbit is much lower than a geostationary one"
       ],
       "answer": 2,
-      "explanation": "Both share a one-day period. A geostationary orbit is the special case with zero inclination (equatorial) and zero eccentricity, so it appears motionless. A tilted geosynchronous orbit (like Syncom 2) traces a daily figure-eight. All geostationary orbits are geosynchronous, but not vice versa."
+      "explanation": "Both share a one-day period. A geostationary orbit is the special case with zero inclination (equatorial) and zero eccentricity, so it appears motionless. A tilted geosynchronous orbit (like Syncom 2) traces a daily figure-eight. All geostationary orbits are geosynchronous, but not vice versa.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "leogeo-q08",
@@ -94,7 +129,12 @@
         "To measure the angles between satellites"
       ],
       "answer": 1,
-      "explanation": "Each satellite distance gives one equation. Three could fix the three spatial coordinates, but the receiver's clock error is a fourth unknown that corrupts all the distances. A fourth satellite gives the fourth equation, solving for position and clock error simultaneously."
+      "explanation": "Each satellite distance gives one equation. Three could fix the three spatial coordinates, but the receiver's clock error is a fourth unknown that corrupts all the distances. A fourth satellite gives the fourth equation, solving for position and clock error simultaneously.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "leogeo-q09",
@@ -106,7 +146,12 @@
         "They keep perfect time with ground clocks"
       ],
       "answer": 1,
-      "explanation": "Special relativity slows the moving clock (~7.2 microseconds/day lost); general relativity speeds the higher clock in weaker gravity (~45.9 microseconds/day gained). The gravitational effect dominates, giving a net ~38 microseconds/day fast — which, times the speed of light, is ~11.5 km of position error per day if uncorrected."
+      "explanation": "Special relativity slows the moving clock (~7.2 microseconds/day lost); general relativity speeds the higher clock in weaker gravity (~45.9 microseconds/day gained). The gravitational effect dominates, giving a net ~38 microseconds/day fast — which, times the speed of light, is ~11.5 km of position error per day if uncorrected.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "leogeo-q10",
@@ -118,7 +163,12 @@
         "The satellite loses potential energy as it rises"
       ],
       "answer": 1,
-      "explanation": "Total orbital energy is \\(E = -GMm/2r\\); a larger \\(r\\) makes \\(E\\) less negative, so energy must be added. Although the higher orbit is slower (lower kinetic energy), the gain in gravitational potential energy more than offsets it, requiring a net energy input."
+      "explanation": "Total orbital energy is \\(E = -GMm/2r\\); a larger \\(r\\) makes \\(E\\) less negative, so energy must be added. Although the higher orbit is slower (lower kinetic energy), the gain in gravitational potential energy more than offsets it, requiring a net energy input.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

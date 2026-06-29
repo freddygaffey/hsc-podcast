@@ -10,7 +10,12 @@
         "Distributed, Phased, Parallel, Pilot"
       ],
       "answer": 0,
-      "explanation": "DiP-PP stands for Direct, Phased, Parallel, Pilot — say it as 'dip, pee-pee' and write it in the margin to recall all four. Options containing 'Iterative', 'Prototype' or 'Deploy' mix in development-approach or lifecycle words, not the four changeover methods this dot-point tests."
+      "explanation": "DiP-PP stands for Direct, Phased, Parallel, Pilot — say it as 'dip, pee-pee' and write it in the margin to recall all four. Options containing 'Iterative', 'Prototype' or 'Deploy' mix in development-approach or lifecycle words, not the four changeover methods this dot-point tests.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2303-q02",
@@ -22,7 +27,12 @@
         "It deploys the whole new system to a small representative group first; low risk but delays full rollout"
       ],
       "answer": 2,
-      "explanation": "Direct is the single all-at-once cutover — old system off, new system on, everyone together. The one-liner to memorise is 'Direct is cheap and fast, but if it breaks there's no safety net.' The other options describe parallel, phased and pilot respectively, so they are the wrong method despite being true statements."
+      "explanation": "Direct is the single all-at-once cutover — old system off, new system on, everyone together. The one-liner to memorise is 'Direct is cheap and fast, but if it breaks there's no safety net.' The other options describe parallel, phased and pilot respectively, so they are the wrong method despite being true statements.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2303-q03",
@@ -34,7 +44,12 @@
         "It is the fastest method, so the system spends the least time in a vulnerable state"
       ],
       "answer": 1,
-      "explanation": "Parallel keeps the old system running as a working safety net and lets staff verify the new system's output against the trusted old output before decommissioning the old one. The pilot (A) and phased (C) options describe real but different methods that contain risk differently, and parallel is in fact the slowest and most expensive method, not the fastest (D)."
+      "explanation": "Parallel keeps the old system running as a working safety net and lets staff verify the new system's output against the trusted old output before decommissioning the old one. The pilot (A) and phased (C) options describe real but different methods that contain risk differently, and parallel is in fact the slowest and most expensive method, not the fastest (D).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2303-q04",
@@ -46,7 +61,12 @@
         "It needs the system re-coded for each phase as functionality is added"
       ],
       "answer": 2,
-      "explanation": "Because both the old and new systems operate at the same time, the organisation pays to run, staff and maintain two complete systems for the entire overlap — double the resources. The delay disadvantage in option B belongs to pilot, and per-phase rework (D) is closer to a phased-rollout concern, not the cost driver of parallel."
+      "explanation": "Because both the old and new systems operate at the same time, the organisation pays to run, staff and maintain two complete systems for the entire overlap — double the resources. The delay disadvantage in option B belongs to pilot, and per-phase rework (D) is closer to a phased-rollout concern, not the cost driver of parallel.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2303-q05",
@@ -58,7 +78,12 @@
         "Phased splits the rollout by feature, delivering part of the system to everyone gradually; pilot splits by user group, deploying the whole system to a small representative subset first"
       ],
       "answer": 3,
-      "explanation": "The distinction the exam exploits is feature-split versus user-split: phased gives part of the system to everyone, gradually; pilot gives the whole system to part of the users. Option A reverses this exact distinction — the classic trap — and option B confuses these methods with parallel and direct."
+      "explanation": "The distinction the exam exploits is feature-split versus user-split: phased gives part of the system to everyone, gradually; pilot gives the whole system to part of the users. Option A reverses this exact distinction — the classic trap — and option B confuses these methods with parallel and direct.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2303-q06",
@@ -70,7 +95,12 @@
         "Parallel, Direct, Pilot, Phased"
       ],
       "answer": 1,
-      "explanation": "The risk order from riskiest to safest is Direct, then Phased, then Parallel, then Pilot — direct is the gamble, pilot is the careful one. This is the same left-to-right order as the DiP-PP hook itself. Option C swaps parallel and phased, which is the most tempting error since both sit in the safer middle-to-low band."
+      "explanation": "The risk order from riskiest to safest is Direct, then Phased, then Parallel, then Pilot — direct is the gamble, pilot is the careful one. This is the same left-to-right order as the DiP-PP hook itself. Option C swaps parallel and phased, which is the most tempting error since both sit in the safer middle-to-low band.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2303-q07",
@@ -82,7 +112,12 @@
         "They performed a direct, big-bang deployment with no staged rollout and no working rollback, so there was no safety net when leftover code fired millions of unintended trades"
       ],
       "answer": 3,
-      "explanation": "Knight used a direct, big-bang cutover; dormant code was reactivated on some servers, and with no rollback path there was no fallback while they diagnosed it — about $440 million lost in 45 minutes. The lesson in this episode's terms is that a direct deployment of a high-stakes system with no rollback is the maximum-risk choice. A pilot or parallel approach (or a tested rollback) would likely have caught it, which is exactly why the parallel/pilot options are wrong descriptions of what happened."
+      "explanation": "Knight used a direct, big-bang cutover; dormant code was reactivated on some servers, and with no rollback path there was no fallback while they diagnosed it — about $440 million lost in 45 minutes. The lesson in this episode's terms is that a direct deployment of a high-stakes system with no rollback is the maximum-risk choice. A pilot or parallel approach (or a tested rollback) would likely have caught it, which is exactly why the parallel/pilot options are wrong descriptions of what happened.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2303-q08",
@@ -94,7 +129,12 @@
         "They ran the new system in parallel with manual handling for too long, inflating costs"
       ],
       "answer": 1,
-      "explanation": "For a system that large, complex and critical, direct cut-over was exactly the wrong method — they switched the whole airport on at once with no pilot on a concourse, no parallel run with manual handlers and no terminal-by-terminal phasing. Denver is the textbook case of choosing the riskiest method for the system that could least afford it, which is why the options claiming a pilot or parallel run was actually used are false."
+      "explanation": "For a system that large, complex and critical, direct cut-over was exactly the wrong method — they switched the whole airport on at once with no pilot on a concourse, no parallel run with manual handlers and no terminal-by-terminal phasing. Denver is the textbook case of choosing the riskiest method for the system that could least afford it, which is why the options claiming a pilot or parallel run was actually used are false.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2303-q09",
@@ -106,7 +146,12 @@
         "Pilot alone, because trialling on one ward keeps any fault contained to a small group"
       ],
       "answer": 2,
-      "explanation": "A patient records system is safety-critical with essentially zero risk tolerance, so you match the riskiest stakes to the safest method: parallel gives a continuous working fallback and output verification, possibly preceded by a pilot in a department like outpatients. The full-mark shape names the method, links its specific advantage to the scenario's risk, and weighs cost against stakes. Direct (A) is reckless here, and phased or pilot alone (B, D) do not give the guaranteed live fallback the zero-tolerance context demands."
+      "explanation": "A patient records system is safety-critical with essentially zero risk tolerance, so you match the riskiest stakes to the safest method: parallel gives a continuous working fallback and output verification, possibly preceded by a pilot in a department like outpatients. The full-mark shape names the method, links its specific advantage to the scenario's risk, and weighs cost against stakes. Direct (A) is reckless here, and phased or pilot alone (B, D) do not give the guaranteed live fallback the zero-tolerance context demands.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2303-q10",
@@ -118,7 +163,12 @@
         "Pilot, because trialling on a subset of users is always the safest option regardless of stakes"
       ],
       "answer": 0,
-      "explanation": "Recommendation is about matching the method's risk profile to the scenario's stakes: low stakes, tight budget and a need for speed point to direct, where its cheapness and speed are the strengths and its high risk is tolerable here. Parallel (B) wastes a tight budget on a low-stakes system, and choosing pilot 'because it's always safest' (D) ignores that the justification must weigh the trade-off against the context, not default to the safest method."
+      "explanation": "Recommendation is about matching the method's risk profile to the scenario's stakes: low stakes, tight budget and a need for speed point to direct, where its cheapness and speed are the strengths and its high risk is tolerable here. Parallel (B) wastes a tight budget on a low-stakes system, and choosing pilot 'because it's always safest' (D) ignores that the justification must weigh the trade-off against the context, not default to the safest method.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

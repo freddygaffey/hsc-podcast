@@ -10,7 +10,12 @@
         "Electrons being stripped from atoms to form a plasma"
       ],
       "answer": 1,
-      "explanation": "Fusion joins two light (small mass number) nuclei into a heavier, more tightly bound nucleus, releasing energy. Splitting a heavy nucleus (A) is fission, and alpha emission (C) is radioactive decay."
+      "explanation": "Fusion joins two light (small mass number) nuclei into a heavier, more tightly bound nucleus, releasing energy. Splitting a heavy nucleus (A) is fission, and alpha emission (C) is radioactive decay.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m811-q02",
@@ -22,7 +27,12 @@
         "Mass is destroyed and converted to pure energy with no change in binding"
       ],
       "answer": 2,
-      "explanation": "Light nuclei sit low on the steep left of the curve. Their fused product sits higher, nearer iron-56, with greater binding energy per nucleon, so it is more tightly bound and lighter than the reactants. That mass defect is released via \\(E = mc^2\\). Mass is converted, not destroyed (D)."
+      "explanation": "Light nuclei sit low on the steep left of the curve. Their fused product sits higher, nearer iron-56, with greater binding energy per nucleon, so it is more tightly bound and lighter than the reactants. That mass defect is released via \\(E = mc^2\\). Mass is converted, not destroyed (D).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m811-q03",
@@ -34,7 +44,12 @@
         "To strip electrons away so gravity can pull the nuclei together"
       ],
       "answer": 1,
-      "explanation": "Both nuclei are positively charged and repel via the long-range Coulomb force. Since temperature measures average kinetic energy, an extremely high temperature gives the nuclei enough kinetic energy to beat this Coulomb barrier and get within about \\(10^{-15}\\ \\mathrm{m}\\), where the short-range strong force can bind them."
+      "explanation": "Both nuclei are positively charged and repel via the long-range Coulomb force. Since temperature measures average kinetic energy, an extremely high temperature gives the nuclei enough kinetic energy to beat this Coulomb barrier and get within about \\(10^{-15}\\ \\mathrm{m}\\), where the short-range strong force can bind them.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m811-q04",
@@ -46,7 +61,12 @@
         "To cool the plasma and prevent it from escaping"
       ],
       "answer": 2,
-      "explanation": "High temperature makes each collision energetic enough; high pressure and density make collisions frequent enough to sustain the reaction. In a star, gravity supplies the crushing pressure across its huge mass."
+      "explanation": "High temperature makes each collision energetic enough; high pressure and density make collisions frequent enough to sustain the reaction. In a star, gravity supplies the crushing pressure across its huge mass.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m811-q05",
@@ -58,7 +78,12 @@
         "The electromagnetic force"
       ],
       "answer": 2,
-      "explanation": "The strong nuclear force is powerfully attractive but acts only over about \\(10^{-15}\\ \\mathrm{m}\\). Gravity is far too feeble at the nuclear scale, and the weak force mediates beta decay rather than binding nucleons."
+      "explanation": "The strong nuclear force is powerfully attractive but acts only over about \\(10^{-15}\\ \\mathrm{m}\\). Gravity is far too feeble at the nuclear scale, and the weak force mediates beta decay rather than binding nucleons.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m811-q06",
@@ -70,7 +95,12 @@
         "An alpha particle"
       ],
       "answer": 1,
-      "explanation": "Balance the numbers: mass \\(2 + 3 = 5\\), and \\({}^{4}\\mathrm{He}\\) accounts for 4, leaving 1; charge \\(1 + 1 = 2\\), and helium accounts for 2, leaving 0. A mass-1, charge-0 particle is a neutron."
+      "explanation": "Balance the numbers: mass \\(2 + 3 = 5\\), and \\({}^{4}\\mathrm{He}\\) accounts for 4, leaving 1; charge \\(1 + 1 = 2\\), and helium accounts for 2, leaving 0. A mass-1, charge-0 particle is a neutron.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m811-q07",
@@ -82,7 +112,12 @@
         "931.5 MeV"
       ],
       "answer": 1,
-      "explanation": "\\(E = \\Delta m \\times 931.5 = 0.0189 \\times 931.5 \\approx 17.6\\ \\mathrm{MeV}\\) per D-T event. The 200 MeV figure (C) is a uranium fission, not this fusion. Remember not to divide by \\(c^2\\) as well — it is built into 931.5."
+      "explanation": "\\(E = \\Delta m \\times 931.5 = 0.0189 \\times 931.5 \\approx 17.6\\ \\mathrm{MeV}\\) per D-T event. The 200 MeV figure (C) is a uranium fission, not this fusion. Remember not to divide by \\(c^2\\) as well — it is built into 931.5.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m811-q08",
@@ -94,7 +129,12 @@
         "They are all roughly equal"
       ],
       "answer": 2,
-      "explanation": "Per unit mass the order is fusion > fission ≫ chemical. Although a single fission event (~200 MeV) exceeds a single fusion event (~17.6 MeV), fusion involves few nucleons on the steepest part of the curve, so per nucleon it wins. Chemical burning only rearranges electrons (~eV per atom)."
+      "explanation": "Per unit mass the order is fusion > fission ≫ chemical. Although a single fission event (~200 MeV) exceeds a single fusion event (~17.6 MeV), fusion involves few nucleons on the steepest part of the curve, so per nucleon it wins. Chemical burning only rearranges electrons (~eV per atom).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m811-q09",
@@ -106,7 +146,12 @@
         "Beyond iron, the Coulomb barrier disappears, so fusion stops being needed"
       ],
       "answer": 1,
-      "explanation": "Iron-56 is at the top of the binding-energy-per-nucleon curve. Fusing past iron yields a product lower on the curve (less tightly bound, more massive than the reactants), which requires energy input rather than releasing it. So fusion in a star releases energy only up to iron, making iron the heaviest element it can build this way."
+      "explanation": "Iron-56 is at the top of the binding-energy-per-nucleon curve. Fusing past iron yields a product lower on the curve (less tightly bound, more massive than the reactants), which requires energy input rather than releasing it. So fusion in a star releases energy only up to iron, making iron the heaviest element it can build this way.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m811-q10",
@@ -118,7 +163,12 @@
         "The strong nuclear force does not operate on Earth"
       ],
       "answer": 2,
-      "explanation": "Fusion needs matter at enormous temperature and density held together long enough to sustain the reaction. A star's immense gravity supplies this confinement for free; on Earth there is no material container (anything that hot vaporises), so reactors must use magnetic confinement, and sustained net-positive fusion has not yet been achieved. Fusion fuel is actually abundant and its waste is comparatively clean."
+      "explanation": "Fusion needs matter at enormous temperature and density held together long enough to sustain the reaction. A star's immense gravity supplies this confinement for free; on Earth there is no material container (anything that hot vaporises), so reactors must use magnetic confinement, and sustained net-positive fusion has not yet been achieved. Fusion fuel is actually abundant and its waste is comparatively clean.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

@@ -10,7 +10,12 @@
         "The reflected wave always inverts"
       ],
       "answer": 1,
-      "explanation": "The law of reflection states the angle of incidence equals the angle of reflection, with both angles measured from the normal (the line perpendicular to the surface), not from the surface itself. (A wave on a string inverts only at a fixed end, not in general reflection.)"
+      "explanation": "The law of reflection states the angle of incidence equals the angle of reflection, with both angles measured from the normal (the line perpendicular to the surface), not from the surface itself. (A wave on a string inverts only at a fixed end, not in general reflection.)",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m302-q02",
@@ -22,7 +27,12 @@
         "All three stay the same"
       ],
       "answer": 1,
-      "explanation": "The speed changes (the cause of refraction) and, since v = fλ with frequency fixed by the source, the wavelength changes too — both decrease. The frequency stays constant at a boundary. Saying frequency changes is the single most common error in this topic."
+      "explanation": "The speed changes (the cause of refraction) and, since v = fλ with frequency fixed by the source, the wavelength changes too — both decrease. The frequency stays constant at a boundary. Saying frequency changes is the single most common error in this topic.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m302-q03",
@@ -34,7 +44,12 @@
         "The wave spreading through a gap"
       ],
       "answer": 1,
-      "explanation": "Refraction is the change in direction caused by a change in the wave's speed on entering a new medium; if the wave meets the boundary at an angle, the speed change bends it. A wave slowing into a denser medium bends toward the normal. The frequency staying constant (and wavelength changing) is the key mark-earning point."
+      "explanation": "Refraction is the change in direction caused by a change in the wave's speed on entering a new medium; if the wave meets the boundary at an angle, the speed change bends it. A wave slowing into a denser medium bends toward the normal. The frequency staying constant (and wavelength changing) is the key mark-earning point.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m302-q04",
@@ -46,7 +61,12 @@
         "Diffraction does not depend on the gap size"
       ],
       "answer": 1,
-      "explanation": "Diffraction (the spreading of a wave through a gap or around an edge) is most pronounced when the gap size is comparable to the wavelength. A wide gap lets the wave through nearly straight; a gap about one wavelength wide makes it spread dramatically. This is why you hear around corners (sound λ ≈ 1 m ≈ doorway) but light barely diffracts."
+      "explanation": "Diffraction (the spreading of a wave through a gap or around an edge) is most pronounced when the gap size is comparable to the wavelength. A wide gap lets the wave through nearly straight; a gap about one wavelength wide makes it spread dramatically. This is why you hear around corners (sound λ ≈ 1 m ≈ doorway) but light barely diffracts.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m302-q05",
@@ -58,7 +78,12 @@
         "The faster wave determines the resultant"
       ],
       "answer": 1,
-      "explanation": "The principle of superposition states that when two or more waves overlap at a point, the resultant displacement is the sum of the displacements each would produce alone (adding with sign). After overlapping, the waves pass through each other unchanged. Superposition is the foundation of interference, standing waves and resonance."
+      "explanation": "The principle of superposition states that when two or more waves overlap at a point, the resultant displacement is the sum of the displacements each would produce alone (adding with sign). After overlapping, the waves pass through each other unchanged. Superposition is the foundation of interference, standing waves and resonance.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m302-q06",
@@ -70,7 +95,12 @@
         "The amplitude is unchanged"
       ],
       "answer": 1,
-      "explanation": "Out of phase (crest on trough), the equal and opposite displacements cancel — destructive interference, giving zero resultant amplitude. In phase (crest on crest) would instead reinforce to double the amplitude (constructive). Whether interference is constructive or destructive depends entirely on the phase relationship."
+      "explanation": "Out of phase (crest on trough), the equal and opposite displacements cancel — destructive interference, giving zero resultant amplitude. In phase (crest on crest) would instead reinforce to double the amplitude (constructive). Whether interference is constructive or destructive depends entirely on the phase relationship.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m302-q07",
@@ -82,7 +112,12 @@
         "Partial cancellation only"
       ],
       "answer": 1,
-      "explanation": "A path difference of a whole number of wavelengths (0, 1λ, 2λ, …) means the waves arrive in phase, giving constructive interference (a loud or bright spot). An odd number of half-wavelengths (½λ, 1½λ, …) would give destructive interference. This same path-difference logic explains the bright and dark bands of two-slit experiments."
+      "explanation": "A path difference of a whole number of wavelengths (0, 1λ, 2λ, …) means the waves arrive in phase, giving constructive interference (a loud or bright spot). An odd number of half-wavelengths (½λ, 1½λ, …) would give destructive interference. This same path-difference logic explains the bright and dark bands of two-slit experiments.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m302-q08",
@@ -94,7 +129,12 @@
         "A wave spreads through a narrow gap"
       ],
       "answer": 1,
-      "explanation": "Two identical waves (same frequency and amplitude) travelling in opposite directions — e.g. an incident wave and its reflection — superpose. Where they are always out of phase the displacements cancel (nodes, zero displacement); where always in phase they reinforce (antinodes, maximum). Because these stay fixed, the pattern appears stationary. The weak answer 'the waves add up' omits the opposite directions and phase conditions."
+      "explanation": "Two identical waves (same frequency and amplitude) travelling in opposite directions — e.g. an incident wave and its reflection — superpose. Where they are always out of phase the displacements cancel (nodes, zero displacement); where always in phase they reinforce (antinodes, maximum). Because these stay fixed, the pattern appears stationary. The weak answer 'the waves add up' omits the opposite directions and phase conditions.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m302-q09",
@@ -106,7 +146,12 @@
         "A standing wave has no nodes"
       ],
       "answer": 1,
-      "explanation": "A progressive wave transports energy from place to place. A standing wave does not transport energy along the medium — the energy stays put, stored in the oscillation between fixed nodes and antinodes. Fixed points that never move (nodes) and a pattern that doesn't travel signal a standing wave."
+      "explanation": "A progressive wave transports energy from place to place. A standing wave does not transport energy along the medium — the energy stays put, stored in the oscillation between fixed nodes and antinodes. Fixed points that never move (nodes) and a pattern that doesn't travel signal a standing wave.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m302-q10",
@@ -118,7 +163,12 @@
         "Any driving frequency; mass transferred"
       ],
       "answer": 1,
-      "explanation": "Resonance occurs when the driving frequency equals the system's natural frequency. Then energy is transferred into the system efficiently on every cycle and the amplitude grows large — like pushing a swing in time with its natural rhythm so small pushes build a big swing. Off resonance, energy transfer is poor and the amplitude stays small."
+      "explanation": "Resonance occurs when the driving frequency equals the system's natural frequency. Then energy is transferred into the system efficiently on every cycle and the amplitude grows large — like pushing a swing in time with its natural rhythm so small pushes build a big swing. Off resonance, energy transfer is poor and the amplitude stays small.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

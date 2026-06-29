@@ -10,7 +10,12 @@
         "Requirements analysis, Implementation, Design, Testing, Maintenance, Deployment"
       ],
       "answer": 1,
-      "explanation": "The waterfall stages run in strict linear order: Requirements analysis, Design, Implementation (the coding), Testing, Deployment, then Maintenance. This is just the SDLC you already know, run as strict stage-gates — remember the water falls once, one to six, with no cheap going back. Options that swap Design and Implementation or move Testing before coding break the sequential logic that defines waterfall."
+      "explanation": "The waterfall stages run in strict linear order: Requirements analysis, Design, Implementation (the coding), Testing, Deployment, then Maintenance. This is just the SDLC you already know, run as strict stage-gates — remember the water falls once, one to six, with no cheap going back. Options that swap Design and Implementation or move Testing before coding break the sequential logic that defines waterfall.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2401-q02",
@@ -22,7 +27,12 @@
         "Direct is cheap and risky"
       ],
       "answer": 2,
-      "explanation": "'Waterfall Falls once' is the marquee hook: you go down the stages in order and going back up is expensive and disruptive. 'Agile Goes around' is the contrasting hook for the next episode, and 'Really Smart Developers...' is the older SDLC mnemonic for the eight-step lifecycle — useful for the phase names but not the defining feature of waterfall's linearity."
+      "explanation": "'Waterfall Falls once' is the marquee hook: you go down the stages in order and going back up is expensive and disruptive. 'Agile Goes around' is the contrasting hook for the next episode, and 'Really Smart Developers...' is the older SDLC mnemonic for the eight-step lifecycle — useful for the phase names but not the defining feature of waterfall's linearity.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2401-q03",
@@ -34,7 +44,12 @@
         "Documentation is replaced by frequent face-to-face conversations between developers and users"
       ],
       "answer": 0,
-      "explanation": "Waterfall is the most document-heavy approach: every phase produces comprehensive artefacts (Requirements Specification, System Architecture Document, test plans) and each gate requires formal sign-off before proceeding. This ties to the module marker S-E-12-09, manage and document the project. Writing one document at the end (option C) or relying on conversation instead of documents (option D) describes the opposite of waterfall's deliberate, heavy documentation."
+      "explanation": "Waterfall is the most document-heavy approach: every phase produces comprehensive artefacts (Requirements Specification, System Architecture Document, test plans) and each gate requires formal sign-off before proceeding. This ties to the module marker S-E-12-09, manage and document the project. Writing one document at the end (option C) or relying on conversation instead of documents (option D) describes the opposite of waterfall's deliberate, heavy documentation.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2401-q04",
@@ -46,7 +61,12 @@
         "Changes are easy to make but management refuses to approve them"
       ],
       "answer": 1,
-      "explanation": "Because water falls once, a change found late (say during testing) means flowing back up through earlier phases, which is expensive and disruptive — waterfall assumes you got the requirements right at the start, which is often wrong. Option C overstates this: change is possible but goes through a formal change-control process, not that it is outright forbidden. The disadvantage is about the cost and disruption of late change, not developer skill."
+      "explanation": "Because water falls once, a change found late (say during testing) means flowing back up through earlier phases, which is expensive and disruptive — waterfall assumes you got the requirements right at the start, which is often wrong. Option C overstates this: change is possible but goes through a formal change-control process, not that it is outright forbidden. The disadvantage is about the cost and disruption of late change, not developer skill.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2401-q05",
@@ -58,7 +78,12 @@
         "They catch problems before moving on and reduce scope creep, because changing a signed-off requirement requires a formal change-control process"
       ],
       "answer": 3,
-      "explanation": "Phase-gate reviews deliver quality and control: they catch issues before the project proceeds, and upfront sign-off reduces scope creep because altering a locked requirement triggers formal change-control. Letting phases overlap is wrong because waterfall phases are strictly sequential, not parallel. The option about the client seeing working software each phase confuses waterfall with iterative delivery — under waterfall the client typically sees working software only near the end, which is in fact a disadvantage."
+      "explanation": "Phase-gate reviews deliver quality and control: they catch issues before the project proceeds, and upfront sign-off reduces scope creep because altering a locked requirement triggers formal change-control. Letting phases overlap is wrong because waterfall phases are strictly sequential, not parallel. The option about the client seeing working software each phase confuses waterfall with iterative delivery — under waterfall the client typically sees working software only near the end, which is in fact a disadvantage.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2401-q06",
@@ -70,7 +95,12 @@
         "A strong answer only describes Healthcare.gov and leaves out the model's features"
       ],
       "answer": 1,
-      "explanation": "The episode's weak answer — 'an advantage is it's organised, a disadvantage is it's slow' — is vague with no mechanism and lands at band three or four. The strong answer pairs each point with a specific feature and consequence: comprehensive documentation plus phase-gate reviews give predictability and an audit trail; limited flexibility means late changes are expensive because the model doesn't flow back. Feature plus consequence, for both sides, earns the four marks — not piling up advantages or telling the whole case study."
+      "explanation": "The episode's weak answer — 'an advantage is it's organised, a disadvantage is it's slow' — is vague with no mechanism and lands at band three or four. The strong answer pairs each point with a specific feature and consequence: comprehensive documentation plus phase-gate reviews give predictability and an audit trail; limited flexibility means late changes are expensive because the model doesn't flow back. Feature plus consequence, for both sides, earns the four marks — not piling up advantages or telling the whole case study.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2401-q07",
@@ -82,7 +112,12 @@
         "Waterfall suits mobile apps; it fails on government systems"
       ],
       "answer": 2,
-      "explanation": "The deciding factor is stability-and-regulation versus uncertainty-and-feedback. Waterfall fits stable, well-understood, regulated projects (the government compliance system) where documentation is mandatory and predictability beats speed; it fails on uncertain, fast-moving products (the startup mobile app) that need early, frequent user feedback. Team size, cost, and platform are not the deciding factors — and option D inverts the actual fit, since government systems are the textbook strong fit, not the poor one."
+      "explanation": "The deciding factor is stability-and-regulation versus uncertainty-and-feedback. Waterfall fits stable, well-understood, regulated projects (the government compliance system) where documentation is mandatory and predictability beats speed; it fails on uncertain, fast-moving products (the startup mobile app) that need early, frequent user feedback. Team size, cost, and platform are not the deciding factors — and option D inverts the actual fit, since government systems are the textbook strong fit, not the poor one.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2401-q08",
@@ -94,7 +129,12 @@
         "Avoid any structured approach so the team can change the design freely"
       ],
       "answer": 1,
-      "explanation": "Waterfall is suitable here: the requirements are stable and safety-critical, and medical-device certification demands exhaustive, auditable documentation at every stage — exactly waterfall's strength, where the cost of a late change is dwarfed by the need for rigour and traceability. Skipping phases (option C) or abandoning structure for free-form change (option D) destroys the documentation and predictability that certification requires. The justification — stability and regulation — is what earns the mark."
+      "explanation": "Waterfall is suitable here: the requirements are stable and safety-critical, and medical-device certification demands exhaustive, auditable documentation at every stage — exactly waterfall's strength, where the cost of a late change is dwarfed by the need for rigour and traceability. Skipping phases (option C) or abandoning structure for free-form change (option D) destroys the documentation and predictability that certification requires. The justification — stability and regulation — is what earns the mark.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2401-q09",
@@ -106,7 +146,12 @@
         "Waterfall is not appropriate because social apps cannot be documented"
       ],
       "answer": 1,
-      "explanation": "Waterfall is a poor fit: the requirements are uncertain and will evolve as the team learns what users want, so early and frequent feedback and the freedom to pivot are essential — and 'falls once' rigidity actively prevents that. This is the agile case from the next episode. Predictability and documentation (options A and C) are real waterfall strengths but irrelevant when the core problem is unstable, unknown requirements; option D is simply false."
+      "explanation": "Waterfall is a poor fit: the requirements are uncertain and will evolve as the team learns what users want, so early and frequent feedback and the freedom to pivot are essential — and 'falls once' rigidity actively prevents that. This is the agile case from the next episode. Predictability and documentation (options A and C) are real waterfall strengths but irrelevant when the core problem is unstable, unknown requirements; option D is simply false.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "see2401-q10",
@@ -118,7 +163,12 @@
         "Frozen, flawed requirements, late integration of sub-systems, and late, inadequate load testing meant problems surfaced only on launch day, when the site collapsed under demand"
       ],
       "answer": 3,
-      "explanation": "Healthcare.gov (2013) was built largely with waterfall against a fixed deadline: rushed, changing requirements were frozen into a flawed spec, integration of the many sub-systems was left until the end, and there was no real load testing before launch — so the site collapsed almost immediately. The fixed deadline removed slack for rework, and waterfall's all-or-nothing delivery made the failure total and public. It was a waterfall project, not agile, and excessive documentation does not cause runtime overload."
+      "explanation": "Healthcare.gov (2013) was built largely with waterfall against a fixed deadline: rushed, changing requirements were frozen into a flawed spec, integration of the many sub-systems was left until the end, and there was no real load testing before launch — so the site collapsed almost immediately. The fixed deadline removed slack for rework, and waterfall's all-or-nothing delivery made the failure total and public. It was a waterfall project, not agile, and excessive documentation does not cause runtime overload.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

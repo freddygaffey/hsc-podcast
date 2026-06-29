@@ -10,7 +10,12 @@
         "The number of particles in a substance"
       ],
       "answer": 1,
-      "explanation": "Temperature is a measure of the average kinetic energy of the particles — hotter means faster-moving particles on average. The total energy of all the particles is the internal energy, not the temperature, and an object does not 'contain heat' (heat is energy in transit)."
+      "explanation": "Temperature is a measure of the average kinetic energy of the particles — hotter means faster-moving particles on average. The total energy of all the particles is the internal energy, not the temperature, and an object does not 'contain heat' (heat is energy in transit).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m305-q02",
@@ -22,7 +27,12 @@
         "Temperature is measured in joules; heat in kelvin"
       ],
       "answer": 1,
-      "explanation": "Temperature is a property an object has — the average kinetic energy of its particles. Heat is energy that flows from a hotter to a colder object because of a temperature difference (energy in transit). An object contains internal energy, not heat. Treating the two words as synonyms is the classic error."
+      "explanation": "Temperature is a property an object has — the average kinetic energy of its particles. Heat is energy that flows from a hotter to a colder object because of a temperature difference (energy in transit). An object contains internal energy, not heat. Treating the two words as synonyms is the classic error.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m305-q03",
@@ -34,7 +44,12 @@
         "The bath transfers heat to the spark"
       ],
       "answer": 1,
-      "explanation": "Temperature is energy per particle (average), while internal energy is the total over all particles. The spark's particles move fast (high temperature) but there are very few of them, so its total internal energy is minuscule. A high temperature does not automatically mean a lot of energy."
+      "explanation": "Temperature is energy per particle (average), while internal energy is the total over all particles. The spark's particles move fast (high temperature) but there are very few of them, so its total internal energy is minuscule. A high temperature does not automatically mean a lot of energy.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m305-q04",
@@ -46,7 +61,12 @@
         "Both objects stop having any particle motion"
       ],
       "answer": 1,
-      "explanation": "Thermal equilibrium is reached when two objects in contact have the same temperature (equal average particle kinetic energy), so there is no net transfer of energy between them. Energy may still pass both ways at the particle level, but the flows balance. Heat always flows hot→cold until this point."
+      "explanation": "Thermal equilibrium is reached when two objects in contact have the same temperature (equal average particle kinetic energy), so there is no net transfer of energy between them. Energy may still pass both ways at the particle level, but the flows balance. Heat always flows hot→cold until this point.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m305-q05",
@@ -58,7 +78,12 @@
         "−173 K; because its zero is at water's freezing point"
       ],
       "answer": 1,
-      "explanation": "K = °C + 273, so 100 °C = 373 K. Physics prefers Kelvin because its zero (absolute zero, the minimum of particle motion) makes the Kelvin temperature directly proportional to average particle kinetic energy — double the kelvin temperature, double the average KE. Celsius lacks this because its zero is at water's freezing point, an arbitrary value."
+      "explanation": "K = °C + 273, so 100 °C = 373 K. Physics prefers Kelvin because its zero (absolute zero, the minimum of particle motion) makes the Kelvin temperature directly proportional to average particle kinetic energy — double the kelvin temperature, double the average KE. Celsius lacks this because its zero is at water's freezing point, an arbitrary value.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m305-q06",
@@ -70,7 +95,12 @@
         "273 °C"
       ],
       "answer": 1,
-      "explanation": "Absolute zero, the coldest possible temperature where particle motion is at its minimum, is about −273 °C, which is 0 K. The degree size is the same on both scales — only the zero point moves, so you convert by adding 273."
+      "explanation": "Absolute zero, the coldest possible temperature where particle motion is at its minimum, is about −273 °C, which is 0 K. The degree size is the same on both scales — only the zero point moves, so you convert by adding 273.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m305-q07",
@@ -82,7 +112,12 @@
         "The energy needed to melt 1 kg of it"
       ],
       "answer": 1,
-      "explanation": "Specific heat capacity (c) is the energy needed to raise 1 kg of a substance by 1 K (equivalently 1 °C), measured in J kg⁻¹ K⁻¹. A high c means the substance needs lots of energy to change temperature; a low c means it heats and cools easily. (Melting energy is latent heat, a different idea.)"
+      "explanation": "Specific heat capacity (c) is the energy needed to raise 1 kg of a substance by 1 K (equivalently 1 °C), measured in J kg⁻¹ K⁻¹. A high c means the substance needs lots of energy to change temperature; a low c means it heats and cools easily. (Melting energy is latent heat, a different idea.)",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m305-q08",
@@ -94,7 +129,12 @@
         "63 000 J"
       ],
       "answer": 1,
-      "explanation": "Using Q = mcΔT = 2 × 4200 × 30 = 252 000 J (252 kJ). Identify the mass, specific heat and temperature change and multiply all three. Note ΔT is the change, not an absolute temperature — a common slip."
+      "explanation": "Using Q = mcΔT = 2 × 4200 × 30 = 252 000 J (252 kJ). Identify the mass, specific heat and temperature change and multiply all three. Note ΔT is the change, not an absolute temperature — a common slip.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m305-q09",
@@ -106,7 +146,12 @@
         "1 008 000 J"
       ],
       "answer": 1,
-      "explanation": "ΔT is the change: 80 − 20 = 60 K. Q = mcΔT = 0.5 × 4200 × 60 = 126 000 J (126 kJ). Using 80 instead of the change of 60 (giving 168 000 J) is the trap — ΔT is always the temperature change, not the final temperature."
+      "explanation": "ΔT is the change: 80 − 20 = 60 K. Q = mcΔT = 0.5 × 4200 × 60 = 126 000 J (126 kJ). Using 80 instead of the change of 60 (giving 168 000 J) is the trap — ΔT is always the temperature change, not the final temperature.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m305-q10",
@@ -118,7 +163,12 @@
         "Coastal air contains no thermal energy"
       ],
       "answer": 1,
-      "explanation": "Water's specific heat (≈4200 J kg⁻¹ K⁻¹) is unusually high, so the ocean can absorb and release large amounts of thermal energy with only a small change in its own temperature, buffering the coastal air against extremes. The desert, lacking this large water body, heats and cools rapidly, giving temperature extremes."
+      "explanation": "Water's specific heat (≈4200 J kg⁻¹ K⁻¹) is unusually high, so the ocean can absorb and release large amounts of thermal energy with only a small change in its own temperature, buffering the coastal air against extremes. The desert, lacking this large water body, heats and cools rapidly, giving temperature extremes.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

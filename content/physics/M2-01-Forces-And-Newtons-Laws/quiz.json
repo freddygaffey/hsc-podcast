@@ -10,7 +10,12 @@
         "Mass changes with location; weight is constant everywhere"
       ],
       "answer": 1,
-      "explanation": "Mass is the scalar amount of matter, measured in kilograms, and is the same everywhere. Weight is the gravitational force on that mass, a vector measured in newtons, equal to mg, so it changes with location (e.g. ~1/6 on the Moon). Calling weight 'how heavy something is' is too vague — name it as a force equal to mg."
+      "explanation": "Mass is the scalar amount of matter, measured in kilograms, and is the same everywhere. Weight is the gravitational force on that mass, a vector measured in newtons, equal to mg, so it changes with location (e.g. ~1/6 on the Moon). Calling weight 'how heavy something is' is too vague — name it as a force equal to mg.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m201-q02",
@@ -22,7 +27,12 @@
         "The normal force"
       ],
       "answer": 2,
-      "explanation": "Gravity acts at a distance through a field, without objects touching, so it is a field force. Friction, tension and the normal force all require contact between surfaces, so they are contact forces. Field forces (gravity, electrostatic, magnetic) are studied in depth in Modules 4 and 6."
+      "explanation": "Gravity acts at a distance through a field, without objects touching, so it is a field force. Friction, tension and the normal force all require contact between surfaces, so they are contact forces. Field forces (gravity, electrostatic, magnetic) are studied in depth in Modules 4 and 6.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m201-q03",
@@ -34,7 +44,12 @@
         "12 m s⁻¹"
       ],
       "answer": 1,
-      "explanation": "First the Dynamics step: a = F_net/m = 12/4 = 3 m s⁻². Then the Kinematics step (suvat): v = u + at = 0 + 3 × 3 = 9 m s⁻¹. This force→acceleration→motion chain is the signature move of the module. The value 3 is just the acceleration, not the velocity after 3 s."
+      "explanation": "First the Dynamics step: a = F_net/m = 12/4 = 3 m s⁻². Then the Kinematics step (suvat): v = u + at = 0 + 3 × 3 = 9 m s⁻¹. This force→acceleration→motion chain is the signature move of the module. The value 3 is just the acceleration, not the velocity after 3 s.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m201-q04",
@@ -46,7 +61,12 @@
         "Heavier objects fall faster than lighter ones"
       ],
       "answer": 1,
-      "explanation": "Newton's first law (the law of inertia) states an object's velocity changes only if a net, unbalanced force acts; with balanced forces (net force zero) it stays at rest or moves at constant velocity. 'F = ma' is the second law and 'equal and opposite reaction' is the third — the hook for the set is I, F, A (Inertia, F = ma, Action-reaction)."
+      "explanation": "Newton's first law (the law of inertia) states an object's velocity changes only if a net, unbalanced force acts; with balanced forces (net force zero) it stays at rest or moves at constant velocity. 'F = ma' is the second law and 'equal and opposite reaction' is the third — the hook for the set is I, F, A (Inertia, F = ma, Action-reaction).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m201-q05",
@@ -58,7 +78,12 @@
         "Reaction forces only exist for moving objects"
       ],
       "answer": 1,
-      "explanation": "An action-reaction pair acts on two different objects (A on B, and B on A), so they never cancel on a single object — and only forces on the same object determine whether it accelerates. When you walk, you push back on the ground and the ground pushes forward on you; that forward force acts on you and accelerates you. Naming 'different objects' is the key mark."
+      "explanation": "An action-reaction pair acts on two different objects (A on B, and B on A), so they never cancel on a single object — and only forces on the same object determine whether it accelerates. When you walk, you push back on the ground and the ground pushes forward on you; that forward force acts on you and accelerates you. Naming 'different objects' is the key mark.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m201-q06",
@@ -70,7 +95,12 @@
         "There are no balanced forces because the book is not moving"
       ],
       "answer": 1,
-      "explanation": "The action-reaction pair (Newton's third law) is the book pushing down on the table and the table pushing up on the book — equal, opposite, acting on different objects. The balanced forces on the book are its weight (gravity) and the normal force, which act on the same object and are different types, so they are NOT an action-reaction pair. Students often wrongly call weight and normal force an action-reaction pair."
+      "explanation": "The action-reaction pair (Newton's third law) is the book pushing down on the table and the table pushing up on the book — equal, opposite, acting on different objects. The balanced forces on the book are its weight (gravity) and the normal force, which act on the same object and are different types, so they are NOT an action-reaction pair. Students often wrongly call weight and normal force an action-reaction pair.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m201-q07",
@@ -82,7 +112,12 @@
         "12 N"
       ],
       "answer": 1,
-      "explanation": "Forces are vectors, so perpendicular forces combine by Pythagoras: √(3² + 4²) = √25 = 5 N (at tan⁻¹(4/3) ≈ 53° north of east). The acceleration would be in that same direction, since acceleration is always parallel to the net force. Adding 3 + 4 = 7 wrongly treats perpendicular vectors as scalars."
+      "explanation": "Forces are vectors, so perpendicular forces combine by Pythagoras: √(3² + 4²) = √25 = 5 N (at tan⁻¹(4/3) ≈ 53° north of east). The acceleration would be in that same direction, since acceleration is always parallel to the net force. Adding 3 + 4 = 7 wrongly treats perpendicular vectors as scalars.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m201-q08",
@@ -94,7 +129,12 @@
         "Acceleration equals force; the graph has gradient 1"
       ],
       "answer": 1,
-      "explanation": "From F_net = ma, for fixed mass acceleration is directly proportional to net force, so an a-versus-F graph is a straight line through the origin with gradient 1/m. (Separately, for fixed force, acceleration is inversely proportional to mass.) This is the standard second-law investigation: apply measured forces and measure the acceleration."
+      "explanation": "From F_net = ma, for fixed mass acceleration is directly proportional to net force, so an a-versus-F graph is a straight line through the origin with gradient 1/m. (Separately, for fixed force, acceleration is inversely proportional to mass.) This is the standard second-law investigation: apply measured forces and measure the acceleration.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m201-q09",
@@ -106,7 +146,12 @@
         "Mass 112 kg; weight 70 N"
       ],
       "answer": 1,
-      "explanation": "Mass is independent of location, so it is still 70 kg on the Moon. Weight = mg = 70 × 1.6 = 112 N. The whole point is that mass stays the same while weight changes with gravity — keeping the Earth weight (686 N) would ignore the weaker Moon gravity."
+      "explanation": "Mass is independent of location, so it is still 70 kg on the Moon. Weight = mg = 70 × 1.6 = 112 N. The whole point is that mass stays the same while weight changes with gravity — keeping the Earth weight (686 N) would ignore the weaker Moon gravity.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "m201-q10",
@@ -118,7 +163,12 @@
         "4 m s⁻¹"
       ],
       "answer": 1,
-      "explanation": "Net force = 200 − 50 = 150 N forward. Acceleration a = F_net/m = 150/50 = 3 m s⁻². Then suvat: v = u + at = 0 + 3 × 4 = 12 m s⁻¹. The full chain is add forces → F_net = ma for acceleration → feed into the equations of motion. Using 200 N (ignoring friction) would give 16 m s⁻¹, the common error."
+      "explanation": "Net force = 200 − 50 = 150 N forward. Acceleration a = F_net/m = 150/50 = 3 m s⁻². Then suvat: v = u + at = 0 + 3 × 4 = 12 m s⁻¹. The full chain is add forces → F_net = ma for acceleration → feed into the equations of motion. Using 200 N (ignoring friction) would give 16 m s⁻¹, the common error.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }

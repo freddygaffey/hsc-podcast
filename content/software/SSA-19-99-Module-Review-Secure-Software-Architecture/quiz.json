@@ -10,7 +10,12 @@
         "Confidentiality, Identity, Availability, Authorisation, Authentication, Accountability"
       ],
       "answer": 0,
-      "explanation": "CIA-AAA is the spine of the module: Confidentiality, Integrity, Availability (the triad — what we protect) plus Authentication, Authorisation, Accountability (how we protect it). Option B swaps in 'Access' and 'Auditing', which sound right but are not the six syllabus properties. The review stresses that every vulnerability is one of these six being broken and every defence is one being upheld."
+      "explanation": "CIA-AAA is the spine of the module: Confidentiality, Integrity, Availability (the triad — what we protect) plus Authentication, Authorisation, Accountability (how we protect it). Option B swaps in 'Access' and 'Auditing', which sound right but are not the six syllabus properties. The review stresses that every vulnerability is one of these six being broken and every defence is one being upheld.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1999-q02",
@@ -22,7 +27,12 @@
         "Hashing provides accountability; encryption provides authentication"
       ],
       "answer": 2,
-      "explanation": "Hashing is a one-way fixed-size fingerprint you can only check, so it delivers integrity; encryption is reversible with a key, so it delivers confidentiality. The most tempting trap (option A) reverses this — but you cannot get confidentiality from a hash because it cannot be reversed to reveal the original. The mnemonic for passwords is 'hash it, salt it, slow it', and 'salt stops the rainbow' defeats rainbow tables."
+      "explanation": "Hashing is a one-way fixed-size fingerprint you can only check, so it delivers integrity; encryption is reversible with a key, so it delivers confidentiality. The most tempting trap (option A) reverses this — but you cannot get confidentiality from a hash because it cannot be reversed to reveal the original. The mnemonic for passwords is 'hash it, salt it, slow it', and 'salt stops the rainbow' defeats rainbow tables.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1999-q03",
@@ -34,7 +44,12 @@
         "Validation encrypts input in transit; sanitisation hashes it before storage"
       ],
       "answer": 1,
-      "explanation": "V-S-E is Validate, Sanitise, handle Errors — and the review insists you keep the first two distinct: validation rejects input that breaks the rules, while sanitisation cleans input so it is safe to use. Option A is the classic reversed answer the marker exploits. The episode also reminds you that 'allow-list beats block-list' and that injection and XSS are the same disease of input becoming code."
+      "explanation": "V-S-E is Validate, Sanitise, handle Errors — and the review insists you keep the first two distinct: validation rejects input that breaks the rules, while sanitisation cleans input so it is safe to use. Option A is the classic reversed answer the marker exploits. The episode also reminds you that 'allow-list beats block-list' and that injection and XSS are the same disease of input becoming code.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1999-q04",
@@ -46,7 +61,12 @@
         "XSS attacks the database server; CSRF attacks the transport layer"
       ],
       "answer": 2,
-      "explanation": "The script's crisp line is 'XSS injects a Script; CSRF rides a Session' — XSS injects a script that runs in a victim's browser, while CSRF forges a request that exploits the victim's already-logged-in session. Option A reverses the two, which is exactly the trap. Both appear in the B-X-I-R user-action vulnerability list (Broken authentication, Cross-site, Invalid redirect, Race conditions)."
+      "explanation": "The script's crisp line is 'XSS injects a Script; CSRF rides a Session' — XSS injects a script that runs in a victim's browser, while CSRF forges a request that exploits the victim's already-logged-in session. Option A reverses the two, which is exactly the trap. Both appear in the B-X-I-R user-action vulnerability list (Broken authentication, Cross-site, Invalid redirect, Race conditions).",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1999-q05",
@@ -58,7 +78,12 @@
         "Code review, Static, Dynamic, Vulnerability assessment, Patch testing — 'Static runs the app, Dynamic reads the source'"
       ],
       "answer": 0,
-      "explanation": "CR-SAST-DAST-VA-PEN is Code review, Static analysis, Dynamic analysis, Vulnerability assessment and Penetration testing, with the memory hook 'Static is Source, Dynamic is Doing'. Option D names the methods but inverts the static/dynamic rule — SAST analyses source without running it, while DAST attacks the running application from outside. The episode pairs this chant with the H-B-D incident lifecycle: Harden, Breach-handle, Disaster-recover."
+      "explanation": "CR-SAST-DAST-VA-PEN is Code review, Static analysis, Dynamic analysis, Vulnerability assessment and Penetration testing, with the memory hook 'Static is Source, Dynamic is Doing'. Option D names the methods but inverts the static/dynamic rule — SAST analyses source without running it, while DAST attacks the running application from outside. The episode pairs this chant with the H-B-D incident lifecycle: Harden, Breach-handle, Disaster-recover.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1999-q06",
@@ -70,7 +95,12 @@
         "Authentication relaxes the same-origin policy, while authorisation enforces it through CORS"
       ],
       "answer": 1,
-      "explanation": "Authentication verifies who you are; authorisation determines what you may do — and the order matters: authenticate first, then authorise, because 'logged in is not allowed'. Option A reverses the two, the trap the marker sets. The script ties this to broken access control: the insecure direct object reference where a logged-in user changes a URL ID to read another record is an authorisation failure, not an authentication one."
+      "explanation": "Authentication verifies who you are; authorisation determines what you may do — and the order matters: authenticate first, then authorise, because 'logged in is not allowed'. Option A reverses the two, the trap the marker sets. The script ties this to broken access control: the insecure direct object reference where a logged-in user changes a URL ID to read another record is an authorisation failure, not an authentication one.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1999-q07",
@@ -82,7 +112,12 @@
         "Privacy is a legal obligation only, while security is a purely technical concern with no legal dimension"
       ],
       "answer": 0,
-      "explanation": "The script's rule is 'privacy is not security' — privacy asks whether you should collect the data at all, while security asks whether what you hold is protected, and you can be perfectly secure yet still violate privacy. Option B is the misconception this trap is designed to catch. The privacy-by-design hook PER (Proactive, Embed, Respect) and 'collect less, keep less' answer the privacy question, distinct from the security controls."
+      "explanation": "The script's rule is 'privacy is not security' — privacy asks whether you should collect the data at all, while security asks whether what you hold is protected, and you can be perfectly secure yet still violate privacy. Option B is the misconception this trap is designed to catch. The privacy-by-design hook PER (Proactive, Embed, Respect) and 'collect less, keep less' answer the privacy question, distinct from the security controls.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1999-q08",
@@ -94,7 +129,12 @@
         "Information disclosure; breaks accountability; fixed by audit logging of every query"
       ],
       "answer": 2,
-      "explanation": "Concatenating user input into the SQL string is SQL injection — input becoming code — which breaks both integrity and confidentiality, and the fix is parameterised queries that pass the value separately so it cannot become code (V-S-E, 16-01). Option A describes the separate reflected-XSS flaw (the search term echoed back unencoded). The band-six pattern modelled in the script is flaw, exact term, CIA-AAA property, named fix."
+      "explanation": "Concatenating user input into the SQL string is SQL injection — input becoming code — which breaks both integrity and confidentiality, and the fix is parameterised queries that pass the value separately so it cannot become code (V-S-E, 16-01). Option A describes the separate reflected-XSS flaw (the search term echoed back unencoded). The band-six pattern modelled in the script is flaw, exact term, CIA-AAA property, named fix.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1999-q09",
@@ -106,7 +146,12 @@
         "Apply rate limiting and TLS so the password hashes never cross the network in clear text"
       ],
       "answer": 1,
-      "explanation": "The fix is 'hash it, salt it, slow it' — a per-user salt with a slow algorithm like bcrypt or Argon2 — because hashing is one-way and the salt stops the rainbow (defeats rainbow tables). Option A is the trap: passwords must be hashed, never encrypted, since you never need to reverse them. Option D addresses transport (a separate plain-HTTP flaw) but does nothing about the weak storage itself."
+      "explanation": "The fix is 'hash it, salt it, slow it' — a per-user salt with a slow algorithm like bcrypt or Argon2 — because hashing is one-way and the salt stops the rainbow (defeats rainbow tables). Option A is the trap: passwords must be hashed, never encrypted, since you never need to reverse them. Option D addresses transport (a separate plain-HTTP flaw) but does nothing about the weak storage itself.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     },
     {
       "id": "ssa1999-q10",
@@ -118,7 +163,12 @@
         "It becomes 'who is responsible when the algorithm gets it wrong', one of the hardest questions in the next module"
       ],
       "answer": 3,
-      "explanation": "The bridge states that accountability — CIA-AAA's 'who did what' — becomes 'who is responsible when the algorithm gets it wrong' once automated systems make decisions. Option C confuses this with the separate data thread, where confidentiality and PER data minimisation come back to protect training data. The review stresses CIA-AAA, PER and Ed Picid all travel forward, with algorithmic bias added as a new issue rather than replacing accountability."
+      "explanation": "The bridge states that accountability — CIA-AAA's 'who did what' — becomes 'who is responsible when the algorithm gets it wrong' once automated systems make decisions. Option C confuses this with the separate data thread, where confidentiality and PER data minimisation come back to protect training data. The review stresses CIA-AAA, PER and Ed Picid all travel forward, with algorithmic bias added as a new issue rather than replacing accountability.",
+      "type": "mc",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
     }
   ]
 }
