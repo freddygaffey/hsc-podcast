@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "payne-q01",
+      "q": "What did Cecilia Payne discover that overturned the established picture of the stars?",
+      "options": [
+        "That stars are made overwhelmingly of hydrogen and helium, not iron and rock like the Earth",
+        "That the Sun is mostly calcium and iron",
+        "That every star has a completely different chemical composition",
+        "That stars contain no hydrogen at all"
+      ],
+      "answer": 0,
+      "explanation": "Payne showed that stars are overwhelming oceans of hydrogen (and then helium), with all heavier 'metals' as a thin trace. This contradicted the assumption that stars were made of the same rocky, metallic stuff as the Earth."
+    },
+    {
+      "id": "payne-q02",
+      "q": "Before Payne, why did astronomers assume the Sun was rich in calcium and iron?",
+      "options": [
+        "Because the Sun is denser than water",
+        "Because its spectrum shows strong calcium and iron absorption lines, which they read directly as high abundance",
+        "Because meteorites are made of pure calcium",
+        "Because helium had not yet been discovered"
+      ],
+      "answer": 1,
+      "explanation": "The trap was reading line strength directly as abundance: strong calcium and iron lines in the solar spectrum were taken to mean the Sun is full of those elements. Payne showed line strength depends on temperature and ionisation, not just abundance."
+    },
+    {
+      "id": "payne-q03",
+      "q": "What new piece of physics allowed Payne to correctly interpret stellar spectra?",
+      "options": [
+        "Einstein's photoelectric equation",
+        "Hubble's law of cosmic expansion",
+        "Saha's ionisation equation, linking temperature to the fraction of atoms in each ionisation state",
+        "Newton's law of universal gravitation"
+      ],
+      "answer": 2,
+      "explanation": "Meghnad Saha's ionisation equation gives, for any element at a given temperature and electron density, the fraction of atoms that are neutral or ionised. This let Payne correct line strengths for temperature and recover true abundances."
+    },
+    {
+      "id": "payne-q04",
+      "q": "Why do the visible hydrogen lines peak in A-type stars (like Sirius) rather than in the hottest O-type stars?",
+      "options": [
+        "A-type stars contain far more hydrogen than O-type stars",
+        "At about 10 000 K the hydrogen electrons are excited into the right level to absorb, while in O stars the heat strips the electron off entirely, leaving bare protons that cannot absorb",
+        "O-type stars are too cold to excite hydrogen",
+        "Hydrogen only forms in A-type stars"
+      ],
+      "answer": 1,
+      "explanation": "Visible (Balmer) hydrogen lines need the electron sitting in the n=2 level. A-type stars (~10 000 K) are the sweet spot. In O stars (~40 000 K) hydrogen is ionised to bare protons with no electron to absorb, so the lines fade — not because hydrogen is absent."
+    },
+    {
+      "id": "payne-q05",
+      "q": "Payne's central insight was that the strength of a spectral line tells you:",
+      "options": [
+        "The total amount of that element present",
+        "The age of the star",
+        "What fraction of that element is in the one state that can absorb light at that wavelength — which is set by temperature",
+        "The distance to the star"
+      ],
+      "answer": 2,
+      "explanation": "Line strength reflects only the number of atoms in the particular ionisation/excitation state that can absorb, a temperature-dependent fraction of the total — not the total abundance. Inverting this (correcting for temperature) recovers the real abundance."
+    },
+    {
+      "id": "payne-q06",
+      "q": "In astronomers' language, what does the word 'metal' mean?",
+      "options": [
+        "Only iron and similar shiny elements",
+        "Any element that conducts electricity",
+        "Any element heavier than hydrogen and helium, including carbon, oxygen, and calcium",
+        "Only elements found in the Earth's core"
+      ],
+      "answer": 2,
+      "explanation": "To an astronomer, 'metal' means any element heavier than hydrogen and helium — so carbon, oxygen, iron, silicon and calcium are all 'metals'. Payne found hydrogen outweighed all the metals roughly a million to one by number."
+    },
+    {
+      "id": "payne-q07",
+      "q": "How does a stellar absorption spectrum arise, compared with a continuous black-body spectrum?",
+      "options": [
+        "The whole spectrum is produced by a thin cold gas",
+        "A continuous black-body rainbow wells up from the hot dense interior, and dark absorption lines are stamped into it by the cooler outer atmosphere",
+        "Absorption lines are produced by the vacuum of space between stars",
+        "A black-body spectrum already contains the dark lines before the light leaves the core"
+      ],
+      "answer": 1,
+      "explanation": "The dense interior radiates a continuous black-body rainbow; as that light passes through the cooler, thinner atmosphere, atoms absorb specific wavelengths, biting dark lines out of the continuous background. A thin glowing gas with nothing behind it instead gives bright emission lines."
+    },
+    {
+      "id": "payne-q08",
+      "q": "Once Payne's result was accepted, what did it reveal about the OBAFGKM spectral sequence?",
+      "options": [
+        "It is a sequence of changing chemical composition",
+        "It is a sequence of changing temperature, since the stars are essentially the same composition and only their temperatures differ",
+        "It is a sequence of changing distance from Earth",
+        "It is random and has no physical meaning"
+      ],
+      "answer": 1,
+      "explanation": "Because all main-sequence stars share essentially the same hydrogen-rich composition, the spectral sequence is a thermometer: an O star and an M star look different only because of their different surface temperatures, which ionise different atoms into visibility."
+    },
+    {
+      "id": "payne-q09",
+      "q": "On a Hertzsprung-Russell diagram, what is the main sequence, given Payne's discovery?",
+      "options": [
+        "The band of stars that have stopped fusing and are cooling down",
+        "The diagonal strip of stars quietly fusing hydrogen into helium in their cores",
+        "The group of dense white dwarfs below the diagram",
+        "The cool red giants above the diagram"
+      ],
+      "answer": 1,
+      "explanation": "The main sequence is the diagonal strip of hydrogen-burning stars. Payne's discovery — that the fuel is hydrogen — is what made the H-R diagram physically intelligible; where a star lands on the strip is set mainly by its mass."
+    },
+    {
+      "id": "payne-q10",
+      "q": "What is the role of gravity and fusion in forming a main-sequence star?",
+      "options": [
+        "Gravity collapses a cold cloud of hydrogen and helium, heating the core until hydrogen fusion ignites and radiation pressure balances the inward pull",
+        "Fusion begins first and then triggers gravitational collapse",
+        "Gravity and fusion both push outward, expanding the star indefinitely",
+        "The star forms instantly when two stars collide"
+      ],
+      "answer": 0,
+      "explanation": "Gravity pulls a cold cloud inward, heating the gas as it falls; at about fifteen million degrees hydrogen fusion ignites, and the outward radiation pressure balances the inward gravitational pull, settling the star onto the main sequence. The fuel that ignites is the hydrogen Payne proved was there."
+    }
+  ]
+}

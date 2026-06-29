@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m301-q01",
+      "q": "Identify what a wave transfers as it travels through a medium.",
+      "options": [
+        "Matter, but not energy",
+        "Energy, without a net transfer of matter",
+        "Both matter and energy equally",
+        "Neither matter nor energy"
+      ],
+      "answer": 1,
+      "explanation": "A wave transfers energy from place to place without a net transfer of matter — the particles of the medium oscillate about fixed points but don't travel with the wave (like a cork bobbing as waves pass). 'Energy not matter' is the single most important thing to say about what a wave is."
+    },
+    {
+      "id": "m301-q02",
+      "q": "Distinguish between a transverse and a longitudinal wave.",
+      "options": [
+        "Transverse needs a medium; longitudinal does not",
+        "Transverse: particles oscillate perpendicular to travel; longitudinal: particles oscillate parallel to travel",
+        "Transverse: particles oscillate parallel to travel; longitudinal: perpendicular",
+        "They are the same except for speed"
+      ],
+      "answer": 1,
+      "explanation": "In a transverse wave the particles oscillate perpendicular (at right angles) to the direction of travel (e.g. a wave on a string, all EM waves). In a longitudinal wave they oscillate parallel to the travel, forming compressions and rarefactions (e.g. sound). The transverse/longitudinal split is about particle direction; the mechanical/EM split is a separate question about needing a medium."
+    },
+    {
+      "id": "m301-q03",
+      "q": "Classify a sound wave by both schemes.",
+      "options": [
+        "Transverse and electromagnetic",
+        "Longitudinal and mechanical",
+        "Transverse and mechanical",
+        "Longitudinal and electromagnetic"
+      ],
+      "answer": 1,
+      "explanation": "Sound is longitudinal (air molecules oscillate along the direction of travel, with compressions and rarefactions) and mechanical (it needs a medium, so there is no sound in a vacuum). Light, by contrast, is transverse and electromagnetic — needing no medium. This is why you see a distant explosion before you hear it."
+    },
+    {
+      "id": "m301-q04",
+      "q": "State the relationship between frequency and period.",
+      "options": [
+        "Frequency equals period (f = T)",
+        "They are reciprocals (f = 1/T)",
+        "Frequency equals period squared",
+        "Frequency equals wavelength divided by period"
+      ],
+      "answer": 1,
+      "explanation": "Frequency and period are reciprocals: f = 1/T. A wave of frequency 2 Hz completes 2 cycles per second, so each cycle takes ½ second (the period). Frequency is measured in hertz (cycles per second) and period in seconds."
+    },
+    {
+      "id": "m301-q05",
+      "q": "A wave has a frequency of 50 Hz and a wavelength of 2 m. Calculate its speed.",
+      "options": [
+        "25 m s⁻¹",
+        "100 m s⁻¹",
+        "52 m s⁻¹",
+        "0.04 m s⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "By the wave equation v = fλ = 50 × 2 = 100 m s⁻¹. The tempting 25 comes from dividing frequency by wavelength instead of multiplying. The wave equation links the three headline quantities and is used in almost every wave calculation."
+    },
+    {
+      "id": "m301-q06",
+      "q": "At a fixed wave speed, if the frequency is doubled, predict what happens to the wavelength.",
+      "options": [
+        "It doubles",
+        "It halves",
+        "It stays the same",
+        "It quadruples"
+      ],
+      "answer": 1,
+      "explanation": "Since v = fλ and v is fixed (set by the medium, not the source), frequency and wavelength are inversely related — doubling the frequency halves the wavelength. This is why a higher-pitched sound has a shorter wavelength than a low one in the same air."
+    },
+    {
+      "id": "m301-q07",
+      "q": "Distinguish between the wave speed and the particle speed for a water wave.",
+      "options": [
+        "They are always equal",
+        "Wave speed is how fast the disturbance travels; particle speed is how fast a particle oscillates about its rest position",
+        "Particle speed is how fast the pattern moves; wave speed is the oscillation",
+        "Wave speed is always slower than particle speed"
+      ],
+      "answer": 1,
+      "explanation": "The wave speed (the v in v = fλ) is how fast the disturbance/pattern travels through the medium; the particle speed is how fast an individual particle oscillates back and forth about its rest position. They are unrelated — on the ocean the wave can race along while a water molecule just bobs slowly in place."
+    },
+    {
+      "id": "m301-q08",
+      "q": "Identify which type of wave graph you read the wavelength from.",
+      "options": [
+        "A displacement-versus-time graph",
+        "A displacement-versus-position (snapshot) graph",
+        "Either graph gives the wavelength",
+        "Neither graph can give the wavelength"
+      ],
+      "answer": 1,
+      "explanation": "A displacement-versus-position graph (a snapshot of all particles at one instant) gives the wavelength — the distance for one cycle. A displacement-versus-time graph gives the period (and hence frequency). Always check the horizontal axis first: time → period/frequency, position → wavelength."
+    },
+    {
+      "id": "m301-q09",
+      "q": "A displacement-time graph shows a period of 0.4 s, and a snapshot shows a wavelength of 0.8 m. Calculate the wave speed.",
+      "options": [
+        "0.32 m s⁻¹",
+        "2 m s⁻¹",
+        "3.2 m s⁻¹",
+        "0.5 m s⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "From the time graph, f = 1/T = 1/0.4 = 2.5 Hz; from the snapshot, λ = 0.8 m. Then v = fλ = 2.5 × 0.8 = 2 m s⁻¹. You need both graphs: the time graph for frequency, the position graph for wavelength, then the wave equation to combine them."
+    },
+    {
+      "id": "m301-q10",
+      "q": "The amplitude of a wave is doubled. Determine the effect on the energy it carries.",
+      "options": [
+        "The energy doubles",
+        "The energy quadruples",
+        "The energy halves",
+        "The energy is unchanged"
+      ],
+      "answer": 1,
+      "explanation": "The energy a wave carries is proportional to the square of its amplitude, so doubling the amplitude quadruples the energy. This is why a slightly bigger ocean swell hits so much harder, and why a loud sound carries far more energy than a quiet one of the same pitch."
+    }
+  ]
+}

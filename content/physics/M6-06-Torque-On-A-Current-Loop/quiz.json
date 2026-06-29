@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m606-q01",
+      "q": "In a rectangular current loop in a magnetic field, why do the two active sides experience forces in opposite directions?",
+      "options": [
+        "The two sides carry current in opposite directions around the loop",
+        "The field is stronger on one side than the other",
+        "The two sides are made of different materials",
+        "One side is closer to the north pole"
+      ],
+      "answer": 0,
+      "explanation": "It is one continuous wire, so the current runs up one active side and down the opposite side — antiparallel. With the same external field but opposite currents, the motor-effect forces are equal in size but opposite in direction (one out of the page, one into the page)."
+    },
+    {
+      "id": "m606-q02",
+      "q": "Two equal, opposite, parallel forces whose lines of action are offset from the axis form a:",
+      "options": [
+        "Net translational force",
+        "Couple, which produces rotation without translation",
+        "Centripetal force",
+        "Balanced pair with no effect"
+      ],
+      "answer": 1,
+      "explanation": "Such an arrangement is a couple. It produces a net turning effect (torque) but zero net translational force, so the loop spins on its axle rather than being pushed bodily across the field."
+    },
+    {
+      "id": "m606-q03",
+      "q": "As the coil rotates, why does the torque change even though the force on the active sides stays constant?",
+      "options": [
+        "The force weakens as the coil turns",
+        "The current decreases as the coil turns",
+        "The perpendicular distance (lever arm) from the axis to the lines of action changes",
+        "The field reverses direction"
+      ],
+      "answer": 2,
+      "explanation": "The active sides stay perpendicular to the field, so the force stays constant at \\(BIL\\). What changes is the lever arm — the perpendicular distance from the axis to the lines of action — so the torque varies purely because of geometry."
+    },
+    {
+      "id": "m606-q04",
+      "q": "At what orientation is the torque on a current loop a maximum?",
+      "options": [
+        "When the plane of the coil is perpendicular to the field",
+        "When the plane of the coil is parallel to the field",
+        "When the current is zero",
+        "When the coil is stationary"
+      ],
+      "answer": 1,
+      "explanation": "When the plane of the coil is parallel to the field, the two forces act at the maximum perpendicular distance from the axis, giving maximum lever arm and maximum torque (\\(\\cos 0^\\circ = 1\\))."
+    },
+    {
+      "id": "m606-q05",
+      "q": "When the plane of the coil is perpendicular to the field, the torque is zero. Why?",
+      "options": [
+        "The forces on the sides become zero",
+        "The current stops flowing",
+        "The forces act along the axis of rotation, so the perpendicular distance is zero",
+        "The field becomes zero at that orientation"
+      ],
+      "answer": 2,
+      "explanation": "The forces are still full strength (\\(BIL\\)), but their lines of action pass through the axis, so the perpendicular distance — and hence the turning effect — is zero. Saying the torque is zero \"because there is no force\" is a marked error."
+    },
+    {
+      "id": "m606-q06",
+      "q": "The torque on a coil is \\(\\tau = nBIA\\cos\\theta\\) (with \\(\\theta\\) the angle between the field and the plane of the coil). The SI unit of torque is:",
+      "options": [
+        "The joule (J)",
+        "The newton metre (N m)",
+        "The watt (W)",
+        "The tesla (T)"
+      ],
+      "answer": 1,
+      "explanation": "Torque is a force times a perpendicular distance, so its unit is the newton metre. Although a newton metre is dimensionally the same as a joule, torque is not energy and writing joules here is a marked error."
+    },
+    {
+      "id": "m606-q07",
+      "q": "A coil of 50 turns, area \\(4\\times10^{-3}\\ \\mathrm{m^2}\\), carries 2 A in a 0.25 T field. What is the maximum torque?",
+      "options": [
+        "\\(0.10\\ \\mathrm{N\\,m}\\)",
+        "\\(0.050\\ \\mathrm{N\\,m}\\)",
+        "\\(1.0\\ \\mathrm{N\\,m}\\)",
+        "\\(0.025\\ \\mathrm{N\\,m}\\)"
+      ],
+      "answer": 0,
+      "explanation": "Maximum torque is \\(nBIA\\) (\\(\\cos\\theta = 1\\)): \\(50 \\times 0.25 \\times 2 \\times 4\\times10^{-3} = 0.10\\ \\mathrm{N\\,m}\\)."
+    },
+    {
+      "id": "m606-q08",
+      "q": "The formula sheet writes torque as \\(\\tau = nBIA\\sin\\theta\\), but this episode uses \\(\\cos\\theta\\). Why are both correct?",
+      "options": [
+        "They are different physics for different motors",
+        "The two define \\(\\theta\\) from different references (plane vs normal), and \\(\\cos\\) of one equals \\(\\sin\\) of the other",
+        "One is for AC and one for DC",
+        "The sine form ignores the number of turns"
+      ],
+      "answer": 1,
+      "explanation": "With \\(\\theta\\) measured to the plane of the coil you use cosine; with \\(\\theta\\) measured to the normal you use sine. The two angles are complementary, so \\(\\cos\\) of one equals \\(\\sin\\) of the other — identical physics. The trap is using the wrong function for the angle the question gives."
+    },
+    {
+      "id": "m606-q09",
+      "q": "Which set of changes would all increase the torque on a current loop?",
+      "options": [
+        "Fewer turns, weaker field, smaller current, smaller area",
+        "More turns, stronger field, larger current, larger area",
+        "More turns, weaker field, smaller current, larger area",
+        "Fewer turns, stronger field, larger current, smaller area"
+      ],
+      "answer": 1,
+      "explanation": "From \\(\\tau = nBIA\\cos\\theta\\), torque is directly proportional to \\(n\\), \\(B\\), \\(I\\) and \\(A\\). Increasing any of them increases the torque, so increasing all four does. The four torque-boosters are read straight off the formula."
+    },
+    {
+      "id": "m606-q10",
+      "q": "Why does a bare current loop fail to spin continuously in one direction?",
+      "options": [
+        "The torque is constant, so the loop never starts moving",
+        "Its momentum carries it past the zero-torque position, after which the unchanged forces push it back, so it oscillates",
+        "The forces always point along the axis",
+        "The loop overheats and stops"
+      ],
+      "answer": 1,
+      "explanation": "A bare loop reaches the zero-torque (perpendicular) position, but inertia carries it past. Past that point the forces (unchanged in direction) produce a torque the opposite way, so the loop oscillates rather than rotating. A split-ring commutator fixes this by reversing the current at the dead point."
+    }
+  ]
+}

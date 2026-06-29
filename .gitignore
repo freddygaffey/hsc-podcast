@@ -1,0 +1,20 @@
+# Legacy per-subject repos — kept locally as the audio source and for the migration
+# banners, but they are their own git repos and NOT part of the unified one.
+hsc-phy-podcast/
+hsc-sdd-podcast/
+
+# Dependencies / build / tooling state
+node_modules/
+.tts-venv/
+.wrangler/
+dist/
+__pycache__/
+*.pyc
+tools/.upload-state.json
+
+# Audio is served from R2, never committed (durations live in each episode's voices.json)
+*.m4a
+*.wav
+
+# OS / editor cruft
+.DS_Store

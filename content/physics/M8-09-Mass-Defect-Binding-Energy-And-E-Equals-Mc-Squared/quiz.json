@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m809-q01",
+      "q": "Define the mass defect of a nucleus.",
+      "options": [
+        "The difference between the total mass of the separate free nucleons and the actual mass of the assembled nucleus",
+        "The mass of the nucleus minus the mass of its electrons",
+        "The extra mass a nucleus gains when it is bound together",
+        "The mass converted into energy each second as a nucleus decays"
+      ],
+      "answer": 0,
+      "explanation": "The mass defect is the difference between the combined mass of the separate, free protons and neutrons and the actual mass of the nucleus they form. The assembled nucleus is always lighter than its parts, so the defect is positive. It is not about electrons (B) and the nucleus loses mass on formation, not gains it (C)."
+    },
+    {
+      "id": "m809-q02",
+      "q": "Why are the separate laws of conservation of mass and conservation of energy replaced by a single law of conservation of mass-energy?",
+      "options": [
+        "Because mass and energy are measured in the same units",
+        "Because mass and energy are equivalent and can interconvert, so only their combined total is conserved",
+        "Because energy is always lost as heat in nuclear reactions",
+        "Because mass is always destroyed in nuclear reactions"
+      ],
+      "answer": 1,
+      "explanation": "Special relativity shows mass and energy are equivalent and interconvertible via \\(E = mc^2\\). In a nuclear reaction mass converts to energy, so neither mass alone nor energy alone is conserved — only the combined mass-energy. Saying mass is \"destroyed\" (D) is the misconception the episode warns against; it is converted, not destroyed."
+    },
+    {
+      "id": "m809-q03",
+      "q": "The binding energy of a nucleus can be correctly described as which of the following?",
+      "options": [
+        "The kinetic energy of the nucleons moving inside the nucleus",
+        "The energy released by the nucleus during radioactive decay",
+        "The energy released when free nucleons bind together, equal to the energy needed to separate the nucleus completely",
+        "The total electrostatic potential energy of the protons"
+      ],
+      "answer": 2,
+      "explanation": "Binding energy is the energy equivalent of the mass defect. It is the energy released when free nucleons come together to form the nucleus, and equivalently the energy that must be supplied to pull the nucleus completely apart into free nucleons — the same number in two directions."
+    },
+    {
+      "id": "m809-q04",
+      "q": "The mass defect of a helium-4 nucleus is about \\(0.0304\\ \\mathrm{u}\\). Using \\(1\\ \\mathrm{u} \\leftrightarrow 931.5\\ \\mathrm{MeV}\\), its total binding energy is closest to:",
+      "options": [
+        "7.1 MeV",
+        "28.3 MeV",
+        "160 MeV",
+        "3.0 × 10⁻¹² MeV"
+      ],
+      "answer": 1,
+      "explanation": "\\(E_b = \\Delta m \\times 931.5 = 0.0304 \\times 931.5 \\approx 28.3\\ \\mathrm{MeV}\\). The 7.1 MeV value (A) is the binding energy per nucleon (divide by 4). The tiny value (D) comes from wrongly dividing by \\(c^2\\) as well — the 931.5 factor already includes \\(c^2\\)."
+    },
+    {
+      "id": "m809-q05",
+      "q": "Helium-4 has a total binding energy of about 28.3 MeV. What is its binding energy per nucleon?",
+      "options": [
+        "About 7.1 MeV per nucleon",
+        "About 14.2 MeV per nucleon",
+        "About 28.3 MeV per nucleon",
+        "About 113 MeV per nucleon"
+      ],
+      "answer": 0,
+      "explanation": "Binding energy per nucleon = total binding energy ÷ mass number = \\(28.3 / 4 \\approx 7.1\\ \\mathrm{MeV}\\) per nucleon. This per-nucleon value, not the total, is the fair measure of stability."
+    },
+    {
+      "id": "m809-q06",
+      "q": "Which nucleus sits at the peak of the binding-energy-per-nucleon curve, making it the most stable nucleus?",
+      "options": [
+        "Hydrogen-1",
+        "Helium-4",
+        "Iron-56",
+        "Uranium-238"
+      ],
+      "answer": 2,
+      "explanation": "The curve rises steeply from light nuclei, peaks at iron-56 at about 8.8 MeV per nucleon, then falls slowly for heavier nuclei. Iron-56 has the highest binding energy per nucleon, so each of its nucleons is the most tightly bound — the \"iron throne\" the whole module builds toward."
+    },
+    {
+      "id": "m809-q07",
+      "q": "Why is binding energy per nucleon, rather than total binding energy, used to compare the stability of different nuclei?",
+      "options": [
+        "Total binding energy cannot be measured experimentally",
+        "Heavy nuclei have large total binding energies simply because they have many nucleons, so total binding energy is misleading; per-nucleon shows how tightly each nucleon is held",
+        "Binding energy per nucleon is always larger and so easier to read off a graph",
+        "Total binding energy ignores the neutrons in the nucleus"
+      ],
+      "answer": 1,
+      "explanation": "Uranium has a far larger total binding energy than helium just because it has many more nucleons, but it is not more stable. Dividing by the mass number gives a like-for-like measure of how tightly each individual nucleon is held — the quantity that actually determines stability."
+    },
+    {
+      "id": "m809-q08",
+      "q": "Using the binding-energy-per-nucleon curve, why do BOTH nuclear fission and nuclear fusion release energy?",
+      "options": [
+        "Both produce nuclei that lie lower on the curve, further from iron",
+        "Fission releases energy but fusion absorbs it",
+        "Both produce nuclei that lie higher on the curve, closer to iron, with greater binding energy per nucleon",
+        "Both destroy mass, which is forbidden by conservation laws"
+      ],
+      "answer": 2,
+      "explanation": "Fusion joins light nuclei from the left of the peak into a heavier nucleus higher on the curve; fission splits a heavy nucleus from the right into mid-mass fragments also higher on the curve. In both cases the products move toward iron-56, gaining binding energy per nucleon, and that gain is released as energy."
+    },
+    {
+      "id": "m809-q09",
+      "q": "In the fusion reaction \\({}^{2}\\mathrm{H} + {}^{3}\\mathrm{H} \\to {}^{4}\\mathrm{He} + n\\), the reactants exceed the products in mass by \\(0.0189\\ \\mathrm{u}\\). The energy released is closest to:",
+      "options": [
+        "0.0189 MeV",
+        "17.6 MeV",
+        "160 MeV",
+        "931.5 MeV"
+      ],
+      "answer": 1,
+      "explanation": "\\(E = \\Delta m \\times 931.5 = 0.0189 \\times 931.5 \\approx 17.6\\ \\mathrm{MeV}\\) per D-T reaction — the famous fusion figure. About 160 MeV (C) is the energy of a uranium fission event, not this fusion."
+    },
+    {
+      "id": "m809-q10",
+      "q": "A student writes that fission releases energy \"because mass is destroyed.\" Why is this only a weak (low-mark) answer?",
+      "options": [
+        "It is completely wrong; no mass change occurs in fission",
+        "Mass is converted, not destroyed, and a strong answer names the mass defect as the source and invokes the binding-energy curve and the move toward iron",
+        "It should say the energy comes from the strong force doing work",
+        "It forgets that fission absorbs energy rather than releasing it"
+      ],
+      "answer": 1,
+      "explanation": "Saying mass is \"destroyed\" breaks conservation language — it is converted into energy. A full-mark answer identifies the mass defect as the source of the missing mass and explains, via the binding-energy-per-nucleon curve, that the products are more tightly bound (closer to iron), which is why they are lighter. Mass-energy equivalence says the energy exists; the curve says why the products lose mass."
+    }
+  ]
+}

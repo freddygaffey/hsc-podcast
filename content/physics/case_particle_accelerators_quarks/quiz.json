@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "quarks-q01",
+      "q": "By the early 1960s, accelerators had revealed over a hundred 'fundamental' particles. Why did physicists find this 'particle zoo' unsatisfactory?",
+      "options": [
+        "The particles were all unstable and decayed too fast to study",
+        "Truly fundamental building blocks should be few in number; a hundred of them suggests a deeper underlying structure rather than a real answer",
+        "The particles violated conservation of charge",
+        "They could not be detected reliably"
+      ],
+      "answer": 1,
+      "explanation": "Fundamental particles are meant to be a small, clean set from which everything is built. A hundred 'fundamental' things is the absence of an answer, not an answer — it hinted that these particles were really combinations of something more basic, which turned out to be quarks."
+    },
+    {
+      "id": "quarks-q02",
+      "q": "Gell-Mann's 'Eightfold Way' did more than tidy up known particles — it made a prediction. What was the omega-minus?",
+      "options": [
+        "A new force-carrying particle predicted by the pattern",
+        "A missing particle at an empty corner of a geometric pattern, whose charge, strangeness and mass Gell-Mann predicted before it was found",
+        "The first antimatter particle ever observed",
+        "A new type of accelerator built at Brookhaven"
+      ],
+      "answer": 1,
+      "explanation": "One slot at the tip of the baryon decuplet was empty. The pattern was so tight that Gell-Mann predicted the missing particle's charge (-1), strangeness (-3) and mass. Its discovery at Brookhaven in 1964, with exactly those properties, confirmed the Eightfold Way — a prediction, not mere bookkeeping."
+    },
+    {
+      "id": "quarks-q03",
+      "q": "A proton is made of two up quarks and one down quark. Given quark charges of \\(+\\tfrac{2}{3}\\) (up) and \\(-\\tfrac{1}{3}\\) (down), what is the proton's total charge?",
+      "options": [
+        "0",
+        "\\( +1 \\)",
+        "\\( +\\tfrac{2}{3} \\)",
+        "\\( -1 \\)"
+      ],
+      "answer": 1,
+      "explanation": "\\(+\\tfrac{2}{3} + \\tfrac{2}{3} - \\tfrac{1}{3} = +\\tfrac{3}{3} = +1\\), the observed proton charge. The neutron (up, down, down) gives \\(+\\tfrac{2}{3} - \\tfrac{1}{3} - \\tfrac{1}{3} = 0\\). The fractional quark charges combine to the whole-number charges we actually observe."
+    },
+    {
+      "id": "quarks-q04",
+      "q": "Why were quarks initially dismissed as a mere mathematical convenience rather than real particles?",
+      "options": [
+        "Their predicted masses were impossibly large",
+        "No free quark — and no fractional charge — had ever been observed, despite searches in cosmic rays, seawater and rocks",
+        "They violated the conservation of energy",
+        "Gell-Mann himself never published the idea"
+      ],
+      "answer": 1,
+      "explanation": "Every particle ever seen carried a whole-number multiple of \\(e\\). Quarks needed fractional charges (\\(\\pm\\tfrac{1}{3}, \\pm\\tfrac{2}{3}\\)), and no free quark turned up in any search. To most physicists they were an accounting trick of the symmetry algebra — until deep inelastic scattering showed otherwise."
+    },
+    {
+      "id": "quarks-q05",
+      "q": "To probe inside a proton (~1 fm across), SLAC needed very high-energy electrons. Which principle explains why?",
+      "options": [
+        "Higher-energy electrons are hotter and melt the proton",
+        "A particle's de Broglie wavelength \\( \\lambda = h/p \\) shrinks as momentum rises, and you need \\( \\lambda \\) smaller than the structure you wish to resolve",
+        "High energy makes electrons positively charged",
+        "Only high-energy electrons can pass through liquid hydrogen"
+      ],
+      "answer": 1,
+      "explanation": "By de Broglie, \\(\\lambda = h/p\\); higher momentum means shorter wavelength. To resolve sub-proton structure you need a wavelength smaller than ~1 fm, which demands electrons of several GeV and beyond — exactly why SLAC accelerated electrons up to 20 GeV."
+    },
+    {
+      "id": "quarks-q06",
+      "q": "The SLAC deep inelastic scattering experiment was conceptually a repeat of which earlier landmark, one level deeper?",
+      "options": [
+        "Millikan's oil-drop experiment",
+        "Rutherford's gold-foil experiment, which revealed the nucleus by scattering",
+        "Young's double-slit experiment",
+        "The photoelectric effect experiment"
+      ],
+      "answer": 1,
+      "explanation": "Just as Rutherford fired alpha particles at gold foil and saw large-angle scattering revealing a small hard nucleus, SLAC fired electrons at protons and saw unexpectedly frequent large-angle (deep inelastic) scattering — revealing small, hard, point-like objects (quarks) inside the proton."
+    },
+    {
+      "id": "quarks-q07",
+      "q": "If the proton were a soft, diffuse blob of charge, electrons would rarely scatter at large angles. What did Friedman, Kendall and Taylor actually observe in deep inelastic scattering?",
+      "options": [
+        "Almost no large-angle scattering, confirming a soft proton",
+        "Far more frequent hard, large-angle scattering than expected, indicating small hard point-like constituents inside the proton",
+        "The electrons passed straight through with no deflection at all",
+        "The protons were completely destroyed before any scattering occurred"
+      ],
+      "answer": 1,
+      "explanation": "The hard scatters did not fall away as a soft blob would require — electrons bounced off at large angles far more often than predicted. The only explanation, echoing Rutherford, was small hard point-like kernels inside the proton: the quarks. The proton was a 'bag of marbles', not a smooth ball."
+    },
+    {
+      "id": "quarks-q08",
+      "q": "Why can a single free quark never be isolated (colour confinement)?",
+      "options": [
+        "Quarks decay instantly into electrons",
+        "As you pull two quarks apart the strong force does not weaken; the stored energy grows until it converts into a new quark-antiquark pair, so you only ever make more particles",
+        "Quarks are too small for any detector to register",
+        "The electromagnetic force binds them too tightly"
+      ],
+      "answer": 1,
+      "explanation": "Unlike gravity or electromagnetism, the strong force between quarks does not fade with distance — the flux-tube energy keeps growing as you pull them apart. Eventually that energy (via \\(E=mc^2\\)) creates a new quark-antiquark pair at the break point, giving new colour-neutral particles instead of a free quark. You can never win."
+    },
+    {
+      "id": "quarks-q09",
+      "q": "What is the property of 'asymptotic freedom', which explained why partons looked like free particles in the SLAC collisions?",
+      "options": [
+        "Quarks become heavier when close together",
+        "The strong force between quarks becomes very weak when they are very close together (at high energy), so they behave almost freely",
+        "Quarks lose their colour charge at high energy",
+        "The strong force becomes infinite at short range"
+      ],
+      "answer": 1,
+      "explanation": "Asymptotic freedom means the strong force nearly vanishes at very short distances and high energies, so closely packed quarks rattle around almost freely — exactly why Feynman's partons appeared free in the violent SLAC scatters. Conversely the force is strong at long range, which causes confinement."
+    },
+    {
+      "id": "quarks-q10",
+      "q": "In terms of quark content, what is a baryon, and what holds it together?",
+      "options": [
+        "A quark-antiquark pair held by the electromagnetic force",
+        "Three quarks (e.g. the proton and neutron) bound together in a colour-neutral combination by the strong force",
+        "A single quark surrounded by electrons",
+        "Two quarks held by gravity"
+      ],
+      "answer": 1,
+      "explanation": "A baryon is three quarks bound by the strong force in a colour-neutral (red+green+blue) bundle — the proton (uud) and neutron (udd) are baryons. A quark-antiquark pair, by contrast, is a meson. A lone quark is never colour-neutral, so it cannot exist alone."
+    }
+  ]
+}

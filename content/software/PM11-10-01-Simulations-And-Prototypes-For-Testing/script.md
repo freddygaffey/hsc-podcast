@@ -1,0 +1,58 @@
+---
+title: "Simulations and Prototypes for Testing"
+module: PM11
+year: 11
+lesson: "10.1"
+kind: lesson
+supplementary: supplementary.md
+---
+
+NARRATOR: Welcome back. Five minutes of recap first — spaced repetition is the engine of this series — and then we start building, beginning with the thing you do before you ever touch real hardware.
+
+NARRATOR: The control chapter is done. You met open versus closed loop — closed loops listen, open loops are blind, running Measure, Compare, Correct. You met autonomous control, with the features S-D-A-F. You met the patterns you write decision logic with — the state machine, S-T-E-A. And last episode, the physical reality: degrees of freedom, the independent ways a thing can move; motion constraints the software must respect; and combining subsystems by composition, has-a, under one conductor with clean interfaces. So the whole machine is designed — sensing, thinking, acting, coordinated. Now we build it, and that's the final chapter.
+
+NARRATOR: But here's the thing — you do not write fresh control code and run it straight on a real robot. A bug could smash a motor, fling an arm, or hurt someone. So the first move in building is simulation. The dot-point: "Develop simulations and prototypes of a potential mechatronic system to test programming code." Outcomes S-E-eleven-oh-six — applying tools and resources to design and develop — and S-E-eleven-oh-seven — implementing safe and secure programming solutions. And this episode finally explains something you've seen all module: why every code listing has been a runnable simulation.
+
+NARRATOR: Objectives. By the end you'll be able to: explain why we simulate before building; distinguish a simulation from a prototype, and low-fidelity from high-fidelity; and describe how a simulation lets you test control code safely, including edge cases.
+
+QUESTION: Start with the why. You've written a new control algorithm for a robot arm. Why not just upload it and see what happens?
+
+NARRATOR: Because the cost of a bug on real hardware is brutal — and the reasons to simulate first are worth a hook: S-C-F, Safe, Cheap, Fast. Safe: in software, a runaway command can't smash the arm into the bench or injure anyone — you can deliberately explore failure modes that would be dangerous to try for real. Cheap: you're not burning out motors or snapping parts; a bug caught in software costs nothing. And Fast: you iterate in seconds, tweaking and re-running, instead of rebuilding hardware over days. Safe, Cheap, Fast. Remember the self-driving desert race we mentioned — the teams that won didn't practise only in the desert; they ran thousands of simulated drives first. Simulate before you build.
+
+QUESTION: So what exactly is a simulation, versus a prototype — aren't they the same idea?
+
+NARRATOR: Related, but distinct, and the exam wants the difference. A simulation is a software model of how the system behaves — engineers call the thing being controlled the "plant" — and your control code drives that model instead of real devices, so you can test the code with no hardware at all. A prototype is an early physical build of the actual thing. And prototypes come in fidelities: low-fidelity first — rough, cheap, quick to change, like cardboard and a cheap motor to test the idea — then high-fidelity later — detailed, expensive, close to the real product. The principle is low-fidelity first, because early on you'll change everything, and you want changing it to be cheap. Simulation is in software; a prototype is physical; low-fidelity comes before high.
+
+NARRATOR: Let me make the simulation idea concrete — Listing 1. It's a simulation of a robot on a straight track: a software model that holds the robot's position and enforces a top speed, a realistic constraint, with no board anywhere. Notice the two-step discipline. First, we validate the simulation against known results — a key principle: with no command it stays put; with a small command it moves exactly that far; with a huge command it's clamped to the speed limit. If the model doesn't match the simple cases you already know, you can't trust it. Then, second, we test the control code against that validated simulation: we run our closed-loop proportional controller — the Measure, Compare, Correct loop — driving the simulated robot toward a target, and we assert that it actually arrives. The whole test runs in software, instantly, safely, and repeatably. That's the pattern behind every runnable listing in this module.
+
+NARRATOR: And Listing 2 shows the other half — simulating imperfection on purpose. Real sensors glitch, so we build a simulated sensor that mostly returns the true value but injects known glitches at chosen moments, then we run our glitch-rejection code against it and assert the bad readings are dropped. Because the glitches are deliberate and fixed, the test is repeatable — same input, same result, every run. That's how you test that your handling code copes with the messy real world before the messy real world exists.
+
+QUESTION: Pause the player and reason it through. You're building a small robot that will carry a cup of hot coffee across a room. Give two distinct reasons to simulate the control code before running it on the real robot. Work it out, then play.
+
+NARRATOR: Strong reasons. One — safety: a bug that makes the robot lurch could fling scalding coffee or topple the robot, so testing the logic in simulation first means nobody gets burned and nothing gets wrecked while the dangerous bugs are still in the code. Two — cost and speed: if the control code is wrong you'd otherwise damage the robot and waste coffee on every failed run, whereas in simulation you find and fix the bug in seconds at no cost, iterating quickly until it's right. You could also say simulation lets you test edge cases safely — what happens if a wheel slips or a sensor drops out — which you'd never want to trigger deliberately on the real thing. The marks come from giving two genuinely different reasons — for example one safety, one cost-or-speed — each tied to this robot.
+
+NARRATOR: A few simulation principles to carry, beyond Safe-Cheap-Fast. Start simple and add complexity gradually. Include realistic constraints — noise, speed and range limits, delays — because a simulation with none of those is too easy and tells you nothing useful. Test edge cases and failure modes, which is exactly where simulation shines, since you can safely trigger a stuck sensor or a lost signal. Validate the model against known results, as we did in Listing 1. And design for testability — structure your code so each component can be tested in isolation, which sets up the unit testing we reach at the end of the chapter.
+
+NARRATOR: Two threads. Backward: the controller we tested in the simulation is the closed-loop Measure, Compare, Correct from the control chapter, and the glitch-rejection we tested is the validation from the data episode — simulation is the safe workbench for everything you've built; and the self-driving desert race from the autonomy episode is the case study in simulate-first engineering. Forward: next episode we implement closed-loop control for real, and the simulation is how we'll safely tune the controller's gain without oscillating a real machine; and in the final episode, unit tests run against the simulation precisely because that makes them safe and repeatable. Into Year Twelve, this is the prototyping and testing discipline the major engineering project is built on.
+
+NARRATOR: Consolidate — takeaways. One: simulate before you build — S-C-F: Safe, Cheap, Fast — and you can explore dangerous failure modes safely. Two: a simulation is a software model of the system, the plant, that your control code drives; a prototype is an early physical build, and you go low-fidelity before high-fidelity. Three: validate the simulation against known results before you trust it, then test your control code against it. Four: a good simulation includes realistic constraints and lets you test edge cases. Listing 3 is your one-page reference.
+
+NARRATOR: Now exam-style questions. Pen down, attempt before the model answer.
+
+QUESTION: Question one. Explain why a simulation is used before building and testing a mechatronic system on real hardware. Four marks.
+
+NARRATOR: A simulation lets developers test control code safely, cheaply, and quickly before committing to hardware. Safely, because a faulty algorithm in simulation cannot damage expensive components or injure anyone, and dangerous failure modes can be explored deliberately. Cheaply, because no hardware is consumed or broken when a bug occurs. And quickly, because changes can be made and re-tested in seconds rather than rebuilding physical systems. This means most bugs are found and fixed before the system ever runs for real. For four marks, give at least two distinct reasons — safety, cost, speed, or edge-case testing — each explained, not just listed.
+
+QUESTION: Question two. Distinguish between a simulation and a prototype. Pause, write, then play.
+
+NARRATOR: A simulation is a software model of a system's behaviour, used to test control code without any physical hardware — the code drives the model instead of real devices. A prototype is an early physical build of the system itself, used to test the real design in the physical world. The key distinction: a simulation is virtual, modelling behaviour in software; a prototype is physical, an actual early version of the device. The marks come from the virtual-versus-physical distinction and the purpose of each.
+
+QUESTION: Question three. Explain what is meant by low-fidelity and high-fidelity prototypes, and why you would build low-fidelity first.
+
+NARRATOR: A low-fidelity prototype is a rough, simple, inexpensive version — using cheap or makeshift parts — built to test an idea quickly. A high-fidelity prototype is detailed and closely resembles the final product, but is more expensive and slower to make. You build low-fidelity first because early in development the design changes a great deal, and a low-fidelity prototype is cheap and quick to change, so you can iterate and learn without wasting the time and money that high-fidelity work demands before the design has settled. The mark-earning points: low-fidelity is rough and cheap, high-fidelity is detailed and costly, and low-fidelity first keeps early changes cheap.
+
+QUESTION: Question four. Explain how a simulation allows control code to be tested against edge cases that would be risky on real hardware.
+
+NARRATOR: In a simulation, the developer fully controls the modelled environment, so they can deliberately create conditions that would be dangerous or hard to produce in reality — such as a sensor returning a faulty value, a lost signal, a stuck actuator, or an extreme input — and observe how the control code responds, all without any physical risk. This lets failure modes be tested and the code's safe handling verified before the real system is ever exposed to them. The mark is recognising that a simulation gives controlled, repeatable creation of edge cases with no physical danger, so the code's response can be checked safely.
+
+NARRATOR: That's the safe workbench. Before any hardware, you build a simulation — a software model of the system — validate it against known results, and test your control code on it, because simulating first is Safe, Cheap, and Fast. Prototypes follow, low-fidelity before high. Next episode we put the simulation to work for real: implementing a closed-loop controller in code and tuning it safely — proportional control, and its full form, P-I-D. See you there.

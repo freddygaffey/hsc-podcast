@@ -1,0 +1,31 @@
+{
+  "id": "REPLACE-ME-slug",
+  "name": "HSC REPLACE-ME Subject Name",
+  "shortName": "REPLACE-ME",
+  "description": "HSC REPLACE-ME podcast episodes",
+  "repoUrl": "https://github.com/freddygaffey/hsc-podcast",
+
+  "audioBaseUrl": "https://audio.hsc.pebnum.com",
+
+  "groupNames": {
+    "M1": "First Module Name",
+    "M2": "Second Module Name",
+    "CASE": "Case Studies"
+  },
+
+  "yearMap": {
+    "M1": "Year 11",
+    "M2": "Year 12",
+    "CASE": "Case Studies"
+  },
+
+  "yearOrder": ["Case Studies", "Year 12", "Year 11", "Other"],
+
+  "_comments": {
+    "id": "URL-safe slug; also the content sub-folder name AND the audio folder inside the shared R2 bucket (content/<id>/<ep>/, and key <id>/<ep>/<voice>.m4a).",
+    "groupNames": "Map every module CODE used in episode folder names (e.g. M1, PF11) to its human title. CASE is the synthetic case-studies module.",
+    "yearMap": "Which HSC year each module code belongs to, for the Year 11 / Year 12 split. CASE spans both. Unlisted codes fall under 'Other'.",
+    "audioBaseUrl": "Public origin of the ONE shared audio bucket (same for every subject), e.g. https://audio.hsc.pebnum.com. The manifest builder appends /<id>/<ep>/<voice>.m4a, so each subject is a folder in that bucket. Use 'content' to serve audio from the repo during local dev.",
+    "remove": "Delete this _comments block once the file is filled in."
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m104-q01",
+      "q": "Identify the correct expressions for the horizontal and vertical components of a vector of magnitude V at an angle θ measured from the horizontal.",
+      "options": [
+        "Horizontal = V sin θ; vertical = V cos θ",
+        "Horizontal = V cos θ; vertical = V sin θ",
+        "Horizontal = V tan θ; vertical = V cos θ",
+        "Horizontal = V cos θ; vertical = V tan θ"
+      ],
+      "answer": 1,
+      "explanation": "When the angle is measured from the horizontal, the horizontal component is adjacent to the angle so it takes the cosine (V cos θ), and the vertical is opposite so it takes the sine (V sin θ). The hook is 'adjacent is cosine, opposite is sine' — students swap them under pressure, but anchoring to adjacent/opposite (not to 'horizontal') keeps it right even when the angle is quoted differently."
+    },
+    {
+      "id": "m104-q02",
+      "q": "Outline why resolving a vector into perpendicular components is useful in two-dimensional motion.",
+      "options": [
+        "It makes every vector point horizontally",
+        "Perpendicular components are independent, so a 2-D problem splits into two 1-D problems",
+        "It removes the need to state a direction",
+        "It converts the vector into a scalar"
+      ],
+      "answer": 1,
+      "explanation": "Perpendicular components don't affect each other, so a hard two-dimensional problem becomes two easy one-dimensional problems — one horizontal, one vertical — each handled with tools you already have. This independence is the single most powerful idea here and is the whole secret of projectile motion next year."
+    },
+    {
+      "id": "m104-q03",
+      "q": "A vector of magnitude 10 units points 30° above the horizontal. Calculate its horizontal and vertical components.",
+      "options": [
+        "Horizontal 5.0; vertical 8.7",
+        "Horizontal 8.7; vertical 5.0",
+        "Horizontal 10; vertical 5.0",
+        "Horizontal 8.7; vertical 8.7"
+      ],
+      "answer": 1,
+      "explanation": "From the horizontal, the horizontal component is adjacent: 10 cos 30° ≈ 10 × 0.87 = 8.7 units; the vertical is opposite: 10 sin 30° = 10 × 0.5 = 5.0 units. Swapping them (5.0 horizontal, 8.7 vertical) is the classic error — anchor to 'horizontal is adjacent, adjacent is cosine'."
+    },
+    {
+      "id": "m104-q04",
+      "q": "Two perpendicular forces of 3 N and 4 N act on a point. Calculate the magnitude of the resultant.",
+      "options": [
+        "7 N",
+        "5 N",
+        "1 N",
+        "12 N"
+      ],
+      "answer": 1,
+      "explanation": "Perpendicular vectors combine by Pythagoras: √(3² + 4²) = √25 = 5 N. The tempting 7 N comes from adding the magnitudes as scalars, which is only valid if the vectors point the same way. Direction always matters when adding vectors."
+    },
+    {
+      "id": "m104-q05",
+      "q": "A boat points straight across a river at 4 m s⁻¹ relative to the water while the river flows downstream at 3 m s⁻¹. Calculate the boat's resultant velocity relative to the bank.",
+      "options": [
+        "7 m s⁻¹ straight across",
+        "5 m s⁻¹ at about 37° downstream of straight across",
+        "1 m s⁻¹ downstream",
+        "5 m s⁻¹ straight across"
+      ],
+      "answer": 1,
+      "explanation": "The across (4) and downstream (3) velocities are perpendicular, so the resultant magnitude is √(4² + 3²) = √25 = 5 m s⁻¹, with direction tan⁻¹(3/4) ≈ 37° downstream of straight across. Adding 4 + 3 = 7 ignores that the velocities are perpendicular vectors; a velocity answer must also state the direction."
+    },
+    {
+      "id": "m104-q06",
+      "q": "Explain why a boat pointed straight across a flowing river takes the same time to cross whether or not the river is flowing.",
+      "options": [
+        "The current speeds up the across motion equally to its own speed",
+        "The current is perpendicular to the across direction, so it has no across component and crossing time depends only on the across velocity",
+        "The current reverses the boat so the times cancel",
+        "The river's flow reduces the boat's engine speed"
+      ],
+      "answer": 1,
+      "explanation": "Crossing time depends only on the across component of velocity and the river's width. The current flows downstream, perpendicular to the across direction, so it has no across component and cannot change the across motion — it only moves the boat further downstream (where it lands), not when it arrives. This independence of perpendicular components is the foundation of projectile motion."
+    },
+    {
+      "id": "m104-q07",
+      "q": "State the rule for the velocity of object A relative to object B.",
+      "options": [
+        "Velocity of A plus velocity of B",
+        "Velocity of A minus velocity of B (a vector subtraction)",
+        "Velocity of B minus velocity of A",
+        "The average of the two velocities"
+      ],
+      "answer": 1,
+      "explanation": "The master rule is v(A relative to B) = v(A) − v(B), done as a vector subtraction (reverse B and add it head-to-tail to A, or subtract component by component). Adding when you should subtract is a common error; the rule is always A minus B."
+    },
+    {
+      "id": "m104-q08",
+      "q": "Car A heads north at 20 m s⁻¹ and car B heads east at 20 m s⁻¹. Calculate the velocity of A relative to B.",
+      "options": [
+        "40 m s⁻¹ north-east",
+        "About 28 m s⁻¹ north-west",
+        "0 m s⁻¹",
+        "20 m s⁻¹ north"
+      ],
+      "answer": 1,
+      "explanation": "v(A) − v(B) = (20 north) − (20 east) = 20 north + 20 west. By Pythagoras the magnitude is √(20² + 20²) ≈ 28 m s⁻¹, directed north-west. So to B's driver, A appears to approach at ~28 m s⁻¹ from the north-west — faster and from a different direction than either road speed, which is why relative velocity matters in collisions."
+    },
+    {
+      "id": "m104-q09",
+      "q": "A hiker walks 100 m due east, then 120 m on a bearing 30° north of east. Using the component method, the totals are 204 m east and 60 m north. Calculate the magnitude of the resultant displacement.",
+      "options": [
+        "264 m",
+        "About 213 m",
+        "144 m",
+        "220 m"
+      ],
+      "answer": 1,
+      "explanation": "Recombine the perpendicular totals with Pythagoras: √(204² + 60²) = √(41616 + 3600) = √45216 ≈ 213 m (at tan⁻¹(60/204) ≈ 16° north of east). The tempting 264 m comes from adding 100 + 120 + ... as scalars; the component method (resolve, add easts, add norths, recombine) handles any chain of vectors at awkward angles."
+    },
+    {
+      "id": "m104-q10",
+      "q": "An aeroplane flies at 200 m s⁻¹ due north while a wind blows it east at 50 m s⁻¹. Calculate the plane's ground speed, and recommend what the pilot must do to travel due north.",
+      "options": [
+        "250 m s⁻¹; aim due north",
+        "About 206 m s⁻¹; aim partly into the wind (west of north) so the components cancel",
+        "150 m s⁻¹; aim due east",
+        "About 206 m s⁻¹; increase airspeed only"
+      ],
+      "answer": 1,
+      "explanation": "The northward (200) and eastward (50) velocities are perpendicular, so ground speed = √(200² + 50²) ≈ 206 m s⁻¹, pushed ~14° east of north. To go due north over the ground the pilot must aim partly upwind (west of north) so the westward aiming component cancels the wind's eastward push. Adding 200 + 50 = 250 ignores that the velocities are perpendicular vectors."
+    }
+  ]
+}

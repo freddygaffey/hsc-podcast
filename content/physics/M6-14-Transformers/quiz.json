@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m614-q01",
+      "q": "What physically connects the primary and secondary coils of a transformer?",
+      "options": [
+        "A copper wire joining the two circuits",
+        "Nothing electrical — they are linked only by the changing magnetic flux in the soft iron core",
+        "A switch that alternates the connection",
+        "A direct soldered joint at the core"
+      ],
+      "answer": 1,
+      "explanation": "There is no electrical connection between the coils. Energy crosses the gap as a changing magnetic field carried through the iron core — the process of mutual induction. Writing that the coils are 'connected' misunderstands the device."
+    },
+    {
+      "id": "m614-q02",
+      "q": "Why is the core of a transformer made of SOFT iron?",
+      "options": [
+        "Soft iron is cheaper than hard iron",
+        "Soft iron magnetises and demagnetises easily, flipping with the alternating field, and gives good flux linkage",
+        "Soft iron does not conduct electricity, so no eddy currents form",
+        "Soft iron is non-magnetic, preventing interference"
+      ],
+      "answer": 1,
+      "explanation": "Soft iron is ferromagnetic (so it channels and concentrates flux from primary to secondary — good flux linkage) AND magnetises/demagnetises easily, so it can reverse fifty times a second without wasting energy fighting itself. A hard material would resist that."
+    },
+    {
+      "id": "m614-q03",
+      "q": "By what process does a transformer transfer energy from primary to secondary?",
+      "options": [
+        "Self-induction",
+        "Mutual induction",
+        "Electrostatic attraction",
+        "Conduction through the core"
+      ],
+      "answer": 1,
+      "explanation": "Mutual induction is one coil inducing an EMF in a second, separate coil via a shared changing flux. Self-induction (A) is a coil inducing an EMF in itself (e.g. back-EMF), which is a different phenomenon."
+    },
+    {
+      "id": "m614-q04",
+      "q": "Why does a transformer produce no sustained output when fed a steady DC input?",
+      "options": [
+        "DC is too weak to magnetise the core",
+        "Steady DC gives a constant flux, so the rate of change of flux is zero, so no EMF is induced (Faraday's law)",
+        "DC flows the wrong way through the primary",
+        "The core blocks direct current"
+      ],
+      "answer": 1,
+      "explanation": "Faraday's law depends on the RATE of change of flux. Steady DC gives a constant flux, so \\( \\Delta\\Phi/\\Delta t = 0 \\) and no EMF appears in the secondary. (There is only a brief pulse at switch-on and switch-off, when the flux momentarily changes.)"
+    },
+    {
+      "id": "m614-q05",
+      "q": "A transformer steps 240 V down to 60 V. Does it change the frequency of the supply?",
+      "options": [
+        "Yes — it quarters the frequency along with the voltage",
+        "Yes — it doubles the frequency",
+        "No — the output is at the same frequency as the input; only the voltage (and inversely the current) changes",
+        "Only if it is a step-up transformer"
+      ],
+      "answer": 2,
+      "explanation": "A transformer never changes frequency. The secondary EMF tracks the primary flux in lockstep, so 50 Hz in gives 50 Hz out. The turns ratio sets the voltage amplitude (and inversely the current) but has no effect on frequency."
+    },
+    {
+      "id": "m614-q06",
+      "q": "A transformer has more turns on its secondary than its primary. It is a:",
+      "options": [
+        "Step-down transformer; voltage decreases, current increases",
+        "Step-up transformer; voltage increases, current decreases",
+        "Step-up transformer; both voltage and current increase",
+        "Step-down transformer; both voltage and current decrease"
+      ],
+      "answer": 1,
+      "explanation": "More turns on the secondary means a higher secondary voltage — a step-up transformer. By conservation of energy (\\( V_pI_p = V_sI_s \\)), the current does the opposite of the voltage, so the current steps down. 'More turns, more volts.'"
+    },
+    {
+      "id": "m614-q07",
+      "q": "An ideal step-down transformer reduces 240 V to 12 V with a 30-turn secondary. How many turns are on the primary?",
+      "options": [
+        "120",
+        "600",
+        "300",
+        "1500"
+      ],
+      "answer": 1,
+      "explanation": "\\( N_p = N_s \\times V_p/V_s = 30 \\times 240/12 = 30 \\times 20 = 600 \\) turns. The primary has more turns than the secondary, consistent with stepping 240 V down to 12 V."
+    },
+    {
+      "id": "m614-q08",
+      "q": "An ideal transformer delivers 6.0 W to a device on its secondary. What is the power drawn at the primary?",
+      "options": [
+        "Less than 6.0 W, because some is lost in the core",
+        "Exactly 6.0 W, because an ideal transformer conserves power (\\( V_pI_p = V_sI_s \\))",
+        "More than 6.0 W, to overcome resistance",
+        "It depends on the turns ratio"
+      ],
+      "answer": 1,
+      "explanation": "An ideal transformer is 100% efficient, so power out equals power in: \\( V_pI_p = V_sI_s = 6.0\\,\\mathrm{W} \\). You cannot get more power out than you put in — stepping voltage up is always paid for by a proportional drop in current. (A real transformer would draw slightly more than 6.0 W due to losses.)"
+    },
+    {
+      "id": "m614-q09",
+      "q": "Using the 'real transformers FRET' hook, eddy-current losses occur in the iron core and are reduced by:",
+      "options": [
+        "Using thicker copper wire for the windings",
+        "Laminating the core into thin insulated iron sheets (or using ferrites)",
+        "Winding the coils more tightly on a closed core",
+        "Increasing the supply frequency"
+      ],
+      "answer": 1,
+      "explanation": "Eddy currents are induced in the conducting iron core by the changing flux and dissipate heat. Laminating the core (thin insulated layers) breaks the large current loops into small high-resistance ones, slashing the loss. Thicker wire fixes resistive loss; a tight closed core fixes flux leakage — don't scramble the pairings."
+    },
+    {
+      "id": "m614-q10",
+      "q": "Why does stepping voltage UP before long-distance transmission reduce power loss in the line?",
+      "options": [
+        "Higher voltage makes the electrons move faster, reducing resistance",
+        "Higher voltage means lower current for the same power, and line loss \\( P = I^2R \\) falls as the square of the current",
+        "Higher voltage cancels the resistance of the wire entirely",
+        "Higher voltage reduces the length of the transmission line needed"
+      ],
+      "answer": 1,
+      "explanation": "For a fixed power, raising the voltage lowers the current proportionally. Since line loss is \\( I^2R \\), dropping the current to a tenth cuts the loss to a hundredth. This is why high-voltage transmission exists — and it relies on transformers, which only work on AC."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m710-q01",
+      "q": "Which statement correctly defines a black body?",
+      "options": [
+        "An object that absorbs all incident radiation and emits no radiation at all",
+        "An idealised perfect absorber of all incident radiation at every wavelength, which is therefore also a perfect emitter",
+        "Any object that appears black to the human eye at all temperatures",
+        "An object that reflects all radiation and absorbs none"
+      ],
+      "answer": 1,
+      "explanation": "A black body is a perfect absorber of all incident radiation, and by the thermal-equilibrium argument it must also be a perfect emitter. The 'emits nothing' option is the classic trap — a black body emits a full characteristic spectrum and glows brilliantly when hot."
+    },
+    {
+      "id": "m710-q02",
+      "q": "Why must a perfect absorber also be a perfect emitter?",
+      "options": [
+        "Because absorbed energy is destroyed and replaced by new emitted energy",
+        "Because in thermal equilibrium an object must radiate energy at the same rate it absorbs it to keep a constant temperature, so maximum absorption requires maximum emission",
+        "Because absorbing radiation increases the object's reflectivity",
+        "Because perfect absorbers are always made of black materials that radiate well"
+      ],
+      "answer": 1,
+      "explanation": "At a steady temperature, conservation of energy requires an object to emit at the same rate it absorbs, or it would heat without limit. A perfect absorber soaks up the maximum at every wavelength, so it must also emit the maximum at every wavelength."
+    },
+    {
+      "id": "m710-q03",
+      "q": "State Wien's displacement law.",
+      "options": [
+        "\\(\\lambda_{\\max} = bT\\)",
+        "\\(\\lambda_{\\max} = \\dfrac{b}{T}\\), so peak wavelength is inversely proportional to absolute temperature",
+        "\\(\\lambda_{\\max} = \\dfrac{T}{b}\\)",
+        "\\(\\lambda_{\\max} = \\dfrac{hc}{T}\\)"
+      ],
+      "answer": 1,
+      "explanation": "Wien's law is \\(\\lambda_{\\max} T = b\\), i.e. \\(\\lambda_{\\max} = b/T\\). Peak wavelength and absolute temperature are inversely proportional: double the temperature and you halve the peak wavelength."
+    },
+    {
+      "id": "m710-q04",
+      "q": "The Sun's surface is about 5800 K. At what wavelength does it emit most strongly? (\\(b = 2.9\\times10^{-3}\\,\\mathrm{m\\,K}\\))",
+      "options": [
+        "About 500 nm, in the green-yellow visible region",
+        "About 50 nm, in the ultraviolet",
+        "About 5000 nm, in the infrared",
+        "About 290 nm, in the ultraviolet"
+      ],
+      "answer": 0,
+      "explanation": "\\(\\lambda_{\\max} = b/T = 2.9\\times10^{-3}/5800 = 5.0\\times10^{-7}\\,\\mathrm{m} = 500\\,\\mathrm{nm}\\), mid-visible green-yellow — which is why our eyes are most sensitive there."
+    },
+    {
+      "id": "m710-q05",
+      "q": "A star's spectrum peaks at 290 nm. What is its approximate surface temperature?",
+      "options": [
+        "About 1000 K",
+        "About 10 000 K",
+        "About 100 000 K",
+        "About 3500 K"
+      ],
+      "answer": 1,
+      "explanation": "\\(T = b/\\lambda_{\\max} = 2.9\\times10^{-3}/(2.9\\times10^{-7}) = 1.0\\times10^{4}\\,\\mathrm{K}\\). A short peak wavelength means a hot, blue star — 'hot and blue, short and true'."
+    },
+    {
+      "id": "m710-q06",
+      "q": "As a black body is heated, how do its emission curve and colour change?",
+      "options": [
+        "The curve drops and the peak moves to longer wavelengths",
+        "The whole curve rises (brighter at every wavelength) and the peak shifts to shorter wavelengths (redder to bluer)",
+        "Only the brightness changes; the peak wavelength stays fixed",
+        "Only the colour changes; the total intensity stays the same"
+      ],
+      "answer": 1,
+      "explanation": "Two features change together: the entire curve rises (the object is brighter at every wavelength) and the peak moves to shorter wavelength, shifting the colour from red toward blue."
+    },
+    {
+      "id": "m710-q07",
+      "q": "What was the 'ultraviolet catastrophe'?",
+      "options": [
+        "The experimental finding that hot objects emit no ultraviolet light",
+        "The classical prediction that black-body intensity should rise without limit toward short wavelengths, reaching infinity in the ultraviolet",
+        "Planck's discovery that ultraviolet light damages the eye",
+        "The observation that the Sun emits dangerous amounts of ultraviolet radiation"
+      ],
+      "answer": 1,
+      "explanation": "Classical wave theory (Rayleigh–Jeans) predicted intensity rising without limit as wavelength shortened, heading to infinity in the ultraviolet. This violated conservation of energy and contradicted the experimental curve, which peaks then falls."
+    },
+    {
+      "id": "m710-q08",
+      "q": "How did Planck's quantisation hypothesis resolve the ultraviolet catastrophe?",
+      "options": [
+        "He proposed that ultraviolet light cannot be emitted by hot objects",
+        "He proposed that oscillators emit/absorb energy only in discrete quanta of \\(hf\\); large (high-frequency) quanta are rarely available, so short-wavelength emission is suppressed and the curve peaks then falls",
+        "He proposed that the speed of light decreases at short wavelengths",
+        "He added a correction factor that made the classical infinity finite without changing the physics"
+      ],
+      "answer": 1,
+      "explanation": "Planck assumed energy is exchanged only in lumps of \\(E = hf\\). Short-wavelength radiation needs large quanta, which are rarely available at a given temperature, so high-frequency emission is suppressed rather than infinite — bending the curve down to match experiment."
+    },
+    {
+      "id": "m710-q09",
+      "q": "Why does the classical and experimental black-body curves disagreeing prove classical theory was wrong, beyond just 'it didn't match'?",
+      "options": [
+        "Because the experiment was repeated many times",
+        "Because the classical curve predicted infinite total emitted energy, which is physically impossible (it violates conservation of energy)",
+        "Because the classical curve was based on Newton's particle model",
+        "Because ultraviolet light had not yet been discovered"
+      ],
+      "answer": 1,
+      "explanation": "The decisive point is that infinite emitted intensity is impossible — no object can radiate infinite power. The classical prediction therefore violated conservation of energy, not just the data, so the theory had to be wrong."
+    },
+    {
+      "id": "m710-q10",
+      "q": "An object's temperature rises, increasing the average kinetic energy and widening the distribution of its particles' energies. Why does this make the object emit more, higher-frequency radiation?",
+      "options": [
+        "Because the particles become electrically charged only when hot",
+        "Because the charged particles accelerate as they vibrate and collide, and accelerating charges radiate — hotter means more energetic, higher-frequency accelerations",
+        "Because heat itself is a form of light that escapes the object",
+        "Because the particles slow down and emit their stored energy as light"
+      ],
+      "answer": 1,
+      "explanation": "Hot objects glow because their charged particles (electrons and ions) accelerate during vibrations and collisions, and accelerating charges radiate. Higher temperature gives more energetic, higher-frequency accelerations, so more total radiation at shorter peak wavelength."
+    }
+  ]
+}

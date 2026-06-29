@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "rutherford-q01",
+      "q": "In Thomson's 'plum pudding' model of the atom, how were positive charge and mass arranged?",
+      "options": [
+        "Concentrated in a tiny dense central nucleus",
+        "Spread out smoothly through the whole volume of the atom, with electrons embedded throughout",
+        "Located only on the outer surface of the atom",
+        "Carried entirely by the orbiting electrons"
+      ],
+      "answer": 1,
+      "explanation": "In the plum pudding (uniform sphere) model, the positive charge and mass are smeared diffusely through the whole atom, with tiny electrons dotted through it like plums in a pudding. There is nothing hard, dense or concentrated at the centre — which is why backscattering was not expected."
+    },
+    {
+      "id": "rutherford-q02",
+      "q": "What is an alpha particle, as used in the gold foil experiment?",
+      "options": [
+        "A high-energy electron",
+        "A helium nucleus: charge +2, mass ~4 atomic units, moving at high speed",
+        "A photon of gamma radiation",
+        "A single proton"
+      ],
+      "answer": 1,
+      "explanation": "An alpha particle is a helium nucleus — charge +2e, mass about 4 atomic mass units — emitted at roughly 1.6×10⁷ m/s (~5% of light speed). Being heavy, fast and positively charged makes it the ideal 'shell' for probing the atom's internal structure."
+    },
+    {
+      "id": "rutherford-q03",
+      "q": "Why did the experimenters expect virtually NO alpha particles to bounce backwards, based on the plum pudding model?",
+      "options": [
+        "Alpha particles are negatively charged and attracted forward",
+        "The diffuse positive charge could give only tiny nudges, so a heavy fast alpha particle should pass through nearly undeflected",
+        "Gold is transparent to alpha particles",
+        "The electrons would absorb all the alpha particles"
+      ],
+      "answer": 1,
+      "explanation": "In the plum pudding model the positive charge is spread thin, so it could only deflect a massive fast alpha particle by a tiny fraction of a degree. Reversing one entirely would need an absurd run of aligned nudges — effectively impossible. That is why Rutherford gave the 'look for backscatter' task to an undergraduate as a safe dead end."
+    },
+    {
+      "id": "rutherford-q04",
+      "q": "Roughly what fraction of alpha particles were deflected by more than 90° in the gold foil experiment?",
+      "options": [
+        "About 1 in 8",
+        "About 1 in 8,000",
+        "About half",
+        "Essentially all of them"
+      ],
+      "answer": 1,
+      "explanation": "Only about 1 in 8,000 alpha particles deflected by more than 90°; over 99.9% passed nearly straight through. This rarity is the key clue: the deflecting target must be extremely small, so most particles miss it entirely and sail through empty space."
+    },
+    {
+      "id": "rutherford-q05",
+      "q": "The observation that the vast majority of alpha particles passed straight through the foil with little deflection tells us that:",
+      "options": [
+        "The atom is mostly empty space",
+        "The positive charge is spread evenly through the atom",
+        "Alpha particles have no charge",
+        "Gold atoms are larger than other atoms"
+      ],
+      "answer": 0,
+      "explanation": "If almost every particle sails straight through, the atom must be mostly empty space, with the tiny dense nucleus being a rare target. The rare large-angle deflections then reveal that concentrated nucleus."
+    },
+    {
+      "id": "rutherford-q06",
+      "q": "What force is responsible for flinging an alpha particle back when it approaches a gold nucleus nearly head-on?",
+      "options": [
+        "The strong nuclear force attracting it",
+        "The electrostatic (Coulomb) repulsion between the positive alpha particle and the positive nucleus, growing rapidly as they get closer",
+        "Gravity between the two masses",
+        "Magnetic deflection from the nucleus"
+      ],
+      "answer": 1,
+      "explanation": "Both the alpha particle (+2) and the nucleus (+79 for gold) are positive, so they repel via the Coulomb force, which strengthens as the separation shrinks. A near head-on approach to the concentrated nuclear charge decelerates the alpha and flings it back — the 'shell bouncing off tissue paper'."
+    },
+    {
+      "id": "rutherford-q07",
+      "q": "In Rutherford's nuclear model, approximately how does the size of the nucleus compare to the size of the whole atom?",
+      "options": [
+        "About the same size",
+        "The nucleus is about 10 times smaller",
+        "The nucleus is at least about 10,000 times smaller",
+        "The nucleus is larger than the atom"
+      ],
+      "answer": 2,
+      "explanation": "The atomic radius is ~1.4×10⁻¹⁰ m while the nucleus is ~10⁻¹⁴ m or smaller, making the nucleus at least ~10,000 times smaller than the atom. If the atom were a sports stadium, the nucleus would be a marble at the centre — the rest is empty space."
+    },
+    {
+      "id": "rutherford-q08",
+      "q": "Why did Rutherford NOT immediately announce the nuclear model when the backscattering was first observed?",
+      "options": [
+        "He had already announced it years earlier",
+        "He spent roughly 18 months puzzling over the result, first trying to explain it as many small scattering events before realising it required one single violent close encounter",
+        "He did not trust Geiger and Marsden's counting",
+        "The Nobel committee forbade publication"
+      ],
+      "answer": 1,
+      "explanation": "Rutherford initially tried to explain the backscatter with the old idea of many small deflections adding up. Only after about 18 months did he reframe it as a single violent encounter with a tiny concentrated charge, leading to the nuclear model and his scattering formula in 1911."
+    },
+    {
+      "id": "rutherford-q09",
+      "q": "What serious problem did classical physics raise against Rutherford's planetary (nuclear) model?",
+      "options": [
+        "The nucleus would be too heavy to stay together",
+        "An orbiting electron is constantly accelerating, so by Maxwell's electromagnetism it should radiate energy, spiral inward and crash into the nucleus almost instantly",
+        "The electrons would repel each other and fly apart",
+        "Gold atoms could not contain a nucleus"
+      ],
+      "answer": 1,
+      "explanation": "An orbiting electron continually changes direction (accelerates), and classical electromagnetism says accelerating charges radiate energy. The electron should lose energy, spiral in and collapse into the nucleus in a fraction of a second — yet atoms are stable. Bohr's quantised energy levels (1913) resolved this."
+    },
+    {
+      "id": "rutherford-q10",
+      "q": "How did Niels Bohr (1913) rescue the nuclear atom from the radiation/collapse problem?",
+      "options": [
+        "He proposed the nucleus was negatively charged",
+        "He proposed electrons occupy only certain allowed energy levels and do not radiate while in them, emitting or absorbing light only when jumping between levels",
+        "He removed the electrons from the model entirely",
+        "He showed Maxwell's equations were wrong"
+      ],
+      "answer": 1,
+      "explanation": "Bohr grafted quantum ideas onto Rutherford's nucleus: electrons are allowed only specific, stable energy levels and do not radiate while in them. Energy is emitted or absorbed only on jumping between levels, with the photon energy equal to the level difference — which also explained hydrogen's spectral lines."
+    }
+  ]
+}

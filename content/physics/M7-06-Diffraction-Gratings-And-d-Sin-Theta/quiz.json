@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m706-q01",
+      "q": "In the equation \\( d\\sin\\theta = m\\lambda \\), what does the quantity \\( d\\sin\\theta \\) represent?",
+      "options": [
+        "The wavelength of the light",
+        "The path difference between light from two adjacent slits",
+        "The distance from the slits to the screen",
+        "The width of a single slit"
+      ],
+      "answer": 1,
+      "explanation": "The geometry gives the extra distance travelled by light from one slit compared with an adjacent slit as \\( d\\sin\\theta \\) — the path difference. Setting it equal to a whole number of wavelengths (\\( m\\lambda \\)) gives the condition for a bright fringe."
+    },
+    {
+      "id": "m706-q02",
+      "q": "In \\( d\\sin\\theta = m\\lambda \\), what is required of the order number \\( m \\) for a maximum (bright fringe)?",
+      "options": [
+        "It must be a whole number (integer)",
+        "It must be a half-integer",
+        "It can be any positive number",
+        "It must equal the slit separation"
+      ],
+      "answer": 0,
+      "explanation": "A maximum occurs only where a whole number of wavelengths fits into the path difference, so \\( m \\) must be an integer (0 for the central maximum, 1 for first order, etc.). A half-integer path difference gives a dark fringe instead."
+    },
+    {
+      "id": "m706-q03",
+      "q": "According to \\( d\\sin\\theta = m\\lambda \\), what happens to the angle of the fringes if the slit separation \\( d \\) is decreased?",
+      "options": [
+        "The angle decreases, so fringes move closer together",
+        "The angle increases, so fringes spread further apart",
+        "The angle is unchanged",
+        "The fringes disappear"
+      ],
+      "answer": 1,
+      "explanation": "Solving for \\( \\sin\\theta = m\\lambda/d \\), the separation \\( d \\) is in the denominator, so a smaller \\( d \\) gives a larger angle. A grating with more lines per millimetre has a smaller \\( d \\) and so a more spread-out pattern."
+    },
+    {
+      "id": "m706-q04",
+      "q": "When white light passes through a diffraction grating, which colour is deflected through the largest angle in a given order?",
+      "options": [
+        "Violet, because it has the shortest wavelength",
+        "Red, because it has the longest wavelength",
+        "Green, because it is in the middle of the spectrum",
+        "All colours are deflected equally"
+      ],
+      "answer": 1,
+      "explanation": "Since \\( \\sin\\theta = m\\lambda/d \\), a longer wavelength gives a larger angle, so red (~700 nm) is deflected most. This is the reverse of a prism, where violet is bent most because dispersion there is by refraction, not diffraction."
+    },
+    {
+      "id": "m706-q05",
+      "q": "Why does a diffraction grating produce sharper, narrower maxima than a double slit?",
+      "options": [
+        "Because it lets through more light",
+        "Because it has thousands of coherent sources instead of two, so off the exact maxima the many waves cancel almost completely",
+        "Because its slits are wider",
+        "Because it uses monochromatic light only"
+      ],
+      "answer": 1,
+      "explanation": "A grating has thousands of equally spaced coherent sources. Away from an exact maximum the many waves take every phase and cancel almost completely, leaving sharp bright lines only where all sources are in phase. This sharpness gives the resolution needed to separate spectral lines."
+    },
+    {
+      "id": "m706-q06",
+      "q": "A diffraction grating is labelled 5000 lines per centimetre. What is the slit separation \\( d \\)?",
+      "options": [
+        "\\( 5000\\ \\mathrm{m} \\)",
+        "\\( 2 \\times 10^{-4}\\ \\mathrm{m} \\)",
+        "\\( 2 \\times 10^{-6}\\ \\mathrm{m} \\)",
+        "\\( 5 \\times 10^{-3}\\ \\mathrm{m} \\)"
+      ],
+      "answer": 2,
+      "explanation": "Convert to lines per metre first: \\( 5000 \\times 100 = 500\\,000 \\) lines/m. Then \\( d = 1/N = 1/500\\,000 = 2 \\times 10^{-6}\\ \\mathrm{m} \\). Forgetting the ×100 conversion or the reciprocal are the two classic errors."
+    },
+    {
+      "id": "m706-q07",
+      "q": "Monochromatic light of wavelength 600 nm passes through a grating with \\( d = 2.5 \\times 10^{-6}\\ \\mathrm{m} \\). Find the angle of the second-order (\\( m = 2 \\)) maximum.",
+      "options": [
+        "About \\( 14° \\)",
+        "About \\( 29° \\)",
+        "About \\( 48° \\)",
+        "About \\( 7° \\)"
+      ],
+      "answer": 1,
+      "explanation": "\\( \\sin\\theta = m\\lambda/d = (2 \\times 600\\times10^{-9})/(2.5\\times10^{-6}) = 1.2\\times10^{-6}/2.5\\times10^{-6} = 0.48 \\), so \\( \\theta = \\sin^{-1}(0.48) \\approx 29° \\)."
+    },
+    {
+      "id": "m706-q08",
+      "q": "A grating throws a first-order maximum out to about 9°. To find the distance \\( x \\) from the centre to the spot on a screen distance \\( L \\) away, which relation should be used?",
+      "options": [
+        "\\( x = L\\sin\\theta \\), using the small-angle approximation",
+        "\\( x = L\\tan\\theta \\), because at this angle the small-angle approximation is no longer valid",
+        "\\( x = L\\cos\\theta \\)",
+        "\\( x = L/\\sin\\theta \\)"
+      ],
+      "answer": 1,
+      "explanation": "The small-angle approximation (\\( \\sin\\theta \\approx \\tan\\theta \\approx x/L \\)) only holds for a few degrees. At 9° (and the large angles gratings often give) you must use the true geometry \\( x = L\\tan\\theta \\), having found \\( \\theta \\) from \\( d\\sin\\theta = m\\lambda \\)."
+    },
+    {
+      "id": "m706-q09",
+      "q": "How does dispersion of white light by a diffraction grating differ from that by a glass prism?",
+      "options": [
+        "They produce identical spectra in the same order",
+        "In a grating red is deflected most; in a prism violet is bent most — the colour order is reversed",
+        "A prism deflects red most; a grating deflects violet most",
+        "Only a prism produces a spectrum; a grating produces none"
+      ],
+      "answer": 1,
+      "explanation": "A grating disperses by diffraction, so red (longest wavelength) is deflected most. A prism disperses by refraction, so violet/blue is bent most and red least. The colour order is reversed between the two devices."
+    },
+    {
+      "id": "m706-q10",
+      "q": "Does the formation of an interference pattern in this experiment prove that light is a transverse wave?",
+      "options": [
+        "Yes — interference can only occur for transverse waves",
+        "No — interference proves light is a wave, but proving it is transverse requires polarisation",
+        "Yes — the equation \\( d\\sin\\theta = m\\lambda \\) only applies to transverse waves",
+        "No — interference proves light is a particle"
+      ],
+      "answer": 1,
+      "explanation": "Interference and diffraction demonstrate the wave nature of light, but both transverse and longitudinal waves can interfere. Proving light is specifically transverse requires the separate evidence of polarisation (covered in the next episode)."
+    }
+  ]
+}

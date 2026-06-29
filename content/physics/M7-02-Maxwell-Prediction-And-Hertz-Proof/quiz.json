@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m702-q01",
+      "q": "What was James Clerk Maxwell's central theoretical achievement, published in 1864?",
+      "options": [
+        "He measured the speed of light using a rotating mirror",
+        "He unified electricity and magnetism into a single theory of the electromagnetic field",
+        "He produced and detected the first electromagnetic waves in a laboratory",
+        "He defined the speed of light as an exact constant"
+      ],
+      "answer": 1,
+      "explanation": "Maxwell unified electricity and magnetism — previously studied as separate phenomena — into one theory described by four equations. Measuring c (Fizeau/Foucault) and detecting EM waves (Hertz) were done by others; the 1983 definition came much later."
+    },
+    {
+      "id": "m702-q02",
+      "q": "Maxwell's theory gives the speed of an electromagnetic wave as:",
+      "options": [
+        "\\( c = \\sqrt{\\mu_0 \\varepsilon_0} \\)",
+        "\\( c = \\dfrac{1}{\\sqrt{\\mu_0 \\varepsilon_0}} \\)",
+        "\\( c = \\dfrac{\\mu_0}{\\varepsilon_0} \\)",
+        "\\( c = \\mu_0 \\varepsilon_0 \\)"
+      ],
+      "answer": 1,
+      "explanation": "The speed equals one over the square root of the permeability of free space times the permittivity of free space: \\( c = 1/\\sqrt{\\mu_0 \\varepsilon_0} \\). Note it is the reciprocal of the square root, not the square root itself."
+    },
+    {
+      "id": "m702-q03",
+      "q": "Why was Maxwell's predicted speed such powerful evidence that light is an electromagnetic wave?",
+      "options": [
+        "Because Maxwell deliberately tuned his constants to match the known speed of light",
+        "Because \\( \\mu_0 \\) and \\( \\varepsilon_0 \\) are measured in electric and magnetic experiments independent of light, yet their combination matched the known speed of light",
+        "Because Maxwell measured the speed of light directly and it agreed with theory",
+        "Because the prediction came after Hertz had already detected the waves"
+      ],
+      "answer": 1,
+      "explanation": "The permittivity and permeability are fixed by purely electric and magnetic experiments (capacitors, coils) that have nothing to do with light. Because the matching speed could not have been built in, the agreement is strong evidence that light is itself an electromagnetic wave. The key word is 'independent'."
+    },
+    {
+      "id": "m702-q04",
+      "q": "Calculate the speed of EM waves given \\( \\mu_0 = 1.26 \\times 10^{-6} \\) and \\( \\varepsilon_0 = 8.85 \\times 10^{-12} \\).",
+      "options": [
+        "\\( 3.0 \\times 10^{8}\\ \\mathrm{m\\,s^{-1}} \\)",
+        "\\( 3.3 \\times 10^{-9}\\ \\mathrm{m\\,s^{-1}} \\)",
+        "\\( 1.1 \\times 10^{-17}\\ \\mathrm{m\\,s^{-1}} \\)",
+        "\\( 9.0 \\times 10^{16}\\ \\mathrm{m\\,s^{-1}} \\)"
+      ],
+      "answer": 0,
+      "explanation": "Multiply: \\( (1.26\\times10^{-6})(8.85\\times10^{-12}) = 1.115\\times10^{-17} \\). Square root: \\( 3.34\\times10^{-9} \\). Reciprocal: \\( 1/(3.34\\times10^{-9}) = 3.0\\times10^{8}\\ \\mathrm{m\\,s^{-1}} \\)."
+    },
+    {
+      "id": "m702-q05",
+      "q": "Which two of Maxwell's four equations form the self-propagating 'leapfrog' that gives rise to a wave?",
+      "options": [
+        "The two Gauss's laws (for electricity and magnetism)",
+        "Faraday's law and the Ampère–Maxwell law",
+        "Gauss's law for electricity and Faraday's law",
+        "Gauss's law for magnetism and the Ampère–Maxwell law"
+      ],
+      "answer": 1,
+      "explanation": "Faraday's law (changing magnetism makes electricity) and the Ampère–Maxwell law (changing electricity makes magnetism) feed one another indefinitely with no charges or wires present, producing a self-propagating wave. The two Gauss's laws describe how fields relate to charges/monopoles."
+    },
+    {
+      "id": "m702-q06",
+      "q": "In Hertz's experiment, why is it significant that the receiver loop sparked even though it was connected to no power source?",
+      "options": [
+        "It proved the loop stored its own charge",
+        "It proved energy had crossed the room as an electromagnetic wave, inducing a current in the loop",
+        "It proved the induction coil was overheating",
+        "It proved the waves travelled faster than light"
+      ],
+      "answer": 1,
+      "explanation": "With no battery, the only way to spark the gap is to induce a current, which requires a changing magnetic field threading the loop (Faraday's law). That field arrived across empty space from the transmitter — so an EM wave carried energy across the room. 'No power source' is the heart of the proof."
+    },
+    {
+      "id": "m702-q07",
+      "q": "When Hertz rotated his receiver loop to test polarisation, what did he observe?",
+      "options": [
+        "Maximum spark when the loop was perpendicular to the transmitter, no spark when parallel",
+        "Maximum spark when the loop was parallel to the transmitter, no spark when perpendicular",
+        "The same spark at every orientation",
+        "A spark only at 45° to the transmitter"
+      ],
+      "answer": 1,
+      "explanation": "Parallel loop → maximum spark; perpendicular loop (90°) → no spark; in between → an intermediate spark. This is exactly how a polariser/analyser behave, proving the wave has a single plane of vibration and is therefore transverse."
+    },
+    {
+      "id": "m702-q08",
+      "q": "In the microwave standing-wave method for measuring c, how is the wavelength found from the node positions?",
+      "options": [
+        "The wavelength equals the distance between adjacent nodes",
+        "The wavelength equals twice the distance between adjacent nodes",
+        "The wavelength equals half the distance between adjacent nodes",
+        "The wavelength equals four times the distance between adjacent nodes"
+      ],
+      "answer": 1,
+      "explanation": "Adjacent nodes in a standing wave are half a wavelength apart, so \\( \\lambda = 2 \\times (\\text{node spacing}) \\). Forgetting this factor of two halves the calculated speed, giving \\( 1.5\\times10^{8} \\) instead of \\( 3.0\\times10^{8}\\ \\mathrm{m\\,s^{-1}} \\)."
+    },
+    {
+      "id": "m702-q09",
+      "q": "A microwave transmitter at \\( 9.4 \\times 10^{9}\\ \\mathrm{Hz} \\) is aimed at a reflector; adjacent nodes are 16 mm apart. What is the measured speed of the waves?",
+      "options": [
+        "\\( 1.5 \\times 10^{8}\\ \\mathrm{m\\,s^{-1}} \\)",
+        "\\( 3.0 \\times 10^{8}\\ \\mathrm{m\\,s^{-1}} \\)",
+        "\\( 6.0 \\times 10^{8}\\ \\mathrm{m\\,s^{-1}} \\)",
+        "\\( 1.5 \\times 10^{6}\\ \\mathrm{m\\,s^{-1}} \\)"
+      ],
+      "answer": 1,
+      "explanation": "Wavelength = 2 × 16 mm = 32 mm = \\( 3.2\\times10^{-2}\\ \\mathrm{m} \\). Speed = \\( f\\lambda = (9.4\\times10^{9})(3.2\\times10^{-2}) = 3.0\\times10^{8}\\ \\mathrm{m\\,s^{-1}} \\). Answer A is the trap from forgetting the factor of two."
+    },
+    {
+      "id": "m702-q10",
+      "q": "A textbook claims modern experiments let scientists measure the speed of light more precisely than ever. Why is this incorrect?",
+      "options": [
+        "c is measured using only the caesium atomic clock, which has not improved",
+        "Since 1983 c is defined to be exactly \\( 299\\,792\\,458\\ \\mathrm{m\\,s^{-1}} \\), so it has no uncertainty and is no longer measured; better experiments refine the metre instead",
+        "c can only be measured in a vacuum, which is impossible to create on Earth",
+        "c changes slightly over time, so any measurement is quickly out of date"
+      ],
+      "answer": 1,
+      "explanation": "Since 1983 the speed of light is a defined exact value, so it has no measurement uncertainty and cannot be measured more precisely. The metre is now defined from c and the caesium-based second, so improved experiments refine the metre, not c."
+    }
+  ]
+}

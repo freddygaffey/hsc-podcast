@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m601-q01",
+      "q": "What is the electric field strength of a uniform field between two parallel plates 200 V apart and separated by 4.0 cm?",
+      "options": [
+        "\\(50\\ \\mathrm{V\\,m^{-1}}\\)",
+        "\\(800\\ \\mathrm{V\\,m^{-1}}\\)",
+        "\\(5000\\ \\mathrm{V\\,m^{-1}}\\)",
+        "\\(8.0\\ \\mathrm{V\\,m^{-1}}\\)"
+      ],
+      "answer": 2,
+      "explanation": "For a uniform field \\(E = V/d\\). Converting 4.0 cm to 0.04 m, \\(E = 200/0.04 = 5000\\ \\mathrm{V\\,m^{-1}}\\). The common error is forgetting to convert centimetres to metres (giving 50) or dividing the wrong way."
+    },
+    {
+      "id": "m601-q02",
+      "q": "An electron and a proton are placed in the same uniform electric field. How do the directions of the electrostatic forces on them compare?",
+      "options": [
+        "Both are in the direction of the field, toward the negative plate",
+        "Both are opposite to the field, toward the positive plate",
+        "They are in opposite directions, because the charges have opposite signs",
+        "They are in the same direction, because the field is the same for both"
+      ],
+      "answer": 2,
+      "explanation": "The direction of \\(F = qE\\) depends on the sign of the charge. The positive proton is pushed along the field (toward the negative plate) and the negative electron opposite to the field (toward the positive plate), so the forces point in opposite directions. Saying \"the particle moves toward the positive plate\" is only true for negative charges."
+    },
+    {
+      "id": "m601-q03",
+      "q": "Why is the path of a charge fired at right angles into a uniform electric field a parabola?",
+      "options": [
+        "The constant force makes the speed increase uniformly in a straight line",
+        "The field continuously reorients to stay perpendicular to the velocity",
+        "Constant velocity across the field combines with uniform acceleration along the field",
+        "The force depends on the velocity, bending the path into a closed curve"
+      ],
+      "answer": 2,
+      "explanation": "Across the field there is no force, so that velocity component is constant; along the field the constant force gives uniform acceleration. Combining constant velocity in one direction with uniform acceleration in the perpendicular direction traces a parabola — exactly like projectile motion. Option B describes the magnetic case (a circle), not the electric one."
+    },
+    {
+      "id": "m601-q04",
+      "q": "A charged particle is released from rest in a uniform electric field. What path does it follow?",
+      "options": [
+        "A circle",
+        "A parabola",
+        "A straight line, accelerating uniformly along the field",
+        "A helix"
+      ],
+      "answer": 2,
+      "explanation": "With no initial velocity there is no component across the field, so the particle simply accelerates uniformly along the field lines in a straight line. A parabola only results when there is an initial velocity component across the field."
+    },
+    {
+      "id": "m601-q05",
+      "q": "The two units for electric field strength, \\(\\mathrm{V\\,m^{-1}}\\) and \\(\\mathrm{N\\,C^{-1}}\\), are:",
+      "options": [
+        "Identical — one volt per metre equals one newton per coulomb",
+        "Different quantities that must be converted between",
+        "The same only for uniform fields",
+        "Related by a factor of the elementary charge"
+      ],
+      "answer": 0,
+      "explanation": "The field can be viewed as force per unit charge (\\(\\mathrm{N\\,C^{-1}}\\)) or as how rapidly potential drops with distance (\\(\\mathrm{V\\,m^{-1}}\\)). These are two descriptions of one physical thing, and the algebra \\(qEd = qV\\) forces the units to be equal. They are never separate quantities."
+    },
+    {
+      "id": "m601-q06",
+      "q": "An electron starts from rest and is accelerated through a potential difference of 100 V. What kinetic energy does it gain? (\\(e = 1.6\\times10^{-19}\\ \\mathrm{C}\\))",
+      "options": [
+        "\\(1.6\\times10^{-21}\\ \\mathrm{J}\\)",
+        "\\(1.6\\times10^{-17}\\ \\mathrm{J}\\)",
+        "\\(1.6\\times10^{-19}\\ \\mathrm{J}\\)",
+        "\\(100\\ \\mathrm{J}\\)"
+      ],
+      "answer": 1,
+      "explanation": "The work done by the field is \\(W = qV = (1.6\\times10^{-19})(100) = 1.6\\times10^{-17}\\ \\mathrm{J}\\), which becomes the kinetic energy. The volt is joules per coulomb, so coulombs cancel to leave joules."
+    },
+    {
+      "id": "m601-q07",
+      "q": "Using \\(qV = \\tfrac{1}{2}mv^2\\), what is the final speed of an electron accelerated from rest through 100 V? (\\(m_e = 9.1\\times10^{-31}\\ \\mathrm{kg}\\), KE \\(= 1.6\\times10^{-17}\\ \\mathrm{J}\\))",
+      "options": [
+        "\\(\\approx 5.9\\times10^{6}\\ \\mathrm{m\\,s^{-1}}\\)",
+        "\\(\\approx 3.5\\times10^{13}\\ \\mathrm{m\\,s^{-1}}\\)",
+        "\\(\\approx 1.8\\times10^{4}\\ \\mathrm{m\\,s^{-1}}\\)",
+        "\\(\\approx 3.0\\times10^{8}\\ \\mathrm{m\\,s^{-1}}\\)"
+      ],
+      "answer": 0,
+      "explanation": "\\(v = \\sqrt{2 \\times 1.6\\times10^{-17} / 9.1\\times10^{-31}} = \\sqrt{3.5\\times10^{13}} \\approx 5.9\\times10^{6}\\ \\mathrm{m\\,s^{-1}}\\). Option B is \\(v^2\\), not \\(v\\). This is a few million metres per second — about 2% of \\(c\\) — so classical mechanics is fine."
+    },
+    {
+      "id": "m601-q08",
+      "q": "A proton is fired horizontally into a uniform field directed downward. Why does its horizontal velocity stay constant?",
+      "options": [
+        "Because the proton is too heavy to be deflected horizontally",
+        "Because the field does no work on the proton",
+        "Because the force is purely vertical, so there is no horizontal force component",
+        "Because the horizontal and vertical motions cancel each other"
+      ],
+      "answer": 2,
+      "explanation": "The field points straight down, so the electrostatic force is purely vertical. With no horizontal force component, Newton's first law keeps the horizontal velocity constant. The acceleration lives entirely in the direction of the field."
+    },
+    {
+      "id": "m601-q09",
+      "q": "In a worked example a proton is fired into plates with \\(V = 2.56\\ \\mathrm{V}\\) separated by 0.05 m. What is the field strength?",
+      "options": [
+        "\\(0.128\\ \\mathrm{V\\,m^{-1}}\\)",
+        "\\(12.8\\ \\mathrm{V\\,m^{-1}}\\)",
+        "\\(51.2\\ \\mathrm{V\\,m^{-1}}\\)",
+        "\\(128\\ \\mathrm{V\\,m^{-1}}\\)"
+      ],
+      "answer": 2,
+      "explanation": "\\(E = V/d = 2.56 / 0.05 = 51.2\\ \\mathrm{V\\,m^{-1}}\\), directed downward from the positive top plate to the negative bottom plate."
+    },
+    {
+      "id": "m601-q10",
+      "q": "In the proton-trajectory example, why is gravity justifiably ignored?",
+      "options": [
+        "Gravity does not act on charged particles",
+        "The electric force is about \\(10^{8}\\) times larger than the proton's weight",
+        "The proton moves too fast for gravity to act",
+        "Gravity is cancelled by the magnetic field"
+      ],
+      "answer": 1,
+      "explanation": "The electric force on the proton is about \\(8\\times10^{-18}\\ \\mathrm{N}\\), while its weight \\(m_pg\\) is around \\(10^{-26}\\ \\mathrm{N}\\) — roughly \\(10^{8}\\) times smaller. Ignoring gravity here is justified, not lazy, but it should only be dropped when it is clearly negligible or the question allows it."
+    }
+  ]
+}

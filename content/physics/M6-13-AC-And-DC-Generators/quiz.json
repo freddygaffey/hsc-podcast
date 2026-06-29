@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m613-q01",
+      "q": "What energy transformation does a generator perform?",
+      "options": [
+        "Electrical energy into mechanical (kinetic) energy",
+        "Mechanical (kinetic) energy into electrical energy",
+        "Chemical energy into electrical energy",
+        "Electrical energy into heat energy"
+      ],
+      "answer": 1,
+      "explanation": "A generator turns mechanical (kinetic) energy — from a turbine, crank, or falling water — into electrical energy. This is the exact reverse of a motor, which takes electrical energy in and gives mechanical energy out. The same hardware can do both."
+    },
+    {
+      "id": "m613-q02",
+      "q": "In a generator, which physical law gives the magnitude of the induced EMF as the coil spins?",
+      "options": [
+        "Faraday's law: the EMF equals N times the rate of change of flux",
+        "Lenz's law: the EMF equals the flux times the area",
+        "Ohm's law: the EMF equals current times resistance",
+        "The motor effect: the EMF equals BIL"
+      ],
+      "answer": 0,
+      "explanation": "The spinning coil's changing flux induces an EMF by Faraday's law, \\( \\varepsilon = -N\\Delta\\Phi/\\Delta t \\). Lenz's law (the minus sign) gives only the direction, not the magnitude."
+    },
+    {
+      "id": "m613-q03",
+      "q": "At which instant is the EMF of a generator at its maximum?",
+      "options": [
+        "When the coil's plane is perpendicular to the field (flux at maximum)",
+        "When the coil's plane is parallel to the field (flux instantaneously zero but changing fastest)",
+        "When the coil is momentarily at rest",
+        "When the flux through the coil is at its maximum value"
+      ],
+      "answer": 1,
+      "explanation": "EMF depends on the RATE of change of flux, not the flux. When the coil plane is parallel to the field the flux is zero, but the coil sides are cutting field lines fastest — maximum rate of change, so maximum EMF. This 'max EMF at zero flux' is the most-missed mark in the topic."
+    },
+    {
+      "id": "m613-q04",
+      "q": "When the coil's plane is perpendicular to the field, the flux is at its maximum. What is the EMF at that instant?",
+      "options": [
+        "Maximum, because the flux is maximum",
+        "Zero, because the flux is momentarily not changing",
+        "Half of its peak value",
+        "Negative and maximum"
+      ],
+      "answer": 1,
+      "explanation": "At maximum flux the flux-vs-time graph is at a turning point — its slope (rate of change) is momentarily zero, so the EMF is zero. The coil sides are sliding along the field lines, not cutting them. Max flux gives zero EMF; the two graphs are 90° out of phase."
+    },
+    {
+      "id": "m613-q05",
+      "q": "What is the ONLY structural difference between a simple AC generator and a simple DC generator?",
+      "options": [
+        "The AC generator has more coils than the DC generator",
+        "The device connecting the rotating coil to the external circuit: slip rings (AC) versus a split-ring commutator (DC)",
+        "The AC generator uses permanent magnets and the DC generator uses electromagnets",
+        "The coil spins in opposite directions"
+      ],
+      "answer": 1,
+      "explanation": "The coil, rotation, and induced sinusoidal EMF are identical in both. The only difference is the connector: continuous slip rings keep the connection fixed (giving AC), while a split-ring commutator reverses the external connection each half-turn (giving DC)."
+    },
+    {
+      "id": "m613-q06",
+      "q": "What does the split-ring commutator in a DC generator actually do?",
+      "options": [
+        "It reverses the EMF induced inside the coil so it stays positive",
+        "It reverses the connection to the external circuit each half-revolution, keeping the output current unidirectional",
+        "It blocks the magnetic flux during the negative half-cycle",
+        "It smooths the output into a perfectly flat DC line"
+      ],
+      "answer": 1,
+      "explanation": "The coil's internal EMF is always the same sine wave (positive and negative). The commutator reverses the EXTERNAL connection at the zero-EMF instant, so the output current stays one-directional. Saying it 'reverses the EMF in the coil' is wrong and loses a mark."
+    },
+    {
+      "id": "m613-q07",
+      "q": "What is the shape of the output from a single-coil DC generator?",
+      "options": [
+        "A perfectly flat, steady line like a battery",
+        "A full sine wave swinging positive and negative",
+        "Pulsating DC: positive humps that rise from zero to maximum and back, twice per revolution, never negative",
+        "A square wave alternating between two fixed values"
+      ],
+      "answer": 2,
+      "explanation": "A single-coil DC generator gives pulsating (rectified) DC — the negative halves of the sine wave are flipped positive, producing two positive humps per revolution that drop to zero between them. It is unidirectional but never flat. Drawing a flat line is a classic error."
+    },
+    {
+      "id": "m613-q08",
+      "q": "A generator coil has \\( N = 200 \\) turns, area \\( A = 0.075\\,\\mathrm{m^2} \\), in a field \\( B = 0.66\\,\\mathrm{T} \\), spinning at \\( f = 50\\,\\mathrm{Hz} \\). Using \\( \\varepsilon_{\\max} = NBA\\omega \\) with \\( \\omega = 2\\pi f \\), the peak EMF is closest to:",
+      "options": [
+        "\\( 9.9\\,\\mathrm{V} \\)",
+        "\\( 310\\,\\mathrm{V} \\)",
+        "\\( 3100\\,\\mathrm{V} \\)",
+        "\\( 31\\,000\\,\\mathrm{V} \\)"
+      ],
+      "answer": 2,
+      "explanation": "\\( \\omega = 2\\pi(50) = 314\\,\\mathrm{rad\\,s^{-1}} \\). \\( \\varepsilon_{\\max} = 200 \\times 0.66 \\times 0.075 \\times 314 = 9.9 \\times 314 \\approx 3100\\,\\mathrm{V} \\). Option A is just \\( NBA \\) without \\( \\omega \\)."
+    },
+    {
+      "id": "m613-q09",
+      "q": "Why must the slip rings of an AC generator (not a commutator) be used to produce a true alternating output?",
+      "options": [
+        "Slip rings spin faster than a commutator",
+        "Each slip ring stays permanently connected to the same coil end, so the external connection never reverses and the output follows the coil's full sine wave",
+        "Slip rings block half of the current to make it alternate",
+        "Slip rings reverse the coil's EMF twice per revolution"
+      ],
+      "answer": 1,
+      "explanation": "Continuous slip rings keep each coil end wired to the same terminal forever, so the connection never swaps. When the coil's sinusoidal EMF reverses each half-revolution, the output reverses too — a genuine alternating current. A commutator would instead flip the connection to prevent reversal."
+    },
+    {
+      "id": "m613-q10",
+      "q": "In a real large power-station generator, the coils are kept stationary and the magnet is spun inside them, rather than the simple-model arrangement of spinning the coil. Why?",
+      "options": [
+        "It produces a different kind of current that cannot be made any other way",
+        "The output coils carry enormous currents, which you do not want to drag through sliding brushes and slip rings",
+        "Spinning a magnet generates more energy than spinning a coil",
+        "Stationary coils eliminate the need for a magnetic field"
+      ],
+      "answer": 1,
+      "explanation": "The physics depends only on relative motion between coil and field, so either can spin. Engineering favours keeping the high-current output coils fixed, because passing tens of thousands of amps through sliding brushes would burn them out; only the modest magnet current goes through slip rings."
+    }
+  ]
+}

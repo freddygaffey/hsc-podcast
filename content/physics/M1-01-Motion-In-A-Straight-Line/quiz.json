@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m101-q01",
+      "q": "Identify which of the following is a vector quantity.",
+      "options": [
+        "Speed",
+        "Distance",
+        "Velocity",
+        "Time"
+      ],
+      "answer": 2,
+      "explanation": "Velocity is a vector because it has both magnitude and direction; speed, distance and time are scalars (magnitude only). Remember the vector trio of motion is D-V-A: displacement, velocity, acceleration. Speed is the tempting wrong answer because it sounds like velocity, but it carries no direction."
+    },
+    {
+      "id": "m101-q02",
+      "q": "A car travels 600 m north, then 200 m south. State its displacement.",
+      "options": [
+        "400 m south",
+        "0 m",
+        "800 m",
+        "400 m north"
+      ],
+      "answer": 3,
+      "explanation": "Taking north as positive, displacement is the net change in position: +600 − 200 = +400 m, i.e. 400 m north. The value 800 m is tempting, but that is the total distance (the scalar path length), not the displacement. Displacement is a vector, so the direction must be stated."
+    },
+    {
+      "id": "m101-q03",
+      "q": "A runner completes one full lap of a 400 m circular track in 80 s. Calculate the runner's average velocity.",
+      "options": [
+        "0 m s⁻¹",
+        "5 m s⁻¹ in the direction of running",
+        "5 m s⁻¹",
+        "400 m s⁻¹"
+      ],
+      "answer": 0,
+      "explanation": "Average velocity = total displacement / total time. For a complete lap the runner finishes where they started, so the displacement is zero, giving an average velocity of 0 m s⁻¹. The value 5 m s⁻¹ is the average speed (distance 400 m / 80 s), which uses distance rather than displacement."
+    },
+    {
+      "id": "m101-q04",
+      "q": "A cyclist travels 200 m east in 20 s, then 80 m west in 10 s. Calculate the average velocity for the whole trip.",
+      "options": [
+        "9.3 m s⁻¹ east",
+        "4.0 m s⁻¹ west",
+        "4.0 m s⁻¹ east",
+        "0 m s⁻¹"
+      ],
+      "answer": 2,
+      "explanation": "Taking east as positive, displacement = +200 − 80 = +120 m east, over a total time of 30 s, giving 120 / 30 = 4.0 m s⁻¹ east. The value 9.3 m s⁻¹ is the average speed (total distance 280 m / 30 s), which differs because the cyclist doubled back, so distance exceeds the magnitude of displacement."
+    },
+    {
+      "id": "m101-q05",
+      "q": "Explain why the average speed of a journey can be greater than the magnitude of the average velocity.",
+      "options": [
+        "Because speed includes direction and velocity does not",
+        "Because velocity is always larger than speed",
+        "Because average speed and average velocity are always equal",
+        "Because when the path curves or reverses, the distance travelled exceeds the magnitude of the displacement"
+      ],
+      "answer": 3,
+      "explanation": "Average speed uses total distance while average velocity uses displacement; whenever the path bends or reverses, distance is greater than the magnitude of displacement, so the average speed exceeds the magnitude of the average velocity. They are equal only for straight-line motion that does not reverse. The claim that speed carries direction reverses the definitions — it is velocity that has direction."
+    },
+    {
+      "id": "m101-q06",
+      "q": "Distinguish between average velocity and instantaneous velocity.",
+      "options": [
+        "Average velocity is the velocity at a single instant; instantaneous velocity is measured over an interval",
+        "Average velocity is a scalar and instantaneous velocity is a vector",
+        "Average velocity is the total displacement divided by the total time over an interval; instantaneous velocity is the velocity at a single instant",
+        "They are identical for all motion"
+      ],
+      "answer": 2,
+      "explanation": "Average velocity summarises a whole interval (total displacement ÷ total time), whereas instantaneous velocity is the value at one particular instant, such as a speedometer reading with its direction. The first option simply swaps the two definitions. Both are vectors, so the scalar/vector option is also wrong."
+    },
+    {
+      "id": "m101-q07",
+      "q": "Identify the correct definition of acceleration.",
+      "options": [
+        "The rate of change of velocity",
+        "The rate of change of displacement",
+        "The rate of change of distance",
+        "Displacement divided by time"
+      ],
+      "answer": 0,
+      "explanation": "Acceleration is the rate of change of velocity, equal to the change in velocity divided by the time taken, and it is a vector. The tempting wrong answer is 'rate of change of displacement' — but that defines velocity, not acceleration. Its unit is metres per second per second (m s⁻²)."
+    },
+    {
+      "id": "m101-q08",
+      "q": "A car moving east slows from 20 m s⁻¹ to 12 m s⁻¹ over 4.0 s. Calculate its acceleration (take east as positive).",
+      "options": [
+        "+2.0 m s⁻²",
+        "−8.0 m s⁻²",
+        "+8.0 m s⁻²",
+        "−2.0 m s⁻²"
+      ],
+      "answer": 3,
+      "explanation": "Acceleration = (v − u) / t = (12 − 20) / 4.0 = −8 / 4.0 = −2.0 m s⁻². The sign is negative because the car is slowing while moving in the positive (east) direction. The value −8.0 m s⁻² is the change in velocity alone — you must divide by the time."
+    },
+    {
+      "id": "m101-q09",
+      "q": "A ball is moving west (the negative direction) and has a negative acceleration. Determine what is happening to the ball's speed.",
+      "options": [
+        "It is speeding up",
+        "It is slowing down",
+        "It is at rest",
+        "It is reversing to move east"
+      ],
+      "answer": 0,
+      "explanation": "The acceleration is negative (west) and the velocity is also negative (west), so the acceleration points in the same direction as the motion, which means the ball speeds up. The trap is assuming any negative acceleration means slowing down — the sign of acceleration is a direction, not automatically 'braking'. Whether an object speeds up or slows down depends on the direction of its velocity relative to the acceleration."
+    },
+    {
+      "id": "m101-q10",
+      "q": "Explain why it is essential to choose and state a positive direction before solving a one-dimensional motion problem.",
+      "options": [
+        "So that every answer comes out positive",
+        "So that vector quantities can be treated as consistently signed numbers, preventing sign errors",
+        "Because distance must always be given a direction",
+        "It is not necessary; direction can be ignored in one dimension"
+      ],
+      "answer": 1,
+      "explanation": "In one dimension a vector has only two possible directions, so a chosen positive direction lets displacement, velocity and acceleration be handled as signed numbers, and staying consistent avoids the most common source of error. Negative answers are valid and meaningful (they indicate the negative direction), so the goal is not to make answers positive. Distance is a scalar and never carries a direction."
+    }
+  ]
+}

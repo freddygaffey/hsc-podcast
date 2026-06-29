@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "leogeo-q01",
+      "q": "Newton's cannonball thought experiment shows that an orbit is best understood as:",
+      "options": [
+        "An object held up against gravity by a balancing outward force",
+        "An object continuously falling toward the Earth while moving sideways so fast that the curved Earth keeps falling away beneath it",
+        "An object in a region where gravity has switched off",
+        "An object pushed outward by centrifugal force"
+      ],
+      "answer": 1,
+      "explanation": "Fired fast enough horizontally, the cannonball falls toward the Earth but the round surface curves away by the same amount, so it never lands — it falls around the Earth. An orbiting satellite is in continuous free fall."
+    },
+    {
+      "id": "leogeo-q02",
+      "q": "Why are astronauts on the ISS (~400 km up) weightless, even though gravity there is still ~90% of its surface value?",
+      "options": [
+        "Because gravity is nearly zero at that altitude",
+        "Because they and their spacecraft are all in free fall together, with no supporting force pushing up from below",
+        "Because the Earth's magnetic field cancels gravity",
+        "Because they move faster than the speed of light"
+      ],
+      "answer": 1,
+      "explanation": "Weightlessness is not the absence of gravity. At ISS altitude \\(g\\) is still ~8.7 N/kg. The astronauts feel weightless because they are falling around the Earth with their craft, experiencing only gravity with no normal force underneath them."
+    },
+    {
+      "id": "leogeo-q03",
+      "q": "Setting gravitational force equal to centripetal force gives the orbital speed of a satellite as:",
+      "options": [
+        "\\(v = \\dfrac{GM}{r}\\)",
+        "\\(v = \\sqrt{\\dfrac{GM}{r}}\\)",
+        "\\(v = \\sqrt{GMr}\\)",
+        "\\(v = \\dfrac{GMm}{r^2}\\)"
+      ],
+      "answer": 1,
+      "explanation": "Equating \\(GMm/r^2 = mv^2/r\\), the satellite mass cancels and rearranging gives \\(v = \\sqrt{GM/r}\\). The orbital speed depends only on the central mass and the orbital radius, not on the satellite's mass."
+    },
+    {
+      "id": "leogeo-q04",
+      "q": "From the orbital-speed equation, how does orbital speed depend on the radius of the orbit?",
+      "options": [
+        "Higher orbits are faster",
+        "Speed is independent of radius",
+        "Higher (larger-radius) orbits are slower, because \\(r\\) is in the denominator under a square root",
+        "Speed increases as the square of the radius"
+      ],
+      "answer": 2,
+      "explanation": "Since \\(v = \\sqrt{GM/r}\\), a larger \\(r\\) gives a smaller \\(v\\). A low-orbit satellite must travel very fast (~7.7 km/s for the ISS) while a geostationary satellite moves slowly (~3.07 km/s)."
+    },
+    {
+      "id": "leogeo-q05",
+      "q": "Kepler's third law, derived from Newton's gravitation, states that:",
+      "options": [
+        "\\(T \\propto r\\)",
+        "\\(T^2 \\propto r^3\\), with the constant fixed by the central mass alone",
+        "\\(T^3 \\propto r^2\\)",
+        "\\(T^2 \\propto 1/r^3\\)"
+      ],
+      "answer": 1,
+      "explanation": "Combining \\(v = \\sqrt{GM/r}\\) with \\(v = 2\\pi r/T\\) gives \\(r^3/T^2 = GM/4\\pi^2\\), so \\(T^2 \\propto r^3\\). Fixing the period to one (sidereal) day and solving for \\(r\\) yields the unique geostationary altitude."
+    },
+    {
+      "id": "leogeo-q06",
+      "q": "What is the approximate altitude of a geostationary orbit above the Earth's surface?",
+      "options": [
+        "About 400 km",
+        "About 20 200 km",
+        "About 35 786 km",
+        "About 384 000 km"
+      ],
+      "answer": 2,
+      "explanation": "Solving Kepler's law for a one-sidereal-day period gives an orbital radius of ~42 164 km from Earth's centre; subtracting Earth's radius (~6378 km) leaves ~35 786 km altitude — the figure Arthur Clarke calculated in 1945."
+    },
+    {
+      "id": "leogeo-q07",
+      "q": "What is the difference between a geostationary and a geosynchronous orbit?",
+      "options": [
+        "They are identical in every way",
+        "A geostationary orbit has the right period but a tilted path; a geosynchronous one is equatorial",
+        "Both have a one-day period, but a geostationary orbit must lie over the equator with zero tilt and a circular path, while a tilted geosynchronous one traces a figure-eight in the sky",
+        "A geosynchronous orbit is much lower than a geostationary one"
+      ],
+      "answer": 2,
+      "explanation": "Both share a one-day period. A geostationary orbit is the special case with zero inclination (equatorial) and zero eccentricity, so it appears motionless. A tilted geosynchronous orbit (like Syncom 2) traces a daily figure-eight. All geostationary orbits are geosynchronous, but not vice versa."
+    },
+    {
+      "id": "leogeo-q08",
+      "q": "GPS positioning uses trilateration. Why are a minimum of FOUR satellites needed for a fix, not three?",
+      "options": [
+        "To average out random noise",
+        "Three give the position, but the receiver's cheap clock has an unknown error; the fourth satellite provides the extra equation needed to solve for that clock error too",
+        "Because one satellite is always broken",
+        "To measure the angles between satellites"
+      ],
+      "answer": 1,
+      "explanation": "Each satellite distance gives one equation. Three could fix the three spatial coordinates, but the receiver's clock error is a fourth unknown that corrupts all the distances. A fourth satellite gives the fourth equation, solving for position and clock error simultaneously."
+    },
+    {
+      "id": "leogeo-q09",
+      "q": "GPS satellite clocks experience two relativistic effects. What is the net result and why?",
+      "options": [
+        "They run slow overall, because motion (special relativity) dominates",
+        "They run fast overall (~38 microseconds/day), because the gravitational speed-up (weaker gravity at altitude) exceeds the motional slow-down",
+        "The two effects cancel exactly, so no correction is needed",
+        "They keep perfect time with ground clocks"
+      ],
+      "answer": 1,
+      "explanation": "Special relativity slows the moving clock (~7.2 microseconds/day lost); general relativity speeds the higher clock in weaker gravity (~45.9 microseconds/day gained). The gravitational effect dominates, giving a net ~38 microseconds/day fast — which, times the speed of light, is ~11.5 km of position error per day if uncorrected."
+    },
+    {
+      "id": "leogeo-q10",
+      "q": "Why must a satellite ADD energy to move to a higher orbit, even though it ends up moving more slowly?",
+      "options": [
+        "Higher orbits have more negative total energy",
+        "The total mechanical energy \\(E = -GMm/2r\\) becomes less negative (greater) at larger \\(r\\), so energy is added; most of it goes into gravitational potential energy while the orbital speed decreases",
+        "Higher orbits require no energy change",
+        "The satellite loses potential energy as it rises"
+      ],
+      "answer": 1,
+      "explanation": "Total orbital energy is \\(E = -GMm/2r\\); a larger \\(r\\) makes \\(E\\) less negative, so energy must be added. Although the higher orbit is slower (lower kinetic energy), the gain in gravitational potential energy more than offsets it, requiring a net energy input."
+    }
+  ]
+}

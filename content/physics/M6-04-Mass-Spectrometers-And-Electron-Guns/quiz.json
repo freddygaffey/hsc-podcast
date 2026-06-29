@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m604-q01",
+      "q": "What is the process by which electrons are released from the hot cathode of an electron gun?",
+      "options": [
+        "Photoelectric emission",
+        "Thermionic emission",
+        "Field emission",
+        "Radioactive decay"
+      ],
+      "answer": 1,
+      "explanation": "Heating the metal filament gives surface electrons enough thermal energy to escape — this is thermionic emission (\"thermal\" + \"emission\"). The marker wants the correct term, not just \"electrons come off when it's hot\"."
+    },
+    {
+      "id": "m604-q02",
+      "q": "In an electron gun the exit speed of the electrons is set by which quantity?",
+      "options": [
+        "The strength of any magnetic field present",
+        "The temperature of the cathode",
+        "The accelerating voltage \\(V\\)",
+        "The diameter of the hole in the anode"
+      ],
+      "answer": 2,
+      "explanation": "From \\(qV = \\tfrac{1}{2}mv^2\\), \\(v = \\sqrt{2qV/m}\\). Since \\(q\\) and \\(m\\) are fixed constants of the electron, the only controllable quantity is \\(V\\). Turning up the voltage gives faster electrons — a known, tunable speed."
+    },
+    {
+      "id": "m604-q03",
+      "q": "Why can only the electric field — not a magnetic field — accelerate the electrons in an electron gun?",
+      "options": [
+        "Magnetic fields are too weak in a gun",
+        "Only the electric field does work on the charge; the magnetic force is perpendicular to velocity and does no work",
+        "Magnetic fields only act on positive charges",
+        "The electrons move too slowly for a magnetic field to act"
+      ],
+      "answer": 1,
+      "explanation": "Only an electric field does work and so changes speed. The magnetic force is always perpendicular to the velocity, does no work, and can only steer or focus a beam — it can never be what gives the electrons their speed. This is the single most-penalised error in the topic."
+    },
+    {
+      "id": "m604-q04",
+      "q": "An electron is accelerated from rest through 100 V. What is its approximate exit speed? (\\(m_e = 9.1\\times10^{-31}\\ \\mathrm{kg}\\), \\(e = 1.6\\times10^{-19}\\ \\mathrm{C}\\))",
+      "options": [
+        "\\(5.9\\times10^{6}\\ \\mathrm{m\\,s^{-1}}\\)",
+        "\\(5.9\\times10^{4}\\ \\mathrm{m\\,s^{-1}}\\)",
+        "\\(3.0\\times10^{8}\\ \\mathrm{m\\,s^{-1}}\\)",
+        "\\(1.6\\times10^{-17}\\ \\mathrm{m\\,s^{-1}}\\)"
+      ],
+      "answer": 0,
+      "explanation": "\\(W = qV = 1.6\\times10^{-17}\\ \\mathrm{J}\\), then \\(v = \\sqrt{2W/m} = \\sqrt{2(1.6\\times10^{-17})/9.1\\times10^{-31}} \\approx 5.9\\times10^{6}\\ \\mathrm{m\\,s^{-1}}\\) — about 2% of \\(c\\). Option D is the energy, not a speed."
+    },
+    {
+      "id": "m604-q05",
+      "q": "The three stages of a mass spectrometer follow the mnemonic A-S-D. What are they, in order?",
+      "options": [
+        "Attract, Spin, Detect",
+        "Accelerate, Select, Deflect",
+        "Accelerate, Separate, Detect",
+        "Align, Select, Disperse"
+      ],
+      "answer": 1,
+      "explanation": "Accelerate (electric field gives the ions kinetic energy), Select (crossed fields pass only one speed), Deflect (a magnetic field bends ions on circles by mass). The fields are: electric, both, magnetic."
+    },
+    {
+      "id": "m604-q06",
+      "q": "In a velocity selector, only ions with a particular speed pass straight through. That speed is given by:",
+      "options": [
+        "\\(v = EB\\)",
+        "\\(v = \\dfrac{B}{E}\\)",
+        "\\(v = \\dfrac{E}{B}\\)",
+        "\\(v = \\dfrac{qV}{m}\\)"
+      ],
+      "answer": 2,
+      "explanation": "Setting the electric force \\(qE\\) equal and opposite to the magnetic force \\(qvB\\), the charge cancels and \\(v = E/B\\). Faster ions have a larger magnetic force and are deflected one way; slower ions have a larger electric force and are deflected the other way."
+    },
+    {
+      "id": "m604-q07",
+      "q": "Does the velocity selector separate isotopes by mass?",
+      "options": [
+        "Yes, heavier ions pass and lighter ions are blocked",
+        "No — it selects by speed only; mass and charge do not appear in \\(v = E/B\\)",
+        "Yes, it sorts ions by both speed and mass",
+        "No — it selects by charge only"
+      ],
+      "answer": 1,
+      "explanation": "The pass condition \\(v = E/B\\) contains neither mass nor charge, so any ion at that speed passes regardless of mass. The selector's job is to remove speed as a variable, guaranteeing every ion enters the deflection stage at the same speed. Mass separation happens in the magnetic deflection chamber."
+    },
+    {
+      "id": "m604-q08",
+      "q": "In the deflection chamber, with all ions at the same speed and charge in the same field, the radius \\(r = mv/qB\\) means:",
+      "options": [
+        "The radius depends only on the charge",
+        "The radius depends only on the mass, so heavier isotopes follow a larger-radius path",
+        "All isotopes follow the same radius",
+        "Lighter isotopes follow a larger-radius path"
+      ],
+      "answer": 1,
+      "explanation": "With \\(v\\), \\(q\\) and \\(B\\) the same for all ions, only \\(m\\) varies, so \\(r \\propto m\\). Heavier isotopes swing on a bigger circle and land further out on the detector; the position identifies the mass and the number of hits gives relative abundance."
+    },
+    {
+      "id": "m604-q09",
+      "q": "Singly ionised neon-20 (\\(m = 3.32\\times10^{-26}\\ \\mathrm{kg}\\)) is accelerated through 1000 V. What is its approximate speed? (\\(q = 1.6\\times10^{-19}\\ \\mathrm{C}\\))",
+      "options": [
+        "\\(9.8\\times10^{2}\\ \\mathrm{m\\,s^{-1}}\\)",
+        "\\(9.8\\times10^{4}\\ \\mathrm{m\\,s^{-1}}\\)",
+        "\\(9.8\\times10^{6}\\ \\mathrm{m\\,s^{-1}}\\)",
+        "\\(5.9\\times10^{6}\\ \\mathrm{m\\,s^{-1}}\\)"
+      ],
+      "answer": 1,
+      "explanation": "\\(v = \\sqrt{2qV/m} = \\sqrt{2(1.6\\times10^{-19})(1000)/3.32\\times10^{-26}} \\approx 9.8\\times10^{4}\\ \\mathrm{m\\,s^{-1}}\\). It is far slower than an electron through 100 V because the neon ion is tens of thousands of times heavier."
+    },
+    {
+      "id": "m604-q10",
+      "q": "A student writes: \"In the deflection chamber the magnetic field accelerates the ions and bends them into a circle.\" What is the error?",
+      "options": [
+        "The ions are not charged, so no magnetic force acts",
+        "A magnetic field does no work, so it cannot speed the ions up — it only changes their direction",
+        "The magnetic field slows the ions down",
+        "There is no magnetic field in the deflection chamber"
+      ],
+      "answer": 1,
+      "explanation": "The magnetic force is perpendicular to the velocity, so it does no work and cannot change speed. It provides the centripetal force that bends the ions into a circle at constant speed. \"Accelerates\" in the sense of speeding up is the most-penalised error in the module."
+    }
+  ]
+}

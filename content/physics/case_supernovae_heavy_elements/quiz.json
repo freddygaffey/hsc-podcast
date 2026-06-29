@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "supernovae-q01",
+      "q": "What does 'binding energy per nucleon' measure?",
+      "options": [
+        "The total mass of a nucleus",
+        "How tightly bound and stable each proton/neutron in a nucleus is — the energy per nucleon needed to pull the nucleus apart",
+        "The electric charge of the nucleus",
+        "The speed at which a nucleus decays"
+      ],
+      "answer": 1,
+      "explanation": "Binding energy per nucleon is the total binding energy divided by the number of nucleons. A higher value means the nucleons are more tightly bound, the nucleus is more stable, and it sits at lower energy. The curve peaks near iron-56."
+    },
+    {
+      "id": "supernovae-q02",
+      "q": "Why is fusing nuclei heavier than iron endothermic (energy-absorbing)?",
+      "options": [
+        "Heavy nuclei have no binding energy",
+        "Beyond the iron-56 peak the binding energy per nucleon decreases, so the product is less tightly bound and sits at higher energy — energy must be put in",
+        "Heavy nuclei repel each other too strongly to fuse at all",
+        "The strong force does not act in heavy nuclei"
+      ],
+      "answer": 1,
+      "explanation": "Iron-56 is at the peak of the binding-energy curve. Fusing lighter nuclei climbs toward the peak and releases energy; fusing iron into something heavier moves down the far side to a less tightly bound, higher-energy product, which requires energy input. So stars cannot power themselves by fusing past iron."
+    },
+    {
+      "id": "supernovae-q03",
+      "q": "In the final stages of a massive star, which fusion stage is the shortest, producing iron?",
+      "options": [
+        "Hydrogen burning, lasting millions of years",
+        "Helium burning, lasting hundreds of thousands of years",
+        "Silicon burning, lasting only about a day",
+        "Carbon burning, lasting about a thousand years"
+      ],
+      "answer": 2,
+      "explanation": "Each fusion stage is hotter and faster than the last. Silicon burning, the final stage that builds the iron core, lasts only about one day, compared with millions of years of hydrogen burning. The star races toward core collapse without 'knowing' it."
+    },
+    {
+      "id": "supernovae-q04",
+      "q": "What holds up the iron core of a dying massive star (and a white dwarf) before collapse?",
+      "options": [
+        "Ongoing nuclear fusion",
+        "Electron degeneracy pressure, arising from the Pauli exclusion principle",
+        "Radiation pressure from the surface",
+        "The repulsion between protons"
+      ],
+      "answer": 1,
+      "explanation": "With fusion ended, the inert iron core is supported by electron degeneracy pressure — a quantum effect from the Pauli exclusion principle, which forbids two electrons sharing the same state. It does not depend on temperature, so it supports even a cold cinder, but only up to a maximum mass."
+    },
+    {
+      "id": "supernovae-q05",
+      "q": "What is the Chandrasekhar limit?",
+      "options": [
+        "The maximum temperature a stellar core can reach",
+        "The maximum mass (~1.4 solar masses) that electron degeneracy pressure can support before collapse is inevitable",
+        "The minimum mass for a star to begin fusion",
+        "The maximum size of a neutron star"
+      ],
+      "answer": 1,
+      "explanation": "Chandrasekhar showed that as mass is piled on, electrons become relativistic and their pressure softens, so there is a maximum mass (~1.4 solar masses) that electron degeneracy pressure can hold up. Above it, collapse cannot be prevented — the trigger for core-collapse supernovae."
+    },
+    {
+      "id": "supernovae-q06",
+      "q": "During core collapse, two processes accelerate the failure of core support. Which pair is correct?",
+      "options": [
+        "Nuclear fusion and radioactive decay",
+        "Electron capture (protons + electrons → neutrons + neutrinos) and photodisintegration of iron nuclei",
+        "Beta decay and alpha emission",
+        "Ionisation and recombination"
+      ],
+      "answer": 1,
+      "explanation": "Electron capture removes the very electrons providing degeneracy pressure (turning them into neutrons and neutrinos), while photodisintegration uses high-energy gamma rays to smash iron nuclei apart — an endothermic process that drains thermal support. Both make the collapse run away."
+    },
+    {
+      "id": "supernovae-q07",
+      "q": "What ultimately revives the stalled shock wave to produce the visible supernova explosion?",
+      "options": [
+        "Renewed iron fusion",
+        "A tiny fraction (~1%) of the immense neutrino flux being absorbed by the dense material behind the shock, re-energising it",
+        "The rebound of the electrons",
+        "Magnetic fields from the neutron star"
+      ],
+      "answer": 1,
+      "explanation": "About 99% of the collapse energy (~10⁴⁶ J) pours out as neutrinos. Though neutrinos barely interact, the material behind the stalled shock is so dense that ~1% are absorbed — enough to reheat and re-energise the shock, which then blows off the star's outer layers."
+    },
+    {
+      "id": "supernovae-q08",
+      "q": "Elements heavier than iron are built by the r-process. What does the 'r' stand for, and why must it be that way?",
+      "options": [
+        "Radioactive — because the nuclei are unstable",
+        "Rapid — neutron capture happens so fast that nuclei gulp many neutrons before they have time to beta-decay",
+        "Reverse — because the process runs backwards",
+        "Radiation — because it is driven by gamma rays"
+      ],
+      "answer": 1,
+      "explanation": "The 'r' is for rapid neutron capture. Neutrons (being uncharged, with no Coulomb barrier) are captured so quickly that a nucleus absorbs many before it can beta-decay, building extremely neutron-rich nuclei that then cascade up to thorium, uranium and beyond. The slow (s) process, by contrast, stays near stability."
+    },
+    {
+      "id": "supernovae-q09",
+      "q": "Supernova 1987A's neutrino burst arrived about 2-3 hours BEFORE its light, even though nothing travels faster than light. Why?",
+      "options": [
+        "Neutrinos travel faster than light",
+        "Neutrinos escape the collapsing core immediately, while the light must wait for the shock wave to reach the star's surface",
+        "The light was slowed by interstellar dust",
+        "The neutrinos were emitted earlier in the star's life"
+      ],
+      "answer": 1,
+      "explanation": "Neutrinos barely interact, so they stream straight out of the core the instant it collapses. The light is trapped until the shock fights its way out to the star's surface, hours later. Both then cross the ~168,000 light-years at essentially the same speed — the neutrinos simply had a head start out of the gate."
+    },
+    {
+      "id": "supernovae-q10",
+      "q": "The 2017 event GW170817 (detected via gravitational waves) confirmed a major site of the r-process. What was it?",
+      "options": [
+        "Two black holes merging",
+        "The merger of two neutron stars, whose neutron-rich debris forged heavy elements and produced a kilonova",
+        "A single white dwarf exploding",
+        "A flare on the surface of the Sun"
+      ],
+      "answer": 1,
+      "explanation": "GW170817 was the merger of two neutron stars — the most neutron-rich environment imaginable. The collision flung out neutron-rich debris in which the r-process forged gold, platinum and (later identified) strontium, producing a glowing kilonova. It confirmed neutron-star mergers as a dominant source of the heaviest elements."
+    }
+  ]
+}

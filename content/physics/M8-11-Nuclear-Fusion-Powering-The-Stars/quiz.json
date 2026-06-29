@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m811-q01",
+      "q": "Which statement best defines nuclear fusion?",
+      "options": [
+        "A heavy nucleus splitting into two lighter nuclei, releasing energy",
+        "Two light nuclei joining to form a single heavier nucleus that is more tightly bound, releasing energy",
+        "A nucleus emitting an alpha particle to become more stable",
+        "Electrons being stripped from atoms to form a plasma"
+      ],
+      "answer": 1,
+      "explanation": "Fusion joins two light (small mass number) nuclei into a heavier, more tightly bound nucleus, releasing energy. Splitting a heavy nucleus (A) is fission, and alpha emission (C) is radioactive decay."
+    },
+    {
+      "id": "m811-q02",
+      "q": "Using the binding-energy-per-nucleon curve, why does fusing light nuclei release energy?",
+      "options": [
+        "Light nuclei are at the iron peak, so fusing them releases the most energy",
+        "The product sits lower on the curve, so it has less binding energy",
+        "The product sits higher on the curve, closer to iron, so it is more tightly bound and has less mass than the reactants; that mass defect is released as energy",
+        "Mass is destroyed and converted to pure energy with no change in binding"
+      ],
+      "answer": 2,
+      "explanation": "Light nuclei sit low on the steep left of the curve. Their fused product sits higher, nearer iron-56, with greater binding energy per nucleon, so it is more tightly bound and lighter than the reactants. That mass defect is released via \\(E = mc^2\\). Mass is converted, not destroyed (D)."
+    },
+    {
+      "id": "m811-q03",
+      "q": "Why does nuclear fusion require extremely high temperatures?",
+      "options": [
+        "To melt the nuclei so they can flow together",
+        "To give the positively charged nuclei enough kinetic energy to overcome the Coulomb repulsion and approach within range of the strong nuclear force",
+        "To weaken the strong nuclear force so the nuclei can merge",
+        "To strip electrons away so gravity can pull the nuclei together"
+      ],
+      "answer": 1,
+      "explanation": "Both nuclei are positively charged and repel via the long-range Coulomb force. Since temperature measures average kinetic energy, an extremely high temperature gives the nuclei enough kinetic energy to beat this Coulomb barrier and get within about \\(10^{-15}\\ \\mathrm{m}\\), where the short-range strong force can bind them."
+    },
+    {
+      "id": "m811-q04",
+      "q": "Besides high temperature, why is high pressure (density) also required for sustained fusion?",
+      "options": [
+        "To increase the strength of the Coulomb barrier",
+        "To slow the nuclei down so they can be captured",
+        "To pack nuclei close together so collisions occur frequently enough to sustain the reaction",
+        "To cool the plasma and prevent it from escaping"
+      ],
+      "answer": 2,
+      "explanation": "High temperature makes each collision energetic enough; high pressure and density make collisions frequent enough to sustain the reaction. In a star, gravity supplies the crushing pressure across its huge mass."
+    },
+    {
+      "id": "m811-q05",
+      "q": "Which force overcomes the Coulomb repulsion to bind two nuclei together once they are close enough?",
+      "options": [
+        "The gravitational force",
+        "The weak nuclear force",
+        "The strong nuclear force, which is attractive but acts only over a very short range",
+        "The electromagnetic force"
+      ],
+      "answer": 2,
+      "explanation": "The strong nuclear force is powerfully attractive but acts only over about \\(10^{-15}\\ \\mathrm{m}\\). Gravity is far too feeble at the nuclear scale, and the weak force mediates beta decay rather than binding nucleons."
+    },
+    {
+      "id": "m811-q06",
+      "q": "In the reaction \\({}^{2}_{1}\\mathrm{H} + {}^{3}_{1}\\mathrm{H} \\to {}^{4}_{2}\\mathrm{He} + X\\), what is the particle \\(X\\)?",
+      "options": [
+        "A proton",
+        "A neutron",
+        "A positron",
+        "An alpha particle"
+      ],
+      "answer": 1,
+      "explanation": "Balance the numbers: mass \\(2 + 3 = 5\\), and \\({}^{4}\\mathrm{He}\\) accounts for 4, leaving 1; charge \\(1 + 1 = 2\\), and helium accounts for 2, leaving 0. A mass-1, charge-0 particle is a neutron."
+    },
+    {
+      "id": "m811-q07",
+      "q": "The deuterium-tritium fusion reaction has a mass defect of about \\(0.0189\\ \\mathrm{u}\\). Using \\(1\\ \\mathrm{u} \\leftrightarrow 931.5\\ \\mathrm{MeV}\\), the energy released per event is closest to:",
+      "options": [
+        "1.8 MeV",
+        "17.6 MeV",
+        "200 MeV",
+        "931.5 MeV"
+      ],
+      "answer": 1,
+      "explanation": "\\(E = \\Delta m \\times 931.5 = 0.0189 \\times 931.5 \\approx 17.6\\ \\mathrm{MeV}\\) per D-T event. The 200 MeV figure (C) is a uranium fission, not this fusion. Remember not to divide by \\(c^2\\) as well — it is built into 931.5."
+    },
+    {
+      "id": "m811-q08",
+      "q": "How do fusion, fission and chemical combustion compare in energy released PER UNIT MASS of fuel?",
+      "options": [
+        "Chemical > fission > fusion",
+        "Fission > fusion > chemical",
+        "Fusion > fission > chemical (both nuclear processes vastly exceed chemical)",
+        "They are all roughly equal"
+      ],
+      "answer": 2,
+      "explanation": "Per unit mass the order is fusion > fission ≫ chemical. Although a single fission event (~200 MeV) exceeds a single fusion event (~17.6 MeV), fusion involves few nucleons on the steepest part of the curve, so per nucleon it wins. Chemical burning only rearranges electrons (~eV per atom)."
+    },
+    {
+      "id": "m811-q09",
+      "q": "What is the iron limit, and why does it exist?",
+      "options": [
+        "Iron is too heavy to fuse, so stars avoid making it",
+        "Fusion releases energy only up to iron-56 (the curve's peak); fusing beyond iron would produce a less tightly bound, heavier product and consume energy, so iron is the heaviest element built by ordinary fusion",
+        "Iron absorbs all the neutrons in a star, halting fusion",
+        "Beyond iron, the Coulomb barrier disappears, so fusion stops being needed"
+      ],
+      "answer": 1,
+      "explanation": "Iron-56 is at the top of the binding-energy-per-nucleon curve. Fusing past iron yields a product lower on the curve (less tightly bound, more massive than the reactants), which requires energy input rather than releasing it. So fusion in a star releases energy only up to iron, making iron the heaviest element it can build this way."
+    },
+    {
+      "id": "m811-q10",
+      "q": "Why is sustained, controlled fusion not yet a viable energy source on Earth, whereas stars manage it readily?",
+      "options": [
+        "There is not enough hydrogen fuel available on Earth",
+        "Fusion produces too much long-lived radioactive waste to be safe",
+        "Confining matter at the required extreme temperature and density is extremely difficult on Earth, while a star's own gravity confines it for free",
+        "The strong nuclear force does not operate on Earth"
+      ],
+      "answer": 2,
+      "explanation": "Fusion needs matter at enormous temperature and density held together long enough to sustain the reaction. A star's immense gravity supplies this confinement for free; on Earth there is no material container (anything that hot vaporises), so reactors must use magnetic confinement, and sustained net-positive fusion has not yet been achieved. Fusion fuel is actually abundant and its waste is comparatively clean."
+    }
+  ]
+}

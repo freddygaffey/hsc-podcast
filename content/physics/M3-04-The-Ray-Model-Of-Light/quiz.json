@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m304-q01",
+      "q": "Define the refractive index of a medium.",
+      "options": [
+        "The speed of light in the medium divided by the speed in a vacuum",
+        "The speed of light in a vacuum divided by the speed of light in the medium (n = c/v)",
+        "The angle of incidence divided by the angle of refraction",
+        "The wavelength in the medium times the frequency"
+      ],
+      "answer": 1,
+      "explanation": "The refractive index is n = c/v, the speed of light in a vacuum divided by its speed in the medium. Because light always travels slower in a medium, n is always greater than 1 (air ≈ 1, water ≈ 1.33, glass ≈ 1.5). A higher index means light travels slower and the medium is 'optically denser'."
+    },
+    {
+      "id": "m304-q02",
+      "q": "Light passes from air into glass. Predict whether it speeds up or slows down and how it bends.",
+      "options": [
+        "Speeds up; bends away from the normal",
+        "Slows down; bends toward the normal",
+        "Slows down; bends away from the normal",
+        "Speed unchanged; travels straight"
+      ],
+      "answer": 1,
+      "explanation": "Glass is denser (higher index) than air, so light slows down and bends toward the normal. Entering a less dense medium it would speed up and bend away from the normal. The 'toward the normal entering a denser medium' rule is worth a guaranteed mark — saying 'away' is the common error."
+    },
+    {
+      "id": "m304-q03",
+      "q": "Light in air (n = 1) strikes glass (n = 1.5) at 30° (sin 30° = 0.5). Calculate the sine of the angle of refraction.",
+      "options": [
+        "0.75",
+        "0.33",
+        "0.50",
+        "1.5"
+      ],
+      "answer": 1,
+      "explanation": "By Snell's law n₁ sin i = n₂ sin r: 1 × 0.5 = 1.5 × sin r → sin r = 0.5/1.5 = 0.33 (about 19°). The refracted angle (19°) is smaller than the incident angle (30°), so the ray bends toward the normal, as expected entering a denser medium."
+    },
+    {
+      "id": "m304-q04",
+      "q": "Calculate the speed of light in glass of refractive index 1.5 (c = 3×10⁸ m s⁻¹).",
+      "options": [
+        "4.5×10⁸ m s⁻¹",
+        "2×10⁸ m s⁻¹",
+        "3×10⁸ m s⁻¹",
+        "1×10⁸ m s⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "Rearranging n = c/v gives v = c/n = 3×10⁸ / 1.5 = 2×10⁸ m s⁻¹. Light travels 1.5 times slower in the glass than in a vacuum. A higher refractive index always means a lower speed — multiplying instead of dividing (giving 4.5×10⁸) would exceed c, which is impossible."
+    },
+    {
+      "id": "m304-q05",
+      "q": "State the two conditions both required for total internal reflection.",
+      "options": [
+        "Light goes from less dense to denser, and the angle is below the critical angle",
+        "Light goes from denser to less dense, and the angle of incidence exceeds the critical angle",
+        "Light goes from denser to less dense, and the angle is below the critical angle",
+        "Any angle, as long as the surface is a mirror"
+      ],
+      "answer": 1,
+      "explanation": "Total internal reflection needs BOTH: (1) light travelling from a denser (higher-index) to a less dense (lower-index) medium, and (2) an angle of incidence greater than the critical angle. Dropping either condition loses a mark — giving only the angle condition is the most common omission."
+    },
+    {
+      "id": "m304-q06",
+      "q": "Explain how an optical fibre transmits light along its length.",
+      "options": [
+        "Light refracts out and back in repeatedly",
+        "Light strikes the walls above the critical angle and undergoes repeated total internal reflection with little loss",
+        "The fibre amplifies the light at each wall",
+        "Light travels in a straight line without touching the walls"
+      ],
+      "answer": 1,
+      "explanation": "Light entering the thin high-index glass fibre hits the internal walls at angles greater than the critical angle (and travels from dense glass to less dense surroundings), so it totally internally reflects repeatedly down the fibre with almost no loss, even around bends. This carries internet/phone data as light pulses and images in endoscopes."
+    },
+    {
+      "id": "m304-q07",
+      "q": "Explain what causes dispersion of white light through a prism.",
+      "options": [
+        "All colours refract by exactly the same amount",
+        "The refractive index differs slightly with wavelength, so each colour refracts by a different amount",
+        "The prism adds colour to white light",
+        "White light reflects off the prism surface"
+      ],
+      "answer": 1,
+      "explanation": "The refractive index of glass is slightly higher for shorter wavelengths (violet) than longer ones (red), so each colour refracts by a different amount — violet bends most, red least — fanning white light into a spectrum. This is direct evidence that white light is a mixture of colours, and a rainbow is dispersion on a grand scale."
+    },
+    {
+      "id": "m304-q08",
+      "q": "A light meter reads 200 lux at 1 m from a small lamp. Calculate the reading at 4 m.",
+      "options": [
+        "50 lux",
+        "12.5 lux",
+        "100 lux",
+        "800 lux"
+      ],
+      "answer": 1,
+      "explanation": "Light intensity obeys the inverse-square law: I₁r₁² = I₂r₂², so 200 × 1² = I₂ × 4² → I₂ = 200/16 = 12.5 lux. The trap is dividing by 4 (giving 50) instead of 4² = 16 — the distance ratio must be squared."
+    },
+    {
+      "id": "m304-q09",
+      "q": "In the ray model, identify from where all angles in optics are measured.",
+      "options": [
+        "From the surface",
+        "From the normal (the perpendicular to the surface)",
+        "From the horizontal",
+        "From the incident ray itself"
+      ],
+      "answer": 1,
+      "explanation": "All angles in optics — incidence, reflection, refraction, and the critical angle — are measured from the normal, the line perpendicular to the surface, not from the surface itself. Measuring from the surface is a classic error that throws off every reflection and Snell's-law calculation."
+    },
+    {
+      "id": "m304-q10",
+      "q": "A diver shines a torch up at the water surface (water n = 1.33, sin of critical angle = 1/1.33 = 0.75, giving ≈49°). Determine what happens to a beam striking the surface at 60°.",
+      "options": [
+        "It refracts out into the air, bending toward the normal",
+        "It undergoes total internal reflection back into the water",
+        "It travels straight through unchanged",
+        "It is absorbed by the surface"
+      ],
+      "answer": 1,
+      "explanation": "The critical angle for water-air is about 49°. A beam at 60° exceeds it, and the light is travelling from denser water to less dense air, so both conditions for total internal reflection are met — the light is entirely reflected back down, and the surface acts like a perfect mirror. Below 49° it would instead refract out into the air."
+    }
+  ]
+}

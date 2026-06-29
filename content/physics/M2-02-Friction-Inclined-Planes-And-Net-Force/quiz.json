@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m202-q01",
+      "q": "Identify the correct expressions for the components of the weight of an object on an incline of angle θ.",
+      "options": [
+        "Down-slope = mg cos θ; into-slope = mg sin θ",
+        "Down-slope = mg sin θ; into-slope = mg cos θ",
+        "Down-slope = mg tan θ; into-slope = mg cos θ",
+        "Down-slope = mg; into-slope = mg sin θ"
+      ],
+      "answer": 1,
+      "explanation": "The weight resolves into mg sin θ down the slope and mg cos θ perpendicular (into) the slope. The check against swapping them: as the slope steepens toward 90°, the object slides more easily, so the down-slope pull must grow — and sin θ grows toward 1, so the down-slope component takes the sine."
+    },
+    {
+      "id": "m202-q02",
+      "q": "Outline what friction depends on.",
+      "options": [
+        "The contact area and the speed",
+        "The normal force and the nature of the surfaces, but not the contact area",
+        "Only the mass of the object",
+        "Only the speed of sliding"
+      ],
+      "answer": 1,
+      "explanation": "Friction depends on how hard the surfaces are pressed together (the normal force) and on the nature of the surfaces (the coefficient of friction), but not on the contact area or, to a good approximation, the speed. This is why a heavier object on an incline experiences more friction — its larger normal force (mg cos θ) increases the friction."
+    },
+    {
+      "id": "m202-q03",
+      "q": "Distinguish between static and kinetic friction.",
+      "options": [
+        "Static friction acts while sliding; kinetic friction acts before motion",
+        "Static friction adjusts up to a maximum before motion; kinetic friction acts once sliding and is roughly constant",
+        "Static and kinetic friction are always equal",
+        "Static friction depends on speed; kinetic friction does not exist"
+      ],
+      "answer": 1,
+      "explanation": "Static friction acts before motion and adjusts itself to match the applied force, up to a maximum value (which is why a heavy box won't budge until you push hard enough). Once the object breaks free and slides, kinetic friction takes over and is roughly constant, usually slightly less than the maximum static friction."
+    },
+    {
+      "id": "m202-q04",
+      "q": "A block slides down a frictionless incline at 30°. Calculate its acceleration (g = 9.8 m s⁻²).",
+      "options": [
+        "9.8 m s⁻²",
+        "4.9 m s⁻²",
+        "8.5 m s⁻²",
+        "2.5 m s⁻²"
+      ],
+      "answer": 1,
+      "explanation": "With no friction, the only along-slope force is mg sin θ, so ma = mg sin θ and the mass cancels: a = g sin θ = 9.8 × sin 30° = 9.8 × 0.5 = 4.9 m s⁻². The acceleration is independent of mass, just like free fall. The full 9.8 would only apply to a vertical drop (θ = 90°)."
+    },
+    {
+      "id": "m202-q05",
+      "q": "Explain why the normal force on an object on an incline is less than its weight.",
+      "options": [
+        "Because friction reduces the weight",
+        "Because the surface balances only the perpendicular weight component, mg cos θ, which is less than mg",
+        "Because the object is accelerating into the surface",
+        "Because weight decreases on a slope"
+      ],
+      "answer": 1,
+      "explanation": "The normal force acts perpendicular to the surface and balances only the part of the weight pressing into it — the perpendicular component mg cos θ. The remaining component (mg sin θ) acts along the slope and is unsupported by the surface. Since cos θ < 1 for any non-zero angle, the normal force (mg cos θ) is less than the full weight mg."
+    },
+    {
+      "id": "m202-q06",
+      "q": "A 2 kg block is on a frictionless incline at 20°. Calculate its acceleration down the slope (g = 9.8 m s⁻², sin 20° ≈ 0.34).",
+      "options": [
+        "6.7 m s⁻²",
+        "3.35 m s⁻²",
+        "9.2 m s⁻²",
+        "1.7 m s⁻²"
+      ],
+      "answer": 1,
+      "explanation": "On a frictionless incline a = g sin θ = 9.8 × 0.34 ≈ 3.35 m s⁻², independent of mass. The 2 kg mass is a distractor — it cancels out. Multiplying by the mass (giving 6.7) would be a force, not an acceleration."
+    },
+    {
+      "id": "m202-q07",
+      "q": "A 4 kg block on a 30° incline experiences 10 N of friction as it slides down. Calculate its acceleration (g = 9.8 m s⁻²).",
+      "options": [
+        "4.9 m s⁻²",
+        "2.4 m s⁻²",
+        "7.4 m s⁻²",
+        "0.6 m s⁻²"
+      ],
+      "answer": 1,
+      "explanation": "Down-slope weight component = mg sin θ = 4 × 9.8 × 0.5 = 19.6 N. Friction acts up the slope (opposing the slide): net force = 19.6 − 10 = 9.6 N. Acceleration = F_net/m = 9.6/4 = 2.4 m s⁻². Forgetting to subtract friction (4.9 m s⁻²) or using the full weight are the common errors."
+    },
+    {
+      "id": "m202-q08",
+      "q": "A block sits stationary on a rough incline. Explain why it does not slide.",
+      "options": [
+        "There is no down-slope force on it",
+        "Static friction up the slope exactly balances the down-slope weight component mg sin θ (net force zero)",
+        "The normal force pushes it up the slope",
+        "Gravity does not act on inclines"
+      ],
+      "answer": 1,
+      "explanation": "The block is in equilibrium (net force zero), so static friction acting up the slope exactly equals the down-slope weight component mg sin θ. As the slope is tilted steeper, mg sin θ grows and static friction grows to match it, until it reaches the maximum static friction — at that angle the block is on the verge of sliding."
+    },
+    {
+      "id": "m202-q09",
+      "q": "On flat ground, a 20 kg crate has a maximum static friction of 50 N and a kinetic friction of 45 N. If pushed with 60 N once moving, calculate its acceleration.",
+      "options": [
+        "3.0 m s⁻²",
+        "0.75 m s⁻²",
+        "0.25 m s⁻²",
+        "5.25 m s⁻²"
+      ],
+      "answer": 1,
+      "explanation": "Once sliding, kinetic friction (45 N) opposes the 60 N push, so net force = 60 − 45 = 15 N. Acceleration = F_net/m = 15/20 = 0.75 m s⁻². The maximum static friction (50 N) only mattered for breaking free; once moving, kinetic friction governs the motion."
+    },
+    {
+      "id": "m202-q10",
+      "q": "A 60 kg skier starts from rest down a 25° slope with 100 N of friction. Calculate the speed after sliding 50 m (g = 9.8 m s⁻², sin 25° ≈ 0.423).",
+      "options": [
+        "22.1 m s⁻¹",
+        "15.8 m s⁻¹",
+        "10.0 m s⁻¹",
+        "2.5 m s⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "Down-slope component = 60 × 9.8 × 0.423 ≈ 249 N; net force = 249 − 100 = 149 N; a = 149/60 ≈ 2.5 m s⁻². Then suvat (time missing): v² = u² + 2as = 0 + 2 × 2.5 × 50 = 250, so v ≈ 15.8 m s⁻¹. This is the full chain — resolve, subtract friction, second law, then kinematics. (2.5 is the acceleration, not the speed.)"
+    }
+  ]
+}

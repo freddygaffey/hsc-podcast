@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "michelsonmorley-q01",
+      "q": "What was the luminiferous aether that nineteenth-century physicists believed in?",
+      "options": [
+        "A type of gas found only inside stars",
+        "An invisible medium filling all of space, thought to be the substance that light waves travel through and the one frame truly at rest",
+        "A new chemical element",
+        "The vacuum of empty space itself"
+      ],
+      "answer": 1,
+      "explanation": "Since every known wave needed a medium, light was thought to travel through the luminiferous aether — a transparent, weightless substance filling the universe and serving as the absolute frame of rest against which all motion could be measured."
+    },
+    {
+      "id": "michelsonmorley-q02",
+      "q": "Why did physicists expect an 'aether wind' on Earth?",
+      "options": [
+        "Because the Sun blows aether toward us",
+        "Because the Earth moves through the supposedly stationary aether at ~30 km/s in its orbit, so an aether stream should appear to blow past, like wind felt by a rider on a still day",
+        "Because the aether is heated by sunlight and rises",
+        "Because magnetic fields stir the aether"
+      ],
+      "answer": 1,
+      "explanation": "Just as a motorcyclist feels a wind on a calm day from moving through the air, the Earth orbiting the Sun at ~30 km/s should plough through a stationary aether, producing a detectable aether wind affecting the measured speed of light."
+    },
+    {
+      "id": "michelsonmorley-q03",
+      "q": "How does a Michelson interferometer detect tiny differences in light travel time?",
+      "options": [
+        "By weighing the light beams",
+        "A beam splitter sends light down two perpendicular arms; the beams recombine and interfere, and a difference in round-trip time shifts the bright/dark interference fringes",
+        "By timing each beam with a stopwatch",
+        "By measuring the temperature of the mirrors"
+      ],
+      "answer": 1,
+      "explanation": "A half-silvered beam splitter divides light into two perpendicular arms. After bouncing back they recombine and interfere. A round-trip time difference of even a fraction of a wavelength shifts the interference fringes — an extraordinarily sensitive measurement."
+    },
+    {
+      "id": "michelsonmorley-q04",
+      "q": "Why did Michelson and Morley rotate the entire apparatus during the experiment?",
+      "options": [
+        "To keep the mercury from freezing",
+        "To swap the two arms between 'into the wind' and 'across the wind', which should reverse the time difference and make the fringes visibly shift",
+        "To average out the laser's colour",
+        "To test whether gravity affected the light"
+      ],
+      "answer": 1,
+      "explanation": "Rotating 90° swaps which arm points into the aether wind and which points across it. The time difference should reverse, causing the fringes to slide. Watching that shift would measure the aether wind."
+    },
+    {
+      "id": "michelsonmorley-q05",
+      "q": "What result did the experiment actually give?",
+      "options": [
+        "A fringe shift exactly matching the prediction of ~0.4 fringe",
+        "A null result — essentially no fringe shift, far smaller than the ~0.4 fringe expected (certainly less than 1/20, probably less than 1/40 of it)",
+        "A fringe shift twice as large as expected",
+        "The apparatus broke before any reading was taken"
+      ],
+      "answer": 1,
+      "explanation": "Despite an instrument able to detect ~1/100 of a fringe and an expected shift of ~0.4 fringe, the observed shift was essentially nothing — certainly less than a twentieth, probably less than a fortieth of the prediction. A clean null result."
+    },
+    {
+      "id": "michelsonmorley-q06",
+      "q": "What did the null result most precisely demonstrate?",
+      "options": [
+        "That light is not a wave",
+        "That the Earth is not moving through an aether at its orbital speed — the speed of light appeared the same regardless of direction",
+        "That the Earth is stationary in space",
+        "That the interferometer was faulty"
+      ],
+      "answer": 1,
+      "explanation": "The result showed no detectable aether wind: light travelled at the same speed in every direction, implying the Earth is not moving through a stationary aether at its orbital speed — a deeply puzzling outcome at the time."
+    },
+    {
+      "id": "michelsonmorley-q07",
+      "q": "How did FitzGerald and Lorentz try to save the aether theory?",
+      "options": [
+        "By claiming light has no speed",
+        "By proposing that objects physically contract along their direction of motion through the aether, exactly cancelling the expected time difference",
+        "By arguing the Earth does not move",
+        "By saying the aether is denser near the Sun"
+      ],
+      "answer": 1,
+      "explanation": "FitzGerald (and Lorentz, more rigorously) proposed that motion through the aether shrinks an object along its direction of travel by just the right amount to shorten the parallel arm and cancel the slower light — producing a null result while keeping the aether."
+    },
+    {
+      "id": "michelsonmorley-q08",
+      "q": "What was Einstein's radical move compared with Lorentz, who had the same transformation equations?",
+      "options": [
+        "He measured the speed of light more accurately",
+        "He discarded the aether entirely and derived everything from two postulates, reinterpreting the equations as the geometry of space and time rather than a real contraction caused by the aether",
+        "He proved the aether was denser than thought",
+        "He added a third postulate about gravity"
+      ],
+      "answer": 1,
+      "explanation": "Lorentz kept the aether and treated the contraction as physically real and local time as a fiction. Einstein threw out the aether, built everything from two postulates, and reinterpreted length contraction and time dilation as properties of spacetime itself — symmetric between observers."
+    },
+    {
+      "id": "michelsonmorley-q09",
+      "q": "State Einstein's two postulates of special relativity.",
+      "options": [
+        "Light needs a medium; and the Earth is at rest",
+        "All inertial frames of reference are equivalent; and the speed of light in a vacuum is the same for all observers regardless of source or observer motion",
+        "Mass and energy are equivalent; and time is absolute",
+        "Gravity is curvature; and the universe is expanding"
+      ],
+      "answer": 1,
+      "explanation": "The principle of relativity: the laws of physics are identical in all inertial frames. The constancy of light speed: \\(c\\) in a vacuum is the same for every observer, independent of the motion of source or observer. (Textbooks number them in either order.)"
+    },
+    {
+      "id": "michelsonmorley-q10",
+      "q": "How do Einstein's postulates explain the Michelson-Morley null result?",
+      "options": [
+        "They predict a large fringe shift after all",
+        "Because \\(c\\) is the same in both arms (no time difference) and all inertial frames are equivalent (no aether frame to point against), rotating the apparatus can produce no fringe shift",
+        "They show the apparatus must have been faulty",
+        "They require the aether to be dragged along with the Earth"
+      ],
+      "answer": 1,
+      "explanation": "The second postulate means light has the same speed in both arms, so there is no time difference. The first means there is no aether rest frame, so the orientation cannot matter. Together they guarantee no fringe shift — the null result is exactly what relativity demands."
+    }
+  ]
+}

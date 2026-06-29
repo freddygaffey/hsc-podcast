@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "muon-q01",
+      "q": "What is the approximate proper (rest-frame) mean lifetime of a muon?",
+      "options": [
+        "\\( 2.2\\ \\mathrm{s} \\)",
+        "\\( 2.2\\ \\mathrm{ms} \\)",
+        "\\( 2.2\\ \\mu\\mathrm{s} \\)",
+        "\\( 2.2\\ \\mathrm{ns} \\)"
+      ],
+      "answer": 2,
+      "explanation": "A muon at rest lives, on average, about \\(2.2\\ \\mu\\mathrm{s}\\) (2.2 millionths of a second) before decaying. This is the proper lifetime, measured in the muon's own rest frame where its birth and decay happen at the same place."
+    },
+    {
+      "id": "muon-q02",
+      "q": "Travelling at nearly the speed of light, a muon could classically cover at most about 660 m before decaying, yet muons made ~15 km up reach the ground. Without relativity, what fraction should survive the trip?",
+      "options": [
+        "About half of them",
+        "Essentially none — a tiny sliver of a fraction of a percent",
+        "About 95% of them",
+        "All of them, since they move at light speed"
+      ],
+      "answer": 1,
+      "explanation": "Classically the muons should die more than 14 km short of the ground. The journey is over 20 lifetimes long, and exponential decay leaves an utterly negligible survival fraction. Yet ~10,000 muons per square metre per minute reach sea level, so a classical assumption must be wrong."
+    },
+    {
+      "id": "muon-q03",
+      "q": "What are the two postulates of Einstein's special theory of relativity (1905)?",
+      "options": [
+        "Time is absolute; space is relative",
+        "The laws of physics are the same in all inertial frames; the speed of light in vacuum is the same for all observers",
+        "Nothing can travel faster than light; gravity bends spacetime",
+        "Mass and energy are equivalent; momentum is always conserved"
+      ],
+      "answer": 1,
+      "explanation": "Special relativity rests on two postulates: the laws of physics are identical in every inertial (constant-velocity) frame, and the speed of light in vacuum is the same for every observer regardless of motion. The constancy of light's speed forces time and length to be relative."
+    },
+    {
+      "id": "muon-q04",
+      "q": "The Lorentz factor is \\( \\gamma = 1/\\sqrt{1 - v^2/c^2} \\). What happens to \\(\\gamma\\) as the speed \\(v\\) approaches the speed of light \\(c\\)?",
+      "options": [
+        "It approaches zero",
+        "It stays equal to one",
+        "It grows without bound (becomes very large)",
+        "It becomes negative"
+      ],
+      "answer": 2,
+      "explanation": "As \\(v \\to c\\), the term \\(v^2/c^2 \\to 1\\), so \\(1 - v^2/c^2 \\to 0\\) and \\(\\gamma \\to \\infty\\). At low speeds \\(\\gamma \\approx 1\\) and relativistic effects are negligible; near light speed \\(\\gamma\\) blows up, producing dramatic time dilation and length contraction."
+    },
+    {
+      "id": "muon-q05",
+      "q": "In Earth's frame, with \\(\\gamma = 15\\), how long does a muon with proper lifetime \\(2.2\\ \\mu\\mathrm{s}\\) appear to live?",
+      "options": [
+        "\\( 0.15\\ \\mu\\mathrm{s} \\)",
+        "\\( 2.2\\ \\mu\\mathrm{s} \\)",
+        "\\( 33\\ \\mu\\mathrm{s} \\)",
+        "\\( 330\\ \\mu\\mathrm{s} \\)"
+      ],
+      "answer": 2,
+      "explanation": "Time dilation gives \\(t = \\gamma t_0 = 15 \\times 2.2\\ \\mu\\mathrm{s} = 33\\ \\mu\\mathrm{s}\\) in Earth's frame. The moving muon's internal clock runs slow by a factor of 15, so from our viewpoint it survives 15 times longer — long enough to cross the ~15 km of atmosphere."
+    },
+    {
+      "id": "muon-q06",
+      "q": "From the muon's OWN frame, its clock ticks normally and it lives only \\(2.2\\ \\mu\\mathrm{s}\\). How does it still reach the ground?",
+      "options": [
+        "The atmosphere is length-contracted along the direction of motion, so the muon only has to cross about 1 km",
+        "Its lifetime is also dilated in its own frame",
+        "It travels faster than light in its own frame",
+        "Gravity pulls it down before it can decay"
+      ],
+      "answer": 0,
+      "explanation": "In the muon's frame it ages normally, but the atmosphere rushes up length-contracted by the same factor \\(\\gamma\\): \\(L = L_0/\\gamma = 15{,}000/15 = 1000\\ \\mathrm{m}\\). Crossing just ~1 km takes about a lifetime, so it survives. Time dilation (our frame) and length contraction (its frame) give the same outcome."
+    },
+    {
+      "id": "muon-q07",
+      "q": "In the Frisch-Smith Mount Washington experiment, ~565 muons/hour were counted at the summit. The classical prediction at sea level was ~27/hour. What was actually measured?",
+      "options": [
+        "About 27 per hour, confirming classical physics",
+        "About 409 per hour, matching the relativistic prediction",
+        "About 565 per hour, with no decay at all",
+        "Zero, all muons had decayed"
+      ],
+      "answer": 1,
+      "explanation": "They measured 409 ± 9 muons per hour at sea level — close to the relativistic prediction of ~400 and nowhere near the classical ~27. Far more muons survived than classical physics allows, confirming time dilation. The measured dilation factor was 8.8 ± 0.8 against a predicted ~8.4."
+    },
+    {
+      "id": "muon-q08",
+      "q": "In the 1971 Hafele-Keating experiment, atomic clocks were flown around the world. What was the key observation on return?",
+      "options": [
+        "All clocks read exactly the same time as the ground clocks",
+        "The flown clocks read different times from the ground reference, by amounts matching relativity's predictions",
+        "The clocks stopped working in flight",
+        "Only the eastbound clock changed; the westbound clock did not"
+      ],
+      "answer": 1,
+      "explanation": "The eastbound clocks lost ~59 ns and the westbound gained ~273 ns relative to the ground reference, matching the combined special- and general-relativistic predictions. The travelling clocks genuinely experienced different amounts of time — the twin paradox made of caesium and airline seats."
+    },
+    {
+      "id": "muon-q09",
+      "q": "GPS satellite clocks are deliberately set to tick slightly slow before launch. Why?",
+      "options": [
+        "To save battery power in orbit",
+        "Because once in orbit, relativistic effects make them run fast overall (~38 \\(\\mu\\mathrm{s}\\)/day), so pre-setting them slow makes them correct as seen from the ground",
+        "Because the satellites are colder in space",
+        "To compensate for signal delay through the atmosphere"
+      ],
+      "answer": 1,
+      "explanation": "In orbit, weaker gravity (general relativity, +45.8 \\(\\mu\\mathrm{s}\\)/day) outweighs the motion slowdown (special relativity, -7.2 \\(\\mu\\mathrm{s}\\)/day), so the clocks net run fast by ~38 \\(\\mu\\mathrm{s}\\)/day. Engineers pre-set the frequency slightly low so the clock ticks correctly once sped up. Uncorrected, position would drift ~10 km/day."
+    },
+    {
+      "id": "muon-q10",
+      "q": "A spaceship passes Earth at \\(v = 0.6c\\). A proper time of 10 s elapses on board (\\(\\gamma = 1.25\\)). How much time elapses in Earth's frame?",
+      "options": [
+        "8 s",
+        "10 s",
+        "12.5 s",
+        "6 s"
+      ],
+      "answer": 2,
+      "explanation": "Time dilation gives \\(t = \\gamma t_0 = 1.25 \\times 10 = 12.5\\ \\mathrm{s}\\). The moving ship's clock runs slow as seen from Earth, so more time (12.5 s) passes on Earth than the 10 s of proper time aboard the ship. The dilated time is always longer than the proper time."
+    }
+  ]
+}

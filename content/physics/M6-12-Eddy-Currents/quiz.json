@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m612-q01",
+      "q": "Which is the best definition of an eddy current?",
+      "options": [
+        "A current in a coil of wire that opposes the supply voltage",
+        "An induced, circulating, closed-loop current within the bulk of a solid conductor, caused by a changing magnetic flux",
+        "A force that opposes the motion of a conductor through a field",
+        "A steady direct current flowing along the surface of a metal"
+      ],
+      "answer": 1,
+      "explanation": "An eddy current is defined by what it IS: an induced circulating current flowing in closed loops within the body of a solid conductor due to a changing flux. Option C describes what eddy currents DO (the braking force), not what they are — leading with that loses the definition mark."
+    },
+    {
+      "id": "m612-q02",
+      "q": "What is the correct order of the chain that produces eddy currents in a moving metal plate?",
+      "options": [
+        "Lenz's law induces the EMF, then Faraday aims the current",
+        "Changing flux → Faraday's law induces an EMF → bulk metal carries circulating currents → Lenz's law sets their direction",
+        "The field directly pushes electrons in a straight line through the metal",
+        "Resistance heats the metal, which then creates a current"
+      ],
+      "answer": 1,
+      "explanation": "Faraday makes the EMF (from the changing flux), the bulk metal swirls the current into closed loops, and Lenz aims it to oppose the change. Lenz does not induce the EMF — that is Faraday's role."
+    },
+    {
+      "id": "m612-q03",
+      "q": "Why does an eddy current always produce a force that opposes the motion of the conductor, rather than aiding it?",
+      "options": [
+        "Because the metal's resistance always points backwards",
+        "Because conservation of energy forbids a force that would create energy from nothing",
+        "Because eddy currents only flow in one fixed direction",
+        "Because gravity always opposes the motion"
+      ],
+      "answer": 1,
+      "explanation": "A force aiding the motion would speed the conductor up, increasing the eddy current and the force, building kinetic and electrical energy with no input — a perpetual motion machine, forbidden by conservation of energy. So (by Lenz's law) the force must oppose, acting as a brake."
+    },
+    {
+      "id": "m612-q04",
+      "q": "Trace the energy pathway in an eddy-current brake. The conductor's kinetic energy is converted into:",
+      "options": [
+        "Magnetic potential energy stored in the field",
+        "Electrical energy of the eddy currents, then heat through resistive dissipation",
+        "Sound energy radiated from the metal",
+        "Chemical energy in the conductor"
+      ],
+      "answer": 1,
+      "explanation": "The braking force does negative work, removing kinetic energy, which becomes the electrical energy of the eddy currents and is then dissipated as heat (\\( P = I^2R \\)) as electrons collide with the lattice. The process is irreversible: kinetic → electrical → heat."
+    },
+    {
+      "id": "m612-q05",
+      "q": "How does the eddy-current braking force depend on the speed of the conductor?",
+      "options": [
+        "It is constant regardless of speed",
+        "It increases as speed increases, and falls to zero as speed approaches zero",
+        "It decreases as speed increases",
+        "It only acts at very low speeds"
+      ],
+      "answer": 1,
+      "explanation": "Faster motion means a faster rate of change of flux, hence a larger EMF, larger eddy current, and larger opposing force. As speed approaches zero the force approaches zero — which is why an eddy-current brake is smooth but cannot deliver the final stop on its own."
+    },
+    {
+      "id": "m612-q06",
+      "q": "A 600 kg roller-coaster car enters an eddy-current braking section at \\( 25\\,\\mathrm{m\\,s^{-1}} \\) and leaves at \\( 5.0\\,\\mathrm{m\\,s^{-1}} \\). How much kinetic energy is removed?",
+      "options": [
+        "\\( 1.8 \\times 10^{5}\\,\\mathrm{J} \\)",
+        "\\( 1.9 \\times 10^{5}\\,\\mathrm{J} \\)",
+        "\\( 7.5 \\times 10^{3}\\,\\mathrm{J} \\)",
+        "\\( 3.0 \\times 10^{5}\\,\\mathrm{J} \\)"
+      ],
+      "answer": 0,
+      "explanation": "\\( K_i = \\tfrac12(600)(25)^2 = 187\\,500\\,\\mathrm{J} \\); \\( K_f = \\tfrac12(600)(5)^2 = 7\\,500\\,\\mathrm{J} \\). \\( \\Delta K = 187\\,500 - 7\\,500 = 180\\,000\\,\\mathrm{J} = 1.8\\times10^{5}\\,\\mathrm{J} \\). Option B is the initial KE alone, not the amount removed."
+    },
+    {
+      "id": "m612-q07",
+      "q": "On an induction cooktop, why does the ceramic surface stay comparatively cool while the pot gets hot?",
+      "options": [
+        "The cooktop heats up first and then conducts heat into the pot like a normal stove",
+        "The AC coil induces eddy currents in the pot itself, so the pot heats directly via its own resistance",
+        "The pot reflects infrared radiation back into the food",
+        "The ceramic is a perfect insulator that blocks all heat"
+      ],
+      "answer": 1,
+      "explanation": "The coil's rapidly changing (AC) field induces eddy currents in the pot, which heats itself by \\( I^2R \\). The heat is generated in the pot, not the surface; the ceramic only warms by conduction back from the hot pot. The 'cooktop heats the pot like a stove' idea is the classic trap."
+    },
+    {
+      "id": "m612-q08",
+      "q": "A transformer's iron core is laminated. What do the thin insulating layers between sheets actually block?",
+      "options": [
+        "The magnetic flux, so less flux passes through the core",
+        "The electrical path of the eddy currents across the core, breaking large loops into small high-resistance ones",
+        "Both the flux and the eddy currents equally",
+        "The heat, by insulating the core thermally"
+      ],
+      "answer": 1,
+      "explanation": "The iron MUST still carry the flux — that is the core's job. The insulation blocks the cross-core electrical path of the eddy currents, confining them to many small high-resistance loops, drastically cutting the heat loss. Saying laminations 'block the flux' is the most common error and contradicts the point of the core."
+    },
+    {
+      "id": "m612-q09",
+      "q": "In which application are eddy currents a harmful, wasteful effect that engineers try to minimise?",
+      "options": [
+        "Electromagnetic braking on trains",
+        "The iron core of a transformer",
+        "An induction furnace melting metal",
+        "A walk-through metal detector"
+      ],
+      "answer": 1,
+      "explanation": "In a transformer core, eddy currents dissipate energy as heat, lowering efficiency — pure loss, so the core is laminated. In braking, cooktops, furnaces and detectors, the energy taken from the motion (or the signal) is exactly what you want, so eddy currents are useful there."
+    },
+    {
+      "id": "m612-q10",
+      "q": "A magnet dropped down a thick copper pipe falls slowly at a near-constant speed. This is best described as:",
+      "options": [
+        "The magnet sticking magnetically to the copper",
+        "A magnetic 'terminal velocity', where the speed-dependent eddy-current drag grows until it balances gravity",
+        "Air resistance inside the pipe",
+        "The copper being ferromagnetic and attracting the magnet"
+      ],
+      "answer": 1,
+      "explanation": "The faster the magnet falls, the larger the eddy currents induced in the pipe walls and the larger the opposing (Lenz's law) force, until the magnetic drag balances gravity and it drifts at near-constant speed — analogous to a skydiver's terminal velocity, but the retarding force is electromagnetic, not air resistance. Copper is not ferromagnetic."
+    }
+  ]
+}

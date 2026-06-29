@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m715-q01",
+      "q": "What is the equation for relativistic momentum?",
+      "options": [
+        "\\(p = m_0 v\\)",
+        "\\(p = \\gamma m_0 v\\), where \\(\\gamma\\) is the Lorentz factor and \\(m_0\\) is the rest mass",
+        "\\(p = m_0 c^2\\)",
+        "\\(p = \\dfrac{m_0 v}{c}\\)"
+      ],
+      "answer": 1,
+      "explanation": "Relativistic momentum is \\(p = \\gamma m_0 v\\). At low speeds \\(\\gamma \\approx 1\\) and it reduces to Newton's \\(p = m_0 v\\), which is why Newtonian physics works for everyday speeds."
+    },
+    {
+      "id": "m715-q02",
+      "q": "Why can no object with mass ever be accelerated to the speed of light?",
+      "options": [
+        "Because light is simply the universe's speed limit and that is the reason",
+        "As \\(v \\to c\\), \\(\\gamma \\to \\infty\\), so the object's momentum and relativistic mass grow without limit, requiring infinite energy to reach \\(c\\)",
+        "Because friction with space increases at high speed",
+        "Because the object would become invisible"
+      ],
+      "answer": 1,
+      "explanation": "The runaway Lorentz factor is the mechanism: as speed approaches c, \\(\\gamma\\) approaches infinity, so mass and momentum approach infinity, and reaching c would need infinite energy — impossible. Only massless photons travel at c. Simply asserting the speed limit is circular."
+    },
+    {
+      "id": "m715-q03",
+      "q": "When a particle already near light speed is pushed harder, where does most of the added energy go?",
+      "options": [
+        "Into increasing its speed beyond c",
+        "Into increasing its relativistic mass (inertia), since \\(m = \\gamma m_0\\) grows as \\(\\gamma\\) climbs",
+        "It is radiated away as heat",
+        "Into shortening its length further"
+      ],
+      "answer": 1,
+      "explanation": "Near light speed, energy added goes increasingly into mass rather than speed. The relativistic mass \\(m = \\gamma m_0\\) keeps climbing, so the particle gets harder to push and barely gains speed."
+    },
+    {
+      "id": "m715-q04",
+      "q": "What does \\(E = mc^2\\) express, and why does a tiny mass yield enormous energy?",
+      "options": [
+        "Mass and energy are unrelated; the energy comes from chemical bonds",
+        "Mass and energy are equivalent forms of the same thing; because the conversion factor \\(c^2 \\approx 9\\times10^{16}\\) is enormous, even a minuscule mass yields a huge energy",
+        "Energy equals mass times the speed of light (not squared)",
+        "Mass can only be converted to energy in stars"
+      ],
+      "answer": 1,
+      "explanation": "Mass and energy are two forms of one thing, interchangeable at the rate \\(c^2\\). Since \\(c^2\\) is about \\(9\\times10^{16}\\), a tiny mass gives a colossal energy. The square is essential — using \\(c\\) instead of \\(c^2\\) is a common error."
+    },
+    {
+      "id": "m715-q05",
+      "q": "An electron and a positron, each of mass \\(9.11\\times10^{-31}\\,\\mathrm{kg}\\), annihilate completely. How much energy is released? (\\(c^2 = 9.0\\times10^{16}\\))",
+      "options": [
+        "\\(8.2\\times10^{-14}\\,\\mathrm{J}\\)",
+        "\\(1.64\\times10^{-13}\\,\\mathrm{J}\\)",
+        "\\(1.64\\times10^{-13}\\,\\mathrm{W}\\)",
+        "\\(2.7\\times10^{-22}\\,\\mathrm{J}\\)"
+      ],
+      "answer": 1,
+      "explanation": "Both masses convert: total mass \\(= 2\\times9.11\\times10^{-31} = 1.82\\times10^{-30}\\,\\mathrm{kg}\\). \\(E = mc^2 = 1.82\\times10^{-30}\\times9.0\\times10^{16} = 1.64\\times10^{-13}\\,\\mathrm{J}\\) (about 1.022 MeV). Using one mass would be off by a factor of 2."
+    },
+    {
+      "id": "m715-q06",
+      "q": "The Sun loses mass at \\(4.4\\times10^{9}\\,\\mathrm{kg\\,s^{-1}}\\). What is its power output? (\\(c^2 = 9.0\\times10^{16}\\))",
+      "options": [
+        "\\(4.0\\times10^{26}\\,\\mathrm{W}\\)",
+        "\\(4.4\\times10^{9}\\,\\mathrm{W}\\)",
+        "\\(1.3\\times10^{18}\\,\\mathrm{W}\\)",
+        "\\(4.0\\times10^{26}\\,\\mathrm{J}\\)"
+      ],
+      "answer": 0,
+      "explanation": "Power = (mass lost per second) \\(\\times c^2 = 4.4\\times10^{9}\\times9.0\\times10^{16} = 4.0\\times10^{26}\\,\\mathrm{W}\\). The answer is a power because the mass loss was already per second."
+    },
+    {
+      "id": "m715-q07",
+      "q": "Which three contexts of mass-to-energy conversion does the episode name (Stars, Smash, Smoke), in decreasing order of efficiency?",
+      "options": [
+        "Combustion, fusion, annihilation",
+        "Annihilation (100%), nuclear fusion (small but significant), combustion (negligible)",
+        "Fission, fusion, combustion — all equally efficient",
+        "Annihilation, combustion, fusion"
+      ],
+      "answer": 1,
+      "explanation": "Matter–antimatter annihilation converts 100% of mass to energy, fusion in stars converts a small but significant fraction, and ordinary combustion converts a negligible fraction. Same equation, wildly different efficiencies."
+    },
+    {
+      "id": "m715-q08",
+      "q": "How do particle accelerators provide evidence for special relativity?",
+      "options": [
+        "They show particles exceeding the speed of light, confirming Newton",
+        "Above ~0.1c, a constant force gives ever-decreasing acceleration — momentum and mass rise per the Lorentz factor while speed approaches but never reaches c, contradicting Newton's prediction of unlimited speed",
+        "They show that mass is perfectly conserved in collisions",
+        "They demonstrate that gamma decreases at high speed"
+      ],
+      "answer": 1,
+      "explanation": "Newton predicts a constant force gives constant acceleration and unbounded speed. Instead, near c the same force gives tiny speed gains as momentum and relativistic mass balloon, with speed capped below c — exactly as relativity predicts and nothing like Newton."
+    },
+    {
+      "id": "m715-q09",
+      "q": "Why do photons travel at exactly the speed of light while massive objects cannot?",
+      "options": [
+        "Photons are pushed by a special force",
+        "Photons have zero rest mass, so the infinite-energy barrier (from \\(\\gamma \\to \\infty\\)) does not apply to them",
+        "Photons are smaller than other particles",
+        "Photons carry no energy"
+      ],
+      "answer": 1,
+      "explanation": "Massless particles such as photons (rest mass = 0) are not subject to the runaway \\(\\gamma\\) barrier that makes massive objects need infinite energy. Massless travels at c; massive never quite does — two sides of one coin."
+    },
+    {
+      "id": "m715-q10",
+      "q": "What is the correct way to describe a fast object's 'mass increase'?",
+      "options": [
+        "The object physically swells and gets bigger",
+        "From an external frame its inertia and momentum increase; in its own rest frame nothing changes and its rest mass is unchanged",
+        "The object's rest mass permanently increases",
+        "The object's atoms multiply"
+      ],
+      "answer": 1,
+      "explanation": "Relativistic mass increase is an increase in inertia/momentum measured from an external frame — how hard it is to accelerate from outside. In its own rest frame nothing changes; the object does not balloon in size."
+    }
+  ]
+}

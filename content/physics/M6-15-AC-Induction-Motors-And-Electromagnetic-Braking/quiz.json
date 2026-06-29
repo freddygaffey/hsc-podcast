@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m615-q01",
+      "q": "How does a three-phase supply produce a rotating magnetic field in the stator of an AC induction motor?",
+      "options": [
+        "A single coil on AC produces a field that spins around the stator",
+        "Three coil pairs, 120° apart, fed by currents 120° out of phase, give a resultant field whose direction sweeps continuously around",
+        "A split-ring commutator rotates the field mechanically",
+        "Permanent magnets are physically spun by a small motor"
+      ],
+      "answer": 1,
+      "explanation": "Because the three currents peak at different instants, the vector sum of the three coil fields points in a continuously changing direction, sweeping round the stator. A single coil on AC only oscillates back and forth along one axis — it does not rotate."
+    },
+    {
+      "id": "m615-q02",
+      "q": "The combined rotating field in an AC induction motor has which property?",
+      "options": [
+        "Constant direction but pulsing magnitude",
+        "Constant magnitude but continuously rotating direction",
+        "Both magnitude and direction constant",
+        "Both magnitude and direction pulsing randomly"
+      ],
+      "answer": 1,
+      "explanation": "The rotating field is of fixed strength whose direction goes round and round — like a clock's second hand that never speeds up or slows. It is not a field that pulses bigger and smaller."
+    },
+    {
+      "id": "m615-q03",
+      "q": "What is the synchronous speed of the rotating field, and what sets it?",
+      "options": [
+        "The speed of the rotor; set by the load",
+        "The rotation speed of the field; set by the mains supply frequency (50 Hz in Australia)",
+        "Always 3000 rpm regardless of supply frequency",
+        "The speed of the eddy currents in the core"
+      ],
+      "answer": 1,
+      "explanation": "Synchronous speed is the speed of the rotating field, set by the supply frequency. At 50 Hz it is 50 rotations per second, which for a single pole-pair is \\( 50 \\times 60 = 3000\\,\\mathrm{rpm} \\)."
+    },
+    {
+      "id": "m615-q04",
+      "q": "Place the torque-producing chain in the correct order: (i) Faraday induces a current in the bars, (ii) relative motion changes the flux through the rotor loops, (iii) the rotating field sweeps past the rotor bars, (iv) the motor effect gives a force, aimed by Lenz to drag the rotor around.",
+      "options": [
+        "i → ii → iii → iv",
+        "iii → ii → i → iv",
+        "ii → iii → i → iv",
+        "iv → iii → ii → i"
+      ],
+      "answer": 1,
+      "explanation": "Rotating field sweeps past the bars (iii) → relative motion changes the flux (ii) → Faraday induces a current in the short-circuited bars (i) → the motor effect gives a force, aimed by Lenz's law to drag the rotor in the field's direction (iv). 'Rotating round, Faraday's force, Lenz follows.'"
+    },
+    {
+      "id": "m615-q05",
+      "q": "Why can the rotor of an AC induction motor never reach synchronous speed (catch the field)?",
+      "options": [
+        "Friction in the bearings always slows it slightly",
+        "At equal speed there is no relative motion, so no changing flux, no induced current, and no torque — so it cannot be sustained",
+        "The supply frequency drops as the rotor speeds up",
+        "The end rings disconnect at high speed"
+      ],
+      "answer": 1,
+      "explanation": "If the rotor matched the field, the relative motion would be zero, so the flux would stop changing, so (by Faraday) no EMF and no current, so no force and no torque. The rotor would immediately slow and fall behind — it must always run slightly slower (it 'slips')."
+    },
+    {
+      "id": "m615-q06",
+      "q": "The slip of an induction motor is best described as:",
+      "options": [
+        "A defect that wastes energy and should be eliminated",
+        "The essential speed difference between field and rotor that keeps the flux changing and torque flowing — and it is self-regulating with load",
+        "The slipping of brushes against the commutator",
+        "The frequency mismatch between the three phases"
+      ],
+      "answer": 1,
+      "explanation": "Slip is not a fault — without it there is no relative motion and no torque. It is also self-regulating: a heavier load slows the rotor, increasing slip, which speeds the flux change, raising the induced current and torque to meet the load automatically."
+    },
+    {
+      "id": "m615-q07",
+      "q": "Eddy currents in an induction motor are both wanted and unwanted. Which statement is correct?",
+      "options": [
+        "Eddy currents in the rotor bars are wasteful; eddy currents in the iron core produce the torque",
+        "Eddy currents in the rotor bars produce the torque (wanted); eddy currents in the iron core just heat it (unwanted, reduced by laminating)",
+        "All eddy currents are wasteful and are reduced by laminating both the bars and the core",
+        "All eddy currents are useful and are encouraged everywhere"
+      ],
+      "answer": 1,
+      "explanation": "The induced currents in the short-circuited rotor bars are exactly what produce the force and torque. The same alternating flux also induces wasteful currents in the solid iron core, which only heat it — these are suppressed by laminating the core. Laminations do NOT reduce the torque-producing bar currents."
+    },
+    {
+      "id": "m615-q08",
+      "q": "How does electromagnetic braking generate a force opposing motion?",
+      "options": [
+        "The magnet sticks to the metal by attraction",
+        "Relative motion changes the flux → Faraday induces eddy currents → Lenz makes them oppose the motion → a retarding force, with kinetic energy lost as heat",
+        "Friction pads press against the moving metal",
+        "The conductor is repelled by a like magnetic pole"
+      ],
+      "answer": 1,
+      "explanation": "A conductor moving through a field has a changing flux, inducing eddy currents (Faraday). By Lenz's law these oppose the change — the motion — producing a braking force. The kinetic energy is dissipated as heat (\\( I^2R \\)) in the conductor."
+    },
+    {
+      "id": "m615-q09",
+      "q": "Why can an eddy-current brake not bring a moving object to a sudden, complete stop on its own?",
+      "options": [
+        "The brake overheats and switches off",
+        "The braking force is proportional to speed, so it fades to zero as the object slows, approaching rest smoothly",
+        "The eddy currents reverse direction at low speed and push the object forward",
+        "Friction takes over and stops it instantly"
+      ],
+      "answer": 1,
+      "explanation": "Faster motion gives a faster flux change, larger eddy currents, and a larger force. As speed drops the force drops, approaching zero at rest — so the brake tapers off smoothly (its great virtue) but cannot deliver the final stop, which is why a friction brake is usually added."
+    },
+    {
+      "id": "m615-q10",
+      "q": "What is the difference between a motor and a generator in terms of energy transformation?",
+      "options": [
+        "A motor converts mechanical to electrical; a generator converts electrical to mechanical",
+        "A motor converts electrical to mechanical (rotational kinetic); a generator converts mechanical (kinetic) to electrical",
+        "Both convert electrical energy to heat",
+        "A motor stores energy; a generator releases it"
+      ],
+      "answer": 1,
+      "explanation": "A motor turns electrical energy into rotational kinetic (mechanical) energy; a generator turns mechanical kinetic energy into electrical energy. They are the same device run in opposite directions — the exam tests the direction of conversion, so name both forms."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m611-q01",
+      "q": "Which is the most precise statement of Lenz's law?",
+      "options": [
+        "The induced current flows in the direction that opposes the magnetic flux",
+        "The induced current flows in the direction that opposes the magnet",
+        "The induced current creates a magnetic field that opposes the change in flux that produced it",
+        "The induced current always flows clockwise when viewed from the source"
+      ],
+      "answer": 2,
+      "explanation": "The key word is 'change'. The induced current opposes the change in flux, not the flux and not the magnet. 'Opposes the flux' (A) is wrong when flux is decreasing — then the induced field reinforces the original flux to maintain it."
+    },
+    {
+      "id": "m611-q02",
+      "q": "What does the minus sign in Faraday's law \\( \\varepsilon = -N\\dfrac{\\Delta\\Phi}{\\Delta t} \\) represent?",
+      "options": [
+        "That the EMF is always a negative number",
+        "Lenz's law — the direction of the induced EMF, which opposes the change",
+        "That energy is lost as heat in the coil",
+        "That flux can never increase"
+      ],
+      "answer": 1,
+      "explanation": "The minus sign is Lenz's law written into the maths: it gives the direction (opposing the change). For any magnitude calculation you drop it — it carries direction only, never a number. Reporting a negative EMF in a magnitude answer loses marks."
+    },
+    {
+      "id": "m611-q03",
+      "q": "Lenz's law is described as 'conservation of energy in disguise'. If an induced current instead REINFORCED the change that produced it, what would result?",
+      "options": [
+        "The induced current would simply be larger but harmless",
+        "A runaway feedback loop creating energy from nothing — a perpetual motion machine",
+        "The coil would overheat but energy would still be conserved",
+        "Nothing — both directions are equally valid"
+      ],
+      "answer": 1,
+      "explanation": "A reinforcing current would accelerate the source, increasing the rate of change of flux, inducing a larger current and force, accelerating it more — a runaway that builds kinetic and electrical energy with no input. That perpetual motion machine violates conservation of energy, so it cannot happen."
+    },
+    {
+      "id": "m611-q04",
+      "q": "When you push a magnet into a coil, you must do mechanical work. Following the energy pathway ('Work, Watts, Warmth'), where does that energy ultimately go?",
+      "options": [
+        "It is stored permanently as magnetic energy in the coil",
+        "It is destroyed by the opposing force",
+        "It becomes electrical energy of the induced current, then heat in the wire's resistance",
+        "It is returned to your hand as the magnet rebounds"
+      ],
+      "answer": 2,
+      "explanation": "The coil opposes the motion, so you do work against it. That mechanical work becomes electrical energy (the induced current), which dissipates as heat via \\( P = I^2R \\). Every joule of induced electrical energy is paid for by a joule of mechanical work — energy is conserved."
+    },
+    {
+      "id": "m611-q05",
+      "q": "Using the 'Change, Oppose, Grip' procedure: the flux through a loop is INCREASING. Which way must the induced magnetic field inside the loop point?",
+      "options": [
+        "In the same direction as the external field, to add to it",
+        "Opposite to the external field, to fight the increase",
+        "At right angles to the external field",
+        "It does not matter; flux direction is irrelevant"
+      ],
+      "answer": 1,
+      "explanation": "To oppose an increase, the induced field points opposite to the external field, trying to stop the flux from rising. (If flux were decreasing, the induced field would instead point the same way as the original, to replace the lost flux.)"
+    },
+    {
+      "id": "m611-q06",
+      "q": "A north pole approaches the face of a coil. By Lenz's law, the near face of the coil becomes a north pole. What is the effect on the magnet?",
+      "options": [
+        "The coil attracts the magnet, speeding it up",
+        "The coil repels the magnet, opposing its approach",
+        "The coil has no effect on the magnet's motion",
+        "The magnet is deflected sideways"
+      ],
+      "answer": 1,
+      "explanation": "A north pole on the coil's near face repels the approaching north pole, opposing the motion that increases the flux. This opposing force is exactly what conservation of energy demands — you must do work to push the magnet in."
+    },
+    {
+      "id": "m611-q07",
+      "q": "A flat metal ring sits in a field pointing into the page. You pull the ring out of the field. Which way does the induced current flow, viewed from the front?",
+      "options": [
+        "Anticlockwise, to create a field out of the page",
+        "Clockwise, to create a field into the page that maintains the lost flux",
+        "It alternates direction rapidly",
+        "No current flows because the ring is solid"
+      ],
+      "answer": 1,
+      "explanation": "The into-page flux is decreasing, so the induced current must create its own into-page field to replace the leaving flux. By the right-hand grip rule, an into-page field requires a clockwise current (viewed from the front). The current stops once the ring fully exits the field."
+    },
+    {
+      "id": "m611-q08",
+      "q": "A 50-turn coil of radius \\( 0.10\\,\\mathrm{m} \\), plane perpendicular to the field, has its field reduced from \\( 0.40\\,\\mathrm{T} \\) to \\( 0 \\) in \\( 0.20\\,\\mathrm{s} \\). What is the magnitude of the induced EMF? (\\( A = \\pi r^2 \\))",
+      "options": [
+        "\\( 0.063\\,\\mathrm{V} \\)",
+        "\\( 3.1\\,\\mathrm{V} \\)",
+        "\\( 1.6\\,\\mathrm{V} \\)",
+        "\\( 31\\,\\mathrm{V} \\)"
+      ],
+      "answer": 1,
+      "explanation": "\\( A = \\pi (0.10)^2 = 3.14 \\times 10^{-2}\\,\\mathrm{m^2} \\). \\( \\Delta\\Phi = BA = 0.40 \\times 3.14\\times10^{-2} = 1.26\\times10^{-2}\\,\\mathrm{Wb} \\). \\( |\\varepsilon| = N\\Delta\\Phi/\\Delta t = 50 \\times 1.26\\times10^{-2}/0.20 \\approx 3.1\\,\\mathrm{V} \\)."
+    },
+    {
+      "id": "m611-q09",
+      "q": "How do Faraday's law and Lenz's law divide the work of describing electromagnetic induction?",
+      "options": [
+        "Faraday gives the direction; Lenz gives the magnitude",
+        "Faraday gives the magnitude of the EMF; Lenz gives its direction",
+        "Both give only the magnitude",
+        "Faraday applies to coils; Lenz applies only to magnets"
+      ],
+      "answer": 1,
+      "explanation": "Faraday tells you how big the induced EMF is (turns times rate of change of flux); Lenz tells you which way it points (opposing the change). Together they are the one law of induction, with Lenz appearing as the minus sign in Faraday's equation."
+    },
+    {
+      "id": "m611-q10",
+      "q": "A bar magnet is dropped north-pole-down toward a horizontal coil in a closed circuit. As it approaches, the magnet:",
+      "options": [
+        "Accelerates faster than free fall, because the coil pulls it down",
+        "Falls more slowly than free fall, because the induced current opposes its motion",
+        "Falls at exactly the acceleration due to gravity",
+        "Stops completely above the coil"
+      ],
+      "answer": 1,
+      "explanation": "The approaching magnet increases the flux; the induced current makes the coil's top face a north pole that repels the magnet, producing an upward force opposing the motion. The magnet decelerates and falls more slowly, with some gravitational PE going into electrical energy and heat."
+    }
+  ]
+}

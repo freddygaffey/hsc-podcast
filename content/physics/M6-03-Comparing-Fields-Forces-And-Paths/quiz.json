@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m603-q01",
+      "q": "The syllabus dot-point asks you to \"account for the similarities and differences\" between paths in four field situations. What does this verb require?",
+      "options": [
+        "Four separate descriptions, one per scenario",
+        "A comparison that gives the reasons and cause-and-effect, not just descriptions",
+        "Only the equations for each case",
+        "A single diagram with no explanation"
+      ],
+      "answer": 1,
+      "explanation": "\"Account for\" means give the reasons and explain cause and effect, and the question demands a comparison, not four descriptions glued together. Writing four separate paragraphs caps low (band four) because it contains no comparison statements."
+    },
+    {
+      "id": "m603-q02",
+      "q": "Which single question determines whether a particle's path is a parabola or a circle?",
+      "options": [
+        "Whether the particle is positive or negative",
+        "Whether the field is strong or weak",
+        "Whether the force stays fixed in direction or stays perpendicular to the velocity",
+        "Whether the particle is heavy or light"
+      ],
+      "answer": 2,
+      "explanation": "A force fixed in direction (uniform gravity, uniform electric field) gives a parabola and does work; a force always perpendicular to the velocity (magnetic force, circular-orbit gravity) gives a circle and does no work. This single distinction is the engine of the whole comparison."
+    },
+    {
+      "id": "m603-q03",
+      "q": "Why does a satellite in a circular orbit have constant speed, even though gravity is acting on it?",
+      "options": [
+        "Gravity is too weak to do work in space",
+        "In a circular orbit gravity is perpendicular to the velocity, so it does no work",
+        "The satellite is in a region with no gravitational field",
+        "The satellite's engines maintain its speed"
+      ],
+      "answer": 1,
+      "explanation": "In a circular orbit gravity points to the centre while the velocity is tangential — perpendicular. A force perpendicular to the velocity does no work, so the speed and kinetic energy stay constant. (In an elliptical orbit gravity has a component along the motion, so the speed varies.)"
+    },
+    {
+      "id": "m603-q04",
+      "q": "Why does the syllabus list \"masses in uniform gravitational fields\" and \"satellites in orbit\" as separate cases?",
+      "options": [
+        "Because satellites are heavier than projectiles",
+        "Because a satellite's field is radial and non-uniform, giving a circle, while a uniform field gives a parabola",
+        "Because satellites experience no gravity",
+        "Because the two cases use different values of \\(g\\) but behave identically"
+      ],
+      "answer": 1,
+      "explanation": "A projectile moves across a uniform gravitational field (constant force, fixed direction) and traces a parabola. A satellite moves through a radial field that points inward and weakens with distance, acting as a centripetal force and giving a circle (or ellipse). The behaviours differ, so they are listed separately."
+    },
+    {
+      "id": "m603-q05",
+      "q": "In which two of the four scenarios does the field do work on the particle?",
+      "options": [
+        "Uniform gravity and uniform electric field",
+        "Circular orbit and uniform magnetic field",
+        "Uniform electric field and uniform magnetic field",
+        "Circular orbit and uniform gravity"
+      ],
+      "answer": 0,
+      "explanation": "In uniform gravity and a uniform electric field the force is fixed in direction, so when the particle moves along the field, work is done and kinetic energy changes. In a circular orbit and a uniform magnetic field the force stays perpendicular to the velocity, so no work is done and the speed is constant."
+    },
+    {
+      "id": "m603-q06",
+      "q": "Why is a satellite's circular orbit said to resemble a magnetic circle more than a gravitational parabola?",
+      "options": [
+        "Both involve charged particles",
+        "In both, the force is perpendicular to the velocity, doing no work and giving a circle",
+        "Both forces fall off as one over distance squared",
+        "Both require the particle to be moving at the speed of light"
+      ],
+      "answer": 1,
+      "explanation": "Forgetting where the force comes from, both have a force perpendicular to the velocity, giving the same three consequences: no work, constant speed, circular path. The geometry sets the path; only the origin of the force differs (gravity vs the magnetic interaction)."
+    },
+    {
+      "id": "m603-q07",
+      "q": "An electron accelerated from rest through 100 V reaches \\(5.9\\times10^{6}\\ \\mathrm{m\\,s^{-1}}\\), then enters a 6 mT field perpendicular to its motion. What happens to its speed in the magnetic field?",
+      "options": [
+        "It increases, because the magnetic field adds energy",
+        "It decreases, because the field opposes the motion",
+        "It stays at \\(5.9\\times10^{6}\\ \\mathrm{m\\,s^{-1}}\\), because the magnetic field does no work",
+        "It drops to zero as the electron circles"
+      ],
+      "answer": 2,
+      "explanation": "The magnetic force is perpendicular to the velocity and does no work, so the speed is unchanged at \\(5.9\\times10^{6}\\ \\mathrm{m\\,s^{-1}}\\). The field only bends the electron into a circle (here of radius about 5.6 mm). Contrast: the electric field did work and increased the speed."
+    },
+    {
+      "id": "m603-q08",
+      "q": "How does an electric field differ from a gravitational field in the kind of force it can exert?",
+      "options": [
+        "An electric field only attracts, like gravity",
+        "An electric field can attract or repel depending on the sign of the charge, whereas gravity only attracts",
+        "An electric field cannot do work, but gravity can",
+        "An electric field acts only on moving charges"
+      ],
+      "answer": 1,
+      "explanation": "Both forces are constant in a uniform field and independent of velocity, but the electric force points with the field for a positive charge and against it for a negative charge — so it can attract or repel. Gravity is always attractive. Both, however, do work and give parabolas."
+    },
+    {
+      "id": "m603-q09",
+      "q": "What is the single most common structural mistake on the \"compare the paths\" extended response?",
+      "options": [
+        "Using too many equations",
+        "Answering field by field instead of by comparison point",
+        "Mentioning the word \"whereas\"",
+        "Including a diagram"
+      ],
+      "answer": 1,
+      "explanation": "Writing one paragraph per field produces correct descriptions but no comparison, so it caps low. The mark-earning structure organises by comparison axis — running all scenarios across each axis — and uses linking words like \"whereas\" and \"in contrast\"."
+    },
+    {
+      "id": "m603-q10",
+      "q": "What common feature unifies all four scenarios despite their differences?",
+      "options": [
+        "All four produce parabolic paths",
+        "In every case the force is the net force, so Newton's second law applies to all four",
+        "All four forces do work on the particle",
+        "All four require the particle to be charged"
+      ],
+      "answer": 1,
+      "explanation": "In each scenario the relevant force is the net force on the particle, so \\(F = ma\\) applies without exception. The differences live only in the force law itself and the direction of that force relative to the velocity; everything else follows from those two."
+    }
+  ]
+}

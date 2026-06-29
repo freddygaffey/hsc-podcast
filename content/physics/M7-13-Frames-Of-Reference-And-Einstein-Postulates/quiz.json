@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m713-q01",
+      "q": "What defines an inertial frame of reference?",
+      "options": [
+        "A frame that is accelerating, in which fictitious forces appear",
+        "A frame that is not accelerating (at rest or constant velocity), in which Newton's first law holds",
+        "A frame attached to the centre of the Earth only",
+        "A frame in which the speed of light is zero"
+      ],
+      "answer": 1,
+      "explanation": "An inertial frame is non-accelerating — at rest or moving at constant velocity — and Newton's first law holds within it. Accelerating frames are non-inertial, where fictitious forces must be invoked."
+    },
+    {
+      "id": "m713-q02",
+      "q": "In classical (Galilean) physics, which quantity is relative and which were assumed absolute?",
+      "options": [
+        "Velocity is absolute; time, length and mass are relative",
+        "Velocity is relative; time, length and mass were assumed absolute",
+        "Everything is absolute, including velocity",
+        "Only the speed of light is relative; everything else is absolute"
+      ],
+      "answer": 1,
+      "explanation": "Galilean relativity makes velocity relative (depends on the observer) but treats time, length, mass and simultaneity as absolute. Special relativity overturns the absoluteness of time and length."
+    },
+    {
+      "id": "m713-q03",
+      "q": "What was the luminiferous aether supposed to be?",
+      "options": [
+        "A type of light that travels faster than c",
+        "The invisible medium filling all space through which light was thought to travel, defining an absolute rest frame",
+        "A force that accelerates light near massive objects",
+        "The instrument Michelson and Morley used to detect Earth's motion"
+      ],
+      "answer": 1,
+      "explanation": "Since every other wave needs a medium, 19th-century physicists assumed light travelled through an invisible aether at speed c relative to it — providing the universe's supposed absolute rest frame."
+    },
+    {
+      "id": "m713-q04",
+      "q": "What was the result of the Michelson–Morley experiment, and what did it indicate?",
+      "options": [
+        "It detected a strong aether wind, confirming the aether exists",
+        "A null result: no fringe shift, showing the speed of light is the same in all directions regardless of Earth's motion",
+        "It measured the speed of light to be 1.5c in the direction of motion",
+        "It proved light needs a medium to travel"
+      ],
+      "answer": 1,
+      "explanation": "The experiment got the famous null result — no fringe shift in any orientation — indicating no aether wind and that the speed of light is invariant. This is the experimental ground for Einstein's first postulate."
+    },
+    {
+      "id": "m713-q05",
+      "q": "Which statement most precisely captures Einstein's first postulate?",
+      "options": [
+        "The speed of light is constant",
+        "The speed of light in a vacuum is an absolute constant, the same for all observers regardless of the motion of the source or the observer",
+        "The speed of light depends on the motion of the observer",
+        "Light always travels at c relative to the aether"
+      ],
+      "answer": 1,
+      "explanation": "The crucial qualifier 'the same for all observers regardless of the motion of source or observer' is the revolutionary content. Saying merely 'the speed of light is constant' loses the point — and half the marks."
+    },
+    {
+      "id": "m713-q06",
+      "q": "What does Einstein's second postulate state?",
+      "options": [
+        "The speed of light is the same for all observers",
+        "All inertial frames of reference are equivalent — the laws of physics are the same in every inertial frame",
+        "Time runs at the same rate for all observers",
+        "Mass increases with speed"
+      ],
+      "answer": 1,
+      "explanation": "The second postulate (the principle of relativity) states that all inertial frames are equivalent and the laws of physics are identical in every inertial frame — Galileo's principle promoted to a fundamental law."
+    },
+    {
+      "id": "m713-q07",
+      "q": "A spacecraft approaches Earth at 0.5c and emits a light beam ahead of it. At what speed does the light reach Earth?",
+      "options": [
+        "1.5c",
+        "c",
+        "0.5c",
+        "2c"
+      ],
+      "answer": 1,
+      "explanation": "By the first postulate, the speed of light is independent of the source's motion, so the light reaches Earth at exactly c, not 0.5c + c = 1.5c. Velocities do not add the classical way for light."
+    },
+    {
+      "id": "m713-q08",
+      "q": "Why must the constancy of the speed of light force space and time to become relative?",
+      "options": [
+        "Because light slows down when observed",
+        "Because speed = distance/time, so if two observers in relative motion measure the same c, they cannot agree on both distance and time",
+        "Because clocks are physically damaged by motion",
+        "Because the aether distorts measurements"
+      ],
+      "answer": 1,
+      "explanation": "If both observers measure the same c and speed is distance divided by time, then the metres and seconds must differ between them. Saving the constancy of c requires sacrificing the absoluteness of space and time."
+    },
+    {
+      "id": "m713-q09",
+      "q": "In the train thought experiment, a central lamp flashes. Why are the events 'light hits back wall' and 'light hits front wall' simultaneous for a passenger but not for a platform observer?",
+      "options": [
+        "The light travels faster toward the back wall for the passenger",
+        "For the passenger the distances are equal at speed c (simultaneous), but for the platform observer the train moves so the back wall rushes toward the flash point, so light reaches it first",
+        "The platform observer sees the light slow down",
+        "The lamp flashes twice for the platform observer"
+      ],
+      "answer": 1,
+      "explanation": "On the train, equal distances travelled at c make the events simultaneous. From the platform, light still travels at c (postulate 1), but the train moves forward, so the back wall approaches the flash point and light reaches it first — the events are not simultaneous."
+    },
+    {
+      "id": "m713-q10",
+      "q": "What is the relativity of simultaneity?",
+      "options": [
+        "Two events that are simultaneous for one observer are simultaneous for all observers",
+        "Two events simultaneous in one inertial frame need not be simultaneous in another frame moving relative to it",
+        "All events in the universe happen at the same time",
+        "Simultaneity only matters at low speeds"
+      ],
+      "answer": 1,
+      "explanation": "Simultaneity is relative: observers in relative motion can genuinely disagree about whether two events happened at the same time. This follows directly from the constancy of the speed of light, and is the first crack in absolute time."
+    }
+  ]
+}

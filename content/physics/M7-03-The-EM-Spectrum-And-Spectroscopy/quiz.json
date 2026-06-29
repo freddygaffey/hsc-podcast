@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m703-q01",
+      "q": "Which region of the electromagnetic spectrum has the longest wavelength and lowest photon energy?",
+      "options": [
+        "Gamma rays",
+        "X-rays",
+        "Radio waves",
+        "Ultraviolet"
+      ],
+      "answer": 2,
+      "explanation": "Radio waves sit at the low-frequency, long-wavelength, low-energy end of the spectrum; gamma rays are at the opposite, short-wavelength, high-energy end. A common trap is to assume gamma rays have the longest wavelength because they sound powerful."
+    },
+    {
+      "id": "m703-q02",
+      "q": "Going from radio waves to gamma rays along the spectrum, which quantity decreases?",
+      "options": [
+        "Frequency",
+        "Photon energy",
+        "Ionising power",
+        "Wavelength"
+      ],
+      "answer": 3,
+      "explanation": "Frequency, photon energy and ionising power all increase from radio to gamma. Because \\( c = f\\lambda \\) is fixed, wavelength must decrease as frequency increases."
+    },
+    {
+      "id": "m703-q03",
+      "q": "Which set of regions are the ionising radiations?",
+      "options": [
+        "Radio, microwave, infrared",
+        "Ultraviolet, X-ray, gamma",
+        "Infrared, visible, ultraviolet",
+        "Microwave, visible, gamma"
+      ],
+      "answer": 1,
+      "explanation": "Only the top three highest-frequency regions — ultraviolet, X-ray and gamma — carry enough energy per photon to eject an electron from an atom (ionise it). Visible and below are non-ionising. Ionising begins the moment you step past violet into ultraviolet."
+    },
+    {
+      "id": "m703-q04",
+      "q": "Does 'non-ionising' mean a type of radiation is harmless?",
+      "options": [
+        "Yes — non-ionising radiation cannot damage living tissue",
+        "No — non-ionising radiation can still cause damage by heating at high intensity, it simply cannot ionise atoms",
+        "Yes — only ionising radiation can heat objects",
+        "No — non-ionising radiation is actually more dangerous than ionising radiation"
+      ],
+      "answer": 1,
+      "explanation": "'Non-ionising' only means a single photon cannot tear an electron off an atom. A high-intensity beam (e.g. infrared from a fire, or a microwave oven) can still cause real harm through heating — a different mechanism, but real damage."
+    },
+    {
+      "id": "m703-q05",
+      "q": "A prism and a diffraction grating both disperse white light. By what mechanism does a prism separate the colours?",
+      "options": [
+        "Diffraction",
+        "Refraction",
+        "Reflection",
+        "Polarisation"
+      ],
+      "answer": 1,
+      "explanation": "A prism disperses light by refraction — different wavelengths slow and bend by different amounts, with violet bending most and red least. A grating disperses by diffraction instead (and there red is deflected most, the reverse order)."
+    },
+    {
+      "id": "m703-q06",
+      "q": "What kind of source produces a continuous spectrum (an unbroken band of all colours)?",
+      "options": [
+        "A hot, low-density gas in a discharge tube",
+        "A continuous source viewed through a cool gas",
+        "A hot, dense glowing solid, liquid or dense gas",
+        "A cold gas illuminated by ultraviolet light"
+      ],
+      "answer": 2,
+      "explanation": "A hot, dense source (such as an incandescent tungsten filament) produces a continuous spectrum, because its closely packed atoms allow a continuous range of electron energies and so emit all wavelengths. Hot-thin gives emission; cool-gas-in-front gives absorption."
+    },
+    {
+      "id": "m703-q07",
+      "q": "How is an emission spectrum (bright lines on a dark background) produced?",
+      "options": [
+        "A hot, low-density gas is excited; electrons fall to lower energy levels, emitting photons of specific wavelengths",
+        "A continuous source passes through a cool gas that removes specific wavelengths",
+        "A dense hot solid emits every wavelength at once",
+        "White light is reflected off a coloured surface"
+      ],
+      "answer": 0,
+      "explanation": "In a hot, low-density gas (e.g. a discharge tube), the discharge excites electrons to higher levels; as they fall back they emit photons at specific energies, and hence specific wavelengths, producing bright lines only at those wavelengths."
+    },
+    {
+      "id": "m703-q08",
+      "q": "You shine a hot filament torch through a cool cloud of sodium gas and view it through a spectroscope. What spectrum do you see?",
+      "options": [
+        "A continuous rainbow with no lines",
+        "Bright sodium lines on a dark background (emission)",
+        "A continuous rainbow with dark lines at sodium's wavelengths (absorption)",
+        "No spectrum at all"
+      ],
+      "answer": 2,
+      "explanation": "The hot dense filament alone gives a continuous spectrum, but the light then passes through cool sodium gas, which absorbs photons at sodium's characteristic wavelengths and re-radiates them in all directions. Those wavelengths are depleted along the line of sight, leaving dark lines — an absorption spectrum."
+    },
+    {
+      "id": "m703-q09",
+      "q": "For a given element, how do the wavelengths of its absorption lines compare with those of its emission lines?",
+      "options": [
+        "The absorption lines lie at completely different wavelengths from the emission lines",
+        "The absorption lines lie at exactly the same wavelengths as the emission lines, because both come from the same electron energy-level transitions",
+        "The absorption lines are always at longer wavelengths than the emission lines",
+        "There is no fixed relationship; it depends on the temperature"
+      ],
+      "answer": 1,
+      "explanation": "Emission (electron falls) and absorption (electron rises) involve the same energy gaps, so the same photon energies and the same wavelengths. The dark absorption lines fall at identical positions to the bright emission lines — they are like a photographic negative of each other."
+    },
+    {
+      "id": "m703-q10",
+      "q": "How does spectroscopy allow astronomers to identify the elements present in a distant star?",
+      "options": [
+        "By measuring the star's overall brightness",
+        "Because heavier elements always glow red and lighter ones blue",
+        "Because every element has a unique pattern of spectral lines, and every atom of that element gives the same pattern anywhere in the universe, so matching the observed lines to known laboratory spectra identifies the element",
+        "By measuring the speed at which the star is moving"
+      ],
+      "answer": 2,
+      "explanation": "Each element produces a unique 'fingerprint' of spectral lines, identical for every atom of it whether on Earth or in a star. Matching the observed lines to known laboratory spectra reveals the element — so well that helium was identified in the Sun (1868) before it was isolated on Earth (1895)."
+    }
+  ]
+}

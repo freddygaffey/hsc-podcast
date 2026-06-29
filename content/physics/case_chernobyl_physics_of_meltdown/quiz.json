@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "chernobyl-q01",
+      "q": "What is the fundamental reason nuclear fission of uranium-235 releases energy?",
+      "options": [
+        "The fission fragments are more tightly bound (higher binding energy per nucleon) than the heavy uranium nucleus, and that gain in stability is released",
+        "The uranium nucleus gains mass when it splits",
+        "Neutrons are created from nothing during the split",
+        "The protons in the fragments repel each other and store energy"
+      ],
+      "answer": 0,
+      "explanation": "The two medium-mass fragments sit higher on the binding-energy-per-nucleon curve (closer to iron-56) than uranium, so they are more stable. The gain in stability is released, mostly as the kinetic energy of the flying fragments — about 200 MeV per fission."
+    },
+    {
+      "id": "chernobyl-q02",
+      "q": "What distinguishes a controlled chain reaction from an uncontrolled one?",
+      "options": [
+        "A controlled reaction uses no neutrons at all",
+        "In a controlled reaction, on average exactly one neutron per fission causes the next fission (steady power); in an uncontrolled one, more than one does, so fissions multiply",
+        "An uncontrolled reaction produces no energy",
+        "A controlled reaction uses fast neutrons, an uncontrolled one uses slow neutrons"
+      ],
+      "answer": 1,
+      "explanation": "Controlled: on average exactly one neutron from each fission triggers one more, holding the rate steady (\\(k_{\\text{eff}} = 1\\)). Uncontrolled: more than one does, so fissions double and redouble and power climbs without limit (\\(k_{\\text{eff}} > 1\\))."
+    },
+    {
+      "id": "chernobyl-q03",
+      "q": "Why does a reactor need a moderator?",
+      "options": [
+        "To absorb excess neutrons and stop the reaction",
+        "To carry heat away to the turbine",
+        "Neutrons from fission are fast, but uranium-235 captures slow (thermal) neutrons far more readily, so the moderator slows them down",
+        "To enrich the uranium fuel"
+      ],
+      "answer": 2,
+      "explanation": "Fresh fission neutrons are fast and present a tiny target to U-235, which much prefers slow neutrons. The moderator slows them by repeated collisions with light nuclei until they are thermal and readily captured. Absorbing neutrons is the control rod's job, not the moderator's."
+    },
+    {
+      "id": "chernobyl-q04",
+      "q": "What is the key difference between the moderator and the control rods?",
+      "options": [
+        "The moderator absorbs neutrons; the control rods slow them",
+        "The moderator slows neutrons so they CAN cause fission; the control rods absorb neutrons so they CANNOT",
+        "Both slow neutrons but the control rods do it faster",
+        "Both absorb neutrons but the moderator does it more strongly"
+      ],
+      "answer": 1,
+      "explanation": "These are different jobs done by different materials: the moderator (graphite at Chernobyl) slows neutrons so they can be captured and cause fission, while the control rods (boron carbide) absorb neutrons to reduce the fission rate — the throttle and brake."
+    },
+    {
+      "id": "chernobyl-q05",
+      "q": "Why did the RBMK reactor have a positive void coefficient, while a typical Western water-moderated reactor has a negative one?",
+      "options": [
+        "The RBMK used water as both moderator and coolant",
+        "In the RBMK, graphite (not water) was the moderator, so boiling the coolant only removed a neutron absorber (the water), freeing more neutrons and raising power",
+        "The RBMK had no coolant at all",
+        "Western reactors use graphite, which boils away when overheated"
+      ],
+      "answer": 1,
+      "explanation": "In a Western reactor the water is the moderator, so boiling it removes moderation and the power falls (self-correcting). In the RBMK the graphite moderator is unaffected by boiling, but the water was also a mild neutron absorber, so boiling it frees neutrons, raising power, causing more boiling — a runaway loop."
+    },
+    {
+      "id": "chernobyl-q06",
+      "q": "Why does xenon-135 build up and 'poison' a reactor after its power is sharply reduced?",
+      "options": [
+        "Xenon-135 is added by the operators to slow the reaction",
+        "At low power there are few neutrons to burn the xenon away, but stored iodine-135 keeps decaying into fresh xenon-135, so it accumulates",
+        "Xenon-135 is produced only when the reactor is at full power",
+        "Xenon-135 leaks in from the coolant water"
+      ],
+      "answer": 1,
+      "explanation": "Xenon-135 is a voracious neutron absorber. At full power neutrons burn it away as fast as it forms. After a power drop the neutron flux collapses, but iodine-135 built up earlier keeps decaying into xenon-135, which is no longer being destroyed, so xenon surges — the 'xenon pit'."
+    },
+    {
+      "id": "chernobyl-q07",
+      "q": "Why was running the reactor with only ~8 equivalent control rods inserted (instead of the required 26–30) so dangerous?",
+      "options": [
+        "It made the reactor too cold to operate",
+        "It left almost no neutron-absorbing reserve to slow a power surge, while the reactor sat at low power where the positive void coefficient was most vicious",
+        "It caused the fuel to leak out of the channels",
+        "It switched the moderator off"
+      ],
+      "answer": 1,
+      "explanation": "The reactivity margin is essentially the braking power in reserve. With only ~8 rods' worth left, the operators had stripped out almost all their control, leaving the reactor poised on a knife edge at the low power where its positive void coefficient was at its most dangerous."
+    },
+    {
+      "id": "chernobyl-q08",
+      "q": "Why did pressing the AZ-5 emergency shutdown button briefly INCREASE the reactor's power?",
+      "options": [
+        "The button accidentally withdrew the rods instead of inserting them",
+        "Each control rod had a graphite tip that entered the core first, displacing neutron-absorbing water with a moderator and adding reactivity (the positive scram effect)",
+        "The button increased the coolant flow, boiling more water",
+        "The button switched off the moderator"
+      ],
+      "answer": 1,
+      "explanation": "The RBMK rods had graphite displacer tips. As the rods began to descend, the graphite tips entered the bottom of the core first, replacing neutron-absorbing water with moderating graphite. In an already supercritical, rod-stripped core, this added a final fatal shove of reactivity."
+    },
+    {
+      "id": "chernobyl-q09",
+      "q": "Why is caesium-137 (half-life ~30 years) the isotope that keeps the exclusion zone closed for centuries, rather than iodine-131 (half-life ~8 days)?",
+      "options": [
+        "Caesium-137 is far more radioactive per atom than iodine-131",
+        "Iodine-131 decays away within months, but caesium-137's 30-year half-life means it takes about 10 half-lives (~300 years) to fall to roughly a thousandth of its level",
+        "Iodine-131 was never released at Chernobyl",
+        "Caesium-137 does not decay at all"
+      ],
+      "answer": 1,
+      "explanation": "Iodine-131's 8-day half-life means it is gone within a couple of months. Caesium-137's ~30-year half-life means roughly 10 half-lives (~300 years) are needed to fall to about 0.1% of the 1986 level — the physical reason the most contaminated land stays restricted into the 23rd century."
+    },
+    {
+      "id": "chernobyl-q10",
+      "q": "Why was the Chernobyl disaster NOT a nuclear (bomb-like) explosion?",
+      "options": [
+        "Because no fission occurred at all",
+        "Because the fuel was only ~2% enriched and the geometry was nothing like a weapon; the blasts were essentially a steam (and possibly hydrogen) explosion of a few hundred tonnes of TNT equivalent",
+        "Because the reactor contained no uranium",
+        "Because the explosion released more energy than a bomb"
+      ],
+      "answer": 1,
+      "explanation": "A nuclear weapon needs uranium enriched above ~90% assembled into a critical mass in microseconds. Chernobyl's fuel was ~2% enriched with weapon-unlike geometry. The destruction was essentially a colossal steam-boiler explosion (~225 tonnes TNT equivalent) — thousands of times weaker than even a small bomb."
+    }
+  ]
+}

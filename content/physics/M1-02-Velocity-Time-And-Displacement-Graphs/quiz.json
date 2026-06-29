@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m102-q01",
+      "q": "Identify what the gradient of a displacement-time graph represents.",
+      "options": [
+        "The acceleration",
+        "The velocity",
+        "The distance travelled",
+        "The displacement"
+      ],
+      "answer": 1,
+      "explanation": "The gradient (rise over run) of a displacement-time graph is the change in displacement over the change in time, which is the definition of velocity. The hook is 'gradient climbs the ladder': the slope of displacement-time gives the next quantity up, velocity. Acceleration is the tempting wrong answer, but that is the gradient of a velocity-time graph, one rung higher."
+    },
+    {
+      "id": "m102-q02",
+      "q": "State what the area under a velocity-time graph represents.",
+      "options": [
+        "The acceleration",
+        "The velocity",
+        "The displacement",
+        "The average speed"
+      ],
+      "answer": 2,
+      "explanation": "Velocity (height) × time (width) = displacement, so the area between the velocity-time line and the time axis is the displacement. 'Gradient climbs the ladder, area descends it': on a velocity-time graph the gradient gives acceleration but the area gives displacement. These are two different operations and must never be mixed."
+    },
+    {
+      "id": "m102-q03",
+      "q": "A velocity-time graph shows a horizontal line at 15 m s⁻¹. Outline the motion of the object.",
+      "options": [
+        "The object is at rest",
+        "The object moves at constant velocity with zero acceleration",
+        "The object is accelerating uniformly",
+        "The object is decelerating"
+      ],
+      "answer": 1,
+      "explanation": "On a velocity-time graph a horizontal line means the velocity is not changing, so the object moves at constant velocity and, because the gradient is zero, its acceleration is zero. The tempting wrong answer 'at rest' confuses this with a horizontal line on a displacement-time graph — that is the single most tested distinction in motion graphs."
+    },
+    {
+      "id": "m102-q04",
+      "q": "Distinguish between what a horizontal line means on a displacement-time graph versus a velocity-time graph.",
+      "options": [
+        "Both mean the object is at rest",
+        "Both mean constant velocity",
+        "Displacement-time: at rest; velocity-time: constant velocity",
+        "Displacement-time: constant velocity; velocity-time: at rest"
+      ],
+      "answer": 2,
+      "explanation": "On a displacement-time graph a horizontal line means the displacement is not changing, so the object is at rest. On a velocity-time graph a horizontal line means the velocity is not changing, so the object moves at constant velocity (zero acceleration). The difference arises because the vertical axis is a different quantity in each graph."
+    },
+    {
+      "id": "m102-q05",
+      "q": "A curved (non-straight) displacement-time graph indicates which of the following?",
+      "options": [
+        "Constant velocity",
+        "The object is at rest",
+        "The object is accelerating",
+        "Negative displacement"
+      ],
+      "answer": 2,
+      "explanation": "A curve means the gradient is changing, and since the gradient of a displacement-time graph is the velocity, a changing gradient means a changing velocity — i.e. the object is accelerating. A straight sloped line would be constant velocity; the instantaneous velocity on the curve is the gradient of the tangent at that point."
+    },
+    {
+      "id": "m102-q06",
+      "q": "A car accelerates uniformly from rest to 30 m s⁻¹ in 12 s. Using a velocity-time graph, calculate the distance travelled.",
+      "options": [
+        "360 m",
+        "180 m",
+        "90 m",
+        "2.5 m"
+      ],
+      "answer": 1,
+      "explanation": "The distance is the area under the velocity-time line, which for uniform acceleration from rest is a triangle: ½ × base × height = ½ × 12 × 30 = 180 m. The tempting wrong answer 360 m comes from multiplying 30 × 12 (the rectangle) and forgetting the ½ — that error treats the motion as constant velocity rather than accelerated. (2.5 m s⁻² is the acceleration, not a distance.)"
+    },
+    {
+      "id": "m102-q07",
+      "q": "An object sweeps out an area of 40 m above the time axis on a velocity-time graph, then reverses and sweeps out 15 m below the axis. Calculate its displacement and the distance travelled.",
+      "options": [
+        "Displacement 55 m; distance 25 m",
+        "Displacement 25 m; distance 55 m",
+        "Displacement 55 m; distance 55 m",
+        "Displacement 25 m; distance 25 m"
+      ],
+      "answer": 1,
+      "explanation": "Area below the axis is negative displacement, so displacement is the net: 40 − 15 = 25 m. Distance ignores direction and adds the path: 40 + 15 = 55 m. This is the distance-versus-displacement distinction again — net for displacement, total for distance — so read the verb in the question carefully."
+    },
+    {
+      "id": "m102-q08",
+      "q": "A student wants to find an object's acceleration from a displacement-time graph by calculating the area under the line. Explain why this approach is wrong.",
+      "options": [
+        "The area under a displacement-time graph gives the velocity, not acceleration",
+        "The area under a displacement-time graph has no physical meaning; only its gradient (giving velocity) is used",
+        "The area gives the distance, which is close enough to acceleration",
+        "The method is correct"
+      ],
+      "answer": 1,
+      "explanation": "Area is only meaningful under a velocity-time graph (where it gives displacement). Under a displacement-time graph the area is not a physical quantity — the only thing you extract is the gradient, which gives velocity. To get acceleration you would need how the gradient itself changes, a second step not computed numerically from a curve at this level."
+    },
+    {
+      "id": "m102-q09",
+      "q": "Using unit analysis, justify why the gradient of a velocity-time graph must be an acceleration.",
+      "options": [
+        "Velocity × time = m s⁻¹ × s = m, the unit of displacement",
+        "Velocity ÷ time = m s⁻¹ ÷ s = m s⁻², the unit of acceleration",
+        "Velocity ÷ time = m s⁻¹ ÷ s = m s⁻¹, the unit of velocity",
+        "Time ÷ velocity = s ÷ m s⁻¹, the unit of acceleration"
+      ],
+      "answer": 1,
+      "explanation": "Gradient is rise over run = velocity ÷ time = (m s⁻¹) ÷ s = m s⁻², which is the unit of acceleration, so the gradient must be an acceleration. (Velocity × time = m, the displacement, which is why the area — not the gradient — gives displacement.) Checking units is good exam discipline: if the question wants an acceleration, take the gradient; if it wants a displacement, take the area."
+    },
+    {
+      "id": "m102-q10",
+      "q": "A velocity-time graph shows velocity rising uniformly from 0 to 20 m s⁻¹ over 5 s, then falling uniformly back to 0 over the next 10 s. Calculate the total displacement.",
+      "options": [
+        "300 m",
+        "150 m",
+        "100 m",
+        "50 m"
+      ],
+      "answer": 1,
+      "explanation": "Displacement is the total area under the line, split into two triangles: first ½ × 5 × 20 = 50 m, second ½ × 10 × 20 = 100 m, giving 50 + 100 = 150 m. Both sections are above the axis (positive velocity), so they add. The gradients tell you the object accelerates (+4 m s⁻²) then decelerates (−2 m s⁻²), but the displacement comes from the area, kept cleanly separate from the gradient."
+    }
+  ]
+}

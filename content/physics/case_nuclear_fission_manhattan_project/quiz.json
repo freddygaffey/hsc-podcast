@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "fission-q01",
+      "q": "Two forces compete inside a heavy nucleus like uranium. Which statement correctly describes them?",
+      "options": [
+        "The strong nuclear force pushes protons apart; the electrostatic force binds nucleons over long range",
+        "The electrostatic force repels the protons; the strong nuclear force binds nucleons but acts only over a very short (nearest-neighbour) range",
+        "Gravity holds the nucleus together; the strong force tears it apart",
+        "Both forces are attractive and act equally over all distances"
+      ],
+      "answer": 1,
+      "explanation": "The electrostatic (Coulomb) force repels every proton from every other across the whole nucleus, while the strong nuclear force is attractive but only reaches its nearest neighbours (~1 fm). In a large nucleus like uranium, the long-range repulsion nearly overwhelms the short-range binding, leaving it on the edge of stability."
+    },
+    {
+      "id": "fission-q02",
+      "q": "Why is a slow (thermal) neutron more effective than a fast neutron at inducing fission in U-235?",
+      "options": [
+        "A slow neutron carries more energy to break the nucleus",
+        "A slow neutron has no charge and lingers near the nucleus long enough to be captured, giving a larger reaction cross-section",
+        "A fast neutron is repelled by the nucleus's positive charge",
+        "Slow neutrons decay into protons before striking the nucleus"
+      ],
+      "answer": 1,
+      "explanation": "A neutron is uncharged, so it is not repelled; a slow neutron lingers near the nucleus long enough to be captured (a larger cross-section), making the target effectively bigger. A fast neutron tends to glance off. Speed is not needed to overcome repulsion because there is none."
+    },
+    {
+      "id": "fission-q03",
+      "q": "Where does the ~200 MeV of energy released in a single fission event actually come from?",
+      "options": [
+        "From the kinetic energy of the incoming neutron",
+        "From a tiny mass defect: the products weigh slightly less than the reactants, and that lost mass becomes energy via \\( E = mc^2 \\)",
+        "From chemical bonds breaking inside the nucleus",
+        "From the electrostatic potential energy stored in the neutron"
+      ],
+      "answer": 1,
+      "explanation": "The fission products together weigh slightly less than the original nucleus plus neutron. This mass defect is converted to energy by \\(E = mc^2\\); using \\(1\\ \\mathrm{u} = 931.5\\ \\mathrm{MeV}\\), a defect of ~0.186 u gives ~173 MeV (kinetic), and ~200 MeV total once gammas and fragment decay are included."
+    },
+    {
+      "id": "fission-q04",
+      "q": "On the binding-energy-per-nucleon curve (peaking near iron-56), why does splitting uranium release energy?",
+      "options": [
+        "Uranium has the highest binding energy per nucleon of any element",
+        "The fission fragments lie higher up the curve (more tightly bound, closer to the iron peak) than uranium, so binding energy is released",
+        "The fragments have lower binding energy per nucleon than uranium",
+        "Iron is produced directly in every fission reaction"
+      ],
+      "answer": 1,
+      "explanation": "Uranium sits on the right-hand slope at ~7.6 MeV/nucleon. Its fission fragments lie higher up, nearer the iron-56 peak (~8.5 MeV/nucleon), so they are more tightly bound. The surplus binding energy is released. Fission slides down the right of the curve toward iron; fusion climbs up the left — both head toward iron-56."
+    },
+    {
+      "id": "fission-q05",
+      "q": "A fission reaction releases a mass defect of 0.186 u. Using \\(1\\ \\mathrm{u} = 931.5\\ \\mathrm{MeV}\\), approximately how much energy is released?",
+      "options": [
+        "17 MeV",
+        "173 MeV",
+        "931 MeV",
+        "1.86 MeV"
+      ],
+      "answer": 1,
+      "explanation": "\\(E = \\Delta m \\times 931.5 = 0.186 \\times 931.5 \\approx 173\\ \\mathrm{MeV}\\), carried mainly as kinetic energy of the fragments. Adding gamma rays and fragment decay brings the total to about 200 MeV per fission."
+    },
+    {
+      "id": "fission-q06",
+      "q": "The multiplication factor \\(k\\) is the average number of neutrons from each fission that cause a further fission. Which value corresponds to a steadily running power reactor?",
+      "options": [
+        "\\( k < 1 \\) (subcritical)",
+        "\\( k = 1 \\) (critical)",
+        "\\( k > 1 \\) (supercritical)",
+        "\\( k = 0 \\)"
+      ],
+      "answer": 1,
+      "explanation": "When \\(k = 1\\) (critical), each fission triggers exactly one more, so the chain sustains at a steady level — a controlled reactor. \\(k < 1\\) lets the chain die out; \\(k > 1\\) makes it grow exponentially, the runaway condition of a bomb."
+    },
+    {
+      "id": "fission-q07",
+      "q": "What is the role of a moderator in a fission reactor, and why is this counterintuitive?",
+      "options": [
+        "It absorbs excess neutrons to slow the reaction; counterintuitive because absorbing neutrons speeds fission",
+        "It slows fast neutrons to thermal speeds; counterintuitive because slowing the neutrons down actually speeds up the chain reaction (slow neutrons cause fission far more readily)",
+        "It speeds neutrons up so they penetrate nuclei more easily",
+        "It cools the core by absorbing gamma rays"
+      ],
+      "answer": 1,
+      "explanation": "Neutrons emerge fast, but slow neutrons cause fission far more readily. The moderator (light atoms like carbon or hydrogen) slows them by repeated collisions. The counterintuitive part: slowing the neutrons down actually increases the fission rate, because thermal neutrons have a much larger fission cross-section. Control rods (not the moderator) absorb excess neutrons."
+    },
+    {
+      "id": "fission-q08",
+      "q": "What is the purpose of control rods made of cadmium or boron in a reactor?",
+      "options": [
+        "To slow down fast neutrons",
+        "To absorb spare neutrons, lowering the multiplication factor and controlling the reaction rate",
+        "To reflect neutrons back into the core",
+        "To carry heat away to the turbine"
+      ],
+      "answer": 1,
+      "explanation": "Cadmium and boron are strong neutron absorbers. Inserting the rods soaks up spare neutrons and lowers \\(k\\); withdrawing them lets the reaction build. They are the reactor's throttle and brake. Slowing neutrons is the moderator's job; reflecting them is the reflector's."
+    },
+    {
+      "id": "fission-q09",
+      "q": "Why can a commercial power reactor (fuel ~3-5% U-235) NOT detonate like an atomic bomb (fuel >90% U-235)?",
+      "options": [
+        "Reactors contain no fissile material at all",
+        "At low enrichment the chain cannot grow explosively fast — most neutrons are absorbed by non-fissile U-238 before a runaway can develop",
+        "Control rods make any detonation physically impossible regardless of fuel",
+        "Reactor uranium is a different element from bomb uranium"
+      ],
+      "answer": 1,
+      "explanation": "A bomb needs the chain to grow explosively in about a millionth of a second, which requires highly enriched fuel (>90% U-235). At 3-5% enrichment most neutrons are captured by the abundant non-fissile U-238 before a runaway can build, so a reactor can melt down or suffer a steam explosion but cannot produce a nuclear detonation."
+    },
+    {
+      "id": "fission-q10",
+      "q": "Complete and check the reaction \\( {}^{235}_{92}\\mathrm{U} + {}^{1}_{0}n \\to {}^{141}_{56}\\mathrm{Ba} + {}^{A}_{Z}\\mathrm{Kr} + 3\\,{}^{1}_{0}n \\). What are \\(A\\) and \\(Z\\) for the krypton nucleus?",
+      "options": [
+        "\\( A = 92,\\ Z = 36 \\)",
+        "\\( A = 95,\\ Z = 36 \\)",
+        "\\( A = 92,\\ Z = 38 \\)",
+        "\\( A = 89,\\ Z = 34 \\)"
+      ],
+      "answer": 0,
+      "explanation": "Conserve mass number: \\(235 + 1 = 141 + A + 3(1)\\), so \\(A = 92\\). Conserve atomic number: \\(92 + 0 = 56 + Z + 3(0)\\), so \\(Z = 36\\). The krypton nucleus is \\({}^{92}_{36}\\mathrm{Kr}\\)."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m204-q01",
+      "q": "Define momentum and identify its unit.",
+      "options": [
+        "Mass times acceleration, measured in newtons",
+        "Mass times velocity (a vector), measured in kg m s⁻¹",
+        "Force times time, measured in joules",
+        "Half mass times velocity squared, measured in joules"
+      ],
+      "answer": 1,
+      "explanation": "Momentum is the product of mass and velocity (p = mv), a vector measured in kg m s⁻¹, with the same direction as the velocity. Force times time is impulse, and ½mv² is kinetic energy — distinct quantities. Because momentum is a vector, sign/direction matters in one-dimensional problems."
+    },
+    {
+      "id": "m204-q02",
+      "q": "Outline the relationship between impulse and momentum.",
+      "options": [
+        "Impulse equals momentum divided by time",
+        "Impulse equals the change in momentum, equal to force times time (Δp = FΔt)",
+        "Impulse equals mass times acceleration",
+        "Impulse equals kinetic energy gained"
+      ],
+      "answer": 1,
+      "explanation": "Impulse is the change in momentum, equal to the force times the time it acts: Δp = FΔt (in kg m s⁻¹ or N s). It is really Newton's second law in disguise (Ft = mΔv) and equals the area under a force-time graph. Defining impulse as just 'a force' is the common error."
+    },
+    {
+      "id": "m204-q03",
+      "q": "A 0.2 kg ball at 15 m s⁻¹ is caught and brought to rest in 0.3 s. Calculate the average force on the ball.",
+      "options": [
+        "45 N",
+        "10 N",
+        "3 N",
+        "5 N"
+      ],
+      "answer": 1,
+      "explanation": "Change in momentum = mΔv = 0.2 × 15 = 3 kg m s⁻¹. Force = Δp/t = 3/0.3 = 10 N. If the catch were slowed to 0.6 s, the same 3 kg m s⁻¹ spread over double the time would halve the force to 5 N — 'extend the time, cut the force', which is why you give with the ball when catching."
+    },
+    {
+      "id": "m204-q04",
+      "q": "Explain, using impulse, why an airbag reduces injury in a car crash.",
+      "options": [
+        "It reduces the change in momentum of the occupant",
+        "It increases the time of the momentum change, reducing the peak force",
+        "It increases the force on the occupant",
+        "It conserves the occupant's kinetic energy"
+      ],
+      "answer": 1,
+      "explanation": "The change in momentum (from full speed to zero) is fixed by the situation. Since impulse = FΔt = Δp, extending the time over which the momentum change occurs reduces the average force — and it is the force that causes injury. Airbags, crumple zones, and bending your knees all extend the stopping time; they do not change the momentum itself."
+    },
+    {
+      "id": "m204-q05",
+      "q": "Explain why total momentum is conserved in a collision between two objects.",
+      "options": [
+        "Because kinetic energy is always conserved",
+        "By Newton's third law the objects exert equal and opposite forces for the same time, giving equal and opposite impulses that cancel",
+        "Because the objects have equal mass",
+        "Because friction provides an external force"
+      ],
+      "answer": 1,
+      "explanation": "During the collision, A pushes on B and B pushes back equally and oppositely (Newton's third law), for the same contact time. Since impulse = force × time, the two receive equal and opposite changes in momentum that cancel, so the total stays constant. This requires a closed system (no external net force)."
+    },
+    {
+      "id": "m204-q06",
+      "q": "A 1000 kg car at 20 m s⁻¹ hits a stationary 1500 kg car and they lock together. Calculate their common velocity.",
+      "options": [
+        "12 m s⁻¹",
+        "8 m s⁻¹",
+        "20 m s⁻¹",
+        "13.3 m s⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "Momentum before = 1000 × 20 + 0 = 20 000 kg m s⁻¹. After, the combined 2500 kg moves at v: 2500v = 20 000 → v = 8 m s⁻¹ in the original direction. Only masses and velocities are needed — conservation of momentum does it all."
+    },
+    {
+      "id": "m204-q07",
+      "q": "A 2 kg rifle fires a 0.01 kg bullet forward at 400 m s⁻¹ from rest. Calculate the recoil speed of the rifle.",
+      "options": [
+        "4 m s⁻¹",
+        "2 m s⁻¹",
+        "400 m s⁻¹",
+        "0.5 m s⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "Total momentum starts at zero, so it must stay zero. The bullet's momentum is 0.01 × 400 = 4 kg m s⁻¹ forward, so the rifle must carry 4 kg m s⁻¹ backward: recoil speed = 4/2 = 2 m s⁻¹ backward. Equal and opposite momenta summing to the original zero — this is also why a rocket is pushed forward as it ejects gas."
+    },
+    {
+      "id": "m204-q08",
+      "q": "Compare what is conserved in elastic and inelastic collisions.",
+      "options": [
+        "Momentum is conserved only in elastic collisions",
+        "Momentum is conserved in both; kinetic energy is conserved only in elastic collisions",
+        "Kinetic energy is conserved in both; momentum only in elastic",
+        "Neither momentum nor kinetic energy is conserved in inelastic collisions"
+      ],
+      "answer": 1,
+      "explanation": "Momentum is conserved in every closed-system collision, elastic or inelastic. The difference is kinetic energy: it is conserved only in elastic collisions, while in inelastic collisions some is transformed into heat, sound and deformation. Assuming kinetic energy is conserved in all collisions is the single most common error."
+    },
+    {
+      "id": "m204-q09",
+      "q": "A 0.5 kg ball moving at 8 m s⁻¹ is struck and rebounds straight back at 6 m s⁻¹. Calculate the magnitude of the impulse delivered to the ball.",
+      "options": [
+        "1 kg m s⁻¹",
+        "7 kg m s⁻¹",
+        "3 kg m s⁻¹",
+        "4 kg m s⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "Take the initial direction as positive: initial momentum = 0.5 × 8 = +4; final momentum = 0.5 × (−6) = −3 (rebound reverses direction). Impulse = final − initial = −3 − 4 = −7, i.e. 7 kg m s⁻¹ in the rebound direction. Treating the rebound as positive gives the wrong answer of 1 — the reversal of direction is why the impulse exceeds either momentum alone."
+    },
+    {
+      "id": "m204-q10",
+      "q": "A 3 kg trolley at 4 m s⁻¹ collides with a stationary 1 kg trolley and they stick together. Calculate the common velocity and determine whether kinetic energy is conserved.",
+      "options": [
+        "3 m s⁻¹; kinetic energy conserved (elastic)",
+        "3 m s⁻¹; kinetic energy not conserved (inelastic)",
+        "4 m s⁻¹; kinetic energy conserved",
+        "1 m s⁻¹; kinetic energy not conserved"
+      ],
+      "answer": 1,
+      "explanation": "Momentum: 3 × 4 + 0 = 12 = 4v → v = 3 m s⁻¹. Kinetic energy before = ½ × 3 × 4² = 24 J; after = ½ × 4 × 3² = 18 J. Since 18 J < 24 J, kinetic energy is NOT conserved — the collision is inelastic (the trolleys sticking together is the giveaway), with the 6 J difference transformed into heat, sound and deformation."
+    }
+  ]
+}

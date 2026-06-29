@@ -1,0 +1,56 @@
+---
+title: "Unit Testing Subsystems"
+module: PM11
+year: 11
+lesson: "10.5"
+kind: lesson
+supplementary: supplementary.md
+---
+
+NARRATOR: Welcome back. Five minutes of recap first — spaced repetition is the engine of this series — and then we finish the build the way every good build ends: by proving it works.
+
+NARRATOR: We've come a long way through the build chapter. We simulated before building — Safe, Cheap, Fast. We implemented the closed-loop controller — proportional refined into P-I-D. We integrated the devices behind clean interfaces — program to the interface, not the device. And we gave it a user interface — S-A-F-E: Status, Abort, Feedback, Errors. The machine is built. The last step is to prove each part of it actually works — and keeps working. That's unit testing, and you already met the foundations of it back in the object-oriented module.
+
+NARRATOR: The dot-point: "Create and use unit tests to determine the effectiveness and repeatability of each component's control algorithm." Outcomes S-E-eleven-oh-six — applying tools to develop and evaluate — S-E-eleven-oh-eight — refining code — and S-E-eleven-oh-nine — managing and documenting the project, which is the first time the module leans on outcome oh-nine.
+
+NARRATOR: Objectives. By the end you'll be able to: explain what effectiveness and repeatability mean for a control test; write unit tests using simulated devices; choose good test data; and explain why documenting test results matters.
+
+NARRATOR: Recall from the object-oriented module: a unit test checks one component in isolation, and good tests are FIRST — Fast, Independent, Repeatable, Self-validating, Timely — across the levels U-S-S, Unit, Subsystem, System. Today we apply that to a control algorithm, and the dot-point names exactly two things to check, so here's the hook — E-R: Effectiveness and Repeatability. Effectiveness asks: does the algorithm achieve its goal — does the controller actually reach the setpoint, does it command the right action? Repeatability asks: does the same input give the same result, run after run — is it deterministic? Effectiveness, and Repeatability.
+
+QUESTION: Here's the catch that makes mechatronic testing special. You want to test your control algorithm — should you wire up the real robot and run it?
+
+NARRATOR: No — and repeatability is exactly why. Real hardware is slow, expensive, sometimes dangerous, and crucially, it's not repeatable: real sensors are noisy, timing varies, so the same test gives slightly different results each time, and a test that's different every run can't reliably tell you anything. So you test against simulated devices — a mock sensor that returns scripted, fixed values — exactly the simulation idea from earlier in the chapter, dropped in behind the same clean interface you built in the integration episode. That makes the test fast, safe, and perfectly repeatable. This is the payoff for designing for testability all along: because the control logic talks to an interface, you can swap a mock device in and test the logic with no hardware at all.
+
+NARRATOR: Listing 1 is the heart of it — unit tests for a control algorithm. Watch the three things they check. First, effectiveness: feed the controller a temperature below the target and assert it commands heating; feed it the target and assert it commands nothing — the algorithm does the right thing. Second, a boundary case: feed it a huge error and assert the command is clamped to the safe maximum, not some impossible value — testing the edge, where bugs hide. And third, repeatability: run the same scripted sensor readings through twice and assert you get exactly the same sequence of commands both times — deterministic, thanks to the mock sensor. Effectiveness, boundary, repeatability, all in plain assertions that pass or fail with no human judgement.
+
+NARRATOR: And Listing 2 makes a point that matters enormously for mechatronics — you test the failure paths, not just the happy path. It unit-tests a safety interlock: a normal reading lets the controller run, but an over-limit reading must trip the interlock and refuse to operate. The test deliberately feeds a dangerous value and asserts that the safety feature fires. Testing what the system must refuse to do is as important as testing what it should do — because on a machine that moves in the real world, the failure path is where people get hurt.
+
+QUESTION: Pause the player and design two tests. For a heater controller that should hold a target temperature, describe one test that checks effectiveness and one that checks repeatability. Work it out, then play.
+
+NARRATOR: Here's a strong answer. For effectiveness: give the controller a measured temperature below the target and assert that it commands the heater on — and give it a temperature at or above the target and assert it commands the heater off; that checks it actually does its job. For repeatability: give the controller the same input — the same measured temperature — two or more times, and assert it returns exactly the same command every time; that checks it's deterministic. The marks come from an effectiveness test that checks the algorithm reaches or works toward the goal, and a repeatability test that checks identical inputs give identical outputs — and ideally noting you'd use a simulated sensor so the test is repeatable at all.
+
+NARRATOR: Two more things. What test data do you use? Reuse B-P-F from Programming Fundamentals — boundary, path, and faulty. Test the normal path — a typical input reaching the goal; the boundary values — the edges and limits, like the clamp; and faulty input — a sensor spike, an out-of-range value, the failure paths like the safety interlock. Test what it should do and what it should refuse to do. And finally, document the results — that's outcome S-E-eleven-oh-nine. Record each test: its input, the expected result, the actual result, and pass or fail. That documentation manages the project, gives you the confidence to change code without breaking it, and is your evidence that the subsystem actually works — which is exactly what you'll be marked on in the Year-Twelve project.
+
+NARRATOR: Two threads. Backward: this is the unit testing and the FIRST properties and the U-S-S levels from the object-oriented module, and the B-P-F test data from Programming Fundamentals, now aimed at control algorithms; the mock devices are the simulations from earlier in this chapter, and they only drop in so cleanly because of the interface abstraction from the integration episode; and the safety interlock we tested is from the autonomy and accessibility episodes. Everything converges here. Forward: next episode is the whole-module review, where we take a real-world build from problem to tested system; and into Year Twelve, this test-and-document discipline is the backbone of the software engineering major project.
+
+NARRATOR: Consolidate — takeaways. One: unit tests check each control component in isolation for E-R — Effectiveness, does it reach its goal, and Repeatability, same input same result every run. Two: test against simulated devices, mocks, behind the clean interface, because real hardware isn't repeatable — and that's why design-for-testability mattered. Three: use B-P-F test data — boundary, path, and faulty — and test the failure paths, like the safety interlock, not just the happy path. Four: document each test's input, expected, actual, and result — outcome S-E-eleven-oh-nine. Listing 3 is your one-page reference.
+
+NARRATOR: Now exam-style questions. Pen down, attempt before the model answer.
+
+QUESTION: Question one. Explain what "effectiveness" and "repeatability" mean when unit testing a component's control algorithm. Four marks.
+
+NARRATOR: Effectiveness means the test checks whether the control algorithm achieves its intended goal — for example that a controller commands the correct output to move the system toward its setpoint and reaches it. Repeatability means the test checks that the same inputs always produce the same outputs, run after run — that the algorithm is deterministic and the test result is consistent, not varying between runs. Together they confirm the algorithm both works and works reliably. For four marks, define each clearly — effectiveness as achieving the goal, repeatability as same-input-same-result — ideally noting repeatability requires controlling inputs, hence simulated devices.
+
+QUESTION: Question two. Explain why unit tests for a mechatronic control algorithm are run against simulated devices rather than real hardware. Pause, write, then play.
+
+NARRATOR: Real hardware makes testing slow, expensive, and potentially unsafe, and critically it is not repeatable — real sensors produce noisy, variable readings and timing differs between runs, so the same test would give different results and could not reliably confirm correct behaviour. Simulated devices, or mocks, return controlled, scripted values behind the same interface as the real device, so the control logic can be tested quickly, safely, and with perfectly repeatable results. The marks: real hardware is slow, costly, unsafe, and non-repeatable; simulated devices give fast, safe, deterministic tests of the same logic.
+
+QUESTION: Question three. Describe the kinds of test data you would use to unit test a control algorithm, with an example of each.
+
+NARRATOR: Using boundary, path, and faulty data: a normal path input — a typical in-range reading, such as a temperature a few degrees below target, expecting a sensible heating command; a boundary input — a value at an edge or limit, such as an enormous error, to check the output is clamped to the safe maximum; and a faulty input — an invalid or dangerous value, such as a reading above the safety limit, to check the algorithm refuses to operate or triggers the safety response. The mark-earning points: name the three kinds — normal, boundary, and faulty — and give an example of each with its expected behaviour, including a failure-path test.
+
+QUESTION: Question four. Explain why documenting unit test results is important when developing a mechatronic system.
+
+NARRATOR: Documenting test results — recording each test's input, expected result, actual result, and pass or fail — provides evidence that each component behaves correctly, which is essential for a system that interacts physically and safely with the world. It also lets developers change or extend code with confidence, since re-running documented tests shows whether anything has broken, and it forms part of managing and documenting the project's development. The mark is recognising that documented tests give evidence of correctness, support safe change, and are part of project management and accountability.
+
+NARRATOR: That completes the build. You unit-test each component in isolation for effectiveness and repeatability — E-R — against simulated devices behind a clean interface, using boundary, path, and faulty data, testing the failure paths as hard as the happy path, and you document every result. The machine isn't just built; it's proven. One episode remains: the whole-module review, where we take a real-world problem and walk it end to end — sense, think, act, build, and test — pulling every thread of Programming Mechatronics together. See you there.

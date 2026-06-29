@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "ligo-q01",
+      "q": "In Einstein's general relativity, what IS a gravitational wave?",
+      "options": [
+        "A beam of high-energy light produced by black holes",
+        "A ripple in the curvature of spacetime itself, travelling outward at the speed of light",
+        "A stream of gravitons emitted by stationary masses",
+        "A sound wave travelling through the interstellar medium"
+      ],
+      "answer": 1,
+      "explanation": "In general relativity gravity is the curvature of spacetime. Violently accelerating masses can make that curvature wobble, sending out ripples in the shape of space — gravitational waves — which travel at the speed of light."
+    },
+    {
+      "id": "ligo-q02",
+      "q": "As a gravitational wave passes, how does it affect space?",
+      "options": [
+        "It stretches space equally in all directions",
+        "It stretches space in one direction while squeezing it in the perpendicular direction, then reverses",
+        "It only affects the objects, not the space between them",
+        "It permanently compresses everything it touches"
+      ],
+      "answer": 1,
+      "explanation": "A gravitational wave stretches space along one axis while squeezing the perpendicular axis, then alternates. It is the distance (the space itself) that changes, which is why LIGO's two perpendicular arms change in opposite directions."
+    },
+    {
+      "id": "ligo-q03",
+      "q": "Why must gravitational-wave sources be extreme objects like merging black holes rather than something built in a lab?",
+      "options": [
+        "Because labs are too small",
+        "Because gravity is by far the weakest fundamental force, so only enormous masses moving violently at near-light speed produce a detectable wave",
+        "Because laboratory equipment absorbs gravitational waves",
+        "Because gravitational waves only form in a vacuum"
+      ],
+      "answer": 1,
+      "explanation": "Gravity is extraordinarily weak (the tiny gravitational constant). Producing a detectable wave needs unimaginably heavy objects moving at unimaginable speeds — two ~30-solar-mass black holes orbiting hundreds of times a second. No lab comes close."
+    },
+    {
+      "id": "ligo-q04",
+      "q": "How does LIGO's interferometer detect a passing gravitational wave?",
+      "options": [
+        "It measures the temperature change in its mirrors",
+        "A laser is split down two perpendicular arms; normally the recombined beams cancel (darkness), but a wave changes the arms' lengths differently, breaking the cancellation and letting light leak to the detector",
+        "It counts the gravitons striking a sensor",
+        "It measures the force the wave exerts on a spring"
+      ],
+      "answer": 1,
+      "explanation": "A split laser travels down two perpendicular 4-km arms and recombines. The setup is tuned for destructive interference (darkness). A passing wave lengthens one arm and shortens the other, so the beams no longer cancel and a flicker of light reaches the detector."
+    },
+    {
+      "id": "ligo-q05",
+      "q": "A common objection is that a gravitational wave should stretch the laser's wavelength along with the arm, cancelling the effect. Why doesn't this defeat LIGO?",
+      "options": [
+        "The laser wavelength is immune to gravitational waves",
+        "LIGO measures the round-trip travel TIME of light and compares the two arms, which change in opposite directions — so a real difference between the arms remains measurable",
+        "The arms never actually change length",
+        "The mirrors absorb the stretched light"
+      ],
+      "answer": 1,
+      "explanation": "LIGO is not laying a ruler against the arm; it measures how long light takes to travel down and back, comparing the two perpendicular arms. Since one arm lengthens while the other shortens, the differential between them is real and detectable."
+    },
+    {
+      "id": "ligo-q06",
+      "q": "Why does LIGO use two detectors ~3000 km apart and only believe coincident signals?",
+      "options": [
+        "To double the laser power",
+        "Local noise (trucks, earthquakes) is local and won't appear in both sites at once, but a real gravitational wave sweeps across the planet and passes through both within milliseconds",
+        "To measure the wave's temperature",
+        "Because one detector is always switched off"
+      ],
+      "answer": 1,
+      "explanation": "Seismic and human noise is local and never appears in both widely separated detectors simultaneously. A genuine gravitational wave crosses the whole Earth, so it must appear in both within the light-travel time — coincidence detection rejects local noise."
+    },
+    {
+      "id": "ligo-q07",
+      "q": "Why does an inspiralling binary produce a 'chirp' — a signal rising in both frequency and amplitude?",
+      "options": [
+        "The objects are heating up as they approach",
+        "As the system radiates energy as gravitational waves, the objects spiral closer, orbit faster (raising the wave frequency) and more violently (raising amplitude), in a runaway feedback loop",
+        "The detector amplifies higher frequencies",
+        "The black holes are emitting radio signals"
+      ],
+      "answer": 1,
+      "explanation": "Radiating gravitational waves drains orbital energy, so the objects fall closer and (by orbital mechanics) orbit faster, radiating even more — a runaway. Wave frequency (twice the orbital frequency) rises and amplitude grows, producing the rising 'chirp' ending in the merger."
+    },
+    {
+      "id": "ligo-q08",
+      "q": "In GW150914, two black holes of 36 and 29 solar masses merged into one of about 62 solar masses. Where did the missing ~3 solar masses go?",
+      "options": [
+        "They were ejected as visible light",
+        "They were converted directly into the energy of the gravitational waves, via \\(E = mc^2\\)",
+        "They fell into a separate black hole",
+        "The measurement was simply in error"
+      ],
+      "answer": 1,
+      "explanation": "About 3 solar masses were converted into pure gravitational-wave energy through \\(E = mc^2\\) — roughly \\(5\\times10^{47}\\) J in a fraction of a second, briefly out-radiating all the stars in the observable universe combined."
+    },
+    {
+      "id": "ligo-q09",
+      "q": "In GW170817, the gamma rays arrived about 1.7 s after the gravitational waves, despite travelling ~130 million years. What key conclusion did this enable?",
+      "options": [
+        "That light travels faster than gravity",
+        "That gravity and light travel at the same speed to better than one part in \\(10^{15}\\), ruling out many alternatives to general relativity",
+        "That the source was much closer than thought",
+        "That gravitational waves are a form of light"
+      ],
+      "answer": 1,
+      "explanation": "The tiny ~2 s gap (explained by the gamma-ray jet taking time to form) after 130 million years of travel showed gravity and light travel at essentially the same speed — to better than one part in a thousand trillion — eliminating whole families of competing gravity theories."
+    },
+    {
+      "id": "ligo-q10",
+      "q": "What did the kilonova observed alongside GW170817 confirm about the origin of heavy elements?",
+      "options": [
+        "That gold and other elements heavier than iron form in ordinary stars",
+        "That elements heavier than iron form via rapid neutron capture (the r-process) in the neutron-rich debris of neutron-star mergers",
+        "That all elements were made in the Big Bang",
+        "That heavy elements form only in supernovae of single stars"
+      ],
+      "answer": 1,
+      "explanation": "Stars cannot build elements beyond iron (fusion past iron absorbs energy). The merger flung out neutron-rich matter where the r-process forged heavy elements — confirmed by the kilonova's evolution and the detection of strontium, including an estimated ~10 Earth-masses of gold and platinum."
+    }
+  ]
+}

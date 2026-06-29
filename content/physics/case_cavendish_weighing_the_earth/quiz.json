@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "cavendish-q01",
+      "q": "Why could Newton write down the law of universal gravitation but never calculate the mass of the Earth?",
+      "options": [
+        "He could only ever measure the product \\(G M_{\\text{Earth}}\\), with \\(G\\) and the Earth's mass tangled together as two unknowns in one equation",
+        "He did not know the radius of the Earth, which the ancient Greeks only measured later",
+        "His value of the gravitational field strength \\(g\\) was far too inaccurate",
+        "The inverse-square law had not yet been confirmed by observation"
+      ],
+      "answer": 0,
+      "explanation": "Every gravitational measurement in Newton's day involved the Earth as one of the two masses, so observations (e.g. the Moon's orbit) only pinned down the product \\(G M_{\\text{Earth}}\\). That is one equation with two unknowns, which cannot be separated. The Earth's radius was actually known since antiquity, so B is wrong."
+    },
+    {
+      "id": "cavendish-q02",
+      "q": "What made the Cavendish experiment able to break the deadlock and yield \\(G\\) on its own?",
+      "options": [
+        "It measured gravity using the Moon over a longer baseline",
+        "It measured the gravitational attraction between two laboratory masses, with the Earth not involved at all",
+        "It used the inverse-square law to extrapolate the field to infinity",
+        "It compared the weight of an object at the equator and at the poles"
+      ],
+      "answer": 1,
+      "explanation": "By measuring the gravitational pull between two known lab masses (lead balls) at a known separation, Newton's law gives \\(G\\) directly because the Earth never enters the equation. With \\(G\\) known on its own, the old product \\(G M_{\\text{Earth}}\\) can be divided out to reveal the Earth's mass."
+    },
+    {
+      "id": "cavendish-q03",
+      "q": "In the torsion balance, how did Cavendish determine the stiffness (torsion constant \\(\\kappa\\)) of the suspension wire?",
+      "options": [
+        "By hanging known weights on the wire and measuring how far it stretched",
+        "By applying a known sideways force and reading the resulting twist",
+        "By letting the rod oscillate and timing the period of its swing, since \\(T = 2\\pi\\sqrt{I/\\kappa}\\)",
+        "By measuring the wire's diameter and looking up its material properties"
+      ],
+      "answer": 2,
+      "explanation": "The hanging rod is a torsional oscillator with period \\(T = 2\\pi\\sqrt{I/\\kappa}\\). Timing the slow swing gives \\(\\kappa\\) directly without ever applying a known force — the masterstroke of the experiment. The wire resists twisting so feebly that applying a known force was impractical."
+    },
+    {
+      "id": "cavendish-q04",
+      "q": "When the rod settled at its twisted equilibrium with the large spheres in place, what two effects were in balance?",
+      "options": [
+        "The gravitational torque on the small balls and the restoring torque of the twisted wire",
+        "The weight of the rod and the buoyancy of the surrounding air",
+        "Air pressure on one side of the case and a vacuum on the other",
+        "The static charge on the balls and the gravitational pull of the Earth"
+      ],
+      "answer": 0,
+      "explanation": "At rest the gravitational torque pulling the small balls toward the large ones exactly equals the wire's restoring torque \\(\\kappa\\theta\\). Knowing \\(\\kappa\\) and the twist angle \\(\\theta\\) then gives the gravitational force precisely."
+    },
+    {
+      "id": "cavendish-q05",
+      "q": "The gravitational force Cavendish measured between a large and small sphere was of order \\(10^{-7}\\) N. The episode compares this to:",
+      "options": [
+        "The weight of a single grain of fine sand",
+        "The weight of one of the small lead balls",
+        "The push of a gentle breeze on the shed wall",
+        "The weight of a basketball"
+      ],
+      "answer": 0,
+      "explanation": "About \\(170\\) nanonewtons (\\(\\sim 1.7\\times10^{-7}\\) N) is roughly the weight of a single grain of fine sand. This vanishingly small force is the whole point of the story — gravity is by far the weakest fundamental force."
+    },
+    {
+      "id": "cavendish-q06",
+      "q": "Why did Cavendish operate the experiment from outside a sealed shed, using telescopes and pulleys?",
+      "options": [
+        "To keep the lead spheres at a constant temperature",
+        "Because his own body heat, breath and gravitational pull would create air currents and disturbances larger than the signal",
+        "To protect the delicate wire from sunlight, which would weaken it",
+        "Because the Royal Society required experiments to be conducted in isolation"
+      ],
+      "answer": 1,
+      "explanation": "The signal was so tiny that the experimenter himself was the biggest threat: body warmth caused air currents, and his own mass had a gravitational pull. By sealing the apparatus and reading it remotely, Cavendish removed himself from his own experiment."
+    },
+    {
+      "id": "cavendish-q07",
+      "q": "Once \\(G\\) is known, the mass of the Earth follows from its surface field \\(g = G M_{\\text{Earth}}/R^{2}\\). Rearranged, the mass of the Earth is:",
+      "options": [
+        "\\(M_{\\text{Earth}} = g R / G\\)",
+        "\\(M_{\\text{Earth}} = g R^{2} / G\\)",
+        "\\(M_{\\text{Earth}} = G R^{2} / g\\)",
+        "\\(M_{\\text{Earth}} = g G / R^{2}\\)"
+      ],
+      "answer": 1,
+      "explanation": "Rearranging \\(g = G M_{\\text{Earth}}/R^{2}\\) gives \\(M_{\\text{Earth}} = g R^{2}/G\\). Substituting \\(g = 9.8\\), \\(R = 6.371\\times10^{6}\\) m and \\(G = 6.67\\times10^{-11}\\) yields about \\(6\\times10^{24}\\) kg."
+    },
+    {
+      "id": "cavendish-q08",
+      "q": "Cavendish found the Earth's average density was about 5.5 times that of water, while surface rock is only about 2.5–3 times. What did he conclude?",
+      "options": [
+        "His measurement must contain a large error",
+        "The Earth must be hollow at its centre",
+        "The interior of the Earth must be far denser than rock — evidence of a dense metallic (iron) core",
+        "Water is far denser deep underground than at the surface"
+      ],
+      "answer": 2,
+      "explanation": "If the whole planet averages 5.5 times the density of water but surface rock is only 2.5–3, the interior must be much heavier than rock — something like iron. This was the first real evidence of a dense metallic core, not directly confirmed by seismology until the 20th century."
+    },
+    {
+      "id": "cavendish-q09",
+      "q": "What was Cavendish actually trying to determine, and how close did he get?",
+      "options": [
+        "The value of \\(G\\); his result was off by about 20%",
+        "The density of the Earth; his corrected value (\\(\\approx 5.45\\)) was within about 1% of the modern value (\\(\\approx 5.51\\))",
+        "The mass of the Moon; his result was within 10%",
+        "The acceleration due to gravity; he measured 9.8 exactly"
+      ],
+      "answer": 1,
+      "explanation": "His paper was titled 'Experiments to Determine the Density of the Earth' — he never calculated \\(G\\). His corrected density of about 5.45 times water sits within roughly 1% of the modern 5.514, an extraordinary result for 1798."
+    },
+    {
+      "id": "cavendish-q10",
+      "q": "Despite over two centuries of effort, why does \\(G\\) remain the most poorly known fundamental constant?",
+      "options": [
+        "Because no laboratory has ever managed to repeat Cavendish's method",
+        "Because gravity is extremely weak and, unlike electric or magnetic fields, cannot be shielded, so the pull of walls, the experimenter and surroundings always intrudes",
+        "Because the value of \\(G\\) genuinely changes slowly over time",
+        "Because the metre and kilogram are not defined precisely enough"
+      ],
+      "answer": 1,
+      "explanation": "Gravity is by far the weakest force and there is no gravity shield, so the gravitational pull of walls, the experimenter, groundwater and distant terrain perturbs every measurement. Modern high-precision experiments even disagree with one another beyond their stated error bars, leaving \\(G\\) uncertain at about 22 parts per million."
+    }
+  ]
+}

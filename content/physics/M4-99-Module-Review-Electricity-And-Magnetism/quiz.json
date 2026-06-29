@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m499-q01",
+      "q": "Compare the final charge from charging a neutral conductor by conduction versus by induction.",
+      "options": [
+        "Both give the opposite sign to the charging object",
+        "Conduction gives the same sign (by contact); induction gives the opposite sign (no contact)",
+        "Both give the same sign as the charging object",
+        "Conduction gives the opposite sign; induction gives the same sign"
+      ],
+      "answer": 1,
+      "explanation": "Conduction needs contact and leaves the conductor with the SAME sign as the charging object; induction works without contact (charges separate, the conductor is earthed, then the object removed) and leaves the OPPOSITE sign. This same/contact vs opposite/no-contact contrast is a classic discriminator."
+    },
+    {
+      "id": "m499-q02",
+      "q": "Two parallel plates 0.02 m apart have 400 V across them. Calculate the field strength, then the force on a 5×10⁻⁶ C charge placed between them.",
+      "options": [
+        "E = 8 V m⁻¹; F = 4×10⁻⁵ N",
+        "E = 20 000 V m⁻¹; F = 0.1 N",
+        "E = 20 000 V m⁻¹; F = 4000 N",
+        "E = 8000 V m⁻¹; F = 0.04 N"
+      ],
+      "answer": 1,
+      "explanation": "E = V/d = 400/0.02 = 20 000 V m⁻¹ (uniform between the plates). Then F = Eq = 20 000 × 5×10⁻⁶ = 0.1 N. The two-step 'field first, then force' is the standard parallel-plate method and the basis of particle acceleration in Module 6."
+    },
+    {
+      "id": "m499-q03",
+      "q": "Two point charges feel a certain force. Predict the new force if one charge is tripled and the distance is halved.",
+      "options": [
+        "×6",
+        "×12",
+        "×1.5",
+        "×3"
+      ],
+      "answer": 1,
+      "explanation": "By Coulomb's law F ∝ q₁q₂/r². Tripling one charge gives ×3; halving the distance gives ×(1/0.5²) = ×4. Combined: 3 × 4 = ×12. Forgetting to square the distance factor (using ×2 instead of ×4) is the trap."
+    },
+    {
+      "id": "m499-q04",
+      "q": "A charge of 120 C flows through a resistor in 40 s with 12 V across it. Calculate the current and the power dissipated.",
+      "options": [
+        "I = 3 A; P = 4 W",
+        "I = 3 A; P = 36 W",
+        "I = 4800 A; P = 36 W",
+        "I = 0.33 A; P = 4 W"
+      ],
+      "answer": 1,
+      "explanation": "Current I = q/t = 120/40 = 3 A. Power P = VI = 12 × 3 = 36 W. (Resistance would be R = V/I = 4 Ω.) Keep current as charge per time and power as voltage times current — mixing the formulas is the common error."
+    },
+    {
+      "id": "m499-q05",
+      "q": "A 9 V supply connects a 2 Ω resistor in series with a parallel pair of 3 Ω and 6 Ω. Calculate the total resistance.",
+      "options": [
+        "11 Ω",
+        "4 Ω",
+        "2 Ω",
+        "5 Ω"
+      ],
+      "answer": 1,
+      "explanation": "First the parallel pair: 1/R = 1/3 + 1/6 = 2/6 + 1/6 = 3/6 = 1/2, so 2 Ω. In series with the 2 Ω resistor: R_T = 2 + 2 = 4 Ω. Reduce the parallel section first, then add the series part — treating all three as series (11 Ω) is the trap."
+    },
+    {
+      "id": "m499-q06",
+      "q": "State which conservation principle Kirchhoff's voltage law expresses.",
+      "options": [
+        "Conservation of charge",
+        "Conservation of energy",
+        "Conservation of momentum",
+        "Conservation of mass"
+      ],
+      "answer": 1,
+      "explanation": "Kirchhoff's voltage law (ΣV = 0 around a loop) expresses conservation of energy — a charge gains as much energy from the source as it loses across the components round the loop. Kirchhoff's current law (ΣI = 0 at a junction) expresses conservation of charge."
+    },
+    {
+      "id": "m499-q07",
+      "q": "A long straight wire carries conventional current to your right. Using the right-hand grip rule, determine the field direction directly above the wire.",
+      "options": [
+        "Into the page",
+        "Out of the page (toward you)",
+        "To the right",
+        "Straight up"
+      ],
+      "answer": 1,
+      "explanation": "Point the right thumb to the right (along the current); the fingers curl so that above the wire they point out of the page toward you (and into the page below it). The field forms complete circles around the wire; getting this direction right is essential for the motor effect in Module 6."
+    },
+    {
+      "id": "m499-q08",
+      "q": "Distinguish electric field strength from electric force.",
+      "options": [
+        "They are the same quantity",
+        "Field strength E = F/q is a property of the location; force F = Eq is what a specific charge experiences",
+        "Force is a property of the location; field is what a charge feels",
+        "Field strength is measured in newtons; force in N C⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "The electric field strength E = F/q is the force per unit charge — a property of the location, existing whether or not a charge sits there. The electric force F = Eq is the actual push or pull on a specific charge placed in the field. The field describes the location; the force describes a particular charge in it."
+    },
+    {
+      "id": "m499-q09",
+      "q": "A solenoid of 300 turns and length 0.2 m carries 4 A (μ₀ = 4π×10⁻⁷). Calculate the magnetic field inside it.",
+      "options": [
+        "7.5×10⁻¹ T",
+        "7.5×10⁻³ T",
+        "1.9×10⁻³ T",
+        "2.4×10⁻⁴ T"
+      ],
+      "answer": 1,
+      "explanation": "B = μ₀NI/L = (4π×10⁻⁷ × 300 × 4)/0.2 ≈ 1.51×10⁻³ / 0.2 ≈ 7.5×10⁻³ T. The field grows with current and turns and shrinks with length. Forgetting to divide by the length is the common error."
+    },
+    {
+      "id": "m499-q10",
+      "q": "An iron core is inserted into a current-carrying solenoid. Explain what happens to the magnetic field and why.",
+      "options": [
+        "The field disappears because iron blocks magnetism",
+        "The field becomes much stronger, because the iron's domains align with the coil's field and add to it",
+        "The field reverses direction",
+        "The field is unchanged because the core is solid"
+      ],
+      "answer": 1,
+      "explanation": "The iron is ferromagnetic: the solenoid's field aligns the iron's domains, which add their own magnetism, multiplying the overall field (often hundreds of times). This is how an electromagnet is made — combining the current's magnetic field with the magnetisation of the iron core."
+    }
+  ]
+}

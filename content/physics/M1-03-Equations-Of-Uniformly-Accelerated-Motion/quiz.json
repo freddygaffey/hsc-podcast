@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m103-q01",
+      "q": "Identify the five quantities represented by the letters in 'suvat'.",
+      "options": [
+        "Speed, velocity, acceleration, time, distance",
+        "Displacement, initial velocity, final velocity, acceleration, time",
+        "Displacement, speed, velocity, acceleration, time",
+        "Distance, initial velocity, final velocity, acceleration, time"
+      ],
+      "answer": 1,
+      "explanation": "Suvat stands for displacement (s), initial velocity (u), final velocity (v), acceleration (a) and time (t). The tempting wrong answers use 'speed' or 'distance', but u and v are velocities (vectors that carry signs) and s is displacement, not distance — getting these as vectors is what makes the sign convention work."
+    },
+    {
+      "id": "m103-q02",
+      "q": "State which quantity is absent from the equation v = u + at.",
+      "options": [
+        "Displacement (s)",
+        "Acceleration (a)",
+        "Time (t)",
+        "Final velocity (v)"
+      ],
+      "answer": 0,
+      "explanation": "v = u + at contains v, u, a and t but no s, so you reach for it when displacement is the quantity you neither have nor want. The whole selection method is to spot the missing quantity and choose the equation that omits it — here, missing displacement points straight to v = u + at."
+    },
+    {
+      "id": "m103-q03",
+      "q": "A car accelerates from 10 m s⁻¹ to 30 m s⁻¹ over a distance of 100 m. Outline which equation to use to find the acceleration, and why.",
+      "options": [
+        "v = u + at, because time is given",
+        "s = ½(u + v)t, because acceleration is missing",
+        "v² = u² + 2as, because time is neither given nor wanted",
+        "s = ut + ½at², because final velocity is missing"
+      ],
+      "answer": 2,
+      "explanation": "You are given u, v and s and asked for a, so the quantity neither given nor wanted is time (t). The equation with no t is v² = u² + 2as. The missing-variable method points to it directly, so you never have to guess (here it gives a = 4 m s⁻²)."
+    },
+    {
+      "id": "m103-q04",
+      "q": "A car braking uniformly from 30 m s⁻¹ comes to rest in 5 s. Calculate the braking distance.",
+      "options": [
+        "150 m",
+        "75 m",
+        "37.5 m",
+        "6 m"
+      ],
+      "answer": 1,
+      "explanation": "With u = 30, v = 0 and t = 5, acceleration is missing, so use s = ½(u + v)t = ½ × (30 + 0) × 5 = 75 m. The tempting 150 m comes from 30 × 5, forgetting the ½ (that would assume constant 30 m s⁻¹, not deceleration). You don't need to find the acceleration at all — the missing-variable method skips it."
+    },
+    {
+      "id": "m103-q05",
+      "q": "Explain why the four equations of motion cannot be applied to a car whose acceleration is continuously increasing.",
+      "options": [
+        "The equations only work for objects moving downward",
+        "The equations require the acceleration to be constant, which is violated",
+        "The equations require the velocity to be constant",
+        "The equations only work when there is no friction"
+      ],
+      "answer": 1,
+      "explanation": "The suvat equations are valid only for uniformly accelerated (constant-acceleration) motion. A car whose acceleration is increasing does not meet this condition, so the equations cannot describe the whole motion; you would split it into intervals of approximately constant acceleration. Free fall works precisely because g is constant."
+    },
+    {
+      "id": "m103-q06",
+      "q": "A ball is thrown straight up. State its velocity and its acceleration at the highest point of its flight.",
+      "options": [
+        "Velocity zero; acceleration zero",
+        "Velocity zero; acceleration 9.8 m s⁻² downward",
+        "Velocity 9.8 m s⁻¹ up; acceleration zero",
+        "Velocity maximum; acceleration 9.8 m s⁻² downward"
+      ],
+      "answer": 1,
+      "explanation": "At the top the ball is momentarily at rest, so its velocity is zero, but gravity never switches off, so the acceleration is still 9.8 m s⁻² downward — which is exactly why it doesn't hang there but immediately falls. The classic error is to assume zero velocity means zero acceleration; the two are independent."
+    },
+    {
+      "id": "m103-q07",
+      "q": "A ball is thrown vertically upward at 20 m s⁻¹. Taking up as positive and g = 9.8 m s⁻², calculate the maximum height reached.",
+      "options": [
+        "40.8 m",
+        "20.4 m",
+        "10.2 m",
+        "2.04 m"
+      ],
+      "answer": 1,
+      "explanation": "At the top v = 0, with u = 20, a = −9.8 and t missing, so use v² = u² + 2as: 0 = 400 + 2(−9.8)s → 19.6s = 400 → s ≈ 20.4 m. The key signs are u positive (up) and a negative (gravity acts downward while up is positive); making g positive here gives a nonsensical answer."
+    },
+    {
+      "id": "m103-q08",
+      "q": "Distinguish between when you would use s = ½(u + v)t and when you would use s = ut + ½at² to find displacement.",
+      "options": [
+        "The two equations always give different answers",
+        "Use ½(u + v)t when acceleration is unknown; use ut + ½at² when final velocity is unknown",
+        "Use ½(u + v)t only for downward motion; ut + ½at² only for upward motion",
+        "Use ut + ½at² when both velocities are known"
+      ],
+      "answer": 1,
+      "explanation": "s = ½(u + v)t omits acceleration, so use it when you know both velocities and the time but not a. s = ut + ½at² omits final velocity, so use it when you know a and t but not v. They aren't rivals — the missing-variable method picks whichever fits your given data, and you should prefer building from the question's original data."
+    },
+    {
+      "id": "m103-q09",
+      "q": "A stone is dropped from rest from a cliff and hits the ground after 3 s (g = 9.8 m s⁻²). Calculate the height of the cliff.",
+      "options": [
+        "29.4 m",
+        "44.1 m",
+        "88.2 m",
+        "14.7 m"
+      ],
+      "answer": 1,
+      "explanation": "'Dropped from rest' means u = 0. With a = 9.8 and t = 3 and v missing, use s = ut + ½at² = 0 + ½ × 9.8 × 3² = ½ × 9.8 × 9 ≈ 44.1 m. The tempting 29.4 m comes from 9.8 × 3 (a velocity, not a displacement). Remembering that 'dropped' supplies u = 0 is essential."
+    },
+    {
+      "id": "m103-q10",
+      "q": "A stone is thrown straight down from a bridge at 8 m s⁻¹ and hits the water 2 s later. Taking down as positive (g = 9.8 m s⁻²), calculate the height of the bridge.",
+      "options": [
+        "19.6 m",
+        "35.6 m",
+        "16 m",
+        "27.6 m"
+      ],
+      "answer": 1,
+      "explanation": "With down positive, u = +8 (thrown downward) and a = +9.8, t = 2, v missing, so s = ut + ½at² = 8 × 2 + ½ × 9.8 × 2² = 16 + 19.6 = 35.6 m. The trap is treating 'thrown down' as u = 0; it is a positive initial velocity in the chosen positive direction. (27.6 m s⁻¹ is the impact velocity v = u + at, not the height.)"
+    }
+  ]
+}

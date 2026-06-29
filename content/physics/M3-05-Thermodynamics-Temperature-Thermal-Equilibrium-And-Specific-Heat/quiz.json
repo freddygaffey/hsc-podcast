@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m305-q01",
+      "q": "Define temperature in terms of particles.",
+      "options": [
+        "The total energy of all the particles in a substance",
+        "A measure of the average kinetic energy of the particles in a substance",
+        "The amount of heat an object contains",
+        "The number of particles in a substance"
+      ],
+      "answer": 1,
+      "explanation": "Temperature is a measure of the average kinetic energy of the particles — hotter means faster-moving particles on average. The total energy of all the particles is the internal energy, not the temperature, and an object does not 'contain heat' (heat is energy in transit)."
+    },
+    {
+      "id": "m305-q02",
+      "q": "Distinguish between heat and temperature.",
+      "options": [
+        "They are two names for the same quantity",
+        "Temperature is the average particle kinetic energy (a property); heat is energy transferred due to a temperature difference (in transit)",
+        "Heat is the average particle energy; temperature is transferred energy",
+        "Temperature is measured in joules; heat in kelvin"
+      ],
+      "answer": 1,
+      "explanation": "Temperature is a property an object has — the average kinetic energy of its particles. Heat is energy that flows from a hotter to a colder object because of a temperature difference (energy in transit). An object contains internal energy, not heat. Treating the two words as synonyms is the classic error."
+    },
+    {
+      "id": "m305-q03",
+      "q": "A tiny spark is at a much higher temperature than a warm bath, yet does not burn you. Explain why.",
+      "options": [
+        "The spark is actually colder than the bath",
+        "The spark has very few particles, so its total internal energy is tiny despite its high temperature",
+        "Temperature and internal energy are the same thing",
+        "The bath transfers heat to the spark"
+      ],
+      "answer": 1,
+      "explanation": "Temperature is energy per particle (average), while internal energy is the total over all particles. The spark's particles move fast (high temperature) but there are very few of them, so its total internal energy is minuscule. A high temperature does not automatically mean a lot of energy."
+    },
+    {
+      "id": "m305-q04",
+      "q": "Outline what is meant by thermal equilibrium.",
+      "options": [
+        "One object is much hotter than the other",
+        "Two objects in contact reach the same temperature, with no net transfer of heat",
+        "Heat flows continuously from cold to hot",
+        "Both objects stop having any particle motion"
+      ],
+      "answer": 1,
+      "explanation": "Thermal equilibrium is reached when two objects in contact have the same temperature (equal average particle kinetic energy), so there is no net transfer of energy between them. Energy may still pass both ways at the particle level, but the flows balance. Heat always flows hot→cold until this point."
+    },
+    {
+      "id": "m305-q05",
+      "q": "Convert 100 °C to kelvin and explain why the Kelvin scale is preferred in physics.",
+      "options": [
+        "200 K; because it uses smaller degrees",
+        "373 K; because Kelvin temperature is directly proportional to average particle kinetic energy",
+        "373 K; because Celsius cannot measure boiling",
+        "−173 K; because its zero is at water's freezing point"
+      ],
+      "answer": 1,
+      "explanation": "K = °C + 273, so 100 °C = 373 K. Physics prefers Kelvin because its zero (absolute zero, the minimum of particle motion) makes the Kelvin temperature directly proportional to average particle kinetic energy — double the kelvin temperature, double the average KE. Celsius lacks this because its zero is at water's freezing point, an arbitrary value."
+    },
+    {
+      "id": "m305-q06",
+      "q": "State the value of absolute zero in degrees Celsius.",
+      "options": [
+        "0 °C",
+        "−273 °C",
+        "−100 °C",
+        "273 °C"
+      ],
+      "answer": 1,
+      "explanation": "Absolute zero, the coldest possible temperature where particle motion is at its minimum, is about −273 °C, which is 0 K. The degree size is the same on both scales — only the zero point moves, so you convert by adding 273."
+    },
+    {
+      "id": "m305-q07",
+      "q": "Define the specific heat capacity of a substance.",
+      "options": [
+        "The total energy stored in the substance",
+        "The energy needed to raise the temperature of 1 kg of it by 1 K (or 1 °C)",
+        "The temperature at which it boils",
+        "The energy needed to melt 1 kg of it"
+      ],
+      "answer": 1,
+      "explanation": "Specific heat capacity (c) is the energy needed to raise 1 kg of a substance by 1 K (equivalently 1 °C), measured in J kg⁻¹ K⁻¹. A high c means the substance needs lots of energy to change temperature; a low c means it heats and cools easily. (Melting energy is latent heat, a different idea.)"
+    },
+    {
+      "id": "m305-q08",
+      "q": "Calculate the energy needed to heat 2 kg of water by 30 K (c = 4200 J kg⁻¹ K⁻¹).",
+      "options": [
+        "126 000 J",
+        "252 000 J",
+        "8400 J",
+        "63 000 J"
+      ],
+      "answer": 1,
+      "explanation": "Using Q = mcΔT = 2 × 4200 × 30 = 252 000 J (252 kJ). Identify the mass, specific heat and temperature change and multiply all three. Note ΔT is the change, not an absolute temperature — a common slip."
+    },
+    {
+      "id": "m305-q09",
+      "q": "Calculate the energy to raise 0.5 kg of water from 20 °C to 80 °C (c = 4200 J kg⁻¹ K⁻¹).",
+      "options": [
+        "168 000 J",
+        "126 000 J",
+        "42 000 J",
+        "1 008 000 J"
+      ],
+      "answer": 1,
+      "explanation": "ΔT is the change: 80 − 20 = 60 K. Q = mcΔT = 0.5 × 4200 × 60 = 126 000 J (126 kJ). Using 80 instead of the change of 60 (giving 168 000 J) is the trap — ΔT is always the temperature change, not the final temperature."
+    },
+    {
+      "id": "m305-q10",
+      "q": "Explain why coastal towns have milder climates than inland deserts at the same latitude.",
+      "options": [
+        "Water has a very low specific heat, so it changes temperature quickly",
+        "Water has a very high specific heat, so the ocean absorbs and releases large amounts of energy with little temperature change, moderating the air",
+        "The desert has more water to store heat",
+        "Coastal air contains no thermal energy"
+      ],
+      "answer": 1,
+      "explanation": "Water's specific heat (≈4200 J kg⁻¹ K⁻¹) is unusually high, so the ocean can absorb and release large amounts of thermal energy with only a small change in its own temperature, buffering the coastal air against extremes. The desert, lacking this large water body, heats and cools rapidly, giving temperature extremes."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "case-the-shai-hulud-worm-q01",
+      "q": "Identify the term the episode uses for the long, mostly invisible chain of trust that runs from a code author, through every package that depends on another, down to the machine that finally runs the code.",
+      "options": [
+        "The software supply chain",
+        "The dependency injection pipeline",
+        "The continuous integration loop",
+        "The open-source distribution network"
+      ],
+      "answer": 0,
+      "explanation": "The episode names this the 'software supply chain' — the chain of trust from author to the machines that run the code. Both the September phishing attack and the worm targeted this chain rather than any bug in the code itself. 'Dependency injection' is a real but unrelated programming concept, not what the episode describes."
+    },
+    {
+      "id": "case-the-shai-hulud-worm-q02",
+      "q": "State the single event that gave the September 2025 attacker control of the maintainer 'Qix' account.",
+      "options": [
+        "A brute-force attack guessed his password over several days",
+        "A phishing email lured him to a look-alike site (npmjs.help) where he entered his username, password, and a live one-time 2FA code",
+        "A vulnerability in the chalk package leaked his credentials",
+        "An insider at the npm registry sold his account details"
+      ],
+      "answer": 1,
+      "explanation": "The attacker sent a fake '2FA update' email pointing to npmjs.help — close to, but not, the real npmjs.com. The maintainer entered his username, password, and the live six-digit one-time code on the fake page, and the attacker relayed all three before the code expired. The episode stresses there was no clever bug; a human was simply lied to."
+    },
+    {
+      "id": "case-the-shai-hulud-worm-q03",
+      "q": "Explain how a single stolen login was able to reach more than two billion downloads a week.",
+      "options": [
+        "The attacker also stole the npm registry's master encryption key",
+        "The packages automatically emailed themselves to every user's contacts",
+        "The maintainer controlled a family of tiny, deeply-depended-on utilities (such as chalk and debug) buried in the foundations of huge swathes of the web",
+        "The npm registry had no rate limiting, so the attacker copied billions of accounts"
+      ],
+      "answer": 2,
+      "explanation": "The maintainer controlled microscopic utilities like chalk (~300 million downloads a week) and debug (~47 million), pulled in several layers deep by countless projects that never chose them directly. Compromising one upstream link compromises everyone downstream at once. The 'master encryption key' option wrongly assumes a registry-wide breach rather than one maintainer's account."
+    },
+    {
+      "id": "case-the-shai-hulud-worm-q04",
+      "q": "Describe what the September phishing attack's payload did once it was running inside a victim's browser.",
+      "options": [
+        "It encrypted the user's files and demanded a ransom",
+        "It watched for a cryptocurrency transaction and silently swapped the destination address while the screen still showed the correct one",
+        "It mined cryptocurrency in the background using the victim's CPU",
+        "It deleted the contents of the developer's code repositories"
+      ],
+      "answer": 1,
+      "explanation": "The payload was a 'crypto-clipper' or 'wallet-drainer': it watched for an outgoing crypto transaction and rewrote the recipient to an attacker-controlled address while the on-screen details still looked correct. It picked a pocket quietly rather than smashing a window. Ransomware (option A) is a different attack class entirely."
+    },
+    {
+      "id": "case-the-shai-hulud-worm-q05",
+      "q": "Explain why the actual financial loss from the September phishing attack was only a few hundred dollars despite its record-breaking reach.",
+      "options": [
+        "The community spotted the malicious code within about two hours and the maintainer reverted to clean versions, slamming the window shut",
+        "The malware contained a bug that limited how much it could steal",
+        "Most developers had pinned their dependencies, so almost no one pulled the bad versions",
+        "The attacker only targeted one wealthy victim and ignored everyone else"
+      ],
+      "answer": 0,
+      "explanation": "The damage was small purely because of speed: within roughly two hours other developers raised the alarm and the maintainer pulled the malicious versions. The defences were not strong — the attacker 'failed' only because a human was driving and got caught fast. The episode's whole point is that this safety net vanishes once no human is involved."
+    },
+    {
+      "id": "case-the-shai-hulud-worm-q06",
+      "q": "Identify the name given to the self-replicating worm that appeared roughly a week after the phishing attack, and the source of that name.",
+      "options": [
+        "Shai-Hulud, after the great sandworm from the novel Dune",
+        "Stuxnet, after the industrial-sabotage malware",
+        "left-pad, after the package that once broke the internet",
+        "MetaMask, after the crypto wallet it targeted"
+      ],
+      "answer": 0,
+      "explanation": "The worm was named Shai-Hulud, after the vast sandworm in Frank Herbert's Dune, because it burrowed unseen through the ecosystem and surfaced without warning. Stuxnet and left-pad are real but unrelated incidents, and MetaMask is a wallet type — all tempting distractors."
+    },
+    {
+      "id": "case-the-shai-hulud-worm-q07",
+      "q": "Explain the three-step mechanism that let Shai-Hulud spread from machine to machine with no human involved.",
+      "options": [
+        "It exploited a flaw in the operating system's network stack to jump between computers",
+        "An install-time script scanned each machine for secrets, exfiltrated the stolen tokens, then used the stolen npm publishing token to auto-inject copies of itself into every package that victim could publish",
+        "It emailed a phishing link to everyone in the victim's contact list",
+        "It waited for each maintainer to manually publish an update and rode along with it"
+      ],
+      "answer": 1,
+      "explanation": "On install, a postinstall script ran automatically: it scanned for secrets (npm, GitHub, and cloud tokens) using a credential scanner, exfiltrated them, then used the stolen npm token to log in as the victim and republish a poisoned copy into all of that victim's packages — making each victim a launch pad for the next. No human clicked publish (ruling out D), and it spread through the supply chain, not the OS network stack (ruling out A)."
+    },
+    {
+      "id": "case-the-shai-hulud-worm-q08",
+      "q": "Distinguish why the episode argues the worm was a more dangerous class of threat than the human-driven phishing attack, even though the phishing attack had far greater reach.",
+      "options": [
+        "The worm stole far more money in dollar terms",
+        "The worm attacked the operating system while phishing only attacked the browser",
+        "A human attacker can be spotted and stopped, but a worm runs automatically and tirelessly with no one to catch — so reach, not size, was never the real danger",
+        "The worm exploited a clever bug in the code while the phishing attack did not"
+      ],
+      "answer": 2,
+      "explanation": "The episode's core distinction is human versus automatic: a human attacker (like Qix's) can be caught in two hours, but 'you cannot train a thousand machines not to run an install script.' A worm needs no phishing email and works while everyone sleeps. Neither attack relied on a code bug — both abused trust — so option D is wrong; and the worm's danger was its self-propagation, not the sums stolen."
+    },
+    {
+      "id": "case-the-shai-hulud-worm-q09",
+      "q": "Describe the extra 'vicious flourish' Shai-Hulud added when it stole a victim's secrets, beyond simply mailing them to the attacker.",
+      "options": [
+        "It encrypted the victim's hard drive until a ransom was paid",
+        "It created a public GitHub repository on the victim's own account and dumped the stolen secrets there for anyone to read",
+        "It sold the secrets on a dark-web marketplace automatically",
+        "It overwrote the victim's published packages with empty files"
+      ],
+      "answer": 1,
+      "explanation": "The worm created a brand-new PUBLIC repository named 'Shai-Hulud' on the victim's own GitHub account and published the stolen credentials in the open. Theft and public humiliation were the same act — a victim did not just lose its keys, it found its secrets exposed on the internet under its own name."
+    },
+    {
+      "id": "case-the-shai-hulud-worm-q10",
+      "q": "A student team building an HSC project pulls in dozens of open-source packages they have never read and always installs the newest version automatically. Recommend the combination of defences the episode would most strongly endorse, and justify it.",
+      "options": [
+        "Switch programming language so the npm registry is irrelevant",
+        "Only install packages with over a million weekly downloads, since popularity guarantees safety",
+        "Use phishing-resistant MFA, pin dependencies with integrity checks, disable unneeded install scripts, and verify provenance — treating dependencies as part of their own software",
+        "Disable two-factor authentication so there is no 2FA code to phish"
+      ],
+      "answer": 2,
+      "explanation": "The episode names phishing-resistant MFA (defeats a Qix-style con), pinning with integrity checks (a poisoned new release is not pulled in automatically and a swapped-out one is caught at the door), turning off unneeded install scripts (so a postinstall worm cannot run unseen), and checking provenance. Popularity is no shield — chalk at ~300 million a week was exactly what got poisoned — and disabling 2FA is backwards. The deepest lesson: 'your dependencies are part of your software.'"
+    }
+  ]
+}

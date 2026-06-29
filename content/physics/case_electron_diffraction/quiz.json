@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "electrondiff-q01",
+      "q": "When Davisson and Germer fired electrons at their nickel target, what observation revealed wave behaviour?",
+      "options": [
+        "The electrons came off in a smooth, uniform spray in all directions",
+        "The electrons emerged in sharp peaks at specific angles with dead zones between them, the signature of interference",
+        "The electrons were absorbed entirely by the nickel",
+        "The electrons gained energy on reflection"
+      ],
+      "answer": 1,
+      "explanation": "Particles would scatter in a smooth spray, but the electrons piled up in sharp peaks at particular angles with gaps between — constructive and destructive interference, the unmistakable signature of waves."
+    },
+    {
+      "id": "electrondiff-q02",
+      "q": "What was de Broglie's central idea?",
+      "options": [
+        "Light is only ever a wave, never a particle",
+        "Electrons have no momentum",
+        "If a wave (light) can behave as a particle, then a particle (matter) can behave as a wave — duality is universal",
+        "Only photons can have a wavelength"
+      ],
+      "answer": 2,
+      "explanation": "De Broglie turned wave-particle duality around: since light, thought to be a wave, also acts as a particle, matter thought to be particles should also have a wave nature. The duality runs both ways and is universal."
+    },
+    {
+      "id": "electrondiff-q03",
+      "q": "The de Broglie wavelength of a particle is given by:",
+      "options": [
+        "\\(\\lambda = h m v\\)",
+        "\\(\\lambda = \\dfrac{h}{m v}\\)",
+        "\\(\\lambda = \\dfrac{m v}{h}\\)",
+        "\\(\\lambda = \\dfrac{h v}{m}\\)"
+      ],
+      "answer": 1,
+      "explanation": "\\(\\lambda = h/p = h/(mv)\\): wavelength equals Planck's constant divided by momentum. Wavelength is inversely proportional to momentum, so heavy, fast objects have undetectably tiny wavelengths."
+    },
+    {
+      "id": "electrondiff-q04",
+      "q": "Why can a nickel crystal diffract a 54 V electron but a doorway cannot diffract a walking person?",
+      "options": [
+        "The crystal is made of metal and the doorway is not",
+        "A 54 V electron's de Broglie wavelength (~0.17 nm) is comparable to the atomic spacing, whereas a person's wavelength is ~\\(10^{-35}\\) m — vastly smaller than any opening",
+        "Electrons are charged and people are not",
+        "People move too slowly to have any wavelength"
+      ],
+      "answer": 1,
+      "explanation": "Diffraction is only observable when the wavelength is comparable to the slit spacing. A 54 V electron has a wavelength near the atomic spacing (~0.1 nm), so a crystal diffracts it; a person's de Broglie wavelength is around \\(10^{-35}\\) m, far too small for any opening to reveal."
+    },
+    {
+      "id": "electrondiff-q05",
+      "q": "Why is the agreement between the predicted and measured wavelengths in the Davisson-Germer experiment considered strong proof?",
+      "options": [
+        "Both numbers came from de Broglie's equation",
+        "De Broglie's theory (knowing nothing of the experiment) predicted ~0.167 nm, while the diffraction geometry (knowing nothing of de Broglie) gave ~0.165 nm — two independent roads to the same value",
+        "The numbers were rounded to match",
+        "The experiment was repeated thousands of times by the same method"
+      ],
+      "answer": 1,
+      "explanation": "One road started from the accelerating voltage and de Broglie's formula; the other used only the measured angle and the known nickel atomic spacing. They agreed to better than 2%, two completely independent derivations converging — that is what proof looks like."
+    },
+    {
+      "id": "electrondiff-q06",
+      "q": "How did G.P. Thomson's experiment differ from Davisson and Germer's, and why was this important?",
+      "options": [
+        "He used the same method, confirming nothing new",
+        "He fired fast electrons through thin metal films (transmission), getting concentric rings rather than reflected peaks — a different geometry reaching the same de Broglie wavelength",
+        "He used light instead of electrons",
+        "He fired protons instead of electrons"
+      ],
+      "answer": 1,
+      "explanation": "Thomson transmitted fast electrons through thin polycrystalline films, producing concentric rings, while Davisson-Germer reflected slow electrons off a single crystal, producing peaks. Two utterly different geometries reaching the same de Broglie wavelength removed any doubt."
+    },
+    {
+      "id": "electrondiff-q07",
+      "q": "The poetic twist in this story is that:",
+      "options": [
+        "Davisson and Thomson were brothers",
+        "J.J. Thomson proved the electron was a particle, and his son George Paget Thomson proved the same electron was a wave",
+        "De Broglie later disproved his own idea",
+        "Einstein performed the electron-diffraction experiment himself"
+      ],
+      "answer": 1,
+      "explanation": "J.J. Thomson discovered the electron and showed it was a particle (Nobel 1906); his son G.P. Thomson showed the electron was a wave (Nobel 1937). One family, two generations, two prizes — one for the particle, one for the wave."
+    },
+    {
+      "id": "electrondiff-q08",
+      "q": "How do de Broglie matter waves explain why only certain electron orbits are allowed in an atom?",
+      "options": [
+        "The electron randomly chooses an orbit each time",
+        "A stable orbit must contain a whole number of de Broglie wavelengths around its circumference, forming a standing wave; other orbits self-destruct by destructive interference",
+        "The nucleus pushes the electron into fixed orbits",
+        "Electrons can occupy any orbit at all"
+      ],
+      "answer": 1,
+      "explanation": "Only orbits whose circumference fits a whole number of wavelengths (\\(2\\pi r = n\\lambda\\)) form a stable standing wave. Substituting de Broglie's wavelength yields Bohr's angular-momentum rule — derived rather than merely assumed."
+    },
+    {
+      "id": "electrondiff-q09",
+      "q": "Substituting \\(\\lambda = h/(mv)\\) into the standing-wave condition \\(2\\pi r = n\\lambda\\) gives what well-known result?",
+      "options": [
+        "\\(E = mc^{2}\\)",
+        "Bohr's quantisation of angular momentum, \\(mvr = nh/2\\pi\\)",
+        "Newton's law of gravitation",
+        "The photoelectric equation"
+      ],
+      "answer": 1,
+      "explanation": "Substituting \\(\\lambda = h/(mv)\\) into \\(2\\pi r = n\\lambda\\) rearranges to \\(mvr = nh/2\\pi\\) — exactly Bohr's quantisation postulate, now derived from the standing-wave picture instead of assumed."
+    },
+    {
+      "id": "electrondiff-q10",
+      "q": "When electrons are fired one at a time through a crystal and still build up an interference pattern, what does each electron interfere with?",
+      "options": [
+        "The other electrons in the beam",
+        "Itself — each single electron's wave explores all paths and interferes with itself",
+        "The atoms of the detector",
+        "Nothing; the pattern is an illusion"
+      ],
+      "answer": 1,
+      "explanation": "Even fired one at a time with only ever one electron in the apparatus, an interference pattern still builds up dot by dot. Each electron interferes with itself: its wave (a wave of probability, per Born) explores all paths, and the electron lands as a particle at one point."
+    }
+  ]
+}

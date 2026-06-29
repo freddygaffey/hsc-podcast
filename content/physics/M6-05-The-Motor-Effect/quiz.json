@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m605-q01",
+      "q": "What is the motor effect?",
+      "options": [
+        "The force experienced by a current-carrying conductor in an external magnetic field",
+        "The voltage induced when a magnet moves near a coil",
+        "The circular field produced by a current in a wire",
+        "The acceleration of a charge by an electric field"
+      ],
+      "answer": 0,
+      "explanation": "The motor effect is the action of a force on a current-carrying conductor placed in an external magnetic field. Option B describes electromagnetic induction (the reverse situation), not the motor effect."
+    },
+    {
+      "id": "m605-q02",
+      "q": "Using \"magnetic field interactions\", why does a current-carrying conductor experience a force?",
+      "options": [
+        "Because \\(F = BIL\\), so a force must act",
+        "Because of the right-hand push rule",
+        "The wire's own circular field combines with the external field, giving a stronger field on one side and weaker on the other, pushing the wire from strong to weak",
+        "Because like magnetic poles repel each other"
+      ],
+      "answer": 2,
+      "explanation": "The \"explain why\" answer is the two-field interaction: the wire's circular field superimposes on the external field, reinforcing it on one side and cancelling it on the other; the net force points from the stronger-field region to the weaker. Quoting the formula (A) or the hand rule (B) is not an explanation and earns almost nothing."
+    },
+    {
+      "id": "m605-q03",
+      "q": "What is the deepest cause of the force on the wire, in terms of its contents?",
+      "options": [
+        "The wire is magnetic",
+        "The force is the sum of the magnetic forces on all the moving charges inside the wire",
+        "The wire heats up and expands",
+        "The external field magnetises the wire's electrons"
+      ],
+      "answer": 1,
+      "explanation": "A current is a stream of moving charges, and each moving charge in a magnetic field feels a sideways force. The force on the whole wire is the sum of all those individual forces — the macroscopic version of the single-charge force \\(F = qvB\\sin\\theta\\)."
+    },
+    {
+      "id": "m605-q04",
+      "q": "The force on a current-carrying conductor is given by \\(F = BIL\\sin\\theta\\). What angle does \\(\\theta\\) represent?",
+      "options": [
+        "The angle between the wire and the force",
+        "The angle between the field and the force",
+        "The angle between the wire (current) and the magnetic field",
+        "The angle between the current and the electron drift"
+      ],
+      "answer": 2,
+      "explanation": "\\(\\theta\\) is the angle between the conductor (the current direction) and the magnetic field lines — not the angle to the force. Using the wrong angle collapses the calculation."
+    },
+    {
+      "id": "m605-q05",
+      "q": "For a fixed current and field, the force on the wire is maximum when:",
+      "options": [
+        "The wire is parallel to the field (\\(\\theta = 0^\\circ\\))",
+        "The wire is perpendicular to the field (\\(\\theta = 90^\\circ\\))",
+        "The wire is at \\(45^\\circ\\) to the field",
+        "The current is zero"
+      ],
+      "answer": 1,
+      "explanation": "Since \\(F \\propto \\sin\\theta\\), the force is maximum at \\(\\theta = 90^\\circ\\) (\\(\\sin 90^\\circ = 1\\)) and zero at \\(\\theta = 0^\\circ\\) (\\(\\sin 0^\\circ = 0\\)). Students often guess that \"lined up\" means maximum — it is exactly backwards."
+    },
+    {
+      "id": "m605-q06",
+      "q": "Why is the force zero when the wire lies parallel to the field?",
+      "options": [
+        "The wire is too far from the magnet",
+        "The charges' velocity is along the field, so there is no perpendicular velocity component for the field to act on",
+        "The current stops flowing when parallel",
+        "The field becomes zero near a parallel wire"
+      ],
+      "answer": 1,
+      "explanation": "When the wire lies along the field, the moving charges drift parallel to \\(B\\), so there is no perpendicular velocity component — nothing for the field to push sideways against (\\(\\sin 0^\\circ = 0\\)). Equivalently, there is no strong-side/weak-side asymmetry across the field."
+    },
+    {
+      "id": "m605-q07",
+      "q": "To apply the right-hand push rule when a question gives the electron flow direction, you must:",
+      "options": [
+        "Point your thumb along the electron flow",
+        "Reverse the electron direction to get the conventional current first, then apply the rule",
+        "Use the rule unchanged on the electron flow",
+        "Ignore the current direction entirely"
+      ],
+      "answer": 1,
+      "explanation": "The push rule is defined for conventional current (the way positive charge would move), which is opposite to electron drift. Convert electron flow to conventional current first, or your force comes out exactly backwards."
+    },
+    {
+      "id": "m605-q08",
+      "q": "A conductor 8.0 cm long carries 30 mA in a 0.25 T field, perpendicular to the field. What is the force?",
+      "options": [
+        "\\(6.0\\times10^{-4}\\ \\mathrm{N}\\)",
+        "\\(6.0\\times10^{-2}\\ \\mathrm{N}\\)",
+        "\\(0.60\\ \\mathrm{N}\\)",
+        "\\(6.0\\ \\mathrm{N}\\)"
+      ],
+      "answer": 0,
+      "explanation": "Convert: \\(L = 8.0\\times10^{-2}\\ \\mathrm{m}\\), \\(I = 3.0\\times10^{-2}\\ \\mathrm{A}\\). At \\(90^\\circ\\), \\(F = BIL = (0.25)(3.0\\times10^{-2})(8.0\\times10^{-2}) = 6.0\\times10^{-4}\\ \\mathrm{N}\\). Failing to convert cm and mA is the usual error."
+    },
+    {
+      "id": "m605-q09",
+      "q": "The direction of the force on a current-carrying wire is always:",
+      "options": [
+        "Parallel to the current",
+        "Parallel to the magnetic field",
+        "Perpendicular to both the current and the field",
+        "Along the field, in the direction of conventional current"
+      ],
+      "answer": 2,
+      "explanation": "The force is perpendicular to both the current and the field. If both lie in the plane of the page, the force points into or out of the page — never along the page. The right-hand push rule picks which of the two."
+    },
+    {
+      "id": "m605-q10",
+      "q": "Which change would double the force on a current-carrying conductor (other factors held constant)?",
+      "options": [
+        "Halving the current",
+        "Doubling the magnetic field strength",
+        "Changing the angle from \\(90^\\circ\\) to \\(30^\\circ\\)",
+        "Halving the length of wire in the field"
+      ],
+      "answer": 1,
+      "explanation": "Since \\(F = BIL\\sin\\theta\\), the force is directly proportional to \\(B\\), so doubling \\(B\\) doubles the force (as would doubling \\(I\\) or \\(L\\)). Halving \\(I\\) or \\(L\\) halves it, and going from \\(90^\\circ\\) to \\(30^\\circ\\) reduces \\(\\sin\\theta\\) from 1 to 0.5, also halving it."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m807-q01",
+      "q": "For a nuclide written with mass number \\(A\\) and atomic number \\(Z\\), the number of neutrons is:",
+      "options": [
+        "\\(A + Z\\)",
+        "\\(A - Z\\)",
+        "\\(Z\\)",
+        "\\(A\\)"
+      ],
+      "answer": 1,
+      "explanation": "The atomic number \\(Z\\) is the number of protons (and sets the element's identity); the mass number \\(A\\) is the total number of nucleons (protons + neutrons). So the neutron count is \\(A - Z\\). For uranium-238, that is \\(238 - 92 = 146\\) neutrons."
+    },
+    {
+      "id": "m807-q02",
+      "q": "Which force holds the nucleus together against the electrostatic repulsion of its protons?",
+      "options": [
+        "Gravity, which is attractive between the nucleons",
+        "The weak nuclear force",
+        "The strong nuclear force, which attracts all nucleons over a very short range",
+        "The electromagnetic force between neutrons"
+      ],
+      "answer": 2,
+      "explanation": "The strong nuclear force attracts all nucleons (protons and neutrons alike, regardless of charge) but only over about \\(10^{-15}\\ \\mathrm{m}\\). Gravity is far too weak at this scale, and the weak force drives decay, not binding. The strong force overcomes the Coulomb repulsion locally to hold the nucleus together."
+    },
+    {
+      "id": "m807-q03",
+      "q": "Why do large stable nuclei require more neutrons than protons?",
+      "options": [
+        "Neutrons repel each other and spread the protons apart",
+        "Coulomb repulsion grows fast (long-range, between every proton pair) while strong attraction grows slowly (short-range); neutrons add strong-force glue without adding repulsion",
+        "Neutrons are heavier, so they pull the nucleus together by gravity",
+        "Protons decay into neutrons in large nuclei"
+      ],
+      "answer": 1,
+      "explanation": "Adding protons rapidly increases the long-range Coulomb repulsion (every proton repels every other), but the short-range strong force only grows with nearest neighbours. Neutrons supply extra strong-force attraction with zero Coulomb cost, so big nuclei need progressively more neutrons. Beyond ~83 protons, no neutron excess is enough."
+    },
+    {
+      "id": "m807-q04",
+      "q": "An alpha particle is best described as:",
+      "options": [
+        "A high-energy photon with no charge or mass",
+        "A fast-moving electron created in the nucleus",
+        "A helium-4 nucleus (2 protons + 2 neutrons), charge \\(+2\\)",
+        "A proton ejected from the nucleus"
+      ],
+      "answer": 2,
+      "explanation": "Alpha radiation is a helium-4 nucleus — two protons and two neutrons — with charge \\(+2\\) and relatively large mass. It is highly ionising but has very low penetration (stopped by paper). (The photon is gamma; the electron is beta.)"
+    },
+    {
+      "id": "m807-q05",
+      "q": "Which statement correctly captures the relationship between ionising power and penetration for the three radiations?",
+      "options": [
+        "Alpha penetrates most and ionises least",
+        "Ionising power and penetration both decrease from alpha to gamma",
+        "Ionising power and penetration are inverses: alpha ionises most but penetrates least; gamma ionises least but penetrates most",
+        "Gamma both ionises and penetrates the least"
+      ],
+      "answer": 2,
+      "explanation": "Ionising power and penetrating power are inverses. The charged, heavy alpha interacts strongly, so it ionises heavily but is stopped quickly. The neutral gamma interacts weakly, so it ionises little but travels far. Order: ionising α > β > γ; penetration γ > β > α."
+    },
+    {
+      "id": "m807-q06",
+      "q": "In beta-minus (\\(\\beta^-\\)) decay, what happens to the mass number and atomic number?",
+      "options": [
+        "Mass number unchanged; atomic number increases by 1",
+        "Mass number unchanged; atomic number decreases by 1",
+        "Mass number decreases by 4; atomic number decreases by 2",
+        "Both mass number and atomic number unchanged"
+      ],
+      "answer": 0,
+      "explanation": "A neutron turns into a proton, so the nucleon total (mass number) is unchanged, but the proton count rises by one, so \\(Z\\) increases by 1. A very common error is to write \\(Z\\) decreasing — but you have made a proton, so the atomic number goes up."
+    },
+    {
+      "id": "m807-q07",
+      "q": "Uranium-238 (\\(Z = 92\\)) undergoes alpha decay. The daughter nucleus is:",
+      "options": [
+        "Thorium-234 (\\(Z = 90\\))",
+        "Uranium-234 (\\(Z = 92\\))",
+        "Plutonium-242 (\\(Z = 94\\))",
+        "Radium-234 (\\(Z = 88\\))"
+      ],
+      "answer": 0,
+      "explanation": "Alpha decay drops the mass number by 4 (238 → 234) and the atomic number by 2 (92 → 90). Atomic number 90 is thorium, so the daughter is thorium-234. Check: \\(234 + 4 = 238\\) and \\(90 + 2 = 92\\)."
+    },
+    {
+      "id": "m807-q08",
+      "q": "Which force drives beta decay, and what happens at the quark level in beta-minus decay?",
+      "options": [
+        "The strong force; a proton splits into three quarks",
+        "The weak nuclear force (W boson); a down quark changes into an up quark, turning a neutron (udd) into a proton (uud)",
+        "The electromagnetic force; an electron is pulled out of the nucleus",
+        "Gravity; a neutron collapses into a proton"
+      ],
+      "answer": 1,
+      "explanation": "Beta decay is mediated by the weak nuclear force, carried by the W boson. In beta-minus decay it converts a down quark to an up quark, so udd (neutron) becomes uud (proton), emitting an electron (the beta particle) and an electron antineutrino."
+    },
+    {
+      "id": "m807-q09",
+      "q": "Why was the existence of the neutrino (antineutrino) proposed in beta decay?",
+      "options": [
+        "To explain the sharp, single energy of beta particles",
+        "Because beta particles are emitted with a continuous range of energies; without a third unseen particle, energy and momentum would not be conserved",
+        "To account for the charge that was otherwise missing",
+        "To explain why the daughter nucleus is radioactive"
+      ],
+      "answer": 1,
+      "explanation": "Beta particles emerge with a continuous energy spectrum, unlike the single sharp energies of alpha decay. Rather than abandon conservation of energy and momentum, Pauli (1930) proposed a neutral, near-massless particle (later named the neutrino by Fermi) to carry away the missing energy and momentum — the same conservation-driven reasoning behind Chadwick's neutron."
+    },
+    {
+      "id": "m807-q10",
+      "q": "Carbon-14 (\\(Z = 6\\)) undergoes beta-minus decay. The balanced products are:",
+      "options": [
+        "Boron-14, a positron, and a neutrino",
+        "Carbon-13, a neutron, and an antineutrino",
+        "Nitrogen-14, an electron, and an electron antineutrino",
+        "Nitrogen-15, an electron, and a neutrino"
+      ],
+      "answer": 2,
+      "explanation": "Beta-minus leaves the mass number at 14 and raises \\(Z\\) from 6 to 7 (nitrogen), so carbon-14 → nitrogen-14 + an electron + an electron antineutrino. Check charge: \\(6 = 7 + (-1)\\). This is the carbon-14 used in radiocarbon dating."
+    }
+  ]
+}

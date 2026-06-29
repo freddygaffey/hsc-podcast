@@ -1,0 +1,28 @@
+{
+  "id": "physics",
+  "name": "HSC Physics",
+  "shortName": "Physics",
+  "description": "HSC Physics podcast episodes",
+  "repoUrl": "https://github.com/freddygaffey/hsc-podcast",
+  "audioBaseUrl": "https://audio.hsc.pebnum.com",
+
+  "groupNames": {
+    "M1": "Kinematics",
+    "M2": "Dynamics",
+    "M3": "Waves and Thermodynamics",
+    "M4": "Electricity and Magnetism",
+    "M5": "Advanced Mechanics",
+    "M6": "Electromagnetism",
+    "M7": "The Nature of Light",
+    "M8": "From the Universe to the Atom",
+    "CASE": "Case Studies"
+  },
+
+  "yearMap": {
+    "M1": "Year 11", "M2": "Year 11", "M3": "Year 11", "M4": "Year 11",
+    "M5": "Year 12", "M6": "Year 12", "M7": "Year 12", "M8": "Year 12",
+    "CASE": "Case Studies"
+  },
+
+  "yearOrder": ["Case Studies", "Year 12", "Year 11", "Other"]
+}

@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m804-q01",
+      "q": "Which pair of problems with Rutherford's nuclear model was the Bohr model designed to overcome?",
+      "options": [
+        "The proton's mass and the neutron's discovery",
+        "Atomic stability (the electron should spiral in) and the line spectrum (atoms should emit a continuous, not discrete, spectrum)",
+        "The charge-to-mass ratio and the elementary charge",
+        "The size of the nucleus and the speed of the electron"
+      ],
+      "answer": 1,
+      "explanation": "The 'two S's': by Maxwell an orbiting electron is an accelerating charge that should radiate, spiral in, and collapse the atom (Stability), and would emit a continuously rising frequency (Spectrum) — yet atoms are stable and emit discrete lines. Bohr's model fixes both."
+    },
+    {
+      "id": "m804-q02",
+      "q": "What does Bohr's first postulate assert about an electron in a stationary state?",
+      "options": [
+        "It radiates electromagnetic energy continuously as Maxwell requires",
+        "It orbits the nucleus without radiating any electromagnetic energy",
+        "It is at rest at the centre of the atom",
+        "It can have any energy at all"
+      ],
+      "answer": 1,
+      "explanation": "Bohr's audacious first postulate is that in certain allowed orbits (stationary states) the electron orbits without radiating, flatly contradicting Maxwell. This single decree fixes the stability crisis: the ground-state electron has no lower state to fall to, so it cannot spiral in."
+    },
+    {
+      "id": "m804-q03",
+      "q": "Bohr's second postulate states that when an electron moves between two stationary states it emits or absorbs a single photon. The photon's energy equals:",
+      "options": [
+        "The sum of the energies of the two states",
+        "The kinetic energy of the electron",
+        "The difference in energy between the two states, with \\(hf = E_{\\text{high}} - E_{\\text{low}}\\)",
+        "Planck's constant divided by the orbit radius"
+      ],
+      "answer": 2,
+      "explanation": "By conservation of energy the photon carries exactly the energy difference between the levels: \\(hf = E_{\\text{high}} - E_{\\text{low}}\\). This borrows Einstein's photon (energy \\(hf\\)) from the photoelectric effect to carry energy in and out of the atom on each jump."
+    },
+    {
+      "id": "m804-q04",
+      "q": "Why is the Bohr model described as a mixture of classical and quantum physics?",
+      "options": [
+        "It uses only Newtonian mechanics throughout",
+        "It keeps a classical circular orbit held by the Coulomb force as the centripetal force, but bolts on quantum rules (allowed orbits, no radiation, photon jumps)",
+        "It treats the electron purely as a wave with no orbit",
+        "It abandons the photon in favour of continuous radiation"
+      ],
+      "answer": 1,
+      "explanation": "The classical half is the planetary orbit with the electrostatic Coulomb force providing the centripetal force; the quantum half is the three rules — only certain orbits allowed, no radiation in an orbit, and photon-sized energy jumps. This inelegant hybrid is itself listed as a limitation."
+    },
+    {
+      "id": "m804-q05",
+      "q": "Why does each element produce a unique line spectrum?",
+      "options": [
+        "Each element emits light of a single colour set by its mass",
+        "Each element has a unique set of energy levels, so unique energy gaps, so a unique set of photon wavelengths",
+        "Heavier elements emit shorter wavelengths only",
+        "Spectral lines depend on the temperature, not the element"
+      ],
+      "answer": 1,
+      "explanation": "An element's energy levels are fixed by its nuclear charge and electron arrangement. Unique levels mean unique energy differences between them, and since \\(E = hf\\) fixes the frequency (and wavelength) of each photon, each element emits and absorbs only its own fingerprint of wavelengths."
+    },
+    {
+      "id": "m804-q06",
+      "q": "On an energy-level diagram, an arrow pointing UP between two levels represents:",
+      "options": [
+        "Emission of a photon as the electron loses energy",
+        "Absorption of a photon as the electron gains energy",
+        "Ionisation of the atom",
+        "The electron staying in the same level"
+      ],
+      "answer": 1,
+      "explanation": "'Up you Absorb, Down you Emit.' An upward arrow means the electron gains energy by absorbing a photon to climb the ladder; a downward arrow means it loses energy by emitting a photon. Energies are negative, with the ground state most negative at the bottom."
+    },
+    {
+      "id": "m804-q07",
+      "q": "A larger energy gap between two levels produces a photon with:",
+      "options": [
+        "Lower frequency and longer wavelength",
+        "Higher frequency and shorter wavelength",
+        "The same frequency but greater intensity",
+        "Zero frequency"
+      ],
+      "answer": 1,
+      "explanation": "A bigger gap means a bigger photon energy, so by \\(E = hf\\) a higher frequency, and by \\(c = f\\lambda\\) a shorter wavelength. The largest jumps (down to the ground state, the Lyman series) give the highest-energy ultraviolet photons."
+    },
+    {
+      "id": "m804-q08",
+      "q": "In hydrogen, electron transitions that end on the \\(n = 2\\) level form which series, and in which region of the spectrum?",
+      "options": [
+        "The Lyman series, in the ultraviolet",
+        "The Paschen series, in the infrared",
+        "The Balmer series, in the visible",
+        "The Balmer series, in the ultraviolet"
+      ],
+      "answer": 2,
+      "explanation": "'Little Birds Pause': Lyman (to n=1, UV), Balmer (to n=2, visible), Paschen (to n=3, infrared). The Balmer series is the only one in visible light; its famous red H-alpha line at 656 nm comes from the n=3 → n=2 transition."
+    },
+    {
+      "id": "m804-q09",
+      "q": "Using the Rydberg equation, the n=3 → n=2 transition in hydrogen gives \\(\\dfrac{1}{\\lambda} = 1.097\\times10^{7}\\left(\\dfrac{1}{4}-\\dfrac{1}{9}\\right)\\). What is the wavelength, and what common error must be avoided?",
+      "options": [
+        "About \\(1.5\\times10^{6}\\ \\mathrm{m}\\); no special care needed",
+        "About \\(656\\ \\mathrm{nm}\\); the equation gives \\(1/\\lambda\\), so you must take the reciprocal to get \\(\\lambda\\)",
+        "About \\(656\\ \\mathrm{m}\\); convert from nanometres at the end",
+        "About \\(122\\ \\mathrm{nm}\\); take the reciprocal twice"
+      ],
+      "answer": 1,
+      "explanation": "\\(\\frac{1}{\\lambda} = 1.097\\times10^{7}\\times0.1389 = 1.524\\times10^{6}\\ \\mathrm{m^{-1}}\\), so \\(\\lambda = 1/(1.524\\times10^{6}) = 6.56\\times10^{-7}\\ \\mathrm{m} = 656\\ \\mathrm{nm}\\). The Rydberg constant is in \\(\\mathrm{m^{-1}}\\), so the equation returns \\(1/\\lambda\\); forgetting to invert is the most common error (an answer near \\(10^{6}\\) is not a wavelength)."
+    },
+    {
+      "id": "m804-q10",
+      "q": "Which of the following is a genuine limitation of the Bohr model?",
+      "options": [
+        "It cannot predict the spectral lines of hydrogen",
+        "It works only for hydrogen and other one-electron systems and cannot explain multi-electron atoms",
+        "It assumes the electron has no charge",
+        "It predicts a continuous spectrum instead of discrete lines"
+      ],
+      "answer": 1,
+      "explanation": "'Hydrogen Is My Sole Why': it works only for hydrogen/one-electron systems, can't explain line Intensities, can't explain line splitting (Magnetic/Zeeman effect), is a Sticky classical-quantum mixture, and never explains Why orbits are stable and non-radiating. It does correctly predict hydrogen's lines and discrete spectrum."
+    }
+  ]
+}

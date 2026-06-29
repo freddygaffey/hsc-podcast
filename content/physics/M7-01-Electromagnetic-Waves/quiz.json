@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m701-q01",
+      "q": "Which kind of charge is required to produce an electromagnetic wave?",
+      "options": [
+        "A stationary charge",
+        "A charge moving at constant velocity",
+        "An accelerating charge",
+        "Any charge that carries an electric field"
+      ],
+      "answer": 2,
+      "explanation": "Only an accelerating charge (one whose velocity is changing) radiates an electromagnetic wave. A stationary charge gives only a static electric field, and a charge at constant velocity (a steady DC current) gives only a steady magnetic field — neither radiates."
+    },
+    {
+      "id": "m701-q02",
+      "q": "Why does a steady direct current in a wire produce no electromagnetic wave, while an alternating current does?",
+      "options": [
+        "DC is too weak to make any field, but AC is strong enough to radiate",
+        "In DC the charges move at constant velocity (no acceleration), giving only a steady, non-radiating field, whereas AC continually reverses the charges so they accelerate and radiate",
+        "DC produces only an electric field while AC produces only a magnetic field",
+        "DC travels too slowly through the wire to escape as a wave"
+      ],
+      "answer": 1,
+      "explanation": "A steady DC current is charge at constant velocity, so it is not accelerating and produces only an unchanging field that does not radiate. AC drives the charges back and forth, so they are constantly accelerating, producing the changing fields that regenerate and propagate as a wave."
+    },
+    {
+      "id": "m701-q03",
+      "q": "In the self-propagating chain of an electromagnetic wave, which law states that a changing magnetic field induces a changing electric field?",
+      "options": [
+        "Faraday's law",
+        "The Ampère–Maxwell law",
+        "Gauss's law for magnetism",
+        "Lenz's law"
+      ],
+      "answer": 0,
+      "explanation": "Faraday's law (a changing magnetic field induces an electric field) handles that half of the loop. The Ampère–Maxwell law does the reverse — a changing electric field induces a magnetic field. The memory hook FAME: Faraday→Electric, Ampère–Maxwell→Magnetic."
+    },
+    {
+      "id": "m701-q04",
+      "q": "An electromagnetic wave is described as transverse. What does this mean for the geometry of its fields?",
+      "options": [
+        "The electric and magnetic fields oscillate along the direction of travel",
+        "The electric field is parallel to the magnetic field, both along the direction of travel",
+        "The electric and magnetic fields are perpendicular to each other and both perpendicular to the direction of travel",
+        "Only the magnetic field is perpendicular to the direction of travel"
+      ],
+      "answer": 2,
+      "explanation": "In an EM wave the electric field is perpendicular to the magnetic field, and both are perpendicular to the direction of propagation — three mutually perpendicular directions. Because the oscillations are sideways to the direction of travel, the wave is transverse (and can therefore be polarised)."
+    },
+    {
+      "id": "m701-q05",
+      "q": "Which observation provides direct evidence that light is a transverse wave?",
+      "options": [
+        "Light can be reflected off a mirror",
+        "Light can be refracted through glass",
+        "Light can be polarised",
+        "Light travels at a constant speed in a vacuum"
+      ],
+      "answer": 2,
+      "explanation": "Only a transverse wave has a sideways plane of vibration that can be filtered, so polarisation is direct proof that light is transverse. Reflection and refraction occur for both transverse and longitudinal waves, so they do not by themselves prove the wave is transverse."
+    },
+    {
+      "id": "m701-q06",
+      "q": "Why does an electromagnetic wave require no medium to travel?",
+      "options": [
+        "It is carried by the luminiferous aether, which fills all of space",
+        "It is an oscillation of the electromagnetic fields themselves, not a disturbance of any material",
+        "It is carried by air particles that exist even in space",
+        "Its speed is too high for any medium to keep up"
+      ],
+      "answer": 1,
+      "explanation": "An EM wave is an oscillation of the electric and magnetic fields themselves — the fields are the thing that is waving, so no substance is needed. The aether was hypothesised as such a medium but was never found and is unnecessary; light travels most freely through a vacuum."
+    },
+    {
+      "id": "m701-q07",
+      "q": "Why does every electromagnetic wave travel at the same speed c in a vacuum, regardless of its frequency?",
+      "options": [
+        "Because all EM waves carry the same energy",
+        "Because the speed is set only by two fixed constants of the vacuum, the permittivity and permeability of free space",
+        "Because higher-frequency waves are slowed by their shorter wavelength",
+        "Because the aether transmits all frequencies equally"
+      ],
+      "answer": 1,
+      "explanation": "The wave's speed is given by \\( c = 1/\\sqrt{\\mu_0 \\varepsilon_0} \\), depending only on the permittivity and permeability of free space. Since these are fixed properties of the vacuum, the regeneration rate — and hence the speed — is fixed for every EM wave, independent of frequency."
+    },
+    {
+      "id": "m701-q08",
+      "q": "List the regions of the electromagnetic spectrum in order of increasing frequency.",
+      "options": [
+        "Gamma, X-ray, ultraviolet, visible, infrared, microwave, radio",
+        "Radio, microwave, infrared, visible, ultraviolet, X-ray, gamma",
+        "Radio, infrared, microwave, visible, X-ray, ultraviolet, gamma",
+        "Visible, ultraviolet, X-ray, gamma, infrared, microwave, radio"
+      ],
+      "answer": 1,
+      "explanation": "In order of increasing frequency (and energy, with shortening wavelength): Radio, Microwave, Infrared, Visible, Ultraviolet, X-ray, Gamma. Mnemonic: Raging Martians Invaded Venus Using X-ray Guns."
+    },
+    {
+      "id": "m701-q09",
+      "q": "Ultraviolet light has a wavelength of \\( 3.0 \\times 10^{-7}\\ \\mathrm{m} \\). Using \\( c = 3.0 \\times 10^{8}\\ \\mathrm{m\\,s^{-1}} \\), find its frequency.",
+      "options": [
+        "\\( 1.0 \\times 10^{15}\\ \\mathrm{Hz} \\)",
+        "\\( 1.0 \\times 10^{1}\\ \\mathrm{Hz} \\)",
+        "\\( 9.0 \\times 10^{1}\\ \\mathrm{Hz} \\)",
+        "\\( 1.0 \\times 10^{-15}\\ \\mathrm{Hz} \\)"
+      ],
+      "answer": 0,
+      "explanation": "Rearranging \\( c = f\\lambda \\) gives \\( f = c/\\lambda = (3.0 \\times 10^{8})/(3.0 \\times 10^{-7}) = 1.0 \\times 10^{15}\\ \\mathrm{Hz} \\). The numbers divide to 1 and the powers of ten give \\( 10^{8-(-7)} = 10^{15} \\)."
+    },
+    {
+      "id": "m701-q10",
+      "q": "Light slows down when it passes through glass. Does this contradict the rule that all EM waves travel at the one constant speed c?",
+      "options": [
+        "Yes — it shows c is different for each material",
+        "No — the rule applies only in a vacuum; in glass the wave is delayed by absorption and re-emission by atoms, but its vacuum speed is still c",
+        "Yes — glass changes the frequency, which changes the speed",
+        "No — light actually keeps travelling at c inside the glass too"
+      ],
+      "answer": 1,
+      "explanation": "The constant-speed rule is stated 'in a vacuum'. Inside glass the wave's energy is repeatedly absorbed and re-emitted by atoms, and that delay slows the light (measured by the refractive index \\( n = c/v_{\\text{medium}} \\)). The fundamental vacuum speed never changes."
+    }
+  ]
+}

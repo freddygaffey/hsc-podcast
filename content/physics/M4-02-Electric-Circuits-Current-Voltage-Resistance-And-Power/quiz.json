@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m402-q01",
+      "q": "Define electric current and give its equation.",
+      "options": [
+        "The energy per unit charge; I = W/q",
+        "The rate of flow of charge; I = q/t",
+        "The opposition to charge flow; I = V/R",
+        "The charge times the voltage; I = qV"
+      ],
+      "answer": 1,
+      "explanation": "Electric current is the rate of flow of electric charge past a point: I = q/t, measured in amperes (1 A = 1 coulomb per second). Energy per unit charge is voltage (W/q), and opposition to flow is resistance — distinct quantities. Current needs a complete circuit and a source to drive it."
+    },
+    {
+      "id": "m402-q02",
+      "q": "Compare the direction of conventional current with the direction of electron flow in a metal wire.",
+      "options": [
+        "They flow in the same direction",
+        "Conventional current flows + to −; electrons flow − to + (opposite directions)",
+        "Both flow from − to +",
+        "Electron flow is always faster, so it leads"
+      ],
+      "answer": 1,
+      "explanation": "Conventional current is defined as flowing from the positive terminal to the negative, while the actual electrons (negative) drift the opposite way, from − to +. This is a historical convention set before electrons were known. For this course you work with conventional current unless told otherwise."
+    },
+    {
+      "id": "m402-q03",
+      "q": "Distinguish between electric current and voltage.",
+      "options": [
+        "Current is energy per charge; voltage is the rate of flow of charge",
+        "Current is the rate of flow of charge (I = q/t); voltage is the energy transferred per unit charge (V = W/q)",
+        "They are the same quantity in different units",
+        "Voltage is measured in amperes; current in volts"
+      ],
+      "answer": 1,
+      "explanation": "Current is about flow — how much charge passes per second (I = q/t, in amperes). Voltage is about energy — how much energy each unit of charge carries or delivers (V = W/q, in volts). They are distinct quantities; saying 'voltage pushes the current' is the weak answer that loses marks."
+    },
+    {
+      "id": "m402-q04",
+      "q": "A resistor has 12 V across it and 3 A through it. Calculate its resistance.",
+      "options": [
+        "36 Ω",
+        "4 Ω",
+        "0.25 Ω",
+        "15 Ω"
+      ],
+      "answer": 1,
+      "explanation": "By Ohm's law R = V/I = 12/3 = 4 Ω. For a fixed resistance, current is proportional to voltage — doubling the voltage to 24 V would double the current to 6 A. Multiplying V and I (giving 36) is the trap."
+    },
+    {
+      "id": "m402-q05",
+      "q": "Define an ohmic conductor.",
+      "options": [
+        "One whose resistance increases as it heats",
+        "One whose resistance stays constant, giving a straight current-voltage line through the origin",
+        "One that conducts in only one direction",
+        "One with zero resistance"
+      ],
+      "answer": 1,
+      "explanation": "An ohmic conductor has constant resistance as the voltage changes, so current is directly proportional to voltage and its I-V graph is a straight line through the origin. Ohm's law strictly applies only to ohmic conductors at constant temperature. A filament lamp (rising resistance) and a diode are non-ohmic."
+    },
+    {
+      "id": "m402-q06",
+      "q": "Explain why a filament lamp is non-ohmic.",
+      "options": [
+        "Its resistance is always zero",
+        "As current increases the filament heats up, raising its resistance, so the I-V graph curves (resistance not constant)",
+        "It conducts only in one direction",
+        "Its voltage is always constant"
+      ],
+      "answer": 1,
+      "explanation": "As the voltage and current rise, the filament gets hotter, and a hotter metal has higher resistance (vibrating atoms impede the electrons more). So the current increases by less and less per extra volt and the I-V graph curves/flattens. Because the resistance is not constant, Ohm's law does not apply."
+    },
+    {
+      "id": "m402-q07",
+      "q": "Identify which combination gives a wire the highest resistance.",
+      "options": [
+        "Short, thick, copper, cool",
+        "Long, thin, high-resistivity, hot",
+        "Short, thin, copper, cool",
+        "Long, thick, low-resistivity, cool"
+      ],
+      "answer": 1,
+      "explanation": "Resistance increases with length, with smaller cross-sectional area, with higher resistivity, and (for a metal) with higher temperature. So long, thin, high-resistivity, hot conductors resist most — which is why a heater element is long, thin nichrome, while connecting wires are short, thick copper."
+    },
+    {
+      "id": "m402-q08",
+      "q": "A heater operates at 240 V and draws 5 A. Calculate its power.",
+      "options": [
+        "48 W",
+        "1200 W",
+        "245 W",
+        "9600 W"
+      ],
+      "answer": 1,
+      "explanation": "Power P = VI = 240 × 5 = 1200 W (1.2 kW). This follows from the definitions: voltage is energy per charge and current is charge per time, so their product is energy per time (power). Dividing instead of multiplying (giving 48) is the trap."
+    },
+    {
+      "id": "m402-q09",
+      "q": "Two heating elements (12 Ω and 24 Ω) are each connected to the same 240 V supply. Determine which dissipates more power.",
+      "options": [
+        "The 24 Ω element, because higher resistance means more power",
+        "The 12 Ω element, because at fixed voltage P = V²/R so lower resistance gives more power",
+        "They dissipate equal power",
+        "Neither dissipates power at constant voltage"
+      ],
+      "answer": 1,
+      "explanation": "At a fixed voltage, use P = V²/R, so power is inversely proportional to resistance: the 12 Ω element gives P = 240²/12 = 4800 W versus 240²/24 = 2400 W for the 24 Ω element. The lower-resistance element draws more current and dissipates more power. Matching the power formula to what is held constant is the key skill."
+    },
+    {
+      "id": "m402-q10",
+      "q": "Recommend the correct placement of an ammeter and a voltmeter when measuring a component's current-voltage characteristic.",
+      "options": [
+        "Ammeter in parallel; voltmeter in series",
+        "Ammeter in series; voltmeter in parallel",
+        "Both in series",
+        "Both in parallel"
+      ],
+      "answer": 1,
+      "explanation": "The ammeter goes in series so the same current that flows through the component flows through it; the voltmeter goes in parallel so it reads the potential difference across the component. (Real ammeters have low resistance and voltmeters very high resistance so they don't disturb the circuit they measure.)"
+    }
+  ]
+}

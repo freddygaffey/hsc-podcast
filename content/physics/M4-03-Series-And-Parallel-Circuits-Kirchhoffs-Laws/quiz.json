@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m403-q01",
+      "q": "State Kirchhoff's current law and the conservation principle it expresses.",
+      "options": [
+        "The voltages around a loop sum to zero; conservation of charge",
+        "The currents into a junction equal the currents out; conservation of charge",
+        "The currents into a junction equal the currents out; conservation of energy",
+        "The resistances in a loop sum to zero; conservation of energy"
+      ],
+      "answer": 1,
+      "explanation": "Kirchhoff's current law states that the total current into a junction equals the total current out (ΣI = 0), expressing conservation of charge — charge can't pile up or vanish at a junction. (The voltage law, ΣV = 0 around a loop, expresses conservation of energy.) Naming the conservation principle is the mark-earning move."
+    },
+    {
+      "id": "m403-q02",
+      "q": "State Kirchhoff's voltage law and the conservation principle it expresses.",
+      "options": [
+        "The currents at a junction sum to zero; conservation of energy",
+        "The voltages around any closed loop sum to zero; conservation of energy",
+        "The voltages around a loop sum to zero; conservation of charge",
+        "The supply voltage equals the largest resistor's voltage; conservation of charge"
+      ],
+      "answer": 1,
+      "explanation": "Kirchhoff's voltage law states that around any closed loop the voltages sum to zero — the voltage supplied equals the total dropped across the components — expressing conservation of energy (a charge gains as much energy from the source as it loses round the loop). The current law expresses conservation of charge."
+    },
+    {
+      "id": "m403-q03",
+      "q": "Identify which quantity is the same through every component in a series circuit.",
+      "options": [
+        "The voltage",
+        "The current",
+        "The resistance",
+        "The power"
+      ],
+      "answer": 1,
+      "explanation": "In a series circuit there is a single path, so the current is the same through every component, while the voltage divides among them in proportion to resistance. In a parallel circuit it is the voltage that is the same across each branch, while the current divides."
+    },
+    {
+      "id": "m403-q04",
+      "q": "Compare how the total resistance changes when resistors are added in series versus in parallel.",
+      "options": [
+        "Both increase the total resistance",
+        "Series adds (total increases); parallel uses the reciprocal sum (total decreases, below the smallest branch)",
+        "Both decrease the total resistance",
+        "Series decreases; parallel increases"
+      ],
+      "answer": 1,
+      "explanation": "In series, resistances add (R_T = R₁ + R₂ + …), so adding components increases the total. In parallel, 1/R_T = 1/R₁ + 1/R₂ + …, so adding branches decreases the total, which is always less than the smallest branch — extra paths ease the current flow. Thinking 'more resistors = more resistance' (true only in series) is the trap."
+    },
+    {
+      "id": "m403-q05",
+      "q": "Three resistors of 2 Ω, 3 Ω and 5 Ω are connected in series with a 20 V supply. Calculate the current.",
+      "options": [
+        "10 A",
+        "2 A",
+        "20 A",
+        "0.5 A"
+      ],
+      "answer": 1,
+      "explanation": "In series the resistances add: R_T = 2 + 3 + 5 = 10 Ω. Then I = V/R_T = 20/10 = 2 A, the same current through all three. Treating the circuit as parallel, or not summing the resistances, is the common error."
+    },
+    {
+      "id": "m403-q06",
+      "q": "A 6 Ω and a 3 Ω resistor are connected in parallel across 12 V. Calculate the total resistance.",
+      "options": [
+        "9 Ω",
+        "2 Ω",
+        "18 Ω",
+        "4.5 Ω"
+      ],
+      "answer": 1,
+      "explanation": "1/R_T = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2, so R_T = 2 Ω — less than the smallest branch (3 Ω), as expected for parallel. Forgetting to take the reciprocal at the end (leaving ½ Ω) or adding the resistances (9 Ω) are the common errors."
+    },
+    {
+      "id": "m403-q07",
+      "q": "In the 6 Ω ∥ 3 Ω parallel combination across 12 V, calculate the current through the 3 Ω branch.",
+      "options": [
+        "2 A",
+        "4 A",
+        "6 A",
+        "36 A"
+      ],
+      "answer": 1,
+      "explanation": "Each branch has the full 12 V across it, so I = V/R = 12/3 = 4 A through the 3 Ω branch (and 12/6 = 2 A through the 6 Ω branch). The lower-resistance branch carries the larger current, and the branch currents (2 + 4 = 6 A) add to the total — Kirchhoff's current law."
+    },
+    {
+      "id": "m403-q08",
+      "q": "Explain why connecting resistors in parallel decreases the total resistance.",
+      "options": [
+        "Because the resistances simply add",
+        "Because it provides extra alternative paths, allowing more total current for the same voltage, which means lower resistance",
+        "Because the voltage across each branch increases",
+        "Because parallel resistors get hotter"
+      ],
+      "answer": 1,
+      "explanation": "Parallel branches provide additional paths between the same two points, so more total current can flow for the same supply voltage. By Ohm's law, a larger current for the same voltage means a smaller overall resistance — and the total is always less than the smallest branch."
+    },
+    {
+      "id": "m403-q09",
+      "q": "Identify why household circuits are wired in parallel rather than in series.",
+      "options": [
+        "So one appliance failing cuts power to all the others",
+        "So each appliance gets the full supply voltage and can be switched independently",
+        "To increase the total resistance of the house",
+        "So the same current flows through every appliance"
+      ],
+      "answer": 1,
+      "explanation": "In parallel, every appliance gets the full supply voltage and has its own path, so each can be switched on/off independently and one failing doesn't break the others. (In series, one break would stop everything.) The branch currents add, which is why fuses/breakers cap the total."
+    },
+    {
+      "id": "m403-q10",
+      "q": "A 12 V supply connects a 3 Ω resistor in series with a parallel pair of 6 Ω resistors. Calculate the total resistance.",
+      "options": [
+        "15 Ω",
+        "6 Ω",
+        "9 Ω",
+        "4.5 Ω"
+      ],
+      "answer": 1,
+      "explanation": "First reduce the parallel pair: 1/R = 1/6 + 1/6 = 2/6 = 1/3, so 3 Ω. This is in series with the 3 Ω resistor: R_T = 3 + 3 = 6 Ω. The method is always reduce the parallel section first, then add the series part. Adding all three as if in series (15 Ω) is the trap."
+    }
+  ]
+}

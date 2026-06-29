@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m404-q01",
+      "q": "State the basic rule for the force between magnetic poles.",
+      "options": [
+        "Like poles attract; unlike poles repel",
+        "Like poles repel; unlike poles attract",
+        "All poles attract each other",
+        "Poles exert no force on each other"
+      ],
+      "answer": 1,
+      "explanation": "Like magnetic poles (two norths or two souths) repel, while unlike poles (a north and a south) attract — the same pattern as electric charges. Unlike charges, however, magnetic poles always come in north-south pairs."
+    },
+    {
+      "id": "m404-q02",
+      "q": "Explain why it is impossible to obtain a single isolated magnetic pole.",
+      "options": [
+        "Poles are too small to separate",
+        "Poles always come in north-south pairs; cutting a magnet just makes two smaller complete magnets",
+        "A single pole would have infinite energy",
+        "Only electric charges can be isolated because they are stronger"
+      ],
+      "answer": 1,
+      "explanation": "Magnetic poles always exist in north-south pairs. Cutting a magnet in an attempt to separate them simply produces two smaller complete magnets, each with its own north and south, no matter how finely you divide it. A lone pole (a monopole) has never been found — unlike electric charge, which can be isolated."
+    },
+    {
+      "id": "m404-q03",
+      "q": "Explain, in terms of domains, how a piece of iron becomes magnetised.",
+      "options": [
+        "Its atoms are destroyed and rebuilt",
+        "Its randomly oriented domains align with an external field, so their fields add to give a net magnetism",
+        "It gains extra electrons from the magnet",
+        "Its temperature rises until it melts"
+      ],
+      "answer": 1,
+      "explanation": "A ferromagnetic material contains tiny domains, each a small magnet. Unmagnetised, the domains point randomly and their fields cancel. In an external field the domains rotate to align, so their fields add together, giving a strong net magnetisation. Naming the random-to-aligned change is the key mark."
+    },
+    {
+      "id": "m404-q04",
+      "q": "Identify the direction of magnetic field lines outside a bar magnet.",
+      "options": [
+        "From south pole to north pole",
+        "From north pole to south pole",
+        "In closed circles around the magnet's centre",
+        "Always pointing straight up"
+      ],
+      "answer": 1,
+      "explanation": "Outside a magnet, field lines run from the north pole to the south pole — the direction the north end of a small compass points. The lines are closer together where the field is stronger (near the poles) and never cross. (Inside the magnet they continue from S to N to form closed loops.)"
+    },
+    {
+      "id": "m404-q05",
+      "q": "Explain why the Earth's geographic North Pole is actually near a magnetic south pole.",
+      "options": [
+        "Because the Earth has no magnetic field",
+        "Because a compass's north-seeking end is attracted there, and unlike poles attract",
+        "Because the north and south poles are the same",
+        "Because the Earth spins eastward"
+      ],
+      "answer": 1,
+      "explanation": "The north (north-seeking) end of a compass needle points toward geographic north, and since unlike poles attract, the magnetic pole there must be a south pole. The Earth behaves like a giant bar magnet, and its field also deflects solar particles to create the auroras."
+    },
+    {
+      "id": "m404-q06",
+      "q": "Identify the shape of the magnetic field around a long straight current-carrying wire.",
+      "options": [
+        "A bar-magnet pattern with distinct poles",
+        "Concentric circles centred on the wire, perpendicular to it",
+        "Straight lines parallel to the wire",
+        "No field is produced"
+      ],
+      "answer": 1,
+      "explanation": "A current-carrying wire produces concentric circular field lines centred on the wire, lying in planes perpendicular to it, with strength falling off with distance (B = μ₀I/2πr). The direction is given by the right-hand grip rule. A solenoid (a coil), by contrast, gives a bar-magnet pattern — don't confuse the two."
+    },
+    {
+      "id": "m404-q07",
+      "q": "A vertical wire carries conventional current straight upward. Using the right-hand grip rule, determine the field direction as viewed from above.",
+      "options": [
+        "Clockwise",
+        "Anticlockwise",
+        "Straight up the wire",
+        "Radially outward"
+      ],
+      "answer": 1,
+      "explanation": "Point the right thumb up (along the current); the fingers curl anticlockwise as seen from above. So the field circulates anticlockwise. Using the left hand, or pointing the thumb down, gives the wrong (clockwise) answer — it must be the right hand, thumb along the conventional current."
+    },
+    {
+      "id": "m404-q08",
+      "q": "A solenoid of 200 turns and length 0.5 m carries 3 A (μ₀ = 4π×10⁻⁷). Calculate the field inside it.",
+      "options": [
+        "7.5×10⁻¹ T",
+        "1.5×10⁻³ T",
+        "1.5×10⁻¹ T",
+        "2.4×10⁻⁴ T"
+      ],
+      "answer": 1,
+      "explanation": "B = μ₀NI/L = (4π×10⁻⁷ × 200 × 3)/0.5 ≈ 7.54×10⁻⁴ / 0.5 ≈ 1.5×10⁻³ T (1.5 mT). The field grows with more current, more turns, or a shorter length. Forgetting to divide by the length is the common error."
+    },
+    {
+      "id": "m404-q09",
+      "q": "Identify two advantages an electromagnet has over a permanent magnet.",
+      "options": [
+        "It is always magnetic and cannot be switched off",
+        "It can be switched on and off, and its strength varied (or poles reversed) by changing the current",
+        "It needs no electric current to work",
+        "It can isolate a single magnetic pole"
+      ],
+      "answer": 1,
+      "explanation": "An electromagnet (a solenoid with a ferromagnetic core) is magnetic only while current flows, so it can be switched on/off, its strength varied by changing the current or turns, and its poles reversed by reversing the current. The iron core's domains align with the coil's field to greatly strengthen it."
+    },
+    {
+      "id": "m404-q10",
+      "q": "Recommend the type of magnetic material best suited for the core of a switchable electromagnet.",
+      "options": [
+        "Magnetically hard material (e.g. steel), because it keeps its magnetism",
+        "Magnetically soft material (e.g. pure iron), because it magnetises and demagnetises easily",
+        "A non-magnetic material like copper",
+        "Any material, since the core makes no difference"
+      ],
+      "answer": 1,
+      "explanation": "A magnetically soft material like pure iron magnetises strongly when the current is on but loses its magnetism the instant the current is switched off — exactly what a switchable electromagnet needs. Magnetically hard materials (steel) keep their magnetism, so they are used for permanent magnets instead."
+    }
+  ]
+}

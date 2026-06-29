@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m199-q01",
+      "q": "Distinguish between distance and displacement for an athlete who runs exactly one lap of a 400 m track.",
+      "options": [
+        "Distance 0 m; displacement 400 m",
+        "Distance 400 m; displacement 0 m",
+        "Both 400 m",
+        "Both 0 m"
+      ],
+      "answer": 1,
+      "explanation": "Distance is the scalar total path length (400 m for one lap), while displacement is the vector net change in position, which is zero because the athlete finishes where they started. It follows that the average speed is non-zero (400 m / time) but the average velocity is zero — the distinction that braids together episode one's key ideas."
+    },
+    {
+      "id": "m199-q02",
+      "q": "State what the gradient of a velocity-time graph and the area under it represent.",
+      "options": [
+        "Gradient = displacement; area = acceleration",
+        "Gradient = acceleration; area = displacement",
+        "Gradient = velocity; area = distance only",
+        "Gradient = acceleration; area = velocity"
+      ],
+      "answer": 1,
+      "explanation": "On a velocity-time graph the gradient is the acceleration and the area under the line is the displacement — 'gradient climbs the ladder, area descends it'. These are two different operations giving two different quantities; checking units confirms it (m s⁻¹ ÷ s = m s⁻², while m s⁻¹ × s = m)."
+    },
+    {
+      "id": "m199-q03",
+      "q": "An object accelerates uniformly from rest to 12 m s⁻¹ in 4 s, then holds 12 m s⁻¹ for 6 s. Calculate the acceleration in the first phase and the total displacement.",
+      "options": [
+        "3 m s⁻²; 96 m",
+        "3 m s⁻²; 120 m",
+        "48 m s⁻²; 96 m",
+        "4 m s⁻²; 96 m"
+      ],
+      "answer": 0,
+      "explanation": "Acceleration is the gradient: 12 ÷ 4 = 3 m s⁻². Displacement is the area: triangle ½ × 4 × 12 = 24 m plus rectangle 6 × 12 = 72 m, giving 96 m. The tempting 120 m comes from omitting the ½ on the triangle (treating the first phase as constant velocity)."
+    },
+    {
+      "id": "m199-q04",
+      "q": "A horizontal line appears on a graph. Distinguish what it means on a displacement-time graph versus a velocity-time graph.",
+      "options": [
+        "Both mean the object is at rest",
+        "Displacement-time: at rest; velocity-time: constant velocity (zero acceleration)",
+        "Displacement-time: constant velocity; velocity-time: at rest",
+        "Both mean constant velocity"
+      ],
+      "answer": 1,
+      "explanation": "On a displacement-time graph a flat line means the position is not changing — the object is at rest. On a velocity-time graph a flat line means the velocity is not changing — constant velocity with zero acceleration. This is the single most tested distinction in motion graphs, and it arises because the vertical axis is a different quantity in each."
+    },
+    {
+      "id": "m199-q05",
+      "q": "A projectile is launched at 25 m s⁻¹ at 30° above the horizontal. Calculate the vertical component of the launch velocity and the time to reach the highest point (g = 9.8 m s⁻²).",
+      "options": [
+        "Vertical 21.7 m s⁻¹; time 2.2 s",
+        "Vertical 12.5 m s⁻¹; time 1.3 s",
+        "Vertical 12.5 m s⁻¹; time 2.6 s",
+        "Vertical 25 m s⁻¹; time 2.6 s"
+      ],
+      "answer": 1,
+      "explanation": "Resolve (episode 4): vertical component = 25 sin 30° = 25 × 0.5 = 12.5 m s⁻¹. Then apply suvat under gravity (episode 3): at the top v = 0, so 0 = 12.5 − 9.8t → t ≈ 1.3 s. Using cosine (21.7) would give the horizontal component, not the vertical — the vertical takes the sine when the angle is from the horizontal."
+    },
+    {
+      "id": "m199-q06",
+      "q": "State the four suvat equations and which quantity each omits.",
+      "options": [
+        "v = u + at (no s); s = ut + ½at² (no v); v² = u² + 2as (no t); s = ½(u+v)t (no a)",
+        "v = u + at (no a); s = ut + ½at² (no t); v² = u² + 2as (no s); s = ½(u+v)t (no v)",
+        "v = u + at (no t); s = ut + ½at² (no a); v² = u² + 2as (no v); s = ½(u+v)t (no s)",
+        "All four equations contain all five quantities"
+      ],
+      "answer": 0,
+      "explanation": "v = u + at omits s; s = ut + ½at² omits v; v² = u² + 2as omits t; s = ½(u+v)t omits a. The whole method is to identify the quantity that is neither given nor wanted (the missing one) and pick the equation that leaves it out, so the equation chooses itself."
+    },
+    {
+      "id": "m199-q07",
+      "q": "A car drives north at 15 m s⁻¹ and a truck drives south at 10 m s⁻¹. Calculate the velocity of the car relative to the truck.",
+      "options": [
+        "5 m s⁻¹ north",
+        "25 m s⁻¹ north",
+        "25 m s⁻¹ south",
+        "5 m s⁻¹ south"
+      ],
+      "answer": 1,
+      "explanation": "v(A relative to B) = v(A) − v(B) = 15 north − 10 south = 15 north + 10 north = 25 m s⁻¹ north (subtracting a southward velocity is the same as adding a northward one). This is why head-on closing speeds are large — opposite velocities subtract to add their magnitudes. The rule is always A minus B."
+    },
+    {
+      "id": "m199-q08",
+      "q": "A boat travels at 5 m s⁻¹ straight across a river that flows at 12 m s⁻¹. Calculate the boat's resultant speed relative to the bank.",
+      "options": [
+        "17 m s⁻¹",
+        "13 m s⁻¹",
+        "7 m s⁻¹",
+        "8.5 m s⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "The across (5) and downstream (12) velocities are perpendicular, so by Pythagoras the resultant is √(5² + 12²) = √169 = 13 m s⁻¹ (at tan⁻¹(12/5) ≈ 67° downstream). 5-12-13 is a Pythagorean triple favoured by examiners; adding 5 + 12 = 17 wrongly treats perpendicular vectors as scalars."
+    },
+    {
+      "id": "m199-q09",
+      "q": "A stone is thrown horizontally from a cliff at 15 m s⁻¹ and lands 3 s later (g = 9.8 m s⁻²). Calculate the cliff height and the horizontal distance from the base where it lands.",
+      "options": [
+        "Height 44 m; horizontal distance 45 m",
+        "Height 45 m; horizontal distance 44 m",
+        "Height 29 m; horizontal distance 45 m",
+        "Height 88 m; horizontal distance 45 m"
+      ],
+      "answer": 0,
+      "explanation": "Treat the directions independently. Vertically (initial vertical velocity 0 since thrown horizontally): s = ut + ½at² = 0 + ½ × 9.8 × 3² ≈ 44 m. Horizontally (no acceleration, constant velocity): 15 × 3 = 45 m. The horizontal velocity does not affect the vertical fall because perpendicular components of motion are independent."
+    },
+    {
+      "id": "m199-q10",
+      "q": "A car accelerates uniformly from 10 m s⁻¹ to 30 m s⁻¹ over 200 m. Calculate the acceleration and the time taken.",
+      "options": [
+        "a = 4 m s⁻²; t = 5 s",
+        "a = 2 m s⁻²; t = 10 s",
+        "a = 2 m s⁻²; t = 20 s",
+        "a = 1 m s⁻²; t = 20 s"
+      ],
+      "answer": 1,
+      "explanation": "Time is missing for the acceleration, so use v² = u² + 2as: 30² = 10² + 2a(200) → 900 = 100 + 400a → a = 2 m s⁻². Then v = u + at: 30 = 10 + 2t → t = 10 s. The same distance can be checked as the trapezium area of a velocity-time graph: ½(10 + 30) × 10 = 200 m, confirming the equation and graph agree."
+    }
+  ]
+}

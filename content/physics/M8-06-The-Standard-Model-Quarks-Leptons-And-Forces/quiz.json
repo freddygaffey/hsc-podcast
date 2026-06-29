@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m806-q01",
+      "q": "In the Standard Model, fundamental particles divide into two broad groups. Which is correct?",
+      "options": [
+        "Fermions are the matter particles; bosons are the force-carrier particles",
+        "Bosons are the matter particles; fermions are the force-carrier particles",
+        "Quarks are bosons and leptons are fermions",
+        "Photons are matter particles and electrons are force carriers"
+      ],
+      "answer": 0,
+      "explanation": "Fermions are the matter building blocks (leptons and quarks); bosons carry the forces (gluons, photons, W and Z). 'Fermions build; bosons bind.'"
+    },
+    {
+      "id": "m806-q02",
+      "q": "Which list correctly gives the six quarks?",
+      "options": [
+        "electron, muon, tau, and their three neutrinos",
+        "up, down, charm, strange, top, bottom",
+        "proton, neutron, pion, gluon, photon, boson",
+        "up, down, left, right, top, bottom"
+      ],
+      "answer": 1,
+      "explanation": "The six quarks are up, down, charm, strange, top and bottom, in three generations. (Electron/muon/tau and their neutrinos are the six leptons.)"
+    },
+    {
+      "id": "m806-q03",
+      "q": "What charges do the quarks carry?",
+      "options": [
+        "All quarks carry \\(+1\\)",
+        "Up, charm and top carry \\(+\\tfrac{2}{3}e\\); down, strange and bottom carry \\(-\\tfrac{1}{3}e\\)",
+        "Up, charm and top carry \\(-\\tfrac{1}{3}e\\); down, strange and bottom carry \\(+\\tfrac{2}{3}e\\)",
+        "All quarks are electrically neutral"
+      ],
+      "answer": 1,
+      "explanation": "The top row of each generation (up, charm, top) carries \\(+\\tfrac{2}{3}e\\) and the bottom row (down, strange, bottom) carries \\(-\\tfrac{1}{3}e\\). These fractional charges are the dent in simple charge quantisation."
+    },
+    {
+      "id": "m806-q04",
+      "q": "How does the Standard Model reconcile fractional quark charges with Millikan's finding that charge comes in whole-number multiples of \\(e\\)?",
+      "options": [
+        "Millikan's experiment was wrong",
+        "Quarks can never be isolated; they only appear bound inside hadrons, where their fractional charges always sum to a whole number",
+        "Quarks actually carry whole-number charges",
+        "Fractional charges only exist at high temperature"
+      ],
+      "answer": 1,
+      "explanation": "Millikan measured isolatable particles, which all carry whole-number charge. Quarks are confined inside hadrons and never appear alone; the fractional charges of the quarks in any hadron always add to a whole number, so Millikan's rule holds for anything you can isolate."
+    },
+    {
+      "id": "m806-q05",
+      "q": "What distinguishes a baryon from a meson?",
+      "options": [
+        "A baryon is two quarks; a meson is three quarks",
+        "A baryon is three quarks; a meson is one quark plus one antiquark",
+        "A baryon is a lepton; a meson is a quark",
+        "A baryon contains no quarks; a meson contains three"
+      ],
+      "answer": 1,
+      "explanation": "A baryon is three quarks bound together (e.g. the proton, uud); a meson is a quark-antiquark pair (e.g. the pion). Calling a proton a meson, or a baryon 'two quarks', is the most common trap — 'Baryon = Bunch of three'."
+    },
+    {
+      "id": "m806-q06",
+      "q": "The proton is composed of two up quarks and one down quark (uud). Its charge is:",
+      "options": [
+        "\\(+\\tfrac{2}{3} + \\tfrac{2}{3} - \\tfrac{1}{3} = +1\\)",
+        "\\(+\\tfrac{2}{3} - \\tfrac{1}{3} - \\tfrac{1}{3} = 0\\)",
+        "\\(+\\tfrac{2}{3} + \\tfrac{2}{3} + \\tfrac{1}{3} = +\\tfrac{5}{3}\\)",
+        "\\(-\\tfrac{2}{3} - \\tfrac{2}{3} + \\tfrac{1}{3} = -1\\)"
+      ],
+      "answer": 0,
+      "explanation": "\\(\\left(+\\tfrac{2}{3}\\right) + \\left(+\\tfrac{2}{3}\\right) + \\left(-\\tfrac{1}{3}\\right) = \\dfrac{2+2-1}{3} = \\dfrac{3}{3} = +1\\). The fractional pieces sum to the whole-number charge \\(+1\\) that we measure."
+    },
+    {
+      "id": "m806-q07",
+      "q": "The neutron is composed of one up and two down quarks (udd). What is its charge, and how does it relate to the proton?",
+      "options": [
+        "\\(+1\\); identical quark content to the proton",
+        "\\(0\\); it differs from the proton by a single quark (one up swapped for one down)",
+        "\\(-1\\); it has three down quarks",
+        "\\(+\\tfrac{1}{3}\\); it has one extra up quark"
+      ],
+      "answer": 1,
+      "explanation": "\\(\\left(+\\tfrac{2}{3}\\right) + \\left(-\\tfrac{1}{3}\\right) + \\left(-\\tfrac{1}{3}\\right) = 0\\), so the neutron is neutral. The proton (uud) and neutron (udd) differ by one quark; swapping an up for a down (the weak-force flip in beta decay) turns a proton into a neutron."
+    },
+    {
+      "id": "m806-q08",
+      "q": "All ordinary, stable matter is built from which fundamental particles?",
+      "options": [
+        "Up quarks, down quarks, and electrons (first-generation fermions)",
+        "Top quarks, bottom quarks, and muons",
+        "Photons, gluons, and W bosons",
+        "All six quarks and all six leptons equally"
+      ],
+      "answer": 0,
+      "explanation": "Protons and neutrons are built from up and down quarks, and electrons (leptons) surround the nucleus — all first-generation fermions. The heavier quarks and leptons appear only in cosmic rays, accelerators and decays, not in everyday atoms."
+    },
+    {
+      "id": "m806-q09",
+      "q": "Which statement about the strong nuclear force is correct?",
+      "options": [
+        "It is the weakest of the four forces and acts over infinite range",
+        "It is carried by photons and acts only between charged particles",
+        "It is the strongest force but acts only over a very short range (~\\(10^{-15}\\ \\mathrm{m}\\)), binding quarks and (as a residual effect) nucleons",
+        "It is carried by W and Z bosons and causes beta decay"
+      ],
+      "answer": 2,
+      "explanation": "The strong force, carried by gluons, is the strongest of the four forces but acts only over about \\(10^{-15}\\ \\mathrm{m}\\) (nuclear size). It binds quarks inside nucleons, and a residual effect binds protons and neutrons together, overcoming the long-range Coulomb repulsion between protons at short range."
+    },
+    {
+      "id": "m806-q10",
+      "q": "In a particle accelerator, what is the distinct role of the electric and magnetic fields, and how are new particles created?",
+      "options": [
+        "Magnetic fields accelerate the particles; electric fields create new mass",
+        "Electric fields accelerate (add kinetic energy); magnetic fields steer; in collisions kinetic energy converts to mass via \\(E = mc^2\\)",
+        "Both fields accelerate the particles; mass is created from nothing",
+        "Electric fields steer; magnetic fields slow the particles to make them collide"
+      ],
+      "answer": 1,
+      "explanation": "Electric fields do work on the charges and accelerate them; magnetic fields exert a force perpendicular to the velocity, steering without changing speed. In the collision the huge kinetic energy is converted to the mass of new particles via \\(E = mc^2\\), so higher energy creates more massive particles. Saying the magnetic field speeds particles up is wrong."
+    }
+  ]
+}

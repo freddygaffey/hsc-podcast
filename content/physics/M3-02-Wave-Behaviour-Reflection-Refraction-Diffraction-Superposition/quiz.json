@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m302-q01",
+      "q": "State the law of reflection.",
+      "options": [
+        "The angle of incidence is twice the angle of reflection",
+        "The angle of incidence equals the angle of reflection, both measured from the normal",
+        "The angle of incidence equals the angle of reflection, both measured from the surface",
+        "The reflected wave always inverts"
+      ],
+      "answer": 1,
+      "explanation": "The law of reflection states the angle of incidence equals the angle of reflection, with both angles measured from the normal (the line perpendicular to the surface), not from the surface itself. (A wave on a string inverts only at a fixed end, not in general reflection.)"
+    },
+    {
+      "id": "m302-q02",
+      "q": "A wave refracts into a new medium and slows down. Identify which quantities change.",
+      "options": [
+        "Frequency changes; speed and wavelength stay the same",
+        "Speed and wavelength decrease; frequency stays the same",
+        "Only the speed changes; frequency and wavelength stay the same",
+        "All three stay the same"
+      ],
+      "answer": 1,
+      "explanation": "The speed changes (the cause of refraction) and, since v = fλ with frequency fixed by the source, the wavelength changes too — both decrease. The frequency stays constant at a boundary. Saying frequency changes is the single most common error in this topic."
+    },
+    {
+      "id": "m302-q03",
+      "q": "Explain what causes refraction.",
+      "options": [
+        "A change in the wave's frequency at the boundary",
+        "A change in the wave's speed as it enters a new medium",
+        "The wave bouncing off the boundary",
+        "The wave spreading through a gap"
+      ],
+      "answer": 1,
+      "explanation": "Refraction is the change in direction caused by a change in the wave's speed on entering a new medium; if the wave meets the boundary at an angle, the speed change bends it. A wave slowing into a denser medium bends toward the normal. The frequency staying constant (and wavelength changing) is the key mark-earning point."
+    },
+    {
+      "id": "m302-q04",
+      "q": "Identify the condition under which diffraction is most pronounced.",
+      "options": [
+        "When the gap is much larger than the wavelength",
+        "When the gap is comparable in size to the wavelength",
+        "When the gap is much smaller than the wavelength only",
+        "Diffraction does not depend on the gap size"
+      ],
+      "answer": 1,
+      "explanation": "Diffraction (the spreading of a wave through a gap or around an edge) is most pronounced when the gap size is comparable to the wavelength. A wide gap lets the wave through nearly straight; a gap about one wavelength wide makes it spread dramatically. This is why you hear around corners (sound λ ≈ 1 m ≈ doorway) but light barely diffracts."
+    },
+    {
+      "id": "m302-q05",
+      "q": "State the principle of superposition.",
+      "options": [
+        "Overlapping waves destroy each other permanently",
+        "When waves overlap, the resultant displacement is the sum of the individual displacements",
+        "Waves cannot occupy the same point at the same time",
+        "The faster wave determines the resultant"
+      ],
+      "answer": 1,
+      "explanation": "The principle of superposition states that when two or more waves overlap at a point, the resultant displacement is the sum of the displacements each would produce alone (adding with sign). After overlapping, the waves pass through each other unchanged. Superposition is the foundation of interference, standing waves and resonance."
+    },
+    {
+      "id": "m302-q06",
+      "q": "Two identical waves overlap exactly out of phase (crest on trough). Describe the resultant.",
+      "options": [
+        "Constructive interference, doubled amplitude",
+        "Destructive interference, zero amplitude (they cancel)",
+        "No interference occurs",
+        "The amplitude is unchanged"
+      ],
+      "answer": 1,
+      "explanation": "Out of phase (crest on trough), the equal and opposite displacements cancel — destructive interference, giving zero resultant amplitude. In phase (crest on crest) would instead reinforce to double the amplitude (constructive). Whether interference is constructive or destructive depends entirely on the phase relationship."
+    },
+    {
+      "id": "m302-q07",
+      "q": "Two in-step sources reach a point with a path difference of exactly 2 wavelengths. Determine the type of interference.",
+      "options": [
+        "Destructive (a quiet/dark spot)",
+        "Constructive (a loud/bright spot)",
+        "No interference",
+        "Partial cancellation only"
+      ],
+      "answer": 1,
+      "explanation": "A path difference of a whole number of wavelengths (0, 1λ, 2λ, …) means the waves arrive in phase, giving constructive interference (a loud or bright spot). An odd number of half-wavelengths (½λ, 1½λ, …) would give destructive interference. This same path-difference logic explains the bright and dark bands of two-slit experiments."
+    },
+    {
+      "id": "m302-q08",
+      "q": "Explain, in terms of superposition, how a standing wave forms.",
+      "options": [
+        "A single wave reflects and speeds up",
+        "Two identical waves travelling in opposite directions superpose, cancelling at nodes (always out of phase) and reinforcing at antinodes (always in phase)",
+        "Two waves of different frequencies overlap",
+        "A wave spreads through a narrow gap"
+      ],
+      "answer": 1,
+      "explanation": "Two identical waves (same frequency and amplitude) travelling in opposite directions — e.g. an incident wave and its reflection — superpose. Where they are always out of phase the displacements cancel (nodes, zero displacement); where always in phase they reinforce (antinodes, maximum). Because these stay fixed, the pattern appears stationary. The weak answer 'the waves add up' omits the opposite directions and phase conditions."
+    },
+    {
+      "id": "m302-q09",
+      "q": "Distinguish between a standing (stationary) wave and a progressive (travelling) wave.",
+      "options": [
+        "A standing wave transports energy; a progressive wave stores it",
+        "A progressive wave transports energy through space; a standing wave stores energy in a fixed pattern of nodes and antinodes",
+        "Both transport energy equally",
+        "A standing wave has no nodes"
+      ],
+      "answer": 1,
+      "explanation": "A progressive wave transports energy from place to place. A standing wave does not transport energy along the medium — the energy stays put, stored in the oscillation between fixed nodes and antinodes. Fixed points that never move (nodes) and a pattern that doesn't travel signal a standing wave."
+    },
+    {
+      "id": "m302-q10",
+      "q": "Identify the condition for resonance and what is transferred efficiently when it is met.",
+      "options": [
+        "Driving frequency much greater than natural frequency; momentum transferred",
+        "Driving frequency equals the natural frequency; energy transferred efficiently, building large amplitude",
+        "Driving frequency much less than natural frequency; energy transferred",
+        "Any driving frequency; mass transferred"
+      ],
+      "answer": 1,
+      "explanation": "Resonance occurs when the driving frequency equals the system's natural frequency. Then energy is transferred into the system efficiently on every cycle and the amplitude grows large — like pushing a swing in time with its natural rhythm so small pushes build a big swing. Off resonance, energy transfer is poor and the amplitude stays small."
+    }
+  ]
+}

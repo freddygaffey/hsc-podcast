@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m608-q01",
+      "q": "What is back-EMF in a DC motor?",
+      "options": [
+        "A current that flows backwards through the supply",
+        "An induced EMF (voltage) in the motor's own coil that opposes the supply voltage",
+        "A force that pushes the coil backwards",
+        "The resistance of the armature windings"
+      ],
+      "answer": 1,
+      "explanation": "Back-EMF is an induced EMF — a voltage, in volts — produced in the motor's rotating coil that acts opposite to the supply voltage. It is not a current and not a force; those are downstream consequences. Calling it a current or force is a classic mark-loser."
+    },
+    {
+      "id": "m608-q02",
+      "q": "Which two laws explain the production of back-EMF, in the correct order?",
+      "options": [
+        "Ohm's law, then Newton's law",
+        "Faraday's law produces the EMF; Lenz's law makes it oppose the supply",
+        "Lenz's law produces the EMF; Faraday's law makes it oppose",
+        "Coulomb's law, then Kirchhoff's law"
+      ],
+      "answer": 1,
+      "explanation": "The rotating coil has a changing flux, so by Faraday's law an EMF is induced; by Lenz's law that induced EMF opposes the change driving it, so it opposes the supply. \"Faraday makes it, Lenz flips it.\""
+    },
+    {
+      "id": "m608-q03",
+      "q": "Why must the back-EMF oppose the supply rather than aid it?",
+      "options": [
+        "Because the armature resistance demands it",
+        "Because of conservation of energy — otherwise the motor would accelerate without limit, creating energy from nothing",
+        "Because the field magnets are fixed",
+        "Because the commutator reverses it"
+      ],
+      "answer": 1,
+      "explanation": "If the back-EMF aided the supply, the motor would speed up endlessly and produce energy from nothing — a perpetual motion machine. Lenz's law (the induced EMF opposes the change) is conservation of energy in disguise, so the back-EMF must oppose the supply."
+    },
+    {
+      "id": "m608-q04",
+      "q": "How does the back-EMF depend on the rotational speed of the motor?",
+      "options": [
+        "It decreases as the motor speeds up",
+        "It is independent of speed",
+        "It increases as the motor speeds up, because the flux changes more rapidly",
+        "It is largest when the motor is stationary"
+      ],
+      "answer": 2,
+      "explanation": "By Faraday's law the induced EMF is proportional to the rate of change of flux. A faster coil changes its flux more rapidly, so the back-EMF rises with speed. At zero speed the flux is not changing, so the back-EMF is exactly zero."
+    },
+    {
+      "id": "m608-q05",
+      "q": "The current through a DC motor is given by which relationship?",
+      "options": [
+        "\\(I = \\dfrac{V_{\\text{supply}}}{R}\\)",
+        "\\(I = \\dfrac{V_{\\text{supply}} - V_{\\text{back}}}{R}\\)",
+        "\\(I = \\dfrac{V_{\\text{back}}}{R}\\)",
+        "\\(I = \\dfrac{V_{\\text{supply}} + V_{\\text{back}}}{R}\\)"
+      ],
+      "answer": 1,
+      "explanation": "Only the net voltage (supply minus back-EMF) drives current through the armature resistance, so \\(I = (V_{\\text{supply}} - V_{\\text{back}})/R\\). Using the bare supply voltage gives the start-up current only — that is the most common error."
+    },
+    {
+      "id": "m608-q06",
+      "q": "A motor with armature resistance 10 Ω runs from a 240 V supply. At start-up (back-EMF = 0), what is the current?",
+      "options": [
+        "0.8 A",
+        "2.4 A",
+        "24 A",
+        "240 A"
+      ],
+      "answer": 2,
+      "explanation": "At start-up the back-EMF is zero, so the net voltage is the full 240 V: \\(I = 240/10 = 24\\ \\mathrm{A}\\). This large surge occurs because no back-EMF exists until the coil moves."
+    },
+    {
+      "id": "m608-q07",
+      "q": "The same 10 Ω, 240 V motor runs normally with a back-EMF of 232 V. What is the running current?",
+      "options": [
+        "24 A",
+        "0.8 A",
+        "23.2 A",
+        "8 A"
+      ],
+      "answer": 1,
+      "explanation": "Net voltage \\(= 240 - 232 = 8\\ \\mathrm{V}\\), so \\(I = 8/10 = 0.8\\ \\mathrm{A}\\). The running current is far smaller than the 24 A start-up surge because the large back-EMF cancels most of the supply."
+    },
+    {
+      "id": "m608-q08",
+      "q": "How does back-EMF make a motor self-regulating when the mechanical load increases?",
+      "options": [
+        "The load speeds the motor up, raising back-EMF and lowering current",
+        "The load slows the motor, lowering back-EMF, raising the net voltage and current, which raises torque",
+        "The load has no effect on the current",
+        "The motor switches off to protect itself"
+      ],
+      "answer": 1,
+      "explanation": "Extra load slows the motor, so the back-EMF falls, the net voltage and current rise, and via \\(F = BIL\\) the larger current produces more torque — exactly when the load demands it. This automatic feedback is why a drill bites harder hitting a knot."
+    },
+    {
+      "id": "m608-q09",
+      "q": "Why can a stalled DC motor burn out?",
+      "options": [
+        "The back-EMF becomes very large, overheating the coil",
+        "With zero speed the back-EMF is zero, so the current stays at its maximum continuously, and \\(I^2R\\) heating cooks the windings",
+        "The commutator stops reversing, cutting all current",
+        "The field magnets demagnetise"
+      ],
+      "answer": 1,
+      "explanation": "A stalled rotor has zero speed, so zero back-EMF; the net voltage returns to the full supply and the current sits at its maximum continuously. The \\(I^2R\\) heating has nowhere to go, so the insulation breaks down and the motor burns out. Stall and start-up are the same physics — both have zero back-EMF — but stall is permanent."
+    },
+    {
+      "id": "m608-q10",
+      "q": "What device is commonly used to limit the large start-up current of a large DC motor?",
+      "options": [
+        "A capacitor in parallel with the coil",
+        "A series starting resistor, switched out once the motor speeds up",
+        "An extra set of slip rings",
+        "A second commutator"
+      ],
+      "answer": 1,
+      "explanation": "A series starting resistor cuts the start-up current to a safe value during the brief moment before back-EMF exists. Once the motor spins up and its back-EMF limits the current, the resistor is switched out so it does not waste energy."
+    }
+  ]
+}

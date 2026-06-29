@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m704-q01",
+      "q": "What is the basic structure of a typical stellar spectrum?",
+      "options": [
+        "A pure emission spectrum of bright lines on a dark background",
+        "A continuous black-body spectrum crossed by dark absorption lines",
+        "A continuous spectrum with no lines at all",
+        "A set of bright lines with no continuous background"
+      ],
+      "answer": 1,
+      "explanation": "A stellar spectrum is an absorption spectrum superimposed on a continuous one: the hot, dense interior produces the continuous black-body background, and the cooler outer atmosphere absorbs specific wavelengths, producing the dark lines."
+    },
+    {
+      "id": "m704-q02",
+      "q": "From which feature of a star's spectrum is its surface temperature determined?",
+      "options": [
+        "The pattern of absorption lines",
+        "The wavelength of peak intensity of the continuous spectrum",
+        "The Doppler shift of the lines",
+        "The width of the absorption lines"
+      ],
+      "answer": 1,
+      "explanation": "Temperature is read from the peak of the continuous (black-body) spectrum via Wien's law. The line pattern gives composition, the shift gives velocity, and the line width gives rotation/density — these must be kept separate."
+    },
+    {
+      "id": "m704-q03",
+      "q": "Which colour corresponds to the hottest stars?",
+      "options": [
+        "Red",
+        "Yellow",
+        "Orange",
+        "Blue"
+      ],
+      "answer": 3,
+      "explanation": "Blue stars are hottest; red stars are coolest (the Sun, yellow, is in between). By Wien's law a hotter star peaks at a shorter wavelength, pushing its emission toward the blue end. This is the reverse of everyday 'red = hot' intuition."
+    },
+    {
+      "id": "m704-q04",
+      "q": "How is a star's chemical composition determined from its spectrum?",
+      "options": [
+        "From the colour of its continuous spectrum",
+        "By matching the pattern of absorption lines to the known laboratory fingerprints of elements",
+        "From the overall brightness of the star",
+        "From how much the whole spectrum is shifted"
+      ],
+      "answer": 1,
+      "explanation": "Each element absorbs at a unique fixed set of wavelengths. Comparing the dark-line positions in the star's spectrum with laboratory reference spectra identifies which elements are present (mostly hydrogen and helium), and line strengths give their relative abundances."
+    },
+    {
+      "id": "m704-q05",
+      "q": "A star's spectrum is observed to be blueshifted — the whole pattern of lines is shifted toward the blue end. What does this indicate?",
+      "options": [
+        "The star is moving away from us",
+        "The star is moving toward us",
+        "The star has a very high surface temperature",
+        "The star is rotating rapidly"
+      ],
+      "answer": 1,
+      "explanation": "A blueshift means the wavelengths are compressed because the star is moving toward us. Moving away stretches the wavelengths (redshift). The shift moves the whole pattern bodily, unlike broadening, which only widens each line."
+    },
+    {
+      "id": "m704-q06",
+      "q": "The Doppler shift of a star's spectral lines gives which component of the star's velocity?",
+      "options": [
+        "The full translational velocity through space",
+        "The tangential (sideways) velocity only",
+        "The radial velocity (component along the line of sight) only",
+        "The rotational velocity only"
+      ],
+      "answer": 2,
+      "explanation": "The Doppler shift reveals only the radial component — motion directly toward or away from us. The tangential velocity must be found from proper motion, and the true velocity is the vector sum of the two. Claiming it gives the full speed loses a mark."
+    },
+    {
+      "id": "m704-q07",
+      "q": "How does a star's rotation affect its spectral lines?",
+      "options": [
+        "It shifts the whole pattern toward the blue",
+        "It shifts the whole pattern toward the red",
+        "It broadens each line, because one limb is blueshifted and the other redshifted",
+        "It removes the absorption lines entirely"
+      ],
+      "answer": 2,
+      "explanation": "One rotating limb moves toward us (blueshift) and the other away (redshift). Since we cannot resolve the disc, the light combines and each line is smeared across a range of wavelengths — it widens (broadens) but stays centred. Faster spin gives broader lines."
+    },
+    {
+      "id": "m704-q08",
+      "q": "What is pressure (collision) broadening, and which stars show it most?",
+      "options": [
+        "Broadening from rapid rotation; shown most by slowly spinning stars",
+        "Broadening because closely packed atoms in a dense layer collide often, disturbing energy levels; shown most by smaller, denser stars",
+        "A Doppler shift caused by the star's motion; shown by all moving stars",
+        "Broadening caused by very high temperature; shown most by blue stars"
+      ],
+      "answer": 1,
+      "explanation": "In a denser outer layer atoms collide more frequently, jolting their energy levels so they absorb over a wider band — pressure broadening. It is most pronounced in smaller, denser stars; a low-density red giant shows narrow, sharp lines."
+    },
+    {
+      "id": "m704-q09",
+      "q": "A star's absorption lines are observed to be unusually broad. Why does this observation alone not reveal the cause?",
+      "options": [
+        "Because broadening is always caused by the star's motion toward us",
+        "Because both rapid rotation and high density (pressure broadening) widen lines in a similar way, so the two must be distinguished by further analysis",
+        "Because broad lines always mean the star is very hot",
+        "Because broadening only occurs in instruments, not in real stars"
+      ],
+      "answer": 1,
+      "explanation": "Two different mechanisms — rapid rotation and high density — produce the same symptom of a wider line. Observing broad lines alone is ambiguous; astronomers must use additional analysis to decide whether rotation or pressure broadening is responsible."
+    },
+    {
+      "id": "m704-q10",
+      "q": "Which statement correctly distinguishes a Doppler shift from line broadening?",
+      "options": [
+        "A shift widens each line while keeping it centred; broadening moves the whole pattern",
+        "A shift moves the whole line pattern bodily (each line staying sharp), while broadening widens each line but keeps it centred",
+        "Both effects move the whole pattern in the same way",
+        "Both effects only change the brightness of the lines, not their position or width"
+      ],
+      "answer": 1,
+      "explanation": "A shift (from translational/radial velocity) slides the entire pattern toward blue or red while each line stays sharp. Broadening (from rotation or density) widens each line about its original centre. Confusing the two is the most common error in this topic."
+    }
+  ]
+}

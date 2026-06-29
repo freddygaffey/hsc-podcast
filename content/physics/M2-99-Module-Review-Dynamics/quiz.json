@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m299-q01",
+      "q": "A 5 kg object experiences a net force of 20 N. Calculate its acceleration, and identify how it changes if the mass is doubled with the same force.",
+      "options": [
+        "4 m s⁻², unchanged when mass doubles",
+        "4 m s⁻², halves to 2 m s⁻² when mass doubles",
+        "100 m s⁻², doubles when mass doubles",
+        "0.25 m s⁻², doubles when mass doubles"
+      ],
+      "answer": 1,
+      "explanation": "By Newton's second law a = F_net/m = 20/5 = 4 m s⁻². For a fixed force, acceleration is inversely proportional to mass, so doubling the mass to 10 kg halves the acceleration to 2 m s⁻². The second law contains both proportionalities — acceleration up with force, down with mass."
+    },
+    {
+      "id": "m299-q02",
+      "q": "Distinguish between mass and weight, and calculate the weight of a 12 kg object on Earth (g = 9.8).",
+      "options": [
+        "Mass and weight are both 12 kg",
+        "Mass is 12 kg (scalar, constant); weight is 117.6 N (vector, = mg)",
+        "Mass is 117.6 N; weight is 12 kg",
+        "Weight is 12 kg; mass is 117.6 N"
+      ],
+      "answer": 1,
+      "explanation": "Mass is the scalar amount of matter (kg), constant everywhere; weight is the gravitational force on it (N), a vector equal to mg that varies with location. Weight = 12 × 9.8 = 117.6 N downward. The trap is giving weight in kilograms — weight is a force, in newtons."
+    },
+    {
+      "id": "m299-q03",
+      "q": "A box is pushed at constant velocity across a rough floor. Identify the net force on it and how the applied force compares with friction.",
+      "options": [
+        "Net force is forward; applied force exceeds friction",
+        "Net force is zero; applied force exactly equals friction",
+        "Net force is backward; friction exceeds applied force",
+        "Net force equals the weight; friction is zero"
+      ],
+      "answer": 1,
+      "explanation": "Constant velocity means zero acceleration, so by Newton's first and second laws the net force is zero — the applied force exactly balances friction (equal magnitude, opposite direction). The common error is thinking you need a bigger force than friction to keep something moving; a bigger force would cause acceleration, not constant velocity."
+    },
+    {
+      "id": "m299-q04",
+      "q": "Explain why an action-reaction pair of forces never cancels.",
+      "options": [
+        "Because the reaction force is smaller",
+        "Because the two forces act on different objects, not the same one",
+        "Because they act at different times",
+        "Because one is a contact force and one is a field force"
+      ],
+      "answer": 1,
+      "explanation": "By Newton's third law, if A pushes on B then B pushes equally and oppositely on A — but the action acts on B and the reaction on A. Since only forces on the same object determine its motion, an action-reaction pair (on two different objects) cannot cancel. This is why walking works: you push back on the ground, and the ground pushes you forward."
+    },
+    {
+      "id": "m299-q05",
+      "q": "A 3 kg block slides from rest down a frictionless 25° incline. Calculate its speed after sliding 4 m (g = 9.8, sin 25° ≈ 0.423).",
+      "options": [
+        "8.1 m s⁻¹",
+        "5.7 m s⁻¹",
+        "4.1 m s⁻¹",
+        "2.9 m s⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "Frictionless incline: a = g sin θ = 9.8 × 0.423 ≈ 4.1 m s⁻² (mass cancels). Then suvat (time missing): v² = u² + 2as = 0 + 2 × 4.1 × 4 ≈ 33, so v ≈ 5.7 m s⁻¹. The 3 kg mass is a distractor — it cancels on a frictionless incline. (4.1 is the acceleration, not the speed.)"
+    },
+    {
+      "id": "m299-q06",
+      "q": "A 2 kg block slides from rest down a rough 30° incline (slope length 5 m, friction 4 N). Using energy, calculate its kinetic energy at the bottom (g = 9.8).",
+      "options": [
+        "49 J",
+        "29 J",
+        "20 J",
+        "98 J"
+      ],
+      "answer": 1,
+      "explanation": "Vertical height = 5 × sin 30° = 2.5 m, so PE lost = mgΔh = 2 × 9.8 × 2.5 = 49 J. Work done against friction = 4 × 5 = 20 J (transformed to heat). KE at bottom = 49 − 20 = 29 J. This matches the forces method (net force 5.8 N → a = 2.9 m s⁻² → v ≈ 5.4 m s⁻¹), confirming energy and forces agree."
+    },
+    {
+      "id": "m299-q07",
+      "q": "A 1000 kg car at 20 m s⁻¹ collides with a stationary 1500 kg car and they lock together. Calculate the kinetic energy transformed in the collision.",
+      "options": [
+        "200 000 J",
+        "120 000 J",
+        "80 000 J",
+        "0 J"
+      ],
+      "answer": 1,
+      "explanation": "Momentum: 1000 × 20 = 2500v → v = 8 m s⁻¹. KE before = ½ × 1000 × 20² = 200 000 J; KE after = ½ × 2500 × 8² = 80 000 J. Transformed = 200 000 − 80 000 = 120 000 J (to heat, sound, crumpling). Momentum gives the velocity; an energy comparison gives the energy lost — the signature collision method."
+    },
+    {
+      "id": "m299-q08",
+      "q": "A 1000 kg car at 30 m s⁻¹ brakes to a stop with a braking force of 6000 N. Calculate the stopping distance using the work-energy theorem.",
+      "options": [
+        "150 m",
+        "75 m",
+        "37.5 m",
+        "450 m"
+      ],
+      "answer": 1,
+      "explanation": "KE to remove = ½ × 1000 × 30² = 450 000 J. The work-energy theorem gives braking force × distance = KE: 6000 × d = 450 000 → d = 75 m. No acceleration or time is needed. Note KE ∝ v², so doubling the speed quadruples the stopping distance — why speed limits matter."
+    },
+    {
+      "id": "m299-q09",
+      "q": "A 0.2 kg ball is dropped from 3 m. Using energy then impulse, calculate its impact speed and the impulse to stop it (g = 9.8).",
+      "options": [
+        "Speed 7.7 m s⁻¹; impulse 1.5 kg m s⁻¹",
+        "Speed 5.9 m s⁻¹; impulse 1.2 kg m s⁻¹",
+        "Speed 7.7 m s⁻¹; impulse 0.4 kg m s⁻¹",
+        "Speed 3.8 m s⁻¹; impulse 1.5 kg m s⁻¹"
+      ],
+      "answer": 0,
+      "explanation": "Energy: v = √(2gΔh) = √(2 × 9.8 × 3) = √58.8 ≈ 7.7 m s⁻¹ (mass cancels). Impulse to stop = change in momentum = mΔv = 0.2 × 7.7 ≈ 1.5 kg m s⁻¹, directed opposite to the motion. This braids conservation of energy (episode 3) with impulse (episode 4) in one question."
+    },
+    {
+      "id": "m299-q10",
+      "q": "A 2 kg trolley at 5 m s⁻¹ hits a stationary 3 kg trolley; afterward the 2 kg trolley moves forward at 1 m s⁻¹. Calculate the 3 kg trolley's velocity and classify the collision.",
+      "options": [
+        "2.7 m s⁻¹; elastic (KE conserved)",
+        "2.7 m s⁻¹; inelastic (KE not conserved)",
+        "4.0 m s⁻¹; inelastic",
+        "1.3 m s⁻¹; elastic"
+      ],
+      "answer": 1,
+      "explanation": "Momentum: 2 × 5 = 2 × 1 + 3v → 10 = 2 + 3v → v ≈ 2.7 m s⁻¹. KE before = ½ × 2 × 5² = 25 J; KE after = ½ × 2 × 1² + ½ × 3 × 2.7² ≈ 1 + 11 = 12 J. Since 12 J < 25 J, KE is not conserved — the collision is inelastic, with ~13 J transformed. Momentum finds the velocity; comparing KE classifies the collision."
+    }
+  ]
+}

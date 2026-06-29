@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m799-q01",
+      "q": "How did Maxwell predict the speed of electromagnetic waves?",
+      "options": [
+        "By measuring the speed of light directly in his laboratory",
+        "From \\(c = 1/\\sqrt{\\mu_0 \\varepsilon_0}\\), using the permeability and permittivity of free space from electromagnetism experiments, which gave \\(3\\times10^{8}\\,\\mathrm{m\\,s^{-1}}\\)",
+        "By assuming light travels at the speed of sound",
+        "From the frequency of visible light multiplied by Planck's constant"
+      ],
+      "answer": 1,
+      "explanation": "Maxwell's wave equation gives \\(c = 1/\\sqrt{\\mu_0\\varepsilon_0}\\). These two constants come from electricity and magnetism experiments, yet the result equalled the measured speed of light — leading him to conclude light is an electromagnetic wave. Hertz confirmed it with radio waves in 1887."
+    },
+    {
+      "id": "m799-q02",
+      "q": "Which of the three wave-model pillars specifically proves that light is a transverse wave?",
+      "options": [
+        "Diffraction",
+        "Interference",
+        "Polarisation",
+        "Reflection"
+      ],
+      "answer": 2,
+      "explanation": "Diffraction and interference prove light is a wave but not its type. Only polarisation proves it is transverse, because only transverse waves can be polarised — a longitudinal wave (like sound) has no sideways plane to filter."
+    },
+    {
+      "id": "m799-q03",
+      "q": "In Young's double-slit experiment, why do dark fringes provide conclusive evidence for the wave model?",
+      "options": [
+        "Because particles travelling in straight lines naturally leave gaps",
+        "Because two streams of particles can only ever add to more light, never cancel, but two waves with the right path difference cancel by destructive interference",
+        "Because the dark fringes prove light has mass",
+        "Because dark fringes appear only at the threshold frequency"
+      ],
+      "answer": 1,
+      "explanation": "Particles can only add up to more light; they cannot cancel to darkness. Waves with a path difference of a whole number plus a half wavelength interfere destructively, producing dark fringes — something only a wave can do."
+    },
+    {
+      "id": "m799-q04",
+      "q": "Unpolarised light passes through a polariser, then an analyser at 60° to it. What fraction of the original intensity emerges? (\\(\\cos^2 60^\\circ = 0.25\\))",
+      "options": [
+        "25% of the original",
+        "12.5% of the original",
+        "50% of the original",
+        "0%"
+      ],
+      "answer": 1,
+      "explanation": "The first polariser cuts unpolarised light to exactly 50% (Malus's law does NOT apply to the first filter). Then the analyser applies Malus's law: \\(0.5 \\times \\cos^2 60^\\circ = 0.5 \\times 0.25 = 0.125\\), i.e. 12.5%."
+    },
+    {
+      "id": "m799-q05",
+      "q": "What was the ultraviolet catastrophe, and how did Planck resolve it?",
+      "options": [
+        "Classical theory predicted infinite intensity at short wavelengths; Planck resolved it by quantising energy into packets of \\(hf\\)",
+        "Hot objects emitted no ultraviolet; Planck added a new force",
+        "Light was too bright to measure; Planck used filters",
+        "The Sun emitted dangerous UV; Planck blocked it with the aether"
+      ],
+      "answer": 0,
+      "explanation": "Classical wave theory predicted black-body intensity rising without limit toward short wavelengths (infinite energy — absurd). Planck assumed energy is exchanged only in discrete quanta of \\(hf\\), which suppressed high-frequency emission and matched the peak-and-fall experimental curve."
+    },
+    {
+      "id": "m799-q06",
+      "q": "The wave model of the photoelectric effect explains how many of the four observations (no delay, threshold frequency, number from intensity, energy from frequency)?",
+      "options": [
+        "All four",
+        "Only one — that intensity sets the number of photoelectrons",
+        "Three of four",
+        "None"
+      ],
+      "answer": 1,
+      "explanation": "The wave model correctly predicts only that brighter light ejects more electrons. It fails on the other three: it predicts a delay (none observed), no threshold (one exists), and energy from intensity (energy actually comes from frequency). Einstein's photon model explains all four."
+    },
+    {
+      "id": "m799-q07",
+      "q": "What did the Michelson–Morley experiment find, and which model did it force?",
+      "options": [
+        "A strong aether wind, supporting the wave model",
+        "A null result (no aether), forcing the constancy of the speed of light and special relativity",
+        "That light travels at 1.5c, supporting the particle model",
+        "Interference fringes proving light is transverse"
+      ],
+      "answer": 1,
+      "explanation": "The experiment got a null result — no fringe shift, no aether wind. This killed the aether and supported Einstein's postulate that the speed of light is constant for all observers, the foundation of special relativity."
+    },
+    {
+      "id": "m799-q08",
+      "q": "Why do far more cosmic-ray muons reach the ground than their short half-life classically allows?",
+      "options": [
+        "Muons are created at ground level",
+        "From Earth's frame time dilation lengthens their decay time; from the muon's frame the atmosphere is length-contracted — both frames predict more survive",
+        "Muons travel faster than light",
+        "The atmosphere has no effect on muons"
+      ],
+      "answer": 1,
+      "explanation": "Both relativistic frames agree: Earth sees the muon's clock run slow (time dilation), the muon sees a contracted atmosphere (shorter journey). Each independently predicts many more muons survive, confirming relativity."
+    },
+    {
+      "id": "m799-q09",
+      "q": "A spacecraft of proper length 100 m moves at 0.8c relative to Earth (\\(\\gamma = 1.67\\)). What length does an Earth observer measure, and which is the proper length?",
+      "options": [
+        "167 m measured; 100 m is the proper length",
+        "60 m measured; 100 m (the rest-frame length) is the proper length",
+        "60 m measured; 60 m is the proper length",
+        "100 m measured; no contraction occurs"
+      ],
+      "answer": 1,
+      "explanation": "Contracted length \\(= L_0/\\gamma = 100/1.67 = 60\\,\\mathrm{m}\\). The proper length is the 100 m measured in the spacecraft's own rest frame; the Earth observer measures the shorter 60 m."
+    },
+    {
+      "id": "m799-q10",
+      "q": "What is the unifying punchline of Module 7 — the single thing that both opened the module and forced its most radical consequence?",
+      "options": [
+        "Planck's constant, which appears in every equation",
+        "The constant speed of light: Maxwell predicted it from electromagnetism to open the module, and its constancy (Einstein's first postulate) forced special relativity",
+        "The work function of metals",
+        "The double-slit interference pattern"
+      ],
+      "answer": 1,
+      "explanation": "The same number — the speed of light — opened the module when Maxwell calculated it from electromagnetism, and became Einstein's first postulate, forcing time dilation, length contraction and mass-energy equivalence. Light is a wave that is also a particle, and its constant speed bends space and time."
+    }
+  ]
+}

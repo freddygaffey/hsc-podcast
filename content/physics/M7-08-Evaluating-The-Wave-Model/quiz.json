@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m708-q01",
+      "q": "Who proposed the two rival 17th–18th century models of light, and what were they?",
+      "options": [
+        "Newton proposed a wave model; Huygens proposed a particle model",
+        "Newton proposed a particle (corpuscular) model; Huygens proposed a wave model",
+        "Maxwell proposed a particle model; Hertz proposed a wave model",
+        "Both Newton and Huygens proposed particle models"
+      ],
+      "answer": 1,
+      "explanation": "Isaac Newton's corpuscular (particle) model held that light is a stream of tiny particles; Christiaan Huygens proposed that light is a wave. Newton's reputation kept the particle model dominant for nearly a century despite Huygens's theory."
+    },
+    {
+      "id": "m708-q02",
+      "q": "Why could reflection and refraction NOT be used to decide between the particle and wave models of light?",
+      "options": [
+        "Because neither model could explain them",
+        "Because both rival models could explain reflection and refraction, so they cannot distinguish between the two",
+        "Because reflection and refraction had not yet been observed",
+        "Because only the wave model could explain them"
+      ],
+      "answer": 1,
+      "explanation": "Both the particle and wave models successfully accounted for reflection and ordinary refraction. A phenomenon explained by both rivals is useless as evidence for either — the decisive evidence is what only one model can explain."
+    },
+    {
+      "id": "m708-q03",
+      "q": "Newton's particle model and Huygens's wave model made opposite predictions about the speed of light in water. What did each predict?",
+      "options": [
+        "Particle model: slower in water; wave model: faster in water",
+        "Particle model: faster in water; wave model: slower in water",
+        "Both predicted faster in water",
+        "Both predicted the same speed as in air"
+      ],
+      "answer": 1,
+      "explanation": "The particle model required light to speed up in water (the medium imagined to attract the particles); the wave model required it to slow down (the wavefront slowed by the denser medium). These contradictory predictions made refraction into water a decisive test."
+    },
+    {
+      "id": "m708-q04",
+      "q": "Whose 1850 measurement resolved the dispute about the speed of light in water, and which model did it support?",
+      "options": [
+        "Newton measured light faster in water, supporting the particle model",
+        "Foucault measured light slower in water, supporting the wave model",
+        "Young measured light faster in water, supporting the wave model",
+        "Hertz measured light slower in water, supporting the particle model"
+      ],
+      "answer": 1,
+      "explanation": "In 1850 Foucault (and independently Fizeau) measured light to be slower in water than in air, refuting the particle model's prediction and confirming the wave model. The wave model's prediction — slower — turned out to be true."
+    },
+    {
+      "id": "m708-q05",
+      "q": "Why can a particle model not explain diffraction?",
+      "options": [
+        "Because particles cannot reflect off surfaces",
+        "Because particles travel in straight lines and have no mechanism to bend around a corner into a shadow",
+        "Because particles cannot travel through a vacuum",
+        "Because particles always cancel one another"
+      ],
+      "answer": 1,
+      "explanation": "Diffraction is light spreading around edges and through narrow gaps into the shadow region, explained by Huygens's principle. Straight-line particles, once emitted, cannot bend around corners, so they cannot reach into the shadow as the wave does."
+    },
+    {
+      "id": "m708-q06",
+      "q": "In Young's double-slit experiment, which feature of the pattern is the decisive evidence against the particle model, and why?",
+      "options": [
+        "The bright bands, because particles cannot add together",
+        "The dark bands, because two streams of particles can only add to give more light, never cancel to give darkness",
+        "The colour of the fringes, because particles have no colour",
+        "The width of the central maximum"
+      ],
+      "answer": 1,
+      "explanation": "Particles could pile up to make bright spots, so bright bands alone are consistent with particles. But at a dark band, light from both slits combines to give darkness — particles can never subtract or cancel, so the dark bands are the decisive wave evidence."
+    },
+    {
+      "id": "m708-q07",
+      "q": "What does it mean for the two slits in Young's experiment to be coherent?",
+      "options": [
+        "They are the same distance from the screen",
+        "They emit light of the same wavelength with a constant (fixed) phase relationship",
+        "They are very brightly illuminated",
+        "They emit light of different colours"
+      ],
+      "answer": 1,
+      "explanation": "Coherent means monochromatic (a single wavelength) AND a constant phase relationship. Young achieved this by splitting one source into two, so both slits stayed locked in phase. Two independent lamps would be incoherent and wash out the pattern."
+    },
+    {
+      "id": "m708-q08",
+      "q": "Why is polarisation considered to give more information than diffraction or interference alone?",
+      "options": [
+        "Because it is easier to demonstrate",
+        "Because it not only confirms light is a wave but also proves the wave is transverse, since longitudinal waves cannot be polarised",
+        "Because it proves light is a particle",
+        "Because it works for sound waves too"
+      ],
+      "answer": 1,
+      "explanation": "Diffraction and interference show light is a wave but not whether it is transverse or longitudinal. Polarisation does both: a particle stream has nothing to filter, and only a transverse wave has a plane that a filter can select — a longitudinal wave cannot be polarised. This also corrected Huygens, who thought light was longitudinal."
+    },
+    {
+      "id": "m708-q09",
+      "q": "The NESA verb 'evaluate' demands more than listing the three pillars. What two things must an evaluation include?",
+      "options": [
+        "A diagram and a calculation",
+        "A stated verdict (judgement) and the model's limitation",
+        "The names of every physicist and every date",
+        "A description of reflection and refraction only"
+      ],
+      "answer": 1,
+      "explanation": "To evaluate is to make a criteria-based judgement: state a clear verdict on how strongly the wave model is supported, and weigh its successes against its limitation. A list of phenomena, however well explained, is not an evaluation."
+    },
+    {
+      "id": "m708-q10",
+      "q": "What is the key limitation of the wave model that a full evaluation must mention?",
+      "options": [
+        "It cannot explain reflection or refraction",
+        "It fails to explain black-body radiation and the photoelectric effect, which require light to behave as discrete photons",
+        "It cannot explain diffraction",
+        "It predicts light travels faster in water"
+      ],
+      "answer": 1,
+      "explanation": "The wave model explains diffraction, interference and polarisation perfectly, but fails on black-body radiation (the ultraviolet catastrophe) and the photoelectric effect, both of which require the particle-like photon of the quantum model. So the wave model is strongly supported but not a complete description of light."
+    }
+  ]
+}

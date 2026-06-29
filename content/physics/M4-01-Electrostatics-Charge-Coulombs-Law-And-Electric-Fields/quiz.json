@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m401-q01",
+      "q": "State the basic rule for the force between electric charges.",
+      "options": [
+        "Like charges attract; unlike charges repel",
+        "Like charges repel; unlike charges attract",
+        "All charges attract each other",
+        "All charges repel each other"
+      ],
+      "answer": 1,
+      "explanation": "Like charges (two positives or two negatives) repel, while unlike charges (a positive and a negative) attract. This mirrors the rule for magnetic poles. Charging an object means transferring electrons — gaining them makes it negative, losing them makes it positive."
+    },
+    {
+      "id": "m401-q02",
+      "q": "Define what it means to say charge is quantised.",
+      "options": [
+        "Charge can take any continuous value",
+        "Charge comes only in whole-number multiples of the elementary charge (≈1.6×10⁻¹⁹ C)",
+        "Charge can be created and destroyed",
+        "Charge is always conserved in a reaction"
+      ],
+      "answer": 1,
+      "explanation": "Quantisation means charge exists only in whole-number multiples of the elementary charge (the charge on one electron or proton, ≈1.6×10⁻¹⁹ C) — you cannot have half an elementary charge. This is distinct from conservation (charge can only be transferred, never created or destroyed)."
+    },
+    {
+      "id": "m401-q03",
+      "q": "A positively charged rod charges a neutral metal sphere by conduction (contact). Determine the sphere's final charge.",
+      "options": [
+        "Negative (opposite sign)",
+        "Positive (same sign)",
+        "Neutral",
+        "It depends on the sphere's size"
+      ],
+      "answer": 1,
+      "explanation": "In charging by conduction the charged object touches the conductor and charge is shared on contact, so the sphere ends up with the same sign as the rod — positive. (By induction, with no contact, it would end up with the opposite sign.) Mixing up conduction and induction is the most common electrostatics error."
+    },
+    {
+      "id": "m401-q04",
+      "q": "Compare the final charge produced by charging by conduction versus charging by induction.",
+      "options": [
+        "Both give the same sign as the charging object",
+        "Conduction gives the same sign (by contact); induction gives the opposite sign (no contact)",
+        "Both give the opposite sign",
+        "Conduction gives the opposite sign; induction gives the same sign"
+      ],
+      "answer": 1,
+      "explanation": "Conduction requires direct contact and leaves the object with the SAME sign as the charging object. Induction works without contact — the charged object separates the conductor's charges, which is then earthed and the object removed — leaving the OPPOSITE sign. This contrast (same/contact vs opposite/no-contact) is a classic exam discriminator."
+    },
+    {
+      "id": "m401-q05",
+      "q": "Two point charges experience a certain force. Predict the new force if one charge is doubled and the distance between them is also doubled.",
+      "options": [
+        "The force is unchanged",
+        "The force becomes half",
+        "The force doubles",
+        "The force quarters"
+      ],
+      "answer": 1,
+      "explanation": "By Coulomb's law F ∝ q₁q₂/r². Doubling one charge multiplies the force by 2; doubling the distance divides it by 2² = 4. Combined: 2 × ¼ = ½, so the force becomes half. The two changes don't cancel because charge is a direct factor while distance is squared."
+    },
+    {
+      "id": "m401-q06",
+      "q": "Define electric field strength and give its equation.",
+      "options": [
+        "The total charge at a point; E = q/F",
+        "The force per unit positive charge at a point; E = F/q",
+        "The energy stored at a point; E = qV",
+        "The charge times distance; E = qr"
+      ],
+      "answer": 1,
+      "explanation": "Electric field strength is the force per unit positive charge experienced at a point: E = F/q, in newtons per coulomb. The field is a property of the location (it exists with or without a charge there); the force F = Eq is what a specific charge feels. Confusing the field with the force is a common error."
+    },
+    {
+      "id": "m401-q07",
+      "q": "Identify the correct rules for drawing electric field lines.",
+      "options": [
+        "Lines go from negative to positive and may cross",
+        "Lines go out of positive and into negative charges, never cross, and are closer where the field is stronger",
+        "Lines always form closed loops around a single charge",
+        "Lines point toward positive charges"
+      ],
+      "answer": 1,
+      "explanation": "Field lines start on positive charges and end on negative charges (out of +, into −), never cross (the field has one direction per point), and are closer together where the field is stronger. Around a single positive charge they radiate outward; around a negative charge they point inward."
+    },
+    {
+      "id": "m401-q08",
+      "q": "Two parallel plates are 0.02 m apart with 100 V between them. Calculate the electric field strength between them.",
+      "options": [
+        "2 V m⁻¹",
+        "5000 V m⁻¹",
+        "50 V m⁻¹",
+        "0.0002 V m⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "For parallel plates the field is uniform: E = V/d = 100/0.02 = 5000 V m⁻¹ (equivalently N C⁻¹). It has that same value everywhere between the plates. This uniform-field setup is exactly how charged particles are accelerated and deflected in Module 6."
+    },
+    {
+      "id": "m401-q09",
+      "q": "Distinguish electric field strength from electric force.",
+      "options": [
+        "They are the same quantity",
+        "Field strength (E = F/q) is a property of the location; force (F = Eq) is what a specific charge experiences in it",
+        "Force is a property of the location; field is what a charge feels",
+        "Field strength is measured in newtons; force in newtons per coulomb"
+      ],
+      "answer": 1,
+      "explanation": "The electric field strength E = F/q is the force per unit charge — a property of the location created by other charges, existing whether or not a charge sits there. The electric force F = Eq is the actual push or pull on a specific charge q placed in the field. The field describes the location; the force describes what happens to a particular charge."
+    },
+    {
+      "id": "m401-q10",
+      "q": "A 3×10⁻⁶ C charge is placed in a uniform field of 4000 N C⁻¹ between parallel plates. Calculate the force on it.",
+      "options": [
+        "1.33×10⁻⁹ N",
+        "0.012 N",
+        "0.12 N",
+        "13.3 N"
+      ],
+      "answer": 1,
+      "explanation": "Using F = Eq = 4000 × 3×10⁻⁶ = 1.2×10⁻² N = 0.012 N. The force on a positive charge points in the field direction (from the positive plate toward the negative plate). Dividing instead of multiplying (giving 1.33×10⁻⁹) is the trap."
+    }
+  ]
+}

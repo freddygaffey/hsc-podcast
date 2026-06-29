@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m607-q01",
+      "q": "A DC motor performs which energy transformation?",
+      "options": [
+        "Mechanical (rotational) energy into electrical energy",
+        "Electrical energy into rotational kinetic (mechanical) energy",
+        "Chemical energy into magnetic energy",
+        "Heat energy into electrical energy"
+      ],
+      "answer": 1,
+      "explanation": "A motor converts electrical energy into rotational kinetic (mechanical) energy. This is the exact inverse of a generator, which converts mechanical energy into electrical energy."
+    },
+    {
+      "id": "m607-q02",
+      "q": "Which list correctly names the four main components of a DC motor?",
+      "options": [
+        "Rotor coil, field magnets, brushes, split-ring commutator",
+        "Rotor coil, slip rings, brushes, capacitor",
+        "Stator coil, field magnets, transformer, commutator",
+        "Armature, slip rings, brushes, diode"
+      ],
+      "answer": 0,
+      "explanation": "The four parts are the rotor (armature) coil, the field magnets (stator), the brushes, and the split-ring commutator. A DC motor uses a split-ring commutator, not slip rings."
+    },
+    {
+      "id": "m607-q03",
+      "q": "What is the function of the split-ring commutator?",
+      "options": [
+        "To supply the external magnetic field",
+        "To reverse the current in the coil every half-turn, at the zero-torque position",
+        "To increase the supply voltage",
+        "To store charge between rotations"
+      ],
+      "answer": 1,
+      "explanation": "The commutator is a rotating mechanical switch that reverses the current in the coil every half-turn, exactly at the zero-torque (dead) position, so the torque always acts in the same rotational direction — converting oscillation into continuous rotation."
+    },
+    {
+      "id": "m607-q04",
+      "q": "Why must a DC motor use a split-ring commutator while an AC motor uses slip rings?",
+      "options": [
+        "DC current never flows, so it must be switched on mechanically",
+        "DC flows in only one direction, so the reversal must be forced mechanically; an AC supply already reverses itself",
+        "AC motors do not produce torque",
+        "Slip rings reverse the current faster than a commutator"
+      ],
+      "answer": 1,
+      "explanation": "A DC supply flows one way, so the current reversal in the coil must be done mechanically by the split ring. An AC supply already reverses direction on its own, so an AC motor needs only slip rings (continuous, unsplit) to maintain the connection — no reversal device."
+    },
+    {
+      "id": "m607-q05",
+      "q": "Why are the brushes typically made of graphite?",
+      "options": [
+        "Graphite is magnetic",
+        "Graphite both conducts electricity and self-lubricates, sliding smoothly on the commutator",
+        "Graphite reverses the current",
+        "Graphite increases the supply voltage"
+      ],
+      "answer": 1,
+      "explanation": "Graphite conducts electricity and self-lubricates, so the stationary brushes slide smoothly against the spinning commutator without grinding it down, maintaining the connection between the supply and the rotating coil."
+    },
+    {
+      "id": "m607-q06",
+      "q": "Without a commutator, what happens to a current loop at the zero-torque (dead) position?",
+      "options": [
+        "It stops dead and remains stationary",
+        "Its momentum carries it past, but the unchanged forces then push it back, so it oscillates",
+        "It accelerates without limit",
+        "The current reverses on its own"
+      ],
+      "answer": 1,
+      "explanation": "Inertia carries the loop past the dead point, but because the forces have not changed direction, they then produce a torque pushing it back. The result is oscillation about the dead point, not continuous rotation. (It does not simply stop — claiming it \"stops\" is a trap.)"
+    },
+    {
+      "id": "m607-q07",
+      "q": "Which statement about the force and torque on the active coil sides as the coil rotates is correct?",
+      "options": [
+        "Both the force and the torque are constant",
+        "The force stays constant in size, but the torque varies with orientation",
+        "The force varies, but the torque is constant",
+        "Both the force and the torque are zero at the parallel position"
+      ],
+      "answer": 1,
+      "explanation": "The active sides stay perpendicular to the field, so the force stays constant at \\(BIL\\). The torque varies because the lever arm changes — maximum when the coil plane is parallel to the field, zero when perpendicular. Distinguishing \"constant force, varying torque\" is the mark."
+    },
+    {
+      "id": "m607-q08",
+      "q": "A coil of 20 turns and area \\(5\\times10^{-3}\\ \\mathrm{m^2}\\) carries 2 A in a 0.1 T field. What is the maximum torque, and at what orientation does it occur?",
+      "options": [
+        "\\(2\\times10^{-2}\\ \\mathrm{N\\,m}\\), with the plane of the coil parallel to the field",
+        "\\(2\\times10^{-2}\\ \\mathrm{N\\,m}\\), with the plane of the coil perpendicular to the field",
+        "\\(2\\times10^{-1}\\ \\mathrm{N\\,m}\\), with the plane parallel to the field",
+        "\\(4\\times10^{-2}\\ \\mathrm{N\\,m}\\), with the plane perpendicular to the field"
+      ],
+      "answer": 0,
+      "explanation": "Maximum torque is \\(nBIA = 20 \\times 0.1 \\times 2 \\times 5\\times10^{-3} = 2\\times10^{-2}\\ \\mathrm{N\\,m}\\), occurring when \\(\\cos\\theta = 1\\) — i.e. when the plane of the coil is parallel to the field."
+    },
+    {
+      "id": "m607-q09",
+      "q": "Apart from raising \\(n\\), \\(B\\), \\(I\\) or \\(A\\), which design feature helps increase a motor's torque?",
+      "options": [
+        "Using slip rings instead of a commutator",
+        "Inserting a soft-iron (ferromagnetic) core in the armature to concentrate the field",
+        "Removing the field magnets",
+        "Reducing the number of turns"
+      ],
+      "answer": 1,
+      "explanation": "A soft-iron core concentrates and strengthens the magnetic field through the coil, effectively increasing \\(B\\) and so the torque. Curved (radial) pole pieces and multiple coils also help by keeping torque high and smooth, but the iron core is the classic example."
+    },
+    {
+      "id": "m607-q10",
+      "q": "If you double the number of turns on a coil and halve the current, what happens to the torque?",
+      "options": [
+        "It doubles",
+        "It halves",
+        "It stays the same",
+        "It quadruples"
+      ],
+      "answer": 2,
+      "explanation": "Torque is proportional to \\(n \\times I\\). Doubling \\(n\\) (\\(\\times 2\\)) and halving \\(I\\) (\\(\\times \\tfrac12\\)) gives \\(2 \\times \\tfrac12 = 1\\) — no change. Reasoning from the proportionality is faster than re-substituting."
+    }
+  ]
+}

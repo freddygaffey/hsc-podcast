@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m303-q01",
+      "q": "Identify the type of wave that sound is.",
+      "options": [
+        "A transverse electromagnetic wave",
+        "A longitudinal mechanical wave of pressure variations",
+        "A transverse mechanical wave",
+        "A longitudinal electromagnetic wave"
+      ],
+      "answer": 1,
+      "explanation": "Sound is a longitudinal mechanical wave: a vibrating source creates compressions (high pressure) and rarefactions (low pressure) in the medium, with air molecules oscillating along the direction of travel. Being mechanical, it needs a medium — so there is no sound in a vacuum."
+    },
+    {
+      "id": "m303-q02",
+      "q": "State which property of a sound wave determines its pitch and which determines its loudness.",
+      "options": [
+        "Amplitude sets pitch; frequency sets loudness",
+        "Frequency sets pitch; amplitude (intensity) sets loudness",
+        "Speed sets pitch; wavelength sets loudness",
+        "Both are set by frequency"
+      ],
+      "answer": 1,
+      "explanation": "Pitch is set by frequency (high frequency = high pitch) and loudness by the amplitude/intensity of the pressure variation. They are independent — you can play the same note (same frequency) loudly or softly (different amplitude). Swapping pitch and loudness is the common error."
+    },
+    {
+      "id": "m303-q03",
+      "q": "You move from 2 m to 6 m from a small speaker. Calculate the factor by which the sound intensity changes.",
+      "options": [
+        "It falls to one third",
+        "It falls to one ninth",
+        "It falls to one half",
+        "It is unchanged"
+      ],
+      "answer": 1,
+      "explanation": "Intensity follows the inverse-square law, I ∝ 1/r². Going from 2 m to 6 m is ×3 the distance, so intensity changes by 1/3² = 1/9. The trap is thinking ×3 distance means ÷3 intensity — it's the square of the distance ratio, so ÷9."
+    },
+    {
+      "id": "m303-q04",
+      "q": "Explain why each end of a guitar string (fixed at both ends) must be a node.",
+      "options": [
+        "Because the ends vibrate with maximum amplitude",
+        "Because the ends are clamped and cannot move, so they are points of zero displacement",
+        "Because the string is too short to form antinodes",
+        "Because the string is longitudinal"
+      ],
+      "answer": 1,
+      "explanation": "A node is a point of zero displacement. Because the string is clamped at both ends, those points cannot move, so each must be a node. This boundary condition means only standing waves of certain wavelengths fit, the longest being the fundamental that sets the pitch."
+    },
+    {
+      "id": "m303-q05",
+      "q": "A pipe closed at one end is 0.2 m long (speed of sound 340 m s⁻¹). Calculate its fundamental frequency.",
+      "options": [
+        "850 Hz",
+        "425 Hz",
+        "1700 Hz",
+        "212 Hz"
+      ],
+      "answer": 1,
+      "explanation": "For a closed pipe the fundamental wavelength is 4 times the length: λ₀ = 4 × 0.2 = 0.8 m. Then f₀ = v/λ₀ = 340/0.8 = 425 Hz. The key step is the closed-pipe rule (λ₀ = 4L); using 2L (the open-pipe rule) would wrongly give 850 Hz."
+    },
+    {
+      "id": "m303-q06",
+      "q": "Compare the harmonics produced by a pipe open at both ends and a pipe closed at one end.",
+      "options": [
+        "Both produce only odd harmonics",
+        "The open pipe produces all harmonics; the closed pipe produces only odd harmonics",
+        "The open pipe produces only even harmonics; the closed pipe all",
+        "Both produce all harmonics"
+      ],
+      "answer": 1,
+      "explanation": "An open pipe (antinode at each end, λ₀ = 2L) produces all harmonics — every whole-number multiple of the fundamental. A closed pipe (node at the closed end, λ₀ = 4L) produces only the odd harmonics. The missing even harmonics give a closed pipe (e.g. a clarinet) its distinctive hollow tone."
+    },
+    {
+      "id": "m303-q07",
+      "q": "Explain why a violin and a flute playing the same note sound different.",
+      "options": [
+        "They produce different fundamental frequencies",
+        "They produce different blends of harmonics (timbre), even with the same fundamental",
+        "One is louder than the other",
+        "One produces sound and the other does not"
+      ],
+      "answer": 1,
+      "explanation": "The fundamental fixes the pitch (the same note), but each instrument produces a different mix of higher harmonics superposed with it. This blend — the timbre — is what makes them sound different: a flute is nearly a pure fundamental (smooth), while a violin is rich in harmonics (bright)."
+    },
+    {
+      "id": "m303-q08",
+      "q": "Two tuning forks at 500 Hz and 503 Hz are sounded together. Calculate the beat frequency heard.",
+      "options": [
+        "1003 Hz",
+        "3 beats per second",
+        "503 Hz",
+        "250 beats per second"
+      ],
+      "answer": 1,
+      "explanation": "The beat frequency is the magnitude of the difference between the two frequencies: |503 − 500| = 3 beats per second. Beats arise from superposition — the two close frequencies drift in and out of phase, making the loudness pulse. As the frequencies converge, the beats slow down (and stop when equal)."
+    },
+    {
+      "id": "m303-q09",
+      "q": "Explain, using the Doppler effect, why a siren's pitch drops as it passes you.",
+      "options": [
+        "The siren reduces its emitted frequency as it passes",
+        "Approaching, the wavefronts are compressed (higher observed frequency); receding, they are stretched (lower observed frequency)",
+        "The sound slows down as the siren passes",
+        "The siren gets quieter, which lowers the pitch"
+      ],
+      "answer": 1,
+      "explanation": "As the siren approaches, its motion compresses the wavefronts ahead of it, shortening the received wavelength and raising the observed frequency (higher pitch). As it recedes, the wavefronts stretch, lowering the observed frequency. Crucially the emitted frequency stays constant — only the observed frequency changes."
+    },
+    {
+      "id": "m303-q10",
+      "q": "An organ pipe open at both ends is 0.34 m long (speed of sound 340 m s⁻¹). Calculate its fundamental frequency.",
+      "options": [
+        "250 Hz",
+        "500 Hz",
+        "1000 Hz",
+        "750 Hz"
+      ],
+      "answer": 1,
+      "explanation": "For an open pipe the fundamental wavelength is twice the length: λ₀ = 2 × 0.34 = 0.68 m. Then f₀ = v/λ₀ = 340/0.68 = 500 Hz (the second harmonic would be 1000 Hz). Using 4L (the closed-pipe rule) would wrongly halve this to 250 Hz."
+    }
+  ]
+}

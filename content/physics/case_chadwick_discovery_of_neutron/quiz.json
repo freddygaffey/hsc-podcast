@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "chadwick-q01",
+      "q": "What was the 'mass problem' that pointed to a missing particle in the nucleus before 1932?",
+      "options": [
+        "Helium is four times as heavy as hydrogen, yet it has only twice the charge, so two protons cannot account for its mass",
+        "Hydrogen was lighter than predicted by its single proton",
+        "Electrons were found to be heavier than protons",
+        "The nucleus weighed less than the sum of its protons"
+      ],
+      "answer": 0,
+      "explanation": "Helium has two protons (charge +2) but is four times the mass of hydrogen. Two protons explain the charge but only half the mass, so something heavy and uncharged had to be present in the nucleus."
+    },
+    {
+      "id": "chadwick-q02",
+      "q": "Why was a neutral particle so hard to detect with 1920s equipment?",
+      "options": [
+        "It moved faster than the speed of light",
+        "Detectors relied on charge — a neutral particle ionises no atoms, leaves no cloud-chamber track, and is not deflected by a magnetic field",
+        "It was too small to interact with any matter",
+        "It decayed instantly into photons"
+      ],
+      "answer": 1,
+      "explanation": "Detection in the 1920s depended on a particle's charge producing a trail of ionisation and curving in a magnetic field. A neutral particle does none of this, so it glides through detectors invisibly."
+    },
+    {
+      "id": "chadwick-q03",
+      "q": "When Bothe and Becker bombarded beryllium with alpha particles, what mistake did they make about the penetrating radiation produced?",
+      "options": [
+        "They thought it was a beam of protons",
+        "They thought it was a beam of electrons",
+        "They identified it as high-energy gamma rays because it was neutral and very penetrating",
+        "They claimed it was alpha particles reflected back"
+      ],
+      "answer": 2,
+      "explanation": "The radiation was neutral and extremely penetrating, so Bothe and Becker reached for the familiar neutral radiation — gamma rays — estimating about 10 MeV. The radiation was real but the label 'gamma' was wrong."
+    },
+    {
+      "id": "chadwick-q04",
+      "q": "The Joliot-Curies let the beryllium radiation strike paraffin wax. Why wax, and what happened?",
+      "options": [
+        "Wax is dense, so it absorbed all the radiation",
+        "Wax is rich in hydrogen (protons), and the radiation knocked fast protons out of it",
+        "Wax is transparent, so they could see the radiation pass through",
+        "Wax emits gamma rays when heated"
+      ],
+      "answer": 1,
+      "explanation": "Paraffin is a hydrocarbon packed with hydrogen nuclei (protons). The mystery radiation knocked these protons out at high speed — several MeV — which was the crucial clue Chadwick later reinterpreted."
+    },
+    {
+      "id": "chadwick-q05",
+      "q": "Why did Chadwick reject the gamma-ray explanation on energy grounds?",
+      "options": [
+        "Gamma rays cannot be neutral",
+        "To eject protons at the observed speed, a photon would need about 50 MeV, but the incident alphas supply only about 5 MeV — a tenfold violation of conservation of energy",
+        "Gamma rays travel too slowly to reach the wax",
+        "Gamma rays are too heavy to be produced by beryllium"
+      ],
+      "answer": 1,
+      "explanation": "The gamma-ray hypothesis demanded ~50 MeV per photon to shove protons forward at the measured speed, but the alpha particles supplied only ~5 MeV. You cannot get 50 units of energy from a source holding 5 — it breaks conservation of energy."
+    },
+    {
+      "id": "chadwick-q06",
+      "q": "Why is a photon poor at knocking a heavy proton forward, while a massive neutral particle does it efficiently?",
+      "options": [
+        "A photon has no energy, so it cannot push anything",
+        "A photon carries little momentum for its energy (\\(p = E/c\\)), whereas an equal-mass particle transfers nearly all its momentum in a head-on elastic collision",
+        "A photon always passes straight through a proton without interacting",
+        "A massive particle is attracted to the proton by gravity"
+      ],
+      "answer": 1,
+      "explanation": "A photon's momentum is \\(p = E/c\\), tiny for a given energy because \\(c\\) is huge, so it is like a ping-pong ball trying to move a bowling ball. A neutral particle of roughly proton mass transfers nearly all its speed in a head-on elastic collision, like equal billiard balls."
+    },
+    {
+      "id": "chadwick-q07",
+      "q": "How did Chadwick determine the mass of the neutron experimentally?",
+      "options": [
+        "He weighed the radiation on a sensitive balance",
+        "He measured the recoil speeds of two different known targets (hydrogen and nitrogen) and applied conservation of momentum and energy, so the unknown neutron speed cancelled",
+        "He measured how far the radiation curved in a magnetic field",
+        "He timed how long the radiation took to cross his laboratory"
+      ],
+      "answer": 1,
+      "explanation": "By firing the radiation at hydrogen and at nitrogen and measuring each recoil speed, Chadwick wrote two elastic-collision equations. Taking their ratio cancels the unknown incoming speed, leaving the neutron's mass in terms of measured quantities."
+    },
+    {
+      "id": "chadwick-q08",
+      "q": "What value did Chadwick obtain for the neutron's mass, and what is the modern value?",
+      "options": [
+        "About half a proton mass; modern value about 0.5 proton masses",
+        "About twice a proton mass; modern value about 2 proton masses",
+        "About 1.15 proton masses; modern value about 1.0014 proton masses (just heavier than a proton)",
+        "About equal to an electron's mass"
+      ],
+      "answer": 2,
+      "explanation": "Chadwick measured roughly 1.15 proton masses — within about 15% of the modern 1.0014 proton masses. The key proven point was that the particle has a mass comparable to a proton and no charge: the neutron."
+    },
+    {
+      "id": "chadwick-q09",
+      "q": "Why did Chadwick title his paper 'Possible Existence of a Neutron' and add a caveat about the conservation laws?",
+      "options": [
+        "He was unsure whether neutrons were charged",
+        "His whole argument rested on conservation of energy and momentum, and some leading physicists (e.g. Bohr) then doubted those laws held inside the nucleus",
+        "He had not yet measured the neutron's speed",
+        "He suspected the radiation might be electrons after all"
+      ],
+      "answer": 1,
+      "explanation": "Chadwick's reasoning depended entirely on conservation of energy and momentum, and at the time figures like Bohr questioned whether those classical laws held in nuclear processes. He honestly noted his conclusion stood unless those laws failed — they held."
+    },
+    {
+      "id": "chadwick-q10",
+      "q": "Why did the neutron become such a powerful tool for probing and transforming the nucleus?",
+      "options": [
+        "Because it is positively charged and attracted to the nucleus",
+        "Because, being uncharged, it feels no electrical repulsion and can drift into a nucleus without being repelled",
+        "Because it is far heavier than any nucleus",
+        "Because it decays into protons on contact"
+      ],
+      "answer": 1,
+      "explanation": "Charged projectiles are repelled by the positive nucleus and must be fired hard to overcome that barrier. A neutron has no charge, so it can approach and enter a nucleus unhindered — which made neutron-induced nuclear fission possible just a few years later."
+    }
+  ]
+}

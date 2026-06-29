@@ -1,0 +1,27 @@
+{
+  "id": "software",
+  "name": "HSC Software Engineering",
+  "shortName": "Software Eng",
+  "description": "HSC Software Engineering podcast episodes",
+  "repoUrl": "https://github.com/freddygaffey/hsc-podcast",
+  "audioBaseUrl": "https://audio.hsc.pebnum.com",
+
+  "groupNames": {
+    "PF11": "Programming Fundamentals",
+    "OOP11": "The Object-Oriented Paradigm",
+    "PM11": "Programming Mechatronics",
+    "PFW": "Programming for the Web",
+    "SSA": "Software Security Applications",
+    "SA": "Software Automation",
+    "SEE": "Software Engineering Project",
+    "CASE": "Case Studies"
+  },
+
+  "yearMap": {
+    "PF11": "Year 11", "OOP11": "Year 11", "PM11": "Year 11",
+    "PFW": "Year 12", "SSA": "Year 12", "SA": "Year 12", "SEE": "Year 12",
+    "CASE": "Case Studies"
+  },
+
+  "yearOrder": ["Case Studies", "Year 12", "Year 11", "Other"]
+}

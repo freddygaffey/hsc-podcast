@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m714-q01",
+      "q": "In the light-clock thought experiment, why does a moving clock run slow when viewed from an external frame?",
+      "options": [
+        "The light pulse speeds up to cover the longer diagonal path",
+        "The light pulse traces a longer diagonal path but must still travel at the constant speed of light, so each tick takes longer",
+        "The mirrors physically move closer together",
+        "The light loses energy and slows down"
+      ],
+      "answer": 1,
+      "explanation": "From the external frame the pulse follows a longer diagonal (by Pythagoras), but by the second postulate it still travels at exactly c — it cannot speed up. A longer distance at the same speed takes more time, so each tick is longer: the moving clock runs slow."
+    },
+    {
+      "id": "m714-q02",
+      "q": "Which statement about the Lorentz factor \\(\\gamma = 1/\\sqrt{1 - v^2/c^2}\\) is correct?",
+      "options": [
+        "\\(\\gamma\\) is always less than 1",
+        "\\(\\gamma\\) is always greater than or equal to 1, equalling 1 only when \\(v = 0\\) and approaching infinity as \\(v \\to c\\)",
+        "\\(\\gamma\\) decreases as the speed increases",
+        "\\(\\gamma\\) can be negative for very high speeds"
+      ],
+      "answer": 1,
+      "explanation": "Since \\(v < c\\), the quantity under the root is between 0 and 1, so \\(\\gamma \\ge 1\\). It equals 1 only at rest and shoots toward infinity as \\(v\\) approaches \\(c\\). A \\(\\gamma < 1\\) signals an algebra error."
+    },
+    {
+      "id": "m714-q03",
+      "q": "Which is the proper time, and is it the longer or shorter interval?",
+      "options": [
+        "The time measured by two separate clocks at different places; the longer time",
+        "The time measured by the single clock present at both events (events at the same place); the shorter time",
+        "The time measured from the frame where the clock is moving; the longer time",
+        "The average of the two observers' times"
+      ],
+      "answer": 1,
+      "explanation": "The proper time \\(t_0\\) is measured in the frame where the two events occur at the same place — one clock present at both — and it is always the shorter time. The dilated time (longer) is measured from the frame where the clock moves."
+    },
+    {
+      "id": "m714-q04",
+      "q": "A spaceship passes Earth at 0.8c. One year passes on the ship. How much time passes on Earth? (\\(\\gamma = 1.67\\) at 0.8c)",
+      "options": [
+        "0.60 years",
+        "1.67 years",
+        "1.00 year",
+        "0.80 years"
+      ],
+      "answer": 1,
+      "explanation": "The ship's clock is present at both events, so 1 year is the proper time. Earth measures the dilated time \\(t = t_0\\gamma = 1 \\times 1.67 = 1.67\\) years."
+    },
+    {
+      "id": "m714-q05",
+      "q": "How do length contraction and time dilation relate to \\(\\gamma\\), and in which direction does each go?",
+      "options": [
+        "Both multiply by \\(\\gamma\\), so both get longer",
+        "Time dilates (multiply by \\(\\gamma\\), gets longer); length contracts (divide by \\(\\gamma\\), gets shorter)",
+        "Both divide by \\(\\gamma\\), so both get shorter",
+        "Time divides by \\(\\gamma\\); length multiplies by \\(\\gamma\\)"
+      ],
+      "answer": 1,
+      "explanation": "Time dilation: \\(t = t_0\\gamma\\) (longer). Length contraction: \\(L = L_0/\\gamma\\) (shorter). They go opposite ways — multiplying a length by \\(\\gamma\\) is the classic mark-destroying slip."
+    },
+    {
+      "id": "m714-q06",
+      "q": "A 1.00 m rod (rest length) moves at 0.6c along its length (\\(\\gamma = 1.25\\)). What is its measured length, and does its perpendicular width change?",
+      "options": [
+        "1.25 m; width also increases",
+        "0.80 m; width is unchanged",
+        "0.80 m; width also contracts to 0.80 m",
+        "1.00 m; no change at all"
+      ],
+      "answer": 1,
+      "explanation": "\\(L = L_0/\\gamma = 1.00/1.25 = 0.80\\,\\mathrm{m}\\). Contraction acts only along the direction of motion, so the perpendicular width is unchanged."
+    },
+    {
+      "id": "m714-q07",
+      "q": "Why do far more cosmic-ray muons reach the ground than classical physics predicts?",
+      "options": [
+        "Muons are created at the ground, not in the atmosphere",
+        "From Earth's frame the muon's clock is time-dilated (it lives longer); from the muon's frame the atmosphere is length-contracted (shorter journey) — both predict more survive",
+        "Muons travel faster than light",
+        "The atmosphere accelerates the muons toward the ground"
+      ],
+      "answer": 1,
+      "explanation": "A full-mark answer uses both frames: Earth sees time dilation stretch the muon's decay time; the muon sees the atmosphere length-contracted into a short hop. Both independently predict many more survive, confirming relativity (the Rossi–Hall experiment)."
+    },
+    {
+      "id": "m714-q08",
+      "q": "Muons have a proper half-life of 1.56 μs. Their journey takes 6.5 μs by Earth clocks but only ~0.7 μs by the muons' own clock. What is the approximate Lorentz factor?",
+      "options": [
+        "1.56",
+        "9.3",
+        "0.7",
+        "0.11"
+      ],
+      "answer": 1,
+      "explanation": "\\(\\gamma = t/t_0 = 6.5/0.7 \\approx 9.3\\). This large \\(\\gamma\\) corresponds to a speed of about 0.994c, and stretches the half-life from 1.56 μs to about 14 μs in Earth's frame."
+    },
+    {
+      "id": "m714-q09",
+      "q": "Which framing of length contraction is correct for a full-mark answer?",
+      "options": [
+        "The force of motion physically squashes the spaceship as it moves through the aether",
+        "As measured from a frame in relative motion, the object's length along the direction of motion is contracted; nothing physical happens to it in its own rest frame",
+        "The spaceship's crew feel themselves being compressed",
+        "The contraction is caused by air resistance at high speed"
+      ],
+      "answer": 1,
+      "explanation": "Nothing happens to the object in its own frame (no force, no aether). Contraction describes how the object is measured from an external frame in relative motion. The Fitzgerald–Lorentz 'physical squeeze' idea is exactly what Einstein replaced."
+    },
+    {
+      "id": "m714-q10",
+      "q": "What does it mean that time dilation is 'reciprocal'?",
+      "options": [
+        "Only the faster observer's clock runs slow",
+        "Each observer measures the other's clock as running slow, with no contradiction because simultaneity is relative",
+        "Both clocks run at exactly the same rate",
+        "The effect cancels out so neither clock changes"
+      ],
+      "answer": 1,
+      "explanation": "Each observer sees the other's clock running slow. There is no paradox because the constancy of c makes simultaneity relative, so they don't agree on which events line up. This is why you must always state whose frame you are measuring from."
+    }
+  ]
+}

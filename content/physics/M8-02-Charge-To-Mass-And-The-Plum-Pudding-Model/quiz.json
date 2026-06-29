@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m802-q01",
+      "q": "Why could Thomson measure only the charge-to-mass ratio of the electron, rather than the charge and mass separately?",
+      "options": [
+        "His instruments were not precise enough to read two numbers",
+        "Every force he could apply depended on both the charge and the mass together, so only their combination \\(q/m\\) could be extracted",
+        "The electron's charge was too small to detect at all",
+        "The electron's mass changed during the experiment"
+      ],
+      "answer": 1,
+      "explanation": "The electric force depends on charge while the acceleration it produces depends on mass, so the charge and mass are tangled together in the motion. The cleanest quantity Thomson could extract was the combination \\(q/m\\); he measured a ratio, not a charge and not a mass."
+    },
+    {
+      "id": "m802-q02",
+      "q": "In the velocity selector (stage one), the beam passes through undeflected. The condition for this gives the speed as:",
+      "options": [
+        "\\(v = qE\\)",
+        "\\(v = B/E\\)",
+        "\\(v = E/B\\)",
+        "\\(v = EB\\)"
+      ],
+      "answer": 2,
+      "explanation": "Undeflected means the electric force balances the magnetic force: \\(qE = qvB\\). The charge cancels, leaving \\(v = E/B\\). Both \\(E\\) and \\(B\\) are set and read off the dials, so the speed is known with no guessing."
+    },
+    {
+      "id": "m802-q03",
+      "q": "In the velocity selector, the charge \\(q\\) cancels out of the balance equation. What does this correctly tell you?",
+      "options": [
+        "The particle has no charge",
+        "The selected speed is independent of the charge and mass of the particle",
+        "The magnetic force is zero",
+        "Only positive particles can pass through"
+      ],
+      "answer": 1,
+      "explanation": "The charge cancelling algebraically does NOT mean the charge is zero — the particle is still charged. It means the selected speed \\(v = E/B\\) is the same for any charged particle regardless of its charge or mass, which is why the device selects one velocity."
+    },
+    {
+      "id": "m802-q04",
+      "q": "In stage two the electric field is switched off and only the magnetic field acts. The charge-to-mass ratio is then given by equating the magnetic force to the centripetal force, yielding:",
+      "options": [
+        "\\(\\dfrac{q}{m} = \\dfrac{v}{Br}\\)",
+        "\\(\\dfrac{q}{m} = \\dfrac{Br}{v}\\)",
+        "\\(\\dfrac{q}{m} = vBr\\)",
+        "\\(\\dfrac{q}{m} = \\dfrac{r}{vB}\\)"
+      ],
+      "answer": 0,
+      "explanation": "Setting \\(qvB = \\dfrac{mv^2}{r}\\) and cancelling one factor of \\(v\\) gives \\(\\dfrac{q}{m} = \\dfrac{v}{Br}\\). The speed comes from stage one, the field is set, and the radius is measured from the deflection geometry, so every quantity is measurable."
+    },
+    {
+      "id": "m802-q05",
+      "q": "The beam in stage two follows a circle rather than a parabola. Why?",
+      "options": [
+        "Gravity dominates the motion inside the tube",
+        "The magnetic force always points perpendicular to the velocity, so it always aims toward a fixed centre, giving uniform circular motion",
+        "The electric field is still partly on",
+        "The electrons slow down and curl up"
+      ],
+      "answer": 1,
+      "explanation": "A projectile feels a constant-direction force (gravity) and traces a parabola. The magnetic force instead stays perpendicular to the velocity, so as the electron turns the force turns with it, always pointing at a fixed centre — the recipe for a circle."
+    },
+    {
+      "id": "m802-q06",
+      "q": "Thomson's charge-to-mass ratio of about \\(1.76 \\times 10^{11}\\ \\mathrm{C\\,kg^{-1}}\\) is roughly 1800 times that of a hydrogen ion. What did he conclude, and why?",
+      "options": [
+        "The electron's charge is about 1800 times larger than a hydrogen ion's",
+        "The electron is about 1800 times heavier than a hydrogen ion",
+        "The electron's mass is tiny — about 1/1800 that of hydrogen — making it the first sub-atomic particle and evidence the atom is divisible",
+        "Hydrogen ions and electrons are the same particle"
+      ],
+      "answer": 2,
+      "explanation": "A much larger ratio means either an enormous charge or a tiny mass; Thomson took the charge as comparable to a hydrogen ion's, so the mass had to be tiny — about 1/1800 of hydrogen. This made the electron the first sub-atomic particle and the first evidence the atom is divisible. (Mass is on the bottom of the fraction, so a lighter particle gives a bigger ratio.)"
+    },
+    {
+      "id": "m802-q07",
+      "q": "A beam passes undeflected through crossed fields with \\(E = 5.0 \\times 10^{3}\\ \\mathrm{N\\,C^{-1}}\\) and \\(B = 2.0 \\times 10^{-2}\\ \\mathrm{T}\\). The selected speed is:",
+      "options": [
+        "\\(2.5 \\times 10^{5}\\ \\mathrm{m\\,s^{-1}}\\)",
+        "\\(1.0 \\times 10^{2}\\ \\mathrm{m\\,s^{-1}}\\)",
+        "\\(2.5 \\times 10^{1}\\ \\mathrm{m\\,s^{-1}}\\)",
+        "\\(4.0 \\times 10^{-6}\\ \\mathrm{m\\,s^{-1}}\\)"
+      ],
+      "answer": 0,
+      "explanation": "\\(v = E/B = \\dfrac{5.0\\times10^{3}}{2.0\\times10^{-2}} = 2.5\\times10^{5}\\ \\mathrm{m\\,s^{-1}}\\). The charge cancels, so this speed is independent of the particle's charge and mass."
+    },
+    {
+      "id": "m802-q08",
+      "q": "What did Millikan's oil-drop experiment establish that Thomson's could not?",
+      "options": [
+        "The charge-to-mass ratio of the electron",
+        "The elementary charge \\(e \\approx 1.6 \\times 10^{-19}\\ \\mathrm{C}\\), showing charge is quantised",
+        "The speed of cathode rays",
+        "That electrons orbit the nucleus"
+      ],
+      "answer": 1,
+      "explanation": "Millikan suspended charged oil drops so the upward electric force balanced gravity and found every measured charge was a whole-number multiple of one smallest value, \\(1.6\\times10^{-19}\\ \\mathrm{C}\\) — the elementary charge. This showed charge is quantised. Thomson found only the ratio; Millikan found the charge."
+    },
+    {
+      "id": "m802-q09",
+      "q": "How is the mass of the electron obtained from the two experiments?",
+      "options": [
+        "By adding Thomson's ratio to Millikan's charge",
+        "By multiplying Thomson's ratio by Millikan's charge",
+        "By dividing Millikan's elementary charge by Thomson's charge-to-mass ratio",
+        "By dividing Thomson's ratio by Millikan's charge"
+      ],
+      "answer": 2,
+      "explanation": "\\(m = \\dfrac{e}{q/m} = \\dfrac{1.6\\times10^{-19}}{1.76\\times10^{11}} \\approx 9.1\\times10^{-31}\\ \\mathrm{kg}\\). Neither experiment alone gives the mass; dividing Millikan's charge by Thomson's ratio cancels the charge and leaves the mass."
+    },
+    {
+      "id": "m802-q10",
+      "q": "Which is a genuine STRENGTH of the plum pudding model that a good 'evaluate' answer should include?",
+      "options": [
+        "It correctly placed all the positive charge in a tiny central nucleus",
+        "It balanced the embedded electrons with diffuse positive charge, correctly making the atom electrically neutral",
+        "It predicted the large-angle scattering of alpha particles",
+        "It explained the discrete line spectra of elements"
+      ],
+      "answer": 1,
+      "explanation": "Real strengths were that the model incorporated the newly discovered electrons, made the atom electrically neutral by balancing them with diffuse positive charge, and was consistent with a divisible atom. Its untested weakness was the diffuse positive distribution — later overturned by the gold foil experiment. The other options describe later models or what the plum pudding model failed to do."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "m707-q01",
+      "q": "How does plane-polarised light differ from unpolarised light?",
+      "options": [
+        "In unpolarised light the electric field oscillates in one plane; in polarised light it oscillates in all planes",
+        "In unpolarised light the electric field oscillates in all planes perpendicular to the direction of travel; in polarised light it oscillates in only one such plane",
+        "Polarised light travels faster than unpolarised light",
+        "Unpolarised light is transverse while polarised light is longitudinal"
+      ],
+      "answer": 1,
+      "explanation": "Unpolarised light has its electric field oscillating in all planes perpendicular to the direction of propagation; plane-polarised (linearly polarised) light is confined to a single such plane. The defining quantity is the electric field, not the magnetic field."
+    },
+    {
+      "id": "m707-q02",
+      "q": "Which field defines the plane of polarisation of light?",
+      "options": [
+        "The magnetic field",
+        "The electric field",
+        "Both fields equally, by convention",
+        "The gravitational field"
+      ],
+      "answer": 1,
+      "explanation": "By convention the plane of polarisation is defined by the electric field, because it is the electric field that interacts most strongly with the charges in matter (filters, detectors, the eye). Naming the magnetic field instead loses the mark."
+    },
+    {
+      "id": "m707-q03",
+      "q": "How does a polarising filter produce polarised light from unpolarised light?",
+      "options": [
+        "It slows down the components not aligned with its axis",
+        "It transmits only the component of the electric field parallel to its transmission axis and absorbs the rest",
+        "It reflects the unwanted components back toward the source",
+        "It rotates every component into a single plane"
+      ],
+      "answer": 1,
+      "explanation": "A polarising filter has a transmission axis and passes only the component of the electric field parallel to that axis, absorbing components in all other planes. The emerging light therefore oscillates in a single plane."
+    },
+    {
+      "id": "m707-q04",
+      "q": "When unpolarised light passes through a single polarising filter, what happens to its intensity?",
+      "options": [
+        "It is reduced to half, regardless of the filter's orientation",
+        "It is reduced according to \\( \\cos^2\\theta \\)",
+        "It is unchanged",
+        "It depends on how the filter is rotated"
+      ],
+      "answer": 0,
+      "explanation": "Unpolarised light has its energy spread equally over all planes, so a single filter transmits exactly half the intensity, and this halving is independent of the filter's orientation. The \\( \\cos^2\\theta \\) law applies only to already-polarised light at a second filter."
+    },
+    {
+      "id": "m707-q05",
+      "q": "Malus's law states that the intensity transmitted by an analyser is \\( I = I_{\\max}\\cos^2\\theta \\). Why is the cosine squared rather than a bare cosine?",
+      "options": [
+        "Because the angle is measured in radians",
+        "Because the analyser passes a field component proportional to \\( \\cos\\theta \\), and intensity is proportional to the square of the amplitude",
+        "Because two filters are involved",
+        "Because intensity is proportional to the field amplitude directly"
+      ],
+      "answer": 1,
+      "explanation": "The transmitted field amplitude is \\( E_0\\cos\\theta \\) (resolving the vector along the axis), but intensity \\( \\propto E^2 \\), so squaring the amplitude squares the cosine: \\( I = I_{\\max}\\cos^2\\theta \\). 'Malus loves to square.'"
+    },
+    {
+      "id": "m707-q06",
+      "q": "Plane-polarised light hits an analyser whose axis is at 60° to the light's plane. What fraction of the polarised intensity is transmitted?",
+      "options": [
+        "\\( \\tfrac{1}{2} \\)",
+        "\\( \\tfrac{3}{4} \\)",
+        "\\( \\tfrac{1}{4} \\)",
+        "0"
+      ],
+      "answer": 2,
+      "explanation": "By Malus's law, \\( I = I_{\\max}\\cos^2 60° = I_{\\max}(0.5)^2 = \\tfrac{1}{4}I_{\\max} \\). (Note 45° would give one half, and 30° would give three quarters.)"
+    },
+    {
+      "id": "m707-q07",
+      "q": "Unpolarised light of intensity \\( I_0 \\) passes through a polariser and then an analyser whose axis is at 30° to the polariser. What is the final intensity?",
+      "options": [
+        "\\( 0.75\\,I_0 \\)",
+        "\\( 0.375\\,I_0 \\)",
+        "\\( 0.5\\,I_0 \\)",
+        "\\( 0.25\\,I_0 \\)"
+      ],
+      "answer": 1,
+      "explanation": "The polariser halves the unpolarised light to \\( \\tfrac{1}{2}I_0 \\). The analyser then transmits \\( \\cos^2 30° = 0.75 \\) of that: \\( \\tfrac{1}{2}I_0 \\times 0.75 = 0.375\\,I_0 \\) (37.5%)."
+    },
+    {
+      "id": "m707-q08",
+      "q": "Polarised light passes through an analyser and the transmitted intensity is \\( \\tfrac{1}{4} \\) of the incident polarised intensity. What is the angle of the analyser's axis?",
+      "options": [
+        "75.5°",
+        "60°",
+        "45°",
+        "30°"
+      ],
+      "answer": 1,
+      "explanation": "\\( \\tfrac{1}{4}I_{\\max} = I_{\\max}\\cos^2\\theta \\Rightarrow \\cos^2\\theta = 0.25 \\). Take the square root FIRST: \\( \\cos\\theta = 0.5 \\), so \\( \\theta = \\cos^{-1}(0.5) = 60° \\). Skipping the square root (taking \\( \\cos^{-1}0.25 \\)) wrongly gives ~75.5°."
+    },
+    {
+      "id": "m707-q09",
+      "q": "Why does the fact that light can be polarised prove that light is a transverse wave?",
+      "options": [
+        "Because only transverse waves can travel through a vacuum",
+        "Because only transverse waves oscillate in planes perpendicular to the direction of travel, which can be restricted to one plane; longitudinal waves have no such plane and cannot be polarised",
+        "Because polarisation slows the wave down",
+        "Because longitudinal waves cannot interfere"
+      ],
+      "answer": 1,
+      "explanation": "Polarising a wave means restricting its oscillation to one plane, which requires a sideways (transverse) oscillation with multiple possible planes. A longitudinal wave oscillates along the direction of travel and has no transverse plane to filter, so it cannot be polarised. Since light can be polarised, it must be transverse."
+    },
+    {
+      "id": "m707-q10",
+      "q": "Two crossed polarising filters (at 90°) pass no light. If a third filter is placed between them at 45°, what happens?",
+      "options": [
+        "Still no light passes, because the outer filters are crossed",
+        "Some light passes, because the middle filter re-projects the polarisation onto a new plane that the last filter can then transmit a component of",
+        "All the light passes through unchanged",
+        "The light is converted back to unpolarised light"
+      ],
+      "answer": 1,
+      "explanation": "The middle filter rotates the plane of the polarisation that survives it, so the final filter is no longer fully crossed with the light reaching it and can transmit a component. Removing the middle filter restores total extinction — the classic three-polariser result of Malus's law."
+    }
+  ]
+}
