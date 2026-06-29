@@ -11,6 +11,7 @@
 
 const ALLOWED_ORIGINS = new Set([
   "https://hsc.pebnum.com",          // unified multi-subject app
+  "https://hsc-podcast-unified.pages.dev",  // unified app preview deploys
   "https://se.pebnum.com",           // legacy apps stay live (repointed to the new bucket)
   "https://phy.pebnum.com",
   "https://hsc-podcast.pages.dev",

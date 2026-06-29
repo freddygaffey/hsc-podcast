@@ -964,7 +964,13 @@
     let completedCount = 0;
     const days = new Set();
     const allEps = [];
-    manifest.modules.forEach((mod) => mod.episodes.forEach((ep) => allEps.push(ep)));
+    // Per-subject when one is open; global (all subjects) on the picker. Tag modules with
+    // their subject so the "by module" grouping can disambiguate (e.g. both have CASE).
+    const global = !manifest;
+    const mods = global
+      ? (fullManifest ? fullManifest.subjects.flatMap((s) => s.modules.map((m) => ({ ...m, _subject: s.id }))) : [])
+      : manifest.modules;
+    mods.forEach((mod) => mod.episodes.forEach((ep) => allEps.push(ep)));
 
     for (const ep of allEps) {
       const p = progress[ep.id];
@@ -989,12 +995,13 @@
     }
 
     const groups = new Map();
-    manifest.modules.forEach((mod) => {
-      if (!groups.has(mod.prefix)) groups.set(mod.prefix, { total: 0, done: 0 });
-      mod.episodes.forEach((ep) => {
-        groups.get(mod.prefix).total++;
-        if (progress[ep.id]?.completed) groups.get(mod.prefix).done++;
-      });
+    mods.forEach((mod) => {
+      const key = global ? `${mod._subject}:${mod.prefix}` : mod.prefix;
+      const name = global ? `${subjShort(mod._subject)} · ${groupNameFor(mod._subject, mod.prefix)}`
+                          : (GROUP_NAMES[mod.prefix] || mod.prefix);
+      if (!groups.has(key)) groups.set(key, { name, total: 0, done: 0 });
+      const g = groups.get(key);
+      mod.episodes.forEach((ep) => { g.total++; if (progress[ep.id]?.completed) g.done++; });
     });
 
     // Per-voice breakdown + total content heard, from actual playback (immune to
@@ -1063,12 +1070,12 @@
       : `<p class="setting-hint">Play an episode to see your voice breakdown.</p>`;
 
     let groupsHTML = "";
-    stats.groups.forEach((g, prefix) => {
+    stats.groups.forEach((g) => {
       const pct = g.total ? Math.round((g.done / g.total) * 100) : 0;
       groupsHTML += `
         <div class="stats-module">
           <div class="stats-module-header">
-            <span>${GROUP_NAMES[prefix] || prefix}</span>
+            <span>${g.name}</span>
             <span class="stats-module-count">${g.done}/${g.total}</span>
           </div>
           <div class="stats-module-track"><div class="stats-module-fill" style="width:${pct}%"></div></div>
@@ -1093,7 +1100,7 @@
   }
 
   btnStats.addEventListener("click", () => {
-    if (!manifest) return;
+    if (!fullManifest) return; // global stats on the picker; per-subject inside a subject
     renderStats();
     openSheet(statsOverlay);
   });
@@ -1315,8 +1322,10 @@
   // --- Settings ---
   function getVoiceCatalog() {
     const names = [];
-    if (!manifest) return names;
-    manifest.modules.forEach((mod) => mod.episodes.forEach((ep) =>
+    // Current subject's modules, or every subject's when none is selected (the picker).
+    const mods = manifest ? manifest.modules
+      : (fullManifest ? fullManifest.subjects.flatMap((s) => s.modules) : []);
+    mods.forEach((mod) => mod.episodes.forEach((ep) =>
       (ep.voices || []).forEach((v) => { if (!names.includes(v.name)) names.push(v.name); })));
     return names;
   }
@@ -1341,7 +1350,7 @@
   }
 
   btnSettings.addEventListener("click", () => {
-    if (!manifest) return;
+    if (!fullManifest) return; // settings are global — available on the picker too
     populateDefaultVoiceSelect();
     if (dlAllVoicesToggle) dlAllVoicesToggle.checked = localStorage.getItem(DOWNLOAD_ALL_VOICES_KEY) === "1";
     if (blockMobileToggle) blockMobileToggle.checked = blockMobileData();

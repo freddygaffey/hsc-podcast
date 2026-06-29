@@ -131,11 +131,56 @@
     writeStore(VOICE_LOG_KEY, vlog);
   }
 
+  // --- one-time migration: pull PROGRESS from the legacy per-app channels into the unified
+  // app. Same account → same encryption key, so we can decrypt the old "phy"/"se" snapshots.
+  // Episode ids are remapped to the unified namespace ("<subject>:<id>"). Quiz/flashcard
+  // state is intentionally NOT migrated (we agreed to start flashcards fresh).
+  const LEGACY_MIGRATED_KEY = "podcast-legacy-migrated";
+  const LEGACY_CHANNELS = { phy: "physics", se: "software" };
+  async function migrateLegacyProgress() {
+    if (SUBJECT !== "hsc") return;                                   // only the unified app
+    if (localStorage.getItem(LEGACY_MIGRATED_KEY)) return;           // once only
+    const prog = readStore(PROGRESS_KEY), log = readStore(LISTEN_LOG_KEY), vlog = readStore(VOICE_LOG_KEY);
+    for (const [channel, subject] of Object.entries(LEGACY_CHANNELS)) {
+      let events = [];
+      try {
+        const res = await api(`/events?subject=${channel}&since=0`, { auth: true });
+        if (!res.ok) continue;
+        ({ events = [] } = await res.json());
+      } catch { continue; }
+      // Collapse this channel's snapshots into its latest per-key state.
+      const chProg = {}, chLog = {}, chVlog = {};
+      for (const ev of events) {
+        let snap; try { snap = await decryptJSON(ev, session.encKey); } catch { continue; }
+        for (const [id, r] of Object.entries(snap.progress || {})) {
+          const lt = chProg[id]?.lastPlayed ? Date.parse(chProg[id].lastPlayed) : 0;
+          const rt = r?.lastPlayed ? Date.parse(r.lastPlayed) : 0;
+          if (!chProg[id] || rt >= lt) chProg[id] = r;
+        }
+        for (const [d, r] of Object.entries(snap.listenLog || {})) chLog[d] = Math.max(chLog[d] || 0, r || 0);
+        for (const [n, r] of Object.entries(snap.voiceLog || {})) chVlog[n] = Math.max(chVlog[n] || 0, r || 0);
+      }
+      // Merge the channel into the unified stores (progress keys get the subject prefix).
+      for (const [id, r] of Object.entries(chProg)) {
+        const key = `${subject}:${id}`;
+        const lt = prog[key]?.lastPlayed ? Date.parse(prog[key].lastPlayed) : 0;
+        const rt = r?.lastPlayed ? Date.parse(r.lastPlayed) : 0;
+        if (!prog[key] || rt >= lt) prog[key] = r;
+      }
+      for (const [d, r] of Object.entries(chLog)) log[d] = (log[d] || 0) + r;   // sum across apps
+      for (const [n, r] of Object.entries(chVlog)) vlog[n] = (vlog[n] || 0) + r;
+    }
+    writeStore(PROGRESS_KEY, prog); writeStore(LISTEN_LOG_KEY, log); writeStore(VOICE_LOG_KEY, vlog);
+    localStorage.setItem(LEGACY_MIGRATED_KEY, "1");
+    window.dispatchEvent(new CustomEvent("sync-updated"));
+  }
+
   // --- sync ---
   async function syncNow() {
     if (!session || !AUTH_API || syncing) return;
     syncing = true;
     try {
+      try { await migrateLegacyProgress(); } catch {}   // one-time legacy progress import
       const lastId = parseInt(localStorage.getItem(LASTID_KEY) || "0", 10) || 0;
       const res = await api(`/events?subject=${SUBJECT}&since=${lastId}`, { auth: true });
       if (res.status === 401) { signOut(); throw new Error("auth-expired"); }
