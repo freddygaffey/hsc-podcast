@@ -2661,6 +2661,7 @@
               <span class="pq-marks">${q.marks} mark${q.marks === 1 ? "" : "s"}</span>
               <span class="pq-time">~${mins} min</span>
               <span class="pq-type pq-${q.type}">${q.type === "extended" ? "Extended response" : "Short answer"}</span>
+              ${sourceBadgeHtml(q)}
             </div>
             ${q.image ? `<img class="quiz-stimulus" src="${q.image}" alt="">` : ""}
             <p class="quiz-q-text">${q.q}</p>
@@ -2674,7 +2675,7 @@
             <div class="written-reveal" id="written-reveal" hidden>
               ${q.modelAnswer ? `<div class="written-model"><div class="wm-h">Model answer</div><div class="wm-body">${q.modelAnswer}</div></div>` : ""}
               ${criteria.length ? `<div class="written-criteria"><div class="wm-h">Marking criteria</div><ul>${criteria.map((cc) => `<li><span class="wc-marks">${cc.marks}</span><span class="wc-desc">${cc.descriptor}</span></li>`).join("")}</ul></div>` : ""}
-              <p class="feedback-source">Marking criteria from the official NESA guidelines · model answer AI-adapted from the NESA sample answer — verify if unsure.</p>
+              ${sourceLineHtml(q)}
               <div class="written-selfgrade">
                 <p class="grade-prompt">Mark yourself out of ${q.marks}</p>
                 <div class="mark-pills">${Array.from({ length: (q.marks || 0) + 1 }, (_, m) => `<button class="mark-pill" data-m="${m}">${m}</button>`).join("")}</div>
