@@ -8,12 +8,91 @@ Usage:
 Exit code 0 if every file passes, 1 otherwise. Past papers ("paper": true) are checked with
 the same per-question rules but skip the ~10-question count guidance.
 """
+import functools
 import json
+import re
 import sys
 from pathlib import Path
 
 TYPES = {"mc", "recall", "worked", "short", "extended"}
 ORIGINS = {"hsc", "trial", "textbook", "ai"}
+
+
+# --- Provenance verification: a claimed source must be REAL, not just well-formed. ---
+def _norm(s):
+    return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
+
+
+def _subject_root(path):
+    """content/<subject> for a quiz path, so we can find that subject's papers/ + sources/."""
+    parts = Path(path).resolve().parts
+    if "content" in parts:
+        i = parts.index("content")
+        if i + 1 < len(parts):
+            return Path(*parts[: i + 2])
+    return None
+
+
+@functools.lru_cache(maxsize=None)
+def _papers_index(subject_root):
+    """Every real past-paper question for a subject, as (norm_text, token_set). Cached."""
+    idx = []
+    root = Path(subject_root)
+    for f in root.glob("papers/**/quiz.json"):
+        try:
+            data = json.loads(f.read_text())
+        except Exception:  # noqa: BLE001
+            continue
+        for q in data.get("questions", []):
+            nt = _norm(q.get("q"))
+            if nt:
+                idx.append((nt, frozenset(nt.split())))
+    return tuple(idx)
+
+
+def _matches_a_real_paper(q, idx):
+    nt = _norm(q.get("q"))
+    toks = set(nt.split())
+    if not toks:
+        return False
+    for ptext, ptoks in idx:
+        if len(nt) >= 30 and (nt in ptext or ptext in nt):
+            return True
+        union = toks | ptoks
+        if union and len(toks & ptoks) / len(union) >= 0.6:  # token Jaccard
+            return True
+    return False
+
+
+def check_provenance(qs, path, is_paper):
+    """Catch FABRICATED provenance: a question can't claim a source that doesn't exist on disk.
+    Paper files are themselves the source of truth, so they're exempt."""
+    if is_paper:
+        return []
+    # Scaffold dirs (_template-subject, _example-episode) hold illustrative sources, not real
+    # content, and are never deployed — exempt them from the real-source cross-check.
+    if any(p.startswith("_") for p in Path(path).parts):
+        return []
+    errs = []
+    subj = _subject_root(path)
+    papers = _papers_index(str(subj)) if subj else ()
+    for q in qs:
+        s = q.get("source")
+        if not isinstance(s, dict):
+            continue
+        origin, qid = s.get("origin"), q.get("id", "?")
+        if origin in ("hsc", "trial"):
+            if not papers:
+                errs.append(f"{qid}: source.origin={origin} but {subj}/papers/ has no papers — "
+                            f"a real-exam citation here cannot be genuine")
+            elif not _matches_a_real_paper(q, papers):
+                errs.append(f"{qid}: source.origin={origin} ({s.get('ref')}) but no matching "
+                            f"question text found in {subj}/papers/ — possible fabricated provenance")
+        elif origin == "textbook" and s.get("url"):
+            if subj and not (subj / s["url"]).exists():
+                errs.append(f"{qid}: textbook source.url '{s['url']}' does not exist under {subj}/ "
+                            f"— omit the url (cite by page) or add the scan")
+    return errs
 
 
 def check_question(q, idx):
@@ -81,6 +160,9 @@ def validate_file(path):
         if qid in seen:
             errs.append(f"{path} :: duplicate id {qid!r}")
         seen.add(qid)
+    # Provenance verification: a claimed hsc/trial/textbook source must actually exist.
+    for e in check_provenance(qs, path, bool(data.get("paper"))):
+        errs.append(f"{path} :: {e}")
     return errs
 
 
