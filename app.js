@@ -615,18 +615,22 @@
   }
 
   function showAdvanceToast(nextEp) {
+    // Cancel any countdown already running before starting a new one. Without this, a second
+    // `ended` (e.g. fast-forwarding to the end while a toast is already up) overwrites
+    // `advanceTimer` and orphans the previous interval — which can never be cleared, so once
+    // its countdown passes 0 it re-fires loadEpisode(autoplay) every second forever (the
+    // ~1 Hz loop that overrides pause and keeps reloading the episode).
+    dismissAdvanceToast();
     advanceTitleEl.textContent = nextEp.title;
     let countdown = 3;
     advanceCountdownEl.textContent = countdown;
     setHidden(advanceToast, false);
     advanceTimer = setInterval(() => {
       countdown--;
-      advanceCountdownEl.textContent = countdown;
-      if (countdown <= 0) {
-        dismissAdvanceToast();
-        loadEpisode(nextEp, { autoplay: true });
-        navigateToEpisode(nextEp.id);
-      }
+      if (countdown > 0) { advanceCountdownEl.textContent = countdown; return; }
+      dismissAdvanceToast(); // clears advanceTimer + hides the toast before we load
+      loadEpisode(nextEp, { autoplay: true });
+      navigateToEpisode(nextEp.id);
     }, 1000);
   }
 
