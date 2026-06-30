@@ -650,9 +650,14 @@
     });
     const idx = flat.findIndex((e) => e.id === ep.id);
     if (idx < 0) return null;
-    // Skip episodes that have no audio yet so auto-advance never lands on one.
+    // Land on the next *due* episode: skip ones with no audio yet, and ones already
+    // completed, so auto-advance / "next" moves on to the next unfinished episode instead
+    // of replaying something that's already done. If everything ahead is finished, stop.
     for (let i = idx + 1; i < flat.length; i++) {
-      if (flat[i].voices && flat[i].voices.length) return flat[i];
+      const e = flat[i];
+      if (!e.voices || !e.voices.length) continue;
+      if (getEpisodeProgress(e.id).completed) continue;
+      return e;
     }
     return null;
   }
