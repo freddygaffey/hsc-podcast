@@ -33,6 +33,7 @@
   let pendingListenSecs = 0;  // wall seconds, flushed to the daily log every few seconds
   let pendingContentSecs = 0; // content seconds played (wall × rate), flushed to the voice log
   let isSeeking = false;
+  let lastAutoAdvanceAt = 0;  // wall-clock ms of the last auto-advance (runaway-cascade guard)
   let showRemaining = false;
   let sleepIdx = 0;
   let sleepTimeout = null;
@@ -629,7 +630,7 @@
       countdown--;
       if (countdown > 0) { advanceCountdownEl.textContent = countdown; return; }
       dismissAdvanceToast(); // clears advanceTimer + hides the toast before we load
-      loadEpisode(nextEp, { autoplay: true });
+      loadEpisode(nextEp, { autoplay: true, fromStart: true });
       navigateToEpisode(nextEp.id);
     }, 1000);
   }
@@ -687,7 +688,7 @@
     set("seekbackward", (d) => { audio.currentTime = Math.max(0, audio.currentTime - ((d && d.seekOffset) || 30)); });
     set("seekforward", (d) => { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + ((d && d.seekOffset) || 30)); });
     set("seekto", (d) => { if (d && d.seekTime != null && audio.duration) audio.currentTime = d.seekTime; });
-    set("nexttrack", () => { const n = getNextEpisode(currentEpisode); if (n) { loadEpisode(n, { autoplay: true }); navigateToEpisode(n.id); } });
+    set("nexttrack", () => { const n = getNextEpisode(currentEpisode); if (n) { loadEpisode(n, { autoplay: true, fromStart: true }); navigateToEpisode(n.id); } });
   }
   setupMediaSession();
 
@@ -698,12 +699,18 @@
     flushListenLog(); // credit time to the finished episode's voice before advancing
     if (currentEpisode) saveEpisodeProgress(currentEpisode.id, { progressPct: 1, completed: true });
     setPlayState(false);
+    // Runaway guard: real episodes are minutes long, so two `ended` events within a couple
+    // of seconds mean something is cascading (an episode ending the instant it loads). Stop
+    // auto-advancing rather than loop forever — the user can still advance manually.
+    const now = Date.now();
+    if (now - lastAutoAdvanceAt < 2000) { lastAutoAdvanceAt = now; return; }
+    lastAutoAdvanceAt = now;
     if (queue.length > 0) {
       const nextId = queue.shift();
       updateQueueBadge();
       if (!viewLibrary.hidden) renderLibrary();
       const nextEp = findEpisode(nextId);
-      if (nextEp) { loadEpisode(nextEp, { autoplay: true }); navigateToEpisode(nextEp.id); }
+      if (nextEp) { loadEpisode(nextEp, { autoplay: true, fromStart: true }); navigateToEpisode(nextEp.id); }
       return;
     }
     const nextEp = getNextEpisode(currentEpisode);
@@ -711,7 +718,7 @@
     // Screen off / app backgrounded: skip the countdown toast and advance immediately,
     // while the audio session is still warm (gives the next track the best chance of
     // starting in the background on iOS). Foreground keeps the nice "Up next" countdown.
-    if (document.hidden) { loadEpisode(nextEp, { autoplay: true }); navigateToEpisode(nextEp.id); }
+    if (document.hidden) { loadEpisode(nextEp, { autoplay: true, fromStart: true }); navigateToEpisode(nextEp.id); }
     else showAdvanceToast(nextEp);
   });
   audio.addEventListener("loadedmetadata", () => {
@@ -805,7 +812,7 @@
     });
   }
 
-  function loadEpisode(ep, { autoplay }) {
+  function loadEpisode(ep, { autoplay, fromStart }) {
     dismissAdvanceToast(); // a user-initiated load cancels any pending auto-advance
     currentEpisode = ep;
     // No audio generated for this episode yet — show it read-only (the notes/quiz still
@@ -837,7 +844,12 @@
       voiceSelect.appendChild(opt);
     });
 
-    setAudioSource(ep.voices[currentVoiceIndex], progress.progressPct || 0, autoplay);
+    // Auto-advance and "next" always start the next episode from the beginning; only an
+    // explicit open/continue resumes a saved position. Resuming on auto-advance let a next
+    // episode that was saved near its end play a tiny tail, fire `ended`, and advance again
+    // — a runaway cascade of short snippets that overrode pause (the lock-screen loop).
+    const resumePct = fromStart ? 0 : (progress.progressPct || 0);
+    setAudioSource(ep.voices[currentVoiceIndex], resumePct, autoplay);
     updateMediaSession(); // set lock-screen title/artist/artwork for this episode
     updatePlayerNow();    // show the title in the in-app player bar too
     updatePlayingRow();   // grey-highlight this episode in the library list
@@ -3240,11 +3252,20 @@
 
   // --- Service worker ---
   if ("serviceWorker" in navigator) {
-    // Register and check for an update once, on load. We deliberately do NOT force a
-    // reload when a new worker activates — a reload mid-use is disruptive. The new
-    // version applies on the next natural load. updateViaCache:"none" makes the browser
-    // bypass its HTTP cache for the worker script so a new version is always discovered
-    // (some edge/browser Cache-Control TTLs would otherwise hide it for hours).
+    // When a new shell activates (the SW calls skipWaiting + clients.claim), the page keeps
+    // running the OLD app.js until it reloads — and iOS PWAs are brutally sticky about this,
+    // so a deployed fix can sit live for days without the installed app ever picking it up.
+    // Force a one-time reload when an updated worker takes control. Guarded by `hadController`
+    // (don't reload on first-ever install) and a one-shot flag (no reload loops).
+    // updateViaCache:"none" makes the browser bypass its HTTP cache for the worker script so
+    // a new version is always discovered (some edge/browser Cache-Control TTLs would hide it).
+    const hadController = !!navigator.serviceWorker.controller;
+    let reloadingForUpdate = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (reloadingForUpdate || !hadController) return;
+      reloadingForUpdate = true;
+      window.location.reload();
+    });
     navigator.serviceWorker.register("/service-worker.js", { updateViaCache: "none" })
       .then((reg) => { reg.update().catch(() => {}); })
       .catch(() => {});
