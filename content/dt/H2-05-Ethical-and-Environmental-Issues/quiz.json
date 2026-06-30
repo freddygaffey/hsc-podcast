@@ -17,20 +17,6 @@
     {
       "id": "mh205-q02",
       "type": "mc",
-      "q": "According to the episode, what does it mean that a designer has ethical, not just legal, responsibilities?",
-      "options": [
-        "They must obey every law that applies to their product and nothing more",
-        "They must do what is right, not merely what is permitted, even when that costs the easy or cheap option",
-        "They are legally liable for any harm their product causes consumers",
-        "They must register a patent before releasing any new design"
-      ],
-      "answer": 1,
-      "explanation": "The episode stresses that ethics goes beyond legal compliance: a designer takes an ethical stand, like refusing cheaper materials made with child labour, even though no law forces them to. The 'beyond-the-law' point is exactly what lifts an ethics answer; option A confines the designer to mere legal compliance, which the episode calls insufficient.",
-      "source": { "origin": "ai", "ref": "Generated from episode script" }
-    },
-    {
-      "id": "mh205-q03",
-      "type": "mc",
       "q": "Which of the following best demonstrates a designer taking an ethical approach when creating a new product?",
       "options": [
         "Developing a product that avoids excessive use of resources",
@@ -43,7 +29,7 @@
       "source": { "origin": "hsc", "ref": "2023 HSC Design and Technology Q10", "year": 2023 }
     },
     {
-      "id": "mh205-q04",
+      "id": "mh205-q03",
       "type": "mc",
       "q": "A corporation has commissioned a designer to develop a new solar-powered, mobile interactive game. What is an ethical way to protect the intellectual property of the new design?",
       "options": [
@@ -57,55 +43,71 @@
       "source": { "origin": "hsc", "ref": "2024 HSC Design and Technology Q7", "year": 2024 }
     },
     {
+      "id": "mh205-q04",
+      "type": "mc",
+      "q": "What is the purpose of protecting intellectual property?",
+      "options": [
+        "To increase profit margins for designers",
+        "To ensure safeguards for consumer rights",
+        "To help distribute consumer products more widely",
+        "To allow designers greater control over their ideas"
+      ],
+      "answer": 3,
+      "explanation": "Intellectual property protection (patents, copyright, trademarks, designs) gives designers legal control over their original ideas and prevents others from copying them. Profit, consumer rights and distribution may follow, but they are not the purpose of IP protection.",
+      "source": { "origin": "hsc", "ref": "2021 HSC Design and Technology Q4", "year": 2021 }
+    },
+    {
       "id": "mh205-q05",
       "type": "mc",
-      "q": "For the Section three two-example essay 'Analyse the ethical and social implications for designers in creating solutions to world issues', what move turns a weak answer into a strong one?",
+      "q": "What is the main purpose of developing sustainable technologies?",
       "options": [
-        "Asserting that designers should be ethical and help people as much as possible",
-        "Picking two of the examples and, for each, analysing the implications, weighing benefits against costs, and reaching a judgement",
-        "Describing one example in exhaustive technical detail",
-        "Listing every theme in SIRRI without applying any of them"
+        "To reduce landfill",
+        "To have longer lasting products",
+        "To make better use of natural resources",
+        "To reduce the amount of materials used"
       ],
-      "answer": 1,
-      "explanation": "The episode warns that 'designers should be ethical and help people' is a vague platitude that caps low. A fifteen-mark answer uses two real examples, analyses the ethical and environmental implications of each by weighing benefits against costs, and reaches a judgement. Using only a single example also caps the mark.",
-      "source": { "origin": "ai", "ref": "Generated from episode script" }
+      "answer": 2,
+      "explanation": "Sustainable technologies aim to use natural resources more efficiently so they remain available for future generations. Reducing landfill, extending product life and using fewer materials are specific benefits that flow from this overarching goal.",
+      "source": { "origin": "hsc", "ref": "2010 HSC Design and Technology Q6", "year": 2010 }
     },
     {
       "id": "mh205-q06",
       "type": "mc",
-      "q": "The episode offers two case studies as evidence. How does each illustrate ethical and environmental issues?",
+      "q": "A design company acts ethically when it",
       "options": [
-        "Both Central Park Sydney and the Flow Hive are examples of green marketing outrunning real performance",
-        "Central Park Sydney shows green marketing outrunning real environmental performance, while the Flow Hive shows sustainability and IP protection as genuine strengths",
-        "The Flow Hive shows a green-marketing gap, while Central Park Sydney shows strong IP protection",
-        "Both case studies are examples of child labour in supply chains"
+        "ensures that entrepreneurs invest in their designs.",
+        "enables the user to purchase goods for their intended use.",
+        "enables the consumer to enjoy the product and know it will minimise harm.",
+        "uses technologically advanced production processes and renewable resources."
       ],
-      "answer": 1,
-      "explanation": "The episode contrasts the two: Central Park in Sydney is an ethical-and-environmental gap where green marketing outran real performance, whereas the Flow Hive is a positive case where sustainability and protecting intellectual property were genuine strengths. Mixing the two up (option C) reverses the lesson of each.",
-      "source": { "origin": "ai", "ref": "Generated from episode script" }
+      "answer": 2,
+      "explanation": "Ethical design centres on the wellbeing of the consumer — delivering a product that can be enjoyed while minimising harm to the user and others. The other options describe commercial or production choices rather than ethical responsibility.",
+      "source": { "origin": "hsc", "ref": "2016 HSC Design and Technology Q6", "year": 2016 }
     },
     {
       "id": "mh205-q07",
       "type": "recall",
-      "q": "From memory: name the SIRRI themes a designer must consider, and state what it means that a designer has ethical, not just legal, responsibilities.",
+      "q": "From memory: what are the ethical and environmental themes a designer must consider (SIRRI), and what does it mean that a designer has ethical, not just legal, responsibilities?",
       "keyPoints": [
-        "SIRRI = Sustainable technologies; Intellectual property protection; Rights and responsibilities of the designer; Responsibilities to society; Impact on Australian society.",
-        "Ethical (not just legal) responsibility means doing what is right, not merely what the law permits.",
-        "It can require hard choices, e.g. refusing cheaper materials made with child labour — the 'beyond-the-law' point is what lifts the answer."
+        "SIRRI — Sustainable technologies, Intellectual property protection, the Rights and responsibilities of the designer, Responsibilities to society (e.g. avoiding child labour and exploitation), and the Impact on Australian society.",
+        "Ethical (not just legal) responsibility means doing what is right, not merely what is legally permitted.",
+        "It can mean hard choices that cost the easy or cheap option — like refusing materials made with child labour even if cheaper, or declining an ethically disturbing client.",
+        "The 'beyond-the-law' point is what lifts an ethics answer."
       ],
-      "explanation": "If you recalled all five SIRRI themes and tied 'ethical' to doing right beyond legal compliance with a hard-choice example, grade yourself Good or Easy. If you only managed 'something about being responsible', grade it Again or Hard.",
+      "explanation": "If you recalled all five SIRRI themes and connected ethical responsibility to 'doing right beyond what the law requires' with the child-labour example, grade yourself Good or Easy. If you only got 'be responsible', grade it Again or Hard.",
       "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
       "id": "mh205-q08",
       "type": "recall",
-      "q": "From memory: what is the trap the episode flags in ethics questions, and how do the exam verbs tell you to avoid it?",
+      "q": "From memory: the Section three favourite asks you to analyse the ethical and social implications of two examples. What is the structure of a strong (15-mark) answer, and what caps a weak one?",
       "keyPoints": [
-        "The trap is answering with platitudes — 'designers should be responsible and care about the environment' — which is assertion, not analysis.",
-        "The verbs are critically analyse and discuss, so you must analyse specific implications, weighing benefits against costs, with real examples.",
-        "You must reach a judgement, and in two-example questions you must actually use two examples — a single example caps the answer."
+        "Pick TWO of the given examples (e.g. health, food production, living conditions) — using only one example caps the answer.",
+        "Introduce a thesis, then a paragraph on each example analysing the ethical and environmental/social implications, weighing benefits against costs, then a conclusion that reaches a judgement.",
+        "Use ISE (impact on individual, society, environment) and life cycle analysis as the tools, with real case studies (e.g. Central Park Sydney, Flow Hive) as evidence.",
+        "A weak answer is a platitude — 'designers should be ethical and help people' — which is assertion, not the analysis and judgement the verbs 'critically analyse' and 'discuss' demand."
       ],
-      "explanation": "The episode's line is 'specific, analysed, judged, two examples'. If you recalled that platitudes cap low and that the verbs demand weighed analysis with a judgement, mark it Good or Easy.",
+      "explanation": "The marks live in: two examples, specific implications analysed (benefits vs costs), and a judgement. If you recalled the two-example rule and the analyse-and-judge structure, grade Good or Easy.",
       "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
@@ -113,13 +115,13 @@
       "type": "short",
       "q": "Explain why protecting intellectual property is both a legal and an ethical issue. (3 marks)",
       "marks": 3,
-      "modelAnswer": "Protecting intellectual property is a legal issue because patents and copyright are enforceable rights that legally prevent others from copying a design. It is also an ethical issue because using or copying another person's design, idea or cultural property without permission or credit is dishonest and unfair, denying the creator the recognition and reward for their work. A designer therefore has both a legal duty to respect others' intellectual property and an ethical duty not to appropriate ideas, including being especially careful with culturally significant material such as Indigenous designs.",
+      "modelAnswer": "Protecting intellectual property is a legal issue because patents and copyright are enforceable rights that legally prevent others from copying a design. It is an ethical issue because using or copying another person's design, idea or cultural property without permission or credit is dishonest and unfair, denying the creator the recognition and reward for their work. A designer therefore has both a legal duty to respect others' intellectual property and an ethical duty not to appropriate ideas, being especially careful with culturally significant material such as Indigenous designs.",
       "criteria": [
-        { "marks": 1, "descriptor": "Explains the legal dimension: patents/copyright are enforceable rights that prevent copying." },
-        { "marks": 1, "descriptor": "Explains the ethical dimension: copying without permission or credit is unfair and denies the creator recognition and reward." },
-        { "marks": 1, "descriptor": "Notes the dual legal-and-ethical duty, ideally referencing cultural property such as Indigenous designs." }
+        { "marks": 1, "descriptor": "Explains the legal dimension: IP rights (patents/copyright) are enforceable and prevent copying." },
+        { "marks": 1, "descriptor": "Explains the ethical dimension: copying without permission/credit is unfair and denies the creator recognition and reward." },
+        { "marks": 1, "descriptor": "Frames it as a dual legal-and-ethical duty, ideally noting cultural/Indigenous property." }
       ],
-      "explanation": "The dual legal-and-ethical framing is the mark the episode highlights. A response that only covers patents (legal) or only fairness (ethical) cannot reach full marks.",
+      "explanation": "The dual legal-and-ethical framing is the mark. A strong answer names enforceable rights on the legal side and fairness/credit on the ethical side, rather than only restating that copying is bad.",
       "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
@@ -135,7 +137,7 @@
         { "marks": "4–6", "descriptor": "Demonstrates a basic understanding of the ethical and/or social implications facing designers in the creation of solutions to world issues" },
         { "marks": "1–3", "descriptor": "Provides some relevant information" }
       ],
-      "explanation": "This is the recent-exam question the episode builds the lesson around — the Section three two-example essay. The episode's move: a thesis, a paragraph analysing each of two examples through the ethical and environmental lenses (weighing benefits against costs), then a judgement. Using only one example, or asserting platitudes, caps the mark.",
+      "explanation": "This is the episode's headline Section three question. Two examples, each analysed for ethical and social implications with benefits weighed against costs, then a judgement — a single example or a 'help people' platitude caps the answer low.",
       "source": { "origin": "hsc", "ref": "2023 HSC Design and Technology Q15", "year": 2023 }
     }
   ]

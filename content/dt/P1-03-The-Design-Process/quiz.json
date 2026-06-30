@@ -1,0 +1,145 @@
+{
+  "questions": [
+    {
+      "id": "mp103-q01",
+      "type": "recall",
+      "q": "From memory, name the six stages of the design process (the DRIPER hook) and say in a few words what happens at each.",
+      "keyPoints": [
+        "Define — identify and state the need or opportunity and turn it into a design brief with criteria for success.",
+        "Research — investigate the need, existing products, materials and users (the textbook's investigation and analysis).",
+        "Ideate — generate many ideas (brainstorming, sketching); quantity before quality.",
+        "Produce — develop the chosen idea, model it, build prototypes and realise the solution.",
+        "Evaluate — test the solution against the criteria set in Define; evaluation is continual, not just at the end.",
+        "Refine — improve the design and loop back to an earlier stage; that final R is what makes it a cycle."
+      ],
+      "explanation": "DRIPER = Define, Research, Ideate, Produce, Evaluate, Refine. If you recalled all six in order with a sense of each stage, grade Good or Easy; if you only listed the word DRIPER, grade Again or Hard.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp103-q02",
+      "type": "recall",
+      "q": "In your own words: why is the design process described as cyclic or iterative rather than linear?",
+      "keyPoints": [
+        "The designer does not pass through the stages once in a fixed order.",
+        "Evaluation is conducted continually throughout the process and feeds back.",
+        "When a solution fails to meet the criteria, the designer returns to an earlier stage (regenerating ideas or revising research) and repeats the cycle.",
+        "This repeated looping is what progressively improves the design until it satisfies the identified need."
+      ],
+      "explanation": "This is the move that turns a 'describe' answer into a 'describe and analyse' answer. The strong answer names the stages AND explains the continual evaluation and loop-back; that is the difference between a band four and a band six on this dot-point.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp103-q03",
+      "type": "mc",
+      "q": "Effective product development relies mainly upon",
+      "options": [
+        "selecting a suitable manufacturing process.",
+        "the ability of designers to sketch original ideas.",
+        "the ability of designers to manage financial issues.",
+        "gathering ongoing evaluation and responding to feedback."
+      ],
+      "answer": 3,
+      "explanation": "Effective product development depends on continuous evaluation and responding to feedback throughout the design process, allowing the product to be refined to meet user needs. The other options are individual skills or stages within development.",
+      "source": { "origin": "hsc", "ref": "2013 HSC Design and Technology Q5", "year": 2013 }
+    },
+    {
+      "id": "mp103-q04",
+      "type": "mc",
+      "q": "What is the main reason for developing a working prototype?",
+      "options": [
+        "To evaluate operational and functional aspects of the product",
+        "To produce a model suitable for advertising on social media",
+        "To assist companies in developing a sustainable manufacturing process",
+        "To determine aesthetic requirements necessary for production of the product"
+      ],
+      "answer": 0,
+      "explanation": "A working prototype is built so the designer can test and evaluate how the product operates and functions before committing to production. Advertising, manufacturing process and aesthetics are secondary outcomes, not the main purpose.",
+      "source": { "origin": "hsc", "ref": "2014 HSC Design and Technology Q7", "year": 2014 }
+    },
+    {
+      "id": "mp103-q05",
+      "type": "mc",
+      "q": "The evaluation of a product involves an examination of its features and/or functions.\n\nWhy is it necessary to conduct this evaluation?",
+      "options": [
+        "To ensure that the greatest number of the product will sell",
+        "To determine whether the product is aesthetically pleasing",
+        "To ensure that the product performs all of its desired operations",
+        "To determine whether the product is a quality solution to the design problem"
+      ],
+      "answer": 3,
+      "explanation": "Evaluation judges a product against the design criteria and brief to determine whether it is a quality solution to the design problem. Sales, aesthetics and function are individual measures, but the overall purpose of evaluation is to assess the product as a whole solution.",
+      "source": { "origin": "hsc", "ref": "2010 HSC Design and Technology Q9", "year": 2010 }
+    },
+    {
+      "id": "mp103-q06",
+      "type": "mc",
+      "q": "Using a variety of research methods in the process of design is important because it",
+      "options": [
+        "helps develop marketing strategies.",
+        "improves understanding of customer needs.",
+        "promotes the use of emerging technologies.",
+        "protects the intellectual property of the designer."
+      ],
+      "answer": 1,
+      "explanation": "Using varied research methods triangulates data from different sources, giving the designer a fuller and more reliable understanding of customer needs. Research is the stage where design theory gets loaded in before you commit to anything.",
+      "source": { "origin": "hsc", "ref": "2015 HSC Design and Technology Q10", "year": 2015 }
+    },
+    {
+      "id": "mp103-q07",
+      "type": "mc",
+      "q": "The prototype of a product has been delivered on time and on budget but the client finds the prototype lacking in several expected functions.\n\nWhat should the designer have done initially to prevent this from happening?",
+      "options": [
+        "Conducted more market research",
+        "Produced a more comprehensive financial plan",
+        "Produced additional sketches with the prototype",
+        "Conducted a detailed analysis of the design requirements"
+      ],
+      "answer": 3,
+      "explanation": "The problem is missing functions, which means the design requirements and client criteria were not properly clarified at the start — the Define stage. Define badly and everything downstream is aimed at the wrong target, so a detailed analysis of the design requirements would have established exactly what functions the client expected before building the prototype.",
+      "source": { "origin": "hsc", "ref": "2015 HSC Design and Technology Q8", "year": 2015 }
+    },
+    {
+      "id": "mp103-q08",
+      "type": "mc",
+      "q": "How does the design process used in an industrial setting compare with the same process used in a domestic setting?",
+      "options": [
+        "The industrial setting uses entirely different stages from the domestic setting",
+        "The process is fundamentally the same, but the industrial setting differs in scale, resources, formality and documentation",
+        "The domestic setting skips evaluation because there is no client to satisfy",
+        "The industrial setting is linear while the domestic setting is cyclic"
+      ],
+      "answer": 1,
+      "explanation": "The design process is the same in all settings — define, research, ideate, produce, evaluate, refine. What changes across domestic, community, industrial and commercial settings is the scale, the resources, the formality and the documentation, not the process itself. A child making a billycart runs the same DRIPER as an engineering firm, just with smaller budgets and less formal management.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp103-q09",
+      "type": "short",
+      "q": "Describe how action plans and ongoing evaluation processes work together to contribute to the development of a successful design.",
+      "marks": 4,
+      "modelAnswer": "As part of the design process the designer develops an action plan to organise an appropriate and efficient operation, sequencing tasks correctly so the project runs efficiently. Combined with an ongoing evaluation structure, this helps ensure a successful design: if ongoing evaluation is not carried out, development may fail to address concerns about important design factors such as function, cost or safety. Together, action plans and ongoing evaluation ensure the end product best meets the needs of the client and the consumer.",
+      "criteria": [
+        { "marks": "4", "descriptor": "Provides characteristics and features of how action plans AND ongoing evaluation processes work together to contribute to a successful design" },
+        { "marks": "3", "descriptor": "Provides characteristics and features of how action plans AND/OR evaluation processes contribute to a successful design" },
+        { "marks": "2", "descriptor": "Sketches in general terms how action plans AND/OR evaluation processes contribute to a successful design, OR identifies a feature of action plans AND a feature of evaluation processes" },
+        { "marks": "1", "descriptor": "Identifies a feature of action plans OR evaluation processes" }
+      ],
+      "explanation": "Ongoing (continual) evaluation is the heart of this topic: evaluation happens throughout, not only at the end, and it feeds back to refine the design. Linking it to the action plan shows you understand the process is managed and iterative.",
+      "source": { "origin": "hsc", "ref": "2013 HSC Design and Technology Q13", "year": 2013 }
+    },
+    {
+      "id": "mp103-q10",
+      "type": "extended",
+      "q": "Describe and analyse the processes undertaken when designing a product of your choice. (6 marks)",
+      "marks": 6,
+      "modelAnswer": "Using a reusable drinks bottle: Describe the stages — define the need (a reusable, leak-proof bottle to reduce single-use plastic, with criteria such as capacity, leak-proofing and insulation); research existing bottles, materials and user needs; generate ideas through sketching multiple lid and body concepts; produce a prototype, such as a double-walled stainless-steel bottle; evaluate it against the criteria; and refine it. Then analyse the process: it is iterative and cyclic, not linear. When evaluation revealed the lid leaked, the designer looped back to the ideation stage to design a sealed flip lid, rebuilt the prototype, and re-evaluated; a subsequent insulation failure prompted a further loop back to research to reconsider the wall design. This continual evaluation and looping back is what allowed the design to be progressively improved until it met all the criteria.",
+      "criteria": [
+        { "marks": 6, "descriptor": "Accurately describes the stages of the design process applied to a real product AND analyses the iterative, cyclic looping with specific feedback examples." },
+        { "marks": 4, "descriptor": "Describes the stages applied to a product and gives some analysis of the looping/feedback, but the analysis is limited." },
+        { "marks": 2, "descriptor": "Describes some stages of the design process with little or no analysis of its iterative nature." }
+      ],
+      "explanation": "The marks split between accurately describing the stages applied to a real product and analysing the iterative looping with specific feedback examples. Answers that only describe and never analyse the loop cap out around half marks — do both, every time.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    }
+  ]
+}

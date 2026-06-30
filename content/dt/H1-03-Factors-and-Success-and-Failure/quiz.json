@@ -1,0 +1,144 @@
+{
+  "questions": [
+    {
+      "id": "mh103-q01",
+      "type": "mc",
+      "q": "What distinguishes critically analysing a design's success or failure from simply calling it 'good' or 'bad'?",
+      "options": [
+        "It uses more technical vocabulary, but still gives a verdict without a reason",
+        "It identifies the specific factor(s) affecting design that drove the outcome and judges the design against them",
+        "It lists all eleven factors mechanically for every design",
+        "It focuses on the designer's intentions rather than the design's outcome"
+      ],
+      "answer": 1,
+      "explanation": "Analysis names the decisive factor and explains how the design met or failed it; description just asserts a verdict and earns little. Listing all eleven factors mechanically (option 3) is actually the trap the episode warns against — lead with the one or two factors that drove the outcome.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh103-q02",
+      "type": "mc",
+      "q": "The mnemonic 'FFA EQ NEW LOAd' is used in the episode to recall what?",
+      "options": [
+        "The six factors affecting the success of an innovation",
+        "The eleven factors affecting design",
+        "The stages of the major design project",
+        "The measurable criteria in a project proposal"
+      ],
+      "answer": 1,
+      "explanation": "FFA EQ NEW LOAd is the hook for the eleven factors affecting design (function, needs, appropriateness; aesthetics, ergonomics; finance, work health and safety; quality; environmental consequences, obsolescence, life cycle analysis), tied to outcome H1.1. Don't confuse it with TEMPLE, the six innovation factors (option 1), which sit under H3.1.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh103-q03",
+      "type": "mc",
+      "q": "In the episode's case studies, the Apple Newton is the 'noble failure'. Which factor(s) did it primarily fail on?",
+      "options": [
+        "Needs — it was the wrong product for the wrong market",
+        "Timing and technological obsolescence — the technology, especially its handwriting recognition, wasn't ready, so it arrived too early",
+        "Finance — it cost too much to manufacture for the units it sold",
+        "Environmental consequences and life cycle analysis"
+      ],
+      "answer": 1,
+      "explanation": "The Newton failed on timing and technological obsolescence: the tech, especially handwriting recognition, simply wasn't ready, so it was too early. Option 0 describes the Ford Edsel (needs) and option 3 describes Central Park — each case study is pinned to a different factor.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh103-q04",
+      "type": "mc",
+      "q": "Why does the episode classify the Microsoft Zune as a failure?",
+      "options": [
+        "It failed on function — it was a poorly made music player",
+        "It failed on timing and marketing — a competent player that arrived after the iPod had already locked up the market",
+        "It failed on the needs factor — nobody wanted a portable music player",
+        "It failed on ergonomics and aesthetics — it was awkward to hold and ugly"
+      ],
+      "answer": 1,
+      "explanation": "The Zune was a competent music player, so the issue wasn't function. It failed on timing and marketing because it arrived after the iPod had already captured the market — the right product at the wrong time against an entrenched competitor.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh103-q05",
+      "type": "mc",
+      "q": "A graphic designer has developed a new range of birthday cards.\n\nWhich combination of factors is most likely to determine the success of the designs?",
+      "options": [
+        "Cost and function",
+        "Cost and aesthetics",
+        "Durability and function",
+        "Durability and aesthetics"
+      ],
+      "answer": 1,
+      "explanation": "For a non-functional, decorative product like a birthday card, aesthetics carry the appeal while cost governs whether buyers pick it up — so cost and aesthetics are the decisive factors. Function and durability matter far less for an item that is bought to look good and is quickly discarded.",
+      "source": { "origin": "hsc", "ref": "2018 HSC Design and Technology Q1", "year": 2018 }
+    },
+    {
+      "id": "mh103-q06",
+      "type": "mc",
+      "q": "A designer has developed an energy-efficient battery-powered home appliance.\n\nWhich of the following is most likely to contribute to the success of the appliance?",
+      "options": [
+        "Attractive design features",
+        "Convenience of portable appliances",
+        "Growing social trend to use innovative products",
+        "Increased demands on time in managing household chores"
+      ],
+      "answer": 1,
+      "explanation": "A battery-powered appliance's defining advantage is portability, so the convenience of being able to use it anywhere is what most directly drives its success against mains-powered rivals. The other options are general market sentiments rather than the appliance's own decisive selling point.",
+      "source": { "origin": "hsc", "ref": "2020 HSC Design and Technology Q5", "year": 2020 }
+    },
+    {
+      "id": "mh103-q07",
+      "type": "recall",
+      "q": "From memory: name the five case studies the episode gives as evidence, and the factor each is pinned to.",
+      "keyPoints": [
+        "Flow Hive — the success story: it met a genuine need (harvesting honey without disturbing the bees) with strong function, timing and marketing.",
+        "Ford Edsel — failed on the needs factor: the wrong car for the wrong market at the wrong time (sold only ~64,000 units in its first year).",
+        "Apple Newton — failed on timing and technological obsolescence: the technology, especially handwriting recognition, wasn't ready, so it was too early.",
+        "Microsoft Zune — failed on timing and marketing: a competent player that arrived after the iPod had locked up the market.",
+        "Central Park, Sydney — failed on environmental consequences and life cycle analysis: a green image that under-delivers on measured performance."
+      ],
+      "explanation": "If you recalled all five with the right factor for each, grade Good or Easy. Keeping one success (Flow Hive) plus a flop pinned to each major factor ready lets you answer almost any success-and-failure question.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh103-q08",
+      "type": "recall",
+      "q": "In your own words, explain the headline trap: how do the eleven factors affecting design differ from the six factors affecting the success of an innovation?",
+      "keyPoints": [
+        "The eleven factors affecting design (FFA EQ NEW LOAd, outcome H1.1) concern the design itself — function, needs, appropriateness, aesthetics, ergonomics, finance, work health and safety, quality, environmental consequences, obsolescence and life cycle analysis.",
+        "The six innovation factors (TEMPLE, outcome H3.1) — timing, emerging technologies, marketing, political, legal-economic and era/historical-cultural — concern the conditions surrounding an innovation's success in the market.",
+        "They are different lists for different questions, and the exam often asks about both in one paper, so keep them separate."
+      ],
+      "explanation": "If you kept the two lists separate and named a couple from each with their outcomes (H1.1 vs H3.1), grade Good or Easy. Confusing FFA EQ NEW LOAd with TEMPLE is the headline trap of the whole HSC.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh103-q09",
+      "type": "short",
+      "q": "Outline ONE factor that could affect the success or failure of a design.",
+      "marks": 2,
+      "modelAnswer": "One important factor is functionality — how well a product, system or environment performs its intended purpose. If the design fails to perform its intended function efficiently, it may result in design failure. (Other valid factors include the appropriateness of the design solution, needs, aesthetics, finance/cost, ergonomics, obsolescence and time.)",
+      "criteria": [
+        { "marks": "2", "descriptor": "Outlines a factor that could affect the impact on the success or failure of a design" },
+        { "marks": "1", "descriptor": "Provides some relevant information" }
+      ],
+      "explanation": "Pick one of the eleven factors and outline it — name it plus one characteristic of how it drives the outcome. The mark is for tying the factor to success or failure, not just naming it.",
+      "source": { "origin": "hsc", "ref": "2023 HSC Design and Technology Q11", "year": 2023 }
+    },
+    {
+      "id": "mh103-q10",
+      "type": "extended",
+      "q": "Analyse how economic, historical and timing factors determine the success or failure of designs.",
+      "marks": 9,
+      "modelAnswer": "Economic, historical and timing factors all strongly determine whether a design succeeds or fails. Economically, a product released during a negative climate of high interest rates and low disposable income is less likely to be embraced, so designers must time release to a positive climate or to when the product is most needed — for example launching a Dyson air fan in the warmer spring and summer season, when consumers prioritise cooling even in tough economic times, rather than in winter at a high price. Governments may also provide incentives, financial support and favourable trade conditions in poor periods, improving the economic viability of design and production. Yet some designs succeed regardless of high purchase and upgrade costs: Apple phones and music devices dominate the market because effective marketing makes them perceived as needed and essential, showing that perceived need and timing of release can outweigh pure economic viability. Together these economic, historical and timing factors determine not only sales to the target market but also the broader acceptance and desirability of a design in society.",
+      "criteria": [
+        { "marks": "9", "descriptor": "Draws out and relates implications of how economic, historical and timing factors affect the success or failure of designs" },
+        { "marks": "7–8", "descriptor": "Provides reasons through the use of cause and effect as to how economic, historical and timing factors affect the success or failure of designs" },
+        { "marks": "5–6", "descriptor": "Identifies issues and provides evidence of how economic, historical and timing factors affect the success or failure of designs" },
+        { "marks": "3–4", "descriptor": "Provides characteristics and features of how at least TWO of these factors (economic, historical and timing) affect the success or failure of designs" },
+        { "marks": "2", "descriptor": "Sketches in general terms how economic and/or historical and/or timing factors affect the success and/or failure of designs" },
+        { "marks": "1", "descriptor": "Identifies a feature of economic or historical or timing factors that affects the success and/or failure of designs" }
+      ],
+      "explanation": "An analyse answer must draw out cause and effect — don't just describe each factor, show how it drives the outcome, support it with a real example, and reach a verdict. Naming the decisive factor and judging the design against it is the heart of this most-examined topic.",
+      "source": { "origin": "hsc", "ref": "2014 HSC Design and Technology Q13", "year": 2014 }
+    }
+  ]
+}

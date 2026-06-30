@@ -1,0 +1,141 @@
+{
+  "questions": [
+    {
+      "id": "qcaseappl-q01",
+      "type": "mc",
+      "q": "The Apple Newton could take notes, store contacts, manage a calendar and even send a fax. Which feature — the headline act of its marketing — worked so poorly at launch that it defined the Newton's reputation as a failure?",
+      "options": [
+        "Its handwriting recognition, which often turned a written word into something completely different",
+        "Its battery, which lasted only a few minutes before dying",
+        "Its ability to send a fax, which never functioned at all",
+        "Its stylus, which kept snapping in normal use"
+      ],
+      "answer": 0,
+      "explanation": "Handwriting recognition was supposed to sell the Newton but 'barely worked' in 1993 — the team admitted they were 'way ahead of the technology.' It was mocked by a Doonesbury strip and a Simpsons gag, so the killer feature became the feature that killed it. Ironically the team later got it flawless, but by then the reputation was set.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcaseappl-q02",
+      "type": "mc",
+      "q": "Although the Newton flopped in the market, the episode argues it left a hugely important legacy. What was it?",
+      "options": [
+        "It drove the development of the low-power ARM processor architecture, which now runs almost every smartphone on Earth",
+        "It created the first touchscreen that needed no stylus at all",
+        "It invented the modern fax machine still used in offices today",
+        "It established Apple's clean white 'Snow White' design language"
+      ],
+      "answer": 0,
+      "explanation": "To get usable battery life the Newton team chose a small British chip design, ARM — Apple owned about a third of the company and directed the processor's development. Without the Newton driving that work the technology might have died; instead ARM became the architecture at the heart of the entire mobile industry.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcaseappl-q03",
+      "type": "mc",
+      "q": "Which combination of factors most influences the success of an innovation?",
+      "options": [
+        "Social demand and cultural values",
+        "Product demand and social implications",
+        "Timing and appropriate marketing strategies",
+        "Ease of use and economical manufacturing processes"
+      ],
+      "answer": 2,
+      "explanation": "Timing and marketing are decisive — exactly the Newton's twin failures. It arrived before the enabling technology was ready (bad timing) and its marketing over-promised handwriting recognition that barely worked, fixing a poor reputation that flawless later versions could not undo.",
+      "source": { "origin": "hsc", "ref": "2013 HSC Design and Technology Q7", "year": 2013 }
+    },
+    {
+      "id": "qcaseappl-q04",
+      "type": "mc",
+      "q": "For an innovation to be successful, it must",
+      "options": [
+        "be advertised effectively.",
+        "address the needs of users.",
+        "have a registered trademark.",
+        "be launched at an appropriate time."
+      ],
+      "answer": 1,
+      "explanation": "An innovation must address users' needs. The Newton's vision — a computer that comes with you everywhere — genuinely met a need, which is why the smartphone later succeeded with the same idea. Launching at an appropriate time (option D) is a real factor, but the syllabus answer is that the product must first meet user needs.",
+      "source": { "origin": "hsc", "ref": "2015 HSC Design and Technology Q7", "year": 2015 }
+    },
+    {
+      "id": "qcaseappl-q05",
+      "type": "mc",
+      "q": "Emerging technologies provide designers with unique opportunities to",
+      "options": [
+        "develop products that are innovative.",
+        "develop products that guarantee increased sales.",
+        "design products that have a limited range of inbuilt applications.",
+        "design products using existing technologies that have proved to be successful."
+      ],
+      "answer": 0,
+      "explanation": "Emerging technologies let designers innovate — but only once the technology has actually arrived. The Newton needed handwriting recognition, components and batteries that didn't yet exist, so its innovation failed in the market; the same idea succeeded once the enabling technology matured into the smartphone.",
+      "source": { "origin": "hsc", "ref": "2013 HSC Design and Technology Q4", "year": 2013 }
+    },
+    {
+      "id": "qcaseappl-q06",
+      "type": "mc",
+      "q": "According to the episode, what is the key lesson the Newton teaches about the timing of an innovation?",
+      "options": [
+        "Timing is not only about the market mood — it is about whether the enabling technology has arrived yet",
+        "An innovation always succeeds if it is the first of its kind to reach the market",
+        "Marketing budget is the single biggest determinant of an innovation's success",
+        "A product should never be released until a direct competitor already exists"
+      ],
+      "answer": 0,
+      "explanation": "The episode's stated lesson is that 'timing isn't only about the market mood, it's about whether the enabling technology has arrived yet.' A brilliant innovation that needs technology which doesn't quite exist — handwriting recognition, components, battery — will fail in the market, yet may still change the world through what it leaves behind.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcaseappl-q07",
+      "type": "recall",
+      "q": "From memory: why is the Apple Newton remembered as a failure even though its core idea was sound?",
+      "keyPoints": [
+        "The idea was right — a pocket computer / PDA — but it was released before the enabling technology was ready ('born too early').",
+        "Its headline feature, handwriting recognition, barely worked in 1993 and wrecked the product's reputation (mocked in Doonesbury and The Simpsons).",
+        "Manufacturing limits — having to use custom components at right angles, plus tight battery constraints — also fought against the design the team wanted."
+      ],
+      "explanation": "If you linked 'right idea, wrong time' to the broken handwriting recognition and the technology/manufacturing limits, mark it Good or Easy. Just saying 'it was bad' is Again or Hard.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcaseappl-q08",
+      "type": "recall",
+      "q": "From memory: what did the failed Newton leave behind that still shapes technology today?",
+      "keyPoints": [
+        "It drove development of the low-power ARM chip, now the processor architecture in almost every smartphone on Earth.",
+        "It pioneered the idea that the computer doesn't have to live on a desk — it can come with you everywhere, which is the modern smartphone.",
+        "It even prototyped a plain-language assistant (write 'lunch with John tomorrow at noon' and it makes the calendar entry), foreshadowing Siri and Google Assistant."
+      ],
+      "explanation": "A failed product can still change the world through what it seeds. If you recalled ARM, the 'computer that comes with you' idea, and the assistant, mark it Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcaseappl-q09",
+      "type": "short",
+      "q": "Why are some innovative products more successful than others?",
+      "marks": 2,
+      "modelAnswer": "Some innovative products are more successful because of the timing of their release, the designer's ability to address current trends, and how well they solve a real or genuine need. Other factors such as improved capabilities, ease of use and improved quality also affect the success of an innovative design.",
+      "criteria": [
+        { "marks": "2", "descriptor": "Provides reasons why some innovative products are more successful" },
+        { "marks": "1", "descriptor": "Identifies a factor of success" }
+      ],
+      "explanation": "The Newton is a textbook example of timing: the same 'pocket computer' idea failed in 1993 but succeeded as the smartphone once the enabling technology and ease of use had caught up.",
+      "source": { "origin": "hsc", "ref": "2017 HSC Design and Technology Q11", "year": 2017 }
+    },
+    {
+      "id": "qcaseappl-q10",
+      "type": "extended",
+      "q": "Question 14 (15 marks)\n\nAnalyse factors that could determine the success or failure of an innovative design.\n\nYour answer will be assessed on how well you: demonstrate knowledge and understanding relevant to the question; communicate ideas and information using relevant examples; and present a logical and cohesive response.",
+      "marks": 15,
+      "modelAnswer": "Several factors determine whether an innovative design succeeds or fails. Successes can be driven by timing (releasing a product aligned to a seasonal change so it matches perceived consumer needs), social factors (the rising demand for meal-kit food products reflecting society's desire for convenience), and political support (government STEM-education initiatives that drive innovation). Failures can stem from available technologies (an innovation needing newer supporting technology to work, such as moving from wired headphones to Bluetooth), cultural factors (designing without considering consumers' cultural needs, e.g. supplying high technology to communities that lack electrical power), and marketing strategies (over-promising operational qualities, as with vehicle safety features recalled after causing injury). Function and aesthetics are also decisive: an electric car's batteries must meet drivers' range needs to be judged successful, while the latest phones must both look good and display information attractively (e.g. wrap-around screens) or consumers will turn to competitors. A strong response analyses how these interacting factors combine to determine the success or failure of the innovation.",
+      "criteria": [
+        { "marks": "13–15", "descriptor": "Shows a comprehensive understanding of factors that help determine the success or failure of an innovative design; draws out and relates implications of those factors; provides a logical and cohesive response supported by relevant examples" },
+        { "marks": "10–12", "descriptor": "Explains how factors help determine the success or failure of an innovative design; communicates using relevant examples; provides a mostly logical and cohesive response" },
+        { "marks": "7–9", "descriptor": "Describes factors that determine the success or failure of an innovative design; provides a mostly organised response, supported by relevant example(s)" },
+        { "marks": "4–6", "descriptor": "Outlines factors that determine the success or failure of an innovative design; provides example(s)" },
+        { "marks": "1–3", "descriptor": "Demonstrates some understanding of factors that determine the success or failure of an innovative design" }
+      ],
+      "explanation": "The Apple Newton is a powerful worked example for this question: available technology (handwriting recognition, components, battery) was not ready (failure), marketing over-promised the headline feature (failure), yet the underlying need was real and its enabling technology (ARM) later drove the smartphone's success. Use it to show how interacting factors decide an innovation's fate.",
+      "source": { "origin": "hsc", "ref": "2019 HSC Design and Technology Q14", "year": 2019 }
+    }
+  ]
+}

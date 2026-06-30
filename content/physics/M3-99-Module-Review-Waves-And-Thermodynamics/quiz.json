@@ -1,174 +1,159 @@
 {
   "questions": [
     {
-      "id": "m399-q01",
-      "q": "Identify the four behaviours that any wave can show.",
+      "id": "mm399-q01",
+      "type": "mc",
+      "q": "The wave equation relates the speed of a periodic wave to its wavelength and frequency. Which statement correctly gives that relationship?",
       "options": [
-        "Conduction, convection, radiation, superposition",
-        "Reflection, refraction, diffraction, superposition",
-        "Reflection, refraction, conduction, resonance",
-        "Frequency, wavelength, amplitude, period"
+        "The speed equals the frequency divided by the wavelength",
+        "The speed of a periodic wave equals its frequency multiplied by its wavelength, v = fλ",
+        "The speed equals the wavelength divided by the frequency",
+        "The speed equals the amplitude multiplied by the frequency"
       ],
       "answer": 1,
-      "explanation": "Any wave can reflect, refract, diffract and superpose. Superposition is the parent of interference, standing waves and resonance. (Conduction, convection and radiation are the three heat-transfer modes, not wave behaviours.)",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The wave equation is v = fλ: the speed of a periodic wave is its frequency times its wavelength. Frequency is the reciprocal of the period, so v = λ/T as well. Amplitude does not affect wave speed.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 144, "url": "sources/phy11/p144.jpg" }
     },
     {
-      "id": "m399-q02",
-      "q": "A sound particle's displacement-time graph shows a period of 2 ms, in air where v = 340 m s⁻¹. Calculate the wavelength.",
+      "id": "mm399-q02",
+      "type": "worked",
+      "q": "What is the speed of a sound wave if it has a period of 2.0 ms and a wavelength of 68 cm?",
+      "given": "\\(T = 2.0\\,\\mathrm{ms} = 2.0\\times10^{-3}\\,\\mathrm{s}\\),  \\(\\lambda = 68\\,\\mathrm{cm} = 0.68\\,\\mathrm{m}\\)",
+      "working": [
+        "Frequency is the reciprocal of the period, so use \\(v = \\dfrac{\\lambda}{T}\\) (since \\(f = \\tfrac{1}{T}\\))",
+        "\\(v = \\dfrac{0.68\\,\\mathrm{m}}{2.0\\times10^{-3}\\,\\mathrm{s}}\\)",
+        "\\(v = 340\\,\\mathrm{m\\,s^{-1}}\\)"
+      ],
+      "answerValue": 340,
+      "answerUnit": "m s⁻¹",
+      "tolerance": 1,
+      "explanation": "The displacement-time graph gives the period, so f = 1/T, and the wave equation v = fλ (here v = λ/T) delivers the speed. Convert milliseconds to seconds and centimetres to metres first.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 144, "url": "sources/phy11/p144.jpg" }
+    },
+    {
+      "id": "mm399-q03",
+      "type": "mc",
+      "q": "Snell's Law states n1 sin(i) = n2 sin(r). A ray of light strikes a glass block of refractive index 1.45 at an angle of incidence of 30°. What is the angle of refraction in the glass?",
       "options": [
-        "0.68 m",
-        "0.17 m",
-        "1.36 m",
-        "680 m"
+        "20°",
+        "30°",
+        "44°",
+        "49°"
       ],
       "answer": 0,
-      "explanation": "From the time graph, f = 1/T = 1/0.002 = 500 Hz. Then λ = v/f = 340/500 = 0.68 m. The time graph gives the period (and frequency); the wave equation then gives the wavelength — the standard two-step recipe.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "By Snell's Law, 1.0 × sin 30° = 1.45 × sin θ, so sin θ = 0.3448 and θ ≈ 20°. The ray bends towards the normal because it enters a medium with a higher refractive index.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 236, "url": "sources/phy11/p236.jpg" }
     },
     {
-      "id": "m399-q03",
-      "q": "Light travels from glass (n = 1.5) toward a glass-air boundary. Calculate the critical angle (sin iᶜ = 1/1.5 = 0.67).",
+      "id": "mm399-q04",
+      "type": "mc",
+      "q": "For total internal reflection to occur at a boundary, which condition on the refractive indices and the incident angle must be met?",
       "options": [
-        "About 30°",
-        "About 42°",
-        "About 49°",
-        "About 60°"
+        "The light must pass from a lower to a higher refractive index, n1 < n2",
+        "The relative refractive index must be less than 1 (n1 > n2) and the incident angle must exceed the critical angle, so all the light is reflected back with no refracted ray",
+        "The incident angle must be smaller than the critical angle",
+        "The two media must have equal refractive indices"
       ],
       "answer": 1,
-      "explanation": "sin iᶜ = n₂/n₁ = 1/1.5 ≈ 0.67, so iᶜ = sin⁻¹(0.67) ≈ 42°. A ray striking above 42° (and going from denser glass to less dense air) undergoes total internal reflection. (Water's critical angle to air is the larger ~49°, since water has a lower index.)",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "A critical angle only exists when n1 > n2 (denser to less dense). At incident angles greater than the critical angle, all the light is reflected back into the original medium and no refracted ray is formed — total internal reflection, as used in optical fibres.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 247, "url": "sources/phy11/p247.jpg" }
     },
     {
-      "id": "m399-q04",
-      "q": "Distinguish heat from temperature.",
-      "options": [
-        "Heat is the average particle energy; temperature is transferred energy",
-        "Temperature is the average particle kinetic energy; heat is energy transferred due to a temperature difference",
-        "They are the same quantity in different units",
-        "Heat is measured in kelvin; temperature in joules"
-      ],
-      "answer": 1,
-      "explanation": "Temperature is a measure of the average kinetic energy of the particles (a property an object has); heat is energy transferred from a hotter to a colder object because of a temperature difference (energy in transit). An object contains internal energy, not heat. Treating them as synonyms is the classic error.",
+      "id": "mm399-q05",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "The energy Q transferred to a substance to change its temperature is given by Q = mcΔT. On what three factors does this transferred energy depend?",
+      "options": [
+        "The mass, the change in temperature, and the specific heat capacity of the substance",
+        "The mass, the latent heat, and the change of state",
+        "The volume, the pressure, and the temperature",
+        "The thermal conductivity, the area, and the thickness"
+      ],
+      "answer": 0,
+      "explanation": "Q = mcΔT: the energy transferred to change a substance's temperature is directly proportional to its mass m, its change in temperature ΔT, and its specific heat capacity c. Latent heat (Q = mL) instead governs a change of state at constant temperature.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 269, "url": "sources/phy11/p269.jpg" }
     },
     {
-      "id": "m399-q05",
-      "q": "Heat is conducted through a glass window: k = 0.8, area 2 m², ΔT = 15 K, thickness 0.004 m. Calculate the rate of heat flow (Q/t = kAΔT/d).",
-      "options": [
-        "60 W",
-        "6000 W",
-        "24 W",
-        "600 W"
+      "id": "mm399-q06",
+      "type": "worked",
+      "q": "How much energy is needed to heat 8.0 kg of water from a room temperature of 15 °C to 85 °C? Take the specific heat capacity of water as 4200 J kg⁻¹ K⁻¹.",
+      "given": "\\(m = 8.0\\,\\mathrm{kg}\\),  \\(c = 4200\\,\\mathrm{J\\,kg^{-1}K^{-1}}\\),  \\(\\Delta T = 85-15 = 70\\,\\mathrm{K}\\)",
+      "working": [
+        "\\(Q = mc\\Delta T\\)",
+        "\\(Q = 8.0 \\times 4200 \\times 70\\)",
+        "\\(Q = 2\\,352\\,000\\,\\mathrm{J} = 2352\\,\\mathrm{kJ}\\)"
       ],
-      "answer": 1,
-      "explanation": "Q/t = kAΔT/d = (0.8 × 2 × 15)/0.004 = 24/0.004 = 6000 W. The large rate is why single-glazed windows lose so much heat — double glazing adds a low-conductivity air gap to cut it. Conduction is faster for high k, large area, large ΔT and small thickness.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 2352000,
+      "answerUnit": "J",
+      "tolerance": 1000,
+      "explanation": "A temperature change with no change of state, so use Q = mcΔT. The change in temperature is the same number in K or °C (70). The result is about 2400 kJ.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 269, "url": "sources/phy11/p269.jpg" }
     },
     {
-      "id": "m399-q06",
-      "q": "An organ pipe open at both ends is 0.68 m long (v = 340 m s⁻¹). Sounded with a 254 Hz fork, calculate the beat frequency.",
-      "options": [
-        "504 beats per second",
-        "4 beats per second",
-        "250 beats per second",
-        "2 beats per second"
+      "id": "mm399-q07",
+      "type": "recall",
+      "q": "From memory: state what Q = mL calculates, and explain why during a change of state the temperature is not increasing even though energy is transferred to the substance.",
+      "keyPoints": [
+        "Q = mL is the energy required to change the state of a substance without a change in temperature, where L is the specific latent heat of fusion or vaporisation.",
+        "During the change of state the energy transferred is not increasing the random translational kinetic energy of the particles.",
+        "Instead that energy goes into breaking the bonds between particles, so the temperature holds constant while the state changes."
       ],
-      "answer": 1,
-      "explanation": "Open-pipe fundamental: λ₀ = 2L = 1.36 m, so f₀ = v/λ₀ = 340/1.36 = 250 Hz. Beat frequency = |254 − 250| = 4 beats per second. This layers three skills — pipe rule, wave equation, then beats.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled that Q = mL covers a change of state at constant temperature, and that the energy breaks bonds rather than raising particle kinetic energy, grade yourself Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 271, "url": "sources/phy11/p271.jpg" }
     },
     {
-      "id": "m399-q07",
-      "q": "Identify the single heat-transfer mode that can cross the vacuum of space, and how it relates to waves.",
-      "options": [
-        "Conduction, because particles fill space",
-        "Radiation, because it is electromagnetic waves needing no medium",
-        "Convection, because hot gas rises in space",
-        "All three can cross a vacuum"
+      "id": "mm399-q08",
+      "type": "recall",
+      "q": "From memory, explain how a standing wave forms on a guitar string: the incident pulses reach the fixed end, are reflected back inverted with the same wavelength and speed, and where the incident and reflected waves coincide interference between the waves occurs.",
+      "keyPoints": [
+        "The reflected pulses have the same wavelength and speed as the incident pulses but are inverted.",
+        "Where the incident waves and the reflected waves coincide, interference between the waves occurs.",
+        "At particular frequencies the points of constructive and destructive interference are evenly spaced, so the resultant superimposed wave appears fixed in position — a standing wave with nodes and antinodes."
       ],
-      "answer": 1,
-      "explanation": "Only radiation can cross a vacuum — it is electromagnetic radiation (the same family as light) and needs no medium, which is how the Sun's heat reaches the Earth. Conduction needs a material and convection needs a fluid, so neither works in a vacuum.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "When the incident and reflected waves interfere constructively and destructively at evenly spaced positions along the string, the resultant superimposed wave appears fixed in position — a standing wave with nodes and antinodes.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m399-q08",
-      "q": "A lamp gives an intensity of 36 units at 2 m. Calculate the intensity at 6 m.",
+      "id": "mm399-q09",
+      "type": "mc",
+      "q": "When a sound source moves towards a stationary observer (the Doppler effect), what does the observer hear, and does the source's emitted frequency change?",
       "options": [
-        "12 units",
-        "4 units",
-        "18 units",
-        "6 units"
+        "A lower frequency, because the emitted frequency itself decreases",
+        "A higher effective frequency, while the source keeps emitting the same frequency — only the observed frequency rises",
+        "The same frequency, because motion does not affect sound",
+        "A higher frequency only if the source also gets louder"
       ],
       "answer": 1,
-      "explanation": "Intensity obeys the inverse-square law. Going from 2 m to 6 m is ×3 the distance, so intensity falls by 3² = 9: 36/9 = 4 units. The same I ∝ 1/r² law applies to both sound and light. Dividing by 3 instead of 9 is the trap.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The effective frequency is always heard as higher when the sound source approaches the observer (and lower as it moves away). The source still emits its own constant frequency; the source's motion compresses the wavefronts, shortening the effective wavelength and raising the observed frequency f'.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 184, "url": "sources/phy11/p184.jpg" }
     },
     {
-      "id": "m399-q09",
-      "q": "For a combined process, identify which equation applies to each stage: melting ice at 0 °C, then warming the water to 100 °C.",
-      "options": [
-        "Q = mcΔT for melting; Q = mL for warming",
-        "Q = mL for melting; Q = mcΔT for warming; then sum the stages",
-        "Q = mcΔT for both stages",
-        "Q = mL for both stages"
-      ],
-      "answer": 1,
-      "explanation": "Melting is a change of state at constant temperature → Q = mL (latent heat of fusion). Warming the water is a temperature change → Q = mcΔT. For a combined process you compute each stage and add them. Ask 'is the temperature changing, or the state?' to pick the equation.",
+      "id": "mm399-q10",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "Heat is transferred by conduction, convection and radiation. Which single description correctly matches conduction?",
+      "options": [
+        "The bulk movement of a heated fluid, with warm less-dense fluid rising",
+        "The transfer of heat by electromagnetic waves, needing no medium",
+        "The transfer of heat through a substance by collisions between neighbouring vibrating particles, with no net movement of particles",
+        "The transfer of heat only through a vacuum"
+      ],
+      "answer": 2,
+      "explanation": "Conduction is the transfer of heat through a substance as a result of collisions between neighbouring vibrating particles; kinetic energy passes from particle to particle with no net movement of particles. Convection is bulk fluid movement; radiation alone needs no medium and can cross a vacuum.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 273, "url": "sources/phy11/p273.jpg" }
     },
     {
-      "id": "m399-q10",
-      "q": "Explain, in terms of superposition, how a standing wave forms on a string.",
-      "options": [
-        "A single wave reflects and changes frequency",
-        "Two identical waves travelling in opposite directions superpose, cancelling at nodes (always out of phase) and reinforcing at antinodes (always in phase)",
-        "Two waves of different frequencies beat together",
-        "A wave diffracts through the string"
+      "id": "mm399-q11",
+      "type": "short",
+      "q": "Explain the difference between heat and temperature, then explain why a coastal town has a milder climate than an inland desert at the same latitude. (4 marks)",
+      "marks": 4,
+      "modelAnswer": "Temperature is a measure of the average kinetic energy of the particles in a substance, whereas heat is energy transferred from a hotter object to a colder one because of the temperature difference between them — energy in transit. A coastal town has a milder climate because water has a very high specific heat capacity: the ocean can absorb and release a large amount of thermal energy with only a small change in its own temperature, so it warms slowly by day and in summer and cools slowly by night and in winter, moderating the temperature of nearby land. An inland desert, lacking this large body of water, heats and cools rapidly, giving temperature extremes.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Defines temperature as the average kinetic energy of particles." },
+        { "marks": 1, "descriptor": "Defines heat as energy transferred due to a temperature difference." },
+        { "marks": 1, "descriptor": "Links water's high specific heat capacity to the ocean buffering temperature change." },
+        { "marks": 1, "descriptor": "Concludes the coast is milder while the inland desert has extremes." }
       ],
-      "answer": 1,
-      "explanation": "Two identical waves (an incident wave and its reflection) travel in opposite directions and superpose. Where they are always out of phase the displacements cancel — nodes (zero displacement); where always in phase they reinforce — antinodes (maximum). The fixed pattern is a standing wave, which stores energy rather than transporting it.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "This connects the heat-versus-temperature distinction to a specific-heat-capacity application, exactly as the episode worked it.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

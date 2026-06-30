@@ -1,174 +1,149 @@
 {
   "questions": [
     {
-      "id": "m711-q01",
-      "q": "What is the photoelectric effect, and what is a photoelectron?",
-      "options": [
-        "The heating of a metal by light; a photoelectron is a photon absorbed by the metal",
-        "The emission of electrons (photoelectrons) from a metal surface when light of sufficiently high frequency is incident on it",
-        "The bending of light around a metal edge; a photoelectron is the diffracted ray",
-        "The reflection of electrons from a metal; a photoelectron is a reflected light particle"
-      ],
-      "answer": 1,
-      "explanation": "The photoelectric effect is the ejection of electrons from a metal when light of high enough frequency falls on it. A photoelectron is simply an electron liberated by this process — the name flags that light freed it.",
+      "id": "mm711-q01",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m711-q02",
-      "q": "What does the stopping voltage \\(V_0\\) measure?",
+      "q": "How is the photoelectric effect defined?",
       "options": [
-        "The total number of photoelectrons emitted per second",
-        "The maximum kinetic energy of the photoelectrons, via \\(K_{\\max} = eV_0\\)",
-        "The frequency of the incident light",
-        "The average speed of all the photoelectrons"
-      ],
-      "answer": 1,
-      "explanation": "The stopping voltage is the reverse voltage that just reduces the photocurrent to zero by turning back even the fastest electron. So \\(K_{\\max} = eV_0\\) — it measures the maximum kinetic energy of the photoelectrons.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m711-q03",
-      "q": "The four photoelectric observations are summarised by 'DENF'. Which is correct?",
-      "options": [
-        "Delay before emission; Energy from intensity; Number from frequency; Fixed wavelength",
-        "No Delay; Energy from frequency; Number from intensity; threshold Frequency",
-        "Doubled current; Equal energy; No threshold; Frequency irrelevant",
-        "Delay grows with brightness; Energy from frequency; Number from frequency; threshold Frequency"
-      ],
-      "answer": 1,
-      "explanation": "DENF: no Delay (even for faint light), Energy of electrons from frequency, Number of electrons from intensity, and a threshold Frequency below which nothing is emitted.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m711-q04",
-      "q": "Photoelectrons have a maximum kinetic energy of \\(2.6\\times10^{-19}\\,\\mathrm{J}\\). What stopping voltage reduces the photocurrent to zero? (\\(e = 1.6\\times10^{-19}\\,\\mathrm{C}\\))",
-      "options": [
-        "1.6 V",
-        "0.62 V",
-        "4.2 V",
-        "16 V"
+        "The release of electrons from a metal surface exposed to electromagnetic radiation",
+        "The heating of a metal surface until it glows and emits light",
+        "The reflection of ultraviolet light from a clean metal surface",
+        "The continuous flow of charge through a metal when a voltage is applied"
       ],
       "answer": 0,
-      "explanation": "\\(V_0 = K_{\\max}/e = 2.6\\times10^{-19}/1.6\\times10^{-19} = 1.6\\,\\mathrm{V}\\). Joules divided by coulombs gives volts.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The photoelectric effect is the name given to the release of electrons from a metal surface exposed to electromagnetic radiation; for example, when a clean surface of sodium metal is exposed to ultraviolet light, electrons are liberated from the surface. The ejected electrons are called photoelectrons.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 250, "url": "sources/phy12/p250.jpg" }
     },
     {
-      "id": "m711-q05",
-      "q": "At fixed frequency, the light intensity is doubled. What happens to the photocurrent and to the maximum kinetic energy of the photoelectrons?",
+      "id": "mm711-q02",
+      "type": "mc",
+      "q": "In Hallwachs' experiment a clean zinc plate is attached to a gold leaf electroscope. What is observed when ultraviolet light from an arc lamp shines on the zinc?",
       "options": [
-        "Both double",
-        "The photocurrent doubles; the maximum kinetic energy is unchanged",
-        "The maximum kinetic energy doubles; the photocurrent is unchanged",
-        "Both stay the same"
+        "A positively charged electroscope discharges quickly, but a negatively charged one is unaffected",
+        "A negatively charged electroscope discharges quickly, but a positively charged one shows no fast discharge",
+        "Both positively and negatively charged electroscopes discharge at the same rate",
+        "The electroscope gains charge regardless of its initial sign"
       ],
       "answer": 1,
-      "explanation": "Intensity sets the number of electrons per second, so doubling it doubles the photocurrent. Maximum kinetic energy depends only on frequency, so with frequency fixed it is unchanged — this is the N and E of DENF.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Hallwachs charged the electroscope negatively and the charge leaked away quickly when the zinc was exposed to ultraviolet light, because the light ejects electrons. If the electroscope was positively charged there was no fast discharge, since any ejected electron is pulled straight back.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 250, "url": "sources/phy12/p250.jpg" }
     },
     {
-      "id": "m711-q06",
-      "q": "Why does the wave model fail to explain the absence of any time delay?",
+      "id": "mm711-q03",
+      "type": "mc",
+      "q": "What did J.J. Thomson establish in 1899 about the particles emitted from zinc by ultraviolet light?",
       "options": [
-        "It predicts electrons are emitted faster than light arrives",
-        "It predicts that faint light should take measurable time to deposit enough energy in an electron, yet emission is instant even for very faint light",
-        "It predicts no electrons should ever be emitted",
-        "It predicts a delay only for bright light, but emission is instant"
+        "That they were positively charged ions liberated from the metal",
+        "That they were the same particles, electrons, that are found in cathode rays",
+        "That they were photons carrying the energy of the light",
+        "That they were emitted only when a strong electric field was applied"
       ],
       "answer": 1,
-      "explanation": "In the wave picture, energy spreads thinly over the surface, so a single electron should slowly accumulate energy — predicting a delay that lengthens as light dims. Experiment shows instant emission even for faint light, contradicting the prediction.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "In 1899 J.J. Thomson established that the ultraviolet light caused electrons to be emitted from a sheet of zinc metal and showed that these electrons were the same particles found in cathode rays. The new feature was that the electrons were ejected by radiation rather than by a strong electric field.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 251, "url": "sources/phy12/p251.jpg" }
     },
     {
-      "id": "m711-q07",
-      "q": "The existence of a threshold frequency is fatal to the wave model because the wave model predicts:",
-      "options": [
-        "Light of any frequency should eject electrons if it is intense enough or shines long enough, so there should be no threshold",
-        "Only ultraviolet light can ever eject electrons",
-        "Electron energy should depend only on frequency",
-        "No electrons should be emitted at any frequency"
-      ],
-      "answer": 0,
-      "explanation": "Since the wave model ties energy to intensity, any frequency should work given enough brightness or time — predicting no threshold. The observed hard frequency cut-off, untouchable by brightness, cannot be explained by a continuous wave.",
+      "id": "mm711-q04",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m711-q08",
-      "q": "In which way is the wave model's prediction about electron energy described as 'backwards'?",
+      "q": "In Lenard's apparatus the collector is charged negatively to repel the photoelectrons. What is the stopping voltage?",
       "options": [
-        "It predicts energy rises with frequency; experiment shows it rises with intensity",
-        "It predicts energy rises with intensity and is independent of frequency; experiment shows energy rises with frequency and is independent of intensity",
-        "It predicts electron energy is always zero; experiment shows it is large",
-        "It predicts energy depends on the metal; experiment shows it depends on the light"
+        "The voltage that accelerates the photoelectrons towards the collector",
+        "The value of the voltage at which the photocurrent drops to zero",
+        "The voltage produced by a single photoelectron striking the collector",
+        "The voltage at which the photocurrent first begins to flow"
       ],
       "answer": 1,
-      "explanation": "The wave model says brighter (bigger-amplitude) light gives each electron more energy, with frequency irrelevant. Experiment shows the exact reverse: energy depends on frequency and is independent of intensity.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The voltage is applied across the variable resistor to oppose the motion of the photoelectrons, and the value of the voltage at which the current drops to zero is known as the stopping voltage. For a given frequency the photoelectrons are emitted with the same maximum kinetic energy, because the electrons are all stopped by the same voltage.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 252, "url": "sources/phy12/p252.jpg" }
     },
     {
-      "id": "m711-q09",
-      "q": "Which one of the four DENF observations is the wave model actually able to predict correctly?",
-      "options": [
-        "No delay",
-        "Threshold frequency",
-        "Number of electrons from intensity",
-        "Energy from frequency"
+      "id": "mm711-q05",
+      "type": "recall",
+      "q": "From memory, state the three things Lenard observed when he varied the intensity and frequency of the light striking the metal.",
+      "keyPoints": [
+        "Doubling the light intensity would double the number of electrons emitted (so the photocurrent increases with intensity).",
+        "There was no change in the kinetic energy of the photoelectrons as the light intensity increased.",
+        "The maximum kinetic energy of the electrons depends on the frequency of the light illuminating the metal."
       ],
-      "answer": 2,
-      "explanation": "Brighter light carries more energy, so the wave model can correctly predict that more intensity ejects more electrons per second (N). It gets the other three (D, E, F) wrong.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Lenard filtered the arc light to investigate different frequencies. He found intensity controls the number of electrons, while the maximum kinetic energy is set by frequency, not intensity. If you recalled all three, grade it Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 252, "url": "sources/phy12/p252.jpg" }
     },
     {
-      "id": "m711-q10",
-      "q": "What is the key exam technique for the question 'explain why the wave model cannot account for the photoelectric effect'?",
+      "id": "mm711-q06",
+      "type": "worked",
+      "q": "Electrons are emitted from a metal surface with a maximum kinetic energy of 2.6 × 10⁻¹⁹ J. Calculate the stopping voltage that will just reduce the photocurrent to zero. (Charge on an electron = 1.6 × 10⁻¹⁹ C.)",
+      "given": "\\(E_k = 2.6 \\times 10^{-19}\\,\\mathrm{J}\\),  \\(q = 1.6 \\times 10^{-19}\\,\\mathrm{C}\\)",
+      "working": [
+        "\\(E_k = qV_0\\)",
+        "\\(2.6 \\times 10^{-19} = (1.6 \\times 10^{-19}) \\times V_0\\)",
+        "\\(V_0 = \\dfrac{2.6 \\times 10^{-19}}{1.6 \\times 10^{-19}}\\)",
+        "\\(V_0 = 1.62 \\approx 1.6\\,\\mathrm{V}\\) (to 2 significant figures)"
+      ],
+      "answerValue": 1.6,
+      "answerUnit": "V",
+      "tolerance": 0.05,
+      "explanation": "The stopping voltage relates to the maximum kinetic energy by \\(E_k = qV_0\\), so \\(V_0 = E_k / q\\). Joules divided by coulombs gives volts; a stopping voltage of 1.6 V will stop the electrons emitted from the surface.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 253, "url": "sources/phy12/p253.jpg" }
+    },
+    {
+      "id": "mm711-q07",
+      "type": "worked",
+      "q": "A stopping voltage of 4.2 V is required to reduce the photocurrent to zero. Calculate the maximum kinetic energy of the photoelectrons. (Charge on an electron = 1.6 × 10⁻¹⁹ C.)",
+      "given": "\\(V_0 = 4.2\\,\\mathrm{V}\\),  \\(q = 1.6 \\times 10^{-19}\\,\\mathrm{C}\\)",
+      "working": [
+        "\\(E_k = qV_0\\)",
+        "\\(E_k = (1.6 \\times 10^{-19}) \\times 4.2\\)",
+        "\\(E_k = 6.72 \\times 10^{-19} \\approx 6.7 \\times 10^{-19}\\,\\mathrm{J}\\) (to 2 significant figures)"
+      ],
+      "answerValue": 6.7e-19,
+      "answerUnit": "J",
+      "tolerance": 1e-20,
+      "explanation": "Rearranging the stopping-voltage relationship \\(E_k = qV_0\\) the other way, a 4.2 V stopping voltage will stop electrons with energy 6.7 × 10⁻¹⁹ J. This is the maximum kinetic energy, since the stopping voltage turns back even the fastest electron.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 253, "url": "sources/phy12/p253.jpg" }
+    },
+    {
+      "id": "mm711-q08",
+      "type": "mc",
+      "q": "There exists a threshold frequency below which the photoelectric effect does not occur, independent of intensity. What does the wave model predict about a threshold frequency?",
       "options": [
-        "Simply list the four observations",
-        "For each failure, pair the specific wave-model prediction with the contradicting observation (prediction X, observation Y, contradiction)",
-        "Describe the apparatus in full detail",
-        "Calculate the stopping voltage for each observation"
+        "A sharp threshold frequency should exist, fixed by the amplitude of the wave",
+        "No threshold effect should exist, because energy transfer to the electrons is accumulative and emission will eventually occur",
+        "The threshold frequency should rise as the intensity of the light increases",
+        "Emission should occur only at one exact frequency and nowhere else"
       ],
       "answer": 1,
-      "explanation": "The marks live in the contrast: state what a wave should do, what is actually observed, and that they disagree — three matched pairs for the three failures. Listing the observations alone earns only about half marks.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The wave model predicts no threshold effect should exist, as energy transfer to electrons from the light source is accumulative and eventually emission will occur. This contradicts the observed threshold frequency, which is independent of intensity, so the wave model fails.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 256, "url": "sources/phy12/p256.jpg" }
+    },
+    {
+      "id": "mm711-q09",
+      "type": "recall",
+      "q": "From memory, recall the DENF memory hook for the four observations of the photoelectric effect.",
+      "keyPoints": [
+        "D — no Delay: electrons are emitted essentially instantly, even when the light is very faint.",
+        "E — Energy from frequency: the maximum kinetic energy of the photoelectrons depends only on the frequency (colour), not the intensity.",
+        "N — Number from intensity: brightness controls how many electrons come off per second (the photocurrent), not their energy.",
+        "F — threshold Frequency: below a cut-off frequency no electrons are emitted, no matter how intense or prolonged the light."
+      ],
+      "explanation": "DENF is the carry-the-rest-of-the-course hook: no Delay, Energy from frequency, Number from intensity, threshold Frequency. Of these four, the wave model gets three wrong and only Number-from-intensity right.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm711-q10",
+      "type": "extended",
+      "q": "Explain how the observations of the photoelectric effect provide evidence against the wave model of light. (6 marks)",
+      "marks": 6,
+      "modelAnswer": "According to the wave model, light is a continuous wave whose energy depends on its intensity and is spread continuously over the metal surface. This model makes predictions that three of the four photoelectric observations contradict. First, the wave model predicts that with faint light an electron would need time to absorb enough energy to escape, so there should be a time delay before emission; however, electrons are emitted almost instantaneously even for very faint light. Second, the wave model predicts that light of any frequency should eventually eject electrons if it is intense enough; however, there is a threshold frequency below which no electrons are emitted, no matter how intense the light or how long it shines. Third, the wave model predicts that the maximum kinetic energy of the electrons should increase with the intensity of the light; however, the maximum kinetic energy depends only on the frequency and is independent of intensity. The only observation consistent with the wave model is that increasing the intensity increases the number of photoelectrons per second. Since three of the four key observations directly contradict the predictions of the wave model, the photoelectric effect provides strong evidence that the wave model of light is incomplete.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States the wave model's basis: continuous wave whose energy depends on intensity, spread across the surface." },
+        { "marks": 1, "descriptor": "Pairs the no-delay observation with the wave prediction of a time delay for faint light." },
+        { "marks": 1, "descriptor": "Pairs the threshold frequency with the wave prediction that any frequency should work if intense enough." },
+        { "marks": 1, "descriptor": "Pairs energy-from-frequency with the wave prediction that energy should rise with intensity." },
+        { "marks": 1, "descriptor": "Acknowledges the one observation the wave model gets right: number of electrons rises with intensity." },
+        { "marks": 1, "descriptor": "Concludes that, with three of four observations contradicted, the wave model is incomplete." }
+      ],
+      "explanation": "The marks live in the contrast: for each failure pair the wave-model prediction with the contradicting observation (prediction X, observation Y), then finish with a judgement. Listing the observations alone earns roughly half marks. Note this answer never mentions photons — that is Part 2.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

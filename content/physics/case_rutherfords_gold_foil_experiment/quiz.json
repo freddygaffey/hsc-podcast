@@ -1,174 +1,146 @@
 {
   "questions": [
     {
-      "id": "rutherford-q01",
-      "q": "In Thomson's 'plum pudding' model of the atom, how were positive charge and mass arranged?",
+      "id": "qcaseruth-q01",
+      "type": "mc",
+      "q": "Rutherford famously compared the backscattering result to firing a fifteen-inch naval shell at tissue paper and having it bounce back. What made this so shocking under the accepted model of the day?",
       "options": [
-        "Concentrated in a tiny dense central nucleus",
-        "Spread out smoothly through the whole volume of the atom, with electrons embedded throughout",
-        "Located only on the outer surface of the atom",
-        "Carried entirely by the orbiting electrons"
+        "The alpha particles were expected to be absorbed by the gold, not pass through it",
+        "The plum pudding model's soft, diffuse positive charge could only nudge a fast, heavy alpha particle by a fraction of a degree, so a near-180° bounce should have been effectively impossible",
+        "The gold foil was far too thick for any particle to pass through at all",
+        "Alpha particles were thought to be negatively charged and so should have been attracted, not repelled"
       ],
       "answer": 1,
-      "explanation": "In the plum pudding (uniform sphere) model, the positive charge and mass are smeared diffusely through the whole atom, with tiny electrons dotted through it like plums in a pudding. There is nothing hard, dense or concentrated at the centre — which is why backscattering was not expected.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "In Thomson's plum pudding atom the positive charge is smeared thinly across the whole atom, so it could only give the heavy, fast alpha particle the tiniest deflection. Turning one completely around required something the model said was not there — a concentrated, dense charge.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "rutherford-q02",
-      "q": "What is an alpha particle, as used in the gold foil experiment?",
+      "id": "qcaseruth-q02",
+      "type": "mc",
+      "q": "Which statement best describes Thomson's 'plum pudding' (uniform sphere) model of the atom?",
       "options": [
-        "A high-energy electron",
-        "A helium nucleus: charge +2, mass ~4 atomic units, moving at high speed",
-        "A photon of gamma radiation",
-        "A single proton"
+        "A tiny dense positive nucleus at the centre with electrons orbiting in empty space",
+        "Positive charge spread smoothly through the whole volume of the atom, with tiny negative electrons dotted throughout it",
+        "A solid indivisible ball of neutral matter with no internal structure",
+        "Equal numbers of protons and neutrons packed into a central core surrounded by an electron shell"
       ],
       "answer": 1,
-      "explanation": "An alpha particle is a helium nucleus — charge +2e, mass about 4 atomic mass units — emitted at roughly 1.6×10⁷ m/s (~5% of light speed). Being heavy, fast and positively charged makes it the ideal 'shell' for probing the atom's internal structure.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Thomson pictured the positive charge as the soft 'dough' filling the whole atom, with the light electrons scattered through it like plums. Crucially there was nothing hard, dense or concentrated at the centre — the atom was soft and uniform all the way through.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "rutherford-q03",
-      "q": "Why did the experimenters expect virtually NO alpha particles to bounce backwards, based on the plum pudding model?",
+      "id": "qcaseruth-q03",
+      "type": "mc",
+      "q": "In the Geiger-Marsden experiment, why did the overwhelming majority of alpha particles pass straight through the gold foil with barely any deflection?",
       "options": [
-        "Alpha particles are negatively charged and attracted forward",
-        "The diffuse positive charge could give only tiny nudges, so a heavy fast alpha particle should pass through nearly undeflected",
-        "Gold is transparent to alpha particles",
-        "The electrons would absorb all the alpha particles"
+        "The gold foil was thin enough that most particles missed all the atoms",
+        "Most of the atom is empty space, so most alpha particles travel through the void nowhere near the tiny nucleus and barely feel a force",
+        "Gold atoms have no positive charge to deflect the alpha particles",
+        "The alpha particles were moving too fast for any force to act on them"
       ],
       "answer": 1,
-      "explanation": "In the plum pudding model the positive charge is spread thin, so it could only deflect a massive fast alpha particle by a tiny fraction of a degree. Reversing one entirely would need an absurd run of aligned nudges — effectively impossible. That is why Rutherford gave the 'look for backscatter' task to an undergraduate as a safe dead end.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The nuclear model explains this: the atom is almost entirely empty space, so the vast majority of alpha particles sail through the void far from any nucleus and are barely deflected. That most particles pass straight through is the evidence the atom is mostly empty.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "rutherford-q04",
-      "q": "Roughly what fraction of alpha particles were deflected by more than 90° in the gold foil experiment?",
+      "id": "qcaseruth-q04",
+      "type": "mc",
+      "q": "What force caused the rare alpha particles to be flung almost straight back towards the source?",
       "options": [
-        "About 1 in 8",
-        "About 1 in 8,000",
-        "About half",
-        "Essentially all of them"
+        "Gravitational attraction between the alpha particle and the gold nucleus",
+        "The electrostatic (Coulomb) repulsion between the positive alpha particle and the concentrated positive nucleus, which grows enormous as they approach head-on",
+        "Magnetic deflection from the moving charges",
+        "Collisions with the electrons spread through the atom"
       ],
       "answer": 1,
-      "explanation": "Only about 1 in 8,000 alpha particles deflected by more than 90°; over 99.9% passed nearly straight through. This rarity is the key clue: the deflecting target must be extremely small, so most particles miss it entirely and sail through empty space.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Both the alpha particle and the nucleus are positive, so they repel via the Coulomb force. On a near head-on approach the repulsion grows stronger the closer they get, decelerating the alpha particle, halting it, and flinging it back the way it came.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "rutherford-q05",
-      "q": "The observation that the vast majority of alpha particles passed straight through the foil with little deflection tells us that:",
-      "options": [
-        "The atom is mostly empty space",
-        "The positive charge is spread evenly through the atom",
-        "Alpha particles have no charge",
-        "Gold atoms are larger than other atoms"
-      ],
-      "answer": 0,
-      "explanation": "If almost every particle sails straight through, the atom must be mostly empty space, with the tiny dense nucleus being a rare target. The rare large-angle deflections then reveal that concentrated nucleus.",
+      "id": "qcaseruth-q05",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "rutherford-q06",
-      "q": "What force is responsible for flinging an alpha particle back when it approaches a gold nucleus nearly head-on?",
+      "q": "Roughly what fraction of alpha particles were deflected by more than 90° when fired at the thin gold foil — the figure quoted in the textbook?",
       "options": [
-        "The strong nuclear force attracting it",
-        "The electrostatic (Coulomb) repulsion between the positive alpha particle and the positive nucleus, growing rapidly as they get closer",
-        "Gravity between the two masses",
-        "Magnetic deflection from the nucleus"
+        "About 1 in 100",
+        "About 1 in 8000",
+        "About 1 in 2",
+        "About 1 in 10 million"
       ],
       "answer": 1,
-      "explanation": "Both the alpha particle (+2) and the nucleus (+79 for gold) are positive, so they repel via the Coulomb force, which strengthens as the separation shrinks. A near head-on approach to the concentrated nuclear charge decelerates the alpha and flings it back — the 'shell bouncing off tissue paper'.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The team measured roughly one alpha particle in every eight thousand being deflected by more than 90°. That tiny-but-non-zero fraction is what signalled a small, dense, concentrated target inside the atom.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "rutherford-q07",
-      "q": "In Rutherford's nuclear model, approximately how does the size of the nucleus compare to the size of the whole atom?",
-      "options": [
-        "About the same size",
-        "The nucleus is about 10 times smaller",
-        "The nucleus is at least about 10,000 times smaller",
-        "The nucleus is larger than the atom"
-      ],
-      "answer": 2,
-      "explanation": "The atomic radius is ~1.4×10⁻¹⁰ m while the nucleus is ~10⁻¹⁴ m or smaller, making the nucleus at least ~10,000 times smaller than the atom. If the atom were a sports stadium, the nucleus would be a marble at the centre — the rest is empty space.",
+      "id": "qcaseruth-q06",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "rutherford-q08",
-      "q": "Why did Rutherford NOT immediately announce the nuclear model when the backscattering was first observed?",
+      "q": "After 1911, why was Rutherford's nuclear (planetary) model NOT immediately accepted, despite explaining the gold foil results?",
       "options": [
-        "He had already announced it years earlier",
-        "He spent roughly 18 months puzzling over the result, first trying to explain it as many small scattering events before realising it required one single violent close encounter",
-        "He did not trust Geiger and Marsden's counting",
-        "The Nobel committee forbade publication"
+        "It could not explain why most alpha particles passed straight through",
+        "Classical electromagnetism (Maxwell) said an orbiting electron is always accelerating, so it must continuously radiate energy, spiral inward, and crash into the nucleus almost instantly — yet matter is stable",
+        "It predicted the wrong number of large-angle deflections",
+        "Rutherford could not measure the charge of the gold nucleus at all"
       ],
       "answer": 1,
-      "explanation": "Rutherford initially tried to explain the backscatter with the old idea of many small deflections adding up. Only after about 18 months did he reframe it as a single violent encounter with a tiny concentrated charge, leading to the nuclear model and his scattering formula in 1911.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "By classical physics an accelerating charge radiates energy. An orbiting electron constantly changes direction, so it should radiate, lose energy and spiral into the nucleus in a fraction of a second. Since atoms are clearly stable, the model seemed impossible until Bohr's quantum fix in 1913.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "rutherford-q09",
-      "q": "What serious problem did classical physics raise against Rutherford's planetary (nuclear) model?",
-      "options": [
-        "The nucleus would be too heavy to stay together",
-        "An orbiting electron is constantly accelerating, so by Maxwell's electromagnetism it should radiate energy, spiral inward and crash into the nucleus almost instantly",
-        "The electrons would repel each other and fly apart",
-        "Gold atoms could not contain a nucleus"
+      "id": "qcaseruth-q07",
+      "type": "recall",
+      "q": "From memory: explain how the gold foil observations led to the proposal of the nuclear model of the atom. (This is the exact syllabus 'chain of reasoning' the episode flags for Module 8.)",
+      "keyPoints": [
+        "Most alpha particles passed straight through with little deflection → the atom is mostly empty space.",
+        "A tiny fraction (about 1 in 8000) were deflected by more than 90°, and a few bounced almost straight back → the positive charge and nearly all the mass must be concentrated in a tiny, dense central nucleus.",
+        "Only a concentrated positive charge could repel a fast, heavy alpha particle so violently — the smeared-out plum pudding model could not.",
+        "Therefore the atom has a small dense positive nucleus surrounded by mostly empty space."
       ],
-      "answer": 1,
-      "explanation": "An orbiting electron continually changes direction (accelerates), and classical electromagnetism says accelerating charges radiate energy. The electron should lose energy, spiral in and collapse into the nucleus in a fraction of a second — yet atoms are stable. Bohr's quantised energy levels (1913) resolved this.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you linked 'most pass through → mostly empty' and 'rare big bounces → tiny dense positive nucleus', and noted the plum pudding model fails, grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "rutherford-q10",
-      "q": "How did Niels Bohr (1913) rescue the nuclear atom from the radiation/collapse problem?",
-      "options": [
-        "He proposed the nucleus was negatively charged",
-        "He proposed electrons occupy only certain allowed energy levels and do not radiate while in them, emitting or absorbing light only when jumping between levels",
-        "He removed the electrons from the model entirely",
-        "He showed Maxwell's equations were wrong"
+      "id": "qcaseruth-q08",
+      "type": "recall",
+      "q": "From memory: what were the alpha particles, the source, and the detection method used in the experiment?",
+      "keyPoints": [
+        "An alpha particle is a helium nucleus: positive charge of +2, mass about 4 atomic units, travelling at roughly 16 million m/s (about 5% of the speed of light).",
+        "The source was a strongly radioactive substance referred to as radium C (in modern terms bismuth-214).",
+        "Detection used a zinc sulphide screen: each alpha particle striking it produced a single faint flash (a scintillation) counted by eye through a microscope in a darkened room.",
+        "The gold foil was extremely thin (about 100 nm, roughly 1000 atoms thick) so each particle passed through as few atoms as possible."
       ],
-      "answer": 1,
-      "explanation": "Bohr grafted quantum ideas onto Rutherford's nucleus: electrons are allowed only specific, stable energy levels and do not radiate while in them. Energy is emitted or absorbed only on jumping between levels, with the photon energy equal to the level difference — which also explained hydrogen's spectral lines.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Reward yourself for the helium nucleus identity (+2 charge, mass 4), the zinc sulphide scintillation screen, and the very thin gold foil. These details are commonly asked in exams.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcaseruth-q09",
+      "type": "worked",
+      "q": "The alpha particles left the source at roughly 16 million m/s. Express this as a percentage of the speed of light (c = 3.0 × 10⁸ m/s), to confirm the episode's '5% of the speed of light' claim.",
+      "given": "\\(v = 16 \\times 10^{6}\\,\\mathrm{m\\,s^{-1}}\\),  \\(c = 3.0 \\times 10^{8}\\,\\mathrm{m\\,s^{-1}}\\)",
+      "working": [
+        "\\(\\dfrac{v}{c} = \\dfrac{16 \\times 10^{6}}{3.0 \\times 10^{8}}\\)",
+        "\\(\\dfrac{v}{c} = 0.0533\\)",
+        "\\(\\dfrac{v}{c} \\times 100\\% \\approx 5.3\\%\\)"
+      ],
+      "answerValue": 5.3,
+      "answerUnit": "%",
+      "tolerance": 0.3,
+      "explanation": "Dividing the alpha speed by c gives about 0.053, i.e. roughly 5% of the speed of light — matching the figure stated in the episode. This is why alpha particles count as fast, heavy projectiles.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcaseruth-q10",
+      "type": "worked",
+      "q": "Using the episode's figures, estimate how many times larger the diameter of a gold atom (about 1.5 × 10⁻¹⁰ m) is than the upper limit on the nucleus size (about 10 femtometres = 1.0 × 10⁻¹⁴ m).",
+      "given": "\\(d_\\text{atom} \\approx 1.5 \\times 10^{-10}\\,\\mathrm{m}\\),  \\(d_\\text{nucleus} \\lesssim 1.0 \\times 10^{-14}\\,\\mathrm{m}\\)",
+      "working": [
+        "\\(\\text{ratio} = \\dfrac{d_\\text{atom}}{d_\\text{nucleus}} = \\dfrac{1.5 \\times 10^{-10}}{1.0 \\times 10^{-14}}\\)",
+        "\\(\\text{ratio} = 1.5 \\times 10^{4}\\)",
+        "\\(\\text{ratio} \\approx 15\\,000\\) — i.e. the nucleus is at least about 10 000 times smaller than the atom."
+      ],
+      "answerValue": 15000,
+      "answerUnit": "times",
+      "tolerance": 1000,
+      "explanation": "The atom is roughly 10⁴ times wider than its nucleus — the basis for the 'marble in a sports stadium' analogy and the conclusion that the atom is about 99.999...% empty space.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

@@ -1,174 +1,157 @@
 {
   "questions": [
     {
-      "id": "m615-q01",
-      "q": "How does a three-phase supply produce a rotating magnetic field in the stator of an AC induction motor?",
-      "options": [
-        "A single coil on AC produces a field that spins around the stator",
-        "Three coil pairs, 120° apart, fed by currents 120° out of phase, give a resultant field whose direction sweeps continuously around",
-        "A split-ring commutator rotates the field mechanically",
-        "Permanent magnets are physically spun by a small motor"
-      ],
-      "answer": 1,
-      "explanation": "Because the three currents peak at different instants, the vector sum of the three coil fields points in a continuously changing direction, sweeping round the stator. A single coil on AC only oscillates back and forth along one axis — it does not rotate.",
+      "id": "mm615-q01",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "An AC induction motor has two main parts and transforms electrical energy mainly into what form of energy?",
+      "options": [
+        "The two main parts are the stator and the rotor, and it transforms electrical energy into rotational kinetic energy",
+        "The two main parts are the brushes and the commutator, and it transforms chemical energy into electrical energy",
+        "The two main parts are the primary and secondary coils, and it transforms rotational kinetic energy into electrical energy",
+        "The two main parts are the slip rings and the armature, and it transforms electrical energy into chemical energy"
+      ],
+      "answer": 0,
+      "explanation": "As with DC motors and generators, an AC motor has two main parts: the stator and the rotor. The stator is the stationary part that provides the external magnetic field which produces a torque on the rotor, and electrical energy is usually transformed into rotational kinetic energy. In Australia the AC supply frequency is 50 Hz.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 182, "url": "sources/phy12/p182.jpg" }
     },
     {
-      "id": "m615-q02",
-      "q": "The combined rotating field in an AC induction motor has which property?",
-      "options": [
-        "Constant direction but pulsing magnitude",
-        "Constant magnitude but continuously rotating direction",
-        "Both magnitude and direction constant",
-        "Both magnitude and direction pulsing randomly"
-      ],
-      "answer": 1,
-      "explanation": "The rotating field is of fixed strength whose direction goes round and round — like a clock's second hand that never speeds up or slows. It is not a field that pulses bigger and smaller.",
+      "id": "mm615-q02",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "Why is an AC induction motor called an 'induction' motor?",
+      "options": [
+        "Because no current passes through the rotor directly from the mains supply; the current in the rotor is induced in the conductors of the cage by a changing magnetic field",
+        "Because the rotor is a permanent magnet that was induced during manufacture",
+        "Because an induction coil must charge the rotor before the motor will run",
+        "Because brushes induce the supply current directly into the commutator of the rotor"
+      ],
+      "answer": 0,
+      "explanation": "Induction motors are so named because a changing magnetic field set up in the stator induces a current in the rotor, similar to a transformer. No current passes through the rotor directly from the mains supply — the current in the rotor bars is induced by the changing magnetic field.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 184, "url": "sources/phy12/p184.jpg" }
     },
     {
-      "id": "m615-q03",
-      "q": "What is the synchronous speed of the rotating field, and what sets it?",
-      "options": [
-        "The speed of the rotor; set by the load",
-        "The rotation speed of the field; set by the mains supply frequency (50 Hz in Australia)",
-        "Always 3000 rpm regardless of supply frequency",
-        "The speed of the eddy currents in the core"
-      ],
-      "answer": 1,
-      "explanation": "Synchronous speed is the speed of the rotating field, set by the supply frequency. At 50 Hz it is 50 rotations per second, which for a single pole-pair is \\( 50 \\times 60 = 3000\\,\\mathrm{rpm} \\).",
+      "id": "mm615-q03",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "In a squirrel-cage rotor, why are the conductor bars encased in a laminated iron core?",
+      "options": [
+        "The iron intensifies the magnetic field passing through the rotor conductors, while the laminations decrease the heating losses due to eddy currents",
+        "The iron stores charge for the rotor, while the laminations increase the eddy currents that drive it",
+        "The iron insulates the bars, while the laminations carry the mains supply current into the rotor",
+        "The iron reduces the magnetic field, while the laminations short-circuit the two end rings together"
+      ],
+      "answer": 0,
+      "explanation": "The bars and end rings of the squirrel-cage rotor are encased in a laminated iron armature. The iron intensifies the magnetic field passing through the conductors of the rotor cage, making the induced current and torque larger, and the laminations decrease the heating losses due to eddy currents in the core itself.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 185, "url": "sources/phy12/p185.jpg" }
     },
     {
-      "id": "m615-q04",
-      "q": "Place the torque-producing chain in the correct order: (i) Faraday induces a current in the bars, (ii) relative motion changes the flux through the rotor loops, (iii) the rotating field sweeps past the rotor bars, (iv) the motor effect gives a force, aimed by Lenz to drag the rotor around.",
-      "options": [
-        "i → ii → iii → iv",
-        "iii → ii → i → iv",
-        "ii → iii → i → iv",
-        "iv → iii → ii → i"
+      "id": "mm615-q04",
+      "type": "recall",
+      "q": "Describe the construction of a squirrel-cage rotor.",
+      "keyPoints": [
+        "It consists of a number of conducting bars made of either aluminium or copper.",
+        "The bars are attached to two end rings at either end; the end rings 'short-circuit' the bars and allow a current to flow from one side of the cage to the other.",
+        "The bars and end rings are encased in a laminated iron armature mounted on a shaft that passes out of the motor."
       ],
-      "answer": 1,
-      "explanation": "Rotating field sweeps past the bars (iii) → relative motion changes the flux (ii) → Faraday induces a current in the short-circuited bars (i) → the motor effect gives a force, aimed by Lenz's law to drag the rotor in the field's direction (iv). 'Rotating round, Faraday's force, Lenz follows.'",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled aluminium or copper bars, the two short-circuiting end rings, and the laminated iron core, grade yourself Good or Easy. The end rings providing a closed conducting path are essential — that is what lets the induced EMF drive a current.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 185, "url": "sources/phy12/p185.jpg" }
     },
     {
-      "id": "m615-q05",
-      "q": "Why can the rotor of an AC induction motor never reach synchronous speed (catch the field)?",
-      "options": [
-        "Friction in the bearings always slows it slightly",
-        "At equal speed there is no relative motion, so no changing flux, no induced current, and no torque — so it cannot be sustained",
-        "The supply frequency drops as the rotor speeds up",
-        "The end rings disconnect at high speed"
-      ],
-      "answer": 1,
-      "explanation": "If the rotor matched the field, the relative motion would be zero, so the flux would stop changing, so (by Faraday) no EMF and no current, so no force and no torque. The rotor would immediately slow and fall behind — it must always run slightly slower (it 'slips').",
+      "id": "mm615-q05",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "How does the rotating magnetic field of the stator produce a force on the bars of the squirrel cage?",
+      "options": [
+        "The relative movement of the bars through the magnetic field creates a current in the bars, and bars carrying a current in a magnetic field experience a force, so the cage is forced to chase the magnetic field",
+        "The magnetic field charges the bars by direct contact, and like charges then repel the field away",
+        "The bars heat up and expand, mechanically pushing the rotor around inside the stator",
+        "Slip rings feed the supply current to the bars, which then magnetically attract the stator poles"
+      ],
+      "answer": 0,
+      "explanation": "As the magnetic field rotates within the stator it passes over the bars of the cage — the same effect as the bars moving in the opposite direction through a stationary field. This relative movement of the bars through the magnetic field creates a current; the current-carrying bars then experience a force in the same direction as the movement of the field, so the cage is forced to chase the magnetic field around inside the stator.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 186, "url": "sources/phy12/p186.jpg" }
     },
     {
-      "id": "m615-q06",
-      "q": "The slip of an induction motor is best described as:",
-      "options": [
-        "A defect that wastes energy and should be eliminated",
-        "The essential speed difference between field and rotor that keeps the flux changing and torque flowing — and it is self-regulating with load",
-        "The slipping of brushes against the commutator",
-        "The frequency mismatch between the three phases"
-      ],
-      "answer": 1,
-      "explanation": "Slip is not a fault — without it there is no relative motion and no torque. It is also self-regulating: a heavier load slows the rotor, increasing slip, which speeds the flux change, raising the induced current and torque to meet the load automatically.",
+      "id": "mm615-q06",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "What would happen if the bars of the squirrel cage rotated at exactly the same rate as the rotating magnetic field?",
+      "options": [
+        "There would be no relative movement between the bars and the magnetic field, so there would be no induced current and no force",
+        "The induced current would reach its maximum value, giving the greatest possible force on the rotor",
+        "The motor would produce the same force but would consume no electrical power at all",
+        "The two end rings would short-circuit and bring the rotor to an instant stop"
+      ],
+      "answer": 0,
+      "explanation": "If the bars of the squirrel cage rotated at exactly the same rate as the magnetic field, there would be no relative movement between the bars and the field, and therefore no induced current and no force. For the cage to experience a force there must be relative movement — the cage must constantly 'slip' behind the magnetic field.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 187, "url": "sources/phy12/p187.jpg" }
     },
     {
-      "id": "m615-q07",
-      "q": "Eddy currents in an induction motor are both wanted and unwanted. Which statement is correct?",
-      "options": [
-        "Eddy currents in the rotor bars are wasteful; eddy currents in the iron core produce the torque",
-        "Eddy currents in the rotor bars produce the torque (wanted); eddy currents in the iron core just heat it (unwanted, reduced by laminating)",
-        "All eddy currents are wasteful and are reduced by laminating both the bars and the core",
-        "All eddy currents are useful and are encouraged everywhere"
+      "id": "mm615-q07",
+      "type": "recall",
+      "q": "What is slip, and explain why it is necessary for the operation of a squirrel-cage induction motor.",
+      "keyPoints": [
+        "Slip (slip speed) is the difference in rotational speed between the cage (rotor) and the rotating magnetic field of the stator.",
+        "There must be relative movement between the bars and the field for a current to be induced and a force to be produced — so the rotor always runs slower than the field when doing work.",
+        "Under a heavier load the cage slows, the amount of slip increases, so the relative movement, the induced current and the magnetic force are all increased."
       ],
-      "answer": 1,
-      "explanation": "The induced currents in the short-circuited rotor bars are exactly what produce the force and torque. The same alternating flux also induces wasteful currents in the solid iron core, which only heat it — these are suppressed by laminating the core. Laminations do NOT reduce the torque-producing bar currents.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Slip is not a defect: with no slip there is no relative movement, no induced current and no force. The self-regulating point (more load -> more slip -> more current -> more force) is the high-band idea.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 187, "url": "sources/phy12/p187.jpg" }
     },
     {
-      "id": "m615-q08",
-      "q": "How does electromagnetic braking generate a force opposing motion?",
-      "options": [
-        "The magnet sticks to the metal by attraction",
-        "Relative motion changes the flux → Faraday induces eddy currents → Lenz makes them oppose the motion → a retarding force, with kinetic energy lost as heat",
-        "Friction pads press against the moving metal",
-        "The conductor is repelled by a like magnetic pole"
+      "id": "mm615-q08",
+      "type": "worked",
+      "q": "A flat loop of area 0.3 m² lies perpendicular to a uniform magnetic field of strength B = 0.05 T. Calculate the magnetic flux through the loop.",
+      "given": "\\(B_\\perp = 0.05\\,\\mathrm{T}\\),  \\(A = 0.3\\,\\mathrm{m^2}\\)",
+      "working": [
+        "\\(\\phi_B = B_\\perp \\times A\\)",
+        "\\(\\phi_B = 0.05 \\times 0.3\\)",
+        "\\(\\phi_B = 0.015\\,\\mathrm{Wb}\\)"
       ],
-      "answer": 1,
-      "explanation": "A conductor moving through a field has a changing flux, inducing eddy currents (Faraday). By Lenz's law these oppose the change — the motion — producing a braking force. The kinetic energy is dissipated as heat (\\( I^2R \\)) in the conductor.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 0.015,
+      "answerUnit": "Wb",
+      "tolerance": 0.001,
+      "explanation": "Magnetic flux is the perpendicular field strength multiplied by the area, \\(\\phi_B = B_\\perp \\times A\\). With the field perpendicular to the loop, \\(\\phi_B = 0.05 \\times 0.3 = 0.015\\,\\mathrm{Wb}\\). This is the same sample-problem method the textbook uses to calculate magnetic flux.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 138, "url": "sources/phy12/p138.jpg" }
     },
     {
-      "id": "m615-q09",
-      "q": "Why can an eddy-current brake not bring a moving object to a sudden, complete stop on its own?",
-      "options": [
-        "The brake overheats and switches off",
-        "The braking force is proportional to speed, so it fades to zero as the object slows, approaching rest smoothly",
-        "The eddy currents reverse direction at low speed and push the object forward",
-        "Friction takes over and stops it instantly"
+      "id": "mm615-q09",
+      "type": "worked",
+      "q": "A three-phase induction motor has a synchronous (field) speed of 3000 rpm. Under load the rotor turns at 2880 rpm. Calculate the slip speed and the slip expressed as a fraction.",
+      "given": "synchronous speed = 3000 rpm,  rotor speed = 2880 rpm",
+      "working": [
+        "slip speed = synchronous speed − rotor speed",
+        "slip speed = 3000 − 2880 = 120 rpm",
+        "\\(\\text{slip} = \\dfrac{120}{3000} = 0.04 = 4\\%\\)"
       ],
-      "answer": 1,
-      "explanation": "Faster motion gives a faster flux change, larger eddy currents, and a larger force. As speed drops the force drops, approaching zero at rest — so the brake tapers off smoothly (its great virtue) but cannot deliver the final stop, which is why a friction brake is usually added.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 120,
+      "answerUnit": "rpm",
+      "tolerance": 1,
+      "explanation": "The slip speed is the gap between the field's synchronous speed and the rotor's actual speed: 3000 − 2880 = 120 rpm, which is 4% slip. At exactly 3000 rpm the relative speed would be zero, so the flux change and the torque would be zero; the 120 rpm of slip is what keeps the flux changing and the torque flowing.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m615-q10",
-      "q": "What is the difference between a motor and a generator in terms of energy transformation?",
-      "options": [
-        "A motor converts mechanical to electrical; a generator converts electrical to mechanical",
-        "A motor converts electrical to mechanical (rotational kinetic); a generator converts mechanical (kinetic) to electrical",
-        "Both convert electrical energy to heat",
-        "A motor stores energy; a generator releases it"
-      ],
-      "answer": 1,
-      "explanation": "A motor turns electrical energy into rotational kinetic (mechanical) energy; a generator turns mechanical kinetic energy into electrical energy. They are the same device run in opposite directions — the exam tests the direction of conversion, so name both forms.",
+      "id": "mm615-q10",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "When a metal sheet moves through a magnetic field, the eddy current loop inside the field experiences a force. In what direction does this force act, and why?",
+      "options": [
+        "The force is always opposite to the direction of motion of the sheet, because the eddy currents are an application of Lenz's law and oppose the change producing them, so they act as a brake",
+        "The force is in the same direction as the motion, so the sheet speeds up as it moves through the field",
+        "The force acts at right angles to the motion, making the metal sheet spin instead of slowing",
+        "There is no net force, because the eddy currents on either side of the loop exactly cancel"
+      ],
+      "answer": 0,
+      "explanation": "Eddy currents are an application of Lenz's law: the magnetic fields they set up oppose the change in flux. The force on the eddy current loop is therefore always opposite to the direction of motion of the sheet, making it harder to move the metal — this retarding force is the basis of electromagnetic braking, and the lost kinetic energy is dissipated as heat.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 143, "url": "sources/phy12/p143.jpg" }
+    },
+    {
+      "id": "mm615-q11",
+      "type": "short",
+      "q": "Outline the difference between a motor and a generator in terms of energy transformation. (2 marks)",
+      "marks": 2,
+      "modelAnswer": "A motor transforms electrical energy into rotational kinetic (mechanical) energy. A generator transforms mechanical (kinetic) energy into electrical energy. They are structurally the same device operated in opposite directions; the only difference being examined is the direction of the energy conversion.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States a motor converts electrical energy into mechanical / rotational kinetic energy." },
+        { "marks": 1, "descriptor": "States a generator converts mechanical / kinetic energy into electrical energy." }
+      ],
+      "explanation": "Name both forms of energy and the direction for each — don't just write 'energy is converted'. Electrical to mechanical is the motor; mechanical to electrical is the generator.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

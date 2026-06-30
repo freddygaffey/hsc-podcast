@@ -1,0 +1,141 @@
+{
+  "questions": [
+    {
+      "id": "mp199-q01",
+      "type": "mc",
+      "q": "Which of the following best describes an effective process for developing design solutions?",
+      "options": [
+        "A method of analysing a product's development",
+        "A series of steps to manage time, actions and finance",
+        "A method of manufacturing products, systems or environments",
+        "A series of steps to transform an idea into a working and viable product"
+      ],
+      "answer": 3,
+      "explanation": "The design process is the cyclic, iterative sequence of stages — DRIPER (Define, Research, Ideate, Produce, Evaluate, Refine) — that transforms an identified need into a working, viable solution. Managing time and finance, or manufacturing, are elements within that larger process, not the process itself.",
+      "source": { "origin": "hsc", "ref": "2021 HSC Design and Technology Q2", "year": 2021 }
+    },
+    {
+      "id": "mp199-q02",
+      "type": "mc",
+      "q": "When is a design solution considered to be most appropriate?",
+      "options": [
+        "When it satisfies the aesthetic requirements",
+        "When it meets the needs of the target market",
+        "When it provides strength, durability and safety",
+        "When it fulfils its intended end-use requirements"
+      ],
+      "answer": 3,
+      "explanation": "Appropriateness is whether the solution is suitable for the specific user and context — it is judged against the intended end-use. Don't confuse it with function (whether it performs its task) or aesthetics (how it looks): a product can function well yet still be inappropriate for its intended user.",
+      "source": { "origin": "hsc", "ref": "2013 HSC Design and Technology Q1", "year": 2013 }
+    },
+    {
+      "id": "mp199-q03",
+      "type": "mc",
+      "q": "Which of the following best describes ergonomics?",
+      "options": [
+        "The study of human body measurement",
+        "The design of products to satisfy a niche market",
+        "Design factors to consider in developing energy-efficient products",
+        "The study of how people work efficiently within their physical environment"
+      ],
+      "answer": 3,
+      "explanation": "Ergonomics is the fit between the user and the product — how people interact with and work efficiently in their physical environment. The study of body measurement alone is anthropometrics, which is only one input ergonomics draws on; ergonomics is more than just 'comfort'.",
+      "source": { "origin": "hsc", "ref": "2020 HSC Design and Technology Q1", "year": 2020 }
+    },
+    {
+      "id": "mp199-q04",
+      "type": "mc",
+      "q": "Why do many manufacturing companies incorporate built-in obsolescence into their products?",
+      "options": [
+        "To increase the probability of consistent sales",
+        "To ensure that the product is sustainable in the market place",
+        "To extend the product's life span beyond the warranty period",
+        "To make the product safe to use for an extended period of time"
+      ],
+      "answer": 0,
+      "explanation": "Planned (built-in) obsolescence deliberately shortens a product's useful life so consumers must repurchase, generating consistent repeat sales. Note this is intent designed in from the start — unlike technological obsolescence, where the world's technology simply moves on. It works against sustainability, not towards it.",
+      "source": { "origin": "hsc", "ref": "2016 HSC Design and Technology Q9", "year": 2016 }
+    },
+    {
+      "id": "mp199-q05",
+      "type": "mc",
+      "q": "What is the most important reason for undertaking a life cycle analysis of an innovative design?",
+      "options": [
+        "To establish the rights of the designer",
+        "To research the possibility of future growth in market share",
+        "To understand the impact of the project on society and the environment",
+        "To determine the level of consumer demand for the newly developed product"
+      ],
+      "answer": 2,
+      "explanation": "A life cycle analysis is the cradle-to-grave evaluation of a product's inputs and outputs, tracing it from raw materials to disposal to reveal its impact on society and the environment. The other options are commercial or legal aims, not the purpose of an LCA.",
+      "source": { "origin": "hsc", "ref": "2024 HSC Design and Technology Q8", "year": 2024 }
+    },
+    {
+      "id": "mp199-q06",
+      "type": "mc",
+      "q": "A smartphone is replaced not because it has worn out, but because a newer model with capabilities the old one lacks has been released. Which type of obsolescence is this?",
+      "options": [
+        "Style obsolescence, because the older model looks dated",
+        "Technological obsolescence, because the world's technology has moved on past the product",
+        "Planned obsolescence, because the maker deliberately built in an early failure point",
+        "Functional failure, because the product no longer performs its primary task"
+      ],
+      "answer": 1,
+      "explanation": "Technological obsolescence happens TO a product because technology advances past it — a matter of circumstance. Contrast planned obsolescence, which is done to a product on purpose, designed in from the start (intent), and style obsolescence, which is about changing fashion or appearance. Circumstance versus intent is the distinction the exam blurs.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp199-q07",
+      "type": "recall",
+      "q": "From memory, recite the six stages of the design process in order, and state the one feature that turns a description of it into analysis.",
+      "keyPoints": [
+        "DRIPER: Define (the need and brief), Research (and investigate), Ideate (generate ideas), Produce (and prototype), Evaluate (against the criteria), Refine (and loop back).",
+        "It is a cycle, not a line: evaluation is continual, not a single end stage.",
+        "A failure sends the designer back to an earlier stage, looping until the design meets its criteria — this iterative nature is the analytical point."
+      ],
+      "explanation": "If you got all six DRIPER stages in order AND said it is cyclic/iterative with continual evaluation, grade Good or Easy. If you listed the stages as a one-way checklist, grade Again or Hard — the iteration is the mark.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp199-q08",
+      "type": "recall",
+      "q": "From memory, name as many of the eleven factors affecting design as you can. Use the five 'story chunks' to recover them.",
+      "keyPoints": [
+        "Do its job: function, needs, appropriateness.",
+        "Fit the user: aesthetics, ergonomics.",
+        "Affordable and safe: finance, work health and safety (WHS).",
+        "Well made: quality.",
+        "Don't wreck the planet: environmental consequences (short and long-term), obsolescence, life cycle analysis."
+      ],
+      "explanation": "The mnemonic is FFA EQ NEW LOAd, learned as the story. If you recalled all eleven, grade Easy; nine or ten, Good; fewer, drill them — the factors are the most examined content in the subject.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp199-q09",
+      "type": "short",
+      "q": "Why do designers consider ergonomic factors when designing a new product?",
+      "marks": 2,
+      "modelAnswer": "Designers consider ergonomics so the product fits the human user. Using anthropometric data, they size and shape the product to suit the range of users, so it is comfortable, efficient and safe to use and does not cause strain or injury — for example sizing a handle or chair to suit the user's body. Getting ergonomics wrong causes injury, not just discomfort.",
+      "criteria": [
+        { "marks": "2", "descriptor": "Sketches in general terms ergonomic factors that may be considered by a designer when developing a new product" },
+        { "marks": "1", "descriptor": "Identifies an ergonomic feature" }
+      ],
+      "explanation": "The marks reward explaining the fit between user and product — comfort, efficiency and safety grounded in anthropometric data — rather than just naming 'comfort'.",
+      "source": { "origin": "hsc", "ref": "2012 HSC Design and Technology Q11", "year": 2012 }
+    },
+    {
+      "id": "mp199-q10",
+      "type": "extended",
+      "q": "Analyse how a designer you have studied applied the design process and the factors affecting design to develop a successful product. (6 marks)",
+      "marks": 6,
+      "modelAnswer": "Marc Newson, an Australian industrial designer known for adapting the design process across diverse fields, applied that process to design the Qantas Skybed business-class seat. He defined the need — a comfortable lie-flat seat within the tight constraints of an aircraft cabin — and set criteria for success; through research and ideation he generated and developed concepts; then produced and tested prototypes, evaluating and refining them iteratively. Throughout, he balanced the factors affecting design: ergonomics was critical, as the seat had to fit a wide range of human bodies comfortably for long flights using anthropometric data; function demanded it convert reliably into a flat bed; aesthetics had to convey premium quality to the target market; and finance and quality shaped the materials within the airline's budget. The product succeeded because the design process was applied rigorously and the competing factors were balanced for the user and context.",
+      "criteria": [
+        { "marks": "5–6", "descriptor": "Genuinely integrates all three: names the designer and their process, walks the DRIPER stages applied to a real product, and weaves in specific named factors affecting design" },
+        { "marks": "3–4", "descriptor": "Describes the designer and either the process OR the factors, with some connection between them" },
+        { "marks": "1–2", "descriptor": "Only describes the designer, OR only lists the factors/stages, without connecting them through the process" }
+      ],
+      "explanation": "The top band is reached by integrating the three topics — designer, process and factors — not by reciting one. An answer that only describes the designer, or only lists the factors, without connecting them through the process caps in the middle.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    }
+  ]
+}

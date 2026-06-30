@@ -1,0 +1,139 @@
+{
+  "questions": [
+    {
+      "id": "mp308-q01",
+      "type": "mc",
+      "q": "What is the primary purpose of ongoing evaluation?",
+      "options": [
+        "To set goals",
+        "To explore ideas",
+        "To establish consumer needs",
+        "To solve design issues as they arise"
+      ],
+      "answer": 3,
+      "explanation": "Ongoing (continual) evaluation happens throughout design and production so problems can be identified and resolved as they emerge, while they are still cheap to fix. Setting goals and establishing needs happen at the start of the process, not as part of continuous evaluation.",
+      "source": { "origin": "hsc", "ref": "2023 HSC Design and Technology Q1", "year": 2023 }
+    },
+    {
+      "id": "mp308-q02",
+      "type": "mc",
+      "q": "What does a designer evaluate a design against?",
+      "options": [
+        "The personal taste of the designer alone",
+        "The criteria for success, both functional and aesthetic, established in the design brief",
+        "The cheapest possible production method",
+        "Whatever the competitor's product happens to do"
+      ],
+      "answer": 1,
+      "explanation": "Evaluation is the process of determining how successfully the criteria for success are met — and those criteria, functional and aesthetic, are the ones set in the design brief. This is why the brief and the evaluation are bookends, and why criteria must be measurable.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp308-q03",
+      "type": "mc",
+      "q": "The evaluation of a product involves an examination of its features and/or functions.\n\nWhy is it necessary to conduct this evaluation?",
+      "options": [
+        "To ensure that the greatest number of the product will sell",
+        "To determine whether the product is aesthetically pleasing",
+        "To ensure that the product performs all of its desired operations",
+        "To determine whether the product is a quality solution to the design problem"
+      ],
+      "answer": 3,
+      "explanation": "Evaluation judges a product against the design criteria and brief to determine whether it is a quality solution to the design problem. Sales, aesthetics and function are individual measures, but the overall purpose of evaluation is to assess the product as a whole solution.",
+      "source": { "origin": "hsc", "ref": "2010 HSC Design and Technology Q9", "year": 2010 }
+    },
+    {
+      "id": "mp308-q04",
+      "type": "mc",
+      "q": "What is a criteria checklist and why are measurable criteria essential to it?",
+      "options": [
+        "A list of materials to buy; measurable criteria keep it cheap",
+        "A table pairing each criterion with how its success is measured, then ticked off as checked; you can only evaluate against a criterion you can measure",
+        "A schedule of production tasks; measurable criteria keep it on time",
+        "A survey of consumers; measurable criteria make it shorter"
+      ],
+      "answer": 1,
+      "explanation": "A criteria checklist lists each criterion in one column and how success is measured in the other, turning a vague 'is it good?' into an objective 'did it meet criterion one, two, three?'. Because you can only evaluate against a criterion you can measure, measurable criteria from the brief matter enormously.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp308-q05",
+      "type": "mc",
+      "q": "A designer is planning to release a line of ergonomic wheelchairs for children.\n\nWhat is the best way to evaluate the useability of this wheelchair?",
+      "options": [
+        "Invest in innovative material development",
+        "Test the product in a range of environments",
+        "Consider surveys from the specific target market",
+        "Compare the design with competitive manufacturers"
+      ],
+      "answer": 1,
+      "explanation": "Usability is best evaluated by testing the wheelchair in a range of real environments, which directly reveals how well it performs for its users. Surveys gather opinions but do not demonstrate actual usability the way hands-on testing does.",
+      "source": { "origin": "hsc", "ref": "2022 HSC Design and Technology Q9", "year": 2022 }
+    },
+    {
+      "id": "mp308-q06",
+      "type": "recall",
+      "q": "From memory: why is evaluation described as continual, and what are its three phases?",
+      "keyPoints": [
+        "Continual means evaluation is conducted throughout design and production, not just as a final check at the end.",
+        "The three phases are Before, Mid and After (BMA): Before you establish the criteria at the brief stage; Mid you evaluate continually during design and production, testing and refining; After you make the final judgement against all the criteria.",
+        "The Mid phase is the one students forget and the one worth the most marks — it catches problems early while they are still cheap to fix, and drives the Evaluate-Refine loop of DRIPER."
+      ],
+      "explanation": "If you recalled 'continual = throughout, not just the end' and all three BMA phases — especially the Mid phase — grade yourself Good or Easy. If you only got 'something about evaluating', grade it Again or Hard.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp308-q07",
+      "type": "recall",
+      "q": "From memory: name the methods of evaluation a designer can use to gather evidence.",
+      "keyPoints": [
+        "Testing the product — does it physically perform? (e.g. a load test or leak test).",
+        "Checking the design against the criteria checklist.",
+        "Getting feedback from the client — does it meet their need?",
+        "Surveying the consumers or users — do the people it is for find it works? And keep evidence (e.g. samples of failed test runs) as proof of evaluation."
+      ],
+      "explanation": "These methods overlap with the research toolkit (testing and surveys are research tools used here to evaluate). If you named testing, the checklist, client feedback and consumer surveys — and remembered to keep evidence — grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp308-q08",
+      "type": "short",
+      "q": "Identify TWO different methods of evaluation.",
+      "marks": 2,
+      "modelAnswer": "Two methods of evaluation are making a model (or prototype) to test the design, and surveying a niche or target market to gather user feedback.",
+      "criteria": [
+        { "marks": "2", "descriptor": "Identifies TWO different methods of evaluation" },
+        { "marks": "1", "descriptor": "Provides some relevant information" }
+      ],
+      "explanation": "The episode lists testing the product, checking against the criteria checklist, client feedback and consumer surveys — any two distinct methods earn the marks.",
+      "source": { "origin": "hsc", "ref": "2019 HSC Design and Technology Q11", "year": 2019 }
+    },
+    {
+      "id": "mp308-q09",
+      "type": "short",
+      "q": "Why is ongoing evaluation important to a designer?",
+      "marks": 2,
+      "modelAnswer": "Evaluation gathers information so judgements can be made about a product. Ongoing evaluation keeps that information current and relevant throughout development, allowing every element of the design to be monitored continually and adjusted so that needs are met and a quality, safe product reaches the market.",
+      "criteria": [
+        { "marks": "2", "descriptor": "Demonstrates why ongoing evaluation is important to a designer" },
+        { "marks": "1", "descriptor": "Identifies an aspect of evaluation" }
+      ],
+      "explanation": "The marks reward linking ongoing evaluation to catching problems and adjusting the design continually so the final product meets the brief's criteria — the Mid-phase point the episode stresses.",
+      "source": { "origin": "hsc", "ref": "2016 HSC Design and Technology Q12", "year": 2016 }
+    },
+    {
+      "id": "mp308-q10",
+      "type": "extended",
+      "q": "Explain why evaluation should be conducted throughout a design project rather than only at the end. (5 marks)",
+      "marks": 5,
+      "modelAnswer": "Evaluation should be continual because it allows problems to be identified early, while they are still cheap and easy to correct, rather than after the product is built when fixing them is costly or impossible. Continual evaluation drives the refine loop of the design process: each evaluation against the criteria feeds an improvement, so the design develops progressively toward success. It also keeps the project aligned with the criteria set in the brief throughout, ensuring the final solution actually meets the identified need, and it produces an evidence trail of tests and decisions that demonstrates a rigorous design process. For example, a mid-project leak test that fails can trigger a lid redesign before mass production, avoiding a costly fault. By contrast, evaluating only at the end can reveal failures too late to fix.",
+      "criteria": [
+        { "marks": 5, "descriptor": "Explains thoroughly why ongoing evaluation is necessary — early problem detection, the refine loop, alignment to the brief's criteria and the evidence trail — with an example and a clear contrast to end-only evaluation." },
+        { "marks": "3-4", "descriptor": "Explains some benefits of ongoing evaluation with reasons, but coverage is partial or the contrast/example is limited." },
+        { "marks": "1-2", "descriptor": "Outlines or identifies a reason evaluation is conducted, with little explanation." }
+      ],
+      "explanation": "This is the episode's headline question. The whole answer hinges on 'early and continual beats once at the end': cover early problem-detection, the refine loop, alignment to the brief, and the evidence trail, ideally with an example such as a mid-project leak test triggering a lid redesign.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    }
+  ]
+}

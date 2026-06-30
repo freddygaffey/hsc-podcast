@@ -48,22 +48,20 @@ def extract(textbook_dir):
     book = _book(textbook_dir)
     pdf = _pdf(textbook_dir)
     offset = int(book.get("pageOffset", 0))
-    # Page count via pdfinfo.
-    info = subprocess.run(["pdfinfo", str(pdf)], capture_output=True, text=True).stdout
-    n = int(re.search(r"Pages:\s+(\d+)", info).group(1))
+    # One pdftotext pass; pages are separated by form-feed (\x0c).
+    full = subprocess.run(["pdftotext", str(pdf), "-"], capture_output=True, text=True).stdout
+    pages = full.split("\x0c")
+    if pages and pages[-1].strip() == "":
+        pages = pages[:-1]
     out = Path(textbook_dir) / "pages.jsonl"
     with out.open("w") as f:
-        for pdf_page in range(1, n + 1):
-            txt = subprocess.run(
-                ["pdftotext", "-f", str(pdf_page), "-l", str(pdf_page), str(pdf), "-"],
-                capture_output=True, text=True,
-            ).stdout.strip()
+        for i, txt in enumerate(pages, start=1):
             f.write(json.dumps({
-                "pdfPage": pdf_page,
-                "page": pdf_page - offset,          # printed page number
-                "text": re.sub(r"\s+", " ", txt),
+                "pdfPage": i,
+                "page": i - offset,                 # printed page number
+                "text": re.sub(r"\s+", " ", txt).strip(),
             }, ensure_ascii=False) + "\n")
-    print(f"extracted {n} pages -> {out}  (LOCAL ONLY; gitignored)")
+    print(f"extracted {len(pages)} pages -> {out}  (LOCAL ONLY; gitignored)")
 
 
 def render(textbook_dir, pages):

@@ -1,174 +1,146 @@
 {
   "questions": [
     {
-      "id": "m701-q01",
-      "q": "Which kind of charge is required to produce an electromagnetic wave?",
-      "options": [
-        "A stationary charge",
-        "A charge moving at constant velocity",
-        "An accelerating charge",
-        "Any charge that carries an electric field"
-      ],
-      "answer": 2,
-      "explanation": "Only an accelerating charge (one whose velocity is changing) radiates an electromagnetic wave. A stationary charge gives only a static electric field, and a charge at constant velocity (a steady DC current) gives only a steady magnetic field — neither radiates.",
+      "id": "mm701-q01",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m701-q02",
-      "q": "Why does a steady direct current in a wire produce no electromagnetic wave, while an alternating current does?",
+      "q": "According to the textbook, what is required to produce an electromagnetic wave that propagates through space?",
       "options": [
-        "DC is too weak to make any field, but AC is strong enough to radiate",
-        "In DC the charges move at constant velocity (no acceleration), giving only a steady, non-radiating field, whereas AC continually reverses the charges so they accelerate and radiate",
-        "DC produces only an electric field while AC produces only a magnetic field",
-        "DC travels too slowly through the wire to escape as a wave"
+        "A stationary electric charge sitting at rest, producing a static field",
+        "An oscillating (vibrating) electric charge, such as a charged sphere oscillating up and down on a spring",
+        "A charge moving at constant velocity as a steady direct current",
+        "A constant magnetic field of sufficient strength"
       ],
       "answer": 1,
-      "explanation": "A steady DC current is charge at constant velocity, so it is not accelerating and produces only an unchanging field that does not radiate. AC drives the charges back and forth, so they are constantly accelerating, producing the changing fields that regenerate and propagate as a wave.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The textbook states that to produce an electromagnetic wave which propagates through space, an oscillating (vibrating) electric charge is required. The oscillating charge forms an electric current that oscillates in magnitude and direction, inducing oscillating magnetic and electric fields that are self-perpetuating and radiate out through space.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 203, "url": "sources/phy12/p203.jpg" }
     },
     {
-      "id": "m701-q03",
-      "q": "In the self-propagating chain of an electromagnetic wave, which law states that a changing magnetic field induces a changing electric field?",
-      "options": [
-        "Faraday's law",
-        "The Ampère–Maxwell law",
-        "Gauss's law for magnetism",
-        "Lenz's law"
-      ],
-      "answer": 0,
-      "explanation": "Faraday's law (a changing magnetic field induces an electric field) handles that half of the loop. The Ampère–Maxwell law does the reverse — a changing electric field induces a magnetic field. The memory hook FAME: Faraday→Electric, Ampère–Maxwell→Magnetic.",
+      "id": "mm701-q02",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m701-q04",
-      "q": "An electromagnetic wave is described as transverse. What does this mean for the geometry of its fields?",
+      "q": "The textbook summary states that electromagnetic waves are produced by accelerating charges. Which example does it give of such accelerating charges?",
       "options": [
-        "The electric and magnetic fields oscillate along the direction of travel",
-        "The electric field is parallel to the magnetic field, both along the direction of travel",
-        "The electric and magnetic fields are perpendicular to each other and both perpendicular to the direction of travel",
-        "Only the magnetic field is perpendicular to the direction of travel"
-      ],
-      "answer": 2,
-      "explanation": "In an EM wave the electric field is perpendicular to the magnetic field, and both are perpendicular to the direction of propagation — three mutually perpendicular directions. Because the oscillations are sideways to the direction of travel, the wave is transverse (and can therefore be polarised).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m701-q05",
-      "q": "Which observation provides direct evidence that light is a transverse wave?",
-      "options": [
-        "Light can be reflected off a mirror",
-        "Light can be refracted through glass",
-        "Light can be polarised",
-        "Light travels at a constant speed in a vacuum"
-      ],
-      "answer": 2,
-      "explanation": "Only a transverse wave has a sideways plane of vibration that can be filtered, so polarisation is direct proof that light is transverse. Reflection and refraction occur for both transverse and longitudinal waves, so they do not by themselves prove the wave is transverse.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m701-q06",
-      "q": "Why does an electromagnetic wave require no medium to travel?",
-      "options": [
-        "It is carried by the luminiferous aether, which fills all of space",
-        "It is an oscillation of the electromagnetic fields themselves, not a disturbance of any material",
-        "It is carried by air particles that exist even in space",
-        "Its speed is too high for any medium to keep up"
+        "A battery driving a steady direct current down a wire",
+        "Electrons oscillating at high frequency in a radio antenna",
+        "A permanent magnet held next to a stationary conductor",
+        "Protons held fixed in the nucleus of an atom"
       ],
       "answer": 1,
-      "explanation": "An EM wave is an oscillation of the electric and magnetic fields themselves — the fields are the thing that is waving, so no substance is needed. The aether was hypothesised as such a medium but was never found and is unnecessary; light travels most freely through a vacuum.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The summary states electromagnetic waves are produced by accelerating charges; for example, electrons oscillating at high frequency in a radio antenna produce radio waves. These waves are of the same nature as light but have a lower frequency.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 217, "url": "sources/phy12/p217.jpg" }
     },
     {
-      "id": "m701-q07",
-      "q": "Why does every electromagnetic wave travel at the same speed c in a vacuum, regardless of its frequency?",
+      "id": "mm701-q03",
+      "type": "mc",
+      "q": "In Maxwell's time a medium was assumed to be required for electric and magnetic fields. What was this supposed medium called, and what happened to it?",
       "options": [
-        "Because all EM waves carry the same energy",
-        "Because the speed is set only by two fixed constants of the vacuum, the permittivity and permeability of free space",
-        "Because higher-frequency waves are slowed by their shorter wavelength",
-        "Because the aether transmits all frequencies equally"
+        "It was called the luminiferous aether, and it was directly observed in the laboratory",
+        "It was called the luminiferous aether, but it was never observed; an electromagnetic wave is instead an oscillating electromagnetic field",
+        "It was called the slinky medium, and electromagnetic waves are ripples within it",
+        "It was called the mechanical medium, and it is required for all waves including light"
       ],
       "answer": 1,
-      "explanation": "The wave's speed is given by \\( c = 1/\\sqrt{\\mu_0 \\varepsilon_0} \\), depending only on the permittivity and permeability of free space. Since these are fixed properties of the vacuum, the regeneration rate — and hence the speed — is fixed for every EM wave, independent of frequency.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The textbook explains that the supposed medium was called the luminiferous aether, but it was never observed. An electromagnetic wave is not a ripple in a slinky string or on the surface of water; instead it is an oscillating electromagnetic field that perpetuates itself.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 201, "url": "sources/phy12/p201.jpg" }
     },
     {
-      "id": "m701-q08",
-      "q": "List the regions of the electromagnetic spectrum in order of increasing frequency.",
+      "id": "mm701-q04",
+      "type": "recall",
+      "q": "From memory: why does a constant direct current not produce an electromagnetic wave, while a changing current does?",
+      "keyPoints": [
+        "Constant magnetic and electric fields will not produce an electromagnetic wave.",
+        "It is changing electric fields that produce changing magnetic fields (and vice versa).",
+        "A steady direct current gives an unchanging field, so nothing radiates; only a change radiates."
+      ],
+      "explanation": "The textbook answer is explicit: changing electric fields produce changing magnetic fields, but constant magnetic and electric fields will not produce an electromagnetic wave. If you recalled that 'constant fields do not radiate, only a change does', mark yourself Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 204, "url": "sources/phy12/p204.jpg" }
+    },
+    {
+      "id": "mm701-q05",
+      "type": "worked",
+      "q": "Calculate the speed of electromagnetic waves given the permittivity of free space is \\(8.854 \\times 10^{-12}\\) and the permeability of free space is \\(4\\pi \\times 10^{-7}\\), using Maxwell's relation.",
+      "given": "\\(\\varepsilon_0 = 8.854 \\times 10^{-12}\\) C² s² kg⁻¹ m⁻³,  \\(\\mu_0 = 4\\pi \\times 10^{-7}\\) m kg C⁻²",
+      "working": [
+        "\\(v = \\dfrac{1}{\\sqrt{\\mu_0 \\varepsilon_0}}\\)",
+        "\\(v = \\dfrac{1}{\\sqrt{(4\\pi \\times 10^{-7})(8.854 \\times 10^{-12})}}\\)",
+        "\\(v = 2.998 \\times 10^{8}\\) m s⁻¹",
+        "This equals the speed of light, which led Maxwell to propose that light is an electromagnetic wave."
+      ],
+      "answerValue": 2.998e8,
+      "answerUnit": "m s⁻¹",
+      "tolerance": 1e6,
+      "explanation": "Substituting the permittivity and permeability of free space into Maxwell's relation \\(v = 1/\\sqrt{\\mu_0\\varepsilon_0}\\) gives \\(2.998 \\times 10^{8}\\) m s⁻¹, the speed of light. Because both constants are fixed properties of the vacuum, the speed is the same for every electromagnetic wave.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 202, "url": "sources/phy12/p202.jpg" }
+    },
+    {
+      "id": "mm701-q06",
+      "type": "worked",
+      "q": "Ultraviolet light has a wavelength of 300 nm (\\(3 \\times 10^{-7}\\) m). Using the wave equation, find its frequency. Take the speed as \\(3 \\times 10^{8}\\) m s⁻¹.",
+      "given": "\\(\\lambda = 3 \\times 10^{-7}\\) m,  \\(c = 3 \\times 10^{8}\\) m s⁻¹",
+      "working": [
+        "\\(c = f\\lambda\\)",
+        "\\(f = \\dfrac{c}{\\lambda}\\)",
+        "\\(f = \\dfrac{3 \\times 10^{8}}{3 \\times 10^{-7}}\\)",
+        "\\(f = 1 \\times 10^{15}\\) Hz"
+      ],
+      "answerValue": 1e15,
+      "answerUnit": "Hz",
+      "tolerance": 1e13,
+      "explanation": "Rearranging the wave equation \\(c = f\\lambda\\) gives \\(f = c/\\lambda = 1 \\times 10^{15}\\) Hz. Since the speed in a vacuum is fixed at c, frequency and wavelength are inversely related: shorten the wavelength and the frequency rises in exact proportion.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm701-q07",
+      "type": "mc",
+      "q": "According to Faraday's law as described in the textbook, what does a changing magnetic field induce?",
       "options": [
-        "Gamma, X-ray, ultraviolet, visible, infrared, microwave, radio",
-        "Radio, microwave, infrared, visible, ultraviolet, X-ray, gamma",
-        "Radio, infrared, microwave, visible, X-ray, ultraviolet, gamma",
-        "Visible, ultraviolet, X-ray, gamma, infrared, microwave, radio"
+        "A static charge that begins and ends in a magnetic pole",
+        "An electric field around a loop; if there is no change in the magnetic field, there is no electric field",
+        "A constant magnetic flux that does not vary with time",
+        "A permanent separation of magnetic monopoles"
       ],
       "answer": 1,
-      "explanation": "In order of increasing frequency (and energy, with shortening wavelength): Radio, Microwave, Infrared, Visible, Ultraviolet, X-ray, Gamma. Mnemonic: Raging Martians Invaded Venus Using X-ray Guns.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Faraday's law describes the electric field induced by a changing magnetic field; this electric field forms a loop rather than beginning and ending in a charge. The textbook stresses that if there is no change in the magnetic field, there is no electric field around the loop — changing magnetic fields induce electric fields.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 200, "url": "sources/phy12/p200.jpg" }
     },
     {
-      "id": "m701-q09",
-      "q": "Ultraviolet light has a wavelength of \\( 3.0 \\times 10^{-7}\\ \\mathrm{m} \\). Using \\( c = 3.0 \\times 10^{8}\\ \\mathrm{m\\,s^{-1}} \\), find its frequency.",
-      "options": [
-        "\\( 1.0 \\times 10^{15}\\ \\mathrm{Hz} \\)",
-        "\\( 1.0 \\times 10^{1}\\ \\mathrm{Hz} \\)",
-        "\\( 9.0 \\times 10^{1}\\ \\mathrm{Hz} \\)",
-        "\\( 1.0 \\times 10^{-15}\\ \\mathrm{Hz} \\)"
-      ],
-      "answer": 0,
-      "explanation": "Rearranging \\( c = f\\lambda \\) gives \\( f = c/\\lambda = (3.0 \\times 10^{8})/(3.0 \\times 10^{-7}) = 1.0 \\times 10^{15}\\ \\mathrm{Hz} \\). The numbers divide to 1 and the powers of ten give \\( 10^{8-(-7)} = 10^{15} \\).",
+      "id": "mm701-q08",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m701-q10",
-      "q": "Light slows down when it passes through glass. Does this contradict the rule that all EM waves travel at the one constant speed c?",
+      "q": "The textbook states 'the shorter the wavelength, the greater the energy the wave carries'. On this basis, which forms of electromagnetic radiation does it identify as NOT ionising?",
       "options": [
-        "Yes — it shows c is different for each material",
-        "No — the rule applies only in a vacuum; in glass the wave is delayed by absorption and re-emission by atoms, but its vacuum speed is still c",
-        "Yes — glass changes the frequency, which changes the speed",
-        "No — light actually keeps travelling at c inside the glass too"
+        "Gamma rays and X-rays",
+        "Infra-red, microwaves and radio waves",
+        "Ultraviolet rays and visible light",
+        "X-rays and ultraviolet rays"
       ],
       "answer": 1,
-      "explanation": "The constant-speed rule is stated 'in a vacuum'. Inside glass the wave's energy is repeatedly absorbed and re-emitted by atoms, and that delay slows the light (measured by the refractive index \\( n = c/v_{\\text{medium}} \\)). The fundamental vacuum speed never changes.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The textbook explains the shorter the wavelength, the greater the energy the wave carries, with gamma rays highly ionising. Ultraviolet is also ionising, but visible light is not, and infra-red, microwaves and radio waves are not ionising — they do not deliver enough energy to individual electrons to free them from atoms.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 202, "url": "sources/phy12/p202.jpg" }
+    },
+    {
+      "id": "mm701-q09",
+      "type": "recall",
+      "q": "From memory, state the self-propagation loop of an electromagnetic wave using the two named Maxwell laws (the 'FAME' hook).",
+      "keyPoints": [
+        "A changing electric field, by the Ampère-Maxwell law, induces a changing magnetic field at right angles to it.",
+        "That changing magnetic field, by Faraday's law, induces a changing electric field.",
+        "The two fields continuously regenerate one another, so the disturbance propagates outward as a transverse wave needing no medium.",
+        "FAME: Faraday makes Electric, Ampère-Maxwell makes Magnetic."
+      ],
+      "explanation": "The mark-earning spine is: Ampère-Maxwell named, Faraday named, the phrase 'regenerate one another', and 'no medium required'. If you produced all four, grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm701-q10",
+      "type": "short",
+      "q": "Describe the production of an electromagnetic wave. (2 marks)",
+      "marks": 2,
+      "modelAnswer": "An electromagnetic wave is produced by an accelerating electric charge — for example, electrons oscillating in an antenna driven by an alternating current. The oscillating charge produces a changing electric field, which sets up the self-propagating wave.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States the source is an accelerating (oscillating) electric charge — the word 'accelerating' is essential." },
+        { "marks": 1, "descriptor": "Gives the named example of electrons oscillating in an antenna driven by an alternating current." }
+      ],
+      "explanation": "The non-negotiable word is 'accelerating': a charge moving at constant velocity radiates nothing. Writing only 'a moving charge' loses the mark.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

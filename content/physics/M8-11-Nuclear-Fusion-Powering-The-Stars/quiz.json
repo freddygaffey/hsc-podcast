@@ -1,174 +1,149 @@
 {
   "questions": [
     {
-      "id": "m811-q01",
+      "id": "mm811-q01",
+      "type": "mc",
       "q": "Which statement best defines nuclear fusion?",
       "options": [
-        "A heavy nucleus splitting into two lighter nuclei, releasing energy",
-        "Two light nuclei joining to form a single heavier nucleus that is more tightly bound, releasing energy",
-        "A nucleus emitting an alpha particle to become more stable",
-        "Electrons being stripped from atoms to form a plasma"
+        "The splitting of a large nucleus into two smaller, more stable fragments",
+        "The process of joining two smaller nuclei together to form a larger, more stable nucleus",
+        "The emission of an alpha particle from an unstable nucleus",
+        "The capture of a slow-moving neutron by a uranium nucleus"
       ],
       "answer": 1,
-      "explanation": "Fusion joins two light (small mass number) nuclei into a heavier, more tightly bound nucleus, releasing energy. Splitting a heavy nucleus (A) is fission, and alpha emission (C) is radioactive decay.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Nuclear fusion is the process of joining two smaller nuclei together to form a larger, more stable nucleus, releasing energy. It was first observed by Australian physicist Mark Oliphant in 1932, who fired a fast heavy hydrogen nucleus at a heavy hydrogen target to produce a nucleus of tritium plus an extra neutron.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 424, "url": "sources/phy12/p424.jpg" }
     },
     {
-      "id": "m811-q02",
-      "q": "Using the binding-energy-per-nucleon curve, why does fusing light nuclei release energy?",
-      "options": [
-        "Light nuclei are at the iron peak, so fusing them releases the most energy",
-        "The product sits lower on the curve, so it has less binding energy",
-        "The product sits higher on the curve, closer to iron, so it is more tightly bound and has less mass than the reactants; that mass defect is released as energy",
-        "Mass is destroyed and converted to pure energy with no change in binding"
-      ],
-      "answer": 2,
-      "explanation": "Light nuclei sit low on the steep left of the curve. Their fused product sits higher, nearer iron-56, with greater binding energy per nucleon, so it is more tightly bound and lighter than the reactants. That mass defect is released via \\(E = mc^2\\). Mass is converted, not destroyed (D).",
+      "id": "mm811-q02",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m811-q03",
-      "q": "Why does nuclear fusion require extremely high temperatures?",
+      "q": "On the graph of average binding energy per nucleon against mass number, which nucleus is the most stable, and what does this imply about joining together light nuclei?",
       "options": [
-        "To melt the nuclei so they can flow together",
-        "To give the positively charged nuclei enough kinetic energy to overcome the Coulomb repulsion and approach within range of the strong nuclear force",
-        "To weaken the strong nuclear force so the nuclei can merge",
-        "To strip electrons away so gravity can pull the nuclei together"
+        "Hydrogen-1 is most stable; fusing light nuclei always absorbs energy",
+        "Iron-56 is the most stable nucleus; joining light nuclei produces nuclei with a higher average binding energy per nucleon, so energy is released",
+        "Uranium-238 is most stable; fusion only releases energy for heavy nuclei",
+        "Helium-4 is most stable; both fusion and fission consume energy"
       ],
       "answer": 1,
-      "explanation": "Both nuclei are positively charged and repel via the long-range Coulomb force. Since temperature measures average kinetic energy, an extremely high temperature gives the nuclei enough kinetic energy to beat this Coulomb barrier and get within about \\(10^{-15}\\ \\mathrm{m}\\), where the short-range strong force can bind them.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The graph of average binding energy per nucleon against mass number shows the most stable nuclei have a mass number of about 50 to 60, and the most stable nucleus is in fact iron-56. If we join together light nuclei we produce nuclei with a higher average binding energy per nucleon, so energy is released — this is the process of nuclear fusion.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 413, "url": "sources/phy12/p413.jpg" }
     },
     {
-      "id": "m811-q04",
-      "q": "Besides high temperature, why is high pressure (density) also required for sustained fusion?",
-      "options": [
-        "To increase the strength of the Coulomb barrier",
-        "To slow the nuclei down so they can be captured",
-        "To pack nuclei close together so collisions occur frequently enough to sustain the reaction",
-        "To cool the plasma and prevent it from escaping"
-      ],
-      "answer": 2,
-      "explanation": "High temperature makes each collision energetic enough; high pressure and density make collisions frequent enough to sustain the reaction. In a star, gravity supplies the crushing pressure across its huge mass.",
+      "id": "mm811-q03",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m811-q05",
-      "q": "Which force overcomes the Coulomb repulsion to bind two nuclei together once they are close enough?",
+      "q": "In the centre of the Sun, what force must protons overcome before the strong nuclear force can fuse them, and at roughly what temperature does fusion become significant?",
       "options": [
-        "The gravitational force",
-        "The weak nuclear force",
-        "The strong nuclear force, which is attractive but acts only over a very short range",
-        "The electromagnetic force"
-      ],
-      "answer": 2,
-      "explanation": "The strong nuclear force is powerfully attractive but acts only over about \\(10^{-15}\\ \\mathrm{m}\\). Gravity is far too feeble at the nuclear scale, and the weak force mediates beta decay rather than binding nucleons.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m811-q06",
-      "q": "In the reaction \\({}^{2}_{1}\\mathrm{H} + {}^{3}_{1}\\mathrm{H} \\to {}^{4}_{2}\\mathrm{He} + X\\), what is the particle \\(X\\)?",
-      "options": [
-        "A proton",
-        "A neutron",
-        "A positron",
-        "An alpha particle"
+        "Gravity; about 273 degrees Celsius",
+        "The electrostatic repulsive force between positive charges; about 15 million degrees Celsius",
+        "Air resistance; about 100 degrees Celsius",
+        "The weak nuclear force; about 1 million degrees Celsius"
       ],
       "answer": 1,
-      "explanation": "Balance the numbers: mass \\(2 + 3 = 5\\), and \\({}^{4}\\mathrm{He}\\) accounts for 4, leaving 1; charge \\(1 + 1 = 2\\), and helium accounts for 2, leaving 0. A mass-1, charge-0 particle is a neutron.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The strong nuclear force acts over only very short distances within atoms, while the electrostatic repulsive force that exists between all positive charges resists the protons coming together. Protons can fuse only when they have a lot of kinetic energy, which becomes significant at a temperature of about 15 million degrees Celsius in the centre of the Sun.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 336, "url": "sources/phy12/p336.jpg" }
     },
     {
-      "id": "m811-q07",
-      "q": "The deuterium-tritium fusion reaction has a mass defect of about \\(0.0189\\ \\mathrm{u}\\). Using \\(1\\ \\mathrm{u} \\leftrightarrow 931.5\\ \\mathrm{MeV}\\), the energy released per event is closest to:",
+      "id": "mm811-q04",
+      "type": "recall",
+      "q": "From memory: explain why nuclear fusion requires both extremely high temperature AND extremely high pressure. Address each separately.",
+      "keyPoints": [
+        "Both nuclei are positively charged, so they repel through the long-range Coulomb (electrostatic) force — the Coulomb barrier.",
+        "High temperature gives the nuclei enough kinetic energy to overcome the Coulomb barrier and approach within ~10⁻¹⁵ m, where the short-range strong nuclear force can take over and bind them.",
+        "High pressure and density pack the nuclei close together so that collisions are frequent enough to sustain the reaction.",
+        "In a star, gravity supplies the crushing pressure across its enormous mass."
+      ],
+      "explanation": "If you separated the two requirements — temperature for energetic-enough collisions (to beat the Coulomb barrier) and pressure for frequent-enough collisions (to sustain it) — grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm811-q05",
+      "type": "worked",
+      "q": "Calculate the energy released (in MeV) when deuterium fuses with tritium to form helium-4 plus a neutron, using the light-nuclide atomic masses: deuterium = 2.014102 u, tritium = 3.016049 u, helium-4 = 4.002603 u, neutron = 1.008665 u.",
+      "given": "\\(m(^2_1\\mathrm{H}) = 2.014102\\,\\mathrm{u}\\),  \\(m(^3_1\\mathrm{H}) = 3.016049\\,\\mathrm{u}\\),  \\(m(^4_2\\mathrm{He}) = 4.002603\\,\\mathrm{u}\\),  \\(m(^1_0\\mathrm{n}) = 1.008665\\,\\mathrm{u}\\)",
+      "working": [
+        "Equation: \\(^2_1\\mathrm{H} + {}^3_1\\mathrm{H} \\rightarrow {}^4_2\\mathrm{He} + {}^1_0\\mathrm{n}\\)",
+        "Mass of reactants \\(= 2.014102 + 3.016049 = 5.030151\\,\\mathrm{u}\\)",
+        "Mass of products \\(= 4.002603 + 1.008665 = 5.011268\\,\\mathrm{u}\\)",
+        "Mass defect \\(= 5.030151 - 5.011268 = 0.018883\\,\\mathrm{u}\\)",
+        "Energy \\(= 0.018883 \\times 931.5 = 17.59\\,\\mathrm{MeV}\\)"
+      ],
+      "answerValue": 17.59,
+      "answerUnit": "MeV",
+      "tolerance": 0.1,
+      "explanation": "The mass defect is the total mass of the reactants minus the total mass of the products, taken from the table of atomic masses for light nuclides. Multiplying the mass defect in atomic mass units by 931.5 gives the energy in MeV — about 17.6 MeV per deuterium–tritium event. Do NOT also divide by c²; the 931.5 already carries units of MeV c⁻².",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 414, "url": "sources/phy12/p414.jpg" }
+    },
+    {
+      "id": "mm811-q06",
+      "type": "worked",
+      "q": "The mass defect of a deuterium nucleus is 0.002388 u. Calculate the binding energy of the deuterium nucleus in MeV.",
+      "given": "mass defect \\(= 0.002388\\,\\mathrm{u}\\);  conversion \\(1\\,\\mathrm{u} = 931.5\\,\\mathrm{MeV}\\,c^{-2}\\)",
+      "working": [
+        "Binding energy \\(=\\) mass defect \\(\\times\\, 931.5\\)",
+        "\\(= 0.002388 \\times 931.5\\)",
+        "\\(= 2.224\\,\\mathrm{MeV}\\)"
+      ],
+      "answerValue": 2.224,
+      "answerUnit": "MeV",
+      "tolerance": 0.01,
+      "explanation": "Using the standard conversion factor where the energy equivalent of a mass of 1 u is 931.5 MeV, the mass defect of the deuterium nucleus, 0.002388 u, gives a binding energy of 0.002388 × 931.5 = 2.224 MeV. This is the energy released if a proton and a neutron combine to form a deuterium nucleus.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 413, "url": "sources/phy12/p413.jpg" }
+    },
+    {
+      "id": "mm811-q07",
+      "type": "mc",
+      "q": "Whose proposal first identified the fusion of hydrogen to form helium as the energy source of the Sun, and what is the heaviest element stars can build by fusion in their cores?",
       "options": [
-        "1.8 MeV",
-        "17.6 MeV",
-        "200 MeV",
-        "931.5 MeV"
+        "Hans Bethe; uranium",
+        "Arthur Eddington; iron",
+        "Mark Oliphant; carbon",
+        "Cecilia Payne; helium"
       ],
       "answer": 1,
-      "explanation": "\\(E = \\Delta m \\times 931.5 = 0.0189 \\times 931.5 \\approx 17.6\\ \\mathrm{MeV}\\) per D-T event. The 200 MeV figure (C) is a uranium fission, not this fusion. Remember not to divide by \\(c^2\\) as well — it is built into 931.5.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Einstein's E = mc² and Cecilia Payne's discovery that the Sun was mostly hydrogen led Arthur Eddington in the 1920s to propose that the fusion of hydrogen to form helium was the missing energy source of the Sun. Mark Oliphant observed fusion in 1932 and Hans Bethe published his calculations in 1939. Elements up to iron can be formed in the cores of stars through fusion, if the star is big enough.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 335, "url": "sources/phy12/p335.jpg" }
     },
     {
-      "id": "m811-q08",
-      "q": "How do fusion, fission and chemical combustion compare in energy released PER UNIT MASS of fuel?",
+      "id": "mm811-q08",
+      "type": "recall",
+      "q": "From memory: explain the 'iron limit' — why fusion in a star releases energy only up to iron-56.",
+      "keyPoints": [
+        "Iron-56 sits at the very top of the binding-energy-per-nucleon curve — it is the most tightly bound, most stable nucleus.",
+        "Fusing light nuclei climbs UP the curve toward iron, so the product is more tightly bound, has less mass, and energy is released.",
+        "Fusing nuclei PAST iron would give a product lower on the curve (less tightly bound, more mass), so energy must be put in rather than released.",
+        "Therefore iron is the heaviest element a star can build by ordinary energy-releasing fusion."
+      ],
+      "explanation": "The same curve that enables fusion on the way up also forbids it past the peak. If you linked iron-56 being the most tightly bound nucleus to fusion past it consuming energy, grade Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm811-q09",
+      "type": "mc",
+      "q": "Comparing the energy released per unit mass by fusion, fission and the combustion of fossil fuels, what is the correct order from greatest to least?",
       "options": [
-        "Chemical > fission > fusion",
-        "Fission > fusion > chemical",
-        "Fusion > fission > chemical (both nuclear processes vastly exceed chemical)",
-        "They are all roughly equal"
+        "Fossil-fuel combustion > fission > fusion",
+        "Fission > fusion > fossil-fuel combustion",
+        "Fusion > fission > fossil-fuel combustion",
+        "Fusion = fission, both far less than combustion"
       ],
       "answer": 2,
-      "explanation": "Per unit mass the order is fusion > fission ≫ chemical. Although a single fission event (~200 MeV) exceeds a single fusion event (~17.6 MeV), fusion involves few nucleons on the steepest part of the curve, so per nucleon it wins. Chemical burning only rearranges electrons (~eV per atom).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Per unit mass the order is fusion > fission > chemical combustion ('Fusion Feeds the Cosmos'). Although a single fission event (~200 MeV) releases more than a single fusion event (~17.6 MeV), fusion involves only a few nucleons on the steep light end of the binding-energy curve, so per nucleon it releases more. Both nuclear processes dwarf chemical burning, which only rearranges electrons (~a few eV per atom).",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m811-q09",
-      "q": "What is the iron limit, and why does it exist?",
-      "options": [
-        "Iron is too heavy to fuse, so stars avoid making it",
-        "Fusion releases energy only up to iron-56 (the curve's peak); fusing beyond iron would produce a less tightly bound, heavier product and consume energy, so iron is the heaviest element built by ordinary fusion",
-        "Iron absorbs all the neutrons in a star, halting fusion",
-        "Beyond iron, the Coulomb barrier disappears, so fusion stops being needed"
+      "id": "mm811-q10",
+      "type": "short",
+      "q": "Explain why nuclear fusion requires extremely high temperatures and pressures. (4 marks)",
+      "marks": 4,
+      "modelAnswer": "Both nuclei are positively charged, so they repel each other through the long-range electrostatic, or Coulomb, force — the Coulomb barrier. For fusion to occur, the nuclei must be brought close enough, within about 10⁻¹⁵ m, for the short-range strong nuclear force to overcome that repulsion and bind them together. Overcoming the Coulomb barrier requires the nuclei to collide with very high kinetic energy, and since temperature is a measure of average kinetic energy, this demands an extremely high temperature — around 15 million kelvin in the Sun's core. High pressure and density are also required so that collisions occur frequently enough to sustain the reaction.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Names the electrostatic/Coulomb repulsion between the positive nuclei as the barrier." },
+        { "marks": 1, "descriptor": "States the short-range strong nuclear force must take over once nuclei are within ~10⁻¹⁵ m." },
+        { "marks": 1, "descriptor": "Links high temperature to the kinetic energy needed to overcome the Coulomb barrier." },
+        { "marks": 1, "descriptor": "Explains high pressure/density gives frequent enough collisions to sustain the reaction." }
       ],
-      "answer": 1,
-      "explanation": "Iron-56 is at the top of the binding-energy-per-nucleon curve. Fusing past iron yields a product lower on the curve (less tightly bound, more massive than the reactants), which requires energy input rather than releasing it. So fusion in a star releases energy only up to iron, making iron the heaviest element it can build this way.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m811-q10",
-      "q": "Why is sustained, controlled fusion not yet a viable energy source on Earth, whereas stars manage it readily?",
-      "options": [
-        "There is not enough hydrogen fuel available on Earth",
-        "Fusion produces too much long-lived radioactive waste to be safe",
-        "Confining matter at the required extreme temperature and density is extremely difficult on Earth, while a star's own gravity confines it for free",
-        "The strong nuclear force does not operate on Earth"
-      ],
-      "answer": 2,
-      "explanation": "Fusion needs matter at enormous temperature and density held together long enough to sustain the reaction. A star's immense gravity supplies this confinement for free; on Earth there is no material container (anything that hot vaporises), so reactors must use magnetic confinement, and sustained net-positive fusion has not yet been achieved. Fusion fuel is actually abundant and its waste is comparatively clean.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The mark-earning moves are: name the Coulomb barrier, name the short-range strong force, link temperature to kinetic energy, and use pressure for collision frequency. 'Fusion needs heat to make nuclei join' names no force and scores almost nothing.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

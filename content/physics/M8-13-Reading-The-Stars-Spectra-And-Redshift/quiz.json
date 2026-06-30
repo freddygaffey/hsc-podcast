@@ -1,174 +1,160 @@
 {
   "questions": [
     {
-      "id": "m813-q01",
-      "q": "What kind of object produces a continuous (black-body) spectrum?",
+      "id": "mm813-q01",
+      "type": "mc",
+      "q": "According to Kirchhoff and Bunsen, which kind of object produces a continuous blackbody spectrum rather than an emission or absorption spectrum?",
       "options": [
-        "A hot, low-density gas glowing on its own",
-        "A hot, dense object such as a hot solid, liquid, or high-pressure gas",
-        "A cool gas placed in front of a light source",
-        "A cold solid at room temperature"
+        "An incandescent low-density gas glowing on its own",
+        "A hot solid, liquid or dense gas under pressure, such as the inner layers of a star",
+        "A cool gas in front of a continuous source",
+        "The cool atmosphere of a star"
       ],
       "answer": 1,
-      "explanation": "A hot, dense body (solid, liquid or high-pressure gas) emits black-body radiation at all wavelengths — an unbroken rainbow. A hot LOW-density gas (A) gives an emission (bright-line) spectrum instead; the split is about density, not just temperature.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Kirchhoff and Bunsen found a continuous spectrum is produced by glowing solids, liquids or dense gases under pressure (which behave like black body radiators), such as the inner layers of stars. Incandescent low-density gases give emission lines, and cool gases in front of a continuous source give absorption lines.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 326, "url": "sources/phy12/p326.jpg" }
     },
     {
-      "id": "m813-q02",
-      "q": "Why does a star such as the Sun show an absorption spectrum rather than an emission spectrum?",
+      "id": "mm813-q02",
+      "type": "mc",
+      "q": "Why does a star such as the Sun produce an absorption spectrum rather than an emission spectrum?",
       "options": [
-        "Because a star is a hot gas, and hot gases always produce emission lines",
-        "Because the dense hot interior produces a continuous spectrum, and the cooler thin outer atmosphere absorbs its characteristic wavelengths on the way out, cutting dark lines into it",
-        "Because the star is too cool to emit any light of its own",
-        "Because interstellar dust removes most of the star's light"
+        "The Sun is a hot gas, and all hot gases produce emission lines",
+        "The hot dense plasma at the centre produces a continuous spectrum, and the cooler atmosphere absorbs specific frequencies on the way out, cutting dark lines into the continuum",
+        "The cool atmosphere emits bright lines that overwhelm the continuous spectrum",
+        "The Sun is too distant for the continuous spectrum to reach us"
       ],
       "answer": 1,
-      "explanation": "The dense hot interior radiates a continuous black-body spectrum; as that light passes through the cooler, less-dense atmosphere, atoms there absorb their own wavelengths, leaving dark absorption lines. Saying 'a hot gas makes emission lines' (A) is the density trap — a hot DENSE body makes a continuum.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The hot dense plasma at the centre of a star produces a continuous blackbody spectrum; as that light moves outward, the gases in the star's cooler atmosphere absorb their characteristic frequencies, producing an absorption spectrum. The trap is to call the Sun 'a hot gas' and predict emission lines — a hot DENSE body gives a continuous spectrum, so density, not just temperature, is the deciding factor.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 326, "url": "sources/phy12/p326.jpg" }
     },
     {
-      "id": "m813-q03",
-      "q": "For a given element, how do its emission lines compare with its absorption lines?",
-      "options": [
-        "They occur at completely different wavelengths",
-        "They occur at exactly the same wavelengths, because the same energy-level gaps are involved",
-        "Emission lines occur only at longer wavelengths than absorption lines",
-        "Absorption lines are always twice the wavelength of emission lines"
+      "id": "mm813-q03",
+      "type": "recall",
+      "q": "State the three rules Kirchhoff and Bunsen established in 1859 for which type of spectrum a source produces.",
+      "keyPoints": [
+        "A continuous colour spectrum is produced by glowing solids or dense gaseous bodies (such as the Sun), behaving like black body radiation.",
+        "If a gas lies between the continuous light source and the spectroscope, light is absorbed at wavelengths characteristic of the chemical components of the gas (absorption spectrum).",
+        "A glowing gas produces bright lines on a dark background at wavelengths characteristic of the chemical components of the gas (emission spectrum)."
       ],
-      "answer": 1,
-      "explanation": "Emission (a fall down between two levels) and absorption (a jump up between the same two levels) involve the same energy gap, hence the same photon energy and wavelength. This is why a dark line and a bright line at the same wavelength fingerprint the same element.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled all three Kirchhoff–Bunsen rules and tied the absorption and emission lines to the characteristic wavelengths of the gas's chemical components, grade yourself Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 325, "url": "sources/phy12/p325.jpg" }
     },
     {
-      "id": "m813-q04",
-      "q": "Which feature of a stellar spectrum is used to determine the star's surface temperature?",
+      "id": "mm813-q04",
+      "type": "mc",
+      "q": "The spectral classes O, B, A, F, G, K, M are arranged in order of what, and where does the Sun sit?",
       "options": [
-        "The identity (wavelengths) of the dark absorption lines",
-        "The Doppler shift of the lines",
-        "The shape of the continuous background — where the black-body peak sits (its colour)",
-        "The total number of absorption lines present"
+        "In order of abundance, with the Sun as a blue class O star",
+        "Alphabetically, with the Sun as a red class M star",
+        "In order of surface temperature from hottest (O, blue) to coolest (M, red), with the Sun a yellow class G star",
+        "In order of distance from Earth, with the Sun as a white class A star"
       ],
       "answer": 2,
-      "explanation": "Temperature is read from the shape of the continuous black-body background: hotter stars peak at shorter, bluer wavelengths; cooler stars peak redder. Line identity gives composition and line shift gives velocity — keeping these three distinct is the key skill.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The classes are arranged by surface temperature, from O the hottest (blue, peaking in the ultraviolet) to M the coolest (red, peaking in the infra-red). The Sun is a type G star and these are yellow. The odd-looking order arose because the letters were assigned before the temperature ordering was understood — recall the mnemonic 'Oh Be A Fine Girl, Kiss Me'.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 328, "url": "sources/phy12/p328.jpg" }
     },
     {
-      "id": "m813-q05",
-      "q": "A star's spectrum peaks at a short, blue wavelength. What does this indicate about the star?",
+      "id": "mm813-q05",
+      "type": "mc",
+      "q": "What does the colour of a star tell an astronomer, and how does wavelength relate to temperature?",
       "options": [
-        "It is a relatively cool star",
-        "It is a relatively hot star",
-        "It is moving rapidly away from us",
-        "It is made mostly of iron"
+        "Colour gives the star's distance; hotter stars look redder",
+        "Colour indicates the surface temperature; hotter stars radiate more energy at short (blue) wavelengths, cooler stars at longer (red) wavelengths",
+        "Colour gives the star's chemical composition directly, independent of temperature",
+        "Colour gives the star's velocity; bluer stars are always receding"
       ],
       "answer": 1,
-      "explanation": "Bluer (shorter-wavelength) peak means hotter; redder (longer-wavelength) peak means cooler. This is the trap people reverse — on a tap red means hot, but in physics blue is hotter. A blueSHIFT (C) would indicate approach, but a blue PEAK indicates high temperature.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Hot stars radiate more energy at short wavelengths (the blue end), while cooler stars peak at longer wavelengths (the red end), so the colour of a star indicates the area of its spectrum that is most intense — a direct readout of surface temperature. The Sun is a yellow star, neither particularly hot nor cool in the range of star temperatures.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 215, "url": "sources/phy12/p215.jpg" }
     },
     {
-      "id": "m813-q06",
-      "q": "The spectral classes O, B, A, F, G, K, M are ordered by what property?",
-      "options": [
-        "Alphabetical order",
-        "Abundance of the stars in the galaxy",
-        "Surface temperature, from hottest (O) to coolest (M)",
-        "Distance from Earth"
+      "id": "mm813-q06",
+      "type": "worked",
+      "q": "A galaxy is at a distance of 6.2 × 10¹⁹ km and is receding at about 1100 km s⁻¹. Calculate Hubble's constant.",
+      "given": "\\(v = 1100\\,\\mathrm{km\\,s^{-1}}\\),  \\(d = 6.2 \\times 10^{19}\\,\\mathrm{km}\\)  (i.e. \\(2 \\times 10^{6}\\,\\mathrm{pc} \\times 3.09 \\times 10^{13}\\,\\mathrm{km\\,pc^{-1}}\\))",
+      "working": [
+        "\\(H = \\dfrac{v}{d}\\)  (Hubble's constant is the gradient of the velocity–distance graph)",
+        "\\(H = \\dfrac{1100}{6.2 \\times 10^{19}}\\)",
+        "The kilometres cancel, leaving inverse seconds:",
+        "\\(H = 1.77 \\times 10^{-17}\\,\\mathrm{s^{-1}}\\)"
       ],
-      "answer": 2,
-      "explanation": "OBAFGKM runs from hottest, bluest (O) to coolest, reddest (M). The letters were assigned before the ordering principle was understood, then rearranged into temperature order — hence the odd-looking sequence. The Sun is a class G star.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 1.77e-17,
+      "answerUnit": "s⁻¹",
+      "tolerance": 5e-19,
+      "explanation": "Hubble's constant is the recession velocity divided by the distance — the gradient of the velocity-versus-distance graph. Converting the distance into kilometres lets the length units cancel, leaving inverse seconds, which is the giveaway that 1/H will be a time.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 318, "url": "sources/phy12/p318.jpg" }
     },
     {
-      "id": "m813-q07",
-      "q": "If a star's absorption lines are all shifted together toward longer (red) wavelengths, what does this tell you?",
-      "options": [
-        "The star is approaching us",
-        "The star is receding from us (its radial velocity is away)",
-        "The star is hotter than the Sun",
-        "The star is composed of different elements than expected"
+      "id": "mm813-q07",
+      "type": "worked",
+      "q": "Using Hubble's constant of 1.77 × 10⁻¹⁷ s⁻¹ and assuming a constant expansion rate, estimate the age of the universe in seconds.",
+      "given": "\\(H = 1.77 \\times 10^{-17}\\,\\mathrm{s^{-1}}\\)",
+      "working": [
+        "\\(t = \\dfrac{1}{H}\\)",
+        "\\(t = \\dfrac{1}{1.77 \\times 10^{-17}}\\)",
+        "\\(t = 5.64 \\times 10^{16}\\,\\mathrm{s}\\)",
+        "Converting to years: \\(5.64 \\times 10^{16} \\div 3.16 \\times 10^{7} \\approx 1.8 \\times 10^{9}\\) years"
       ],
-      "answer": 1,
-      "explanation": "A redshift — the whole line pattern slid toward longer wavelengths while keeping its spacing — means the source is receding. Doppler shift gives the radial velocity (along the line of sight) only; the pattern shifting bodily, not changing internally, is how you know it is motion, not a different element.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 5.64e16,
+      "answerUnit": "s",
+      "tolerance": 1e15,
+      "explanation": "Assuming a constant expansion rate, the age of the universe is the reciprocal of Hubble's constant. This gives about 1.8 × 10⁹ years — 2 billion years to one significant figure, matching Hubble's original estimate. That figure is famously too young: it is less than the 4.6-billion-year age of the Earth, and Baade's recalibration of Cepheid distances later raised the modern value to about 13.8 billion years.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 318, "url": "sources/phy12/p318.jpg" }
     },
     {
-      "id": "m813-q08",
-      "q": "What was Cecilia Payne-Gaposchkin's key contribution to determining stellar composition?",
+      "id": "mm813-q08",
+      "type": "mc",
+      "q": "Why is the observation that red-shift is greater for more distant galaxies consistent with an expanding universe?",
       "options": [
-        "She discovered the absorption lines of hydrogen for the first time",
-        "She showed that line strength depends on temperature as well as abundance, and after correcting for this revealed that stars are overwhelmingly hydrogen and helium",
-        "She proved the Sun is made mostly of iron, matching the Earth",
-        "She invented the spectroscope used to record stellar spectra"
+        "More distant galaxies are intrinsically brighter, so their light is redder",
+        "An expanding universe stretches the wavelength of light on its journey, so light from more distant galaxies travels longer and is stretched more, giving greater red-shift",
+        "Distant galaxies are made of redder elements than nearby ones",
+        "Red-shift is caused by dust between galaxies, which is denser at greater distances"
       ],
       "answer": 1,
-      "explanation": "Payne-Gaposchkin recognised that an absorption line's strength depends strongly on the star's temperature (which sets which energy levels and ionisation states are populated), not just on abundance. Correcting for this, she showed stars are mostly hydrogen and helium — overturning the iron-rich-Sun belief. She interpreted existing lines; she did not discover them (A).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "An expanding universe stretches the wavelength of light on its journey; the longer the light travels, the more it is stretched, so more distant galaxies show greater red-shift. This velocity-proportional-to-distance pattern is the signature of space itself expanding and carrying the galaxies apart, not galaxies merely flying through static space.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 316, "url": "sources/phy12/p316.jpg" }
     },
     {
-      "id": "m813-q09",
-      "q": "Which statement is the STRONG (full-mark) evidence that the universe is expanding?",
+      "id": "mm813-q09",
+      "type": "mc",
+      "q": "Using the Doppler effect on a star's absorption lines, what exactly does an astronomer measure, and what does a red-shift indicate?",
       "options": [
-        "Galaxy spectra are redshifted, so galaxies are moving away from us",
-        "Galaxy redshift increases with distance, so recession velocity is proportional to distance — exactly what uniform expansion of space predicts, with no special centre",
-        "All galaxies are moving away from a single central point, like shrapnel from an explosion",
-        "Galaxies are blueshifted, showing the universe is contracting"
+        "The star's full translational velocity; red-shift means it is approaching",
+        "The radial velocity — the component of velocity along the line between observer and star; red-shift means the star is moving away from us",
+        "The star's tangential velocity across the sky; red-shift means it is rotating faster",
+        "The star's temperature; red-shift means it is hotter"
       ],
       "answer": 1,
-      "explanation": "Merely 'moving away' (A) is only motion and earns little. The strong answer adds that redshift increases with distance (velocity proportional to distance, Hubble's law) — the signature of space itself stretching uniformly, with no centre. The 'central point' picture (C) is the explosion misconception that expansion replaces.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The Doppler effect shifts a star's absorption lines towards the blue end if it is moving towards us and towards the red end if it is moving away. It measures only the radial velocity — the component of the star's velocity along the line between the observer on Earth and the star. The actual translational velocity is the vector sum of the radial and tangential velocities, so the Doppler shift alone does not give the full speed.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 216, "url": "sources/phy12/p216.jpg" }
     },
     {
-      "id": "m813-q10",
-      "q": "Hubble's law lets us estimate the age of the universe as \\(t = 1/H\\). Why must Hubble's constant \\(H\\) have units of inverse time (s⁻¹) for this to work?",
-      "options": [
-        "Because velocity is always measured in seconds",
-        "Because the reciprocal of an inverse time is a time, so \\(1/H\\) gives an age; this requires the length units in \\(H = v/d\\) to cancel",
-        "Because distance must be measured in light-years",
-        "Because the age must come out in parsecs"
+      "id": "mm813-q10",
+      "type": "short",
+      "q": "Explain why early astronomers wrongly concluded the Sun was mainly composed of iron, and state the correct composition. (3 marks)",
+      "marks": 3,
+      "modelAnswer": "The Sun's spectrum contains a very large number of spectral lines, many of them iron lines, which confused astronomers into thinking the Sun was mainly composed of iron. However, the strength of an element's absorption lines depends on the temperature of the star — temperature sets which ionisation states and energy levels are populated, and therefore which lines appear strongly — not simply on the element's abundance. When the temperature dependence of the line strengths is correctly accounted for, the Sun (and stars generally) are shown to be composed mostly of hydrogen and helium, with only a small proportion of heavier elements.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Identifies that the Sun's spectrum has many lines (including strong iron lines), leading to the early iron conclusion." },
+        { "marks": 1, "descriptor": "States that line strength depends on the star's temperature/ionisation state, not abundance alone." },
+        { "marks": 1, "descriptor": "Concludes the Sun is mostly hydrogen and helium." }
       ],
-      "answer": 1,
-      "explanation": "\\(H = v/d\\); when velocity (km s⁻¹) is divided by distance (km), the kilometres cancel and \\(H\\) has units of s⁻¹. Since \\(t = 1/H\\), the reciprocal of an inverse second is a second (a time), giving the age. If the length units don't cancel, \\(1/H\\) is not a time at all.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The key is that line strength must be interpreted through temperature: the iron lines were strong because the Sun's temperature excites them efficiently, not because iron is abundant. Correcting for this reveals stars are overwhelmingly hydrogen and helium.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 329, "url": "sources/phy12/p329.jpg" }
+    },
+    {
+      "id": "mm813-q11",
+      "type": "recall",
+      "q": "From memory: a single stellar spectrum carries three separate readings. Using the hook 'Tall Cats Vanish', state each reading and the spectral feature it comes from.",
+      "keyPoints": [
+        "Temperature — from the shape of the continuous background (the blackbody peak / colour): bluer is hotter, redder is cooler.",
+        "Composition — from the identity of the absorption lines: which wavelengths the dark lines fall at, matched to laboratory fingerprints of the elements.",
+        "Velocity — from the shift of those same lines: redshift means receding, blueshift means approaching, giving the radial velocity only."
+      ],
+      "explanation": "The number-one trap is conflating the three. Burn in the mapping: continuum shape for Temperature, line identity for Composition, line shift for Velocity. If you kept all three distinct, grade Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

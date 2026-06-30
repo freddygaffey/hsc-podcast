@@ -1,174 +1,145 @@
 {
   "questions": [
     {
-      "id": "m607-q01",
-      "q": "A DC motor performs which energy transformation?",
+      "id": "mm607-q01",
+      "type": "mc",
+      "q": "A simple DC electric motor is best described as a device that transforms which form of energy into which other form?",
       "options": [
-        "Mechanical (rotational) energy into electrical energy",
-        "Electrical energy into rotational kinetic (mechanical) energy",
-        "Chemical energy into magnetic energy",
-        "Heat energy into electrical energy"
+        "Rotational kinetic energy into electrical potential energy",
+        "Electrical potential energy into rotational kinetic energy",
+        "Chemical potential energy into magnetic field energy",
+        "Mechanical kinetic energy directly into heat energy"
       ],
       "answer": 1,
-      "explanation": "A motor converts electrical energy into rotational kinetic (mechanical) energy. This is the exact inverse of a generator, which converts mechanical energy into electrical energy.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "An electric motor is a device that transforms electrical potential energy into rotational kinetic energy by passing a current through a coil in a magnetic field. Running the same machine backwards — rotation in, electrical energy out — gives a generator.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 165, "url": "sources/phy12/p165.jpg" }
     },
     {
-      "id": "m607-q02",
-      "q": "Which list correctly names the four main components of a DC motor?",
+      "id": "mm607-q02",
+      "type": "mc",
+      "q": "In a simple DC motor the coil is wound onto a frame called the armature. What name is given to the armature and coil together, and what name is given to the stationary magnets fixed to the casing?",
       "options": [
-        "Rotor coil, field magnets, brushes, split-ring commutator",
-        "Rotor coil, slip rings, brushes, capacitor",
-        "Stator coil, field magnets, transformer, commutator",
-        "Armature, slip rings, brushes, diode"
+        "Armature and coil are the stator; the stationary magnets are the rotor",
+        "Armature and coil are the rotor; the stationary magnets are the stator",
+        "Both the coil and the magnets are called the rotor",
+        "Both the coil and the magnets are called the commutator"
+      ],
+      "answer": 1,
+      "explanation": "The coil is wound onto a frame (the armature) and the armature and coil together are known as the rotor — the rotating part. The magnets are fixed to the casing and are stationary, so they are the stator. Students often wrongly call the magnets the rotor; the magnets do not move.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 166, "url": "sources/phy12/p166.jpg" }
+    },
+    {
+      "id": "mm607-q03",
+      "type": "mc",
+      "q": "The split-ring commutator and the brushes of a DC motor together form a mechanical switch. What does this mechanical switch do?",
+      "options": [
+        "It changes the direction of the current through the coil every half turn so the coil keeps rotating in the same direction",
+        "It increases the magnitude of the current through the coil to boost the torque",
+        "It keeps the current in the coil flowing in one constant direction throughout the whole rotation",
+        "It converts the alternating supply into a steady direct current for the coil"
       ],
       "answer": 0,
-      "explanation": "The four parts are the rotor (armature) coil, the field magnets (stator), the brushes, and the split-ring commutator. A DC motor uses a split-ring commutator, not slip rings.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The split-ring commutator and the brushes form a mechanical switch that changes the direction of the current through the coil every half turn, so that the coil continues rotating in the same direction. Without this reversal the coil would only rock back and forth.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 166, "url": "sources/phy12/p166.jpg" }
     },
     {
-      "id": "m607-q03",
-      "q": "What is the function of the split-ring commutator?",
+      "id": "mm607-q04",
+      "type": "recall",
+      "q": "From memory, using the textbook's description: what would happen to the coil if the current through the coil did NOT change its direction of flow, and why does the coil keep rotating through the position where the torque is almost zero?",
+      "keyPoints": [
+        "If the current through the coil did not change direction, the coil would rock back and forth about the position where the torque is almost zero.",
+        "The momentum of the coil keeps it rotating even though the torque is very small (near zero) in that position.",
+        "Just after that position the commutator changes the direction of the current, the forces reverse, and the torque stays clockwise — so the coil keeps rotating the same way."
+      ],
+      "explanation": "If you recalled 'rock back and forth without reversal', 'momentum carries it through the near-zero-torque position', and 'the commutator reverses the current so the torque stays in the same direction', grade yourself Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 167, "url": "sources/phy12/p167.jpg" }
+    },
+    {
+      "id": "mm607-q05",
+      "type": "mc",
+      "q": "Why are the brushes of a DC motor made of graphite, and what practical problem do the brushes solve?",
       "options": [
-        "To supply the external magnetic field",
-        "To reverse the current in the coil every half-turn, at the zero-torque position",
-        "To increase the supply voltage",
-        "To store charge between rotations"
+        "Graphite is strongly magnetic, and the brushes store charge to drive the coil",
+        "Graphite is a form of carbon that conducts electricity and is also used as a lubricant; the brushes stop the connecting wires from becoming tangled",
+        "Graphite is an electrical insulator, and the brushes permanently break the circuit",
+        "Graphite is ferromagnetic, and the brushes strengthen the external magnetic field"
       ],
       "answer": 1,
-      "explanation": "The commutator is a rotating mechanical switch that reverses the current in the coil every half-turn, exactly at the zero-torque (dead) position, so the torque always acts in the same rotational direction — converting oscillation into continuous rotation.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Graphite, used in the brushes, is a form of carbon that conducts electricity and is also used as a lubricant, so it slides smoothly against the rotating commutator. The brushes connect the commutator to the DC source of emf and are necessary to stop the connecting wires from becoming tangled.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 168, "url": "sources/phy12/p168.jpg" }
     },
     {
-      "id": "m607-q04",
-      "q": "Why must a DC motor use a split-ring commutator while an AC motor uses slip rings?",
-      "options": [
-        "DC current never flows, so it must be switched on mechanically",
-        "DC flows in only one direction, so the reversal must be forced mechanically; an AC supply already reverses itself",
-        "AC motors do not produce torque",
-        "Slip rings reverse the current faster than a commutator"
+      "id": "mm607-q06",
+      "type": "worked",
+      "q": "A coil contains 15 loops and its plane is sitting at an angle of 30° to the direction of a magnetic field of 7.6 mT. The coil has dimensions 8.0 cm by 12.0 cm and a current of 15 mA passes through it. Determine the magnitude of the torque acting on the coil.",
+      "given": "\\(n = 15\\) loops,  \\(B = 7.6\\,\\mathrm{mT} = 7.6\\times10^{-3}\\,\\mathrm{T}\\),  \\(I = 15\\,\\mathrm{mA} = 1.5\\times10^{-2}\\,\\mathrm{A}\\),  \\(A = 0.080 \\times 0.120 = 9.6\\times10^{-3}\\,\\mathrm{m^2}\\),  \\(\\theta = 30^\\circ\\) (angle between coil plane and field)",
+      "working": [
+        "\\(\\tau = nBIA\\cos\\theta\\)",
+        "\\(\\tau = 15 \\times 7.6\\times10^{-3} \\times 1.5\\times10^{-2} \\times 9.6\\times10^{-3} \\times \\cos 30^\\circ\\)",
+        "\\(\\tau = 1.71\\times10^{-3} \\times 9.6\\times10^{-3} \\times 0.866\\)",
+        "\\(\\tau = 1.4\\times10^{-5}\\,\\mathrm{N\\,m}\\)"
       ],
-      "answer": 1,
-      "explanation": "A DC supply flows one way, so the current reversal in the coil must be done mechanically by the split ring. An AC supply already reverses direction on its own, so an AC motor needs only slip rings (continuous, unsplit) to maintain the connection — no reversal device.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 1.4e-5,
+      "answerUnit": "N m",
+      "tolerance": 1e-6,
+      "explanation": "Direct substitution into \\(\\tau = nBIA\\cos\\theta\\), with \\(\\theta\\) measured from the plane of the coil to the field (so cosine, not sine). The unit is newton metres because torque is a force times a distance. Applying the right-hand push rule to the left-hand side gives anticlockwise rotation.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 170, "url": "sources/phy12/p170.jpg" }
     },
     {
-      "id": "m607-q05",
-      "q": "Why are the brushes typically made of graphite?",
-      "options": [
-        "Graphite is magnetic",
-        "Graphite both conducts electricity and self-lubricates, sliding smoothly on the commutator",
-        "Graphite reverses the current",
-        "Graphite increases the supply voltage"
+      "id": "mm607-q07",
+      "type": "worked",
+      "q": "A rectangular coil of 20 turns and area 5×10⁻³ m² carries a current of 2 A in a magnetic field of 0.1 T. Calculate the maximum torque on the coil, and state the orientation of the coil at which this maximum occurs.",
+      "given": "\\(n = 20\\),  \\(A = 5\\times10^{-3}\\,\\mathrm{m^2}\\),  \\(I = 2\\,\\mathrm{A}\\),  \\(B = 0.1\\,\\mathrm{T}\\); maximum when \\(\\cos\\theta = 1\\) (coil plane parallel to field)",
+      "working": [
+        "Maximum torque occurs when \\(\\cos\\theta = 1\\), i.e. the plane of the coil is parallel to the field, so \\(\\tau_{\\max} = nBIA\\)",
+        "\\(\\tau_{\\max} = 20 \\times 0.1 \\times 2 \\times 5\\times10^{-3}\\)",
+        "\\(\\tau_{\\max} = 2\\times10^{-2}\\,\\mathrm{N\\,m} = 0.02\\,\\mathrm{N\\,m}\\)"
       ],
-      "answer": 1,
-      "explanation": "Graphite conducts electricity and self-lubricates, so the stationary brushes slide smoothly against the spinning commutator without grinding it down, maintaining the connection between the supply and the rotating coil.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 0.02,
+      "answerUnit": "N m",
+      "tolerance": 0.001,
+      "explanation": "Maximum torque is at \\(\\cos\\theta = 1\\) — when the coil plane lies parallel to the field — so \\(\\tau_{\\max} = nBIA = 0.02\\,\\mathrm{N\\,m}\\). The trap is thinking the maximum is when the plane is perpendicular to the field; that is the zero-torque position.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m607-q06",
-      "q": "Without a commutator, what happens to a current loop at the zero-torque (dead) position?",
-      "options": [
-        "It stops dead and remains stationary",
-        "Its momentum carries it past, but the unchanged forces then push it back, so it oscillates",
-        "It accelerates without limit",
-        "The current reverses on its own"
-      ],
-      "answer": 1,
-      "explanation": "Inertia carries the loop past the dead point, but because the forces have not changed direction, they then produce a torque pushing it back. The result is oscillation about the dead point, not continuous rotation. (It does not simply stop — claiming it \"stops\" is a trap.)",
+      "id": "mm607-q08",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m607-q07",
-      "q": "Which statement about the force and torque on the active coil sides as the coil rotates is correct?",
+      "q": "Beyond increasing the current or field strength, how does winding two or more coils onto the armature affect a DC motor, and what does a stator with curved magnetic poles achieve?",
       "options": [
-        "Both the force and the torque are constant",
-        "The force stays constant in size, but the torque varies with orientation",
-        "The force varies, but the torque is constant",
-        "Both the force and the torque are zero at the parallel position"
-      ],
-      "answer": 1,
-      "explanation": "The active sides stay perpendicular to the field, so the force stays constant at \\(BIL\\). The torque varies because the lever arm changes — maximum when the coil plane is parallel to the field, zero when perpendicular. Distinguishing \"constant force, varying torque\" is the mark.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m607-q08",
-      "q": "A coil of 20 turns and area \\(5\\times10^{-3}\\ \\mathrm{m^2}\\) carries 2 A in a 0.1 T field. What is the maximum torque, and at what orientation does it occur?",
-      "options": [
-        "\\(2\\times10^{-2}\\ \\mathrm{N\\,m}\\), with the plane of the coil parallel to the field",
-        "\\(2\\times10^{-2}\\ \\mathrm{N\\,m}\\), with the plane of the coil perpendicular to the field",
-        "\\(2\\times10^{-1}\\ \\mathrm{N\\,m}\\), with the plane parallel to the field",
-        "\\(4\\times10^{-2}\\ \\mathrm{N\\,m}\\), with the plane perpendicular to the field"
+        "Multiple coils increase the average torque and make the motor run more smoothly, while curved poles keep the force at right angles to the line of action for longer, keeping the torque at its maximum value for longer",
+        "Multiple coils reduce the average torque, while curved poles weaken the magnetic field of the stator",
+        "Multiple coils reverse the current automatically, removing the need for a commutator, while curved poles act as the brushes",
+        "Multiple coils convert the DC motor into an AC motor, while curved poles generate the back emf"
       ],
       "answer": 0,
-      "explanation": "Maximum torque is \\(nBIA = 20 \\times 0.1 \\times 2 \\times 5\\times10^{-3} = 2\\times10^{-2}\\ \\mathrm{N\\,m}\\), occurring when \\(\\cos\\theta = 1\\) — i.e. when the plane of the coil is parallel to the field.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Two or more coils wound on the armature increase the average torque and make the motor run more smoothly than a single-coil motor (each coil needs its own pair of commutator segments). A stator with curved magnetic poles keeps the force at right angles to the line joining the point of application and the axle for longer, keeping the torque at its maximum for longer.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 169, "url": "sources/phy12/p169.jpg" }
     },
     {
-      "id": "m607-q09",
-      "q": "Apart from raising \\(n\\), \\(B\\), \\(I\\) or \\(A\\), which design feature helps increase a motor's torque?",
-      "options": [
-        "Using slip rings instead of a commutator",
-        "Inserting a soft-iron (ferromagnetic) core in the armature to concentrate the field",
-        "Removing the field magnets",
-        "Reducing the number of turns"
-      ],
-      "answer": 1,
-      "explanation": "A soft-iron core concentrates and strengthens the magnetic field through the coil, effectively increasing \\(B\\) and so the torque. Curved (radial) pole pieces and multiple coils also help by keeping torque high and smooth, but the iron core is the classic example.",
+      "id": "mm607-q09",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "Why does a simple DC motor require a split-ring commutator, whereas a simple AC motor uses slip rings?",
+      "options": [
+        "Because the DC supply current flows in only one direction, so the reversal in the coil must be forced mechanically by the split ring; an AC supply already reverses direction on its own, so the slip rings need only maintain a continuous connection",
+        "Because slip rings are cheaper and DC motors must use the more expensive split ring",
+        "Because an AC motor has no magnetic field and needs slip rings to create one",
+        "Because a commutator reverses current, and an AC motor also needs to reverse its coil current every half turn"
+      ],
+      "answer": 0,
+      "explanation": "A DC supply flows in only one direction, so the coil current can only be reversed at the dead point by mechanically swapping the connections — the split-ring commutator does this. An AC supply already alternates (50 times a second in Australia), so an AC motor needs only slip rings — continuous, unsplit rings that maintain the connection without reversing anything. Never say an AC motor 'has a commutator'.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m607-q10",
-      "q": "If you double the number of turns on a coil and halve the current, what happens to the torque?",
-      "options": [
-        "It doubles",
-        "It halves",
-        "It stays the same",
-        "It quadruples"
+      "id": "mm607-q10",
+      "type": "recall",
+      "q": "From memory, explain the role of the split-ring commutator in a simple DC motor as a full marks chain — include WHEN it reverses the current and WHY that matters.",
+      "keyPoints": [
+        "As the coil rotates toward the zero-torque position (its plane perpendicular to the field), the torque falls to zero and the coil's momentum carries it past this dead point.",
+        "Without reversal the unchanged forces would push the coil back, so it would oscillate about the zero-torque position instead of rotating.",
+        "The split-ring commutator reverses the current in the coil every half turn, exactly at the zero-torque position, so the force on each side reverses and the torque keeps acting in the same rotational direction — turning oscillation into continuous, one-directional rotation."
       ],
-      "answer": 2,
-      "explanation": "Torque is proportional to \\(n \\times I\\). Doubling \\(n\\) (\\(\\times 2\\)) and halving \\(I\\) (\\(\\times \\tfrac12\\)) gives \\(2 \\times \\tfrac12 = 1\\) — no change. Reasoning from the proportionality is faster than re-substituting.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Full marks needs four links: set up the torque from the motor effect, identify the zero-torque (dead) point as the problem, describe the commutator mechanism physically, and tie the reversal to the result (continuous rotation). Never let 'reverses the current' stand alone — always attach the when (every half-turn, at the zero-torque position) and the why.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

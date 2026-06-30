@@ -1,0 +1,143 @@
+{
+  "questions": [
+    {
+      "id": "mp304-q01",
+      "type": "mc",
+      "q": "Why does a designer conduct market research?",
+      "options": [
+        "To increase brand awareness",
+        "To increase the number of sales",
+        "To better understand their client",
+        "To identify the needs for the intended design"
+      ],
+      "answer": 3,
+      "explanation": "Market research gathers information about the target market so the designer can identify the needs the design must satisfy. Brand awareness and sales are marketing outcomes, not the purpose of the research itself.",
+      "source": { "origin": "hsc", "ref": "2019 HSC Design and Technology Q2", "year": 2019 }
+    },
+    {
+      "id": "mp304-q02",
+      "type": "mc",
+      "q": "Why do designers conduct market research prior to designing a new product?",
+      "options": [
+        "To develop a possible marketing campaign",
+        "To determine the level of consumer demand",
+        "To access alternative manufacturing techniques",
+        "To understand the impact of a life cycle analysis"
+      ],
+      "answer": 1,
+      "explanation": "Market research carried out before designing identifies consumer needs and gauges the level of demand, confirming there is a market for the product. A marketing campaign is developed later to sell the product, not the reason research is done up front.",
+      "source": { "origin": "hsc", "ref": "2022 HSC Design and Technology Q4", "year": 2022 }
+    },
+    {
+      "id": "mp304-q03",
+      "type": "mc",
+      "q": "Which method would be the most effective to determine the target market of a consumer product?",
+      "options": [
+        "Employ an entrepreneur to evaluate the product",
+        "Gather a focus group to complete a questionnaire about the product",
+        "Post a comment about the product on social media and ask for responses",
+        "Take a prototype of the product to the local shopping centre and ask shoppers for their opinions"
+      ],
+      "answer": 1,
+      "explanation": "A focus group completing a questionnaire gathers structured, comparable data from a selected sample of potential users, making it the most reliable way to identify the target market. Social media comments and casual shopper opinions are unstructured and unrepresentative.",
+      "source": { "origin": "hsc", "ref": "2018 HSC Design and Technology Q2", "year": 2018 }
+    },
+    {
+      "id": "mp304-q04",
+      "type": "mc",
+      "q": "What is the key distinction between primary and secondary market research?",
+      "options": [
+        "Primary research is cheaper and faster; secondary research is costly and slow",
+        "Primary research is data you collect yourself directly from the source; secondary research is data someone else has already collected",
+        "Primary research uses the internet; secondary research uses surveys and interviews",
+        "Primary research analyses competitors; secondary research identifies the target market"
+      ],
+      "answer": 1,
+      "explanation": "The clean line the exam tests is who originally gathered the data: primary research is fresh data you collect yourself (surveys, interviews, observation, experiments), while secondary research is data already collected by others (ABS, CSIRO, Choice, reports). Primary is current and specific but costly; secondary is cheaper and faster but general and possibly dated.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp304-q05",
+      "type": "mc",
+      "q": "The Five Ps framework is used to analyse competitors in the marketing environment. Which option correctly lists the Five Ps?",
+      "options": [
+        "Product, price, promotion, place, packaging",
+        "Product, price, profit, place, people",
+        "Purpose, price, promotion, place, packaging",
+        "Product, price, promotion, profit, packaging"
+      ],
+      "answer": 0,
+      "explanation": "The Five Ps are product (what the competition offers), price (what it sells for), promotion (how it is marketed), place (where and how it is sold and distributed) and packaging (how it is presented). Analysing competitors across all five reveals where a new design can do better, which is how an opportunity is spotted.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp304-q06",
+      "type": "mc",
+      "q": "A designer divides the population into sections grouped by age, income, profession, geographic location and gender. What is this process called?",
+      "options": [
+        "Competitor analysis",
+        "Market segmentation into demographics",
+        "Secondary research",
+        "Promotion through the marketing environment"
+      ],
+      "answer": 1,
+      "explanation": "Segmentation divides the population into demographics, sections grouped by common characteristics such as age, income, profession, geographic location and gender. Defining your demographic tells you who you are designing for, which feeds the appropriateness factor and the brief.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp304-q07",
+      "type": "recall",
+      "q": "From memory: what's the difference between primary and secondary market research, and give one example of each?",
+      "keyPoints": [
+        "Primary research is data you collect yourself, directly from the source, e.g. a survey or interview with potential customers.",
+        "Secondary research is data someone else has already collected, e.g. statistics from the Australian Bureau of Statistics or a Choice magazine review.",
+        "Trade-off: primary is fresh and specific but costly; secondary is cheap and fast but general and possibly dated. The test is always who originally gathered the data."
+      ],
+      "explanation": "If you got 'collect yourself versus already collected by others' with a correct example each, grade Good or Easy. The trap is mixing them up.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp304-q08",
+      "type": "recall",
+      "q": "From memory: what are the four jobs (purposes) of market research?",
+      "keyPoints": [
+        "Confirms whether there is a genuine need, so you aren't designing something nobody wants.",
+        "Identifies opportunities, gaps in the market a new product could fill.",
+        "Identifies and understands the target market, who will buy this.",
+        "Analyses the competition, what already exists."
+      ],
+      "explanation": "Market research finds out what the marketplace wants. If you recalled all four purposes, grade Good or Easy; the breadth, not just 'see what people want', is what scores in the exam.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp304-q09",
+      "type": "short",
+      "q": "Distinguish between primary and secondary market research. (3 marks)",
+      "marks": 3,
+      "modelAnswer": "Primary market research is data collected directly by the designer from the original source, for example through surveys, interviews or observation of potential customers. Secondary market research is data obtained from sources other than the original, that someone else has already collected, for example statistics from the Australian Bureau of Statistics, Choice magazine reviews, or competitor reports. The distinction is that primary research is gathered first-hand and is current and specific but costly, whereas secondary research is gathered from existing sources and is cheaper and faster but more general.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Defines primary research (collected yourself, first-hand) with an example." },
+        { "marks": 1, "descriptor": "Defines secondary research (already collected by others) with an example." },
+        { "marks": 1, "descriptor": "States the distinction/trade-off: who originally gathered the data, and current-and-specific vs cheaper-and-general." }
+      ],
+      "explanation": "The marker checks who originally gathered the data. Define each with an example and state the trade-off to secure all three marks.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp304-q10",
+      "type": "extended",
+      "q": "Explain how market research can be used to identify needs and opportunities. (5 marks)",
+      "marks": 5,
+      "modelAnswer": "A designer identifies needs and opportunities by combining primary and secondary market research. Primary research, such as surveys, interviews and observation of the target market, reveals directly what consumers want and what problems they experience; an unmet want is a need. Secondary research, such as industry statistics and competitor analysis using the Five Ps (product, price, promotion, place and packaging), reveals where existing products fall short, and a gap the competition has missed is an opportunity. Segmenting the market into demographics ensures the research targets the right consumers. However, the research must be accurate and correctly interpreted: the Ford Edsel failed despite extensive research because the market had shifted and the findings were misread, so identifying a need is only valuable if it is read correctly.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Explains primary research with techniques and links an unmet want to a need." },
+        { "marks": 1, "descriptor": "Explains secondary research, including competitor analysis via the Five Ps." },
+        { "marks": 1, "descriptor": "Connects a gap in the market to an opportunity the design can address." },
+        { "marks": 1, "descriptor": "Mentions segmentation into demographics to target the right consumers." },
+        { "marks": 1, "descriptor": "Adds the interpretation caveat with an example (e.g. the Ford Edsel)." }
+      ],
+      "explanation": "The high-band move is the caveat: research must be correctly interpreted. Name the source types and techniques, connect unmet need to need and market gap to opportunity, and cite the Edsel for misread research.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    }
+  ]
+}

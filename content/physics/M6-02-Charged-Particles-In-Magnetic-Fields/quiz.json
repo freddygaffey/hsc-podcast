@@ -1,174 +1,144 @@
 {
   "questions": [
     {
-      "id": "m602-q01",
-      "q": "What is the key difference between how an electric field and a magnetic field act on a charge?",
+      "id": "mm602-q01",
+      "type": "mc",
+      "q": "The magnitude of the force experienced by a charge travelling through a magnetic field is given by F = qvB sin θ, where θ is the angle between the velocity and the field lines. What does this equation tell you about the force?",
       "options": [
-        "An electric field only acts on moving charges; a magnetic field acts on stationary ones",
-        "A magnetic field only exerts a force on a moving charge; an electric field acts even on a stationary charge",
-        "Both fields only act on moving charges",
-        "Both fields act on stationary charges equally"
+        "The force is a maximum when the velocity of the charge is parallel to the field lines",
+        "The force is a maximum when the velocity of the charge is perpendicular to the magnetic field lines, and reduces to zero when the velocity is parallel to the field lines",
+        "The force is constant for all angles between the velocity and the field lines",
+        "The force is a maximum when the velocity is parallel and zero when the velocity is perpendicular to the field lines"
       ],
       "answer": 1,
-      "explanation": "A stationary charge in an electric field still feels \\(F = qE\\), but a magnetic field exerts no force on a charge at rest — motion is the price of admission. This single fact (from \\(F = qvB\\sin\\theta\\) with \\(v = 0\\)) underlies the whole topic.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "In F = qvB sin θ, θ is the angle between the velocity and the field lines. When the velocity is perpendicular to the field, θ = 90°, sin θ = 1 and the force is its maximum value qvB; when the velocity is parallel, θ = 0, sin θ = 0 and the force reduces to zero.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 106, "url": "sources/phy12/p106.jpg" }
     },
     {
-      "id": "m602-q02",
-      "q": "The magnetic force on a charge moving at angle \\(\\theta\\) to the field is \\(F = qvB\\sin\\theta\\). When is this force a maximum?",
+      "id": "mm602-q02",
+      "type": "mc",
+      "q": "Using F = qvB sin θ, in which situation does a charge in a magnetic field experience no force?",
       "options": [
-        "When the velocity is parallel to the field (\\(\\theta = 0^\\circ\\))",
-        "When the velocity is perpendicular to the field (\\(\\theta = 90^\\circ\\))",
-        "When the charge is stationary",
-        "When the velocity is at \\(45^\\circ\\) to the field"
+        "When the charge moves perpendicular to the magnetic field lines",
+        "A motionless charge in a magnetic field, or a charge that moves along the field parallel to the field lines, experiences no force",
+        "When the charge has a large velocity across the field",
+        "When the charge is a positive alpha particle rather than a negative electron"
       ],
       "answer": 1,
-      "explanation": "At \\(\\theta = 90^\\circ\\), \\(\\sin\\theta = 1\\) and \\(F = qvB\\) is maximum. At \\(\\theta = 0^\\circ\\) the velocity is along the field, \\(\\sin\\theta = 0\\), and the force vanishes. The trap is measuring the angle from the perpendicular instead of from the field.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If v = 0 then F = qvB sin θ = 0, so a motionless charge in a magnetic field experiences no force. If the velocity is parallel to the field lines then θ = 0, sin θ = 0, so a charge that moves along the field also experiences no force.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 106, "url": "sources/phy12/p106.jpg" }
     },
     {
-      "id": "m602-q03",
-      "q": "Why does a magnetic force never change the speed of a charged particle?",
+      "id": "mm602-q03",
+      "type": "recall",
+      "q": "When alpha and beta radiation particles are released into the same magnetic field, describe how each particle is deflected and why the beta particle follows the tighter circular arc.",
+      "keyPoints": [
+        "The alpha particle is a relatively heavy, positively charged helium ion; applying the right-hand push rule, it is pushed upwards along a circular arc.",
+        "The beta particle is a comparatively low mass, negatively charged electron, so it is forced downwards along a much tighter circular arc.",
+        "The smaller mass of the electron causes the smaller radius of its arc; the force acts as a centripetal force creating circular motion."
+      ],
+      "explanation": "The sign of the charge sets the direction of deflection (alpha up, beta down) and the mass sets the size of the circle — the low-mass electron has the smaller radius. If you recalled both the direction and the mass-radius link, grade Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 107, "url": "sources/phy12/p107.jpg" }
+    },
+    {
+      "id": "mm602-q04",
+      "type": "mc",
+      "q": "To derive the radius of the circular motion of a charged particle in a magnetic field, the only significant force is the magnetic force F = qvB, acting as a centripetal force. Equating it to mv²/r gives which expression for the radius?",
       "options": [
-        "Because the force is too weak to do work",
-        "Because the force is always perpendicular to the velocity, so it does no work",
-        "Because the charge has no kinetic energy in a magnetic field",
-        "Because the field strength is constant"
+        "r = Bq / (mv)",
+        "r = mv / (Bq)",
+        "r = mvB / q",
+        "r = qvB / m"
       ],
       "answer": 1,
-      "explanation": "Work requires a force component along the displacement. The magnetic force is always perpendicular to the velocity (the direction of motion), so it does no work. By the work-energy theorem, no work means no change in kinetic energy and therefore no change in speed — only direction changes.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The magnetic force qvB provides the centripetal force, so qvB = mv²/r. Cancelling one factor of v gives qB = mv/r, and rearranging for the radius gives r = mv/(Bq). A greater mass or velocity increases the radius, while a greater charge or field strength decreases it.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 108, "url": "sources/phy12/p108.jpg" }
     },
     {
-      "id": "m602-q04",
-      "q": "To find the direction of the magnetic force on a moving electron using the right-hand push rule, you must:",
+      "id": "mm602-q05",
+      "type": "worked",
+      "q": "An electron travelling at 5.9 × 10⁶ m s⁻¹ enters a magnetic field of 6.0 mT. What is the radius of its circular path?",
+      "given": "\\(m = 9.1 \\times 10^{-31}\\,\\mathrm{kg}\\),  \\(q = 1.6 \\times 10^{-19}\\,\\mathrm{C}\\),  \\(v = 5.9 \\times 10^{6}\\,\\mathrm{m\\,s^{-1}}\\),  \\(B = 6.0\\,\\mathrm{mT} = 6.0 \\times 10^{-3}\\,\\mathrm{T}\\)",
+      "working": [
+        "\\(r = \\dfrac{mv}{Bq}\\)",
+        "\\(r = \\dfrac{9.1 \\times 10^{-31} \\times 5.9 \\times 10^{6}}{6.0 \\times 10^{-3} \\times 1.6 \\times 10^{-19}}\\)",
+        "\\(r = 5.6 \\times 10^{-3}\\,\\mathrm{m} = 5.6\\,\\mathrm{mm}\\)"
+      ],
+      "answerValue": 0.0056,
+      "answerUnit": "m",
+      "tolerance": 0.0002,
+      "explanation": "Straight application of r = mv/Bq, using the magnitude of the electron's charge. Watch the millitesla conversion: 6.0 mT = 6.0 × 10⁻³ T, not 6. The tiny radius (5.6 mm) reflects how easily the feather-light electron is turned.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 108, "url": "sources/phy12/p108.jpg" }
+    },
+    {
+      "id": "mm602-q06",
+      "type": "worked",
+      "q": "A stream of electrons with a velocity of 1.2 × 10⁶ m s⁻¹ enters a uniform magnetic field of strength 2.6 × 10⁻³ T at right angles. Calculate the magnitude of the force that the field exerts on each electron.",
+      "given": "\\(q = 1.6 \\times 10^{-19}\\,\\mathrm{C}\\),  \\(v = 1.2 \\times 10^{6}\\,\\mathrm{m\\,s^{-1}}\\),  \\(B = 2.6 \\times 10^{-3}\\,\\mathrm{T}\\),  \\(\\theta = 90^{\\circ}\\)",
+      "working": [
+        "\\(F = qvB\\sin\\theta = qvB\\) (since \\(\\theta = 90^{\\circ}\\), \\(\\sin\\theta = 1\\))",
+        "\\(F = 1.6 \\times 10^{-19} \\times 1.2 \\times 10^{6} \\times 2.6 \\times 10^{-3}\\)",
+        "\\(F = 5.0 \\times 10^{-16}\\,\\mathrm{N}\\)"
+      ],
+      "answerValue": 5.0e-16,
+      "answerUnit": "N",
+      "tolerance": 1e-17,
+      "explanation": "Because the electron enters at right angles, θ = 90° and the force is simply qvB. A tiny force, but acting on a far tinier mass, so it bends the path hard. This is part (a) of the textbook's 4.3 Exercise question.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 109, "url": "sources/phy12/p109.jpg" }
+    },
+    {
+      "id": "mm602-q07",
+      "type": "mc",
+      "q": "From the expression r = mv/Bq for the radius of the circular path, how does the radius of the circular motion depend on the particle's mass, velocity, charge and the magnetic field strength?",
       "options": [
-        "Use the rule unchanged, exactly as for a positive charge",
-        "Reverse the result, because the electron is negative",
-        "Point the thumb along the field instead of the velocity",
-        "Ignore the field direction entirely"
+        "A greater mass or velocity will decrease the radius, while a greater charge or field strength will increase it",
+        "A greater mass or velocity will increase the radius, while a greater charge or magnetic field strength will decrease the radius of the circular path",
+        "Only the charge affects the radius; mass, velocity and field strength have no effect",
+        "A greater velocity decreases the radius because faster particles turn more sharply"
       ],
       "answer": 1,
-      "explanation": "The right-hand push rule is built for positive charges. For a negative electron the force is the exact opposite of what the right hand gives, so you reverse the result (or point the thumb opposite to the electron's motion, or use the left hand). Reading the palm straight off for an electron is the most common error in this topic.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Reading r = mv/Bq directly: mass and velocity are on the top, so a greater mass or velocity increases the radius; charge and field strength are on the bottom, so a greater charge or magnetic field strength decreases the radius. The trap is thinking more force means a bigger circle — a stronger field gives a tighter circle.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 108, "url": "sources/phy12/p108.jpg" }
     },
     {
-      "id": "m602-q05",
-      "q": "Equating the magnetic force to the centripetal force gives the radius of the circular path. Which equation is the key step in this derivation?",
+      "id": "mm602-q08",
+      "type": "mc",
+      "q": "Comparing the effect of electric and magnetic fields on a moving charge, which statement correctly distinguishes the force and the trajectory in each case?",
       "options": [
-        "\\(qE = \\dfrac{mv^2}{r}\\)",
-        "\\(qvB = \\dfrac{mv^2}{r}\\)",
-        "\\(qvB = mv\\)",
-        "\\(qV = \\tfrac{1}{2}mv^2\\)"
+        "Both an electric field and a magnetic field exert a force directed along the field, and both produce a parabolic trajectory",
+        "An electric field exerts a force directed along the field and produces a parabolic trajectory, while a magnetic field exerts a force perpendicular to the field and the velocity and produces a circular trajectory",
+        "An electric field produces a circular trajectory, while a magnetic field produces a parabolic trajectory",
+        "A magnetic field exerts a force on a stationary charge directed along the velocity, producing a straight-line trajectory"
       ],
       "answer": 1,
-      "explanation": "The magnetic force \\(qvB\\) provides the centripetal force \\(mv^2/r\\), so \\(qvB = mv^2/r\\). Cancelling one factor of \\(v\\) and rearranging gives \\(r = mv/qB\\). Stating that the magnetic force provides the centripetal force, and writing this line, is where the derivation marks are.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "An electric field exerts a force on a charge directed along the field and produces a parabolic trajectory. A magnetic field exerts a force only on a charge already moving across the field, directed perpendicular to both the field and the velocity, and produces a circular trajectory.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 109, "url": "sources/phy12/p109.jpg" }
     },
     {
-      "id": "m602-q06",
-      "q": "According to \\(r = mv/qB\\), increasing the magnetic field strength \\(B\\) will:",
+      "id": "mm602-q09",
+      "type": "recall",
+      "q": "In your own words, explain why a magnetic force can change the direction of a charged particle's motion but cannot change its speed.",
+      "keyPoints": [
+        "The magnetic force is always directed perpendicular to the velocity of the charge at every instant.",
+        "Work is force times displacement in the direction of the force; a force perpendicular to the motion does no work, so the kinetic energy and therefore the speed stay constant.",
+        "The force does continually change the direction of the velocity — it is a centripetal force — so the direction changes even though the speed does not."
+      ],
+      "explanation": "The band-six phrasing names every step: perpendicular force, does no work, constant speed and kinetic energy, but direction continually changes. If you only said 'the magnetic force accelerates it', grade Again or Hard — that misses that the speed is untouched.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm602-q10",
+      "type": "mc",
+      "q": "The period of a charged particle's circular motion in a uniform magnetic field works out to T = 2πm/qB. What does this result tell you, and why is it the key to the cyclotron?",
       "options": [
-        "Increase the radius, because a stronger push flings the particle wider",
-        "Decrease the radius, because a stronger inward force makes a tighter curve",
-        "Leave the radius unchanged",
-        "Reverse the direction of the circle"
+        "The period grows with speed, so faster particles take longer to go round",
+        "The speed v cancels, so the period is independent of speed — a faster particle just draws a proportionally larger circle in the same time, letting the cyclotron use one fixed timing",
+        "The radius is independent of speed, so all particles trace the same-sized circle",
+        "The period depends only on the speed, not on the mass, charge or field"
       ],
       "answer": 1,
-      "explanation": "\\(B\\) is in the denominator, so a stronger field gives a smaller radius. The force is centripetal (inward), so a bigger inward pull means a tighter curl, not a wider one. The trap is assuming more force means a bigger radius.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m602-q07",
-      "q": "An electron travelling at \\(5.9\\times10^{6}\\ \\mathrm{m\\,s^{-1}}\\) enters a field of 6.0 mT at right angles. What is the radius of its path? (\\(m_e = 9.1\\times10^{-31}\\ \\mathrm{kg}\\), \\(e = 1.6\\times10^{-19}\\ \\mathrm{C}\\))",
-      "options": [
-        "\\(5.6\\times10^{-6}\\ \\mathrm{m}\\)",
-        "\\(5.6\\times10^{-3}\\ \\mathrm{m}\\)",
-        "\\(5.6\\ \\mathrm{m}\\)",
-        "\\(5.6\\times10^{-1}\\ \\mathrm{m}\\)"
-      ],
-      "answer": 1,
-      "explanation": "Convert 6.0 mT to \\(6.0\\times10^{-3}\\ \\mathrm{T}\\). Then \\(r = mv/qB = (9.1\\times10^{-31})(5.9\\times10^{6}) / [(1.6\\times10^{-19})(6.0\\times10^{-3})] = 5.6\\times10^{-3}\\ \\mathrm{m}\\) (5.6 mm). Forgetting the millitesla conversion is off by a factor of 1000.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m602-q08",
-      "q": "A proton and an electron enter the same field at the same speed, perpendicular to the field. How do their radii compare?",
-      "options": [
-        "The radii are equal because charge and field are the same",
-        "The electron's radius is about 1836 times larger",
-        "The proton's radius is about 1836 times larger because it is more massive",
-        "The proton's radius is smaller because it carries more charge"
-      ],
-      "answer": 2,
-      "explanation": "With \\(r = mv/qB\\) and equal speed, charge magnitude and field, the radius depends only on mass. The proton is about 1836 times more massive than the electron, so its radius is about 1836 times larger; the light electron whips round a much tighter circle.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m602-q09",
-      "q": "The period of circular motion in a magnetic field is \\(T = 2\\pi m / qB\\). What does this tell us?",
-      "options": [
-        "The period increases with the particle's speed",
-        "The period is independent of the particle's speed",
-        "The period decreases with the particle's speed",
-        "The period depends on the radius but not the mass"
-      ],
-      "answer": 1,
-      "explanation": "Substituting \\(r = mv/qB\\) into \\(T = 2\\pi r/v\\) makes \\(v\\) cancel, giving \\(T = 2\\pi m/qB\\). A faster particle travels a proportionally larger circle, so the time per revolution is unchanged. This is the cyclotron principle. Note it is the period — not the radius — that is independent of speed.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m602-q10",
-      "q": "What is the trajectory of a charge moving at right angles to a uniform magnetic field, and how does it differ from the electric-field case?",
-      "options": [
-        "A parabola, the same as in an electric field",
-        "A circle, whereas an electric field gives a parabola",
-        "A straight line, whereas an electric field gives a circle",
-        "A helix, whereas an electric field gives a straight line"
-      ],
-      "answer": 1,
-      "explanation": "The perpendicular magnetic force constantly reorients to stay at right angles to the velocity, giving uniform circular motion. The electric force is constant in direction (like gravity), giving a parabola. Writing \"parabola\" for a uniform magnetic field is a lost mark.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Substituting r = mv/qB into T = 2πr/v cancels the speed entirely, leaving T = 2πm/qB — the period depends only on mass, charge and field. A faster particle follows a larger circle but covers it faster, so the time per loop is unchanged; the cyclotron exploits this by kicking the particle at a fixed frequency. Note it is the period, not the radius, that is independent of speed.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

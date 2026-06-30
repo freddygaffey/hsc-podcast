@@ -1,0 +1,148 @@
+{
+  "questions": [
+    {
+      "id": "mp299-q01",
+      "type": "mc",
+      "q": "What is the primary purpose of a work health and safety (WHS) risk assessment?",
+      "options": [
+        "To identify dangerous equipment",
+        "To evaluate workshop organisation and practices",
+        "To access the impact of materials on the environment",
+        "To identify and assess potential injury or illness in the workplace"
+      ],
+      "answer": 3,
+      "explanation": "A WHS risk assessment systematically identifies hazards and evaluates the potential for injury or illness so controls can be put in place. Identifying dangerous equipment is only one part of this broader process of assessing all workplace risks to people. Remember the module distinction: a hazard is the potential source of harm, the risk is its likelihood and severity.",
+      "source": { "origin": "hsc", "ref": "2023 HSC Design and Technology Q5", "year": 2023 }
+    },
+    {
+      "id": "mp299-q02",
+      "type": "mc",
+      "q": "Which work health and safety (WHS) consideration should be taken into account during the manufacturing stage of a product?",
+      "options": [
+        "A survey of past employee injuries",
+        "Periodic maintenance of machinery and tools",
+        "Identification, assessment and control of risks and hazards",
+        "Assessment of risks and hazards identified in the use of the final product"
+      ],
+      "answer": 2,
+      "explanation": "WHS during manufacture follows the risk-management cycle: identifying, assessing and then controlling hazards in the workplace. Control is then applied through the hierarchy (ES-EAP) from eliminate down to PPE last. Injury surveys, machine maintenance and end-use risks are narrower concerns within or beyond that process.",
+      "source": { "origin": "hsc", "ref": "2014 HSC Design and Technology Q5", "year": 2014 }
+    },
+    {
+      "id": "mp299-q03",
+      "type": "mc",
+      "q": "A manufacturer chooses to produce cutting boards made from bamboo because it can be regrown and is inexpensive. Which of the following would be the manufacturer's determining factor when selecting this material?",
+      "options": [
+        "Aesthetics",
+        "Availability",
+        "Sustainability",
+        "Life cycle analysis"
+      ],
+      "answer": 2,
+      "explanation": "Choosing a material because it can be regrown points to sustainability — using a renewable resource that can be replenished for future use, the 'environmental' criterion in CPA FACE. Availability only concerns whether the material can be obtained, not the renewable, environmentally responsible reasoning given here.",
+      "source": { "origin": "hsc", "ref": "2023 HSC Design and Technology Q2", "year": 2023 }
+    },
+    {
+      "id": "mp299-q04",
+      "type": "mc",
+      "q": "Which of the following is the most important factor when considering the sustainability of a material for the manufacture of a product?",
+      "options": [
+        "The durability of the selected material",
+        "The cost of manufacturing the product",
+        "The ability of the material to be renewed",
+        "The effect of a carbon tax on manufacturing the product"
+      ],
+      "answer": 2,
+      "explanation": "Sustainability of a material depends most on whether it can be renewed, ensuring long-term resource availability and reduced environmental impact — meeting present needs without compromising the future. Durability and cost are relevant design factors but do not directly address sustainability.",
+      "source": { "origin": "hsc", "ref": "2013 HSC Design and Technology Q3", "year": 2013 }
+    },
+    {
+      "id": "mp299-q05",
+      "type": "mc",
+      "q": "Distinguish between a production setting and a production scale.",
+      "options": [
+        "Setting is how many units are made; scale is where and by whom they are made",
+        "Setting is where and by whom a product is made; scale is how many units are made",
+        "Setting and scale are two names for the same thing and can be used interchangeably",
+        "Setting is the material a product is made from; scale is the physical size of the product"
+      ],
+      "answer": 1,
+      "explanation": "This is the headline trap of the module. The setting is where and by whom a product is made (domestic, community, industrial, commercial — DCIC), whereas the scale is how many units are made (job, batch, mass — JBM). They are related but independent axes: a domestic setting usually does job production, but could also batch-produce.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp299-q06",
+      "type": "mc",
+      "q": "In the hierarchy of control (ES-EAP), why is personal protective equipment (PPE) considered the least effective control?",
+      "options": [
+        "It is the most expensive control for an employer to implement",
+        "It only reduces the harm to the individual wearing it and does not remove the hazard itself",
+        "It eliminates the hazard at its source before anyone is exposed",
+        "It is optional and is rarely required in real workplaces"
+      ],
+      "answer": 1,
+      "explanation": "PPE is last because it acts on the person, not the hazard: it only protects the wearer, and only when worn correctly and consistently. Higher controls act on the hazard for everyone — eliminating it removes the risk entirely, while substitution and engineering controls reduce it at the source regardless of individual behaviour. So you work the hierarchy from the top and reach for PPE only as a last line of defence.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp299-q07",
+      "type": "recall",
+      "q": "From memory, recite all six of this module's mnemonics and say what each one stands for.",
+      "keyPoints": [
+        "DCIC — the four production settings: Domestic, Community, Industrial, Commercial (community is the odd one out, for the common good not profit).",
+        "JBM — the three scales of production: Job, Batch, Mass (one, some, millions).",
+        "CPA FACE — the material selection criteria: Characteristics, Properties, Availability, Function, Appearance, Cost, Environmental.",
+        "ES-EAP — the hierarchy of control: Eliminate, Substitute, Engineering, Administrative, PPE (most to least effective, PPE last).",
+        "PC SCIE — the seven environmental and social issues: Personal values, Cultural beliefs, Sustainability, Safety and health, Community needs, Individual needs, Equity.",
+        "MR SCP — the five applications of computer-based technologies: Modelling, Research, Simulation and graphics, Communication, Presentation."
+      ],
+      "explanation": "Six hooks, six topics. If you got four or more of the six fully, you're in good shape — the weak ones are the ones to drill tonight. Grade yourself Good or Easy only if you nailed each expansion, not just the letters.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp299-q08",
+      "type": "recall",
+      "q": "In your own words, name the five applications of computer-based technologies (MR SCP) and give one benefit each brings to a designer.",
+      "keyPoints": [
+        "Modelling — CAD builds and modifies 3D designs on screen, testing them without time-consuming physical model-making, and links through to CAM/3D printing for manufacture.",
+        "Research — fast access to information and data to inform decisions.",
+        "Simulation and graphics — tests a design under real conditions virtually, identifying problems before any material is used, saving time, cost and waste.",
+        "Communication — enables remote collaboration on shared models, overcoming distance.",
+        "Presentation — communicates the refined design persuasively to a client."
+      ],
+      "explanation": "The exam reward is naming specific capabilities (CAD-to-CAM, virtual simulation) rather than just 'computers help', and noting designers must discriminate — choosing the right tool for each task rather than using computers indiscriminately.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp299-q09",
+      "type": "short",
+      "q": "Two drink bottles are shown: a single-use disposable plastic bottle and a reusable drink bottle.\n\nDiscuss the long-term environmental impacts of either drink bottle.",
+      "marks": 4,
+      "modelAnswer": "Considering long-term consequences, the reusable bottle is the more appropriate design of the two. Because it can be used many times it produces less waste and less landfill, promotes recycling and represents more responsible marketing and consumer choice. Using biodegradable materials and schemes such as 'return and earn' refunds reinforces this, giving the product lasting value and worth for consumers, society and the environment.",
+      "criteria": [
+        { "marks": "4", "descriptor": "Demonstrates a comprehensive understanding of long-term environmental impacts; provides points for and/or against" },
+        { "marks": "3", "descriptor": "Demonstrates a sound understanding of long-term environmental impacts; points for and/or against" },
+        { "marks": "2", "descriptor": "Outlines an environmental impact" },
+        { "marks": "1", "descriptor": "Provides relevant information" }
+      ],
+      "explanation": "This is the module's single-use-bottle case in exam form: link the scale of production to the multiplied environmental harm, and frame the judgement with a life cycle analysis across materials, manufacture, use and disposal. Reaching a conditional judgement on durability and end-of-life is what lifts the answer.",
+      "source": { "origin": "hsc", "ref": "2022 HSC Design and Technology Q13", "year": 2022 }
+    },
+    {
+      "id": "mp299-q10",
+      "type": "extended",
+      "q": "Mass production is the process of creating goods on a large scale and with limited human input.\n\nExplain how the trend towards mass production may affect workplace practices.",
+      "marks": 6,
+      "modelAnswer": "Mass production reshapes workplace practices in both positive and negative ways. Processes such as robotics, CNC machinery and automation increase the speed and accuracy of producing goods, from injection-moulded plastics to small-batch items, and allow extended hours of operation and total quality management. However, the same trend forces job transition and the upskilling of employees, and can lead to job losses and higher unemployment, affecting individuals' wellbeing and society at large as the nature of work changes with technological advancement.",
+      "criteria": [
+        { "marks": "6", "descriptor": "Provides a comprehensive explanation of the effects of the mass production trend on workplace practices" },
+        { "marks": "5", "descriptor": "Provides an explanation of the effects the mass production trend has on workplace practices" },
+        { "marks": "4", "descriptor": "Provides a description of the effects the mass production trend has on workplace practices" },
+        { "marks": "2–3", "descriptor": "Demonstrates some understanding of the effects the mass production trend has on workplace practices" },
+        { "marks": "1", "descriptor": "Provides relevant information" }
+      ],
+      "explanation": "Mass production is the 'M' in the JBM scale: large, standardised, interchangeable output at the lowest cost per unit through economies of scale, but high tooling cost. The marks come from weighing both sides — automation's gains in speed, accuracy and quality control against the human cost of job transition, upskilling and unemployment.",
+      "source": { "origin": "hsc", "ref": "2022 HSC Design and Technology Q14", "year": 2022 }
+    }
+  ]
+}

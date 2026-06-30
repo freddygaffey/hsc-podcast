@@ -1,0 +1,146 @@
+{
+  "questions": [
+    {
+      "id": "mh107-q01",
+      "type": "mc",
+      "q": "What is the primary purpose of a work health and safety (WHS) risk assessment?",
+      "options": [
+        "To identify dangerous equipment",
+        "To evaluate workshop organisation and practices",
+        "To access the impact of materials on the environment",
+        "To identify and assess potential injury or illness in the workplace"
+      ],
+      "answer": 3,
+      "explanation": "A WHS risk assessment systematically identifies hazards and evaluates the potential for injury or illness so controls can be put in place. Identifying dangerous equipment is only one part of this broader process of assessing all workplace risks to people.",
+      "source": { "origin": "hsc", "ref": "2023 HSC Design and Technology Q5", "year": 2023 }
+    },
+    {
+      "id": "mh107-q02",
+      "type": "mc",
+      "q": "Which work health and safety (WHS) consideration should be taken into account during the manufacturing stage of a product?",
+      "options": [
+        "A survey of past employee injuries",
+        "Periodic maintenance of machinery and tools",
+        "Identification, assessment and control of risks and hazards",
+        "Assessment of risks and hazards identified in the use of the final product"
+      ],
+      "answer": 2,
+      "explanation": "WHS during manufacture follows the risk-management cycle: identifying, assessing and then controlling hazards in the workplace. Injury surveys, machine maintenance and end-use risks are narrower concerns within or beyond that process.",
+      "source": { "origin": "hsc", "ref": "2014 HSC Design and Technology Q5", "year": 2014 }
+    },
+    {
+      "id": "mh107-q03",
+      "type": "mc",
+      "q": "Why do Occupational Health and Safety practices need to be followed in a workplace?",
+      "options": [
+        "To provide employees with a safe workplace",
+        "To ensure that employees are healthy in their workplace",
+        "To ensure that someone is trained as a first aid officer in all workplaces",
+        "To give employees an opportunity to complain to management about an unsafe workplace"
+      ],
+      "answer": 0,
+      "explanation": "The primary purpose of OHS practices is to protect workers by providing a safe working environment. The other options describe narrow or incidental outcomes rather than the core reason for following OHS practices.",
+      "source": { "origin": "hsc", "ref": "2010 HSC Design and Technology Q1", "year": 2010 }
+    },
+    {
+      "id": "mh107-q04",
+      "type": "mc",
+      "q": "Outcome H4.2 names three responsibility factors to weigh when selecting resources for the MDP. Which option lists them?",
+      "options": [
+        "Cost, availability and aesthetics",
+        "Safety, ethical issues and environmental issues",
+        "Strength, durability and appearance",
+        "Function, form and finish"
+      ],
+      "answer": 1,
+      "explanation": "The episode holds the three responsibility factors with the hook SEE: Safety (safe to work with, use and dispose of), Ethical (ethically sourced, respects IP), and Environmental (sustainable, recyclable, low carbon footprint). Cost and availability alone caps a justification low.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh107-q05",
+      "type": "mc",
+      "q": "According to the hierarchy of control (ES-EAP), what is the most effective way to control a hazard?",
+      "options": [
+        "Provide personal protective equipment to the worker",
+        "Introduce administrative controls such as training and procedures",
+        "Eliminate the hazard entirely",
+        "Add engineering controls such as guards and dust extraction"
+      ],
+      "answer": 2,
+      "explanation": "Elimination sits at the top of the hierarchy of control (eliminate, substitute, engineering, administrative, PPE) because it removes the hazard entirely for everyone. PPE is last because it only protects the individual wearing it.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh107-q06",
+      "type": "mc",
+      "q": "Why is personal protective equipment (PPE) placed last in the hierarchy of control?",
+      "options": [
+        "Because it is the most expensive control to implement",
+        "Because it only protects the individual wearing it, rather than removing the hazard for everyone",
+        "Because it is required by law only as a final step",
+        "Because it eliminates the hazard but is slow to apply"
+      ],
+      "answer": 1,
+      "explanation": "PPE protects only the wearer, while elimination at the top of the hierarchy removes the hazard for everyone affected by the work. PPE is therefore a final measure layered on top of more effective controls, not a substitute for them.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh107-q07",
+      "type": "recall",
+      "q": "From memory: what are the three responsibility factors (SEE) you must weigh when selecting a resource, and what turns a selection into a justified selection?",
+      "keyPoints": [
+        "Safety — is the resource safe to work with, to use, and to dispose of (hazardous dust or fumes)?",
+        "Ethical — is it ethically sourced (no exploitative labour, no conflict materials) and does it respect intellectual property?",
+        "Environmental — is it sustainable, recyclable and low in carbon footprint (life cycle analysis)?",
+        "A selection becomes justified when it is backed by the results and analysis of your research and experimentation — decision, reason, factor, evidence."
+      ],
+      "explanation": "If you recalled all three SEE factors and linked the justification to research evidence, grade yourself Good or Easy. The verb that defines H4.2 is justify, based on the results and analysis of research.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh107-q08",
+      "type": "recall",
+      "q": "In your own words, recall the levels of the hierarchy of control in order (the mnemonic ES-EAP).",
+      "keyPoints": [
+        "E — Eliminate the hazard (most effective).",
+        "S — Substitute it for something less hazardous.",
+        "E — Engineering controls, such as guards and dust extraction at the source.",
+        "A — Administrative controls, such as training, signage and safe operating procedures.",
+        "P — Personal protective equipment, last, because it only protects the wearer."
+      ],
+      "explanation": "ES-EAP runs from most effective (elimination removes the hazard for everyone) to least (PPE protects only the individual). If you recalled the order and why PPE is last, grade it Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh107-q09",
+      "type": "short",
+      "q": "A designer has been asked to produce a working prototype of a desk lamp that uses a variety of materials.\n\nOutline safe work practices that should be implemented by the designer during the development of the prototype.",
+      "marks": 4,
+      "modelAnswer": "A risk assessment should be conducted before constructing the prototype, and personal protective equipment (PPE) used to minimise injury — for example a face mask and eye protection (goggles, safety glasses) to guard against dust and flying particles when cutting wood for the lamp stand, and hearing protection when sawing. Electrical work on the lamp should be carried out and tagged by a licensed technician, and materials should be tested to ensure no toxic fumes are emitted. Tools and machinery should be regularly maintained and inspected, and suitable training (SOP/SLMS and MSDS sheets) undertaken before use.",
+      "criteria": [
+        { "marks": 4, "descriptor": "Outlines safe work practices that should be implemented by the designer with a direct link to the desk lamp" },
+        { "marks": 3, "descriptor": "Identifies safe work practices that should be implemented by the designer and outlines at least one of them" },
+        { "marks": 2, "descriptor": "Identifies safe work practices OR outlines one safe work practice" },
+        { "marks": 1, "descriptor": "Identifies a safe work practice" }
+      ],
+      "explanation": "A full answer outlines several practices and ties each to the lamp: risk assessment, PPE (mask, eye and hearing protection), licensed electrical work, material testing for fumes, tool maintenance and training via SOPs and MSDS sheets.",
+      "source": { "origin": "hsc", "ref": "2015 HSC Design and Technology Q11", "year": 2015 }
+    },
+    {
+      "id": "mh107-q10",
+      "type": "extended",
+      "q": "Justify the selection and safe use of a resource in a design project. (5 marks)",
+      "marks": 5,
+      "modelAnswer": "Using a finish for a children's toy as the example, I selected a water-based, non-toxic paint, justified against the responsibility factors (SEE). It is safe — non-toxic for a child to handle and mouth, and low in fumes for me to apply; it is ethically sourced from a supplier with fair labour practices; and it is environmentally preferable, with lower solvent emissions and easier disposal than an oil-based alternative. This selection was confirmed by research into toy-safety standards and a durability test recorded in my folio. I used the resource safely by applying it in a well-ventilated area — an engineering and administrative control consistent with the hierarchy of control — and by consulting the material safety data sheet. The choice is therefore justified on safety, ethical and environmental grounds, supported by research, and used safely. A weak answer that selects a material only because it was 'cheap and available' names one criterion with no safety, ethics or research, and caps low.",
+      "criteria": [
+        { "marks": 5, "descriptor": "Justifies the selection against the safety, ethical and environmental factors, cites research evidence, and explains safe use via the hierarchy of control" },
+        { "marks": 4, "descriptor": "Justifies the selection against most of the SEE factors with some research evidence and reference to safe use" },
+        { "marks": 3, "descriptor": "Describes the selection and safe use of a resource with limited justification" },
+        { "marks": 2, "descriptor": "Outlines a selection OR a safe-use practice for a resource" },
+        { "marks": 1, "descriptor": "Identifies a relevant resource, factor or safe-work practice" }
+      ],
+      "explanation": "The headline H4.2 answer justifies the selection against SEE with research evidence, then justifies safe use through the hierarchy of control (decision, reason, factor, evidence). Naming a material on cost and availability alone caps low.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    }
+  ]
+}

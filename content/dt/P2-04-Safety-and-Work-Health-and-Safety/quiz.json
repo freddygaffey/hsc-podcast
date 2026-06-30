@@ -1,0 +1,153 @@
+{
+  "questions": [
+    {
+      "id": "mp204-q01",
+      "type": "mc",
+      "q": "In a risk assessment, what is the difference between a hazard and a risk?",
+      "options": [
+        "A hazard is the likelihood of harm; a risk is the thing that could cause it",
+        "A hazard is anything with the potential to cause harm; a risk is the likelihood and severity of that harm occurring",
+        "A hazard applies to employees while a risk applies only to employers",
+        "A hazard and a risk mean the same thing and can be used interchangeably"
+      ],
+      "answer": 1,
+      "explanation": "A hazard is the thing with the potential to cause harm — a spinning saw blade, a toxic chemical, a hot soldering iron. The risk is how likely that hazard is to actually hurt someone, combined with how serious that harm would be. The exam wants the hazard as the thing and the risk as the chance and severity, so don't use the words interchangeably.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp204-q02",
+      "type": "mc",
+      "q": "Which work health and safety (WHS) consideration should be taken into account during the manufacturing stage of a product?",
+      "options": [
+        "A survey of past employee injuries",
+        "Periodic maintenance of machinery and tools",
+        "Identification, assessment and control of risks and hazards",
+        "Assessment of risks and hazards identified in the use of the final product"
+      ],
+      "answer": 2,
+      "explanation": "WHS during manufacture follows the risk-management cycle: identify the hazards, assess the risk of each, then control them. Injury surveys, machine maintenance and end-use risks are narrower concerns within or beyond that process.",
+      "source": { "origin": "hsc", "ref": "2014 HSC Design and Technology Q5", "year": 2014 }
+    },
+    {
+      "id": "mp204-q03",
+      "type": "mc",
+      "q": "What is the primary purpose of a work health and safety (WHS) risk assessment?",
+      "options": [
+        "To identify dangerous equipment",
+        "To evaluate workshop organisation and practices",
+        "To access the impact of materials on the environment",
+        "To identify and assess potential injury or illness in the workplace"
+      ],
+      "answer": 3,
+      "explanation": "A WHS risk assessment systematically identifies hazards and evaluates the potential for injury or illness so controls can be put in place. Identifying dangerous equipment is only one part of this broader process of assessing all workplace risks to people.",
+      "source": { "origin": "hsc", "ref": "2023 HSC Design and Technology Q5", "year": 2023 }
+    },
+    {
+      "id": "mp204-q04",
+      "type": "mc",
+      "q": "Why do Occupational Health and Safety practices need to be followed in a workplace?",
+      "options": [
+        "To provide employees with a safe workplace",
+        "To ensure that employees are healthy in their workplace",
+        "To ensure that someone is trained as a first aid officer in all workplaces",
+        "To give employees an opportunity to complain to management about an unsafe workplace"
+      ],
+      "answer": 0,
+      "explanation": "The primary purpose of WHS/OHS practices is to protect workers by providing a safe working environment. The other options describe narrow or incidental outcomes rather than the core reason for following safety practices.",
+      "source": { "origin": "hsc", "ref": "2010 HSC Design and Technology Q1", "year": 2010 }
+    },
+    {
+      "id": "mp204-q05",
+      "type": "mc",
+      "q": "The hierarchy of control ranks ways of controlling a risk from most effective to least effective. Which order is correct (the hook is ES-EAP)?",
+      "options": [
+        "PPE, administrative controls, engineering controls, substitution, elimination",
+        "Elimination, substitution, engineering controls, administrative controls, PPE",
+        "Engineering controls, elimination, PPE, substitution, administrative controls",
+        "Administrative controls, PPE, substitution, engineering controls, elimination"
+      ],
+      "answer": 1,
+      "explanation": "ES-EAP runs top down by effectiveness: Eliminate the hazard, Substitute it for something safer, Engineering controls (guards, extraction), Administrative controls (training, signage, procedures), then PPE last. Eliminating a hazard protects everyone, whereas PPE only protects the one person wearing it correctly.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp204-q06",
+      "type": "mc",
+      "q": "Which legislation governs workplace safety in New South Wales, and who is the national regulator?",
+      "options": [
+        "The Occupational Health and Safety Act 2000, regulated by NESA",
+        "The Australian Consumer Law, regulated by the ACCC",
+        "The Work Health and Safety Act 2011, regulated by Safe Work Australia",
+        "The Work Health and Safety Act 2011, regulated by Standards Australia"
+      ],
+      "answer": 2,
+      "explanation": "NSW workplace safety is governed by the Work Health and Safety Act of 2011 (commenced 1 January 2012, replacing the older Occupational Health and Safety Act), with Safe Work Australia as the national regulator. The Act sets out rights and responsibilities for both employers and employees — naming the law earns marks.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp204-q07",
+      "type": "recall",
+      "q": "From memory: what is the hierarchy of control, and why is PPE ranked last?",
+      "keyPoints": [
+        "The hierarchy ranks risk controls from most to least effective: Eliminate, Substitute, Engineering controls, Administrative controls, PPE (ES-EAP).",
+        "Eliminate = remove the hazard entirely; Substitute = swap it for something safer; Engineering = guard or isolate it; Administrative = change how people work (training, signage, SOPs); PPE = gear worn on the body.",
+        "PPE is last because it only protects the individual wearing it, and only if worn correctly, whereas elimination removes the hazard for everyone — so PPE is the least reliable control."
+      ],
+      "explanation": "This is the single highest-value idea in the topic. If you got the five levels in order and 'PPE protects only the wearer, elimination protects everyone', grade it Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp204-q08",
+      "type": "recall",
+      "q": "From memory: under the WHS Act, what are the two-sided rights and responsibilities of employers and employees?",
+      "keyPoints": [
+        "Employers must provide a safe workplace, protective equipment, training, well-maintained machinery, and good lighting and ventilation.",
+        "Employees have the right to that safe environment, and the responsibility to follow safety procedures, wear their protective equipment, and not use machinery they are untrained on.",
+        "This two-sided structure (rights AND responsibilities on both sides) under the Work Health and Safety Act is what the exam is looking for."
+      ],
+      "explanation": "For a student, the workshop is your workplace and those rules exist to protect you. Recalling both sides — employer duties and employee responsibilities — is the marking point.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp204-q09",
+      "type": "extended",
+      "q": "Explain the principles underlying safe working practices and environments. (5 marks)",
+      "marks": 5,
+      "modelAnswer": "Safe working practices are based on several principles. First, the legal principle of duty of care under work health and safety legislation, such as the Work Health and Safety Act 2011, which gives both employers and employees defined rights and responsibilities to maintain a safe environment. Second, the principle of risk management: hazards must be identified, the risks they pose assessed, and then controlled, following the hierarchy of control, which prioritises eliminating or substituting a hazard over merely protecting the worker with PPE. Third, the principle that safety should be designed in rather than added on — a designer should anticipate hazards in both the manufacture and the use of a product and reduce them at the design stage, for example by choosing safer materials or applying ergonomic principles. Together these ensure a workplace and a product that protect people throughout.",
+      "criteria": [
+        { "marks": 2, "descriptor": "Explains the legal principle of duty of care under WHS legislation (ideally naming the Work Health and Safety Act), with rights and responsibilities on both sides." },
+        { "marks": 2, "descriptor": "Explains the risk-management principle — identify, assess and control hazards using the hierarchy of control, prioritising elimination/substitution over PPE." },
+        { "marks": 1, "descriptor": "Explains that safety should be designed in, not bolted on — anticipating hazards at the design stage (e.g. safer materials, ergonomics)." }
+      ],
+      "explanation": "This exact wording appears in HSC outcomes H4.2 and H6.1, so it is a headline question. The weak answer just lists PPE; the strong answer explains the underlying principles — legal duty, risk management, and designing safety in.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp204-q10",
+      "type": "short",
+      "q": "A designer has been asked to produce a working prototype of a desk lamp that uses a variety of materials.\n\nOutline safe work practices that should be implemented by the designer during the development of the prototype.",
+      "marks": 4,
+      "modelAnswer": "A risk assessment should be conducted before constructing the prototype, and personal protective equipment (PPE) used to minimise injury — for example a face mask and eye protection (goggles, safety glasses) to guard against dust and flying particles when cutting wood for the lamp stand, and hearing protection when sawing. Electrical work on the lamp should be carried out and tagged by a licensed technician, and materials should be tested to ensure no toxic fumes are emitted. Tools and machinery should be regularly maintained and inspected, and suitable training (SOP/SLMS and MSDS sheets) undertaken before use.",
+      "criteria": [
+        { "marks": 4, "descriptor": "Outlines safe work practices that should be implemented by the designer with a direct link to the desk lamp" },
+        { "marks": 3, "descriptor": "Identifies safe work practices that should be implemented by the designer and outlines at least one of them" },
+        { "marks": 2, "descriptor": "Identifies safe work practices OR outlines one safe work practice" },
+        { "marks": 1, "descriptor": "Identifies a safe work practice" }
+      ],
+      "explanation": "A strong answer ties the practices to the actual product — risk assessment, the hierarchy of control (engineering and administrative controls before PPE), MSDS for chemicals, and licensed electrical work for the lamp's wiring.",
+      "source": { "origin": "hsc", "ref": "2015 HSC Design and Technology Q11", "year": 2015 }
+    },
+    {
+      "id": "mp204-q11",
+      "type": "short",
+      "q": "Outline occupational health and safety (OHS) factors that a designer should consider when designing a mass-produced office chair.",
+      "marks": 2,
+      "criteria": [
+        { "marks": 2, "descriptor": "Sketches in general terms or indicates the main features of occupational health and safety factors to be considered in the mass production of an office chair" },
+        { "marks": 1, "descriptor": "Identifies an occupational health and safety factor that a designer may consider in the mass production of an office chair" }
+      ],
+      "explanation": "Think about hazards in the manufacture (machinery guarding, dust, repetitive tasks on the production line) and safety designed into the product itself (ergonomic, stable, no pinch points) so it protects both the makers and the end user.",
+      "source": { "origin": "hsc", "ref": "2011 HSC Design and Technology Q11", "year": 2011 }
+    }
+  ]
+}

@@ -1,174 +1,147 @@
 {
   "questions": [
     {
-      "id": "m404-q01",
-      "q": "State the basic rule for the force between magnetic poles.",
+      "id": "mm404-q01",
+      "type": "mc",
+      "q": "If a bar magnet is broken in two in an attempt to separate its north and south poles, what is observed?",
       "options": [
-        "Like poles attract; unlike poles repel",
+        "An isolated north pole and an isolated south pole are finally obtained",
+        "New south and north poles appear, so each piece becomes a smaller complete magnet",
+        "The magnet loses all of its magnetism at the break",
+        "Only the north-seeking pole survives in both pieces"
+      ],
+      "answer": 1,
+      "explanation": "North and south poles always occur together in equal pairs (a magnetic dipole). An isolated pole has never been observed, so breaking a magnet just produces new poles at the break, giving two smaller complete magnets.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 358, "url": "sources/phy11/p358.jpg" }
+    },
+    {
+      "id": "mm404-q02",
+      "type": "mc",
+      "q": "What is the rule describing the directions of the forces between two magnetic poles brought close together?",
+      "options": [
+        "Two north poles attract; a north pole and a south pole repel",
+        "All magnetic poles attract one another regardless of type",
         "Like poles repel; unlike poles attract",
-        "All poles attract each other",
-        "Poles exert no force on each other"
+        "Like poles attract; unlike poles repel"
       ],
-      "answer": 1,
-      "explanation": "Like magnetic poles (two norths or two souths) repel, while unlike poles (a north and a south) attract — the same pattern as electric charges. Unlike charges, however, magnetic poles always come in north-south pairs.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answer": 2,
+      "explanation": "Two north poles repel each other and two south poles repel each other, while a north pole and a south pole attract: that is, like poles repel and unlike poles attract. The closer the poles, the stronger the force.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 358, "url": "sources/phy11/p358.jpg" }
     },
     {
-      "id": "m404-q02",
-      "q": "Explain why it is impossible to obtain a single isolated magnetic pole.",
+      "id": "mm404-q03",
+      "type": "mc",
+      "q": "How do magnetic field lines represent the direction and strength of a magnetic field?",
       "options": [
-        "Poles are too small to separate",
-        "Poles always come in north-south pairs; cutting a magnet just makes two smaller complete magnets",
-        "A single pole would have infinite energy",
-        "Only electric charges can be isolated because they are stronger"
+        "Lines start at south poles and end at north poles; wider spacing means a stronger field",
+        "Lines start at north poles and end at south poles; the closer the lines, the stronger the field",
+        "Lines always cross at the poles, and crossings mark the strongest field",
+        "Line direction shows strength, while line spacing shows the field direction"
       ],
       "answer": 1,
-      "explanation": "Magnetic poles always exist in north-south pairs. Cutting a magnet in an attempt to separate them simply produces two smaller complete magnets, each with its own north and south, no matter how finely you divide it. A lone pole (a monopole) has never been found — unlike electric charge, which can be isolated.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Magnetic field lines start at north poles and end at south poles, and their direction shows the direction of the field. The spacing of the lines shows the strength: the closer the lines, the stronger the field.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 359, "url": "sources/phy11/p359.jpg" }
     },
     {
-      "id": "m404-q03",
-      "q": "Explain, in terms of domains, how a piece of iron becomes magnetised.",
-      "options": [
-        "Its atoms are destroyed and rebuilt",
-        "Its randomly oriented domains align with an external field, so their fields add to give a net magnetism",
-        "It gains extra electrons from the magnet",
-        "Its temperature rises until it melts"
-      ],
-      "answer": 1,
-      "explanation": "A ferromagnetic material contains tiny domains, each a small magnet. Unmagnetised, the domains point randomly and their fields cancel. In an external field the domains rotate to align, so their fields add together, giving a strong net magnetisation. Naming the random-to-aligned change is the key mark.",
+      "id": "mm404-q04",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "Oersted discovered that an electric current produces a magnetic field. What shape do the magnetic field lines around a long straight current-carrying wire take, and which rule gives their direction?",
+      "options": [
+        "Straight lines parallel to the wire; direction found with the left-hand rule",
+        "A bar-magnet pattern with two poles; direction found by observing the field's poles",
+        "Concentric circles around the wire; direction given by the right-hand grip rule",
+        "Radial lines pointing away from the wire; direction set by the current's speed"
+      ],
+      "answer": 2,
+      "explanation": "The field lines are concentric circles. The right-hand grip rule gives the direction: the right thumb points along the conventional current that produces them.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 361, "url": "sources/phy11/p361.jpg" }
     },
     {
-      "id": "m404-q04",
-      "q": "Identify the direction of magnetic field lines outside a bar magnet.",
-      "options": [
-        "From south pole to north pole",
-        "From north pole to south pole",
-        "In closed circles around the magnet's centre",
-        "Always pointing straight up"
+      "id": "mm404-q05",
+      "type": "worked",
+      "q": "A long straight wire carries a current of 10 A from west to east. What is the magnetic field strength at a point 20 cm above the wire? Take the permeability of free space as \\(\\mu_o = 4\\pi \\times 10^{-7}\\,\\mathrm{T\\,m\\,A^{-1}}\\).",
+      "given": "\\(I = 10\\,\\mathrm{A}\\),  \\(r = 20\\,\\mathrm{cm} = 0.2\\,\\mathrm{m}\\),  \\(\\mu_o = 4\\pi \\times 10^{-7}\\,\\mathrm{T\\,m\\,A^{-1}}\\)",
+      "working": [
+        "\\(B = \\dfrac{\\mu_o I}{2\\pi r}\\)",
+        "\\(B = \\dfrac{4\\pi \\times 10^{-7} \\times 10}{2\\pi \\times 0.2}\\)",
+        "The \\(\\pi\\) cancels top and bottom",
+        "\\(B = 1 \\times 10^{-5}\\,\\mathrm{T}\\)",
+        "By the right-hand grip rule the field above the wire points from north to south."
       ],
-      "answer": 1,
-      "explanation": "Outside a magnet, field lines run from the north pole to the south pole — the direction the north end of a small compass points. The lines are closer together where the field is stronger (near the poles) and never cross. (Inside the magnet they continue from S to N to form closed loops.)",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 1e-5,
+      "answerUnit": "T",
+      "tolerance": 1e-6,
+      "explanation": "Direct substitution into \\(B = \\mu_o I / 2\\pi r\\) gives \\(1 \\times 10^{-5}\\,\\mathrm{T}\\), directed south above the wire.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 362, "url": "sources/phy11/p362.jpg" }
     },
     {
-      "id": "m404-q05",
-      "q": "Explain why the Earth's geographic North Pole is actually near a magnetic south pole.",
-      "options": [
-        "Because the Earth has no magnetic field",
-        "Because a compass's north-seeking end is attracted there, and unlike poles attract",
-        "Because the north and south poles are the same",
-        "Because the Earth spins eastward"
+      "id": "mm404-q06",
+      "type": "worked",
+      "q": "A 2.0 A current flows through a 5 cm long thin solenoid that has 500 turns of wire. What is the magnetic field strength in the solenoid's interior? Take \\(\\mu_o = 4\\pi \\times 10^{-7}\\,\\mathrm{T\\,m\\,A^{-1}}\\).",
+      "given": "\\(I = 2.0\\,\\mathrm{A}\\),  \\(N = 500\\),  \\(L = 5\\,\\mathrm{cm} = 0.05\\,\\mathrm{m}\\)",
+      "working": [
+        "\\(B = \\dfrac{\\mu_o N I}{L}\\)",
+        "\\(B = \\dfrac{(4\\pi \\times 10^{-7})(500)(2.0)}{0.05}\\)",
+        "\\(B = 0.025\\,\\mathrm{T}\\)",
+        "i.e. \\(25\\,\\mathrm{mT}\\), directed along the solenoid's axis."
       ],
-      "answer": 1,
-      "explanation": "The north (north-seeking) end of a compass needle points toward geographic north, and since unlike poles attract, the magnetic pole there must be a south pole. The Earth behaves like a giant bar magnet, and its field also deflects solar particles to create the auroras.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 0.025,
+      "answerUnit": "T",
+      "tolerance": 0.001,
+      "explanation": "Substituting into \\(B = \\mu_o N I / L\\) gives \\(0.025\\,\\mathrm{T} = 25\\,\\mathrm{mT}\\). The field inside a solenoid is uniform, so it is independent of position.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 364, "url": "sources/phy11/p364.jpg" }
     },
     {
-      "id": "m404-q06",
-      "q": "Identify the shape of the magnetic field around a long straight current-carrying wire.",
-      "options": [
-        "A bar-magnet pattern with distinct poles",
-        "Concentric circles centred on the wire, perpendicular to it",
-        "Straight lines parallel to the wire",
-        "No field is produced"
-      ],
-      "answer": 1,
-      "explanation": "A current-carrying wire produces concentric circular field lines centred on the wire, lying in planes perpendicular to it, with strength falling off with distance (B = μ₀I/2πr). The direction is given by the right-hand grip rule. A solenoid (a coil), by contrast, gives a bar-magnet pattern — don't confuse the two.",
+      "id": "mm404-q07",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "When a current passes through a solenoid, the magnetic field outside is similar to that of a bar magnet. How do you determine which end of the solenoid is the north pole?",
+      "options": [
+        "Grip the solenoid with the right hand, fingers pointing in the direction of the conventional current; the thumb points to the north pole",
+        "Grip the solenoid with the left hand, thumb along the current; the fingers point to the north pole",
+        "The north pole is always at the end connected to the positive battery terminal",
+        "Point the right thumb along the conventional current; the thumb shows the south pole"
+      ],
+      "answer": 0,
+      "explanation": "For a solenoid, grip it with the right hand so the fingers point in the direction of the conventional current around the coils; the thumb then points to the north pole. Equivalently, the end where field lines emerge is the north pole.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 363, "url": "sources/phy11/p363.jpg" }
     },
     {
-      "id": "m404-q07",
-      "q": "A vertical wire carries conventional current straight upward. Using the right-hand grip rule, determine the field direction as viewed from above.",
-      "options": [
-        "Clockwise",
-        "Anticlockwise",
-        "Straight up the wire",
-        "Radially outward"
+      "id": "mm404-q08",
+      "type": "recall",
+      "q": "Explain, in terms of magnetic domains, how a ferromagnetic material becomes magnetised.",
+      "keyPoints": [
+        "A ferromagnetic material (iron, cobalt, nickel) is made up of many magnetic domains; within each domain nearly all the atomic magnets are lined up in the same direction.",
+        "When unmagnetised, the domains point in random directions so there is no overall magnetism.",
+        "When placed in a magnetic field, the domains line up in the direction of the field; when all are aligned the material is fully magnetised, or saturated."
       ],
-      "answer": 1,
-      "explanation": "Point the right thumb up (along the current); the fingers curl anticlockwise as seen from above. So the field circulates anticlockwise. Using the left hand, or pointing the thumb down, gives the wrong (clockwise) answer — it must be the right hand, thumb along the conventional current.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you named domains as regions of aligned atomic magnets and described the random-to-aligned change in an external field, grade yourself Good or Easy. Missing the word 'domains' is the classic mark-loss.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 365, "url": "sources/phy11/p365.jpg" }
     },
     {
-      "id": "m404-q08",
-      "q": "A solenoid of 200 turns and length 0.5 m carries 3 A (μ₀ = 4π×10⁻⁷). Calculate the field inside it.",
-      "options": [
-        "7.5×10⁻¹ T",
-        "1.5×10⁻³ T",
-        "1.5×10⁻¹ T",
-        "2.4×10⁻⁴ T"
+      "id": "mm404-q09",
+      "type": "recall",
+      "q": "Distinguish, in terms of how easily they magnetise and retain magnetism, between soft iron and hard iron, and state which is used as the core of an electromagnet.",
+      "keyPoints": [
+        "Soft iron magnetises very quickly when placed in a magnetic field and loses its magnetism very quickly when the field is removed.",
+        "Hard iron magnetises slowly but retains its magnetism for a long time, so it is used to make permanent magnets.",
+        "A solenoid with a soft iron core is an electromagnet; soft iron is used so the magnet can switch on and off cleanly with the current."
       ],
-      "answer": 1,
-      "explanation": "B = μ₀NI/L = (4π×10⁻⁷ × 200 × 3)/0.5 ≈ 7.54×10⁻⁴ / 0.5 ≈ 1.5×10⁻³ T (1.5 mT). The field grows with more current, more turns, or a shorter length. Forgetting to divide by the length is the common error.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Soft iron magnetises and demagnetises almost instantly, so it is used for the core of an electromagnet; hard iron retains its magnetism and is used for permanent magnets.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 366, "url": "sources/phy11/p366.jpg" }
     },
     {
-      "id": "m404-q09",
-      "q": "Identify two advantages an electromagnet has over a permanent magnet.",
-      "options": [
-        "It is always magnetic and cannot be switched off",
-        "It can be switched on and off, and its strength varied (or poles reversed) by changing the current",
-        "It needs no electric current to work",
-        "It can isolate a single magnetic pole"
-      ],
-      "answer": 1,
-      "explanation": "An electromagnet (a solenoid with a ferromagnetic core) is magnetic only while current flows, so it can be switched on/off, its strength varied by changing the current or turns, and its poles reversed by reversing the current. The iron core's domains align with the coil's field to greatly strengthen it.",
+      "id": "mm404-q10",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m404-q10",
-      "q": "Recommend the type of magnetic material best suited for the core of a switchable electromagnet.",
+      "q": "The Earth behaves like a giant bar magnet. Why is the Earth's geographic North Pole actually near a magnetic south pole?",
       "options": [
-        "Magnetically hard material (e.g. steel), because it keeps its magnetism",
-        "Magnetically soft material (e.g. pure iron), because it magnetises and demagnetises easily",
-        "A non-magnetic material like copper",
-        "Any material, since the core makes no difference"
+        "Because the north end of a compass needle is attracted there, and unlike poles attract",
+        "Because the geographic and magnetic poles are unrelated and just happen to coincide",
+        "Because like poles attract, so the north end of a compass is drawn to a magnetic north",
+        "Because the Earth's field reverses every day, swapping the poles"
       ],
-      "answer": 1,
-      "explanation": "A magnetically soft material like pure iron magnetises strongly when the current is on but loses its magnetism the instant the current is switched off — exactly what a switchable electromagnet needs. Magnetically hard materials (steel) keep their magnetism, so they are used for permanent magnets instead.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answer": 0,
+      "explanation": "A compass needle's north-seeking pole points towards geographic north. Since unlike poles attract, the pole it is attracted to must be a magnetic south. This is why the geographic North Pole sits near a magnetic south pole.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

@@ -1,174 +1,148 @@
 {
   "questions": [
     {
-      "id": "m605-q01",
-      "q": "What is the motor effect?",
+      "id": "mm605-q01",
+      "type": "mc",
+      "q": "How is the motor effect best defined?",
       "options": [
-        "The force experienced by a current-carrying conductor in an external magnetic field",
-        "The voltage induced when a magnet moves near a coil",
-        "The circular field produced by a current in a wire",
-        "The acceleration of a charge by an electric field"
+        "The action of a force experienced by a current-carrying conductor in an external magnetic field",
+        "The production of a current in a conductor that is moved through a magnetic field",
+        "The circular magnetic field produced around any current-carrying conductor",
+        "The turning effect on a magnet placed near a current-carrying conductor"
       ],
       "answer": 0,
-      "explanation": "The motor effect is the action of a force on a current-carrying conductor placed in an external magnetic field. Option B describes electromagnetic induction (the reverse situation), not the motor effect.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The textbook states it word for word: the motor effect is the action of a force experienced by a current-carrying conductor in an external magnetic field. The wire's own field interacts with the external field, and the conductor experiences a force. The second option describes the generator/induction effect, the reverse situation.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 121, "url": "sources/phy12/p121.jpg" }
     },
     {
-      "id": "m605-q02",
-      "q": "Using \"magnetic field interactions\", why does a current-carrying conductor experience a force?",
+      "id": "mm605-q02",
+      "type": "mc",
+      "q": "In the equation F = BIl sin θ for the force on a current-carrying conductor, what does B represent and in what unit is it measured?",
       "options": [
-        "Because \\(F = BIL\\), so a force must act",
-        "Because of the right-hand push rule",
-        "The wire's own circular field combines with the external field, giving a stronger field on one side and weaker on the other, pushing the wire from strong to weak",
-        "Because like magnetic poles repel each other"
+        "The current flowing in the conductor, measured in ampere (A)",
+        "The length of the conductor, measured in metres (m)",
+        "The strength of the magnetic field, measured in tesla (T)",
+        "The force on the conductor, measured in newtons (N)"
       ],
       "answer": 2,
-      "explanation": "The \"explain why\" answer is the two-field interaction: the wire's circular field superimposes on the external field, reinforcing it on one side and cancelling it on the other; the net force points from the stronger-field region to the weaker. Quoting the formula (A) or the hand rule (B) is not an explanation and earns almost nothing.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "In F = BIl sin θ, F is measured in newtons (N), B is the strength of the magnetic field measured in tesla (T), I is the current measured in ampere (A), and l is the length of the conductor measured in metres (m). A tesla can be read off the equation as a newton per ampere per metre.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 121, "url": "sources/phy12/p121.jpg" }
     },
     {
-      "id": "m605-q03",
-      "q": "What is the deepest cause of the force on the wire, in terms of its contents?",
+      "id": "mm605-q03",
+      "type": "mc",
+      "q": "For a straight conductor in a magnetic field, the angle θ is the angle between the conductor and the field. When is the force on the conductor a maximum, and when is it zero?",
       "options": [
-        "The wire is magnetic",
-        "The force is the sum of the magnetic forces on all the moving charges inside the wire",
-        "The wire heats up and expands",
-        "The external field magnetises the wire's electrons"
+        "Maximum when the conductor is parallel to the field; zero when at right angles to the field",
+        "Maximum when the conductor is at right angles to the field; zero when parallel to the field",
+        "Maximum and zero at the same 45° angle to the field",
+        "Always the same magnitude regardless of the angle between conductor and field"
       ],
       "answer": 1,
-      "explanation": "A current is a stream of moving charges, and each moving charge in a magnetic field feels a sideways force. The force on the whole wire is the sum of all those individual forces — the macroscopic version of the single-charge force \\(F = qvB\\sin\\theta\\).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The force is at a maximum when the conductor is at right angles to the field (θ = 90°, sin 90° = 1) and is zero when the conductor is parallel to the field (θ = 0°, sin 0° = 0). The magnitude is proportional to the component of the field at right angles to the conductor. Students often guess the opposite — 'lined up must be biggest' — but it is exactly backwards.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 121, "url": "sources/phy12/p121.jpg" }
     },
     {
-      "id": "m605-q04",
-      "q": "The force on a current-carrying conductor is given by \\(F = BIL\\sin\\theta\\). What angle does \\(\\theta\\) represent?",
-      "options": [
-        "The angle between the wire and the force",
-        "The angle between the field and the force",
-        "The angle between the wire (current) and the magnetic field",
-        "The angle between the current and the electron drift"
+      "id": "mm605-q04",
+      "type": "recall",
+      "q": "From memory, list the factors that affect the magnitude of the force on a straight current-carrying conductor in a magnetic field, and state how the force depends on each.",
+      "keyPoints": [
+        "The force is proportional to the strength of the external magnetic field, B.",
+        "The force is proportional to the magnitude of the current in the conductor, I.",
+        "The force is proportional to the length of the conductor in the field, l.",
+        "The force depends on the angle between the conductor and the field: maximum at right angles, zero when parallel, varying as sin θ. Together: F = BIl sin θ."
       ],
-      "answer": 2,
-      "explanation": "\\(\\theta\\) is the angle between the conductor (the current direction) and the magnetic field lines — not the angle to the force. Using the wrong angle collapses the calculation.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled all four factors (B, I, l and the angle) and that three are simple direct proportions while the angle follows sin θ, grade yourself Good or Easy. They are all written straight into F = BIl sin θ.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 121, "url": "sources/phy12/p121.jpg" }
     },
     {
-      "id": "m605-q05",
-      "q": "For a fixed current and field, the force on the wire is maximum when:",
-      "options": [
-        "The wire is parallel to the field (\\(\\theta = 0^\\circ\\))",
-        "The wire is perpendicular to the field (\\(\\theta = 90^\\circ\\))",
-        "The wire is at \\(45^\\circ\\) to the field",
-        "The current is zero"
+      "id": "mm605-q05",
+      "type": "worked",
+      "q": "A conductor of length 8.0 cm carries a current of 30 mA in a magnetic field of strength 0.25 T. Calculate the magnitude of the force acting on it when the conductor is at right angles to the field.",
+      "given": "\\(l = 8.0\\,\\mathrm{cm} = 8.0\\times10^{-2}\\,\\mathrm{m}\\),  \\(I = 30\\,\\mathrm{mA} = 3.0\\times10^{-2}\\,\\mathrm{A}\\),  \\(B = 0.25\\,\\mathrm{T}\\),  \\(\\theta = 90^\\circ\\)",
+      "working": [
+        "\\(F = BIl\\sin\\theta\\)",
+        "\\(F = 0.25 \\times (3.0\\times10^{-2}) \\times (8.0\\times10^{-2}) \\times \\sin 90^\\circ\\)",
+        "\\(\\sin 90^\\circ = 1\\)",
+        "\\(F = 6.0\\times10^{-4}\\,\\mathrm{N}\\)"
       ],
-      "answer": 1,
-      "explanation": "Since \\(F \\propto \\sin\\theta\\), the force is maximum at \\(\\theta = 90^\\circ\\) (\\(\\sin 90^\\circ = 1\\)) and zero at \\(\\theta = 0^\\circ\\) (\\(\\sin 0^\\circ = 0\\)). Students often guess that \"lined up\" means maximum — it is exactly backwards.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 0.0006,
+      "answerUnit": "N",
+      "tolerance": 0.00001,
+      "explanation": "This is the textbook's Sample Problem 1(a). Convert to SI units first (cm to m, mA to A), then substitute into F = BIl sin θ. At right angles sin 90° = 1, giving the maximum force of 6.0 × 10⁻⁴ N.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 122, "url": "sources/phy12/p122.jpg" }
     },
     {
-      "id": "m605-q06",
-      "q": "Why is the force zero when the wire lies parallel to the field?",
-      "options": [
-        "The wire is too far from the magnet",
-        "The charges' velocity is along the field, so there is no perpendicular velocity component for the field to act on",
-        "The current stops flowing when parallel",
-        "The field becomes zero near a parallel wire"
+      "id": "mm605-q06",
+      "type": "worked",
+      "q": "The force on a 10 cm wire carrying a current of 15 A, placed in a magnetic field perpendicular to the wire, has a maximum value of 3.5 N. What is the strength of the magnetic field?",
+      "given": "\\(l = 10\\,\\mathrm{cm} = 0.10\\,\\mathrm{m}\\),  \\(I = 15\\,\\mathrm{A}\\),  \\(F = 3.5\\,\\mathrm{N}\\),  \\(\\theta = 90^\\circ\\) (maximum force)",
+      "working": [
+        "\\(F = BIl\\sin 90^\\circ = BIl\\)",
+        "\\(B = \\dfrac{F}{Il}\\)",
+        "\\(B = \\dfrac{3.5}{15 \\times 0.10} = \\dfrac{3.5}{1.5}\\)",
+        "\\(B \\approx 2.3\\,\\mathrm{T}\\)"
       ],
-      "answer": 1,
-      "explanation": "When the wire lies along the field, the moving charges drift parallel to \\(B\\), so there is no perpendicular velocity component — nothing for the field to push sideways against (\\(\\sin 0^\\circ = 0\\)). Equivalently, there is no strong-side/weak-side asymmetry across the field.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 2.33,
+      "answerUnit": "T",
+      "tolerance": 0.05,
+      "explanation": "This is the textbook's 5.3 Exercise 1 Q2. 'Maximum' tells you the wire is perpendicular to the field, so sin θ = 1 and F = BIl. Rearrange to B = F/(Il) and convert 10 cm to 0.10 m before substituting, giving B ≈ 2.3 T.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 122, "url": "sources/phy12/p122.jpg" }
     },
     {
-      "id": "m605-q07",
-      "q": "To apply the right-hand push rule when a question gives the electron flow direction, you must:",
+      "id": "mm605-q07",
+      "type": "mc",
+      "q": "According to the textbook, who discovered the motor effect, and in what year?",
       "options": [
-        "Point your thumb along the electron flow",
-        "Reverse the electron direction to get the conventional current first, then apply the rule",
-        "Use the rule unchanged on the electron flow",
-        "Ignore the current direction entirely"
+        "James Clerk Maxwell, in 1865",
+        "Michael Faraday, in 1821",
+        "H. F. Lenz, in 1834",
+        "Hans Christian Oersted, in 1820"
       ],
       "answer": 1,
-      "explanation": "The push rule is defined for conventional current (the way positive charge would move), which is opposite to electron drift. Convert electron flow to conventional current first, or your force comes out exactly backwards.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The textbook records that the motor effect — the action of a force on a current-carrying conductor in an external magnetic field — was discovered in 1821 by Michael Faraday (1791–1867). For the exam the effect itself does not need a name attached; the mechanism does.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 121, "url": "sources/phy12/p121.jpg" }
     },
     {
-      "id": "m605-q08",
-      "q": "A conductor 8.0 cm long carries 30 mA in a 0.25 T field, perpendicular to the field. What is the force?",
-      "options": [
-        "\\(6.0\\times10^{-4}\\ \\mathrm{N}\\)",
-        "\\(6.0\\times10^{-2}\\ \\mathrm{N}\\)",
-        "\\(0.60\\ \\mathrm{N}\\)",
-        "\\(6.0\\ \\mathrm{N}\\)"
+      "id": "mm605-q08",
+      "type": "recall",
+      "q": "From memory, give the 'two-field interaction' answer the HSC wants: how do two magnetic fields make a current-carrying wire experience a force?",
+      "keyPoints": [
+        "The current-carrying conductor produces its own circular magnetic field (concentric circles around the wire, direction from the right-hand grip rule).",
+        "This field is superimposed on / interacts with the external uniform magnetic field, and the fields add as vectors.",
+        "On one side the fields reinforce to give a stronger combined field; on the other side they partially cancel to give a weaker combined field.",
+        "The conductor experiences a net force directed from the region of stronger combined field toward the region of weaker combined field."
       ],
-      "answer": 0,
-      "explanation": "Convert: \\(L = 8.0\\times10^{-2}\\ \\mathrm{m}\\), \\(I = 3.0\\times10^{-2}\\ \\mathrm{A}\\). At \\(90^\\circ\\), \\(F = BIL = (0.25)(3.0\\times10^{-2})(8.0\\times10^{-2}) = 6.0\\times10^{-4}\\ \\mathrm{N}\\). Failing to convert cm and mA is the usual error.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "This is the mark-earning mechanism. Never answer 'explain why' with the formula F = BIl or with the right-hand rule — those are a calculation tool and a direction aid. If you hit all four beats (own field, interaction, strong/weak sides, net force strong to weak), grade Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m605-q09",
-      "q": "The direction of the force on a current-carrying wire is always:",
-      "options": [
-        "Parallel to the current",
-        "Parallel to the magnetic field",
-        "Perpendicular to both the current and the field",
-        "Along the field, in the direction of conventional current"
+      "id": "mm605-q09",
+      "type": "short",
+      "q": "Use magnetic field interactions to explain why a current-carrying conductor experiences a force when placed in a uniform magnetic field. (3 marks)",
+      "marks": 3,
+      "modelAnswer": "The current-carrying conductor produces its own magnetic field — concentric circles around the wire, with direction given by the right-hand grip rule. This field is superimposed on the external uniform field. On one side of the conductor the two fields point the same way and reinforce, giving a stronger combined field; on the other side they oppose and partially cancel, giving a weaker combined field. The conductor therefore experiences a net force directed from the region of stronger field toward the region of weaker field.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States the conductor produces its own (circular) magnetic field." },
+        { "marks": 1, "descriptor": "Describes the interaction/superposition producing a stronger combined field on one side and a weaker one on the other." },
+        { "marks": 1, "descriptor": "Concludes the net force is directed from the stronger-field region toward the weaker-field region." }
       ],
-      "answer": 2,
-      "explanation": "The force is perpendicular to both the current and the field. If both lie in the plane of the page, the force points into or out of the page — never along the page. The right-hand push rule picks which of the two.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The marker is hunting for the interaction of two fields and the resulting asymmetry — not the formula. Writing 'a force acts because F = BIl' or 'because of the right-hand rule' earns almost nothing on this 'explain why' question.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m605-q10",
-      "q": "Which change would double the force on a current-carrying conductor (other factors held constant)?",
+      "id": "mm605-q10",
+      "type": "mc",
+      "q": "A question gives you the direction of electron flow in a wire and asks for the direction of the force using the right-hand push rule. What must you do first?",
       "options": [
-        "Halving the current",
-        "Doubling the magnetic field strength",
-        "Changing the angle from \\(90^\\circ\\) to \\(30^\\circ\\)",
-        "Halving the length of wire in the field"
+        "Apply the rule directly, pointing your thumb in the direction of electron flow",
+        "Reverse the electron-flow direction to get the conventional current, then point your thumb that way",
+        "Point your fingers in the direction of electron flow and your palm gives the current",
+        "Nothing — electron flow and conventional current point the same way"
       ],
       "answer": 1,
-      "explanation": "Since \\(F = BIL\\sin\\theta\\), the force is directly proportional to \\(B\\), so doubling \\(B\\) doubles the force (as would doubling \\(I\\) or \\(L\\)). Halving \\(I\\) or \\(L\\) halves it, and going from \\(90^\\circ\\) to \\(30^\\circ\\) reduces \\(\\sin\\theta\\) from 1 to 0.5, also halving it.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The right-hand push rule is defined using conventional current — the direction positive charge would move — which is opposite to the way electrons actually drift. If a question hands you electron flow, you must flip it to get the conventional current before applying the rule, or your force comes out exactly backwards.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

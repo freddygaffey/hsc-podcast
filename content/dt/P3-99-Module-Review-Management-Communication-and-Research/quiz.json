@@ -1,0 +1,157 @@
+{
+  "questions": [
+    {
+      "id": "mp399-q01",
+      "type": "mc",
+      "q": "Why do designers conduct market research prior to designing a new product?",
+      "options": [
+        "To develop a possible marketing campaign",
+        "To determine the level of consumer demand",
+        "To access alternative manufacturing techniques",
+        "To understand the impact of a life cycle analysis"
+      ],
+      "answer": 1,
+      "explanation": "Market research carried out before designing identifies consumer needs and gauges the level of demand, confirming there is a market for the product. As the module review puts it, market research asks \"will it sell, and to whom\" — a marketing campaign is developed later to sell the product, not the reason research is done up front.",
+      "source": { "origin": "hsc", "ref": "2022 HSC Design and Technology Q4", "year": 2022 }
+    },
+    {
+      "id": "mp399-q02",
+      "type": "mc",
+      "q": "Which of the following options best describes the features of a collaborative design team?",
+      "options": [
+        "Leader directed, common skills among the group, responsive to feedback",
+        "Leader directed, various fields of professional expertise, responsive to feedback",
+        "Shared understanding of the project, common skills among the team, cooperative decision-making process",
+        "Shared understanding of the project, various fields of professional expertise, cooperative decision-making process"
+      ],
+      "answer": 3,
+      "explanation": "A collaborative team shares a common understanding of the project, brings together varied fields of expertise, and makes decisions cooperatively rather than being directed by a single leader. This lines up with the four C's of successful collaboration — common goals, clear roles, communication and commitment — which the module review stresses as structural factors, not effort words.",
+      "source": { "origin": "hsc", "ref": "2024 HSC Design and Technology Q5", "year": 2024 }
+    },
+    {
+      "id": "mp399-q03",
+      "type": "mc",
+      "q": "A design team is about to start developing a new range of products. Part of this process is the implementation of management plans.\n\nThese plans ensure that the products",
+      "options": [
+        "meet the intended purpose.",
+        "address all legal requirements.",
+        "are developed on time and on budget.",
+        "meet the needs of the target market."
+      ],
+      "answer": 2,
+      "explanation": "Management plans — the action, time and finance plans (ATF) — sequence tasks and allocate resources so the product is delivered on schedule and within budget. The Gantt chart and critical path keep the work on time, and the finance plan keeps it on budget; meeting purpose, legal needs and the target market are achieved through other parts of the design process.",
+      "source": { "origin": "hsc", "ref": "2018 HSC Design and Technology Q6", "year": 2018 }
+    },
+    {
+      "id": "mp399-q04",
+      "type": "mc",
+      "q": "In a design brief for a product, system or environment, what is the main purpose of the design specifications provided by a client to a designer?",
+      "options": [
+        "They summarise all features used in the design.",
+        "They outline aspects of the design in order to meet specific needs.",
+        "They examine market trends, legal requirements and budget figures.",
+        "They list important social and environmental considerations in the design."
+      ],
+      "answer": 1,
+      "explanation": "Design specifications set out the requirements the design must satisfy, outlining the aspects needed to meet the client's specific needs. In the module's NCC framing — need, constraints, criteria for success — the specifications guide and constrain the solution rather than summarising features or analysing markets.",
+      "source": { "origin": "hsc", "ref": "2012 HSC Design and Technology Q4", "year": 2012 }
+    },
+    {
+      "id": "mp399-q05",
+      "type": "mc",
+      "q": "Which of the following is the most important consideration for designers when selecting a technique to demonstrate a client's design brief?",
+      "options": [
+        "Making ideas persuasive for the intended audience",
+        "Cost of the presentation and prototype development",
+        "Making ideas easily understood by the intended audience",
+        "Creating an 'eye-catching' presentation for the intended audience"
+      ],
+      "answer": 2,
+      "explanation": "The core purpose of communicating a design is clarity, so the technique chosen must make the ideas easily understood by the intended audience. This is the CAE criteria from the module — clarity, appropriateness and ease of interpretation — where persuasion, cost and visual appeal are secondary to the message being clearly conveyed to that particular receiver.",
+      "source": { "origin": "hsc", "ref": "2012 HSC Design and Technology Q3", "year": 2012 }
+    },
+    {
+      "id": "mp399-q06",
+      "type": "mc",
+      "q": "During a design project, what is the correct relationship between creative thinking and critical thinking?",
+      "options": [
+        "Creative thinking evaluates options against the brief, while critical thinking generates new ideas",
+        "Creative thinking generates many ideas (divergent), then critical thinking judges them against the brief's criteria (convergent)",
+        "Both are used only to generate ideas; selection happens automatically once enough ideas exist",
+        "Critical thinking is used only at the final evaluation stage, never to select between concepts"
+      ],
+      "answer": 1,
+      "explanation": "The module's insight is the generate-then-judge structure: a designer uses creative thinking and techniques such as SCAMPER to generate many ideas (divergent), then switches to critical thinking to evaluate them against the brief's criteria — often with a cognitive organiser like a decision matrix (convergent). Creative generates, critical judges.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp399-q07",
+      "type": "mc",
+      "q": "Why are both qualitative and quantitative research valuable when designing a product?",
+      "options": [
+        "Quantitative research explains people's feelings while qualitative research counts trends",
+        "Quantitative research gives numerical data on what is happening, and qualitative research explains why, revealing reasons the statistics alone miss",
+        "They produce identical data, so a designer only needs to use one of them",
+        "Qualitative research removes the need for quantitative research once enough opinions are gathered"
+      ],
+      "answer": 1,
+      "explanation": "Quantitative research provides countable, statistically analysable data — the 'how many' — proving trends and giving objective evidence. Qualitative research provides non-numerical data about feelings, opinions and reasons — the 'why' — explaining the numbers. Used together they give the designer both the measure and the reason to act on it.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp399-q08",
+      "type": "recall",
+      "q": "From memory, recall what QISOTS stands for — the research-methods toolkit from this module.",
+      "keyPoints": [
+        "Questionnaires and Interviews — gather responses directly from people.",
+        "Surveys and Observation — collect data from groups and watch real behaviour.",
+        "Tests and experiments, and Statistical analysis — generate and analyse measurable data.",
+        "Qualitative methods reveal the 'why'; quantitative methods reveal the 'how many'; ethics is covered by CVA — consent, voluntary, anonymity."
+      ],
+      "explanation": "If you retrieved all six methods of QISOTS and could link them to the qualitative-versus-quantitative split, grade yourself Good or Easy. If you only recalled a couple, that's tonight's drill.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp399-q09",
+      "type": "recall",
+      "q": "In your own words, recall the four C's of successful collaboration in a design team — and remember the exam wants structural factors, not effort words like 'everyone tried hard'.",
+      "keyPoints": [
+        "Common goals — the team shares one understanding of the project.",
+        "Clear roles — tasks are allocated by expertise and members are accountable.",
+        "Communication — members keep each other informed throughout, often supported by technology.",
+        "Commitment — every member is dedicated to the shared outcome."
+      ],
+      "explanation": "The headline trap here is answering collaboration questions with effort words instead of the four C's — common goals, clear roles, communication, commitment. If you named all four as structural factors, grade it Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp399-q10",
+      "type": "short",
+      "q": "Describe how action plans and ongoing evaluation processes work together to contribute to the development of a successful design.",
+      "marks": 4,
+      "modelAnswer": "As part of the design process the designer develops an action plan to organise an appropriate and efficient operation, sequencing tasks correctly so the project runs efficiently. Combined with an ongoing evaluation structure, this helps ensure a successful design: if ongoing evaluation is not carried out, development may fail to address concerns about important design factors such as function, cost or safety. Together, action plans and ongoing evaluation ensure the end product best meets the needs of the client and the consumer.",
+      "criteria": [
+        { "marks": "4", "descriptor": "Provides characteristics and features of how action plans AND ongoing evaluation processes work together to contribute to a successful design" },
+        { "marks": "3", "descriptor": "Provides characteristics and features of how action plans AND/OR evaluation processes contribute to a successful design" },
+        { "marks": "2", "descriptor": "Sketches in general terms how action plans AND/OR evaluation processes contribute to a successful design, OR identifies a feature of action plans AND a feature of evaluation processes" },
+        { "marks": "1", "descriptor": "Identifies a feature of action plans OR evaluation processes" }
+      ],
+      "explanation": "This is exactly the management-and-evaluation connection from the module review: the action plan sequences the work while continual evaluation against the criteria catches problems early and drives refinement, so the two operate as a system rather than in isolation.",
+      "source": { "origin": "hsc", "ref": "2013 HSC Design and Technology Q13", "year": 2013 }
+    },
+    {
+      "id": "mp399-q11",
+      "type": "short",
+      "q": "Describe how communication between members of a design team is supported by technology.",
+      "marks": 3,
+      "modelAnswer": "Improved capacity and capabilities of technology support communication between team members by allowing a greater volume and diversity of information to be shared quickly and conveniently from any location. Access to more information in a variety of formats speeds up the team's decision making, resulting in design solutions developed at a much greater rate and with more skilled people involved in the process.",
+      "criteria": [
+        { "marks": "3", "descriptor": "Provides characteristics and features of how technology supports the communication between members of a design team" },
+        { "marks": "2", "descriptor": "Sketches in general terms how technology supports the communication between members of a design team" },
+        { "marks": "1", "descriptor": "Identifies or provides general information of how technology supports communication when designing" }
+      ],
+      "explanation": "This ties the communication and teams topics together: a design team runs on communication (SMMR), and technology lets that communication happen faster and across locations, improving the team's decision making and output.",
+      "source": { "origin": "hsc", "ref": "2017 HSC Design and Technology Q12", "year": 2017 }
+    }
+  ]
+}

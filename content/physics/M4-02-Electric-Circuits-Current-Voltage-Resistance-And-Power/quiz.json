@@ -1,174 +1,177 @@
 {
   "questions": [
     {
-      "id": "m402-q01",
-      "q": "Define electric current and give its equation.",
+      "id": "mm402-q01",
+      "type": "mc",
+      "q": "Electric current is the movement of charged particles, yet the textbook says random motion of electrons in a metal conductor is not an electric current. Why not?",
       "options": [
-        "The energy per unit charge; I = W/q",
-        "The rate of flow of charge; I = q/t",
-        "The opposition to charge flow; I = V/R",
-        "The charge times the voltage; I = qV"
+        "The electrons are moving too slowly to count as a current",
+        "There is no net movement of charge in one direction, since the electrons move in random directions",
+        "Electrons are negative, so they cannot carry a current",
+        "A metal conductor has no charged particles that are free to move"
       ],
       "answer": 1,
-      "explanation": "Electric current is the rate of flow of electric charge past a point: I = q/t, measured in amperes (1 A = 1 coulomb per second). Energy per unit charge is voltage (W/q), and opposition to flow is resistance — distinct quantities. Current needs a complete circuit and a source to drive it.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "For a current to exist there must be a net movement of charge in one direction. In a piece of metal conductor the electrons are constantly moving in random directions, so there is no net movement in one direction and no current. A battery supplies the field that drives that net drift.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 313, "url": "sources/phy11/p313.jpg" }
     },
     {
-      "id": "m402-q02",
-      "q": "Compare the direction of conventional current with the direction of electron flow in a metal wire.",
-      "options": [
-        "They flow in the same direction",
-        "Conventional current flows + to −; electrons flow − to + (opposite directions)",
-        "Both flow from − to +",
-        "Electron flow is always faster, so it leads"
+      "id": "mm402-q02",
+      "type": "worked",
+      "q": "What is the current in a conductor if 10 coulombs of charge pass a point in 5.0 seconds?",
+      "given": "\\(Q = 10\\,\\mathrm{C}\\),  \\(t = 5.0\\,\\mathrm{s}\\)",
+      "working": [
+        "\\(I = \\dfrac{Q}{t}\\)",
+        "\\(I = \\dfrac{10\\,\\mathrm{C}}{5.0\\,\\mathrm{s}}\\)",
+        "\\(I = 2.0\\,\\mathrm{C\\,s^{-1}} = 2.0\\,\\mathrm{A}\\)"
       ],
-      "answer": 1,
-      "explanation": "Conventional current is defined as flowing from the positive terminal to the negative, while the actual electrons (negative) drift the opposite way, from − to +. This is a historical convention set before electrons were known. For this course you work with conventional current unless told otherwise.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 2.0,
+      "answerUnit": "A",
+      "tolerance": 0.01,
+      "explanation": "Current is charge per time, \\(I = Q/t\\). Ten coulombs passing a point in 5.0 seconds gives 2.0 coulombs per second, which is 2.0 amperes.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 314, "url": "sources/phy11/p314.jpg" }
     },
     {
-      "id": "m402-q03",
-      "q": "Distinguish between electric current and voltage.",
+      "id": "mm402-q03",
+      "type": "mc",
+      "q": "The textbook explains the meaning of the ampere in terms of electrons. When the current is 1 ampere, how many electrons pass through a cross-section of the conductor in one second?",
       "options": [
-        "Current is energy per charge; voltage is the rate of flow of charge",
-        "Current is the rate of flow of charge (I = q/t); voltage is the energy transferred per unit charge (V = W/q)",
-        "They are the same quantity in different units",
-        "Voltage is measured in amperes; current in volts"
+        "1 electron",
+        "6.25 × 10¹⁸ electrons",
+        "1.6 × 10⁻¹⁹ electrons",
+        "6.0 × 10²³ electrons"
       ],
       "answer": 1,
-      "explanation": "Current is about flow — how much charge passes per second (I = q/t, in amperes). Voltage is about energy — how much energy each unit of charge carries or delivers (V = W/q, in volts). They are distinct quantities; saying 'voltage pushes the current' is the weak answer that loses marks.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "One coulomb is equivalent to 6.25 × 10¹⁸ electrons, so when the current is 1 ampere that many electrons pass through a cross-section of the conductor each second. A current of 5.00 A for 6.00 s therefore moves 1.88 × 10²⁰ electrons.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 314, "url": "sources/phy11/p314.jpg" }
     },
     {
-      "id": "m402-q04",
-      "q": "A resistor has 12 V across it and 3 A through it. Calculate its resistance.",
+      "id": "mm402-q04",
+      "type": "mc",
+      "q": "Distinguish conventional current from electron current in a metal conductor, as described in the textbook.",
       "options": [
-        "36 Ω",
-        "4 Ω",
-        "0.25 Ω",
-        "15 Ω"
+        "Conventional current and electron current both flow from the negative terminal to the positive terminal",
+        "Conventional current is taken as positive charge moving from the positive terminal to the negative terminal, while the electron charge carriers in a metal conductor actually move the opposite way",
+        "Conventional current is the movement of electrons; electron current is the movement of positive ions",
+        "There is no difference; the two terms describe the same direction of flow"
       ],
       "answer": 1,
-      "explanation": "By Ohm's law R = V/I = 12/3 = 4 Ω. For a fixed resistance, current is proportional to voltage — doubling the voltage to 24 V would double the current to 6 A. Multiplying V and I (giving 36) is the trap.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Before the electron was known, current was accepted as the movement of positive charge leaving the positive terminal and travelling to the negative terminal — this is conventional current. In reality the charge carriers in a metal conductor are electrons, which move the opposite way.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 316, "url": "sources/phy11/p316.jpg" }
     },
     {
-      "id": "m402-q05",
-      "q": "Define an ohmic conductor.",
-      "options": [
-        "One whose resistance increases as it heats",
-        "One whose resistance stays constant, giving a straight current-voltage line through the origin",
-        "One that conducts in only one direction",
-        "One with zero resistance"
+      "id": "mm402-q05",
+      "type": "recall",
+      "q": "From memory: what does the potential difference V across a power supply measure, and what equation defines it?",
+      "keyPoints": [
+        "The potential difference V is a measure of the number of joules of electric potential energy given to each coulomb of charge that passes through it.",
+        "For example, a 5-volt battery gives 5 joules of electric potential energy to each coulomb of charge.",
+        "It is defined by \\(V = \\dfrac{W}{q}\\), and is measured in volts (1 volt = 1 joule per coulomb)."
       ],
-      "answer": 1,
-      "explanation": "An ohmic conductor has constant resistance as the voltage changes, so current is directly proportional to voltage and its I-V graph is a straight line through the origin. Ohm's law strictly applies only to ohmic conductors at constant temperature. A filament lamp (rising resistance) and a diode are non-ohmic.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled that potential difference is energy per coulomb of charge and stated V = W/q, grade yourself Good or Easy. The textbook's worked example: a 5-volt supply gives 5 joules to every coulomb.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 318, "url": "sources/phy11/p318.jpg" }
     },
     {
-      "id": "m402-q06",
-      "q": "Explain why a filament lamp is non-ohmic.",
-      "options": [
-        "Its resistance is always zero",
-        "As current increases the filament heats up, raising its resistance, so the I-V graph curves (resistance not constant)",
-        "It conducts only in one direction",
-        "Its voltage is always constant"
+      "id": "mm402-q06",
+      "type": "worked",
+      "q": "Calculate the amount of electric potential energy given to 2.00 coulomb of charge that passes through a 1.50 × 10² V power supply.",
+      "given": "\\(q = 2.00\\,\\mathrm{C}\\),  \\(V = 1.50 \\times 10^{2}\\,\\mathrm{V}\\)",
+      "working": [
+        "\\(V = \\dfrac{W}{q}\\)  so  \\(W = Vq\\)",
+        "\\(W = (1.50 \\times 10^{2}\\,\\mathrm{V})(2.00\\,\\mathrm{C})\\)",
+        "\\(W = 3.00 \\times 10^{2}\\,\\mathrm{J} = 300\\,\\mathrm{J}\\)"
       ],
-      "answer": 1,
-      "explanation": "As the voltage and current rise, the filament gets hotter, and a hotter metal has higher resistance (vibrating atoms impede the electrons more). So the current increases by less and less per extra volt and the I-V graph curves/flattens. Because the resistance is not constant, Ohm's law does not apply.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 300,
+      "answerUnit": "J",
+      "tolerance": 1,
+      "explanation": "Potential difference is energy per charge, V = W/q, so the energy given to the charge is W = Vq. A 150 V supply gives 150 joules to each coulomb, so 2.00 coulomb receive 300 joules.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 318, "url": "sources/phy11/p318.jpg" }
     },
     {
-      "id": "m402-q07",
-      "q": "Identify which combination gives a wire the highest resistance.",
+      "id": "mm402-q07",
+      "type": "mc",
+      "q": "The textbook defines resistance by the equation R = V/I, but warns that this is not Ohm's Law unless a condition is met. What is that condition?",
       "options": [
-        "Short, thick, copper, cool",
-        "Long, thin, high-resistivity, hot",
-        "Short, thin, copper, cool",
-        "Long, thick, low-resistivity, cool"
+        "The current must be measured in milliamperes",
+        "R must be constant — the V versus I graph is not a straight line for a metallic conductor unless the temperature is constant",
+        "The voltage drop must be exactly one volt",
+        "The conductor must be a semiconductor"
       ],
       "answer": 1,
-      "explanation": "Resistance increases with length, with smaller cross-sectional area, with higher resistivity, and (for a metal) with higher temperature. So long, thin, high-resistivity, hot conductors resist most — which is why a heater element is long, thin nichrome, while connecting wires are short, thick copper.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "R = V/I always defines resistance, but it is only Ohm's Law when R is constant. For a metallic conductor the V versus I graph is a straight line only if the temperature is held constant; otherwise the resistance changes.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 328, "url": "sources/phy11/p328.jpg" }
     },
     {
-      "id": "m402-q08",
-      "q": "A heater operates at 240 V and draws 5 A. Calculate its power.",
+      "id": "mm402-q08",
+      "type": "mc",
+      "q": "According to the textbook, what distinguishes an ohmic device from a non-ohmic device?",
       "options": [
-        "48 W",
-        "1200 W",
-        "245 W",
-        "9600 W"
+        "An ohmic device has zero resistance; a non-ohmic device has infinite resistance",
+        "An ohmic device has constant resistance for all currents under constant physical conditions such as temperature, while a non-ohmic device has a different resistance for different currents passing through it",
+        "An ohmic device works only with alternating current; a non-ohmic device only with direct current",
+        "An ohmic device is made of a semiconductor; a non-ohmic device is made of metal"
       ],
       "answer": 1,
-      "explanation": "Power P = VI = 240 × 5 = 1200 W (1.2 kW). This follows from the definitions: voltage is energy per charge and current is charge per time, so their product is energy per time (power). Dividing instead of multiplying (giving 48) is the trap.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "An ohmic device is one for which, under constant physical conditions such as temperature, the resistance is constant for all currents that pass through it. A non-ohmic device, such as a diode, has a resistance that is different for different currents.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 328, "url": "sources/phy11/p328.jpg" }
     },
     {
-      "id": "m402-q09",
-      "q": "Two heating elements (12 Ω and 24 Ω) are each connected to the same 240 V supply. Determine which dissipates more power.",
-      "options": [
-        "The 24 Ω element, because higher resistance means more power",
-        "The 12 Ω element, because at fixed voltage P = V²/R so lower resistance gives more power",
-        "They dissipate equal power",
-        "Neither dissipates power at constant voltage"
+      "id": "mm402-q09",
+      "type": "worked",
+      "q": "What is the power rating of an electric heater if a current of 5.0 A flows through it when there is a voltage drop of 240 V across the heating element?",
+      "given": "\\(I = 5.0\\,\\mathrm{A}\\),  \\(V = 240\\,\\mathrm{V}\\)",
+      "working": [
+        "\\(P = VI\\)",
+        "\\(P = 240\\,\\mathrm{V} \\times 5.0\\,\\mathrm{A}\\)",
+        "\\(P = 1200\\,\\mathrm{W} = 1.2\\,\\mathrm{kW}\\)"
       ],
-      "answer": 1,
-      "explanation": "At a fixed voltage, use P = V²/R, so power is inversely proportional to resistance: the 12 Ω element gives P = 240²/12 = 4800 W versus 240²/24 = 2400 W for the 24 Ω element. The lower-resistance element draws more current and dissipates more power. Matching the power formula to what is held constant is the key skill.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 1200,
+      "answerUnit": "W",
+      "tolerance": 1,
+      "explanation": "Power is voltage times current, P = VI. With a voltage drop of 240 V across the heating element and a current of 5.0 A, the power rating is 1200 W, or 1.2 kW.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 321, "url": "sources/phy11/p321.jpg" }
     },
     {
-      "id": "m402-q10",
-      "q": "Recommend the correct placement of an ammeter and a voltmeter when measuring a component's current-voltage characteristic.",
+      "id": "mm402-q10",
+      "type": "mc",
+      "q": "The textbook states the resistance of a particular conductor is determined by four factors. Which set correctly lists those four factors?",
       "options": [
-        "Ammeter in parallel; voltmeter in series",
-        "Ammeter in series; voltmeter in parallel",
-        "Both in series",
-        "Both in parallel"
+        "Length, material, area of cross-section, temperature",
+        "Charge, voltage, current, power",
+        "Mass, density, colour, length",
+        "Voltage drop, current, time, energy"
+      ],
+      "answer": 0,
+      "explanation": "Resistance arises from collisions between free electrons and the lattice of positive ions, and the four factors that determine it are length, material, area of cross-section and temperature. A longer or thinner conductor, a higher-resistivity material, or a hotter conductor all raise the resistance.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 323, "url": "sources/phy11/p323.jpg" }
+    },
+    {
+      "id": "mm402-q11",
+      "type": "short",
+      "q": "Explain, using a current–voltage graph, why a filament lamp is a non-ohmic component. (4 marks)",
+      "marks": 4,
+      "modelAnswer": "As the voltage across a filament lamp, and hence the current through it, increases, the filament gets hotter. In a metal, a higher temperature means a higher resistance, because the more vigorously vibrating atoms impede the flow of electrons more. So as the voltage rises the resistance rises too, and the current increases by less and less for each extra volt. On a current-versus-voltage graph this appears as a line that curves and flattens, rather than the straight line of an ohmic conductor. Because the resistance is not constant, Ohm's Law does not apply, so the filament lamp is non-ohmic.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States that increasing current heats the filament." },
+        { "marks": 1, "descriptor": "States that a higher temperature gives a higher resistance in the metal filament." },
+        { "marks": 1, "descriptor": "Describes the I–V graph as a curve that flattens, not a straight line." },
+        { "marks": 1, "descriptor": "Concludes the resistance is not constant, so it is non-ohmic / Ohm's Law does not apply." }
+      ],
+      "explanation": "The marks reward the causal chain: more current heats the filament, higher temperature raises resistance, the I–V graph curves, and non-constant resistance means non-ohmic. 'The lamp doesn't obey Ohm's Law' just restates the question.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm402-q12",
+      "type": "mc",
+      "q": "Two heating elements, A (12 Ω) and B (24 Ω), are each connected, one at a time, across the same 240 V supply. Which element dissipates more power, and why?",
+      "options": [
+        "Element B, because its higher resistance dissipates more power at fixed voltage",
+        "Element A, because at fixed voltage power is V²/R, so the lower resistance dissipates more power",
+        "Both dissipate equal power, because they share the same supply voltage",
+        "Element A, because a higher resistance always draws a larger current"
       ],
       "answer": 1,
-      "explanation": "The ammeter goes in series so the same current that flows through the component flows through it; the voltmeter goes in parallel so it reads the potential difference across the component. (Real ammeters have low resistance and voltmeters very high resistance so they don't disturb the circuit they measure.)",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "With the voltage fixed, the direct form is P = V²/R. Element A: 240²/12 = 4800 W; element B: 240²/24 = 2400 W. At fixed voltage power is inversely proportional to resistance, so the lower-resistance element A dissipates more power.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

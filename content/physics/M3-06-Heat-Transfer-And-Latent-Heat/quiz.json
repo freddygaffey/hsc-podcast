@@ -1,174 +1,146 @@
 {
   "questions": [
     {
-      "id": "m306-q01",
-      "q": "Outline how heat is transferred by conduction through a metal rod.",
-      "options": [
-        "The whole rod physically moves the heat along",
-        "Vibrating particles collide with slower neighbours, passing kinetic energy along while staying in place",
-        "Electromagnetic waves carry the heat through the rod",
-        "Hot regions of the rod rise and cool regions sink"
-      ],
-      "answer": 1,
-      "explanation": "In conduction, particles at the hot end vibrate vigorously and collide with their slower neighbours, transferring kinetic energy along the rod while each particle stays put. Metals conduct especially well because free (delocalised) electrons also carry energy rapidly. The material itself does not move — that would be convection.",
+      "id": "mm306-q01",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "Which statement best defines conduction as the transfer of heat through a substance?",
+      "options": [
+        "The transfer of heat through a substance as a result of collisions between neighbouring vibrating particles, with no net movement of particles",
+        "The transfer of heat by the bulk movement of particles between regions of different temperature",
+        "The transfer of heat by the emission of electromagnetic radiation across a vacuum",
+        "The transfer of heat that occurs only when free electrons leave the surface of a metal"
+      ],
+      "answer": 0,
+      "explanation": "Conduction is the transfer of heat through a substance as a result of collisions between neighbouring vibrating particles. The more energetic particles collide with the less energetic particles, giving up some of their kinetic energy, but there is no net movement of particles during conduction.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 273, "url": "sources/phy11/p273.jpg" }
     },
     {
-      "id": "m306-q02",
-      "q": "Explain how convection transfers heat in a fluid.",
+      "id": "mm306-q02",
+      "type": "mc",
+      "q": "Why are metals the best conductors of heat?",
       "options": [
-        "Particles pass energy by collision without the fluid moving",
-        "Heated fluid expands, becomes less dense and rises; cooler denser fluid sinks, forming a convection current",
-        "The fluid emits electromagnetic waves",
-        "Cool fluid rises and hot fluid sinks"
+        "Their particles are further apart, so kinetic energy is transferred more slowly",
+        "Free electrons are able to transfer kinetic energy more readily to other electrons and atoms",
+        "Metals have a very low thermal conductivity constant",
+        "Metals trap pockets of air that carry energy by convection"
       ],
       "answer": 1,
-      "explanation": "Convection transfers heat by the bulk movement of a heated fluid: warmed fluid expands, becomes less dense and rises, while cooler denser fluid sinks to replace it — 'hot rises, cool sinks' — setting up a circulating convection current. It needs a fluid that can flow, so it occurs in liquids and gases but not solids.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Solids are better conductors than liquids and gases because their particles are tightly bound and close together. Metals are the best conductors of heat because free electrons are able to transfer kinetic energy more readily to other electrons and atoms, on top of the particle-vibration mechanism.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 273, "url": "sources/phy11/p273.jpg" }
     },
     {
-      "id": "m306-q03",
-      "q": "Identify the only mode of heat transfer that can cross the vacuum of space.",
+      "id": "mm306-q03",
+      "type": "mc",
+      "q": "When water in a beaker is heated from below, how does convection transfer heat through the substance?",
       "options": [
-        "Conduction",
-        "Radiation",
-        "Convection",
-        "All three equally"
+        "Vibrating particles pass kinetic energy along by collision while staying in fixed positions",
+        "Faster moving particles in the hot region rise while the cooler, denser water sinks, forcing the warm, less dense water upwards in a convection current",
+        "Electromagnetic radiation is emitted from the flame directly to the water particles",
+        "The particles stay still while only their potential energy increases"
       ],
       "answer": 1,
-      "explanation": "Radiation transfers heat by electromagnetic waves and needs no medium, so it alone can cross the vacuum of space — this is how the Sun's energy reaches the Earth. Conduction needs a material and convection needs a fluid; neither can cross a vacuum.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Convection is the transfer of heat through a substance as a result of the movement of particles between regions of different temperatures. The cooler, denser water sinks, forcing the warm, less dense water upwards, setting up a convection current; this happens only in liquids and gases where particles are free to move.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 274, "url": "sources/phy11/p274.jpg" }
     },
     {
-      "id": "m306-q04",
-      "q": "Compare the three methods of heat transfer by their medium requirement.",
+      "id": "mm306-q04",
+      "type": "mc",
+      "q": "What is the specific latent heat of fusion of a substance?",
       "options": [
-        "All three require a medium",
-        "Conduction and convection require a medium; radiation does not",
-        "Only radiation requires a medium",
-        "Conduction needs a vacuum; the others need a medium"
+        "The energy required to raise the temperature of 1 kilogram of the substance by 1 degree",
+        "The quantity of energy required to change 1 kilogram of a substance from a solid to a liquid without a change in temperature",
+        "The energy required to change 1 kilogram of a liquid to a gas without a change in temperature",
+        "The total internal energy stored in 1 kilogram of the solid substance"
       ],
       "answer": 1,
-      "explanation": "Conduction requires a material medium (usually a solid) and convection requires a fluid medium, but radiation requires no medium and travels as electromagnetic waves through a vacuum. This medium distinction — especially that radiation alone needs none — is a classic exam discriminator.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The specific latent heat of fusion is the quantity of energy required to change 1 kilogram of a substance from a solid to a liquid without a change in temperature; the same quantity is released when it freezes. For water it is 334 kJ kg⁻¹. The latent heat of vaporisation (liquid to gas) is the much larger quantity.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 270, "url": "sources/phy11/p270.jpg" }
     },
     {
-      "id": "m306-q05",
-      "q": "Explain why a vacuum flask keeps a drink hot, in terms of all three heat-transfer modes.",
-      "options": [
-        "It adds heat continuously to the drink",
-        "The vacuum stops conduction and convection; the silvered walls reflect radiation; the insulating stopper blocks conduction at the top",
-        "It only blocks radiation",
-        "It works by convection currents inside the drink"
+      "id": "mm306-q05",
+      "type": "recall",
+      "q": "From memory: when a substance reaches its melting point, why does its temperature stay constant even though energy is still being added? Answer in terms of the particle model.",
+      "keyPoints": [
+        "Temperature is determined by the random translational kinetic energy of the particles.",
+        "At the melting point the incoming energy increases the potential energy of the particles rather than their random translational kinetic energy.",
+        "Because the average kinetic energy is unchanged, the temperature does not change until the substance has melted completely; the energy added is the latent heat ('hidden')."
       ],
-      "answer": 1,
-      "explanation": "The vacuum between the double walls carries no particles, so it stops conduction and convection (neither can cross empty space); the shiny silvered walls reflect thermal radiation; and the insulating stopper blocks conduction up through the top. So a single object is engineered against all three modes at once.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you stated that temperature reflects kinetic energy and that the added energy goes into potential energy (breaking bonds) rather than kinetic energy, grade yourself Good or Easy. This is the most examinable point: latent heat changes the state, not the temperature.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 270, "url": "sources/phy11/p270.jpg" }
     },
     {
-      "id": "m306-q06",
-      "q": "Explain why the temperature stays constant while ice melts, even though heat is added.",
-      "options": [
-        "The added heat escapes to the surroundings",
-        "The energy goes into breaking the bonds between particles (raising potential energy), not increasing their kinetic energy",
-        "The ice stops absorbing energy while melting",
-        "Melting releases energy that cancels the added heat"
+      "id": "mm306-q06",
+      "type": "recall",
+      "q": "From memory: name the three methods of heat transfer and state, for each, whether it requires a medium.",
+      "keyPoints": [
+        "Conduction requires a medium (a material whose particles collide), occurring mainly in solids.",
+        "Convection requires a medium too, specifically a fluid (liquid or gas) that can flow.",
+        "Radiation requires no medium and travels as electromagnetic waves through a vacuum, which is why it alone can carry the Sun's heat across space."
       ],
-      "answer": 1,
-      "explanation": "During a change of state the added energy (latent heat) goes into breaking the attractive bonds holding the particles in the solid structure — raising their potential energy, not their kinetic energy. Since temperature measures the average kinetic energy, it stays constant until all the ice has melted. This is the most examinable point in the episode.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The medium distinction is a classic exam discriminator. If you correctly identified that conduction and convection both need a medium while radiation alone needs none, grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m306-q07",
-      "q": "Distinguish between the specific latent heat of fusion and of vaporisation.",
-      "options": [
-        "Fusion is for boiling; vaporisation is for melting",
-        "Fusion is the energy to melt/freeze 1 kg; vaporisation is the energy to boil/condense 1 kg",
-        "They are the same value for a given substance",
-        "Vaporisation always requires less energy than fusion"
+      "id": "mm306-q07",
+      "type": "worked",
+      "q": "The end of a 30 cm long copper rod at 20 °C is placed in a campfire at 400 °C. The rod is circular with a diameter of 1 cm. The thermal conductivity of copper is 398 W m⁻¹ °C⁻¹. At what rate is heat transferred along the rod?",
+      "given": "\\(d = 0.3\\,\\mathrm{m}\\), diameter \\(= 1\\,\\mathrm{cm}\\) so \\(r = 0.005\\,\\mathrm{m}\\), \\(\\Delta T = 400 - 20 = 380\\,°\\mathrm{C}\\), \\(k = 398\\,\\mathrm{W\\,m^{-1}\\,°C^{-1}}\\)",
+      "working": [
+        "Cross-sectional area: \\(A = \\pi r^2 = \\pi (0.005)^2 = 7.8 \\times 10^{-5}\\,\\mathrm{m^2}\\)",
+        "\\(\\dfrac{Q}{t} = \\dfrac{kA\\,\\Delta T}{d}\\)",
+        "\\(\\dfrac{Q}{t} = \\dfrac{(398)(7.8\\times10^{-5})(380)}{0.3}\\)",
+        "\\(\\dfrac{Q}{t} \\approx 39\\,\\mathrm{J\\,s^{-1}}\\)"
       ],
-      "answer": 1,
-      "explanation": "The latent heat of fusion is the energy to melt (or freeze) 1 kg of a substance; the latent heat of vaporisation is the energy to boil (or condense) 1 kg. For water, vaporisation (≈2 260 000 J kg⁻¹) is much larger than fusion (≈334 000 J kg⁻¹), because fully separating particles into a gas takes far more energy than loosening a solid into a liquid.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 39,
+      "answerUnit": "J s⁻¹",
+      "tolerance": 1,
+      "explanation": "Direct use of the thermal conductivity equation \\(\\frac{Q}{t} = \\frac{kA\\,\\Delta T}{d}\\). Heat conducts faster with higher conductivity k, larger area A and larger temperature difference, and slower through a thicker (larger d) slab.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 274, "url": "sources/phy11/p274.jpg" }
     },
     {
-      "id": "m306-q08",
-      "q": "Calculate the energy needed to completely melt 2 kg of ice at 0 °C (latent heat of fusion = 334 000 J kg⁻¹).",
-      "options": [
-        "167 000 J",
-        "668 000 J",
-        "334 000 J",
-        "4 520 000 J"
+      "id": "mm306-q08",
+      "type": "worked",
+      "q": "How much energy is needed to completely melt 2 kg of ice at 0 °C into water at 0 °C? Take the specific latent heat of fusion of water as 334 kJ kg⁻¹.",
+      "given": "\\(m = 2\\,\\mathrm{kg}\\), \\(L = 334\\,\\mathrm{kJ\\,kg^{-1}} = 3.34 \\times 10^5\\,\\mathrm{J\\,kg^{-1}}\\)",
+      "working": [
+        "Because the state changes at constant temperature, use \\(Q = mL\\) (not \\(Q = mc\\Delta T\\)).",
+        "\\(Q = (2)(3.34 \\times 10^5)\\)",
+        "\\(Q = 6.68 \\times 10^5\\,\\mathrm{J} = 668\\,\\mathrm{kJ}\\)"
       ],
-      "answer": 1,
-      "explanation": "Use Q = mL = 2 × 334 000 = 668 000 J (668 kJ). There is no temperature term because the temperature doesn't change during melting — you use Q = mL, not Q = mcΔT. Choosing the right equation (state change vs temperature change) is half the battle.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 668000,
+      "answerUnit": "J",
+      "tolerance": 1000,
+      "explanation": "There is no temperature term because the temperature does not change during melting. The key decision: if temperature is changing use \\(Q = mc\\Delta T\\); if the state is changing at constant temperature use \\(Q = mL\\).",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 270, "url": "sources/phy11/p270.jpg" }
     },
     {
-      "id": "m306-q09",
-      "q": "Identify the correct equation to find the energy to boil water that is already at 100 °C into steam.",
-      "options": [
-        "Q = mcΔT, with the specific heat of water",
-        "Q = mL, with the latent heat of vaporisation",
-        "Q = mL, with the latent heat of fusion",
-        "Q/t = kAΔT/d"
+      "id": "mm306-q09",
+      "type": "short",
+      "q": "A heating curve shows the temperature of water as it is heated at a constant rate from solid to gas. Describe the shape of the curve and explain what is happening to the energy during the flat section where the temperature does not increase. (4 marks)",
+      "marks": 4,
+      "modelAnswer": "The curve has sloping sections, where the temperature increases, separated by a flat section (such as interval BC) where the temperature does not increase even though heating continues. During the flat section the water is changing state, so the energy transferred is not increasing the random translational kinetic energy of the water particles; instead it is the latent heat, used to change the state. Because the average kinetic energy of the particles is unchanged, the temperature stays constant until the change of state is complete.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Describes sloping (rising-temperature) sections separated by a flat plateau." },
+        { "marks": 1, "descriptor": "Identifies that during the flat section the substance is changing state." },
+        { "marks": 1, "descriptor": "States the energy is not increasing the random translational kinetic energy of the particles." },
+        { "marks": 1, "descriptor": "Concludes the energy is latent heat used to change state, so the temperature stays constant." }
       ],
-      "answer": 1,
-      "explanation": "Boiling at 100 °C is a change of state at constant temperature, so use Q = mL with the latent heat of vaporisation — there is no temperature change, so Q = mcΔT does not apply. The decision rule: temperature changing → mcΔT; state changing at constant temperature → mL.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "On the textbook heating curve (figure 11.15) the gradient of the early section AB is less than that of CD, reflecting the different specific heats; the flat BC interval is the change of state where latent heat is absorbed.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 271, "url": "sources/phy11/p271.jpg" }
     },
     {
-      "id": "m306-q10",
-      "q": "On a steady-heating temperature-versus-time graph of ice → steam, identify what the flat plateaus represent.",
-      "options": [
-        "The substance is cooling down",
-        "Changes of state (melting and boiling), where latent heat breaks bonds without raising the temperature",
-        "The heater has been switched off",
-        "The substance is warming fastest"
-      ],
-      "answer": 1,
-      "explanation": "The flat plateaus occur at the melting point and boiling point: energy is still being supplied, but it is latent heat going into breaking bonds (changing state) rather than raising kinetic energy, so the temperature holds constant. The boiling plateau is longer because the latent heat of vaporisation exceeds that of fusion. The sloping sections are warming (KE increasing).",
+      "id": "mm306-q10",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "Which single mode of heat transfer can carry the Sun's energy across the vacuum of space to reach the Earth?",
+      "options": [
+        "Conduction, because particles collide across the vacuum",
+        "Convection, because hot gas rises through the vacuum",
+        "Radiation, because it travels as electromagnetic waves and needs no medium",
+        "All three modes can cross a vacuum equally well"
+      ],
+      "answer": 2,
+      "explanation": "Radiation is the transfer of heat by electromagnetic waves and needs no medium, so it alone can cross the vacuum of space. Conduction needs a material and convection needs a flowing fluid, so neither can cross empty space — only radiation reaches us from the Sun.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

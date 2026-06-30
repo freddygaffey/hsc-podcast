@@ -1,174 +1,147 @@
 {
   "questions": [
     {
-      "id": "hertz-q01",
-      "q": "What was Maxwell's great theoretical achievement that Hertz set out to test?",
+      "id": "qcasehert-q01",
+      "type": "mc",
+      "q": "What was the genuinely new term Maxwell added to the existing laws of electromagnetism?",
       "options": [
-        "Discovering the electron",
-        "Unifying electricity and magnetism into one theory and predicting that light is a self-propagating electromagnetic wave",
-        "Measuring the charge on a single electron",
-        "Inventing the radio transmitter"
+        "Faraday's law — that a changing magnetic field creates an electric field",
+        "The displacement current — that a changing electric field, even with no current flowing, creates a magnetic field",
+        "Gauss's law for magnetism — that magnetic poles always come in pairs",
+        "Ohm's law — that current is proportional to voltage"
       ],
       "answer": 1,
-      "explanation": "Maxwell compressed all known electricity and magnetism into a unified set of equations and predicted self-sustaining electromagnetic waves — concluding that light itself is such a wave. He died before any were generated or detected.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Faraday's law and the two Gauss laws were already known from experiment. Maxwell's new contribution, in the Ampere-Maxwell law, was the displacement current: a changing electric field by itself generates a magnetic field. This is what lets the two fields regenerate each other and self-sustain as a wave.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "hertz-q02",
-      "q": "Which term that Maxwell added to the equations made self-propagating electromagnetic waves possible?",
-      "options": [
-        "The displacement current — a changing electric field, even with no current, creates a magnetic field",
-        "The gravitational field term",
-        "The frictional damping term",
-        "The aether drag term"
-      ],
-      "answer": 0,
-      "explanation": "Maxwell's new displacement current term said a changing electric field alone creates a magnetic field. Combined with Faraday's law (a changing magnetic field creates an electric field), each field continually regenerates the other, allowing a wave to propagate through vacuum.",
+      "id": "qcasehert-q02",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "hertz-q03",
-      "q": "Maxwell calculated the speed of an electromagnetic wave from two constants. Which expression did he use?",
+      "q": "Explain why a Maxwellian electromagnetic wave can travel through a perfect vacuum with no medium.",
       "options": [
-        "\\(v = \\mu_0 \\epsilon_0\\)",
-        "\\(v = \\sqrt{\\mu_0 \\epsilon_0}\\)",
-        "\\(v = \\dfrac{1}{\\sqrt{\\mu_0 \\epsilon_0}}\\)",
-        "\\(v = \\dfrac{\\mu_0}{\\epsilon_0}\\)"
-      ],
-      "answer": 2,
-      "explanation": "Maxwell found \\(v = 1/\\sqrt{\\mu_0 \\epsilon_0}\\), where \\(\\mu_0\\) is the permeability and \\(\\epsilon_0\\) the permittivity of free space. Substituting their measured values gave ~\\(3\\times10^8\\) m/s — the speed of light, from constants measured in jars and coils.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "hertz-q04",
-      "q": "Why was the match between Maxwell's calculated speed and the measured speed of light so significant?",
-      "options": [
-        "Because the two values were completely different",
-        "Because the speed came from electric and magnetic constants having nothing to do with optics, yet equalled the speed of light, implying light is an electromagnetic wave",
-        "Because it proved light was made of particles",
-        "Because it showed light needed a medium to travel"
+        "It is carried by the luminiferous aether that fills all of space",
+        "A changing electric field creates a magnetic field, which (also changing) creates an electric field, each continually regenerating the other",
+        "Air molecules pass the vibration along like a sound wave",
+        "The wave is pushed forward by the pressure of light's amplitude"
       ],
       "answer": 1,
-      "explanation": "The speed emerged from constants measured in electrical experiments unrelated to light, yet matched the measured speed of light to within a percent or two. This could not be coincidence: light must be an electromagnetic wave, and an invisible spectrum of other frequencies must exist.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The two fields hold each other up: each changing field constantly recreates its partner, so the disturbance is self-sustaining and needs no air, water, or aether. Maxwell's prediction of waves in nothing at all was exactly what offended the aether-believers of his day.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "hertz-q05",
-      "q": "How did Hertz's spark-gap oscillator (the transmitter) produce electromagnetic waves?",
+      "id": "qcasehert-q03",
+      "type": "mc",
+      "q": "Maxwell calculated the speed of an electromagnetic wave from which two laboratory-measured constants?",
+      "options": [
+        "The charge and the mass of the electron",
+        "The permittivity of free space and the permeability of free space",
+        "The frequency and the wavelength of visible light",
+        "The inductance and capacitance of a Leyden jar"
+      ],
+      "answer": 1,
+      "explanation": "Maxwell's result was that the wave speed equals one divided by the square root of the permittivity multiplied by the permeability of free space. Both constants had been measured in unrelated experiments on charged jars and current-carrying coils — yet together they gave the speed of light.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasehert-q04",
+      "type": "mc",
+      "q": "Why was the match between Maxwell's calculated speed (~310,000 km/s) and the measured speed of light (~300,000 km/s) so significant?",
+      "options": [
+        "It proved light must actually travel much slower than thought",
+        "The speed came from electric and magnetic constants having nothing to do with optics, yet equalled the speed of light — implying light is an electromagnetic wave",
+        "It proved light is made of particles",
+        "It showed light needs a medium to travel"
+      ],
+      "answer": 1,
+      "explanation": "The speed emerged from constants measured in electrical experiments unrelated to light, yet matched the measured speed of light to within a percent or two. That could not be coincidence: light must be an electromagnetic wave, and an invisible spectrum of other frequencies must exist.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasehert-q05",
+      "type": "mc",
+      "q": "In Hertz's apparatus, how did the spark-gap oscillator (the transmitter) produce electromagnetic waves?",
       "options": [
         "By heating a wire until it glowed",
-        "By making charge oscillate rapidly back and forth across the rods — accelerating charge radiates electromagnetic waves",
+        "By making charge oscillate rapidly back and forth along the rods, so the accelerating charge radiates electromagnetic waves",
         "By rotating a magnet near a coil",
         "By passing a steady direct current through a long wire"
       ],
       "answer": 1,
-      "explanation": "When the spark jumped, the stored charge surged back and forth along the rod millions of times per second. Each oscillation is an accelerating charge, and Maxwell's theory says accelerating charges radiate electromagnetic waves.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "When the spark jumped the gap, the stored charge surged back and forth along the rods millions of times per second. Each oscillation is an accelerating charge, and Maxwell's theory says accelerating charges radiate electromagnetic waves — so the transmitter flung a wave into the room with every spark.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "hertz-q06",
+      "id": "qcasehert-q06",
+      "type": "mc",
       "q": "What physical principle explains how Hertz's loop-antenna receiver detected the waves?",
       "options": [
-        "Newton's second law",
-        "The photoelectric effect",
-        "Faraday's law — the wave's changing magnetic field through the loop induces a voltage that drives a tiny spark across the gap",
-        "Conservation of momentum"
-      ],
-      "answer": 2,
-      "explanation": "The wave's oscillating magnetic field passes through the loop's area; a changing magnetic flux through a loop induces a voltage (Faraday's law). Tuned to resonance, this induced voltage builds up enough to spark across the micrometer gap.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "hertz-q07",
-      "q": "Hertz measured the wavelength of his waves using a standing wave between his transmitter and a zinc reflector. What is the spacing between adjacent nodes?",
-      "options": [
-        "One full wavelength",
-        "Half a wavelength",
-        "A quarter of a wavelength",
-        "Two wavelengths"
+        "The receiver was wired to a hidden battery",
+        "Faraday's law — the wave's changing magnetic field through the loop induces a voltage that drives a spark across the gap",
+        "Radiation pressure physically pushed electrons across the gap",
+        "Heat from the transmitter warmed the loop until it sparked"
       ],
       "answer": 1,
-      "explanation": "The outgoing and reflected waves superimpose into a standing wave. Adjacent nodes (where the field is always zero and the receiver spark vanishes) are spaced half a wavelength apart, so measuring node-to-node spacing gives \\(\\lambda/2\\).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The receiver had no power source. As the wave's oscillating magnetic field passed through the area of the loop, the changing flux induced a voltage around the loop (Faraday's law), and at resonance that voltage built up just enough to push a tiny spark across the micrometer gap.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "hertz-q08",
-      "q": "Once Hertz had the wavelength (~4 m) and the frequency of his oscillator, how did he obtain the wave speed?",
-      "options": [
-        "By timing the wave across the room with a stopwatch",
-        "Using \\(v = f\\lambda\\), multiplying the frequency by the measured wavelength",
-        "By dividing wavelength by frequency",
-        "By weighing the copper rods"
+      "id": "qcasehert-q07",
+      "type": "recall",
+      "q": "From memory, describe how Hertz used a standing wave to measure the wavelength of his invisible waves.",
+      "keyPoints": [
+        "He placed a zinc reflector across the room, so the outgoing wave and the reflected wave overlapped travelling in opposite directions.",
+        "The two waves form a standing wave with fixed nodes (always cancel, spark dies) and antinodes (always add, spark brightest).",
+        "He walked his detector loop through the pattern and marked the dead spots; the distance between adjacent nodes is exactly half a wavelength."
       ],
-      "answer": 1,
-      "explanation": "The universal wave equation \\(v = f\\lambda\\) gives the speed. Hertz measured \\(\\lambda\\) from the node spacing and calculated \\(f\\) from the oscillator's L-C resonance; multiplying them gave roughly \\(3\\times10^8\\) m/s, the speed of light.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled reflection producing two opposed waves, the node/antinode pattern, and node-spacing = half a wavelength, grade yourself Good or Easy. Timing the wave directly is hopeless — the trick is interference.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "hertz-q09",
-      "q": "Hertz showed his rotating receiver loop killed the spark at one orientation and restored it at another. Which property of the waves did this demonstrate?",
-      "options": [
-        "Diffraction",
-        "Refraction",
-        "Polarisation, confirming the waves are transverse",
-        "Absorption"
+      "id": "qcasehert-q08",
+      "type": "recall",
+      "q": "From memory, name the properties of light that Hertz demonstrated his invisible waves also possessed, proving they were light.",
+      "keyPoints": [
+        "Reflection — bounced off a large zinc sheet like light off a mirror.",
+        "Refraction — bent their path through a large prism of solid pitch (asphalt).",
+        "Polarisation — rotating the loop to a certain orientation killed the spark, which only happens for a transverse wave.",
+        "They also weakened with distance and travelled at roughly the speed of light."
       ],
-      "answer": 2,
-      "explanation": "Only a transverse wave can be polarised. Rotating the loop changed how the wave's transverse fields couple to it, killing or restoring the spark — confirming the waves are transverse, exactly as Maxwell predicted for light.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Mark yourself on how many of reflection, refraction, polarisation (and interference / speed) you recalled. It was the whole package together, not any single measurement, that nailed the case that these waves were light.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "hertz-q10",
-      "q": "All electromagnetic waves — from gamma rays to radio waves — share which property in a vacuum?",
-      "options": [
-        "They all have the same wavelength",
-        "They all have the same frequency",
-        "They all travel at the same speed, \\(c \\approx 3\\times10^8\\) m/s, differing only in frequency and wavelength",
-        "They all require a medium to propagate"
+      "id": "qcasehert-q09",
+      "type": "worked",
+      "q": "Hertz found adjacent nodes in his standing-wave pattern spaced about 2 m apart. What wavelength does this correspond to?",
+      "given": "node-to-node spacing = 2 m;  node spacing = half a wavelength",
+      "working": [
+        "\\(\\text{node spacing} = \\tfrac{1}{2}\\lambda\\)",
+        "\\(\\lambda = 2 \\times \\text{node spacing}\\)",
+        "\\(\\lambda = 2 \\times 2\\,\\mathrm{m}\\)",
+        "\\(\\lambda = 4\\,\\mathrm{m}\\)"
       ],
-      "answer": 2,
-      "explanation": "Maxwell's theory allows waves of any frequency, but all travel at the same speed \\(c\\) in a vacuum, related by \\(c = f\\lambda\\). They differ only in frequency and wavelength; in Maxwell's day only visible light and infrared had been observed.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 4,
+      "answerUnit": "m",
+      "tolerance": 0.1,
+      "explanation": "The distance between adjacent nodes is half a wavelength, so the wavelength is twice the node spacing. This matches the roughly four-metre wavelength Hertz measured for his waves.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasehert-q10",
+      "type": "worked",
+      "q": "Hertz measured a wavelength of about 4 m and calculated the oscillator frequency as about 7.5 x 10^7 Hz. Use v = fλ to find the wave speed, and state why this vindicated Maxwell.",
+      "given": "\\(\\lambda = 4\\,\\mathrm{m}\\),  \\(f = 7.5 \\times 10^{7}\\,\\mathrm{Hz}\\)",
+      "working": [
+        "\\(v = f\\lambda\\)",
+        "\\(v = (7.5 \\times 10^{7}) \\times 4\\)",
+        "\\(v = 3.0 \\times 10^{8}\\,\\mathrm{m\\,s^{-1}}\\)",
+        "This is the speed of light — the same value Maxwell got from \\(1/\\sqrt{\\varepsilon\\mu}\\) two decades earlier."
+      ],
+      "answerValue": 300000000,
+      "answerUnit": "m s^-1",
+      "tolerance": 1000000,
+      "explanation": "Using the universal wave relation v = fλ with the directly measured wavelength and the calculated frequency gives about 3 x 10^8 m/s — the speed of light. Confirming that Maxwell's invisible waves travel at c is the crown jewel that closed the case.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

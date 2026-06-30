@@ -1,0 +1,141 @@
+{
+  "questions": [
+    {
+      "id": "mp101-q01",
+      "type": "mc",
+      "q": "Which statement best defines design as the syllabus wants it written?",
+      "options": [
+        "The skill of making products look attractive and modern",
+        "The purposeful process of creating a product, system or environment to meet an identified need or opportunity",
+        "The free self-expression of an idea or emotion by its maker",
+        "The technical manufacture of an object once its appearance is decided"
+      ],
+      "answer": 1,
+      "explanation": "Design is purposeful problem-solving: the deliberate creation of a product, system or environment to meet an identified need or opportunity. 'Making things look good' describes aesthetics, one small part, and misses the problem-solving core that earns the mark.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp101-q02",
+      "type": "mc",
+      "q": "A designer combines a phone, a camera and a computer into a single device before anyone has demanded it. In syllabus terms, the designer is responding to:",
+      "options": [
+        "A need — an existing problem waiting to be solved",
+        "An opportunity — a gap the designer identifies and chooses to pursue",
+        "A constraint — a limit imposed by the client or budget",
+        "A factor — one of the eleven considerations affecting design"
+      ],
+      "answer": 1,
+      "explanation": "An opportunity is a possibility a designer reaches for, often before anyone is complaining — like the smartphone. A need, by contrast, is an existing problem you respond to, such as wheelchair users unable to reach a high shelf.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp101-q03",
+      "type": "mc",
+      "q": "A school's recycling arrangement — the bins, the collection steps and who empties them — is designed. Which kind of design outcome is this?",
+      "options": [
+        "A product",
+        "A system",
+        "An environment",
+        "An artwork"
+      ],
+      "answer": 1,
+      "explanation": "A system is a set of parts and steps organised to do a job, such as a recycling system or a café's queue-management process. A product is a physical object and an environment is a designed space; using the wrong one of the three is loose wording that quietly costs marks.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp101-q04",
+      "type": "mc",
+      "q": "What is the key distinction between art and design that markers reward?",
+      "options": [
+        "Art is creative while design requires no creativity",
+        "Art has no function while design has no aesthetics",
+        "Art is primarily self-expression and answers to the artist, whereas design is primarily problem-solving and answers to the user",
+        "Art is made by hand while design is made by machine"
+      ],
+      "answer": 2,
+      "explanation": "The distinction is about primary purpose and who the work answers to: art is made to be expressed, design is made to be used. It is not that design has no aesthetics or art no function — leading with primary purpose is the nuance that earns the mark.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp101-q05",
+      "type": "mc",
+      "q": "Which of the following is an example of design THEORY rather than design practice?",
+      "options": [
+        "Building a prototype of a timber stool",
+        "Knowledge of the elements and principles of visual design, such as line, colour and proportion",
+        "Sketching ideas in response to a brief",
+        "Testing a joint and refining it after it splits"
+      ],
+      "answer": 1,
+      "explanation": "Design theory is the body of knowledge and principles that inform design — the elements and principles of visual design, materials knowledge and the factors. Building, sketching and testing are design practice: the actual doing. Theory is what you know; practice is what you do with it.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp101-q06",
+      "type": "mc",
+      "q": "The episode groups design professions by what they design. Architects and interior designers belong to the group that designs:",
+      "options": [
+        "Objects",
+        "Images and communication",
+        "Spaces and environments",
+        "Garments"
+      ],
+      "answer": 2,
+      "explanation": "Architects and interior designers design spaces and environments such as buildings and room layouts. This mirrors the product/system/environment idea: object-designers make products, architects make environments, engineers make systems — the same outcomes, different specialists.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp101-q07",
+      "type": "recall",
+      "q": "From memory: explain the relationship between design theory and design practice, including the mechanism that lifts the answer to a band six.",
+      "keyPoints": [
+        "Design theory is the body of knowledge and principles that inform design decisions; design practice is the application of that knowledge to create real solutions.",
+        "The two are interdependent — a two-way loop, not separate stages.",
+        "Theory guides and disciplines practice, ensuring decisions are informed rather than arbitrary.",
+        "Practice tests and refines theory: real project outcomes reveal which principles hold and feed back to improve the designer's understanding."
+      ],
+      "explanation": "The weak answer stops at the two definitions; the band-six answer names the relationship as interdependent and gives the mechanism (theory informs practice, practice refines theory). If you recalled the two-way loop, grade Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp101-q08",
+      "type": "recall",
+      "q": "From memory: state the DRIPER stages of the design process and what the mnemonic stands for.",
+      "keyPoints": [
+        "D — Define the need.",
+        "R — Research.",
+        "I — Ideate (generate ideas).",
+        "P — Produce; E — Evaluate; R — Refine, which loops back to the start."
+      ],
+      "explanation": "DRIPER is the theory–practice loop turned into a sequence of steps: you define and research using theory, produce using practice, then evaluate and refine to feed the result back. It is a cycle, not a one-way line.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp101-q09",
+      "type": "short",
+      "q": "Distinguish between art and design. (2 marks)",
+      "marks": 2,
+      "modelAnswer": "Art is primarily concerned with self-expression and answers to the artist's intention, whereas design is primarily concerned with solving an identified need or problem for a user and is shaped by constraints such as function, cost and the client's requirements.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Characterises art as primarily self-expression that answers to the artist." },
+        { "marks": 1, "descriptor": "Characterises design as primarily problem-solving for a user, shaped by constraints, and contrasts the two (e.g. 'whereas')." }
+      ],
+      "explanation": "The mark is in 'self-expression' versus 'solving an identified need', and in actually contrasting the two. Students lose a mark by defining one but not the other, or never contrasting them.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp101-q10",
+      "type": "short",
+      "q": "Explain the relationship between design theory and design practice. (3 marks)",
+      "marks": 3,
+      "modelAnswer": "Design theory is the body of knowledge and principles that informs design decisions, while design practice is the application of that knowledge to create real design solutions. The two are interdependent: theory guides and disciplines practice, ensuring design decisions are informed rather than arbitrary, while practice tests and refines theory, because the outcomes of real projects reveal which principles hold and feed back to improve the designer's understanding. A skilled designer moves continually between the two.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Defines design theory as the knowledge and principles that inform design." },
+        { "marks": 1, "descriptor": "Defines design practice as the application of that knowledge to create real solutions." },
+        { "marks": 1, "descriptor": "Explains the two-way, interdependent relationship: theory disciplines practice and practice tests and refines theory." }
+      ],
+      "explanation": "This is the headline question for the topic. The common trap is stopping after the two definitions and never explaining the relationship — but 'explain the relationship' is literally what is asked, so the third mark is the feedback loop.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    }
+  ]
+}

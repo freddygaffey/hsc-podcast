@@ -1,174 +1,161 @@
 {
   "questions": [
     {
-      "id": "m714-q01",
-      "q": "In the light-clock thought experiment, why does a moving clock run slow when viewed from an external frame?",
+      "id": "mm714-q01",
+      "type": "mc",
+      "q": "In a light clock, the time \\(t_0\\) for a pulse of light to pass from mirror A to mirror B and back, measured in the frame of reference in which the clock is at rest, is defined as which quantity?",
       "options": [
-        "The light pulse speeds up to cover the longer diagonal path",
-        "The light pulse traces a longer diagonal path but must still travel at the constant speed of light, so each tick takes longer",
-        "The mirrors physically move closer together",
-        "The light loses energy and slows down"
+        "The Lorentz factor of the clock",
+        "One tick of the clock",
+        "The dilated time of the clock",
+        "The proper length of the clock"
       ],
       "answer": 1,
-      "explanation": "From the external frame the pulse follows a longer diagonal (by Pythagoras), but by the second postulate it still travels at exactly c — it cannot speed up. A longer distance at the same speed takes more time, so each tick is longer: the moving clock runs slow.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "With the mirror separation \\(L\\), the round-trip time \\(t_0 = 2L/c\\) is defined to be one tick of the clock. In the clock's own rest frame the two events bracketing a tick (the pulse leaving A and returning to A) happen at the same point in space, which is why \\(t_0\\) is the proper time.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 283, "url": "sources/phy12/p283.jpg" }
     },
     {
-      "id": "m714-q02",
-      "q": "Which statement about the Lorentz factor \\(\\gamma = 1/\\sqrt{1 - v^2/c^2}\\) is correct?",
-      "options": [
-        "\\(\\gamma\\) is always less than 1",
-        "\\(\\gamma\\) is always greater than or equal to 1, equalling 1 only when \\(v = 0\\) and approaching infinity as \\(v \\to c\\)",
-        "\\(\\gamma\\) decreases as the speed increases",
-        "\\(\\gamma\\) can be negative for very high speeds"
-      ],
-      "answer": 1,
-      "explanation": "Since \\(v < c\\), the quantity under the root is between 0 and 1, so \\(\\gamma \\ge 1\\). It equals 1 only at rest and shoots toward infinity as \\(v\\) approaches \\(c\\). A \\(\\gamma < 1\\) signals an algebra error.",
+      "id": "mm714-q02",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "What is the proper time \\(t_0\\) in special relativity?",
+      "options": [
+        "The time measured in a frame of reference where the two events occur at the same points in space",
+        "The longer time measured by an observer who sees the clock moving",
+        "The time measured using two separate clocks at different points in space",
+        "The time light takes to cross the universe at speed c"
+      ],
+      "answer": 0,
+      "explanation": "The proper time \\(t_0\\) is the time measured in the frame of reference where the two events occur at the same points in space — the clock's own frame. Because gamma is always greater than 1, the dilated time \\(t = t_0\\gamma\\) is always greater than \\(t_0\\), hence the term 'time dilation'.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 284, "url": "sources/phy12/p284.jpg" }
     },
     {
-      "id": "m714-q03",
-      "q": "Which is the proper time, and is it the longer or shorter interval?",
-      "options": [
-        "The time measured by two separate clocks at different places; the longer time",
-        "The time measured by the single clock present at both events (events at the same place); the shorter time",
-        "The time measured from the frame where the clock is moving; the longer time",
-        "The average of the two observers' times"
+      "id": "mm714-q03",
+      "type": "recall",
+      "q": "From memory: state the key property of the Lorentz factor gamma, and explain what it implies about the dilated time \\(t\\) compared with the proper time \\(t_0\\).",
+      "keyPoints": [
+        "Gamma is always greater than 1 (it equals 1 only when v = 0).",
+        "Because gamma is greater than 1, the dilated time t is always greater than the proper time t0 — hence the term 'time dilation'.",
+        "As v approaches c the value under the square root approaches 0, so gamma climbs without limit."
       ],
-      "answer": 1,
-      "explanation": "The proper time \\(t_0\\) is measured in the frame where the two events occur at the same place — one clock present at both — and it is always the shorter time. The dilated time (longer) is measured from the frame where the clock moves.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "From the time dilation formula \\(t = t_0\\gamma\\), the fact that gamma is never less than 1 is your error-checker: a moving clock's measured tick is always longer than its proper (rest-frame) tick. If you recalled 'gamma is greater than 1, so t is greater than t0', grade yourself Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 284, "url": "sources/phy12/p284.jpg" }
     },
     {
-      "id": "m714-q04",
-      "q": "A spaceship passes Earth at 0.8c. One year passes on the ship. How much time passes on Earth? (\\(\\gamma = 1.67\\) at 0.8c)",
-      "options": [
-        "0.60 years",
-        "1.67 years",
-        "1.00 year",
-        "0.80 years"
+      "id": "mm714-q04",
+      "type": "worked",
+      "q": "James observes a clock held by his friend Mabry moving past at 0.5c. He notices the hands change from 12 pm to 12.05 pm, indicating that 5 minutes have passed for the clock. How much time has passed for James?",
+      "given": "\\(v = 0.5c\\),  proper time \\(t_0 = 5\\) minutes (the two events occur at the same place on Mabry's clock)",
+      "working": [
+        "\\(\\gamma = \\dfrac{1}{\\sqrt{1 - v^2/c^2}} = \\dfrac{1}{\\sqrt{1 - 0.5^2}}\\)",
+        "\\(\\gamma = \\dfrac{1}{\\sqrt{0.75}} = 1.155\\)",
+        "\\(t = t_0\\,\\gamma = 5 \\times 1.155\\)",
+        "\\(t = 5.775\\ \\text{minutes}\\) (5 minutes 46.5 seconds)"
       ],
-      "answer": 1,
-      "explanation": "The ship's clock is present at both events, so 1 year is the proper time. Earth measures the dilated time \\(t = t_0\\gamma = 1 \\times 1.67 = 1.67\\) years.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 5.775,
+      "answerUnit": "minutes",
+      "tolerance": 0.01,
+      "explanation": "Identify the proper time first: Mabry's clock is present at both events, so 5 minutes is the proper time (the short one). Then gamma at 0.5c is 1.155, and \\(t = t_0\\gamma = 5.775\\) minutes. The moving clock is measured to run slow.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 285, "url": "sources/phy12/p285.jpg" }
     },
     {
-      "id": "m714-q05",
-      "q": "How do length contraction and time dilation relate to \\(\\gamma\\), and in which direction does each go?",
-      "options": [
-        "Both multiply by \\(\\gamma\\), so both get longer",
-        "Time dilates (multiply by \\(\\gamma\\), gets longer); length contracts (divide by \\(\\gamma\\), gets shorter)",
-        "Both divide by \\(\\gamma\\), so both get shorter",
-        "Time divides by \\(\\gamma\\); length multiplies by \\(\\gamma\\)"
-      ],
-      "answer": 1,
-      "explanation": "Time dilation: \\(t = t_0\\gamma\\) (longer). Length contraction: \\(L = L_0/\\gamma\\) (shorter). They go opposite ways — multiplying a length by \\(\\gamma\\) is the classic mark-destroying slip.",
+      "id": "mm714-q05",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "Mabry travels past James at 0.5c, and James sees Mabry's clock running slow. What does Mabry observe about James's clock?",
+      "options": [
+        "She sees James's clock running fast, to balance out the effect",
+        "She sees James's clock keeping the same time as her own",
+        "She sees James's clock running slow by the same factor, because the situations are symmetrical",
+        "She sees James's clock stop entirely"
+      ],
+      "answer": 2,
+      "explanation": "These situations are symmetrical: Mabry sees James moving at 0.5c, and James sees Mabry moving at 0.5c, so each measures the other's clock running slow by exactly the same factor. There is no contradiction because they do not agree on which events are simultaneous.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 285, "url": "sources/phy12/p285.jpg" }
     },
     {
-      "id": "m714-q06",
-      "q": "A 1.00 m rod (rest length) moves at 0.6c along its length (\\(\\gamma = 1.25\\)). What is its measured length, and does its perpendicular width change?",
-      "options": [
-        "1.25 m; width also increases",
-        "0.80 m; width is unchanged",
-        "0.80 m; width also contracts to 0.80 m",
-        "1.00 m; no change at all"
+      "id": "mm714-q06",
+      "type": "worked",
+      "q": "Observers on Earth observe the length of a spacecraft travelling at 0.5c to have contracted. To what percentage of its proper length is the spacecraft contracted according to the observers?",
+      "given": "\\(v = 0.5c\\),  \\(\\gamma = 1.155\\),  length contraction \\(L = L_0/\\gamma\\)",
+      "working": [
+        "\\(L = \\dfrac{L_0}{\\gamma}\\)",
+        "\\(\\dfrac{L}{L_0} = \\dfrac{1}{\\gamma} = \\dfrac{1}{1.155}\\)",
+        "\\(\\dfrac{L}{L_0} = 0.866\\)",
+        "So the spacecraft is measured at 86.6% of its proper length — a contraction of 13.4%."
       ],
-      "answer": 1,
-      "explanation": "\\(L = L_0/\\gamma = 1.00/1.25 = 0.80\\,\\mathrm{m}\\). Contraction acts only along the direction of motion, so the perpendicular width is unchanged.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 86.6,
+      "answerUnit": "% of proper length",
+      "tolerance": 0.2,
+      "explanation": "Length contracts, so you divide the proper length by gamma: \\(L = L_0/\\gamma\\). At 0.5c, gamma is 1.155, giving 0.866, i.e. 86.6% of the proper length (a 13.4% contraction). Never multiply a length by gamma — that would make it longer, which is the classic mark-destroying slip.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 290, "url": "sources/phy12/p290.jpg" }
     },
     {
-      "id": "m714-q07",
-      "q": "Why do far more cosmic-ray muons reach the ground than classical physics predicts?",
+      "id": "mm714-q07",
+      "type": "mc",
+      "q": "According to the Lorentz contraction, a spaceship moving at relativistic speed is measured as shorter. Which of its dimensions are affected?",
       "options": [
-        "Muons are created at the ground, not in the atmosphere",
-        "From Earth's frame the muon's clock is time-dilated (it lives longer); from the muon's frame the atmosphere is length-contracted (shorter journey) — both predict more survive",
-        "Muons travel faster than light",
-        "The atmosphere accelerates the muons toward the ground"
+        "All dimensions contract uniformly by the factor gamma",
+        "Only the length along the direction of motion is contracted; the other dimensions are not affected",
+        "Only the dimensions perpendicular to the motion contract",
+        "The width and height contract but the length stays the same"
       ],
       "answer": 1,
-      "explanation": "A full-mark answer uses both frames: Earth sees time dilation stretch the muon's decay time; the muon sees the atmosphere length-contracted into a short hop. Both independently predict many more survive, confirming relativity (the Rossi–Hall experiment).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The Lorentz contraction \\(L = L_0/\\gamma\\) is the shortening of an object along its direction of motion when measured from a frame moving relative to it. This change in length applies only to the dimension along the direction of motion; the other dimensions are not affected. The proper length \\(L_0\\) is the length measured in the object's rest frame.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 289, "url": "sources/phy12/p289.jpg" }
     },
     {
-      "id": "m714-q08",
-      "q": "Muons have a proper half-life of 1.56 μs. Their journey takes 6.5 μs by Earth clocks but only ~0.7 μs by the muons' own clock. What is the approximate Lorentz factor?",
-      "options": [
-        "1.56",
-        "9.3",
-        "0.7",
-        "0.11"
-      ],
-      "answer": 1,
-      "explanation": "\\(\\gamma = t/t_0 = 6.5/0.7 \\approx 9.3\\). This large \\(\\gamma\\) corresponds to a speed of about 0.994c, and stretches the half-life from 1.56 μs to about 14 μs in Earth's frame.",
+      "id": "mm714-q08",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "In the Rossi-Hall experiment, muons produced in the upper atmosphere have a laboratory half-life of 1.56 microseconds, yet far more survive the journey to the ground than expected. From the Earth's frame, why?",
+      "options": [
+        "The muons travel faster than light to outrun their decay",
+        "The muons are so numerous that some always survive by chance",
+        "The muons travel so fast that their decay is time-dilated, decaying at a much slower rate for observers on Earth",
+        "The atmosphere slows the muons so they live longer"
+      ],
+      "answer": 2,
+      "explanation": "Bruno Rossi and David Hall (1941) found far more muons survived than predicted without time dilation. Travelling near light speed relative to Earth, the muons decayed at a much slower rate for Earth observers: the journey took about 6.5 microseconds on Earth clocks, but the muons decayed as though only about 0.7 microseconds had passed. From the muon's own frame, length contraction shrinks the atmosphere to a small hill instead.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 292, "url": "sources/phy12/p292.jpg" }
     },
     {
-      "id": "m714-q09",
-      "q": "Which framing of length contraction is correct for a full-mark answer?",
-      "options": [
-        "The force of motion physically squashes the spaceship as it moves through the aether",
-        "As measured from a frame in relative motion, the object's length along the direction of motion is contracted; nothing physical happens to it in its own rest frame",
-        "The spaceship's crew feel themselves being compressed",
-        "The contraction is caused by air resistance at high speed"
+      "id": "mm714-q09",
+      "type": "recall",
+      "q": "Describe the 1971 Hafele-Keating experiment and what it showed about time dilation.",
+      "keyPoints": [
+        "Atomic clocks were flown on commercial airliners and compared with an identical clock that remained on the ground.",
+        "The flown clocks recorded different amounts of time, agreeing with Einstein's prediction of time dilation.",
+        "The reference frames were not strictly inertial (the clocks circled the Earth under gravity), so the result combines special and general relativity."
       ],
-      "answer": 1,
-      "explanation": "Nothing happens to the object in its own frame (no force, no aether). Contraction describes how the object is measured from an external frame in relative motion. The Fitzgerald–Lorentz 'physical squeeze' idea is exactly what Einstein replaced.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Hafele-Keating flew precise caesium atomic clocks around the world and found the flown clocks disagreed with the ground clock by the amount relativity predicts. Treat it as confirmation that time dilation is real, but note it does not isolate special relativity alone because gravity (general relativity) also plays a role.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 287, "url": "sources/phy12/p287.jpg" }
     },
     {
-      "id": "m714-q10",
-      "q": "What does it mean that time dilation is 'reciprocal'?",
+      "id": "mm714-q10",
+      "type": "mc",
+      "q": "A question asks you to account for time dilation using the light-clock thought experiment. Which sentence is the specific mark-earning idea the marker is looking for?",
       "options": [
-        "Only the faster observer's clock runs slow",
-        "Each observer measures the other's clock as running slow, with no contradiction because simultaneity is relative",
-        "Both clocks run at exactly the same rate",
-        "The effect cancels out so neither clock changes"
+        "The light speeds up to cover the longer diagonal, so the tick is unchanged",
+        "The pulse follows a longer diagonal path but must still travel at the constant speed of light, so each tick takes longer for the external observer",
+        "The mirrors move apart, so the pulse has further to travel and slows down",
+        "The clock physically breaks when it moves, so it ticks slowly"
       ],
       "answer": 1,
-      "explanation": "Each observer sees the other's clock running slow. There is no paradox because the constancy of c makes simultaneity relative, so they don't agree on which events line up. This is why you must always state whose frame you are measuring from.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "By postulate two the pulse cannot pick up the spaceship's sideways speed — it must still travel at the constant speed of light. A longer diagonal path covered at the same speed must take more time, so each tick takes longer as measured from the external frame. The clause 'must still travel at the speed of light' is the mark.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm714-q11",
+      "type": "short",
+      "q": "Explain how observations of cosmic-origin muons at the Earth's surface provide evidence for special relativity. (4 marks)",
+      "marks": 4,
+      "modelAnswer": "Muons are created high in the atmosphere and travel toward the ground at close to the speed of light, but their half-life is so short that, classically, almost all should decay before reaching the surface. In fact far more are detected at sea level than classical physics predicts. From the Earth's frame, the muon's high speed means its internal clock is time-dilated, so its decay time is lengthened by the Lorentz factor and it survives long enough to reach the ground. From the muon's own frame, its half-life is normal, but the atmosphere is length-contracted along the direction of motion, so the distance to be travelled is greatly shortened, allowing it to reach the ground before decaying. Both frames independently predict that many more muons survive, in agreement with observation.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States that classically almost all muons should decay before reaching the ground, yet far more are detected than predicted." },
+        { "marks": 1, "descriptor": "Earth frame: the muon's clock is time-dilated, lengthening its decay time so it reaches the ground." },
+        { "marks": 1, "descriptor": "Muon frame: the atmosphere is length-contracted along the direction of motion, shortening the journey." },
+        { "marks": 1, "descriptor": "Concludes both frames give the same result, matching the observed muon count." }
+      ],
+      "explanation": "A full-mark answer must give both frames: Earth frame uses time dilation, muon frame uses length contraction, and both reach the identical conclusion. Giving only one frame caps your marks.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

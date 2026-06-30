@@ -1,174 +1,149 @@
 {
   "questions": [
     {
-      "id": "m705-q01",
-      "q": "What is diffraction?",
+      "id": "mm705-q01",
+      "type": "mc",
+      "q": "What is meant by the diffraction of a waveform as it passes a barrier or through a small opening?",
       "options": [
-        "The bending of a wave as it speeds up entering a new medium",
-        "The spreading out of a wave as it passes through a small opening or around an edge",
-        "The cancellation of two waves that meet out of phase",
-        "The splitting of white light into its component colours"
+        "The bending of the wave towards the normal as it slows down in a denser medium",
+        "The spreading out of the wave as it passes a barrier or passes through a small opening",
+        "The cancelling of two waves to produce a region of no displacement",
+        "The splitting of white light into its separate colours by a prism"
       ],
       "answer": 1,
-      "explanation": "Diffraction is the spreading of a wave as it passes through a gap or around a barrier. Bending on entering a medium is refraction, cancellation is destructive interference, and splitting into colours is dispersion.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Diffraction of a waveform is the spreading out of that wave when it passes a barrier or passes through a small opening. The episode uses the same definition as Link one of the chain: diffraction is the prerequisite spreading that lets the two slits' waves overlap at all.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 222, "url": "sources/phy12/p222.jpg" }
     },
     {
-      "id": "m705-q02",
-      "q": "Why must the slits in a double-slit experiment with light be extremely narrow and closely spaced?",
+      "id": "mm705-q02",
+      "type": "mc",
+      "q": "Why is the diffraction of light much more difficult to observe than the diffraction of water waves?",
       "options": [
-        "To let less light through so the pattern is not too bright",
-        "To produce a sharper, narrower beam of light",
-        "Because diffraction is only significant when the gap is comparable to the wavelength, and light's wavelength is only a few hundred nanometres",
-        "To make the light travel faster through the gap"
+        "Light travels too fast for the spreading to be seen by eye",
+        "Water waves carry far more energy than light waves",
+        "The size of the opening or barrier must be similar to the wavelength of the wave, and light's wavelength is far smaller than that of water waves",
+        "Light cannot diffract around a barrier at all, only water waves can"
       ],
       "answer": 2,
-      "explanation": "Significant diffraction — and hence the overlap that allows interference — occurs only when the slit width is comparable to the wavelength. Light's wavelength is just a few hundred nanometres, so the slits must be correspondingly tiny. It has nothing to do with brightness or beam sharpness.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Diffraction is only significant when the size of the opening or barrier is similar to the wavelength of the wave. Water waves have much longer wavelengths, so their diffraction is easy to see, whereas light's wavelength is only a few hundred nanometres, which is exactly why the slits in Young's experiment must be microscopically narrow.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 222, "url": "sources/phy12/p222.jpg" }
     },
     {
-      "id": "m705-q03",
-      "q": "What does it mean for the two slits to act as coherent sources?",
+      "id": "mm705-q03",
+      "type": "recall",
+      "q": "State Huygens's Principle, and explain how it accounts for a wavefront fanning out through a gap in a barrier.",
+      "keyPoints": [
+        "Every point on a wavefront acts as a source of circular secondary wavelets that travel in the direction of the wave.",
+        "The new wavefront is the surface tangential to (the envelope of) all those wavelets.",
+        "When a barrier blocks part of the wave, not all the point sources contribute, so the wavefront at the edge forms a circular shape that fans out — this is diffraction."
+      ],
+      "explanation": "If you recalled that each point on a wavefront re-radiates as a secondary wavelet, that the new wavefront is their envelope, and that a blocking barrier leaves the edge free to fan out, grade yourself Good or Easy. In the episode this is the engine under both diffraction and the two slits acting as fresh point sources.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 223, "url": "sources/phy12/p223.jpg" }
+    },
+    {
+      "id": "mm705-q04",
+      "type": "mc",
+      "q": "In Young's experiment the light from the two pinholes is described as coherent. What does coherent mean, and how did Young achieve it?",
       "options": [
-        "They emit light of different wavelengths that combine",
-        "They emit light of the same wavelength with a constant, fixed phase relationship",
-        "They emit equally bright light",
-        "They are very close together"
+        "The two sources are very bright; achieved by using a powerful lamp",
+        "The two sources are monochromatic and in phase; achieved by illuminating both pinholes with one wavefront from a single source",
+        "The two sources have different wavelengths; achieved by using two separate coloured lamps",
+        "The two sources are polarised at right angles; achieved with a polarising filter"
       ],
       "answer": 1,
-      "explanation": "Coherent sources have the same wavelength and a constant phase relationship, so they stay in step over time. This is achieved by lighting both slits with one monochromatic wavefront — two separate lamps would be incoherent and produce no stable pattern.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Coherent means the sources are monochromatic and in phase. Young deliberately used just one source so that a single wavefront arrived at both pinholes, keeping the two emerging waves synchronised. Two separate lamps would be incoherent, with a random phase relationship and no discernible pattern on the screen.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 225, "url": "sources/phy12/p225.jpg" }
     },
     {
-      "id": "m705-q04",
-      "q": "A bright band (constructive interference) forms at a point on the screen when the path difference between the two slits is:",
-      "options": [
-        "A whole number of wavelengths",
-        "A whole number of wavelengths plus a half",
-        "Exactly half a wavelength",
-        "Equal to the slit separation"
-      ],
-      "answer": 0,
-      "explanation": "When the path difference is a whole number of wavelengths the waves arrive in phase (crest meets crest), reinforcing into a bright band. A whole number plus a half gives out-of-phase cancellation and a dark band. 'Whole is bright, half is dark.'",
+      "id": "mm705-q05",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m705-q05",
-      "q": "Why is the existence of dark bands considered strong evidence for the wave model of light?",
+      "q": "In terms of the path difference between the two pinholes, what are the conditions for a bright band (constructive interference) and a dark band (destructive interference) on the screen?",
       "options": [
-        "Because particles can also cancel each other to make darkness",
-        "Because at a dark band, light from both slits combines to give darkness — something a stream of particles could never do",
-        "Because dark bands prove light travels in straight lines",
-        "Because dark bands show light is a transverse wave"
+        "Bright when the path difference is \\((n-0.5)\\lambda\\); dark when it is \\(n\\lambda\\)",
+        "Bright when the path difference is a whole number multiple of the wavelength, \\(n\\lambda\\); dark when it is \\((n-0.5)\\lambda\\)",
+        "Bright and dark both occur only when the path difference is exactly zero",
+        "Bright when the path difference is \\(n\\lambda\\); dark when it is also \\(n\\lambda\\)"
       ],
       "answer": 1,
-      "explanation": "A dark band is a place where light plus light gives no light, produced by destructive interference of crests and troughs. Particles could only ever add to give more light, never cancel — so only the wave model explains dark fringes. (It shows light is a wave, but not specifically that it is transverse.)",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Constructive interference (a bright band) occurs when the path difference is a whole number multiple of the wavelength, \\(n\\lambda\\), so the waves are in phase. Destructive interference (a dark band) occurs when the path difference is \\((n-0.5)\\lambda\\), so crests meet troughs exactly out of phase and cancel. The episode's hook for this is \"whole is bright, half is dark.\"",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 226, "url": "sources/phy12/p226.jpg" }
     },
     {
-      "id": "m705-q06",
-      "q": "According to Huygens's Principle, what happens at each slit?",
+      "id": "mm705-q06",
+      "type": "short",
+      "q": "Using the path difference between the two slits, account for the formation of the bright and dark bands when monochromatic light passes through a double slit. (4 marks)",
+      "marks": 4,
+      "modelAnswer": "Waves reach a given point on the screen along two alternative routes, one through each slit, and the difference between the lengths of these two paths is the path difference. Where the path difference is a whole number multiple of the wavelength (\\(n\\lambda\\)) the waves arrive in phase, crests reinforce crests, and constructive interference produces a bright band. Where the path difference is \\((n-0.5)\\lambda\\) the crests of one wave always meet the troughs of the other, so the waves are exactly out of phase, destructive interference occurs, and that place on the screen is a dark band. Because both slits are illuminated by the same wavefront the two waves are coherent, so the pattern of maxima and minima is stable.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Defines path difference as the difference in distance travelled from the two slits to a point on the screen." },
+        { "marks": 1, "descriptor": "Bright band: path difference = \\(n\\lambda\\), waves in phase, constructive interference." },
+        { "marks": 1, "descriptor": "Dark band: path difference = \\((n-0.5)\\lambda\\), waves out of phase, destructive interference." },
+        { "marks": 1, "descriptor": "Notes the two slits are coherent (lit by the same wavefront), giving a stable pattern." }
+      ],
+      "explanation": "This is the spine of the episode (\"Dogs Chase Other Cats Daily\"). The marks live in tying each path-difference condition to in-phase/out-of-phase and naming constructive vs destructive interference.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 226, "url": "sources/phy12/p226.jpg" }
+    },
+    {
+      "id": "mm705-q07",
+      "type": "worked",
+      "q": "A sodium lamp produces almost-monochromatic light of wavelength 589 nm. It falls on parallel slits 0.100 mm apart and forms an interference pattern on a screen 1.50 m away. Determine the angle to the first-order maximum and the distance of that maximum from the central maximum on the screen.",
+      "given": "\\(\\lambda = 589\\,\\mathrm{nm} = 589\\times10^{-9}\\,\\mathrm{m}\\), \\(d = 0.100\\,\\mathrm{mm} = 1.0\\times10^{-4}\\,\\mathrm{m}\\), \\(L = 1.50\\,\\mathrm{m}\\), \\(m = 1\\)",
+      "working": [
+        "\\(d\\sin\\theta = m\\lambda\\)",
+        "\\(\\sin\\theta = \\dfrac{m\\lambda}{d} = \\dfrac{1\\times589\\times10^{-9}}{1.0\\times10^{-4}} = 5.89\\times10^{-3}\\)",
+        "\\(\\theta = \\sin^{-1}(5.89\\times10^{-3}) = 0.337^{\\circ}\\)",
+        "\\(x = L\\sin\\theta = 1.50\\times5.89\\times10^{-3} = 0.0088\\,\\mathrm{m} = 8.8\\,\\mathrm{mm}\\)"
+      ],
+      "answerValue": 8.8,
+      "answerUnit": "mm",
+      "tolerance": 0.1,
+      "explanation": "Straight application of \\(d\\sin\\theta = m\\lambda\\) with \\(m = 1\\), then \\(x = L\\sin\\theta\\) because the angle is tiny. The small angle (0.337°) shows the fringes sit very close to the central axis, and since the maxima are evenly spaced the third-order maximum is simply \\(3\\times8.8 = 26.4\\,\\mathrm{mm}\\) out.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 228, "url": "sources/phy12/p228.jpg" }
+    },
+    {
+      "id": "mm705-q08",
+      "type": "worked",
+      "q": "White light falls on slits of separation 10 μm. For red light of wavelength 700 nm, determine the angle of the first-order maximum, and show why red is dispersed to a larger angle than blue light.",
+      "given": "\\(\\lambda_{red} = 700\\,\\mathrm{nm} = 700\\times10^{-9}\\,\\mathrm{m}\\), \\(d = 10\\,\\mu\\mathrm{m} = 10\\times10^{-6}\\,\\mathrm{m}\\), \\(m = 1\\)",
+      "working": [
+        "\\(d\\sin\\theta = m\\lambda \\Rightarrow \\theta = \\sin^{-1}\\!\\left(\\dfrac{m\\lambda}{d}\\right)\\)",
+        "\\(\\theta_{red} = \\sin^{-1}\\!\\left(\\dfrac{1\\times700\\times10^{-9}}{10\\times10^{-6}}\\right) = 4.0^{\\circ}\\)",
+        "For comparison, blue (450 nm): \\(\\theta_{blue} = \\sin^{-1}\\!\\left(\\dfrac{1\\times450\\times10^{-9}}{10\\times10^{-6}}\\right) = 2.6^{\\circ}\\)",
+        "Red has the longer wavelength, so for the same slit separation \\(d\\) it gives the larger diffracting angle."
+      ],
+      "answerValue": 4.0,
+      "answerUnit": "degrees",
+      "tolerance": 0.1,
+      "explanation": "Because \\(\\theta\\) increases with \\(\\lambda\\), each colour in white light is sent to a slightly different angle, so each maximum is dispersed into a small spectrum running from blue out to red. Only the central maximum, where the path difference is zero for every colour, stays white.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 228, "url": "sources/phy12/p228.jpg" }
+    },
+    {
+      "id": "mm705-q09",
+      "type": "recall",
+      "q": "From memory, name the five links in the cause-and-effect chain the episode uses (mnemonic 'Dogs Chase Other Cats Daily') that builds the double-slit pattern from scratch.",
+      "keyPoints": [
+        "Diffraction — each narrow slit spreads the light out because the gap is comparable to the wavelength.",
+        "Coherence — both slits are lit by one wavefront, so they act as coherent secondary sources (same wavelength, constant phase).",
+        "Overlap — the two diffracted waves overlap on the screen and superpose.",
+        "Constructive — where the path difference is a whole number of wavelengths the waves are in phase and reinforce: a bright band.",
+        "Destructive — where the path difference is a whole number of wavelengths plus a half the waves are out of phase and cancel: a dark band."
+      ],
+      "explanation": "Each link is a separate marking point. If you produced all five (Diffraction, Coherence, Overlap, Constructive, Destructive) and tied the last two to path difference and phase, grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm705-q10",
+      "type": "mc",
+      "q": "Why is the appearance of dark bands the decisive evidence that light behaves as a wave rather than a stream of particles?",
       "options": [
-        "The slit absorbs the light and re-creates it at a new frequency",
-        "Each slit acts as a source of secondary wavelets that spread out",
-        "The slit reflects the incoming wavefront",
-        "The slit splits each photon into two halves"
+        "Dark bands prove that the light is reflected straight back by the slits",
+        "At a dark band, light arriving from both slits combines to produce darkness — particles could only ever add to give more light, but waves can cancel by destructive interference",
+        "Dark bands show that the slits absorb some of the incoming light particles",
+        "Dark bands appear only when the light is polarised, which is a particle property"
       ],
       "answer": 1,
-      "explanation": "By Huygens's Principle every point on a wavefront acts as a source of secondary wavelets. When a wavefront reaches the slits, each slit becomes a fresh source of spreading wavelets — re-radiating the light that was already there, not creating new light.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m705-q07",
-      "q": "Why is monochromatic light used in the double-slit experiment, and what happens if white light is used instead?",
-      "options": [
-        "Monochromatic light is brighter; white light gives a dimmer pattern",
-        "Monochromatic light gives sharp single-coloured fringes; with white light each colour forms its own pattern, so outer fringes smear into coloured spectra while the central maximum stays white",
-        "Monochromatic light travels faster; white light forms no pattern at all",
-        "Monochromatic light is required because white light is not coherent"
-      ],
-      "answer": 1,
-      "explanation": "A single wavelength gives sharp, clean fringes. With white light, each wavelength forms its own pattern at slightly different positions, so the outer fringes smear into little rainbow spectra. The central maximum stays white because there the path difference is zero for every colour at once.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m705-q08",
-      "q": "Which best describes the intensity graph across the screen for a double-slit pattern?",
-      "options": [
-        "A single broad hump with no other peaks",
-        "Equal-height peaks evenly spaced across the screen",
-        "A tallest central maximum, with evenly spaced peaks of decreasing intensity either side, falling to zero between them",
-        "Randomly spaced peaks of varying height"
-      ],
-      "answer": 2,
-      "explanation": "The graph shows a tall central maximum (zero path difference, perfect constructive interference) with evenly spaced maxima of decreasing intensity to each side, and the intensity drops to zero (dark fringes) between the peaks.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m705-q09",
-      "q": "Sodium light of wavelength \\( 589\\ \\mathrm{nm} \\) passes through slits \\( 1.0 \\times 10^{-4}\\ \\mathrm{m} \\) apart. Using \\( d\\sin\\theta = m\\lambda \\), find the angle to the first-order (\\( m = 1 \\)) bright fringe.",
-      "options": [
-        "About \\( 0.34° \\)",
-        "About \\( 3.4° \\)",
-        "About \\( 5.9° \\)",
-        "About \\( 34° \\)"
-      ],
-      "answer": 0,
-      "explanation": "\\( \\sin\\theta = m\\lambda/d = (1 \\times 589\\times10^{-9})/(1.0\\times10^{-4}) = 5.89\\times10^{-3} \\), so \\( \\theta = \\sin^{-1}(5.89\\times10^{-3}) \\approx 0.34° \\). The very small angle shows the fringes lie close to the central axis.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m705-q10",
-      "q": "What happens to the energy at a dark fringe, where destructive interference occurs?",
-      "options": [
-        "The light energy is destroyed, violating conservation of energy",
-        "The light is reflected back toward the slits",
-        "The energy is not destroyed but redistributed — removed from the dark fringes and concentrated into the bright fringes",
-        "The energy is converted entirely into heat"
-      ],
-      "answer": 2,
-      "explanation": "Destructive interference is cancellation, not destruction. Energy is conserved: it is simply redistributed, taken from the dark fringes and piled into the bright ones, so the total light energy is unchanged.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "A dark band is a place where light from both slits arrives yet the result is darkness — light plus light giving no light. Particles (corpuscles) could only ever pile up to give more light, never cancel; only waves, with crests and troughs, can interfere destructively to zero. That is why the double-slit pattern is the headline evidence for the wave model. (The experiment shows light is a wave, but not that it is transverse — that needs polarisation.)",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

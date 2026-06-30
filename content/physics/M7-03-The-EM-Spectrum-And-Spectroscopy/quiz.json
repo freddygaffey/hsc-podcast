@@ -1,174 +1,164 @@
 {
   "questions": [
     {
-      "id": "m703-q01",
-      "q": "Which region of the electromagnetic spectrum has the longest wavelength and lowest photon energy?",
-      "options": [
-        "Gamma rays",
-        "X-rays",
-        "Radio waves",
-        "Ultraviolet"
-      ],
-      "answer": 2,
-      "explanation": "Radio waves sit at the low-frequency, long-wavelength, low-energy end of the spectrum; gamma rays are at the opposite, short-wavelength, high-energy end. A common trap is to assume gamma rays have the longest wavelength because they sound powerful.",
+      "id": "mm703-q01",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m703-q02",
-      "q": "Going from radio waves to gamma rays along the spectrum, which quantity decreases?",
+      "q": "Maxwell predicted that the visible light we see is only part of a family of electromagnetic waves. Listed in order from shortest wavelength to longest wavelength, which sequence of regions is correct?",
       "options": [
-        "Frequency",
-        "Photon energy",
-        "Ionising power",
-        "Wavelength"
-      ],
-      "answer": 3,
-      "explanation": "Frequency, photon energy and ionising power all increase from radio to gamma. Because \\( c = f\\lambda \\) is fixed, wavelength must decrease as frequency increases.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m703-q03",
-      "q": "Which set of regions are the ionising radiations?",
-      "options": [
-        "Radio, microwave, infrared",
-        "Ultraviolet, X-ray, gamma",
-        "Infrared, visible, ultraviolet",
-        "Microwave, visible, gamma"
+        "Radio waves, microwave radiation, infra-red radiation, visible light, ultraviolet rays, X-rays, gamma rays",
+        "Gamma rays, X-rays, ultraviolet rays, visible light, infra-red radiation, microwave radiation, radio waves",
+        "Gamma rays, X-rays, infra-red radiation, visible light, ultraviolet rays, microwave radiation, radio waves",
+        "Radio waves, infra-red radiation, microwave radiation, visible light, ultraviolet rays, gamma rays, X-rays"
       ],
       "answer": 1,
-      "explanation": "Only the top three highest-frequency regions — ultraviolet, X-ray and gamma — carry enough energy per photon to eject an electron from an atom (ionise it). Visible and below are non-ionising. Ionising begins the moment you step past violet into ultraviolet.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "From shortest wavelength to longest the regions run gamma rays, X-rays, ultraviolet rays, visible light, infra-red radiation, microwave radiation and radio waves. The shorter the wavelength, the greater the energy each photon carries, so gamma rays are the most energetic and radio waves the least.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 202, "url": "sources/phy12/p202.jpg" }
     },
     {
-      "id": "m703-q04",
-      "q": "Does 'non-ionising' mean a type of radiation is harmless?",
+      "id": "mm703-q02",
+      "type": "mc",
+      "q": "Identify which regions of the electromagnetic spectrum are ionising.",
       "options": [
-        "Yes — non-ionising radiation cannot damage living tissue",
-        "No — non-ionising radiation can still cause damage by heating at high intensity, it simply cannot ionise atoms",
-        "Yes — only ionising radiation can heat objects",
-        "No — non-ionising radiation is actually more dangerous than ionising radiation"
+        "Only gamma rays",
+        "Ultraviolet, X-rays and gamma rays",
+        "Infra-red, microwaves and radio waves",
+        "Visible light, ultraviolet and X-rays"
       ],
       "answer": 1,
-      "explanation": "'Non-ionising' only means a single photon cannot tear an electron off an atom. A high-intensity beam (e.g. infrared from a fire, or a microwave oven) can still cause real harm through heating — a different mechanism, but real damage.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Gamma rays are highly ionising and X-rays less so; ultraviolet light is also ionising, but visible light is not. Infra-red, microwaves and radio waves are non-ionising because they do not deliver enough energy to individual electrons to free them from their atoms.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 202, "url": "sources/phy12/p202.jpg" }
     },
     {
-      "id": "m703-q05",
-      "q": "A prism and a diffraction grating both disperse white light. By what mechanism does a prism separate the colours?",
+      "id": "mm703-q03",
+      "type": "short",
+      "q": "Explain why describing infra-red, microwave and radio radiation as 'non-ionising' does not mean these wavelengths are safe. (3 marks)",
+      "marks": 3,
+      "modelAnswer": "Non-ionising means the radiation does not deliver enough energy to individual electrons to allow them to escape their atoms, so it cannot ionise. However, at sufficient intensities these wavelengths can still cause burns through heating. For example, infra-red rays from a fire are extremely dangerous and are often the cause of death in bushfires, even though they cannot ionise.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States non-ionising means the radiation cannot give an electron enough energy to escape its atom." },
+        { "marks": 1, "descriptor": "Explains that at sufficient intensity it can still cause damage by heating/burns." },
+        { "marks": 1, "descriptor": "Gives a valid example, e.g. infra-red from a fire causing burns." }
+      ],
+      "explanation": "The distinction the marker wants is mechanism: ionisation versus heating. Non-ionising radiation is harmless only at low intensity; a high-intensity infra-red or microwave beam still burns.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 202, "url": "sources/phy12/p202.jpg" }
+    },
+    {
+      "id": "mm703-q04",
+      "type": "mc",
+      "q": "A spectroscope disperses light into its constituent wavelengths. By what mechanism does a prism do this, and how does a diffraction grating achieve the same result?",
       "options": [
-        "Diffraction",
-        "Refraction",
-        "Reflection",
-        "Polarisation"
+        "A prism reflects each wavelength by a different amount; a diffraction grating absorbs the unwanted wavelengths",
+        "A prism refracts different wavelengths by different amounts; a diffraction grating disperses light because the diffraction of light passing through its slits depends on wavelength",
+        "Both a prism and a diffraction grating disperse light purely by reflection from a ruled surface",
+        "A prism diffracts light through narrow slits; a diffraction grating refracts light through glass"
       ],
       "answer": 1,
-      "explanation": "A prism disperses light by refraction — different wavelengths slow and bend by different amounts, with violet bending most and red least. A grating disperses by diffraction instead (and there red is deflected most, the reverse order).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Light entering glass is refracted towards the normal, and because different wavelengths are refracted by different amounts the light is dispersed into its colours. A diffraction grating instead relies on the fact that light passing through its small slits diffracts by an amount that depends on the wavelength, again separating the colours.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 209, "url": "sources/phy12/p209.jpg" }
     },
     {
-      "id": "m703-q06",
-      "q": "What kind of source produces a continuous spectrum (an unbroken band of all colours)?",
+      "id": "mm703-q05",
+      "type": "recall",
+      "q": "From memory, state the three findings Kirchhoff and Bunsen reported in 1859 about the conditions that produce a continuous, an absorption, and an emission spectrum, and what those lines reveal about an element.",
+      "keyPoints": [
+        "A continuous colour spectrum is produced by glowing solids or dense gaseous bodies (a continuous black body spectrum).",
+        "If a gas exists between the light source and the spectroscope, light is absorbed from the continuous spectrum at wavelengths characteristic of the chemical components of the gas (an absorption spectrum).",
+        "A glowing gas produces bright lines on a dark background at wavelengths characteristic of its chemical components (an emission spectrum).",
+        "No two elements produced the same spectrum, but every atom of a particular element produced the same spectrum, making the spectroscope a tool for identifying elements."
+      ],
+      "explanation": "If you recalled all three source conditions plus the unique-fingerprint result (no two elements share a spectrum), grade yourself Good or Easy. The fingerprint point is what makes spectroscopy able to identify elements in a distant star.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 214, "url": "sources/phy12/p214.jpg" }
+    },
+    {
+      "id": "mm703-q06",
+      "type": "mc",
+      "q": "An absorption spectrum is produced by shining light with a continuous spectrum from an incandescent bulb through a cool gas. What does the cool gas do to that light?",
       "options": [
-        "A hot, low-density gas in a discharge tube",
-        "A continuous source viewed through a cool gas",
-        "A hot, dense glowing solid, liquid or dense gas",
-        "A cold gas illuminated by ultraviolet light"
+        "It adds bright emission lines at new wavelengths the source did not contain",
+        "It heats up and shifts every wavelength towards the red end of the spectrum",
+        "It absorbs certain wavelengths and re-emits them in all directions, so the light reaching the spectroscope is deficient in those wavelengths",
+        "It reflects all of the light back towards the source, leaving a dark spectrum"
       ],
       "answer": 2,
-      "explanation": "A hot, dense source (such as an incandescent tungsten filament) produces a continuous spectrum, because its closely packed atoms allow a continuous range of electron energies and so emit all wavelengths. Hot-thin gives emission; cool-gas-in-front gives absorption.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The cool gas absorbs photons at its characteristic wavelengths and re-emits them in all directions, not just forward along the beam. Along the line of sight those wavelengths are therefore depleted, leaving dark absorption lines cut into the otherwise continuous spectrum.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 210, "url": "sources/phy12/p210.jpg" }
     },
     {
-      "id": "m703-q07",
-      "q": "How is an emission spectrum (bright lines on a dark background) produced?",
-      "options": [
-        "A hot, low-density gas is excited; electrons fall to lower energy levels, emitting photons of specific wavelengths",
-        "A continuous source passes through a cool gas that removes specific wavelengths",
-        "A dense hot solid emits every wavelength at once",
-        "White light is reflected off a coloured surface"
+      "id": "mm703-q07",
+      "type": "worked",
+      "q": "The kinetic energy of an electron accelerated by a voltage is given by Ek = qV, where q is the charge on the electron, 1.6 × 10⁻¹⁹ C. Calculate the energy of an electron accelerated by 100 kV in an X-ray tube.",
+      "given": "\\(q = 1.6\\times10^{-19}\\,\\mathrm{C}\\),  \\(V = 100\\,\\mathrm{kV} = 100\\times10^{3}\\,\\mathrm{V}\\)",
+      "working": [
+        "\\(E_k = qV\\)",
+        "\\(E_k = 1.6\\times10^{-19} \\times 100\\times10^{3}\\)",
+        "\\(E_k = 1.6\\times10^{-14}\\,\\mathrm{J}\\) (equivalently \\(100\\,\\mathrm{keV}\\))"
       ],
-      "answer": 0,
-      "explanation": "In a hot, low-density gas (e.g. a discharge tube), the discharge excites electrons to higher levels; as they fall back they emit photons at specific energies, and hence specific wavelengths, producing bright lines only at those wavelengths.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 1.6e-14,
+      "answerUnit": "J",
+      "tolerance": 1e-15,
+      "explanation": "A direct application of Ek = qV with the electron charge 1.6 × 10⁻¹⁹ C. These high-energy electrons slam into the anode and decelerate, releasing energy as the very high-frequency, high-energy X-rays at the top of the electromagnetic spectrum.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 212, "url": "sources/phy12/p212.jpg" }
     },
     {
-      "id": "m703-q08",
-      "q": "You shine a hot filament torch through a cool cloud of sodium gas and view it through a spectroscope. What spectrum do you see?",
-      "options": [
-        "A continuous rainbow with no lines",
-        "Bright sodium lines on a dark background (emission)",
-        "A continuous rainbow with dark lines at sodium's wavelengths (absorption)",
-        "No spectrum at all"
+      "id": "mm703-q08",
+      "type": "worked",
+      "q": "Maxwell's equations give the speed of electromagnetic waves as v = 1/√(μ₀ε₀). Using the permittivity of free space ε₀ = 8.854 × 10⁻¹² C² s² kg⁻¹ m⁻³ and the permeability of free space μ₀ = 4π × 10⁻⁷ m kg C⁻², calculate this speed.",
+      "given": "\\(\\varepsilon_0 = 8.854\\times10^{-12}\\),  \\(\\mu_0 = 4\\pi\\times10^{-7}\\)",
+      "working": [
+        "\\(v = \\dfrac{1}{\\sqrt{\\mu_0\\varepsilon_0}}\\)",
+        "\\(v = \\dfrac{1}{\\sqrt{4\\pi\\times10^{-7} \\times 8.854\\times10^{-12}}}\\)",
+        "\\(v = 2.998\\times10^{8}\\,\\mathrm{m\\,s^{-1}}\\)"
       ],
-      "answer": 2,
-      "explanation": "The hot dense filament alone gives a continuous spectrum, but the light then passes through cool sodium gas, which absorbs photons at sodium's characteristic wavelengths and re-radiates them in all directions. Those wavelengths are depleted along the line of sight, leaving dark lines — an absorption spectrum.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 2.998e8,
+      "answerUnit": "m s⁻¹",
+      "tolerance": 1e6,
+      "explanation": "The figure that falls out, 2.998 × 10⁸ m s⁻¹, equals the measured speed of light. Maxwell noticed this match, which led him to propose that the light we see is an electromagnetic wave.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 202, "url": "sources/phy12/p202.jpg" }
     },
     {
-      "id": "m703-q09",
-      "q": "For a given element, how do the wavelengths of its absorption lines compare with those of its emission lines?",
+      "id": "mm703-q09",
+      "type": "mc",
+      "q": "In 1868 Joseph Norman Lockyer detected a Fraunhofer line in the solar spectrum that did not correspond with any known element on Earth. What did he conclude, and how was it later confirmed?",
       "options": [
-        "The absorption lines lie at completely different wavelengths from the emission lines",
-        "The absorption lines lie at exactly the same wavelengths as the emission lines, because both come from the same electron energy-level transitions",
-        "The absorption lines are always at longer wavelengths than the emission lines",
-        "There is no fixed relationship; it depends on the temperature"
+        "He concluded the spectroscope was faulty; the line was never explained",
+        "He predicted an as yet undiscovered element in the Sun, named it helium after the Greek helios, and William Ramsay confirmed this in 1895 by isolating helium in the laboratory",
+        "He concluded the line came from hydrogen, which William Ramsay later renamed helium in 1895",
+        "He predicted a new element and named it after himself; it was isolated on Earth the same year"
       ],
       "answer": 1,
-      "explanation": "Emission (electron falls) and absorption (electron rises) involve the same energy gaps, so the same photon energies and the same wavelengths. The dark absorption lines fall at identical positions to the bright emission lines — they are like a photographic negative of each other.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Lockyer predicted there must be an as-yet-undiscovered element in the Sun and named it helium after helios, the Greek for Sun. William Ramsay confirmed this in 1895 by isolating helium in the laboratory, decades after it was first read in a solar spectral line.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 214, "url": "sources/phy12/p214.jpg" }
     },
     {
-      "id": "m703-q10",
-      "q": "How does spectroscopy allow astronomers to identify the elements present in a distant star?",
+      "id": "mm703-q10",
+      "type": "mc",
+      "q": "A prism and a diffraction grating both spread white light into a spectrum, but the order of colours reverses. In a prism, violet is deviated the most. In a diffraction grating spectrum, which colour is deviated the most?",
       "options": [
-        "By measuring the star's overall brightness",
-        "Because heavier elements always glow red and lighter ones blue",
-        "Because every element has a unique pattern of spectral lines, and every atom of that element gives the same pattern anywhere in the universe, so matching the observed lines to known laboratory spectra identifies the element",
-        "By measuring the speed at which the star is moving"
+        "Violet, exactly as in a prism",
+        "Green, because it is the central colour",
+        "Red, the longest wavelength, is deviated the most",
+        "All colours are deviated equally by a grating"
       ],
       "answer": 2,
-      "explanation": "Each element produces a unique 'fingerprint' of spectral lines, identical for every atom of it whether on Earth or in a star. Matching the observed lines to known laboratory spectra reveals the element — so well that helium was identified in the Sun (1868) before it was isolated on Earth (1895).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "In a prism, short-wavelength violet refracts the most and red the least. A diffraction grating reverses this: the longest wavelength, red, is diffracted to the largest angle and violet the least. That reversal is the discriminating fact when a question asks which device produced a spectrum.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm703-q11",
+      "type": "extended",
+      "q": "Compare the emission and absorption spectra of a given element, and explain how spectra are used to identify the elements present in a gas. (6 marks)",
+      "marks": 6,
+      "modelAnswer": "An emission spectrum consists of bright coloured lines on an otherwise dark background. It is produced by a hot, low-density gas such as the gas in a discharge tube: the discharge excites the atoms' electrons to higher energy levels, and as they fall back they emit photons of specific energies, and therefore specific wavelengths, giving bright lines only at those wavelengths. An absorption spectrum consists of dark lines crossing an otherwise continuous, rainbow background. It is produced when light from a continuous source passes through a cooler gas, which absorbs photons at particular wavelengths and re-emits them in all directions, depleting those wavelengths from the line of sight. The crucial point of comparison is that, for a given element, the dark absorption lines occur at exactly the same wavelengths as the bright emission lines, because both arise from the same electron energy-level transitions in that element's atoms. Spectra identify elements because every element produces a unique set of spectral lines and every atom of an element produces the same set; by comparing the measured line wavelengths with known laboratory spectra, the matching pattern reveals which elements are present.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Describes the emission spectrum (bright lines on dark background) with its source: hot low-density gas / discharge tube." },
+        { "marks": 1, "descriptor": "Describes the absorption spectrum (dark lines on a continuous background) with its source: continuous light through a cooler gas." },
+        { "marks": 1, "descriptor": "Explains emission via electrons falling between energy levels emitting photons of specific wavelengths." },
+        { "marks": 1, "descriptor": "Explains absorption via the cool gas absorbing and re-emitting in all directions, depleting those wavelengths." },
+        { "marks": 1, "descriptor": "States the key link: absorption and emission lines fall at identical wavelengths from the same electron transitions." },
+        { "marks": 1, "descriptor": "Concludes each element has a unique fingerprint, so matching line wavelengths identifies the elements present." }
+      ],
+      "explanation": "The discriminator between a band-four and a band-six answer is the same-wavelength link and the unique-fingerprint conclusion, not just 'one is bright and one is dark'.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

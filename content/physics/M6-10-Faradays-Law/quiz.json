@@ -1,174 +1,150 @@
 {
   "questions": [
     {
-      "id": "m610-q01",
-      "q": "Faraday's law of electromagnetic induction is written \\( \\varepsilon = -N\\dfrac{\\Delta\\Phi}{\\Delta t} \\). What quantity does the induced EMF depend on?",
+      "id": "mm610-q01",
+      "type": "mc",
+      "q": "What is electromagnetic induction, as Faraday discovered it in August 1831?",
       "options": [
-        "The magnitude of the magnetic flux through the coil",
-        "The rate of change of magnetic flux through the coil",
-        "The strength of the magnetic field alone",
-        "The total area of the coil alone"
+        "The force a current-carrying conductor feels when placed in an external magnetic field",
+        "The generation of an emf and/or an electric current through the use of a magnetic field",
+        "The magnetic field produced around a wire whenever a steady current flows in it",
+        "The alignment of magnetic domains when iron is placed near a permanent magnet"
       ],
       "answer": 1,
-      "explanation": "The EMF is proportional to the RATE of change of flux, not the flux itself. A huge but unchanging flux gives zero rate of change and hence zero EMF; a small flux changing fast can give a large EMF. 'Change is everything.'",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Electromagnetic induction is the generation of an emf and/or electric current through the use of a magnetic field. Option A describes the motor effect (Faraday's 1821 discovery), which is a different phenomenon; induction is the reverse idea of getting electricity from magnetism.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 134, "url": "sources/phy12/p134.jpg" }
     },
     {
-      "id": "m610-q02",
-      "q": "Why does a strong but stationary magnet inside a coil induce no EMF?",
+      "id": "mm610-q02",
+      "type": "mc",
+      "q": "In the relationship for magnetic flux, what does the term 'magnetic flux density' actually refer to, and in what unit is magnetic flux measured?",
       "options": [
-        "The field is too uniform to induce anything",
-        "The flux is constant, so its rate of change is zero",
-        "The coil resistance cancels the induced EMF",
-        "The magnet must touch the wire to induce an EMF"
+        "Flux density is the flux \\(\\phi_B\\) itself, measured in tesla",
+        "Flux density is the magnetic field strength \\(B\\), measured in tesla (Wb m⁻²); flux \\(\\phi_B\\) is measured in weber",
+        "Flux density is the area \\(A\\) of the coil, measured in weber per metre",
+        "Flux density is the rate of change of flux, measured in weber per second"
       ],
       "answer": 1,
-      "explanation": "A stationary magnet gives a constant flux through the coil. Since nothing is changing, \\( \\Delta\\Phi/\\Delta t = 0 \\), so by Faraday's law the EMF is zero — no matter how strong the magnet is. This is the core 'why change is everything' point.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The strength of a magnetic field, B, is also known as the magnetic flux density — the amount of flux passing through a unit area — and it is measured in tesla (Wb m⁻²). The flux \\(\\phi_B = B_\\perp A\\) itself is measured in weber. Confusing flux density (the tesla quantity) with flux (the weber quantity) is a classic exam trap.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 137, "url": "sources/phy12/p137.jpg" }
     },
     {
-      "id": "m610-q03",
-      "q": "Using the 'swing the BAT' hook, which list correctly gives the three ways to change the flux through a coil?",
+      "id": "mm610-q03",
+      "type": "mc",
+      "q": "Which statement correctly states Faraday's Law of Induction?",
       "options": [
-        "Change the battery, the amplitude, and the temperature",
-        "Change the field strength B, the area A, and the angle \\( \\theta \\)",
-        "Change the brightness, the acceleration, and the torque",
-        "Change the field strength B only — area and angle do not affect flux"
+        "The induced emf in a circuit equals the magnetic flux through the circuit",
+        "The induced emf in a circuit is equal in magnitude to the rate at which the magnetic flux through the circuit is changing with time",
+        "The induced emf in a circuit is proportional to the strength of the magnetic field threading the coil",
+        "The induced emf in a circuit equals the area of the coil times the magnetic field strength"
       ],
       "answer": 1,
-      "explanation": "From \\( \\Phi = BA\\cos\\theta \\), changing any of B, A, or \\( \\theta \\) changes the flux. Move a magnet (B), slide a rod on rails to change the enclosed area (A), or rotate the coil to change the angle (\\( \\theta \\)) — all run through the identical induction machinery.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Faraday's Law states the induced emf is equal in magnitude to the rate at which the magnetic flux through the circuit is changing with time, written \\(\\varepsilon = -\\dfrac{\\Delta\\phi_B}{\\Delta t}\\). It is the rate of change of flux that matters — a large but steady flux gives zero emf.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 139, "url": "sources/phy12/p139.jpg" }
     },
     {
-      "id": "m610-q04",
-      "q": "A rectangular loop \\( 0.25\\,\\mathrm{m} \\times 0.30\\,\\mathrm{m} \\) (single turn) takes \\( 2.0\\,\\mathrm{s} \\) to fully enter a field of \\( 0.66\\,\\mathrm{T} \\) perpendicular to its plane. What is the magnitude of the induced EMF?",
-      "options": [
-        "\\( 0.025\\,\\mathrm{V} \\)",
-        "\\( 0.099\\,\\mathrm{V} \\)",
-        "\\( 0.050\\,\\mathrm{V} \\)",
-        "\\( 0.50\\,\\mathrm{V} \\)"
+      "id": "mm610-q04",
+      "type": "worked",
+      "q": "A single rectangular loop measuring 0.25 m by 0.3 m takes 2.0 s to fully enter a perpendicular magnetic field of 0.66 T strength. Calculate the magnitude of the induced emf in the loop.",
+      "given": "\\(0.25\\,\\mathrm{m} \\times 0.3\\,\\mathrm{m}\\) loop,  \\(B = 0.66\\,\\mathrm{T}\\) perpendicular,  \\(\\Delta t = 2.0\\,\\mathrm{s}\\),  \\(N = 1\\)",
+      "working": [
+        "Area: \\(A = 0.25\\,\\mathrm{m} \\times 0.3\\,\\mathrm{m} = 0.075\\,\\mathrm{m^2}\\)",
+        "Change in flux (field perpendicular, so \\(\\phi_B = BA\\)): \\(\\Delta\\phi_B = (BA)_{final} - (BA)_{initial} = (0.66 \\times 0.075) - (0 \\times 0.075)\\)",
+        "\\(\\Delta\\phi_B = 0.05\\,\\mathrm{Wb} - 0 = 0.05\\,\\mathrm{Wb}\\)",
+        "Faraday's Law: \\(\\varepsilon = -\\dfrac{N\\Delta\\phi_B}{\\Delta t} = -\\dfrac{1 \\times 0.05}{2.0} = -0.025\\,\\mathrm{V}\\)",
+        "Magnitude of the induced emf \\(= 0.025\\,\\mathrm{V}\\) (25 mV). The minus sign indicates the induced emf opposes the change in flux (Lenz's Law)."
       ],
-      "answer": 0,
-      "explanation": "\\( A = 0.25 \\times 0.30 = 0.075\\,\\mathrm{m^2} \\). \\( \\Delta\\Phi = BA - 0 = 0.66 \\times 0.075 = 0.0495\\,\\mathrm{Wb} \\). \\( |\\varepsilon| = N\\Delta\\Phi/\\Delta t = 1 \\times 0.0495/2.0 \\approx 0.025\\,\\mathrm{V} \\).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 0.025,
+      "answerUnit": "V",
+      "tolerance": 0.001,
+      "explanation": "Always take change in flux as final minus initial; the loop starts outside the field so the initial flux is zero. With one turn the emf is 0.025 V — and with 200 turns it would be 200 times larger, about 5 V, for the same flux change.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 139, "url": "sources/phy12/p139.jpg" }
     },
     {
-      "id": "m610-q05",
-      "q": "If the loop in the previous question instead had 200 turns (same field, area, and time), the induced EMF would be:",
-      "options": [
-        "Unchanged, because the flux change is the same",
-        "200 times larger, about \\( 5.0\\,\\mathrm{V} \\)",
-        "200 times smaller, about \\( 0.00012\\,\\mathrm{V} \\)",
-        "Doubled, about \\( 0.050\\,\\mathrm{V} \\)"
+      "id": "mm610-q05",
+      "type": "worked",
+      "q": "A spring bent into a circle of radius 5.0 cm sits in a magnetic field of strength 0.55 T (field perpendicular to the loop, single turn). It is released and contracts to a circle of radius 3.0 cm in 0.15 seconds. Calculate the magnitude of the induced emf.",
+      "given": "\\(r_i = 5.0\\,\\mathrm{cm} = 0.05\\,\\mathrm{m}\\),  \\(r_f = 3.0\\,\\mathrm{cm} = 0.03\\,\\mathrm{m}\\),  \\(B = 0.55\\,\\mathrm{T}\\),  \\(\\Delta t = 0.15\\,\\mathrm{s}\\),  \\(N = 1\\)",
+      "working": [
+        "Convert radii to metres before squaring: \\(0.05\\,\\mathrm{m}\\) and \\(0.03\\,\\mathrm{m}\\).",
+        "Initial area: \\(A_i = \\pi (0.05)^2 = 7.85\\times10^{-3}\\,\\mathrm{m^2}\\), so \\(\\phi_i = 0.55 \\times 7.85\\times10^{-3} = 4.32\\times10^{-3}\\,\\mathrm{Wb}\\)",
+        "Final area: \\(A_f = \\pi (0.03)^2 = 2.83\\times10^{-3}\\,\\mathrm{m^2}\\), so \\(\\phi_f = 0.55 \\times 2.83\\times10^{-3} = 1.56\\times10^{-3}\\,\\mathrm{Wb}\\)",
+        "Change in flux: \\(\\Delta\\phi_B = \\phi_f - \\phi_i = 1.56\\times10^{-3} - 4.32\\times10^{-3} = -2.76\\times10^{-3}\\,\\mathrm{Wb}\\)",
+        "Faraday's Law: \\(\\varepsilon = -\\dfrac{\\Delta\\phi_B}{\\Delta t} = -\\dfrac{-2.76\\times10^{-3}}{0.15} \\approx 0.018\\,\\mathrm{V}\\)",
+        "Magnitude of the induced emf \\(\\approx 0.018\\,\\mathrm{V}\\) (18 mV)."
       ],
-      "answer": 1,
-      "explanation": "Each turn encloses the same changing flux and so has the same induced EMF; the turns are in series, so their EMFs add. With \\( N = 200 \\), the EMF is \\( 200 \\times 0.025 \\approx 5.0\\,\\mathrm{V} \\) — same flux change, more turns, more EMF.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 0.018,
+      "answerUnit": "V",
+      "tolerance": 0.002,
+      "explanation": "Here the field B stays constant at 0.55 T the whole time — it is the area A that changes, so the flux changes (lever A of the BAT). This proves a constant field does not mean constant flux: you can induce an emf by changing the area alone.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 140, "url": "sources/phy12/p140.jpg" }
     },
     {
-      "id": "m610-q06",
-      "q": "A circular loop of radius \\( 0.15\\,\\mathrm{m} \\) in a constant \\( 0.30\\,\\mathrm{T} \\) field (perpendicular, single turn) is squashed to radius \\( 0.070\\,\\mathrm{m} \\) in \\( 0.13\\,\\mathrm{s} \\). Even though B never changed, an EMF appears. Why?",
-      "options": [
-        "The field secretly changed direction",
-        "The area shrank, so the flux \\( \\Phi = BA \\) decreased",
-        "Resistance heating created a voltage",
-        "No EMF can appear if B is constant"
-      ],
-      "answer": 1,
-      "explanation": "Flux is \\( BA\\cos\\theta \\), not just B. The area fell as the loop shrank, so the flux fell even with B fixed. Constant field does not mean constant flux — this is 'lever A' of the BAT, giving \\( |\\varepsilon| \\approx 0.13\\,\\mathrm{V} \\) here.",
+      "id": "mm610-q06",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m610-q07",
-      "q": "When a magnet is pushed into a solenoid, which is the correct three-step chain explaining the result?",
+      "q": "If a coil has n turns of wire instead of one, how is the emf induced by a given change in magnetic flux threading the coil affected?",
       "options": [
-        "The magnet directly creates a current in the coil",
-        "Flux changes → an EMF is induced (Faraday) → a current flows if the circuit is complete",
-        "A current flows → this creates an EMF → which changes the flux",
-        "The strong field creates a large flux → the large flux creates a current"
+        "The emf is unchanged, because flux does not depend on the number of turns",
+        "The emf is n times greater, because every turn has the same emf induced and the turns add in series",
+        "The emf is divided by n, because the flux is shared between the turns",
+        "The emf is n squared times greater, because area scales with turns"
       ],
       "answer": 1,
-      "explanation": "The correct chain is 'Flux, EMF, Current, if Closed': the moving magnet changes the flux; the changing flux induces an EMF; the EMF drives a current only if the coil forms a complete circuit. Saying 'the magnet makes a current' collapses the chain and loses marks.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If a coil has n turns, the emf induced by a change in flux is n times greater than for a single turn, giving \\(\\varepsilon = -\\dfrac{N\\Delta\\phi_B}{\\Delta t}\\). Each turn encloses the same changing flux and the turns are wired in series, so their emfs add like batteries in a row.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 139, "url": "sources/phy12/p139.jpg" }
     },
     {
-      "id": "m610-q08",
-      "q": "A coil is in an open circuit (a switch is open) when the flux through it changes. What happens?",
-      "options": [
-        "No EMF is induced because there is no circuit",
-        "An EMF is induced, but no current flows because the circuit is not complete",
-        "Both an EMF and a current appear as normal",
-        "The flux change is cancelled by the open switch"
+      "id": "mm610-q07",
+      "type": "recall",
+      "q": "From memory: in Faraday's moving-magnet experiments, what happens to the induced current when the magnet is held stationary near the coil, and what does the magnet's speed control?",
+      "keyPoints": [
+        "When the magnet is held without moving near the end of the coil, the galvanometer needle stays at the central point — no current is induced.",
+        "A current is induced only while the magnet is moving (approaching or being taken away), i.e. only while the flux is changing.",
+        "The magnitude of the induced current depends on the speed of the magnet: a slow magnet induces a small current, a fast magnet induces a larger current."
       ],
-      "answer": 1,
-      "explanation": "EMF and current must be kept strictly distinct. The induced EMF exists whether or not the circuit is closed — it is a voltage across the coil's ends. A current only flows if there is a closed conducting loop. 'No circuit, so no EMF' is wrong; there is an EMF, just no current.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled that a stationary magnet induces nothing and that faster motion induces a larger current, grade yourself Good or Easy. The deep point is that only a changing flux induces — a strong but steady field does nothing.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 136, "url": "sources/phy12/p136.jpg" }
     },
     {
-      "id": "m610-q09",
-      "q": "A student claims a solid metal plate cannot have any current induced in it because, unlike a coil, it has no wire loops. This claim is:",
-      "options": [
-        "Correct — induction requires defined wire loops",
-        "Incorrect — a changing flux induces an EMF in bulk metal, driving circulating eddy currents",
-        "Correct — only solenoids can be induced in",
-        "Incorrect, but only because the plate is magnetic"
+      "id": "mm610-q08",
+      "type": "recall",
+      "q": "From memory: explain why an induced current can occur in a solid sheet of metal moving through a magnetic field even though it has no wire loops, and name these currents.",
+      "keyPoints": [
+        "Induced currents do not occur only in coils and wires; they also occur when a conductor moves in an external magnetic field or a metal object is subjected to a changing magnetic field.",
+        "The changing flux through the body of the metal induces an emf, which drives currents that swirl in closed loops through the bulk of the sheet — these are eddy currents.",
+        "Eddy currents are an application of Lenz's Law: the magnetic fields they set up oppose the change, so the induced force always opposes the motion of the sheet."
       ],
-      "answer": 1,
-      "explanation": "Induction needs only a conductor and a changing flux, not discrete wires. A changing flux through the plate induces an EMF that drives swirling closed-loop currents through the solid metal — eddy currents. By Lenz's law these oppose the motion (a braking force).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The marked trap is claiming 'no wire loops, so no induction'. A conductor plus a changing flux is all you need; the current just circulates through the solid metal as eddy currents that oppose the motion.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 142, "url": "sources/phy12/p142.jpg" }
     },
     {
-      "id": "m610-q10",
-      "q": "A single square loop of side \\( 0.20\\,\\mathrm{m} \\), plane perpendicular to the field, experiences a field rising steadily from \\( 0 \\) to \\( 0.50\\,\\mathrm{T} \\) in \\( 0.10\\,\\mathrm{s} \\). What is the magnitude of the induced EMF?",
+      "id": "mm610-q09",
+      "type": "mc",
+      "q": "Using the memory hook 'swing the BAT', which three changes can each induce an emf by changing the flux \\(\\phi_B = BA\\cos\\theta\\) through a coil?",
       "options": [
-        "\\( 0.02\\,\\mathrm{V} \\)",
-        "\\( 0.2\\,\\mathrm{V} \\)",
-        "\\( 2.0\\,\\mathrm{V} \\)",
-        "\\( 0.5\\,\\mathrm{V} \\)"
+        "Change the resistance, the current, or the voltage of the coil",
+        "Change the field strength B, the area A, or the angle \\(\\theta\\) between the field and the coil's normal",
+        "Change the temperature, the material, or the thickness of the wire",
+        "Change the number of turns, the time, or the speed of the magnet only"
       ],
       "answer": 1,
-      "explanation": "\\( A = 0.20^2 = 0.04\\,\\mathrm{m^2} \\). With the field perpendicular, \\( \\Phi_f = 0.50 \\times 0.04 = 0.02\\,\\mathrm{Wb} \\), \\( \\Phi_i = 0 \\), so \\( \\Delta\\Phi = 0.02\\,\\mathrm{Wb} \\). \\( |\\varepsilon| = 1 \\times 0.02/0.10 = 0.2\\,\\mathrm{V} \\).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Because \\(\\phi_B = BA\\cos\\theta\\), changing any one of B, A or \\(\\theta\\) changes the flux and induces an emf — 'swing the BAT'. All three run through the identical machinery: a changing flux induces an emf, regardless of which lever caused the change.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm610-q10",
+      "type": "short",
+      "q": "Explain why an EMF is induced when a bar magnet is moved into a solenoid, and state the condition required for a current to flow. (4 marks)",
+      "marks": 4,
+      "modelAnswer": "As the magnet moves into the solenoid, the magnetic field through the coil increases, so the magnetic flux through the coil increases. By Faraday's Law of electromagnetic induction, this change in flux induces an EMF in the coil, equal to the number of turns times the rate of change of flux, so a faster-moving magnet or more turns gives a larger EMF. This induced EMF then drives an induced current around the coil — but only if the coil forms a complete circuit. If the circuit is open, the EMF is still induced but no current flows.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States the magnet's motion increases the field, so the flux through the coil changes." },
+        { "marks": 1, "descriptor": "Applies Faraday's Law: the changing flux induces an EMF equal to N × rate of change of flux." },
+        { "marks": 1, "descriptor": "Links faster motion / more turns to a larger EMF." },
+        { "marks": 1, "descriptor": "States a current flows only if the coil forms a complete circuit; otherwise an EMF exists but no current." }
+      ],
+      "explanation": "Run the three-step chain — 'Flux, EMF, Current, if Closed' — and keep EMF and current strictly distinct. Collapsing it to 'the magnet makes a current' is the band-four answer and leaves marks on the table.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

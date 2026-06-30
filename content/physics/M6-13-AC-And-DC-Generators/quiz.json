@@ -1,174 +1,146 @@
 {
   "questions": [
     {
-      "id": "m613-q01",
-      "q": "What energy transformation does a generator perform?",
+      "id": "mm613-q01",
+      "type": "mc",
+      "q": "A simple generator consists of a coil of wire forced to rotate about an axis in a magnetic field. What energy transformation does this generator perform?",
       "options": [
-        "Electrical energy into mechanical (kinetic) energy",
-        "Mechanical (kinetic) energy into electrical energy",
-        "Chemical energy into electrical energy",
-        "Electrical energy into heat energy"
+        "It transforms electrical energy into mechanical kinetic energy",
+        "It transforms mechanical kinetic energy into electrical energy",
+        "It transforms chemical energy into electrical energy",
+        "It transforms electrical energy into heat energy"
       ],
       "answer": 1,
-      "explanation": "A generator turns mechanical (kinetic) energy — from a turbine, crank, or falling water — into electrical energy. This is the exact reverse of a motor, which takes electrical energy in and gives mechanical energy out. The same hardware can do both.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "A generator is a device that transforms mechanical kinetic energy into electrical energy - the exact reverse of a motor. The coil is forced to rotate in the magnetic field, the flux threading the coil changes, and Faraday's Law gives the induced emf across the ends of the coil.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 176, "url": "sources/phy12/p176.jpg" }
     },
     {
-      "id": "m613-q02",
-      "q": "In a generator, which physical law gives the magnitude of the induced EMF as the coil spins?",
-      "options": [
-        "Faraday's law: the EMF equals N times the rate of change of flux",
-        "Lenz's law: the EMF equals the flux times the area",
-        "Ohm's law: the EMF equals current times resistance",
-        "The motor effect: the EMF equals BIL"
-      ],
-      "answer": 0,
-      "explanation": "The spinning coil's changing flux induces an EMF by Faraday's law, \\( \\varepsilon = -N\\Delta\\Phi/\\Delta t \\). Lenz's law (the minus sign) gives only the direction, not the magnitude.",
+      "id": "mm613-q02",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m613-q03",
-      "q": "At which instant is the EMF of a generator at its maximum?",
+      "q": "As the coil of a generator is forced to rotate about an axis in a magnetic field, what directly causes an emf to be induced across the ends of the wire of the coil?",
       "options": [
-        "When the coil's plane is perpendicular to the field (flux at maximum)",
-        "When the coil's plane is parallel to the field (flux instantaneously zero but changing fastest)",
-        "When the coil is momentarily at rest",
-        "When the flux through the coil is at its maximum value"
+        "The steady, unchanging strength of the magnetic field",
+        "The changing magnitude of the magnetic flux threading the area of the coil",
+        "A current supplied to the coil by the external circuit",
+        "The heat produced in the stator by the rotating rotor"
       ],
       "answer": 1,
-      "explanation": "EMF depends on the RATE of change of flux, not the flux. When the coil plane is parallel to the field the flux is zero, but the coil sides are cutting field lines fastest — maximum rate of change, so maximum EMF. This 'max EMF at zero flux' is the most-missed mark in the topic.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "As the coil rotates, the magnitude of the magnetic flux threading the area of the coil changes, and this changing magnetic flux produces a changing emf across the ends of the wire, in accordance with Faraday's Law of Induction. The stationary parts are the stator, which provides the field; the rotating coil is the rotor.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 176, "url": "sources/phy12/p176.jpg" }
     },
     {
-      "id": "m613-q04",
-      "q": "When the coil's plane is perpendicular to the field, the flux is at its maximum. What is the EMF at that instant?",
+      "id": "mm613-q03",
+      "type": "mc",
+      "q": "At the instant the magnetic flux threading the generator coil is at a maximum value, what is the magnitude of the induced emf?",
       "options": [
-        "Maximum, because the flux is maximum",
-        "Zero, because the flux is momentarily not changing",
-        "Half of its peak value",
-        "Negative and maximum"
+        "Maximum, because the flux threading the coil is maximum at that instant",
+        "Zero, because the gradient of the flux-versus-time graph is zero at that instant",
+        "Half of its peak value, because the coil is halfway through a revolution",
+        "Maximum negative, because the flux is about to reverse"
       ],
       "answer": 1,
-      "explanation": "At maximum flux the flux-vs-time graph is at a turning point — its slope (rate of change) is momentarily zero, so the EMF is zero. The coil sides are sliding along the field lines, not cutting them. Max flux gives zero EMF; the two graphs are 90° out of phase.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "When the flux threading the coil is at a maximum value the emf is zero, because the gradient of the flux-versus-time graph is zero - there is no change in flux at that instant. Conversely, when the flux threading the coil is zero the emf is at its maximum value, because the change in flux is then happening at a maximum rate.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 177, "url": "sources/phy12/p177.jpg" }
     },
     {
-      "id": "m613-q05",
-      "q": "What is the ONLY structural difference between a simple AC generator and a simple DC generator?",
+      "id": "mm613-q04",
+      "type": "recall",
+      "q": "From memory, in terms of the graph of magnetic flux threading the coil versus time, explain why a generator's emf is zero when the flux is at a maximum and maximum when the flux is zero.",
+      "keyPoints": [
+        "The emf is given by the negative of the gradient of the graph of magnetic flux threading the coil versus time (Faraday's Law) - not by the flux itself.",
+        "When the flux threading the coil is at a maximum value, the gradient of the flux-versus-time graph is zero, so there is no change in flux at that instant and the emf is zero.",
+        "When the flux threading the coil is zero, the flux-versus-time graph has its maximum gradient - the change in flux is happening at a maximum rate - so the emf is at a maximum value."
+      ],
+      "explanation": "The single most-missed mark in this topic: the emf tracks the rate of change of flux (the gradient of the flux-time graph), not the flux. Maximum flux gives zero emf; zero flux gives maximum emf, ninety degrees out of phase.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 177, "url": "sources/phy12/p177.jpg" }
+    },
+    {
+      "id": "mm613-q05",
+      "type": "mc",
+      "q": "How does an AC generator connect its rotating coil to the external circuit, and what is the nature of the output?",
       "options": [
-        "The AC generator has more coils than the DC generator",
-        "The device connecting the rotating coil to the external circuit: slip rings (AC) versus a split-ring commutator (DC)",
-        "The AC generator uses permanent magnets and the DC generator uses electromagnets",
-        "The coil spins in opposite directions"
+        "A split-ring commutator, giving a unidirectional output",
+        "Slip rings that rotate with the coil, giving an emf that varies sinusoidally as an alternating current",
+        "Two fixed terminals soldered directly to the coil, giving a steady direct current",
+        "A multi-part commutator, giving a smooth constant voltage"
       ],
       "answer": 1,
-      "explanation": "The coil, rotation, and induced sinusoidal EMF are identical in both. The only difference is the connector: continuous slip rings keep the connection fixed (giving AC), while a split-ring commutator reverses the external connection each half-turn (giving DC).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "An AC generator connects the coil to the external circuit by the use of slip rings, which rotate with the coil; brushes make contact with the slip rings and transfer the emf to the terminals. The emf across the ends of the coil varies sinusoidally with time, producing an alternating current (AC).",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 178, "url": "sources/phy12/p178.jpg" }
     },
     {
-      "id": "m613-q06",
-      "q": "What does the split-ring commutator in a DC generator actually do?",
+      "id": "mm613-q06",
+      "type": "mc",
+      "q": "What is the essential difference between a simple AC generator and a simple DC generator in the way the current is provided to the external circuit?",
       "options": [
-        "It reverses the EMF induced inside the coil so it stays positive",
-        "It reverses the connection to the external circuit each half-revolution, keeping the output current unidirectional",
-        "It blocks the magnetic flux during the negative half-cycle",
-        "It smooths the output into a perfectly flat DC line"
+        "An AC generator's coil rotates while a DC generator's coil stays still",
+        "An AC generator uses slip rings, while a DC generator uses a split-ring commutator to connect the rotating coil to the terminals",
+        "An AC generator uses an electromagnet while a DC generator uses permanent magnets",
+        "An AC generator induces an emf by Faraday's Law while a DC generator does not"
       ],
       "answer": 1,
-      "explanation": "The coil's internal EMF is always the same sine wave (positive and negative). The commutator reverses the EXTERNAL connection at the zero-EMF instant, so the output current stays one-directional. Saying it 'reverses the EMF in the coil' is wrong and loses a mark.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The difference between an AC and a DC generator is in the way the current is provided to the external circuit: an AC generator uses slip rings, while a DC generator uses a split-ring commutator. When the emf of the coil changes direction, the brushes swap over the side of the coil they are connected to, causing the emf supplied to the external circuit to be in one direction only.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 180, "url": "sources/phy12/p180.jpg" }
     },
     {
-      "id": "m613-q07",
-      "q": "What is the shape of the output from a single-coil DC generator?",
+      "id": "mm613-q07",
+      "type": "recall",
+      "q": "From memory: explain how the split-ring commutator of a simple DC generator keeps the current supplied to the external circuit in one direction, and describe the shape of the output.",
+      "keyPoints": [
+        "A DC generator uses a split-ring commutator to connect the rotating coil to the terminals; the coil itself still induces the same emf as in an AC generator.",
+        "When the emf of the coil changes direction, the brushes swap over the side of the coil they are connected to, so the emf supplied to the external circuit is in one direction only.",
+        "The output is a pulsating unidirectional DC (a rectified sine wave) that rises from zero to a maximum and back twice per revolution - not a steady, flat line; it can be made smoother by adding more coils on the armature with a multi-part commutator."
+      ],
+      "explanation": "Precision matters for the marks: the commutator reverses the external connection, not the emf in the coil. A simple single-coil DC generator gives pulsating DC, never a flat constant value.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 180, "url": "sources/phy12/p180.jpg" }
+    },
+    {
+      "id": "mm613-q08",
+      "type": "mc",
+      "q": "How can the output from a simple single-coil DC generator be made smoother?",
       "options": [
-        "A perfectly flat, steady line like a battery",
-        "A full sine wave swinging positive and negative",
-        "Pulsating DC: positive humps that rise from zero to maximum and back, twice per revolution, never negative",
-        "A square wave alternating between two fixed values"
+        "By spinning the single coil at a much higher frequency",
+        "By replacing the split-ring commutator with slip rings",
+        "By including more coils set at regular angles on the armature, each connected to segments of a multi-part commutator, so the brushes contact the coil producing the greatest emf",
+        "By winding the coil onto a non-magnetic plastic core"
       ],
       "answer": 2,
-      "explanation": "A single-coil DC generator gives pulsating (rectified) DC — the negative halves of the sine wave are flipped positive, producing two positive humps per revolution that drop to zero between them. It is unidirectional but never flat. Drawing a flat line is a classic error.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The output from a DC generator can be made smoother by including more coils set at regular angles on the armature. Each coil is connected to two segments of a multi-part commutator, and the brushes make contact only with the segments connected to the coil producing the greatest emf at a particular time - a two-coil generator uses a four-segment commutator.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 181, "url": "sources/phy12/p181.jpg" }
     },
     {
-      "id": "m613-q08",
-      "q": "A generator coil has \\( N = 200 \\) turns, area \\( A = 0.075\\,\\mathrm{m^2} \\), in a field \\( B = 0.66\\,\\mathrm{T} \\), spinning at \\( f = 50\\,\\mathrm{Hz} \\). Using \\( \\varepsilon_{\\max} = NBA\\omega \\) with \\( \\omega = 2\\pi f \\), the peak EMF is closest to:",
-      "options": [
-        "\\( 9.9\\,\\mathrm{V} \\)",
-        "\\( 310\\,\\mathrm{V} \\)",
-        "\\( 3100\\,\\mathrm{V} \\)",
-        "\\( 31\\,000\\,\\mathrm{V} \\)"
+      "id": "mm613-q09",
+      "type": "worked",
+      "q": "A rectangular generator coil of 200 turns and area 0.075 m^2 rotates in a uniform magnetic field of 0.66 T at 50 revolutions per second. Find the angular frequency and the peak emf of the sinusoidal output.",
+      "given": "\\(N = 200\\),  \\(A = 0.075\\,\\mathrm{m^2}\\),  \\(B = 0.66\\,\\mathrm{T}\\),  \\(f = 50\\,\\mathrm{Hz}\\)",
+      "working": [
+        "\\(\\omega = 2\\pi f = 2\\pi(50) = 314.2\\,\\mathrm{rad\\,s^{-1}}\\)",
+        "Peak emf is the peak of the sinusoid from Faraday's Law applied to \\(\\Phi = BA\\cos\\omega t\\): \\(\\varepsilon_{\\max} = NBA\\omega\\)",
+        "\\(NBA = 200 \\times 0.66 \\times 0.075 = 9.9\\)",
+        "\\(\\varepsilon_{\\max} = 9.9 \\times 314.2 \\approx 3100\\,\\mathrm{V}\\)"
       ],
-      "answer": 2,
-      "explanation": "\\( \\omega = 2\\pi(50) = 314\\,\\mathrm{rad\\,s^{-1}} \\). \\( \\varepsilon_{\\max} = 200 \\times 0.66 \\times 0.075 \\times 314 = 9.9 \\times 314 \\approx 3100\\,\\mathrm{V} \\). Option A is just \\( NBA \\) without \\( \\omega \\).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 3100,
+      "answerUnit": "V",
+      "tolerance": 50,
+      "explanation": "NBA-omega is not on the formula sheet but is just the peak of the sinusoid you get by applying Faraday's Law to a flux of BA cos(omega t). With slip rings the terminals deliver this as a full AC sine wave; with a split-ring commutator the negative halves are flipped positive, giving pulsating DC of the same peak.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m613-q09",
-      "q": "Why must the slip rings of an AC generator (not a commutator) be used to produce a true alternating output?",
-      "options": [
-        "Slip rings spin faster than a commutator",
-        "Each slip ring stays permanently connected to the same coil end, so the external connection never reverses and the output follows the coil's full sine wave",
-        "Slip rings block half of the current to make it alternate",
-        "Slip rings reverse the coil's EMF twice per revolution"
+      "id": "mm613-q10",
+      "type": "worked",
+      "q": "A single rectangular loop measuring 0.25 m by 0.30 m sits in a perpendicular field of 0.66 T. The flux is swept from zero to its full value over 2.0 s. Find the magnitude of the average induced emf.",
+      "given": "\\(N = 1\\),  loop \\(0.25\\,\\mathrm{m} \\times 0.30\\,\\mathrm{m}\\),  \\(B = 0.66\\,\\mathrm{T}\\),  \\(\\Delta t = 2.0\\,\\mathrm{s}\\)",
+      "working": [
+        "\\(A = 0.25 \\times 0.30 = 0.075\\,\\mathrm{m^2}\\)",
+        "\\(\\Delta\\Phi = BA = 0.66 \\times 0.075 = 0.0495\\,\\mathrm{Wb}\\) (from 0 to full flux)",
+        "\\(\\varepsilon = N\\dfrac{\\Delta\\Phi}{\\Delta t} = 1 \\times \\dfrac{0.0495}{2.0}\\)",
+        "\\(\\varepsilon \\approx 0.025\\,\\mathrm{V} = 25\\,\\mathrm{mV}\\)"
       ],
-      "answer": 1,
-      "explanation": "Continuous slip rings keep each coil end wired to the same terminal forever, so the connection never swaps. When the coil's sinusoidal EMF reverses each half-revolution, the output reverses too — a genuine alternating current. A commutator would instead flip the connection to prevent reversal.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m613-q10",
-      "q": "In a real large power-station generator, the coils are kept stationary and the magnet is spun inside them, rather than the simple-model arrangement of spinning the coil. Why?",
-      "options": [
-        "It produces a different kind of current that cannot be made any other way",
-        "The output coils carry enormous currents, which you do not want to drag through sliding brushes and slip rings",
-        "Spinning a magnet generates more energy than spinning a coil",
-        "Stationary coils eliminate the need for a magnetic field"
-      ],
-      "answer": 1,
-      "explanation": "The physics depends only on relative motion between coil and field, so either can spin. Engineering favours keeping the high-current output coils fixed, because passing tens of thousands of amps through sliding brushes would burn them out; only the modest magnet current goes through slip rings.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 0.0248,
+      "answerUnit": "V",
+      "tolerance": 0.001,
+      "explanation": "This bare-mechanism version uses only formula-sheet maths: emf = N times the change in flux over the change in time gives the average emf over the sweep, whereas NBA-omega gives the peak of a sinusoid. Scale by N for a real multi-turn coil.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

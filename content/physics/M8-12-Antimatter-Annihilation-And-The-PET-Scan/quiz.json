@@ -1,174 +1,152 @@
 {
   "questions": [
     {
-      "id": "m812-q01",
-      "q": "Which statement correctly describes a positron?",
-      "options": [
-        "The antiparticle of the electron: same mass as the electron, but positive charge",
-        "A particle with twice the electron's mass and positive charge",
-        "A proton that has been ejected from the nucleus",
-        "A neutral particle emitted alongside beta particles"
-      ],
-      "answer": 0,
-      "explanation": "A positron is the electron's antiparticle: identical mass (\\(9.11 \\times 10^{-31}\\ \\mathrm{kg}\\)) and equal magnitude of charge, but positive instead of negative. The neutral partner of beta decay (D) is the neutrino.",
+      "id": "mm812-q01",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m812-q02",
-      "q": "In beta-plus decay, what happens to the atomic number of the nucleus?",
+      "q": "How does a positron compare with an electron?",
       "options": [
-        "It increases by 1, because a neutron becomes a proton",
-        "It decreases by 1, because a proton becomes a neutron",
-        "It stays the same, because only a positron leaves",
-        "It decreases by 2, because an alpha particle is emitted"
+        "A positron has a larger mass than an electron and a positive charge",
+        "A positron has the same mass as an electron but carries a positive charge",
+        "A positron has the same charge as an electron but a much smaller mass",
+        "A positron is a neutral particle with the same mass as an electron"
       ],
       "answer": 1,
-      "explanation": "In beta-plus decay a proton converts to a neutron (emitting a positron and neutrino), so the atomic number falls by 1 while the mass number is unchanged. Beta-MINUS decay (A) is the reverse: a neutron becomes a proton and the atomic number rises.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Positrons are the opposite of electrons: they have the same mass, but carry a positive charge. The positron is the antiparticle of the electron — same mass, opposite (positive) charge — and when a positron and an electron collide they immediately annihilate each other.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 425, "url": "sources/phy12/p425.jpg" }
     },
     {
-      "id": "m812-q03",
-      "q": "What is the balanced equation for the beta-plus decay of carbon-11?",
-      "options": [
-        "\\({}^{11}_{6}\\mathrm{C} \\to {}^{11}_{7}\\mathrm{N} + {}^{0}_{-1}e + \\nu\\)",
-        "\\({}^{11}_{6}\\mathrm{C} \\to {}^{11}_{5}\\mathrm{B} + {}^{0}_{+1}e + \\nu\\)",
-        "\\({}^{11}_{6}\\mathrm{C} \\to {}^{7}_{3}\\mathrm{Li} + {}^{4}_{2}\\mathrm{He} + \\nu\\)",
-        "\\({}^{11}_{6}\\mathrm{C} \\to {}^{10}_{6}\\mathrm{C} + {}^{1}_{0}n\\)"
-      ],
-      "answer": 1,
-      "explanation": "Carbon-11 (Z=6) emits a positron, so a proton becomes a neutron and the daughter is boron-11 (Z=5). Mass number stays 11; charge balances: \\(6 = 5 + 1\\). Option A is beta-minus (wrong direction).",
+      "id": "mm812-q02",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m812-q04",
-      "q": "When an electron and positron at rest annihilate, why must TWO gamma photons be produced in opposite directions rather than a single photon?",
+      "q": "In pair production, an incoming gamma ray near a nucleus converts its energy into mass. Why are two particles — an electron and a positron — produced rather than just one?",
       "options": [
-        "To conserve charge, since one photon would be charged",
-        "To conserve mass-energy, since one photon could not carry enough energy",
-        "To conserve momentum: the pair is at rest (zero total momentum), but a single photon always carries momentum, so two opposite photons are needed to cancel to zero",
-        "Because gamma photons can only be created in pairs by the strong force"
+        "Because momentum must be conserved and a single particle cannot carry it",
+        "Because the gamma ray always splits its energy exactly in half",
+        "Because charge needs to be conserved, so two particles of opposite sign are produced",
+        "Because the nucleus absorbs one of the particles, leaving a pair"
       ],
       "answer": 2,
-      "explanation": "Just before annihilation the total momentum is essentially zero. A single photon always carries momentum and can never have zero, so it would violate conservation of momentum. Two equal photons emitted back-to-back have momenta that cancel to zero. Photons are uncharged, so charge (A) is not the issue here.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "When an incoming gamma ray collides with a nucleus, the energy of the gamma ray is converted into mass (E = mc2), but because charge needs to be conserved, two particles of opposite sign are produced — an electron and a positron. The photon has zero charge, so the negative electron and positive positron together keep the total charge at zero.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 435, "url": "sources/phy12/p435.jpg" }
     },
     {
-      "id": "m812-q05",
-      "q": "What is the energy of EACH gamma photon produced in electron-positron annihilation at rest?",
+      "id": "mm812-q03",
+      "type": "mc",
+      "q": "What is produced when an electron and a positron (or any particle and its antiparticle) collide and annihilate each other?",
       "options": [
-        "0.255 MeV",
-        "0.511 MeV",
-        "1.022 MeV",
-        "931.5 MeV"
+        "A single gamma ray carrying all the energy",
+        "A neutron and a neutrino",
+        "Two gamma rays, with total energy equal to 2mec2",
+        "A smaller particle plus a gamma ray"
+      ],
+      "answer": 2,
+      "explanation": "An electron and a positron, or indeed any particle and its antiparticle, can collide and annihilate each other, producing two gamma rays. The energy released equals 2mec2 — the rest mass of both particles converted into electromagnetic energy, shared equally as two gamma photons travelling in opposite directions.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 435, "url": "sources/phy12/p435.jpg" }
+    },
+    {
+      "id": "mm812-q04",
+      "type": "mc",
+      "q": "In beta-plus (β+) decay a positron is emitted from the nucleus. What happens inside the nucleus, and to the atomic number?",
+      "options": [
+        "A neutron changes into a proton and an electron, so the atomic number rises by one",
+        "A proton changes into a neutron and a positron, so the atomic number falls by one",
+        "A proton changes into a neutron and a positron, so the atomic number rises by one",
+        "An electron is absorbed by a proton, so the atomic number stays the same"
       ],
       "answer": 1,
-      "explanation": "Each particle's rest energy is \\(m_e c^2 = 0.511\\ \\mathrm{MeV}\\). The total released is \\(2m_ec^2 = 1.022\\ \\mathrm{MeV}\\) (option C), shared equally between the two photons, so each carries 0.511 MeV. A common slip is to give 1.022 MeV per photon.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "In β+ decay the proton changes into a neutron and a positron; the neutron stays in the nucleus while the positron is emitted. The mass number is unchanged, but because a proton has become a neutron the number of protons — the atomic number — decreases by one. This is the reverse of β− decay, where a neutron transforms into a proton and an electron and the atomic number increases by one.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 417, "url": "sources/phy12/p417.jpg" }
     },
     {
-      "id": "m812-q06",
-      "q": "How does pair production differ from annihilation in why exactly two particles are involved?",
-      "options": [
-        "Pair production makes two particles to conserve charge; annihilation makes two photons to conserve momentum",
-        "Both make two particles to conserve momentum",
-        "Pair production makes two photons; annihilation makes two particles",
-        "Pair production makes two particles to conserve momentum; annihilation makes two photons to conserve energy"
+      "id": "mm812-q05",
+      "type": "recall",
+      "q": "From memory: explain why positron-electron annihilation must produce TWO gamma photons in opposite directions, rather than a single photon.",
+      "keyPoints": [
+        "Just before annihilation the positron and electron are essentially at rest, so the total momentum of the system is very nearly zero.",
+        "By conservation of momentum, the total momentum of the products must also be zero.",
+        "A single photon always carries momentum and can never have zero momentum, so one photon is forbidden.",
+        "Two photons emitted in opposite directions (about 180° apart) carry equal and opposite momenta that cancel to zero, satisfying conservation of momentum."
       ],
-      "answer": 0,
-      "explanation": "In pair production a gamma photon becomes an electron and a positron — two particles, one of each charge, to keep total charge zero. In annihilation a pair becomes two photons travelling in opposite directions, needed to conserve momentum. They are reverse processes with different reasons for 'two'.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The load-bearing word is 'momentum'. If you stated that the pair annihilates at rest (zero momentum), that one photon cannot have zero momentum, and that two opposite photons cancel, grade yourself Good or Easy. If you only said 'two gamma rays come out', that is the what but not the why — grade Again or Hard.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m812-q07",
-      "q": "Calculate the total energy released when an electron and positron annihilate at rest, given \\(m_e = 9.11 \\times 10^{-31}\\ \\mathrm{kg}\\) and \\(c = 3.0 \\times 10^{8}\\ \\mathrm{m\\,s^{-1}}\\).",
+      "id": "mm812-q06",
+      "type": "worked",
+      "q": "An electron (m = 9.11 × 10⁻³¹ kg) and a positron (also m = 9.11 × 10⁻³¹ kg) collide and are annihilated. Calculate the total energy released. Take c = 3.0 × 10⁸ m s⁻¹.",
+      "given": "\\(m_e = 9.11\\times10^{-31}\\,\\mathrm{kg}\\) (each),  \\(c = 3.0\\times10^{8}\\,\\mathrm{m\\,s^{-1}}\\)",
+      "working": [
+        "All of the rest mass of both particles is converted into energy, so \\(E = 2m_e c^2\\).",
+        "\\(E = 2 \\times (9.11\\times10^{-31}) \\times (3.0\\times10^{8})^2\\)",
+        "\\(c^2 = 9.0\\times10^{16}\\,\\mathrm{m^2\\,s^{-2}}\\)",
+        "\\(E = 2 \\times 9.11\\times10^{-31} \\times 9.0\\times10^{16}\\)",
+        "\\(E = 1.64\\times10^{-13}\\,\\mathrm{J}\\)"
+      ],
+      "answerValue": 1.64e-13,
+      "answerUnit": "J",
+      "tolerance": 5e-15,
+      "explanation": "The electron and positron annihilate, so the energy released equals the rest mass of both particles times the speed of light squared, E = 2mec2 ≈ 1.64 × 10⁻¹³ J. This is shared equally between two gamma photons, so each carries about 8.2 × 10⁻¹⁴ J, which is 0.511 MeV.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 300, "url": "sources/phy12/p300.jpg" }
+    },
+    {
+      "id": "mm812-q07",
+      "type": "worked",
+      "q": "Calculate the energy released in the beta-plus decay of carbon-11 to boron-11. Atomic masses: C-11 = 11.011 43 u, B-11 = 11.009 31 u, electron/positron = 0.000 55 u each; 1 u ≡ 931.5 MeV.",
+      "given": "\\(^{11}_{6}\\mathrm{C} \\rightarrow\\, ^{11}_{5}\\mathrm{B} + {}^{0}_{+1}e + \\nu\\); atomic masses include orbiting electrons",
+      "working": [
+        "Initial mass (nucleus) \\(= 11.01143 - 6(0.00055) = 11.00813\\,\\mathrm{u}\\)",
+        "Final mass \\(= (11.00931 - 5(0.00055)) + 0.00055 = 11.00931 - 4(0.00055) = 11.00711\\,\\mathrm{u}\\)",
+        "Mass loss \\(= 11.00813 - 11.00711 = 0.00102\\,\\mathrm{u}\\)",
+        "Energy released \\(= 0.00102 \\times 931.5 = 0.950\\,\\mathrm{MeV}\\)"
+      ],
+      "answerValue": 0.95,
+      "answerUnit": "MeV",
+      "tolerance": 0.01,
+      "explanation": "Because the quoted masses are atomic masses they include the orbiting electrons, so the electron bookkeeping must be handled before converting the mass loss to energy. Multiply the mass loss in u by 931.5 (and stop — the per-c² is already built into that factor): 0.00102 × 931.5 ≈ 0.950 MeV, carried away as kinetic energy of the positron and neutrino.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 419, "url": "sources/phy12/p419.jpg" }
+    },
+    {
+      "id": "mm812-q08",
+      "type": "recall",
+      "q": "The electron is one of the six leptons. State its antiparticle and how that antiparticle's charge compares.",
+      "keyPoints": [
+        "Each of the six leptons has an antiparticle.",
+        "For the electron, the antiparticle is the positron.",
+        "The positron has the same mass as the electron but is positively charged (opposite sign of charge).",
+        "Leptons such as the electron are fundamental particles — they have no internal structure."
+      ],
+      "explanation": "From the lepton table: for the electron, the antiparticle is the positron, which is positively charged (like the anti-muon and anti-tau). If you named the positron and noted it has the same mass but opposite, positive charge, grade Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 437, "url": "sources/phy12/p437.jpg" }
+    },
+    {
+      "id": "mm812-q09",
+      "type": "short",
+      "q": "A patient is given a fluorine-18 tracer for a PET scan. Explain how the scan produces an image, and justify why a short-lived isotope is used. (6 marks)",
+      "marks": 6,
+      "modelAnswer": "Fluorine-18, carried in FDG (a glucose analogue), is injected and concentrates in metabolically active tissue because the body treats FDG like glucose. Fluorine-18 is a positron emitter: each emitted positron travels a few millimetres, meets a nearby electron, and annihilates, producing two gamma photons of 0.511 MeV travelling in opposite directions (about 180° apart). A ring of detectors around the patient registers the two photons in coincidence — simultaneously, on opposite sides — and the straight line joining those two detectors, the line of response, passes through the annihilation point. A computer combines millions of these lines of response to reconstruct a three-dimensional image of tracer concentration, mapping metabolic activity and revealing features such as tumours or active brain regions. A short-lived isotope is used because the half-life must be long enough to inject the tracer, let it spread and run the scan, but short enough that it clears the body quickly so the radiation dose stays low; fluorine-18's half-life of about 110 minutes threads that needle.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Tracer (FDG) concentrates in metabolically active tissue because it behaves like glucose." },
+        { "marks": 1, "descriptor": "Positron emitted, annihilates with an electron producing two 0.511 MeV gamma photons in opposite directions." },
+        { "marks": 1, "descriptor": "Coincidence detection by a surrounding ring of detectors registers the two simultaneous, opposite photons." },
+        { "marks": 1, "descriptor": "The line of response joining the two detectors passes through the annihilation point." },
+        { "marks": 1, "descriptor": "Millions of lines of response are combined to reconstruct a 3D image of tracer concentration / metabolic activity." },
+        { "marks": 1, "descriptor": "Justifies the half-life: long enough to image but short enough to clear quickly and keep dose low (F-18 ≈ 110 min)." }
+      ],
+      "explanation": "Use the TRACER hook (Tracer, Reaches tissue, Annihilation, Coincidence, Establish the line, Reconstruct) to hit every step. The discriminating point on half-life is that longer is worse: more dose, slower clearance.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm812-q10",
+      "type": "mc",
+      "q": "How was the positron first discovered, and by whom?",
       "options": [
-        "\\(8.2 \\times 10^{-14}\\ \\mathrm{J}\\)",
-        "\\(1.64 \\times 10^{-13}\\ \\mathrm{J}\\)",
-        "\\(2.73 \\times 10^{-22}\\ \\mathrm{J}\\)",
-        "\\(9.0 \\times 10^{16}\\ \\mathrm{J}\\)"
+        "Paul Dirac observed it directly in a cloud chamber in 1928",
+        "In 1933 Carl Anderson, investigating cosmic ray showers, observed a particle with the same mass as the electron but a positive charge",
+        "Enrico Fermi created it by irradiating paraffin with neutrons",
+        "It was first produced inside a particle accelerator at CERN"
       ],
       "answer": 1,
-      "explanation": "All the rest mass of both particles converts: \\(E = 2m_ec^2 = 2 \\times (9.11 \\times 10^{-31}) \\times (3.0 \\times 10^{8})^2 = 1.64 \\times 10^{-13}\\ \\mathrm{J}\\). The value \\(8.2 \\times 10^{-14}\\ \\mathrm{J}\\) (A) is the energy of one of the two photons, half the total.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m812-q08",
-      "q": "In a PET scan, why does the FDG tracer concentrate in tumours and active brain regions?",
-      "options": [
-        "Because tumours attract positrons electrostatically",
-        "Because FDG is a glucose analogue and accumulates in metabolically active tissue that consumes a lot of glucose",
-        "Because the magnetic field of the scanner pulls the tracer to active sites",
-        "Because gamma photons are absorbed more strongly by active tissue"
-      ],
-      "answer": 1,
-      "explanation": "FDG behaves like glucose, so it gathers wherever the body uses a lot of glucose — fast-metabolising tissue such as tumours and active brain regions. This is why PET images function (metabolic activity), not just anatomy.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m812-q09",
-      "q": "In a PET scanner, what is meant by 'coincidence detection' and the 'line of response'?",
-      "options": [
-        "Detecting a single photon and tracing its path backwards through the body",
-        "Registering the two annihilation photons simultaneously on opposite sides of the detector ring; the line joining those two detectors passes through the annihilation point",
-        "Counting how many decays occur per second to find the tracer's half-life",
-        "Detecting the positron directly as it leaves the nucleus"
-      ],
-      "answer": 1,
-      "explanation": "The two annihilation photons travel in opposite directions and strike the surrounding ring on opposite sides at the same instant (coincidence). Because they came from one event, the annihilation lies on the straight line joining the two detectors — the line of response. Millions of these lines are combined to reconstruct the image.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m812-q10",
-      "q": "Why is a SHORT-lived positron-emitting isotope (such as fluorine-18, half-life ~110 min) used as a PET tracer?",
-      "options": [
-        "A longer half-life would always give a clearer image, so the shortest possible is best regardless",
-        "The half-life must be long enough to image the patient but short enough that the tracer decays and clears quickly, keeping the radiation dose low",
-        "Short-lived isotopes emit more photons per decay",
-        "Short-lived isotopes are the only ones that emit positrons"
-      ],
-      "answer": 1,
-      "explanation": "This is the half-life suitability argument: the isotope must last long enough to inject, distribute and scan, but be short-lived enough to clear the body fast and minimise dose. A longer half-life is worse — more dose and slower clearance — so option A is the misconception to avoid.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "In 1933 Carl Anderson, investigating the charged particles in cosmic ray showers, observed a particle that had the same mass as the electron but with a positive charge — the positron. His chamber sat in a strong magnetic field so a positively charged particle curved one way and a negatively charged particle the other. (Dirac had predicted antimatter from his equation earlier; Anderson anchored it in the lab.)",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 435, "url": "sources/phy12/p435.jpg" }
     }
   ]
 }

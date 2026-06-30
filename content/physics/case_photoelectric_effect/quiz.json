@@ -1,174 +1,145 @@
 {
   "questions": [
     {
-      "id": "photoelectric-q01",
-      "q": "Which of Lenard's experimental observations of the photoelectric effect CANNOT be explained by the classical wave model of light?",
+      "id": "qcasephot-q01",
+      "type": "mc",
+      "q": "In 1905 Einstein took Planck's energy lumps and made one bolder claim that Planck himself refused to make. What was it?",
       "options": [
+        "That atoms can only emit energy in discrete packets",
+        "That light itself travels through space as discrete particles, each carrying energy E = hf",
+        "That the speed of light is the same for all observers",
+        "That the energy of a light wave depends on its amplitude"
+      ],
+      "answer": 1,
+      "explanation": "Planck quantised only the exchange of energy between atoms and still believed light itself was a continuous wave. Einstein went further and said light itself is made of indivisible photons, each carrying E = hf. That is the step he called 'very revolutionary'.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasephot-q02",
+      "type": "mc",
+      "q": "Lenard pinned down four key behaviours of the photoelectric effect by 1902. Which one did the classical wave model actually predict correctly?",
+      "options": [
+        "There is no time delay, even for very dim light",
+        "There is a threshold frequency below which no electrons are emitted",
         "Brighter light of the same colour ejects more electrons",
-        "There is a threshold frequency below which no electrons are emitted regardless of intensity",
-        "Light always travels at the speed of light",
-        "The metal plate becomes warm under illumination"
+        "The kinetic energy of each electron depends only on frequency, not intensity"
+      ],
+      "answer": 2,
+      "explanation": "The wave model fails on the no-delay, threshold-frequency, and energy-versus-frequency results, but it does correctly predict that brighter light ejects more electrons. In an exam, say the wave model fails on the other three, not all four.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasephot-q03",
+      "type": "mc",
+      "q": "In Einstein's photon model, why is there a threshold frequency below which no electrons are emitted, no matter how bright the light?",
+      "options": [
+        "Dim light cannot deliver photons fast enough to warm the metal",
+        "Each electron interacts with only one photon, so if hf is less than the work function no single photon can free it, and the photons cannot pool their energy",
+        "Low-frequency photons are reflected by the metal surface",
+        "Below the threshold the metal becomes positively charged and pulls electrons back"
       ],
       "answer": 1,
-      "explanation": "The wave model predicts that any colour should eventually free electrons if bright enough or given time, so the existence of a hard threshold frequency contradicts it. (The wave model actually does correctly predict that brighter light gives more electrons, so option A is not the failure.)",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "An electron can absorb only one photon at a time, all or nothing. If hf is below the work function, no individual photon carries enough energy, so a billion weak photons still free nothing. Brighter just means more photons, not more energy each.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "photoelectric-q02",
-      "q": "Einstein's photoelectric equation is \\( K_{\\max} = hf - W \\). What fundamental physical principle does this equation express?",
+      "id": "qcasephot-q04",
+      "type": "mc",
+      "q": "What did Robert Millikan set out to do, and what did his ten years of work actually achieve?",
       "options": [
-        "Conservation of momentum in the collision",
-        "Conservation of energy applied to a single photon-electron collision",
-        "Conservation of charge",
-        "The wave nature of light"
+        "He set out to confirm Einstein's photon, and proved light is purely a particle",
+        "He set out to disprove Einstein's equation, but instead measured a straight-line graph whose slope gave Planck's constant, confirming the equation",
+        "He set out to measure the electron's charge, and discovered the photoelectric effect",
+        "He set out to disprove Planck, and showed black-body radiation was continuous"
       ],
       "answer": 1,
-      "explanation": "The equation is conservation of energy for one collision: the photon's energy \\(hf\\) goes into paying the escape cost (work function \\(W\\)) plus the electron's leftover kinetic energy \\(K_{\\max}\\). Energy in equals escape cost plus energy out.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Millikan thought the photon was 'wholly untenable' and tried to measure the equation to death. His freshly cut surfaces gave perfectly straight, parallel stopping-voltage-versus-frequency lines whose slope yielded Planck's constant, confirming Einstein even while Millikan still rejected the photon idea.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "photoelectric-q03",
-      "q": "In the photon model, why does increasing the intensity (brightness) of light increase the NUMBER of photoelectrons but NOT their maximum kinetic energy?",
-      "options": [
-        "Brighter light has a higher frequency, ejecting faster electrons",
-        "Intensity is the number of photons per second, so more photons cause more collisions; but each photon of a given colour carries the same energy \\(hf\\)",
-        "Brighter light heats the metal, lowering the work function",
-        "Intensity changes the work function of the metal"
-      ],
-      "answer": 1,
-      "explanation": "Intensity equals photons per second. More photons of the same frequency means more one-photon-one-electron collisions, hence more electrons. But every photon of that colour carries the identical energy \\(hf\\), so each freed electron emerges with the same maximum kinetic energy.",
+      "id": "qcasephot-q05",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "photoelectric-q04",
-      "q": "Why is there no measurable time delay between light striking the metal and electrons being emitted, even at low intensity?",
-      "options": [
-        "Electrons store energy from many photons until they have enough to escape",
-        "The energy transfer is a single instantaneous collision: one photon hands all its energy to one electron at once",
-        "The metal pre-charges the electrons before the light arrives",
-        "Low-intensity light travels faster than bright light"
-      ],
-      "answer": 1,
-      "explanation": "A photon delivers all its energy to a single electron in one collision, so the first suitable photon to arrive can free an electron immediately. There is no slow 'bucket filling' as the wave model required — emission is instant if \\(hf \\ge W\\).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "photoelectric-q05",
-      "q": "Light of frequency \\(7.0\\times10^{14}\\ \\mathrm{Hz}\\) strikes a metal with work function \\(2.0\\ \\mathrm{eV}\\). Using \\(h = 4.14\\times10^{-15}\\ \\mathrm{eV\\,s}\\), what is the maximum kinetic energy of the photoelectrons?",
-      "options": [
-        "\\( 0.9\\ \\mathrm{eV} \\)",
-        "\\( 2.9\\ \\mathrm{eV} \\)",
-        "\\( 4.9\\ \\mathrm{eV} \\)",
-        "\\( 0.0\\ \\mathrm{eV} \\) (no emission)"
-      ],
-      "answer": 0,
-      "explanation": "Photon energy \\(hf = 4.14\\times10^{-15} \\times 7.0\\times10^{14} = 2.9\\ \\mathrm{eV}\\). Then \\(K_{\\max} = hf - W = 2.9 - 2.0 = 0.9\\ \\mathrm{eV}\\). Since \\(hf > W\\), emission does occur.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "photoelectric-q06",
-      "q": "What is the threshold frequency \\(f_0\\) for a metal with work function \\(W\\)?",
-      "options": [
-        "\\( f_0 = hW \\)",
-        "\\( f_0 = W/h \\)",
-        "\\( f_0 = h/W \\)",
-        "\\( f_0 = W - h \\)"
-      ],
-      "answer": 1,
-      "explanation": "At the threshold the photon just barely frees an electron, so \\(K_{\\max} = 0\\) and \\(hf_0 = W\\), giving \\(f_0 = W/h\\). Below this frequency no single photon carries enough energy to overcome the work function, so no emission occurs at any intensity.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "photoelectric-q07",
-      "q": "If you plot the maximum kinetic energy of photoelectrons against the frequency of incident light, what does the gradient (slope) of the straight line represent?",
+      "q": "On a graph of maximum kinetic energy of photoelectrons against frequency, what does the slope of the line represent?",
       "options": [
         "The work function of the metal",
-        "Planck's constant \\(h\\)",
         "The threshold frequency",
-        "The speed of light"
+        "Planck's constant",
+        "The stopping voltage"
       ],
-      "answer": 1,
-      "explanation": "Rearranging \\(K_{\\max} = hf - W\\), the graph of \\(K_{\\max}\\) versus \\(f\\) is a straight line of gradient \\(h\\) (Planck's constant), with x-intercept \\(f_0\\) and y-intercept \\(-W\\). The slope is the same for every metal — a signature of the photon model.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answer": 2,
+      "explanation": "Comparing K_max = hf - W with y = mx + c, the slope is h. The line crosses the frequency axis at the threshold frequency f0 and the energy axis at -W. Einstein predicted this slope would equal the same h Planck had pulled out of the black-body problem.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "photoelectric-q08",
-      "q": "Robert Millikan set out to DISPROVE Einstein's photon hypothesis. What did his decade of careful measurement actually achieve?",
+      "id": "qcasephot-q06",
+      "type": "mc",
+      "q": "Einstein was awarded the 1921 Nobel Prize in Physics for which work?",
       "options": [
-        "It proved the wave model was correct after all",
-        "It confirmed Einstein's equation precisely and yielded a value for Planck's constant matching black-body radiation",
-        "It showed the threshold frequency does not exist",
-        "It disproved conservation of energy"
+        "Special relativity and E = mc^2",
+        "His discovery of the law of the photoelectric effect",
+        "Proving that atoms are real via Brownian motion",
+        "The Compton effect demonstrating photon momentum"
       ],
       "answer": 1,
-      "explanation": "Despite trying to demolish it, Millikan's data fell on the straight lines Einstein predicted, with the slope giving Planck's constant to within ~0.5% of Planck's value from black-body radiation. He inadvertently produced the most precise confirmation of the photoelectric equation.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Students often guess relativity, but the citation reads 'for his discovery of the law of the photoelectric effect'. The committee was still uneasy about relativity and wanted something solid, which Millikan had measured to within about half a percent.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "photoelectric-q09",
-      "q": "How does a solar cell (photovoltaic device) apply the physics of the photoelectric effect?",
-      "options": [
-        "Heat from the sun boils water to spin a turbine",
-        "A photon with energy above the material's energy gap liberates an electron in the semiconductor, and the freed electrons are swept into a circuit to produce electricity",
-        "Sunlight is reflected to concentrate its intensity",
-        "The cell stores light as a continuous wave"
+      "id": "qcasephot-q07",
+      "type": "recall",
+      "q": "From memory: state the two predictions the classical wave model makes about the photoelectric effect that turned out to be flatly false.",
+      "keyPoints": [
+        "It predicts there is no hard threshold frequency: any colour of light should eventually work if it is bright enough or shone for long enough.",
+        "It predicts a measurable time delay at low intensity, as the electron slowly 'fills up like a bucket' until it has enough energy to escape.",
+        "Lenard observed neither: there was an absolute threshold frequency, and emission was instantaneous with no delay."
       ],
-      "answer": 1,
-      "explanation": "In a solar cell, a photon whose energy exceeds the semiconductor's energy gap frees an electron (just as a photon frees an electron from a metal), and these freed electrons are driven through an external circuit. This is Einstein's 1905 photon idea turned into hardware.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled both the 'no threshold' and 'time delay' predictions and noted that Lenard observed neither, grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "photoelectric-q10",
-      "q": "Einstein's photon idea built on Planck's earlier work on black-body radiation. What was Planck's key (reluctantly proposed) assumption?",
-      "options": [
-        "That light is purely a continuous wave",
-        "That atoms can only emit energy in discrete packets, each of size \\(hf\\) proportional to frequency",
-        "That energy is infinite at short wavelengths",
-        "That electrons orbit the nucleus in fixed paths"
+      "id": "qcasephot-q08",
+      "type": "recall",
+      "q": "From memory, in your own words: state Einstein's photoelectric equation and explain why it is really just conservation of energy.",
+      "keyPoints": [
+        "K_max = hf - W: the maximum kinetic energy equals the photon energy (hf) minus the work function W.",
+        "One photon hands all of its energy to one electron in a single collision.",
+        "The electron spends the work function W escaping the metal and keeps whatever is left over as kinetic energy: energy in = escape cost + energy out."
       ],
-      "answer": 1,
-      "explanation": "Planck found he could only match black-body data by assuming hot atoms emit energy in discrete lumps of size \\(hf\\), introducing Planck's constant \\(h\\). He believed it was a mathematical trick; Einstein took the lumps to be real particles of light (photons), explaining the photoelectric effect.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The equation is conservation of energy applied to a single photon-electron collision. If you wrote K_max = hf - W and explained the energy bookkeeping, mark it Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasephot-q09",
+      "type": "worked",
+      "q": "A metal has a work function of 1.67 eV. A photon of energy 2.92 eV strikes it. Find the maximum kinetic energy of the ejected photoelectron, in eV.",
+      "given": "\\(W = 1.67\\,\\mathrm{eV}\\),  photon energy \\(hf = 2.92\\,\\mathrm{eV}\\)",
+      "working": [
+        "\\(K_{\\max} = hf - W\\)",
+        "\\(K_{\\max} = 2.92 - 1.67\\)",
+        "\\(K_{\\max} = 1.25\\,\\mathrm{eV}\\)",
+        "Because \\(eV_s = K_{\\max}\\) and the energy is in eV, the stopping voltage reads straight across as \\(1.25\\,\\mathrm{V}\\)."
+      ],
+      "answerValue": 1.25,
+      "answerUnit": "eV",
+      "tolerance": 0.01,
+      "explanation": "Straight application of K_max = hf - W. When energies are in eV, the stopping voltage equals the kinetic energy numerically, so V_s = 1.25 V.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasephot-q10",
+      "type": "worked",
+      "q": "Light of frequency 7.06 x 10^14 Hz strikes a metal surface. Using Planck's constant h = 6.63 x 10^-34 J s, find the energy of one photon, in joules.",
+      "given": "\\(f = 7.06\\times10^{14}\\,\\mathrm{Hz}\\),  \\(h = 6.63\\times10^{-34}\\,\\mathrm{J\\,s}\\)",
+      "working": [
+        "\\(E = hf\\)",
+        "\\(E = (6.63\\times10^{-34})(7.06\\times10^{14})\\)",
+        "\\(E = 4.68\\times10^{-19}\\,\\mathrm{J}\\)"
+      ],
+      "answerValue": 4.68e-19,
+      "answerUnit": "J",
+      "tolerance": 2e-21,
+      "explanation": "Direct use of the Planck-Einstein relation E = hf. Dividing by 1.6 x 10^-19 C converts this to about 2.92 eV, the photon energy used in the previous question.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

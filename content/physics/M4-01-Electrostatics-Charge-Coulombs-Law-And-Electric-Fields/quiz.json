@@ -1,174 +1,150 @@
 {
   "questions": [
     {
-      "id": "m401-q01",
-      "q": "State the basic rule for the force between electric charges.",
+      "id": "mm401-q01",
+      "type": "mc",
+      "q": "Two small charged bodies are brought near one another. Which statement correctly summarises the directions of the electric forces between charges?",
       "options": [
-        "Like charges attract; unlike charges repel",
-        "Like charges repel; unlike charges attract",
-        "All charges attract each other",
-        "All charges repel each other"
+        "Like charges attract one another and unlike charges repel one another",
+        "Like charges repel one another and unlike charges attract one another",
+        "All charges, whether like or unlike, attract one another",
+        "Only charges of different magnitude exert forces on each other"
       ],
       "answer": 1,
-      "explanation": "Like charges (two positives or two negatives) repel, while unlike charges (a positive and a negative) attract. This mirrors the rule for magnetic poles. Charging an object means transferring electrons — gaining them makes it negative, losing them makes it positive.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Two positive charges repel one another, two negative charges repel one another, but a positive charge and a negative charge attract one another. This is summarised as: like charges repel; unlike charges attract — the fundamental rule everything in electrostatics rests on.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m401-q02",
-      "q": "Define what it means to say charge is quantised.",
-      "options": [
-        "Charge can take any continuous value",
-        "Charge comes only in whole-number multiples of the elementary charge (≈1.6×10⁻¹⁹ C)",
-        "Charge can be created and destroyed",
-        "Charge is always conserved in a reaction"
-      ],
-      "answer": 1,
-      "explanation": "Quantisation means charge exists only in whole-number multiples of the elementary charge (the charge on one electron or proton, ≈1.6×10⁻¹⁹ C) — you cannot have half an elementary charge. This is distinct from conservation (charge can only be transferred, never created or destroyed).",
+      "id": "mm401-q02",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "A neutral body becomes negatively charged. Identify what has happened to the body in terms of its electrons and protons.",
+      "options": [
+        "It has gained protons, giving it an excess of protons",
+        "It has lost protons, leaving a deficiency of protons",
+        "It has gained electrons, giving it an excess of electrons",
+        "It has lost electrons, leaving a deficiency of electrons"
+      ],
+      "answer": 2,
+      "explanation": "A body that gains electrons has more electrons than protons — an excess of electrons — and is negatively charged. It is always electrons that are gained or lost, because the protons are strongly bound in the nuclei at the centres of the atoms.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 288, "url": "sources/phy11/p288.jpg" }
     },
     {
-      "id": "m401-q03",
-      "q": "A positively charged rod charges a neutral metal sphere by conduction (contact). Determine the sphere's final charge.",
-      "options": [
-        "Negative (opposite sign)",
-        "Positive (same sign)",
-        "Neutral",
-        "It depends on the sphere's size"
+      "id": "mm401-q03",
+      "type": "worked",
+      "q": "A body has a positive charge of +4.60 μC. Calculate how many electrons the body is deficient by, given the charge on one electron is 1.60 × 10⁻¹⁹ C.",
+      "given": "\\(Q = +4.60\\,\\mu\\mathrm{C} = 4.60\\times10^{-6}\\,\\mathrm{C}\\),  charge on one electron \\(e = 1.60\\times10^{-19}\\,\\mathrm{C}\\)",
+      "working": [
+        "Since the body is positively charged, it has a deficiency of electrons.",
+        "\\(n = \\dfrac{Q}{e}\\)",
+        "\\(n = \\dfrac{4.60\\times10^{-6}}{1.60\\times10^{-19}}\\)",
+        "\\(n = 2.88\\times10^{13}\\) electrons"
       ],
-      "answer": 1,
-      "explanation": "In charging by conduction the charged object touches the conductor and charge is shared on contact, so the sphere ends up with the same sign as the rod — positive. (By induction, with no contact, it would end up with the opposite sign.) Mixing up conduction and induction is the most common electrostatics error.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 2.88e13,
+      "answerUnit": "electrons",
+      "tolerance": 1e11,
+      "explanation": "Because charge is quantised in whole multiples of the elementary charge, the number of electrons is simply the total charge divided by the charge on one electron. A positive body has a deficiency (shortage) of electrons.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 289, "url": "sources/phy11/p289.jpg" }
     },
     {
-      "id": "m401-q04",
-      "q": "Compare the final charge produced by charging by conduction versus charging by induction.",
-      "options": [
-        "Both give the same sign as the charging object",
-        "Conduction gives the same sign (by contact); induction gives the opposite sign (no contact)",
-        "Both give the opposite sign",
-        "Conduction gives the opposite sign; induction gives the same sign"
-      ],
-      "answer": 1,
-      "explanation": "Conduction requires direct contact and leaves the object with the SAME sign as the charging object. Induction works without contact — the charged object separates the conductor's charges, which is then earthed and the object removed — leaving the OPPOSITE sign. This contrast (same/contact vs opposite/no-contact) is a classic exam discriminator.",
+      "id": "mm401-q04",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "State Coulomb's Law for the electrostatic force between two point charges at rest.",
+      "options": [
+        "The force is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance between them",
+        "The force is inversely proportional to the product of the charges and directly proportional to the distance between them",
+        "The force is directly proportional to the sum of the charges and inversely proportional to the distance between them",
+        "The force is directly proportional to the product of the charges and inversely proportional to the distance between them"
+      ],
+      "answer": 0,
+      "explanation": "Coulomb's Law: the force between two charges at rest is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance between them, giving \\(F = \\dfrac{kq_1q_2}{r^2}\\) with \\(k \\approx 9.0\\times10^9\\,\\mathrm{N\\,m^2\\,C^{-2}}\\). Distance is squared, so it is an inverse-square law just like gravity.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 294, "url": "sources/phy11/p294.jpg" }
     },
     {
-      "id": "m401-q05",
-      "q": "Two point charges experience a certain force. Predict the new force if one charge is doubled and the distance between them is also doubled.",
-      "options": [
-        "The force is unchanged",
-        "The force becomes half",
-        "The force doubles",
-        "The force quarters"
+      "id": "mm401-q05",
+      "type": "worked",
+      "q": "Two point charges, each of +2.0 × 10⁻⁵ C, are placed 0.30 m apart. Using Coulomb's Law with k = 9.0 × 10⁹ N m² C⁻², calculate the magnitude of the electrostatic force between them and state whether it is attractive or repulsive.",
+      "given": "\\(q_1 = q_2 = 2.0\\times10^{-5}\\,\\mathrm{C}\\),  \\(r = 0.30\\,\\mathrm{m}\\),  \\(k = 9.0\\times10^{9}\\,\\mathrm{N\\,m^2\\,C^{-2}}\\)",
+      "working": [
+        "\\(F = \\dfrac{kq_1q_2}{r^2}\\)",
+        "\\(F = \\dfrac{(9.0\\times10^{9})(2.0\\times10^{-5})(2.0\\times10^{-5})}{(0.30)^2}\\)",
+        "Numerator: \\(9.0\\times10^{9}\\times4.0\\times10^{-10} = 3.6\\)",
+        "Denominator: \\((0.30)^2 = 0.09\\)",
+        "\\(F = \\dfrac{3.6}{0.09} \\approx 40\\,\\mathrm{N}\\)",
+        "Both charges have the same (positive) sign, so the force is repulsive."
       ],
-      "answer": 1,
-      "explanation": "By Coulomb's law F ∝ q₁q₂/r². Doubling one charge multiplies the force by 2; doubling the distance divides it by 2² = 4. Combined: 2 × ¼ = ½, so the force becomes half. The two changes don't cancel because charge is a direct factor while distance is squared.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 40,
+      "answerUnit": "N",
+      "tolerance": 1,
+      "explanation": "Substitute the two charges and the separation, square the distance, then check the signs. Same-sign charges give a repulsive force pushing them apart.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 294, "url": "sources/phy11/p294.jpg" }
     },
     {
-      "id": "m401-q06",
-      "q": "Define electric field strength and give its equation.",
+      "id": "mm401-q06",
+      "type": "mc",
+      "q": "How is the magnitude of the electric field strength E at a point defined?",
       "options": [
-        "The total charge at a point; E = q/F",
-        "The force per unit positive charge at a point; E = F/q",
-        "The energy stored at a point; E = qV",
-        "The charge times distance; E = qr"
+        "The total force exerted by all the charges in the region",
+        "The force per unit charge experienced by a charge placed at the point, E = F/q",
+        "The product of the force and the charge at the point, E = Fq",
+        "The charge per unit force at the point, E = q/F"
       ],
       "answer": 1,
-      "explanation": "Electric field strength is the force per unit positive charge experienced at a point: E = F/q, in newtons per coulomb. The field is a property of the location (it exists with or without a charge there); the force F = Eq is what a specific charge feels. Confusing the field with the force is a common error.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The magnitude of the electric field strength is found by putting a charge q at the point and measuring the force F the field exerts on it, giving E = F/q, with SI unit newton per coulomb (N C⁻¹). The field is a property of the location and exists whether or not a charge is placed there.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 296, "url": "sources/phy11/p296.jpg" }
     },
     {
-      "id": "m401-q07",
-      "q": "Identify the correct rules for drawing electric field lines.",
+      "id": "mm401-q07",
+      "type": "mc",
+      "q": "Describe the pattern of electric field lines surrounding a single negative point charge.",
       "options": [
-        "Lines go from negative to positive and may cross",
-        "Lines go out of positive and into negative charges, never cross, and are closer where the field is stronger",
-        "Lines always form closed loops around a single charge",
-        "Lines point toward positive charges"
+        "The lines point radially outward, away from the charge, and may cross one another",
+        "The lines point radially inward, towards the charge, and never cross one another",
+        "The lines form closed loops around the charge with no beginning or end",
+        "The lines are straight, parallel and evenly spaced in one direction"
       ],
       "answer": 1,
-      "explanation": "Field lines start on positive charges and end on negative charges (out of +, into −), never cross (the field has one direction per point), and are closer together where the field is stronger. Around a single positive charge they radiate outward; around a negative charge they point inward.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "A positive test charge placed near a negative point charge feels a force towards it, so the field — and the field lines — point radially inward towards −Q. Lines start on positive charges and end on negative charges, and they never cross because the field can have only one direction at each point.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 299, "url": "sources/phy11/p299.jpg" }
     },
     {
-      "id": "m401-q08",
-      "q": "Two parallel plates are 0.02 m apart with 100 V between them. Calculate the electric field strength between them.",
-      "options": [
-        "2 V m⁻¹",
-        "5000 V m⁻¹",
-        "50 V m⁻¹",
-        "0.0002 V m⁻¹"
+      "id": "mm401-q08",
+      "type": "worked",
+      "q": "Two parallel plates are separated by 0.020 m with a potential difference of 100 V between them. Calculate the strength of the uniform electric field between the plates.",
+      "given": "\\(V = 100\\,\\mathrm{V}\\),  \\(d = 0.020\\,\\mathrm{m}\\)",
+      "working": [
+        "For a uniform field between parallel plates, \\(E = \\dfrac{V}{d}\\)",
+        "\\(E = \\dfrac{100}{0.020}\\)",
+        "\\(E = 5000\\,\\mathrm{V\\,m^{-1}}\\) (equivalently \\(5000\\,\\mathrm{N\\,C^{-1}}\\))"
       ],
-      "answer": 1,
-      "explanation": "For parallel plates the field is uniform: E = V/d = 100/0.02 = 5000 V m⁻¹ (equivalently N C⁻¹). It has that same value everywhere between the plates. This uniform-field setup is exactly how charged particles are accelerated and deflected in Module 6.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 5000,
+      "answerUnit": "V m⁻¹",
+      "tolerance": 1,
+      "explanation": "Between parallel plates the field is uniform, so dividing the voltage by the plate separation gives the field strength. This gives a second, equivalent unit for electric field — volts per metre, the same as newtons per coulomb.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 305, "url": "sources/phy11/p305.jpg" }
     },
     {
-      "id": "m401-q09",
-      "q": "Distinguish electric field strength from electric force.",
-      "options": [
-        "They are the same quantity",
-        "Field strength (E = F/q) is a property of the location; force (F = Eq) is what a specific charge experiences in it",
-        "Force is a property of the location; field is what a charge feels",
-        "Field strength is measured in newtons; force in newtons per coulomb"
+      "id": "mm401-q09",
+      "type": "recall",
+      "q": "From memory, explain what is meant by the conservation of electric charge, including what happens to the total charge when two charged conductors are brought into contact.",
+      "keyPoints": [
+        "The total amount of electric charge never changes — electric charge is conserved; it can only be transferred from one body to another.",
+        "When two previously neutral bodies are charged by friction, the positive charge on one equals the negative charge on the other.",
+        "When two charged conductors are brought into contact there is a redistribution of charge, but the total amount of charge remains the same."
       ],
-      "answer": 1,
-      "explanation": "The electric field strength E = F/q is the force per unit charge — a property of the location created by other charges, existing whether or not a charge sits there. The electric force F = Eq is the actual push or pull on a specific charge q placed in the field. The field describes the location; the force describes what happens to a particular charge.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled that charge is only transferred (never created or destroyed) and that the total stays constant on contact, grade yourself Good or Easy. This is the same kind of conservation law as conservation of energy and momentum.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 292, "url": "sources/phy11/p292.jpg" }
     },
     {
-      "id": "m401-q10",
-      "q": "A 3×10⁻⁶ C charge is placed in a uniform field of 4000 N C⁻¹ between parallel plates. Calculate the force on it.",
-      "options": [
-        "1.33×10⁻⁹ N",
-        "0.012 N",
-        "0.12 N",
-        "13.3 N"
+      "id": "mm401-q10",
+      "type": "recall",
+      "q": "From memory, distinguish between charging a neutral conductor by conduction and by induction, including the final sign of the charge in each case relative to the charging object.",
+      "keyPoints": [
+        "Conduction (contact): the charged object touches the conductor; charge is shared on contact, so the conductor ends up with the SAME sign as the charging object.",
+        "Induction (no contact): the charged object is brought near but does not touch; its field separates the charges, the conductor is earthed, then the earth and charging object are removed.",
+        "Induction leaves the conductor with the OPPOSITE sign to the charging object — without ever touching it."
       ],
-      "answer": 1,
-      "explanation": "Using F = Eq = 4000 × 3×10⁻⁶ = 1.2×10⁻² N = 0.012 N. The force on a positive charge points in the field direction (from the positive plate toward the negative plate). Dividing instead of multiplying (giving 1.33×10⁻⁹) is the trap.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The classic discriminator: conduction = contact = same sign; induction = no contact = opposite sign. Mixing these up is the single most common electrostatics error.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

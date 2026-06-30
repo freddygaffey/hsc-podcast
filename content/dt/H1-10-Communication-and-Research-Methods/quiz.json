@@ -1,0 +1,157 @@
+{
+  "questions": [
+    {
+      "id": "mh110-q01",
+      "type": "mc",
+      "q": "According to the episode, what are the four stages of the research data cycle, in order?",
+      "options": [
+        "Plan, action, time, finance",
+        "Collect the data, analyse it, interpret it, then apply the conclusions",
+        "Survey, interview, observe, test",
+        "Sender, message, medium, receiver"
+      ],
+      "answer": 1,
+      "explanation": "Research for H5.2 is the full data cycle: collect, analyse, interpret, apply. The last step — letting the findings change your decisions — is the point; research that is collected but never applied earns little.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh110-q02",
+      "type": "mc",
+      "q": "Using a variety of research methods in the process of design is important because it",
+      "options": [
+        "helps develop marketing strategies.",
+        "improves understanding of customer needs.",
+        "promotes the use of emerging technologies.",
+        "protects the intellectual property of the designer."
+      ],
+      "answer": 1,
+      "explanation": "Using varied research methods triangulates data from different sources, giving the designer a fuller and more reliable understanding of customer needs. The other options are not the central reason for researching during the design process.",
+      "source": { "origin": "hsc", "ref": "2015 HSC Design and Technology Q10", "year": 2015 }
+    },
+    {
+      "id": "mh110-q03",
+      "type": "mc",
+      "q": "Which method would be the most effective to determine the target market of a consumer product?",
+      "options": [
+        "Employ an entrepreneur to evaluate the product",
+        "Gather a focus group to complete a questionnaire about the product",
+        "Post a comment about the product on social media and ask for responses",
+        "Take a prototype of the product to the local shopping centre and ask shoppers for their opinions"
+      ],
+      "answer": 1,
+      "explanation": "A focus group completing a questionnaire gathers structured, comparable data from a selected sample of potential users, making it the most reliable way to identify the target market. Social media comments and casual shopper opinions are unstructured and unrepresentative.",
+      "source": { "origin": "hsc", "ref": "2018 HSC Design and Technology Q2", "year": 2018 }
+    },
+    {
+      "id": "mh110-q04",
+      "type": "mc",
+      "q": "Which of the following best outlines why designers undertake research and experimentation when developing a product?",
+      "options": [
+        "To avoid making mistakes",
+        "To determine the properties of the materials to be used",
+        "To ensure all the materials are available for production",
+        "To ensure the best tools, materials and techniques are used"
+      ],
+      "answer": 3,
+      "explanation": "Research and experimentation let the designer test options and select the most appropriate tools, materials and techniques for the product. Determining material properties is only one part of this broader aim.",
+      "source": { "origin": "hsc", "ref": "2018 HSC Design and Technology Q7", "year": 2018 }
+    },
+    {
+      "id": "mh110-q05",
+      "type": "mc",
+      "q": "When communicating to an audience, what is the best method of effectively transferring information?",
+      "options": [
+        "Using language and technical jargon to impress the audience",
+        "Keeping the message simple to appeal to a broad range of people",
+        "Providing as much data as possible to cover all potential interests",
+        "Tailoring the message to address the needs and preferences of the audience"
+      ],
+      "answer": 3,
+      "explanation": "Effective communication tailors the message to the specific needs and preferences of the audience — the H5.2 emphasis on methods appropriate to the target market. Jargon excludes people, over-simplifying loses meaning, and dumping all the data overwhelms rather than informs.",
+      "source": { "origin": "hsc", "ref": "2024 HSC Design and Technology Q9", "year": 2024 }
+    },
+    {
+      "id": "mh110-q06",
+      "type": "mc",
+      "q": "An architect has been contracted to design a beach resort.\n\nWhich of the following would be the most appropriate method for the architect to communicate their initial design ideas to the client?",
+      "options": [
+        "A prototype",
+        "A written report",
+        "A rendered sketch",
+        "A technical diagram"
+      ],
+      "answer": 2,
+      "explanation": "At the initial ideation stage a rendered sketch quickly and visually conveys the look and feel of a concept to a non-technical client — chosen for clarity and ease of interpretation. Prototypes and technical diagrams belong to later, more developed stages of the design process.",
+      "source": { "origin": "hsc", "ref": "2016 HSC Design and Technology Q2", "year": 2016 }
+    },
+    {
+      "id": "mh110-q07",
+      "type": "recall",
+      "q": "From memory: name the four stages of the research data cycle, and state the one thing H5.2 requires you to do with your conclusions.",
+      "keyPoints": [
+        "The four stages are: collect the data, analyse it, interpret it, and apply the conclusions.",
+        "H5.2 requires you to apply the conclusions — justify and make your design decisions based on the analysis of the research, so the research actually shapes the project and the report.",
+        "Research that is collected but never applied earns little; the apply step is the point."
+      ],
+      "explanation": "If you recalled collect-analyse-interpret-apply and linked the apply step to justifying decisions, grade yourself Good or Easy. If you only got 'something about research', grade it Again or Hard.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh110-q08",
+      "type": "recall",
+      "q": "In your own words: what is the purpose of the investigative report on an innovation, and how does it connect to module H2?",
+      "keyPoints": [
+        "It researches and critically examines a real innovation — what it is, how it was developed, the factors behind its success, how it has impacted society, and its likely future.",
+        "It develops research and communication skills (collecting, analysing and presenting information) and deepens understanding of innovation.",
+        "It is the case study that bridges to module H2 — the innovation and emerging technologies work and the Section III extended response (H2-08)."
+      ],
+      "explanation": "The investigative report runs on the same H5.2 research-and-communication skills as the MDP, but applied to a real innovation. It is the on-ramp to the innovation half of the course.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mh110-q09",
+      "type": "short",
+      "q": "Explain the advantages of ONE communication technique that could be used when presenting information to a client.",
+      "marks": 4,
+      "modelAnswer": "Interactive prototyping can improve client communication. A tangible model or digital simulation lets the client interact with the proposed design, experiencing its functionality, usability and aesthetics and helping them understand its benefits. This hands-on approach improves communication, reduces misunderstandings and allows clients to provide valuable feedback, resulting in better design decisions and a better outcome.",
+      "criteria": [
+        { "marks": 4, "descriptor": "Provides an explanation of the advantages of ONE communication technique that could be used when presenting information to a client" },
+        { "marks": 3, "descriptor": "Demonstrates an understanding of the advantages of ONE communication technique that could be used when presenting information to a client" },
+        { "marks": 2, "descriptor": "Demonstrates understanding of the advantage(s) of ONE communication technique" },
+        { "marks": 1, "descriptor": "Provides some relevant information" }
+      ],
+      "explanation": "Pick one technique and justify it against the criteria — clarity, appropriateness and ease of interpretation for that audience. The marker rewards advantages tied to the audience, not just naming a technique.",
+      "source": { "origin": "hsc", "ref": "2023 HSC Design and Technology Q13", "year": 2023 }
+    },
+    {
+      "id": "mh110-q10",
+      "type": "short",
+      "q": "Research is important in the early stages of designing a new product.\n\nExplain the factors a designer would need to consider when interpreting and applying research data.",
+      "marks": 4,
+      "modelAnswer": "When interpreting and applying research data a designer considers the reliability and validity of the data (whether the sample and method give trustworthy, representative results), and what the patterns in the data actually mean for the design. The findings must then be applied to the project: they are used to set or refine design criteria and to justify decisions about needs, materials and form, so the research genuinely shapes the product rather than being collected and ignored.",
+      "criteria": [
+        { "marks": 4, "descriptor": "Makes the relationship between the factors and the consideration evident (when interpreting and applying research data); provides the reasons why the designer considers these factors" },
+        { "marks": 3, "descriptor": "Provides characteristics and features of the factors a designer would need to consider when interpreting and applying research data" },
+        { "marks": 2, "descriptor": "Sketches in general terms factors a designer would consider when interpreting and applying research data" },
+        { "marks": 1, "descriptor": "Identifies a factor a designer would consider when interpreting and applying research data" }
+      ],
+      "explanation": "This is the interpret-and-apply end of the data cycle. The mark hinges on linking the factors to why they matter and showing the findings are applied to design decisions.",
+      "source": { "origin": "hsc", "ref": "2010 HSC Design and Technology Q13", "year": 2010 }
+    },
+    {
+      "id": "mh110-q11",
+      "type": "extended",
+      "q": "How does the selection of presentation techniques influence the communication of a design idea to a client?",
+      "marks": 6,
+      "modelAnswer": "The presentation technique a designer selects determines how clearly and persuasively a design idea reaches the client, so it should be matched to the audience, the message and the purpose and judged against clarity, appropriateness and ease of interpretation. For a non-technical client who needs to grasp a product's appearance, a rendered three-dimensional model or virtual walkthrough communicates the look and feel clearly and is easy to interpret, gaining approval. A more technical or precise medium such as orthographic drawings would suit a manufacturer but would confuse a client. Selecting the technique that best conveys the message to that specific audience therefore directly improves understanding, reduces misunderstanding and influences the client's response, whereas a poorly chosen technique obscures the idea.",
+      "criteria": [
+        { "marks": "5-6", "descriptor": "Makes evident the relationship between the selection of presentation techniques and how they influence the communication of a design idea to a client" },
+        { "marks": "3-4", "descriptor": "Provides characteristics and features of the selected presentation techniques and demonstrates a link as to how this influences the communication of a design idea to a client" },
+        { "marks": "2", "descriptor": "Sketches in general terms the presentation techniques and/or how they influence the communication of a design idea to a client" },
+        { "marks": "1", "descriptor": "Identifies a presentation technique that could be used to present a design idea to a client" }
+      ],
+      "explanation": "Match the technique to the audience and justify it against the criteria (CAE — clarity, appropriateness, ease of interpretation). Show the cause-and-effect link between the choice and how well the idea is understood, rather than just listing techniques.",
+      "source": { "origin": "hsc", "ref": "2010 HSC Design and Technology Q14", "year": 2010 }
+    }
+  ]
+}

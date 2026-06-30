@@ -1,0 +1,146 @@
+{
+  "questions": [
+    {
+      "id": "qcaseflow-q01",
+      "type": "mc",
+      "q": "What was the core design breakthrough that finally made the Flow Hive work?",
+      "options": [
+        "Turning the honeycomb frames on their side so the honey dripped out under gravity",
+        "Pushing a hexagonal piston into each cell to crack the wax cap open",
+        "Splitting each cell vertically from the top so one half slides down past the other, opening a channel through the comb",
+        "Heating the hive so the warmed honey ran out through a tap"
+      ],
+      "answer": 2,
+      "explanation": "The Andersons stopped treating the comb as a solid block and split each cell vertically from the top, so one half slides past the other and opens an S-shaped channel the capped honey can run down. Tilting the frames and the hexagonal pistons were earlier prototypes that 'sort of worked', which in design terms means they didn't.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcaseflow-q02",
+      "type": "mc",
+      "q": "How did emerging technology let the Andersons develop the Flow Frame so much faster?",
+      "options": [
+        "They used 3D modelling and 3D printing to make and test early cells, so they could print a version, trial it on real bees, tweak it and print again",
+        "They used injection moulding from the very first prototype to make perfect frames",
+        "They used CNC machining of metal frames that never needed changing",
+        "They used a single computer simulation that produced the final design with no physical testing"
+      ],
+      "answer": 0,
+      "explanation": "3D modelling on a computer plus 3D printing of early cells let them iterate fast — print, test on real bees, tweak, reprint. Without it, ten years of prototyping might have been thirty. The design wasn't just helped by the technology; it wasn't possible without it.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcaseflow-q03",
+      "type": "mc",
+      "q": "Why did the Andersons switch from 3D printing to injection moulding when it came time for mass production?",
+      "options": [
+        "Injection moulding let them keep changing the design cheaply with every batch",
+        "Injection moulding stamps out smooth, identical, food-grade plastic frames at scale, which 3D printing cannot do economically",
+        "3D printing produced frames that were too strong for the bees to use",
+        "Injection moulding was the only way to make the frames out of timber"
+      ],
+      "answer": 1,
+      "explanation": "3D printing is ideal for fast, one-off prototypes but is slow and expensive per unit. Once the design was fixed and 24,000 orders had to be filled, injection moulding was used to mass-produce smooth, identical, food-grade plastic frames at scale. Matching the manufacturing method to the production stage is the key idea.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcaseflow-q04",
+      "type": "mc",
+      "q": "How did filing a patent before launching protect the Flow Hive once it became famous?",
+      "options": [
+        "The patent meant copycats had to pay the Andersons a fee to sell identical hives",
+        "The patent stopped anyone from ever making a different beehive",
+        "Because they had protected the idea before going public, the counterfeit knockoffs were legally vulnerable, and combined with poor quality this saw PayPal force the fakers to refund customers",
+        "The patent guaranteed the crowdfunding campaign would reach its target"
+      ],
+      "answer": 2,
+      "explanation": "The single best lesson in the story: they filed for a patent first, then went public. When cheap knockoffs appeared — some even using the Andersons' own branding, photos and videos — the idea was protected. The fakes were made of nasty plastic, the mechanism failed, customers complained, and PayPal forced the counterfeiters to refund people. Protect the intellectual property, then launch.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcaseflow-q05",
+      "type": "mc",
+      "q": "Identify a material design decision in the Flow Frame and the reason behind it.",
+      "options": [
+        "The frames are moulded from food-grade BPA- and BPS-free plastic so no unwanted chemicals end up near something people eat",
+        "The frames are made of untreated steel to keep the cost as low as possible",
+        "The cells are left completely unfinished so the bees must build them entirely from scratch",
+        "The cell splits are oversized so honey drains faster regardless of the bees"
+      ],
+      "answer": 0,
+      "explanation": "Every detail was a design decision made for a reason: the frames are food-grade plastic free of BPA and BPS (chemicals you don't want near food), the cells come almost complete so bees finish and fill them fast, and the splits are deliberately sized so a bee can't catch a leg or wing when they close.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcaseflow-q06",
+      "type": "recall",
+      "q": "From memory: what does the Flow Hive's ten-year development tell you about the real nature of innovation?",
+      "keyPoints": [
+        "Innovation is almost never a single flash of genius — it took the Andersons over ten years to answer their question.",
+        "It is a long run of failed prototypes: tilting the combs to drip honey, then hexagonal pistons, before the vertical cell-split breakthrough.",
+        "A prototype that 'sort of works' has, in design terms, failed — iteration and persistence are what eventually solve the problem."
+      ],
+      "explanation": "If you recalled that innovation is a decade of failed prototypes rather than a lightning bolt, and named at least one earlier dead-end (drip / pistons) before the cell-split breakthrough, grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcaseflow-q07",
+      "type": "recall",
+      "q": "From memory: list the main factors that made the Flow Hive succeed when so many clever inventions don't.",
+      "keyPoints": [
+        "Timing — it launched amid a global panic about bees dying off (colony collapse), so people wanted to 'save the bees': right product, right moment.",
+        "Marketing — a single beautiful crowdfunding video of honey pouring into a jar did the work of a million-dollar ad campaign and spread on social media for free.",
+        "Social enterprise — free beekeeping education, support for bee clubs and charity drives (e.g. Vanuatu cyclone, Nepal earthquake) made people buy into it, not just buy it.",
+        "Protection and quality — a patent filed before launch and a genuinely better product saw off the copycats."
+      ],
+      "explanation": "Strong recall names timing, marketing, and the social-enterprise angle, ideally adding the patent/quality point. These are the exact factors the exam asks you to pull out of a case study like this.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcaseflow-q08",
+      "type": "extended",
+      "q": "There is growing consumer demand for innovative products that enhance the quality of life.\n\nExplain a range of factors that contribute to the success of these products.",
+      "marks": 5,
+      "criteria": [
+        { "marks": "5", "descriptor": "Makes the relationship evident between a range of factors and the contribution to the success of innovations and enhancement of life quality" },
+        { "marks": "3–4", "descriptor": "Provides characteristics and features of factors that contribute to the success of innovations and demonstrates a link to enhance quality of life" },
+        { "marks": "2", "descriptor": "Sketches in general terms a factor that contributes to the success of innovations OR indicates the features of successful innovations" },
+        { "marks": "1", "descriptor": "Identifies a factor that contributes to the success of innovations" }
+      ],
+      "modelAnswer": "A range of factors works together to make an innovative product succeed. Timing and market need are critical — a product released when consumers feel the need (as the Flow Hive was, during global concern about declining bee populations) finds a ready market. Effective marketing builds demand cheaply and quickly; the Flow Hive's single crowdfunding video reached a global audience at little cost and spread on social media on its own. Economic viability matters too: sensible manufacturing choices (here, partnering with an Australian manufacturer once it proved competitive) keep the product affordable and profitable. Protecting the intellectual property through a patent secured the innovation against copycats, while genuine quality and an ethical, socially engaged brand earned consumer trust. Each factor links back to a product people will buy, use and value — enhancing their quality of life.",
+      "explanation": "This is the exam question the episode points you toward: every factor (timing/market need, marketing, economics, IP protection, ethics/social enterprise, quality) can be illustrated directly from the Flow Hive story. The 5-mark band rewards making the relationship between the factors and both success and quality of life explicit.",
+      "source": { "origin": "hsc", "ref": "2011 HSC Design and Technology Q12", "year": 2011 }
+    },
+    {
+      "id": "qcaseflow-q09",
+      "type": "extended",
+      "q": "Explain how the development of innovative products may contribute to the quality of life.",
+      "marks": 5,
+      "criteria": [
+        { "marks": "5", "descriptor": "Provides why AND/OR how the development of innovative products contributes to the quality of life, showing clear relationship between the two" },
+        { "marks": "4", "descriptor": "Describes how the development of innovative products contributes to the quality of life" },
+        { "marks": "3", "descriptor": "Outlines how the development of innovative products contributes to the quality of life" },
+        { "marks": "2", "descriptor": "Shows some understanding of innovative products and the quality of life" },
+        { "marks": "1", "descriptor": "Shows a basic understanding of innovative products or the quality of life" }
+      ],
+      "modelAnswer": "Design seeks to satisfy needs, and innovative products improve quality of life by meeting those needs in new ways. Computer-aided and automated technologies make everyday activities faster, easier and less labour-intensive — for example timers and remote controls for lights, blinds and air-conditioning make the home more comfortable, safer and more enjoyable. Innovations in cars, such as GPS, driving cameras, Bluetooth and advanced braking and suspension, improve the safety and capability of travel. Medical innovations likewise speed recovery and prolong life, each example showing a clear link between the innovation and an enhanced quality of life.",
+      "explanation": "The Flow Hive is a perfect worked example for this question: it removes the heavy, hot, dangerous work of harvesting honey, lets ordinary people keep a backyard hive without smoke or stings, and (through its viewing window) actually improves care of the bees — a clear, demonstrable link between an innovation and enhanced quality of life.",
+      "source": { "origin": "hsc", "ref": "2016 HSC Design and Technology Q13", "year": 2016 }
+    },
+    {
+      "id": "qcaseflow-q10",
+      "type": "extended",
+      "q": "The images show some examples of the application of emerging technologies: 3D printing (a medical prosthetic leg), biometrics (a security fingerprint scan), nanotechnology (a health smart watch) and a smart card (an Opal travel card).\n\nAnalyse the potential impact of emerging technologies on society.\n\nYour answer will be assessed on how well you: demonstrate knowledge and understanding relevant to the question; communicate ideas and information using relevant examples; and present a sustained, logical and cohesive response.",
+      "marks": 15,
+      "criteria": [
+        { "marks": "13–15", "descriptor": "Shows a comprehensive understanding of the potential impact of emerging technologies on society; draws out and relates implications of the potential impact; communicates using relevant examples; responds in a sustained, logical and cohesive manner" },
+        { "marks": "10–12", "descriptor": "Explains the potential impact of emerging technologies on society; communicates using relevant examples; responds in a logical manner" },
+        { "marks": "7–9", "descriptor": "Describes the potential impact of emerging technologies on society; may include a relevant example" },
+        { "marks": "4–6", "descriptor": "Outlines the potential impact of emerging technologies including a link to society" },
+        { "marks": "1–3", "descriptor": "Shows a limited understanding of emerging technologies" }
+      ],
+      "modelAnswer": "Emerging technologies developed to meet real needs will continue to change and improve quality of life. 3D printing of a prosthetic leg produces a more aesthetically pleasing, customised replacement with a short concept-to-market lead time, improving the user's mobility, independence and self-esteem. Biometrics such as fingerprint scanning vastly improve security by identifying individuals, and will expand to DNA, eye and voice recognition to help create a safer world and reduce identity theft. Nanotechnology in smart watches enables compact, multifunction products with real-time data reporting, encouraging society to monitor and take responsibility for its own health and fitness. Smart cards like the Opal card make travel payment faster and more convenient and help shift towards a cashless society, though they raise concerns over personal data security and can disadvantage older or remote users with limited access to technology. Overall, acceptance of these technologies will keep growing out of need, making life easier, quicker and more convenient while bringing new security and equity implications that society must manage.",
+      "explanation": "Use the Flow Hive to ground the 3D-printing strand of this question: 3D modelling and 3D printing let the Andersons iterate prototypes rapidly (shortening concept-to-market lead time), and injection moulding then took the design to mass scale — a concrete example of emerging manufacturing technology reshaping what a small team can bring to society.",
+      "source": { "origin": "hsc", "ref": "2016 HSC Design and Technology Q14", "year": 2016 }
+    }
+  ]
+}

@@ -1,174 +1,145 @@
 {
   "questions": [
     {
-      "id": "m609-q01",
-      "q": "Which statement best describes magnetic flux?",
+      "id": "mm609-q01",
+      "type": "mc",
+      "q": "What is the name given to the amount of magnetic field passing through a given area, and what is its SI unit?",
       "options": [
-        "The strength of the magnetic field at a single point in space",
-        "The measure of the total magnetic field passing through a given area",
-        "The force a magnetic field exerts on a current-carrying wire",
-        "The rate at which a magnetic field changes with time"
+        "Magnetic flux density, measured in tesla (T)",
+        "Magnetic flux, symbol \\(\\phi_B\\), measured in weber (Wb)",
+        "Magnetic field strength, measured in newtons (N)",
+        "Magnetic permeability, measured in weber per square metre (Wb m\\(^{-2}\\))"
       ],
       "answer": 1,
-      "explanation": "Flux is the total amount of field threading a surface — picture the number of field lines passing through the loop. Option A describes field strength B (a property of a point), not flux (a property of an area); the rate of change (D) is what Faraday's law uses, not flux itself.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Magnetic flux is the name given to the amount of magnetic field passing through a given area. It is given the symbol \\(\\phi_B\\) and in the SI system is measured in weber (Wb). Tesla is the unit of magnetic field strength (flux density), not of flux.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 137, "url": "sources/phy12/p137.jpg" }
     },
     {
-      "id": "m609-q02",
-      "q": "In the equation \\( \\Phi = BA\\cos\\theta \\), the angle \\( \\theta \\) is measured between the magnetic field and which direction?",
-      "options": [
-        "The plane of the loop",
-        "The direction of the induced current",
-        "The area vector (normal) of the loop",
-        "The longest side of the loop"
-      ],
-      "answer": 2,
-      "explanation": "\\( \\theta \\) is the angle between the field and the area vector — the line sticking straight out of the loop, perpendicular to its plane. Measuring from the plane of the loop (A) is the single most common error and gives answers that are exactly backwards.",
+      "id": "mm609-q02",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m609-q03",
-      "q": "A loop is oriented so the magnetic field passes straight through it (field aligned with the area vector). The flux through the loop is:",
+      "q": "The strength of a magnetic field, B, is also known as the magnetic flux density. In which units is the magnetic flux density measured?",
       "options": [
-        "Zero, because the field is along the normal",
-        "Maximum, equal to \\( BA \\)",
-        "Half of \\( BA \\)",
-        "Impossible to determine without the current"
+        "weber (Wb) only",
+        "tesla (T), or equivalently weber per square metre (Wb m\\(^{-2}\\))",
+        "weber per second (Wb s\\(^{-1}\\))",
+        "newton per ampere-metre (N A\\(^{-1}\\) m\\(^{-1}\\)) only"
       ],
       "answer": 1,
-      "explanation": "When the field is along the area vector, \\( \\theta = 0 \\), \\( \\cos 0 = 1 \\), so \\( \\Phi = BA \\), the maximum. Every field line threads the loop — the 'window flat to the rain' case. Flux is zero only when the field lies in the plane of the loop (\\( \\theta = 90° \\)).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The strength of a magnetic field, B, is also known as the magnetic flux density — the amount of magnetic flux passing through a unit area. In the SI system, B is measured in tesla (T) or weber per square metre (Wb m\\(^{-2}\\)), which makes the 'per unit area' meaning of density explicit.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 137, "url": "sources/phy12/p137.jpg" }
     },
     {
-      "id": "m609-q04",
-      "q": "What is the difference between magnetic flux and magnetic flux density?",
-      "options": [
-        "They are two names for the same quantity, measured in webers",
-        "Flux is measured in tesla; flux density is measured in webers",
-        "Flux is the total field through an area (webers); flux density is another name for field strength B (tesla)",
-        "Flux density only exists for rotating coils; flux only exists for stationary coils"
+      "id": "mm609-q03",
+      "type": "recall",
+      "q": "From memory: state the relationship between magnetic flux, magnetic flux density and area when the area A is perpendicular to a uniform magnetic field of strength B, and state what happens to the flux when the field is parallel to the area.",
+      "keyPoints": [
+        "If the area A is perpendicular to a uniform magnetic field of strength B, the magnetic flux \\(\\phi_B\\) is the product of B and A: \\(\\phi_B = BA\\).",
+        "More generally \\(\\phi_B = B_\\perp A\\), where \\(B_\\perp\\) is the component of the magnetic flux density perpendicular to the area.",
+        "The magnetic flux passing through an area is reduced if the field is not perpendicular to the area, and \\(\\phi_B\\) is zero if the magnetic field is parallel to the area."
       ],
-      "answer": 2,
-      "explanation": "'Flux density' is a deliberate exam trap: it means the field strength B in tesla, the flux per unit area, NOT the flux. Flux itself is the total field through a surface, measured in webers. A question asking for 'flux density' wants an answer in tesla.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "When the area is perpendicular to the field, \\(\\phi_B = BA\\) (every field line threads the area). When the field is parallel to the area it skims across and \\(\\phi_B = 0\\). If you recalled \\(\\phi_B = BA\\) and the zero-when-parallel case, grade yourself Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 137, "url": "sources/phy12/p137.jpg" }
     },
     {
-      "id": "m609-q05",
-      "q": "A circular coil of radius \\( 8.0\\,\\mathrm{cm} \\) sits in a field of \\( 0.20\\,\\mathrm{T} \\) directed straight through it. What is the flux? (Use \\( A = \\pi r^2 \\).)",
-      "options": [
-        "\\( 4.0 \\times 10^{-3}\\,\\mathrm{Wb} \\)",
-        "\\( 0.40\\,\\mathrm{Wb} \\)",
-        "\\( 4.0 \\times 10^{-1}\\,\\mathrm{Wb} \\)",
-        "\\( 4.0 \\times 10^{-5}\\,\\mathrm{Wb} \\)"
-      ],
-      "answer": 0,
-      "explanation": "Convert first: \\( r = 0.080\\,\\mathrm{m} \\), so \\( A = \\pi (0.080)^2 = 0.0201\\,\\mathrm{m^2} \\). With \\( \\theta = 0 \\): \\( \\Phi = 0.20 \\times 0.0201 \\times 1 = 4.0 \\times 10^{-3}\\,\\mathrm{Wb} \\). Option D results from forgetting to convert cm to m before squaring.",
+      "id": "mm609-q04",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m609-q06",
-      "q": "The same coil and field as above is tilted so the field is at \\( 60° \\) to the area vector. The flux is now \\( 2.0\\,\\mathrm{mWb} \\), half its previous value. Why did the flux halve?",
+      "q": "The syllabus relationship for describing how magnetic flux can change is written \\(\\phi = B_\\parallel A = BA\\cos\\theta\\). In this relationship, what does the factor \\(\\cos\\theta\\) account for?",
       "options": [
-        "The magnetic field strength dropped to half",
-        "The area of the coil shrank to half",
-        "Fewer field lines thread the loop because of the tilt; \\( \\cos 60° = 0.5 \\)",
-        "The coil started rotating, inducing a back-EMF"
-      ],
-      "answer": 2,
-      "explanation": "Neither B nor A changed — only the angle. \\( \\cos 60° = 0.5 \\), so \\( \\Phi = BA \\times 0.5 \\). Tilting the loop means fewer lines pass through it, even though the field is just as strong. This is the whole meaning of the \\( \\cos\\theta \\) factor.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m609-q07",
-      "q": "When is the flux through a loop exactly zero?",
-      "options": [
-        "When the field is perpendicular to the plane of the loop",
-        "When the field lies in the plane of the loop (parallel to the loop face)",
-        "When the field is at \\( 45° \\) to the area vector",
-        "When the field strength is at its maximum"
+        "The number of turns in the coil",
+        "The orientation of the field relative to the area, so only the component of the flux density passing through the area contributes",
+        "The rate at which the flux changes with time",
+        "The conversion between tesla and weber"
       ],
       "answer": 1,
-      "explanation": "Flux is zero when the field skims across the face — lying in the plane of the loop, so \\( \\theta = 90° \\) and \\( \\cos 90° = 0 \\). 'Window edge-on to the rain' catches nothing. Field perpendicular to the plane (A) is actually the maximum-flux case.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The relationship \\(\\phi = B_\\parallel A = BA\\cos\\theta\\) describes how magnetic flux depends on orientation. Magnetic flux through an area is the product of the area and the component of the magnetic flux density passing through it; \\(\\cos\\theta\\) extracts that component, giving maximum flux when the field passes straight through and zero when it is parallel to the area.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 133, "url": "sources/phy12/p133.jpg" }
     },
     {
-      "id": "m609-q08",
-      "q": "As a coil rotates steadily in a uniform magnetic field, the flux through it:",
+      "id": "mm609-q05",
+      "type": "worked",
+      "q": "Calculate the magnetic flux threading an area of 1.5 m\\(^2\\) that is perpendicular to a magnetic field of flux density 2.0 T.",
+      "given": "\\(A = 1.5\\,\\mathrm{m^2}\\), flux density \\(B = 2.0\\,\\mathrm{T}\\), area perpendicular to the field so \\(\\theta = 0\\)",
+      "working": [
+        "\\(\\phi_B = BA\\cos\\theta\\)",
+        "The area is perpendicular to the field, so \\(\\theta = 0\\) and \\(\\cos\\theta = 1\\): \\(\\phi_B = BA\\)",
+        "\\(\\phi_B = 2.0 \\times 1.5\\)",
+        "\\(\\phi_B = 3.0\\,\\mathrm{Wb}\\)"
+      ],
+      "answerValue": 3.0,
+      "answerUnit": "Wb",
+      "tolerance": 0.01,
+      "explanation": "With the area perpendicular to the field, \\(\\theta = 0\\) and \\(\\phi_B = BA = 2.0 \\times 1.5 = 3.0\\,\\mathrm{Wb}\\). Flux is in webers, not tesla — an answer 'in tesla' would signal you had found a field strength instead.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 154, "url": "sources/phy12/p154.jpg" }
+    },
+    {
+      "id": "mm609-q06",
+      "type": "worked",
+      "q": "Calculate the magnetic flux threading a rectangle with a length of 4.0 cm and width 3.0 cm that is perpendicular to a magnetic field of flux density \\(5.0 \\times 10^{-3}\\,\\mathrm{T}\\).",
+      "given": "rectangle \\(0.040\\,\\mathrm{m} \\times 0.030\\,\\mathrm{m}\\), flux density \\(B = 5.0 \\times 10^{-3}\\,\\mathrm{T}\\), area perpendicular to the field so \\(\\theta = 0\\)",
+      "working": [
+        "Convert to metres and find the area: \\(A = 0.040 \\times 0.030 = 1.2 \\times 10^{-3}\\,\\mathrm{m^2}\\)",
+        "\\(\\phi_B = BA\\cos\\theta\\), with \\(\\theta = 0\\) so \\(\\cos\\theta = 1\\): \\(\\phi_B = BA\\)",
+        "\\(\\phi_B = 5.0 \\times 10^{-3} \\times 1.2 \\times 10^{-3}\\)",
+        "\\(\\phi_B = 6.0 \\times 10^{-6}\\,\\mathrm{Wb}\\)"
+      ],
+      "answerValue": 6.0e-6,
+      "answerUnit": "Wb",
+      "tolerance": 1e-7,
+      "explanation": "Convert centimetres to metres before multiplying: \\(A = 1.2 \\times 10^{-3}\\,\\mathrm{m^2}\\). With the rectangle perpendicular to the field, \\(\\phi_B = BA = 6.0 \\times 10^{-6}\\,\\mathrm{Wb}\\).",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 154, "url": "sources/phy12/p154.jpg" }
+    },
+    {
+      "id": "mm609-q07",
+      "type": "short",
+      "q": "Define the concept of magnetic flux in terms of magnetic flux density and surface area. (2 marks)",
+      "marks": 2,
+      "modelAnswer": "Magnetic flux \\(\\phi_B\\) is the amount of magnetic field passing through a given area. It is the product of the area, A, and the component of the magnetic flux density, B, that is perpendicular to that area: \\(\\phi_B = B_\\perp A = BA\\cos\\theta\\). It is measured in weber (Wb), whereas the flux density B is measured in tesla.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States magnetic flux is the amount of magnetic field (the perpendicular flux density) passing through a given area." },
+        { "marks": 1, "descriptor": "Gives the relationship \\(\\phi_B = BA\\) (or \\(B_\\perp A\\)) linking flux to flux density and surface area, with unit weber." }
+      ],
+      "explanation": "The marks reward defining flux as flux density times area (the perpendicular component) and specifying the surface area — flux is meaningless without a stated area.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 154, "url": "sources/phy12/p154.jpg" }
+    },
+    {
+      "id": "mm609-q08",
+      "type": "mc",
+      "q": "In the flux equation \\(\\phi = BA\\cos\\theta\\) as taught in this episode, the angle \\(\\theta\\) is measured from which reference?",
       "options": [
-        "Stays constant, because B and A are constant",
-        "Changes continuously, because the angle \\( \\theta \\) changes continuously",
-        "Increases steadily without ever falling",
-        "Only changes if the field strength is also changing"
+        "Between the magnetic field and the plane of the loop",
+        "Between the magnetic field and the area vector (the normal — the direction perpendicular to the plane of the loop)",
+        "Between the area vector and the plane of the loop",
+        "Between two adjacent magnetic field lines"
       ],
       "answer": 1,
-      "explanation": "The field strength B and area A are constant, but rotation continuously changes the angle \\( \\theta \\) between the field and the coil's area vector, so \\( \\cos\\theta \\) — and therefore the flux — rises and falls continuously. This changing flux is what makes a rotating coil generate.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The episode stresses that \\(\\theta\\) is the angle between the magnetic field and the area vector (the normal to the loop), not the angle to the plane of the loop. Measuring from the plane instead of the normal is the single most common flux error in the HSC.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m609-q09",
-      "q": "A coil sits stationary in a strong, steady magnetic field, so a large flux threads it. Is an EMF induced?",
-      "options": [
-        "Yes, because the flux is large",
-        "Yes, because a strong field always induces an EMF",
-        "No, because the flux is not changing — only a change in flux induces an EMF",
-        "No, because flux can never induce an EMF under any conditions"
+      "id": "mm609-q09",
+      "type": "recall",
+      "q": "From memory: as a coil rotates steadily in a uniform magnetic field, explain why the flux through it changes continuously, and state at which orientations the flux is maximum and zero.",
+      "keyPoints": [
+        "B and A stay constant, but the angle \\(\\theta\\) between the field and the coil's area vector changes continuously, so \\(\\phi = BA\\cos\\theta\\) changes continuously.",
+        "Flux is maximum (\\(\\phi = BA\\)) when the plane of the coil is perpendicular to the field — area vector aligned with the field, \\(\\theta = 0\\), all field lines thread the coil.",
+        "Flux is zero when the plane of the coil is parallel to the field — area vector perpendicular to the field, \\(\\theta = 90^\\circ\\), field lines skim across without passing through."
       ],
-      "answer": 2,
-      "explanation": "A large but steady flux induces nothing. Only the rate of change of flux produces an EMF (Faraday's law). The flux itself, however enormous, does nothing on its own — this is the central warning of the topic.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Use the window-in-the-rain image: window flat to the rain catches the most (max flux), edge-on catches none (zero flux). If you tied both orientations to \\(\\theta\\) and the area vector, grade Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m609-q10",
-      "q": "What is the SI unit of magnetic flux, and how does it relate to the tesla?",
+      "id": "mm609-q10",
+      "type": "mc",
+      "q": "A coil sits stationary in a strong, steady magnetic field, so there is a large flux through it. Is an emf induced in the coil?",
       "options": [
-        "The tesla; \\( 1\\,\\mathrm{T} = 1\\,\\mathrm{Wb\\cdot m^2} \\)",
-        "The weber; \\( 1\\,\\mathrm{Wb} = 1\\,\\mathrm{T\\cdot m^2} \\)",
-        "The volt; \\( 1\\,\\mathrm{V} = 1\\,\\mathrm{Wb\\cdot m^{-2}} \\)",
-        "The newton; \\( 1\\,\\mathrm{N} = 1\\,\\mathrm{Wb\\cdot s} \\)"
+        "Yes — a large flux always induces an emf",
+        "No — the flux is large but not changing, and only a change in flux induces an emf, not the flux itself",
+        "Yes — but only because the field is strong",
+        "No — because a stationary coil cannot carry any flux"
       ],
       "answer": 1,
-      "explanation": "Flux is measured in webers, where \\( 1\\,\\mathrm{Wb} = 1\\,\\mathrm{T\\cdot m^2} \\) (one tesla through one square metre). Equivalently, the tesla is webers per square metre — which is exactly why field strength is called the 'flux density'.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Although the flux is large, it is steady, and only a changing flux induces an emf. A big, unchanging flux does nothing on its own — the emf comes from the rate of change of flux (Faraday's law), which is the next episode. This is the central trap the episode guards against.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

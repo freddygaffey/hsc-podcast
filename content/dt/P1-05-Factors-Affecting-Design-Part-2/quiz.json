@@ -1,0 +1,143 @@
+{
+  "questions": [
+    {
+      "id": "mp105-q01",
+      "type": "mc",
+      "q": "What is the purpose of a designer undertaking a 'cradle to grave' analysis of a pending innovation?",
+      "options": [
+        "To determine the likelihood of financial success",
+        "To indicate the possibility of future growth in market share",
+        "To determine the level of consumer demand for a new product",
+        "To understand the impact of the design on society and the environment"
+      ],
+      "answer": 3,
+      "explanation": "A 'cradle to grave' life cycle analysis evaluates a product's inputs and outputs across every stage — materials, manufacture, distribution, use and disposal — to reveal its true environmental and social impact. The other options are commercial aims, not the point of an LCA.",
+      "source": { "origin": "hsc", "ref": "2022 HSC Design and Technology Q8", "year": 2022 }
+    },
+    {
+      "id": "mp105-q02",
+      "type": "mc",
+      "q": "A product is obsolescent when",
+      "options": [
+        "it is ageing.",
+        "it is classified as an antique.",
+        "it cannot be repaired because parts are not available.",
+        "a variety of materials is considered during design and development."
+      ],
+      "answer": 2,
+      "explanation": "A product becomes obsolete when it is replaced by something that does the same job — the technological case being that you can no longer get parts or support for it, so it must be replaced. Simply ageing does not make a still-repairable, still-functioning product obsolescent.",
+      "source": { "origin": "hsc", "ref": "2023 HSC Design and Technology Q6", "year": 2023 }
+    },
+    {
+      "id": "mp105-q03",
+      "type": "mc",
+      "q": "Why do many manufacturing companies incorporate built-in obsolescence into their products?",
+      "options": [
+        "To increase the probability of consistent sales",
+        "To ensure that the product is sustainable in the market place",
+        "To extend the product's life span beyond the warranty period",
+        "To make the product safe to use for an extended period of time"
+      ],
+      "answer": 0,
+      "explanation": "Planned or built-in obsolescence is designed in at the outset so a product fails or feels out of date within a set period, driving repeat sales — industries like telecommunications, computing and fashion rely on it. It works against, not towards, an extended lifespan or sustainability.",
+      "source": { "origin": "hsc", "ref": "2016 HSC Design and Technology Q9", "year": 2016 }
+    },
+    {
+      "id": "mp105-q04",
+      "type": "mc",
+      "q": "A manufacturer wishes to decrease the long-term environmental impact of the washing machine it produces.\n\nWhich of the following strategies would be the most effective?",
+      "options": [
+        "Replace plastic parts with metal where possible",
+        "Reduce the power and water usage requirements",
+        "Reduce the size of the washing bowl and detergent container",
+        "Manufacture the washing machine using only new technologies"
+      ],
+      "answer": 1,
+      "explanation": "Long-term environmental consequences are the big, slow ones — greenhouse gases, resource depletion — and designers mitigate them by using energy and resources efficiently over the product's life. Cutting power and water use across years of operation reduces that ongoing impact far more than the other one-off changes.",
+      "source": { "origin": "hsc", "ref": "2016 HSC Design and Technology Q5", "year": 2016 }
+    },
+    {
+      "id": "mp105-q05",
+      "type": "mc",
+      "q": "What is the primary purpose of a work health and safety (WHS) risk assessment?",
+      "options": [
+        "To identify dangerous equipment",
+        "To evaluate workshop organisation and practices",
+        "To access the impact of materials on the environment",
+        "To identify and assess potential injury or illness in the workplace"
+      ],
+      "answer": 3,
+      "explanation": "WHS concerns the rights and responsibilities of employers and employees to a safe and healthy workplace, governed by the WHS Act 2011. A risk assessment exists to identify and assess potential injury or illness so hazards can be controlled before anyone is harmed.",
+      "source": { "origin": "hsc", "ref": "2023 HSC Design and Technology Q5", "year": 2023 }
+    },
+    {
+      "id": "mp105-q06",
+      "type": "mc",
+      "q": "Which of the following is most likely to result in a high quality product?",
+      "options": [
+        "Using appropriate production processes",
+        "Assessing available Government rebates",
+        "Developing good functional and/or aesthetic features",
+        "Implementing environmentally friendly production processes"
+      ],
+      "answer": 2,
+      "explanation": "Quality is a measure of excellence tied to how well a product performs and how appealing it is — durability, materials, workmanship and value. Strong functional and/or aesthetic features speak directly to that excellence, whereas the other options relate to finance, process or environmental factors.",
+      "source": { "origin": "hsc", "ref": "2011 HSC Design and Technology Q1", "year": 2011 }
+    },
+    {
+      "id": "mp105-q07",
+      "type": "recall",
+      "q": "From memory: name the three types of obsolescence and give a one-line example of each.",
+      "keyPoints": [
+        "Style/aesthetic obsolescence — the product still works but a newer, more fashionable version makes it feel dated (e.g. last year's phone styling). 'Works fine but feels old.'",
+        "Technological obsolescence — a whole technology is superseded so the product is no longer supported, with no parts or software available (e.g. a cassette player after streaming). 'Can't get parts.'",
+        "Planned/built-in obsolescence — the product is deliberately designed to fail or become unfashionable within a set period to force replacement (e.g. a non-replaceable battery that dies in a couple of years). 'Designed to die.'"
+      ],
+      "explanation": "If you recalled all three with the hooks — works fine but feels old (style), can't get parts (technological), designed to die (planned) — grade Good or Easy. The exam trap is blurring technological (circumstance: the world moved on) with planned (intent: designed in from the start).",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp105-q08",
+      "type": "recall",
+      "q": "From memory: what does a life cycle analysis examine, and across which stages?",
+      "keyPoints": [
+        "It evaluates all the resources used across a product's entire life — designing, making, using and disposing of it (cradle to grave).",
+        "It examines all the inputs (materials, resources, energy in) and all the outputs (pollution and waste out).",
+        "It does this at every stage: concept and design, manufacture, distribution, usage, and disposal.",
+        "The point: the environmental cost is hidden if you only look at one stage — a product clean in use may be filthy to make or impossible to dispose of."
+      ],
+      "explanation": "The greener goal beyond cradle to grave is 'cradle to cradle' — designing products that create no landfill waste because they can be reused or recycled. LCA is the frame for any environmental-impact answer.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp105-q09",
+      "type": "short",
+      "q": "Two drink bottles are shown: a single-use disposable plastic bottle and a reusable drink bottle.\n\nDiscuss the long-term environmental impacts of either drink bottle. (4 marks)",
+      "marks": 4,
+      "modelAnswer": "Considering long-term consequences, the reusable bottle is the more appropriate design of the two. Because it can be used many times it produces less waste and less landfill, promotes recycling and represents more responsible marketing and consumer choice. Using biodegradable materials and schemes such as 'return and earn' refunds reinforces this, giving the product lasting value and worth for consumers, society and the environment.",
+      "criteria": [
+        { "marks": "4", "descriptor": "Demonstrates a comprehensive understanding of long-term environmental impacts; provides points for and/or against" },
+        { "marks": "3", "descriptor": "Demonstrates a sound understanding of long-term environmental impacts; points for and/or against" },
+        { "marks": "2", "descriptor": "Outlines an environmental impact" },
+        { "marks": "1", "descriptor": "Provides relevant information" }
+      ],
+      "explanation": "This is the exact 2022 HSC question the episode works through. Frame it with life cycle analysis: a steel bottle has a higher short-term impact to make but a far lower long-term impact because reuse over years displaces hundreds of single-use bottles, whereas single-use plastic has a low impact per item but catastrophic long-term impact at scale (landfill, microplastics).",
+      "source": { "origin": "hsc", "ref": "2022 HSC Design and Technology Q13", "year": 2022 }
+    },
+    {
+      "id": "mp105-q10",
+      "type": "extended",
+      "q": "Many products are designed to have a limited 'lifespan' – that is, they are designed to be replaced rather than repaired.\n\nExplain the effects on society and the environment of designing products with a limited lifespan. (6 marks)",
+      "marks": 6,
+      "criteria": [
+        { "marks": "5–6", "descriptor": "Makes evident the relationship between the limited lifespan of a product and the effects on both society and the environment" },
+        { "marks": "3–4", "descriptor": "Provides characteristics and features of the effects on society and/or the environment as a result of a product's limited lifespan" },
+        { "marks": "2", "descriptor": "Sketches in general terms an effect on society and/or the environment as a result of a product's limited lifespan" },
+        { "marks": "1", "descriptor": "Identifies a societal or environmental effect" }
+      ],
+      "modelAnswer": "Designing a limited lifespan is planned (built-in) obsolescence: products are deliberately made to fail, deteriorate or become unfashionable within a set period so they must be replaced rather than repaired. The societal effects are mixed — it drives repeat sales, profits and jobs in industries like telecommunications, computing and fashion, and keeps giving consumers newer products, but it imposes ongoing financial cost on consumers forced to keep re-buying. The environmental effects are largely negative and long-term: short replacement cycles consume natural resources, increase energy use in repeated manufacture and distribution, and generate large volumes of landfill and waste. Using life cycle analysis to weigh these stage by stage, the convenience and economic gains of a limited lifespan are outweighed at scale by resource depletion and waste, which is why planned obsolescence is ethically frowned upon and pulls against sustainability.",
+      "explanation": "The verb 'explain' wants reasons linked to outcomes on BOTH society and the environment. Anchor it in planned obsolescence and the environmental-versus-financial tension, and use the life cycle analysis stages to give the environmental harms (resource depletion, landfill, waste) real substance rather than just 'it makes waste'.",
+      "source": { "origin": "hsc", "ref": "2011 HSC Design and Technology Q13", "year": 2011 }
+    }
+  ]
+}

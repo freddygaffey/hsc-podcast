@@ -1,174 +1,158 @@
 {
   "questions": [
     {
-      "id": "m201-q01",
-      "q": "Distinguish between the mass and the weight of an object.",
+      "id": "mm201-q01",
+      "type": "mc",
+      "q": "A force is an interaction exerted by one object on another. Which statement correctly distinguishes a contact force from a non-contact force?",
       "options": [
-        "Mass is a force in newtons; weight is the amount of matter in kilograms",
-        "Mass is the amount of matter (kg, scalar, constant); weight is the gravitational force (N, vector, = mg)",
-        "Mass and weight are the same thing measured in different units",
-        "Mass changes with location; weight is constant everywhere"
+        "A contact force can be exerted at a distance, while a non-contact force needs physical contact",
+        "A contact force is exerted by an object in physical contact with another object, while a non-contact force can be exerted without touching, such as gravity, magnetism and electrostatics",
+        "Contact forces are vector quantities while non-contact forces are scalar quantities",
+        "A contact force is always larger than a non-contact force"
       ],
       "answer": 1,
-      "explanation": "Mass is the scalar amount of matter, measured in kilograms, and is the same everywhere. Weight is the gravitational force on that mass, a vector measured in newtons, equal to mg, so it changes with location (e.g. ~1/6 on the Moon). Calling weight 'how heavy something is' is too vague — name it as a force equal to mg.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "A contact force is exerted by an object that is in physical contact with another (applied force, friction, normal, tension), while a non-contact force is exerted at a distance through a field — the effects of gravity, magnetism and electrostatics. Force is a vector, so both kinds have magnitude (in newtons) and direction.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 64, "url": "sources/phy11/p64.jpg" }
     },
     {
-      "id": "m201-q02",
-      "q": "Identify which of the following is a field force rather than a contact force.",
-      "options": [
-        "Friction",
-        "Tension",
-        "Gravity",
-        "The normal force"
-      ],
-      "answer": 2,
-      "explanation": "Gravity acts at a distance through a field, without objects touching, so it is a field force. Friction, tension and the normal force all require contact between surfaces, so they are contact forces. Field forces (gravity, electrostatic, magnetic) are studied in depth in Modules 4 and 6.",
+      "id": "mm201-q02",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m201-q03",
-      "q": "A net force of 12 N acts on a 4 kg object initially at rest. Calculate its velocity after 3 s.",
+      "q": "The weight of an object is given by W = mg, where g is the gravitational field strength. Which statement correctly relates mass and weight near the Earth's surface?",
       "options": [
-        "3 m s⁻¹",
-        "9 m s⁻¹",
-        "36 m s⁻¹",
-        "12 m s⁻¹"
+        "Mass is the gravitational force on an object, measured in newtons",
+        "Weight is the gravitational force on the mass, W = mg, with g about 9.8 m s⁻² at the Earth's surface, while mass is a measure of the amount of matter and remains the same wherever you are",
+        "Both the mass and the weight of an object change when it is moved to the Moon",
+        "Weight is a measure of the amount of matter in an object and is the same everywhere"
       ],
       "answer": 1,
-      "explanation": "First the Dynamics step: a = F_net/m = 12/4 = 3 m s⁻². Then the Kinematics step (suvat): v = u + at = 0 + 3 × 3 = 9 m s⁻¹. This force→acceleration→motion chain is the signature move of the module. The value 3 is just the acceleration, not the velocity after 3 s.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The weight W is the force on an object due to the pull of gravity, equal to mg, and it depends on location because g varies (about 9.8 m s⁻² on Earth, 1.6 m s⁻² on the Moon). Mass is a measure of the amount of matter and stays the same wherever you are — that is the distinction the exam tests.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 65, "url": "sources/phy11/p65.jpg" }
     },
     {
-      "id": "m201-q04",
-      "q": "State Newton's first law of motion.",
+      "id": "mm201-q03",
+      "type": "mc",
+      "q": "Most objects are acted upon by more than one force at a time. What is meant by the net force, Fnet, acting on an object?",
       "options": [
-        "Force equals mass times acceleration",
-        "An object stays at rest or moving at constant velocity unless acted on by a net (unbalanced) force",
-        "Every action has an equal and opposite reaction",
-        "Heavier objects fall faster than lighter ones"
+        "The single largest force acting on the object",
+        "The vector sum of all the forces acting on the object",
+        "The force that the object exerts on its surroundings",
+        "The difference between the object's weight and its mass"
       ],
       "answer": 1,
-      "explanation": "Newton's first law (the law of inertia) states an object's velocity changes only if a net, unbalanced force acts; with balanced forces (net force zero) it stays at rest or moves at constant velocity. 'F = ma' is the second law and 'equal and opposite reaction' is the third — the hook for the set is I, F, A (Inertia, F = ma, Action-reaction).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The net force is the vector sum of all the forces acting on an object. It may be equal to zero (the object is in equilibrium and keeps the same state of motion) or a non-zero vector that causes a change in the object's state of motion.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 71, "url": "sources/phy11/p71.jpg" }
     },
     {
-      "id": "m201-q05",
-      "q": "A student claims that because every force has an equal and opposite reaction, the two forces always cancel and nothing can accelerate. Explain the flaw.",
+      "id": "mm201-q04",
+      "type": "mc",
+      "q": "Newton's First Law of Motion states that every object continues in its state of rest or uniform motion unless made to change by what?",
       "options": [
-        "The reaction force is always slightly smaller than the action force",
-        "Action-reaction forces act on two different objects, so they cannot cancel on a single object",
-        "The forces are not actually equal in magnitude",
-        "Reaction forces only exist for moving objects"
+        "A contact force that physically touches it",
+        "A non-zero net force",
+        "A change in its mass",
+        "The removal of gravity acting on it"
       ],
       "answer": 1,
-      "explanation": "An action-reaction pair acts on two different objects (A on B, and B on A), so they never cancel on a single object — and only forces on the same object determine whether it accelerates. When you walk, you push back on the ground and the ground pushes forward on you; that forward force acts on you and accelerates you. Naming 'different objects' is the key mark.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Newton's First Law: every object continues in its state of rest or uniform motion unless made to change by a non-zero net force. When a non-zero net force acts, the object accelerates in the direction of that net force; balanced forces (net force zero) mean no change in motion.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 72, "url": "sources/phy11/p72.jpg" }
     },
     {
-      "id": "m201-q06",
-      "q": "A book rests in equilibrium on a table. Distinguish the action-reaction pair from the pair of balanced forces on the book.",
-      "options": [
-        "They are the same pair of forces",
-        "Action-reaction (book pushes table down, table pushes book up) acts on different objects; the balanced pair (weight and normal force) both act on the book",
-        "The weight and the normal force are an action-reaction pair",
-        "There are no balanced forces because the book is not moving"
+      "id": "mm201-q05",
+      "type": "recall",
+      "q": "From memory: define the inertia of an object and state what its inertia depends on.",
+      "keyPoints": [
+        "Inertia is the tendency of an object to resist changes to its motion.",
+        "Inertia is not a force; it is a property of all objects.",
+        "The inertia of an object depends only on its mass — a large mass is harder to get moving, stop or change direction than a small mass."
       ],
-      "answer": 1,
-      "explanation": "The action-reaction pair (Newton's third law) is the book pushing down on the table and the table pushing up on the book — equal, opposite, acting on different objects. The balanced forces on the book are its weight (gravity) and the normal force, which act on the same object and are different types, so they are NOT an action-reaction pair. Students often wrongly call weight and normal force an action-reaction pair.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Newton's First Law is also called the Law of Inertia. If you recalled that inertia is the resistance to a change in motion, that it is a property (not a force), and that it depends only on mass, grade yourself Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 72, "url": "sources/phy11/p72.jpg" }
     },
     {
-      "id": "m201-q07",
-      "q": "Two perpendicular forces, 3 N east and 4 N north, act on an object. Calculate the magnitude of the net force.",
-      "options": [
-        "7 N",
-        "5 N",
-        "1 N",
-        "12 N"
+      "id": "mm201-q06",
+      "type": "worked",
+      "q": "A 65 kg physics teacher, starting from rest, glides down a slide. The net force on her during the slide is a constant 350 N. Calculate her acceleration.",
+      "given": "\\(m = 65\\,\\mathrm{kg}\\),  \\(F_{net} = 350\\,\\mathrm{N}\\),  starting from rest",
+      "working": [
+        "\\(F_{net} = ma\\)",
+        "\\(a = \\dfrac{F_{net}}{m} = \\dfrac{350\\,\\mathrm{N}}{65\\,\\mathrm{kg}}\\)",
+        "\\(a = 5.4\\,\\mathrm{m\\,s^{-2}}\\)"
       ],
-      "answer": 1,
-      "explanation": "Forces are vectors, so perpendicular forces combine by Pythagoras: √(3² + 4²) = √25 = 5 N (at tan⁻¹(4/3) ≈ 53° north of east). The acceleration would be in that same direction, since acceleration is always parallel to the net force. Adding 3 + 4 = 7 wrongly treats perpendicular vectors as scalars.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 5.4,
+      "answerUnit": "m s⁻²",
+      "tolerance": 0.1,
+      "explanation": "Apply Newton's Second Law, Fnet = ma, and rearrange for acceleration: a = Fnet / m = 350 / 65 = 5.4 m s⁻². This acceleration could then be fed into the equations of uniformly accelerated motion to find, for example, the speed at the bottom of the slide.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 77, "url": "sources/phy11/p77.jpg" }
     },
     {
-      "id": "m201-q08",
-      "q": "For a fixed mass, outline the relationship between an object's acceleration and the net force, and how it appears on an acceleration-versus-net-force graph.",
-      "options": [
-        "Acceleration is inversely proportional to force; the graph is a curve",
-        "Acceleration is directly proportional to force; the graph is a straight line through the origin with gradient 1/mass",
-        "Acceleration is independent of force; the graph is horizontal",
-        "Acceleration equals force; the graph has gradient 1"
+      "id": "mm201-q07",
+      "type": "worked",
+      "q": "A car of mass 1600 kg tows a trailer of mass 400 kg by a rigid coupling. The driving force on the car, starting from rest, is 5400 N east, and friction is ignored. Calculate the acceleration of the car and trailer.",
+      "given": "car \\(= 1600\\,\\mathrm{kg}\\),  trailer \\(= 400\\,\\mathrm{kg}\\),  driving force \\(= 5400\\,\\mathrm{N}\\) east,  friction ignored",
+      "working": [
+        "Because the coupling is rigid, the car and trailer have equal accelerations; apply Newton's Second Law to the whole system.",
+        "system mass \\(m = 1600 + 400 = 2000\\,\\mathrm{kg}\\)",
+        "\\(a = \\dfrac{F_{net}}{m} = \\dfrac{5400}{2000}\\)",
+        "\\(a = 2.7\\,\\mathrm{m\\,s^{-2}}\\) east"
       ],
-      "answer": 1,
-      "explanation": "From F_net = ma, for fixed mass acceleration is directly proportional to net force, so an a-versus-F graph is a straight line through the origin with gradient 1/m. (Separately, for fixed force, acceleration is inversely proportional to mass.) This is the standard second-law investigation: apply measured forces and measure the acceleration.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 2.7,
+      "answerUnit": "m s⁻²",
+      "tolerance": 0.1,
+      "explanation": "Treat the car and trailer as a single system of mass 2000 kg, since the rigid coupling gives them equal accelerations. The only external horizontal force is the 5400 N driving force, so a = Fnet / m = 5400 / 2000 = 2.7 m s⁻² east.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 85, "url": "sources/phy11/p85.jpg" }
     },
     {
-      "id": "m201-q09",
-      "q": "A 70 kg person stands on the Moon, where g = 1.6 N kg⁻¹. State their mass and weight there (their Earth weight is 686 N).",
+      "id": "mm201-q08",
+      "type": "mc",
+      "q": "Newton's Third Law states that whenever an object applies a force (an action) to a second object, the second applies an equal and opposite force (a reaction). Why is it incorrect to say that an action–reaction pair 'cancels out'?",
       "options": [
-        "Mass 70 kg; weight 686 N",
-        "Mass 70 kg; weight 112 N",
-        "Mass 11.4 kg; weight 112 N",
-        "Mass 112 kg; weight 70 N"
+        "Because one of the two forces is always larger than the other",
+        "Because the forces that make up an action–reaction pair act on different objects, so it makes no sense to add them together so they cancel out",
+        "Because reaction forces are imaginary and have no real effect",
+        "Because the action and the reaction forces act at different times"
       ],
       "answer": 1,
-      "explanation": "Mass is independent of location, so it is still 70 kg on the Moon. Weight = mg = 70 × 1.6 = 112 N. The whole point is that mass stays the same while weight changes with gravity — keeping the Earth weight (686 N) would ignore the weaker Moon gravity.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The two forces in an action–reaction pair act on different objects, so they can never cancel on a single object. The motion of each object is determined by the net force acting on it. This is why, when you walk, your feet push back on the ground and the ground pushes forward on you — that forward reaction force accelerates you.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 83, "url": "sources/phy11/p83.jpg" }
     },
     {
-      "id": "m201-q10",
-      "q": "A 50 kg crate is pushed with a 200 N horizontal force against 50 N of friction, starting from rest. Calculate its velocity after 4 s.",
+      "id": "mm201-q09",
+      "type": "mc",
+      "q": "Experiments on Newton's Second Law show how the acceleration of an object depends on the net force applied and on the mass. Which relationship is correct?",
       "options": [
-        "16 m s⁻¹",
-        "12 m s⁻¹",
-        "3 m s⁻¹",
-        "4 m s⁻¹"
+        "Acceleration is inversely proportional to the net force and proportional to the mass",
+        "Acceleration is proportional to the net force applied and inversely proportional to the mass",
+        "Acceleration is proportional to both the net force and the mass",
+        "Acceleration is independent of the net force, depending only on the mass"
       ],
       "answer": 1,
-      "explanation": "Net force = 200 − 50 = 150 N forward. Acceleration a = F_net/m = 150/50 = 3 m s⁻². Then suvat: v = u + at = 0 + 3 × 4 = 12 m s⁻¹. The full chain is add forces → F_net = ma for acceleration → feed into the equations of motion. Using 200 N (ignoring friction) would give 16 m s⁻¹, the common error.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The acceleration a of an object is proportional to the net force Fnet applied to it and inversely proportional to the mass m. Combining these gives Fnet = ma, with the constant of proportionality equal to 1 by the definition of the newton (a 1 N net force gives a 1 kg mass an acceleration of 1 m s⁻²).",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 76, "url": "sources/phy11/p76.jpg" }
+    },
+    {
+      "id": "mm201-q10",
+      "type": "short",
+      "q": "Distinguish between the mass and the weight of an object. (2 marks)",
+      "marks": 2,
+      "modelAnswer": "Mass is the amount of matter in an object, a scalar quantity measured in kilograms, and it is constant regardless of location. Weight is the gravitational force acting on the object, a vector quantity measured in newtons, equal to the mass times the gravitational field strength (W = mg), and it depends on the local value of g, so it changes with location.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Defines mass as the scalar amount of matter in kilograms, constant everywhere." },
+        { "marks": 1, "descriptor": "Defines weight as the gravitational force in newtons, equal to mg, which varies with location." }
+      ],
+      "explanation": "The trap is saying weight is 'how heavy something is' — that is vague. Name it as a force equal to mg, and contrast it with mass as the location-independent amount of matter.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm201-q11",
+      "type": "recall",
+      "q": "From memory: state the memory hook for Newton's three laws used in the episode, and describe the 'signature move' that links Dynamics back to Kinematics.",
+      "keyPoints": [
+        "The hook is 'I, F, A': Inertia (first law), F = ma (second law), Action–reaction (third law).",
+        "Signature move: use the second law to find the acceleration from the net force (a = Fnet / m).",
+        "Then feed that acceleration into the suvat equations of motion to predict displacement and velocity — force to acceleration to motion."
+      ],
+      "explanation": "This ties the whole module together: compute the net force, divide by mass for the acceleration (Dynamics), then hand the acceleration to the equations of uniformly accelerated motion (Kinematics). If you recalled I-F-A and the two-step chain, grade Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

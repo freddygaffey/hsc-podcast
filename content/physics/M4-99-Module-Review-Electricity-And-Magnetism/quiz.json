@@ -1,174 +1,160 @@
 {
   "questions": [
     {
-      "id": "m499-q01",
-      "q": "Compare the final charge from charging a neutral conductor by conduction versus by induction.",
+      "id": "mm499-q01",
+      "type": "mc",
+      "q": "When a positively charged body is brought near an insulated, uncharged conductor, charging by induction produces a net force of attraction. Why?",
       "options": [
-        "Both give the opposite sign to the charging object",
-        "Conduction gives the same sign (by contact); induction gives the opposite sign (no contact)",
-        "Both give the same sign as the charging object",
-        "Conduction gives the opposite sign; induction gives the same sign"
+        "Electrons are stripped off the conductor, leaving it positively charged so it repels the body",
+        "The positively charged body attracts electrons in the conductor, so the near end gains an excess of electrons (negative) and is attracted more strongly than the far positive end is repelled",
+        "The conductor must touch the charged body for any induced charges to form",
+        "Induced charges give the conductor the same sign as the charging body, producing repulsion"
       ],
       "answer": 1,
-      "explanation": "Conduction needs contact and leaves the conductor with the SAME sign as the charging object; induction works without contact (charges separate, the conductor is earthed, then the object removed) and leaves the OPPOSITE sign. This same/contact vs opposite/no-contact contrast is a classic discriminator.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The positively charged body attracts electrons to the near end (an excess of electrons, negatively charged) while the far end has a deficiency of electrons (positively charged). Because the negative induced charges are closer, the attraction outweighs the repulsion, giving a net force of attraction. Induction acts without contact and is the odd one out among the charging methods.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 291, "url": "sources/phy11/p291.jpg" }
     },
     {
-      "id": "m499-q02",
-      "q": "Two parallel plates 0.02 m apart have 400 V across them. Calculate the field strength, then the force on a 5×10⁻⁶ C charge placed between them.",
+      "id": "mm499-q02",
+      "type": "mc",
+      "q": "Coulomb's Law states that the force between two charges at rest is directly proportional to the product of the magnitudes of the charges and inversely proportional to what?",
       "options": [
-        "E = 8 V m⁻¹; F = 4×10⁻⁵ N",
-        "E = 20 000 V m⁻¹; F = 0.1 N",
-        "E = 20 000 V m⁻¹; F = 4000 N",
-        "E = 8000 V m⁻¹; F = 0.04 N"
+        "The distance between them",
+        "The square of the distance between them",
+        "The sum of the charges",
+        "The square root of the distance between them"
       ],
       "answer": 1,
-      "explanation": "E = V/d = 400/0.02 = 20 000 V m⁻¹ (uniform between the plates). Then F = Eq = 20 000 × 5×10⁻⁶ = 0.1 N. The two-step 'field first, then force' is the standard parallel-plate method and the basis of particle acceleration in Module 6.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Coulomb's Law: F is directly proportional to the product of the charges and inversely proportional to the square of the distance, r. Coulomb himself showed that halving each charge cut the force to a quarter, and the inverse-square on distance means halving r multiplies the force by four. Forgetting to square the distance factor is the classic error.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 294, "url": "sources/phy11/p294.jpg" }
     },
     {
-      "id": "m499-q03",
-      "q": "Two point charges feel a certain force. Predict the new force if one charge is tripled and the distance is halved.",
-      "options": [
-        "×6",
-        "×12",
-        "×1.5",
-        "×3"
+      "id": "mm499-q03",
+      "type": "worked",
+      "q": "What is the magnitude of the electric field at a point 30 cm from a point charge of \\(+2.0 \\times 10^{-5}\\,\\mathrm{C}\\)? Use \\(E = kQ/r^2\\) with \\(k = 9.0 \\times 10^{9}\\,\\mathrm{N\\,m^2\\,C^{-2}}\\).",
+      "given": "\\(Q = +2.0 \\times 10^{-5}\\,\\mathrm{C}\\),  \\(r = 30\\,\\mathrm{cm} = 0.30\\,\\mathrm{m}\\),  \\(k = 9.0 \\times 10^{9}\\,\\mathrm{N\\,m^2\\,C^{-2}}\\)",
+      "working": [
+        "\\(E = \\dfrac{kQ}{r^2}\\)",
+        "\\(E = \\dfrac{9.0 \\times 10^{9} \\times 2.0 \\times 10^{-5}}{(0.30)^2}\\)",
+        "\\(E = \\dfrac{1.8 \\times 10^{5}}{0.09}\\)",
+        "\\(E = 2.0 \\times 10^{6}\\,\\mathrm{N\\,C^{-1}}\\), directed away from the positive charge"
       ],
-      "answer": 1,
-      "explanation": "By Coulomb's law F ∝ q₁q₂/r². Tripling one charge gives ×3; halving the distance gives ×(1/0.5²) = ×4. Combined: 3 × 4 = ×12. Forgetting to square the distance factor (using ×2 instead of ×4) is the trap.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 2000000,
+      "answerUnit": "N C⁻¹",
+      "tolerance": 10000,
+      "explanation": "Direct application of \\(E = kQ/r^2\\), exactly the textbook sample problem. The field points away from a positive charge. Note this is the field of a point charge; between parallel plates you instead use \\(E = V/d\\).",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 298, "url": "sources/phy11/p298.jpg" }
     },
     {
-      "id": "m499-q04",
-      "q": "A charge of 120 C flows through a resistor in 40 s with 12 V across it. Calculate the current and the power dissipated.",
-      "options": [
-        "I = 3 A; P = 4 W",
-        "I = 3 A; P = 36 W",
-        "I = 4800 A; P = 36 W",
-        "I = 0.33 A; P = 4 W"
-      ],
-      "answer": 1,
-      "explanation": "Current I = q/t = 120/40 = 3 A. Power P = VI = 12 × 3 = 36 W. (Resistance would be R = V/I = 4 Ω.) Keep current as charge per time and power as voltage times current — mixing the formulas is the common error.",
+      "id": "mm499-q04",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "Electric current is a measure of the rate of flow of charge around a circuit. Which equation expresses this, and what is the SI unit of current?",
+      "options": [
+        "\\(I = Q/t\\), measured in amperes",
+        "\\(I = Qt\\), measured in coulombs",
+        "\\(I = t/Q\\), measured in volts",
+        "\\(Q = I/t\\), measured in amperes"
+      ],
+      "answer": 0,
+      "explanation": "Current is the quantity of charge Q flowing past a point in time t, so \\(I = Q/t\\), measured in amperes. One ampere is the current when one coulomb of charge passes a point each second. Current is about flow (charge per second), not energy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 313, "url": "sources/phy11/p313.jpg" }
     },
     {
-      "id": "m499-q05",
-      "q": "A 9 V supply connects a 2 Ω resistor in series with a parallel pair of 3 Ω and 6 Ω. Calculate the total resistance.",
-      "options": [
-        "11 Ω",
-        "4 Ω",
-        "2 Ω",
-        "5 Ω"
-      ],
-      "answer": 1,
-      "explanation": "First the parallel pair: 1/R = 1/3 + 1/6 = 2/6 + 1/6 = 3/6 = 1/2, so 2 Ω. In series with the 2 Ω resistor: R_T = 2 + 2 = 4 Ω. Reduce the parallel section first, then add the series part — treating all three as series (11 Ω) is the trap.",
+      "id": "mm499-q05",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "Ohm established experimentally that the current I in a metal wire is proportional to the voltage drop V across it. Which statement correctly describes Ohm's Law?",
+      "options": [
+        "\\(V = IR\\), where R is numerically equal to the constant gradient of the straight V–I line",
+        "\\(V = I/R\\), and the graph of V versus I is a curve for all conductors",
+        "\\(R = VI\\), where R increases as the current increases",
+        "\\(V = I + R\\), where R is the area under the V–I graph"
+      ],
+      "answer": 0,
+      "explanation": "Plotting V versus I for an ohmic metal wire gives a straight line, and \\(V = IR\\) where the resistance R is the constant gradient. A component is ohmic when this graph is straight; a filament lamp is non-ohmic because its resistance rises as it heats, curving the graph.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 327, "url": "sources/phy11/p327.jpg" }
     },
     {
-      "id": "m499-q06",
-      "q": "State which conservation principle Kirchhoff's voltage law expresses.",
-      "options": [
-        "Conservation of charge",
-        "Conservation of energy",
-        "Conservation of momentum",
-        "Conservation of mass"
+      "id": "mm499-q06",
+      "type": "worked",
+      "q": "A toaster is labelled '240 V, 800 W'. Using \\(P = VI\\), calculate its normal operating current.",
+      "given": "\\(P = 800\\,\\mathrm{W}\\),  \\(V = 240\\,\\mathrm{V}\\)",
+      "working": [
+        "\\(P = VI\\)",
+        "\\(I = \\dfrac{P}{V}\\)",
+        "\\(I = \\dfrac{800}{240}\\)",
+        "\\(I = 3.3\\,\\mathrm{A}\\)"
       ],
-      "answer": 1,
-      "explanation": "Kirchhoff's voltage law (ΣV = 0 around a loop) expresses conservation of energy — a charge gains as much energy from the source as it loses across the components round the loop. Kirchhoff's current law (ΣI = 0 at a junction) expresses conservation of charge.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 3.3,
+      "answerUnit": "A",
+      "tolerance": 0.1,
+      "explanation": "Rearranging \\(P = VI\\) gives \\(I = P/V = 800/240 = 3.3\\,\\mathrm{A}\\), the textbook sample value. The resistance could then be found from \\(R = V^2/P = 240^2/800 = 72\\,\\Omega\\). Choosing the power formula that matches the quantities given is the key exam reflex.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 331, "url": "sources/phy11/p331.jpg" }
     },
     {
-      "id": "m499-q07",
-      "q": "A long straight wire carries conventional current to your right. Using the right-hand grip rule, determine the field direction directly above the wire.",
+      "id": "mm499-q07",
+      "type": "mc",
+      "q": "For resistors connected in parallel, the reciprocal of the effective resistance equals the sum of the reciprocals of the individual resistances. What does this tell you about the effective resistance?",
       "options": [
-        "Into the page",
-        "Out of the page (toward you)",
-        "To the right",
-        "Straight up"
+        "It equals the sum of the individual resistances",
+        "It is always less than the smallest individual resistance",
+        "It equals the largest individual resistance",
+        "It is the average of the individual resistances"
       ],
       "answer": 1,
-      "explanation": "Point the right thumb to the right (along the current); the fingers curl so that above the wire they point out of the page toward you (and into the page below it). The field forms complete circles around the wire; getting this direction right is essential for the motor effect in Module 6.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Adding resistors in parallel adds more paths for the current to flow, so it is easier for current to flow and the effective resistance is always less than the smallest individual resistance. Remember to take the reciprocal at the end when computing the parallel value.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 337, "url": "sources/phy11/p337.jpg" }
     },
     {
-      "id": "m499-q08",
-      "q": "Distinguish electric field strength from electric force.",
-      "options": [
-        "They are the same quantity",
-        "Field strength E = F/q is a property of the location; force F = Eq is what a specific charge experiences",
-        "Force is a property of the location; field is what a charge feels",
-        "Field strength is measured in newtons; force in N C⁻¹"
+      "id": "mm499-q08",
+      "type": "recall",
+      "q": "From memory: for devices connected in series versus in parallel, which quantity (current or voltage) is the same, and which is shared?",
+      "keyPoints": [
+        "Devices in series have the same current and share the voltage between them.",
+        "Devices in parallel have the same voltage and the current is shared between them.",
+        "These rules still apply even when the circuit contains non-ohmic devices."
       ],
-      "answer": 1,
-      "explanation": "The electric field strength E = F/q is the force per unit charge — a property of the location, existing whether or not a charge sits there. The electric force F = Eq is the actual push or pull on a specific charge placed in the field. The field describes the location; the force describes a particular charge in it.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled 'series: same current, voltage shared' and 'parallel: same voltage, current shared', grade yourself Good or Easy. Stating which quantity is constant and which divides for each is exactly what earns the marks.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 339, "url": "sources/phy11/p339.jpg" }
     },
     {
-      "id": "m499-q09",
-      "q": "A solenoid of 300 turns and length 0.2 m carries 4 A (μ₀ = 4π×10⁻⁷). Calculate the magnetic field inside it.",
+      "id": "mm499-q09",
+      "type": "mc",
+      "q": "A wire carries a conventional current towards the right of the page. By the right-hand grip rule, what is the direction of the magnetic field directly above and directly below the wire?",
       "options": [
-        "7.5×10⁻¹ T",
-        "7.5×10⁻³ T",
-        "1.9×10⁻³ T",
-        "2.4×10⁻⁴ T"
+        "Out of the page both above and below",
+        "Out of the page above the wire and into the page below the wire",
+        "Into the page above the wire and out of the page below the wire",
+        "Into the page both above and below"
       ],
       "answer": 1,
-      "explanation": "B = μ₀NI/L = (4π×10⁻⁷ × 300 × 4)/0.2 ≈ 1.51×10⁻³ / 0.2 ≈ 7.5×10⁻³ T. The field grows with current and turns and shrinks with length. Forgetting to divide by the length is the common error.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "By the right-hand grip rule, with the thumb pointing right along the conventional current, the fingers curl out of the page above the wire and into the page below it. The field forms complete circles around the wire. Getting this direction right is a recurring exam mark and underpins the motor effect next year.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 362, "url": "sources/phy11/p362.jpg" }
     },
     {
-      "id": "m499-q10",
-      "q": "An iron core is inserted into a current-carrying solenoid. Explain what happens to the magnetic field and why.",
+      "id": "mm499-q10",
+      "type": "recall",
+      "q": "Explain, in terms of domains, how a ferromagnetic material such as iron becomes magnetised when placed in a magnetic field.",
+      "keyPoints": [
+        "A ferromagnetic material is made up of many magnetic domains; within each domain nearly all the atomic magnets are lined up in the same direction.",
+        "When unmagnetised, the domains point in random directions so there is no overall magnetism.",
+        "Placed in an external magnetic field, the domains line up in the direction of the field; when all are aligned the material is fully magnetised (saturated), giving a strong net field."
+      ],
+      "explanation": "The marks are for: domains as small aligned regions, random orientation cancelling out, and the domains lining up with an external field to add together. Naming the domains and the random-to-aligned change is the difference between bands.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 365, "url": "sources/phy11/p365.jpg" }
+    },
+    {
+      "id": "mm499-q11",
+      "type": "mc",
+      "q": "Kirchhoff's two circuit laws each express a conservation principle. Which law expresses conservation of energy?",
       "options": [
-        "The field disappears because iron blocks magnetism",
-        "The field becomes much stronger, because the iron's domains align with the coil's field and add to it",
-        "The field reverses direction",
-        "The field is unchanged because the core is solid"
+        "The current law: the currents into a junction equal the currents out",
+        "The voltage law: the voltages around a loop sum to zero",
+        "Ohm's law: V = IR around the loop",
+        "Coulomb's law: the force depends on the product of the charges"
       ],
       "answer": 1,
-      "explanation": "The iron is ferromagnetic: the solenoid's field aligns the iron's domains, which add their own magnetism, multiplying the overall field (often hundreds of times). This is how an electromagnet is made — combining the current's magnetic field with the magnetisation of the iron core.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Kirchhoff's current law (currents in = currents out at a junction) is conservation of charge; Kirchhoff's voltage law (voltages around a loop sum to zero, supply equalling the total of the drops) is conservation of energy. Naming the conservation principle behind each law is the point students most often drop.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

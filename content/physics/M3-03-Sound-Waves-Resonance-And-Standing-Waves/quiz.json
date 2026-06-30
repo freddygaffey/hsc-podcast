@@ -1,174 +1,148 @@
 {
   "questions": [
     {
-      "id": "m303-q01",
-      "q": "Identify the type of wave that sound is.",
+      "id": "mm303-q01",
+      "type": "mc",
+      "q": "Sound is created when a vibrating object causes particles in a medium to be alternately pushed closer together and spread further apart. What are these two regions called, and what type of wave is sound?",
       "options": [
-        "A transverse electromagnetic wave",
-        "A longitudinal mechanical wave of pressure variations",
-        "A transverse mechanical wave",
-        "A longitudinal electromagnetic wave"
+        "Crests and troughs; sound is a transverse wave",
+        "Compression (particles closer together) and rarefaction (particles spread apart); sound is a longitudinal wave",
+        "Nodes and antinodes; sound is a standing wave",
+        "Compression and rarefaction; sound is a transverse wave"
       ],
       "answer": 1,
-      "explanation": "Sound is a longitudinal mechanical wave: a vibrating source creates compressions (high pressure) and rarefactions (low pressure) in the medium, with air molecules oscillating along the direction of travel. Being mechanical, it needs a medium — so there is no sound in a vacuum.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "A vibrating object transfers kinetic energy to the medium, producing zones of high air pressure (compression) where particles are pushed closer together and zones of low air pressure (rarefaction) where they are spread apart. These pressure variations travel outwards as a longitudinal wave, in which the air particles oscillate back and forth parallel to the direction of travel.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 174, "url": "sources/phy11/p174.jpg" }
     },
     {
-      "id": "m303-q02",
-      "q": "State which property of a sound wave determines its pitch and which determines its loudness.",
-      "options": [
-        "Amplitude sets pitch; frequency sets loudness",
-        "Frequency sets pitch; amplitude (intensity) sets loudness",
-        "Speed sets pitch; wavelength sets loudness",
-        "Both are set by frequency"
-      ],
-      "answer": 1,
-      "explanation": "Pitch is set by frequency (high frequency = high pitch) and loudness by the amplitude/intensity of the pressure variation. They are independent — you can play the same note (same frequency) loudly or softly (different amplitude). Swapping pitch and loudness is the common error.",
+      "id": "mm303-q02",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "When a sound wave is displayed as a transverse pressure graph, the crest of the transverse wave occurs at the centre of a compression where the pressure is at a maximum. Where does the trough of the transverse wave occur?",
+      "options": [
+        "At the centre of a rarefaction, where the pressure is at a minimum",
+        "At the centre of a compression, where the pressure is at a maximum",
+        "At a displacement node, where the pressure is normal",
+        "At the open end of the pipe, where the pressure is zero"
+      ],
+      "answer": 0,
+      "explanation": "On a transverse amplitude graph of a sound wave, compressions (higher than normal pressure) are drawn as peaks and rarefactions (lower than normal pressure) as troughs. So the trough occurs at the centre of a rarefaction, where the medium pressure is at a minimum, a quarter-cycle out of step with the displacement.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 175, "url": "sources/phy11/p175.jpg" }
     },
     {
-      "id": "m303-q03",
-      "q": "You move from 2 m to 6 m from a small speaker. Calculate the factor by which the sound intensity changes.",
-      "options": [
-        "It falls to one third",
-        "It falls to one ninth",
-        "It falls to one half",
-        "It is unchanged"
+      "id": "mm303-q03",
+      "type": "recall",
+      "q": "From memory: define the intensity of a sound wave, and explain why the intensity experienced decreases the further you are from a point sound source.",
+      "keyPoints": [
+        "Intensity (I) is the amount of energy a sound wave transfers to a square metre of surface in one second, measured in W m⁻².",
+        "Sound waves travel outwards from the source in three dimensions, spreading the acoustic power over the surface of a sphere of ever-increasing radius.",
+        "Because that surface area grows with the square of the distance, the intensity is given by I = P / (4πd²), so it falls off as the inverse square of the distance."
       ],
-      "answer": 1,
-      "explanation": "Intensity follows the inverse-square law, I ∝ 1/r². Going from 2 m to 6 m is ×3 the distance, so intensity changes by 1/3² = 1/9. The trap is thinking ×3 distance means ÷3 intensity — it's the square of the distance ratio, so ÷9.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled that intensity is power delivered per square metre and tied the drop-off to the power being spread over an expanding sphere (area ∝ d²), grade yourself Good or Easy. The intensity at 2 m is one-quarter of that at 1 m, and at 3 m it is one-ninth.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 178, "url": "sources/phy11/p178.jpg" }
     },
     {
-      "id": "m303-q04",
-      "q": "Explain why each end of a guitar string (fixed at both ends) must be a node.",
-      "options": [
-        "Because the ends vibrate with maximum amplitude",
-        "Because the ends are clamped and cannot move, so they are points of zero displacement",
-        "Because the string is too short to form antinodes",
-        "Because the string is longitudinal"
+      "id": "mm303-q04",
+      "type": "worked",
+      "q": "The sound intensity 3.0 m from a sound source is 4.0 × 10⁻⁶ W m⁻². Treating the source as a point source, what is the intensity at 1.5 m from the source?",
+      "given": "\\(r_1 = 3.0\\,\\mathrm{m}\\),  \\(I_1 = 4.0\\times10^{-6}\\,\\mathrm{W\\,m^{-2}}\\),  \\(r_2 = 1.5\\,\\mathrm{m}\\)",
+      "working": [
+        "Inverse square law for a point source: \\(\\dfrac{I_2}{I_1} = \\dfrac{r_1^{2}}{r_2^{2}}\\)",
+        "\\(I_2 = \\dfrac{I_1\\,r_1^{2}}{r_2^{2}} = \\dfrac{4.0\\times10^{-6}\\times(3.0)^{2}}{(1.5)^{2}}\\)",
+        "\\(I_2 = 4.0\\times10^{-6}\\times\\dfrac{9.0}{2.25} = 4.0\\times10^{-6}\\times 4\\)",
+        "\\(I_2 = 1.6\\times10^{-5}\\,\\mathrm{W\\,m^{-2}}\\)"
       ],
-      "answer": 1,
-      "explanation": "A node is a point of zero displacement. Because the string is clamped at both ends, those points cannot move, so each must be a node. This boundary condition means only standing waves of certain wavelengths fit, the longest being the fundamental that sets the pitch.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 1.6e-05,
+      "answerUnit": "W m⁻²",
+      "tolerance": 1e-07,
+      "explanation": "Since the power of the source is constant, P = 4πr₁²I₁ = 4πr₂²I₂, giving I₂/I₁ = r₁²/r₂². Halving the distance from 3.0 m to 1.5 m quarters the radius-squared denominator, so the intensity rises by a factor of four to 1.6 × 10⁻⁵ W m⁻².",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 179, "url": "sources/phy11/p179.jpg" }
     },
     {
-      "id": "m303-q05",
-      "q": "A pipe closed at one end is 0.2 m long (speed of sound 340 m s⁻¹). Calculate its fundamental frequency.",
-      "options": [
-        "850 Hz",
-        "425 Hz",
-        "1700 Hz",
-        "212 Hz"
+      "id": "mm303-q05",
+      "type": "recall",
+      "q": "From memory, describe the Doppler effect: what is it, what causes it, and what happens to the pitch of a car horn as the car approaches, comes level with you, and then moves away?",
+      "keyPoints": [
+        "The Doppler effect is the apparent shift in the frequency of a sound source heard by an observer.",
+        "It results from the movement of the wave source and/or the observer relative to the wave medium.",
+        "The pitch of the horn seems higher as the car approaches, then drops as the car comes level with you and moves away — even though the source emits a constant frequency."
       ],
-      "answer": 1,
-      "explanation": "For a closed pipe the fundamental wavelength is 4 times the length: λ₀ = 4 × 0.2 = 0.8 m. Then f₀ = v/λ₀ = 340/0.8 = 425 Hz. The key step is the closed-pipe rule (λ₀ = 4L); using 2L (the open-pipe rule) would wrongly give 850 Hz.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Doppler, who first described the effect in 1842, attributed the apparent frequency shift to relative motion compressing the wavefronts ahead of an approaching source (higher pitch) and stretching them behind a receding source (lower pitch). The emitted frequency never changes; only the observed frequency does.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 182, "url": "sources/phy11/p182.jpg" }
     },
     {
-      "id": "m303-q06",
-      "q": "Compare the harmonics produced by a pipe open at both ends and a pipe closed at one end.",
+      "id": "mm303-q06",
+      "type": "mc",
+      "q": "Using the Doppler effect, how does the effective frequency heard by a stationary observer compare with the emitted frequency as a sound source approaches, and then as it moves away?",
       "options": [
-        "Both produce only odd harmonics",
-        "The open pipe produces all harmonics; the closed pipe produces only odd harmonics",
-        "The open pipe produces only even harmonics; the closed pipe all",
-        "Both produce all harmonics"
+        "Lower on approach, higher as it moves away",
+        "Higher on approach (compressions bunched, shorter effective wavelength), lower as it moves away (compressions spread, longer effective wavelength)",
+        "Unchanged on approach, higher as it moves away",
+        "Higher both on approach and as it moves away"
       ],
       "answer": 1,
-      "explanation": "An open pipe (antinode at each end, λ₀ = 2L) produces all harmonics — every whole-number multiple of the fundamental. A closed pipe (node at the closed end, λ₀ = 4L) produces only the odd harmonics. The missing even harmonics give a closed pipe (e.g. a clarinet) its distinctive hollow tone.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "As the source approaches, the distance between successive compressions reaching the observer decreases, shortening the effective wavelength and raising the effective frequency above the emitted value. As the source recedes, the effective wavelength increases and the effective frequency drops. The frequency is always heard higher on approach and lower as the source moves away.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 184, "url": "sources/phy11/p184.jpg" }
     },
     {
-      "id": "m303-q07",
-      "q": "Explain why a violin and a flute playing the same note sound different.",
+      "id": "mm303-q07",
+      "type": "mc",
+      "q": "When two sources of sound of the same amplitude but slightly different frequency are heard together, there is a rhythmic change to the volume of the sound, used to describe beats. As the tuning of the instruments becomes closer, what happens to the beat frequency, and what is it determined by?",
       "options": [
-        "They produce different fundamental frequencies",
-        "They produce different blends of harmonics (timbre), even with the same fundamental",
-        "One is louder than the other",
-        "One produces sound and the other does not"
+        "It increases; determined by the sum of the frequency of the notes played",
+        "It decreases until it disappears; determined by the difference in the frequency of the notes played by the different instruments, f_beat = |f₂ − f₁|",
+        "It stays constant; determined by the average of the two frequencies",
+        "It increases until it disappears; determined by the product of the frequencies"
       ],
       "answer": 1,
-      "explanation": "The fundamental fixes the pitch (the same note), but each instrument produces a different mix of higher harmonics superposed with it. This blend — the timbre — is what makes them sound different: a flute is nearly a pure fundamental (smooth), while a violin is rich in harmonics (bright).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The beat frequency is determined by the difference in the frequency of the notes played by the different instruments. For two sounds, one at 100 Hz and the other at 120 Hz, the beat frequency is simply found: f_beat = 120 Hz − 100 Hz = 20 Hz, so every 0.05 s a louder beat tone is heard. As the tuning of the instruments becomes closer, the beat frequency decreases until it disappears.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 194, "url": "sources/phy11/p194.jpg" }
     },
     {
-      "id": "m303-q08",
-      "q": "Two tuning forks at 500 Hz and 503 Hz are sounded together. Calculate the beat frequency heard.",
-      "options": [
-        "1003 Hz",
-        "3 beats per second",
-        "503 Hz",
-        "250 beats per second"
+      "id": "mm303-q08",
+      "type": "worked",
+      "q": "Two tuning forks with frequencies of 256 Hz and 262 Hz are placed next to each other and struck so that they vibrate. What beat frequency will be heard?",
+      "given": "\\(f_1 = 256\\,\\mathrm{Hz}\\),  \\(f_2 = 262\\,\\mathrm{Hz}\\)",
+      "working": [
+        "Beat frequency is the magnitude of the difference: \\(f_{beat} = |f_2 - f_1|\\)",
+        "\\(f_{beat} = |262 - 256|\\)",
+        "\\(f_{beat} = 6\\,\\mathrm{Hz}\\)"
       ],
-      "answer": 1,
-      "explanation": "The beat frequency is the magnitude of the difference between the two frequencies: |503 − 500| = 3 beats per second. Beats arise from superposition — the two close frequencies drift in and out of phase, making the loudness pulse. As the frequencies converge, the beats slow down (and stop when equal).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 6,
+      "answerUnit": "Hz",
+      "tolerance": 0.01,
+      "explanation": "The beat frequency is simply the size of the difference between the frequencies of the two tuning forks, so |262 − 256| = 6 Hz. The combined sound rises and falls in loudness six times each second.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 194, "url": "sources/phy11/p194.jpg" }
     },
     {
-      "id": "m303-q09",
-      "q": "Explain, using the Doppler effect, why a siren's pitch drops as it passes you.",
+      "id": "mm303-q09",
+      "type": "mc",
+      "q": "In a pipe closed at one end there is a displacement node at the closed end and a displacement antinode at the open end. Which harmonics does such a closed pipe sustain?",
       "options": [
-        "The siren reduces its emitted frequency as it passes",
-        "Approaching, the wavefronts are compressed (higher observed frequency); receding, they are stretched (lower observed frequency)",
-        "The sound slows down as the siren passes",
-        "The siren gets quieter, which lowers the pitch"
+        "All harmonics, whole-number multiples of the fundamental",
+        "Only the odd-numbered harmonics (1st, 3rd, 5th … multiples of the fundamental)",
+        "Only the even-numbered harmonics (2nd, 4th, 6th …)",
+        "Only the fundamental, with no harmonics at all"
       ],
       "answer": 1,
-      "explanation": "As the siren approaches, its motion compresses the wavefronts ahead of it, shortening the received wavelength and raising the observed frequency (higher pitch). As it recedes, the wavefronts stretch, lowering the observed frequency. Crucially the emitted frequency stays constant — only the observed frequency changes.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The node-at-the-closed-end and antinode-at-the-open-end boundary condition only allows resonant frequencies that are odd multiples of the fundamental: fₙ = (2n + 1)f₀. This is why a pipe closed at one end sustains only the odd-numbered harmonics, giving it a distinctly different tone from an open pipe, which produces all harmonics.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 199, "url": "sources/phy11/p199.jpg" }
     },
     {
-      "id": "m303-q10",
-      "q": "An organ pipe open at both ends is 0.34 m long (speed of sound 340 m s⁻¹). Calculate its fundamental frequency.",
-      "options": [
-        "250 Hz",
-        "500 Hz",
-        "1000 Hz",
-        "750 Hz"
+      "id": "mm303-q10",
+      "type": "worked",
+      "q": "What is the fundamental frequency for a pipe closed at one end if it is 0.80 m long and the speed of sound in air is 340 m s⁻¹?",
+      "given": "Closed pipe, \\(L = 0.80\\,\\mathrm{m}\\),  \\(v = 340\\,\\mathrm{m\\,s^{-1}}\\)",
+      "working": [
+        "For the fundamental of a pipe closed at one end the length holds a quarter wavelength, so \\(\\lambda_0 = 4L\\)",
+        "\\(\\lambda_0 = 4 \\times 0.80 = 3.2\\,\\mathrm{m}\\)",
+        "\\(f_0 = \\dfrac{v}{\\lambda_0} = \\dfrac{340}{3.2}\\)",
+        "\\(f_0 = 106.25\\,\\mathrm{Hz} \\approx 1.1\\times10^{2}\\,\\mathrm{Hz}\\)"
       ],
-      "answer": 1,
-      "explanation": "For an open pipe the fundamental wavelength is twice the length: λ₀ = 2 × 0.34 = 0.68 m. Then f₀ = v/λ₀ = 340/0.68 = 500 Hz (the second harmonic would be 1000 Hz). Using 4L (the closed-pipe rule) would wrongly halve this to 250 Hz.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 106.25,
+      "answerUnit": "Hz",
+      "tolerance": 0.5,
+      "explanation": "A pipe closed at one end has a node at the closed end and an antinode at the open end, so its fundamental wavelength is four times the pipe length (λ₀ = 4L = 3.2 m). Applying the wave equation f₀ = v / λ₀ gives 340 / 3.2 = 106.25 Hz ≈ 1.1 × 10² Hz.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 200, "url": "sources/phy11/p200.jpg" }
     }
   ]
 }

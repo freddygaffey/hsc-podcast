@@ -1,174 +1,151 @@
 {
   "questions": [
     {
-      "id": "m805-q01",
-      "q": "The de Broglie wavelength of a moving particle is given by:",
+      "id": "mm805-q01",
+      "type": "mc",
+      "q": "Louis de Broglie proposed in 1923 that matter has a wavelength. How is the de Broglie wavelength of a particle related to its momentum and to its mass and velocity?",
       "options": [
-        "\\(\\lambda = \\dfrac{p}{h}\\)",
-        "\\(\\lambda = \\dfrac{h}{p} = \\dfrac{h}{mv}\\)",
-        "\\(\\lambda = hmv\\)",
-        "\\(\\lambda = \\dfrac{mv}{h}\\)"
+        "The wavelength equals momentum divided by Planck's constant, so it is proportional to mass and velocity",
+        "The wavelength equals Planck's constant divided by momentum, \\(\\lambda = h/p = h/mv\\), so it is inversely proportional to both mass and velocity",
+        "The wavelength equals Planck's constant times momentum, so heavier particles have longer wavelengths",
+        "The wavelength equals mass times velocity divided by Planck's constant"
       ],
       "answer": 1,
-      "explanation": "De Broglie proposed every moving particle has a matter wave of wavelength \\(\\lambda = h/p = h/(mv)\\). The wavelength is inversely proportional to both mass and speed, so heavier or faster objects have shorter wavelengths.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "De Broglie proposed that the wavelength of a particle, \\(\\lambda\\), is related to its momentum, \\(p\\), by \\(\\lambda = h/p = h/mv\\), where Planck's constant \\(h = 6.63\\times10^{-34}\\,\\mathrm{J\\,s}\\) and the momentum of matter is the product of its mass and velocity. The wavelength is therefore inversely proportional to both the mass and the speed: heavier or faster means a shorter wavelength.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 386, "url": "sources/phy12/p386.jpg" }
     },
     {
-      "id": "m805-q02",
-      "q": "What inspired de Broglie's hypothesis that matter has wave properties?",
+      "id": "mm805-q02",
+      "type": "worked",
+      "q": "Calculate the de Broglie wavelength of a 70 kg athlete running at a speed of 10 m s⁻¹, and comment on why this wave behaviour is never observed.",
+      "given": "\\(m = 70\\,\\mathrm{kg}\\),  \\(v = 10\\,\\mathrm{m\\,s^{-1}}\\),  \\(h = 6.63\\times10^{-34}\\,\\mathrm{J\\,s}\\)",
+      "working": [
+        "\\(\\lambda = \\dfrac{h}{mv}\\)",
+        "\\(\\lambda = \\dfrac{6.63\\times10^{-34}}{70 \\times 10}\\)",
+        "\\(\\lambda = \\dfrac{6.63\\times10^{-34}}{700}\\)",
+        "\\(\\lambda = 9.5\\times10^{-37}\\,\\mathrm{m}\\)",
+        "This wavelength is far too small for diffraction effects to be observed as the athlete runs through a narrow opening."
+      ],
+      "answerValue": 9.5e-37,
+      "answerUnit": "m",
+      "tolerance": 5e-38,
+      "explanation": "Substituting straight into \\(\\lambda = h/mv\\) gives \\(9.5\\times10^{-37}\\,\\mathrm{m}\\). Because this is vastly smaller than any aperture an athlete could pass through, the wave properties of everyday matter are impossible to observe.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 386, "url": "sources/phy12/p386.jpg" }
+    },
+    {
+      "id": "mm805-q03",
+      "type": "mc",
+      "q": "Why can a beam of electrons be diffracted by a crystal while a stream of tennis balls cannot, given that the de Broglie wavelength of an electron is about \\(10^{-10}\\,\\mathrm{m}\\) and that of a tennis ball about \\(10^{-34}\\,\\mathrm{m}\\)?",
       "options": [
-        "The observation that electrons orbit the nucleus",
-        "The symmetry of wave-particle duality: if light (a wave) can behave as a particle, then matter (particles) should behave as waves",
-        "Rutherford's gold foil experiment",
-        "Millikan's measurement of the elementary charge"
+        "Tennis balls are uncharged, so they are not affected by the atoms in the crystal",
+        "The electron's wavelength is the same order of magnitude as the distances between atoms in a crystal, so the crystal acts as a diffraction grating, whereas the tennis ball's wavelength is far too small to diffract through any opening",
+        "Electrons travel faster than tennis balls, and only fast particles diffract",
+        "Tennis balls have no de Broglie wavelength because they are macroscopic objects"
       ],
       "answer": 1,
-      "explanation": "Light was shown to behave as both a wave (diffraction, interference) and a particle (the photoelectric effect). De Broglie applied the converse symmetry: if a wave can be a particle, a particle should be a wave, proposing matter waves with \\(\\lambda = h/p\\).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "To observe diffraction the size of the opening must be of the same order of magnitude as the wavelength. The distances between atoms in a crystal are of the order of \\(10^{-10}\\,\\mathrm{m}\\), matching the electron's de Broglie wavelength, so diffraction and interference occur when electrons scatter from a crystal. The tennis ball's wavelength of order \\(10^{-34}\\,\\mathrm{m}\\) is far smaller than any aperture, so its wave nature is never observed.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 388, "url": "sources/phy12/p388.jpg" }
     },
     {
-      "id": "m805-q03",
-      "q": "Why is the wave nature of an everyday object, such as a sprinting athlete, never observed?",
+      "id": "mm805-q04",
+      "type": "mc",
+      "q": "In 1927 Clinton Davisson and Lester Germer directed a beam of electrons at a metal (nickel) crystal in a vacuum. What did they observe that demonstrated electrons have wavelike properties?",
       "options": [
-        "Only charged particles have a de Broglie wavelength",
-        "Its de Broglie wavelength (~\\(10^{-37}\\ \\mathrm{m}\\)) is far smaller than any aperture, so diffraction is never observable",
-        "Large objects move too slowly to have a wavelength",
-        "Air molecules absorb the matter wave"
+        "The electrons were absorbed by the crystal and re-emitted as light",
+        "The scattered electrons came off in regular peaks of intensity at specific angles — a diffraction pattern — and the wavelength determined from it was exactly as predicted by the de Broglie formula",
+        "The electrons passed straight through the crystal without any deflection",
+        "The crystal became electrically charged in proportion to the electron speed"
       ],
       "answer": 1,
-      "explanation": "A 70 kg athlete at 10 m/s has \\(\\lambda = h/p \\approx 9.5\\times10^{-37}\\ \\mathrm{m}\\) — vastly smaller than a proton. Diffraction is only noticeable when the wavelength is comparable to the gap, so the wave exists but is undetectable. Everything has a wavelength; it is just too small to observe for big objects.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Davisson and Germer measured the intensity of the reflected electrons as the detector angle was changed, and the scattered electrons came off in regular peaks. This pattern is indicative of diffraction, and the wavelength determined from the diffraction experiment was exactly as predicted by the de Broglie wavelength formula, so electrons were shown to have wavelike properties.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 387, "url": "sources/phy12/p387.jpg" }
     },
     {
-      "id": "m805-q04",
-      "q": "An electron accelerated through about 100 V has a de Broglie wavelength of roughly \\(1.2\\times10^{-10}\\ \\mathrm{m}\\). Why is this significant for observing diffraction?",
+      "id": "mm805-q05",
+      "type": "mc",
+      "q": "G.P. Thomson, son of J.J. Thomson, fired higher-momentum electrons through a thin polycrystalline metallic foil. What did he obtain, and what is the historical irony?",
       "options": [
-        "It is far too small to ever diffract",
-        "It is the same order of magnitude as the spacing between atoms in a crystal, so a crystal acts as a diffraction grating for the electron",
-        "It equals the diameter of the nucleus",
-        "It matches the wavelength of visible light"
+        "A single spot, proving electrons are particles, just as his father had shown",
+        "A series of high-intensity rings showing diffraction of the electrons by the atoms of the foil, analysed with the same techniques used for X-ray diffraction; J.J. won a Nobel for a particle-like characteristic of the electron and G.P. won one for its wave properties",
+        "No pattern at all, because electrons cannot penetrate a metal foil",
+        "A continuous smear of electrons identical to what a stream of particles would produce"
       ],
       "answer": 1,
-      "explanation": "Atomic spacing in a crystal lattice is about \\(10^{-10}\\ \\mathrm{m}\\) (1 Å), the same order as the electron's wavelength. Since diffraction occurs when the wavelength matches the gap size, the regularly spaced atoms of a crystal form a natural diffraction grating for electrons.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The polycrystalline nature of the foil produces a series of rings of high intensity (a single crystal would give spots), and Thomson used identical analysis techniques to those used for diffraction of X-rays to confirm the de Broglie relationship. Both Thomsons won Nobel prizes — J.J. in 1897 for a particle-like characteristic of electrons, and G.P. in 1937 (with C.J. Davisson) for demonstrating their wave properties.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 389, "url": "sources/phy12/p389.jpg" }
     },
     {
-      "id": "m805-q05",
-      "q": "In the Davisson–Germer experiment, electrons reflected off a nickel crystal produced regular intensity peaks at specific angles. Why is this evidence of wave behaviour?",
-      "options": [
-        "Peaks at specific angles form a diffraction pattern from constructive and destructive interference, which only waves produce",
-        "The electrons were absorbed by the crystal",
-        "The electrons travelled in straight lines",
-        "The peaks proved the electrons were positively charged"
+      "id": "mm805-q06",
+      "type": "worked",
+      "q": "Electrons are accelerated through a potential difference of 600 V (energy 600 eV). Using the kinetic energy gained, calculate their de Broglie wavelength and confirm it is similar to the \\(7.1\\times10^{-11}\\,\\mathrm{m}\\) X-ray wavelength used by G.P. Thomson.",
+      "given": "\\(V = 600\\,\\mathrm{V}\\),  \\(E_k = qV = 1.6\\times10^{-19}\\times600\\,\\mathrm{J}\\),  \\(m_e = 9.1\\times10^{-31}\\,\\mathrm{kg}\\),  \\(h = 6.63\\times10^{-34}\\,\\mathrm{J\\,s}\\)",
+      "working": [
+        "Electrons of energy 600 eV have passed through 600 V, so \\(E_k = 1.6\\times10^{-19}\\times600 = 9.6\\times10^{-17}\\,\\mathrm{J}\\)",
+        "Use \\(\\lambda = \\dfrac{h}{\\sqrt{2 m_e E_k}}\\)",
+        "\\(\\lambda = \\dfrac{6.63\\times10^{-34}}{\\sqrt{2 \\times 9.1\\times10^{-31} \\times 9.6\\times10^{-17}}}\\)",
+        "\\(\\lambda = 5.0\\times10^{-11}\\,\\mathrm{m}\\)",
+        "This is a similar value to the \\(7.1\\times10^{-11}\\,\\mathrm{m}\\) wavelength of the X-rays."
       ],
-      "answer": 0,
-      "explanation": "Intensity maxima and minima at definite angles are a diffraction pattern, the signature of constructive and destructive interference — a uniquely wave phenomenon. Classical particles would bounce off in a smooth, featureless spread.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 5.0e-11,
+      "answerUnit": "m",
+      "tolerance": 2e-12,
+      "explanation": "Equating the kinetic energy to the work done by the accelerating voltage gives \\(p = \\sqrt{2 m_e E_k}\\), so \\(\\lambda = h/\\sqrt{2 m_e E_k} = 5.0\\times10^{-11}\\,\\mathrm{m}\\). (Keep the electron mass as \\(10^{-31}\\,\\mathrm{kg}\\); a printing typo of \\(10^{-34}\\) gives a wrong answer.) The result is comparable to X-ray wavelengths, which is why such electrons diffract off crystals just as X-rays do.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 390, "url": "sources/phy12/p390.jpg" }
     },
     {
-      "id": "m805-q06",
-      "q": "What was the clinching detail that turned the electron diffraction pattern from 'looks like a wave' into proof of wave behaviour?",
-      "options": [
-        "The electrons glowed when they hit the crystal",
-        "The wavelength calculated from the diffraction angles matched the de Broglie prediction \\(\\lambda = h/p\\)",
-        "The crystal melted under the beam",
-        "More electrons arrived than were fired"
+      "id": "mm805-q07",
+      "type": "recall",
+      "q": "From memory: state the standing-wave condition de Broglie applied to an electron in an allowed orbit of a hydrogen atom, and explain how it leads to discrete (quantised) energy levels.",
+      "keyPoints": [
+        "De Broglie pictured the electron travelling along an allowed orbit with its associated wave; the circumference of each allowed orbit must contain a whole number of electron wavelengths so the wave forms a standing wave: \\(n\\lambda = 2\\pi r\\).",
+        "An electron-wave whose wavelength was slightly longer or shorter would not join onto itself smoothly and would quickly collapse due to destructive interference, so only orbits corresponding to standing waves survive.",
+        "Because only discrete wavelengths fit, the electron can have only discrete momenta and therefore only discrete (quantised) amounts of energy — exactly like the harmonic series of standing waves on a stringed instrument.",
+        "This supplies the mechanism the Bohr model lacked and answers Rutherford's question about how the electron 'knows' which orbit to occupy."
       ],
-      "answer": 1,
-      "explanation": "Davisson and Germer (and G. P. Thomson) computed the wavelength from the pattern's geometry and found it equalled the de Broglie wavelength predicted from the electrons' momentum. The pattern plus the matching wavelength is the proof — not the pattern alone.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled \\(n\\lambda = 2\\pi r\\), the destructive-interference death of non-fitting orbits, and the link from discrete wavelengths to discrete momenta and energies (the guitar-string analogy), grade Good or Easy. The marks are in the standing-wave argument, not just stating the electron has a wavelength.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 392, "url": "sources/phy12/p392.jpg" }
     },
     {
-      "id": "m805-q07",
-      "q": "What is the standing-wave condition for an allowed electron orbit of radius \\(r\\)?",
+      "id": "mm805-q08",
+      "type": "mc",
+      "q": "According to the textbook summary, what is the best model for atoms having discrete energy levels, and what are the allowable standing waves called?",
       "options": [
-        "\\(\\lambda = 2\\pi r\\) for any wavelength",
-        "\\(n\\lambda = 2\\pi r\\) where \\(n\\) is a whole number",
-        "\\(r = n\\lambda\\) where \\(n\\) is any value",
-        "\\(\\lambda = \\dfrac{r}{2\\pi n}\\)"
+        "Electrons travel in fixed classical circular orbits; the allowed orbits are called shells",
+        "Electrons in atoms are interpreted as behaving as a standing wave, and the allowable standing waves are known as orbitals",
+        "Electrons are point particles fixed at the nucleus; the allowed states are called photons",
+        "Electrons are a continuous fluid filling the atom; the allowed states are called spectra"
       ],
       "answer": 1,
-      "explanation": "For the electron-wave to join smoothly onto itself and form a standing wave, the circumference must hold a whole number of wavelengths: \\(n\\lambda = 2\\pi r\\). Orbits that don't satisfy this make the wave interfere destructively with itself and die out, so they are forbidden.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The textbook states that the best model for atoms having discrete energy levels is to interpret electrons in atoms as behaving as a standing wave, and that the allowable standing waves are known as orbitals. This is the bridge from de Broglie's standing-wave picture to the modern quantum-mechanical (Schrödinger) description of the atom.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 396, "url": "sources/phy12/p396.jpg" }
     },
     {
-      "id": "m805-q08",
-      "q": "How does de Broglie's standing-wave picture address a key limitation of the Bohr model?",
-      "options": [
-        "It proves the electron is only a particle",
-        "It supplies the missing mechanism for why only certain orbits are allowed: only standing-wave orbits survive, so only discrete wavelengths, momenta and energies are possible",
-        "It shows the nucleus is negatively charged",
-        "It removes the need for the photon"
+      "id": "mm805-q09",
+      "type": "recall",
+      "q": "From memory: state what wave–particle duality means for both light and matter, and the key rule about when each behaviour is observed.",
+      "keyPoints": [
+        "Wave–particle duality describes light (and matter) as having characteristics of both waves and particles; neither the wave model nor the particle model adequately explains the behaviour on its own.",
+        "Both light and matter can exhibit both wavelike and particle-like behaviour, depending on the type of experiment performed.",
+        "The two models are complementary: you observe wave properties or particle properties, but not the two simultaneously.",
+        "Light transfers energy as a particle in the photoelectric effect but acts as a wave through slits; matter has work done on it as a particle but diffracts through a crystal as a wave."
       ],
-      "answer": 1,
-      "explanation": "Bohr merely postulated quantised orbits with no reason (Rutherford's criticism). De Broglie's condition \\(n\\lambda = 2\\pi r\\) means only standing-wave orbits persist, so only discrete wavelengths → discrete momenta → discrete (quantised) energy levels — exactly Bohr's stationary states, now explained, like harmonics on a guitar string.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you stated that duality means both wave and particle characteristics are needed, that the experiment chosen determines which face you see, and that the models are complementary (never both at once), grade Good or Easy. The mirror symmetry between light and matter is exactly what de Broglie spotted.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 393, "url": "sources/phy12/p393.jpg" }
     },
     {
-      "id": "m805-q09",
-      "q": "In Schrödinger's model of the atom, what does the square of the wave function, \\(|\\psi|^2\\), represent?",
-      "options": [
-        "The exact position of the electron",
-        "The probability of finding the electron at a particular location",
-        "The energy of the photon emitted",
-        "The charge of the electron"
+      "id": "mm805-q10",
+      "type": "short",
+      "q": "Analyse the contribution of Schrödinger to the model of the atom, including how it overcomes a limitation of the Bohr model. (4 marks)",
+      "marks": 4,
+      "modelAnswer": "Schrödinger (1926) developed a wave equation describing the electron as a matter wave, building on de Broglie's hypothesis. Its solutions are wave functions (\\(\\psi\\)), and the square of the wave function (\\(\\psi^2\\)) gives the probability of finding the electron at a given location — an interpretation due to Max Born. This replaces Bohr's definite circular orbits with three-dimensional regions of probability called orbitals. Schrödinger's model is a fully quantum theory rather than Bohr's uncomfortable mixture of classical orbits with quantum postulates, so it successfully describes multi-electron atoms and predicts the relative intensities of spectral lines, which the Bohr model could not. It is consistent with Heisenberg's uncertainty principle — that position and momentum cannot be known simultaneously — which is itself why a definite orbit must be abandoned in favour of a probability distribution.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States Schrödinger wrote a wave equation whose solutions are wave functions (ψ)." },
+        { "marks": 1, "descriptor": "Identifies that ψ² gives the probability of finding the electron, replacing the orbit with a probability cloud (orbital)." },
+        { "marks": 1, "descriptor": "Explains it is a fully quantum theory, removing Bohr's classical–quantum patchwork." },
+        { "marks": 1, "descriptor": "Names at least one Bohr limitation it overcomes (multi-electron atoms / relative line intensities) or links to Heisenberg's uncertainty principle." }
       ],
-      "answer": 1,
-      "explanation": "Born's interpretation is that \\(|\\psi|^2\\) gives the probability of finding the electron at a given place. This replaces Bohr's definite circular orbit with a three-dimensional probability cloud called an orbital — a fully quantum description that handles multi-electron atoms and line intensities.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m805-q10",
-      "q": "An electron is accelerated through a potential difference of 600 V (\\(m = 9.1\\times10^{-31}\\ \\mathrm{kg}\\), \\(e = 1.6\\times10^{-19}\\ \\mathrm{C}\\)). Using \\(E_k = qV\\), \\(p = \\sqrt{2mE_k}\\), and \\(\\lambda = h/p\\), its de Broglie wavelength is approximately:",
-      "options": [
-        "\\(5.0 \\times 10^{-11}\\ \\mathrm{m}\\)",
-        "\\(5.0 \\times 10^{-8}\\ \\mathrm{m}\\)",
-        "\\(1.3 \\times 10^{-23}\\ \\mathrm{m}\\)",
-        "\\(9.6 \\times 10^{-17}\\ \\mathrm{m}\\)"
-      ],
-      "answer": 0,
-      "explanation": "\\(E_k = (1.6\\times10^{-19})(600) = 9.6\\times10^{-17}\\ \\mathrm{J}\\); \\(p = \\sqrt{2(9.1\\times10^{-31})(9.6\\times10^{-17})} = 1.32\\times10^{-23}\\ \\mathrm{kg\\,m\\,s^{-1}}\\); \\(\\lambda = \\dfrac{6.63\\times10^{-34}}{1.32\\times10^{-23}} = 5.0\\times10^{-11}\\ \\mathrm{m}\\), comparable to X-ray wavelengths.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Marks come from naming the wave function, the probability interpretation, the orbital replacing the definite orbit, and at least one specific Bohr limitation removed. Note the spelling trap: an orbit (Bohr's definite path) versus an orbital (Schrödinger's probability cloud).",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

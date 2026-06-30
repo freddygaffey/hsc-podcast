@@ -1,174 +1,145 @@
 {
   "questions": [
     {
-      "id": "m301-q01",
-      "q": "Identify what a wave transfers as it travels through a medium.",
+      "id": "mm301-q01",
+      "type": "mc",
+      "q": "A wave is a disturbance that travels through a medium from a source to a detector. What does the wave transfer?",
       "options": [
-        "Matter, but not energy",
-        "Energy, without a net transfer of matter",
-        "Both matter and energy equally",
-        "Neither matter nor energy"
+        "It transfers particles of the medium along with the disturbance",
+        "It transfers energy without any net movement of matter or particles",
+        "It transfers both energy and matter equally from source to detector",
+        "It transfers the medium itself outwards from the source"
       ],
       "answer": 1,
-      "explanation": "A wave transfers energy from place to place without a net transfer of matter — the particles of the medium oscillate about fixed points but don't travel with the wave (like a cork bobbing as waves pass). 'Energy not matter' is the single most important thing to say about what a wave is.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "A wave transfers energy without any net movement of particles. When a rock is thrown into a still pond, twigs or lily pads on the surface bob up and down rather than being carried along; it is the energy that travels outwards, not the water itself.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 142, "url": "sources/phy11/p142.jpg" }
     },
     {
-      "id": "m301-q02",
-      "q": "Distinguish between a transverse and a longitudinal wave.",
+      "id": "mm301-q02",
+      "type": "mc",
+      "q": "In a transverse wave, how does the disturbance caused by the transfer of energy act relative to the direction of the wave?",
       "options": [
-        "Transverse needs a medium; longitudinal does not",
-        "Transverse: particles oscillate perpendicular to travel; longitudinal: particles oscillate parallel to travel",
-        "Transverse: particles oscillate parallel to travel; longitudinal: perpendicular",
-        "They are the same except for speed"
+        "Parallel to the direction of the wave, forming compressions",
+        "Perpendicularly to the direction of the wave itself, forming crests and troughs",
+        "In a circular path around the direction of the wave",
+        "Opposite to the direction the wave is moving"
       ],
       "answer": 1,
-      "explanation": "In a transverse wave the particles oscillate perpendicular (at right angles) to the direction of travel (e.g. a wave on a string, all EM waves). In a longitudinal wave they oscillate parallel to the travel, forming compressions and rarefactions (e.g. sound). The transverse/longitudinal split is about particle direction; the mechanical/EM split is a separate question about needing a medium.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "A transverse wave is one in which the disturbance acts perpendicularly to the direction of the wave itself. The highest points of transverse waves are called crests or peaks, while the lowest points are called troughs. Water ripples and all electromagnetic waves are transverse.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 142, "url": "sources/phy11/p142.jpg" }
     },
     {
-      "id": "m301-q03",
-      "q": "Classify a sound wave by both schemes.",
+      "id": "mm301-q03",
+      "type": "mc",
+      "q": "A longitudinal wave (also called a compression wave) alternately pushes the particles of the medium together and pulls them apart. What are the regions where the particles are crowded closest together called?",
       "options": [
-        "Transverse and electromagnetic",
-        "Longitudinal and mechanical",
-        "Transverse and mechanical",
-        "Longitudinal and electromagnetic"
+        "Crests",
+        "Compressions",
+        "Rarefactions",
+        "Troughs"
       ],
       "answer": 1,
-      "explanation": "Sound is longitudinal (air molecules oscillate along the direction of travel, with compressions and rarefactions) and mechanical (it needs a medium, so there is no sound in a vacuum). Light, by contrast, is transverse and electromagnetic — needing no medium. This is why you see a distant explosion before you hear it.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "In a longitudinal wave the disturbance moves in the same direction as the wave. The positions where the particles are crowded together closest are called compressions, and those where the particles are spread furthest apart are called rarefactions. Sound waves move as longitudinal waves.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 142, "url": "sources/phy11/p142.jpg" }
     },
     {
-      "id": "m301-q04",
-      "q": "State the relationship between frequency and period.",
+      "id": "mm301-q04",
+      "type": "mc",
+      "q": "What is the key difference between mechanical waves and electromagnetic waves in how they propagate energy from place to place?",
       "options": [
-        "Frequency equals period (f = T)",
-        "They are reciprocals (f = 1/T)",
-        "Frequency equals period squared",
-        "Frequency equals wavelength divided by period"
+        "Mechanical waves travel faster than electromagnetic waves in a vacuum",
+        "Mechanical waves transfer energy through the motion of the particles of a medium, while electromagnetic waves do not need a medium to travel in",
+        "Electromagnetic waves require a medium of particles, while mechanical waves travel through empty space",
+        "Both mechanical and electromagnetic waves transfer particles, not energy"
       ],
       "answer": 1,
-      "explanation": "Frequency and period are reciprocals: f = 1/T. A wave of frequency 2 Hz completes 2 cycles per second, so each cycle takes ½ second (the period). Frequency is measured in hertz (cycles per second) and period in seconds.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Mechanical waves involve the transfer of energy through a medium by the motion of the particles of the medium itself, so they cannot travel through a vacuum. Electromagnetic waves are transverse oscillations of electric and magnetic force fields and do not need a medium to travel in.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 145, "url": "sources/phy11/p145.jpg" }
     },
     {
-      "id": "m301-q05",
-      "q": "A wave has a frequency of 50 Hz and a wavelength of 2 m. Calculate its speed.",
-      "options": [
-        "25 m s⁻¹",
-        "100 m s⁻¹",
-        "52 m s⁻¹",
-        "0.04 m s⁻¹"
-      ],
-      "answer": 1,
-      "explanation": "By the wave equation v = fλ = 50 × 2 = 100 m s⁻¹. The tempting 25 comes from dividing frequency by wavelength instead of multiplying. The wave equation links the three headline quantities and is used in almost every wave calculation.",
+      "id": "mm301-q05",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "How does the amplitude of a wave relate to the energy associated with the wave?",
+      "options": [
+        "The bigger the amplitude of the wave, the more energy it has",
+        "Amplitude has no relationship to the wave's energy",
+        "The smaller the amplitude, the more energy the wave carries",
+        "Amplitude determines the wave's speed, not its energy"
+      ],
+      "answer": 0,
+      "explanation": "The amplitude, A, of a wave relates to the amount of energy associated with the wave: the bigger the amplitude, the more energy it has. Amplitude is the maximum displacement of a particle from the normal, undisturbed position of the medium.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 143, "url": "sources/phy11/p143.jpg" }
     },
     {
-      "id": "m301-q06",
-      "q": "At a fixed wave speed, if the frequency is doubled, predict what happens to the wavelength.",
-      "options": [
-        "It doubles",
-        "It halves",
-        "It stays the same",
-        "It quadruples"
+      "id": "mm301-q06",
+      "type": "worked",
+      "q": "What is the speed of a sound wave if it has a period of 2.0 ms and a wavelength of 68 cm?",
+      "given": "\\(T = 2.0\\,\\mathrm{ms} = 2.0 \\times 10^{-3}\\,\\mathrm{s}\\),  \\(\\lambda = 68\\,\\mathrm{cm} = 0.68\\,\\mathrm{m}\\)",
+      "working": [
+        "\\(v = f\\lambda\\), and since \\(f = \\dfrac{1}{T}\\), this gives \\(v = \\dfrac{\\lambda}{T}\\)",
+        "\\(v = \\dfrac{0.68\\,\\mathrm{m}}{2.0 \\times 10^{-3}\\,\\mathrm{s}}\\)",
+        "\\(v = 340\\,\\mathrm{m\\,s^{-1}}\\)"
       ],
-      "answer": 1,
-      "explanation": "Since v = fλ and v is fixed (set by the medium, not the source), frequency and wavelength are inversely related — doubling the frequency halves the wavelength. This is why a higher-pitched sound has a shorter wavelength than a low one in the same air.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 340,
+      "answerUnit": "m s⁻¹",
+      "tolerance": 1,
+      "explanation": "Time must be expressed in seconds and length in metres before substituting. Using the wave equation \\(v = f\\lambda\\) with \\(f = 1/T\\) gives \\(v = \\lambda/T = 0.68 / (2.0\\times10^{-3}) = 340\\,\\mathrm{m\\,s^{-1}}\\), the speed of sound in air.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 144, "url": "sources/phy11/p144.jpg" }
     },
     {
-      "id": "m301-q07",
-      "q": "Distinguish between the wave speed and the particle speed for a water wave.",
-      "options": [
-        "They are always equal",
-        "Wave speed is how fast the disturbance travels; particle speed is how fast a particle oscillates about its rest position",
-        "Particle speed is how fast the pattern moves; wave speed is the oscillation",
-        "Wave speed is always slower than particle speed"
+      "id": "mm301-q07",
+      "type": "worked",
+      "q": "A displacement-position graph (a snapshot of a slinky spring) shows a wavelength of 1.6 m. Waves were sent through the slinky at a rate of 2 per second. Use the wave equation to determine the speed of the wave.",
+      "given": "\\(\\lambda = 160\\,\\mathrm{cm} = 1.6\\,\\mathrm{m}\\),  \\(f = 2\\,\\mathrm{s^{-1}}\\)",
+      "working": [
+        "\\(v = f\\lambda\\)",
+        "\\(v = 2 \\times 1.6\\)",
+        "\\(v = 3.2\\,\\mathrm{m\\,s^{-1}}\\)"
       ],
-      "answer": 1,
-      "explanation": "The wave speed (the v in v = fλ) is how fast the disturbance/pattern travels through the medium; the particle speed is how fast an individual particle oscillates back and forth about its rest position. They are unrelated — on the ocean the wave can race along while a water molecule just bobs slowly in place.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 3.2,
+      "answerUnit": "m s⁻¹",
+      "tolerance": 0.05,
+      "explanation": "A displacement-position graph is a 'snapshot' of the wave at one instant, from which the wavelength (distance between successive peaks) is read as 1.6 m. With the frequency given as 2 per second, the wave equation gives \\(v = f\\lambda = 2 \\times 1.6 = 3.2\\,\\mathrm{m\\,s^{-1}}\\).",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 148, "url": "sources/phy11/p148.jpg" }
     },
     {
-      "id": "m301-q08",
-      "q": "Identify which type of wave graph you read the wavelength from.",
-      "options": [
-        "A displacement-versus-time graph",
-        "A displacement-versus-position (snapshot) graph",
-        "Either graph gives the wavelength",
-        "Neither graph can give the wavelength"
+      "id": "mm301-q08",
+      "type": "recall",
+      "q": "From memory: define the period, frequency and wavelength of a periodic wave, and state how the period and frequency are related.",
+      "keyPoints": [
+        "The period (T) is the time taken for a source to produce one complete wave, measured in seconds.",
+        "The frequency (f) is the number of waves that pass a location in one second, measured in hertz (Hz), where 1 Hz = 1 s⁻¹.",
+        "The wavelength (λ) is the distance between successive waves, e.g. crest to crest, measured in metres.",
+        "Frequency is the reciprocal of period: T = 1/f."
       ],
-      "answer": 1,
-      "explanation": "A displacement-versus-position graph (a snapshot of all particles at one instant) gives the wavelength — the distance for one cycle. A displacement-versus-time graph gives the period (and hence frequency). Always check the horizontal axis first: time → period/frequency, position → wavelength.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled all three definitions with their units and stated that frequency equals the reciprocal of the period (T = 1/f), grade yourself Good or Easy. For example, middle C at 256 Hz has a period of 1/256 = 3.9 ms.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 143, "url": "sources/phy11/p143.jpg" }
     },
     {
-      "id": "m301-q09",
-      "q": "A displacement-time graph shows a period of 0.4 s, and a snapshot shows a wavelength of 0.8 m. Calculate the wave speed.",
-      "options": [
-        "0.32 m s⁻¹",
-        "2 m s⁻¹",
-        "3.2 m s⁻¹",
-        "0.5 m s⁻¹"
+      "id": "mm301-q09",
+      "type": "recall",
+      "q": "In your own words: explain the difference between the wave speed and the particle speed, using an ocean wave as an example.",
+      "keyPoints": [
+        "The wave speed is how fast the disturbance or pattern travels through the medium — the v in the wave equation v = fλ.",
+        "The particle speed is how fast an individual particle of the medium oscillates back and forth about its rest position.",
+        "These are completely different and unrelated: on the ocean the wave may race along at several metres per second while any given water molecule just bobs up and down slowly in place."
       ],
-      "answer": 1,
-      "explanation": "From the time graph, f = 1/T = 1/0.4 = 2.5 Hz; from the snapshot, λ = 0.8 m. Then v = fλ = 2.5 × 0.8 = 2 m s⁻¹. You need both graphs: the time graph for frequency, the position graph for wavelength, then the wave equation to combine them.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The trap is thinking the medium travels with the wave; it doesn't. The wave equation gives the speed of the energy through the medium, not the speed of the particles. If you separated the two clearly, grade Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m301-q10",
-      "q": "The amplitude of a wave is doubled. Determine the effect on the energy it carries.",
+      "id": "mm301-q10",
+      "type": "mc",
+      "q": "All electromagnetic waves — radio, microwave, infrared, visible, ultraviolet, X-ray and gamma — travel through a vacuum at the same speed. How do they differ from one another?",
       "options": [
-        "The energy doubles",
-        "The energy quadruples",
-        "The energy halves",
-        "The energy is unchanged"
+        "They travel at different speeds depending on their frequency",
+        "They differ only in frequency and wavelength, linked by the wave equation v = fλ",
+        "They differ in speed because higher-frequency waves carry more energy",
+        "They differ in the medium each one requires to travel"
       ],
       "answer": 1,
-      "explanation": "The energy a wave carries is proportional to the square of its amplitude, so doubling the amplitude quadruples the energy. This is why a slightly bigger ocean swell hits so much harder, and why a loud sound carries far more energy than a quiet one of the same pitch.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Every electromagnetic wave travels at the speed of light, about 3 × 10⁸ m s⁻¹ in a vacuum, because speed depends on the medium (here empty space), not on the frequency. A radio wave and a gamma ray are the same kind of thing travelling at the same speed, differing only in frequency and wavelength, stitched together by v = fλ.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

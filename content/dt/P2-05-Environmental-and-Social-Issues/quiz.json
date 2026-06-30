@@ -1,0 +1,143 @@
+{
+  "questions": [
+    {
+      "id": "mp205-q01",
+      "type": "mc",
+      "q": "What is the main goal of sustainable design?",
+      "options": [
+        "To preserve the ozone layer",
+        "To reduce pollution and waste",
+        "To ensure the long-term availability of natural resources",
+        "To promote the responsible use of affordable materials by manufacturers"
+      ],
+      "answer": 2,
+      "explanation": "Sustainability means meeting present needs without compromising the ability of future generations to meet theirs — i.e. the long-term availability of natural resources. Reducing pollution and waste is a means to that end, not the overarching goal.",
+      "source": { "origin": "hsc", "ref": "2024 HSC Design and Technology Q2", "year": 2024 }
+    },
+    {
+      "id": "mp205-q02",
+      "type": "mc",
+      "q": "Which of the following best describes the primary aim of using sustainable practices?",
+      "options": [
+        "To reduce global warming",
+        "To address climate change",
+        "To ensure that natural resources are available in the future",
+        "To only use materials that are either recyclable or biodegradable"
+      ],
+      "answer": 2,
+      "explanation": "Sustainability means meeting present needs without compromising future generations, so its primary aim is ensuring natural resources remain available in the future. Reducing global warming and using recyclable materials are means toward that aim, not the overarching goal.",
+      "source": { "origin": "hsc", "ref": "2020 HSC Design and Technology Q4", "year": 2020 }
+    },
+    {
+      "id": "mp205-q03",
+      "type": "mc",
+      "q": "Which of the following contributes to environmental sustainability?",
+      "options": [
+        "The acceptance of technology and its ease of use",
+        "The use of low-cost energy during the manufacturing process",
+        "The degradation of physical resources through manufacturing activities",
+        "The use of materials and processes without having a significant impact on their surroundings"
+      ],
+      "answer": 3,
+      "explanation": "Environmental sustainability means using materials and processes that minimise impact on the surrounding environment, preserving resources for the future. Low-cost energy and resource degradation work against sustainability, and ease of use is unrelated.",
+      "source": { "origin": "hsc", "ref": "2014 HSC Design and Technology Q8", "year": 2014 }
+    },
+    {
+      "id": "mp205-q04",
+      "type": "mc",
+      "q": "Terry is asked to design a product that will be accessible to a range of different cultures. Which of the following would be a major consideration for Terry?",
+      "options": [
+        "Targeting the needs of people",
+        "Identifying separate market segments",
+        "Using local employees during production",
+        "Developing a product that is suitable for all market segments"
+      ],
+      "answer": 3,
+      "explanation": "To make a product accessible across many cultures, the designer must develop something suitable for all market segments rather than targeting one group. This inclusive approach reflects sensitivity to cultural beliefs and equity — designing so all people, regardless of background, have access.",
+      "source": { "origin": "hsc", "ref": "2012 HSC Design and Technology Q6", "year": 2012 }
+    },
+    {
+      "id": "mp205-q05",
+      "type": "mc",
+      "q": "What is the most important reason for undertaking a life cycle analysis of an innovative design?",
+      "options": [
+        "To establish the rights of the designer",
+        "To research the possibility of future growth in market share",
+        "To understand the impact of the project on society and the environment",
+        "To determine the level of consumer demand for the newly developed product"
+      ],
+      "answer": 2,
+      "explanation": "A life cycle analysis traces a product from raw materials to disposal to reveal its impact on society and the environment across its whole life. As the episode stresses, sustainability is the goal and the life cycle analysis is the tool you use to pursue it. The other options are commercial or legal aims, not the purpose of an LCA.",
+      "source": { "origin": "hsc", "ref": "2024 HSC Design and Technology Q8", "year": 2024 }
+    },
+    {
+      "id": "mp205-q06",
+      "type": "mc",
+      "q": "What are the prime considerations for designers when producing safe and ethical products for consumers?",
+      "options": [
+        "Social trends and convenience",
+        "Financial market share and existing products",
+        "Patent protection and niche market compatibility",
+        "End user wellbeing and environmental friendliness"
+      ],
+      "answer": 3,
+      "explanation": "Safe and ethical design centres on the wellbeing of the end user and on minimising environmental harm — the safety-and-health and environmental issues from the episode's seven. The other options are commercial or market considerations, not the prime safety/ethics considerations.",
+      "source": { "origin": "hsc", "ref": "2024 HSC Design and Technology Q4", "year": 2024 }
+    },
+    {
+      "id": "mp205-q07",
+      "type": "recall",
+      "q": "From memory, give the examinable definitions: what is sustainability, and what is equity, as design issues?",
+      "keyPoints": [
+        "Sustainability = meeting the needs of people today without negatively affecting the resources available to people in the future (present needs without compromising the future).",
+        "In practice: avoid finite, non-renewable resources, consider disposal, and minimise the carbon footprint, monitored using a life cycle analysis.",
+        "Equity = fairness: designing so that all people, regardless of ability, age, income or background, have fair and equal access to and benefit from a design.",
+        "Equity is the principle behind inclusive and universal design (ramps, step-free access, products usable by people with disabilities)."
+      ],
+      "explanation": "These two definitions earn marks directly and are examined hardest. If you recalled 'present needs without compromising the future' for sustainability and 'fair, equal access for all' for equity, grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp205-q08",
+      "type": "recall",
+      "q": "From memory: name the three levels of impact you assess a design against, and the seven environmental and social issues behind the hook PC SCIE.",
+      "keyPoints": [
+        "Three levels of impact: the individual, society, and the environment — always structure an impact answer around these three.",
+        "PC SCIE = Personal values, Cultural beliefs, Sustainability, Safety and health, Community needs, Individual needs, Equity.",
+        "Whenever a question says 'assess the impact', split your answer explicitly into individual / society / environment — that skeleton is half the marks."
+      ],
+      "explanation": "The three levels are a checklist you must address explicitly, and PC SCIE captures the seven issues to weigh. Collapsing the answer into one blurry paragraph about the environment loses the marks for the other two levels.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp205-q09",
+      "type": "short",
+      "q": "Assess the impact of fast fashion on the individual, society and the environment. (6 marks)",
+      "marks": 6,
+      "modelAnswer": "To the individual, fast fashion provides affordable, fashionable clothing and a means of self-expression, but it encourages a disposable, throwaway mindset and the garments are often low quality. To society, it creates employment, but it is widely associated with poor labour conditions and low wages in manufacturing countries, raising serious ethical and equity concerns about who bears the human cost. To the environment, its impact is severe: large volumes of textile waste from discarded clothing, high water and energy consumption in production, and microplastic pollution from synthetic fibres, a clear failure against sustainability. On balance, although fast fashion delivers affordability and choice to individuals, its social costs in labour exploitation and its environmental costs in waste and emissions make it difficult to justify as responsible design.",
+      "criteria": [
+        { "marks": 6, "descriptor": "Assesses impact explicitly across all three levels (individual, society, environment), draws in relevant issues such as equity and sustainability, and reaches a balanced overall judgement weighing positives against negatives." },
+        { "marks": 4, "descriptor": "Addresses two or three levels with some relevant issues, but the judgement is limited or one-sided." },
+        { "marks": 2, "descriptor": "Describes impact at one level (often the environment) in general terms, with little judgement." }
+      ],
+      "explanation": "The verb 'assess' wants a judgement, not just description, and the three levels hand you the structure. A strong answer works all three levels, names the issues (sustainability, equity), and weighs positives against negatives; a one-sided answer about the environment alone caps low.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp205-q10",
+      "type": "extended",
+      "q": "Analyse the opportunities and challenges faced by designers when attempting to design and produce sustainable products.\n\nYour answer will be assessed on how well you: demonstrate knowledge and understanding relevant to the question; communicate ideas and information using relevant examples; and present a sustained, logical and cohesive response.",
+      "marks": 15,
+      "modelAnswer": "Designers must consider sustainable products because traditional resources such as fuels and plastics are in decreasing supply. Sustainable products open the opportunity to use a wider range of materials and processes — for example biodegradable plastics such as 'Biopak' packaging reduce waste, particularly at the end of the product's life. This appeals to consumers, so adopting it can widen the consumer base, increase sales and profit, and even shift consumer demand so society expects similar sustainable choices elsewhere. The main challenge, however, is cost: developing sustainable technologies takes time and money and companies must stay financially viable, so in their early introduction sustainable methods are usually more expensive than traditional ones, which keeps many designers using cheaper raw materials such as oil-based petrochemicals. For example, Nike turned waste leather from its SE Asian footwear production into a 'second' raw material to make the 'Nike Trash Talk' shoe, requiring new manufacturing sites and worker retraining that raised costs — so it was only marketed in Europe and the US, while developing economies still demanded traditionally produced, waste-generating footwear. Overall, sustainable products are essential to reduce raw-material extraction and waste, and designers must weigh improved materials and long-term profitability against the short-term costs in order to change global demand and design trends.",
+      "criteria": [
+        { "marks": "13–15", "descriptor": "Shows a comprehensive understanding of the opportunities and challenges faced by designers when attempting to design and produce sustainable products; draws out and relates implications of these opportunities and challenges; communicates using relevant examples; responds in a sustained, logical and cohesive manner" },
+        { "marks": "10–12", "descriptor": "Shows a detailed understanding of the opportunities and challenges faced by designers when attempting to design and/or produce sustainable products; explains opportunities and challenges; includes relevant examples; responds in a logical manner" },
+        { "marks": "7–9", "descriptor": "Describes opportunities and challenges faced by designers when attempting to design and produce sustainable products; may include a relevant example" },
+        { "marks": "4–6", "descriptor": "Outlines opportunity(ies) and/or challenge(s) faced by designers" },
+        { "marks": "1–3", "descriptor": "Identifies opportunity(ies) and/or challenge(s) faced by designers" }
+      ],
+      "explanation": "This connects directly to the episode: sustainability as the heavyweight issue, pursued through a life cycle analysis, weighed as a balanced judgement of benefits (wider materials, consumer appeal, profit) against costs (price, viability). Sustained, example-led analysis earns the top band.",
+      "source": { "origin": "hsc", "ref": "2015 HSC Design and Technology Q14", "year": 2015 }
+    }
+  ]
+}

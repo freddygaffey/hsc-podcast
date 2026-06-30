@@ -1,174 +1,147 @@
 {
   "questions": [
     {
-      "id": "m708-q01",
-      "q": "Who proposed the two rival 17th–18th century models of light, and what were they?",
+      "id": "mm708-q01",
+      "type": "mc",
+      "q": "In the seventeenth century there were two competing theories of light. What could Christiaan Huygens's wave theory explain that Isaac Newton's particle (corpuscular) theory could not?",
       "options": [
-        "Newton proposed a wave model; Huygens proposed a particle model",
-        "Newton proposed a particle (corpuscular) model; Huygens proposed a wave model",
-        "Maxwell proposed a particle model; Hertz proposed a wave model",
-        "Both Newton and Huygens proposed particle models"
+        "Reflection and refraction of light",
+        "Diffraction and interference of light",
+        "The speed of light travelling through a vacuum",
+        "The straight-line propagation of a light ray"
       ],
       "answer": 1,
-      "explanation": "Isaac Newton's corpuscular (particle) model held that light is a stream of tiny particles; Christiaan Huygens proposed that light is a wave. Newton's reputation kept the particle model dominant for nearly a century despite Huygens's theory.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Newton said light consisted of small particles he called 'corpuscles', and his theory could explain reflection and refraction. Huygens argued light consisted of waves, which was able to explain diffraction and interference — something Newton's particle theory could not do. That is why diffraction and interference remain strong evidence in favour of the wave model.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 222, "url": "sources/phy12/p222.jpg" }
     },
     {
-      "id": "m708-q02",
-      "q": "Why could reflection and refraction NOT be used to decide between the particle and wave models of light?",
+      "id": "mm708-q02",
+      "type": "mc",
+      "q": "When light bends towards the normal as it enters water (a denser medium), how do Newton's particle model and Huygens's wave model differ in their explanation of the speed of light in water?",
       "options": [
-        "Because neither model could explain them",
-        "Because both rival models could explain reflection and refraction, so they cannot distinguish between the two",
-        "Because reflection and refraction had not yet been observed",
-        "Because only the wave model could explain them"
+        "Both models predict that light travels faster in water than in air",
+        "The particle model says light travels faster in water, whereas the wave model says it travels slower",
+        "The particle model says light travels slower in water, whereas the wave model says it travels faster",
+        "Both models predict that light travels at the same speed in water as in air"
       ],
       "answer": 1,
-      "explanation": "Both the particle and wave models successfully accounted for reflection and ordinary refraction. A phenomenon explained by both rivals is useless as evidence for either — the decisive evidence is what only one model can explain.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "There is a clear distinction between the two models of refraction: the particle model says light bends towards the normal because it travels faster in the denser medium, whereas the wave model says it is because the light is travelling slower. This opposite, testable prediction about the speed of light in water is what makes refraction able to decide between the models.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 230, "url": "sources/phy12/p230.jpg" }
     },
     {
-      "id": "m708-q03",
-      "q": "Newton's particle model and Huygens's wave model made opposite predictions about the speed of light in water. What did each predict?",
+      "id": "mm708-q03",
+      "type": "mc",
+      "q": "Who measured the speed of light in water in 1850, and what did the result show about Newton's particle model and Huygens's wave model?",
       "options": [
-        "Particle model: slower in water; wave model: faster in water",
-        "Particle model: faster in water; wave model: slower in water",
-        "Both predicted faster in water",
-        "Both predicted the same speed as in air"
+        "Newton; light was faster in water, confirming the particle model",
+        "Foucault and Fizeau; light was slower in water, confirming the wave model",
+        "Thomas Young; light was faster in water, confirming the particle model",
+        "Heinrich Hertz; the speed was the same, confirming neither model"
       ],
       "answer": 1,
-      "explanation": "The particle model required light to speed up in water (the medium imagined to attract the particles); the wave model required it to slow down (the wavefront slowed by the denser medium). These contradictory predictions made refraction into water a decisive test.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Jean Bernard Leon Foucault and Hippolyte Fizeau competed to measure the speed of light in water; in 1850 both showed that light was slower in water, though Foucault won by seven weeks. Light being slower in water refutes Newton's particle model and confirms Huygens's wave model of refraction.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 230, "url": "sources/phy12/p230.jpg" }
     },
     {
-      "id": "m708-q04",
-      "q": "Whose 1850 measurement resolved the dispute about the speed of light in water, and which model did it support?",
+      "id": "mm708-q04",
+      "type": "mc",
+      "q": "Observations of the polarisation of light show that light is a transverse wave rather than a longitudinal wave. Why does polarisation establish this?",
       "options": [
-        "Newton measured light faster in water, supporting the particle model",
-        "Foucault measured light slower in water, supporting the wave model",
-        "Young measured light faster in water, supporting the wave model",
-        "Hertz measured light slower in water, supporting the particle model"
+        "Because transverse waves travel faster than longitudinal waves through a polarising filter",
+        "Because longitudinal waves cannot be polarised — only a transverse wave has a plane of oscillation that a filter can select",
+        "Because a polarising filter slows longitudinal waves down until they stop",
+        "Because light, unlike other waves, has no plane of oscillation to filter"
       ],
       "answer": 1,
-      "explanation": "In 1850 Foucault (and independently Fizeau) measured light to be slower in water than in air, refuting the particle model's prediction and confirming the wave model. The wave model's prediction — slower — turned out to be true.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Polarisation is the blocking of waves except for a single plane of oscillation, and it only works with transverse waves. A longitudinal wave oscillates along its direction of travel, so it cannot be polarised. Because light can be polarised, it must be a transverse wave — a result that corrected Huygens, who had proposed that light was longitudinal like sound.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 231, "url": "sources/phy12/p231.jpg" }
     },
     {
-      "id": "m708-q05",
-      "q": "Why can a particle model not explain diffraction?",
-      "options": [
-        "Because particles cannot reflect off surfaces",
-        "Because particles travel in straight lines and have no mechanism to bend around a corner into a shadow",
-        "Because particles cannot travel through a vacuum",
-        "Because particles always cancel one another"
+      "id": "mm708-q05",
+      "type": "worked",
+      "q": "Unpolarised light of intensity I₀ passes through a polariser, then through an analyser whose axis is at 60° to the polariser. Using Malus's law, find the intensity of the emerging polarised light as a percentage of I₀.",
+      "given": "Unpolarised light intensity \\(I_0\\); analyser axis at 60° to the polariser; Malus's law \\(I = I_O\\cos^2\\theta\\)",
+      "working": [
+        "First filter (light still unpolarised): the polariser halves the intensity, so \\(I_a = 0.5\\,I_0\\)",
+        "Second filter (now use Malus's law): \\(I_b = I_a\\cos^2(60^\\circ)\\)",
+        "\\(\\cos(60^\\circ) = 0.5\\), so \\(\\cos^2(60^\\circ) = 0.25\\)",
+        "\\(I_b = 0.25 \\times 0.5\\,I_0 = 0.125\\,I_0\\)",
+        "\\(I_b = 12.5\\%\\) of \\(I_0\\)"
       ],
-      "answer": 1,
-      "explanation": "Diffraction is light spreading around edges and through narrow gaps into the shadow region, explained by Huygens's principle. Straight-line particles, once emitted, cannot bend around corners, so they cannot reach into the shadow as the wave does.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 12.5,
+      "answerUnit": "%",
+      "tolerance": 0.5,
+      "explanation": "This follows the textbook Sample Problem exactly: a polariser receiving unpolarised light always transmits half (50%), then Malus's law multiplies the emerging polarised intensity by \\(\\cos^2(60^\\circ) = 0.25\\), giving 12.5% of the original intensity I₀.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 232, "url": "sources/phy12/p232.jpg" }
     },
     {
-      "id": "m708-q06",
-      "q": "In Young's double-slit experiment, which feature of the pattern is the decisive evidence against the particle model, and why?",
-      "options": [
-        "The bright bands, because particles cannot add together",
-        "The dark bands, because two streams of particles can only add to give more light, never cancel to give darkness",
-        "The colour of the fringes, because particles have no colour",
-        "The width of the central maximum"
+      "id": "mm708-q06",
+      "type": "worked",
+      "q": "A polariser and an analyser are crossed at 90° to each other. Using Malus's law, what intensity of polarised light emerges from the analyser, expressed as a percentage of the polarised intensity falling on it?",
+      "given": "Crossed polarising filters: angle between axes \\(\\theta = 90^\\circ\\); Malus's law \\(I = I_O\\cos^2\\theta\\)",
+      "working": [
+        "\\(I_d = I_a\\cos^2(90^\\circ)\\)",
+        "\\(\\cos(90^\\circ) = 0\\), so \\(\\cos^2(90^\\circ) = 0\\)",
+        "\\(I_d = 0 = 0\\%\\) of \\(I_0\\)"
       ],
-      "answer": 1,
-      "explanation": "Particles could pile up to make bright spots, so bright bands alone are consistent with particles. But at a dark band, light from both slits combines to give darkness — particles can never subtract or cancel, so the dark bands are the decisive wave evidence.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 0,
+      "answerUnit": "%",
+      "tolerance": 0.5,
+      "explanation": "When the polariser and the analyser are crossed at 90°, none of the polarised light is able to pass through the analyser: \\(I_d = I_O\\cos^2(90^\\circ) = 0\\). This total extinction of light by crossed polarising filters is itself evidence that light is a transverse wave.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 233, "url": "sources/phy12/p233.jpg" }
     },
     {
-      "id": "m708-q07",
-      "q": "What does it mean for the two slits in Young's experiment to be coherent?",
-      "options": [
-        "They are the same distance from the screen",
-        "They emit light of the same wavelength with a constant (fixed) phase relationship",
-        "They are very brightly illuminated",
-        "They emit light of different colours"
+      "id": "mm708-q07",
+      "type": "recall",
+      "q": "From memory: in terms of crests and troughs, distinguish between constructive interference and destructive interference of two identical waves, and say why the dark bands matter.",
+      "keyPoints": [
+        "Constructive interference: two crests (or two troughs) intersect and add, producing an extra-high crest or extra-low trough — greater displacement.",
+        "Destructive interference: a crest from one wave meets the trough of another identical wave, giving no wave displacement at all.",
+        "If interference occurs with light it produces bands of light and dark; the dark bands prove light is a wave, because two streams of particles can only add, never cancel."
       ],
-      "answer": 1,
-      "explanation": "Coherent means monochromatic (a single wavelength) AND a constant phase relationship. Young achieved this by splitting one source into two, so both slits stayed locked in phase. Two independent lamps would be incoherent and wash out the pattern.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Diffraction rarely occurs without some interference. Where a crest meets a crest the waves reinforce (constructive); where a crest meets a trough they cancel to zero displacement (destructive). The production of dark bands — darkness from two beams of light — is the decisive evidence that light consists of waves.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 223, "url": "sources/phy12/p223.jpg" }
     },
     {
-      "id": "m708-q08",
-      "q": "Why is polarisation considered to give more information than diffraction or interference alone?",
-      "options": [
-        "Because it is easier to demonstrate",
-        "Because it not only confirms light is a wave but also proves the wave is transverse, since longitudinal waves cannot be polarised",
-        "Because it proves light is a particle",
-        "Because it works for sound waves too"
+      "id": "mm708-q08",
+      "type": "recall",
+      "q": "From memory: recall the DIP memory hook for the three pieces of evidence for the wave model, and for each one give the single reason the particle model fails.",
+      "keyPoints": [
+        "DIP = Diffraction, Interference, Polarisation.",
+        "Diffraction: particles travel in straight lines and have no mechanism to bend around a corner into a shadow.",
+        "Interference: particles can only add to give brightness, never cancel to give the dark bands.",
+        "Polarisation: a particle stream has no plane of oscillation to filter, and only a transverse wave can be polarised."
       ],
-      "answer": 1,
-      "explanation": "Diffraction and interference show light is a wave but not whether it is transverse or longitudinal. Polarisation does both: a particle stream has nothing to filter, and only a transverse wave has a plane that a filter can select — a longitudinal wave cannot be polarised. This also corrected Huygens, who thought light was longitudinal.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "DIP — picture the wave model taking a dip — fixes the three pillars so you can't blank on one under exam pressure. Each pillar is written as observation plus why the particle model cannot answer it.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m708-q09",
-      "q": "The NESA verb 'evaluate' demands more than listing the three pillars. What two things must an evaluation include?",
-      "options": [
-        "A diagram and a calculation",
-        "A stated verdict (judgement) and the model's limitation",
-        "The names of every physicist and every date",
-        "A description of reflection and refraction only"
+      "id": "mm708-q09",
+      "type": "short",
+      "q": "The NESA verb 'evaluate' requires more than listing diffraction, interference and polarisation. State the two things an evaluation must include that a bare list does not, and give the wave model's limitation. (3 marks)",
+      "marks": 3,
+      "modelAnswer": "To evaluate, you must first state a clear verdict — a judgement of how strongly the evidence supports the wave model: it is strongly supported for classical light behaviour. Second, you must give the model's limitation. The wave model fails to explain black-body radiation (the classical theory predicts the ultraviolet catastrophe) and the photoelectric effect, both of which require light to behave as discrete particles, photons, in the quantum model. Therefore the wave model is strongly supported but not a complete description of light.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States that an evaluation must give a clear verdict/judgement on how strongly the evidence supports the wave model." },
+        { "marks": 1, "descriptor": "Identifies the limitation: the wave model fails to explain black-body radiation and the photoelectric effect." },
+        { "marks": 1, "descriptor": "Concludes the model is strongly supported for classical light but is not a complete description (light also behaves as photons)." }
       ],
-      "answer": 1,
-      "explanation": "To evaluate is to make a criteria-based judgement: state a clear verdict on how strongly the wave model is supported, and weigh its successes against its limitation. A list of phenomena, however well explained, is not an evaluation.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "A list of phenomena scores low; the marks for 'evaluate' come from the verdict plus the limitation. Naming black-body radiation and the photoelectric effect as the failures that need the photon is what turns a list into an evaluation.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m708-q10",
-      "q": "What is the key limitation of the wave model that a full evaluation must mention?",
+      "id": "mm708-q10",
+      "type": "mc",
+      "q": "In Young's double-slit experiment, the light reaching the two pinholes had to be coherent. What does coherent mean?",
       "options": [
-        "It cannot explain reflection or refraction",
-        "It fails to explain black-body radiation and the photoelectric effect, which require light to behave as discrete photons",
-        "It cannot explain diffraction",
-        "It predicts light travels faster in water"
+        "The two beams have exactly the same brightness",
+        "The light is monochromatic (a single wavelength) and in a fixed phase relationship",
+        "The two beams travel in exactly the same direction",
+        "The light is polarised in the same plane at both slits"
       ],
       "answer": 1,
-      "explanation": "The wave model explains diffraction, interference and polarisation perfectly, but fails on black-body radiation (the ultraviolet catastrophe) and the photoelectric effect, both of which require the particle-like photon of the quantum model. So the wave model is strongly supported but not a complete description of light.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Young deliberately used a single source (the hole in the blind) so that one wavefront arrived at both pinholes, making the two sources coherent — meaning monochromatic and in phase. Two separate sources would have been incoherent, with a random phase relationship and no discernible interference pattern on the screen.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 225, "url": "sources/phy12/p225.jpg" }
     }
   ]
 }

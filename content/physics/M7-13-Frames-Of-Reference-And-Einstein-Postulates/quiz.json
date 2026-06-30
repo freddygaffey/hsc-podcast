@@ -1,174 +1,146 @@
 {
   "questions": [
     {
-      "id": "m713-q01",
-      "q": "What defines an inertial frame of reference?",
-      "options": [
-        "A frame that is accelerating, in which fictitious forces appear",
-        "A frame that is not accelerating (at rest or constant velocity), in which Newton's first law holds",
-        "A frame attached to the centre of the Earth only",
-        "A frame in which the speed of light is zero"
-      ],
-      "answer": 1,
-      "explanation": "An inertial frame is non-accelerating — at rest or moving at constant velocity — and Newton's first law holds within it. Accelerating frames are non-inertial, where fictitious forces must be invoked.",
+      "id": "mm713-q01",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "A police officer parked on the roadside measures an approaching sports car at 90 km/h, while a second police car driving toward it at 60 km/h measures the same sports car at 150 km/h. Which measurement of the sports car's speed is correct?",
+      "options": [
+        "Only the 90 km/h reading from the parked officer is correct",
+        "Only the 150 km/h reading from the moving police car is correct",
+        "Both are correct, because the speed of the car is relative to the velocity of the observer rather than an invariant quantity",
+        "Neither is correct, because the car has a single true speed that neither officer measured"
+      ],
+      "answer": 2,
+      "explanation": "Both readings are correct: the speed of the sports car is relative to the observer doing the measuring, not an invariant quantity agreed on by all observers. The parked officer's 90 km/h is the speed relevant to a speeding ticket, but the oncoming police car genuinely measures 150 km/h.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 268, "url": "sources/phy12/p268.jpg" }
     },
     {
-      "id": "m713-q02",
-      "q": "In classical (Galilean) physics, which quantity is relative and which were assumed absolute?",
+      "id": "mm713-q02",
+      "type": "mc",
+      "q": "In special relativity, what defines an inertial reference frame?",
       "options": [
-        "Velocity is absolute; time, length and mass are relative",
-        "Velocity is relative; time, length and mass were assumed absolute",
-        "Everything is absolute, including velocity",
-        "Only the speed of light is relative; everything else is absolute"
+        "A frame of reference that is accelerating relative to the Earth",
+        "A frame of reference that is not accelerating, moving in a straight line at a constant speed relative to other inertial reference frames",
+        "A frame of reference in which the speed of light is zero",
+        "Any frame of reference attached to the surface of the Earth"
       ],
       "answer": 1,
-      "explanation": "Galilean relativity makes velocity relative (depends on the observer) but treats time, length, mass and simultaneity as absolute. Special relativity overturns the absoluteness of time and length.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Frames of reference that are not accelerating are called inertial reference frames. An inertial reference frame moves in a straight line at a constant speed relative to other inertial reference frames, and within it Newton's first law holds.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 273, "url": "sources/phy12/p273.jpg" }
     },
     {
-      "id": "m713-q03",
-      "q": "What was the luminiferous aether supposed to be?",
+      "id": "mm713-q03",
+      "type": "mc",
+      "q": "What does the principle of relativity state about the laws of physics and the velocity of the observer?",
       "options": [
-        "A type of light that travels faster than c",
-        "The invisible medium filling all space through which light was thought to travel, defining an absolute rest frame",
-        "A force that accelerates light near massive objects",
-        "The instrument Michelson and Morley used to detect Earth's motion"
+        "The laws of physics change with the velocity of the observer",
+        "The laws of physics do not depend on the velocity of the observer, and there is no way to measure a vehicle's velocity without reference to something external to it",
+        "The laws of physics only hold for an observer at absolute rest",
+        "The laws of physics depend on the acceleration but not the velocity of the observer"
       ],
       "answer": 1,
-      "explanation": "Since every other wave needs a medium, 19th-century physicists assumed light travelled through an invisible aether at speed c relative to it — providing the universe's supposed absolute rest frame.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The principle of relativity states that the laws of physics do not depend on the velocity of the observer. Another way to describe it is that there is no way anyone in a smoothly moving car can measure its velocity without making reference to something external to the car.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 270, "url": "sources/phy12/p270.jpg" }
     },
     {
-      "id": "m713-q04",
-      "q": "What was the result of the Michelson–Morley experiment, and what did it indicate?",
-      "options": [
-        "It detected a strong aether wind, confirming the aether exists",
-        "A null result: no fringe shift, showing the speed of light is the same in all directions regardless of Earth's motion",
-        "It measured the speed of light to be 1.5c in the direction of motion",
-        "It proved light needs a medium to travel"
+      "id": "mm713-q04",
+      "type": "recall",
+      "q": "In classical physics established by Galileo and Newton, position and speed are relative between frames of reference. From memory, what did classical physics treat as absolute, and what does this say about rulers and clocks in different reference frames?",
+      "keyPoints": [
+        "In classical physics position and speed are relative, dependent on the observer's frame of reference.",
+        "Time and space are seen as absolute: all observers agree on what a metre and a given speed are.",
+        "The rulers in one frame of reference are the same as those in another, and clocks in one frame tick at the same rate as clocks measured in another."
       ],
-      "answer": 1,
-      "explanation": "The experiment got the famous null result — no fringe shift in any orientation — indicating no aether wind and that the speed of light is invariant. This is the experimental ground for Einstein's first postulate.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Classical physics treats time and space as absolute even though position and speed are relative: rulers measure the same metre and clocks tick at the same rate in every frame. Special relativity is exactly the overturning of this absoluteness of time and space.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 273, "url": "sources/phy12/p273.jpg" }
     },
     {
-      "id": "m713-q05",
-      "q": "Which statement most precisely captures Einstein's first postulate?",
+      "id": "mm713-q05",
+      "type": "mc",
+      "q": "In 1887 Albert Michelson and Edward Morley used interference effects to detect changes in the time taken for light to travel through different paths in their apparatus as the Earth moved through the luminiferous aether. What did the experiment find?",
       "options": [
-        "The speed of light is constant",
-        "The speed of light in a vacuum is an absolute constant, the same for all observers regardless of the motion of the source or the observer",
-        "The speed of light depends on the motion of the observer",
-        "Light always travels at c relative to the aether"
+        "Light travelled faster in the direction of the aether wind, confirming the aether",
+        "The predicted change in the interference pattern was not observed, as though the speed of light was unaffected by the motion of the observer or the source",
+        "The interference pattern disappeared entirely when the apparatus was rotated",
+        "Light travelled at different speeds depending on the time of year"
       ],
       "answer": 1,
-      "explanation": "The crucial qualifier 'the same for all observers regardless of the motion of source or observer' is the revolutionary content. Saying merely 'the speed of light is constant' loses the point — and half the marks.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Much to their astonishment, the predicted change in the interference pattern was not observed. It was as though the speed of light was unaffected by the motion of the reference frame of its observer or its source, the famous null result.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 277, "url": "sources/phy12/p277.jpg" }
     },
     {
-      "id": "m713-q06",
-      "q": "What does Einstein's second postulate state?",
-      "options": [
-        "The speed of light is the same for all observers",
-        "All inertial frames of reference are equivalent — the laws of physics are the same in every inertial frame",
-        "Time runs at the same rate for all observers",
-        "Mass increases with speed"
+      "id": "mm713-q06",
+      "type": "worked",
+      "q": "Axel's spacecraft fires its rockets and its velocity is measured by Effie in reference frame B to change from 50 m/s to 150 m/s over 10 s. Show that the acceleration measured in reference frame B is the same invariant value found in frame A.",
+      "given": "Effie (frame B) measures Axel's spacecraft velocity change from \\(50\\,\\mathrm{m\\,s^{-1}}\\) to \\(150\\,\\mathrm{m\\,s^{-1}}\\) over \\(t = 10\\,\\mathrm{s}\\)",
+      "working": [
+        "\\(a = \\dfrac{\\Delta v}{t}\\)",
+        "\\(a = \\dfrac{150\\,\\mathrm{m\\,s^{-1}} - 50\\,\\mathrm{m\\,s^{-1}}}{10\\,\\mathrm{s}}\\)",
+        "\\(a = \\dfrac{100\\,\\mathrm{m\\,s^{-1}}}{10\\,\\mathrm{s}} = 10\\,\\mathrm{m\\,s^{-2}}\\)",
+        "This equals the \\(10\\,\\mathrm{m\\,s^{-2}}\\) measured in frame A, so acceleration is invariant."
       ],
-      "answer": 1,
-      "explanation": "The second postulate (the principle of relativity) states that all inertial frames are equivalent and the laws of physics are identical in every inertial frame — Galileo's principle promoted to a fundamental law.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 10,
+      "answerUnit": "m s⁻²",
+      "tolerance": 0.01,
+      "explanation": "Acceleration is an invariant quantity: it has the same value in all inertial reference frames. Unlike velocity, acceleration in Galilean relativity does not depend on the motion of the frame of reference.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 274, "url": "sources/phy12/p274.jpg" }
     },
     {
-      "id": "m713-q07",
-      "q": "A spacecraft approaches Earth at 0.5c and emits a light beam ahead of it. At what speed does the light reach Earth?",
-      "options": [
-        "1.5c",
-        "c",
-        "0.5c",
-        "2c"
+      "id": "mm713-q07",
+      "type": "worked",
+      "q": "A plane flies at a constant speed of 200 m/s through air in which the speed of sound is 340 m/s. Find the speed of the sound relative to the reference frame of the plane in the forward direction.",
+      "given": "Speed of plane \\(= 200\\,\\mathrm{m\\,s^{-1}}\\), speed of sound in air \\(= 340\\,\\mathrm{m\\,s^{-1}}\\)",
+      "working": [
+        "Speed of sound relative to the plane = speed of sound in air \\(-\\) speed of plane",
+        "\\(= 340\\,\\mathrm{m\\,s^{-1}} - 200\\,\\mathrm{m\\,s^{-1}}\\)",
+        "\\(= 140\\,\\mathrm{m\\,s^{-1}}\\) in the forward direction relative to the plane"
       ],
-      "answer": 1,
-      "explanation": "By the first postulate, the speed of light is independent of the source's motion, so the light reaches Earth at exactly c, not 0.5c + c = 1.5c. Velocities do not add the classical way for light.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 140,
+      "answerUnit": "m s⁻¹",
+      "tolerance": 0.01,
+      "explanation": "Sound has a speed relative to its medium (the air). To find its speed in the plane's frame we subtract the plane's speed from the speed of sound, giving 140 m/s forward (and 540 m/s backward). This is exactly the medium-relative behaviour light does NOT show.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 276, "url": "sources/phy12/p276.jpg" }
     },
     {
-      "id": "m713-q08",
-      "q": "Why must the constancy of the speed of light force space and time to become relative?",
+      "id": "mm713-q08",
+      "type": "mc",
+      "q": "A spacecraft hurtling toward Earth at 0.5c sends out a radio signal ahead of it. According to Einstein's first postulate, with what speed does the radio signal hit the Earth?",
       "options": [
-        "Because light slows down when observed",
-        "Because speed = distance/time, so if two observers in relative motion measure the same c, they cannot agree on both distance and time",
-        "Because clocks are physically damaged by motion",
-        "Because the aether distorts measurements"
+        "1.5c, because the spacecraft's speed adds to the speed of the radio waves",
+        "c, because the radio waves travel at c regardless of the motion of the source and the receiver",
+        "0.5c, the speed of the spacecraft",
+        "It depends on whether the Earth is moving toward or away from the spacecraft"
       ],
       "answer": 1,
-      "explanation": "If both observers measure the same c and speed is distance divided by time, then the metres and seconds must differ between them. Saving the constancy of c requires sacrificing the absoluteness of space and time.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Relative velocity as treated by Galileo insists the radio waves should strike Earth at 1.5c, but this does not happen. The radio waves travel at c regardless of the motion of the source and the receiver, the heart of the first postulate.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 280, "url": "sources/phy12/p280.jpg" }
     },
     {
-      "id": "m713-q09",
-      "q": "In the train thought experiment, a central lamp flashes. Why are the events 'light hits back wall' and 'light hits front wall' simultaneous for a passenger but not for a platform observer?",
-      "options": [
-        "The light travels faster toward the back wall for the passenger",
-        "For the passenger the distances are equal at speed c (simultaneous), but for the platform observer the train moves so the back wall rushes toward the flash point, so light reaches it first",
-        "The platform observer sees the light slow down",
-        "The lamp flashes twice for the platform observer"
+      "id": "mm713-q09",
+      "type": "recall",
+      "q": "From memory, state Einstein's two postulates of special relativity precisely, including the crucial qualifier on the light postulate. (Hint from the episode: 'Locked and Level'.)",
+      "keyPoints": [
+        "Postulate 1 (Locked): the speed of light in a vacuum is an absolute constant, the same for all observers, regardless of the motion of the source or the observer.",
+        "Postulate 2 (Level): all inertial frames of reference are equivalent, i.e. the laws of physics are the same in every inertial frame.",
+        "The single biggest mark-loser is dropping 'the same for all observers regardless of the motion of source or observer' from postulate 1, that qualifier is the whole revolutionary content."
       ],
-      "answer": 1,
-      "explanation": "On the train, equal distances travelled at c make the events simultaneous. From the platform, light still travels at c (postulate 1), but the train moves forward, so the back wall approaches the flash point and light reaches it first — the events are not simultaneous.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you stated both postulates AND kept the 'regardless of the motion of source or observer' qualifier on the light one, grade yourself Good or Easy. If you wrote only 'the speed of light is constant', grade it Again, because that omits the part that actually breaks classical physics.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m713-q10",
-      "q": "What is the relativity of simultaneity?",
-      "options": [
-        "Two events that are simultaneous for one observer are simultaneous for all observers",
-        "Two events simultaneous in one inertial frame need not be simultaneous in another frame moving relative to it",
-        "All events in the universe happen at the same time",
-        "Simultaneity only matters at low speeds"
+      "id": "mm713-q10",
+      "type": "short",
+      "q": "Using a thought experiment with a lamp at the centre of a moving train carriage, explain how Einstein's postulates lead to the conclusion that simultaneity is relative. (4 marks)",
+      "marks": 4,
+      "modelAnswer": "A lamp at the exact centre of a moving train carriage emits a single flash. For a passenger on the train, the light travels at c equal distances to the front and back walls, reaching both at the same instant, so the two events are simultaneous in the train's frame. For an observer on the platform the light also travels at c in both directions (first postulate), but during the time the light is travelling the train moves forward, so the back wall moves toward the flash point while the front wall moves away. The light therefore reaches the back wall before the front wall, so for the platform observer the two events are not simultaneous. Because two observers in relative motion disagree about whether the events occurred at the same time, simultaneity is relative, not absolute, and this follows directly from the constancy of the speed of light.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Sets up the central lamp and identifies the two events as simultaneous in the train frame (equal distances at c)." },
+        { "marks": 1, "descriptor": "States the platform observer also measures the light at c in both directions, by the first postulate." },
+        { "marks": 1, "descriptor": "Explains the train's forward motion makes the light reach the back wall before the front wall." },
+        { "marks": 1, "descriptor": "Concludes simultaneity is relative and links it to the constancy of the speed of light." }
       ],
-      "answer": 1,
-      "explanation": "Simultaneity is relative: observers in relative motion can genuinely disagree about whether two events happened at the same time. This follows directly from the constancy of the speed of light, and is the first crack in absolute time.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The argument needs no equations, only the postulates applied carefully: the two observers disagree about timing precisely because both measure the same c.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

@@ -1,0 +1,141 @@
+{
+  "questions": [
+    {
+      "id": "mp306-q01",
+      "type": "mc",
+      "q": "When communicating to an audience, what is the best method of effectively transferring information?",
+      "options": [
+        "Using language and technical jargon to impress the audience",
+        "Keeping the message simple to appeal to a broad range of people",
+        "Providing as much data as possible to cover all potential interests",
+        "Tailoring the message to address the needs and preferences of the audience"
+      ],
+      "answer": 3,
+      "explanation": "Effective communication tailors the message to the specific needs and preferences of the audience. Jargon excludes people, over-simplifying loses meaning, and dumping all the data overwhelms rather than informs. This is the appropriateness criterion (the 'A' in CAE) in action.",
+      "source": { "origin": "hsc", "ref": "2024 HSC Design and Technology Q9", "year": 2024 }
+    },
+    {
+      "id": "mp306-q02",
+      "type": "mc",
+      "q": "Identify the four core elements of the communication process, held in the episode with the hook SMMR.",
+      "options": [
+        "Sketch, Model, Manufacture, Render",
+        "Sender, Message, Medium, Receiver",
+        "Survey, Method, Measure, Result",
+        "Source, Mode, Meaning, Response"
+      ],
+      "answer": 1,
+      "explanation": "SMMR is Sender, Message, Medium, Receiver: a sender has a message that travels through a medium to a receiver, with feedback closing the loop. The key question is 'has my message been received and understood?', and a barrier is interference (noise) anywhere in that chain.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp306-q03",
+      "type": "mc",
+      "q": "Designers are still using hand-drawn sketches when developing ideas.\n\nWhat is an advantage of using a hand-drawn sketch in comparison to using a computer-generated sketch?",
+      "options": [
+        "It offers higher accuracy.",
+        "It offers more colour options.",
+        "It is more convenient in expressing initial concepts.",
+        "It is more efficient for producing large scale drawings."
+      ],
+      "answer": 2,
+      "explanation": "Freehand sketching lets a designer capture and communicate initial concepts quickly and conveniently without setting up software. Higher accuracy, colour range and large-scale efficiency are strengths of computer-generated drawing, not hand sketches. In the episode, a sketch is the 'fast and loose' form, perfect early on.",
+      "source": { "origin": "hsc", "ref": "2015 HSC Design and Technology Q3", "year": 2015 }
+    },
+    {
+      "id": "mp306-q04",
+      "type": "mc",
+      "q": "What is the main purpose of developing scale models for projects?",
+      "options": [
+        "To demonstrate the method of construction",
+        "To demonstrate the aesthetic aspects of the project",
+        "To ensure working drawings of the project are correct",
+        "To provide an effective means of communicating the project ideas to others"
+      ],
+      "answer": 3,
+      "explanation": "A scale model is primarily a communication tool: it presents the design concept in three dimensions so others can understand and respond to the ideas. The other options are partial benefits but not the main purpose. The episode adds the second half of the dual purpose: a model also lets you test the design.",
+      "source": { "origin": "hsc", "ref": "2012 HSC Design and Technology Q2", "year": 2012 }
+    },
+    {
+      "id": "mp306-q05",
+      "type": "mc",
+      "q": "What is the main reason for developing a working prototype?",
+      "options": [
+        "To evaluate operational and functional aspects of the product",
+        "To produce a model suitable for advertising on social media",
+        "To assist companies in developing a sustainable manufacturing process",
+        "To determine aesthetic requirements necessary for production of the product"
+      ],
+      "answer": 0,
+      "explanation": "A working prototype is built so the designer can test and evaluate how the product operates and functions before committing to production. Advertising, manufacturing process and aesthetics are secondary outcomes, not the main purpose. The episode's line: prototypes both communicate the design in three dimensions and let you test it.",
+      "source": { "origin": "hsc", "ref": "2014 HSC Design and Technology Q7", "year": 2014 }
+    },
+    {
+      "id": "mp306-q06",
+      "type": "recall",
+      "q": "From memory: name the five forms of communication a designer can use (the hook V-WGVA), with an example of each.",
+      "keyPoints": [
+        "Verbal: spoken, e.g. a spoken pitch or presentation to a client.",
+        "Written: text, e.g. a design specification or report.",
+        "Graphical: charts and diagrams, e.g. a chart of survey data.",
+        "Visual: drawings, images and models, e.g. a sketch or render of a product.",
+        "Audio: sound. Designers usually combine several, experimenting to find the form that best suits the message and audience."
+      ],
+      "explanation": "If you recalled V-WGVA and a valid example for each, grade Good or Easy. The episode stresses that for designers the visual forms (drawings, renders, models) are the most important to name.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp306-q07",
+      "type": "recall",
+      "q": "From memory: state the three criteria for evaluating communication (the hook CAE), and explain why an orthographic drawing scores differently for an engineer versus a layperson client.",
+      "keyPoints": [
+        "Clarity: is the message clear and unambiguous?",
+        "Appropriateness: is the method suited to the audience and purpose?",
+        "Ease of interpretation: can the receiver understand it without effort?",
+        "An orthographic drawing is high on clarity for an engineer but low on ease of interpretation for a layperson, so it is not appropriate for that client."
+      ],
+      "explanation": "CAE is the framework you use to evaluate or justify any communication choice. To justify a choice you must name the specific audience and weigh the method against all three criteria, not just say 'it's clear'.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp306-q08",
+      "type": "short",
+      "q": "Outline forms of communication used by designers.",
+      "marks": 2,
+      "criteria": [
+        { "marks": "2", "descriptor": "Sketches in general terms forms of communication used by designers" },
+        { "marks": "1", "descriptor": "Identifies a form of communication used by designers" }
+      ],
+      "explanation": "Use V-WGVA as your checklist: verbal, written, graphical, visual and audio. Outline means name the form plus a brief feature or example. For designers, the visual forms (sketches, orthographic drawings, renders and models) are the ones to foreground.",
+      "source": { "origin": "hsc", "ref": "2010 HSC Design and Technology Q11", "year": 2010 }
+    },
+    {
+      "id": "mp306-q09",
+      "type": "short",
+      "q": "Describe how technology can assist designers in overcoming communication barriers.",
+      "marks": 3,
+      "modelAnswer": "Clear communication lets designers give and receive definite instructions. Increasingly advanced technologies — online platforms, robotics and automation — are accessible and available to overcome barriers of distance and time, helping designers improve the efficiency, quality and clarity of their communication and collaboration.",
+      "criteria": [
+        { "marks": "3", "descriptor": "Clearly describes how technology assists designers in overcoming communication barriers" },
+        { "marks": "2", "descriptor": "Demonstrates an understanding of how technology can be used in overcoming communication barriers" },
+        { "marks": "1", "descriptor": "Provides relevant information" }
+      ],
+      "explanation": "This is the headline question of the episode. The technique: locate the barrier in the SMMR chain, then name the specific technology or form that removes it (videoconferencing or shared cloud files for distance; a 3D render or virtual walkthrough for a client who can't read an orthographic drawing; visual forms for a language gap), and judge it against the CAE criteria. The trap is 'they just use computers' — name the specific barrier and the specific fix.",
+      "source": { "origin": "hsc", "ref": "2022 HSC Design and Technology Q12", "year": 2022 }
+    },
+    {
+      "id": "mp306-q10",
+      "type": "extended",
+      "q": "How does the selection of presentation techniques influence the communication of a design idea to a client?",
+      "marks": 6,
+      "criteria": [
+        { "marks": "5–6", "descriptor": "Makes evident the relationship between the selection of presentation techniques and how they influence the communication of a design idea to a client" },
+        { "marks": "3–4", "descriptor": "Provides characteristics and features of the selected presentation techniques and demonstrates a link as to how this influences the communication of a design idea to a client" },
+        { "marks": "2", "descriptor": "Sketches in general terms the presentation techniques and/or how they influence the communication of a design idea to a client" },
+        { "marks": "1", "descriptor": "Identifies a presentation technique that could be used to present a design idea to a client" }
+      ],
+      "explanation": "Match the technique to the audience, message and purpose, then justify it against clarity, appropriateness and ease of interpretation. For a non-technical client approving the look of a product, an orthographic drawing is clear and precise but hard to interpret, so it is inappropriate; a realistic render, 3D model or virtual walkthrough communicates how the finished product will look, is easy for the client to interpret, and is therefore appropriate. Naming the audience and the criteria is what lifts the response.",
+      "source": { "origin": "hsc", "ref": "2010 HSC Design and Technology Q14", "year": 2010 }
+    }
+  ]
+}

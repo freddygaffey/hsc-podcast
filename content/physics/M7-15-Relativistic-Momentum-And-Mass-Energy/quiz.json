@@ -1,174 +1,170 @@
 {
   "questions": [
     {
-      "id": "m715-q01",
-      "q": "What is the equation for relativistic momentum?",
+      "id": "mm715-q01",
+      "type": "mc",
+      "q": "In Newtonian physics momentum is given by \\(p = mv\\) and is increased by applying a force, \\(\\Delta p = F\\Delta t\\). How does special relativity modify this so that an object cannot be accelerated beyond the speed of light?",
       "options": [
-        "\\(p = m_0 v\\)",
-        "\\(p = \\gamma m_0 v\\), where \\(\\gamma\\) is the Lorentz factor and \\(m_0\\) is the rest mass",
-        "\\(p = m_0 c^2\\)",
-        "\\(p = \\dfrac{m_0 v}{c}\\)"
+        "It replaces the velocity \\(v\\) with the Lorentz factor \\(\\gamma\\)",
+        "It replaces the mass \\(m\\) in the momentum formula with the relativistic mass, giving \\(p = m_0 v / \\sqrt{1 - v^2/c^2}\\)",
+        "It removes the force term \\(F\\Delta t\\) entirely",
+        "It makes momentum independent of velocity at high speed"
       ],
       "answer": 1,
-      "explanation": "Relativistic momentum is \\(p = \\gamma m_0 v\\). At low speeds \\(\\gamma \\approx 1\\) and it reduces to Newton's \\(p = m_0 v\\), which is why Newtonian physics works for everyday speeds.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "To calculate momentum in special relativity we replace \\(m\\) in the momentum formula with the relativistic mass, so \\(p = m_0 v / \\sqrt{1 - v^2/c^2}\\). The momentum is consistent with a mass increase by a factor of gamma, \\(m = \\gamma m_0\\), where \\(m_0\\) is the rest mass measured in a frame not moving relative to the object. The faster a body moves relative to the observer, the more massive it becomes.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 294, "url": "sources/phy12/p294.jpg" }
     },
     {
-      "id": "m715-q02",
-      "q": "Why can no object with mass ever be accelerated to the speed of light?",
+      "id": "mm715-q02",
+      "type": "worked",
+      "q": "Calculate the relativistic momentum of a proton (rest mass \\(m_0 = 1.67 \\times 10^{-27}\\,\\mathrm{kg}\\)) moving at \\(0.6c\\) relative to an observer.",
+      "given": "\\(m_0 = 1.67 \\times 10^{-27}\\,\\mathrm{kg}\\),  \\(v = 0.6c = 0.6 \\times 3 \\times 10^{8}\\,\\mathrm{m\\,s^{-1}}\\)",
+      "working": [
+        "\\(p = \\dfrac{m_0 v}{\\sqrt{1 - v^2/c^2}}\\)",
+        "\\(p = \\dfrac{1.67 \\times 10^{-27} \\times 0.6 \\times 3 \\times 10^{8}}{\\sqrt{1 - 0.6^2}}\\)",
+        "\\(p = \\dfrac{3.006 \\times 10^{-19}}{\\sqrt{0.64}} = \\dfrac{3.006 \\times 10^{-19}}{0.8}\\)",
+        "\\(p = 3.76 \\times 10^{-19}\\,\\mathrm{kg\\,m\\,s^{-1}}\\)"
+      ],
+      "answerValue": 3.76e-19,
+      "answerUnit": "kg m s⁻¹",
+      "tolerance": 0.05e-19,
+      "explanation": "This is the textbook's worked example: substituting the rest mass and \\(v = 0.6c\\) into the relativistic momentum formula, the gamma factor \\(1/\\sqrt{1-0.6^2} = 1.25\\) does the heavy lifting, giving \\(3.76 \\times 10^{-19}\\,\\mathrm{kg\\,m\\,s^{-1}}\\), larger than the Newtonian \\(mv\\).",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 294, "url": "sources/phy12/p294.jpg" }
+    },
+    {
+      "id": "mm715-q03",
+      "type": "mc",
+      "q": "The equation \\(E = mc^2\\) expresses an equivalence of mass and energy. According to \\(\\Delta E = \\Delta m c^2\\), why do we usually not notice the increase in mass when we do work on an object?",
       "options": [
-        "Because light is simply the universe's speed limit and that is the reason",
-        "As \\(v \\to c\\), \\(\\gamma \\to \\infty\\), so the object's momentum and relativistic mass grow without limit, requiring infinite energy to reach \\(c\\)",
-        "Because friction with space increases at high speed",
-        "Because the object would become invisible"
+        "Because energy and mass are completely unrelated quantities",
+        "Because the factor \\(c^2 = 9 \\times 10^{16}\\,\\mathrm{m^2\\,s^{-2}}\\) is so large that it would take \\(9 \\times 10^{16}\\,\\mathrm{J}\\) of energy to increase the mass by 1 kg",
+        "Because mass only changes during nuclear fission, never when ordinary work is done",
+        "Because the speed of light is too small to matter"
       ],
       "answer": 1,
-      "explanation": "The runaway Lorentz factor is the mechanism: as speed approaches c, \\(\\gamma\\) approaches infinity, so mass and momentum approach infinity, and reaching c would need infinite energy — impossible. Only massless photons travel at c. Simply asserting the speed limit is circular.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If we do work \\(\\Delta E\\) on an object its mass will increase, but we do not notice this because of the factor \\(c^2 = 9 \\times 10^{16}\\,\\mathrm{m^2\\,s^{-2}}\\). According to \\(\\Delta E = \\Delta m c^2\\) it would take \\(9 \\times 10^{16}\\,\\mathrm{J}\\) to increase the mass by 1 kg. The same equivalence explains why the Sun and other stars generate energy by losing mass to nuclear fusion, and why fission reactors produce energy from a small loss of mass.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 295, "url": "sources/phy12/p295.jpg" }
     },
     {
-      "id": "m715-q03",
-      "q": "When a particle already near light speed is pushed harder, where does most of the added energy go?",
+      "id": "mm715-q04",
+      "type": "recall",
+      "q": "From memory: state the equation expressing the equivalence of mass and energy, and outline two situations the textbook gives where mass is converted to energy.",
+      "keyPoints": [
+        "The most famous equation, \\(E = mc^2\\), expresses an equivalence of mass and energy; if we do work \\(\\Delta E\\) on an object its mass increases (\\(\\Delta E = \\Delta m c^2\\)).",
+        "The Sun and other stars generate their energy by losing mass to nuclear fusion.",
+        "Nuclear fission reactors produce electricity from the small loss of mass when large nuclei such as uranium-235 undergo fission.",
+        "The conversion factor is \\(c^2 = 9 \\times 10^{16}\\,\\mathrm{m^2\\,s^{-2}}\\), so a tiny mass yields an enormous energy."
+      ],
+      "explanation": "The textbook stresses that \\(E = mc^2\\) is an equivalence of mass and energy, illustrated by the Sun losing mass to nuclear fusion and by fission reactors releasing energy from a small loss of mass. If you recalled the equation and at least two of these contexts, grade yourself Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 295, "url": "sources/phy12/p295.jpg" }
+    },
+    {
+      "id": "mm715-q05",
+      "type": "mc",
+      "q": "Using \\(m = m_0\\gamma\\), where \\(m_0\\) is the rest mass, why is it impossible for an object with mass to reach the speed of light?",
       "options": [
-        "Into increasing its speed beyond c",
-        "Into increasing its relativistic mass (inertia), since \\(m = \\gamma m_0\\) grows as \\(\\gamma\\) climbs",
-        "It is radiated away as heat",
-        "Into shortening its length further"
+        "Because at \\(v = c\\) the rest mass \\(m_0\\) falls to zero",
+        "Because if \\(v = c\\), \\(\\gamma\\) becomes infinitely large, so an object travelling at \\(c\\) would have infinite mass, and speeds larger than \\(c\\) produce a negative value under the square root sign",
+        "Because the object would physically swell to an infinite size in its own frame",
+        "Because the relativistic mass becomes smaller than the rest mass"
       ],
       "answer": 1,
-      "explanation": "Near light speed, energy added goes increasingly into mass rather than speed. The relativistic mass \\(m = \\gamma m_0\\) keeps climbing, so the particle gets harder to push and barely gains speed.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The mass of an object increases as its velocity relative to an observer increases, given by \\(m = m_0\\gamma\\). If \\(v = c\\), \\(\\gamma\\) becomes infinitely large, so an object travelling at \\(c\\) would have infinite mass; speeds larger than \\(c\\) would produce a negative value under the square root sign, so these speeds are not possible. The rest mass \\(m_0\\) is the mass measured from a frame in the same inertial frame as the object.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 297, "url": "sources/phy12/p297.jpg" }
     },
     {
-      "id": "m715-q04",
-      "q": "What does \\(E = mc^2\\) express, and why does a tiny mass yield enormous energy?",
+      "id": "mm715-q06",
+      "type": "worked",
+      "q": "Calculate the mass increase of a proton that is accelerated from rest using 11 GeV of energy, an energy achievable in particle accelerators. (Take \\(1\\,\\mathrm{eV} = 1.6 \\times 10^{-19}\\,\\mathrm{J}\\).)",
+      "given": "\\(\\Delta E = 11\\,\\mathrm{GeV} = 11 \\times 10^{9} \\times 1.6 \\times 10^{-19}\\,\\mathrm{J}\\),  \\(c = 3 \\times 10^{8}\\,\\mathrm{m\\,s^{-1}}\\)",
+      "working": [
+        "\\(\\Delta E = 11 \\times 10^{9} \\times 1.6 \\times 10^{-19} = 1.76 \\times 10^{-9}\\,\\mathrm{J}\\)",
+        "\\(\\Delta m = \\dfrac{\\Delta E}{c^2}\\)",
+        "\\(\\Delta m = \\dfrac{1.76 \\times 10^{-9}}{(3 \\times 10^{8})^2}\\)",
+        "\\(\\Delta m = 1.96 \\times 10^{-26}\\,\\mathrm{kg}\\)"
+      ],
+      "answerValue": 1.96e-26,
+      "answerUnit": "kg",
+      "tolerance": 0.05e-26,
+      "explanation": "This is the textbook's worked example: convert 11 GeV to joules, then apply \\(\\Delta m = \\Delta E/c^2\\). The mass increase is \\(1.96 \\times 10^{-26}\\,\\mathrm{kg}\\); since the proton's rest mass is \\(1.67 \\times 10^{-27}\\,\\mathrm{kg}\\), the accelerated proton behaves as though its mass is nearly 13 times its rest mass.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 297, "url": "sources/phy12/p297.jpg" }
+    },
+    {
+      "id": "mm715-q07",
+      "type": "mc",
+      "q": "In relativity, when more energy is given to a particle in a particle accelerator that is already approaching the speed of light, what does the energy mostly do?",
       "options": [
-        "Mass and energy are unrelated; the energy comes from chemical bonds",
-        "Mass and energy are equivalent forms of the same thing; because the conversion factor \\(c^2 \\approx 9\\times10^{16}\\) is enormous, even a minuscule mass yields a huge energy",
-        "Energy equals mass times the speed of light (not squared)",
-        "Mass can only be converted to energy in stars"
+        "It produces a large increase in speed and a small change in mass",
+        "It causes a large change in mass and only a small change in speed, because the particle gains inertia, so the speed cannot increase beyond the speed of light",
+        "It is radiated away as light, leaving the particle unchanged",
+        "It reduces the particle's rest mass so it can exceed the speed of light"
       ],
       "answer": 1,
-      "explanation": "Mass and energy are two forms of one thing, interchangeable at the rate \\(c^2\\). Since \\(c^2\\) is about \\(9\\times10^{16}\\), a tiny mass gives a colossal energy. The square is essential — using \\(c\\) instead of \\(c^2\\) is a common error.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "In relativity, when more energy is given to a particle approaching the speed of light, the energy causes a large change in mass and a small change in speed. By doing work on the particle it gains inertia, so the increase in energy has an ever-decreasing effect on the speed, which cannot increase beyond the speed of light no matter how much energy the particle is given. In particle accelerators every tiny increase in speed requires huge amounts of energy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 298, "url": "sources/phy12/p298.jpg" }
     },
     {
-      "id": "m715-q05",
-      "q": "An electron and a positron, each of mass \\(9.11\\times10^{-31}\\,\\mathrm{kg}\\), annihilate completely. How much energy is released? (\\(c^2 = 9.0\\times10^{16}\\))",
+      "id": "mm715-q08",
+      "type": "worked",
+      "q": "In Newtonian physics, if a proton (rest mass \\(1.67 \\times 10^{-27}\\,\\mathrm{kg}\\)) were given 11 GeV of kinetic energy, what speed would the formula \\(E = \\tfrac{1}{2}mv^2\\) predict, and why is this impossible?",
+      "given": "\\(E = 11\\,\\mathrm{GeV} = 11 \\times 10^{9} \\times 1.6 \\times 10^{-19}\\,\\mathrm{J}\\),  \\(m = 1.67 \\times 10^{-27}\\,\\mathrm{kg}\\)",
+      "working": [
+        "\\(E = \\tfrac{1}{2}mv^2 \\Rightarrow v = \\sqrt{\\dfrac{2E}{m}}\\)",
+        "\\(v = \\sqrt{\\dfrac{2 \\times 11 \\times 10^{9} \\times 1.6 \\times 10^{-19}}{1.67 \\times 10^{-27}}}\\)",
+        "\\(v = 1.45 \\times 10^{9}\\,\\mathrm{m\\,s^{-1}}\\)",
+        "This speed is not possible, as the maximum speed attainable is \\(3 \\times 10^{8}\\,\\mathrm{m\\,s^{-1}}\\)."
+      ],
+      "answerValue": 1.45e9,
+      "answerUnit": "m s⁻¹",
+      "tolerance": 0.05e9,
+      "explanation": "The textbook's sample problem: Newtonian physics predicts \\(v = 1.45 \\times 10^{9}\\,\\mathrm{m\\,s^{-1}}\\), almost five times the speed of light, which is impossible. This demonstrates the limitations of Newtonian physics; in reality the proton's energy goes into a mass increase, not an impossible speed.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 298, "url": "sources/phy12/p298.jpg" }
+    },
+    {
+      "id": "mm715-q09",
+      "type": "mc",
+      "q": "The episode uses the memory hook 'Stars, Smash, Smoke' for the three contexts where mass converts to energy. Which option correctly orders them from most to least mass converted?",
       "options": [
-        "\\(8.2\\times10^{-14}\\,\\mathrm{J}\\)",
-        "\\(1.64\\times10^{-13}\\,\\mathrm{J}\\)",
-        "\\(1.64\\times10^{-13}\\,\\mathrm{W}\\)",
-        "\\(2.7\\times10^{-22}\\,\\mathrm{J}\\)"
+        "Smoke (combustion) > Stars (fusion) > Smash (annihilation)",
+        "Smash (matter-antimatter annihilation, 100%) > Stars (fusion in the Sun, small fraction) > Smoke (combustion, negligible fraction)",
+        "Stars (fusion) > Smash (annihilation) > Smoke (combustion)",
+        "All three convert exactly the same fraction of mass"
       ],
       "answer": 1,
-      "explanation": "Both masses convert: total mass \\(= 2\\times9.11\\times10^{-31} = 1.82\\times10^{-30}\\,\\mathrm{kg}\\). \\(E = mc^2 = 1.82\\times10^{-30}\\times9.0\\times10^{16} = 1.64\\times10^{-13}\\,\\mathrm{J}\\) (about 1.022 MeV). Using one mass would be off by a factor of 2.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Per the script, all three obey \\(E = mc^2\\) but differ wildly in efficiency: matter-antimatter annihilation converts 100% of the mass, nuclear fusion in the Sun converts a small but significant fraction, and ordinary combustion converts an utterly negligible fraction. That contrast in scale is itself an exam point.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m715-q06",
-      "q": "The Sun loses mass at \\(4.4\\times10^{9}\\,\\mathrm{kg\\,s^{-1}}\\). What is its power output? (\\(c^2 = 9.0\\times10^{16}\\))",
-      "options": [
-        "\\(4.0\\times10^{26}\\,\\mathrm{W}\\)",
-        "\\(4.4\\times10^{9}\\,\\mathrm{W}\\)",
-        "\\(1.3\\times10^{18}\\,\\mathrm{W}\\)",
-        "\\(4.0\\times10^{26}\\,\\mathrm{J}\\)"
+      "id": "mm715-q10",
+      "type": "worked",
+      "q": "An electron and a positron, each of mass \\(9.11 \\times 10^{-31}\\,\\mathrm{kg}\\), meet and annihilate, converting entirely to energy. Calculate the total energy released.",
+      "given": "Two masses, each \\(9.11 \\times 10^{-31}\\,\\mathrm{kg}\\);  \\(c = 3 \\times 10^{8}\\,\\mathrm{m\\,s^{-1}}\\)",
+      "working": [
+        "Total mass converted: \\(m = 2 \\times 9.11 \\times 10^{-31} = 1.82 \\times 10^{-30}\\,\\mathrm{kg}\\)",
+        "\\(E = mc^2\\)",
+        "\\(E = 1.82 \\times 10^{-30} \\times (3 \\times 10^{8})^2 = 1.82 \\times 10^{-30} \\times 9 \\times 10^{16}\\)",
+        "\\(E \\approx 1.64 \\times 10^{-13}\\,\\mathrm{J}\\)"
       ],
-      "answer": 0,
-      "explanation": "Power = (mass lost per second) \\(\\times c^2 = 4.4\\times10^{9}\\times9.0\\times10^{16} = 4.0\\times10^{26}\\,\\mathrm{W}\\). The answer is a power because the mass loss was already per second.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 1.64e-13,
+      "answerUnit": "J",
+      "tolerance": 0.05e-13,
+      "explanation": "Both masses convert entirely, so you must use two electron masses (using one would be out by a factor of two). Applying \\(E = mc^2\\) gives about \\(1.64 \\times 10^{-13}\\,\\mathrm{J}\\). This is the physics behind the PET scan, where positron-electron annihilation produces gamma rays.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m715-q07",
-      "q": "Which three contexts of mass-to-energy conversion does the episode name (Stars, Smash, Smoke), in decreasing order of efficiency?",
-      "options": [
-        "Combustion, fusion, annihilation",
-        "Annihilation (100%), nuclear fusion (small but significant), combustion (negligible)",
-        "Fission, fusion, combustion — all equally efficient",
-        "Annihilation, combustion, fusion"
+      "id": "mm715-q11",
+      "type": "extended",
+      "q": "Explain why an object with mass cannot be accelerated to the speed of light. (4 marks)",
+      "marks": 4,
+      "modelAnswer": "As an object's speed increases toward the speed of light, the Lorentz factor \\(\\gamma\\) increases without limit, approaching infinity. Because the object's relativistic momentum equals \\(\\gamma m_0 v\\) and its relativistic mass equals \\(\\gamma m_0\\), both its momentum and its inertia increase without limit as it nears the speed of light. Accelerating it further therefore requires ever-increasing amounts of energy, and to actually reach the speed of light would require an infinite amount of energy, which is impossible. Hence no object with mass can be accelerated to the speed of light; only massless particles such as photons travel at exactly the speed of light.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States that \\(\\gamma\\) increases without limit (approaches infinity) as \\(v \\to c\\)." },
+        { "marks": 1, "descriptor": "Links this to relativistic momentum and mass also increasing without limit." },
+        { "marks": 1, "descriptor": "Concludes infinite energy would be required to reach \\(c\\), which is impossible." },
+        { "marks": 1, "descriptor": "Notes only massless particles (photons) travel at exactly \\(c\\)." }
       ],
-      "answer": 1,
-      "explanation": "Matter–antimatter annihilation converts 100% of mass to energy, fusion in stars converts a small but significant fraction, and ordinary combustion converts a negligible fraction. Same equation, wildly different efficiencies.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m715-q08",
-      "q": "How do particle accelerators provide evidence for special relativity?",
-      "options": [
-        "They show particles exceeding the speed of light, confirming Newton",
-        "Above ~0.1c, a constant force gives ever-decreasing acceleration — momentum and mass rise per the Lorentz factor while speed approaches but never reaches c, contradicting Newton's prediction of unlimited speed",
-        "They show that mass is perfectly conserved in collisions",
-        "They demonstrate that gamma decreases at high speed"
-      ],
-      "answer": 1,
-      "explanation": "Newton predicts a constant force gives constant acceleration and unbounded speed. Instead, near c the same force gives tiny speed gains as momentum and relativistic mass balloon, with speed capped below c — exactly as relativity predicts and nothing like Newton.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m715-q09",
-      "q": "Why do photons travel at exactly the speed of light while massive objects cannot?",
-      "options": [
-        "Photons are pushed by a special force",
-        "Photons have zero rest mass, so the infinite-energy barrier (from \\(\\gamma \\to \\infty\\)) does not apply to them",
-        "Photons are smaller than other particles",
-        "Photons carry no energy"
-      ],
-      "answer": 1,
-      "explanation": "Massless particles such as photons (rest mass = 0) are not subject to the runaway \\(\\gamma\\) barrier that makes massive objects need infinite energy. Massless travels at c; massive never quite does — two sides of one coin.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m715-q10",
-      "q": "What is the correct way to describe a fast object's 'mass increase'?",
-      "options": [
-        "The object physically swells and gets bigger",
-        "From an external frame its inertia and momentum increase; in its own rest frame nothing changes and its rest mass is unchanged",
-        "The object's rest mass permanently increases",
-        "The object's atoms multiply"
-      ],
-      "answer": 1,
-      "explanation": "Relativistic mass increase is an increase in inertia/momentum measured from an external frame — how hard it is to accelerate from outside. In its own rest frame nothing changes; the object does not balloon in size.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The band-six answer explains the mechanism (gamma runs to infinity, so mass and momentum run to infinity, so infinite energy is required) rather than just asserting the speed limit, and closes with the massless-photon contrast.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

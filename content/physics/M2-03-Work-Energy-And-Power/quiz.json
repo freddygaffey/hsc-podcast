@@ -1,174 +1,147 @@
 {
   "questions": [
     {
-      "id": "m203-q01",
-      "q": "Define work in physics and identify its unit.",
+      "id": "mm203-q01",
+      "type": "mc",
+      "q": "A person lifts a box, then carries it horizontally across the room while still applying an upwards force to hold it up. Why is no work done on the box while it is being carried across the floor?",
       "options": [
-        "The effort exerted, measured in newtons",
-        "Force times displacement in the direction of the force, measured in joules",
-        "Force times time, measured in watts",
-        "Mass times velocity, measured in joules"
+        "The force on the box has dropped to zero once it is held up",
+        "The displacement of the box is at right angles to the upwards force, so the force does no work",
+        "The box is moving at constant speed, and constant speed always means zero work",
+        "Carrying the box does negative work that exactly cancels the lifting work"
       ],
       "answer": 1,
-      "explanation": "Work is the product of the force and the displacement in the direction of the force (W = Fs), a scalar measured in joules. The everyday sense of 'work' as effort is the trap — physically, if there is no displacement (or the force is perpendicular to the motion), no work is done however hard you push.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Work is done only when a force gives a displacement in the direction of the force. While the box is carried across the floor the upwards force is at right angles to the horizontal displacement, so no work is done on it — just as pushing against a wall that does not move does zero work.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 99, "url": "sources/phy11/p99.jpg" }
     },
     {
-      "id": "m203-q02",
-      "q": "Explain why no work is done when a person holds a heavy box stationary.",
-      "options": [
-        "The force is zero",
-        "There is no displacement, and work requires movement in the direction of the force",
-        "The box has no weight",
-        "The force is doubled by holding it"
+      "id": "mm203-q02",
+      "type": "worked",
+      "q": "A sled is dragged 100 m across ice by a tow rope that makes an angle of 30° to the horizontal. If a force of 70 N is applied to pull the sled, how much work is done?",
+      "given": "Force along rope \\(F = 70\\,\\mathrm{N}\\), angle \\(\\theta = 30^\\circ\\), displacement \\(s = 100\\,\\mathrm{m}\\)",
+      "working": [
+        "Only the component of force in the direction of the displacement does work: \\(F_{//} = F\\cos\\theta\\)",
+        "\\(F_{//} = 70\\cos 30^\\circ = 60.6\\,\\mathrm{N}\\)",
+        "\\(W = F_{//}\\,s = 60.6 \\times 100\\)",
+        "\\(W = 6060\\,\\mathrm{J}\\)"
       ],
-      "answer": 1,
-      "explanation": "Work requires the object to be displaced in the direction of the force. A stationary box has zero displacement, so the work done on it is zero regardless of how large the supporting force is. Similarly, a force perpendicular to the motion (like carrying a tray horizontally) does no work.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 6060,
+      "answerUnit": "J",
+      "tolerance": 10,
+      "explanation": "When the force is applied at an angle to the displacement, only the component \\(F\\cos\\theta\\) acting in the direction of motion contributes to the work. Here \\(70\\cos 30^\\circ = 60.6\\,\\mathrm{N}\\), and over 100 m that does 6060 J of work.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 100, "url": "sources/phy11/p100.jpg" }
     },
     {
-      "id": "m203-q03",
-      "q": "State the work-energy theorem.",
+      "id": "mm203-q03",
+      "type": "mc",
+      "q": "Kinetic energy is the energy associated with the movement of an object. According to the work-energy relationship, the change in kinetic energy of an object is equal to which quantity?",
       "options": [
-        "Work equals mass times acceleration",
-        "The net work done on an object equals the change in its kinetic energy",
-        "Work equals the gravitational potential energy gained",
-        "Power equals work times time"
+        "The gravitational potential energy it has lost",
+        "The work done on it by the net force acting on it",
+        "Its mass multiplied by its acceleration",
+        "The total energy stored in the object at rest"
       ],
       "answer": 1,
-      "explanation": "The work-energy theorem states that the net work done on an object equals the change in its kinetic energy. Positive net work speeds an object up; negative net work (e.g. friction) slows it down. It is a shortcut that gives final speed over a distance without computing acceleration or time.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The change in kinetic energy equals the work done by the net force: \\(\\Delta E_k = F_{net}\\,s\\). Combining this with \\(F_{net}=ma\\) and the equations of motion gives the kinetic energy of a moving object as \\(E_k = \\tfrac{1}{2}mv^2\\).",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 102, "url": "sources/phy11/p102.jpg" }
     },
     {
-      "id": "m203-q04",
-      "q": "A ball is dropped from 5 m. Using conservation of energy, calculate its speed just before impact (g = 9.8 m s⁻², ignore air resistance).",
-      "options": [
-        "49 m s⁻¹",
-        "9.9 m s⁻¹",
-        "7.0 m s⁻¹",
-        "98 m s⁻¹"
+      "id": "mm203-q04",
+      "type": "worked",
+      "q": "A 30 kg child sits at the top of a smooth slide whose vertical distance is 3 metres. Taking g as 9.8 m s⁻², calculate the child's gravitational potential energy at the top of the slide relative to the ground.",
+      "given": "\\(m = 30\\,\\mathrm{kg}\\), \\(g = 9.8\\,\\mathrm{m\\,s^{-2}}\\), \\(h = 3\\,\\mathrm{m}\\)",
+      "working": [
+        "\\(U_g = mgh\\)",
+        "\\(U_g = 30 \\times 9.8 \\times 3\\)",
+        "\\(U_g = 882\\,\\mathrm{J}\\)"
       ],
-      "answer": 1,
-      "explanation": "Potential energy lost = kinetic energy gained: mgΔh = ½mv². The mass cancels, so v = √(2gΔh) = √(2 × 9.8 × 5) = √98 ≈ 9.9 m s⁻¹. The speed depends only on the height dropped, not the mass — the energy version of 'all objects fall at the same rate'.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 882,
+      "answerUnit": "J",
+      "tolerance": 1,
+      "explanation": "Gravitational potential energy relative to the reference height is \\(U_g = mgh\\). For the 30 kg child 3 m above the ground that is \\(30 \\times 9.8 \\times 3 = 882\\,\\mathrm{J}\\), which is then available to transform into kinetic energy as the child slides down.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 106, "url": "sources/phy11/p106.jpg" }
     },
     {
-      "id": "m203-q05",
-      "q": "A student says 'the car's kinetic energy is lost when it brakes to a stop.' Justify why this phrasing is incorrect.",
+      "id": "mm203-q05",
+      "type": "mc",
+      "q": "The increase in gravitational potential energy of an object of mass m lifted through a height Δh is ΔUg = mgΔh. Why does this formula use the change in height Δh rather than an absolute height?",
       "options": [
-        "The energy is correct as stated — it is lost",
-        "The kinetic energy is transformed into heat (and sound) by friction, not destroyed; energy is conserved",
-        "The kinetic energy becomes potential energy",
-        "Energy can be destroyed during braking"
+        "Because g changes so rapidly with height that absolute heights are meaningless",
+        "Because the formula only provides a way of calculating changes in gravitational potential energy, measured from whatever reference height is chosen",
+        "Because gravitational potential energy is always zero at the Earth's surface",
+        "Because mass decreases as the object is lifted"
       ],
       "answer": 1,
-      "explanation": "By the law of conservation of energy, energy cannot be destroyed, only transformed. Braking converts the car's kinetic energy into thermal energy (heating the brakes) and a little sound. Markers specifically penalise 'lost' or 'used up' — the correct phrasing is 'transformed', and this is the single most important piece of energy language in the course.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The expression \\(\\Delta U_g = mg\\Delta h\\) comes from the work done against gravity, \\(W = Fs = mg\\Delta h\\). It calculates a change relative to a chosen reference height (usually ground or floor level), so it is the change in height that matters, not an absolute position.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 105, "url": "sources/phy11/p105.jpg" }
     },
     {
-      "id": "m203-q06",
-      "q": "A net force of 100 N acts on a 10 kg object over 20 m, starting from rest. Using the work-energy theorem, calculate the final speed.",
+      "id": "mm203-q06",
+      "type": "mc",
+      "q": "When a tennis ball bounces on a hard surface it does not rebound to its original height, so mechanical energy is not conserved. Where has the missing mechanical energy gone?",
       "options": [
-        "40 m s⁻¹",
-        "20 m s⁻¹",
-        "200 m s⁻¹",
-        "10 m s⁻¹"
+        "It has been destroyed, violating conservation of energy in collisions",
+        "It is transformed to thermal energy of the air, ground and ball, with some lost as sound and permanent deformation",
+        "It is stored permanently as gravitational potential energy in the ground",
+        "It is converted entirely back into strain potential energy of the ball"
       ],
       "answer": 1,
-      "explanation": "Net work = Fs = 100 × 20 = 2000 J, which equals the kinetic energy gained. So ½mv² = 2000 → v² = 4000/10 = 400 → v = 20 m s⁻¹. This finds the final speed without ever computing the acceleration or time — the work-energy theorem as a shortcut.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "During each transformation in the bounce some mechanical energy becomes thermal energy (a small temperature rise), sound, or permanent deformation through breaking bonds. The energy is not destroyed — it is transformed into forms that are difficult to recover, which is why the efficiency \\(\\eta = \\tfrac{\\text{useful energy out}}{\\text{total energy in}}\\) is less than 100%.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 108, "url": "sources/phy11/p108.jpg" }
     },
     {
-      "id": "m203-q07",
-      "q": "A block slides down a frictionless ramp. Identify what its speed at the bottom depends on.",
-      "options": [
-        "The length of the slope and the mass",
-        "Only the vertical height descended (not the angle or mass)",
-        "Only the angle of the slope",
-        "The mass and the angle together"
+      "id": "mm203-q07",
+      "type": "recall",
+      "q": "From memory, state the key summary points linking work, kinetic energy, gravitational potential energy and power for this topic.",
+      "keyPoints": [
+        "Work is done when energy is transferred by a force; it is the product of the force and the displacement in the direction of the force.",
+        "The work done by the net force equals the object's change in kinetic energy, where \\(E_k = \\tfrac{1}{2}mv^2\\).",
+        "The change in gravitational potential energy is \\(\\Delta U_g = mg\\Delta h\\); kinetic and gravitational potential energy are forms of mechanical energy, usually taken as conserved in a mechanical interaction.",
+        "Power is the rate at which energy is transferred or work is done, and the power delivered by a force equals the force times the velocity (P = Fv)."
       ],
-      "answer": 1,
-      "explanation": "By conservation of energy, mgΔh = ½mv², so v = √(2gΔh) — the mass cancels and only the vertical height matters. A steep short slope and a gentle long slope to the same vertical drop give the same final speed, because the same potential energy is converted. This is awkward with forces but obvious with energy.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "These are the chapter summary statements. If you recalled work as force times displacement, the work-energy link to \\(\\tfrac{1}{2}mv^2\\), \\(\\Delta U_g = mg\\Delta h\\), conservation of mechanical energy, and power as both rate of work and Fv, grade yourself Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 112, "url": "sources/phy11/p112.jpg" }
     },
     {
-      "id": "m203-q08",
-      "q": "A car travels at a constant 28 m s⁻¹ against a total resistance of 700 N. Calculate the power the engine must deliver.",
+      "id": "mm203-q08",
+      "type": "mc",
+      "q": "Power is the rate at which energy is transferred or transformed. The power delivered when a force F is applied to an object moving at velocity v can be expressed as which of the following?",
       "options": [
-        "25 W",
-        "19 600 W",
-        "700 W",
-        "39 200 W"
+        "\\(P = \\tfrac{1}{2}Fv^2\\)",
+        "\\(P = Fv\\), derived from \\(P = \\tfrac{W}{\\Delta t} = \\tfrac{Fs}{\\Delta t}\\) with \\(v = \\tfrac{s}{\\Delta t}\\)",
+        "\\(P = \\tfrac{F}{v}\\), measured in joules",
+        "\\(P = F\\Delta t\\), measured in watts"
       ],
       "answer": 1,
-      "explanation": "At constant speed there is no acceleration, so the driving force equals the resistance (700 N). Using P = Fv = 700 × 28 = 19 600 W (≈20 kW). The power just replaces the energy being transformed to heat by air and rolling resistance. This uses the often-forgotten P = Fv form.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Starting from \\(P = \\tfrac{W}{\\Delta t} = \\tfrac{Fs}{\\Delta t}\\) and recognising that speed \\(v = \\tfrac{s}{\\Delta t}\\) gives \\(P = Fv\\). The SI unit of power is the watt, defined as 1 J s⁻¹.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 110, "url": "sources/phy11/p110.jpg" }
     },
     {
-      "id": "m203-q09",
-      "q": "A crane lifts a 500 kg load 20 m in 10 s at constant speed. Calculate the power output (g = 9.8 m s⁻²).",
-      "options": [
-        "98 000 W",
-        "9800 W",
-        "980 W",
-        "10 000 W"
+      "id": "mm203-q09",
+      "type": "recall",
+      "q": "A student says 'the car's kinetic energy is lost when it brakes to a stop.' From memory, explain what is wrong with this statement and how it should be phrased.",
+      "keyPoints": [
+        "The kinetic energy is not lost or used up — it is transformed.",
+        "Friction in the brakes converts the car's kinetic energy into thermal energy (heating the pads and discs), with a little into sound.",
+        "By the law of conservation of energy, energy cannot be destroyed, only transformed, so the total energy is conserved.",
+        "Markers penalise 'lost' or 'used up' — say 'transformed into heat by friction in the brakes'."
       ],
-      "answer": 1,
-      "explanation": "Work done against gravity = mgΔh = 500 × 9.8 × 20 = 98 000 J. Power = work/time = 98 000/10 = 9800 W (9.8 kW). 'Constant speed' means kinetic energy doesn't change, so all the work goes into gravitational potential energy. 98 000 W would be the work mistaken for power (forgetting to divide by time).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "This is the single most important piece of energy language in the course: energy is transformed, not destroyed. If you caught the 'transformed not lost' point and named friction to heat, grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m203-q10",
-      "q": "A 4 kg trolley moving at 6 m s⁻¹ on a frictionless surface runs up a ramp. Calculate the maximum vertical height reached (g = 9.8 m s⁻²).",
-      "options": [
-        "3.67 m",
-        "1.84 m",
-        "0.92 m",
-        "18.4 m"
+      "id": "mm203-q10",
+      "type": "short",
+      "q": "Explain, in terms of energy transformations, what happens to the kinetic energy of a car as it brakes to a stop, and why it is incorrect to say the energy is destroyed. (3 marks)",
+      "marks": 3,
+      "modelAnswer": "As the car brakes, friction between the brake pads and discs transforms the car's kinetic energy into thermal energy, heating the brakes, with a small amount becoming sound. The kinetic energy is therefore transformed into other forms, not destroyed. It is incorrect to say the energy is destroyed because the law of conservation of energy states that energy cannot be created or destroyed, only transformed from one form to another; the total energy is conserved throughout.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States the kinetic energy is transformed to heat (thermal energy) by friction in the brakes." },
+        { "marks": 1, "descriptor": "Refers to the law of conservation of energy — energy cannot be created or destroyed." },
+        { "marks": 1, "descriptor": "Concludes the energy is transformed, not destroyed, and the total energy is conserved." }
       ],
-      "answer": 1,
-      "explanation": "All the kinetic energy converts to potential energy at the top: ½mv² = mgΔh. The mass cancels, so Δh = v²/(2g) = 36/19.6 ≈ 1.84 m. If the ramp were rough, friction would transform some kinetic energy into heat, leaving less for potential energy, so the trolley would reach a lower height.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The marks reward the 'transformed, not destroyed' distinction and explicit naming of the conservation of energy principle. Avoid the words 'lost' or 'used up', which markers penalise.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

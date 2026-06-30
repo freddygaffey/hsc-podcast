@@ -2,173 +2,163 @@
   "questions": [
     {
       "id": "m799-q01",
-      "q": "How did Maxwell predict the speed of electromagnetic waves?",
+      "type": "mc",
+      "q": "Unpolarised light passes through a polariser and then an analyser. According to Malus's law, what is the intensity of the emerging polarised light?",
       "options": [
-        "By measuring the speed of light directly in his laboratory",
-        "From \\(c = 1/\\sqrt{\\mu_0 \\varepsilon_0}\\), using the permeability and permittivity of free space from electromagnetism experiments, which gave \\(3\\times10^{8}\\,\\mathrm{m\\,s^{-1}}\\)",
-        "By assuming light travels at the speed of sound",
-        "From the frequency of visible light multiplied by Planck's constant"
+        "\\(I = I_O \\cos\\theta\\), where \\(\\theta\\) is the angle between the axes of the two filters",
+        "\\(I = I_O \\cos^2\\theta\\), where \\(\\theta\\) is the angle between the axes of the polariser and the analyser",
+        "\\(I = I_O \\sin^2\\theta\\), where \\(\\theta\\) is the angle between the incident ray and the analyser",
+        "\\(I = \\tfrac{1}{2} I_O\\) for any angle \\(\\theta\\) between the two filters"
       ],
       "answer": 1,
-      "explanation": "Maxwell's wave equation gives \\(c = 1/\\sqrt{\\mu_0\\varepsilon_0}\\). These two constants come from electricity and magnetism experiments, yet the result equalled the measured speed of light — leading him to conclude light is an electromagnetic wave. Hertz confirmed it with radio waves in 1887.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Malus's law gives the intensity of light emerging from the analyser as \\(I = I_O \\cos^2\\theta\\), where \\(\\theta\\) is the angle between the axes of the polariser and the analyser. It is a cosine squared, not a cosine, and plane polarisation is a wave behaviour specific to transverse waves.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 232, "url": "sources/phy12/p232.jpg" }
     },
     {
       "id": "m799-q02",
-      "q": "Which of the three wave-model pillars specifically proves that light is a transverse wave?",
-      "options": [
-        "Diffraction",
-        "Interference",
-        "Polarisation",
-        "Reflection"
+      "type": "worked",
+      "q": "Unpolarised light of intensity \\(I_O\\) falls on a polariser, then on an analyser whose axis is at 60° to the polariser. Find the intensity of the emerging light as a percentage of the original \\(I_O\\).",
+      "given": "Unpolarised light intensity \\(I_O\\); analyser axis at \\(\\theta = 60^\\circ\\) to the polariser",
+      "working": [
+        "First filter on unpolarised light passes exactly half: \\(I_a = 0.5\\,I_O\\)",
+        "Apply Malus's law between polariser and analyser: \\(I_b = I_a \\cos^2\\theta\\)",
+        "\\(I_b = 0.5\\,I_O \\times \\cos^2 60^\\circ = 0.5\\,I_O \\times 0.25\\)",
+        "\\(I_b = 0.125\\,I_O = 12.5\\%\\ \\text{of}\\ I_O\\)"
       ],
-      "answer": 2,
-      "explanation": "Diffraction and interference prove light is a wave but not its type. Only polarisation proves it is transverse, because only transverse waves can be polarised — a longitudinal wave (like sound) has no sideways plane to filter.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 12.5,
+      "answerUnit": "% of Io",
+      "tolerance": 0.1,
+      "explanation": "The first polariser drops unpolarised light to exactly one half (you do not use Malus's law on the first filter). Malus's law then applies between the polariser and analyser: \\(\\cos^2 60^\\circ = 0.25\\), giving \\(0.5 \\times 0.25 = 12.5\\%\\).",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 232, "url": "sources/phy12/p232.jpg" }
     },
     {
       "id": "m799-q03",
-      "q": "In Young's double-slit experiment, why do dark fringes provide conclusive evidence for the wave model?",
+      "type": "mc",
+      "q": "In the photoelectric equation \\(E_{k\\,\\max} = hf - W\\), what does the work function \\(W\\) represent?",
       "options": [
-        "Because particles travelling in straight lines naturally leave gaps",
-        "Because two streams of particles can only ever add to more light, never cancel, but two waves with the right path difference cancel by destructive interference",
-        "Because the dark fringes prove light has mass",
-        "Because dark fringes appear only at the threshold frequency"
+        "The maximum kinetic energy of an emitted electron",
+        "The minimum energy required to remove the electron from the metal surface",
+        "The energy of the incident photon, equal to \\(hf\\)",
+        "The threshold frequency below which no electrons are emitted"
       ],
       "answer": 1,
-      "explanation": "Particles can only add up to more light; they cannot cancel to darkness. Waves with a path difference of a whole number plus a half wavelength interfere destructively, producing dark fringes — something only a wave can do.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "In \\(E_{k\\,\\max} = hf - W\\), the work function \\(W\\) is the minimum energy required to remove the electron from the metal surface, \\(hf\\) is the energy of the incident photon, and \\(E_{k\\,\\max}\\) is the maximum kinetic energy of the emitted electron. The work function is an energy, not a frequency.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 255, "url": "sources/phy12/p255.jpg" }
     },
     {
       "id": "m799-q04",
-      "q": "Unpolarised light passes through a polariser, then an analyser at 60° to it. What fraction of the original intensity emerges? (\\(\\cos^2 60^\\circ = 0.25\\))",
+      "type": "mc",
+      "q": "On a graph of maximum photoelectron kinetic energy versus frequency for several different metals, what is true of the lines?",
       "options": [
-        "25% of the original",
-        "12.5% of the original",
-        "50% of the original",
-        "0%"
+        "Each metal gives a line with a different gradient equal to its own work function",
+        "The lines for all of the metals are parallel and have a gradient equal to Planck's constant",
+        "The lines all pass through the origin because \\(E_{k\\,\\max} = hf\\)",
+        "The gradient equals the threshold frequency, which is the same for every metal"
       ],
       "answer": 1,
-      "explanation": "The first polariser cuts unpolarised light to exactly 50% (Malus's law does NOT apply to the first filter). Then the analyser applies Malus's law: \\(0.5 \\times \\cos^2 60^\\circ = 0.5 \\times 0.25 = 0.125\\), i.e. 12.5%.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The lines for all of the metals are parallel and have a gradient equal to Planck's constant. Applying \\(y = mx + b\\) to \\(E_{k\\,\\max} = hf - W\\), the gradient is \\(h\\) (the same for every metal) while the differing work function \\(W\\) shifts the intercept.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 255, "url": "sources/phy12/p255.jpg" }
     },
     {
       "id": "m799-q05",
-      "q": "What was the ultraviolet catastrophe, and how did Planck resolve it?",
-      "options": [
-        "Classical theory predicted infinite intensity at short wavelengths; Planck resolved it by quantising energy into packets of \\(hf\\)",
-        "Hot objects emitted no ultraviolet; Planck added a new force",
-        "Light was too bright to measure; Planck used filters",
-        "The Sun emitted dangerous UV; Planck blocked it with the aether"
+      "type": "worked",
+      "q": "Light of wavelength 425 nm strikes a metal and a stopping voltage of 1.25 V is needed to stop the most energetic photoelectrons. The photon energy is 2.92 eV. Calculate the work function \\(W\\) of the metal in eV.",
+      "given": "Photon energy \\(hf = 2.92\\,\\text{eV}\\); stopping voltage \\(V_S = 1.25\\,\\text{V}\\), so emitted electron energy \\(E_{k\\,\\max} = 1.25\\,\\text{eV}\\)",
+      "working": [
+        "Use \\(E_{k\\,\\max} = hf - W\\), rearranged to \\(W = hf - E_{k\\,\\max}\\)",
+        "Since the stopping voltage is 1.25 V, the energy of the emitted electron is 1.25 eV",
+        "\\(W = 2.92 - 1.25\\)",
+        "\\(W = 1.67\\,\\text{eV}\\ (= 2.67 \\times 10^{-19}\\,\\text{J})\\)"
       ],
-      "answer": 0,
-      "explanation": "Classical wave theory predicted black-body intensity rising without limit toward short wavelengths (infinite energy — absurd). Planck assumed energy is exchanged only in discrete quanta of \\(hf\\), which suppressed high-frequency emission and matched the peak-and-fall experimental curve.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 1.67,
+      "answerUnit": "eV",
+      "tolerance": 0.01,
+      "explanation": "From \\(E_{k\\,\\max} = hf - W\\): when the photon energy \\(hf = 2.92\\,\\text{eV}\\) gives electrons of energy 1.25 eV, the work function is \\(W = 2.92 - 1.25 = 1.67\\,\\text{eV}\\). The stopping voltage in volts equals the maximum kinetic energy in eV.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 257, "url": "sources/phy12/p257.jpg" }
     },
     {
       "id": "m799-q06",
-      "q": "The wave model of the photoelectric effect explains how many of the four observations (no delay, threshold frequency, number from intensity, energy from frequency)?",
+      "type": "mc",
+      "q": "What did the classical wave theory of light predict for black body radiation that experiment contradicted, an effect called the ultraviolet catastrophe?",
       "options": [
-        "All four",
-        "Only one — that intensity sets the number of photoelectrons",
-        "Three of four",
-        "None"
+        "That the radiation intensity would fall to zero as the wavelength decreased",
+        "That as the wavelength became shorter, the radiation intensity would increase without limit, approaching infinity in the ultraviolet",
+        "That black bodies would emit only discrete spectral lines, not a continuous spectrum",
+        "That the peak wavelength would shift to longer wavelengths as temperature increased"
       ],
       "answer": 1,
-      "explanation": "The wave model correctly predicts only that brighter light ejects more electrons. It fails on the other three: it predicts a delay (none observed), no threshold (one exists), and energy from intensity (energy actually comes from frequency). Einstein's photon model explains all four.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The classical wave theory predicted that, as the wavelength became shorter, the radiation intensity would increase without limit, approaching infinity in the ultraviolet — violating conservation of energy. This was the ultraviolet catastrophe; the real curve peaks and falls back to zero, which Planck explained by quantising energy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 247, "url": "sources/phy12/p247.jpg" }
     },
     {
       "id": "m799-q07",
-      "q": "What did the Michelson–Morley experiment find, and which model did it force?",
-      "options": [
-        "A strong aether wind, supporting the wave model",
-        "A null result (no aether), forcing the constancy of the speed of light and special relativity",
-        "That light travels at 1.5c, supporting the particle model",
-        "Interference fringes proving light is transverse"
+      "type": "worked",
+      "q": "A hotplate glows dark red, and the wavelength of its most intense light is 4.0 μm. Using Wien's law, calculate the surface temperature of the hotplate in kelvin.",
+      "given": "\\(\\lambda_{\\max} = 4.0 \\times 10^{-6}\\,\\text{m}\\); Wien's constant \\(b = 2.9 \\times 10^{-3}\\,\\text{K m}\\)",
+      "working": [
+        "Wien's law: \\(\\lambda_{\\max} = \\dfrac{b}{T}\\), so \\(T = \\dfrac{b}{\\lambda_{\\max}}\\)",
+        "\\(T = \\dfrac{2.9 \\times 10^{-3}}{4.0 \\times 10^{-6}}\\)",
+        "\\(T = 725\\,\\text{K}\\)"
       ],
-      "answer": 1,
-      "explanation": "The experiment got a null result — no fringe shift, no aether wind. This killed the aether and supported Einstein's postulate that the speed of light is constant for all observers, the foundation of special relativity.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 725,
+      "answerUnit": "K",
+      "tolerance": 1,
+      "explanation": "Rearranging Wien's law \\(\\lambda_{\\max} T = 2.9 \\times 10^{-3}\\,\\text{K m}\\) gives \\(T = b/\\lambda_{\\max} = 2.9\\times10^{-3} / 4.0\\times10^{-6} = 725\\,\\text{K}\\). A longer peak wavelength means a cooler body — hotter is bluer.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 249, "url": "sources/phy12/p249.jpg" }
     },
     {
       "id": "m799-q08",
-      "q": "Why do far more cosmic-ray muons reach the ground than their short half-life classically allows?",
-      "options": [
-        "Muons are created at ground level",
-        "From Earth's frame time dilation lengthens their decay time; from the muon's frame the atmosphere is length-contracted — both frames predict more survive",
-        "Muons travel faster than light",
-        "The atmosphere has no effect on muons"
+      "type": "recall",
+      "q": "From memory: in the time dilation formula \\(t = t_0\\gamma\\), what is the proper time \\(t_0\\), and why is the dilated time \\(t\\) always greater than \\(t_0\\)?",
+      "keyPoints": [
+        "The proper time \\(t_0\\) is the time measured in a frame of reference where the two events occur at the same point in space — the clock's own reference frame.",
+        "Gamma (the Lorentz factor) is always greater than 1, so \\(t = t_0\\gamma\\) is always greater than \\(t_0\\); the moving clock ticks slow.",
+        "'Proper' means property (the clock's own frame), not 'correct'."
       ],
-      "answer": 1,
-      "explanation": "Both relativistic frames agree: Earth sees the muon's clock run slow (time dilation), the muon sees a contracted atmosphere (shorter journey). Each independently predicts many more muons survive, confirming relativity.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The proper time \\(t_0\\) is measured in the frame where the two events occur at the same point in space — the clock's own reference frame. Because the Lorentz factor gamma is always greater than 1, the dilated time \\(t\\) is always greater than \\(t_0\\), hence 'time dilation'.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 284, "url": "sources/phy12/p284.jpg" }
     },
     {
       "id": "m799-q09",
-      "q": "A spacecraft of proper length 100 m moves at 0.8c relative to Earth (\\(\\gamma = 1.67\\)). What length does an Earth observer measure, and which is the proper length?",
-      "options": [
-        "167 m measured; 100 m is the proper length",
-        "60 m measured; 100 m (the rest-frame length) is the proper length",
-        "60 m measured; 60 m is the proper length",
-        "100 m measured; no contraction occurs"
+      "type": "worked",
+      "q": "In the Rossi–Hall muon experiment, the Earth frame measures the journey taking 6.5 μs while the muons age only 0.7 μs, and the muon's proper half-life is 1.56 μs. Calculate the Lorentz factor gamma and the muon half-life measured in the Earth frame.",
+      "given": "Earth-frame time \\(t = 6.5\\,\\mu\\text{s}\\); muon proper time \\(t_0 = 0.7\\,\\mu\\text{s}\\); proper half-life \\(= 1.56\\,\\mu\\text{s}\\)",
+      "working": [
+        "From \\(t = t_0\\gamma\\): \\(\\gamma = \\dfrac{t}{t_0} = \\dfrac{6.5}{0.7} = 9.29\\)",
+        "Earth-frame half-life: \\(t = t_0\\gamma = 1.56 \\times 10^{-6} \\times 9.29\\)",
+        "\\(t = 14\\,\\mu\\text{s}\\)"
       ],
-      "answer": 1,
-      "explanation": "Contracted length \\(= L_0/\\gamma = 100/1.67 = 60\\,\\mathrm{m}\\). The proper length is the 100 m measured in the spacecraft's own rest frame; the Earth observer measures the shorter 60 m.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 14,
+      "answerUnit": "μs",
+      "tolerance": 0.5,
+      "explanation": "The proper time for the muon half-life is 1.56 microseconds in the muon's frame. The Lorentz factor is the ratio of journey times, \\(\\gamma = 6.5/0.7 = 9.29\\). The half-life measured in the Earth reference frame is \\(t_0\\gamma = 1.56\\,\\mu\\text{s} \\times 9.29 \\approx 14\\,\\mu\\text{s}\\), which is why so many muons survive the trip.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 293, "url": "sources/phy12/p293.jpg" }
     },
     {
       "id": "m799-q10",
-      "q": "What is the unifying punchline of Module 7 — the single thing that both opened the module and forced its most radical consequence?",
+      "type": "mc",
+      "q": "Using the module's evidence-to-model map, which set of evidence forces the wave model of light specifically?",
       "options": [
-        "Planck's constant, which appears in every equation",
-        "The constant speed of light: Maxwell predicted it from electromagnetism to open the module, and its constancy (Einstein's first postulate) forced special relativity",
-        "The work function of metals",
-        "The double-slit interference pattern"
+        "The black-body curve, the photoelectric effect, and Wien's law",
+        "Diffraction, interference (the double-slit dark fringes), and polarisation",
+        "The Michelson–Morley null result, the muons, and the atomic clocks",
+        "Relativistic momentum, mass-energy equivalence, and time dilation"
       ],
       "answer": 1,
-      "explanation": "The same number — the speed of light — opened the module when Maxwell calculated it from electromagnetism, and became Einstein's first postulate, forcing time dilation, length contraction and mass-energy equivalence. Light is a wave that is also a particle, and its constant speed bends space and time.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Diffraction, interference and polarisation force the wave model. The black-body curve and photoelectric effect force the quantum (photon) model; the Michelson–Morley null result, muons and atomic clocks force relativity. Mastering this map answers most reasoning questions in Module 7 on sight.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m799-q11",
+      "type": "recall",
+      "q": "From memory: state the unifying punchline of Module 7 — how does the same constant, the speed of light, both open the module and force its most radical consequence?",
+      "keyPoints": [
+        "Maxwell calculated the speed of light from electromagnetism (\\(c = 1/\\sqrt{\\mu_0 \\varepsilon_0}\\)) and concluded light is an electromagnetic wave; Hertz confirmed it.",
+        "The same constant speed of light becomes Einstein's first postulate (constant for every observer).",
+        "That constancy forces special relativity — time dilation, length contraction and mass-energy equivalence (E = mc²)."
+      ],
+      "explanation": "The speed of light is the through-line: Maxwell predicted it from electromagnetism to show light is an EM wave, and its constancy for all observers (Einstein's first postulate) demolishes absolute time and space, giving special relativity.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

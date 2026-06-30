@@ -1,0 +1,143 @@
+{
+  "questions": [
+    {
+      "id": "mp307-q01",
+      "type": "mc",
+      "q": "What is the primary reason a designer might run out of time to complete a project?",
+      "options": [
+        "Poor planning",
+        "Meeting warranty claims",
+        "Inappropriate target market",
+        "Late final payment from client"
+      ],
+      "answer": 0,
+      "explanation": "Running out of time is a project-management failure: without action, time and finance plans the tasks are not sequenced or scheduled realistically. The other options can affect a project but are not the underlying cause of poor time control.",
+      "source": { "origin": "hsc", "ref": "2024 HSC Design and Technology Q1", "year": 2024 }
+    },
+    {
+      "id": "mp307-q02",
+      "type": "mc",
+      "q": "A design team is about to start developing a new range of products. Part of this process is the implementation of management plans.\n\nThese plans ensure that the products",
+      "options": [
+        "meet the intended purpose.",
+        "address all legal requirements.",
+        "are developed on time and on budget.",
+        "meet the needs of the target market."
+      ],
+      "answer": 2,
+      "explanation": "Management plans — the action, time (Gantt) and finance plans tagged ATF in the episode — sequence tasks and track costs so the product is delivered on schedule and within budget. Purpose, legal needs and the target market are addressed by other parts of the design process.",
+      "source": { "origin": "hsc", "ref": "2018 HSC Design and Technology Q6", "year": 2018 }
+    },
+    {
+      "id": "mp307-q03",
+      "type": "mc",
+      "q": "Successful completion of a major design project depends on a student making the correct link between",
+      "options": [
+        "action and time management.",
+        "sustainability and appropriateness of materials.",
+        "experimentation and development of practical skills.",
+        "generation of concept designs and organising materials."
+      ],
+      "answer": 0,
+      "explanation": "Finishing on time relies on linking the action plan (every task listed) to the time plan / Gantt chart (those tasks sequenced and scheduled). The other pairings matter but do not by themselves determine whether the whole project is completed.",
+      "source": { "origin": "hsc", "ref": "2012 HSC Design and Technology Q5", "year": 2012 }
+    },
+    {
+      "id": "mp307-q04",
+      "type": "mc",
+      "q": "A delay in completing a design project is most likely to be caused by",
+      "options": [
+        "poor timing.",
+        "poor planning.",
+        "lack of finance.",
+        "lack of resources."
+      ],
+      "answer": 1,
+      "explanation": "Effective management rests on a realistic action and time plan; poor planning is the underlying cause that produces missed deadlines. Timing, finance and resources are exactly the factors that good planning is meant to manage.",
+      "source": { "origin": "hsc", "ref": "2010 HSC Design and Technology Q4", "year": 2010 }
+    },
+    {
+      "id": "mp307-q05",
+      "type": "mc",
+      "q": "On a Gantt chart, what does the critical path represent?",
+      "options": [
+        "The single most expensive task in the project budget",
+        "The longest chain of dependent tasks, which determines the project's minimum duration",
+        "The group of tasks that can all be carried out at the same time",
+        "The task that should always be started last"
+      ],
+      "answer": 1,
+      "explanation": "The critical path is the longest chain of dependent tasks — the sequence that sets the minimum time the whole project needs. Any delay to a task on the critical path delays the entire project, which is why students who name it score the top band.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp307-q06",
+      "type": "mc",
+      "q": "Which three plans are the key management tools the episode tags 'ATF'?",
+      "options": [
+        "Analysis plan, testing plan and feedback plan",
+        "Action plan, time plan (Gantt chart) and finance plan",
+        "Assembly plan, transport plan and finishing plan",
+        "Aesthetics plan, technical plan and fabrication plan"
+      ],
+      "answer": 1,
+      "explanation": "ATF stands for Action (list every task), Time (the Gantt chart that schedules them) and Finance (a budget tracked against actual spending) — plus a journal for ongoing record and evaluation. These map onto the action, time and finance plans examined for real in the Year 12 major project.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp307-q07",
+      "type": "recall",
+      "q": "From memory: what is a Gantt chart, and what does the critical path tell you?",
+      "keyPoints": [
+        "A Gantt chart is a project-management grid that lists each task with its start date, duration and end date as a bar against a timeline, showing what happens when, which tasks overlap, and whether the project is on schedule.",
+        "The critical path is the longest chain of dependent tasks — the sequence that sets the project's minimum duration.",
+        "Any delay to a task on the critical path delays the entire project."
+      ],
+      "explanation": "If you got 'Gantt schedules tasks against time' and 'critical path is the chain that sets the minimum duration', that's the mark. The critical path is the part students miss, and it's a top-band detail.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp307-q08",
+      "type": "recall",
+      "q": "From memory, identify the eight factors affecting management (tag RV GS-CDT D).",
+      "keyPoints": [
+        "Resources and Values — work out the available resources and clarify what matters for this project.",
+        "Goals and Standards — set the project's goals and the standards the work must meet.",
+        "Costs/benefits and Decisions — evaluate the costs and benefits of each alternative, then make and implement decisions.",
+        "Tasks (and sequencing) and Documentation — describe and sequence the tasks, and keep documentation of your plans."
+      ],
+      "explanation": "The logical flow — resources and values, goals and standards, costs and decisions, tasks and documentation — keeps you from blanking. Any four valid factors earn full marks on the 2-mark exam version.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp307-q09",
+      "type": "short",
+      "q": "Describe how action plans and ongoing evaluation processes work together to contribute to the development of a successful design.",
+      "marks": 4,
+      "modelAnswer": "As part of the design process the designer develops an action plan to organise an appropriate and efficient operation, sequencing tasks correctly so the project runs efficiently. Combined with an ongoing evaluation structure, this helps ensure a successful design: if ongoing evaluation is not carried out, development may fail to address concerns about important design factors such as function, cost or safety. Together, action plans and ongoing evaluation ensure the end product best meets the needs of the client and the consumer.",
+      "criteria": [
+        { "marks": "4", "descriptor": "Provides characteristics and features of how action plans AND ongoing evaluation processes work together to contribute to a successful design" },
+        { "marks": "3", "descriptor": "Provides characteristics and features of how action plans AND/OR evaluation processes contribute to a successful design" },
+        { "marks": "2", "descriptor": "Sketches in general terms how action plans AND/OR evaluation processes contribute to a successful design, OR identifies a feature of action plans AND a feature of evaluation processes" },
+        { "marks": "1", "descriptor": "Identifies a feature of action plans OR evaluation processes" }
+      ],
+      "explanation": "Monitoring progress against the Gantt chart is itself a form of ongoing evaluation: you re-sequence tasks when something slips. The marks come from showing the two working together, not just naming each.",
+      "source": { "origin": "hsc", "ref": "2013 HSC Design and Technology Q13", "year": 2013 }
+    },
+    {
+      "id": "mp307-q10",
+      "type": "extended",
+      "q": "Explain how management tools are used to plan and monitor a design project. (6 marks)",
+      "marks": 6,
+      "modelAnswer": "Management is directing resources — time, money, materials and people — toward the completed project at the right time and in the right sequence, so the tools must do real work, not just exist. An action plan lists every task needed so none is forgotten, often as a mind map. A Gantt chart then schedules those tasks against a timeline, drawing each as a bar with its start date, duration and end date; it reveals dependencies (tasks that must finish before others can begin) and parallel tasks, and identifies the critical path — the longest chain of dependent tasks that sets the project's minimum duration. A finance plan budgets all costs and tracks actual spending so the project stays viable. Crucially, these tools are used to monitor: the designer compares actual progress against the Gantt chart and actual spending against the finance plan, and re-plans when a task slips or costs change. Management is therefore plan, implement and evaluate — an ongoing process — not a single plan made at the start.",
+      "criteria": [
+        { "marks": "6", "descriptor": "Explains how action, time (Gantt) and finance plans are each used to BOTH plan and monitor/re-plan, with reference to dependencies and the critical path" },
+        { "marks": "4", "descriptor": "Explains how two or more management tools are used to plan and monitor a project" },
+        { "marks": "2", "descriptor": "Describes one or more management tools and their purpose, with limited reference to monitoring" },
+        { "marks": "1", "descriptor": "Identifies a management tool" }
+      ],
+      "explanation": "The key word is monitor: a weak answer names a tool and stops, capping low. A strong answer shows the tools tracking actual progress against the plan and re-planning when things change.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    }
+  ]
+}

@@ -1,174 +1,165 @@
 {
   "questions": [
     {
-      "id": "m804-q01",
-      "q": "Which pair of problems with Rutherford's nuclear model was the Bohr model designed to overcome?",
+      "id": "mm804-q01",
+      "type": "mc",
+      "q": "According to Bohr's first postulate, what does an electron do while it exists in a stationary state of the atom?",
       "options": [
-        "The proton's mass and the neutron's discovery",
-        "Atomic stability (the electron should spiral in) and the line spectrum (atoms should emit a continuous, not discrete, spectrum)",
-        "The charge-to-mass ratio and the elementary charge",
-        "The size of the nucleus and the speed of the electron"
+        "It orbits the nucleus while continuously emitting electromagnetic radiation",
+        "It orbits the nucleus without emitting any electromagnetic radiation, possessing an unexplainable stability",
+        "It spirals slowly inwards towards the nucleus, losing a little energy each orbit",
+        "It remains completely stationary, fixed in one position beside the nucleus"
       ],
       "answer": 1,
-      "explanation": "The 'two S's': by Maxwell an orbiting electron is an accelerating charge that should radiate, spiral in, and collapse the atom (Stability), and would emit a continuously rising frequency (Spectrum) — yet atoms are stable and emit discrete lines. Bohr's model fixes both.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Bohr's first postulate states that electrons in an atom exist in 'stationary states' in which they possess an unexplainable stability, and while in a stationary state the electron orbits the nucleus without emitting any electromagnetic radiation. This audaciously contradicts classical electromagnetic theory, which requires an accelerating charge to radiate, and it is what makes the atom stable.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 378, "url": "sources/phy12/p378.jpg" }
     },
     {
-      "id": "m804-q02",
-      "q": "What does Bohr's first postulate assert about an electron in a stationary state?",
+      "id": "mm804-q02",
+      "type": "mc",
+      "q": "Bohr's second postulate says a transition between two stationary states is accompanied by the emission or absorption of a single photon. What sets the frequency f of that photon?",
       "options": [
-        "It radiates electromagnetic energy continuously as Maxwell requires",
-        "It orbits the nucleus without radiating any electromagnetic energy",
-        "It is at rest at the centre of the atom",
-        "It can have any energy at all"
+        "The photon frequency equals the sum of the two stationary-state energies, \\(hf = E_1 + E_2\\)",
+        "The photon frequency is given by \\(hf = E_1 - E_2\\), the difference in energy between the two stationary states",
+        "The photon frequency equals Planck's constant divided by the orbit radius",
+        "The photon frequency is fixed by the electron's angular momentum, \\(hf = nh/2\\pi\\)"
       ],
       "answer": 1,
-      "explanation": "Bohr's audacious first postulate is that in certain allowed orbits (stationary states) the electron orbits without radiating, flatly contradicting Maxwell. This single decree fixes the stability crisis: the ground-state electron has no lower state to fall to, so it cannot spiral in.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Bohr's second postulate: a transition between two stationary states is accompanied by emission or absorption of a photon whose frequency f satisfies \\(hf = E_1 - E_2\\), where \\(E_1\\) and \\(E_2\\) are the energies of the two stationary states. By conservation of energy the photon carries exactly the energy difference, which is why this postulate explains the origin of spectral lines.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 378, "url": "sources/phy12/p378.jpg" }
     },
     {
-      "id": "m804-q03",
-      "q": "Bohr's second postulate states that when an electron moves between two stationary states it emits or absorbs a single photon. The photon's energy equals:",
+      "id": "mm804-q03",
+      "type": "mc",
+      "q": "Bohr's quantisation condition (his third postulate) restricts which property of the electron in a stationary state?",
       "options": [
-        "The sum of the energies of the two states",
-        "The kinetic energy of the electron",
-        "The difference in energy between the two states, with \\(hf = E_{\\text{high}} - E_{\\text{low}}\\)",
-        "Planck's constant divided by the orbit radius"
+        "Its kinetic energy, restricted to whole-number multiples of Planck's constant",
+        "Its orbital radius, restricted to whole-number multiples of \\(h\\)",
+        "Its angular momentum, restricted to an integral multiple of Planck's constant divided by \\(2\\pi\\)",
+        "Its charge, restricted to whole-number multiples of the elementary charge"
       ],
       "answer": 2,
-      "explanation": "By conservation of energy the photon carries exactly the energy difference between the levels: \\(hf = E_{\\text{high}} - E_{\\text{low}}\\). This borrows Einstein's photon (energy \\(hf\\)) from the photoelectric effect to carry energy in and out of the atom on each jump.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Bohr's quantisation condition states that an electron in a stationary state has an angular momentum that is an integral multiple of \\(h/2\\pi\\) (Planck's constant divided by \\(2\\pi\\)). Writing \\(m_e v r = nh/2\\pi\\), the integer n is the principal quantum number that labels the stationary states; it is this rule that makes the allowed orbits discrete.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 378, "url": "sources/phy12/p378.jpg" }
     },
     {
-      "id": "m804-q04",
-      "q": "Why is the Bohr model described as a mixture of classical and quantum physics?",
+      "id": "mm804-q04",
+      "type": "recall",
+      "q": "From memory, state Bohr's three postulates in your own words.",
+      "keyPoints": [
+        "Stations: electrons exist only in certain allowed orbits (stationary states), and while in a stationary state the electron orbits without radiating any electromagnetic energy.",
+        "Steps: an electron moves between stationary states only by emitting or absorbing a single photon, whose energy equals the difference between the two levels (hf = E_higher - E_lower).",
+        "Spin: the angular momentum of the electron is quantised, restricted to whole-number multiples of h divided by 2pi."
+      ],
+      "explanation": "Use the hook Stations, Steps, Spin. If you recalled all three — stationary non-radiating states, photon jumps with hf equal to the energy gap, and quantised angular momentum — grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm804-q05",
+      "type": "mc",
+      "q": "In the Rydberg (Balmer) equation \\(\\frac{1}{\\lambda} = R_H\\left(\\frac{1}{n_f^2} - \\frac{1}{n_i^2}\\right)\\) for the spectral lines of hydrogen, which statement is correct?",
       "options": [
-        "It uses only Newtonian mechanics throughout",
-        "It keeps a classical circular orbit held by the Coulomb force as the centripetal force, but bolts on quantum rules (allowed orbits, no radiation, photon jumps)",
-        "It treats the electron purely as a wave with no orbit",
-        "It abandons the photon in favour of continuous radiation"
+        "\\(R_H = 1.097 \\times 10^7\\,\\mathrm{m^{-1}}\\), and the visible lines correspond to \\(n_f = 2\\) with \\(n_i = 3, 4, 5\\) or \\(6\\)",
+        "\\(R_H = 6.626 \\times 10^{-34}\\,\\mathrm{J\\,s}\\), and the visible lines correspond to \\(n_f = 1\\)",
+        "\\(R_H = 1.602 \\times 10^{-19}\\,\\mathrm{C}\\), and the equation gives the energy directly in joules",
+        "\\(R_H = 1.097 \\times 10^7\\,\\mathrm{m^{-1}}\\), and the equation outputs the wavelength directly without taking a reciprocal"
+      ],
+      "answer": 0,
+      "explanation": "Rydberg modified Balmer's equation to \\(\\frac{1}{\\lambda} = R_H(\\frac{1}{n_f^2} - \\frac{1}{n_i^2})\\) with the Rydberg constant \\(R_H = 1.097 \\times 10^7\\,\\mathrm{m^{-1}}\\). The visible (Balmer) lines of hydrogen correspond to \\(n_f = 2\\) and \\(n_i = 3, 4, 5\\) or \\(6\\). Because \\(R_H\\) is in per metre, the equation gives \\(1/\\lambda\\), so you must take the reciprocal to get the wavelength.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 375, "url": "sources/phy12/p375.jpg" }
+    },
+    {
+      "id": "mm804-q06",
+      "type": "worked",
+      "q": "Using Balmer's equation, calculate the longest-wavelength visible spectral line of hydrogen (the red line). This is the transition with \\(n_f = 2\\) and \\(n_i = 3\\).",
+      "given": "\\(R_H = 1.097 \\times 10^7\\,\\mathrm{m^{-1}}\\),  \\(n_f = 2\\),  \\(n_i = 3\\)",
+      "working": [
+        "\\(\\frac{1}{\\lambda} = R_H\\left(\\frac{1}{2^2} - \\frac{1}{3^2}\\right)\\)",
+        "\\(\\frac{1}{\\lambda} = 1.097 \\times 10^7 \\left(\\frac{1}{4} - \\frac{1}{9}\\right)\\)",
+        "\\(\\frac{1}{\\lambda} = 1.097 \\times 10^7 \\times 0.1389 = 1.524 \\times 10^6\\,\\mathrm{m^{-1}}\\)",
+        "\\(\\lambda = \\frac{1}{1.524 \\times 10^6} = 6.562 \\times 10^{-7}\\,\\mathrm{m}\\)  (the red line)"
+      ],
+      "answerValue": 6.562e-7,
+      "answerUnit": "m",
+      "tolerance": 5e-9,
+      "explanation": "The longest wavelength is the smallest energy gap, so \\(n_i = 3\\) down to \\(n_f = 2\\). Remember the Rydberg constant is in per metre, so the equation gives \\(1/\\lambda = 1.524 \\times 10^6\\,\\mathrm{m^{-1}}\\); you must take the reciprocal to get \\(\\lambda = 6.562 \\times 10^{-7}\\,\\mathrm{m}\\), the red line in the hydrogen spectrum.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 376, "url": "sources/phy12/p376.jpg" }
+    },
+    {
+      "id": "mm804-q07",
+      "type": "worked",
+      "q": "For the hydrogen atom the energy of the first stationary state is \\(E_1 = -13.60\\,\\mathrm{eV}\\) and \\(E_n = \\frac{1}{n^2}E_1\\). An electron undergoes a transition from the state \\(n = 4\\) to the state \\(n = 1\\). Calculate the frequency of the emitted photon.",
+      "given": "\\(E_1 = -13.60\\,\\mathrm{eV}\\),  transition \\(n = 4 \\rightarrow n = 1\\),  \\(h = 6.626 \\times 10^{-34}\\,\\mathrm{J\\,s}\\)",
+      "working": [
+        "\\(E_4 = \\frac{1}{4^2}E_1 = \\frac{-13.6}{16} = -0.85\\,\\mathrm{eV}\\)",
+        "Energy of photon \\(= |E_4 - E_1| = 13.60 - 0.85 = 12.75\\,\\mathrm{eV}\\)",
+        "Convert to joules: \\(12.75 \\times 1.602 \\times 10^{-19} = 2.043 \\times 10^{-18}\\,\\mathrm{J}\\)",
+        "\\(f = \\frac{E}{h} = \\frac{2.043 \\times 10^{-18}}{6.626 \\times 10^{-34}} = 3.083 \\times 10^{15}\\,\\mathrm{Hz}\\)"
+      ],
+      "answerValue": 3.083e15,
+      "answerUnit": "Hz",
+      "tolerance": 1e13,
+      "explanation": "First find \\(E_4 = -0.85\\,\\mathrm{eV}\\), then the photon energy is the magnitude of the difference, \\(12.75\\,\\mathrm{eV}\\). Convert eV to joules before dividing by Planck's constant (which is in joule-seconds), giving \\(f = 3.083 \\times 10^{15}\\,\\mathrm{Hz}\\). Because the electron lands on \\(n = 1\\) this is a Lyman-series (ultraviolet) line.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 383, "url": "sources/phy12/p383.jpg" }
+    },
+    {
+      "id": "mm804-q08",
+      "type": "mc",
+      "q": "How is an absorption spectrum produced, and how does it differ from the emission spectrum of the same gas?",
+      "options": [
+        "An emission spectrum is dark lines on a bright background; an absorption spectrum is bright lines on a dark background",
+        "An emission spectrum is produced when a gas is excited, giving narrow coloured lines on a dark background; an absorption spectrum is produced when white light passes through a cool gas, giving dark lines across a continuous spectrum",
+        "Both spectra are continuous; they differ only in their overall brightness",
+        "An absorption spectrum is produced by excited molecules, while an emission spectrum is produced by incandescent solids"
       ],
       "answer": 1,
-      "explanation": "The classical half is the planetary orbit with the electrostatic Coulomb force providing the centripetal force; the quantum half is the three rules — only certain orbits allowed, no radiation in an orbit, and photon-sized energy jumps. This inelegant hybrid is itself listed as a limitation.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "An emission spectrum is produced when a gas is excited (by heating or an electrical discharge) and appears as a series of narrow coloured lines on a dark background. An absorption spectrum is produced when white light passes through a cool gas: the atoms absorb their characteristic wavelengths and re-emit them in random directions, leaving narrow dark lines across the continuous spectrum. The dark absorption lines sit at the same wavelengths as the bright emission lines.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 377, "url": "sources/phy12/p377.jpg" }
     },
     {
-      "id": "m804-q05",
-      "q": "Why does each element produce a unique line spectrum?",
-      "options": [
-        "Each element emits light of a single colour set by its mass",
-        "Each element has a unique set of energy levels, so unique energy gaps, so a unique set of photon wavelengths",
-        "Heavier elements emit shorter wavelengths only",
-        "Spectral lines depend on the temperature, not the element"
-      ],
-      "answer": 1,
-      "explanation": "An element's energy levels are fixed by its nuclear charge and electron arrangement. Unique levels mean unique energy differences between them, and since \\(E = hf\\) fixes the frequency (and wavelength) of each photon, each element emits and absorbs only its own fingerprint of wavelengths.",
+      "id": "mm804-q09",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m804-q06",
-      "q": "On an energy-level diagram, an arrow pointing UP between two levels represents:",
+      "q": "Given the energy of the first stationary state of hydrogen is \\(E_1 = -13.6\\,\\mathrm{eV}\\) and \\(E_n = \\frac{1}{n^2}E_1\\), what is the energy of the second stationary state (\\(n = 2\\))?",
       "options": [
-        "Emission of a photon as the electron loses energy",
-        "Absorption of a photon as the electron gains energy",
-        "Ionisation of the atom",
-        "The electron staying in the same level"
-      ],
-      "answer": 1,
-      "explanation": "'Up you Absorb, Down you Emit.' An upward arrow means the electron gains energy by absorbing a photon to climb the ladder; a downward arrow means it loses energy by emitting a photon. Energies are negative, with the ground state most negative at the bottom.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m804-q07",
-      "q": "A larger energy gap between two levels produces a photon with:",
-      "options": [
-        "Lower frequency and longer wavelength",
-        "Higher frequency and shorter wavelength",
-        "The same frequency but greater intensity",
-        "Zero frequency"
-      ],
-      "answer": 1,
-      "explanation": "A bigger gap means a bigger photon energy, so by \\(E = hf\\) a higher frequency, and by \\(c = f\\lambda\\) a shorter wavelength. The largest jumps (down to the ground state, the Lyman series) give the highest-energy ultraviolet photons.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m804-q08",
-      "q": "In hydrogen, electron transitions that end on the \\(n = 2\\) level form which series, and in which region of the spectrum?",
-      "options": [
-        "The Lyman series, in the ultraviolet",
-        "The Paschen series, in the infrared",
-        "The Balmer series, in the visible",
-        "The Balmer series, in the ultraviolet"
+        "\\(-27.2\\,\\mathrm{eV}\\)",
+        "\\(-6.8\\,\\mathrm{eV}\\)",
+        "\\(-3.4\\,\\mathrm{eV}\\)",
+        "\\(0\\,\\mathrm{eV}\\)"
       ],
       "answer": 2,
-      "explanation": "'Little Birds Pause': Lyman (to n=1, UV), Balmer (to n=2, visible), Paschen (to n=3, infrared). The Balmer series is the only one in visible light; its famous red H-alpha line at 656 nm comes from the n=3 → n=2 transition.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Using \\(E_n = \\frac{1}{n^2}E_1\\) with \\(n = 2\\): \\(E_2 = \\frac{1}{4}(-13.6) = -3.4\\,\\mathrm{eV}\\). The energies are negative because the electron is bound to the nucleus, and they become less negative (closer to zero) as n increases up the ladder of stationary states.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 382, "url": "sources/phy12/p382.jpg" }
     },
     {
-      "id": "m804-q09",
-      "q": "Using the Rydberg equation, the n=3 → n=2 transition in hydrogen gives \\(\\dfrac{1}{\\lambda} = 1.097\\times10^{7}\\left(\\dfrac{1}{4}-\\dfrac{1}{9}\\right)\\). What is the wavelength, and what common error must be avoided?",
-      "options": [
-        "About \\(1.5\\times10^{6}\\ \\mathrm{m}\\); no special care needed",
-        "About \\(656\\ \\mathrm{nm}\\); the equation gives \\(1/\\lambda\\), so you must take the reciprocal to get \\(\\lambda\\)",
-        "About \\(656\\ \\mathrm{m}\\); convert from nanometres at the end",
-        "About \\(122\\ \\mathrm{nm}\\); take the reciprocal twice"
-      ],
-      "answer": 1,
-      "explanation": "\\(\\frac{1}{\\lambda} = 1.097\\times10^{7}\\times0.1389 = 1.524\\times10^{6}\\ \\mathrm{m^{-1}}\\), so \\(\\lambda = 1/(1.524\\times10^{6}) = 6.56\\times10^{-7}\\ \\mathrm{m} = 656\\ \\mathrm{nm}\\). The Rydberg constant is in \\(\\mathrm{m^{-1}}\\), so the equation returns \\(1/\\lambda\\); forgetting to invert is the most common error (an answer near \\(10^{6}\\) is not a wavelength).",
+      "id": "mm804-q10",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "Which of the following is a recognised limitation of the Bohr model of the atom?",
+      "options": [
+        "It cannot calculate the wavelengths of the spectral lines of multi-electron atoms; it works reasonably only for atoms with one electron in their outer shell",
+        "It predicts that the orbiting electron must radiate, spiral in and cause the atom to collapse",
+        "It cannot explain why light produces an interference pattern when passed through two slits",
+        "It wrongly predicts a continuous spectrum for hydrogen instead of discrete lines"
+      ],
+      "answer": 0,
+      "explanation": "A key limitation is that the Bohr model cannot calculate the spectral-line wavelengths of all other atoms — it works reasonably only for one-electron systems. Other listed limitations are that it does not explain the relative intensities of spectral lines, the splitting of lines (hyperfine structure and the Zeeman effect in a magnetic field), and that it is an uncomfortable mixture of classical and quantum physics. The distractors describe failures of the earlier Rutherford model, not Bohr's.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 385, "url": "sources/phy12/p385.jpg" }
     },
     {
-      "id": "m804-q10",
-      "q": "Which of the following is a genuine limitation of the Bohr model?",
-      "options": [
-        "It cannot predict the spectral lines of hydrogen",
-        "It works only for hydrogen and other one-electron systems and cannot explain multi-electron atoms",
-        "It assumes the electron has no charge",
-        "It predicts a continuous spectrum instead of discrete lines"
+      "id": "mm804-q11",
+      "type": "extended",
+      "q": "Explain how the Bohr model accounts for the line emission spectrum of hydrogen, and explain how the law of conservation of energy applies. (6 marks)",
+      "marks": 6,
+      "modelAnswer": "In the Bohr model the electron in a hydrogen atom can occupy only certain discrete stationary states, each with a fixed, quantised energy. When the atom is excited, the electron is raised to a higher stationary state. It then transitions back down to a lower state, and in doing so the atom emits a single photon. By the law of conservation of energy the photon carries away exactly the energy lost by the electron — no more and no less — so the photon's energy equals the difference in energy between the two states: Planck's constant times the photon's frequency equals the higher energy minus the lower energy (hf = E_initial - E_final). Because the hydrogen energy levels are discrete and unique to hydrogen, only specific energy differences are possible, so only photons of specific frequencies and wavelengths are emitted. These appear as a discrete set of bright lines — a line emission spectrum — rather than a continuous spectrum. The sharpness of each line is itself a consequence of conservation of energy: the photon energy is fixed precisely to the gap, so the wavelength is precise.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States the electron occupies only discrete, quantised stationary states / energy levels." },
+        { "marks": 1, "descriptor": "Describes excitation to a higher state then a transition (drop) to a lower state, emitting a single photon." },
+        { "marks": 1, "descriptor": "Applies conservation of energy: photon energy equals the difference between the two levels, hf = E_higher - E_lower." },
+        { "marks": 1, "descriptor": "Links discrete energy differences to specific frequencies/wavelengths via E = hf." },
+        { "marks": 1, "descriptor": "Concludes these give a discrete set of bright lines (line emission spectrum), not a continuous one." },
+        { "marks": 1, "descriptor": "Notes the lines are sharp because the photon energy is fixed exactly to the energy gap." }
       ],
-      "answer": 1,
-      "explanation": "'Hydrogen Is My Sole Why': it works only for hydrogen/one-electron systems, can't explain line Intensities, can't explain line splitting (Magnetic/Zeeman effect), is a Sticky classical-quantum mixture, and never explains Why orbits are stable and non-radiating. It does correctly predict hydrogen's lines and discrete spectrum.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Full marks come from the causal chain — discrete levels, transition, single photon, conservation of energy fixing the photon energy to the gap, hf fixing the frequency, therefore discrete lines — not from a single statement like 'electrons jump down and give off light'.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

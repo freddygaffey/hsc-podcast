@@ -1,174 +1,150 @@
 {
   "questions": [
     {
-      "id": "m810-q01",
-      "q": "Which sequence correctly describes the mechanism of nuclear fission of uranium-235?",
+      "id": "mm810-q01",
+      "type": "mc",
+      "q": "In terms of the graph of average binding energy per nucleon against mass number, why does splitting a large nucleus such as uranium release energy?",
       "options": [
-        "A fast neutron smashes the nucleus apart by brute force into two equal halves",
-        "U-235 captures a slow neutron, becomes unstable U-236, then splits into two mid-sized fragments plus two or three neutrons and energy",
-        "U-235 spontaneously emits an alpha particle and decays into a lighter element",
-        "Two U-235 nuclei collide and fuse into a heavier nucleus, releasing neutrons"
+        "The two fission fragments have a lower average binding energy per nucleon than the original nucleus",
+        "Splitting a large mass number nucleus in two produces nuclei with a higher average binding energy per nucleon than the original nucleus, so energy is released",
+        "The fragments move further from iron-56, the most stable nucleus, releasing the difference in mass",
+        "Uranium sits at the peak of the curve, so any change in mass number releases energy"
       ],
       "answer": 1,
-      "explanation": "Fission begins with capture: a slow neutron is absorbed by U-235, forming highly unstable U-236, which splits into two mid-sized fragments plus 2–3 free neutrons and about 200 MeV. It is not a brute-force smash (A), nor spontaneous alpha decay (C), nor fusion (D).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Page 413 states that taking a large mass number nucleus and splitting it in two produces nuclei with a higher average binding energy per nucleon than the original, so energy is released. The most stable nuclei have a mass number of about 50 to 60, with iron-56 the most stable, so the fragments climb toward that peak.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 413, "url": "sources/phy12/p413.jpg" }
     },
     {
-      "id": "m810-q02",
-      "q": "Why does the splitting of a heavy uranium nucleus release energy, in terms of the binding-energy-per-nucleon curve?",
+      "id": "mm810-q02",
+      "type": "mc",
+      "q": "Meitner and Frisch calculated that the fission of one uranium-235 nucleus produces about 200 MeV of energy. In what form does most of this energy appear, and how does it compare with burning coal?",
       "options": [
-        "The fragments lie lower on the curve, further from iron, so are less tightly bound",
-        "The fragments lie higher on the curve, closer to iron-56, so are more tightly bound, and the increase in binding energy is released",
-        "The neutrons released carry away the lost mass directly",
-        "Uranium sits at the peak of the curve, so any change releases energy"
+        "Mostly as gamma radiation; about the same energy per atom as burning carbon in coal",
+        "Mainly as kinetic energy of the fission fragments; about 20 million times more energy than the 10 eV released per carbon atom burned in coal",
+        "Mainly as the binding energy of the emitted neutrons; about 200 times more than burning coal",
+        "Mostly as heat in the surrounding water; roughly twice the energy released per carbon atom in coal"
       ],
       "answer": 1,
-      "explanation": "Uranium sits low on the right of the curve. Its mid-sized fragments sit higher, closer to the iron-56 peak, so their nucleons are more tightly bound. The gain in total binding energy is released as energy, via mass-energy equivalence.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Page 421 records that the fission of one uranium-235 nucleus produces about 200 MeV, mainly as kinetic energy of the fission fragments. Each carbon atom burned in coal releases only about 10 eV, so fission releases roughly 20 million times more energy per atom.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 421, "url": "sources/phy12/p421.jpg" }
     },
     {
-      "id": "m810-q03",
-      "q": "Why are slow (thermal) neutrons more effective at causing fission than fast neutrons?",
+      "id": "mm810-q03",
+      "type": "mc",
+      "q": "Joliot's team confirmed in 1939 that each fission reaction of uranium-235 emits two or three fast neutrons. Why was this result so significant?",
       "options": [
-        "Fast neutrons carry too little energy to break the nucleus",
-        "Slow neutrons spend more time near the nucleus and are far more likely to be captured, and capture is what triggers fission",
-        "Slow neutrons hit the nucleus harder because they have more momentum",
-        "Fast neutrons are repelled by the positive charge of the nucleus"
+        "It proved that uranium-235 decays only by alpha emission",
+        "It showed that the emitted neutrons could go on to cause further fissions, allowing the possibility of a chain reaction that releases enormous amounts of energy",
+        "It demonstrated that fission fragments are always barium and krypton",
+        "It confirmed that neutrons carry an electric charge of +1"
       ],
       "answer": 1,
-      "explanation": "Fission is about capture, not impact. A slow neutron lingers near the nucleus and is much more likely to be absorbed, forming the unstable U-236. A fast neutron zips past and tends to glance off without being captured. Neutrons are uncharged, so (D) is wrong.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Page 421 explains that two or three fast neutrons emitted with each fission reaction allowed for the possibility of a chain reaction, which could potentially release enormous amounts of energy. Each released neutron can be captured by another uranium-235 nucleus and trigger a further fission.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 421, "url": "sources/phy12/p421.jpg" }
     },
     {
-      "id": "m810-q04",
-      "q": "In the equation \\({}^{235}_{92}\\mathrm{U} + {}^{1}_{0}n \\to {}^{141}_{56}\\mathrm{Ba} + {}^{92}_{36}\\mathrm{Kr} + x\\,{}^{1}_{0}n\\), how many neutrons \\(x\\) are released?",
-      "options": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ],
-      "answer": 2,
-      "explanation": "Balance mass numbers: \\(235 + 1 = 236\\) on the left; \\(141 + 92 = 233\\) for the named products, leaving \\(236 - 233 = 3\\) mass units, so 3 neutrons. Charge also balances: \\(92 = 56 + 36\\).",
+      "id": "mm810-q04",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m810-q05",
-      "q": "What distinguishes a controlled chain reaction from an uncontrolled one?",
+      "q": "A neutron emitted when a uranium-235 nucleus undergoes fission may have an energy of about 1 MeV. What is the approximate energy of a 'thermal' neutron of the kind that would be captured by a uranium-235 nucleus in a nuclear reactor?",
       "options": [
-        "In a controlled reaction no neutrons are released; in an uncontrolled one many are",
-        "A controlled reaction uses U-235 while an uncontrolled one uses U-238",
-        "In a controlled reaction, on average exactly one neutron per fission causes a further fission (steady); in an uncontrolled one, more than one does, so fissions multiply rapidly",
-        "A controlled reaction releases more energy per fission than an uncontrolled one"
-      ],
-      "answer": 2,
-      "explanation": "The individual fission physics is identical. The difference is the neutron economy: held at exactly one further fission per fission gives steady power (a reactor); allowed to exceed one makes fissions multiply almost instantly (a bomb).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m810-q06",
-      "q": "What is the critical mass of a fissile material?",
-      "options": [
-        "The mass at which the material spontaneously explodes",
-        "The minimum mass of fissile material needed to sustain a chain reaction, so that enough neutrons cause further fissions before escaping",
-        "The maximum mass that can be safely stored in a reactor",
-        "The mass of uranium-238 that must be added to enrich the fuel"
+        "About 1 MeV — the same as the neutron just emitted",
+        "About 0.02 MeV — a much slower, thermal neutron",
+        "About 200 MeV — equal to the energy of the whole fission",
+        "About 10 eV — the same as a carbon atom burned in coal"
       ],
       "answer": 1,
-      "explanation": "Below the critical mass too many neutrons leak out through the surface before causing a fission, and the chain fizzles. The critical mass is the minimum amount needed for a self-sustaining chain; a reactor stays just critical, a bomb assembles a supercritical mass.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Page 400 states that a neutron emitted in fission may have an energy of about 1 MeV, while a thermal neutron that would be captured by a uranium-235 nucleus in a nuclear reactor has an energy of about 0.02 MeV. Slow, thermal neutrons are far more readily captured than the fast ones born in fission, which is why a reactor needs a moderator.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 400, "url": "sources/phy12/p400.jpg" }
     },
     {
-      "id": "m810-q07",
-      "q": "What is the function of the control rods in a nuclear reactor?",
-      "options": [
-        "They slow down fast neutrons to thermal speeds",
-        "They provide the fissile nuclei for the chain reaction",
-        "They absorb neutrons; inserting them further slows the reaction, withdrawing them speeds it up, holding the rate steady",
-        "They carry heat away from the core to drive turbines"
+      "id": "mm810-q05",
+      "type": "worked",
+      "q": "A possible fission reaction is \\(^{235}_{92}\\mathrm{U} + ^{1}_{0}n \\rightarrow ^{139}_{57}\\mathrm{La} + ^{95}_{42}\\mathrm{Mo} + 2(^{1}_{0}n) + 7(^{0}_{-1}e)\\). Using the atomic masses below, find the energy released (in MeV) when one uranium-235 nucleus undergoes this fission.",
+      "given": "\\(^{139}\\mathrm{La} = 138.8061\\,\\mathrm{u}\\),  \\(^{95}\\mathrm{Mo} = 94.9057\\,\\mathrm{u}\\),  \\(^{235}\\mathrm{U} = 235.0439\\,\\mathrm{u}\\),  neutron \\(= 1.008665\\,\\mathrm{u}\\),  electron \\(= 0.000549\\,\\mathrm{u}\\),  \\(1\\,\\mathrm{u} = 931.5\\,\\mathrm{MeV}\\,c^{-2}\\)",
+      "working": [
+        "Total mass of reactants \\(= 235.0439 + 1.008665 = 236.0526\\,\\mathrm{u}\\)",
+        "Total mass of products \\(= 138.8061 + 94.9057 + 2(1.008665) + 7(0.000549) = 235.7330\\,\\mathrm{u}\\)",
+        "Decrease in mass \\(= 236.0526 - 235.7330 = 0.3196\\,\\mathrm{u}\\)",
+        "Energy released \\(= 0.3196 \\times 931.5 = 297.7\\,\\mathrm{MeV}\\)"
       ],
-      "answer": 2,
-      "explanation": "Control rods, made of neutron-absorbing material such as cadmium or boron, absorb neutrons to set the reaction rate. Slowing neutrons (A) is the moderator's job, and carrying heat (D) is the coolant's — confusing the moderator with the control rods is the most common mark-loser.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 297.7,
+      "answerUnit": "MeV",
+      "tolerance": 0.5,
+      "explanation": "The energy released equals the energy equivalent of the decrease in mass. Since the products have less mass than the reactants, that mass difference (0.3196 u) is converted to energy using \\(1\\,\\mathrm{u} = 931.5\\,\\mathrm{MeV}\\), giving 297.7 MeV per fission.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 415, "url": "sources/phy12/p415.jpg" }
     },
     {
-      "id": "m810-q08",
-      "q": "How does the moderator differ in function from the control rods?",
+      "id": "mm810-q06",
+      "type": "worked",
+      "q": "Uranium-235 absorbs a neutron and undergoes fission producing barium-141, krypton-92 and some neutrons: \\(^{235}_{92}\\mathrm{U} + ^{1}_{0}n \\rightarrow ^{141}_{56}\\mathrm{Ba} + ^{92}_{36}\\mathrm{Kr} + x\\,^{1}_{0}n\\). How many neutrons are released?",
+      "given": "Mass numbers must balance: left side \\(235 + 1\\); right side \\(141 + 92 + x\\). Atomic numbers must balance: left \\(92\\); right \\(56 + 36\\).",
+      "working": [
+        "Balance the mass numbers (top): \\(235 + 1 = 236\\) on the left",
+        "Barium-141 and krypton-92 account for \\(141 + 92 = 233\\)",
+        "Remaining mass units \\(= 236 - 233 = 3\\), so \\(x = 3\\) neutrons",
+        "Check atomic numbers (bottom): \\(56 + 36 = 92\\), and the neutrons add zero charge — balanced"
+      ],
+      "answerValue": 3,
+      "answerUnit": "neutrons",
+      "tolerance": 0,
+      "explanation": "Every nuclear equation must conserve mass number and atomic number. The mass numbers give 236 = 141 + 92 + 3, so three neutrons are released, and the charges balance with 92 = 56 + 36. This is one of the standard uranium-235 fission equations on page 421.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 421, "url": "sources/phy12/p421.jpg" }
+    },
+    {
+      "id": "mm810-q07",
+      "type": "recall",
+      "q": "From memory: what does the graph of average binding energy per nucleon against mass number tell us about which nuclei are most stable, and why this means both fusion and fission can release energy?",
+      "keyPoints": [
+        "The most stable nuclei have a mass number of about 50 to 60; the most stable nucleus is iron-56, at the peak of the curve.",
+        "Joining light nuclei produces nuclei with a higher average binding energy per nucleon, releasing energy — this is nuclear fusion.",
+        "Splitting a large mass number nucleus in two also produces nuclei with a higher average binding energy per nucleon, releasing energy — this is nuclear fission."
+      ],
+      "explanation": "If you recalled that iron-56 (mass number about 50 to 60) is the most stable nucleus, and that moving toward it from either end of the curve raises the average binding energy per nucleon and releases energy, grade yourself Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 413, "url": "sources/phy12/p413.jpg" }
+    },
+    {
+      "id": "mm810-q08",
+      "type": "mc",
+      "q": "In a nuclear reactor, what is the key difference between the job of the moderator and the job of the control rods?",
       "options": [
-        "The moderator absorbs neutrons while the control rods slow them down",
-        "The moderator slows fast neutrons to thermal speeds so they are captured, while the control rods absorb neutrons to remove them from the chain",
+        "The moderator absorbs neutrons to slow the reaction; the control rods slow neutrons to sustain it",
+        "The moderator (e.g. water or graphite) slows fast neutrons so they are more readily captured; the control rods (e.g. cadmium or boron) absorb neutrons to set the reaction rate",
         "Both absorb neutrons, but the moderator does it faster",
-        "The moderator cools the core while the control rods provide fuel"
+        "The moderator cools the core while the control rods provide the fissile fuel"
       ],
       "answer": 1,
-      "explanation": "The moderator (water or graphite) slows neutrons by collisions, making capture more likely and sustaining the chain. The control rods (cadmium, boron) absorb neutrons. Both change the reaction rate but by opposite mechanisms — slow versus absorb.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Swapping these two is the most common mark-loser in this topic. The moderator slows fast neutrons to thermal speeds so they are more likely to be captured and cause fission; the control rods absorb neutrons, removing them from the chain — inserting them further slows the reaction, withdrawing them speeds it up.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m810-q09",
-      "q": "A single U-235 fission releases about 200 MeV, while burning one carbon atom releases about 10 eV. Roughly how many times more energy does fission release per atom?",
-      "options": [
-        "About 20 times",
-        "About 200 times",
-        "About 20 000 times",
-        "About 20 million times"
+      "id": "mm810-q09",
+      "type": "recall",
+      "q": "Name the four main components of a nuclear fission reactor and state the one-word job of each (use the episode's mnemonic).",
+      "keyPoints": [
+        "Fast Cars Make Crashes: Fuel, Control rods, Moderator, Coolant.",
+        "Fuel provides — the enriched uranium supplies the fissile uranium-235 nuclei, energy and neutrons.",
+        "Control rods absorb — cadmium or boron rods absorb neutrons to set the reaction rate.",
+        "Moderator slows — water or graphite slows fast neutrons so they are captured; Coolant cools — carries heat away to make steam and prevent meltdown."
       ],
-      "answer": 3,
-      "explanation": "\\(\\frac{200\\ \\mathrm{MeV}}{10\\ \\mathrm{eV}} = \\frac{2 \\times 10^{8}\\ \\mathrm{eV}}{10\\ \\mathrm{eV}} = 2 \\times 10^{7} \\approx 20\\) million times. Chemical burning rearranges outer electrons (eV); fission taps nuclear binding energy (MeV), about a million times greater per particle.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Marks here come from pairing each component with its mechanism (provide, absorb, slow, cool), not just naming it. If you got all four parts and their jobs, grade Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m810-q10",
-      "q": "Natural uranium must be enriched before use as reactor fuel. Why?",
-      "options": [
-        "Natural uranium is mostly U-238, which does not readily fission with slow neutrons; enrichment raises the proportion of fissile U-235",
-        "Enrichment removes all the radioactive isotopes from the fuel",
-        "Enrichment adds neutron-absorbing cadmium to control the reaction",
-        "Natural uranium is too pure and must be diluted with U-238"
+      "id": "mm810-q10",
+      "type": "short",
+      "q": "Describe the structure and function of a nuclear fission reactor, naming each major component and stating what it does. (6 marks)",
+      "marks": 6,
+      "modelAnswer": "A nuclear fission reactor has four main components. The fuel, usually enriched uranium containing uranium-235, provides the fissile nuclei that undergo fission, releasing energy and neutrons. The control rods, made of a neutron-absorbing material such as cadmium or boron, absorb neutrons; inserting them further into the core absorbs more neutrons and slows the reaction, while withdrawing them speeds it up, holding the chain reaction at a steady rate of one further fission per fission. The moderator, such as water or graphite, slows the fast neutrons released by fission to thermal speeds, making them more likely to be captured and cause further fission, sustaining the chain reaction. The coolant, often water, carries the heat generated in the core away to a heat exchanger to produce steam that drives turbines for electricity, and prevents the core from overheating.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Fuel: enriched uranium provides the fissile nuclei, energy and neutrons." },
+        { "marks": 1, "descriptor": "Control rods: absorb neutrons (cadmium/boron) to set the reaction rate." },
+        { "marks": 1, "descriptor": "Moderator: slows fast neutrons to thermal speeds to sustain the chain reaction." },
+        { "marks": 1, "descriptor": "Coolant: removes heat to generate steam/electricity and prevent overheating." },
+        { "marks": 1, "descriptor": "Each component is paired with its function (mechanism stated, not just named)." },
+        { "marks": 1, "descriptor": "Links components to holding a controlled chain reaction at one fission per fission." }
       ],
-      "answer": 0,
-      "explanation": "Natural uranium is about 99.3% U-238 (which does not readily fission with slow neutrons) and only about 0.7% fissile U-235. Power reactors enrich the fuel to roughly 3–5% U-235 so there are enough fissile nuclei to sustain the chain; bomb-grade is around 90%.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "A band-six answer states what each part is made of and the mechanism by which it works (control rods absorb, moderator slows), not just a label. The mnemonic Fast Cars Make Crashes locks the four parts: Fuel provides, Control rods absorb, Moderator slows, Coolant cools.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

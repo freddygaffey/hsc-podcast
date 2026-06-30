@@ -1,0 +1,142 @@
+{
+  "questions": [
+    {
+      "id": "mp202-q01",
+      "type": "mc",
+      "q": "Using the JBM hook 'one, some, millions', which list correctly orders the three scales of production from fewest units to most?",
+      "options": [
+        "Batch, Job, Mass",
+        "Job, Batch, Mass",
+        "Mass, Batch, Job",
+        "Job, Mass, Batch"
+      ],
+      "answer": 1,
+      "explanation": "JBM stands for Job, Batch, Mass — 'one, some, millions'. Job production makes one unique item, batch makes a limited run of some, and mass production makes millions of identical units.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp202-q02",
+      "type": "mc",
+      "q": "Which statement best describes job (one-off) production?",
+      "options": [
+        "A limited quantity of near-identical products made using jigs and templates",
+        "Production tailored to the individual needs of one client, producing a single unique product",
+        "Large quantities of standardised, interchangeable products made on automated lines",
+        "Continuous production that becomes cheaper per unit the more units are made"
+      ],
+      "answer": 1,
+      "explanation": "Job production is custom/one-off work tailored to one client, producing an individual unique product — a tailor-made suit, a custom prosthetic. It is highly flexible but has a high cost per unit because all the time and skill go into a single item.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp202-q03",
+      "type": "mc",
+      "q": "What key technique allows batch production to reproduce the same task repeatedly without the expense of new tools and moulds each time?",
+      "options": [
+        "Re-tooling the line between every unit",
+        "Using jigs and templates",
+        "Standardisation of all parts so they are interchangeable",
+        "Hand-crafting each unit individually"
+      ],
+      "answer": 1,
+      "explanation": "Batch production uses jigs and templates to reproduce the same task repeatedly without paying for brand-new tools and moulds. This makes it cheaper than job production while still allowing the design to be varied between batches.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp202-q04",
+      "type": "mc",
+      "q": "Why does mass production achieve a lower cost per unit than job production?",
+      "options": [
+        "Because it uses no machinery, so there is no tooling cost",
+        "Because the high upfront tooling cost is spread across a huge number of standardised units — economies of scale",
+        "Because each unit is individually customised to the client",
+        "Because the design can be changed cheaply at any time"
+      ],
+      "answer": 1,
+      "explanation": "Mass production has a high upfront tooling-up cost, but once running, the more units made on the same line the lower the average cost of each — the principle of economies of scale. Job production instead concentrates the full cost of time, skill and setup into one expensive item.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp202-q05",
+      "type": "mc",
+      "q": "What is the cleanest distinction between batch and mass production?",
+      "options": [
+        "Batch makes one unique item; mass makes a limited run",
+        "Batch makes a limited, defined quantity that can be varied between runs; mass runs continuously to make very large quantities of standardised, interchangeable items that are slow and costly to change",
+        "Batch is fully automated; mass is entirely hand-made",
+        "Batch has the lowest cost per unit; mass has the highest cost per unit"
+      ],
+      "answer": 1,
+      "explanation": "Batch is limited and flexible — a defined quantity in runs, with the design varied between batches. Mass is large and standardised — continuous production of interchangeable items where changing the design means slow, costly re-tooling. Limited-and-flexible versus large-and-standardised is the distinction the marker checks.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp202-q06",
+      "type": "mc",
+      "q": "Why does a designer need to consider the industrial and commercial practices that will be used during manufacturing?",
+      "options": [
+        "To ensure the product will sell",
+        "To gain access to cheaper resources",
+        "To increase the product's rate of production",
+        "To produce products that meet market needs"
+      ],
+      "answer": 2,
+      "explanation": "Understanding industrial and commercial manufacturing practices lets a designer plan for efficient mass production and a higher rate of production. The other options are commercial outcomes that depend on, but are not the direct reason for, considering these practices.",
+      "source": { "origin": "hsc", "ref": "2010 HSC Design and Technology Q10", "year": 2010 }
+    },
+    {
+      "id": "mp202-q07",
+      "type": "recall",
+      "q": "From memory: name the three scales of production and give one example of a product suited to each.",
+      "keyPoints": [
+        "Job (one-off) production: one unique item, e.g. a custom prosthetic limb or a tailor-made suit.",
+        "Batch production: a limited quantity in runs, e.g. fifty identical chairs from a small furniture maker.",
+        "Mass production: millions of identical units, e.g. plastic drink bottles or smartphones."
+      ],
+      "explanation": "JBM, 'one, some, millions'. If you matched all three scales with sensible examples, grade yourself Good or Easy. The marker wants the choice of scale to follow the need — you wouldn't mass-produce a custom prosthetic, nor affordably hand-make a billion bottles.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp202-q08",
+      "type": "recall",
+      "q": "From memory: what three things do you trade off when selecting the scale of production appropriate to a need?",
+      "keyPoints": [
+        "Volume — how many units are needed.",
+        "Cost per unit — how cheaply each unit must be made (plus the upfront tooling cost for mass).",
+        "Flexibility — how much variation or design change is wanted.",
+        "Job = low volume, high cost per unit, maximum flexibility; mass = high volume, low cost per unit, minimum flexibility; batch sits in between."
+      ],
+      "explanation": "Selecting the process appropriate to the need is a trade-off between volume, cost per unit and flexibility. This connects to two of the module-one factors: finance (tooling and unit costs) and quality (the consistency standardisation gives).",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp202-q09",
+      "type": "short",
+      "q": "Outline occupational health and safety (OHS) factors that a designer should consider when designing a mass-produced office chair.",
+      "marks": 2,
+      "modelAnswer": "A designer should consider the hazards introduced by repetitive tasks and heavy automated machinery on the production line, such as guarding moving parts, reducing repetitive-strain injury and providing safe manual-handling procedures, as well as designing the chair itself so it can be assembled and used safely.",
+      "criteria": [
+        { "marks": "2", "descriptor": "Sketches in general terms or indicates the main features of occupational health and safety factors to be considered in the mass production of an office chair" },
+        { "marks": "1", "descriptor": "Identifies an occupational health and safety factor that a designer may consider in the mass production of an office chair" }
+      ],
+      "explanation": "Mass production raises work-health-and-safety considerations because repetitive tasks and heavy machinery introduce their own hazards — a point the episode flags as one specific way mass production reshapes the workplace.",
+      "source": { "origin": "hsc", "ref": "2011 HSC Design and Technology Q11", "year": 2011 }
+    },
+    {
+      "id": "mp202-q10",
+      "type": "extended",
+      "q": "Mass production is the process of creating goods on a large scale and with limited human input.\n\nExplain how the trend towards mass production may affect workplace practices.",
+      "marks": 6,
+      "modelAnswer": "Mass production reshapes workplace practices in both positive and negative ways. Processes such as robotics, CNC machinery and automation increase the speed and accuracy of producing goods, from injection-moulded plastics to small-batch items, and allow extended hours of operation and total quality management. However, the same trend forces job transition and the upskilling of employees, and can lead to job losses and higher unemployment, affecting individuals' wellbeing and society at large as the nature of work changes with technological advancement.",
+      "criteria": [
+        { "marks": "6", "descriptor": "Provides a comprehensive explanation of the effects of the mass production trend on workplace practices" },
+        { "marks": "5", "descriptor": "Provides an explanation of the effects the mass production trend has on workplace practices" },
+        { "marks": "4", "descriptor": "Provides a description of the effects the mass production trend has on workplace practices" },
+        { "marks": "2–3", "descriptor": "Demonstrates some understanding of the effects the mass production trend has on workplace practices" },
+        { "marks": "1", "descriptor": "Provides relevant information" }
+      ],
+      "explanation": "This is the episode's headline question, and it is really about people, not machines. A strong answer names several specific effects — division of labour and specialisation, deskilling and reskilling, automation and job losses, and WHS — and reaches a balanced judgement, rather than the shallow 'machines take jobs' that caps low.",
+      "source": { "origin": "hsc", "ref": "2022 HSC Design and Technology Q14", "year": 2022 }
+    }
+  ]
+}

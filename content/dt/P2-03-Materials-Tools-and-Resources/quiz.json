@@ -1,0 +1,139 @@
+{
+  "questions": [
+    {
+      "id": "mp203-q01",
+      "type": "mc",
+      "q": "Distinguish between a material's characteristics and its properties.",
+      "options": [
+        "Characteristics are how a material behaves; properties are what it looks like",
+        "Characteristics are descriptive qualities (what a material is like, e.g. appearance and texture); properties are how it behaves and performs (e.g. strength, durability, conductivity)",
+        "Characteristics and properties mean the same thing and can be used interchangeably",
+        "Characteristics are measurable; properties are only visual"
+      ],
+      "answer": 1,
+      "explanation": "Characteristics describe what a material is like (appearance, colour, texture), while properties describe how it behaves and performs (strength, durability, conductivity, workability). The memory line is 'characteristics describe, properties perform' — treating the two words as interchangeable is the classic error.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp203-q02",
+      "type": "mc",
+      "q": "According to the central principle of material selection, what should a material's properties be matched to?",
+      "options": [
+        "The lowest available cost",
+        "The product's function — choose the material whose properties suit what the product has to do",
+        "The designer's personal preference",
+        "Whatever material is most readily in stock"
+      ],
+      "answer": 1,
+      "explanation": "The spine of the whole topic is matching a material's properties to the product's function: the function tells you which properties matter, then you choose a material that has them. Cost and availability are real criteria, but a justification that never links properties to function misses the core mark.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp203-q03",
+      "type": "mc",
+      "q": "A manufacturer chooses to produce cutting boards made from bamboo because it can be regrown and is inexpensive. Which of the following would be the manufacturer's determining factor when selecting this material?",
+      "options": [
+        "Aesthetics",
+        "Availability",
+        "Sustainability",
+        "Life cycle analysis"
+      ],
+      "answer": 2,
+      "explanation": "Choosing a material because it can be regrown points to sustainability — using a renewable resource that can be replenished for future use. Availability only concerns whether the material can be obtained, not the renewable, environmentally responsible reasoning given here.",
+      "source": { "origin": "hsc", "ref": "2023 HSC Design and Technology Q2", "year": 2023 }
+    },
+    {
+      "id": "mp203-q04",
+      "type": "mc",
+      "q": "A designer has been commissioned to design a new hot-drink dispensing system and needs to identify suitable materials for the cups. What is the best course of action for evaluating the most suitable materials for these cups?",
+      "options": [
+        "Make a working model and test the operation of the system.",
+        "Invite a focus group to evaluate the range of materials that have been selected.",
+        "Investigate the properties of possible materials and trial them in similar situations.",
+        "Seek expert advice on the range of materials available and use those that have been recommended."
+      ],
+      "answer": 2,
+      "explanation": "The most reliable evaluation comes from investigating the properties of candidate materials and testing them under conditions similar to actual use. This evidence-based trialling gives objective data, unlike opinion-based focus groups or recommendations alone — experimentation is how material selection becomes evidence-based instead of a guess.",
+      "source": { "origin": "hsc", "ref": "2012 HSC Design and Technology Q9", "year": 2012 }
+    },
+    {
+      "id": "mp203-q05",
+      "type": "mc",
+      "q": "Which of the following best outlines why designers undertake research and experimentation when developing a product?",
+      "options": [
+        "To avoid making mistakes",
+        "To determine the properties of the materials to be used",
+        "To ensure all the materials are available for production",
+        "To ensure the best tools, materials and techniques are used"
+      ],
+      "answer": 3,
+      "explanation": "Research and experimentation let the designer test options and select the most appropriate tools, materials and techniques for the product. Determining material properties is only one part of this broader aim — remember 'resources' covers materials, tools, equipment and techniques, all chosen against the need.",
+      "source": { "origin": "hsc", "ref": "2018 HSC Design and Technology Q7", "year": 2018 }
+    },
+    {
+      "id": "mp203-q06",
+      "type": "mc",
+      "q": "Which of the following is the most important factor when considering the sustainability of a material for the manufacture of a product?",
+      "options": [
+        "The durability of the selected material",
+        "The cost of manufacturing the product",
+        "The ability of the material to be renewed",
+        "The effect of a carbon tax on manufacturing the product"
+      ],
+      "answer": 2,
+      "explanation": "Sustainability of a material depends most on whether it can be renewed, ensuring long-term resource availability and reduced environmental impact. Durability and cost are relevant design factors but do not directly address the environmental consequence of use that sustainability captures.",
+      "source": { "origin": "hsc", "ref": "2013 HSC Design and Technology Q3", "year": 2013 }
+    },
+    {
+      "id": "mp203-q07",
+      "type": "recall",
+      "q": "From memory: list the material-selection criteria captured by the hook CPA FACE, plus the two further considerations the textbook flags.",
+      "keyPoints": [
+        "CPA FACE = Characteristics, Properties, Availability, Function, Appearance, Cost, Environmental.",
+        "Characteristics (what it is) and Properties (how it behaves); Availability (can you get it); Function (does it suit the job); Appearance (aesthetic fit); Cost (material plus processing); Environmental (energy, waste, recyclability, life cycle).",
+        "The two extra considerations: ethical supply of resources (e.g. conflict/blood diamonds, child labour in the supply chain) and broader supply-chain issues (country of origin, transport distance)."
+      ],
+      "explanation": "If you recalled all seven CPA FACE criteria and added ethics plus supply chain, grade yourself Good or Easy. Using CPA FACE as a checklist means you never run dry when an exam asks you to identify selection criteria.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp203-q08",
+      "type": "recall",
+      "q": "From memory: what are the three kinds of 'consequences of use' a designer should weigh when selecting a material?",
+      "keyPoints": [
+        "Environmental consequence — the energy, waste and recyclability across the product's whole life, assessed through life cycle analysis.",
+        "Safety consequence — some materials are hazardous to work with or dispose of, creating work-health-and-safety risks.",
+        "Practical consequence — a material that is hard to source or to work with can delay or compromise the project."
+      ],
+      "explanation": "Consequences of use is forward-looking: a good designer chooses with the environmental, safety and practical consequences in mind, not just the immediate fit. If you got all three categories, grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp203-q09",
+      "type": "short",
+      "q": "Outline how testing and experimenting can improve a design project.",
+      "marks": 2,
+      "modelAnswer": "Testing and experimenting improve a design project by letting the designer explore the successes and failures of different materials, tools and techniques before committing to them. This saves time, money and material wastage and leads to a better-resolved final design.",
+      "criteria": [
+        { "marks": 2, "descriptor": "Outlines relevant information regarding testing and experimenting and how it can improve a design" },
+        { "marks": 1, "descriptor": "Provides relevant information" }
+      ],
+      "explanation": "Experimentation makes selection evidence-based: by manipulating materials and practising techniques the designer gathers reliable evidence about a material's properties and suitability, reducing the risk of failure later in production.",
+      "source": { "origin": "hsc", "ref": "2022 HSC Design and Technology Q11", "year": 2022 }
+    },
+    {
+      "id": "mp203-q10",
+      "type": "extended",
+      "q": "Justify the selection of a material for a product you have studied.",
+      "marks": 5,
+      "modelAnswer": "Using a stainless-steel reusable drink bottle: stainless steel was selected because its properties directly suit the bottle's function — it is strong and highly durable, so it withstands repeated daily use and impacts without failing; it is corrosion-resistant and food-safe, essential for holding drinks; and it can be formed into a double wall for insulation. These property-to-function matches were the primary reason for the choice. Although stainless steel has a higher cost and a higher upfront environmental impact in manufacture than plastic, this is justified because its durability gives a long life that, on a life cycle analysis, displaces many single-use bottles, satisfying the environmental criterion. Its appearance also conveys a premium quality suited to the target market.",
+      "criteria": [
+        { "marks": 5, "descriptor": "Leads with the material's properties matched to the product's function, justifies the choice across several criteria (including cost and environmental impact), and reaches an overall justification supported by evidence/testing." },
+        { "marks": 3, "descriptor": "Links some properties to function and refers to more than one criterion, but the justification is partial." },
+        { "marks": 1, "descriptor": "Names a material and states a single reason without linking properties to function." }
+      ],
+      "explanation": "Justify means give reasons, ideally backed by testing — not just name the material. The weak answer ('steel because it's strong') names one property and stops; the strong answer defends the choice across criteria, leads with properties matched to function, and ties it to life cycle.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    }
+  ]
+}

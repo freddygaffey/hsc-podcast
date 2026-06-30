@@ -1,0 +1,143 @@
+{
+  "questions": [
+    {
+      "id": "mp206-q01",
+      "type": "mc",
+      "q": "What are the five applications of computer-based technologies in designing and producing, captured by the hook 'MR SCP'?",
+      "options": [
+        "Modelling, rendering, sketching, calculation, printing",
+        "Modelling, research, simulation and graphics, communication, presentation",
+        "Manufacturing, robotics, scheduling, costing, packaging",
+        "Measuring, recording, sourcing, coding, publishing"
+      ],
+      "answer": 1,
+      "explanation": "The syllabus names five applications, hooked as MR SCP: Modelling, Research, Simulation and graphics, Communication, Presentation. Naming the five reliably is what lets you avoid blanking in the exam.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp206-q02",
+      "type": "mc",
+      "q": "What is the main benefit of building a three-dimensional CAD model rather than a hand-drawn sketch?",
+      "options": [
+        "It removes the need to ever research the design problem",
+        "It can be rotated, viewed from any angle and changed instantly, allowing design testing without time-consuming physical model-making",
+        "It guarantees the design will pass every safety standard automatically",
+        "It is always cheaper than any form of physical prototype at every stage"
+      ],
+      "answer": 1,
+      "explanation": "A CAD model can be rotated, assembled from parts and altered on screen, so problems are caught cheaply before anything is cut — the textbook stresses it lets you do design testing without time-consuming physical model-making.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp206-q03",
+      "type": "mc",
+      "q": "A design for a new shopping centre food court has been commissioned.\n\nAt what stage of the design process would the designer first create a CAD model?",
+      "options": [
+        "Initial contact with clients",
+        "Brainstorming potential ideas",
+        "Presentation of ideas for feedback",
+        "Reflection of feedback and changes to design"
+      ],
+      "answer": 2,
+      "explanation": "A CAD model is a developed representation used to communicate a refined idea, so it is first created when presenting ideas to the client for feedback. Initial contact and brainstorming come too early for a formal CAD model.",
+      "source": { "origin": "hsc", "ref": "2019 HSC Design and Technology Q3", "year": 2019 }
+    },
+    {
+      "id": "mp206-q04",
+      "type": "mc",
+      "q": "What does simulation allow a designer to do, and why is it the application worth emphasising?",
+      "options": [
+        "Print a finished product directly, removing the need for a manufacturer",
+        "Test a design virtually under real conditions — stress, airflow, heat — so problems are found on screen without building a physical prototype, saving time and cost",
+        "Search online databases for credible market and specification data",
+        "Present a rendered walkthrough of the design to a client"
+      ],
+      "answer": 1,
+      "explanation": "Simulation puts a computer model through the conditions it would face in reality and shows how it performs, directly replacing expensive physical testing. That cost-and-time saving is the headline benefit to name.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp206-q05",
+      "type": "mc",
+      "q": "Why would a designer make prototypes after creating CAD models for a client?",
+      "options": [
+        "To save time and staff costs",
+        "To ensure funding by investors is secured",
+        "To demonstrate the final design to the client",
+        "To simulate possible issues that may arise in production"
+      ],
+      "answer": 3,
+      "explanation": "A physical prototype lets the designer test the design in real conditions and simulate problems that could occur in production before committing to manufacture. It is a working test model, not the finished article used to present the final design.",
+      "source": { "origin": "hsc", "ref": "2022 HSC Design and Technology Q7", "year": 2022 }
+    },
+    {
+      "id": "mp206-q06",
+      "type": "mc",
+      "q": "In this topic, what does the syllabus verb 'discriminate' require a designer to do?",
+      "options": [
+        "Use a computer for every task to maximise efficiency",
+        "List as much design software as possible in an answer",
+        "Choose the right technology for the task and justify it, rather than using a digital tool reflexively",
+        "Reject digital tools in favour of hand methods wherever possible"
+      ],
+      "answer": 2,
+      "explanation": "To discriminate is to choose appropriately — the right tool for the job — and to justify it. Three-D printing a part you could cut from card in two minutes is poor discrimination; the marks are in matching tool to task, not listing software.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp206-q07",
+      "type": "recall",
+      "q": "From memory: name the five applications of computer-based technologies (MR SCP) and give one real tool or example for any two of them.",
+      "keyPoints": [
+        "Modelling — CAD software such as AutoCAD, SketchUp or FreeCAD to build a 3D model on screen.",
+        "Research — online databases, manufacturers' specifications and market data (use credible sources).",
+        "Simulation and graphics — a simulation package to load-test a structure; rendering software for realistic images.",
+        "Communication — shared cloud files or collaborative CAD to share files and collaborate remotely.",
+        "Presentation — rendered images, animations, slideshows or virtual walkthroughs for clients."
+      ],
+      "explanation": "If you named all five and gave two real tools, grade Good or Easy. The marker rewards naming an actual technology, not just 'a computer'.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp206-q08",
+      "type": "recall",
+      "q": "From memory: explain the CAD-to-CAM digital chain and where 3D printing fits in.",
+      "keyPoints": [
+        "CAD (computer-aided design) builds and tests the design on screen.",
+        "CAD often connects directly to CAM (computer-aided manufacturing), where the digital model drives the machines.",
+        "A CNC machine or 3D printer reads the CAD file and produces the part — the digital chain from screen to object.",
+        "3D printing (rapid prototyping) builds a solid object layer by layer from the model, ideal for one-off prototypes and increasingly for production."
+      ],
+      "explanation": "CAD to CAM is the digital link between designing and producing, and it ties this topic back to the scales of production. If you traced model → machine → part, grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp206-q09",
+      "type": "short",
+      "q": "Describe how technology can assist designers in overcoming communication barriers.",
+      "marks": 3,
+      "modelAnswer": "Clear communication lets designers give and receive definite instructions. Increasingly advanced technologies — online platforms, robotics and automation — are accessible and available to overcome barriers of distance and time, helping designers improve the efficiency, quality and clarity of their communication and collaboration.",
+      "criteria": [
+        { "marks": "3", "descriptor": "Clearly describes how technology assists designers in overcoming communication barriers" },
+        { "marks": "2", "descriptor": "Demonstrates an understanding of how technology can be used in overcoming communication barriers" },
+        { "marks": "1", "descriptor": "Provides relevant information" }
+      ],
+      "explanation": "The strong-answer move from the episode: name a specific barrier (distance, understanding, language) and the specific technology that removes it — e.g. collaborative CAD for distance, a 3D render or virtual walkthrough for a client who can't read technical drawings.",
+      "source": { "origin": "hsc", "ref": "2022 HSC Design and Technology Q12", "year": 2022 }
+    },
+    {
+      "id": "mp206-q10",
+      "type": "short",
+      "q": "Why do many designers still use hand-sketching despite the availability of computer-based graphics programs?",
+      "marks": 3,
+      "modelAnswer": "Hand sketches allow the designer to externalise visual thoughts and ideas that cannot be expressed accurately in words. These quick sketches let the designer evolve their ideas and their understanding of the problem in almost real time, which in turn sparks further new ideas and lets others visualise the designer's non-verbal concepts. Computer-based graphics programs may not allow the same immediate, real-time feedback that hand-sketching gives the design and communication situation.",
+      "criteria": [
+        { "marks": "3", "descriptor": "Explains the importance of the use of hand-sketching to the design process in preference to computer-based graphics programs with reference to the characteristics and features of hand-sketching processes" },
+        { "marks": "2", "descriptor": "Sketches in general terms how hand-sketching processes are important in the design process" },
+        { "marks": "1", "descriptor": "Identifies a feature of hand-sketching" }
+      ],
+      "explanation": "This is the discriminate verb in action: a quick hand sketch can be faster and better than a digital tool for an early rough idea, so a skilled designer judges when each is appropriate rather than using a computer reflexively.",
+      "source": { "origin": "hsc", "ref": "2013 HSC Design and Technology Q12", "year": 2013 }
+    }
+  ]
+}

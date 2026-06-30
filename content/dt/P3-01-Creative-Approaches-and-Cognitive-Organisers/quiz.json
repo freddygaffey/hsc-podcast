@@ -1,0 +1,142 @@
+{
+  "questions": [
+    {
+      "id": "mp301-q01",
+      "type": "mc",
+      "q": "According to the episode, which statement best describes creativity in design?",
+      "options": [
+        "An effortless flash of inspiration that only naturally gifted people experience",
+        "A disciplined, trainable process that relies on self-discipline, hard work and the deliberate use of techniques",
+        "A purely evaluative activity that judges the quality of finished products",
+        "A single fixed stage that happens only at the very end of a design project"
+      ],
+      "answer": 1,
+      "explanation": "The textbook calls it a fallacy that creative people rely on effortless inspiration. Creative achievement takes self-discipline, hard work and deliberate techniques, so creativity is a trainable process — the Ideate stage of the design process — not a fixed gift.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp301-q02",
+      "type": "mc",
+      "q": "Which option correctly expands the ideation acronym SCAMPER?",
+      "options": [
+        "Sketch, Combine, Analyse, Model, Produce, Evaluate, Refine",
+        "Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse",
+        "Solve, Create, Adapt, Make, Plan, Edit, Review",
+        "Substitute, Critique, Assess, Measure, Prioritise, Evaluate, Rank"
+      ],
+      "answer": 1,
+      "explanation": "SCAMPER is a checklist of seven prompts applied to an existing design: Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, and Reverse or Rearrange. The order is the word itself — S-C-A-M-P-E-R.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp301-q03",
+      "type": "mc",
+      "q": "What is a cognitive organiser?",
+      "options": [
+        "A software program that automatically generates design ideas",
+        "A visual tool that helps structure thinking — to organise information, explore a problem, or generate and compare ideas",
+        "A written brief that defines the constraints of a design problem",
+        "A schedule used to manage the cost and timing of a project"
+      ],
+      "answer": 1,
+      "explanation": "A cognitive organiser is a visual thinking tool. Common examples are the mind map, flowchart, decision matrix, Venn diagram and PMI chart, and the skill is to select and apply the right one for the task.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp301-q04",
+      "type": "mc",
+      "q": "Which statement correctly distinguishes creative thinking from critical thinking in the design process?",
+      "options": [
+        "Creative thinking judges the validity of ideas, while critical thinking generates new ones",
+        "Creative thinking is generative — it produces new ideas — while critical thinking is evaluative — it judges their quality and validity",
+        "Creative thinking and critical thinking are the same skill under different names",
+        "Creative thinking only happens in teams, while critical thinking only happens individually"
+      ],
+      "answer": 1,
+      "explanation": "Creative thinking is generative (thinking outside the square to produce many ideas); critical thinking is evaluative (judging quality, validity and suitability). Successful designers do both — generate freely, then judge — and the two complement each other throughout the process.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp301-q05",
+      "type": "mc",
+      "q": "Which cognitive organiser is an evaluative (critical-thinking) tool rather than a generative one?",
+      "options": [
+        "A mind map",
+        "A decision matrix that compares options against criteria",
+        "A flowchart",
+        "A SCAMPER checklist"
+      ],
+      "answer": 1,
+      "explanation": "A decision matrix (like a PMI chart) is evaluative — it weighs options against criteria, such as comparing materials against CPA FACE. A mind map and SCAMPER are generative, and a flowchart maps a sequence; knowing which is which shows you understand creative versus critical thinking.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp301-q06",
+      "type": "mc",
+      "q": "What is the common purpose of brainstorming, lateral thinking and morphological analysis?",
+      "options": [
+        "To evaluate and rank ideas against fixed criteria",
+        "To break design fixation by forcing quantity and new angles, getting past the obvious first idea",
+        "To document the final design for manufacture",
+        "To calculate the cost and materials of a product"
+      ],
+      "answer": 1,
+      "explanation": "These techniques all exist to break design fixation — the natural tendency to latch onto the first idea and stop. By forcing quantity over quality and approaching the problem from new angles, they push the designer past the obvious to the genuinely creative.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp301-q07",
+      "type": "recall",
+      "q": "From memory: what does SCAMPER stand for, and what is it used for? Say all seven before revealing.",
+      "keyPoints": [
+        "Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse (or Rearrange) — the order is the word S-C-A-M-P-E-R.",
+        "It is an ideas-generation technique: a structured checklist of seven prompts applied to an existing product or idea to generate new ones.",
+        "It works by forcing you to look at the design seven different ways, pushing you past the obvious first idea (breaking design fixation)."
+      ],
+      "explanation": "If you got all seven prompts and could state that SCAMPER is applied to an existing design to generate ideas, grade yourself Good or Easy. If you missed a couple, recall the acronym itself — S-C-A-M-P-E-R.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp301-q08",
+      "type": "recall",
+      "q": "From memory: to score full marks when asked to describe a technique for generating creative ideas, what three things must your answer do?",
+      "keyPoints": [
+        "Name the technique (e.g. SCAMPER, brainstorming, a mind map).",
+        "Explain how it works to break design fixation and force new ideas.",
+        "Show the ideas it actually produced (a worked example or two)."
+      ],
+      "explanation": "Naming is not describing. A weak answer just names a technique and caps low; a strong answer names it, explains the mechanism, and demonstrates the ideas it generated. If you recalled name–explain–show, mark it Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp301-q09",
+      "type": "short",
+      "q": "Explain how SCAMPER can be used to generate creative design ideas. (4 marks)",
+      "marks": 4,
+      "modelAnswer": "SCAMPER is an ideas-generation technique that applies a checklist of seven prompts to an existing product or idea to force new ideas from perspectives the designer might otherwise overlook. The prompts are: Substitute a material or part, Combine it with something else, Adapt it to a new use, Modify its size or shape, Put it to another use, Eliminate parts to simplify, and Reverse or rearrange it. For example, applied to a school backpack, Combine might produce a bag with a built-in charger, and Eliminate might produce a minimalist stripped-back version. By systematically working through all seven prompts, the designer breaks free of fixation on the first obvious idea and generates a wide range of creative options.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Explains that SCAMPER applies a structured set of prompts to an existing product or idea." },
+        { "marks": 1, "descriptor": "Lists the seven SCAMPER prompts (Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse)." },
+        { "marks": 1, "descriptor": "Gives a worked example of an idea the technique produces." },
+        { "marks": 1, "descriptor": "States that it overcomes design fixation on the first obvious idea." }
+      ],
+      "explanation": "Naming the prompts and showing the ideas they produce is what scores. The marker rewards the mechanism (structured prompts on an existing design) plus a demonstrated result.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp301-q10",
+      "type": "extended",
+      "q": "In developing innovative and creative designs, designers receive inspiration from a variety of sources.\n\nExplain how these sources influence the designers.",
+      "marks": 6,
+      "modelAnswer": "A designer's ability to create innovative and creative designs draws on diverse sources — client and consumer needs, creative thinking, sources of inspiration such as nature, history and culture, evaluation and feedback, and emerging technologies, materials and processes. Stated client or target-market needs provide the criteria for a design that differs from what is currently available, while exploration of existing products, new materials and professional learning extends the designer's skills and knowledge. Continual evaluation and feedback supply fresh ideas that are used to modify existing designs or seed new ones. For example, mobile phones evolved from simple calling devices into multifunction tools because designers sourced and embedded emerging technologies, creating products consumers had not yet seen and generating excitement in society.",
+      "criteria": [
+        { "marks": "6", "descriptor": "Makes clear the relationship between a variety of sources of inspiration and the development of innovative and creative designs" },
+        { "marks": "4–5", "descriptor": "Shows a sound understanding of how designers are inspired to develop innovative and creative designs" },
+        { "marks": "2–3", "descriptor": "Shows some understanding of how designers are inspired to develop innovative and creative designs" },
+        { "marks": "1", "descriptor": "Makes reference to an aspect of inspiration and/or innovative and creative design" }
+      ],
+      "explanation": "This links to the episode's core idea that creativity is a disciplined process drawing on deliberate sources and techniques, and to Year 12 outcome H3.2 on creative and innovative design practice.",
+      "source": { "origin": "hsc", "ref": "2014 HSC Design and Technology Q13", "year": 2014 }
+    }
+  ]
+}

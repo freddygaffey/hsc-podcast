@@ -1,174 +1,161 @@
 {
   "questions": [
     {
-      "id": "m712-q01",
-      "q": "What decisive new rule did Einstein add to Planck's photon idea to explain the photoelectric effect?",
+      "id": "mm712-q01",
+      "type": "mc",
+      "q": "In the equation \\(E_{k\\,\\max} = hf - W\\), what does the work function \\(W\\) of the metal represent?",
       "options": [
-        "An electron can absorb energy from many photons and add it up over time",
-        "A single photon collides with a single electron and transfers all of its energy at once, in one interaction",
-        "Photons travel slower in metals, giving electrons time to escape",
-        "Light waves push electrons out by the pressure of their amplitude"
+        "The maximum kinetic energy of an emitted photoelectron",
+        "The minimum energy required to remove the electron from the metal surface",
+        "The energy of the incident photon, equal to \\(hf\\)",
+        "The frequency of light below which no photoelectrons are emitted"
       ],
       "answer": 1,
-      "explanation": "Einstein's master key is the one-photon-one-electron collision: the whole photon energy is delivered in a single hit, all or nothing. This explains the no-delay and threshold observations the wave model could not.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "In the energy equation \\(E_{k\\,\\max} = hf - W\\), \\(hf\\) is the energy of the incident photon and \\(W\\) is the work function — the minimum energy required to remove the electron from the metal surface. The work function is an energy (joules or eV), not a frequency.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 255, "url": "sources/phy12/p255.jpg" }
     },
     {
-      "id": "m712-q02",
-      "q": "Which equation correctly states the maximum kinetic energy of a photoelectron?",
-      "options": [
-        "\\(K_{\\max} = hf + \\phi\\)",
-        "\\(K_{\\max} = hf - \\phi\\), where \\(\\phi\\) is the work function",
-        "\\(K_{\\max} = \\phi - hf\\)",
-        "\\(K_{\\max} = hf \\times \\phi\\)"
-      ],
-      "answer": 1,
-      "explanation": "By conservation of energy, photon energy = work function + kinetic energy, so \\(K_{\\max} = hf - \\phi\\). The photon energy in is shared between escaping the metal (\\(\\phi\\)) and the leftover kinetic energy.",
+      "id": "mm712-q02",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m712-q03",
-      "q": "What is the work function of a metal?",
+      "q": "Applying the gradient equation \\(y = mx + b\\) to the maximum-kinetic-energy versus frequency line, which equation for an emitted photoelectron results?",
       "options": [
-        "The maximum kinetic energy a photoelectron can have",
-        "The minimum energy required to liberate an electron from the metal's surface",
-        "The frequency of light that ejects the fastest electrons",
-        "The total energy stored in the metal's electrons"
-      ],
-      "answer": 1,
-      "explanation": "The work function \\(\\phi\\) (or \\(W\\)) is the minimum energy needed to free a surface electron. It is an energy (joules or eV), not a frequency — quoting it in hertz is a classic error.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m712-q04",
-      "q": "On a graph of maximum kinetic energy versus frequency, what does each feature represent?",
-      "options": [
-        "Gradient = work function; x-intercept = Planck's constant; y-intercept = threshold frequency",
-        "Gradient = Planck's constant; x-intercept = threshold frequency; y-intercept = negative work function",
-        "Gradient = threshold frequency; x-intercept = work function; y-intercept = Planck's constant",
-        "Gradient = negative work function; x-intercept = Planck's constant; y-intercept = threshold frequency"
-      ],
-      "answer": 1,
-      "explanation": "Comparing \\(K_{\\max} = hf - \\phi\\) with \\(y = mx + c\\): the gradient is \\(h\\), the x-intercept (where \\(K_{\\max}=0\\)) is the threshold frequency, and the y-intercept is \\(-\\phi\\). Remember 'GIN'.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m712-q05",
-      "q": "Two metals X and Y are plotted on a \\(K_{\\max}\\) vs frequency graph, with Y having a larger work function. How do the lines compare?",
-      "options": [
-        "Y's line is steeper because a larger work function increases the gradient",
-        "The lines are parallel (same gradient = Planck's constant); Y's line is shifted right, with a higher threshold frequency and a more negative y-intercept",
-        "The lines cross at the threshold frequency",
-        "Y's line is shallower and shifted left"
-      ],
-      "answer": 1,
-      "explanation": "The gradient is Planck's constant — a universal constant identical for every metal — so all photoelectric lines are parallel. A larger work function shifts the line right (higher threshold) and down (more negative intercept). Converging or differently-sloped lines are the headline error.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m712-q06",
-      "q": "A metal has a work function of 1.67 eV. Light of photon energy 2.92 eV strikes it. What is the maximum kinetic energy of the photoelectrons, and the stopping voltage?",
-      "options": [
-        "4.59 eV; 4.59 V",
-        "1.25 eV; 1.25 V",
-        "1.67 eV; 1.67 V",
-        "2.92 eV; 2.92 V"
-      ],
-      "answer": 1,
-      "explanation": "\\(K_{\\max} = hf - \\phi = 2.92 - 1.67 = 1.25\\,\\mathrm{eV}\\). Since \\(K_{\\max} = eV_0\\) and energy is in eV, the stopping voltage reads straight across as 1.25 V.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m712-q07",
-      "q": "Why does the photoelectric effect have a threshold frequency, in Einstein's model?",
-      "options": [
-        "Below a certain brightness, no photons reach the metal",
-        "If a single photon's energy \\(hf\\) is less than the work function, no individual photon can free an electron, no matter how many arrive",
-        "The metal cools below the temperature needed to release electrons",
-        "Low-frequency photons are reflected by the metal surface"
-      ],
-      "answer": 1,
-      "explanation": "Because an electron can only take energy from one photon at a time, if each photon's \\(hf\\) is below \\(\\phi\\), none can free an electron — regardless of intensity or duration. The threshold is where \\(hf_0 = \\phi\\), so \\(f_0 = \\phi/h\\).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m712-q08",
-      "q": "How did Millikan's work validate the quantum model of light?",
-      "options": [
-        "He proved light is purely a wave by measuring interference",
-        "He measured stopping voltage versus frequency for alkali metals, got straight parallel lines whose gradient equalled Planck's constant — the same value found independently from black-body radiation",
-        "He showed photons have mass and charge",
-        "He invented the photomultiplier tube to count single photons"
-      ],
-      "answer": 1,
-      "explanation": "Millikan set out to disprove Einstein but instead confirmed the linear prediction, with gradient equal to Planck's constant. That same \\(h\\) had already been found from black-body radiation — two unrelated experiments agreeing on a constant of nature validates the quantum model.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m712-q09",
-      "q": "How does thermionic emission differ from the photoelectric effect?",
-      "options": [
-        "Thermionic emission needs no energy at all to free electrons",
-        "Both must overcome the same work function, but thermionic emission supplies the energy as heat (thermal energy) whereas the photoelectric effect supplies it via individual photons",
-        "Thermionic emission frees protons rather than electrons",
-        "The photoelectric effect uses heat while thermionic emission uses light"
-      ],
-      "answer": 1,
-      "explanation": "Both processes must supply at least the work function to free an electron; the difference is the energy source — thermal energy (heat) for thermionic emission, a single photon for the photoelectric effect.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m712-q10",
-      "q": "Taking diffraction, interference and the photoelectric effect together, what is the correct conclusion about the nature of light?",
-      "options": [
-        "Light is purely a wave; the photoelectric effect must have another explanation",
-        "Light is purely a particle; interference is an illusion",
-        "Light exhibits wave-particle duality: wave behaviour (diffraction, interference, polarisation) and particle behaviour (photoelectric effect, black-body radiation) are both real",
-        "Light is neither a wave nor a particle but a form of heat"
+        "\\(E_{k\\,\\max} = hf + W\\)",
+        "\\(E_{k\\,\\max} = W - hf\\)",
+        "\\(E_{k\\,\\max} = hf - W\\)",
+        "\\(E_{k\\,\\max} = hf \\times W\\)"
       ],
       "answer": 2,
-      "explanation": "Both bodies of evidence are watertight: you cannot explain a dark interference fringe with particles, nor the threshold frequency with a wave. Light is a quantum object showing wave behaviour in some experiments and particle behaviour in others.",
+      "explanation": "Applying \\(y = mx + b\\) to any of the parallel metal lines gives \\(E_{k\\,\\max} = hf - W\\): the maximum kinetic energy of the emitted electron equals the incident photon energy \\(hf\\) minus the work function \\(W\\). This is an energy equation describing the interaction between one photon and one electron.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 255, "url": "sources/phy12/p255.jpg" }
+    },
+    {
+      "id": "mm712-q03",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "According to Einstein's light-quantum model, why is there a threshold (cut-off) frequency below which radiation will not cause the emission of photoelectrons regardless of how bright the light source is?",
+      "options": [
+        "Very intense light reflects off the metal surface before electrons can absorb it",
+        "If the energy of the photon is less than the minimum energy (the work function) required to emit an electron, the photon cannot cause an electron to be emitted",
+        "Low-frequency photons travel too slowly to reach the metal surface",
+        "The metal cools below the temperature needed to release electrons"
+      ],
+      "answer": 1,
+      "explanation": "The energy of a photon is related to its frequency (\\(E = hf\\)). A certain minimum energy — the work function for that metal — is required to cause emission of an electron. If the energy of the photon is less than this value, the photon cannot cause an electron to be emitted, which explains the threshold frequency regardless of intensity.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 254, "url": "sources/phy12/p254.jpg" }
+    },
+    {
+      "id": "mm712-q04",
+      "type": "worked",
+      "q": "Light of wavelength 425 nm strikes a clean metallic surface and a stopping voltage of 1.25 V stops the most energetic photoelectrons. The photon energy is 2.92 eV. Calculate the work function W of the metal in eV.",
+      "given": "Photon energy \\(hf = 2.92\\,\\mathrm{eV}\\);  stopping voltage \\(V_0 = 1.25\\,\\mathrm{V}\\), so emitted-electron energy \\(E_{k\\,\\max} = 1.25\\,\\mathrm{eV}\\)",
+      "working": [
+        "\\(E_{k\\,\\max} = hf - W\\)",
+        "\\(1.25 = 2.92 - W\\)",
+        "\\(W = 2.92 - 1.25\\)",
+        "\\(W = 1.67\\,\\mathrm{eV}\\;(= 2.67\\times10^{-19}\\,\\mathrm{J})\\)"
+      ],
+      "answerValue": 1.67,
+      "answerUnit": "eV",
+      "tolerance": 0.02,
+      "explanation": "Using \\(E_{k\\,\\max} = hf - W\\): when the photon energy \\(hf\\) is 2.92 eV the electrons have an energy of 1.25 eV (read directly from the 1.25 V stopping voltage), so \\(W = 2.92 - 1.25 = 1.67\\,\\mathrm{eV}\\). This matches Sample Problem 3.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 257, "url": "sources/phy12/p257.jpg" }
+    },
+    {
+      "id": "mm712-q05",
+      "type": "worked",
+      "q": "Electrons are emitted from a surface with a kinetic energy of \\(2.6\\times10^{-19}\\) J. The charge on an electron is \\(1.6\\times10^{-19}\\) C. What stopping voltage will remove all of this energy from the electrons?",
+      "given": "\\(E_k = 2.6\\times10^{-19}\\,\\mathrm{J}\\),  \\(q = 1.6\\times10^{-19}\\,\\mathrm{C}\\)",
+      "working": [
+        "\\(E_k = qV_0\\)",
+        "\\(2.6\\times10^{-19} = 1.6\\times10^{-19}\\times V_0\\)",
+        "\\(V_0 = \\dfrac{2.6\\times10^{-19}}{1.6\\times10^{-19}}\\)",
+        "\\(V_0 = 1.6\\,\\mathrm{V}\\) (to 2 significant figures)"
+      ],
+      "answerValue": 1.6,
+      "answerUnit": "V",
+      "tolerance": 0.05,
+      "explanation": "The maximum kinetic energy of an emitted electron is found from the stopping voltage by \\(E_k = qV_0\\). Rearranging, \\(V_0 = E_k/q = 2.6\\times10^{-19}/1.6\\times10^{-19} = 1.6\\,\\mathrm{V}\\). A stopping voltage of 1.6 V will stop these electrons.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 253, "url": "sources/phy12/p253.jpg" }
+    },
+    {
+      "id": "mm712-q06",
+      "type": "recall",
+      "q": "From memory, state the four key observations of the photoelectric effect that any theory of light must explain, and identify which one the classical wave model could explain.",
+      "keyPoints": [
+        "Photoelectrons may be emitted almost immediately, with no significant time delay, even if the light intensity is very low.",
+        "There is a cut-off (threshold) frequency: radiation of lower frequency will not cause emission, regardless of how bright the source is.",
+        "Increasing the intensity of the light increases the number of photoelectrons emitted per second.",
+        "The energy of the photoelectrons does not depend on intensity but does depend on frequency; the wave model could only explain that increasing intensity increases the rate of emission."
+      ],
+      "explanation": "Classical (wave) physics had difficulty with three of the four observations — the lack of time delay, the cut-off frequency, and the frequency-dependence of energy. The only observation it could explain was that increasing intensity increases the rate of emission of photoelectrons.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 253, "url": "sources/phy12/p253.jpg" }
+    },
+    {
+      "id": "mm712-q07",
+      "type": "mc",
+      "q": "On a graph of the maximum kinetic energy of emitted photoelectrons versus the frequency of light for several different metals, what is true of the gradient of the lines?",
+      "options": [
+        "Each metal has a different gradient determined by its work function",
+        "The gradient of all the lines is equal to Planck's constant, so the lines for different metals are parallel",
+        "The gradient equals the threshold frequency of each metal",
+        "The gradient is the negative of the work function"
+      ],
+      "answer": 1,
+      "explanation": "When the maximum kinetic energy of the emitted electrons is plotted versus frequency, the gradient of the lines representing different metals is the same — equal to Planck's constant — so the lines for all the metals are parallel. The point where a line intercepts the frequency axis measures the threshold frequency for that metal.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 254, "url": "sources/phy12/p254.jpg" }
+    },
+    {
+      "id": "mm712-q08",
+      "type": "mc",
+      "q": "How did Robert Millikan's 1916 work relate to Einstein's photoelectric equation?",
+      "options": [
+        "Millikan disproved Einstein's equation by showing the lines were not straight",
+        "Millikan reluctantly provided the evidence confirming Einstein's equation, describing his results as the most direct evidence for the reality of Planck's h",
+        "Millikan showed photons carry both mass and charge",
+        "Millikan first proposed that light energy is quantised in packets of hf"
+      ],
+      "answer": 1,
+      "explanation": "Observations of sufficient accuracy were not available to Einstein in 1905; it was not until 1916 that Millikan, reluctantly, provided that evidence. Though he doubted the physical theory, Millikan stated his results combined with Einstein's equation provided the most direct and striking evidence for the reality of Planck's h.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 254, "url": "sources/phy12/p254.jpg" }
+    },
+    {
+      "id": "mm712-q09",
+      "type": "short",
+      "q": "Using the photon model, explain why increasing the intensity of light whose frequency is below the threshold frequency produces no photocurrent. (3 marks)",
+      "marks": 3,
+      "modelAnswer": "The intensity of light relates to the number of photons per second striking the photocell, while the energy of each photon is fixed by its frequency (\\(E = hf\\)). A threshold frequency exists because photons with energy less than the work function are incapable of freeing electrons from the photocell. Increasing the intensity only increases the number of these too-weak photons arriving, not the energy of each, and an individual electron cannot accept energy from more than one photon — so no electrons are emitted and there is no photocurrent, however bright the light.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States that intensity relates to the number of photons per second, while photon energy depends only on frequency (E = hf)." },
+        { "marks": 1, "descriptor": "States that below threshold each photon has energy less than the work function and so cannot free an electron." },
+        { "marks": 1, "descriptor": "Concludes that increasing intensity adds more weak photons but no electron is emitted, so no photocurrent flows." }
+      ],
+      "explanation": "The photon model predicts a threshold frequency because photons with energy less than the work function are incapable of freeing electrons; raising the intensity raises the photon count, not the energy per photon.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 256, "url": "sources/phy12/p256.jpg" }
+    },
+    {
+      "id": "mm712-q10",
+      "type": "recall",
+      "q": "From memory, recall the mnemonic GIN for reading a maximum-kinetic-energy versus frequency graph: what does each of the gradient, the x-intercept and the y-intercept represent?",
+      "keyPoints": [
+        "G — the Gradient is Planck's constant h (the same for every metal, so all lines are parallel).",
+        "I — the x-Intercept (where K_max = 0) is the threshold frequency f₀.",
+        "N — the y-iNtercept is the Negative work function, −φ; its magnitude is the work function."
+      ],
+      "explanation": "Comparing \\(E_{k\\,\\max} = hf - \\phi\\) with \\(y = mx + c\\): the gradient is \\(h\\), the x-intercept is the threshold frequency, and the y-intercept is \\(-\\phi\\). A bigger work function shifts the line right (higher threshold), never changing the slope — the classic trap is quoting a positive y-intercept or drawing converging lines.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm712-q11",
+      "type": "mc",
+      "q": "The episode describes a photomultiplier tube as an application of the photoelectric effect. What is the photoelectric step that makes it work?",
+      "options": [
+        "Heat from a filament boils electrons off the photocathode by thermionic emission",
+        "A single faint photon strikes a metal photocathode and, by the photoelectric effect, ejects a single electron, which is then accelerated and amplified into a measurable pulse",
+        "Photons are reflected between mirrors until they gain enough energy to ionise a gas",
+        "An electric field strips electrons directly from the photocathode without any light"
+      ],
+      "answer": 1,
+      "explanation": "In a photomultiplier tube a single faint photon ejects one electron from the photocathode by the photoelectric effect; that electron is accelerated onto a series of plates, knocking loose more electrons at each stage, amplifying the signal a million-fold so individual photons can be detected. The marks come from naming the photoelectric step, not just the device.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

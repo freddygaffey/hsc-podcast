@@ -1,174 +1,160 @@
 {
   "questions": [
     {
-      "id": "m899-q01",
-      "q": "In the Geiger-Marsden gold-foil experiment, most alpha particles passed straight through the foil. What does this observation establish about the atom?",
+      "id": "mm899-q01",
+      "type": "mc",
+      "q": "Compare the penetrating power and ionising power of alpha, beta and gamma radiation. Which statement is correct?",
       "options": [
-        "The atom has a diffuse, uniform positive charge",
-        "The atom is mostly empty space",
-        "Electrons orbit the nucleus in fixed energy levels",
-        "The alpha particles are attracted to the nucleus"
+        "Alpha particles have the highest penetrating power and the lowest ionising power",
+        "Alpha particles have a low penetrating power and high ionising power, while gamma rays have very high penetrating power and very low ionising power",
+        "Beta particles are stopped by a sheet of paper, while alpha particles pass through many centimetres of lead",
+        "Gamma rays are deflected through a magnetic field as if they carry positive charge"
       ],
       "answer": 1,
-      "explanation": "Most alphas passing straight through shows the atom is mostly empty space. The rare large-angle deflections and rebounds showed the positive charge is concentrated in a tiny, dense, massive nucleus. (Like charges, so the alpha is repelled, not attracted.)",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Ionising power is the inverse of penetrating power. Alpha particles interact most strongly with matter, so they have low penetrating power (stopped by paper or a few centimetres of air) but high ionising power; gamma rays are barely affected by air and need centimetres of lead, so they have very high penetrating power but very low ionising power.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 404, "url": "sources/phy12/p404.jpg" }
     },
     {
-      "id": "m899-q02",
-      "q": "Why did the Rutherford (planetary) model of the atom fail, according to classical electromagnetism?",
+      "id": "mm899-q02",
+      "type": "mc",
+      "q": "On the graph of average binding energy per nucleon plotted against mass number, which nucleus is the most stable, and what does this imply for nuclear fusion and fission?",
       "options": [
-        "It could not account for the mass of the nucleus",
-        "An orbiting electron is accelerating, so it must radiate energy, spiral inward and collapse — predicting unstable atoms and a continuous spectrum, contrary to observation",
-        "It predicted the atom had no empty space",
-        "It required electrons to have a wavelength"
+        "Hydrogen-1 is the most stable nucleus, so only fission can release energy",
+        "Iron-56 is the most stable nucleus; joining light nuclei (fusion) and splitting heavy nuclei (fission) both produce nuclei with higher average binding energy per nucleon, releasing energy",
+        "Uranium-235 is the most stable nucleus, so fusion absorbs energy at every mass number",
+        "Helium-4 is the most stable nucleus, so neither fusion nor fission can release energy"
       ],
       "answer": 1,
-      "explanation": "An orbiting electron is centripetally accelerating, and an accelerating charge radiates electromagnetic waves. The model therefore predicts the electron spirals into the nucleus, giving unstable atoms and a continuous spectrum — but atoms are stable and emit sharp discrete lines. Bohr's postulates were introduced to fix this.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The graph of average binding energy per nucleon shows the most stable nuclei have a mass number of about 50 to 60, and the most stable nucleus is iron-56. Joining light nuclei produces nuclei with a higher average binding energy per nucleon, releasing energy (fusion); splitting a large nucleus also produces nuclei higher on the curve, again releasing energy (fission).",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 413, "url": "sources/phy12/p413.jpg" }
     },
     {
-      "id": "m899-q03",
-      "q": "Electrons fired at a crystal produce a diffraction pattern. What conclusion does this force, and what deeper question does it answer?",
+      "id": "mm899-q03",
+      "type": "worked",
+      "q": "The mass of a helium atom is 4.002603 u and the mass defect of the helium nucleus is 0.030377 u. Calculate the total binding energy of the helium nucleus and its average binding energy per nucleon.",
+      "given": "mass defect = 0.030377 u;  1 u = 931.5 MeV;  helium-4 has 4 nucleons",
+      "working": [
+        "\\(\\text{Binding energy} = \\text{mass defect} \\times 931.5\\)",
+        "\\(= 0.030377 \\times 931.5 = 28.30\\,\\mathrm{MeV}\\)",
+        "\\(\\text{Average binding energy per nucleon} = \\dfrac{28.30}{4}\\)",
+        "\\(= 7.08\\,\\mathrm{MeV\\ per\\ nucleon}\\)"
+      ],
+      "answerValue": 7.08,
+      "answerUnit": "MeV per nucleon",
+      "tolerance": 0.05,
+      "explanation": "Convert the mass defect to energy using the standard factor 1 u = 931.5 MeV to get the total binding energy of 28.30 MeV, then divide by the 4 nucleons in helium-4 to get the average binding energy per nucleon of 7.08 MeV.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 414, "url": "sources/phy12/p414.jpg" }
+    },
+    {
+      "id": "mm899-q04",
+      "type": "worked",
+      "q": "A radioisotope sample has a half-life of 10.0 minutes. Calculate the time it will take for its activity to drop from 8.0 MBq to 1.0 MBq.",
+      "given": "half-life \\(t_{1/2} = 10.0\\) minutes;  activity falls from 8.0 MBq to 1.0 MBq",
+      "working": [
+        "When half the sample has decayed, the activity also halves.",
+        "\\(8.0 \\to 4.0 \\to 2.0 \\to 1.0\\,\\mathrm{MBq}\\), which is 3 half-lives.",
+        "\\(t = 3 \\times t_{1/2} = 3 \\times 10.0\\)",
+        "\\(= 30.0\\,\\mathrm{minutes}\\)"
+      ],
+      "answerValue": 30,
+      "answerUnit": "minutes",
+      "tolerance": 0.1,
+      "explanation": "Halving the activity each half-life means 3 half-lives have passed before the activity is 1.0 MBq, so the time taken is 3 × 10.0 = 30.0 minutes.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 408, "url": "sources/phy12/p408.jpg" }
+    },
+    {
+      "id": "mm899-q05",
+      "type": "recall",
+      "q": "State the model of half-life in radioactive decay: give the relationship between the number of atoms remaining and time, and the relationship between the decay constant and the half-life.",
+      "keyPoints": [
+        "The rate of decay is proportional to the number of atoms present: dN/dt = −λN, where λ is the decay constant.",
+        "Integrating gives Nt = N0 e^(−λt), where N0 is the number of atoms at t = 0 and Nt is the number at time t.",
+        "The decay constant and half-life are inversely related: λ = ln(2)/t½ ≈ 0.6931/t½."
+      ],
+      "explanation": "If you recalled the exponential decay law Nt = N0 e^(−λt) and that the decay constant λ equals ln(2) divided by the half-life, mark it Good or Easy. The two are inversely related, so a short half-life means a large decay constant and fast decay.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 408, "url": "sources/phy12/p408.jpg" }
+    },
+    {
+      "id": "mm899-q06",
+      "type": "mc",
+      "q": "Using the quark model, account for the charges of the proton and the neutron.",
       "options": [
-        "Electrons are particles; it explains their charge",
-        "Electrons behave as waves (de Broglie matter waves); only whole-number-wavelength orbits form standing waves, explaining why Bohr's orbits are quantised",
-        "Electrons have no mass; it explains beta decay",
-        "Electrons are made of quarks; it explains the Standard Model"
+        "A proton is two up quarks and one down quark (+2/3 +2/3 −1/3 = +1); a neutron is one up quark and two down quarks (+2/3 −1/3 −1/3 = 0)",
+        "A proton is three up quarks (+2); a neutron is three down quarks (−1)",
+        "A proton is one up quark and one down quark; a neutron is two up quarks",
+        "Both the proton and the neutron are made of a single quark each"
+      ],
+      "answer": 0,
+      "explanation": "Each up quark carries a charge of +2/3 and each down quark −1/3. A proton is composed of two up quarks and one down quark, giving a charge of +1; a neutron is composed of one up quark and two down quarks, giving a neutral charge of 0.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 445, "url": "sources/phy12/p445.jpg" }
+    },
+    {
+      "id": "mm899-q07",
+      "type": "mc",
+      "q": "In the Standard Model, which statement about the gauge bosons that carry the fundamental forces is correct?",
+      "options": [
+        "Gluons carry the electromagnetic force and photons carry the strong nuclear force",
+        "Photons carry the electromagnetic force, gluons carry the strong nuclear force, and the W and Z bosons carry the weak nuclear force, but no boson has been found that carries gravity",
+        "The W and Z bosons carry gravity, while gluons carry the weak nuclear force",
+        "A single boson, the Higgs, carries all four fundamental forces"
       ],
       "answer": 1,
-      "explanation": "Diffraction is a wave behaviour, confirming de Broglie's matter waves. The payoff: only orbits whose circumference is a whole number of electron wavelengths form a stable standing wave, which is the mechanism Bohr asserted but could not justify for quantised orbits. Just quoting the wavelength formula earns little — the standing-wave argument is the mark.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Gauge bosons carry forces: photons carry the electromagnetic force, gluons hold quarks together and carry the strong nuclear force, and the W and Z bosons are responsible for the weak nuclear force. No boson has been found that carries the gravitational force, so gravity is the one force the Standard Model does not explain.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 446, "url": "sources/phy12/p446.jpg" }
     },
     {
-      "id": "m899-q04",
-      "q": "What are the quark compositions of a proton and a neutron?",
+      "id": "mm899-q08",
+      "type": "mc",
+      "q": "On a Hertzsprung–Russell (H–R) diagram, what are the main sequence stars doing, and where do the giants and white dwarfs lie?",
       "options": [
-        "Proton = up-down-down; neutron = up-up-down",
-        "Proton = up-up-down; neutron = up-down-down",
-        "Proton = up-up-up; neutron = down-down-down",
-        "Proton = up-down; neutron = up-up"
+        "Main sequence stars are fusing hydrogen in their cores; giants and supergiants lie above the main sequence, while white dwarfs lie below it",
+        "Main sequence stars have stopped all fusion; giants lie below the main sequence and white dwarfs above it",
+        "Main sequence stars are fusing iron in their cores; white dwarfs are the most luminous stars on the diagram",
+        "Every star on the H–R diagram has the same luminosity and surface temperature"
+      ],
+      "answer": 0,
+      "explanation": "On an H–R diagram most stars cluster along a diagonal main sequence, fusing hydrogen in their cores like the Sun, from hot and luminous down to cool and dim. Above the main sequence are the very large, bright giants and supergiants; below it is a cluster of hot but dim white dwarfs in which fusion has ceased.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 330, "url": "sources/phy12/p330.jpg" }
+    },
+    {
+      "id": "mm899-q09",
+      "type": "mc",
+      "q": "Hubble analysed the spectra of distant galaxies. What did he find about their red-shift, and what does it imply about the universe?",
+      "options": [
+        "All galaxies are blue-shifted, implying the universe is contracting",
+        "Distant galaxies are all moving away from us, and the further away they are the greater their red-shift, which is evidence that the universe is expanding",
+        "The red-shift is the same for every galaxy regardless of its distance",
+        "Only nearby galaxies are red-shifted, while distant galaxies show no shift"
       ],
       "answer": 1,
-      "explanation": "Proton = uud: \\(+\\tfrac{2}{3} + \\tfrac{2}{3} - \\tfrac{1}{3} = +1\\). Neutron = udd: \\(+\\tfrac{2}{3} - \\tfrac{1}{3} - \\tfrac{1}{3} = 0\\). Doing the charge sum confirms the assignment and earns an easy mark.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Analysis of the spectra from galaxies revealed to Hubble that all distant galaxies are moving away from us, and the further away they are, the greater their red-shift. Because the red-shift increases with distance, it is evidence for the expansion of the universe — a single galaxy's red-shift alone would only show motion.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 342, "url": "sources/phy12/p342.jpg" }
     },
     {
-      "id": "m899-q05",
-      "q": "Compare the ionising power and penetrating ability of alpha, beta and gamma radiation.",
-      "options": [
-        "Alpha is the most penetrating and least ionising; gamma is the least penetrating",
-        "All three have equal ionising power but different penetration",
-        "Alpha is the most ionising but least penetrating; gamma is the least ionising but most penetrating (the two are inversely related)",
-        "Beta is the most ionising and most penetrating"
+      "id": "mm899-q10",
+      "type": "recall",
+      "q": "For each atomic model, name the single observation that overturned (or, for Bohr, completed) it: the plum pudding model, the nuclear (planetary) model, and Bohr's model.",
+      "keyPoints": [
+        "Plum pudding: the gold-foil rebounds — a diffuse sphere of positive charge cannot bounce an alpha particle straight back, so the positive charge must be concentrated in a tiny, dense nucleus.",
+        "Nuclear/planetary model: Maxwell's electromagnetism — an orbiting (accelerating) electron must radiate and spiral in, predicting unstable atoms and a continuous spectrum, neither of which we observe.",
+        "Bohr's model: it works only for hydrogen and never explains why the orbits are quantised — de Broglie's standing waves supplied the missing mechanism."
       ],
-      "answer": 2,
-      "explanation": "Alpha (helium nucleus) is most ionising but stopped by paper; gamma (a photon) is weakly ionising but needs centimetres of lead; beta is intermediate. Ionising power and penetration are inversely related — the most ionising radiation deposits its energy fastest and so stops soonest.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The most-examined reasoning skill in this module is tying each observation to the conclusion it forces. If you linked all three observations to their conclusions, mark it Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m899-q06",
-      "q": "At the quark level, what happens in beta-minus decay, and which force is responsible?",
+      "id": "mm899-q11",
+      "type": "mc",
+      "q": "In a PET scan, when a positron meets an electron they annihilate. Why are the two gamma photons emitted in almost exactly opposite directions?",
       "options": [
-        "An up quark becomes a down quark, via the strong force",
-        "A down quark becomes an up quark, via the weak force (W boson), turning a neutron into a proton and emitting an electron and antineutrino",
-        "A proton is split into three quarks, via electromagnetism",
-        "A gluon is emitted, via gravity"
+        "Because charge must be created, not conserved, in the annihilation",
+        "Because the electron-positron pair was almost at rest, so the total momentum must stay near zero — the two photons fly off in opposite directions to conserve momentum",
+        "Because one photon carries the mass and the other carries the charge of the pair",
+        "Because the two photons repel each other electrically once created"
       ],
       "answer": 1,
-      "explanation": "In beta-minus decay a neutron becomes a proton: a down quark changes to an up quark, mediated by the weak nuclear force (W boson), emitting an electron and an antineutrino. Mass number is unchanged, atomic number rises by one. Beta decay is the weak force, not the strong force.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m899-q07",
-      "q": "Why does the binding-energy-per-nucleon curve explain why BOTH fission and fusion release energy, and why fusion stops at iron?",
-      "options": [
-        "Both reactions move products away from the iron-56 peak, releasing energy; iron is too light to fuse",
-        "Both reactions move products toward the iron-56 peak (higher binding energy per nucleon, lighter products, energy released); iron is at the peak, so fusing past it would require energy input",
-        "Fusion releases energy but fission absorbs it; iron cannot exist in stars",
-        "Both reactions destroy mass entirely; iron has no binding energy"
-      ],
-      "answer": 1,
-      "explanation": "Fusion (light nuclei climbing the left) and fission (heavy nuclei climbing the right) both produce nuclei higher on the curve, nearer iron-56, so the products are more tightly bound and lighter — the mass defect is released via \\(E = mc^2\\). Iron-56 is the peak, so fusing it or heavier nuclei moves down the curve and absorbs energy, halting fusion.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m899-q08",
-      "q": "A galaxy's hydrogen absorption lines are shifted toward longer wavelengths. What does this single spectrum reveal, and what extra fact is needed to conclude the universe is expanding?",
-      "options": [
-        "The galaxy is approaching; no extra fact is needed",
-        "The galaxy contains hydrogen and is receding (redshift); to conclude expansion you also need that redshift increases with distance (recession speed proportional to distance)",
-        "The galaxy is made of iron; the universe is contracting",
-        "The galaxy is hot; the universe is static"
-      ],
-      "answer": 1,
-      "explanation": "The recognisable hydrogen line pattern shows composition; its shift to longer wavelengths (redshift) shows the galaxy is receding. But a single redshift is just motion — only the fact that redshift INCREASES WITH DISTANCE (Hubble's law) implies space itself is stretching, i.e. the expanding universe.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m899-q09",
-      "q": "Why must positron-electron annihilation produce two gamma photons in opposite directions?",
-      "options": [
-        "To conserve charge, since each photon is charged",
-        "To conserve momentum: the pair is nearly at rest (total momentum near zero), and a single photon always carries momentum, so two opposite photons are needed to cancel to zero",
-        "Because two photons carry more energy than one",
-        "Because the strong force requires paired emission"
-      ],
-      "answer": 1,
-      "explanation": "The annihilating pair is essentially at rest, so total momentum is near zero. A single photon always carries momentum and could not give zero total, violating conservation of momentum. Two equal photons emitted back-to-back have momenta that cancel. Each carries 0.511 MeV — the cleanest demonstration of \\(E = mc^2\\).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m899-q10",
-      "q": "Evaluate the claim 'all the chemical elements were made in stars.' Which response best reflects the three-stage origin of the elements?",
-      "options": [
-        "Fully true — every element was forged by stellar fusion",
-        "Fully false — all elements came from the Big Bang",
-        "Partly true but imprecise: the Big Bang made hydrogen, helium and trace lithium; stars made elements up to iron; supernovae made elements heavier than iron",
-        "Partly true: stars made the light elements and supernovae made everything up to iron"
-      ],
-      "answer": 2,
-      "explanation": "The claim is partly true but imprecise. Hydrogen, helium and a trace of lithium formed in the Big Bang; stellar fusion built elements up to iron-56 (the binding-energy peak); and elements heavier than iron formed in supernovae by rapid neutron capture. 'Iron is the heaviest element made by fusion' is the key qualifier.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Annihilation converts the entire mass of the electron-positron pair into energy as two gamma photons, each of 0.511 MeV. Because the pair was nearly at rest, the total momentum is almost zero, so the two photons must travel in opposite directions to conserve momentum — the principle the PET scanner uses to locate the annihilation point.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

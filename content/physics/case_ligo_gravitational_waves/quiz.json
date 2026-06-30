@@ -1,174 +1,156 @@
 {
   "questions": [
     {
-      "id": "ligo-q01",
-      "q": "In Einstein's general relativity, what IS a gravitational wave?",
+      "id": "qcaseligo-q01",
+      "type": "mc",
+      "q": "In Einstein's general relativity, what is gravity?",
       "options": [
-        "A beam of high-energy light produced by black holes",
-        "A ripple in the curvature of spacetime itself, travelling outward at the speed of light",
-        "A stream of gravitons emitted by stationary masses",
-        "A sound wave travelling through the interstellar medium"
+        "A force that reaches across empty space to pull two masses together",
+        "The curvature, or shape, of spacetime caused by mass and energy",
+        "A stream of particles exchanged between massive objects",
+        "The pressure of light pushing objects apart"
       ],
       "answer": 1,
-      "explanation": "In general relativity gravity is the curvature of spacetime. Violently accelerating masses can make that curvature wobble, sending out ripples in the shape of space — gravitational waves — which travel at the speed of light.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Einstein replaced Newton's force-at-a-distance with geometry: mass and energy bend the fabric of spacetime, and objects roll along the curves. As the episode puts it, matter tells spacetime how to curve, and curved spacetime tells matter how to move.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "ligo-q02",
-      "q": "As a gravitational wave passes, how does it affect space?",
+      "id": "qcaseligo-q02",
+      "type": "mc",
+      "q": "What physically happens to space as a gravitational wave passes through a region?",
       "options": [
-        "It stretches space equally in all directions",
-        "It stretches space in one direction while squeezing it in the perpendicular direction, then reverses",
-        "It only affects the objects, not the space between them",
-        "It permanently compresses everything it touches"
+        "Space heats up and glows in one direction",
+        "Space is stretched in one direction while squeezed in the perpendicular direction, then the two reverse",
+        "The objects in the region gain mass while the space stays fixed",
+        "All distances shrink uniformly in every direction at once"
       ],
       "answer": 1,
-      "explanation": "A gravitational wave stretches space along one axis while squeezing the perpendicular axis, then alternates. It is the distance (the space itself) that changes, which is why LIGO's two perpendicular arms change in opposite directions.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "A gravitational wave is a ripple in the shape of space. As it passes it stretches distances along one axis while squeezing the perpendicular axis, then reverses. It is the space between objects that changes, not the objects themselves.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "ligo-q03",
-      "q": "Why must gravitational-wave sources be extreme objects like merging black holes rather than something built in a lab?",
+      "id": "qcaseligo-q03",
+      "type": "mc",
+      "q": "Why does LIGO rely on cosmic events like merging black holes rather than a source built in a laboratory?",
       "options": [
-        "Because labs are too small",
-        "Because gravity is by far the weakest fundamental force, so only enormous masses moving violently at near-light speed produce a detectable wave",
-        "Because laboratory equipment absorbs gravitational waves",
-        "Because gravitational waves only form in a vacuum"
+        "Laboratories are not allowed to produce gravitational waves",
+        "Gravity is by far the weakest force, so only unimaginably heavy objects moving at enormous speeds make a detectable wave",
+        "Lab equipment moves too slowly to emit any waves at all",
+        "Gravitational waves can only form inside a vacuum, which labs lack"
       ],
       "answer": 1,
-      "explanation": "Gravity is extraordinarily weak (the tiny gravitational constant). Producing a detectable wave needs unimaginably heavy objects moving at unimaginable speeds — two ~30-solar-mass black holes orbiting hundreds of times a second. No lab comes close.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Gravity is the weakest force in nature, with a tiny gravitational constant of about 6.67 x 10^-11. A detectable wave needs two black holes, each around 30 solar masses, orbiting hundreds of times a second. Nothing buildable comes within a trillion trillion times of that.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "ligo-q04",
-      "q": "How does LIGO's interferometer detect a passing gravitational wave?",
+      "id": "qcaseligo-q04",
+      "type": "mc",
+      "q": "A common objection is that a gravitational wave should stretch the laser's wavelength along with the arm, cancelling the effect. Why does LIGO still work?",
       "options": [
-        "It measures the temperature change in its mirrors",
-        "A laser is split down two perpendicular arms; normally the recombined beams cancel (darkness), but a wave changes the arms' lengths differently, breaking the cancellation and letting light leak to the detector",
-        "It counts the gravitons striking a sensor",
-        "It measures the force the wave exerts on a spring"
+        "The laser wavelength is fixed and immune to gravitational waves",
+        "LIGO measures the round-trip travel time of light and compares the two arms, which change in opposite directions, so a real difference remains",
+        "The mirrors absorb the stretched light before it returns",
+        "The wave affects the arm but never the light inside it"
       ],
       "answer": 1,
-      "explanation": "A split laser travels down two perpendicular 4-km arms and recombines. The setup is tuned for destructive interference (darkness). A passing wave lengthens one arm and shortens the other, so the beams no longer cancel and a flicker of light reaches the detector.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "LIGO is not laying a ruler against a table; it measures how long light takes for the round trip, which shows up as a phase shift, and it always compares the two perpendicular arms. While one arm lengthens the other shortens, so the differential signal is real and measurable.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "ligo-q05",
-      "q": "A common objection is that a gravitational wave should stretch the laser's wavelength along with the arm, cancelling the effect. Why doesn't this defeat LIGO?",
+      "id": "qcaseligo-q05",
+      "type": "mc",
+      "q": "What is the key reason LIGO uses two detectors thousands of kilometres apart and only trusts coincident signals?",
       "options": [
-        "The laser wavelength is immune to gravitational waves",
-        "LIGO measures the round-trip travel TIME of light and compares the two arms, which change in opposite directions — so a real difference between the arms remains measurable",
-        "The arms never actually change length",
-        "The mirrors absorb the stretched light"
+        "To take turns running so the equipment can rest",
+        "Local noise such as trucks and waves is local and never appears in both at once, but a real gravitational wave sweeps through both detectors",
+        "To make the laser beams twice as powerful",
+        "So one detector can serve as a spare if the other breaks"
       ],
       "answer": 1,
-      "explanation": "LIGO is not laying a ruler against the arm; it measures how long light takes to travel down and back, comparing the two perpendicular arms. Since one arm lengthens while the other shortens, the differential between them is real and detectable.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Ground vibration is about a hundred billion times larger than the signal, but it is local: a truck near Livingston does not shake Hanford. A genuine gravitational wave crosses the whole planet, so the rule is to believe a signal only if both detectors see the same thing within the few milliseconds light takes to travel between them.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "ligo-q06",
-      "q": "Why does LIGO use two detectors ~3000 km apart and only believe coincident signals?",
+      "id": "qcaseligo-q06",
+      "type": "mc",
+      "q": "Why does an inspiralling pair produce a chirp, a signal that rises in both frequency and amplitude?",
       "options": [
-        "To double the laser power",
-        "Local noise (trucks, earthquakes) is local and won't appear in both sites at once, but a real gravitational wave sweeps across the planet and passes through both within milliseconds",
-        "To measure the wave's temperature",
-        "Because one detector is always switched off"
+        "The detector electronics add an artificial rising tone",
+        "As the orbit radiates energy as gravitational waves, the objects fall closer and orbit faster, so the wave rises in both pitch and amplitude until merger",
+        "The black holes are moving away from Earth, raising their pitch",
+        "The laser slowly increases in power during the measurement"
       ],
       "answer": 1,
-      "explanation": "Seismic and human noise is local and never appears in both widely separated detectors simultaneously. A genuine gravitational wave crosses the whole Earth, so it must appear in both within the light-travel time — coincidence detection rejects local noise.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Radiating gravitational waves makes the orbit lose energy, so the objects fall closer and must orbit faster, which radiates even more energy in a runaway feedback loop. The gravitational wave frequency is twice the orbital frequency, so frequency and amplitude both climb together into the characteristic chirp ending in the merger.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "ligo-q07",
-      "q": "Why does an inspiralling binary produce a 'chirp' — a signal rising in both frequency and amplitude?",
-      "options": [
-        "The objects are heating up as they approach",
-        "As the system radiates energy as gravitational waves, the objects spiral closer, orbit faster (raising the wave frequency) and more violently (raising amplitude), in a runaway feedback loop",
-        "The detector amplifies higher frequencies",
-        "The black holes are emitting radio signals"
+      "id": "qcaseligo-q07",
+      "type": "recall",
+      "q": "From memory, in your own words: why are heavy elements such as gold thought to be forged in neutron star mergers rather than inside ordinary stars?",
+      "keyPoints": [
+        "Iron sits at the peak of the binding-energy curve, so building elements heavier than iron requires energy input rather than releasing it, and even dying stars cannot fuse past iron.",
+        "Making elements heavier than iron needs rapid neutron capture, the r-process, which demands an extremely neutron-rich and violent environment.",
+        "A neutron star merger flings out the most neutron-rich matter in the universe, where the r-process runs riot and produces gold, platinum and other heavy elements (a kilonova)."
       ],
-      "answer": 1,
-      "explanation": "Radiating gravitational waves drains orbital energy, so the objects fall closer and (by orbital mechanics) orbit faster, radiating even more — a runaway. Wave frequency (twice the orbital frequency) rises and amplitude grows, producing the rising 'chirp' ending in the merger.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled the iron wall on the binding-energy curve and linked the r-process to the neutron-rich debris of a merger, grade yourself Good or Easy. GW170817 confirmed this by showing a kilonova with the spectral fingerprint of strontium.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "ligo-q08",
-      "q": "In GW150914, two black holes of 36 and 29 solar masses merged into one of about 62 solar masses. Where did the missing ~3 solar masses go?",
-      "options": [
-        "They were ejected as visible light",
-        "They were converted directly into the energy of the gravitational waves, via \\(E = mc^2\\)",
-        "They fell into a separate black hole",
-        "The measurement was simply in error"
+      "id": "qcaseligo-q08",
+      "type": "recall",
+      "q": "From memory, in your own words: what made GW170817 the birth of multi-messenger astronomy, and what did the roughly 1.7 second gap between the gravitational waves and the gamma rays tell us?",
+      "keyPoints": [
+        "It was detected first in gravitational waves, then 1.74 seconds later as a gamma-ray burst, and later in visible light, so one event was studied with both light and warped spacetime.",
+        "The gravitational waves came directly from the merger, while the gamma rays came from a jet that took a moment to form and punch out, explaining the short delay.",
+        "Arriving within about 2 seconds after travelling side by side for 130 million years showed gravity and light travel at the same speed to better than one part in a thousand trillion, ruling out whole families of rival theories."
       ],
-      "answer": 1,
-      "explanation": "About 3 solar masses were converted into pure gravitational-wave energy through \\(E = mc^2\\) — roughly \\(5\\times10^{47}\\) J in a fraction of a second, briefly out-radiating all the stars in the observable universe combined.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled that multiple messengers (gravitational waves, gamma rays, visible light) observed one event, and that the tiny delay confirmed gravity and light share the same speed, grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "ligo-q09",
-      "q": "In GW170817, the gamma rays arrived about 1.7 s after the gravitational waves, despite travelling ~130 million years. What key conclusion did this enable?",
-      "options": [
-        "That light travels faster than gravity",
-        "That gravity and light travel at the same speed to better than one part in \\(10^{15}\\), ruling out many alternatives to general relativity",
-        "That the source was much closer than thought",
-        "That gravitational waves are a form of light"
+      "id": "qcaseligo-q09",
+      "type": "worked",
+      "q": "The two black holes in GW150914 had masses of about 36 and 29 solar masses, but the final merged black hole was about 62 solar masses. How many solar masses were radiated away as gravitational waves?",
+      "given": "\\(m_1 = 36\\,M_\\odot\\),  \\(m_2 = 29\\,M_\\odot\\),  final black hole \\(M_f = 62\\,M_\\odot\\)",
+      "working": [
+        "Total initial mass: \\(36 + 29 = 65\\,M_\\odot\\)",
+        "Mass radiated away: \\(65 - 62 = 3\\,M_\\odot\\)",
+        "By \\(E = mc^2\\) this missing mass became the energy of the gravitational waves (around \\(5 \\times 10^{47}\\) joules)."
       ],
-      "answer": 1,
-      "explanation": "The tiny ~2 s gap (explained by the gamma-ray jet taking time to form) after 130 million years of travel showed gravity and light travel at essentially the same speed — to better than one part in a thousand trillion — eliminating whole families of competing gravity theories.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 3,
+      "answerUnit": "solar masses",
+      "tolerance": 0.5,
+      "explanation": "The three missing solar masses did not go anywhere; they became the wave. Via Einstein's mass-energy equivalence E = mc^2, that mass was converted directly into the energy of gravitational waves, briefly radiating more power than every star in the visible universe combined.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "ligo-q10",
-      "q": "What did the kilonova observed alongside GW170817 confirm about the origin of heavy elements?",
+      "id": "qcaseligo-q10",
+      "type": "mc",
+      "q": "Why were the LIGO scientists, including Marco Drago, initially convinced the September 2015 signal was not real?",
       "options": [
-        "That gold and other elements heavier than iron form in ordinary stars",
-        "That elements heavier than iron form via rapid neutron capture (the r-process) in the neutron-rich debris of neutron-star mergers",
-        "That all elements were made in the Big Bang",
-        "That heavy elements form only in supernovae of single stars"
+        "The two detectors disagreed completely with each other",
+        "LIGO secretly fed fake blind-injection signals into the data to keep scientists honest, and this signal looked so perfect they assumed it had been planted",
+        "The detectors were known to be broken at the time",
+        "Gravitational waves had already been ruled out by earlier experiments"
       ],
       "answer": 1,
-      "explanation": "Stars cannot build elements beyond iron (fusion past iron absorbs energy). The merger flung out neutron-rich matter where the r-process forged heavy elements — confirmed by the kilonova's evolution and the detection of strontium, including an estimated ~10 Earth-masses of gold and platinum.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "LIGO used blind injections, deliberately planted fake signals, to test whether the team could find and analyse a real event. The chirp was so clean and textbook that Drago assumed someone had injected it. Only after the four people authorised to know confirmed no injection had been made was it accepted as a real signal.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcaseligo-q11",
+      "type": "short",
+      "q": "Explain how the detection of GW150914 provided a confirmation of Einstein's general relativity. (3 marks)",
+      "marks": 3,
+      "modelAnswer": "Einstein's general relativity predicted gravitational waves: ripples in the curvature of spacetime emitted when very massive objects accelerate violently, travelling outward at the speed of light. In September 2015 LIGO directly detected such a wave, measuring arm-length changes of about 4 x 10^-18 metres, roughly a thousandth the width of a proton. The recorded waveform, including the inspiral, merger and ring-down, matched the waveform computed from Einstein's equations point for point, confirming the prediction almost exactly 100 years after the theory was written.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States that general relativity predicted gravitational waves as ripples in spacetime travelling at the speed of light." },
+        { "marks": 1, "descriptor": "Identifies that LIGO directly detected such a wave, measuring an extraordinarily small change in arm length." },
+        { "marks": 1, "descriptor": "States that the measured waveform matched the prediction of Einstein's equations, confirming the theory." }
+      ],
+      "explanation": "The marker rewards linking the theoretical prediction to the direct measurement and to the match between the recorded and predicted waveforms.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

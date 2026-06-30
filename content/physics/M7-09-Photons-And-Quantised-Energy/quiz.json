@@ -1,174 +1,150 @@
 {
   "questions": [
     {
-      "id": "m709-q01",
-      "q": "Which statement best defines a photon as taught in this episode?",
-      "options": [
-        "A continuous stream of electromagnetic energy whose strength depends on brightness",
-        "A discrete, indivisible packet (quantum) of light energy whose energy equals Planck's constant times the frequency",
-        "A charged particle of light that carries both energy and electric charge",
-        "A standing wave of light trapped between two surfaces"
-      ],
-      "answer": 1,
-      "explanation": "A photon is a discrete, indivisible quantum of electromagnetic energy with \\(E = hf\\). It is not continuous (the whole quantum idea is that light comes in lumps), and photons are uncharged, ruling out the other options.",
+      "id": "mm709-q01",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m709-q02",
-      "q": "Using \\(E = \\dfrac{hc}{\\lambda}\\), how does a photon's energy depend on its wavelength?",
+      "q": "Max Planck assumed radiant energy could be treated as if it were exchanged in multiples of a small 'lump' that was characteristic of each frequency of radiation. What did he call this small packet, described by the relation E = hf?",
       "options": [
-        "Energy is directly proportional to wavelength",
-        "Energy is inversely proportional to wavelength: shorter wavelength means higher energy",
-        "Energy is independent of wavelength and set only by intensity",
-        "Energy is proportional to the square of the wavelength"
-      ],
-      "answer": 1,
-      "explanation": "Since \\(E = hc/\\lambda\\), energy is inversely proportional to wavelength — 'short wave, big punch'. A short wavelength is a high-frequency, high-energy photon; a long wavelength is a low-energy photon.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m709-q03",
-      "q": "A red laser is made brighter while its colour stays the same. What actually changes?",
-      "options": [
-        "Each red photon now carries more energy",
-        "The frequency of the red light increases",
-        "More red photons are emitted per second, each carrying the same energy as before",
-        "The wavelength of the red light shortens"
-      ],
-      "answer": 2,
-      "explanation": "Brightness (intensity) is set by the number of photons per second, not the energy per photon. Each red photon's energy is fixed by red's frequency, so a brighter red beam means more photons of the same energy — the trap of 'brighter means more energetic photons' is exactly what the episode warns against.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m709-q04",
-      "q": "Who introduced the relation \\(E = hf\\) and what did he initially believe about it?",
-      "options": [
-        "Einstein in 1905, and he immediately believed the photon was physically real",
-        "Planck in 1900, but he regarded the energy quantum as merely a mathematical trick",
-        "Newton in 1704, as part of his particle model of light",
-        "Hertz in 1887, after discovering the photoelectric effect"
-      ],
-      "answer": 1,
-      "explanation": "Max Planck introduced \\(E = hf\\) in 1900 to fix black-body radiation and thought it just a bookkeeping trick. Einstein, in 1905, gave the photon physical reality. The HSC tests this order, so don't credit Einstein with the equation.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m709-q05",
-      "q": "Calculate the energy of a photon of wavelength \\(6.0 \\times 10^{-7}\\,\\mathrm{m}\\). (Use \\(h = 6.63\\times10^{-34}\\,\\mathrm{J\\,s}\\), \\(c = 3.0\\times10^{8}\\,\\mathrm{m\\,s^{-1}}\\).)",
-      "options": [
-        "\\(3.3 \\times 10^{-19}\\,\\mathrm{J}\\)",
-        "\\(3.3 \\times 10^{-25}\\,\\mathrm{J}\\)",
-        "\\(1.1 \\times 10^{-19}\\,\\mathrm{J}\\)",
-        "\\(2.0 \\times 10^{-19}\\,\\mathrm{J}\\)"
+        "A quantum of energy",
+        "A wavelength of energy",
+        "An amplitude of energy",
+        "A spectrum of energy"
       ],
       "answer": 0,
-      "explanation": "\\(E = hc/\\lambda = (6.63\\times10^{-34})(3.0\\times10^{8})/(6.0\\times10^{-7}) = 3.3\\times10^{-19}\\,\\mathrm{J}\\). The \\(10^{-25}\\) distractor forgets to divide by the wavelength.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Planck described the small, average packet of radiant energy as a 'quantum', whose size depends on the frequency through E = hf, where h is Planck's constant (6.63 × 10⁻³⁴ J s). One quantum of light energy is what we now call a photon.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 247, "url": "sources/phy12/p247.jpg" }
     },
     {
-      "id": "m709-q06",
-      "q": "Convert a photon energy of \\(3.2 \\times 10^{-19}\\,\\mathrm{J}\\) to electron-volts (\\(1\\,\\mathrm{eV} = 1.6\\times10^{-19}\\,\\mathrm{J}\\)).",
-      "options": [
-        "0.5 eV",
-        "2.0 eV",
-        "5.1 eV",
-        "3.2 eV"
-      ],
-      "answer": 1,
-      "explanation": "To convert joules to eV, divide by \\(1.6\\times10^{-19}\\): \\(3.2\\times10^{-19} / 1.6\\times10^{-19} = 2.0\\,\\mathrm{eV}\\).",
+      "id": "mm709-q02",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "Classical wave theory predicted that as the wavelength of black body radiation became shorter, the radiation intensity would increase without limit, approaching infinity in the ultraviolet. What was this failure of classical physics called?",
+      "options": [
+        "The ultraviolet catastrophe",
+        "The photoelectric effect",
+        "The Doppler shift",
+        "Wien's displacement"
+      ],
+      "answer": 0,
+      "explanation": "Classical theory predicted the intensity emitted by a black body would rise without limit as wavelength decreased into the ultraviolet, violating conservation of energy. This unphysical prediction, the 'ultraviolet catastrophe', is the problem Planck's quantum hypothesis E = hf was invented to solve.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 247, "url": "sources/phy12/p247.jpg" }
     },
     {
-      "id": "m709-q07",
-      "q": "A pulse of light delivers a total energy of \\(4.0 \\times 10^{-18}\\,\\mathrm{J}\\). If each photon carries \\(4.0 \\times 10^{-19}\\,\\mathrm{J}\\), how many photons are in the pulse?",
-      "options": [
-        "100 photons",
-        "10 photons",
-        "1 photon",
-        "40 photons"
-      ],
-      "answer": 1,
-      "explanation": "The number of photons is total energy divided by energy per photon: \\(4.0\\times10^{-18} / 4.0\\times10^{-19} = 10\\) photons. The units cancel to a pure number, as a photon count must.",
+      "id": "mm709-q03",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "Although Planck is considered the first to introduce quantum theory and invented the constant h to fit the black body radiation results, how did he himself regard the quantisation of radiation at first?",
+      "options": [
+        "As a mathematical trick he was never comfortable with",
+        "As proof that light is purely a wave",
+        "As a discovery he immediately championed as a new physics",
+        "As an error he later retracted"
+      ],
+      "answer": 0,
+      "explanation": "Planck saw the quantum relationship as a small correction, a mathematical trick, to explain black body radiation experiments. He was never comfortable with the strict application of quantum theory and failed to accept the quantisation of radiation until later. It was Einstein, in 1905, who gave the photon physical reality.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 248, "url": "sources/phy12/p248.jpg" }
     },
     {
-      "id": "m709-q08",
-      "q": "Why can a brief flicker of ultraviolet light eject electrons from a metal while intense red light cannot, no matter how bright?",
-      "options": [
-        "UV light carries more total energy than red light always",
-        "Each UV photon has a higher frequency and therefore enough energy in a single hit, whereas each red photon is too feeble regardless of how many arrive",
-        "Red photons are absorbed before reaching the metal surface",
-        "Red light travels slower than UV light, so it cannot reach the electrons"
+      "id": "mm709-q04",
+      "type": "worked",
+      "q": "What is the energy of an ultraviolet-light photon of wavelength 3.00 × 10⁻⁷ m? (Use h = 6.63 × 10⁻³⁴ J s and c = 3.00 × 10⁸ m s⁻¹.)",
+      "given": "\\(\\lambda = 3.00 \\times 10^{-7}\\,\\mathrm{m}\\),  \\(h = 6.63 \\times 10^{-34}\\,\\mathrm{J\\,s}\\),  \\(c = 3.00 \\times 10^{8}\\,\\mathrm{m\\,s^{-1}}\\)",
+      "working": [
+        "\\(c = f\\lambda\\), so \\(f = \\dfrac{c}{\\lambda}\\)",
+        "\\(E = hf = \\dfrac{hc}{\\lambda}\\)",
+        "\\(E = \\dfrac{6.63 \\times 10^{-34} \\times 3.00 \\times 10^{8}}{3.00 \\times 10^{-7}}\\)",
+        "\\(E = 6.63 \\times 10^{-19}\\,\\mathrm{J}\\)"
       ],
-      "answer": 1,
-      "explanation": "What matters is the energy of each individual photon, set by frequency. A UV photon's high frequency gives it enough energy in one hit; a million feeble red photons are still a million feeble taps. This is the energy-versus-number distinction made visible.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 6.63e-19,
+      "answerUnit": "J",
+      "tolerance": 5e-21,
+      "explanation": "Because the wavelength is given, use the combined form E = hc/λ. Substituting gives 6.63 × 10⁻¹⁹ J for a single ultraviolet photon, exactly the textbook's worked value.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 248, "url": "sources/phy12/p248.jpg" }
     },
     {
-      "id": "m709-q09",
-      "q": "Two laser beams have equal total power but different colours: one red (longer \\(\\lambda\\)), one blue (shorter \\(\\lambda\\)). Which contains more photons per second, and why?",
-      "options": [
-        "The blue beam, because higher-energy photons arrive faster",
-        "The red beam, because each red photon carries less energy, so more are needed per second to deliver the same power",
-        "They contain exactly the same number, since the power is equal",
-        "The blue beam, because shorter wavelengths always mean more photons"
+      "id": "mm709-q05",
+      "type": "worked",
+      "q": "Red light has a wavelength of 650 nm. Determine the frequency of this light modelled as a wave, and the energy of one photon associated with this red light.",
+      "given": "\\(\\lambda = 650\\,\\mathrm{nm} = 6.50 \\times 10^{-7}\\,\\mathrm{m}\\),  \\(h = 6.63 \\times 10^{-34}\\,\\mathrm{J\\,s}\\),  \\(c = 3.00 \\times 10^{8}\\,\\mathrm{m\\,s^{-1}}\\)",
+      "working": [
+        "\\(f = \\dfrac{c}{\\lambda} = \\dfrac{3.00 \\times 10^{8}}{6.50 \\times 10^{-7}}\\)",
+        "\\(f = 4.62 \\times 10^{14}\\,\\mathrm{Hz}\\)",
+        "\\(E = hf = 6.63 \\times 10^{-34} \\times 4.62 \\times 10^{14}\\)",
+        "\\(E = 3.06 \\times 10^{-19}\\,\\mathrm{J}\\)"
       ],
-      "answer": 1,
-      "explanation": "Since \\(P = N \\times E_{\\text{photon}}\\) and each red photon carries less energy, the red beam needs more photons per second to match the blue beam's power: \\(N \\propto \\lambda\\), so equal power and redder light means more photons per second.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 3.06e-19,
+      "answerUnit": "J",
+      "tolerance": 5e-21,
+      "explanation": "First convert 650 nm to 6.50 × 10⁻⁷ m, then find the frequency from c = fλ, and finally the photon energy from E = hf. The red photon carries about 3.06 × 10⁻¹⁹ J — a low-energy photon, since red is a long wavelength.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 248, "url": "sources/phy12/p248.jpg" }
     },
     {
-      "id": "m709-q10",
-      "q": "What does it mean to say light energy is 'quantised'?",
-      "options": [
-        "Energy can be exchanged in any continuous amount down to zero",
-        "Energy is exchanged only in whole-number multiples of one photon's worth (\\(hf\\)) — a photon is all-or-nothing",
-        "Energy depends on the square of the amplitude of the light wave",
-        "Energy can be split into fractions of a photon when the light is dim"
+      "id": "mm709-q06",
+      "type": "recall",
+      "q": "From memory: explain the difference between the classical 'continuous' description of energy and the new 'quantised', discrete description of energy.",
+      "keyPoints": [
+        "Classical physics predicts the emission of electromagnetic radiation is continuous — energy can occur in any amount (like a smooth slide).",
+        "Quantum mechanics says energy is exchanged in discrete 'packets' or 'quanta' — a set number of small steps (like a ladder).",
+        "Energy can only be exchanged in whole-number multiples of a small quantum, of size hf for that frequency.",
+        "We don't notice the 'jumps' in everyday light because Planck's constant h is so small the quantum of energy is too tiny to observe."
       ],
-      "answer": 1,
-      "explanation": "Quantisation means energy is delivered only in whole lumps of \\(hf\\); a photon hands over its full energy or nothing at all. There is no such thing as half a photon's worth of energy being exchanged.",
+      "explanation": "If you recalled that classical energy is continuous while quantised energy comes in discrete packets (quanta) of size hf, and that the quantum is too small to see because h is tiny, grade yourself Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 250, "url": "sources/phy12/p250.jpg" }
+    },
+    {
+      "id": "mm709-q07",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "In the quantum model, how does increasing the intensity of light affect the photons striking a surface?",
+      "options": [
+        "It increases the rate at which photons fall on the surface, without changing the energy of each photon",
+        "It increases the energy of each individual photon",
+        "It increases the frequency of each photon",
+        "It increases Planck's constant for that light"
+      ],
+      "answer": 0,
+      "explanation": "Increasing the intensity of the light increases the rate at which photons fall on the surface — more photons per second — but the energy of each photon is fixed by its frequency through E = hf. Intensity sets the number of photons; frequency sets the energy of each.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 254, "url": "sources/phy12/p254.jpg" }
+    },
+    {
+      "id": "mm709-q08",
+      "type": "mc",
+      "q": "The episode's memory hook is 'short wave, big punch'. Using E = hc/λ, how does a photon's energy depend on its wavelength?",
+      "options": [
+        "Energy is inversely proportional to wavelength: short wavelength means high energy",
+        "Energy is directly proportional to wavelength: short wavelength means low energy",
+        "Energy is independent of wavelength; it depends only on brightness",
+        "Energy is proportional to the square of the wavelength"
+      ],
+      "answer": 0,
+      "explanation": "Combining E = hf with c = fλ gives E = hc/λ, so energy is inversely proportional to wavelength. A short wavelength (e.g. gamma) is a high-frequency, high-energy photon — 'short wave, big punch' — while a long wavelength (radio) is a feeble, low-energy photon.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm709-q09",
+      "type": "recall",
+      "q": "From memory: distinguish between the energy of each photon and the brightness (intensity) of a beam, naming what controls each. Why is 'brighter light has more energetic photons' wrong?",
+      "keyPoints": [
+        "The energy of each photon is set ONLY by the frequency of the light, through E = hf — it does not depend on brightness.",
+        "The intensity (brightness) of the beam is set by the number of photons arriving per second, a separate quantity.",
+        "Total power = number of photons per second × energy of each photon.",
+        "So brighter light of the same colour means MORE photons of the same energy, never more energetic photons — the trap markers hunt for."
+      ],
+      "explanation": "If you cleanly separated the two 'knobs' — frequency sets energy per photon, intensity sets number of photons per second — and linked them with total power = number × energy per photon, grade Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm709-q10",
+      "type": "extended",
+      "q": "Use quantum theory to relate the frequency, the intensity, the energy of the photons, and the number of photons in a beam of light. Then, for two beams of equal power but different colour, state which contains more photons per second and why. (5 marks)",
+      "marks": 5,
+      "modelAnswer": "In the quantum model, light consists of discrete packets called photons. The energy of each photon is fixed by the frequency of the light through E = hf, so a higher frequency gives a higher-energy photon, independent of the intensity. The intensity, or brightness, of the beam is determined by the number of photons arriving per second, not by the energy of each photon. Because total power = (number of photons per second) × (energy of each photon), increasing the intensity at a fixed frequency increases the number of photons per second while leaving each photon's energy unchanged. For two beams of equal power but different colour, the lower-frequency, longer-wavelength (redder) beam contains more photons per second, because each of its photons carries less energy, so a greater number is needed to deliver the same total power.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States that light consists of discrete photons." },
+        { "marks": 1, "descriptor": "States that frequency sets the energy of each photon via E = hf, independent of intensity." },
+        { "marks": 1, "descriptor": "States that intensity is set by the number of photons per second." },
+        { "marks": 1, "descriptor": "Links them with total power = number per second × energy per photon." },
+        { "marks": 1, "descriptor": "Correctly concludes the redder (lower-frequency) beam has more photons per second, with reason." }
+      ],
+      "explanation": "The marks live in the separation: frequency sets energy per photon, intensity sets number per second, tied together by the power relationship. The closing comparison (equal power → redder beam has more photons) is what lifts it to full marks.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

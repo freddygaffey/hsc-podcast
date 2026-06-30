@@ -1,174 +1,146 @@
 {
   "questions": [
     {
-      "id": "millikan-q01",
-      "q": "What single quantity was Millikan's oil-drop experiment designed to measure directly?",
+      "id": "qcasemill-q01",
+      "type": "mc",
+      "q": "Thomson had already measured the electron's charge-to-mass ratio. Why did this NOT tell physicists the charge of a single electron?",
       "options": [
-        "The mass of the electron",
-        "The charge on a single electron (the elementary charge)",
-        "The charge-to-mass ratio of the electron",
-        "The viscosity of air"
+        "His apparatus was too crude to read the numbers off the screen",
+        "A ratio ties two unknowns together, so knowing charge divided by mass still leaves both the charge and the mass unknown",
+        "He measured the mass directly but never the charge",
+        "Cathode rays turned out not to be electrons after all"
       ],
       "answer": 1,
-      "explanation": "Millikan set out to measure the fundamental charge \\(e\\), the charge on one electron. J.J. Thomson had already found the charge-to-mass ratio, but that is two unknowns tangled together; measuring the charge directly was needed to untangle them. The electron's mass came out only as a consequence once \\(e\\) was known.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Thomson measured charge ÷ mass, but a single ratio is two unknowns tangled together: if some number divided by another equals ten, you still know neither. Measuring the charge by itself was needed to untangle them — and would hand you the electron's mass as a bonus.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "millikan-q02",
-      "q": "Why could Thomson's charge-to-mass ratio alone not give the charge of the electron?",
+      "id": "qcasemill-q02",
+      "type": "mc",
+      "q": "Millikan's early attempts used water droplets and kept failing. What change, suggested by graduate student Harvey Fletcher, fixed the problem?",
       "options": [
-        "Thomson's apparatus was too crude to give any reliable numbers",
-        "A ratio combines two unknowns, so knowing charge divided by mass does not fix either value on its own",
-        "Thomson measured the mass directly but not the charge",
-        "The ratio applies only to protons, not electrons"
+        "Cooling the chamber so the droplets would not move",
+        "Switching from water to oil, which evaporates so slowly that a droplet can be watched for hours instead of seconds",
+        "Using a much stronger electric field to hold the droplets still",
+        "Replacing the telescope with a more powerful microscope"
       ],
       "answer": 1,
-      "explanation": "Thomson measured charge divided by mass — a single ratio holding two unknowns. Just as knowing one number divided by another equals ten does not tell you either number, the ratio could not give the charge by itself. Measuring \\(e\\) directly was the way to unlock both.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Water droplets a few millionths of a metre across evaporated and vanished within minutes or seconds. Fletcher proposed clock oil, which evaporates so slowly a single droplet could be observed for hours — the practical fix that made the experiment possible.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "millikan-q03",
-      "q": "Why did Millikan switch from water droplets to oil droplets?",
-      "options": [
-        "Oil carries far more charge than water",
-        "Oil droplets are larger and easier to see",
-        "Water evaporates quickly, while oil evaporates so slowly the droplet can be observed for a long time",
-        "Oil is denser, so the droplets fall faster"
-      ],
-      "answer": 2,
-      "explanation": "Tiny water droplets evaporated within seconds, shrinking and vanishing before a measurement could be made. The graduate student Harvey Fletcher suggested clock oil, which evaporates so slowly that a droplet can be watched for hours, making the measurement possible.",
+      "id": "qcasemill-q03",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "millikan-q04",
-      "q": "With the electric field switched OFF, the droplet falls at a constant terminal velocity rather than accelerating. Why?",
+      "q": "How did Millikan determine the mass of a droplet he could barely see and never put on a scale?",
       "options": [
-        "Gravity does not act on such a small droplet",
-        "The upward air-resistance (drag) force quickly grows to balance the droplet's weight, giving zero net force",
-        "The plates repel the droplet upward at constant speed",
-        "The droplet is too light for gravity to overcome friction at all"
+        "He weighed thousands of droplets together and divided by the count",
+        "He turned the field off, let the droplet fall at its terminal velocity, and used Stokes's law (with the air's viscosity and the oil's density) to find its radius and hence its mass",
+        "He measured how brightly the droplet glittered under the side lighting",
+        "He read the mass directly from the voltage needed to hold it still"
       ],
       "answer": 1,
-      "explanation": "As the droplet speeds up, the upward Stokes drag increases until it exactly equals the weight. With no net force, the droplet falls at a steady terminal velocity. Timing this fall lets Millikan use Stokes' law to find the radius, and hence the mass, of the droplet.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "With the field off, the tiny droplet quickly reaches a constant terminal velocity where air drag balances its weight. Timing its fall over a fixed distance and applying Stokes's law (knowing the air's viscosity and the oil's density) gives the radius, then the volume, then the mass — weighing it by watching how fast it falls.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "millikan-q05",
-      "q": "When a charged droplet is held perfectly stationary between the plates, which equation expresses the force balance used to find its charge \\(q\\)?",
-      "options": [
-        "\\( qE = mg \\)",
-        "\\( q = mgE \\)",
-        "\\( qV = md \\)",
-        "\\( mg = 6\\pi \\eta r v \\)"
-      ],
-      "answer": 0,
-      "explanation": "At balance the upward electric force \\(qE\\) equals the downward weight \\(mg\\), so \\(qE = mg\\). Rearranging with \\(E = V/d\\) gives \\(q = mgd/V\\). The Stokes-law expression (option D) governs the field-OFF stage that gives the mass, not the charge balance.",
+      "id": "qcasemill-q04",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "millikan-q06",
-      "q": "A drop of mass \\(6.8\\times10^{-15}\\ \\mathrm{kg}\\) is held stationary between plates 16 mm apart with 5000 V across them (\\(g = 9.8\\ \\mathrm{m/s^2}\\)). Approximately what charge does it carry?",
+      "q": "When the droplet hangs motionless (or moves at constant velocity) between the plates, which relationship does an examiner want you to set up to solve for the charge?",
       "options": [
-        "\\( 2.1\\times10^{-19}\\ \\mathrm{C} \\)",
-        "\\( 1.6\\times10^{-19}\\ \\mathrm{C} \\)",
-        "\\( 6.7\\times10^{-14}\\ \\mathrm{C} \\)",
-        "\\( 3.1\\times10^{5}\\ \\mathrm{C} \\)"
-      ],
-      "answer": 0,
-      "explanation": "The field is \\(E = V/d = 5000/0.016 = 3.125\\times10^{5}\\ \\mathrm{V/m}\\). Then \\(q = mg/E = (6.8\\times10^{-15}\\times9.8)/(3.125\\times10^{5}) \\approx 2.1\\times10^{-19}\\ \\mathrm{C}\\) — about one excess electron's worth within experimental error.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "millikan-q07",
-      "q": "Millikan found that every droplet's charge was a whole-number multiple of one tiny value. What does this demonstrate about electric charge?",
-      "options": [
-        "Charge can take any continuous value",
-        "Charge is quantised: it comes only in whole-number multiples of the elementary charge \\(e\\)",
-        "Larger droplets always carry larger fundamental charges",
-        "Charge depends on the voltage applied to the plates"
+        "Weight equals air resistance, so \\(mg = 6\\pi\\eta r v\\)",
+        "The downward weight equals the upward electric force, so \\(mg = qE = qV/d\\), giving \\(q = mgd/V\\)",
+        "The electric force equals the drag force, so \\(qE = 6\\pi\\eta r v\\)",
+        "Charge equals voltage times plate separation, so \\(q = Vd\\)"
       ],
       "answer": 1,
-      "explanation": "Measured charges were always \\(q = ne\\) for whole numbers \\(n\\) — never a fraction such as 2.5 or 7.3. This shows charge is quantised, existing only in indivisible lumps of the elementary charge \\(e\\). It is the direct evidence that charge, like energy in the quantum revolution, comes in countable packets.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "At balance the net force is zero: the upward electric force (field strength × charge, with field = voltage ÷ plate separation) equals the downward weight (mass × gravity). Rearranging \\(mg = qV/d\\) gives \\(q = mgd/V\\), where every quantity on the right was measured.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "millikan-q08",
-      "q": "What was the purpose of firing X-rays into the chamber during the experiment?",
-      "options": [
-        "To heat the oil so it would not evaporate",
-        "To make the droplets glow so they could be seen",
-        "To ionise the air so a single droplet could gain or lose electrons, changing its charge by whole multiples of \\(e\\) while being watched",
-        "To increase the voltage across the plates automatically"
-      ],
-      "answer": 2,
-      "explanation": "The X-rays ionised the gas, letting a single droplet pick up or lose electrons mid-experiment. Every time its charge changed, it changed by a clean whole-number multiple of \\(e\\) — decisive evidence that charge changes one electron at a time and is quantised.",
+      "id": "qcasemill-q05",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "millikan-q09",
-      "q": "Millikan's 1913 value was \\(1.592\\times10^{-19}\\ \\mathrm{C}\\), about 0.6% below the modern value. What was the main source of this small error?",
+      "q": "Measuring one droplet gives the total charge of all the electrons stuck to it. How did Millikan extract the charge of a SINGLE electron from hundreds of such measurements?",
       "options": [
-        "He timed the droplets incorrectly",
-        "He used a slightly inaccurate published value for the viscosity of air, which fed into his radius calculation",
-        "He mistakenly counted droplets with fractional charges",
-        "His plate separation was measured wrongly"
+        "He averaged all the droplet charges together",
+        "He found that every measured charge was a whole-number multiple of one tiny value, and identified that indivisible unit as the elementary charge",
+        "He picked the smallest droplet charge he ever recorded",
+        "He divided each droplet's charge by the number of droplets"
       ],
       "answer": 1,
-      "explanation": "Almost the entire discrepancy traces to the air-viscosity value Millikan took from the literature, which was slightly wrong. Because viscosity enters Stokes' law for the droplet radius, the small error propagated into the final charge. His method and reasoning were sound.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Across hundreds of droplets the charges were never random — always a clean whole-number multiple of one fundamental amount (two, eight, eighteen electrons' worth, never two-and-a-half). That common indivisible unit is the charge on a single electron, the quantum of charge.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "millikan-q10",
-      "q": "Modern physics has quarks with charges of \\(\\pm\\tfrac{1}{3}\\) and \\(\\pm\\tfrac{2}{3}\\) of \\(e\\). Why does this NOT contradict Millikan's conclusion that free charge is quantised in units of \\(e\\)?",
+      "id": "qcasemill-q06",
+      "type": "mc",
+      "q": "What did the X-ray gun let Millikan do that made his proof of quantised charge decisive rather than merely suggestive?",
       "options": [
-        "Quarks have since been shown not to exist",
-        "Quarks are confined inside particles and can never be isolated, and the charges of any free particle always add to a whole multiple of \\(e\\)",
-        "Quark charges are too small for Millikan's apparatus to detect",
-        "Quarks were exactly the subelectrons Ehrenhaft had measured"
+        "It lit the droplets so they could be seen against the dark background",
+        "It ionised the air so a single droplet could gain or lose electrons mid-experiment, and the charge always jumped by a whole-number multiple of the same unit",
+        "It heated the oil so the droplets evaporated on command",
+        "It measured the droplet's charge directly without needing the voltage"
       ],
       "answer": 1,
-      "explanation": "Quarks are permanently confined inside protons, neutrons and other particles and cannot be pulled out alone. The charge of any particle you can actually isolate is always a whole-number multiple of \\(e\\) — for example a proton's quarks (\\(+\\tfrac{2}{3},+\\tfrac{2}{3},-\\tfrac{1}{3}\\)) sum to \\(+e\\). Millikan's law holds for every free charge.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Firing X-rays ionised the gas, letting a single droplet pick up or lose electrons while Millikan watched. Re-balancing and re-measuring, he saw the charge change one electron at a time — always by a clean whole-number of the same fundamental lump, never a fraction.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasemill-q07",
+      "type": "recall",
+      "q": "From memory: outline the two stages by which Millikan measured the charge on a droplet, and state the result the experiment established.",
+      "keyPoints": [
+        "Stage 1 – weigh the droplet: turn the field off, let it fall at terminal velocity, and use Stokes's law (air viscosity, oil density) to get the radius, hence the mass.",
+        "Stage 2 – find the charge: turn the field on and balance the droplet so the upward electric force equals the weight, then solve \\(q = mgd/V\\).",
+        "Result: the fundamental charge is about \\(1.6\\times10^{-19}\\,\\mathrm{C}\\), and electric charge is quantised – it comes only in whole-number multiples of that unit."
+      ],
+      "explanation": "If you recalled both stages (terminal-velocity weighing, then force balance for the charge) and the quantisation conclusion, grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasemill-q08",
+      "type": "recall",
+      "q": "From memory: explain the 'cautionary tale' Richard Feynman drew from the years of measurements after Millikan — why did later values of the electron's charge creep slowly upward rather than scatter randomly?",
+      "keyPoints": [
+        "Later measurements climbed gradually toward the modern (higher) value instead of scattering around it from the start.",
+        "When a scientist got a value far from Millikan's, they assumed something was wrong and hunted for the error until the number came down; when close to Millikan's, they stopped looking.",
+        "So errors pushing away from Millikan were caught while errors keeping it near were left — the field was unconsciously dragged toward his slightly wrong answer.",
+        "Feynman's lesson: the hardest person to keep honest in science is yourself — the answer you expect can bend the answer you find."
+      ],
+      "explanation": "The point is experimenter bias, not fraud: knowing the expected answer made scientists scrutinise only the inconvenient results. Recall the asymmetric error-hunting and Feynman's warning to grade Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasemill-q09",
+      "type": "worked",
+      "q": "Millikan's 1913 paper reported the elementary charge as \\(1.592\\times10^{-19}\\,\\mathrm{C}\\). The modern defined value is \\(1.602\\times10^{-19}\\,\\mathrm{C}\\). Find the percentage by which Millikan's value falls short of the modern one.",
+      "given": "Millikan: \\(1.592\\times10^{-19}\\,\\mathrm{C}\\);  modern: \\(1.602\\times10^{-19}\\,\\mathrm{C}\\)",
+      "working": [
+        "\\(\\%\\text{ difference} = \\dfrac{\\text{modern} - \\text{Millikan}}{\\text{modern}}\\times100\\)",
+        "\\(= \\dfrac{1.602 - 1.592}{1.602}\\times100\\)",
+        "\\(= \\dfrac{0.010}{1.602}\\times100\\)",
+        "\\(\\approx 0.62\\%\\) — about six-tenths of one percent, as the episode states."
+      ],
+      "answerValue": 0.62,
+      "answerUnit": "%",
+      "tolerance": 0.05,
+      "explanation": "The tiny shortfall — roughly 0.6% — came almost entirely from a slightly wrong published value for the viscosity of air, which fed straight into the droplet-radius calculation. Fix that one constant and his result snaps onto the modern value.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasemill-q10",
+      "type": "worked",
+      "q": "Holton's study of the notebooks found Millikan published data from 58 droplets but had actually recorded about 175. What fraction (as a percentage) of his measured droplets did he report?",
+      "given": "Published droplets = 58;  total recorded ≈ 175",
+      "working": [
+        "\\(\\text{fraction reported} = \\dfrac{58}{175}\\)",
+        "\\(= 0.331\\ldots\\)",
+        "\\(\\approx 33\\%\\) — about a third, meaning roughly two-thirds were left out."
+      ],
+      "answerValue": 33,
+      "answerUnit": "%",
+      "tolerance": 1,
+      "explanation": "Reporting only about a third of the droplets, while the paper claimed the result rested on 'all of the drops experimented upon', is the data-selection controversy. Notably, Franklin showed that adding all 175 back in barely changes the final value.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

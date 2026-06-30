@@ -1,174 +1,162 @@
 {
   "questions": [
     {
-      "id": "m704-q01",
-      "q": "What is the basic structure of a typical stellar spectrum?",
-      "options": [
-        "A pure emission spectrum of bright lines on a dark background",
-        "A continuous black-body spectrum crossed by dark absorption lines",
-        "A continuous spectrum with no lines at all",
-        "A set of bright lines with no continuous background"
-      ],
-      "answer": 1,
-      "explanation": "A stellar spectrum is an absorption spectrum superimposed on a continuous one: the hot, dense interior produces the continuous black-body background, and the cooler outer atmosphere absorbs specific wavelengths, producing the dark lines.",
+      "id": "mm704-q01",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m704-q02",
-      "q": "From which feature of a star's spectrum is its surface temperature determined?",
+      "q": "In 1859 Gustav Kirchhoff and Robert Bunsen burned elements to describe how spectral lines are produced. What kind of spectrum did they say is produced by a glowing solid or a dense gaseous body like the Sun?",
       "options": [
-        "The pattern of absorption lines",
-        "The wavelength of peak intensity of the continuous spectrum",
-        "The Doppler shift of the lines",
-        "The width of the absorption lines"
-      ],
-      "answer": 1,
-      "explanation": "Temperature is read from the peak of the continuous (black-body) spectrum via Wien's law. The line pattern gives composition, the shift gives velocity, and the line width gives rotation/density — these must be kept separate.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m704-q03",
-      "q": "Which colour corresponds to the hottest stars?",
-      "options": [
-        "Red",
-        "Yellow",
-        "Orange",
-        "Blue"
-      ],
-      "answer": 3,
-      "explanation": "Blue stars are hottest; red stars are coolest (the Sun, yellow, is in between). By Wien's law a hotter star peaks at a shorter wavelength, pushing its emission toward the blue end. This is the reverse of everyday 'red = hot' intuition.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m704-q04",
-      "q": "How is a star's chemical composition determined from its spectrum?",
-      "options": [
-        "From the colour of its continuous spectrum",
-        "By matching the pattern of absorption lines to the known laboratory fingerprints of elements",
-        "From the overall brightness of the star",
-        "From how much the whole spectrum is shifted"
-      ],
-      "answer": 1,
-      "explanation": "Each element absorbs at a unique fixed set of wavelengths. Comparing the dark-line positions in the star's spectrum with laboratory reference spectra identifies which elements are present (mostly hydrogen and helium), and line strengths give their relative abundances.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m704-q05",
-      "q": "A star's spectrum is observed to be blueshifted — the whole pattern of lines is shifted toward the blue end. What does this indicate?",
-      "options": [
-        "The star is moving away from us",
-        "The star is moving toward us",
-        "The star has a very high surface temperature",
-        "The star is rotating rapidly"
-      ],
-      "answer": 1,
-      "explanation": "A blueshift means the wavelengths are compressed because the star is moving toward us. Moving away stretches the wavelengths (redshift). The shift moves the whole pattern bodily, unlike broadening, which only widens each line.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m704-q06",
-      "q": "The Doppler shift of a star's spectral lines gives which component of the star's velocity?",
-      "options": [
-        "The full translational velocity through space",
-        "The tangential (sideways) velocity only",
-        "The radial velocity (component along the line of sight) only",
-        "The rotational velocity only"
+        "An emission spectrum of bright lines on a dark background",
+        "An absorption spectrum of dark lines crossing a rainbow",
+        "A continuous colour spectrum (a continuous black body spectrum)",
+        "A spectrum of only a single characteristic wavelength"
       ],
       "answer": 2,
-      "explanation": "The Doppler shift reveals only the radial component — motion directly toward or away from us. The tangential velocity must be found from proper motion, and the true velocity is the vector sum of the two. Claiming it gives the full speed loses a mark.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Kirchhoff and Bunsen, using Bunsen's burner in 1859, found that a glowing solid or dense gaseous body produces a continuous colour spectrum, a continuous black body spectrum. A hot thin gas instead gives bright emission lines, and a cooler gas in front of a continuous source absorbs to give an absorption spectrum.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 213, "url": "sources/phy12/p213.jpg" }
     },
     {
-      "id": "m704-q07",
-      "q": "How does a star's rotation affect its spectral lines?",
-      "options": [
-        "It shifts the whole pattern toward the blue",
-        "It shifts the whole pattern toward the red",
-        "It broadens each line, because one limb is blueshifted and the other redshifted",
-        "It removes the absorption lines entirely"
-      ],
-      "answer": 2,
-      "explanation": "One rotating limb moves toward us (blueshift) and the other away (redshift). Since we cannot resolve the disc, the light combines and each line is smeared across a range of wavelengths — it widens (broadens) but stays centred. Faster spin gives broader lines.",
+      "id": "mm704-q02",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m704-q08",
-      "q": "What is pressure (collision) broadening, and which stars show it most?",
+      "q": "Astronomers such as Cecilia Payne found that hot stars radiate more energy at short wavelengths than cooler stars. What does the colour of a star therefore indicate?",
       "options": [
-        "Broadening from rapid rotation; shown most by slowly spinning stars",
-        "Broadening because closely packed atoms in a dense layer collide often, disturbing energy levels; shown most by smaller, denser stars",
-        "A Doppler shift caused by the star's motion; shown by all moving stars",
-        "Broadening caused by very high temperature; shown most by blue stars"
+        "The chemical composition of the star's outer atmosphere",
+        "The area of the spectrum of the star that is most intense, and so its surface temperature",
+        "The radial velocity of the star toward or away from Earth",
+        "The density of the gases in the star's outer layers"
       ],
       "answer": 1,
-      "explanation": "In a denser outer layer atoms collide more frequently, jolting their energy levels so they absorb over a wider band — pressure broadening. It is most pronounced in smaller, denser stars; a low-density red giant shows narrow, sharp lines.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Short wavelengths correspond to the blue end and long wavelengths to the red end, so the colour of a star indicates the area of its spectrum that is most intense, its surface temperature. Blue stars are hot and red stars are cool; the Sun is a yellow star, neither particularly hot nor cool. It is the surface temperature, not the much hotter core, that the colour reveals.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 215, "url": "sources/phy12/p215.jpg" }
     },
     {
-      "id": "m704-q09",
-      "q": "A star's absorption lines are observed to be unusually broad. Why does this observation alone not reveal the cause?",
+      "id": "mm704-q03",
+      "type": "mc",
+      "q": "In 1868 Joseph Norman Lockyer detected Fraunhofer lines in the solar spectrum that did not correspond with any known element on Earth. What did he conclude, and when was it confirmed?",
       "options": [
-        "Because broadening is always caused by the star's motion toward us",
-        "Because both rapid rotation and high density (pressure broadening) widen lines in a similar way, so the two must be distinguished by further analysis",
-        "Because broad lines always mean the star is very hot",
-        "Because broadening only occurs in instruments, not in real stars"
+        "That his spectroscope was faulty; the lines were never explained",
+        "That an undiscovered element, helium, was present in the Sun; William Ramsay isolated it on Earth in 1895",
+        "That the Sun was made of an element already known, hydrogen, confirmed immediately",
+        "That the lines were caused by the Earth's atmosphere absorbing sunlight"
       ],
       "answer": 1,
-      "explanation": "Two different mechanisms — rapid rotation and high density — produce the same symptom of a wider line. Observing broad lines alone is ambiguous; astronomers must use additional analysis to decide whether rotation or pressure broadening is responsible.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Lockyer predicted an as-yet-undiscovered element in the Sun and named it helium after the Greek helios, meaning Sun. William Ramsay confirmed this in 1895 when he isolated helium in the laboratory, an element identified in a star before it was found on Earth. Every element produces a unique spectrum, which is what let Lockyer notice the unmatched Fraunhofer lines.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 214, "url": "sources/phy12/p214.jpg" }
     },
     {
-      "id": "m704-q10",
-      "q": "Which statement correctly distinguishes a Doppler shift from line broadening?",
+      "id": "mm704-q04",
+      "type": "mc",
+      "q": "Using the Doppler effect, how are the absorption lines in a star's spectrum shifted when the star is moving towards us, and what does the size of the shift reveal?",
       "options": [
-        "A shift widens each line while keeping it centred; broadening moves the whole pattern",
-        "A shift moves the whole line pattern bodily (each line staying sharp), while broadening widens each line but keeps it centred",
-        "Both effects move the whole pattern in the same way",
-        "Both effects only change the brightness of the lines, not their position or width"
+        "Shifted towards the red end (red-shift); it reveals the star's temperature",
+        "Shifted towards the blue end (blue-shift); it reveals the star's radial velocity along the line of sight",
+        "Broadened symmetrically; it reveals the star's rotation",
+        "Unshifted; the Doppler effect only changes intensity, not wavelength"
       ],
       "answer": 1,
-      "explanation": "A shift (from translational/radial velocity) slides the entire pattern toward blue or red while each line stays sharp. Broadening (from rotation or density) widens each line about its original centre. Confusing the two is the most common error in this topic.",
+      "explanation": "The Doppler effect shifts the features in the light spectrum towards the blue end if the star is moving towards us (blue-shift) and towards the red end if it is moving away (red-shift). The size of the shift gives the radial velocity, the component of the star's velocity along the line between the observer on Earth and the star.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 216, "url": "sources/phy12/p216.jpg" }
+    },
+    {
+      "id": "mm704-q05",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "The translational velocity of a star is the vector sum of two components. The Doppler shift gives the radial velocity along the line of sight to Earth. What is the other component, and how is the actual translational velocity found?",
+      "options": [
+        "The rotational velocity; the translational velocity is their average",
+        "The tangential velocity (at right angles to the radial); the translational velocity is the vector sum of the radial and tangential velocities",
+        "The peak wavelength; the translational velocity is read straight from the colour",
+        "The pressure velocity; the translational velocity equals the radial velocity alone"
+      ],
+      "answer": 1,
+      "explanation": "The radial velocity is the component of the star's velocity along the line between the observer on Earth and the star. The actual translational velocity of the star is the vector sum of the radial velocity and the tangential velocity, the component at right angles to the radial velocity, so a Doppler shift alone never gives the full speed.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 216, "url": "sources/phy12/p216.jpg" }
+    },
+    {
+      "id": "mm704-q06",
+      "type": "mc",
+      "q": "Annie Jump Cannon's system classes stars as O, B, A, F, G, K or M according to the relative intensity of various absorption lines. How is this sequence arranged, and where does the Sun sit?",
+      "options": [
+        "In order of distance, with the Sun an O star",
+        "In order of temperature from O, the hottest peaking in the ultraviolet, to M, the coolest peaking in the infra-red; the Sun is a type G star",
+        "In alphabetical order of brightness, with the Sun a type M star",
+        "In order of size from largest (O) to smallest (M); the Sun is a type B star"
+      ],
+      "answer": 1,
+      "explanation": "The spectral classes O, B, A, F, G, K, M are arranged in order of temperature from O, the hottest with a spectrum peaking in the ultraviolet, to M, the coolest with a spectrum peaking in the infra-red. The Sun is a type G star, and type G stars are yellow.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 327, "url": "sources/phy12/p327.jpg" }
+    },
+    {
+      "id": "mm704-q07",
+      "type": "recall",
+      "q": "A star's absorption lines are observed to be unusually wide. From memory, name the two effects that can broaden the lines and explain why broad lines alone are ambiguous.",
+      "keyPoints": [
+        "The star's rotation broadens the lines: one limb rotates towards us (blue-shift) and the opposite limb away (red-shift), so the whole disc seen at once smears each line wider.",
+        "The density of the gases in the star's outer layers broadens the lines: denser layers mean more collisions between atoms, which widens the absorption lines (pressure broadening).",
+        "Because both rotation and high density widen the lines, astronomers must do extra work to distinguish which mechanism is responsible: same spread, spin or squeeze, argue which."
+      ],
+      "explanation": "If you recalled both rotation and density as causes of line broadening and stated they must be distinguished, grade yourself Good or Easy. The textbook notes line width also helps tell whether a star is on the main sequence or at another stage of its life cycle.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 216, "url": "sources/phy12/p216.jpg" }
+    },
+    {
+      "id": "mm704-q08",
+      "type": "recall",
+      "q": "From memory, recite the episode's master hook for the four properties read from a stellar spectrum: the four properties (T-C-V-D) and the four spectral features each is read from.",
+      "keyPoints": [
+        "Temperature to Peak: surface temperature from the wavelength of peak intensity of the continuous black-body background (Wien, blue hot / red cool, always in kelvin).",
+        "Composition to Pattern: chemical make-up from the pattern of absorption lines matched to laboratory element fingerprints (mostly hydrogen and helium).",
+        "Velocity to Shift: radial velocity from the Doppler shift of the whole line pattern (blue-shift toward, red-shift away).",
+        "Density to Spread: density (and rotation) from the broadening of individual lines."
+      ],
+      "explanation": "The spine of every answer in this topic is T-C-V-D maps to Peak, Pattern, Shift, Spread. If you reproduced all four pairings in order, grade Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm704-q09",
+      "type": "worked",
+      "q": "On the Kelvin temperature scale every degree is the same size as on the Celsius scale, but 0 degrees C is 273.15 K. A star's measured surface temperature is 5500 degrees C. Express this in kelvin.",
+      "given": "Surface temperature = 5500 degrees C; conversion 0 degrees C = 273.15 K",
+      "working": [
+        "\\(T_{\\mathrm{K}} = T_{\\mathrm{C}} + 273.15\\)",
+        "\\(T_{\\mathrm{K}} = 5500 + 273.15\\)",
+        "\\(T_{\\mathrm{K}} = 5773.15\\,\\mathrm{K}\\)"
+      ],
+      "answerValue": 5773.15,
+      "answerUnit": "K",
+      "tolerance": 1,
+      "explanation": "Astronomers quote stellar temperatures in kelvin, never Celsius. Since 0 degrees C corresponds to 273.15 K, you simply add 273.15 to the Celsius value.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 215, "url": "sources/phy12/p215.jpg" }
+    },
+    {
+      "id": "mm704-q10",
+      "type": "worked",
+      "q": "Using Wien's displacement law from the episode, the wavelength of peak intensity equals Wien's constant (2.898 x 10^-3 m K) divided by the absolute temperature. Find the peak wavelength for the Sun, taking its surface temperature as 5800 K.",
+      "given": "Wien's constant \\(b = 2.898\\times10^{-3}\\,\\mathrm{m\\,K}\\); \\(T = 5800\\,\\mathrm{K}\\)",
+      "working": [
+        "\\(\\lambda_{\\max} = \\dfrac{b}{T}\\)",
+        "\\(\\lambda_{\\max} = \\dfrac{2.898\\times10^{-3}}{5800}\\)",
+        "\\(\\lambda_{\\max} = 5.0\\times10^{-7}\\,\\mathrm{m} = 500\\,\\mathrm{nm}\\)"
+      ],
+      "answerValue": 5.0e-7,
+      "answerUnit": "m",
+      "tolerance": 1e-8,
+      "explanation": "A bigger temperature on the bottom of the fraction gives a smaller peak wavelength, so hotter equals shorter peak. The Sun peaks around 500 nm, in the green-yellow of the visible band, consistent with it being a yellow star. The quantitative Wien's law is developed later in the module.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm704-q11",
+      "type": "short",
+      "q": "Explain how the spectrum of a star can be used to determine both its surface temperature and its chemical composition. (6 marks)",
+      "marks": 6,
+      "modelAnswer": "A star's spectrum is a continuous black-body spectrum, emitted by its hot, dense inner layers, crossed by dark absorption lines produced as that light passes out through the star's cooler outer atmosphere. These two features give two independent pieces of information. The surface temperature is read from the continuous part, specifically the wavelength of peak intensity: a star radiates approximately as a black body, so hotter stars radiate more energy at short (blue) wavelengths and cooler stars at long (red) wavelengths, and measuring the peak gives the surface temperature in kelvin. The chemical composition is read from the absorption-line pattern, not the continuum: each element absorbs at a unique fixed set of wavelengths, so comparing the dark lines with laboratory reference spectra identifies the elements present, and the line strengths give their proportions, which is how stars were shown to be mostly hydrogen and helium, and how helium was first found in the Sun's spectrum before it was found on Earth.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States the spectrum is a continuous background crossed by dark absorption lines." },
+        { "marks": 1, "descriptor": "Links surface temperature to the wavelength of peak intensity (hotter = shorter/bluer)." },
+        { "marks": 1, "descriptor": "Quotes temperature in kelvin / identifies it as the surface temperature." },
+        { "marks": 1, "descriptor": "Links composition to the pattern of absorption lines, not the continuum." },
+        { "marks": 1, "descriptor": "Describes matching the lines to laboratory reference spectra of known elements." },
+        { "marks": 1, "descriptor": "Keeps the two mechanisms explicitly separate (Peak for temperature, Pattern for composition)." }
+      ],
+      "explanation": "Full marks come from keeping the two mechanisms separate: surface temperature from the peak of the continuous spectrum, composition from the positions of the absorption lines matched to known elements.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 216, "url": "sources/phy12/p216.jpg" }
     }
   ]
 }

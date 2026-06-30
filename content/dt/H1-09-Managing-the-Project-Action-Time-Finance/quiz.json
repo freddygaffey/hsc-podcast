@@ -1,0 +1,203 @@
+{
+  "questions": [
+    {
+      "id": "mh109-q01",
+      "type": "mc",
+      "q": "A design team is about to start developing a new range of products. Part of this process is the implementation of management plans.\n\nThese plans ensure that the products",
+      "options": [
+        "meet the intended purpose.",
+        "address all legal requirements.",
+        "are developed on time and on budget.",
+        "meet the needs of the target market."
+      ],
+      "answer": 2,
+      "explanation": "Management plans — action, time and finance plans — sequence tasks and allocate resources so the product is delivered on schedule and within budget. Meeting purpose, legal needs and the target market are achieved through other parts of the design process.",
+      "source": {
+        "origin": "hsc",
+        "ref": "2018 HSC Design and Technology Q6",
+        "year": 2018
+      }
+    },
+    {
+      "id": "mh109-q02",
+      "type": "mc",
+      "q": "What is the primary reason a designer might run out of time to complete a project?",
+      "options": [
+        "Poor planning",
+        "Meeting warranty claims",
+        "Inappropriate target market",
+        "Late final payment from client"
+      ],
+      "answer": 0,
+      "explanation": "Running out of time is a project-management failure: without action, time and finance plans, tasks are not sequenced or scheduled realistically. The other options affect a project but are not the primary cause of poor time control.",
+      "source": {
+        "origin": "hsc",
+        "ref": "2024 HSC Design and Technology Q1",
+        "year": 2024
+      }
+    },
+    {
+      "id": "mh109-q03",
+      "type": "mc",
+      "q": "Successful completion of a major design project depends on a student making the correct link between",
+      "options": [
+        "action and time management.",
+        "sustainability and appropriateness of materials.",
+        "experimentation and development of practical skills.",
+        "generation of concept designs and organising materials."
+      ],
+      "answer": 0,
+      "explanation": "Completing a major project on time relies on linking the action plan to the time plan so tasks are sequenced and scheduled realistically. The other pairings are useful but do not directly determine whether the whole project is completed.",
+      "source": {
+        "origin": "hsc",
+        "ref": "2012 HSC Design and Technology Q5",
+        "year": 2012
+      }
+    },
+    {
+      "id": "mh109-q04",
+      "type": "mc",
+      "q": "A delay in completing a design project is most likely to be caused by",
+      "options": [
+        "poor timing.",
+        "poor planning.",
+        "lack of finance.",
+        "lack of resources."
+      ],
+      "answer": 1,
+      "explanation": "Effective project management relies on a realistic action and time plan; poor planning is the underlying cause that leads to missed deadlines and delays. Timing, finance and resources are factors that good planning is meant to manage.",
+      "source": {
+        "origin": "hsc",
+        "ref": "2010 HSC Design and Technology Q4",
+        "year": 2010
+      }
+    },
+    {
+      "id": "mh109-q05",
+      "type": "mc",
+      "q": "To develop a product, it is most important to first",
+      "options": [
+        "make a prototype.",
+        "develop an action plan.",
+        "conduct ongoing evaluation.",
+        "establish a safety committee."
+      ],
+      "answer": 1,
+      "explanation": "An action plan is developed first because it sequences and schedules the tasks, time and resources needed to manage the whole project. Prototyping and ongoing evaluation occur later, guided by that plan.",
+      "source": {
+        "origin": "hsc",
+        "ref": "2015 HSC Design and Technology Q6",
+        "year": 2015
+      }
+    },
+    {
+      "id": "mh109-q06",
+      "type": "mc",
+      "q": "On a Gantt chart used as the time plan, what is the critical path?",
+      "options": [
+        "The single most expensive task in the finance plan",
+        "The chain of dependent tasks that sets the minimum time to complete the project",
+        "The list of tasks that can safely be left until last",
+        "The point at which the budget is most likely to be exceeded"
+      ],
+      "answer": 1,
+      "explanation": "The Gantt chart shows each task's start, duration and end, the dependencies between tasks, and the critical path — the chain of dependent tasks that determines the minimum time to completion. A delay to any task on the critical path threatens the whole deadline, which is why it is monitored most closely.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
+    },
+    {
+      "id": "mh109-q07",
+      "type": "recall",
+      "q": "From memory: name the three management plans (the hook ATF) and state what it means to apply and evaluate them rather than just formulate them.",
+      "keyPoints": [
+        "Action plan — a documented, sequenced list of every task so nothing is forgotten.",
+        "Time plan — scheduling the tasks against the calendar, using a Gantt chart showing dependencies and the critical path.",
+        "Finance plan — a documented budget of all costs, tracked so the project stays affordable.",
+        "Apply and evaluate means actually using the plans to run the project and continually monitoring real progress and spending against them — re-sequencing tasks or adjusting the budget when something slips, not just making the plans once."
+      ],
+      "explanation": "If you recalled ATF and the key idea that management is ongoing — monitor against the plan and revise, not just draw it once — grade yourself Good or Easy. Treating a management plan as a one-off document is the trap that caps marks low.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
+    },
+    {
+      "id": "mh109-q08",
+      "type": "recall",
+      "q": "From memory: explain the management trade-off between time, money and quality, and what good management protects.",
+      "keyPoints": [
+        "Time, money and quality are linked — you can't change one without affecting the others.",
+        "If a task overruns you either spend more, accept lower quality, or extend the time — but on a fixed HSC deadline, time often can't move.",
+        "Good management plans realistically and monitors against the Gantt chart so slippage is caught early, absorbing it (e.g. re-sequencing tasks) to protect the quality of the final project."
+      ],
+      "explanation": "The insight markers reward is the interdependence — and that quality is what you protect by managing time and finance and catching delays early. If you only said 'they're related', grade it Again or Hard.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
+    },
+    {
+      "id": "mh109-q09",
+      "type": "short",
+      "q": "Describe how action plans and ongoing evaluation processes work together to contribute to the development of a successful design.",
+      "marks": 4,
+      "modelAnswer": "As part of the design process the designer develops an action plan to organise an appropriate and efficient operation, sequencing tasks correctly so the project runs efficiently. Combined with an ongoing evaluation structure, this helps ensure a successful design: if ongoing evaluation is not carried out, development may fail to address concerns about important design factors such as function, cost or safety. Together, action plans and ongoing evaluation ensure the end product best meets the needs of the client and the consumer.",
+      "criteria": [
+        {
+          "marks": "4",
+          "descriptor": "Provides characteristics and features of how action plans AND ongoing evaluation processes work together to contribute to a successful design"
+        },
+        {
+          "marks": "3",
+          "descriptor": "Provides characteristics and features of how action plans AND/OR evaluation processes contribute to a successful design"
+        },
+        {
+          "marks": "2",
+          "descriptor": "Sketches in general terms how action plans AND/OR evaluation processes contribute to a successful design, OR identifies a feature of action plans AND a feature of evaluation processes"
+        },
+        {
+          "marks": "1",
+          "descriptor": "Identifies a feature of action plans OR evaluation processes"
+        }
+      ],
+      "explanation": "An action plan sequences the tasks; ongoing evaluation keeps checking the work against the design factors as it proceeds. The marks reward showing the two working TOGETHER, not just naming one.",
+      "source": {
+        "origin": "hsc",
+        "ref": "2013 HSC Design and Technology Q13",
+        "year": 2013
+      }
+    },
+    {
+      "id": "mh109-q10",
+      "type": "extended",
+      "q": "Explain how management plans are used to ensure the successful completion of a major design project.",
+      "marks": 5,
+      "modelAnswer": "The three management plans work together to keep the project on track. An action plan lists and sequences every task so nothing is overlooked. A time plan, a Gantt chart, schedules those tasks, reveals their dependencies and identifies the critical path, allowing the student to see whether the project is on schedule. A finance plan budgets and tracks costs so the project remains affordable. Crucially, these plans are not just formulated but applied and evaluated throughout: the student monitors real progress and spending against them, and when a problem arises, such as a delayed material delivery, the Gantt chart immediately reveals the impact, so the student re-sequences independent tasks to absorb the delay and protect both the deadline and the quality of the final product. By formulating, applying and evaluating the action, time and finance plans, the student manages the project to a successful, on-time, on-budget completion.",
+      "criteria": [
+        {
+          "marks": 5,
+          "descriptor": "Explains thoroughly how the action, time and finance plans work together, AND how applying and evaluating (monitoring and revising) them ensures successful completion, with a clear example of responding to a problem."
+        },
+        {
+          "marks": 3,
+          "descriptor": "Describes the three plans and refers to monitoring/revising against them to keep the project on track."
+        },
+        {
+          "marks": 2,
+          "descriptor": "Outlines one or more management plans and their purpose."
+        },
+        {
+          "marks": 1,
+          "descriptor": "Identifies a management plan or a feature of project management."
+        }
+      ],
+      "explanation": "A weak 'I made a timeline so I knew what to do' answer caps low: it names one tool and shows no monitoring. Full marks come from the three plans (ATF) plus the apply-and-evaluate step — monitoring against the Gantt chart and re-sequencing to protect the deadline and quality.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
+    }
+  ]
+}

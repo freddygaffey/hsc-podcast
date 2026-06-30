@@ -1,174 +1,142 @@
 {
   "questions": [
     {
-      "id": "stellar-q01",
-      "q": "Which elements were produced in significant amounts by Big Bang nucleosynthesis?",
-      "options": [
-        "Carbon, oxygen and nitrogen",
-        "Hydrogen and helium (with a trace of lithium)",
-        "Iron and the heavy metals",
-        "All elements of the periodic table"
-      ],
-      "answer": 1,
-      "explanation": "In its first ~20 minutes the universe made roughly 75% hydrogen and 25% helium-4 by mass, plus a trace of lithium, before expansion cooled it below fusion temperatures. Every heavier element — carbon, oxygen, iron, gold — was made later, inside stars.",
+      "id": "qcasestel-q01",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "According to the episode, which elements did Big Bang nucleosynthesis actually produce in the first ~20 minutes of the universe?",
+      "options": [
+        "Hydrogen, helium and a barest trace of lithium",
+        "Hydrogen, helium, carbon and oxygen",
+        "All elements up to iron",
+        "Only hydrogen"
+      ],
+      "answer": 0,
+      "explanation": "The fusion window slammed shut after about 20 minutes, leaving the universe roughly 75% hydrogen and 25% helium-4 by mass with a sprinkle of lithium. Everything heavier — carbon, oxygen, iron, gold — had to be built later, inside stars.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "stellar-q02",
-      "q": "A main sequence star is in a stable balance between which two competing influences?",
+      "id": "qcasestel-q02",
+      "type": "mc",
+      "q": "What is the net result of the proton-proton chain in a star like the Sun?",
       "options": [
-        "Magnetic force inward and radiation pressure outward",
-        "Gravity pulling inward and the outward pressure from fusion energy in the core",
-        "Electron degeneracy pressure and the strong nuclear force",
-        "The Coulomb barrier and quantum tunnelling"
+        "Two protons fuse into a single deuterium nucleus, releasing no energy",
+        "Four protons are fused into one helium-4 nucleus, releasing about 26.7 MeV",
+        "Helium is split back into four protons, absorbing energy",
+        "Carbon is fused into oxygen, releasing about 7.65 MeV"
       ],
       "answer": 1,
-      "explanation": "A main sequence star is a tug-of-war fought to a draw: gravity crushing inward against the outward pressure produced by energy pouring out of core fusion. This hydrostatic equilibrium holds the star stable for most of its life, until the core fuel runs out.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Four protons go in and one helium-4 nucleus comes out. The helium weighs about 0.7% less than the four protons, and by E = mc² that vanished mass reappears as roughly 26.7 MeV of energy per completed chain.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "stellar-q03",
-      "q": "In the proton-proton chain, four protons are fused into one helium-4 nucleus. Where does the released energy come from?",
-      "options": [
-        "From the kinetic energy of the incoming protons only",
-        "The helium nucleus has slightly less mass than the four protons; the lost mass becomes energy via \\( E = mc^2 \\)",
-        "From the gravitational collapse of the core",
-        "From neutrinos being absorbed by the core"
-      ],
-      "answer": 1,
-      "explanation": "The helium-4 nucleus weighs about 0.7% less than the four original protons. That tiny mass defect is converted to energy by \\(E = mc^2\\), releasing about 26.7 MeV per completed chain. Because \\(c^2\\) is enormous, even a whisper of lost mass yields a torrent of energy.",
+      "id": "qcasestel-q03",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "stellar-q04",
-      "q": "In the CNO cycle, what is the role of the carbon, nitrogen and oxygen nuclei?",
+      "q": "In the CNO cycle, what role do the carbon, nitrogen and oxygen nuclei play?",
       "options": [
-        "They are the fuel that is consumed",
-        "They are the final products of the cycle",
-        "They act as catalysts — borrowed and returned, so the net result is still 4 protons becoming 1 helium-4",
+        "They are the fuel that is consumed to make energy",
+        "They are the final products built up from hydrogen",
+        "They act as catalysts — borrowed and returned, so the carbon-12 is handed back at the end",
         "They are waste products that poison the reaction"
       ],
       "answer": 2,
-      "explanation": "In the CNO cycle, carbon-12 is regenerated at the end of the cycle — the C, N and O act as catalysts, borrowed and handed back like tongs. The net reaction is identical to the proton-proton chain: four protons in, one helium-4 out, ~26.7 MeV released.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The carbon is borrowed and returned, like tongs used to handle hot coals — it is not used up. The net result is identical to the proton-proton chain: four protons in, one helium-4 out, about 26.7 MeV released. Calling C, N and O the products is the classic error.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "stellar-q05",
-      "q": "Why does the CNO cycle dominate in hot, massive stars while the proton-proton chain dominates in cooler stars like the Sun?",
+      "id": "qcasestel-q04",
+      "type": "mc",
+      "q": "Why does the proton-proton chain dominate in the Sun while the CNO cycle takes over in hot, massive stars?",
       "options": [
-        "The CNO cycle releases far more energy per reaction",
-        "The CNO cycle's rate is extremely sensitive to temperature (roughly \\(T^{17}\\)), so it roars into life only at the high core temperatures of massive stars",
-        "Massive stars contain no hydrogen",
-        "The proton-proton chain cannot occur above 10 million K"
+        "The CNO cycle only works where there is no carbon present",
+        "The CNO cycle is far more sensitive to temperature (roughly T¹⁷ versus T⁴ for the pp chain), so it roars into life only at high core temperatures",
+        "The proton-proton chain releases far more energy per reaction",
+        "Massive stars have cooler cores than the Sun"
       ],
       "answer": 1,
-      "explanation": "The CNO rate scales steeply with temperature (~\\(T^{17}\\)) versus ~\\(T^4\\) for the pp-chain. A more massive star has stronger gravity, so a hotter core, which makes the savage CNO cycle take over. Both release the same ~26.7 MeV; the difference is which one dominates at a given temperature.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The pp chain ramps up gently, roughly as the fourth power of temperature; the CNO cycle climbs as about the seventeenth power. So in the cool Sun the pp chain does over 98% of the work, but in hot, massive stars the savage CNO cycle dominates completely.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "stellar-q06",
-      "q": "On the Hertzsprung-Russell (H-R) diagram, which property most fundamentally determines where a star sits along the main sequence?",
+      "id": "qcasestel-q05",
+      "type": "mc",
+      "q": "What was Fred Hoyle's audacious 1953 prediction that made the triple-alpha process viable?",
       "options": [
-        "Its age",
-        "Its mass",
-        "Its distance from Earth",
-        "Its chemical composition only"
+        "That beryllium-8 is perfectly stable and never decays",
+        "That carbon-12 has an undiscovered excited energy level (resonance) at about 7.65 MeV that hugely boosts carbon production",
+        "That iron-56 sits at the peak of the binding-energy curve",
+        "That neutron stars collide to make gold"
       ],
       "answer": 1,
-      "explanation": "A star's mass at birth fixes its position on the main sequence: more massive stars have hotter cores, so they are bluer, brighter and sit high on the band, while low-mass stars are cooler, redder and sit low. Mass also dictates lifetime — massive stars 'live fast, die young'.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Reasoning backwards from the fact that the universe is full of carbon and that we exist, Hoyle predicted a resonance of carbon-12 near 7.65 MeV. The energy of a beryllium-8 plus a helium nucleus lands almost exactly on it, like a doorbell tuned to the right note, so carbon forms readily. The Kellogg lab team confirmed the 'Hoyle state'.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "stellar-q07",
-      "q": "The triple-alpha process fuses three helium-4 nuclei into carbon-12. What is the major obstacle it must overcome?",
+      "id": "qcasestel-q06",
+      "type": "mc",
+      "q": "Why does fusion in a massive star stop at iron — the 'iron wall'?",
       "options": [
-        "Helium nuclei are too light to fuse",
-        "The intermediate beryllium-8 nucleus is extremely unstable and falls apart almost instantly",
-        "Carbon-12 cannot form below 100 billion K",
-        "There is no helium left after the main sequence"
+        "Iron is too rare for the star to find",
+        "Iron-56 sits at the peak of the binding-energy-per-nucleon curve (about 8.79 MeV per nucleon), so fusing iron costs energy rather than releasing it",
+        "Iron melts and drains out of the core",
+        "Iron absorbs all the neutrinos, halting the reaction"
       ],
       "answer": 1,
-      "explanation": "Two helium-4 nuclei make beryllium-8, which is wildly unstable and decays back in ~10⁻¹⁷ s. A third helium nucleus must fuse with it in that vanishingly short window. The reaction proceeds readily only because of the Hoyle-state resonance in carbon-12.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Climbing the periodic table by fusion releases energy until iron, the most tightly bound nucleus the star can reach. Fusing iron into something heavier yields a less tightly bound product, so it costs energy — the fuel that held the star up against gravity stops working.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "stellar-q08",
-      "q": "Fred Hoyle predicted the existence of a specific excited energy level in carbon-12 (the 'Hoyle state'). What reasoning led him to it?",
+      "id": "qcasestel-q07",
+      "type": "mc",
+      "q": "Once the iron core exceeds the Chandrasekhar limit (~1.4 solar masses), what happens, and how are elements heavier than iron made?",
       "options": [
-        "Direct laboratory measurement of carbon spectra",
-        "The fact that the universe contains abundant carbon (and carbon-based life) meant the triple-alpha reaction must be boosted by a resonance at a particular energy",
-        "A prediction from Einstein's relativity",
-        "Observations of the Sun's neutrinos"
+        "The core cools quietly into a white dwarf, and heavy elements form by slow fusion",
+        "Electron degeneracy pressure fails, the core collapses into neutron matter, and the supernova's neutron flood builds elements heavier than iron by neutron capture",
+        "The star simply stops shining with no further events",
+        "The iron fuses directly into gold and uranium, releasing energy"
       ],
       "answer": 1,
-      "explanation": "Hoyle reasoned backwards from existence: since the universe is full of carbon and we are carbon-based, the slow triple-alpha reaction must be enhanced by a resonance. He predicted a carbon-12 excited state near 7.65 MeV, later confirmed in the lab — reasoning from the cosmos down to a single nucleus.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Beyond ~1.4 solar masses electron degeneracy pressure can no longer hold; the core collapses to neutron matter in under a second and the star explodes as a supernova. In that storm of neutrons, nuclei capture neutron after neutron to build gold, lead and uranium — elements ordinary fusion can never make.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "stellar-q09",
-      "q": "Why does fusion in a massive star stop at iron-56 (the 'iron wall')?",
-      "options": [
-        "Iron is too rare to fuse further",
-        "Iron-56 sits at the peak of the binding-energy-per-nucleon curve, so fusing it into heavier nuclei would absorb energy rather than release it",
-        "The core is too cold to fuse iron",
-        "Iron immediately decays into lighter elements"
+      "id": "qcasestel-q08",
+      "type": "recall",
+      "q": "From memory: explain the central tug-of-war that governs the entire life of a star, and what happens to it when the core fuel runs out.",
+      "keyPoints": [
+        "A star is a balance between gravity pulling inward and the outward pressure from fusion energy pouring out of the core.",
+        "While fusion burns, the two forces are balanced and the star is stable (the main sequence).",
+        "When the core fuel runs out, fusion pressure drops, gravity wins, and the core collapses — heating up until it crosses the threshold to ignite the next fuel (e.g. helium at ~100 million K)."
       ],
-      "answer": 1,
-      "explanation": "Iron-56 has the highest binding energy per nucleon (~8.79 MeV), the most stable point. Below iron, fusion climbs the curve and releases energy; fusing iron into anything heavier moves to the downhill side and consumes energy. With no energy from fusion, the core can no longer resist gravity.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled gravity-in versus fusion-pressure-out, and that collapse heats the core to ignite the next fuel, grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "stellar-q10",
-      "q": "Once a massive star's core exceeds the Chandrasekhar limit (~1.4 solar masses), what happens?",
-      "options": [
-        "The core ignites carbon fusion and stabilises",
-        "Electron degeneracy pressure can no longer support the core, which collapses in under a second, triggering a supernova",
-        "The star slowly cools into a white dwarf",
-        "Fusion of iron releases enough energy to halt collapse"
+      "id": "qcasestel-q09",
+      "type": "recall",
+      "q": "From memory: why did Fred Hoyle name the 'Big Bang', and what was ironic about his legacy?",
+      "keyPoints": [
+        "On BBC radio in 1949 Hoyle used 'Big Bang' dismissively, to mock the rival theory that the universe began in one hot, dense moment.",
+        "Hoyle himself backed the steady-state theory (an eternal, unchanging universe) and fought the Big Bang to his death in 2001.",
+        "The irony: his steady-state theory is now dead, yet the insulting name he coined became the accepted model — while he was magnificently right about how stars forge the elements."
       ],
-      "answer": 1,
-      "explanation": "Above the Chandrasekhar limit (~1.4 solar masses), electron degeneracy pressure fails. The iron core collapses catastrophically — protons and electrons merge into neutrons — and the rebound drives a supernova that scatters the star's elements (and forges elements heavier than iron) across the galaxy.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled that the name was an insult from a steady-state advocate, and the irony that the name stuck while his cosmology was wrong, grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasestel-q10",
+      "type": "worked",
+      "q": "The Sun fuses about 600 million tonnes of hydrogen every second, and about 0.7% of that mass is converted directly into energy. How many tonnes of mass are turned into energy each second?",
+      "given": "Mass fused per second \\(= 600 \\times 10^{6}\\,\\mathrm{tonnes}\\);  fraction converted \\(= 0.7\\% = 0.007\\)",
+      "working": [
+        "\\(\\Delta m = 0.007 \\times 600 \\times 10^{6}\\,\\mathrm{tonnes}\\)",
+        "\\(\\Delta m = 4.2 \\times 10^{6}\\,\\mathrm{tonnes}\\)",
+        "This matches the episode's figure of 'around four million tonnes' converted to pure energy each second."
+      ],
+      "answerValue": 4.2,
+      "answerUnit": "million tonnes",
+      "tolerance": 0.1,
+      "explanation": "Multiplying the 600 million tonnes fused by the 0.7% mass deficit gives about 4.2 million tonnes of mass turned into energy every second, by E = mc².",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

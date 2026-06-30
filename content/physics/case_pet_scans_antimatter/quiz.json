@@ -1,174 +1,157 @@
 {
   "questions": [
     {
-      "id": "pet-q01",
-      "q": "How was the existence of antimatter (the anti-electron) first arrived at?",
+      "id": "qcasepets-q01",
+      "type": "mc",
+      "q": "How did Paul Dirac come to predict the existence of antimatter?",
       "options": [
-        "It was discovered by accident in a cloud chamber before any theory predicted it",
-        "Dirac predicted it purely from the mathematics of his relativistic equation for the electron, before it was ever observed",
-        "It was created deliberately in a particle accelerator",
-        "Einstein predicted it from \\( E = mc^2 \\)"
+        "He observed an unexplained track in a cloud chamber and named the particle responsible",
+        "His relativistic equation for the electron had negative-energy solutions that he eventually interpreted as a new particle with the electron's mass and opposite charge",
+        "He measured the charge of the electron and found a positive value he could not explain",
+        "He fired cosmic rays at a lead plate and detected positive particles"
       ],
       "answer": 1,
-      "explanation": "Dirac's relativistic equation for the electron had negative-energy solutions he interpreted as a particle with the electron's mass but opposite charge — the anti-electron. He predicted it from pure mathematics in 1931, before Anderson observed it in 1932.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Dirac predicted antimatter purely from the internal logic of his equation, not from any experiment. The second set of (negative-energy) solutions led him, by 1931, to declare a new 'anti-electron' with the same mass as the electron but opposite charge.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "pet-q02",
+      "id": "qcasepets-q02",
+      "type": "mc",
       "q": "How did Carl Anderson identify the positron in his cloud chamber in 1932?",
       "options": [
         "It left a much heavier, denser track than an electron",
         "It had the mass of an electron but curved the opposite way in the magnetic field, showing a positive charge",
-        "It left no track at all but emitted gamma rays",
-        "It travelled faster than the speed of light"
+        "It travelled faster than light and left no droplet trail",
+        "It was repelled by the lead plate placed across the chamber"
       ],
       "answer": 1,
-      "explanation": "The track had an electron's mass (same wispy, low-density trail) but curved the opposite way in the magnetic field, meaning a positive charge. A lead plate let Anderson confirm the direction of travel. A particle as light as an electron but positively charged was Dirac's anti-electron — the positron.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The track was as faint and wispy as an electron's (same tiny mass) but curved the opposite way in the magnetic field, marking a positive charge. The 6 mm lead plate let Anderson confirm the direction of travel, proving it was Dirac's anti-electron.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "pet-q03",
-      "q": "What are the key properties of the positron relative to the electron?",
+      "id": "qcasepets-q03",
+      "type": "mc",
+      "q": "When a positron and an electron annihilate, why are exactly two gamma rays produced, flying off in opposite directions?",
       "options": [
-        "Same charge, much greater mass",
-        "Same mass as the electron, but the opposite (positive) charge",
-        "Greater mass and the opposite charge",
-        "Zero mass and zero charge"
+        "The two particles are both negatively charged and repel into two beams",
+        "Conservation of momentum: the pair is nearly at rest with near-zero total momentum, so the photons must fly back-to-back with equal and opposite momenta that cancel",
+        "Conservation of charge requires two photons to carry away the charge",
+        "The gamma rays are emitted from the two separate nuclei involved"
       ],
       "answer": 1,
-      "explanation": "The positron is the electron's antimatter twin: identical mass (rest energy 0.511 MeV) but opposite charge (+1 instead of -1). This is Dirac's symmetry between matter and antimatter.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Because the annihilating pair is essentially at rest, total momentum is near zero. A single photon always carries momentum, so two photons are needed, fired at 180 degrees so their momenta cancel and the total stays zero.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "pet-q04",
-      "q": "When an electron and positron annihilate, what is the total energy released, and how is it carried away?",
+      "id": "qcasepets-q04",
+      "type": "mc",
+      "q": "By what process does fluorine-18 produce a positron inside the patient, and which force drives it?",
       "options": [
-        "0.511 MeV, carried by a single gamma photon",
-        "1.022 MeV, carried by two 511 keV gamma photons emitted back to back",
-        "1.022 MeV, carried by one high-energy photon",
-        "0.511 MeV, carried by an electron and a neutrino"
+        "Alpha decay, driven by the strong nuclear force",
+        "Beta-plus decay, in which a proton becomes a neutron and emits a positron and a neutrino, driven by the weak nuclear force",
+        "Gamma decay, driven by the electromagnetic force",
+        "Beta-minus decay, in which a neutron becomes a proton, driven by the weak nuclear force"
       ],
       "answer": 1,
-      "explanation": "Each particle has rest energy 0.511 MeV, so total energy released is \\(2 \\times 0.511 = 1.022\\ \\mathrm{MeV}\\), shared equally between two gamma photons of 511 keV each. They are emitted back to back (180 degrees apart).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Fluorine-18 has too many protons, so it undergoes beta-plus decay: a proton converts to a neutron, emitting a positron and a neutrino. Only the weak nuclear force can change one kind of particle into another like this, turning F-18 into O-18.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "pet-q05",
-      "q": "Why are exactly TWO gamma rays produced, flying off in opposite directions, rather than one?",
+      "id": "qcasepets-q05",
+      "type": "mc",
+      "q": "Why does the radioactive sugar FDG accumulate most in cancer cells?",
       "options": [
-        "Because the electron and positron each become a photon",
-        "Because the pair is essentially at rest (total momentum ≈ 0), so conservation of momentum requires two photons with equal and opposite momenta",
-        "Because gamma rays always travel in pairs",
-        "Because charge conservation requires two photons"
+        "Cancer cells are magnetic and attract the fluorine atom",
+        "Cancer cells consume glucose at a furious rate (the Warburg effect), and the modified FDG gets phosphate-tagged and trapped inside them",
+        "FDG is repelled by healthy tissue and only dissolves in tumours",
+        "Cancer cells convert FDG directly into gamma rays"
       ],
       "answer": 1,
-      "explanation": "Just before annihilation the pair is nearly at rest, so total momentum is ~0. Momentum must be conserved, so the photons must carry equal and opposite momenta — two photons back to back. A single photon could never have zero momentum, so one photon is impossible.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Cancer cells are gluttons for glucose (the Warburg effect), so they take up the glucose-mimic FDG fastest. Because of the swapped fluorine atom, FDG is tagged with phosphate and then gets stuck, accumulating in the hungriest cells.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "pet-q06",
-      "q": "Fluorine-18 (used in PET) decays by beta-plus decay. Which force drives this, and what happens to the nucleus?",
+      "id": "qcasepets-q06",
+      "type": "mc",
+      "q": "What does the PET scanner actually detect, and how does it locate where an annihilation occurred?",
       "options": [
-        "The strong nuclear force; a neutron turns into a proton",
-        "The weak nuclear force; a proton turns into a neutron, emitting a positron and a neutrino",
-        "The electromagnetic force; an electron is emitted",
-        "Gravity; the nucleus splits in two"
+        "It detects the positrons directly as they leave the body",
+        "It detects pairs of 511 keV gamma rays arriving at opposite detectors at almost the same instant (a coincidence), placing the annihilation on the line of response between them",
+        "It detects the neutrinos emitted during beta-plus decay",
+        "It detects the heat released by trapped FDG molecules"
       ],
       "answer": 1,
-      "explanation": "Beta-plus decay is driven by the weak nuclear force — the only force that changes one particle type into another this way. A proton becomes a neutron, emitting a positron and a neutrino: \\({}^{18}_{9}\\mathrm{F} \\to {}^{18}_{8}\\mathrm{O} + e^+ + \\nu\\). The atomic number drops by one; the mass number is unchanged.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The positrons never leave the body; they annihilate within a millimetre or two. The scanner catches the two back-to-back gamma rays, and a coincidence between opposite detectors defines a line of response. Where millions of lines cross is where the sugar is concentrated.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "pet-q07",
-      "q": "Why do tumours show up as bright hotspots on a PET scan using FDG (radioactive glucose)?",
+      "id": "qcasepets-q07",
+      "type": "mc",
+      "q": "Why is fluorine-18's half-life of about 110 minutes described as a 'Goldilocks' compromise?",
       "options": [
-        "Tumours emit their own gamma rays without any tracer",
-        "Cancer cells consume glucose far faster than normal tissue (the Warburg effect), so they take up and trap more FDG, producing more annihilations there",
-        "Tumours repel the positrons, concentrating them at the edges",
-        "FDG is attracted to tumours by magnetism"
+        "It is long enough to make the gamma rays more energetic, but short enough to avoid overheating the patient",
+        "It is long enough to ship the tracer and let the sugar be taken up before scanning, yet short enough that the patient clears the radioactivity by the next day",
+        "It exactly matches the time it takes a positron to find an electron",
+        "It is the half-life that produces the most positrons per second"
       ],
       "answer": 1,
-      "explanation": "Cancer cells are glucose gluttons (the Warburg effect), so they take up the most FDG, which then gets phosphorylated and trapped inside the cell. More trapped fluorine-18 means more positron emission and more annihilations, making tumours glowing hotspots on the reconstructed map.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Carbon-11's 20-minute half-life is too short to ship; a very long half-life would leave the patient radioactive for days. F-18's ~110 minutes is long enough to manufacture, ship, inject and wait for uptake, but short enough to essentially clear within a day (about six half-lives in ~11 hours).",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "pet-q08",
-      "q": "What does the PET scanner's ring of detectors actually detect, and how does a single 'coincidence' help locate an annihilation?",
-      "options": [
-        "It detects positrons directly as they leave the body",
-        "It detects pairs of 511 keV gamma rays arriving at opposite detectors near-simultaneously; the annihilation lies on the line joining them (a line of response)",
-        "It detects the fluorine-18 nuclei using magnetism",
-        "It detects the neutrinos emitted in beta-plus decay"
+      "id": "qcasepets-q08",
+      "type": "recall",
+      "q": "From memory: state the three conservation laws satisfied in positron-electron annihilation, and what each one fixes.",
+      "keyPoints": [
+        "Conservation of mass-energy (E = mc^2): the particles' rest mass converts entirely to photon energy, fixing each photon at 511 keV.",
+        "Conservation of momentum: the pair is near rest with zero total momentum, so two photons fly out back-to-back (180 degrees) and their momenta cancel.",
+        "Conservation of charge: electron (-1) plus positron (+1) gives zero, and the two outgoing photons are neutral, so charge is zero before and after."
       ],
-      "answer": 1,
-      "explanation": "The positrons annihilate within a millimetre or two inside the body; the scanner never sees them. It detects the two back-to-back 511 keV gamma rays. Two opposite detectors firing within nanoseconds define a line of response — the annihilation happened somewhere on that line. Millions of crossing lines reconstruct the 3D map.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled all three laws and tied energy to the 511 keV photon energy and momentum to the 180-degree direction, grade Good or Easy. Missing charge conservation, or the link to direction/energy, grade Hard or Again.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "pet-q09",
-      "q": "Fluorine-18 has a half-life of about 110 minutes. Approximately what fraction of the original activity remains after 6 half-lives (~11 hours)?",
-      "options": [
-        "About 50%",
-        "About 25%",
-        "About 1.6%",
-        "About 0%"
+      "id": "qcasepets-q09",
+      "type": "recall",
+      "q": "From memory: explain why the gamma rays a PET scanner detects are NOT emitted from the nucleus, and where the positrons end up.",
+      "keyPoints": [
+        "The gamma rays are born outside the nucleus, from the annihilation of a positron with an electron in the surrounding tissue.",
+        "This is different from ordinary gamma decay, where the photon comes from the nucleus itself.",
+        "The positrons never leave the body; they annihilate within about a millimetre or two of where they were created, so only their gamma-ray light escapes."
       ],
-      "answer": 2,
-      "explanation": "After \\(n\\) half-lives the fraction remaining is \\((\\tfrac{1}{2})^n\\). After 6 half-lives: \\((\\tfrac{1}{2})^6 = \\tfrac{1}{64} \\approx 1.6\\%\\). This is why the patient is essentially non-radioactive by the next day, while ~110 min is still long enough to ship the tracer and let cells take it up.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you distinguished annihilation photons (outside the nucleus) from nuclear gamma decay, and noted that the positrons die inside the tissue, grade Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "pet-q10",
-      "q": "Which conservation laws set the two key features used by a PET scanner — the photon energy and their direction?",
-      "options": [
-        "Conservation of mass sets both",
-        "Conservation of energy fixes each photon at 511 keV; conservation of momentum fixes them flying back to back",
-        "Conservation of charge fixes the energy; conservation of mass fixes the direction",
-        "Conservation of momentum fixes the energy; conservation of energy fixes the direction"
+      "id": "qcasepets-q10",
+      "type": "worked",
+      "q": "An electron and a positron, each with a rest mass energy of 511 keV, annihilate from rest. Find the total energy released and the energy of each of the two gamma rays produced.",
+      "given": "Rest mass energy of electron = rest mass energy of positron = 511 keV; the pair annihilates from rest into two equal photons.",
+      "working": [
+        "Total energy released = sum of the two rest mass energies (E = mc^2 for each):",
+        "\\(E_{\\text{total}} = 511\\,\\text{keV} + 511\\,\\text{keV} = 1022\\,\\text{keV} = 1.022\\,\\text{MeV}\\)",
+        "By symmetry the two photons share this energy equally:",
+        "\\(E_{\\gamma} = \\tfrac{1}{2}(1.022\\,\\text{MeV}) = 0.511\\,\\text{MeV} = 511\\,\\text{keV}\\)"
       ],
-      "answer": 1,
-      "explanation": "Energy conservation gives each photon a sharp, recognisable 511 keV (half of 1.022 MeV). Momentum conservation, from a near-stationary pair, forces the two photons to fly out in exactly opposite directions. Together these give the scanner its lines of response. Charge is also conserved (0 before, 0 after).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 1.022,
+      "answerUnit": "MeV",
+      "tolerance": 0.001,
+      "explanation": "Each particle contributes its 511 keV rest mass energy, giving 1.022 MeV total. Momentum conservation forces two equal back-to-back photons, so each carries exactly 511 keV.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasepets-q11",
+      "type": "short",
+      "q": "Explain why the two gamma rays from positron-electron annihilation are emitted almost, but not exactly, 180 degrees apart. (3 marks)",
+      "marks": 3,
+      "modelAnswer": "Conservation of momentum requires that the total momentum after annihilation equals the total before. If the electron and positron were perfectly at rest, their total momentum would be exactly zero, forcing the two photons to fly out at exactly 180 degrees so their momenta cancel. In reality the pair retains a tiny residual momentum at the moment of annihilation, so the total momentum is not perfectly zero, and the photons emerge a fraction of a degree off a perfect straight line. This non-collinearity is a fundamental limit on PET image sharpness: the conservation law is exact, but the starting momentum is not perfectly zero.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States that conservation of momentum forces the photons back-to-back when the pair is at rest." },
+        { "marks": 1, "descriptor": "Identifies that the real pair has a small residual (non-zero) momentum at annihilation." },
+        { "marks": 1, "descriptor": "Concludes the photons are slightly off 180 degrees (non-collinearity), limiting image sharpness." }
+      ],
+      "explanation": "The marker rewards linking the (exact) momentum conservation law to the (imperfect) near-zero starting momentum of the real pair.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

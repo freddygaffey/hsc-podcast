@@ -1,174 +1,146 @@
 {
   "questions": [
     {
-      "id": "m702-q01",
-      "q": "What was James Clerk Maxwell's central theoretical achievement, published in 1864?",
+      "id": "mm702-q01",
+      "type": "mc",
+      "q": "James Clerk Maxwell published his theory of electromagnetism in 1864. What was his central achievement?",
       "options": [
         "He measured the speed of light using a rotating mirror",
-        "He unified electricity and magnetism into a single theory of the electromagnetic field",
-        "He produced and detected the first electromagnetic waves in a laboratory",
-        "He defined the speed of light as an exact constant"
+        "He unified electricity and magnetism into one theory, expressed in four equations, and showed they are features of a single electromagnetism",
+        "He discovered that magnetic poles can be separated into isolated monopoles",
+        "He proved experimentally that radio waves carry energy across empty space"
       ],
       "answer": 1,
-      "explanation": "Maxwell unified electricity and magnetism — previously studied as separate phenomena — into one theory described by four equations. Measuring c (Fizeau/Foucault) and detecting EM waves (Hertz) were done by others; the 1983 definition came much later.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Maxwell, a Scottish physicist, linked all the electric and magnetic effects observed in earlier experiments into one unifying theory expressed mathematically in four equations. Electricity and magnetism could no longer be viewed as two separate phenomena but as features of a more general electromagnetism. Measuring the speed of light (Foucault) and verifying the waves (Hertz) were other people's work.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 198, "url": "sources/phy12/p198.jpg" }
     },
     {
-      "id": "m702-q02",
-      "q": "Maxwell's theory gives the speed of an electromagnetic wave as:",
+      "id": "mm702-q02",
+      "type": "mc",
+      "q": "Which of Maxwell's four equations introduces the permeability of free space and states that a magnetic field is produced by an electric current or by a changing electric flux?",
       "options": [
-        "\\( c = \\sqrt{\\mu_0 \\varepsilon_0} \\)",
-        "\\( c = \\dfrac{1}{\\sqrt{\\mu_0 \\varepsilon_0}} \\)",
-        "\\( c = \\dfrac{\\mu_0}{\\varepsilon_0} \\)",
-        "\\( c = \\mu_0 \\varepsilon_0 \\)"
+        "Gauss's law, which describes the electric flux produced by charges",
+        "Gauss's law for magnetic fields, which states there are no magnetic monopoles",
+        "Faraday's law, which describes the electric field induced by a changing magnetic field",
+        "The Ampere-Maxwell law, which introduces the permeability of free space"
+      ],
+      "answer": 3,
+      "explanation": "The Ampere-Maxwell law is a little like Faraday's law but deals with changing electric flux: a magnetic field is produced by an electric current or by a changing electric flux. This law introduces the permeability of free space. Faraday's law is the partner that describes the electric field induced by a changing magnetic field.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 200, "url": "sources/phy12/p200.jpg" }
+    },
+    {
+      "id": "mm702-q03",
+      "type": "recall",
+      "q": "From memory, explain what is meant by the permittivity of free space.",
+      "keyPoints": [
+        "The permittivity of free space is a constant in Gauss's law for electricity.",
+        "It is the constant of proportionality between the electric flux passing through an enclosed space and the charge enclosed by the space.",
+        "It is the electric partner of the permeability of free space, which plays the same role for magnetic fields."
+      ],
+      "explanation": "The textbook's model answer: the permittivity of free space is the constant of proportionality between the electric flux passing through an enclosed space and the charge enclosed by the space. If you tied it to electric flux and enclosed charge, grade yourself Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 200, "url": "sources/phy12/p200.jpg" }
+    },
+    {
+      "id": "mm702-q04",
+      "type": "worked",
+      "q": "Calculate the speed of electromagnetic waves given that the permittivity of free space is 8.854 × 10^-12 and the permeability of free space is 4π × 10^-7.",
+      "given": "permittivity of free space \\(\\varepsilon_0 = 8.854 \\times 10^{-12}\\),  permeability of free space \\(\\mu_0 = 4\\pi \\times 10^{-7}\\)",
+      "working": [
+        "\\(v = \\dfrac{1}{\\sqrt{\\mu_0 \\varepsilon_0}}\\)",
+        "Multiply the constants: \\(4\\pi \\times 10^{-7} \\times 8.854 \\times 10^{-12} = 1.113 \\times 10^{-17}\\)",
+        "Take the square root: \\(\\sqrt{1.113 \\times 10^{-17}} = 3.34 \\times 10^{-9}\\)",
+        "Take the reciprocal: \\(v = \\dfrac{1}{3.34 \\times 10^{-9}} = 2.998 \\times 10^{8}\\ \\mathrm{m\\,s^{-1}}\\)"
+      ],
+      "answerValue": 2.998e8,
+      "answerUnit": "m s⁻¹",
+      "tolerance": 2e6,
+      "explanation": "Apply \\(v = 1/\\sqrt{\\mu_0 \\varepsilon_0}\\): multiply the two constants, square root, then reciprocal. This is the textbook's own sample-problem value, 2.998 × 10⁸ m s⁻¹, normally rounded to 3.0 × 10⁸ m s⁻¹. Don't forget it is the reciprocal of the square root, not the square root itself.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 202, "url": "sources/phy12/p202.jpg" }
+    },
+    {
+      "id": "mm702-q05",
+      "type": "mc",
+      "q": "Maxwell's wave equation gave the speed of electromagnetic waves as 2.998 × 10⁸ m s⁻¹. Why was this figure so significant?",
+      "options": [
+        "It was far larger than any speed previously measured, so it was assumed to be an error",
+        "It is equal to the speed of light, a fact noticed by Maxwell that led to his proposal that light is an electromagnetic wave",
+        "It depended only on the permeability of free space, proving magnetism alone causes light",
+        "It matched the speed of sound, showing light and sound are the same phenomenon"
       ],
       "answer": 1,
-      "explanation": "The speed equals one over the square root of the permeability of free space times the permittivity of free space: \\( c = 1/\\sqrt{\\mu_0 \\varepsilon_0} \\). Note it is the reciprocal of the square root, not the square root itself.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The textbook states this figure is equal to the speed of light, a fact noticed by Maxwell that led to his proposal that light was an electromagnetic wave. The two constants come from electric and magnetic experiments independent of light, so the matching speed is powerful, independent evidence.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 202, "url": "sources/phy12/p202.jpg" }
     },
     {
-      "id": "m702-q03",
-      "q": "Why was Maxwell's predicted speed such powerful evidence that light is an electromagnetic wave?",
+      "id": "mm702-q06",
+      "type": "mc",
+      "q": "According to Maxwell's theory, what is required to produce an electromagnetic wave that propagates through space?",
       "options": [
-        "Because Maxwell deliberately tuned his constants to match the known speed of light",
-        "Because \\( \\mu_0 \\) and \\( \\varepsilon_0 \\) are measured in electric and magnetic experiments independent of light, yet their combination matched the known speed of light",
-        "Because Maxwell measured the speed of light directly and it agreed with theory",
-        "Because the prediction came after Hertz had already detected the waves"
+        "A constant DC current flowing through a straight wire",
+        "A stationary electric charge sitting on an insulator",
+        "An oscillating (vibrating) electric charge, such as an accelerating charge",
+        "A steady magnetic field from a permanent magnet"
+      ],
+      "answer": 2,
+      "explanation": "To produce an electromagnetic wave that propagates through space, an oscillating (vibrating) electric charge is required. The moving charge forms an oscillating current that induces an oscillating magnetic field, which induces an electric field; these self-perpetuating fields radiate out at 2.998 × 10⁸ m s⁻¹. A constant DC current produces no wave.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 203, "url": "sources/phy12/p203.jpg" }
+    },
+    {
+      "id": "mm702-q07",
+      "type": "short",
+      "q": "In 1983 the speed of light was declared to be exactly 299 792 458 m s⁻¹. Explain how the metre and the second are defined as a result. (3 marks)",
+      "marks": 3,
+      "modelAnswer": "Because the speed of light is constant, it was set as an exact standard of 299 792 458 m s⁻¹. With this value fixed, one metre is defined as how far light travels in a vacuum in 1/299 792 458 of a second. The second is defined independently from a precise natural standard: caesium-133 atoms have an energy transition that occurs 9 192 631 770 times per second, and one second is the time taken for that many transitions, which is the basis of atomic clocks.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States the speed of light is fixed/declared exactly as 299 792 458 m s⁻¹." },
+        { "marks": 1, "descriptor": "Defines the metre as the distance light travels in 1/299 792 458 of a second." },
+        { "marks": 1, "descriptor": "Defines the second using the 9 192 631 770 transitions of caesium-133 (atomic clock standard)." }
+      ],
+      "explanation": "Because the speed of light is now declared exactly, it is no longer measured; instead the metre is defined from it, and the second from the caesium-133 transition that occurs 9 192 631 770 times per second.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 208, "url": "sources/phy12/p208.jpg" }
+    },
+    {
+      "id": "mm702-q08",
+      "type": "mc",
+      "q": "Which statement correctly identifies who did what in the story of the speed of light?",
+      "options": [
+        "Maxwell measured the speed of light experimentally; Hertz predicted electromagnetic waves on paper",
+        "Maxwell predicted the speed from theory; Hertz verified electromagnetic waves by experiment after Maxwell had died",
+        "Both Maxwell and Hertz measured the speed using rotating mirrors",
+        "Hertz predicted the waves from theory; Maxwell later detected them with a loop antenna"
       ],
       "answer": 1,
-      "explanation": "The permittivity and permeability are fixed by purely electric and magnetic experiments (capacitors, coils) that have nothing to do with light. Because the matching speed could not have been built in, the agreement is strong evidence that light is itself an electromagnetic wave. The key word is 'independent'.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Maxwell predicted the speed of light from pure theory and concluded light is an electromagnetic wave; he never made or detected one. Hertz, working in the 1880s after Maxwell's death, produced and detected the waves and measured their speed. The mnemonic: Maxwell predicts, Hertz proves.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m702-q04",
-      "q": "Calculate the speed of EM waves given \\( \\mu_0 = 1.26 \\times 10^{-6} \\) and \\( \\varepsilon_0 = 8.85 \\times 10^{-12} \\).",
-      "options": [
-        "\\( 3.0 \\times 10^{8}\\ \\mathrm{m\\,s^{-1}} \\)",
-        "\\( 3.3 \\times 10^{-9}\\ \\mathrm{m\\,s^{-1}} \\)",
-        "\\( 1.1 \\times 10^{-17}\\ \\mathrm{m\\,s^{-1}} \\)",
-        "\\( 9.0 \\times 10^{16}\\ \\mathrm{m\\,s^{-1}} \\)"
+      "id": "mm702-q09",
+      "type": "recall",
+      "q": "From memory: why is Hertz's receiver loop sparking, with no power source of its own, the proof that an electromagnetic wave crossed the room?",
+      "keyPoints": [
+        "The receiver was just a loop of wire with a small gap, connected to no battery or power source.",
+        "To make a spark jump the gap, a current must be induced; by Faraday's law that needs a changing magnetic field threading the loop.",
+        "With nothing connecting transmitter and receiver, the changing field must have arrived as a radiated electromagnetic wave carrying energy across empty space."
       ],
-      "answer": 0,
-      "explanation": "Multiply: \\( (1.26\\times10^{-6})(8.85\\times10^{-12}) = 1.115\\times10^{-17} \\). Square root: \\( 3.34\\times10^{-9} \\). Reciprocal: \\( 1/(3.34\\times10^{-9}) = 3.0\\times10^{8}\\ \\mathrm{m\\,s^{-1}} \\).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The headline fact is 'no power source of its own'. The spark in an unpowered loop can only come from an induced current, which requires a changing magnetic field that travelled across the room as a wave. Leave out 'no power source' and you miss the entire point.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m702-q05",
-      "q": "Which two of Maxwell's four equations form the self-propagating 'leapfrog' that gives rise to a wave?",
-      "options": [
-        "The two Gauss's laws (for electricity and magnetism)",
-        "Faraday's law and the Ampère–Maxwell law",
-        "Gauss's law for electricity and Faraday's law",
-        "Gauss's law for magnetism and the Ampère–Maxwell law"
+      "id": "mm702-q10",
+      "type": "worked",
+      "q": "A microwave transmitter of frequency 10.5 GHz is aimed at a metal reflector, forming a standing wave. Adjacent nodes are found 14.3 mm apart. Calculate the speed of the electromagnetic waves.",
+      "given": "\\(f = 10.5\\ \\mathrm{GHz} = 1.05 \\times 10^{10}\\ \\mathrm{Hz}\\),  adjacent node spacing \\(= 14.3\\ \\mathrm{mm}\\)",
+      "working": [
+        "Adjacent nodes are half a wavelength apart, so \\(\\lambda = 2 \\times \\text{node spacing}\\)",
+        "\\(\\lambda = 2 \\times 14.3\\ \\mathrm{mm} = 28.6\\ \\mathrm{mm} = 2.86 \\times 10^{-2}\\ \\mathrm{m}\\)",
+        "\\(v = f\\lambda\\)",
+        "\\(v = 1.05 \\times 10^{10} \\times 2.86 \\times 10^{-2} = 3.00 \\times 10^{8}\\ \\mathrm{m\\,s^{-1}}\\)"
       ],
-      "answer": 1,
-      "explanation": "Faraday's law (changing magnetism makes electricity) and the Ampère–Maxwell law (changing electricity makes magnetism) feed one another indefinitely with no charges or wires present, producing a self-propagating wave. The two Gauss's laws describe how fields relate to charges/monopoles.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m702-q06",
-      "q": "In Hertz's experiment, why is it significant that the receiver loop sparked even though it was connected to no power source?",
-      "options": [
-        "It proved the loop stored its own charge",
-        "It proved energy had crossed the room as an electromagnetic wave, inducing a current in the loop",
-        "It proved the induction coil was overheating",
-        "It proved the waves travelled faster than light"
-      ],
-      "answer": 1,
-      "explanation": "With no battery, the only way to spark the gap is to induce a current, which requires a changing magnetic field threading the loop (Faraday's law). That field arrived across empty space from the transmitter — so an EM wave carried energy across the room. 'No power source' is the heart of the proof.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m702-q07",
-      "q": "When Hertz rotated his receiver loop to test polarisation, what did he observe?",
-      "options": [
-        "Maximum spark when the loop was perpendicular to the transmitter, no spark when parallel",
-        "Maximum spark when the loop was parallel to the transmitter, no spark when perpendicular",
-        "The same spark at every orientation",
-        "A spark only at 45° to the transmitter"
-      ],
-      "answer": 1,
-      "explanation": "Parallel loop → maximum spark; perpendicular loop (90°) → no spark; in between → an intermediate spark. This is exactly how a polariser/analyser behave, proving the wave has a single plane of vibration and is therefore transverse.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m702-q08",
-      "q": "In the microwave standing-wave method for measuring c, how is the wavelength found from the node positions?",
-      "options": [
-        "The wavelength equals the distance between adjacent nodes",
-        "The wavelength equals twice the distance between adjacent nodes",
-        "The wavelength equals half the distance between adjacent nodes",
-        "The wavelength equals four times the distance between adjacent nodes"
-      ],
-      "answer": 1,
-      "explanation": "Adjacent nodes in a standing wave are half a wavelength apart, so \\( \\lambda = 2 \\times (\\text{node spacing}) \\). Forgetting this factor of two halves the calculated speed, giving \\( 1.5\\times10^{8} \\) instead of \\( 3.0\\times10^{8}\\ \\mathrm{m\\,s^{-1}} \\).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m702-q09",
-      "q": "A microwave transmitter at \\( 9.4 \\times 10^{9}\\ \\mathrm{Hz} \\) is aimed at a reflector; adjacent nodes are 16 mm apart. What is the measured speed of the waves?",
-      "options": [
-        "\\( 1.5 \\times 10^{8}\\ \\mathrm{m\\,s^{-1}} \\)",
-        "\\( 3.0 \\times 10^{8}\\ \\mathrm{m\\,s^{-1}} \\)",
-        "\\( 6.0 \\times 10^{8}\\ \\mathrm{m\\,s^{-1}} \\)",
-        "\\( 1.5 \\times 10^{6}\\ \\mathrm{m\\,s^{-1}} \\)"
-      ],
-      "answer": 1,
-      "explanation": "Wavelength = 2 × 16 mm = 32 mm = \\( 3.2\\times10^{-2}\\ \\mathrm{m} \\). Speed = \\( f\\lambda = (9.4\\times10^{9})(3.2\\times10^{-2}) = 3.0\\times10^{8}\\ \\mathrm{m\\,s^{-1}} \\). Answer A is the trap from forgetting the factor of two.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m702-q10",
-      "q": "A textbook claims modern experiments let scientists measure the speed of light more precisely than ever. Why is this incorrect?",
-      "options": [
-        "c is measured using only the caesium atomic clock, which has not improved",
-        "Since 1983 c is defined to be exactly \\( 299\\,792\\,458\\ \\mathrm{m\\,s^{-1}} \\), so it has no uncertainty and is no longer measured; better experiments refine the metre instead",
-        "c can only be measured in a vacuum, which is impossible to create on Earth",
-        "c changes slightly over time, so any measurement is quickly out of date"
-      ],
-      "answer": 1,
-      "explanation": "Since 1983 the speed of light is a defined exact value, so it has no measurement uncertainty and cannot be measured more precisely. The metre is now defined from c and the caesium-based second, so improved experiments refine the metre, not c.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 3.0e8,
+      "answerUnit": "m s⁻¹",
+      "tolerance": 5e6,
+      "explanation": "The one piece you cannot get wrong: adjacent nodes are half a wavelength apart, so double the node spacing to get the wavelength, then use v = fλ. Forgetting the factor of two halves your answer to 1.5 × 10⁸ m s⁻¹.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

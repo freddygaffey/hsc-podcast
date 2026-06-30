@@ -1,174 +1,144 @@
 {
   "questions": [
     {
-      "id": "m706-q01",
-      "q": "In the equation \\( d\\sin\\theta = m\\lambda \\), what does the quantity \\( d\\sin\\theta \\) represent?",
+      "id": "mm706-q01",
+      "type": "mc",
+      "q": "In Young's experiment, what is meant by the path difference between two rays that meet at a point on the screen?",
       "options": [
-        "The wavelength of the light",
-        "The path difference between light from two adjacent slits",
-        "The distance from the slits to the screen",
-        "The width of a single slit"
+        "The difference in brightness between the central maximum and the first dark band",
+        "The difference between the lengths of the two paths the waves travel from the source through one pinhole or the other",
+        "The angle between the straight-through direction and the line to the bright spot",
+        "The separation between the two pinholes in the card"
       ],
       "answer": 1,
-      "explanation": "The geometry gives the extra distance travelled by light from one slit compared with an adjacent slit as \\( d\\sin\\theta \\) — the path difference. Setting it equal to a whole number of wavelengths (\\( m\\lambda \\)) gives the condition for a bright fringe.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The textbook defines the path difference as the difference between the lengths of the two alternative routes light travels, through one pinhole or the other, to reach a point on the screen. When the crests from one pinhole meet the troughs from the other (exactly out of phase) the waves interfere destructively and a dark band appears.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 226, "url": "sources/phy12/p226.jpg" }
     },
     {
-      "id": "m706-q02",
-      "q": "In \\( d\\sin\\theta = m\\lambda \\), what is required of the order number \\( m \\) for a maximum (bright fringe)?",
-      "options": [
-        "It must be a whole number (integer)",
-        "It must be a half-integer",
-        "It can be any positive number",
-        "It must equal the slit separation"
-      ],
-      "answer": 0,
-      "explanation": "A maximum occurs only where a whole number of wavelengths fits into the path difference, so \\( m \\) must be an integer (0 for the central maximum, 1 for first order, etc.). A half-integer path difference gives a dark fringe instead.",
+      "id": "mm706-q02",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m706-q03",
-      "q": "According to \\( d\\sin\\theta = m\\lambda \\), what happens to the angle of the fringes if the slit separation \\( d \\) is decreased?",
+      "q": "According to the textbook, the condition for constructive interference (a maximum) is that the path difference d sin θ equals what?",
       "options": [
-        "The angle decreases, so fringes move closer together",
-        "The angle increases, so fringes spread further apart",
-        "The angle is unchanged",
-        "The fringes disappear"
+        "A whole number minus one half, multiplied by the wavelength: (m − ½)λ",
+        "A whole number multiple of the wavelength, mλ, giving d sin θ = mλ",
+        "The slit separation divided by the wavelength, d/λ",
+        "The distance x to the band divided by the screen distance L"
       ],
       "answer": 1,
-      "explanation": "Solving for \\( \\sin\\theta = m\\lambda/d \\), the separation \\( d \\) is in the denominator, so a smaller \\( d \\) gives a larger angle. A grating with more lines per millimetre has a smaller \\( d \\) and so a more spread-out pattern.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The textbook shows that the extra distance travelled by ray D2 equals the path difference d sin θ by trigonometry, and that constructive interference (a maximum, a bright band) occurs when this path difference is a whole number multiple of the wavelength. Hence d sin θ = mλ. Destructive interference (a minimum) instead occurs when d sin θ = (m − ½)λ.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 226, "url": "sources/phy12/p226.jpg" }
     },
     {
-      "id": "m706-q04",
-      "q": "When white light passes through a diffraction grating, which colour is deflected through the largest angle in a given order?",
+      "id": "mm706-q03",
+      "type": "worked",
+      "q": "A sodium lamp produces almost-monochromatic light of wavelength 589 nm falling on two parallel vertical slits 0.100 mm apart, forming an interference pattern on a screen 1.50 m away. Determine the angle of the first-order maximum.",
+      "given": "\\(\\lambda = 589\\,\\mathrm{nm} = 589\\times10^{-9}\\,\\mathrm{m}\\),  \\(d = 0.100\\,\\mathrm{mm} = 1.0\\times10^{-4}\\,\\mathrm{m}\\),  \\(m = 1\\)",
+      "working": [
+        "\\(d\\sin\\theta = m\\lambda\\), so \\(\\sin\\theta = \\dfrac{m\\lambda}{d}\\)",
+        "\\(\\sin\\theta = \\dfrac{1 \\times 589\\times10^{-9}}{1.0\\times10^{-4}} = 5.89\\times10^{-3}\\)",
+        "\\(\\theta = \\sin^{-1}(5.89\\times10^{-3}) = 0.337^\\circ\\)"
+      ],
+      "answerValue": 0.337,
+      "answerUnit": "degrees",
+      "tolerance": 0.01,
+      "explanation": "This is the textbook's Sample Problem 1. Rearranging d sin θ = mλ gives sin θ = mλ/d, and the inverse sine gives 0.337°. Because this is a tiny angle, the small-angle approximation is safe, so the distance on the screen is x = L sin θ = 1.5 × 5.89 × 10⁻³ = 8.8 mm.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 228, "url": "sources/phy12/p228.jpg" }
+    },
+    {
+      "id": "mm706-q04",
+      "type": "worked",
+      "q": "White light strikes a diffraction grating of line separation d = 10 μm. Using d sin θ = mλ, find the first-order angle for red light of wavelength 700 nm.",
+      "given": "\\(d = 10\\,\\mu\\mathrm{m} = 10\\times10^{-6}\\,\\mathrm{m}\\),  \\(\\lambda_{\\text{red}} = 700\\,\\mathrm{nm} = 700\\times10^{-9}\\,\\mathrm{m}\\),  \\(m = 1\\)",
+      "working": [
+        "\\(\\sin\\theta = \\dfrac{m\\lambda}{d}\\)",
+        "\\(\\theta_{\\text{red}} = \\sin^{-1}\\!\\left(\\dfrac{1 \\times 700\\times10^{-9}}{10\\times10^{-6}}\\right)\\)",
+        "\\(\\theta_{\\text{red}} = \\sin^{-1}(0.070) = 4.0^\\circ\\)"
+      ],
+      "answerValue": 4.0,
+      "answerUnit": "degrees",
+      "tolerance": 0.1,
+      "explanation": "These are the textbook's white-light dispersion values. Red light (700 nm) gives 4.0°, while blue light (450 nm) gives only 2.6°, because the longer wavelength sits in the numerator and is diffracted to a larger angle. So each maximum is dispersed into a spectrum running from blue nearest the centre out to red — the opposite order to a prism.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 228, "url": "sources/phy12/p228.jpg" }
+    },
+    {
+      "id": "mm706-q05",
+      "type": "mc",
+      "q": "Why does a diffraction grating produce a sharper, better-separated pattern of maxima than a double slit?",
       "options": [
-        "Violet, because it has the shortest wavelength",
-        "Red, because it has the longest wavelength",
-        "Green, because it is in the middle of the spectrum",
-        "All colours are deflected equally"
+        "It uses light of a shorter wavelength",
+        "The larger the number of slits (lines) on the grating, the sharper the image, producing a well-separated pattern of narrow peaks",
+        "The lines are spaced much further apart than double-slit slits",
+        "It only allows the central maximum through and blocks all other orders"
       ],
       "answer": 1,
-      "explanation": "Since \\( \\sin\\theta = m\\lambda/d \\), a longer wavelength gives a larger angle, so red (~700 nm) is deflected most. This is the reverse of a prism, where violet is bent most because dispersion there is by refraction, not diffraction.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The textbook states that a grating consists of a large number of equidistant parallel lines, and that the larger the number of slits on a grating, the sharper the image obtained. The many ruled lines act as point sources whose interference produces a well-separated pattern of narrow, sharp peaks — which is why gratings are used in spectrometers.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 227, "url": "sources/phy12/p227.jpg" }
     },
     {
-      "id": "m706-q05",
-      "q": "Why does a diffraction grating produce sharper, narrower maxima than a double slit?",
+      "id": "mm706-q06",
+      "type": "mc",
+      "q": "A diffraction grating is quoted as N lines per centimetre. According to the textbook investigation, how is the slit separation d in metres found from N?",
       "options": [
-        "Because it lets through more light",
-        "Because it has thousands of coherent sources instead of two, so off the exact maxima the many waves cancel almost completely",
-        "Because its slits are wider",
-        "Because it uses monochromatic light only"
+        "\\(d = 100N\\)",
+        "\\(d = \\dfrac{1}{100\\,N}\\) — the reciprocal of the lines per metre",
+        "\\(d = \\dfrac{N}{100}\\)",
+        "\\(d = N\\) (the line number is the separation)"
       ],
       "answer": 1,
-      "explanation": "A grating has thousands of equally spaced coherent sources. Away from an exact maximum the many waves take every phase and cancel almost completely, leaving sharp bright lines only where all sources are in phase. This sharpness gives the resolution needed to separate spectral lines.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The textbook gives the relationship between the number of lines per centimetre on the grating N and the distance d between the lines as d = 1/(100N). The factor of 100 converts lines per centimetre to lines per metre before taking the reciprocal — forgetting it leaves your answer wrong by a factor of a hundred.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 237, "url": "sources/phy12/p237.jpg" }
     },
     {
-      "id": "m706-q06",
-      "q": "A diffraction grating is labelled 5000 lines per centimetre. What is the slit separation \\( d \\)?",
-      "options": [
-        "\\( 5000\\ \\mathrm{m} \\)",
-        "\\( 2 \\times 10^{-4}\\ \\mathrm{m} \\)",
-        "\\( 2 \\times 10^{-6}\\ \\mathrm{m} \\)",
-        "\\( 5 \\times 10^{-3}\\ \\mathrm{m} \\)"
+      "id": "mm706-q07",
+      "type": "recall",
+      "q": "From memory: summarise what the chapter review says happens to the maxima when white light, rather than monochromatic light, passes through a diffraction grating.",
+      "keyPoints": [
+        "A diffraction grating is a piece of glass with many fine lines ruled upon it (thousands of lines per centimetre), producing a very sharp interference pattern.",
+        "If white light is used, each maximum is dispersed into a spectrum.",
+        "This happens because each wavelength of light has a different diffraction angle (from d sin θ = mλ)."
       ],
-      "answer": 2,
-      "explanation": "Convert to lines per metre first: \\( 5000 \\times 100 = 500\\,000 \\) lines/m. Then \\( d = 1/N = 1/500\\,000 = 2 \\times 10^{-6}\\ \\mathrm{m} \\). Forgetting the ×100 conversion or the reciprocal are the two classic errors.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The review summary states that when white light is used, each maximum is dispersed into a spectrum since each wavelength of light has a different diffraction angle. If you recalled the dispersion of each maximum and tied it to a wavelength-dependent angle, grade yourself Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 233, "url": "sources/phy12/p233.jpg" }
     },
     {
-      "id": "m706-q07",
-      "q": "Monochromatic light of wavelength 600 nm passes through a grating with \\( d = 2.5 \\times 10^{-6}\\ \\mathrm{m} \\). Find the angle of the second-order (\\( m = 2 \\)) maximum.",
+      "id": "mm706-q08",
+      "type": "mc",
+      "q": "A grating throws a first-order maximum out to 9° from the centre. To find the distance x from the central maximum to that spot on a screen distance L away, what should you do?",
       "options": [
-        "About \\( 14° \\)",
-        "About \\( 29° \\)",
-        "About \\( 48° \\)",
-        "About \\( 7° \\)"
+        "Use the small-angle approximation x = mλL/d, since it always holds",
+        "Use d sin θ = mλ to find the angle, then x = L tan θ for the screen distance, because at large angles sin θ ≠ tan θ",
+        "Use x = L sin θ, because the sine is always correct for the screen distance",
+        "Use x = L/tan θ, the reciprocal of the geometry"
       ],
       "answer": 1,
-      "explanation": "\\( \\sin\\theta = m\\lambda/d = (2 \\times 600\\times10^{-9})/(2.5\\times10^{-6}) = 1.2\\times10^{-6}/2.5\\times10^{-6} = 0.48 \\), so \\( \\theta = \\sin^{-1}(0.48) \\approx 29° \\).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The small-angle approximation sin θ ≈ tan θ ≈ x/L only holds for a few degrees. Gratings often produce wide angles where sine and tangent differ noticeably, so you must use d sin θ = mλ for the angle and then x = L tan θ for the screen distance. Sine inside the grating equation, tangent for the screen distance once the angle is large.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m706-q08",
-      "q": "A grating throws a first-order maximum out to about 9°. To find the distance \\( x \\) from the centre to the spot on a screen distance \\( L \\) away, which relation should be used?",
-      "options": [
-        "\\( x = L\\sin\\theta \\), using the small-angle approximation",
-        "\\( x = L\\tan\\theta \\), because at this angle the small-angle approximation is no longer valid",
-        "\\( x = L\\cos\\theta \\)",
-        "\\( x = L/\\sin\\theta \\)"
+      "id": "mm706-q09",
+      "type": "recall",
+      "q": "From memory: state the safe sequence for finding the slit separation d when a grating is quoted in lines per centimetre, and the two classic errors it prevents.",
+      "keyPoints": [
+        "Convert lines per centimetre to lines per metre first by multiplying by 100 (there are 100 cm in a metre).",
+        "Then take the reciprocal: d = 1 / (lines per metre). 'Convert, then reciprocate, in that order.'",
+        "This avoids the two classic errors: treating the line number itself as d (no reciprocal), and forgetting the ×100 conversion (off by a factor of 100)."
       ],
-      "answer": 1,
-      "explanation": "The small-angle approximation (\\( \\sin\\theta \\approx \\tan\\theta \\approx x/L \\)) only holds for a few degrees. At 9° (and the large angles gratings often give) you must use the true geometry \\( x = L\\tan\\theta \\), having found \\( \\theta \\) from \\( d\\sin\\theta = m\\lambda \\).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The episode's slogan is 'Centimetres? Times a hundred, then flip.' For example, 5000 lines/cm → 500 000 lines/m → d = 1/500 000 = 2 × 10⁻⁶ m. If you recalled both the ×100 conversion and the reciprocal, grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m706-q09",
-      "q": "How does dispersion of white light by a diffraction grating differ from that by a glass prism?",
-      "options": [
-        "They produce identical spectra in the same order",
-        "In a grating red is deflected most; in a prism violet is bent most — the colour order is reversed",
-        "A prism deflects red most; a grating deflects violet most",
-        "Only a prism produces a spectrum; a grating produces none"
+      "id": "mm706-q10",
+      "type": "short",
+      "q": "Analyse the factors involved in the production of an interference pattern from a double slit and a diffraction grating, using d sin θ = mλ. (6 marks)",
+      "marks": 6,
+      "modelAnswer": "The condition for a bright fringe in both devices is d sin θ = mλ, where d is the slit or line separation, θ the angle to the fringe, m the integer order and λ the wavelength. Solving for sin θ = mλ/d: (1) the slit separation d is in the denominator, so decreasing d increases the angle to each fringe and spreads the pattern out — a grating with more lines per millimetre has a smaller d and a more spread-out pattern. (2) The wavelength λ is in the numerator, so a longer wavelength gives a larger angle; with white light, red is diffracted more than violet, so each order disperses into a spectrum with violet nearest the centre and red furthest out — the opposite order to a prism. (3) The order m is also in the numerator, so successive maxima appear at progressively larger angles. Comparing the devices: a double slit has only two coherent sources and produces broad, fuzzy maxima, whereas a diffraction grating has thousands of coherent sources that produce much sharper, narrower, brighter and better-separated maxima at the same fringe positions, which is why gratings are used in spectrometers to resolve closely spaced spectral lines.",
+      "criteria": [
+        { "marks": 2, "descriptor": "States d sin θ = mλ and analyses the effect of d (denominator → smaller d spreads the pattern)." },
+        { "marks": 2, "descriptor": "Analyses wavelength (numerator → longer λ larger angle) and order m, including white-light dispersion and the prism contrast." },
+        { "marks": 2, "descriptor": "Compares double slit (two sources, broad fuzzy maxima) with grating (thousands of sources, sharper, better-resolved maxima) tied to resolution." }
       ],
-      "answer": 1,
-      "explanation": "A grating disperses by diffraction, so red (longest wavelength) is deflected most. A prism disperses by refraction, so violet/blue is bent most and red least. The colour order is reversed between the two devices.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m706-q10",
-      "q": "Does the formation of an interference pattern in this experiment prove that light is a transverse wave?",
-      "options": [
-        "Yes — interference can only occur for transverse waves",
-        "No — interference proves light is a wave, but proving it is transverse requires polarisation",
-        "Yes — the equation \\( d\\sin\\theta = m\\lambda \\) only applies to transverse waves",
-        "No — interference proves light is a particle"
-      ],
-      "answer": 1,
-      "explanation": "Interference and diffraction demonstrate the wave nature of light, but both transverse and longitudinal waves can interfere. Proving light is specifically transverse requires the separate evidence of polarisation (covered in the next episode).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "A full-mark analyse answer ties every factor to its position in the equation (Distant Light Marches Outward) and uses the 'whereas' signpost to contrast the double slit with the grating (Many Sources, Sharp Lines).",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

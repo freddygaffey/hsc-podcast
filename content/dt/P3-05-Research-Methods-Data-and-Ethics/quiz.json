@@ -1,0 +1,141 @@
+{
+  "questions": [
+    {
+      "id": "mp305-q01",
+      "type": "mc",
+      "q": "Which statement best distinguishes qualitative from quantitative research?",
+      "options": [
+        "Qualitative research counts and measures, while quantitative research explores feelings and opinions",
+        "Qualitative research gathers non-numerical data about feelings and reasons (the 'why'); quantitative research gathers data that can be counted and statistically analysed (the 'how many')",
+        "Both gather numerical data, but qualitative research always uses a larger sample",
+        "Qualitative research is collected through surveys, while quantitative research is collected through interviews"
+      ],
+      "answer": 1,
+      "explanation": "Qualitative is the 'why' — feelings, opinions and reasons, typically from interviews and presented as text. Quantitative is the 'how many' — counted, statistically analysed data, typically from surveys and presented in graphs and tables. The best designs use both: numbers to prove a trend and opinions to explain it.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp305-q02",
+      "type": "mc",
+      "q": "A designer asks, 'How much weight can this chair frame hold?' Which research method best suits this question?",
+      "options": [
+        "An interview, producing qualitative data about comfort",
+        "A survey of the target market, producing quantitative data about demand",
+        "A test or experiment, producing quantitative data about how the design performs",
+        "Observation of users, producing qualitative data about behaviour"
+      ],
+      "answer": 2,
+      "explanation": "The method follows the question. A 'how strong / how much' question is answered by a test or experiment — you load the frame and measure, generating quantitative performance data best presented in a table. Interviews and observation give qualitative data; a survey measures market demand, not joint strength.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp305-q03",
+      "type": "mc",
+      "q": "Using a variety of research methods in the process of design is important because it",
+      "options": [
+        "helps develop marketing strategies.",
+        "improves understanding of customer needs.",
+        "promotes the use of emerging technologies.",
+        "protects the intellectual property of the designer."
+      ],
+      "answer": 1,
+      "explanation": "Using varied research methods triangulates data from different sources, giving the designer a fuller and more reliable understanding of customer needs. The other options are not the central reason for researching during the design process.",
+      "source": { "origin": "hsc", "ref": "2015 HSC Design and Technology Q10", "year": 2015 }
+    },
+    {
+      "id": "mp305-q04",
+      "type": "mc",
+      "q": "Which of the following best outlines why designers undertake research and experimentation when developing a product?",
+      "options": [
+        "To avoid making mistakes",
+        "To determine the properties of the materials to be used",
+        "To ensure all the materials are available for production",
+        "To ensure the best tools, materials and techniques are used"
+      ],
+      "answer": 3,
+      "explanation": "Research and experimentation let the designer test options and select the most appropriate tools, materials and techniques for the product. Determining material properties is only one part of this broader aim.",
+      "source": { "origin": "hsc", "ref": "2018 HSC Design and Technology Q7", "year": 2018 }
+    },
+    {
+      "id": "mp305-q05",
+      "type": "mc",
+      "q": "In research, what does 'reliability' refer to?",
+      "options": [
+        "Whether the research actually measures what it claims to measure",
+        "Whether the research would give consistent results if it were repeated",
+        "Whether participants gave informed consent before taking part",
+        "Whether the data is presented in graphs and tables"
+      ],
+      "answer": 1,
+      "explanation": "Reliability is about consistency — would you get the same results on repeating the research? Whether it measures what it claims to is validity, not reliability. Research with a tiny or biased sample is neither valid nor reliable, so designers use adequate, representative samples and avoid leading questions.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp305-q06",
+      "type": "mc",
+      "q": "Which of the following describes a designer with an ethical approach to designing a product?",
+      "options": [
+        "Designing products that meet a niche market",
+        "Creating products that avoid excessive resource consumption",
+        "Developing marketing campaigns to ensure the greatest number of sales",
+        "Examining procedures that protect design ideas and promote creativity"
+      ],
+      "answer": 1,
+      "explanation": "An ethical approach minimises harm to society and the environment, for example by avoiding excessive consumption of resources. Targeting niche markets, maximising sales and protecting ideas are commercial or legal concerns rather than ethical ones.",
+      "source": { "origin": "hsc", "ref": "2014 HSC Design and Technology Q10", "year": 2014 }
+    },
+    {
+      "id": "mp305-q07",
+      "type": "recall",
+      "q": "From memory: what is the difference between qualitative and quantitative research, and name one method for each?",
+      "keyPoints": [
+        "Qualitative research gathers non-numerical data about feelings, opinions and reasons — the 'why' — and is presented as text. Classic method: an interview.",
+        "Quantitative research gathers numerical data that can be counted and statistically analysed — the 'how many / how much' — and is presented in graphs and tables. Classic method: a survey.",
+        "The best designs use both: the numbers to prove a trend and the opinions to explain it."
+      ],
+      "explanation": "If you got 'qualitative is opinions and reasons via interviews, quantitative is numbers via surveys', that's the mark. Grade yourself Good or Easy if you also paired each with its method.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp305-q08",
+      "type": "recall",
+      "q": "From memory: list the core research ethics a designer must apply when research involves people. (Hook: CVA, plus two more.)",
+      "keyPoints": [
+        "C — informed Consent: participants know what the research involves and agree to take part.",
+        "V — Voluntary participation: no one is pressured, and they can withdraw.",
+        "A — Anonymity and privacy: protect participants' identities and personal information.",
+        "Plus honesty (report findings truthfully, don't fabricate or cherry-pick data) and no harm (the research mustn't endanger anyone)."
+      ],
+      "explanation": "Ethics is a syllabus requirement, not optional politeness. A folio that surveys or interviews people should note how consent and privacy were handled — leaving ethics out misses an easy mark.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mp305-q09",
+      "type": "short",
+      "q": "Outline how testing and experimenting can improve a design project.",
+      "marks": 2,
+      "modelAnswer": "Testing and experimenting improve a design project by letting the designer explore the successes and failures of different materials, tools and techniques before committing to them. This saves time, money and material wastage and leads to a better-resolved final design.",
+      "criteria": [
+        { "marks": "2", "descriptor": "Outlines relevant information regarding testing and experimenting and how it can improve a design" },
+        { "marks": "1", "descriptor": "Provides relevant information" }
+      ],
+      "explanation": "The strong answer frames testing and experimenting as a research method that produces objective evidence about how the design performs against the success criteria; those findings are fed back to refine the design (the evaluate-and-refine loop). The shallow 'you test it to check it works' caps low.",
+      "source": { "origin": "hsc", "ref": "2022 HSC Design and Technology Q11", "year": 2022 }
+    },
+    {
+      "id": "mp305-q10",
+      "type": "short",
+      "q": "Research is important in the early stages of designing a new product.\n\nExplain the factors a designer would need to consider when interpreting and applying research data.",
+      "marks": 4,
+      "modelAnswer": "When interpreting and applying research data a designer must consider its validity (does it actually measure what it claims to?) and reliability (would it give consistent results if repeated?), which depend on using an adequate, representative sample and avoiding leading or biased questions. They must also consider whether the data is qualitative or quantitative and present it appropriately — tables and graphs for quantitative data, grouped themes for qualitative — so patterns are visible. Most importantly, the findings only have value when they are analysed and applied to change a design decision, so the designer must consider how the data refines the design against the identified need.",
+      "criteria": [
+        { "marks": "4", "descriptor": "Makes the relationship between the factors and the consideration evident (when interpreting and applying research data); provides the reasons why the designer considers these factors" },
+        { "marks": "3", "descriptor": "Provides characteristics and features of the factors a designer would need to consider when interpreting and applying research data" },
+        { "marks": "2", "descriptor": "Sketches in general terms factors a designer would consider when interpreting and applying research data" },
+        { "marks": "1", "descriptor": "Identifies a factor a designer would consider when interpreting and applying research data" }
+      ],
+      "explanation": "Validity and reliability are the two quality words the marker rewards, but the highest band needs the link to action — research only has value when its findings change a design decision.",
+      "source": { "origin": "hsc", "ref": "2010 HSC Design and Technology Q13", "year": 2010 }
+    }
+  ]
+}

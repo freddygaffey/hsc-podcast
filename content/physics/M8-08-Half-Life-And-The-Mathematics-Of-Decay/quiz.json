@@ -1,174 +1,148 @@
 {
   "questions": [
     {
-      "id": "m808-q01",
-      "q": "Radioactive decay is described as spontaneous and random. Which statement follows from this?",
+      "id": "mm808-q01",
+      "type": "mc",
+      "q": "How is the rate of decay of a radioisotope measured, and what does the half-life of a radioactive isotope represent?",
       "options": [
-        "The decay rate can be sped up by heating the sample",
-        "External conditions (temperature, pressure, chemistry) have no effect on the decay rate, and the time of decay of a single nucleus cannot be predicted",
-        "Every nucleus decays after exactly one half-life",
-        "Compressing the sample shortens its half-life"
+        "By its activity in becquerels; the half-life is the time for the whole sample to decay",
+        "By its half-life; the half-life is the time taken for half the radioactive material to decay",
+        "By its decay constant; the half-life is the time for the activity to double",
+        "By its mass; the half-life is the time for the isotope to become a different element"
       ],
       "answer": 1,
-      "explanation": "Spontaneous means the rate is unaffected by temperature, pressure or chemical state — half-life is a fixed property of the nucleus. Random means you cannot predict when any individual nucleus will decay; only the statistics of huge numbers of nuclei are predictable.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Not all radioactive isotopes decay at the same rate; the rate of decay is measured by the half-life of the radioisotope, the time taken for half the radioactive material to decay. Half-lives vary enormously — uranium-238 has a half-life of 4.5 × 10⁹ years whereas polonium-218 has a half-life of only 1.5 × 10⁻⁴ seconds.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 407, "url": "sources/phy12/p407.jpg" }
     },
     {
-      "id": "m808-q02",
-      "q": "Why is radioactive decay exponential?",
+      "id": "mm808-q02",
+      "type": "mc",
+      "q": "On the radioactive decay graph of sodium-24 you start with 100 g and the mass has halved to 50 g after 15 hours. How do you read the half-life from this decay curve?",
       "options": [
-        "Because nuclei decay at a constant number per second regardless of how many remain",
-        "Because the rate of decay is directly proportional to the number of undecayed nuclei present, so the rate falls as the population falls",
-        "Because half-life increases over time",
-        "Because the decay constant doubles each half-life"
+        "The half-life is the time for the mass to fall from 100 g to 25 g, so 30 hours",
+        "The half-life is the time for the mass to halve from 100 g to 50 g, so 15 hours",
+        "The half-life is the time for the sodium-24 sample to reach 0 g",
+        "The half-life is the initial mass divided by the time, so 100 ÷ 15"
       ],
       "answer": 1,
-      "explanation": "The decay rate is proportional to the number of undecayed nuclei. As nuclei are used up the rate drops, which slows the using-up further — a quantity whose rate of decrease is proportional to itself is exactly exponential decay: \\(N = N_0 e^{-\\lambda t}\\).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The decay of a radioisotope can be plotted on a graph from which the half-life can be read. For sodium-24 there is initially 100 g, and from the graph the mass has halved to 50 g after 15 hours, so the half-life is 15 hours — read from the initial value down to its half, not down to a quarter (25 g), which would take two half-lives.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 407, "url": "sources/phy12/p407.jpg" }
     },
     {
-      "id": "m808-q03",
-      "q": "Half-life is best defined as:",
+      "id": "mm808-q03",
+      "type": "mc",
+      "q": "Why is the radioactive decay of a sample exponential, expressed by the decay law Nt = N0 e⁻λt?",
       "options": [
-        "The time for the entire sample to decay",
-        "The time for half of the radioactive nuclei in a sample to decay (equivalently, for the activity to fall to half its value)",
-        "The time for the decay constant to halve",
-        "Half the total lifetime of a single nucleus"
+        "Because the rate of decay of the atoms is constant and independent of how many atoms are present",
+        "Because the rate of decay of a certain number of atoms is proportional to the number of atoms present, written dN/dt = −λN, which integrates to Nt = N0 e⁻λt",
+        "Because external conditions such as temperature steadily increase the decay constant λ over time",
+        "Because the number of atoms present increases exponentially as the sample decays"
       ],
       "answer": 1,
-      "explanation": "Half-life is the time for half the radioactive nuclei to decay, or equivalently for the activity to fall to half. It is NOT the time for the whole sample to disappear — after each half-life only half decays, so the amount keeps halving and never quite reaches zero.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The relationship can be expressed mathematically by first noting that the rate of decay of a certain number of atoms is proportional to the number of atoms present: dN/dt = −λN, where λ is the decay constant. This equation can be integrated to give Nt = N0 e⁻λt, where N0 is the number of atoms present at t = 0 and Nt the number present at time t. The same expression applies to the decay rates R: Rt = R0 e⁻λt.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 408, "url": "sources/phy12/p408.jpg" }
     },
     {
-      "id": "m808-q04",
-      "q": "After 3 half-lives, what fraction of the original sample remains?",
-      "options": [
-        "Zero — it has all decayed",
-        "\\(\\tfrac{1}{3}\\)",
-        "\\(\\tfrac{1}{8}\\)",
-        "\\(\\tfrac{1}{6}\\)"
-      ],
-      "answer": 2,
-      "explanation": "After \\(n\\) half-lives the fraction remaining is \\(\\left(\\tfrac{1}{2}\\right)^n\\). For \\(n=3\\): \\(\\tfrac{1}{2}\\to\\tfrac{1}{4}\\to\\tfrac{1}{8}\\). A common error is to assume the sample is gone after a few half-lives, but an eighth still remains.",
+      "id": "mm808-q04",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m808-q05",
-      "q": "How is the decay constant \\(\\lambda\\) related to the half-life \\(t_{1/2}\\)?",
+      "q": "Which relationship lets you calculate the decay constant λ of a source if the half-life t½ is known?",
       "options": [
         "\\(\\lambda = t_{1/2} \\times \\ln 2\\)",
-        "\\(\\lambda = \\dfrac{\\ln 2}{t_{1/2}}\\)",
+        "\\(\\lambda = \\dfrac{\\ln 2}{t_{1/2}}\\), the rearrangement of \\(t_{1/2} = \\dfrac{\\ln 2}{\\lambda} \\approx \\dfrac{0.6931}{\\lambda}\\)",
         "\\(\\lambda = \\dfrac{t_{1/2}}{\\ln 2}\\)",
-        "\\(\\lambda = \\dfrac{1}{2 t_{1/2}}\\)"
+        "\\(\\lambda = 0.6931 \\times t_{1/2}\\)"
       ],
       "answer": 1,
-      "explanation": "\\(\\lambda = \\dfrac{\\ln 2}{t_{1/2}} \\approx \\dfrac{0.693}{t_{1/2}}\\). The two are inversely related: a large decay constant (nuclei likely to decay) means a short half-life, and vice versa.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "From the decay law it is possible to derive the expression for half-life, t½ = ln 2 / λ ≈ 0.6931 / λ. This formula can be rearranged to give λ = ln 2 / t½ so that the decay constant can be calculated if the half-life is known. The decay constant and half-life are inversely related.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 409, "url": "sources/phy12/p409.jpg" }
     },
     {
-      "id": "m808-q06",
-      "q": "What is the difference between the 'amount remaining' and the 'activity' of a source?",
-      "options": [
-        "They are the same quantity measured in different units",
-        "Amount remaining (N) is how many undecayed nuclei/grams are left; activity (R, in becquerels) is the number of decays per second — different quantities that share the same half-life",
-        "Activity is measured in grams; amount remaining is measured in becquerels",
-        "Activity never changes with time"
-      ],
-      "answer": 1,
-      "explanation": "The amount remaining counts undecayed nuclei (or mass); the activity is decays per second (becquerels). They follow the same exponential law and halve together, but answer different questions — read the verb and give the matching quantity.",
+      "id": "mm808-q05",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "Why is a radioisotope with a very long half-life unsuitable for medical diagnosis, and what half-lives are used instead?",
+      "options": [
+        "A long half-life lingers in the patient after measurements are taken, posing a danger; radioisotopes with half-lives from several minutes to days are used for diagnosis",
+        "A long half-life decays too fast to be measured; isotopes with half-lives of several years are preferred",
+        "A long half-life means the isotope is not radioactive; only stable isotopes are used for diagnosis",
+        "A long half-life emits alpha radiation; isotopes with half-lives of milliseconds are used instead"
+      ],
+      "answer": 0,
+      "explanation": "A radioisotope with a very long half-life is unsuitable for medical diagnosis as it lingers in the patient after all necessary measurements are taken, posing a danger to the patient and people in close contact. If the half-life is too short, the radioisotope loses its useful radiation before measurements can be taken or has to be administered in a dangerously large dose. Radioisotopes with half-lives ranging from several minutes to days are used for medical diagnosis.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 407, "url": "sources/phy12/p407.jpg" }
     },
     {
-      "id": "m808-q07",
-      "q": "A source has an activity of 8 MBq and a half-life of 10 minutes. How long until its activity falls to 1 MBq?",
-      "options": [
-        "10 minutes",
-        "20 minutes",
-        "30 minutes",
-        "80 minutes"
+      "id": "mm808-q06",
+      "type": "worked",
+      "q": "A 20 mg sample of iodine-123, used as a radioactive tracer in the body, has a half-life of 13 hours. Calculate how much iodine-123 will remain after 26 hours.",
+      "given": "Initial mass = 20 mg,  half-life t½ = 13 hours,  elapsed time = 26 hours",
+      "working": [
+        "26 hours is 2 half-lives (2 × 13 hours).",
+        "After 1 half-life, 10 mg of iodine-123 will decay, leaving 10 mg.",
+        "After 2 half-lives, 5 mg of iodine-123 will decay, leaving 5 mg.",
+        "\\(\\therefore\\) 5 mg of iodine-123 will remain after 26 hours."
       ],
-      "answer": 2,
-      "explanation": "Count the halvings: 8 → 4 (one), 4 → 2 (two), 2 → 1 (three). That is 3 half-lives × 10 minutes = 30 minutes.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 5,
+      "answerUnit": "mg",
+      "tolerance": 0.1,
+      "explanation": "Because 26 hours is a whole number of half-lives (two), you can count the halvings instead of using the exponential law: 20 mg → 10 mg → 5 mg. The amount halves each half-life and never reaches zero.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 408, "url": "sources/phy12/p408.jpg" }
     },
     {
-      "id": "m808-q08",
-      "q": "A 20 mg sample of iodine-123 has a half-life of 13 hours. Roughly how much remains after 24 hours? (\\(\\lambda = \\ln 2 / t_{1/2}\\), \\(N = N_0 e^{-\\lambda t}\\))",
-      "options": [
-        "About 10 mg",
-        "About 5.6 mg",
-        "About 1.5 mg",
-        "About 0 mg"
+      "id": "mm808-q07",
+      "type": "worked",
+      "q": "The activity of a radioactive source is initially 600 counts per minute but drops to 100 after 6 hours. Determine the decay constant and the half-life for this source.",
+      "given": "R0 = 600 counts per minute,  Rt = 100 counts per minute,  t = 6 hours",
+      "working": [
+        "\\(R_t = R_0 e^{-\\lambda t}\\)",
+        "\\(100 = 600\\,e^{-6\\lambda}\\)",
+        "\\(\\tfrac{100}{600} = e^{-6\\lambda}\\)",
+        "\\(\\ln\\!\\left(\\tfrac{100}{600}\\right) = -6\\lambda \\Rightarrow \\lambda = \\dfrac{\\ln(100/600)}{-6} = 0.299\\ \\text{per hour}\\)",
+        "\\(t_{1/2} = \\dfrac{\\ln 2}{\\lambda} = \\dfrac{0.6931}{0.299} = 2.32\\ \\text{hours}\\)"
       ],
-      "answer": 1,
-      "explanation": "\\(\\lambda = 0.693/13 = 0.0533\\ \\mathrm{h^{-1}}\\); exponent \\(= -0.0533\\times24 = -1.279\\); \\(e^{-1.279} \\approx 0.278\\); \\(N = 20\\times0.278 \\approx 5.6\\ \\mathrm{mg}\\). (24 h is 1.85 half-lives, so a bit more than a quarter of 20 mg remains.) Always find \\(\\lambda\\) first and keep time units consistent.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 2.32,
+      "answerUnit": "hours",
+      "tolerance": 0.05,
+      "explanation": "Activity follows the same exponential decay as the number of nuclei, so substitute into Rt = R0 e⁻λt and solve for λ. Because the time was measured in hours, λ = 0.299 per hour — λ and t must always carry the same time unit. Then the half-life follows from t½ = 0.6931 / λ = 2.32 hours.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 409, "url": "sources/phy12/p409.jpg" }
     },
     {
-      "id": "m808-q09",
-      "q": "The activity of a source falls from 600 counts/min to 100 counts/min over 6 hours. What is the decay constant, with correct units?",
-      "options": [
-        "\\(0.299\\ \\mathrm{s^{-1}}\\)",
-        "\\(0.299\\ \\mathrm{h^{-1}}\\)",
-        "\\(1.79\\ \\mathrm{h^{-1}}\\)",
-        "\\(6\\ \\mathrm{h^{-1}}\\)"
+      "id": "mm808-q08",
+      "type": "recall",
+      "q": "From memory, state the penetrating power and ionising power of alpha, beta and gamma radiation, and the nature of each.",
+      "keyPoints": [
+        "Alpha: very low penetrating power, very high ionising power; nature is a helium nucleus.",
+        "Beta: high penetrating power, moderate ionising power; nature is an electron.",
+        "Gamma: extremely high penetrating power, very low ionising power; nature is a high energy photon.",
+        "Ionising power runs down the list (alpha highest) while penetrating power runs up it (gamma highest) — the inverse relationship."
       ],
-      "answer": 1,
-      "explanation": "\\(100 = 600\\,e^{-6\\lambda} \\Rightarrow \\tfrac{1}{6} = e^{-6\\lambda} \\Rightarrow \\ln(\\tfrac{1}{6}) = -1.792 = -6\\lambda \\Rightarrow \\lambda = 0.299\\). Because the time was in hours, \\(\\lambda\\) is in per hour (\\(\\mathrm{h^{-1}}\\)), not per second — \\(\\lambda\\) and \\(t\\) must carry the same time unit.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "From Table 15.1: alpha has very low penetration but very high ionisation (helium nucleus); beta is high penetration, moderate ionisation (electron); gamma is extremely high penetration, very low ionisation (high energy photon). If you recalled the inverse trend between penetrating power and ionising power, grade yourself Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 405, "url": "sources/phy12/p405.jpg" }
     },
     {
-      "id": "m808-q10",
-      "q": "Why is a gamma-emitting isotope with a half-life of a few hours suitable as a diagnostic medical tracer, while an alpha emitter is not?",
-      "options": [
-        "Gamma is highly ionising so it images well; alpha is too penetrating",
-        "Gamma penetrates the body so it reaches the external detector and is weakly ionising (gentle on tissue), and the half-life is long enough to image yet short enough to clear; alpha is absorbed inside the body (undetectable externally) and strongly ionising (damaging)",
-        "Alpha is undetectable because it has no charge",
-        "Gamma has a longer half-life than alpha so it lasts longer in the body"
+      "id": "mm808-q09",
+      "type": "recall",
+      "q": "In your own words: radioactive decay is spontaneous and random, yet we can still write a precise decay law. Explain how, and why the half-life is a fixed property.",
+      "keyPoints": [
+        "Random means you cannot predict when any single nucleus will decay; spontaneous means external conditions (temperature, pressure, chemistry) have zero effect on the rate.",
+        "A real sample contains a huge number of nuclei (~10²³), so by the law of large numbers the collective behaviour is extremely predictable even though each nucleus is individually random.",
+        "Because the rate of decay is proportional to the number of undecayed nuclei, the decay is exponential (Nt = N0 e⁻λt), and the half-life is a fixed characteristic of the isotope — the same number whatever the starting amount."
       ],
-      "answer": 1,
-      "explanation": "'Goldilocks and the Ghost': the half-life must be long enough to inject, travel and scan, yet short enough to clear and minimise dose. Gamma is highly penetrating (escapes to the gamma camera) and weakly ionising (low tissue damage). Alpha is strongly ionising and barely penetrating, so it cannot be detected externally and deposits a damaging dose internally.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The paradox resolves through the law of large numbers: individually random, collectively rock-solid. The half-life and decay constant are fixed properties of the nucleus, unaffected by heating, cooling, pressure or chemical state. If you linked randomness + large numbers + 'rate proportional to amount', grade Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm808-q10",
+      "type": "extended",
+      "q": "A radioisotope used as a medical diagnostic tracer has a half-life of six hours and emits gamma radiation. Explain why these two properties make it suitable, and explain why an alpha-emitting isotope would be unsuitable for this use. (6 marks)",
+      "marks": 6,
+      "modelAnswer": "The six-hour half-life is a suitable trade-off: it is long enough for the isotope to be prepared, injected, travel to the target organ and for the scan to be completed, yet short enough that the isotope decays away quickly afterwards, so the patient's total radiation dose is minimised and the tracer does not linger in the body posing ongoing harm. The emission of gamma radiation is ideal because gamma is highly penetrating, so it readily escapes the body to be detected by an external gamma camera, allowing the image to be formed; and gamma is only weakly ionising, so it causes minimal damage to healthy tissue as it passes out. An alpha emitter would be unsuitable on both counts, because alpha is strongly ionising and has very low penetration, so it would be absorbed within the body and could not be detected externally, while depositing a high, damaging dose into the patient's tissue. Suitability comes from matching both the half-life trade-off and the radiation type to the diagnostic requirement — 'Goldilocks and the Ghost'.",
+      "criteria": [
+        { "marks": 2, "descriptor": "Explains the half-life trade-off: long enough to image, short enough to clear the patient and minimise dose." },
+        { "marks": 2, "descriptor": "Explains gamma is suitable because it is highly penetrating (escapes to detector) and weakly ionising (minimal tissue damage)." },
+        { "marks": 2, "descriptor": "Explains alpha is unsuitable: strongly ionising and low penetration, so undetectable externally and damaging internally." }
+      ],
+      "explanation": "The crux is matching the property to the purpose — 'Goldilocks and the Ghost'. Top-band answers tie every property to the diagnostic requirement and draw the alpha contrast using the inverse relationship between ionising power and penetration.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

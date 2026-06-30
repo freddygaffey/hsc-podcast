@@ -1,174 +1,146 @@
 {
   "questions": [
     {
-      "id": "m604-q01",
-      "q": "What is the process by which electrons are released from the hot cathode of an electron gun?",
-      "options": [
-        "Photoelectric emission",
-        "Thermionic emission",
-        "Field emission",
-        "Radioactive decay"
-      ],
-      "answer": 1,
-      "explanation": "Heating the metal filament gives surface electrons enough thermal energy to escape — this is thermionic emission (\"thermal\" + \"emission\"). The marker wants the correct term, not just \"electrons come off when it's hot\".",
+      "id": "mm604-q01",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m604-q02",
-      "q": "In an electron gun the exit speed of the electrons is set by which quantity?",
+      "q": "An electron gun is the first part of devices such as the mass spectrometer, electron microscope and synchrotron. What is an electron gun designed to do?",
       "options": [
-        "The strength of any magnetic field present",
-        "The temperature of the cathode",
-        "The accelerating voltage \\(V\\)",
-        "The diameter of the hole in the anode"
-      ],
-      "answer": 2,
-      "explanation": "From \\(qV = \\tfrac{1}{2}mv^2\\), \\(v = \\sqrt{2qV/m}\\). Since \\(q\\) and \\(m\\) are fixed constants of the electron, the only controllable quantity is \\(V\\). Turning up the voltage gives faster electrons — a known, tunable speed.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m604-q03",
-      "q": "Why can only the electric field — not a magnetic field — accelerate the electrons in an electron gun?",
-      "options": [
-        "Magnetic fields are too weak in a gun",
-        "Only the electric field does work on the charge; the magnetic force is perpendicular to velocity and does no work",
-        "Magnetic fields only act on positive charges",
-        "The electrons move too slowly for a magnetic field to act"
-      ],
-      "answer": 1,
-      "explanation": "Only an electric field does work and so changes speed. The magnetic force is always perpendicular to the velocity, does no work, and can only steer or focus a beam — it can never be what gives the electrons their speed. This is the single most-penalised error in the topic.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m604-q04",
-      "q": "An electron is accelerated from rest through 100 V. What is its approximate exit speed? (\\(m_e = 9.1\\times10^{-31}\\ \\mathrm{kg}\\), \\(e = 1.6\\times10^{-19}\\ \\mathrm{C}\\))",
-      "options": [
-        "\\(5.9\\times10^{6}\\ \\mathrm{m\\,s^{-1}}\\)",
-        "\\(5.9\\times10^{4}\\ \\mathrm{m\\,s^{-1}}\\)",
-        "\\(3.0\\times10^{8}\\ \\mathrm{m\\,s^{-1}}\\)",
-        "\\(1.6\\times10^{-17}\\ \\mathrm{m\\,s^{-1}}\\)"
+        "Produce electrons and then give them an initial acceleration with an electric field",
+        "Separate ions of different mass using only a magnetic field",
+        "Slow electrons down so they can be stored in a ring",
+        "Measure the abundance of isotopes in a sample directly"
       ],
       "answer": 0,
-      "explanation": "\\(W = qV = 1.6\\times10^{-17}\\ \\mathrm{J}\\), then \\(v = \\sqrt{2W/m} = \\sqrt{2(1.6\\times10^{-17})/9.1\\times10^{-31}} \\approx 5.9\\times10^{6}\\ \\mathrm{m\\,s^{-1}}\\) — about 2% of \\(c\\). Option D is the energy, not a speed.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The textbook states that the first part of devices like the mass spectrometer, electron microscope and synchrotron is an electron gun, a device designed to produce electrons and then give them an initial acceleration. A hot filament boils electrons off the surface and the electric field accelerates them across to the positive plate, through a hole in line with the beam.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 102, "url": "sources/phy12/p102.jpg" }
     },
     {
-      "id": "m604-q05",
-      "q": "The three stages of a mass spectrometer follow the mnemonic A-S-D. What are they, in order?",
+      "id": "mm604-q02",
+      "type": "worked",
+      "q": "An electron is accelerated from rest from one plate to another through a voltage drop of 100 V. Using mass of electron 9.1 × 10⁻³¹ kg and charge 1.6 × 10⁻¹⁹ C, how fast is the electron travelling when it reaches the positive plate?",
+      "given": "\\(V = 100\\,\\mathrm{V}\\),  \\(q = 1.6\\times10^{-19}\\,\\mathrm{C}\\),  \\(m = 9.1\\times10^{-31}\\,\\mathrm{kg}\\),  starting from rest",
+      "working": [
+        "Work done by the field = energy gained as kinetic energy:  \\(W = Vq = qV = \\tfrac{1}{2}mv^2\\)",
+        "\\(W = 100 \\times 1.6\\times10^{-19} = 1.6\\times10^{-17}\\,\\mathrm{J}\\)",
+        "\\(1.6\\times10^{-17} = \\tfrac{1}{2}(9.1\\times10^{-31})v^2\\)",
+        "\\(v^2 = \\dfrac{2 \\times 1.6\\times10^{-17}}{9.1\\times10^{-31}}\\)",
+        "\\(v = 5.9\\times10^{6}\\,\\mathrm{m\\,s^{-1}}\\)  (about 2% of the speed of light)"
+      ],
+      "answerValue": 5.9e6,
+      "answerUnit": "m s⁻¹",
+      "tolerance": 0.1e6,
+      "explanation": "This is the textbook's worked example: the energy the electron gains is W = Vq = 1.6 × 10⁻¹⁷ J, and because it started from rest all of this becomes kinetic energy ½mv², giving an exit speed of 5.9 × 10⁶ m s⁻¹. The accelerating voltage alone sets the speed.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 103, "url": "sources/phy12/p103.jpg" }
+    },
+    {
+      "id": "mm604-q03",
+      "type": "worked",
+      "q": "An electron travelling at 5.9 × 10⁶ m s⁻¹ enters a uniform magnetic field of 6.0 mT perpendicular to its velocity. Using m = 9.1 × 10⁻³¹ kg and q = 1.6 × 10⁻¹⁹ C, what is the radius of its circular path?",
+      "given": "\\(m = 9.1\\times10^{-31}\\,\\mathrm{kg}\\),  \\(v = 5.9\\times10^{6}\\,\\mathrm{m\\,s^{-1}}\\),  \\(q = 1.6\\times10^{-19}\\,\\mathrm{C}\\),  \\(B = 6.0\\,\\mathrm{mT} = 6.0\\times10^{-3}\\,\\mathrm{T}\\)",
+      "working": [
+        "\\(r = \\dfrac{mv}{Bq}\\)",
+        "\\(r = \\dfrac{9.1\\times10^{-31} \\times 5.9\\times10^{6}}{6.0\\times10^{-3} \\times 1.6\\times10^{-19}}\\)",
+        "\\(r = 5.6\\times10^{-3}\\,\\mathrm{m} = 5.6\\,\\mathrm{mm}\\)"
+      ],
+      "answerValue": 5.6e-3,
+      "answerUnit": "m",
+      "tolerance": 0.2e-3,
+      "explanation": "Straight substitution into the textbook's radius equation r = mv/Bq gives 5.6 × 10⁻³ m, a tight 5.6 mm curl. The magnetic field bends the electron but, acting perpendicular to the velocity, never changes its speed. Note B must be converted from millitesla to tesla.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 108, "url": "sources/phy12/p108.jpg" }
+    },
+    {
+      "id": "mm604-q04",
+      "type": "mc",
+      "q": "In the equation r = mv/Bq for a charged particle in a magnetic field, how do a greater mass, velocity, charge and magnetic field strength change the radius of the circular path?",
       "options": [
-        "Attract, Spin, Detect",
-        "Accelerate, Select, Deflect",
-        "Accelerate, Separate, Detect",
-        "Align, Select, Disperse"
+        "Greater mass or charge increases the radius; greater velocity or field decreases it",
+        "A greater mass or velocity increases the radius, while a greater charge or magnetic field strength decreases the radius",
+        "All four quantities increase the radius equally",
+        "Only the magnetic field strength affects the radius; mass, velocity and charge do not"
       ],
       "answer": 1,
-      "explanation": "Accelerate (electric field gives the ions kinetic energy), Select (crossed fields pass only one speed), Deflect (a magnetic field bends ions on circles by mass). The fields are: electric, both, magnetic.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "From r = mv/Bq the textbook notes a greater mass or velocity will increase the radius, while a greater charge or magnetic field strength will decrease the radius of the circular path. This is exactly why, in a mass spectrometer with charge, speed and field fixed, the radius depends only on mass.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 108, "url": "sources/phy12/p108.jpg" }
     },
     {
-      "id": "m604-q06",
-      "q": "In a velocity selector, only ions with a particular speed pass straight through. That speed is given by:",
-      "options": [
-        "\\(v = EB\\)",
-        "\\(v = \\dfrac{B}{E}\\)",
-        "\\(v = \\dfrac{E}{B}\\)",
-        "\\(v = \\dfrac{qV}{m}\\)"
-      ],
-      "answer": 2,
-      "explanation": "Setting the electric force \\(qE\\) equal and opposite to the magnetic force \\(qvB\\), the charge cancels and \\(v = E/B\\). Faster ions have a larger magnetic force and are deflected one way; slower ions have a larger electric force and are deflected the other way.",
+      "id": "mm604-q05",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m604-q07",
-      "q": "Does the velocity selector separate isotopes by mass?",
+      "q": "Using F = qvB sinθ, when is the magnetic force on a charge moving through a magnetic field a maximum, and when does it reduce to zero?",
       "options": [
-        "Yes, heavier ions pass and lighter ions are blocked",
-        "No — it selects by speed only; mass and charge do not appear in \\(v = E/B\\)",
-        "Yes, it sorts ions by both speed and mass",
-        "No — it selects by charge only"
+        "Maximum when the velocity is parallel to the field lines; zero when perpendicular",
+        "Maximum when the velocity of the charge is perpendicular to the magnetic field lines; zero when the velocity is parallel to the field lines",
+        "Always the same size regardless of the angle between velocity and field",
+        "Maximum only when the charge is stationary in the field"
       ],
       "answer": 1,
-      "explanation": "The pass condition \\(v = E/B\\) contains neither mass nor charge, so any ion at that speed passes regardless of mass. The selector's job is to remove speed as a variable, guaranteeing every ion enters the deflection stage at the same speed. Mass separation happens in the magnetic deflection chamber.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The equation F = qvB sinθ means the force is a maximum when the velocity of the charge is perpendicular to the magnetic field lines (sinθ = 1), and reduces to zero when the velocity is parallel to the field lines (sinθ = 0). A motionless charge also feels no force.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 106, "url": "sources/phy12/p106.jpg" }
     },
     {
-      "id": "m604-q08",
-      "q": "In the deflection chamber, with all ions at the same speed and charge in the same field, the radius \\(r = mv/qB\\) means:",
+      "id": "mm604-q06",
+      "type": "mc",
+      "q": "How does the effect of an electric field on a moving charged particle's trajectory differ from the effect of a magnetic field?",
       "options": [
-        "The radius depends only on the charge",
-        "The radius depends only on the mass, so heavier isotopes follow a larger-radius path",
-        "All isotopes follow the same radius",
-        "Lighter isotopes follow a larger-radius path"
+        "Both fields produce circular trajectories of the same radius",
+        "An electric field produces a parabolic trajectory, whereas a magnetic field exerts a force only if the charge is already moving and produces a circular trajectory",
+        "An electric field produces a circular trajectory, whereas a magnetic field produces a parabolic one",
+        "Neither field exerts any force on a charged particle"
       ],
       "answer": 1,
-      "explanation": "With \\(v\\), \\(q\\) and \\(B\\) the same for all ions, only \\(m\\) varies, so \\(r \\propto m\\). Heavier isotopes swing on a bigger circle and land further out on the detector; the position identifies the mass and the number of hits gives relative abundance.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The textbook contrasts the two: whereas an electric field exerts a force directed along the field producing a parabolic trajectory, a magnetic field exerts a force on a charge only if it is already moving, directed perpendicular to the field and velocity, producing a circular trajectory. This is the electric-versus-magnetic contrast the episode drills with the word 'whereas'.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 109, "url": "sources/phy12/p109.jpg" }
     },
     {
-      "id": "m604-q09",
-      "q": "Singly ionised neon-20 (\\(m = 3.32\\times10^{-26}\\ \\mathrm{kg}\\)) is accelerated through 1000 V. What is its approximate speed? (\\(q = 1.6\\times10^{-19}\\ \\mathrm{C}\\))",
-      "options": [
-        "\\(9.8\\times10^{2}\\ \\mathrm{m\\,s^{-1}}\\)",
-        "\\(9.8\\times10^{4}\\ \\mathrm{m\\,s^{-1}}\\)",
-        "\\(9.8\\times10^{6}\\ \\mathrm{m\\,s^{-1}}\\)",
-        "\\(5.9\\times10^{6}\\ \\mathrm{m\\,s^{-1}}\\)"
+      "id": "mm604-q07",
+      "type": "recall",
+      "q": "From memory: why does a charged particle moving across a magnetic field follow circular motion, and why does a lower-mass particle such as a beta particle follow a tighter, smaller-radius arc than a heavier alpha particle?",
+      "keyPoints": [
+        "The magnetic force is always perpendicular to the velocity, so as the velocity changes direction the force keeps turning with it — acting as a centripetal force that produces circular motion.",
+        "The force does no work and the speed stays constant; only the direction changes.",
+        "In r = mv/Bq the radius is proportional to mass, so the smaller mass of the electron/beta particle causes the smaller radius of its arc, while the heavier alpha particle curves on a larger radius."
       ],
-      "answer": 1,
-      "explanation": "\\(v = \\sqrt{2qV/m} = \\sqrt{2(1.6\\times10^{-19})(1000)/3.32\\times10^{-26}} \\approx 9.8\\times10^{4}\\ \\mathrm{m\\,s^{-1}}\\). It is far slower than an electron through 100 V because the neon ion is tens of thousands of times heavier.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled that the perpendicular magnetic force acts as a centripetal force giving circular motion, and that smaller mass means a smaller radius via r = mv/Bq, grade yourself Good or Easy. The textbook shows positive alpha particles deflected along a wider arc than the lighter negative beta particles.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 107, "url": "sources/phy12/p107.jpg" }
     },
     {
-      "id": "m604-q10",
-      "q": "A student writes: \"In the deflection chamber the magnetic field accelerates the ions and bends them into a circle.\" What is the error?",
+      "id": "mm604-q08",
+      "type": "mc",
+      "q": "In the velocity selector stage of a mass spectrometer, why does only one single speed of ion pass straight through undeflected?",
       "options": [
-        "The ions are not charged, so no magnetic force acts",
-        "A magnetic field does no work, so it cannot speed the ions up — it only changes their direction",
-        "The magnetic field slows the ions down",
-        "There is no magnetic field in the deflection chamber"
+        "The electric force depends on speed but the magnetic force does not, so they balance for one speed",
+        "The electric force is independent of speed while the magnetic force qvB increases with speed; the two oppose, and only at v = E/B are they equal and opposite so the net force is zero",
+        "The selector sorts ions by mass, so only the lightest isotope passes through",
+        "The magnetic field accelerates the slow ions until they all reach the same speed"
       ],
       "answer": 1,
-      "explanation": "The magnetic force is perpendicular to the velocity, so it does no work and cannot change speed. It provides the centripetal force that bends the ions into a circle at constant speed. \"Accelerates\" in the sense of speeding up is the most-penalised error in the module.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "In the crossed fields the electric force qE is independent of speed, whereas the magnetic force qvB grows with speed. They are arranged to oppose, so only an ion at v = E/B has zero net force and passes straight through; faster and slower ions are deflected and blocked. The selector sorts by speed, not mass — it simply guarantees every surviving ion has the same speed.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm604-q09",
+      "type": "extended",
+      "q": "Explain how a mass spectrometer separates the isotopes of an element. Structure your answer on the three stages and give a force or energy statement in each. (6 marks)",
+      "marks": 6,
+      "modelAnswer": "Stage A — Accelerate: the atoms are vaporised and ionised, then accelerated by an electric field through a potential difference. The field does work equal to qV on each ion, converting electric potential energy into kinetic energy (qV = ½mv²), so the ions gain a high speed. Stage S — Select: the ions enter crossed electric and magnetic fields. The electric force qE is independent of speed, whereas the magnetic force qvB depends on speed, and the two oppose; only ions whose speed equals E/B feel zero net force and pass straight through, so every ion entering the final stage has the same speed. Stage D — Deflect: these single-speed ions enter a uniform magnetic field, where the magnetic force acts perpendicular to the velocity and provides the centripetal force for circular motion, giving radius r = mv/qB. Because all ions have the same charge, speed and field, the radius depends only on mass, so heavier isotopes follow a larger-radius arc and strike the detector further out. The landing position identifies the mass and the number of hits at each position gives the relative abundance.",
+      "criteria": [
+        { "marks": 2, "descriptor": "Accelerate: electric field does work qV → kinetic energy, giving the ions speed." },
+        { "marks": 2, "descriptor": "Select: opposing speed-independent electric force and speed-dependent magnetic force; only v = E/B passes, fixing one common speed." },
+        { "marks": 2, "descriptor": "Deflect: magnetic force gives centripetal force, r = mv/qB; with q, v, B fixed the radius depends only on mass, separating isotopes, with position → mass and hit count → abundance." }
+      ],
+      "explanation": "Full marks require all three stages in order (Accelerate–Select–Deflect), a force or energy statement in each, the explicit 'radius depends only on mass' conclusion, and the detector readout interpretation. Avoid the top trap: never say the magnetic field speeds the ions up.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm604-q10",
+      "type": "recall",
+      "q": "From memory, recall the A-S-D structure of a mass spectrometer and the single most-penalised trap in this topic about what a magnetic field can and cannot do.",
+      "keyPoints": [
+        "A-S-D = Accelerate (electric field does work qV → kinetic energy), Select (crossed fields pass only v = E/B), Deflect (magnetic field alone provides the centripetal force, r = mv/qB).",
+        "One-line spine: the electric field changes a charge's speed and energy and does work, whereas the magnetic field changes only its direction and does no work.",
+        "The trap: a magnetic field never speeds anything up — the magnetic force is perpendicular to the velocity, does zero work, and changes direction only, never speed."
+      ],
+      "explanation": "If you produced A-S-D with a field role for each stage and stated that a magnetic field can never speed a particle up, grade yourself Good or Easy. Writing 'the magnetic field accelerates the ions to high speed' is the single most-penalised error in the module.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

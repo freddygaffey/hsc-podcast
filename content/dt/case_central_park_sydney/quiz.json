@@ -1,0 +1,143 @@
+{
+  "questions": [
+    {
+      "id": "qcasecent-q01",
+      "type": "mc",
+      "q": "According to the case study, how should a design like Central Park Sydney ultimately be judged?",
+      "options": [
+        "By the awards and green ratings it earns on opening day",
+        "By the reputation of the star architect who designed it",
+        "By its real performance over time, not by its intentions",
+        "By how striking and photogenic its form is"
+      ],
+      "answer": 2,
+      "explanation": "The single most important idea in the case study is stated plainly: a design is judged not by its intentions, but by its real performance over time. Central Park looks like the intention but does not always deliver the performance.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasecent-q02",
+      "type": "mc",
+      "q": "What is the main goal of sustainable design?",
+      "options": [
+        "To preserve the ozone layer",
+        "To reduce pollution and waste",
+        "To ensure the long-term availability of natural resources",
+        "To promote the responsible use of affordable materials by manufacturers"
+      ],
+      "answer": 2,
+      "explanation": "Sustainability means meeting present needs without compromising the ability of future generations to meet theirs — i.e. the long-term availability of natural resources. Reducing pollution and waste is a means to that end, not the overarching goal.",
+      "source": { "origin": "hsc", "ref": "2024 HSC Design and Technology Q2", "year": 2024 }
+    },
+    {
+      "id": "qcasecent-q03",
+      "type": "mc",
+      "q": "What was the heliostat — the cantilevered array of mirrors on top of Central Park — engineered to do?",
+      "options": [
+        "Generate solar electricity to power the building's lifts",
+        "Reflect sunlight down into parts of the development that would otherwise sit in permanent shadow",
+        "Shade the apartments to stop them overheating in summer",
+        "Irrigate the vertical gardens with collected rainwater"
+      ],
+      "answer": 1,
+      "explanation": "The heliostat was built to bounce sunlight into the shaded zones below. In practice its real-world impact has been debated and looks far more limited than the original promise — a beautiful, complex, expensive piece of engineering that does not clearly do the job it was built for.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasecent-q04",
+      "type": "mc",
+      "q": "What is the most important reason for undertaking a life cycle analysis of an innovative design?",
+      "options": [
+        "To establish the rights of the designer",
+        "To research the possibility of future growth in market share",
+        "To understand the impact of the project on society and the environment",
+        "To determine the level of consumer demand for the newly developed product"
+      ],
+      "answer": 2,
+      "explanation": "A life cycle analysis traces a product from raw materials to disposal to reveal its impact on society and the environment across its whole life. The other options are commercial or legal aims, not the purpose of an LCA.",
+      "source": { "origin": "hsc", "ref": "2024 HSC Design and Technology Q8", "year": 2024 }
+    },
+    {
+      "id": "qcasecent-q05",
+      "type": "mc",
+      "q": "Which of the following contributes to environmental sustainability?",
+      "options": [
+        "The acceptance of technology and its ease of use",
+        "The use of low-cost energy during the manufacturing process",
+        "The degradation of physical resources through manufacturing activities",
+        "The use of materials and processes without having a significant impact on their surroundings"
+      ],
+      "answer": 3,
+      "explanation": "Environmental sustainability means using materials and processes that minimise impact on the surrounding environment, preserving resources for the future. Low-cost energy and resource degradation work against sustainability, and ease of use is unrelated.",
+      "source": { "origin": "hsc", "ref": "2014 HSC Design and Technology Q8", "year": 2014 }
+    },
+    {
+      "id": "qcasecent-q06",
+      "type": "mc",
+      "q": "Why do the case study's authors call the vertical gardens a 'maintenance nightmare'?",
+      "options": [
+        "The plants were chosen purely for their appearance and have no environmental benefit",
+        "Keeping thirty thousand plants alive on a high-rise demands constant, expensive irrigation, plant choice and replanting, and sections have died and had to be replaced",
+        "The green walls were never actually planted, only painted on",
+        "Council regulations forbid watering the plants with recycled water"
+      ],
+      "answer": 1,
+      "explanation": "Keeping the living façade alive demands constant, expensive upkeep, and some sections have died off and been replaced. This raises the awkward question of whether such a façade is genuinely sustainable in the long run, or just looks sustainable — and the deterioration has taken some shine off the building.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasecent-q07",
+      "type": "recall",
+      "q": "From memory: explain why Central Park Sydney is the case study you reach for when a question is about 'sustainability that's more image than substance'.",
+      "keyPoints": [
+        "It is award-winning and green-rated, with a celebrated star-architect design — it looks like a sustainability showpiece.",
+        "But some sustainability features consume more energy and resources than expected, and parts of the design can let apartments overheat instead of cooling them.",
+        "So a building whose entire identity is environmental performance can, in places, undermine its own sustainability claims — image outruns substance."
+      ],
+      "explanation": "If you recalled that the green image (awards, ratings, living walls) clashes with the lived performance (overheating, hungry water and garden systems, deteriorating walls), grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasecent-q08",
+      "type": "recall",
+      "q": "From memory: what does Central Park teach about the tension between aesthetics and function?",
+      "keyPoints": [
+        "The cantilevered façade, living walls and heliostat are stunning to look at.",
+        "But they are devilishly complex to build and to keep working, which drove up cost and maintenance and created some of the performance problems.",
+        "When the look fights the function, the function often loses — and the people who live there pay for it in comfort."
+      ],
+      "explanation": "The key idea is that striking aesthetics can directly cause functional and comfort problems; mark yourself Good or Easy if you linked the complex look to higher cost, maintenance and reduced liveability.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasecent-q09",
+      "type": "short",
+      "q": "Using Central Park Sydney as an example, explain the difference between a design's intent and its performance, and why life cycle analysis matters here. (4 marks)",
+      "marks": 4,
+      "modelAnswer": "Central Park's design intent was to be a sustainability showpiece — vertical gardens of around thirty thousand plants, a heliostat to light shaded zones, recycled-water irrigation and smart building technology, earning awards and a top-tier green rating. Its performance over time tells a different story: some green walls have dead patches, the heliostat's real impact is limited, several 'green' features consume more energy and water than expected, and parts of the design let apartments overheat. This gap matters because a building is judged over decades, not on opening day, so a life cycle analysis is needed to weigh the long-term environmental cost — the water, energy, money and constant replanting required to keep the façade alive — against the short-term green image. The short-term and long-term environmental stories can be completely different, and a good designer asks whether the design actually works for years, for the people who use it.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Identifies the design intent (sustainability showpiece: green walls, heliostat, green rating)." },
+        { "marks": 1, "descriptor": "Identifies the real performance gap (dead walls, limited heliostat, overheating, hungry systems)." },
+        { "marks": 1, "descriptor": "Explains that a design is judged on real performance over time, not intentions." },
+        { "marks": 1, "descriptor": "Links life cycle analysis to weighing long-term environmental cost against the short-term image." }
+      ],
+      "explanation": "The crux is intent vs performance over the whole life of the design — life cycle analysis is what exposes the long-term cost the five-star rating hides.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "qcasecent-q10",
+      "type": "extended",
+      "q": "Analyse the opportunities and challenges faced by designers when attempting to design and produce sustainable products.\n\nYour answer will be assessed on how well you: demonstrate knowledge and understanding relevant to the question; communicate ideas and information using relevant examples; and present a sustained, logical and cohesive response.",
+      "marks": 15,
+      "modelAnswer": "Designers must consider sustainable products because traditional resources such as fuels and plastics are in decreasing supply. Sustainable products open the opportunity to use a wider range of materials and processes — for example biodegradable plastics such as 'Biopak' packaging reduce waste, particularly at the end of the product's life. This appeals to consumers, so adopting it can widen the consumer base, increase sales and profit, and even shift consumer demand so society expects similar sustainable choices elsewhere. The main challenge, however, is cost: developing sustainable technologies takes time and money and companies must stay financially viable, so in their early introduction sustainable methods are usually more expensive than traditional ones, which keeps many designers using cheaper raw materials such as oil-based petrochemicals. For example, Nike turned waste leather from its SE Asian footwear production into a 'second' raw material to make the 'Nike Trash Talk' shoe, requiring new manufacturing sites and worker retraining that raised costs — so it was only marketed in Europe and the US, while developing economies still demanded traditionally produced, waste-generating footwear. Overall, sustainable products are essential to reduce raw-material extraction and waste, and designers must weigh improved materials and long-term profitability against the short-term costs in order to change global demand and design trends.",
+      "criteria": [
+        { "marks": "13–15", "descriptor": "Shows a comprehensive understanding of the opportunities and challenges faced by designers when attempting to design and produce sustainable products; draws out and relates implications of these opportunities and challenges; communicates using relevant examples; responds in a sustained, logical and cohesive manner" },
+        { "marks": "10–12", "descriptor": "Shows a detailed understanding of the opportunities and challenges faced by designers when attempting to design and/or produce sustainable products; explains opportunities and challenges; includes relevant examples; responds in a logical manner" },
+        { "marks": "7–9", "descriptor": "Describes opportunities and challenges faced by designers when attempting to design and produce sustainable products; may include a relevant example" },
+        { "marks": "4–6", "descriptor": "Outlines opportunity(ies) and/or challenge(s) faced by designers" },
+        { "marks": "1–3", "descriptor": "Identifies opportunity(ies) and/or challenge(s) faced by designers" }
+      ],
+      "explanation": "This is a real HSC extended-response question. Central Park Sydney is a strong example to deploy: its living façade is an opportunity (a wider, greener material palette that appeals to consumers) but also exposes the cost and long-term maintenance challenge of sustainable design.",
+      "source": { "origin": "hsc", "ref": "2015 HSC Design and Technology Q14", "year": 2015 }
+    }
+  ]
+}

@@ -1,174 +1,146 @@
 {
   "questions": [
     {
-      "id": "m403-q01",
-      "q": "State Kirchhoff's current law and the conservation principle it expresses.",
+      "id": "mm403-q01",
+      "type": "mc",
+      "q": "Kirchhoff's Current Law states that the sum of the currents flowing into a junction is equal in magnitude to the sum of the currents flowing out of that junction. Which conservation principle does this law express?",
       "options": [
-        "The voltages around a loop sum to zero; conservation of charge",
-        "The currents into a junction equal the currents out; conservation of charge",
-        "The currents into a junction equal the currents out; conservation of energy",
-        "The resistances in a loop sum to zero; conservation of energy"
+        "The conservation of energy",
+        "The conservation of charge, because charge cannot build up or disappear at a junction",
+        "The conservation of momentum",
+        "The conservation of mass"
       ],
       "answer": 1,
-      "explanation": "Kirchhoff's current law states that the total current into a junction equals the total current out (ΣI = 0), expressing conservation of charge — charge can't pile up or vanish at a junction. (The voltage law, ΣV = 0 around a loop, expresses conservation of energy.) Naming the conservation principle is the mark-earning move.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Kirchhoff's Current Law (\\(\\Sigma I = 0\\), or \\(I_{in} = I_{out}\\)) expresses the conservation of charge: electrons do not build up at a point in a conductor, so the current flowing into a junction must equal the current flowing out. Naming the conservation principle is the mark students forget.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 333, "url": "sources/phy11/p333.jpg" }
     },
     {
-      "id": "m403-q02",
-      "q": "State Kirchhoff's voltage law and the conservation principle it expresses.",
+      "id": "mm403-q02",
+      "type": "mc",
+      "q": "Kirchhoff's Voltage Law states that in any closed loop of a circuit, the sum of the voltage drops must equal the sum of the emfs in that loop. Which conservation principle does this law express?",
       "options": [
-        "The currents at a junction sum to zero; conservation of energy",
-        "The voltages around any closed loop sum to zero; conservation of energy",
-        "The voltages around a loop sum to zero; conservation of charge",
-        "The supply voltage equals the largest resistor's voltage; conservation of charge"
+        "The conservation of charge",
+        "The conservation of energy, because electrical energy must be conserved around a closed loop",
+        "The conservation of current",
+        "The conservation of resistance"
       ],
       "answer": 1,
-      "explanation": "Kirchhoff's voltage law states that around any closed loop the voltages sum to zero — the voltage supplied equals the total dropped across the components — expressing conservation of energy (a charge gains as much energy from the source as it loses round the loop). The current law expresses conservation of charge.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Kirchhoff's Voltage Law (\\(\\Sigma V = 0\\) for any closed-circuit loop) expresses the conservation of energy: a unit of charge travelling around a loop must gain as much energy from the emfs as it loses in the voltage drops across the components.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 334, "url": "sources/phy11/p334.jpg" }
     },
     {
-      "id": "m403-q03",
-      "q": "Identify which quantity is the same through every component in a series circuit.",
+      "id": "mm403-q03",
+      "type": "mc",
+      "q": "When resistors are connected in series there is only one path for the current to flow through. How is the effective resistance of resistors connected in series found?",
       "options": [
-        "The voltage",
-        "The current",
-        "The resistance",
-        "The power"
+        "By taking the reciprocal of the sum of the reciprocals of the individual resistances",
+        "By obtaining the sum of the individual resistances, \\(R_T = R_1 + R_2 + R_3\\)",
+        "By multiplying the individual resistances together",
+        "By averaging the individual resistances"
       ],
       "answer": 1,
-      "explanation": "In a series circuit there is a single path, so the current is the same through every component, while the voltage divides among them in proportion to resistance. In a parallel circuit it is the voltage that is the same across each branch, while the current divides.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Because there is only one path, the same current flows through each resistor and the voltage drops add: \\(V_T = I(R_1+R_2+R_3)\\). Dividing by the current gives \\(R_T = R_1 + R_2 + R_3\\), so the resistance of a series circuit is greater than that of any individual resistor.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 335, "url": "sources/phy11/p335.jpg" }
     },
     {
-      "id": "m403-q04",
-      "q": "Compare how the total resistance changes when resistors are added in series versus in parallel.",
-      "options": [
-        "Both increase the total resistance",
-        "Series adds (total increases); parallel uses the reciprocal sum (total decreases, below the smallest branch)",
-        "Both decrease the total resistance",
-        "Series decreases; parallel increases"
+      "id": "mm403-q04",
+      "type": "worked",
+      "q": "Find the effective resistance of a circuit comprising three resistors, having resistance values of 15 Ω, 25 Ω and 34 Ω, connected in series.",
+      "given": "\\(R_1 = 15\\,\\Omega\\),  \\(R_2 = 25\\,\\Omega\\),  \\(R_3 = 34\\,\\Omega\\), connected in series",
+      "working": [
+        "For resistors in series the effective resistance is the sum of the individual resistances:",
+        "\\(R_T = R_1 + R_2 + R_3\\)",
+        "\\(R_T = 15\\,\\Omega + 25\\,\\Omega + 34\\,\\Omega\\)",
+        "\\(R_T = 74\\,\\Omega\\)"
       ],
-      "answer": 1,
-      "explanation": "In series, resistances add (R_T = R₁ + R₂ + …), so adding components increases the total. In parallel, 1/R_T = 1/R₁ + 1/R₂ + …, so adding branches decreases the total, which is always less than the smallest branch — extra paths ease the current flow. Thinking 'more resistors = more resistance' (true only in series) is the trap.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 74,
+      "answerUnit": "Ω",
+      "tolerance": 0.5,
+      "explanation": "In series the resistances simply add. The total, 74 Ω, is greater than any individual resistor, exactly as the series rule predicts.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 335, "url": "sources/phy11/p335.jpg" }
     },
     {
-      "id": "m403-q05",
-      "q": "Three resistors of 2 Ω, 3 Ω and 5 Ω are connected in series with a 20 V supply. Calculate the current.",
-      "options": [
-        "10 A",
-        "2 A",
-        "20 A",
-        "0.5 A"
-      ],
-      "answer": 1,
-      "explanation": "In series the resistances add: R_T = 2 + 3 + 5 = 10 Ω. Then I = V/R_T = 20/10 = 2 A, the same current through all three. Treating the circuit as parallel, or not summing the resistances, is the common error.",
+      "id": "mm403-q05",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "When resistors are connected in parallel, the reciprocal of the effective resistance is equal to the sum of the reciprocals of the individual resistances. How does the effective resistance compare with the individual resistances?",
+      "options": [
+        "It is greater than the largest individual resistance",
+        "It is equal to the average of the individual resistances",
+        "It is less than the smallest individual resistance, because adding parallel paths makes it easier for current to flow",
+        "It is equal to the smallest individual resistance"
+      ],
+      "answer": 2,
+      "explanation": "The effective resistance of resistors in parallel is always less than the smallest individual resistance. The more resistors added in parallel, the more paths there are for the current to flow through, so more current flows for the same voltage and the resistance is reduced.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 337, "url": "sources/phy11/p337.jpg" }
     },
     {
-      "id": "m403-q06",
-      "q": "A 6 Ω and a 3 Ω resistor are connected in parallel across 12 V. Calculate the total resistance.",
-      "options": [
-        "9 Ω",
-        "2 Ω",
-        "18 Ω",
-        "4.5 Ω"
+      "id": "mm403-q06",
+      "type": "worked",
+      "q": "What is the effective resistance of three resistors connected in parallel if they have resistance values of 5.0 Ω, 10 Ω and 20 Ω respectively?",
+      "given": "\\(R_1 = 5.0\\,\\Omega\\),  \\(R_2 = 10\\,\\Omega\\),  \\(R_3 = 20\\,\\Omega\\), connected in parallel",
+      "working": [
+        "\\(\\dfrac{1}{R_T} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2} + \\dfrac{1}{R_3}\\)",
+        "\\(\\dfrac{1}{R_T} = \\dfrac{1}{5.0} + \\dfrac{1}{10} + \\dfrac{1}{20}\\)",
+        "\\(\\dfrac{1}{R_T} = \\dfrac{4}{20} + \\dfrac{2}{20} + \\dfrac{1}{20} = \\dfrac{7}{20}\\,\\Omega^{-1}\\)",
+        "\\(R_T = \\dfrac{20}{7} = 2.9\\,\\Omega\\)"
       ],
-      "answer": 1,
-      "explanation": "1/R_T = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2, so R_T = 2 Ω — less than the smallest branch (3 Ω), as expected for parallel. Forgetting to take the reciprocal at the end (leaving ½ Ω) or adding the resistances (9 Ω) are the common errors.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 2.9,
+      "answerUnit": "Ω",
+      "tolerance": 0.1,
+      "explanation": "Remember to take the reciprocal at the end: \\(1/R_T = 7/20\\) gives \\(R_T = 20/7 = 2.9\\,\\Omega\\), not \\(7/20\\). Note the effective resistance is less than the smallest resistor (5.0 Ω), as the parallel rule promises.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 337, "url": "sources/phy11/p337.jpg" }
     },
     {
-      "id": "m403-q07",
-      "q": "In the 6 Ω ∥ 3 Ω parallel combination across 12 V, calculate the current through the 3 Ω branch.",
-      "options": [
-        "2 A",
-        "4 A",
-        "6 A",
-        "36 A"
+      "id": "mm403-q07",
+      "type": "recall",
+      "q": "From memory: when resistors are connected in series to a power supply, what is true about the current through each resistor, the voltage drops across the resistors, and the total resistance?",
+      "keyPoints": [
+        "The same current passes through each resistor and through the power supply (only one path).",
+        "The sum of the voltage drops across the resistors equals the voltage rise across the power supply.",
+        "The effective resistance is the sum of the individual resistances, \\(R_T = R_1 + R_2 + R_3\\), so adding a resistor in series increases the total resistance."
       ],
-      "answer": 1,
-      "explanation": "Each branch has the full 12 V across it, so I = V/R = 12/3 = 4 A through the 3 Ω branch (and 12/6 = 2 A through the 6 Ω branch). The lower-resistance branch carries the larger current, and the branch currents (2 + 4 = 6 A) add to the total — Kirchhoff's current law.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you recalled all three series rules — same current, voltage drops add to the supply, resistances add — grade yourself Good or Easy. Series: same current, voltage shares, resistances add.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 343, "url": "sources/phy11/p343.jpg" }
     },
     {
-      "id": "m403-q08",
-      "q": "Explain why connecting resistors in parallel decreases the total resistance.",
-      "options": [
-        "Because the resistances simply add",
-        "Because it provides extra alternative paths, allowing more total current for the same voltage, which means lower resistance",
-        "Because the voltage across each branch increases",
-        "Because parallel resistors get hotter"
+      "id": "mm403-q08",
+      "type": "short",
+      "q": "An advantage of having parallel circuits is that all appliances have the same voltage across them and the appliances can be switched on independently. Explain why these advantages arise, and describe what would happen instead if the appliances were connected in series. (3 marks)",
+      "marks": 3,
+      "modelAnswer": "When appliances are connected in parallel, every appliance has the same voltage across it, equal to the supply voltage (230 V), regardless of what else is switched on, because each branch spans the same two points. If the appliances were instead connected in series they would share the supply voltage between them, so no appliance would receive the full voltage it was designed for. A second advantage is that each appliance can be switched on and off independently: each branch has its own path, so switching off (or the failure of) one branch does not break the others, whereas in a series circuit a single break stops the current everywhere and all appliances would be on or off together.",
+      "criteria": [
+        { "marks": 1, "descriptor": "States that in parallel each appliance receives the full supply voltage (e.g. 230 V)." },
+        { "marks": 1, "descriptor": "States that appliances can be switched on/off independently because each has its own path." },
+        { "marks": 1, "descriptor": "Contrasts with series, where appliances share the voltage and a single break stops everything." }
       ],
-      "answer": 1,
-      "explanation": "Parallel branches provide additional paths between the same two points, so more total current can flow for the same supply voltage. By Ohm's law, a larger current for the same voltage means a smaller overall resistance — and the total is always less than the smallest branch.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Both advantages flow directly from the parallel rules: same voltage on every branch, and independent paths. The series comparison earns the third mark.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 339, "url": "sources/phy11/p339.jpg" }
     },
     {
-      "id": "m403-q09",
-      "q": "Identify why household circuits are wired in parallel rather than in series.",
+      "id": "mm403-q09",
+      "type": "mc",
+      "q": "Why does the largest resistor dissipate the most power in a series circuit, while the smallest resistor dissipates the most power in a parallel circuit?",
       "options": [
-        "So one appliance failing cuts power to all the others",
-        "So each appliance gets the full supply voltage and can be switched independently",
-        "To increase the total resistance of the house",
-        "So the same current flows through every appliance"
+        "Power does not depend on the configuration; the same resistor dissipates the most in both",
+        "In series the same current flows, so \\(P = I^2R\\) makes the largest resistance dominate; in parallel the same voltage acts, so \\(P = V^2/R\\) makes the smallest resistance dominate",
+        "In series the same voltage acts, so larger resistors draw more current; in parallel larger resistors draw more current",
+        "The largest resistor always dissipates the most power because it stores the most charge"
       ],
       "answer": 1,
-      "explanation": "In parallel, every appliance gets the full supply voltage and has its own path, so each can be switched on/off independently and one failing doesn't break the others. (In series, one break would stop everything.) The branch currents add, which is why fuses/breakers cap the total.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Match the power formula to the quantity that is constant. In series the current is shared (constant), so use \\(P = I^2R\\) — bigger \\(R\\), more power. In parallel the voltage is constant, so use \\(P = V^2/R\\) — smaller \\(R\\), more power. The reversal comes entirely from which quantity is shared.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m403-q10",
-      "q": "A 12 V supply connects a 3 Ω resistor in series with a parallel pair of 6 Ω resistors. Calculate the total resistance.",
-      "options": [
-        "15 Ω",
-        "6 Ω",
-        "9 Ω",
-        "4.5 Ω"
+      "id": "mm403-q10",
+      "type": "recall",
+      "q": "From memory: what single pair of facts lets you immediately tell whether a circuit is series or parallel, and what does each tell you about the other quantity?",
+      "keyPoints": [
+        "In a series circuit the current is the same through every component (one path); the voltage divides.",
+        "In a parallel circuit the voltage is the same across every branch (each branch spans the same two points); the current divides.",
+        "Whichever quantity is 'the same' tells you the configuration; the other quantity is the one that divides. Lock it: series shares voltage, parallel shares current."
       ],
-      "answer": 1,
-      "explanation": "First reduce the parallel pair: 1/R = 1/6 + 1/6 = 2/6 = 1/3, so 3 Ω. This is in series with the 3 Ω resistor: R_T = 3 + 3 = 6 Ω. The method is always reduce the parallel section first, then add the series part. Adding all three as if in series (15 Ω) is the trap.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "This is the key to the whole topic. If you recalled 'series = same current, parallel = same voltage' and that the other quantity divides, grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }

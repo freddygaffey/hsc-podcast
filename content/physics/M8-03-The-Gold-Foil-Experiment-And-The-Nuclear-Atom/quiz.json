@@ -1,174 +1,144 @@
 {
   "questions": [
     {
-      "id": "m803-q01",
-      "q": "Who actually carried out the gold foil experiment, and what was Rutherford's role?",
+      "id": "mm803-q01",
+      "type": "mc",
+      "q": "According to Thomson's plum pudding model, how is the atom described?",
       "options": [
-        "Rutherford fired the alpha particles himself while Geiger watched",
-        "Geiger and Marsden performed the experiment; Rutherford supervised it and interpreted the results",
-        "Thomson performed it and Rutherford repeated it",
-        "Marsden designed the model and Geiger interpreted the data"
+        "A tiny dense positive nucleus orbited by electrons at relatively large distances",
+        "A positively charged fluid with negatively charged electrons scattered throughout, like plums in a plum pudding",
+        "Equal numbers of protons and neutrons packed into a central core with no electrons",
+        "A cloud of negatively charged fluid with positive particles strewn through it"
       ],
       "answer": 1,
-      "explanation": "Hans Geiger and Ernest Marsden performed the experiment around 1909; Rutherford supervised and, crucially, interpreted the result, proposing the nuclear model in 1911. The safe phrasing is 'the Geiger–Marsden experiment, supervised by Rutherford.'",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Thomson proposed that the atom consists of a positively charged fluid with his negatively charged electrons scattered throughout, the electrons strewn through the positive body just as plums are in a plum pudding. The model was untested for how the positive charge was actually arranged, which is exactly where the gold foil experiment later attacked it.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 362, "url": "sources/phy12/p362.jpg" }
     },
     {
-      "id": "m803-q02",
-      "q": "What is an alpha particle, and what charge does it carry?",
-      "options": [
-        "A high-speed electron, charge \\(-e\\)",
-        "A helium nucleus (2 protons + 2 neutrons), charge \\(+2e\\)",
-        "A hydrogen nucleus, charge \\(+e\\)",
-        "A photon, no charge"
-      ],
-      "answer": 1,
-      "explanation": "An alpha particle is a helium nucleus — two protons and two neutrons — so it carries a charge of \\(+2e \\approx +3.2\\times10^{-19}\\ \\mathrm{C}\\). It is positive, relatively massive (about 7300 times the electron mass), and fast-moving; those three properties drive the whole argument.",
+      "id": "mm803-q02",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m803-q03",
-      "q": "Why did the scintillation screen need to be movable (rotatable)?",
+      "q": "In Marsden's experiment with thin gold foil, what fraction of the alpha particles were deflected by angles greater than 90 degrees, with some reflected back in the direction from which they had come?",
       "options": [
-        "To keep it cool during long experiments",
-        "So it could be calibrated against the source",
-        "So the number of alpha particles scattered at each angle could be counted, including the rare large-angle and back-scattered ones",
-        "So light from the room would not affect the readings"
+        "About 1 in 80 particles",
+        "About 1 in 800 particles",
+        "About 1 in 8000 particles",
+        "About half of all the particles"
       ],
       "answer": 2,
-      "explanation": "The entire discovery lies in the rare large angles. A fixed screen behind the foil would only catch particles going roughly straight through and would miss the handful scattered to the side or almost straight back, which were the crucial result.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Most alpha particles fired at the thin gold foil were deflected only a small amount (if at all), but a very small fraction, about 1 in 8000 particles, were deflected by angles greater than 90 degrees, some reflected straight back. Rutherford called this as incredible as firing a fifteen-inch shell at tissue paper and having it come back at you.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 363, "url": "sources/phy12/p363.jpg" }
     },
     {
-      "id": "m803-q04",
-      "q": "The great majority of alpha particles passed straight through the foil with little or no deflection. What does this directly show?",
+      "id": "mm803-q03",
+      "type": "mc",
+      "q": "Most alpha particles passed through the empty regions of the atoms far from the nucleus and were deflected from their paths by only a small amount. What does this observation indicate about the atom?",
       "options": [
-        "The atom is mostly empty space",
-        "The positive charge is concentrated in a nucleus",
-        "The nucleus contains most of the atom's mass",
-        "Alpha particles are uncharged"
+        "The atom is mostly empty space, with the deflecting charge concentrated in a tiny central region",
+        "The positive charge is spread uniformly throughout the whole atom",
+        "The alpha particles are attracted toward the negative electrons",
+        "The atom contains no positive charge at all"
       ],
       "answer": 0,
-      "explanation": "If almost every alpha sails through a curtain of hundreds of atoms as if nothing were there, each atom must be overwhelmingly empty, with the deflecting object tiny enough that the alpha usually misses it. This is the 'empty space' conclusion.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "When the alpha particles passed through the empty regions of the atoms far from the nucleus they were deflected by only a small amount; the closer to the nucleus their path was, the greater the electrostatic repulsion and the greater the deflection. The fact that almost all sail through shows the atom is overwhelmingly empty space.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 364, "url": "sources/phy12/p364.jpg" }
     },
     {
-      "id": "m803-q05",
-      "q": "A small fraction of alpha particles were deflected through large angles. Why does this force the conclusion that the positive charge is concentrated?",
+      "id": "mm803-q04",
+      "type": "recall",
+      "q": "From memory, recall the three observations of the gold foil experiment ('Through, Turned, Thrown back') and the specific property of the atom each one proves.",
+      "keyPoints": [
+        "Through: most alpha particles pass straight through with little or no deflection, proving the atom is mostly empty space and the deflecting core is tiny.",
+        "Turned: a small fraction are deflected through large angles by electrostatic repulsion, proving the positive charge is concentrated in a small central region.",
+        "Thrown back: about 1 in 8000 are deflected by more than 90 degrees, proving that central region is also dense and holds almost all the atom's mass."
+      ],
+      "explanation": "If you separated all three observations and paired each to its own property (empty, charged, massive), grade Good or Easy. Lumping them into 'some bounced back so there's a nucleus' collapses three marks into one.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "mm803-q05",
+      "type": "mc",
+      "q": "In Rutherford's nuclear model, electrons orbited around the outside of a much more massive positive nucleus much as the planets orbit the sun. What fraction of the atom's overall mass did this nucleus contain?",
       "options": [
-        "The alpha particles were attracted into a diffuse positive cloud",
-        "Because like charges repel, a large deflection of a positive alpha requires a small, concentrated region of positive charge; a diffuse charge could not deliver such a kick",
-        "The electrons in the atom pushed the alphas aside",
-        "The alphas collided with neutrons spread through the atom"
+        "About 1 percent",
+        "About 50 percent",
+        "About 99.9 percent",
+        "Exactly 100 percent, leaving the electrons massless"
+      ],
+      "answer": 2,
+      "explanation": "Rutherford proposed a nuclear atom in which electrons orbited the outside of a much more massive positive centre or nucleus, much as the planets orbit the sun, which is why it is also called the planetary model. This large nucleus contained 99.9 percent of the atom's overall mass.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 364, "url": "sources/phy12/p364.jpg" }
+    },
+    {
+      "id": "mm803-q06",
+      "type": "mc",
+      "q": "According to Maxwell's theories of electromagnetism, why would electrons in orbit around the nucleus lose energy and spiral into the nucleus?",
+      "options": [
+        "Because the electrons collide with air molecules inside the atom",
+        "Because orbiting electrons are accelerating charges, so they emit electromagnetic radiation and thereby lose energy",
+        "Because the positive nucleus attracts the electrons by gravity",
+        "Because the electrons gain energy until the orbit becomes too large"
       ],
       "answer": 1,
-      "explanation": "A positive alpha is repelled by positive charge (like charges repel). A diffuse charge spread thinly through the atom is nowhere dense enough to repel the alpha through a large angle; only a small, concentrated central region of positive charge can. Writing that the alphas were 'attracted' is the single most common error — they are repelled.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If electrons are in orbit around the nucleus they are accelerating, and according to Maxwell's theories of electromagnetism an accelerating charge emits electromagnetic radiation. In giving off this radiation the electrons lose energy and their orbits deteriorate until they spiral into the positive nucleus, predicting that atoms should be unstable.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 365, "url": "sources/phy12/p365.jpg" }
     },
     {
-      "id": "m803-q06",
-      "q": "About one in eight thousand alpha particles were deflected by more than 90°, some almost straight back. What does this specifically establish?",
-      "options": [
-        "The atom is electrically neutral",
-        "The electrons orbit the nucleus",
-        "The concentrated central region is extremely dense and contains almost all of the atom's mass",
-        "The positive charge is spread evenly"
+      "id": "mm803-q07",
+      "type": "recall",
+      "q": "State the two main shortcomings (limitations) of Rutherford's model of the atom regarding the radiation emitted and the stability of atoms.",
+      "keyPoints": [
+        "As an electron spiralled in and orbited faster, the frequency of the radiation given off would become increasingly larger, predicting a continuous spectrum; but atoms emit characteristic spectral lines instead.",
+        "The model implied atoms would be unstable as electrons spiral into the nucleus; in reality the general stability of matter shows atoms are very stable.",
+        "Both failures (the spectrum and the stability) trace back to the accelerating orbiting electron radiating electromagnetic energy, by Maxwell."
       ],
-      "answer": 2,
-      "explanation": "Reversing a fast, massive alpha particle is a momentum argument — a light object cannot bounce a heavy fast one backward. So the central region must be both very dense and carry almost all the atom's mass (about 99.9%), packed into a tiny volume. The large-angle deflections show concentrated charge; the rebounds add the mass conclusion.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Remember the two S's: Stability and Spectrum. If you recalled the rising frequency/continuous-spectrum failure AND the instability failure, both rooted in Maxwell, grade Good or Easy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 365, "url": "sources/phy12/p365.jpg" }
     },
     {
-      "id": "m803-q07",
-      "q": "Which observation is correctly paired with its conclusion?",
-      "options": [
-        "Most pass straight through → the nucleus is positive",
-        "Some deflected through large angles → the atom is mostly empty space",
-        "About 1 in 8000 bounce back → the central core is dense and massive",
-        "Most pass straight through → the central core is massive"
+      "id": "mm803-q08",
+      "type": "worked",
+      "q": "The radius of a hydrogen atom is about 2.1 x 10^-11 m and the radius of its proton nucleus is about 0.85 x 10^-15 m. Calculate the ratio of the radius of the atom to the radius of its nucleus.",
+      "given": "\\(r_{\\text{atom}} = 2.1 \\times 10^{-11}\\,\\mathrm{m}\\),  \\(r_{\\text{nucleus}} = 0.85 \\times 10^{-15}\\,\\mathrm{m}\\)",
+      "working": [
+        "\\(\\text{ratio} = \\dfrac{r_{\\text{atom}}}{r_{\\text{nucleus}}}\\)",
+        "\\(\\text{ratio} = \\dfrac{2.1 \\times 10^{-11}}{0.85 \\times 10^{-15}}\\)",
+        "\\(\\text{ratio} \\approx 2.5 \\times 10^{4}\\)"
       ],
-      "answer": 2,
-      "explanation": "'Through, Turned, Thrown back' maps to 'empty, charged, massive.' Most passing through → mostly empty space; large-angle deflections → concentrated positive charge; rebounds → a dense, massive core. Markers award marks per correct pairing, so keeping the three observations separate matters.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 24700,
+      "answerUnit": "(dimensionless ratio)",
+      "tolerance": 500,
+      "explanation": "The atom's radius is roughly 2.5 x 10^4 times the radius of its nucleus, showing the atom is overwhelmingly empty space. If a laboratory 10 m across represented the atom, the nucleus would be only about 0.4 mm in diameter.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 364, "url": "sources/phy12/p364.jpg" }
     },
     {
-      "id": "m803-q08",
-      "q": "By Maxwell's electromagnetism, what fundamentally dooms Rutherford's nuclear model?",
-      "options": [
-        "An accelerating charge radiates electromagnetic energy, so an orbiting electron should radiate, lose energy, and spiral into the nucleus",
-        "The nucleus is too small to hold the electrons in orbit",
-        "Gravity between the electron and nucleus is too weak",
-        "The protons in the nucleus repel each other and explode"
+      "id": "mm803-q09",
+      "type": "worked",
+      "q": "An alpha particle is a helium nucleus carrying a charge of +2e. Taking the elementary charge as 1.6 x 10^-19 C, calculate the charge on an alpha particle.",
+      "given": "charge = \\(+2e\\),  \\(e = 1.6 \\times 10^{-19}\\,\\mathrm{C}\\)",
+      "working": [
+        "\\(q = 2 \\times e\\)",
+        "\\(q = 2 \\times 1.6 \\times 10^{-19}\\)",
+        "\\(q = 3.2 \\times 10^{-19}\\,\\mathrm{C}\\)"
       ],
-      "answer": 0,
-      "explanation": "An orbiting electron undergoes centripetal acceleration, so it is an accelerating charge. Maxwell's theory says accelerating charges radiate EM energy, so the electron should continuously lose energy and spiral into the nucleus in about \\(10^{-11}\\ \\mathrm{s}\\). The mark depends on naming Maxwell and the accelerating charge, not just saying the electron 'loses energy.'",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 3.2e-19,
+      "answerUnit": "C",
+      "tolerance": 1e-21,
+      "explanation": "The alpha particle is a helium nucleus of two protons and two neutrons, so it carries +2e, about +3.2 x 10^-19 C. Being positive, heavy and fast is exactly what lets its electrostatic repulsion from the positive nucleus do all the work in the scattering argument.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m803-q09",
-      "q": "The two failures of the nuclear model (the 'two S's') are:",
-      "options": [
-        "Size and Shape",
-        "Stability and Spectrum",
-        "Speed and Scattering",
-        "Spin and Symmetry"
+      "id": "mm803-q10",
+      "type": "short",
+      "q": "Describe the role of the gold foil, the evacuated apparatus and the movable scintillation screen in the 1911 apparatus used to study alpha particle scattering. (3 marks)",
+      "marks": 3,
+      "modelAnswer": "The metal foil used was gold because it can be hammered extremely thin, only a few hundred atoms thick, so alpha particles pass through a thin layer of atoms and the scattering can be studied cleanly. The apparatus was evacuated so that the alpha particles are not scattered by air molecules, meaning any deflection can be attributed to the gold atoms alone. Polonium was the alpha particle source, and the microscope and scintillation screen could be rotated to observe the alpha particles at different angles, allowing the number scattered at each angle (including the rare large-angle deflections) to be counted.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Gold foil is the thin target (a few hundred atoms thick) so alphas pass through a thin layer of atoms." },
+        { "marks": 1, "descriptor": "The evacuated apparatus removes air so deflection is due to the gold atoms, not air molecules." },
+        { "marks": 1, "descriptor": "The scintillation screen and microscope can be rotated to count alpha particles scattered at different angles." }
       ],
-      "answer": 1,
-      "explanation": "Stability: the model predicts atoms collapse almost instantly, yet atoms are observed to be stable. Spectrum: as the electron spirals in and speeds up, the emitted frequency would rise continuously, giving a continuous spectrum, but atoms actually emit discrete line spectra. Both trace back to the accelerating electron radiating, by Maxwell.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
-    },
-    {
-      "id": "m803-q10",
-      "q": "Which of the following did the gold foil experiment NOT do?",
-      "options": [
-        "Establish that the atom has a tiny, dense, positively charged nucleus",
-        "Show the atom is mostly empty space",
-        "Discover the proton and the neutron",
-        "Show that the nucleus holds almost all the atom's mass"
-      ],
-      "answer": 2,
-      "explanation": "The gold foil experiment established the nucleus — small, dense, positive, holding ~99.9% of the mass — and the empty space. It did NOT discover the proton (identified by Rutherford ~1919), the neutron (Chadwick, 1932), or the electron (from cathode rays). Over-claiming that it found the proton or neutron loses marks.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Each component is in the apparatus for a reason: gold for thinness, vacuum to isolate the gold's effect, and the rotating screen to catch the rare large-angle scattering that was the key result.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 12 (4th ed.)", "page": 364, "url": "sources/phy12/p364.jpg" }
     }
   ]
 }

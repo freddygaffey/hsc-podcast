@@ -1,174 +1,145 @@
 {
   "questions": [
     {
-      "id": "m305-q01",
-      "q": "Define temperature in terms of particles.",
+      "id": "mm305-q01",
+      "type": "mc",
+      "q": "In the kinetic particle model of matter, temperature is a measure of which property of a substance's particles?",
       "options": [
-        "The total energy of all the particles in a substance",
-        "A measure of the average kinetic energy of the particles in a substance",
-        "The amount of heat an object contains",
-        "The number of particles in a substance"
+        "The total internal energy of all the particles added together",
+        "The average translational kinetic energy of the particles",
+        "The potential energy stored in the attractive forces between particles",
+        "The combined rotational and vibrational kinetic energy of the molecules"
       ],
       "answer": 1,
-      "explanation": "Temperature is a measure of the average kinetic energy of the particles — hotter means faster-moving particles on average. The total energy of all the particles is the internal energy, not the temperature, and an object does not 'contain heat' (heat is energy in transit).",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Temperature is a measure of the average translational kinetic energy of the particles. The other contributions to the internal energy — potential, rotational and vibrational energy — do not affect the temperature, which is why a melting or boiling substance can absorb energy without its temperature changing.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 265, "url": "sources/phy11/p265.jpg" }
     },
     {
-      "id": "m305-q02",
-      "q": "Distinguish between heat and temperature.",
+      "id": "mm305-q02",
+      "type": "mc",
+      "q": "How is the specific heat capacity of a substance defined?",
       "options": [
-        "They are two names for the same quantity",
-        "Temperature is the average particle kinetic energy (a property); heat is energy transferred due to a temperature difference (in transit)",
-        "Heat is the average particle energy; temperature is transferred energy",
-        "Temperature is measured in joules; heat in kelvin"
+        "The total energy stored in 1 kg of the substance",
+        "The amount of energy required to increase the temperature of 1 kg of the substance by 1 °C (or 1 K)",
+        "The energy required to change the state of 1 kg of the substance from solid to liquid",
+        "The energy required to raise any mass of the substance by 1 °C"
       ],
       "answer": 1,
-      "explanation": "Temperature is a property an object has — the average kinetic energy of its particles. Heat is energy that flows from a hotter to a colder object because of a temperature difference (energy in transit). An object contains internal energy, not heat. Treating the two words as synonyms is the classic error.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Specific heat capacity is defined as the amount of energy required to increase the temperature of 1 kg of the substance by 1 °C (or 1 K, since the degree sizes match). A high specific heat capacity means the material increases in temperature slowly when heated, and cools slowly.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 268, "url": "sources/phy11/p268.jpg" }
     },
     {
-      "id": "m305-q03",
-      "q": "A tiny spark is at a much higher temperature than a warm bath, yet does not burn you. Explain why.",
+      "id": "mm305-q03",
+      "type": "mc",
+      "q": "Using Table 11.3, water has a specific heat capacity of about 4200 J kg⁻¹ K⁻¹. Why does this make water heat up and cool down more slowly than most common materials?",
       "options": [
-        "The spark is actually colder than the bath",
-        "The spark has very few particles, so its total internal energy is tiny despite its high temperature",
-        "Temperature and internal energy are the same thing",
-        "The bath transfers heat to the spark"
+        "Water particles move faster than those of other substances at the same temperature",
+        "It takes more energy to increase the temperature of water by 1 °C than for almost any other common substance, so water maintains its temperature well",
+        "Water has a lower mass per particle, so it stores less energy",
+        "Water's specific heat capacity is lower than that of metals such as copper"
       ],
       "answer": 1,
-      "explanation": "Temperature is energy per particle (average), while internal energy is the total over all particles. The spark's particles move fast (high temperature) but there are very few of them, so its total internal energy is minuscule. A high temperature does not automatically mean a lot of energy.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "It takes more energy to increase the temperature of water by 1 °C than any other common substance, and water also needs to lose more energy to decrease in temperature. This high specific heat capacity (about 4200 J kg⁻¹ K⁻¹, versus 385 for copper) is why water cools down and heats up more slowly than other materials and why oceans moderate climate.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 268, "url": "sources/phy11/p268.jpg" }
     },
     {
-      "id": "m305-q04",
-      "q": "Outline what is meant by thermal equilibrium.",
-      "options": [
-        "One object is much hotter than the other",
-        "Two objects in contact reach the same temperature, with no net transfer of heat",
-        "Heat flows continuously from cold to hot",
-        "Both objects stop having any particle motion"
-      ],
-      "answer": 1,
-      "explanation": "Thermal equilibrium is reached when two objects in contact have the same temperature (equal average particle kinetic energy), so there is no net transfer of energy between them. Energy may still pass both ways at the particle level, but the flows balance. Heat always flows hot→cold until this point.",
+      "id": "mm305-q04",
       "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "q": "The conversion between the temperature scales is: degrees Kelvin = degrees Celsius + 273. What is the Kelvin temperature at which ice melts?",
+      "options": [
+        "0 K",
+        "100 K",
+        "273 K",
+        "373 K"
+      ],
+      "answer": 2,
+      "explanation": "Ice melts at 0 °C, so the equivalent Kelvin temperature is 0 + 273 = 273 K. The increments on the Kelvin scale are the same size as those on the Celsius scale; only the zero point differs, with absolute zero (0 K) at about −273 °C.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 266, "url": "sources/phy11/p266.jpg" }
     },
     {
-      "id": "m305-q05",
-      "q": "Convert 100 °C to kelvin and explain why the Kelvin scale is preferred in physics.",
-      "options": [
-        "200 K; because it uses smaller degrees",
-        "373 K; because Kelvin temperature is directly proportional to average particle kinetic energy",
-        "373 K; because Celsius cannot measure boiling",
-        "−173 K; because its zero is at water's freezing point"
+      "id": "mm305-q05",
+      "type": "recall",
+      "q": "From memory: what is meant by thermal equilibrium, and which way does energy flow before it is reached?",
+      "keyPoints": [
+        "Energy is always transferred from a region of high temperature to a region of lower temperature.",
+        "This continues until both regions reach the same (uniform) temperature.",
+        "When the temperature is uniform, a state of thermal equilibrium exists; the particles then have the same average random translational kinetic energy and there is no net transfer of energy."
       ],
-      "answer": 1,
-      "explanation": "K = °C + 273, so 100 °C = 373 K. Physics prefers Kelvin because its zero (absolute zero, the minimum of particle motion) makes the Kelvin temperature directly proportional to average particle kinetic energy — double the kelvin temperature, double the average KE. Celsius lacks this because its zero is at water's freezing point, an arbitrary value.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "If you stated that energy flows from hot to cold until the temperatures are equal, and that equilibrium means equal temperatures (equal average particle kinetic energy) with no net transfer, grade yourself Good or Easy. Note a hot nail can transfer energy to water even though the water holds more total internal energy.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 266, "url": "sources/phy11/p266.jpg" }
     },
     {
-      "id": "m305-q06",
-      "q": "State the value of absolute zero in degrees Celsius.",
-      "options": [
-        "0 °C",
-        "−273 °C",
-        "−100 °C",
-        "273 °C"
+      "id": "mm305-q06",
+      "type": "worked",
+      "q": "How much energy is needed to heat 8.0 kg of water from a room temperature of 15 °C to 85 °C? Take the specific heat capacity of water as 4200 J kg⁻¹ K⁻¹.",
+      "given": "\\(m = 8.0\\,\\mathrm{kg}\\),  \\(c = 4200\\,\\mathrm{J\\,kg^{-1}K^{-1}}\\),  \\(\\Delta T = 85 - 15 = 70\\,\\mathrm{K}\\)",
+      "working": [
+        "\\(Q = mc\\Delta T\\)",
+        "\\(Q = 8.0 \\times 4200 \\times 70\\)",
+        "\\(Q = 2\\,352\\,000\\,\\mathrm{J}\\)",
+        "\\(Q = 2352\\,\\mathrm{kJ} \\approx 2.4 \\times 10^{3}\\,\\mathrm{kJ}\\)"
       ],
-      "answer": 1,
-      "explanation": "Absolute zero, the coldest possible temperature where particle motion is at its minimum, is about −273 °C, which is 0 K. The degree size is the same on both scales — only the zero point moves, so you convert by adding 273.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 2352000,
+      "answerUnit": "J",
+      "tolerance": 1000,
+      "explanation": "Straight application of \\(Q = mc\\Delta T\\). The temperature change is the rise of 70 °C, which equals 70 K — use the change, not the absolute temperature of 85 °C. This is the textbook's own sample problem.",
+      "source": { "origin": "textbook", "ref": "Jacaranda Physics for NSW 11 (4th ed.)", "page": 269, "url": "sources/phy11/p269.jpg" }
     },
     {
-      "id": "m305-q07",
-      "q": "Define the specific heat capacity of a substance.",
-      "options": [
-        "The total energy stored in the substance",
-        "The energy needed to raise the temperature of 1 kg of it by 1 K (or 1 °C)",
-        "The temperature at which it boils",
-        "The energy needed to melt 1 kg of it"
+      "id": "mm305-q07",
+      "type": "recall",
+      "q": "In one sentence each, define temperature and define heat, making the difference between them clear.",
+      "keyPoints": [
+        "Temperature is a measure of the average kinetic energy of the particles in a substance — a property the object has at an instant.",
+        "Heat is energy transferred from a hotter object to a colder object because of the temperature difference between them — energy in transit.",
+        "An object does not contain heat; it contains internal energy. Heat is the name for that energy while it is flowing."
       ],
-      "answer": 1,
-      "explanation": "Specific heat capacity (c) is the energy needed to raise 1 kg of a substance by 1 K (equivalently 1 °C), measured in J kg⁻¹ K⁻¹. A high c means the substance needs lots of energy to change temperature; a low c means it heats and cools easily. (Melting energy is latent heat, a different idea.)",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The classic error is using 'heat' and 'temperature' as synonyms. If you captured that temperature is average particle kinetic energy (a property) while heat is transferred energy due to a temperature difference, grade yourself Good or Easy.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m305-q08",
-      "q": "Calculate the energy needed to heat 2 kg of water by 30 K (c = 4200 J kg⁻¹ K⁻¹).",
-      "options": [
-        "126 000 J",
-        "252 000 J",
-        "8400 J",
-        "63 000 J"
+      "id": "mm305-q08",
+      "type": "worked",
+      "q": "How much energy is needed to raise the temperature of 2.0 kg of water by 30 K? Take the specific heat capacity of water as 4200 J kg⁻¹ K⁻¹.",
+      "given": "\\(m = 2.0\\,\\mathrm{kg}\\),  \\(c = 4200\\,\\mathrm{J\\,kg^{-1}K^{-1}}\\),  \\(\\Delta T = 30\\,\\mathrm{K}\\)",
+      "working": [
+        "\\(Q = mc\\Delta T\\)",
+        "\\(Q = 2.0 \\times 4200 \\times 30\\)",
+        "\\(Q = 252\\,000\\,\\mathrm{J} = 252\\,\\mathrm{kJ}\\)"
       ],
-      "answer": 1,
-      "explanation": "Using Q = mcΔT = 2 × 4200 × 30 = 252 000 J (252 kJ). Identify the mass, specific heat and temperature change and multiply all three. Note ΔT is the change, not an absolute temperature — a common slip.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "answerValue": 252000,
+      "answerUnit": "J",
+      "tolerance": 100,
+      "explanation": "Identify the mass, specific heat and temperature change, then multiply the three together. \\(\\Delta T\\) is the change of 30 K, not an absolute temperature — a common slip.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m305-q09",
-      "q": "Calculate the energy to raise 0.5 kg of water from 20 °C to 80 °C (c = 4200 J kg⁻¹ K⁻¹).",
+      "id": "mm305-q09",
+      "type": "mc",
+      "q": "Why does physics prefer the Kelvin scale over the Celsius scale when relating temperature to the kinetic energy of particles?",
       "options": [
-        "168 000 J",
-        "126 000 J",
-        "42 000 J",
-        "1 008 000 J"
+        "The Kelvin scale has larger degree increments, giving more precise readings",
+        "Kelvin temperature is directly proportional to the average kinetic energy of the particles, because its zero (absolute zero) is where particle motion is at its minimum",
+        "The Celsius scale cannot measure temperatures below the freezing point of water",
+        "Kelvin is the only scale in which water boils at exactly 100 degrees"
       ],
       "answer": 1,
-      "explanation": "ΔT is the change: 80 − 20 = 60 K. Q = mcΔT = 0.5 × 4200 × 60 = 126 000 J (126 kJ). Using 80 instead of the change of 60 (giving 168 000 J) is the trap — ΔT is always the temperature change, not the final temperature.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "Absolute zero (0 K) is the temperature at which particle kinetic energy is at its minimum, so Kelvin temperature is directly proportional to average particle kinetic energy — double the kelvin temperature and you double the average kinetic energy. Celsius has its zero at the arbitrary freezing point of water, so it lacks this proportionality.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     },
     {
-      "id": "m305-q10",
-      "q": "Explain why coastal towns have milder climates than inland deserts at the same latitude.",
-      "options": [
-        "Water has a very low specific heat, so it changes temperature quickly",
-        "Water has a very high specific heat, so the ocean absorbs and releases large amounts of energy with little temperature change, moderating the air",
-        "The desert has more water to store heat",
-        "Coastal air contains no thermal energy"
+      "id": "mm305-q10",
+      "type": "short",
+      "q": "Distinguish between heat and temperature, referring to the particles of a substance. (3 marks)",
+      "marks": 3,
+      "modelAnswer": "Temperature is a measure of the average kinetic energy of the particles in a substance; the higher the temperature, the faster the particles move on average. Heat is energy that is transferred from a hotter object to a colder object because of the temperature difference between them — that is, energy in transit. The key difference is that temperature is a property the object has at an instant (its average particle kinetic energy), whereas heat is energy flowing because of a temperature difference, not something the object contains.",
+      "criteria": [
+        { "marks": 1, "descriptor": "Defines temperature as the average kinetic energy of the particles." },
+        { "marks": 1, "descriptor": "Defines heat as energy transferred from hot to cold due to a temperature difference (energy in transit)." },
+        { "marks": 1, "descriptor": "States the distinction clearly: temperature is a property; heat is transferred energy." }
       ],
-      "answer": 1,
-      "explanation": "Water's specific heat (≈4200 J kg⁻¹ K⁻¹) is unusually high, so the ocean can absorb and release large amounts of thermal energy with only a small change in its own temperature, buffering the coastal air against extremes. The desert, lacking this large water body, heats and cools rapidly, giving temperature extremes.",
-      "type": "mc",
-      "source": {
-        "origin": "ai",
-        "ref": "Generated from episode script"
-      }
+      "explanation": "The trap is treating the two words as synonyms. Marks reward the distinction between a property (temperature) and a transfer (heat).",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
     }
   ]
 }
