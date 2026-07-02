@@ -1,0 +1,31 @@
+{
+  "id": "dt",
+  "name": "HSC Design and Technology",
+  "shortName": "Design & Tech",
+  "description": "HSC Design and Technology podcast episodes",
+  "repoUrl": "https://github.com/freddygaffey/hsc-podcast",
+
+  "audioBaseUrl": "https://audio.hsc.pebnum.com",
+
+  "groupNames": {
+    "EXAM": "Past Papers",
+    "P1": "Design Fundamentals",
+    "P2": "Design Processes & Production",
+    "P3": "Management, Communication & Research",
+    "H1": "Designing & Producing (Major Design Project)",
+    "H2": "Innovation & Emerging Technologies",
+    "CASE": "Case Studies"
+  },
+
+  "yearMap": {
+    "EXAM": "Past Papers",
+    "P1": "Year 11",
+    "P2": "Year 11",
+    "P3": "Year 11",
+    "H1": "Year 12",
+    "H2": "Year 12",
+    "CASE": "Case Studies"
+  },
+
+  "yearOrder": ["Past Papers", "Case Studies", "Year 12", "Year 11", "Other"]
+}
