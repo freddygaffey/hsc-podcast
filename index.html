@@ -84,6 +84,8 @@
 
 <main id="view-subjects" class="view" hidden></main>
 
+<main id="view-subject-hub" class="view" hidden></main>
+
 <main id="view-library" class="view"></main>
 
 <main id="view-episode" class="view" hidden>
@@ -182,6 +184,12 @@
       <button id="btn-clear-downloads" class="setting-btn-danger">Clear all downloads</button>
 
       <h3 class="settings-section">Flashcards (spaced repetition)</h3>
+      <div class="setting-row">
+        <label for="quiz-split-subject" class="setting-label">Split daily quiz by subject</label>
+        <input type="checkbox" id="quiz-split-subject" class="setting-toggle" aria-label="Split daily quiz by subject">
+      </div>
+      <p class="setting-hint">Your daily quiz focuses on one subject at a time — finish everything due (and unseen) in that subject before it moves on to the next. Off by default: questions are jumbled across every subject.</p>
+
       <div class="setting-row">
         <label for="fsrs-retention" class="setting-label">Target retention</label>
         <select id="fsrs-retention" class="meta-select setting-select" aria-label="Target retention">

@@ -497,6 +497,26 @@ button, select, input { font-family: inherit; }
   white-space: nowrap;
 }
 
+/* Secondary "fine-tune" link under the daily-quiz button. Understated on purpose so the
+   one-tap Start stays the primary action. */
+.dq-tune {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  margin: -14px 0 24px;
+  padding: 10px;
+  border: none;
+  background: none;
+  color: var(--text-dim);
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.dq-tune:hover { color: var(--accent); background: var(--accent-soft); }
+
 .subjects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));

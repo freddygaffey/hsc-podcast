@@ -78,6 +78,9 @@
   const introTitleToggle = document.getElementById("intro-title");
   const INTRO_KEY = "podcast-intro";                  // default ON ("0" = off)
   const introEnabled = () => localStorage.getItem(INTRO_KEY) !== "0";
+  const quizSplitToggle = document.getElementById("quiz-split-subject");
+  const QUIZ_SPLIT_KEY = "podcast-quiz-split-subject"; // default OFF ("1" = split daily quiz per subject)
+  const quizSplitBySubject = () => localStorage.getItem(QUIZ_SPLIT_KEY) === "1";
   const fsrsRetentionSelect = document.getElementById("fsrs-retention");
   const fsrsStepsInput = document.getElementById("fsrs-steps");
   const storageUsageEl = document.getElementById("storage-usage");
@@ -1420,6 +1423,7 @@
     if (dlAllVoicesToggle) dlAllVoicesToggle.checked = localStorage.getItem(DOWNLOAD_ALL_VOICES_KEY) === "1";
     if (blockMobileToggle) blockMobileToggle.checked = blockMobileData();
     if (introTitleToggle) introTitleToggle.checked = introEnabled();
+    if (quizSplitToggle) quizSplitToggle.checked = quizSplitBySubject();
     if (fsrsRetentionSelect) fsrsRetentionSelect.value = String(fsrsSettings().retention);
     if (fsrsStepsInput) fsrsStepsInput.value = fsrsSettings().steps;
     if (speedUnitSelect) speedUnitSelect.value = speedUnitMode();
@@ -1449,6 +1453,9 @@
   });
   if (introTitleToggle) introTitleToggle.addEventListener("change", () => {
     localStorage.setItem(INTRO_KEY, introTitleToggle.checked ? "1" : "0");
+  });
+  if (quizSplitToggle) quizSplitToggle.addEventListener("change", () => {
+    localStorage.setItem(QUIZ_SPLIT_KEY, quizSplitToggle.checked ? "1" : "0");
   });
   if (blockMobileToggle) blockMobileToggle.addEventListener("change", () => {
     // Stored inverted: default (absent) = ON; "0" = off.
@@ -1579,6 +1586,16 @@
       <span class="dq-cta">${due > 0 ? `<span class="dq-count">${due > 99 ? "99+" : due}</span>` : ""}<span class="dq-start">Start now</span></span>`;
     quizBox.addEventListener("click", () => startDailyQuiz());
     viewSubjects.appendChild(quizBox);
+
+    // Fine-tune option: for when you want to pick specific subjects/topics and how many,
+    // rather than the one-tap general quiz above. Opens the full review hub.
+    const tuneBtn = document.createElement("button");
+    tuneBtn.className = "dq-tune";
+    tuneBtn.innerHTML = `
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+      <span>Choose specific topics &amp; how many</span>`;
+    tuneBtn.addEventListener("click", () => openReview());
+    viewSubjects.appendChild(tuneBtn);
 
     const intro = document.createElement("div");
     intro.className = "subjects-intro";
@@ -3245,11 +3262,26 @@
     const sr = loadSR();
     const now = Date.now();
     const isReviewDue = (q) => { const c = sr[srKey(q._ep, q)]; return !!(c && c.total && c.due && new Date(c.due).getTime() <= now); };
-    const due = shuffle(all.filter(isReviewDue));
+    const isUnseen = (q) => { const c = sr[srKey(q._ep, q)]; return !c || !c.total; };
+
+    // Split-by-subject mode: work one subject at a time. Pick the first subject (in
+    // manifest order) that still has anything to study — due reviews first, else unseen
+    // cards — so you finish a subject before the rotation moves to the next one.
+    let candidates = all;
+    if (quizSplitBySubject()) {
+      const ids = fullManifest.subjects.map((s) => s.id);
+      const target =
+        ids.find((id) => all.some((q) => q._subject === id && isReviewDue(q))) ||
+        ids.find((id) => all.some((q) => q._subject === id && isUnseen(q))) ||
+        ids[0];
+      candidates = all.filter((q) => q._subject === target);
+    }
+
+    const due = shuffle(candidates.filter(isReviewDue));
     let pool = due.slice(0, N);
     if (pool.length < N) {
       const dueSet = new Set(pool);
-      const fresh = shuffle(all.filter((q) => !dueSet.has(q))).slice(0, N - pool.length);
+      const fresh = shuffle(candidates.filter((q) => !dueSet.has(q))).slice(0, N - pool.length);
       pool = shuffle([...pool, ...fresh]);
     }
     quizState = { ep: null, allQuestions: all, items: pool, questions: [], current: 0, score: 0,
