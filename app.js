@@ -1765,30 +1765,34 @@
       const allDl = group.episodes.every((e) => isDownloaded(e.id));
       const head = document.createElement("div");
       head.className = "module-head";
+      // Papers (EXAM) have no audio: no play-all / download controls, and "attempted"
+      // rather than "listened" (BUG-3).
       head.innerHTML = `
-        <button class="module-start" aria-label="Start ${name}">${playIcon(16)}</button>
-        <button class="module-dl${allDl ? " dl-done" : ""}" aria-label="${allDl ? "Delete module download" : "Download module"}">${allDl ? checkIcon(16) : downloadIcon(16)}</button>
+        ${papersMode ? "" : `<button class="module-start" aria-label="Start ${name}">${playIcon(16)}</button>
+        <button class="module-dl${allDl ? " dl-done" : ""}" aria-label="${allDl ? "Delete module download" : "Download module"}">${allDl ? checkIcon(16) : downloadIcon(16)}</button>`}
         <button class="module-toggle">
           <span class="module-name">${name}</span>
-          <span class="module-meta">${completed}/${group.episodes.length} listened</span>
+          <span class="module-meta">${papersMode ? `${group.episodes.length} paper${group.episodes.length === 1 ? "" : "s"}` : `${completed}/${group.episodes.length} listened`}</span>
           <span class="module-chev">&#8250;</span>
         </button>`;
       head.querySelector(".module-toggle").addEventListener("click", () => groupEl.classList.toggle("open"));
-      head.querySelector(".module-start").addEventListener("click", (e) => {
+      head.querySelector(".module-start")?.addEventListener("click", (e) => {
         e.stopPropagation();
         startModule(group);
       });
       const mdlBtn = head.querySelector(".module-dl");
-      mdlBtn.addEventListener("click", (e) => {
+      mdlBtn?.addEventListener("click", (e) => {
         e.stopPropagation();
         handleModuleDownload(group, groupEl, mdlBtn);
       });
       groupEl.appendChild(head);
 
-      const progTrack = document.createElement("div");
-      progTrack.className = "module-progress-track";
-      progTrack.innerHTML = `<div class="module-progress-fill" style="width:${(completed / group.episodes.length) * 100}%"></div>`;
-      groupEl.appendChild(progTrack);
+      if (!papersMode) {
+        const progTrack = document.createElement("div");
+        progTrack.className = "module-progress-track";
+        progTrack.innerHTML = `<div class="module-progress-fill" style="width:${(completed / group.episodes.length) * 100}%"></div>`;
+        groupEl.appendChild(progTrack);
+      }
 
       const episodesEl = document.createElement("div");
       episodesEl.className = "module-episodes";
@@ -1821,9 +1825,12 @@
     const playing = !!currentEpisode && currentEpisode.id === ep.id;
     row.className = "episode-row" + (done ? " ep-row-done" : "") + (dl ? " ep-downloaded" : "") + (playing ? " ep-row-playing" : "");
     const pct = Math.round((progress.progressPct || 0) * 100);
-    const rawDur = ep.voices[0]?.duration;
+    const rawDur = ep.voices?.[0]?.duration;
     const durStr = rawDur ? fmtDuration(rawDur / getCurrentSpeed()) : "";
     const inQueue = queue.includes(ep.id);
+    // Past papers aren't audio — no play / download / queue controls (BUG-3). The row is
+    // still tappable (opens the paper); a chevron signals that.
+    const isPaper = !!ep.paper;
 
     row.innerHTML = `
       <span class="ep-index${done ? " ep-done" : ""}">${done ? "&#10003;" : index}</span>
@@ -1834,12 +1841,13 @@
         </div>
         ${pct > 0 ? `<div class="ep-progress-track"><div class="ep-progress-fill" style="width:${pct}%"></div></div>` : ""}
       </div>
+      ${isPaper ? `<span class="ep-open-chev" aria-hidden="true">&#8250;</span>` : `
       <button class="ep-dl-btn${dl ? " dl-done" : ""}" aria-label="${dl ? "Delete download" : "Download"}">${dl ? checkIcon(15) : downloadIcon(15)}</button>
       <button class="ep-queue-btn${inQueue ? " in-queue" : ""}" aria-label="${inQueue ? "Remove from queue" : "Add to queue"}">${inQueue ? "&#10003;" : "+"}</button>
-      <button class="ep-play" aria-label="Play ${ep.title}">${playIcon(16)}</button>`;
+      <button class="ep-play" aria-label="Play ${ep.title}">${playIcon(16)}</button>`}`;
 
     const dlBtn = row.querySelector(".ep-dl-btn");
-    dlBtn.addEventListener("click", async (e) => {
+    dlBtn?.addEventListener("click", async (e) => {
       e.stopPropagation();
       if (dlBtn.classList.contains("dl-busy")) return;
       if (dlBtn.classList.contains("dl-done")) {
@@ -1864,7 +1872,7 @@
     });
 
     const qBtn = row.querySelector(".ep-queue-btn");
-    qBtn.addEventListener("click", (e) => {
+    qBtn?.addEventListener("click", (e) => {
       e.stopPropagation();
       const idx = queue.indexOf(ep.id);
       const adding = idx < 0;
@@ -1877,7 +1885,7 @@
       qBtn.setAttribute("aria-label", adding ? "Remove from queue" : "Add to queue");
       updateQueueBadge();
     });
-    row.querySelector(".ep-play").addEventListener("click", (e) => {
+    row.querySelector(".ep-play")?.addEventListener("click", (e) => {
       e.stopPropagation();
       if (!guardPlayable(ep)) return;
       loadEpisode(ep, { autoplay: true });

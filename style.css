@@ -704,6 +704,8 @@ button, select, input { font-family: inherit; }
   justify-content: center;
   cursor: pointer;
 }
+/* Past-paper rows have no play button — a chevron shows the row opens (BUG-3). */
+.ep-open-chev { flex: none; color: var(--text-dim); font-size: 22px; line-height: 1; padding: 0 6px; }
 
 /* ── Episode view ───────────────────────────────────────── */
 .episode-heading {
