@@ -46,26 +46,32 @@ def subject_slug_for(paper_id):
 
 
 def bake_region_pdf(src, info, regions):
-    """Stack the region rectangles vertically into one single-page PDF (bytes)."""
+    """Stack the region rectangles vertically into one single-page PDF (bytes).
+
+    `clip` is always given in DISPLAY (post-rotation) space — the same space
+    pNN.png / boundaries.json bboxes use (`pg["wpt"]/["hpt"]` are the display
+    dims). `get_pixmap(clip=...)` correctly honours the page's own /Rotate
+    when given a display-space clip; `show_pdf_page(clip=...)` does NOT, so
+    it's only safe to use on upright (rotation == 0) pages."""
     born = info["bornDigital"]
     pages = {p["page"]: p for p in info["pages"]}
     rects = []
     for r in regions:
         pg = pages[r["page"]]
         x0, y0, x1, y1 = r["bbox"]
-        rects.append((r["page"], fitz.Rect(x0 * pg["wpt"], y0 * pg["hpt"],
-                                           x1 * pg["wpt"], y1 * pg["hpt"])))
+        clip = fitz.Rect(x0 * pg["wpt"], y0 * pg["hpt"], x1 * pg["wpt"], y1 * pg["hpt"])
+        rects.append((r["page"], clip, pg.get("rotation", 0) % 360))
     out = fitz.open()
-    width = max(rc.width for _, rc in rects)
-    total_h = sum(rc.height for _, rc in rects)
+    width = max(clip.width for _, clip, _ in rects)
+    total_h = sum(clip.height for _, clip, _ in rects)
     page = out.new_page(width=width, height=total_h)
     y = 0.0
-    for pno, clip in rects:
+    for pno, clip, rotation in rects:
         dest = fitz.Rect(0, y, clip.width, y + clip.height)
-        if born:
+        if born and rotation == 0:
             page.show_pdf_page(dest, src, pno, clip=clip)                    # vector
         else:
-            pix = src[pno].get_pixmap(matrix=fitz.Matrix(2, 2), clip=clip)   # raster
+            pix = src[pno].get_pixmap(matrix=fitz.Matrix(2, 2), clip=clip)   # raster (rotation-safe)
             page.insert_image(dest, pixmap=pix)
         y += clip.height
     data = out.tobytes(deflate=True, garbage=4)
@@ -122,7 +128,9 @@ def main():
                 "paperId": info["paperId"], "questionNumber": q.get("number"),
                 "partLabel": part.get("label"), "marks": part.get("marks"),
                 "questionMarks": q.get("marks"), "type": part.get("type") or q.get("type"),
-                "topic": q.get("topic"), "hasStimulus": bool(stim), "bytes": len(data),
+                "topic": q.get("topic"), "module": q.get("module"),
+                "syllabusRefs": q.get("syllabusRefs") or [],
+                "hasStimulus": bool(stim), "bytes": len(data),
             })
 
     (wd / "questions.json").write_text(json.dumps({"subject": subj, "questions": records}, indent=2))
