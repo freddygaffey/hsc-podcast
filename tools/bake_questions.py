@@ -93,7 +93,7 @@ def main():
     wd = WORK / paper_id
     info = json.loads((wd / "info.json").read_text())
     bounds = json.loads((wd / "boundaries.json").read_text())
-    subj = subject_slug_for(paper_id)                    # R2/manifest folder for this subject
+    subj = info.get("subject") or subject_slug_for(paper_id)   # R2/manifest folder for this subject
     baked = wd / "baked"
     baked.mkdir(exist_ok=True)
     src = fitz.open(ROOT / "papers" / info["path"])
