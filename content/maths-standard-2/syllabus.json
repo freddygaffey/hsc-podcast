@@ -1,0 +1,26 @@
+{
+  "subject": "maths-standard-2",
+  "name": "HSC Mathematics Standard 2",
+  "_comment": "NESA Mathematics Standard 2 syllabus map. Questions are classified against these codes for the generate-by-topic feature. code = our stable id (NESA outcome/subtopic); keywords help a first-pass heuristic classifier; an LLM pass on the question text refines module/topic/refs.",
+  "modules": [
+    { "code": "MS-A", "module": "Algebra", "topics": [
+      { "code": "MS-A4", "topic": "Types of Relationships", "keywords": ["linear", "simultaneous", "graph", "gradient", "y-intercept", "non-linear", "exponential model"] }
+    ]},
+    { "code": "MS-M", "module": "Measurement", "topics": [
+      { "code": "MS-M6", "topic": "Non-right-angled Trigonometry", "keywords": ["sine rule", "cosine rule", "area of a triangle", "bearing", "compass"] },
+      { "code": "MS-M7", "topic": "Rates and Ratios", "keywords": ["rate", "ratio", "scale", "fuel consumption", "heart rate", "concentration", "kwh", "energy"] }
+    ]},
+    { "code": "MS-F", "module": "Financial Mathematics", "topics": [
+      { "code": "MS-F4", "topic": "Investments and Loans", "keywords": ["compound interest", "depreciation", "loan", "annuity", "future value", "present value", "shares", "dividend"] },
+      { "code": "MS-F5", "topic": "Annuities", "keywords": ["annuity", "superannuation", "future value table", "regular contribution"] }
+    ]},
+    { "code": "MS-S", "module": "Statistical Analysis", "topics": [
+      { "code": "MS-S4", "topic": "Bivariate Data Analysis", "keywords": ["scatterplot", "correlation", "line of best fit", "regression", "bivariate", "association"] },
+      { "code": "MS-S5", "topic": "The Normal Distribution", "keywords": ["normal distribution", "z-score", "standard deviation", "empirical rule", "68", "95", "99.7"] }
+    ]},
+    { "code": "MS-N", "module": "Networks", "topics": [
+      { "code": "MS-N2", "topic": "Network Concepts", "keywords": ["network", "vertex", "edge", "graph theory", "shortest path", "connected"] },
+      { "code": "MS-N3", "topic": "Critical Path Analysis", "keywords": ["critical path", "activity chart", "minimum spanning tree", "earliest start", "float time"] }
+    ]}
+  ]
+}
