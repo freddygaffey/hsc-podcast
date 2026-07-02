@@ -42,14 +42,19 @@ locate and label. The pixels are cropped from the original PDF later; never rety
   single `null`-label part; the region covers the stem **and** all options A–D; `"type":"mc"`.
 - **Marks:** read the value printed in the right margin for each part → that part's `"marks"`.
   The question's `"marks"` = the printed total (e.g. "Question 14 (5 marks)" → 5).
-- **type** (per part): one of `mc` | `short` | `extended` | `calculation` | `worked`.
-- **topic:** the maths syllabus topic, best-effort (e.g. "Probability",
-  "Calculus — Integration", "Trigonometry", "Financial Mathematics").
+- **Classify each part (required):**
+  - `type`: one of `mc` | `short` | `extended` | `calculation` | `worked`.
+  - `topic`: the maths syllabus topic (e.g. "Probability", "Calculus — Integration",
+    "Trigonometry", "Financial Mathematics", "Statistical Analysis"). Be specific and
+    consistent — this drives the whole "generate questions by topic" feature, so a vague or
+    inconsistent topic makes the question unfilterable.
 - **Skip** non-question pages: cover, instructions, formula/reference sheet, blank pages, and
   the "Office Use Only" footer strip.
-- **Marking guidelines:** if this paper bundles worked solutions / a marking guide (its
-  filename had "w. sol." or a sibling `-mg`) and you can see the marking region for a part on
-  these pages, add it to that part's `markingRegions`. Otherwise omit the field.
+- **Answers / marking (capture whenever present):** if the paper bundles worked solutions or a
+  marking guide (filename had "w. sol.", or the solutions appear at the back), **find the
+  marking region for each part and put it in that part's `markingRegions`.** This is baked into
+  a paired answer PDF (`a_<id>.pdf` alongside `q_<id>.pdf`), so it matters — do not skip it when
+  the solution is visible. Omit the field only when there is genuinely no solution in the paper.
 
 ## Output schema
 

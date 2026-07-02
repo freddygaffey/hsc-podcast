@@ -1,43 +1,54 @@
 #!/usr/bin/env python3
-"""Step 3 of segmentation: bake per-question PDFs from the locate step's boundaries.json.
+"""Step 3 of segmentation: bake per-question (and per-answer) PDFs from boundaries.json.
 
 Deterministic — no LLM. Reads papers/_work/<paperId>/{info.json,boundaries.json}, crops each
-question's region(s) from the ORIGINAL PDF, and writes an anonymised per-question PDF keyed by
-content hash (q_<hash>.pdf → non-enumerable + auto-dedup). Born-digital → vector clip
-(show_pdf_page, tiny + print-perfect); scanned → raster crop.
+question PART's region(s) from the ORIGINAL PDF into an anonymised per-part PDF keyed by
+content hash. If the part has markingRegions (worked solution / marking guide visible in the
+paper), the ANSWER is baked too and PAIRED by the same id: q_<id>.pdf + a_<id>.pdf.
 
-Granularity (Fred's rule): the atomic baked unit is a LETTER PART (a, b, c). Roman sub-parts
-(i, ii) stay bundled inside their letter part. The top-level question is a metadata GROUP whose
-shared stem/stimulus rides along with every part (so a split-off part still makes sense). A
-question with no letter parts bakes as a single unit (label null).
+Layout (one folder per subject, mirroring the audio bucket):
+  R2:    <subjectSlug>/q_<id>.pdf   and   <subjectSlug>/a_<id>.pdf
+  local: papers/_work/<paperId>/baked/   (transient staging; gitignored)
+  meta:  content/<subjectSlug>/questions.json  (records; committed)
 
-boundaries.json (produced by the Claude Code locate agent), coords NORMALISED 0–1, top-left:
-  { "questions": [
-      { "number":"14", "marks":5, "topic":"Probability",
-        "stimulus":[ {"page":12,"bbox":[0.11,0.08,0.86,0.24]} ],   // shared, rides with each part
-        "parts":[
-          {"label":"a","marks":2,"type":"short","regions":[{"page":12,"bbox":[0.11,0.25,0.86,0.53]}]},
-          {"label":"b","marks":1,"type":"short","regions":[{"page":12,"bbox":[0.11,0.55,0.86,0.68]}]}
-        ] } ] }
+Granularity (D4): atomic unit = LETTER PART (a, b, c). Roman sub-parts (i, ii) stay bundled.
+Top-level question is a metadata GROUP whose shared stem/stimulus rides with every part.
 
-    python3 tools/bake_questions.py "<paperId>" [--upload BUCKET]
+    python3 tools/bake_questions.py "<paperId>"                    # bake locally
+    python3 tools/bake_questions.py "<paperId>" --upload hsc-questions   # bake + push to R2
 """
 import hashlib
 import json
+import re
+import subprocess
 import sys
 from pathlib import Path
 
 import fitz  # pymupdf
 
 ROOT = Path(__file__).resolve().parent.parent
-WORK = ROOT / "papers" / "_work"
+PAPERS = ROOT / "papers"
+WORK = PAPERS / "_work"
+
+
+def slug(s):
+    return re.sub(r"[^a-z0-9]+", "-", (s or "").lower()).strip("-")
+
+
+def subject_slug_for(paper_id):
+    """Map a paperId → its subject slug via papers/_index.json (fallback: 'misc')."""
+    idx = PAPERS / "_index.json"
+    if idx.exists():
+        for p in json.loads(idx.read_text())["papers"]:
+            if p["paperId"] == paper_id:
+                return slug(p["subject"])
+    return "misc"
 
 
 def bake_region_pdf(src, info, regions):
     """Stack the region rectangles vertically into one single-page PDF (bytes)."""
     born = info["bornDigital"]
     pages = {p["page"]: p for p in info["pages"]}
-    # Convert normalised bboxes → source-page point rects.
     rects = []
     for r in regions:
         pg = pages[r["page"]]
@@ -52,9 +63,9 @@ def bake_region_pdf(src, info, regions):
     for pno, clip in rects:
         dest = fitz.Rect(0, y, clip.width, y + clip.height)
         if born:
-            page.show_pdf_page(dest, src, pno, clip=clip)          # vector
+            page.show_pdf_page(dest, src, pno, clip=clip)                    # vector
         else:
-            pix = src[pno].get_pixmap(matrix=fitz.Matrix(2, 2), clip=clip)  # raster
+            pix = src[pno].get_pixmap(matrix=fitz.Matrix(2, 2), clip=clip)   # raster
             page.insert_image(dest, pixmap=pix)
         y += clip.height
     data = out.tobytes(deflate=True, garbage=4)
@@ -62,13 +73,27 @@ def bake_region_pdf(src, info, regions):
     return data
 
 
+def r2_put(bucket, key, path):
+    subprocess.run(["wrangler", "r2", "object", "put", f"{bucket}/{key}",
+                    "--file", str(path), "--remote"], check=True,
+                   stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+
+
 def main():
-    if len(sys.argv) < 2:
+    args = sys.argv[1:]
+    if not args:
         sys.exit(__doc__)
-    paper_id = sys.argv[1]
+    bucket = None
+    if "--upload" in args:
+        i = args.index("--upload")
+        bucket = args[i + 1]
+        del args[i:i + 2]
+    paper_id = args[0]
+
     wd = WORK / paper_id
     info = json.loads((wd / "info.json").read_text())
     bounds = json.loads((wd / "boundaries.json").read_text())
+    subj = subject_slug_for(paper_id)                    # R2/manifest folder for this subject
     baked = wd / "baked"
     baked.mkdir(exist_ok=True)
     src = fitz.open(ROOT / "papers" / info["path"])
@@ -76,34 +101,48 @@ def main():
     records = []
     for q in bounds["questions"]:
         stim = q.get("stimulus", [])
-        # A question with no letter parts → one implicit part carrying the whole question.
         parts = q.get("parts") or [{"label": None, "marks": q.get("marks"),
-                                    "type": q.get("type"), "regions": q.get("regions", [])}]
+                                    "type": q.get("type"), "regions": q.get("regions", []),
+                                    "markingRegions": q.get("markingRegions", [])}]
         for part in parts:
-            regions = stim + part["regions"]        # shared stem rides with every part
-            data = bake_region_pdf(src, info, regions)
-            key = "q_" + hashlib.sha256(data).hexdigest()[:12]
-            (baked / f"{key}.pdf").write_bytes(data)
+            data = bake_region_pdf(src, info, stim + part["regions"])   # stem rides with part
+            qid = hashlib.sha256(data).hexdigest()[:12]                 # shared id for q + a
+            (baked / f"q_{qid}.pdf").write_bytes(data)
+
+            answer_key = None
+            mr = part.get("markingRegions") or []
+            if mr:                                                      # bake the paired answer
+                adata = bake_region_pdf(src, info, mr)
+                (baked / f"a_{qid}.pdf").write_bytes(adata)
+                answer_key = f"a_{qid}.pdf"
+
             records.append({
-                "id": key,
-                "assetKey": f"{key}.pdf",
-                "paperId": info["paperId"],
-                "questionNumber": q.get("number"),       # group metadata
-                "partLabel": part.get("label"),          # a | b | c | null
-                "marks": part.get("marks"),              # THIS part's marks
-                "questionMarks": q.get("marks"),         # parent total
-                "type": part.get("type") or q.get("type"),
-                "topic": q.get("topic"),
-                "hasStimulus": bool(stim),
-                "bytes": len(data),
+                "id": qid, "subject": subj,
+                "assetKey": f"q_{qid}.pdf", "answerKey": answer_key,
+                "paperId": info["paperId"], "questionNumber": q.get("number"),
+                "partLabel": part.get("label"), "marks": part.get("marks"),
+                "questionMarks": q.get("marks"), "type": part.get("type") or q.get("type"),
+                "topic": q.get("topic"), "hasStimulus": bool(stim), "bytes": len(data),
             })
-    (wd / "questions.json").write_text(json.dumps({"questions": records}, indent=2))
+
+    (wd / "questions.json").write_text(json.dumps({"subject": subj, "questions": records}, indent=2))
+
+    n_ans = sum(1 for r in records if r["answerKey"])
     total = sum(r["bytes"] for r in records)
-    print(f"{paper_id}: baked {len(records)} parts -> {baked.relative_to(ROOT)}  "
-          f"({total/1024:.0f} KB total, avg {total/max(1,len(records))/1024:.1f} KB/part)")
+    print(f"{paper_id}: baked {len(records)} parts ({n_ans} with answers) -> {baked.relative_to(ROOT)}")
+    print(f"  subject folder: {subj}/   ({total/1024:.0f} KB questions)")
     for r in records:
         lbl = f"Q{r['questionNumber']}{r['partLabel'] or ''}"
-        print(f"  {r['assetKey']}  {lbl:6} {str(r['marks'])}m  stim={int(r['hasStimulus'])}  {r['bytes']/1024:.1f}KB  {r['topic']}")
+        print(f"  {subj}/q_{r['id']}.pdf  {lbl:7} {str(r['marks'])}m  "
+              f"{'+a' if r['answerKey'] else '  '}  {r['topic']}")
+
+    if bucket:
+        print(f"Uploading to R2 '{bucket}' under {subj}/ …")
+        for r in records:
+            r2_put(bucket, f"{subj}/{r['assetKey']}", baked / r["assetKey"])
+            if r["answerKey"]:
+                r2_put(bucket, f"{subj}/{r['answerKey']}", baked / r["answerKey"])
+        print("  done.")
 
 
 if __name__ == "__main__":

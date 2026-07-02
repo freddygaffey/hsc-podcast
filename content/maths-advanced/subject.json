@@ -1,0 +1,20 @@
+{
+  "id": "maths-advanced",
+  "name": "HSC Mathematics Advanced",
+  "shortName": "Maths Adv",
+  "description": "HSC Mathematics Advanced — past-paper question bank",
+  "repoUrl": "https://github.com/freddygaffey/hsc-podcast",
+
+  "audioBaseUrl": "https://audio.hsc.pebnum.com",
+  "assetBaseUrl": "https://questions.hsc.pebnum.com",
+
+  "groupNames": {},
+  "yearMap": {},
+  "yearOrder": ["Past Papers", "Year 12", "Year 11", "Other"],
+
+  "_comments": {
+    "assetBaseUrl": "Public origin of the questions R2 bucket. The app fetches baked per-question PDFs at <assetBaseUrl>/<id>/q_<hash>.pdf (question) and /<id>/a_<hash>.pdf (its answer, same hash). One folder per subject, mirroring the audio bucket.",
+    "papers": "Baked question+answer PDFs live in content/<id>/papers/ locally (gitignored) and in R2 under the <id>/ prefix; metadata is the questions manifest. Papers-first subject: no episodes yet, so groupNames/yearMap are empty.",
+    "remove": "Delete this _comments block once finalised."
+  }
+}
