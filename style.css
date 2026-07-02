@@ -497,6 +497,17 @@ button, select, input { font-family: inherit; }
   white-space: nowrap;
 }
 
+/* Phones: the single-row daily-quiz box gets cramped (icon + title + count + "Start
+   now" pill compete for width). The whole box is already one tap to start, so drop the
+   redundant "Start now" pill and tighten sizing so the title has room. */
+@media (max-width: 480px) {
+  .daily-quiz { padding: 16px 18px; gap: 12px; }
+  .dq-icon { width: 44px; height: 44px; }
+  .dq-title { font-size: 18px; }
+  .dq-sub { font-size: 13px; }
+  .dq-start { display: none; }
+}
+
 .subjects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
