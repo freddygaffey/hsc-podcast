@@ -398,12 +398,10 @@
     }
   }
 
-  // Badge the Review button with how many flashcards are due right now, so the study
-  // loop is visible from the top bar. Counts only started cards (total>0) that are due —
-  // reads localStorage only (no quiz fetch), so it's cheap to call often.
-  function updateReviewBadge() {
-    if (!btnReview) return;
-    let badge = btnReview.querySelector(".queue-badge");
+  // How many started flashcards (total>0) are due right now. Reads localStorage only
+  // (no quiz fetch), so it's cheap to call often. Drives both the top-bar badge and
+  // the home-screen "daily quiz" box.
+  function reviewsDueCount() {
     let due = 0;
     const sr = loadSR();
     const now = Date.now();
@@ -411,6 +409,15 @@
       const c = sr[k];
       if (c && c.total && c.due && new Date(c.due).getTime() <= now) due++;
     }
+    return due;
+  }
+
+  // Badge the Review button with how many flashcards are due right now, so the study
+  // loop is visible from the top bar.
+  function updateReviewBadge() {
+    if (!btnReview) return;
+    let badge = btnReview.querySelector(".queue-badge");
+    const due = reviewsDueCount();
     if (!badge) {
       badge = document.createElement("span");
       badge.className = "queue-badge";
@@ -1546,6 +1553,24 @@
     intro.className = "subjects-intro";
     intro.innerHTML = `<h1 class="subjects-title">HSC Study</h1><p class="subjects-sub">Choose a subject</p>`;
     viewSubjects.appendChild(intro);
+
+    // Daily-quiz box — the prominent, always-visible entry into spaced-repetition review.
+    const due = reviewsDueCount();
+    const quizBox = document.createElement("button");
+    quizBox.className = "daily-quiz" + (due > 0 ? " has-due" : "");
+    quizBox.innerHTML = `
+      <span class="dq-icon">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M14 3v5h5"/><path d="M9 13l2 2 4-4"/></svg>
+      </span>
+      <span class="dq-text">
+        <span class="dq-title">Your daily quiz</span>
+        <span class="dq-sub">${due > 0
+          ? `${due} review${due === 1 ? "" : "s"} due — keep your knowledge fresh`
+          : "Keep your knowledge fresh with quick review questions"}</span>
+      </span>
+      <span class="dq-cta">${due > 0 ? `<span class="dq-count">${due > 99 ? "99+" : due}</span>` : ""}<span class="dq-arrow">&#8250;</span></span>`;
+    quizBox.addEventListener("click", () => openReview());
+    viewSubjects.appendChild(quizBox);
 
     const grid = document.createElement("div");
     grid.className = "subjects-grid";
