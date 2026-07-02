@@ -438,7 +438,7 @@ button, select, input { font-family: inherit; }
 .subjects-title { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 4px; }
 .subjects-sub { color: var(--text-dim); font-size: 15px; margin: 0; }
 
-/* Daily-quiz box — the headline call-to-action above the subject grid.
+/* Daily-quiz box — the first thing on the home screen. One tap starts a quiz.
    Always a big, solid-blue button so it reads as the primary action. */
 .daily-quiz {
   display: flex;
@@ -447,7 +447,7 @@ button, select, input { font-family: inherit; }
   width: 100%;
   text-align: left;
   padding: 22px 24px;
-  margin: 0 0 26px;
+  margin: 8px 0 24px;
   border: none;
   border-radius: 18px;
   background: var(--accent);
@@ -486,7 +486,16 @@ button, select, input { font-family: inherit; }
   align-items: center;
   justify-content: center;
 }
-.dq-arrow { font-size: 26px; line-height: 1; color: rgba(255, 255, 255, 0.9); }
+.dq-start {
+  flex: none;
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 800;
+  white-space: nowrap;
+}
 
 .subjects-grid {
   display: grid;
@@ -527,6 +536,44 @@ button, select, input { font-family: inherit; }
   border-radius: 4px;
   transition: width 0.4s ease;
 }
+
+/* Subject hub — the mode tiles (Podcasts / Quizzes / Past Papers). Reuse the
+   subject-tile look but lay out horizontally: icon · text · badge · chevron. */
+.hub-grid { grid-template-columns: 1fr; }
+.hub-tile {
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+}
+.hub-tile-icon {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  background: var(--bg-elevated);
+  color: var(--accent);
+}
+.hub-tile-text { display: flex; flex-direction: column; gap: 3px; flex: 1; min-width: 0; }
+.hub-tile-text .subject-name { font-size: 18px; }
+.hub-tile-badge {
+  flex: none;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 8px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hub-tile-chev { flex: none; font-size: 24px; line-height: 1; color: var(--text-dim); }
 
 .module {
   border: 1px solid var(--border);
