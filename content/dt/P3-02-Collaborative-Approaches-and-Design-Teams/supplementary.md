@@ -108,3 +108,9 @@ Q4 (3 marks) — Why is communication essential within a team?
   surfaces problems early and keeps the project on schedule; agreed & managed by the leader. Turns
   separate specialists into one team.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **4 C's** | Common goals, Clear roles, Communication, Commitment | Factors of successful collaboration in a design team (P3.1) |

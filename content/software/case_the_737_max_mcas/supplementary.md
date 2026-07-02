@@ -92,3 +92,11 @@ they were just fed a lie by one sensor, and built to trust it.
 CASHED IN BY: PM11 9.1 (open vs closed loop), 9.2 (autonomous control), 7.3 (sensors/redundancy),
 8.3 (safety + inclusive design). A companion to case_therac_25 (control + safety + testing).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| B-P-F | Boundary · Path coverage · Faulty-and-abnormal | Categories of test data (actual vs expected) |
+| MCAS | Maneuvering Characteristics Augmentation System | The flight-control software implicated in the Boeing 737 MAX crashes |
+| S-A-F-E | Status · Abort · Feedback · Errors | Design principles for a safe control interface |
+| Sense-Think-Act | Sense · Think · Act | The repeating control loop of an autonomous / mechatronic system |

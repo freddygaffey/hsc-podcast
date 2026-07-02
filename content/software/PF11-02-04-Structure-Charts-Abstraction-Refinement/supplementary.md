@@ -183,3 +183,8 @@ assert solve_maze(maze, (0, 0), (2, 2)) == [(0, 0), (0, 1), (1, 1), (2, 1), (2, 
 assert solve_maze([[0, 1], [1, 0]], (0, 0), (1, 1)) is None   # no path -> backtracks out
 print("All solve_maze assertions passed.")
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

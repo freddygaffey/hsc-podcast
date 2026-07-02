@@ -86,3 +86,12 @@ for loc in LOCALES:
     print(loc, "->", render(loc, 1234.5, date(2024, 3, 4)))
 # Same 03/04 date is read as 3 Apr (AU) vs differently formatted elsewhere — why i18n matters.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| JSON | JavaScript Object Notation | A lightweight, human-readable text format for exchanging structured data |
+| POUR | Perceivable · Operable · Understandable · Robust | The four WCAG accessibility principles for web content |
+| USD | United States Dollars | The currency unit used in cost/impact figures |
+| W3C | World Wide Web Consortium | The body that develops open web standards (HTML, CSS, WCAG) |
+| WCAG | Web Content Accessibility Guidelines | The W3C standard defining how to make web content accessible (see POUR) |

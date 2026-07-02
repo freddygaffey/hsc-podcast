@@ -126,3 +126,8 @@ def run_tests():
 if __name__ == "__main__":
     run_tests()
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

@@ -94,3 +94,12 @@ Q5 (3 marks) — How can community needs and individual needs conflict?
   with an individual's privacy/space/sunlight. Designer balances them (acoustic separation, shared
   green space). Design often = trade-offs between group and individual.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| LCA | Life Cycle Analysis | Evaluation of the resources and impacts across a product's whole life (cradle-to-grave); one of the factors affecting design |
+| NSW | New South Wales | The Australian state (e.g. the NSW WHS Act 2011) |
+| **PC SCIE** | Personal values, Cultural beliefs, Sustainability, Safety & health, Community needs, Individual needs, Equity | The seven environmental & social issues (P2.2) |
+| WHS | Work Health and Safety | Rights & responsibilities for a safe workplace; the WHS Act 2011 sets the framework of duties workplaces must comply with |

@@ -163,3 +163,12 @@ Both are fermions and both are fundamental (no internal structure), BUT:
 3. Quarks feel the strong nuclear force and bind into hadrons, WHEREAS leptons do not feel the strong force.
 
 Use "whereas" between each pair — explicit contrast earns the marks.
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| CERN | European Organization for Nuclear Research | The particle-physics laboratory near Geneva that operates the Large Hadron Collider. |
+| LHC | Large Hadron Collider | CERN's high-energy proton–proton collider used to study fundamental particles. |
+| SLAC | Stanford Linear Accelerator Center | US laboratory whose linear accelerator was used in particle-scattering experiments. |
+

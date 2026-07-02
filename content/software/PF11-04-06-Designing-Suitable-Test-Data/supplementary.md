@@ -156,3 +156,8 @@ assert parse_age(17) is None         # wrong type (int, not str)
 assert parse_age("200") is None      # out of range
 print("Faulty/abnormal-data assertions passed.")
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| B-P-F | Boundary · Path coverage · Faulty-and-abnormal | Categories of test data (actual vs expected) |

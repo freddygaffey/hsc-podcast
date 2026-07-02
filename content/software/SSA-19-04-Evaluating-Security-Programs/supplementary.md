@@ -59,3 +59,14 @@ BEGIN EvaluateSecurityProgram(program)
     UNTIL never                                     // the loop is the point; a one-off audit is worthless
 END EvaluateSecurityProgram
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| M-A-I | Measure · Audit · Improve | The continuous, outcome-based security-evaluation loop |
+| MTTD | Mean Time To Detect | The average time taken to notice a security incident |
+| MTTR | Mean Time To Respond (Recover) | The average time taken to respond to and recover from an incident |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| NIST | National Institute of Standards and Technology | The US agency that publishes widely used security standards and frameworks |
+| PIP-PB | Products/services · Influence on future development · Practices · Productivity · Business | The organisational benefits an enterprise gains from a strong security program |
+| V-D-Q | Various Views · Delegate by expertise · Quality | The benefits of collaborating in a development team rather than working solo |

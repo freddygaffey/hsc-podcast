@@ -62,3 +62,9 @@ CAUTIONARY TALES (direct cut-over of high-risk systems):
   Denver airport       — direct cut-over of a huge, never-fully-tested automated baggage system
                         -> opened 16 months late, hundreds of millions over.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| DiP-PP | Direct · Phased · Parallel · Pilot | The changeover / implementation (installation) methods for deploying a new system |
+| UX | User Experience | The overall quality of a user's interaction with a product |

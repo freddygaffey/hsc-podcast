@@ -100,3 +100,11 @@ Q4 (2 marks) — Distinguish creative vs critical thinking.
   Creative = generative (produces new ideas). Critical = evaluative (judges ideas). Complementary:
   generate first, then judge.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **CPA FACE** | Characteristics, Properties, Availability, Function, Appearance, Cost, Environmental | Criteria for selecting a material (P4.2) |
+| **PMI** | Plus, Minus, Interesting | A cognitive organiser (chart) for weighing a single idea (P3.1) |
+| **SCAMPER** | Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse/Rearrange | Seven prompts to generate ideas by transforming an existing design (P3.1) |

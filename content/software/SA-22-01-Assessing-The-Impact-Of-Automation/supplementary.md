@@ -76,3 +76,11 @@ BEGIN AssessAutomation(dimensions)
     RETURN judgement
 END AssessAutomation
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AI | Artificial Intelligence | Software that performs tasks normally needing human intelligence |
+| ML | Machine Learning | AI systems that learn patterns from data rather than being explicitly programmed |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| S-P-E-E | Safety and access · People and skills · Efficiency and Environment · Economy and wealth | Impact areas when assessing automation |

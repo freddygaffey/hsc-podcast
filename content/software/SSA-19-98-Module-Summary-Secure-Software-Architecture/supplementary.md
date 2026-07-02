@@ -136,3 +136,46 @@ CH 19 — CONTEXT (teams, enterprise, ethics, evaluation)
         patch + review coverage); independent audit vs standard (ISO 27001/NIST/PCI-DSS);
         continuous improvement; vanity metrics trap (measure outcomes not activity)
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| A-A-R-T | Authenticate · Authorise · Rate-limit · Transport-secure | Four rules for securing an API endpoint |
+| AAA | Authentication · Authorisation · Accountability | The three access-security pillars: prove who you are, check what you may do, and keep a traceable record |
+| API | Application Programming Interface | A defined contract that lets one piece of software request services from another |
+| APP | Australian Privacy Principles | The 13 principles governing how organisations handle personal information under Australian law |
+| B-X-I-R | Broken authentication/session · Cross-site (XSS/CSRF) · Invalid redirect · Race condition | Common web-application vulnerabilities |
+| CIA | Confidentiality · Integrity · Availability | The three core information-security properties (the security triad) |
+| CORS | Cross-Origin Resource Sharing | Browser rules controlling when a page may request resources from another origin |
+| CR | Code Review | Manual inspection of source code by other developers to catch defects |
+| CSRF | Cross-Site Request Forgery | An attack that tricks a logged-in user's browser into sending an unwanted request |
+| DAST | Dynamic Application Security Testing | Testing a running application from the outside for security flaws ("doing") |
+| E-D-P-C-I-D | Employment · Data security · Privacy · Copyright · Intellectual property · Digital disruption | Checklist ("Ed Picid") of the social, ethical and legal issues raised by software |
+| GDPR | General Data Protection Regulation | The European Union's data-protection and privacy law |
+| H-B-D | Harden · Breach-handle · Disaster-recover | Layered approach to security resilience and business continuity |
+| HTTPS | HyperText Transfer Protocol Secure | HTTP encrypted with TLS for confidentiality and integrity in transit |
+| IP | Intellectual Property | Creations of the mind (code, designs, content) protected by copyright, patents and trademarks |
+| JWT | JSON Web Token | A compact, signed token used to carry authentication/authorisation claims |
+| M-A-I | Measure · Audit · Improve | The continuous, outcome-based security-evaluation loop |
+| M-S-E | Memory · Session · Exception management | Resource-management concerns in secure execution |
+| MFA | Multi-Factor Authentication | Requiring two or more independent factors to verify identity |
+| MTTD | Mean Time To Detect | The average time taken to notice a security incident |
+| MTTR | Mean Time To Respond (Recover) | The average time taken to respond to and recover from an incident |
+| NIST | National Institute of Standards and Technology | The US agency that publishes widely used security standards and frameworks |
+| PCI | Payment Card Industry (Data Security Standard) | The security standard for organisations that handle payment-card data |
+| PEN | Penetration test | An authorised simulated attack that chains real exploits to prove impact |
+| PER | Proactive · Embed · Respect | The privacy-by-design principles (act ahead of harm, build privacy in, respect the user) |
+| PIA | Privacy Impact Assessment | A structured review of how a project affects personal privacy |
+| PIP-PB | Products/services · Influence on future development · Practices · Productivity · Business | The organisational benefits an enterprise gains from a strong security program |
+| RBAC | Role-Based Access Control | Granting permissions to roles, then assigning users to those roles |
+| S-A-F-E | Status · Abort · Feedback · Errors | Design principles for a safe control interface |
+| SAST | Static Application Security Testing | Analysing source code for security flaws without running it ("source") |
+| SDLC | Software Development Life Cycle | The staged process (requirements → design → build → test → maintain) for building software |
+| SQL | Structured Query Language | The standard language for querying and manipulating relational databases |
+| STRIDE | Spoofing · Tampering · Repudiation · Information disclosure · Denial of service · Elevation of privilege | The six threat categories used in threat modelling |
+| TLS | Transport Layer Security | The protocol that encrypts and authenticates data in transit (secures HTTPS) |
+| TOCTOU | Time-Of-Check to Time-Of-Use | A race-condition flaw where state changes between validating and using it |
+| V-D-Q | Various Views · Delegate by expertise · Quality | The benefits of collaborating in a development team rather than working solo |
+| VA | Vulnerability Assessment | Systematically scanning and cataloguing known weaknesses (breadth over depth) |
+| VSE | Validate · Sanitise · handle Errors | How to treat untrusted input at a trust boundary (server-side) |
+| XSS | Cross-Site Scripting | An attack injecting malicious scripts into pages viewed by other users |

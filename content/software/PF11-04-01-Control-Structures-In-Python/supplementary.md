@@ -128,3 +128,8 @@ assert countdown(5) == [5, 4, 3, 2, 1]
 assert countdown(0) == []     # condition false at once -> loop body runs zero times
 print("Countdown assertions passed.")
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

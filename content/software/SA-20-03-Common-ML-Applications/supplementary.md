@@ -83,3 +83,10 @@ clf.fit(X_pixels, labels)                                    # supervised image 
 # Real systems use deep convolutional networks + millions of labelled images.
 # Labelling is costly -> medical imaging often uses SEMI-supervised learning (few labels + many unlabelled).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| F-A-I | Forecasting · Assistants · Image recognition | Common applications of machine learning |
+| ML | Machine Learning | AI systems that learn patterns from data rather than being explicitly programmed |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

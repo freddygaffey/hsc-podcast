@@ -112,3 +112,11 @@ COMMON TRAPS (each a mark):
   4. reading λ off a displacement–time graph — that gives T, not λ.
   5. amplitude ≠ wavelength — amplitude is height, wavelength is length of a cycle.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| EM | Electromagnetic | Describing waves or radiation made of oscillating electric and magnetic fields (the EM spectrum). |
+| "Raging Martians Invaded Venus Using X-ray Guns" | Radio, Microwave, Infrared, Visible, Ultraviolet, X-ray, Gamma | The EM spectrum in order of increasing frequency. |
+

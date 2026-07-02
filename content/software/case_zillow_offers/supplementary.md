@@ -85,3 +85,8 @@ future continuing to look like the past.
 CASHES INTO: SA 20-03 (forecasting applications), 21-01 (regression overconfidence/overfitting).
 Companion to case_the_amazon_recruiting_ai and case_the_compas_recidivism (the limits of trusting a model).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| F-A-I | Forecasting · Assistants · Image recognition | Common applications of machine learning |

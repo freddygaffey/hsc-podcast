@@ -295,3 +295,9 @@ BEGIN Customer.GetTotalSpent()
     RETURN total
 END Customer.GetTotalSpent
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| OOP | Object-Oriented Programming | A paradigm structuring software around objects that bundle data and behaviour |

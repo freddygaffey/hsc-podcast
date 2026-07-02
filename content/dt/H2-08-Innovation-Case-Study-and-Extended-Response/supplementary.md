@@ -91,3 +91,15 @@ Q4 (2 marks) — Why answer the specific question, not brain-dump?
   Marks require RELEVANCE to the question (criterion 1); shaping your innovation knowledge to the
   question earns relevance & cohesion, while a brain-dump wastes time on irrelevant, unfocused content.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **C-CWT** | Changing social trends, Cultural diversity, changing nature of Work, Technological change | Historical & cultural influences on design and production (H2.1) |
+| IP | Intellectual Property | Ownership of a product of the intellect with commercial value — copyright, patents, business methods and industrial processes |
+| **ISE** | Individual, Society, Environment | The three levels at which to assess a design's impact (H4.3 / H2.2) |
+| **LESEE** | Legal, Ethical, Social, Economic, Ecological | The implications to appraise for a new/emerging technology (H6.2) |
+| **SIRRI** | Sustainable technologies, Intellectual-property protection, designer Rights & responsibilities, Responsibilities to society, Impact on Australian society | The ethical & environmental issues a designer must weigh (H2.2) |
+| **SPEEG** | Social, Political, Economic, Environmental, Global | The issues that drive trends in society (H2.1) |
+| **TEMPLE** | Timing, Emerging technologies, Marketing strategies, Political factors, Legal & economic factors, Era (historical/cultural) | The factors that impact on the success of innovation (H3.1) |

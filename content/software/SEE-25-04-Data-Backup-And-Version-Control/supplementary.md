@@ -103,3 +103,13 @@ Direct big-bang deploy, critical sys.   match implementation method to risk (DiP
 LESSON: VCS + tagged releases + tested rollback + disciplined deploy = the difference between a
 recoverable mistake and a company-ending one. (Cashes in next episode 25-05 + testing 26-01.)
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AAA | Authentication · Authorisation · Accountability | The three access-security pillars: prove who you are, check what you may do, and keep a traceable record |
+| CIA | Confidentiality · Integrity · Availability | The three core information-security properties (the security triad) |
+| DB | Database | An organised, queryable store of persistent data |
+| DiP-PP | Direct · Phased · Parallel · Pilot | The changeover / implementation (installation) methods for deploying a new system |
+| QA | Quality Assurance | The processes that build quality into a product, not just test for defects |
+| R-C-B-M-T | Repository · Commit · Branch · Merge · Tag | Core version-control concepts |

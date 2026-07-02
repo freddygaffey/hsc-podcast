@@ -88,3 +88,17 @@ Q4 (3 marks) — Risk assessment for using a hot soldering iron.
   engineering (soldering stand, fume extractor); administrative (training, SOP); PPE (safety glasses)
   last. Structure: hazard -> risk -> controls top-down.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **ES-EAP** | Eliminate, Substitute, Engineering, Administrative, PPE | The hierarchy of control, most to least effective (PPE last) |
+| MDP | Major Design Project | The HSC project — a product, system or environment plus its design folio — that the course is built around |
+| MSDS | Material Safety Data Sheet | Describes the identity, hazard information, precautions for use and safe handling of a hazardous substance |
+| NSW | New South Wales | The Australian state (e.g. the NSW WHS Act 2011) |
+| OHS | Occupational Health and Safety | Workplace safety; the former framework/Act replaced by WHS (also written OH&S) |
+| PPE | Personal Protective Equipment | A device or appliance designed to be worn individually to protect the user against potential hazards (the last resort in the hierarchy of control) |
+| SOP | Safe Operating Procedure | Step-by-step safe-use instructions for a tool or process |
+| SWP | Safe Work Procedure | Step-by-step safe-work instructions (used like an SOP) |
+| WHS | Work Health and Safety | Rights & responsibilities for a safe workplace; the WHS Act 2011 sets the framework of duties workplaces must comply with |

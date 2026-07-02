@@ -69,3 +69,8 @@ BEGIN RespondToAlert        // the step Target skipped (accountability)
     ENDIF
 END RespondToAlert
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

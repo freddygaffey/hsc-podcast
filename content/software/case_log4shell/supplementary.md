@@ -78,3 +78,10 @@ BEGIN LogUserEvent
     WRITE safe_message TO log                              // store; never interpret
 END LogUserEvent
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CVE | Common Vulnerabilities and Exposures | A public catalogue giving each known security flaw a unique identifier |
+| CVSS | Common Vulnerability Scoring System | A standard 0-10 score rating the severity of a security vulnerability |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

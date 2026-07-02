@@ -86,3 +86,8 @@ company in 45 minutes.
 CASHES INTO: SEE 25-04 (version control/deployment/rollback), 26-01 (testing), 25-05 (difficulties).
 Companion to case_the_denver_airport_baggage and case_the_healthcare_gov_launch.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| R-C-B-M-T | Repository · Commit · Branch · Merge · Tag | Core version-control concepts |

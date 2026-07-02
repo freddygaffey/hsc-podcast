@@ -61,3 +61,11 @@ console.log("cookies:", document.cookie);            // visible unless HttpOnly 
 const res = await fetch("/api/data");
 console.log("status:", res.status, res.ok ? "OK" : "FAILED");
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CORS | Cross-Origin Resource Sharing | Browser rules controlling when a page may request resources from another origin |
+| E-N-S-P | Elements · Network · Storage · Performance | The browser developer-tool panels (plus Console) |
+| JS | JavaScript | The programming language that runs in web browsers |
+| URL | Uniform Resource Locator | The address that identifies and locates a resource on the web |

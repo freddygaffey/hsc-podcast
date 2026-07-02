@@ -190,3 +190,12 @@ INTERPRETATION: the Sun converts \(\approx 4\) million tonnes of mass into pure 
 | ~2002 | SNO / neutrino oscillation | Solves solar neutrino problem; vindicates pp-chain |
 | 1983 | William Fowler | Nobel Prize (Hoyle controversially omitted) |
 | 2017 | GW170817 | Neutron-star merger: direct observation of r-process gold/platinum |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| CNO | Carbon–nitrogen–oxygen cycle | Hydrogen-to-helium fusion cycle that uses carbon, nitrogen and oxygen as catalysts; dominant in stars hotter and more massive than the Sun. |
+| HR | Hertzsprung–Russell diagram | Plot of stellar luminosity against surface temperature used to classify stars and trace their life cycles. |
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+

@@ -201,3 +201,12 @@ $$
 | Does the force do work?   | Yes — changes speed and KE          | No — speed and KE constant, direction only      |
 | Trajectory (projected across field) | Parabola                  | Circle (helix if v has a component along B)     |
 | Energy relation           | W = qV = ½mv²                       | W = 0 always                                    |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+| KE | Kinetic energy | The energy of a body due to its motion, ½mv². |
+| NSW | New South Wales | The Australian state whose Education Standards Authority sets this syllabus. |
+

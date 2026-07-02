@@ -148,3 +148,10 @@ Memory hook for the four experiments (write down first in the exam):
   Cross · Paddle · Electric · Magnetic
   ("Cathode rays Make Particle Evidence Move")
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| "Cathode rays Make Particle Evidence Move" | Crossed fields, Paddle-wheel, Electric deflection, Magnetic deflection | Thomson's four cathode-ray experiments. |
+

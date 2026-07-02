@@ -73,3 +73,11 @@ FROM THE TRAIN (passenger's frame): light travels at \(c\), equal distances to f
 FROM THE PLATFORM (ground frame): light still travels at \(c\) in both directions (postulate 1). But during that time the train moves forward: the BACK wall rushes TOWARD the flash point, the FRONT wall moves AWAY. So light reaches the back wall FIRST. \(\Rightarrow\) Events A and B are NOT simultaneous (A before B).
 
 CONCLUSION: two observers in relative motion disagree about whether two events are simultaneous. SIMULTANEITY IS RELATIVE — a direct consequence of the constancy of \(c\). (Relax \(c\) and let it add to the train's speed, and the disagreement vanishes.) This is the first crack in absolute time \(\to\) time dilation & length contraction (M7-14).
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| "Locked and Level" | light speed Locked (same for all observers), laws of physics Level (same in every inertial frame) | Einstein's two postulates of special relativity. |
+| NESA | NSW Education Standards Authority | The body that sets the NSW syllabus and HSC examinations. |
+

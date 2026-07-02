@@ -84,3 +84,10 @@ BEGIN ReadInputSafely
     ENDIF
 END ReadInputSafely
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CPU | Central Processing Unit | The processor that executes program instructions |
+| MIT | Massachusetts Institute of Technology | In licensing, the MIT License — a short, permissive open-source licence; also the US university it is named after |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

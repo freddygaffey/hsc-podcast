@@ -83,3 +83,16 @@ O  Operational        Once built, will it fit how people actually work, so they 
 DENVER AIRPORT (cautionary tale): unbounded scope + neither technically nor schedule-feasible,
 but the honest go/no-go call was not made in time -> 16 months late, hundreds of millions over.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| FK | Foreign Key | A column that references the primary key of another table to link records |
+| HTTP | HyperText Transfer Protocol | The request/response protocol used to transfer web resources |
+| ML | Machine Learning | AI systems that learn patterns from data rather than being explicitly programmed |
+| NFR | Non-Functional Requirement | A quality constraint (performance, security, usability) rather than a feature |
+| PK | Primary Key | The column that uniquely identifies each row in a database table |
+| POUR | Perceivable · Operable · Understandable · Robust | The four WCAG accessibility principles for web content |
+| TECO | Technical · Economic · Cost-and-schedule · Operational | The dimensions weighed in a feasibility study before committing to a project |
+| TLS | Transport Layer Security | The protocol that encrypts and authenticates data in transit (secures HTTPS) |
+| WCAG | Web Content Accessibility Guidelines | The W3C standard defining how to make web content accessible (see POUR) |

@@ -110,3 +110,13 @@ W = F d \qquad \Delta KE = \tfrac{1}{2} m v_i^{2} - \tfrac{1}{2} m v_f^{2}
 $$
 
 \(W\) work, joules (\(\mathrm{J}\)); \(F\) force, \(\mathrm{N}\); \(d\) distance, \(\mathrm{m}\); \(m\) mass, \(\mathrm{kg}\); \(v\) speed, \(\mathrm{m\,s^{-1}}\).
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| AC | Alternating current | Electric current that periodically reverses direction (mains supply, AC generator output). |
+| EMF | Electromotive force | The energy supplied per unit charge by a source (unit: volt); it is a voltage, not a force — the name is a misnomer. |
+| KE | Kinetic energy | The energy of a body due to its motion, ½mv². |
+| SI | International System of Units (Système International d'Unités) | The standard metric system of units (metre, kilogram, second, ampere, …). |
+

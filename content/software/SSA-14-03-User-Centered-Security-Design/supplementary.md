@@ -68,3 +68,9 @@ ABUSE CASE (malicious use → keep security EFFECTIVE)
 Trap: blaming users for a design failure ("just tell them not to write it down") fixes nothing.
       Treat bypasses as DESIGN problems. More friction != more secure.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| MFA | Multi-Factor Authentication | Requiring two or more independent factors to verify identity |
+| URL | Uniform Resource Locator | The address that identifies and locates a resource on the web |

@@ -98,3 +98,12 @@ Q5 (4 marks) — Compare a computer model with a physical model.
   fully convey; slower/costlier to make & change. Complementary: model/simulate digitally to refine
   cheaply, then build a physical prototype to verify real-world feel. (They combine, not replace.)
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| CAD | Computer-Aided Design | An automated system for the design, drafting and display of graphic information |
+| CAM | Computer-Aided Manufacturing | A computer program that makes manufacturing data from CAD drawings to automate manufacture by a computer-controlled machine |
+| CNC | Computer Numerical Control | The computer control of machine tools to (repetitively) manufacture complex parts for a product |
+| **MR SCP** | Modelling, Research, Simulation & graphics, Communication, Presentation | The five applications of computer-based technologies (P6.2) |

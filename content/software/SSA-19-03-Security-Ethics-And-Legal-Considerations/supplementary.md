@@ -75,3 +75,15 @@ BEGIN HandleFoundVulnerability(vuln, system)
     ENDIF
 END HandleFoundVulnerability
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CIA | Confidentiality · Integrity · Availability | The three core information-security properties (the security triad) |
+| E-D-P-C-I-D | Employment · Data security · Privacy · Copyright · Intellectual property · Digital disruption | Checklist ("Ed Picid") of the social, ethical and legal issues raised by software |
+| GDPR | General Data Protection Regulation | The European Union's data-protection and privacy law |
+| GPL | GNU General Public License | A copyleft open-source licence requiring derivative works to stay open |
+| IP | Intellectual Property | Creations of the mind (code, designs, content) protected by copyright, patents and trademarks |
+| MIT | Massachusetts Institute of Technology | In licensing, the MIT License — a short, permissive open-source licence; also the US university it is named after |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| PER | Proactive · Embed · Respect | The privacy-by-design principles (act ahead of harm, build privacy in, respect the user) |

@@ -69,3 +69,11 @@ DISTANCE (total)    = 40 + 6 + 9 = 55 m   (areas all added — direction ignored
 
 Read the verb: "displacement" → net (sign the areas) ; "distance" → total (add magnitudes).
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| D-V-A | Displacement, Velocity, Acceleration | The vector trio of motion — each quantity needs a direction. |
+| SUVAT | s, u, v, a, t (displacement, initial velocity, final velocity, acceleration, time) | The five quantities linked by the equations of uniformly accelerated motion. |
+

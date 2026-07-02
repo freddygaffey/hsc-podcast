@@ -97,3 +97,10 @@ WHAT TO TEST -- reuse B-P-F test data (from PF11 4.6):
 DOCUMENT the results (SE-11-09): record each test, its input, expected vs actual, and pass/fail -- this
   manages + documents the project, gives confidence to change code, and is evidence the subsystem works.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| B-P-F | Boundary · Path coverage · Faulty-and-abnormal | Categories of test data (actual vs expected) |
+| OOP | Object-Oriented Programming | A paradigm structuring software around objects that bundle data and behaviour |
+| U-S-S | Unit · Subsystem · System | The levels of testing |

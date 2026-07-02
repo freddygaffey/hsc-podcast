@@ -175,3 +175,12 @@ END Library.BorrowBook
 // The Library only COORDINATES — that is its responsibility (collaboration).
 // Nouns became classes (Member, Book, Library); verbs became methods.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| API | Application Programming Interface | A defined contract that lets one piece of software request services from another |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| O-C-G | Objects · Classes · Generalisation | Core object-oriented modelling ideas |
+| OOP | Object-Oriented Programming | A paradigm structuring software around objects that bundle data and behaviour |
+| R-R-C-I | Requirements · Responsibilities · Collaborations · Implementation | The (iterative) object-oriented design pipeline |

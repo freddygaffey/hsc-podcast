@@ -112,3 +112,12 @@ BEGIN HandleInput(rawInput, fieldRules)
     DISPLAY Encode(result)                          // output-encode before display
 END HandleInput
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| DB | Database | An organised, queryable store of persistent data |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| SQL | Structured Query Language | The standard language for querying and manipulating relational databases |
+| VSE | Validate · Sanitise · handle Errors | How to treat untrusted input at a trust boundary (server-side) |
+| XSS | Cross-Site Scripting | An attack injecting malicious scripts into pages viewed by other users |

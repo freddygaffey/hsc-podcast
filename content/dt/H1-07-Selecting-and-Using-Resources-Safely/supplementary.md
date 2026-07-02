@@ -83,3 +83,17 @@ Q4 (3 marks) — Why justify resource selection using research?
   markers reward; reduces the risk of a poor choice failing later. Turns a preference into a
   defensible decision.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **CPA FACE** | Characteristics, Properties, Availability, Function, Appearance, Cost, Environmental | Criteria for selecting a material (P4.2) |
+| **ES-EAP** | Eliminate, Substitute, Engineering, Administrative, PPE | The hierarchy of control, most to least effective (PPE last) |
+| IP | Intellectual Property | Ownership of a product of the intellect with commercial value — copyright, patents, business methods and industrial processes |
+| LCA | Life Cycle Analysis | Evaluation of the resources and impacts across a product's whole life (cradle-to-grave); one of the factors affecting design |
+| MDF | Medium-Density Fibreboard | A manufactured timber board (an example material) |
+| MSDS | Material Safety Data Sheet | Describes the identity, hazard information, precautions for use and safe handling of a hazardous substance |
+| PPE | Personal Protective Equipment | A device or appliance designed to be worn individually to protect the user against potential hazards (the last resort in the hierarchy of control) |
+| **SEE** | Safety, Ethical, Environmental | The factors to consider when selecting resources (H4.2) |
+| WHS | Work Health and Safety | Rights & responsibilities for a safe workplace; the WHS Act 2011 sets the framework of duties workplaces must comply with |

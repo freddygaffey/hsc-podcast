@@ -100,3 +100,10 @@ MARK-EARNING POINTS:
 - radius converted/kept in metres before squaring
 - \(\theta\) measured from the AREA VECTOR (normal), so cos used correctly
 - both answers quoted in webers (\(\mathrm{Wb}\)), not tesla
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+

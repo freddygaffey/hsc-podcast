@@ -91,3 +91,10 @@ net.fit(X, y)                   # runs Predict-Loss-Adjust (backprop + gradient 
 print(net.predict(X))           # -> [0, 1, 1, 0]
 # A big network can OVERFIT like a high-degree polynomial -> validate on a held-out test set.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| OOP | Object-Oriented Programming | A paradigm structuring software around objects that bundle data and behaviour |
+| P-L-A | Predict · Loss · Adjust | The neural-network training loop (forward pass, loss, weight update) |

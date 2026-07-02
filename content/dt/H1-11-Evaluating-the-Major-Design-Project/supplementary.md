@@ -86,3 +86,11 @@ Q4 (3 marks) — Why weigh both costs and benefits?
   only overstates value & ignores real costs; costs-only misses the good. Weigh both at each level ->
   fair judgement.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **BMA** | Before, Mid, After | Evaluation is continual — before, during and after, not only at the end (H4.3) |
+| **ISE** | Individual, Society, Environment | The three levels at which to assess a design's impact (H4.3 / H2.2) |
+| MDP | Major Design Project | The HSC project — a product, system or environment plus its design folio — that the course is built around |

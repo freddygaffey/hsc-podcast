@@ -88,3 +88,35 @@ Open source = insecure   (reality)            Inspectable by many; "free" = free
 9. PERF       served via a CDN, compressed, framework bundle kept small   (11-04 / 12-05 / 13-03)
    Diagnose any failure with dev tools: E-N-S-P; 4xx = request, 5xx = server  (12-03)
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| BSD | Berkeley Software Distribution (licence) | A permissive open-source software licence |
+| CDN | Content Delivery Network | Geographically distributed servers that cache and serve content close to the user |
+| CSS | Cascading Style Sheets | The language that styles and lays out HTML content |
+| DNS | Domain Name System | The system that translates human-readable domain names into IP addresses |
+| E-N-S-P | Elements · Network · Storage · Performance | The browser developer-tool panels (plus Console) |
+| F-T-C | Frameworks · Template engines · predesigned CSS Classes | Front-end tools and libraries |
+| GPL | GNU General Public License | A copyleft open-source licence requiring derivative works to stay open |
+| HTML | HyperText Markup Language | The language that structures the content of web pages |
+| HTTP | HyperText Transfer Protocol | The request/response protocol used to transfer web resources |
+| HTTPS | HyperText Transfer Protocol Secure | HTTP encrypted with TLS for confidentiality and integrity in transit |
+| I-E-P | Interactive website · E-commerce · Progressive web app | Applications of web programming |
+| IP | Internet Protocol | The protocol that addresses and routes data packets across networks |
+| JS | JavaScript | The programming language that runs in web browsers |
+| L-C-C | Licence · Community · Contribution | Pillars to weigh when choosing open-source software |
+| M-M-S | Mining · Metadata · Streaming | Big-data concepts |
+| MISO | Manifest · Installable · Service worker · Offline | The four capabilities that distinguish a Progressive Web App from an ordinary website |
+| MIT | Massachusetts Institute of Technology | In licensing, the MIT License — a short, permissive open-source licence; also the US university it is named after |
+| POUR | Perceivable · Operable · Understandable · Robust | The four WCAG accessibility principles for web content |
+| PWA | Progressive Web App | A website that can install, work offline and behave like a native app |
+| SQL | Structured Query Language | The standard language for querying and manipulating relational databases |
+| SSL | Secure Sockets Layer | The predecessor to TLS for encrypting network connections |
+| TCP | Transmission Control Protocol | The protocol providing reliable, ordered delivery of data over IP |
+| TLS | Transport Layer Security | The protocol that encrypts and authenticates data in transit (secures HTTPS) |
+| UI | User Interface | The parts of a system a user directly interacts with |
+| UX | User Experience | The overall quality of a user's interaction with a product |
+| W3C | World Wide Web Consortium | The body that develops open web standards (HTML, CSS, WCAG) |
+| WAI | Web Accessibility Initiative | The W3C effort that produces web accessibility guidelines |
+| WCAG | Web Content Accessibility Guidelines | The W3C standard defining how to make web content accessible (see POUR) |

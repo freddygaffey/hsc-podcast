@@ -63,3 +63,10 @@ KEY: momentum is conserved in ALL closed-system collisions;
 METHOD: use momentum to find the velocities; use KE (before vs after) to classify
         the collision / find energy transformed. Don't assume KE is conserved.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| KE | Kinetic energy | The energy of a body due to its motion, ½mv². |
+

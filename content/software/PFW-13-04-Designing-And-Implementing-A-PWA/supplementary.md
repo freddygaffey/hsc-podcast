@@ -90,3 +90,12 @@ MISO — what distinguishes a PWA from a standard website:
   O  Offline       service worker serves cached app shell when no network
   (+ must be served over HTTPS; responsive != PWA — appearance vs capability)
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| HTTPS | HyperText Transfer Protocol Secure | HTTP encrypted with TLS for confidentiality and integrity in transit |
+| JSON | JavaScript Object Notation | A lightweight, human-readable text format for exchanging structured data |
+| MISO | Manifest · Installable · Service worker · Offline | The four capabilities that distinguish a Progressive Web App from an ordinary website |
+| POUR | Perceivable · Operable · Understandable · Robust | The four WCAG accessibility principles for web content |
+| PWA | Progressive Web App | A website that can install, work offline and behave like a native app |

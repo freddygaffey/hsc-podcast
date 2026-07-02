@@ -88,3 +88,11 @@ curl -X POST https://shop.example.com/api/register \
 # Lesson: the SERVER must re-validate. Client-side validation = convenience;
 # server-side validation = security. (Taught in full in Secure Software Architecture.)
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| API | Application Programming Interface | A defined contract that lets one piece of software request services from another |
+| DB | Database | An organised, queryable store of persistent data |
+| HTTP | HyperText Transfer Protocol | The request/response protocol used to transfer web resources |
+| SQL | Structured Query Language | The standard language for querying and manipulating relational databases |

@@ -90,3 +90,20 @@ CONCLUSION (judgement): highly successful; social/environmental benefits outweig
 Marks: named TEMPLE factors + specific evidence; balanced impact across society & environment; logical
 cohesive structure + clear judgement. (Story-only without frameworks/judgement caps mid-band.)
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| AI | Artificial Intelligence | An emerging technology |
+| **C-CWT** | Changing social trends, Cultural diversity, changing nature of Work, Technological change | Historical & cultural influences on design and production (H2.1) |
+| **FFA EQ NEW LOAd** | Function, Needs, Appropriateness, Aesthetics, Ergonomics, Finance, Work health & safety, Quality, Environmental consequences, Obsolescence, Life cycle analysis | The eleven factors affecting designing and producing (P1.1 / H1.1) |
+| **GASP-I** | Government, Associations/standards, Sponsors/funders, Patent (IP) offices, Industry partners | The agencies that influence the success of innovation (H3.1) |
+| IP | Intellectual Property | Ownership of a product of the intellect with commercial value — copyright, patents, business methods and industrial processes |
+| **ISE** | Individual, Society, Environment | The three levels at which to assess a design's impact (H4.3 / H2.2) |
+| LCA | Life Cycle Analysis | Evaluation of the resources and impacts across a product's whole life (cradle-to-grave); one of the factors affecting design |
+| **LESEE** | Legal, Ethical, Social, Economic, Ecological | The implications to appraise for a new/emerging technology (H6.2) |
+| R&D | Research and Development | The investigative/experimental work of developing a product |
+| **SIRRI** | Sustainable technologies, Intellectual-property protection, designer Rights & responsibilities, Responsibilities to society, Impact on Australian society | The ethical & environmental issues a designer must weigh (H2.2) |
+| **SPEEG** | Social, Political, Economic, Environmental, Global | The issues that drive trends in society (H2.1) |
+| **TEMPLE** | Timing, Emerging technologies, Marketing strategies, Political factors, Legal & economic factors, Era (historical/cultural) | The factors that impact on the success of innovation (H3.1) |

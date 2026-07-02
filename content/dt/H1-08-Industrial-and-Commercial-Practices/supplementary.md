@@ -78,3 +78,14 @@ Q4 (3 marks) — Why is the process the same in a student project vs industry, d
   resources (machinery, divided workforce, formal QC, mass vs one-off). Same process & principles,
   different scale/formality.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| CNC | Computer Numerical Control | The computer control of machine tools to (repetitively) manufacture complex parts for a product |
+| **DCIC** | Domestic, Community, Industrial, Commercial | The four settings in which design and production happen (P2.1) |
+| **JBM** | Job (one-off), Batch, Mass | The three scales of production (“one, some, millions”) |
+| MDP | Major Design Project | The HSC project — a product, system or environment plus its design folio — that the course is built around |
+| QC | Quality Control | Checking output against quality standards (e.g. line sampling) |
+| **SPPC** | Safe work practices, Production techniques, Process selection, Collaborative design teams | The industrial & commercial practices related to the MDP (H6.1) |

@@ -65,3 +65,16 @@ DISTINCTION (most-asked Q): QA = the overall PROCESS framework that PREVENTS def
 reviews, continual checking, compliance). TESTING = ONE activity within QA that DETECTS defects
 in the built software. Testing is a tool QA uses; QA is bigger than testing.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| C-U-P-S | Correctness · Usability · Performance · Security | Software quality criteria |
+| M-A-I | Measure · Audit · Improve | The continuous, outcome-based security-evaluation loop |
+| PCI | Payment Card Industry (Data Security Standard) | The security standard for organisations that handle payment-card data |
+| PER | Proactive · Embed · Respect | The privacy-by-design principles (act ahead of harm, build privacy in, respect the user) |
+| POUR | Perceivable · Operable · Understandable · Robust | The four WCAG accessibility principles for web content |
+| QA | Quality Assurance | The processes that build quality into a product, not just test for defects |
+| TLS | Transport Layer Security | The protocol that encrypts and authenticates data in transit (secures HTTPS) |
+| UX | User Experience | The overall quality of a user's interaction with a product |
+| WCAG | Web Content Accessibility Guidelines | The W3C standard defining how to make web content accessible (see POUR) |

@@ -168,3 +168,11 @@ Conclusion: the RED laser emits photons at the higher rate (\(\approx 1.33\times
 | Max Planck | 1900: introduced E = hf for black-body radiation; called it a "mathematical trick" |
 | Albert Einstein | 1905: treated quanta as real photons; photoelectric effect; Nobel Prize 1921 |
 | 1 nm | 1 × 10^-9 m (convert before using c = fλ) |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+| UV | Ultraviolet | EM radiation with wavelength shorter than visible violet light. |
+

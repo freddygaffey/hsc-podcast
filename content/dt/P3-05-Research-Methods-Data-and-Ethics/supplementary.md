@@ -103,3 +103,10 @@ Q4 (3 marks) — Why consider ethics in research involving people?
   privacy; plus honesty (no fabrication) and no harm. Unethical research is also often unreliable/
   invalid. (CVA.)
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **CVA** | Consent, Voluntary participation, Anonymity | Ethics to observe when researching people, plus honesty and no harm (P5.3) |
+| **QISOTS** | Questionnaires, Interviews, Surveys, Observation, Tests/experiments, Statistical analysis | The research methods, plus secondary information research (P5.3 / H5.2) |

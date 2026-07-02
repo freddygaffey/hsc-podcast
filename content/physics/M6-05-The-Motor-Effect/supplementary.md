@@ -126,3 +126,10 @@ Marks: (1) correct equation (2) substitution with SI units (3) answer in N.
 | Electron mass | 9.1 × 10^-31 kg |
 | Permeability of free space μ₀ | 4π × 10^-7 N A^-2 (parallel-wire context only — background) |
 | k = μ₀ / 2π | 2.0 × 10^-7 N A^-2 (parallel-wire context only — background) |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| SI | International System of Units (Système International d'Unités) | The standard metric system of units (metre, kilogram, second, ampere, …). |
+

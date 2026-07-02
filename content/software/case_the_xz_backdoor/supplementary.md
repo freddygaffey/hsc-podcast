@@ -62,3 +62,12 @@ BEGIN VerifyDependency
     NEXT component
 END VerifyDependency
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CPU | Central Processing Unit | The processor that executes program instructions |
+| CVE | Common Vulnerabilities and Exposures | A public catalogue giving each known security flaw a unique identifier |
+| CVSS | Common Vulnerability Scoring System | A standard 0-10 score rating the severity of a security vulnerability |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| SSH | Secure Shell | An encrypted protocol for remote login and command execution |

@@ -230,3 +230,11 @@ Answer: measured length \(= 0.80\ \mathrm{m}\). Perpendicular width: UNCHANGED â
 | Fitzgeraldâ€“Lorentz proposal | Fitzgerald (1889) & Lorentz (1892): a PHYSICAL contraction to save the aether; Einstein needs no force, no aether |
 | Einstein's relativity paper | 1905 (special relativity) |
 | Metre (modern definition) | distance light travels in vacuum in 1/299 792 458 s |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| GPS | Global Positioning System | Satellite navigation system whose atomic clocks require relativistic (special + general) corrections. |
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+

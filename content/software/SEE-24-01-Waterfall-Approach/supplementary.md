@@ -58,3 +58,11 @@ CASE: Healthcare.gov (2013) — waterfall + FIXED deadline + frozen-flawed requi
 late integration + NO load testing -> launch-day collapse. (Cashed in: SEE 26-01, 26-03.)
 ANSWER SHAPE for "advantage/disadvantage": FEATURE + CONSEQUENCE (not "organised / slow").
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| DB | Database | An organised, queryable store of persistent data |
+| NFR | Non-Functional Requirement | A quality constraint (performance, security, usability) rather than a feature |
+| SDLC | Software Development Life Cycle | The staged process (requirements → design → build → test → maintain) for building software |
+| UAT | User Acceptance Testing | Final testing by end users to confirm the software meets their needs |

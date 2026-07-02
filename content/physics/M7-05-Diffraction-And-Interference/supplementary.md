@@ -129,3 +129,10 @@ Q: Explain, in terms of interference, the formation of the bright and dark bands
 | Speed of light \(c\) | \(3.0 \times 10^{8}\ \mathrm{m\,s^{-1}}\) (data sheet); \(c = f\lambda\). |
 | White light through slits | Central maximum stays white (zero path difference for all \(\lambda\)); outer fringes smear into coloured spectra. |
 | Unit conversions | \(1\ \mathrm{nm} = 10^{-9}\ \mathrm{m}\); \(1\ \mathrm{mm} = 10^{-3}\ \mathrm{m}\); \(1\ \mathrm{\mu m} = 10^{-6}\ \mathrm{m}\). |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| SI | International System of Units (Système International d'Unités) | The standard metric system of units (metre, kilogram, second, ampere, …). |
+

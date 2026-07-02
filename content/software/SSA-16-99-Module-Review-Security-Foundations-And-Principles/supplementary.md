@@ -92,3 +92,19 @@ BEGIN SecureRequest(sessionToken, action, target, rawInput, clientIP)
     DISPLAY Encode(result)                            // output-encode → no XSS
 END SecureRequest
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AAA | Authentication · Authorisation · Accountability | The three access-security pillars: prove who you are, check what you may do, and keep a traceable record |
+| CIA | Confidentiality · Integrity · Availability | The three core information-security properties (the security triad) |
+| HTTP | HyperText Transfer Protocol | The request/response protocol used to transfer web resources |
+| HTTPS | HyperText Transfer Protocol Secure | HTTP encrypted with TLS for confidentiality and integrity in transit |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| PER | Proactive · Embed · Respect | The privacy-by-design principles (act ahead of harm, build privacy in, respect the user) |
+| SDLC | Software Development Life Cycle | The staged process (requirements → design → build → test → maintain) for building software |
+| SQL | Structured Query Language | The standard language for querying and manipulating relational databases |
+| STRIDE | Spoofing · Tampering · Repudiation · Information disclosure · Denial of service · Elevation of privilege | The six threat categories used in threat modelling |
+| TLS | Transport Layer Security | The protocol that encrypts and authenticates data in transit (secures HTTPS) |
+| VSE | Validate · Sanitise · handle Errors | How to treat untrusted input at a trust boundary (server-side) |
+| XSS | Cross-Site Scripting | An attack injecting malicious scripts into pages viewed by other users |

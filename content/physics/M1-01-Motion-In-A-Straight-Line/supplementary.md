@@ -83,3 +83,11 @@ CASE B — speeding up (moving −, a negative):
 ⇒ A negative acceleration means "a points in the negative direction", NOT automatically "braking".
    Whether the object speeds up or slows down depends on the direction of its velocity.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| D-V-A | Displacement, Velocity, Acceleration | The vector trio of motion — each quantity needs a direction. |
+| SI | International System of Units (Système International d'Unités) | The standard metric system of units (metre, kilogram, second, ampere, …). |
+

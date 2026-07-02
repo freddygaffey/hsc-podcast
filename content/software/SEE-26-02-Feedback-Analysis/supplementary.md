@@ -66,3 +66,12 @@ CROSS-LINKS
 
 TRAPS: acting on the LOUDEST voice; feedback with NO follow-through (worse than not asking).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| C-E-R | Criteria · Evidence · Reflection | Structure for evaluating a solution against its criteria |
+| C-S-A | Collect · Synthesise · Act | How to handle user feedback (prioritise by impact vs effort) |
+| I-F-N | Involve (and empower) · Feedback · Negotiate | Principles for communicating effectively with a client during a project |
+| PABT | Privacy · Accessibility · Bias · Transparency | Checklist of the main ethical issues to weigh in an automated/AI system |
+| S-H-L-M | Sampling · Historical · Labeler · Measurement | The sources of bias in machine learning |

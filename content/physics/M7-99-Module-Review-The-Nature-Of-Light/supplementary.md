@@ -268,3 +268,17 @@ Proper length \(= 100\ \mathrm{m}\) (measured in the spacecraft's own rest frame
 | Three wave-model pillars | Diffraction, Interference, Polarisation → "Don't Ignore Photons" |
 | Four photoelectric observations | Number, Threshold, Energy, No-delay → "Newton's Theory Explodes Now" |
 | Evidence → model map | diffraction/interference/polarisation → wave; black-body curve + photoelectric → quantum (photon); Michelson–Morley null + muons + atomic clocks → relativity |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| CEA | Continuous, Emission, Absorption | The three spectrum types — hot Coal (continuous), Excited gas (emission lines), cool Atmosphere (absorption lines). |
+| DC | Direct current | Electric current that flows in one direction only (from a battery, or a DC generator/motor). |
+| DIP ("Don't Ignore Photons") | Diffraction, Interference, Polarisation | The three pillars of evidence for the wave model of light. |
+| EM | Electromagnetic | Describing waves or radiation made of oscillating electric and magnetic fields (the EM spectrum). |
+| "Newton's Theory Explodes Now" | Number, Threshold, Energy, No-delay | The four photoelectric-effect observations (the same set as DENF). |
+| "Raging Martians Invaded Venus Using X-ray Guns" | Radio, Microwave, Infrared, Visible, Ultraviolet, X-ray, Gamma | The EM spectrum in order of increasing frequency. |
+| "The Cosmos Verifies Relativity" | Temperature, Composition, Velocity, Rotation | The four properties readable from a star's spectrum. |
+| UV | Ultraviolet | EM radiation with wavelength shorter than visible violet light. |
+

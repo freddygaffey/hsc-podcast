@@ -73,3 +73,8 @@ END CheckPassword
   alice : slowhash("sunshine" + "x9$2") = 7B1E0C...
   bob   : slowhash("sunshine" + "Qm#7") = E4A902...  <- must attack each separately
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

@@ -175,3 +175,11 @@ KEEP DISTINCT: EMF (a voltage; exists with or without a circuit) vs CURRENT (nee
 | Trap 7 | Convert cm → m BEFORE squaring for area; mixing units gives errors of 10ⁿ |
 | Trap 8 | The minus sign is direction only (Lenz) — for magnitude, report the positive value |
 | Trap 9 | A metal plate with no wires can still be induced in (eddy currents) |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| BAT | B (field strength), A (area), θ (angle) | The three quantities in Φ = BA cosθ you can change to vary magnetic flux and induce an EMF. |
+| EMF | Electromotive force | The energy supplied per unit charge by a source (unit: volt); it is a voltage, not a force — the name is a misnomer. |
+

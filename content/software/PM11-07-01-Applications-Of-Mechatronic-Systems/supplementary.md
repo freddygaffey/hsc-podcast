@@ -72,3 +72,10 @@ Washing machine     load weight + water level     choose cycle / water / spin   
 The four S-M-E-M fields in one build:
   Software (the THINK) · Mechanical (the moving parts) · Electronics (sensors/actuators/wiring) · Mathematics (control + timing)
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| OOP | Object-Oriented Programming | A paradigm structuring software around objects that bundle data and behaviour |
+| S-M-E-M | Software · Mechanical · Electronics · Maths | The knowledge fields combined in a mechatronic build |
+| Sense-Think-Act | Sense · Think · Act | The repeating control loop of an autonomous / mechatronic system |

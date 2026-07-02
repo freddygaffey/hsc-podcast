@@ -175,3 +175,12 @@ Check: doubling \(V\) (\(100\ \mathrm{V} \to 200\ \mathrm{V}\)) multiplies \(v\)
 - **D** — Deflect (magnetic field): \(r = \dfrac{m v}{q B}\) (\(r \propto m\): heavier = wider)
 
 Readout: detector POSITION = mass; NUMBER of hits = isotopic abundance.
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| ASD | Accelerate, Select, Deflect | The three stages of a mass spectrometer: accelerate the ion (electric field), select one speed (crossed E and B), deflect by mass (magnetic field). |
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+| KE | Kinetic energy | The energy of a body due to its motion, ½mv². |
+

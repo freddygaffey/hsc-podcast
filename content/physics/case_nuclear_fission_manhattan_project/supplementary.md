@@ -154,3 +154,11 @@ Fusion (light nuclei joining) and fission (heavy nuclei splitting) both release 
 | Coolant | Water (often same as moderator) | Removes heat to drive a turbine |
 | Reflector | Graphite, beryllium | Bounces escaping neutrons back into the core |
 | Shielding | Concrete, lead | Absorbs gamma rays and stray neutrons |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+| TNT | Trinitrotoluene | A chemical explosive used as a reference unit for comparing released energy. |
+

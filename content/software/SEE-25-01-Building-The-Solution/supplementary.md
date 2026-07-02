@@ -115,3 +115,18 @@ REUSES: PFW 13-01 back-end request flow; PFW 13-02 relational schema (from the d
 SSA 16-01 secure coding ("hash one-way, encrypt two-way"); Year 11 OOP code quality.
 MARKER: justify the approach, manage the increments, document the code (NOT "it works").
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AAA | Authentication · Authorisation · Accountability | The three access-security pillars: prove who you are, check what you may do, and keep a traceable record |
+| CIA | Confidentiality · Integrity · Availability | The three core information-security properties (the security triad) |
+| DB | Database | An organised, queryable store of persistent data |
+| I-F-N | Involve (and empower) · Feedback · Negotiate | Principles for communicating effectively with a client during a project |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| OOP | Object-Oriented Programming | A paradigm structuring software around objects that bundle data and behaviour |
+| QA | Quality Assurance | The processes that build quality into a product, not just test for defects |
+| S-R-I | Standards · Review · continuous Integration | How to keep quality high while building |
+| SQL | Structured Query Language | The standard language for querying and manipulating relational databases |
+| SQLi | SQL injection | An attack that injects malicious SQL through unvalidated input |
+| VSE | Validate · Sanitise · handle Errors | How to treat untrusted input at a trust boundary (server-side) |

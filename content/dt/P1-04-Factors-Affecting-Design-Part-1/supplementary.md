@@ -96,3 +96,9 @@ Q4 (2 marks) — Why is appropriateness judged relative to the end-user?
   inappropriate for another (bright colours/rounded corners suit preschoolers, not a surgical
   instrument). Appropriateness is a relationship to the user, not an absolute property.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **FFA EQ NEW LOAd** | Function, Needs, Appropriateness, Aesthetics, Ergonomics, Finance, Work health & safety, Quality, Environmental consequences, Obsolescence, Life cycle analysis | The eleven factors affecting designing and producing (P1.1 / H1.1) |

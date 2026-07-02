@@ -272,3 +272,8 @@ BEGIN CalculateTotalArea(shapeList)                       // polymorphic loop
     RETURN total
 END CalculateTotalArea
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

@@ -124,3 +124,20 @@ STORY: Knight Capital (2012) — dead back-end code + a reused flag + NO error h
        = ~$440M lost in 45 min. Back end is NOT invisible plumbing.
 TRAPS: undocumented clever code; back end as "plumbing"; leaking error detail to the user.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AAA | Authentication · Authorisation · Accountability | The three access-security pillars: prove who you are, check what you may do, and keep a traceable record |
+| API | Application Programming Interface | A defined contract that lets one piece of software request services from another |
+| BSD | Berkeley Software Distribution (licence) | A permissive open-source software licence |
+| CIA | Confidentiality · Integrity · Availability | The three core information-security properties (the security triad) |
+| CVE | Common Vulnerabilities and Exposures | A public catalogue giving each known security flaw a unique identifier |
+| DB | Database | An organised, queryable store of persistent data |
+| GPL | GNU General Public License | A copyleft open-source licence requiring derivative works to stay open |
+| MIT | Massachusetts Institute of Technology | In licensing, the MIT License — a short, permissive open-source licence; also the US university it is named after |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| SQLi | SQL injection | An attack that injects malicious SQL through unvalidated input |
+| T-E-I-S | Technology · Error handling · Interfacing · Security | Back-end engineering concerns |
+| TLS | Transport Layer Security | The protocol that encrypts and authenticates data in transit (secures HTTPS) |
+| VSE | Validate · Sanitise · handle Errors | How to treat untrusted input at a trust boundary (server-side) |

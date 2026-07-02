@@ -125,3 +125,13 @@ BEGIN OnboardEmployee(employee)
     WriteAuditLog(employee, "onboarding completed")   // audit trail through the whole process
 END OnboardEmployee
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AI | Artificial Intelligence | Software that performs tasks normally needing human intelligence |
+| BPA | Business Process Automation | Automating whole multi-step business workflows, not just single tasks |
+| DevOps | Development and Operations | A culture/practice uniting development and operations to automate delivery |
+| ML | Machine Learning | AI systems that learn patterns from data rather than being explicitly programmed |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| RPA | Robotic Process Automation | Software 'bots' that automate repetitive, rule-based user tasks |

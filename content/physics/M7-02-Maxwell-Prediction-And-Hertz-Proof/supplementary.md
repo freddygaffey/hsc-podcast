@@ -149,3 +149,12 @@ Consequence (examinable): \(c\) cannot be "measured more accurately" — it is f
 | Fizeau (1849) | — | 313 000 km/s | spinning toothed wheel |
 | Foucault (1862) | — | 298 000 km/s | rotating mirror |
 | Michelson (early 1900s) | — | \(2.99796 \times 10^{8}\ \mathrm{m/s}\) | rotating 8-sided mirror |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| EM | Electromagnetic | Describing waves or radiation made of oscillating electric and magnetic fields (the EM spectrum). |
+| "Gauss's Glorious Fields Are Mine" | Gauss (electric), Gauss (magnetic), Faraday, Ampère–Maxwell | Maxwell's four equations of electromagnetism. |
+| UV | Ultraviolet | EM radiation with wavelength shorter than visible violet light. |
+

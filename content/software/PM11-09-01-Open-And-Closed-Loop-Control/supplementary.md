@@ -88,3 +88,9 @@ KEY TERMS
              POSITIVE feedback amplifies it (destabilising — e.g. an oscillator)
   stability  too LITTLE gain = slow; too MUCH gain = overshoot + oscillation, maybe instability
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| M-C-C | Measure · Compare · Correct | The closed-loop control cycle (error = setpoint − measured) |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

@@ -87,3 +87,9 @@ Q4 (3 marks) — Why is studying designers valuable for the MDP?
   Designers have proven practices to learn from/emulate; studying how they research/prototype/adapt
   improves your own process & solution; exposes you to materials/techniques/approaches you'd miss.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| MDP | Major Design Project | The HSC project — a product, system or environment plus its design folio — that the course is built around |

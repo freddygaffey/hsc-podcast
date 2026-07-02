@@ -83,3 +83,14 @@ Q5 (3 marks) — Why respond to research/experimentation findings in early devel
   material, adjusted dimension) -> evidence-based, problems fixed early (evaluate-refine loop); also
   produces the justification evidence for the folio. Ignored research wastes time.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **DRIPER** | Define, Research, Ideate, Produce, Evaluate, Refine | The six cyclic stages of the design process (an iterative/cyclical process) |
+| **FFA EQ NEW LOAd** | Function, Needs, Appropriateness, Aesthetics, Ergonomics, Finance, Work health & safety, Quality, Environmental consequences, Obsolescence, Life cycle analysis | The eleven factors affecting designing and producing (P1.1 / H1.1) |
+| MDP | Major Design Project | The HSC project — a product, system or environment plus its design folio — that the course is built around |
+| **NICe** | Need, areas of Investigation, Criteria to evaluate success | The three components of the major design project proposal (H4.1) |
+| **QISOTS** | Questionnaires, Interviews, Surveys, Observation, Tests/experiments, Statistical analysis | The research methods, plus secondary information research (P5.3 / H5.2) |
+| **TEMPLE** | Timing, Emerging technologies, Marketing strategies, Political factors, Legal & economic factors, Era (historical/cultural) | The factors that impact on the success of innovation (H3.1) |

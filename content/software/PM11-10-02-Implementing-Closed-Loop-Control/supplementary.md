@@ -105,3 +105,9 @@ ENHANCING PERFORMANCE (SE-11-08 refine): start with P, add I to remove the offse
 approach. TUNE the gains: too much gain -> overshoot/oscillation (from 9.1); always CLAMP the output so a
 big command can't drive the actuator past its safe limit. Tune SAFELY in the simulation first (10.1).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| PID | Proportional-Integral-Derivative (controller) | A closed-loop control algorithm that corrects error smoothly toward a setpoint |

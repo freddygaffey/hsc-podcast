@@ -190,3 +190,10 @@ Focus area: Matter, energy and the cosmos — Modelling the atom (PY-12-04).
 Note on terminology: NESA (2025 syllabus, implemented 2027) calls the Bohr-type model
 the "stationary energy level model of the atom." Use that exact phrase in exam answers.
 The de Broglie relationship lambda = h/mv is on the NESA Physics data sheet.
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the NSW syllabus and HSC examinations. |
+

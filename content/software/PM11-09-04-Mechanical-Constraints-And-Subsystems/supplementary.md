@@ -109,3 +109,10 @@ VIABLE SUBSYSTEM = a working combination of Sensor + Actuator + End-effector (S-
 COLLISION / INTERFERENCE: when subsystems share a workspace they have DEPENDENCIES — coordinate
   their timing and keep a safety margin so moving parts don't hit each other.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| DOF | Degrees Of Freedom | The number of independent movements a mechatronic system (e.g. a robot arm) can make |
+| OOP | Object-Oriented Programming | A paradigm structuring software around objects that bundle data and behaviour |
+| S-A-E | Sensor · Actuator · End-effector | The mechatronic device trio (input, output, tool) |

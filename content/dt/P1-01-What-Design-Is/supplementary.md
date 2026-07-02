@@ -114,3 +114,9 @@ Q5 (3 marks) — Identify three design professions and outline the work in each.
   (logos, packaging, websites). Architect/interior designer -> spaces and environments
   (buildings, layouts), considering how people use them.  [any 3 valid, 1 mark each]
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **DRIPER** | Define, Research, Ideate, Produce, Evaluate, Refine | The six cyclic stages of the design process (an iterative/cyclical process) |

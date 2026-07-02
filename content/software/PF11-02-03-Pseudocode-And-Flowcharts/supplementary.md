@@ -131,3 +131,9 @@ assert borrow_decision(True,  True)  == "Denied: return your overdue books first
 assert borrow_decision(False, False) == "Denied: book is currently checked out"
 print("All borrow_decision assertions passed.")
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| A-E-F | Accumulator · Extreme · Flag | Kinds of variable that store data across an algorithm |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

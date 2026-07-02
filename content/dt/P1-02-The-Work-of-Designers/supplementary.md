@@ -88,3 +88,16 @@ Q4 (5 marks) — Analyse collaboration in the design process, referring to two d
   on a mural, bringing in the right person when needed. Analyse: pooling specialised skills and
   clear roles produces a better result than working alone. Name TWO real designers.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| AI | Artificial Intelligence | An emerging technology |
+| AR | Augmented Reality | An emerging design field (AR/VR design) |
+| CNC | Computer Numerical Control | The computer control of machine tools to (repetitively) manufacture complex parts for a product |
+| **DRIPER** | Define, Research, Ideate, Produce, Evaluate, Refine | The six cyclic stages of the design process (an iterative/cyclical process) |
+| HSC | Higher School Certificate | The NSW senior-secondary credential and its external examination |
+| UI | User Interface | The on-screen controls/layout a user interacts with |
+| UX | User Experience | The overall experience of using a product (UX design) |
+| VR | Virtual Reality | An emerging design field (AR/VR design) |

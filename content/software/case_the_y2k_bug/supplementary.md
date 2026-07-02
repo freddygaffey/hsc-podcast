@@ -83,3 +83,8 @@ FIX STYLES: EXPANSION (store the full year -- the real fix) vs WINDOWING (reinte
 pivot -- a cheap stopgap that just moves the problem to a future pivot year). CASHES INTO: PF11 3.1, 3.2,
 4.6. A companion to case_the_mariner_1 (a tiny representational/coding slip with outsized cost).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| Y2K | Year 2000 (bug) | The bug from storing years as two digits, feared to break systems in 2000 |

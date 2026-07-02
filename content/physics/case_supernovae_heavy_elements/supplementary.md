@@ -171,3 +171,12 @@ $$
 (Compare with iron-56 at \(8.79\ \mathrm{MeV}\) per nucleon: He-4 is still climbing toward the iron peak, which is exactly why further fusion below iron keeps releasing energy.)
 
 Interpretation: energy is RELEASED because He-4 sits higher on the binding-energy-per-nucleon curve than free nucleons. The same logic, run in reverse, shows that fusing iron into heavier nuclei would REQUIRE energy input — which is why no star can fuse past iron, and why the heavy elements need a supernova or neutron star merger.
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| AGB | Asymptotic giant branch | Late, luminous phase of low-to-intermediate-mass stars where slow (s-process) neutron capture builds heavy elements. |
+| NESA | NSW Education Standards Authority | The body that sets the NSW syllabus and HSC examinations. |
+| SI | International System of Units (Système International d'Unités) | The standard metric system of units (metre, kilogram, second, ampere, …). |
+

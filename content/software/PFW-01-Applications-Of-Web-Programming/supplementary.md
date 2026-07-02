@@ -116,3 +116,13 @@ list.appendChild(li);
 // XSS is taught properly in Secure Software Architecture — this listing just shows
 // where the door is. The more interactive the site, the more such doors exist.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| HTML | HyperText Markup Language | The language that structures the content of web pages |
+| I-E-P | Interactive website · E-commerce · Progressive web app | Applications of web programming |
+| JSON | JavaScript Object Notation | A lightweight, human-readable text format for exchanging structured data |
+| MISO | Manifest · Installable · Service worker · Offline | The four capabilities that distinguish a Progressive Web App from an ordinary website |
+| PWA | Progressive Web App | A website that can install, work offline and behave like a native app |
+| XSS | Cross-Site Scripting | An attack injecting malicious scripts into pages viewed by other users |

@@ -70,3 +70,11 @@ $ npm audit
 # dependencies, the CMS core, and every plugin patched; remove abandoned/unmaintained ones.
 # (Supply-chain security is taught in full in Secure Software Architecture.)
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CMS | Content Management System | Software for creating and managing website content without hand-coding each page |
+| GPL | GNU General Public License | A copyleft open-source licence requiring derivative works to stay open |
+| L-C-C | Licence · Community · Contribution | Pillars to weigh when choosing open-source software |
+| MIT | Massachusetts Institute of Technology | In licensing, the MIT License — a short, permissive open-source licence; also the US university it is named after |

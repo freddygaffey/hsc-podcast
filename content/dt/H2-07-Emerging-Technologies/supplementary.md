@@ -85,3 +85,14 @@ Q4 (3 marks) — How do emerging technologies impact innovation?
   Enable previously impossible products + better design/production tools; each tech enables more. E.g.
   3D printing/injection moulding enabled the Flow Hive. Driver AND enabler of innovation.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| AI | Artificial Intelligence | An emerging technology |
+| IoT | Internet of Things | Networked smart devices (an emerging technology) |
+| IP | Intellectual Property | Ownership of a product of the intellect with commercial value — copyright, patents, business methods and industrial processes |
+| LCA | Life Cycle Analysis | Evaluation of the resources and impacts across a product's whole life (cradle-to-grave); one of the factors affecting design |
+| **LESEE** | Legal, Ethical, Social, Economic, Ecological | The implications to appraise for a new/emerging technology (H6.2) |
+| **SIRRI** | Sustainable technologies, Intellectual-property protection, designer Rights & responsibilities, Responsibilities to society, Impact on Australian society | The ethical & environmental issues a designer must weigh (H2.2) |

@@ -70,3 +70,10 @@ MIXING (insulated): energy conserved → HEAT LOST by hot = HEAT GAINED by cold
    m_hot c_hot ΔT_hot = m_cold c_cold ΔT_cold  → solve for the common final temperature.
    The substance with the SMALLER m·c changes temperature MORE.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| KE | Kinetic energy | The energy of a body due to its motion, ½mv². |
+

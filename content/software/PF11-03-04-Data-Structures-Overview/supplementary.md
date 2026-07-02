@@ -143,3 +143,9 @@ Match the SHAPE of the structure to the SHAPE of the data
 Note: STACKS and HASH TABLES are also data structures, but they are implemented in
 Chapter 4 (lesson 04-02), not part of this dot-point.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CSV | Comma-Separated Values | A plain-text file format storing tabular data as comma-delimited rows |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

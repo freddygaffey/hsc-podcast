@@ -82,3 +82,11 @@ CONTRAST: case_the_737_max_mcas + case_therac_25 show autonomy/control done WRON
 safety, untested failure paths). DARPA shows it done RIGHT (redundant sensing, iterate-and-test, fail safely).
 CASHED IN BY: PM11 9.2 (autonomous control), 10.1 (simulation/prototypes); bridges to Year-12 AI.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AI | Artificial Intelligence | Software that performs tasks normally needing human intelligence |
+| DARPA | Defense Advanced Research Projects Agency | The US defence R&D agency (ran the autonomous-vehicle Grand Challenge) |
+| S-C-F | Safe · Cheap · Fast | Why to simulate before you build |
+| S-D-A-F | Sensing · Decision logic · Adapt/self-correct · Fail-safe | The four features of an autonomous control algorithm |

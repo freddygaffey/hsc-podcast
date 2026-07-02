@@ -96,3 +96,11 @@ Q5 (3 marks) — Why use several forms of communication in one project?
   (manufacturer, dimensions), renders/models (client, look), written spec (technical record).
   Combining/experimenting ensures each message meets clarity/appropriateness/ease for its audience.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **CAE** | Clarity, Appropriateness, Ease of interpretation | Criteria for evaluating/justifying a communication method (P5.2) |
+| **SMMR** | Sender, Message, Medium, Receiver | The elements of the communication process, plus feedback (P5.2) |
+| **V-WGVA** | Verbal, Written, Graphical, Visual, Audio | The forms of communication a designer can use (P5.2) |

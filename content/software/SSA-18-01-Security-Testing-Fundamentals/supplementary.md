@@ -98,3 +98,17 @@ BEGIN SurviveIncident()
     // All of the above serves BUSINESS CONTINUITY: keep critical functions running throughout.
 END SurviveIncident
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CR | Code Review | Manual inspection of source code by other developers to catch defects |
+| DAST | Dynamic Application Security Testing | Testing a running application from the outside for security flaws ("doing") |
+| DB | Database | An organised, queryable store of persistent data |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| PEN | Penetration test | An authorised simulated attack that chains real exploits to prove impact |
+| SAST | Static Application Security Testing | Analysing source code for security flaws without running it ("source") |
+| SQL | Structured Query Language | The standard language for querying and manipulating relational databases |
+| SQLi | SQL injection | An attack that injects malicious SQL through unvalidated input |
+| VSE | Validate · Sanitise · handle Errors | How to treat untrusted input at a trust boundary (server-side) |
+| XSS | Cross-Site Scripting | An attack injecting malicious scripts into pages viewed by other users |

@@ -145,3 +145,17 @@ KILLED BY → Maxwell: an orbiting (accelerating) electron must radiate, spiral 
 **5. Matter waves** (de Broglie \(\lambda = h/p\); Davisson–Germer & G.P. Thomson electron diffraction) ⇒ only orbits whose circumference = a whole number of wavelengths form a standing wave → THIS is why orbits are quantised (the mechanism Bohr only asserted). (Marks are in the STANDING-WAVE argument, not in quoting \(\lambda = h/p\).) Then Schrödinger (orbitals/probability) + Heisenberg (uncertainty).
 
 UNDERNEATH: nucleons are made of quarks (Standard Model, Listing 3).
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| "Can Plum Give Birth, Wonderful" | Cathode(-ray tube), Plum(-pudding), Gold(-foil/nucleus), Bohr, Waves | The five-stage sequence of atomic models. |
+| CNO | Carbon–nitrogen–oxygen cycle | Hydrogen-to-helium fusion cycle that uses carbon, nitrogen and oxygen as catalysts; dominant in stars hotter and more massive than the Sun. |
+| EM | Electromagnetic | Describing waves or radiation made of oscillating electric and magnetic fields (the EM spectrum). |
+| "Fast Cars Make Crashes" | Fuel, Control rods, Moderator, Coolant | The four main components of a nuclear reactor (provide / absorb / slow / cool). |
+| OBAFGKM ("Oh Be A Fine Girl/Guy, Kiss Me") | O, B, A, F, G, K, M | The stellar spectral classes in order of decreasing surface temperature (hottest O to coolest M). |
+| "Pair, Plus, Produce" | Pair (p + p → ²H), Plus a proton (→ ³He), Produce helium (³He + ³He → ⁴He) | The steps of the proton–proton fusion chain. |
+| "Some Energetic Wizards Govern" | Strong, Electromagnetic, Weak, Gravity | The four fundamental forces. |
+| "Up Down, Cute Strange Top Bottoms" | Up, Down, Charm, Strange, Top, Bottom | The six quarks. |
+

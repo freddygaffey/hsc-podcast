@@ -108,3 +108,9 @@ INTEGRATING S-A-E FOR A TASK (order + timing matter):
 
 SAFETY: a shared stop()/emergency-stop across the interface halts every device together (from 9.4).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| OOP | Object-Oriented Programming | A paradigm structuring software around objects that bundle data and behaviour |
+| S-A-E | Sensor · Actuator · End-effector | The mechatronic device trio (input, output, tool) |

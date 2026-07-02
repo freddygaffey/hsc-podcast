@@ -71,3 +71,15 @@ BEGIN AuthenticateUser
     ENDIF
 END AuthenticateUser
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| DB | Database | An organised, queryable store of persistent data |
+| HTTPS | HyperText Transfer Protocol Secure | HTTP encrypted with TLS for confidentiality and integrity in transit |
+| MFA | Multi-Factor Authentication | Requiring two or more independent factors to verify identity |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| RBAC | Role-Based Access Control | Granting permissions to roles, then assigning users to those roles |
+| SDLC | Software Development Life Cycle | The staged process (requirements → design → build → test → maintain) for building software |
+| STRIDE | Spoofing · Tampering · Repudiation · Information disclosure · Denial of service · Elevation of privilege | The six threat categories used in threat modelling |
+| TLS | Transport Layer Security | The protocol that encrypts and authenticates data in transit (secures HTTPS) |

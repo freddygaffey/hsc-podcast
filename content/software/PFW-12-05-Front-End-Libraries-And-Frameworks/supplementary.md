@@ -70,3 +70,11 @@ BUILD vs BUY — the decision rule the narration uses:
        performance needed, overhead unjustified  ->  exact fit, no bloat, but slower.
   Cost to always weigh: bundle size, learning curve, lock-in.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CSS | Cascading Style Sheets | The language that styles and lays out HTML content |
+| F-T-C | Frameworks · Template engines · predesigned CSS Classes | Front-end tools and libraries |
+| HTML | HyperText Markup Language | The language that structures the content of web pages |
+| UI | User Interface | The parts of a system a user directly interacts with |

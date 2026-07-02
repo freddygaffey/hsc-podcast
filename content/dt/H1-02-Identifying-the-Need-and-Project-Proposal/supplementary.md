@@ -93,3 +93,11 @@ Q4 (3 marks) — Why must success criteria be measurable?
   They're evaluated against in phase 3 (proposal<->evaluation bookends). Measurable (e.g. "supports
   100 kg", "< $80") -> objective judgement; vague ("good quality") -> can't be evaluated.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| MDP | Major Design Project | The HSC project — a product, system or environment plus its design folio — that the course is built around |
+| **NCC** | Need, Constraints/parameters, Criteria for success | The parts of a design brief (P4.1) |
+| **NICe** | Need, areas of Investigation, Criteria to evaluate success | The three components of the major design project proposal (H4.1) |

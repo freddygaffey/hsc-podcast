@@ -99,3 +99,10 @@ Q4 (3 marks) — Why is experimentation important in selecting materials?
   suitability for the function; informs & justifies the final selection and reduces risk of failure
   later. (Links to the research & evaluate stages of the design process.)
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **CPA FACE** | Characteristics, Properties, Availability, Function, Appearance, Cost, Environmental | Criteria for selecting a material (P4.2) |
+| LCA | Life Cycle Analysis | Evaluation of the resources and impacts across a product's whole life (cradle-to-grave); one of the factors affecting design |

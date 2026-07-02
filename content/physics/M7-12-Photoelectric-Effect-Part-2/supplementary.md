@@ -163,3 +163,15 @@ People & dates (get these right):
 | Digital image sensors (CCD/CMOS) | Photons free electrons per pixel → charge read out as an image |
 | Automatic doors / light switches | Light beam frees electrons; breaking the beam changes the current → triggers the switch |
 | Night-vision devices | Photocathode releases electrons that are amplified to brighten a dim image |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| CCD | Charge-coupled device | Digital image sensor that converts light into electric charge; a modern application of the photoelectric effect. |
+| CMOS | Complementary metal-oxide-semiconductor | Low-power digital image-sensor technology used in cameras (alternative to the CCD). |
+| DENF | no Delay, Energy from frequency, Number from intensity, threshold Frequency | The four photoelectric-effect observations explained by Einstein's photon model. |
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+| NSW | New South Wales | The Australian state whose Education Standards Authority sets this syllabus. |
+| UV | Ultraviolet | EM radiation with wavelength shorter than visible violet light. |
+

@@ -93,3 +93,10 @@ Q4 (2 marks) — Distinguish open vs closed brief.
   Open = general need, broad freedom (more creativity, less direction). Closed = tightly specified
   parameters/criteria (more direction, less creativity). Trade-off: freedom vs direction.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **NCC** | Need, Constraints/parameters, Criteria for success | The parts of a design brief (P4.1) |
+| **SCAMPER** | Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse/Rearrange | Seven prompts to generate ideas by transforming an existing design (P3.1) |

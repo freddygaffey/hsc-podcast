@@ -161,3 +161,12 @@ Mass–energy equivalence: \(E = mc^{2}\). Mass→energy shortcut: \(1\ \mathrm{
 | Predicted by | Paul Dirac (1928–1931), from negative-energy solutions of his relativistic quantum equation |
 | Discovered by | Carl Anderson (1932–1933), cosmic-ray track curving opposite to an electron in a cloud chamber |
 | Real PET isotopes | Fluorine-18 (≈110 min half-life), Carbon-11, Nitrogen-13, Oxygen-15 |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| FDG | Fluorodeoxyglucose | A glucose analogue labelled with a positron-emitting isotope (fluorine-18) used as the tracer in PET scans. |
+| PET | Positron emission tomography | Medical imaging technique that uses positron–electron annihilation gamma rays to map metabolic activity. |
+| TRACER | Tracer injected, Reaches active tissue, Annihilation, Coincidence detection, Establish line of response, Reconstruct image | The PET imaging chain, step by step. |
+

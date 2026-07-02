@@ -167,3 +167,9 @@ def count_members(node):
 assert count_members(family) == 6
 print("Tree assertions passed.")
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| LIFO | Last In · First Out | Access order of a stack: the most recently added item is removed first |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

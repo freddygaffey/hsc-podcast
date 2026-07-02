@@ -186,3 +186,12 @@ $$
 $$
 
 Mass numbers balance: \(235 + 1 = 141 + 92 + 3(1) = 236\). Atomic numbers balance: \(92 + 0 = 56 + 36 + 0 = 92\). (Many fragment pairs are possible — e.g. La-148 + Br-85 + 3n.)
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+| RBMK | High-power channel-type reactor (Reaktor Bolshoy Moshchnosti Kanalny) | The Soviet graphite-moderated reactor design used at Chernobyl; it had a positive void coefficient. |
+| TNT | Trinitrotoluene | A chemical explosive used as a reference unit for comparing released energy. |
+

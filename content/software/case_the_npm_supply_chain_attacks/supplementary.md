@@ -105,3 +105,13 @@ BEGIN SafeDependencyUpdate
     NEXT dependency
 END SafeDependencyUpdate
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| 2FA | Two-Factor Authentication | Requiring two independent pieces of evidence to log in (e.g. password plus a code) |
+| API | Application Programming Interface | A defined contract that lets one piece of software request services from another |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| UI | User Interface | The parts of a system a user directly interacts with |
+| USD | United States Dollars | The currency unit used in cost/impact figures |
+| UTC | Coordinated Universal Time | The primary global time standard, used for unambiguous timestamps |

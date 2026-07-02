@@ -184,3 +184,9 @@ dan = {"missing_prereqs": [], "clashes": [], "enrolled": ["CS101"]}
 assert enroll(dan, "CS101", set()) == "Cannot enroll: Already enrolled"
 print("All enrolment-core assertions passed.")
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| DB | Database | An organised, queryable store of persistent data |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

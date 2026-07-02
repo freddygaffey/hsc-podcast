@@ -115,3 +115,10 @@ print("train score:", high.score(X_train, y_train))   # ~ very high (memorised)
 print("test  score:", high.score(X_test,  y_test))    # ~ much lower  -> OVERFITTING
 # A big train>>test gap = overfitting. Fix: lower the degree, get more data, regularise.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| L-L-K | Linear regression · Logistic regression · K-nearest neighbour | Core machine-learning algorithm types |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| OOP | Object-Oriented Programming | A paradigm structuring software around objects that bundle data and behaviour |

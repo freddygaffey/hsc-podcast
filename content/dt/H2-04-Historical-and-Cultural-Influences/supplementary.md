@@ -80,3 +80,10 @@ Q4 (2 marks) — Why acknowledge cultural influences responsibly?
   Cultural material (esp. Indigenous) has deep significance; using it without permission/credit =
   appropriation (disrespectful, ethically/legally wrong). Acknowledge = sensitivity + credit.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **C-CWT** | Changing social trends, Cultural diversity, changing nature of Work, Technological change | Historical & cultural influences on design and production (H2.1) |
+| **TEMPLE** | Timing, Emerging technologies, Marketing strategies, Political factors, Legal & economic factors, Era (historical/cultural) | The factors that impact on the success of innovation (H3.1) |

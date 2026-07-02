@@ -140,3 +140,10 @@ V_{\text{net}} = V_{\text{supply}} - \varepsilon_{\text{back}} = 240 - 237 = 3\ 
 $$
 
 COMMENT: \(48\ \mathrm{A} / 0.6\ \mathrm{A} = 80\times\) larger at start-up. The surge exists because there is no back-EMF until the coil moves; it falls sharply once the motor speeds up and back-EMF builds, reducing the net voltage and the current.
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| EMF | Electromotive force | The energy supplied per unit charge by a source (unit: volt); it is a voltage, not a force — the name is a misnomer. |
+

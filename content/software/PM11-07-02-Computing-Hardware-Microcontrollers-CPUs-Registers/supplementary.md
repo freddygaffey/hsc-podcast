@@ -123,3 +123,8 @@ THE HEARTBEAT:  FETCH -> DECODE -> EXECUTE  (F-D-E), millions/billions of times 
 WHY IT SHAPES YOUR CODE: little memory + no OS + a fixed clock  =>  keep code lean, avoid heavy
 libraries, mind timing. Tiny per-instruction costs matter in a real-time control loop.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CPU | Central Processing Unit | The processor that executes program instructions |

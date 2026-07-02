@@ -62,3 +62,11 @@ BEGIN ResolveName
     RETURN answer
 END ResolveName
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| DDoS | Distributed Denial of Service | Overwhelming a service with traffic from many machines so it becomes unavailable |
+| DNS | Domain Name System | The system that translates human-readable domain names into IP addresses |
+| IoT | Internet of Things | Everyday physical devices (cameras, sensors) connected to the internet |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

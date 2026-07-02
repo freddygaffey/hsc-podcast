@@ -192,3 +192,11 @@ Judgement: \(15°\) is NOT small \(\to\) small-angle approximation invalid; use 
 | Central maximum                  | \(m = 0\) (white in white light)           |
 | Dispersion order (grating)       | blue/violet nearest centre → red furthest |
 | Dispersion order (prism, contrast)| red least deviated → blue/violet most |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+| SI | International System of Units (Système International d'Unités) | The standard metric system of units (metre, kilogram, second, ampere, …). |
+

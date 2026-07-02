@@ -161,3 +161,12 @@ In Maxwell's day (1860s) only VISIBLE LIGHT and INFRARED had been observed. The 
 | Historical prediction of c from permittivity and permeability | Listing 1; constants measured in "jars and coils" |
 | Spark-gap oscillator and loop antenna verified the speed (Hertz) | Transmitter, receiver, standing-wave method, \(v = f\lambda\) |
 | Reflection, refraction, diffraction, polarisation = same as light | Hertz reproduced every property of light |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| EM | Electromagnetic | Describing waves or radiation made of oscillating electric and magnetic fields (the EM spectrum). |
+| NESA | NSW Education Standards Authority | The body that sets the NSW syllabus and HSC examinations. |
+| VHF | Very high frequency | The 30–300 MHz radio band (Hertz's spark-gap waves fell in this range). |
+

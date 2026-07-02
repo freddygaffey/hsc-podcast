@@ -105,3 +105,14 @@ DON'T WRECK THE     Short/long-term Environmental consequences ·  (P1-05)
 
 Returns in Year 12 / H1.1 to critically analyse the SUCCESS and FAILURE of designs.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **FFA EQ NEW LOAd** | Function, Needs, Appropriateness, Aesthetics, Ergonomics, Finance, Work health & safety, Quality, Environmental consequences, Obsolescence, Life cycle analysis | The eleven factors affecting designing and producing (P1.1 / H1.1) |
+| HSC | Higher School Certificate | The NSW senior-secondary credential and its external examination |
+| LCA | Life Cycle Analysis | Evaluation of the resources and impacts across a product's whole life (cradle-to-grave); one of the factors affecting design |
+| NSW | New South Wales | The Australian state (e.g. the NSW WHS Act 2011) |
+| R&D | Research and Development | The investigative/experimental work of developing a product |
+| WHS | Work Health and Safety | Rights & responsibilities for a safe workplace; the WHS Act 2011 sets the framework of duties workplaces must comply with |

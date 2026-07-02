@@ -67,3 +67,8 @@ do_nothing, invest = expected_cost(
 # invest      ≈ $172,875  (and you also GAIN PIP-PB: trust, productivity, interactivity)
 # The dollar comparison alone roughly breaks even — the PIP-PB benefits are the real return.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| PIP-PB | Products/services · Influence on future development · Practices · Productivity · Business | The organisational benefits an enterprise gains from a strong security program |

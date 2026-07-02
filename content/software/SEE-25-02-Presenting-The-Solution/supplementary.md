@@ -83,3 +83,13 @@ Honest Q&A + stated limits      credibility > appearing to know everything
 LINKS: I-F-N "Involve+empower the client" (24-05); forward to the evaluation report (26-03);
 slide minimalism = usability heuristics (25-06). Outcome SE-12-09 (manage + document).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CSV | Comma-Separated Values | A plain-text file format storing tabular data as comma-delimited rows |
+| DB | Database | An organised, queryable store of persistent data |
+| I-F-N | Involve (and empower) · Feedback · Negotiate | Principles for communicating effectively with a client during a project |
+| P-S-D-B-N | Problem · Solution · Demo · Benefits · Next steps | The arc of a solution presentation |
+| ROI | Return on Investment | The financial gain from an investment relative to its cost |
+| T-B-E-D | Technical · Business · End-users · Decision-makers | The presentation audiences |

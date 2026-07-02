@@ -64,3 +64,9 @@ BEGIN RansomwareRecovery        // business continuity / disaster recovery
     ENDIF
 END RansomwareRecovery
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| SMB | Server Message Block | A network file-sharing protocol (exploited by WannaCry) |

@@ -178,3 +178,12 @@ Overall:
 
 Mass-energy released per reaction follows E = mc^2, where the products are
 slightly less massive than the four protons that went in (the mass defect).
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| CNO | Carbon–nitrogen–oxygen cycle | Hydrogen-to-helium fusion cycle that uses carbon, nitrogen and oxygen as catalysts; dominant in stars hotter and more massive than the Sun. |
+| OBAFGKM ("Oh Be A Fine Girl/Guy, Kiss Me") | O, B, A, F, G, K, M | The stellar spectral classes in order of decreasing surface temperature (hottest O to coolest M). |
+| UV | Ultraviolet | EM radiation with wavelength shorter than visible violet light. |
+

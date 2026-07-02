@@ -120,3 +120,11 @@ BEGIN SecureAction(sessionToken, action, target, newValue, clientIP)
     DISPLAY "action completed"
 END SecureAction
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AAA | Authentication · Authorisation · Accountability | The three access-security pillars: prove who you are, check what you may do, and keep a traceable record |
+| CIA | Confidentiality · Integrity · Availability | The three core information-security properties (the security triad) |
+| HMAC | Hash-based Message Authentication Code | A keyed hash proving a message's integrity and authenticity |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

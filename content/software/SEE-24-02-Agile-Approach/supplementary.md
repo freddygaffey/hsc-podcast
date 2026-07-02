@@ -73,3 +73,8 @@ CEREMONIES (P-S-R-R):
 TRAP: "Agile = no planning / no documentation" is FALSE. Agile plans EVERY sprint and
 documents lightly + continuously. "Working software OVER comprehensive docs" ≠ "no docs".
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| P-S-R-R | Plan · Standup · Review (product) · Retro (process) | The Agile ceremonies |

@@ -196,3 +196,14 @@ Same device, opposite directions; both use the motor effect / electromagnetic in
 | Force per bar | F | newton (N) |
 | Motor energy transform | — | electrical → rotational kinetic (mechanical) |
 | Generator energy transform | — | mechanical kinetic → electrical |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| AC | Alternating current | Electric current that periodically reverses direction (mains supply, AC generator output). |
+| DC | Direct current | Electric current that flows in one direction only (from a battery, or a DC generator/motor). |
+| EMF | Electromotive force | The energy supplied per unit charge by a source (unit: volt); it is a voltage, not a force — the name is a misnomer. |
+| KE | Kinetic energy | The energy of a body due to its motion, ½mv². |
+| SI | International System of Units (Système International d'Unités) | The standard metric system of units (metre, kilogram, second, ampere, …). |
+

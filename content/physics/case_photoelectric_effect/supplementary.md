@@ -207,3 +207,12 @@ ANSWERS
 - (b) \(W = 1.67\ \mathrm{eV} = 2.67\times10^{-19}\ \mathrm{J}\)
 - (c) \(f_0 = 4.03\times10^{14}\ \mathrm{Hz}\); \(\lambda_{\max} = 740\ \mathrm{nm}\)
 - (d) \(V_s \approx 1.5\ \mathrm{V}\)
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+| NESA | NSW Education Standards Authority | The body that sets the NSW syllabus and HSC examinations. |
+| UV | Ultraviolet | EM radiation with wavelength shorter than visible violet light. |
+

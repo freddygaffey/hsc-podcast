@@ -85,3 +85,10 @@ Each fission releases 2–3 neutrons. Let \(k\) = average number of those neutro
 CRITICAL MASS: the minimum mass of fissile material for a self-sustaining chain. Below it, too many neutrons escape the surface before causing fission → chain dies. At/above it → chain sustains (reactor: just critical; bomb: supercritical).
 
 Same single-fission physics in both; only the NEUTRON ECONOMY \((k)\) differs.
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| "Fast Cars Make Crashes" | Fuel, Control rods, Moderator, Coolant | The four main components of a nuclear reactor (provide / absorb / slow / cool). |
+

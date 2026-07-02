@@ -86,3 +86,23 @@ CASES (both failed in DEFINING/PLANNING, before code was the problem):
   Denver airport     — unbounded scope + infeasible (TECO) + direct cut-over (worst DiP-PP)
   Healthcare.gov     — waterfall + fixed deadline + frozen requirements + late/no load testing
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AAA | Authentication · Authorisation · Accountability | The three access-security pillars: prove who you are, check what you may do, and keep a traceable record |
+| B-M-S | Brainstorm · Mind-map · Storyboard | Ideation techniques for generating design ideas |
+| C-U-P-S | Correctness · Usability · Performance · Security | Software quality criteria |
+| CIA | Confidentiality · Integrity · Availability | The three core information-security properties (the security triad) |
+| DiP-PP | Direct · Phased · Parallel · Pilot | The changeover / implementation (installation) methods for deploying a new system |
+| I-F-N | Involve (and empower) · Feedback · Negotiate | Principles for communicating effectively with a client during a project |
+| M-A-I | Measure · Audit · Improve | The continuous, outcome-based security-evaluation loop |
+| P-S-R-R | Plan · Standup · Review (product) · Retro (process) | The Agile ceremonies |
+| PABT | Privacy · Accessibility · Bias · Transparency | Checklist of the main ethical issues to weigh in an automated/AI system |
+| PER | Proactive · Embed · Respect | The privacy-by-design principles (act ahead of harm, build privacy in, respect the user) |
+| POUR | Perceivable · Operable · Understandable · Robust | The four WCAG accessibility principles for web content |
+| QA | Quality Assurance | The processes that build quality into a product, not just test for defects |
+| S-H-L-M | Sampling · Historical · Labeler · Measurement | The sources of bias in machine learning |
+| TECO | Technical · Economic · Cost-and-schedule · Operational | The dimensions weighed in a feasibility study before committing to a project |
+| V-D-Q | Various Views · Delegate by expertise · Quality | The benefits of collaborating in a development team rather than working solo |
+| WCAG | Web Content Accessibility Guidelines | The W3C standard defining how to make web content accessible (see POUR) |

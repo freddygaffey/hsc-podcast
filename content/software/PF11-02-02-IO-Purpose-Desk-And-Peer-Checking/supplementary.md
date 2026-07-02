@@ -112,3 +112,9 @@ PEER-CHECK CHECKLIST
 This is just I-O-P (Inputs, Outputs, Purpose) + logic + edge cases, applied to another
 person's work — the same analysis skills, used as a reviewer with fresh eyes.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| I-O-P | Inputs · Outputs · Purpose | What to identify when analysing a written algorithm |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

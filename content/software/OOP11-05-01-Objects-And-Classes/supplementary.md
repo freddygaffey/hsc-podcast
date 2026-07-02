@@ -88,3 +88,9 @@ BEGIN SendMessage(receiver, messageName, arguments)
     RETURN result                                      // R — Return to the caller
 END SendMessage
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| L-B-P-E-R | Lookup · Bind self · Pass params · Execute · Return | The steps of a method/subroutine call |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

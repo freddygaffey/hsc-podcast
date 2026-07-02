@@ -81,3 +81,14 @@ body        { font-family: var(--font-sans); color: var(--color-text); }
   <track kind="captions" src="demo.en.vtt" srclang="en" label="English">  <!-- captions -->
 </video>
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CSS | Cascading Style Sheets | The language that styles and lays out HTML content |
+| MISO | Manifest · Installable · Service worker · Offline | The four capabilities that distinguish a Progressive Web App from an ordinary website |
+| POUR | Perceivable · Operable · Understandable · Robust | The four WCAG accessibility principles for web content |
+| PWA | Progressive Web App | A website that can install, work offline and behave like a native app |
+| UI | User Interface | The parts of a system a user directly interacts with |
+| UX | User Experience | The overall quality of a user's interaction with a product |
+| WCAG | Web Content Accessibility Guidelines | The W3C standard defining how to make web content accessible (see POUR) |

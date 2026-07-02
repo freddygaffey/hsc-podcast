@@ -81,3 +81,11 @@ Frame 3  EVENING, 8:00pm
 Pain point caught EARLY (cheap to fix): if the reminder fired the night before, the student would
 feel ambushed -> design rule: remind at 2 days, in the morning. Storyboarding = UX on paper.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| B-M-S | Brainstorm · Mind-map · Storyboard | Ideation techniques for generating design ideas |
+| C-T-I-M | Code generation · Testing and debugging · Installation · Maintenance | What a build toolkit supports |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| UX | User Experience | The overall quality of a user's interaction with a product |

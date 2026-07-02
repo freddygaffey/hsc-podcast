@@ -10,6 +10,8 @@ script: script.md
 The read-along reference for this episode. Nothing here is spoken in the audio — it reinforces
 the stages, the cyclic nature, the worked example and the model answers from the narration.
 
+![The design process as an interconnected web of activities — from defining the problem and researching, through prototyping and revising, to production and evaluation](content/dt/P1-03-The-Design-Process/design-process.jpg)
+
 ### Listing 1 — DRIPER: the six stages of the design process
 | Stage | Name | What happens |
 |---|---|---|
@@ -106,3 +108,12 @@ Q4 (4 marks) — Compare the design process in industrial vs domestic settings.
   failure). Domestic: individual, small scale, informal, little documentation. Only scale &
   formality change, not the process.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **DCIC** | Domestic, Community, Industrial, Commercial | The four settings in which design and production happen (P2.1) |
+| **DRIPER** | Define, Research, Ideate, Produce, Evaluate, Refine | The six cyclic stages of the design process (an iterative/cyclical process) |
+| MDP | Major Design Project | The HSC project — a product, system or environment plus its design folio — that the course is built around |
+| **SCAMPER** | Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse/Rearrange | Seven prompts to generate ideas by transforming an existing design (P3.1) |

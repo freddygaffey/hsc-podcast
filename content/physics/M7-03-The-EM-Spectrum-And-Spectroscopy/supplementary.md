@@ -147,3 +147,15 @@ with \(h\) = Planck constant \(= 6.63 \times 10^{-34}\ \mathrm{J\,s}\); \(1\ \ma
 | Ångström | \(1\ \text{Å}\) | \(10^{-10}\ \mathrm{m}\) |
 | Incandescent tungsten filament | T | ~3000 K (high melting point) |
 | Absolute zero | 0 K | −273.15 °C (quote stellar temps in kelvin) |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| EM | Electromagnetic | Describing waves or radiation made of oscillating electric and magnetic fields (the EM spectrum). |
+| IR | Infrared | EM radiation with wavelength longer than visible red light; felt as heat. |
+| "Raging Martians Invaded Venus Using X-ray Guns" | Radio, Microwave, Infrared, Visible, Ultraviolet, X-ray, Gamma | The EM spectrum in order of increasing frequency. |
+| ROYGBIV ("ROY G BIV") | Red, Orange, Yellow, Green, Blue, Indigo, Violet | The colours of the visible spectrum in order of decreasing wavelength. |
+| U-X-G | Ultraviolet, X-ray, Gamma | The three ionising bands at the high-frequency end of the EM spectrum. |
+| UV | Ultraviolet | EM radiation with wavelength shorter than visible violet light. |
+

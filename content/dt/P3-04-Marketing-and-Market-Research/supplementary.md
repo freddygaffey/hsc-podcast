@@ -95,3 +95,11 @@ Q4 (2 marks) — The Five Ps.
   Product, Price, Promotion, Place, Packaging. (Analysing competitors across them reveals where a
   new design can do better = an opportunity.)
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| ABS | Australian Bureau of Statistics | A source of secondary (statistical) research data |
+| CSIRO | Commonwealth Scientific and Industrial Research Organisation | Australia's national science agency (a research/funding agency) |
+| **Five Ps** | Product, Price, Promotion, Place, Packaging | What to research about competitors / the marketing environment (P4.1) |

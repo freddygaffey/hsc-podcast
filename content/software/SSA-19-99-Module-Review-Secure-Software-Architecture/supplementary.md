@@ -94,3 +94,43 @@ SSA = make software TRUSTWORTHY  →  SA = make software SMART (AI/ML + automati
 - ACCOUNTABILITY: CIA-AAA's "who did what" becomes "who is responsible when the algorithm gets it wrong".
 NEXT EPISODE: SA-20-01 — what AI actually is, vs ML, and where RPA/BPA fit. New hooks; CIA-AAA/PER/Ed-Picid persist.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| A-A-R-T | Authenticate · Authorise · Rate-limit · Transport-secure | Four rules for securing an API endpoint |
+| AAA | Authentication · Authorisation · Accountability | The three access-security pillars: prove who you are, check what you may do, and keep a traceable record |
+| AI | Artificial Intelligence | Software that performs tasks normally needing human intelligence |
+| B-X-I-R | Broken authentication/session · Cross-site (XSS/CSRF) · Invalid redirect · Race condition | Common web-application vulnerabilities |
+| BPA | Business Process Automation | Automating whole multi-step business workflows, not just single tasks |
+| CIA | Confidentiality · Integrity · Availability | The three core information-security properties (the security triad) |
+| CORS | Cross-Origin Resource Sharing | Browser rules controlling when a page may request resources from another origin |
+| CR | Code Review | Manual inspection of source code by other developers to catch defects |
+| CSRF | Cross-Site Request Forgery | An attack that tricks a logged-in user's browser into sending an unwanted request |
+| DAST | Dynamic Application Security Testing | Testing a running application from the outside for security flaws ("doing") |
+| E-D-P-C-I-D | Employment · Data security · Privacy · Copyright · Intellectual property · Digital disruption | Checklist ("Ed Picid") of the social, ethical and legal issues raised by software |
+| H-B-D | Harden · Breach-handle · Disaster-recover | Layered approach to security resilience and business continuity |
+| HTTP | HyperText Transfer Protocol | The request/response protocol used to transfer web resources |
+| HTTPS | HyperText Transfer Protocol Secure | HTTP encrypted with TLS for confidentiality and integrity in transit |
+| IP | Intellectual Property | Creations of the mind (code, designs, content) protected by copyright, patents and trademarks |
+| M-A-I | Measure · Audit · Improve | The continuous, outcome-based security-evaluation loop |
+| M-S-E | Memory · Session · Exception management | Resource-management concerns in secure execution |
+| MFA | Multi-Factor Authentication | Requiring two or more independent factors to verify identity |
+| ML | Machine Learning | AI systems that learn patterns from data rather than being explicitly programmed |
+| OSS | Open-Source Software | Software whose source code is publicly available and licensed for reuse |
+| PEN | Penetration test | An authorised simulated attack that chains real exploits to prove impact |
+| PER | Proactive · Embed · Respect | The privacy-by-design principles (act ahead of harm, build privacy in, respect the user) |
+| PIP-PB | Products/services · Influence on future development · Practices · Productivity · Business | The organisational benefits an enterprise gains from a strong security program |
+| RPA | Robotic Process Automation | Software 'bots' that automate repetitive, rule-based user tasks |
+| S-A-F-E | Status · Abort · Feedback · Errors | Design principles for a safe control interface |
+| SAST | Static Application Security Testing | Analysing source code for security flaws without running it ("source") |
+| SDLC | Software Development Life Cycle | The staged process (requirements → design → build → test → maintain) for building software |
+| SQL | Structured Query Language | The standard language for querying and manipulating relational databases |
+| STRIDE | Spoofing · Tampering · Repudiation · Information disclosure · Denial of service · Elevation of privilege | The six threat categories used in threat modelling |
+| TLS | Transport Layer Security | The protocol that encrypts and authenticates data in transit (secures HTTPS) |
+| TOCTOU | Time-Of-Check to Time-Of-Use | A race-condition flaw where state changes between validating and using it |
+| URL | Uniform Resource Locator | The address that identifies and locates a resource on the web |
+| V-D-Q | Various Views · Delegate by expertise · Quality | The benefits of collaborating in a development team rather than working solo |
+| VA | Vulnerability Assessment | Systematically scanning and cataloguing known weaknesses (breadth over depth) |
+| VSE | Validate · Sanitise · handle Errors | How to treat untrusted input at a trust boundary (server-side) |
+| XSS | Cross-Site Scripting | An attack injecting malicious scripts into pages viewed by other users |

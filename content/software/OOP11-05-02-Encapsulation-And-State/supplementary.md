@@ -181,3 +181,8 @@ print(circle.area)     # 78.53975  — computed on demand
 circle.radius = 3      # runs the setter, with validation
 # circle.radius = -1   # would raise ValueError — invariant enforced
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

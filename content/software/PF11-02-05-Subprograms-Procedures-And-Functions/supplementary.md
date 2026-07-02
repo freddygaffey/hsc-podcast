@@ -137,3 +137,9 @@ assert convert_grade_to_gpa("B") == 3.0
 assert display_report("Alice", 85.0, "B", 3.0) is None   # a procedure returns nothing
 print("All grade-calculator assertions passed.")
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| GPA | Grade Point Average | A numeric summary of academic grades (used as example data) |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

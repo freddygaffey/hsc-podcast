@@ -122,3 +122,8 @@ CONDITIONAL RULE (a relationship as a constraint):
   borrower_id may be set ONLY when available = False
   (a book on loan has a borrower; an available book has none).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

@@ -96,3 +96,8 @@ IDE DEBUGGER TOOLS  (the dot-point's "debugging software available in an IDE")
 HOOK: the debugger trio = BREAKPOINT (pause), STEP (walk), WATCH (watch a variable).
 A breakpoint + single-stepping + a watch is a TRACE TABLE run by the computer.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| IDE | Integrated Development Environment | An editor bundling coding, building, running and debugging tools in one program |

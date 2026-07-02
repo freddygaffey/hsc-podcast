@@ -136,3 +136,8 @@ assert summarise([85, 92, 78]) == {"average": 85.0, "highest": 92, "any_passed":
 assert summarise([10, 20, 30]) == {"average": 20.0, "highest": 30, "any_passed": False}
 print("All summarise assertions passed.")
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

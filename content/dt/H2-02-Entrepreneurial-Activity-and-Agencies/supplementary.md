@@ -82,3 +82,14 @@ Q4 (3 marks) — Why protect intellectual property?
   A patent gives exclusive rights -> prevents copying -> protects the investment & rewards. Flow Hive
   patented before crowdfunding; the powerboard inventor failed to patent & lost out. Patent first.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| CSIRO | Commonwealth Scientific and Industrial Research Organisation | Australia's national science agency (a research/funding agency) |
+| **GASP-I** | Government, Associations/standards, Sponsors/funders, Patent (IP) offices, Industry partners | The agencies that influence the success of innovation (H3.1) |
+| IP | Intellectual Property | Ownership of a product of the intellect with commercial value — copyright, patents, business methods and industrial processes |
+| NGO | Non-Governmental Organisation | A non-profit body that can set standards / build confidence |
+| R&D | Research and Development | The investigative/experimental work of developing a product |
+| **TEMPLE** | Timing, Emerging technologies, Marketing strategies, Political factors, Legal & economic factors, Era (historical/cultural) | The factors that impact on the success of innovation (H3.1) |

@@ -277,3 +277,8 @@ BEGIN FindStudent_DictionaryLookup    // O(1)
     RETURN studentDictionary.Get(targetId)
 END FindStudent_DictionaryLookup
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

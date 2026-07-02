@@ -131,3 +131,12 @@ Factors that increase torque (read straight off \(\tau = nBIA\)):
 | Connection component | Split-ring commutator (split into 2 insulated halves) | Slip rings (continuous, unsplit) |
 | Does it reverse coil current? | Yes — mechanically, every half-turn at the zero-torque point | No — the supply already reverses, so no mechanical reversal needed |
 | Why that component | Reversal must be forced because DC flows one way | Slip rings only maintain continuous connection |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| AC | Alternating current | Electric current that periodically reverses direction (mains supply, AC generator output). |
+| DC | Direct current | Electric current that flows in one direction only (from a battery, or a DC generator/motor). |
+| EMF | Electromotive force | The energy supplied per unit charge by a source (unit: volt); it is a voltage, not a force — the name is a misnomer. |
+

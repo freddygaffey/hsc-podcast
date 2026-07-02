@@ -151,3 +151,14 @@ Note the basis: per single EVENT, fission \((200\ \mathrm{MeV}) >\) fusion \((17
 | Mark Oliphant (1932) | Australian; first observed fusion in the lab (with Rutherford); discovered tritium and helium-3 |
 | Hans Bethe (1938) | Worked out the proton–proton chain and CNO cycle; Nobel Prize |
 | ITER | Magnetic-confinement tokamak; leading Earth-based fusion candidate; not yet net-positive sustained |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| CNO | Carbon–nitrogen–oxygen cycle | Hydrogen-to-helium fusion cycle that uses carbon, nitrogen and oxygen as catalysts; dominant in stars hotter and more massive than the Sun. |
+| "Fusion Feeds the Cosmos" | Fusion, Fission, Chemical | Energy released per unit mass, in descending order. |
+| ITER | International Thermonuclear Experimental Reactor | Magnetic-confinement (tokamak) fusion research project; the leading Earth-based fusion candidate. |
+| KE | Kinetic energy | The energy of a body due to its motion, ½mv². |
+| SI | International System of Units (Système International d'Unités) | The standard metric system of units (metre, kilogram, second, ampere, …). |
+

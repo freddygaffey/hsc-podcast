@@ -114,3 +114,26 @@ CH 22 — THE SIGNIFICANCE (impact, human behaviour, bias)
         Measurement. Mitigate: Diverse data, Reweight, Fairness metrics PER GROUP; accountability =
         model cards + provenance + reproducibility (the Accountability A of CIA-AAA).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AAA | Authentication · Authorisation · Accountability | The three access-security pillars: prove who you are, check what you may do, and keep a traceable record |
+| AI | Artificial Intelligence | Software that performs tasks normally needing human intelligence |
+| BPA | Business Process Automation | Automating whole multi-step business workflows, not just single tasks |
+| CI/CD | Continuous Integration / Continuous Deployment (Delivery) | Automating the build-test-deploy pipeline so changes ship frequently and safely |
+| CIA | Confidentiality · Integrity · Availability | The three core information-security properties (the security triad) |
+| D-R-F | Diverse data · Reweight · Fairness metrics | Techniques to reduce bias in datasets/models |
+| DevOps | Development and Operations | A culture/practice uniting development and operations to automate delivery |
+| F-A-I | Forecasting · Assistants · Image recognition | Common applications of machine learning |
+| L-L-K | Linear regression · Logistic regression · K-nearest neighbour | Core machine-learning algorithm types |
+| ML | Machine Learning | AI systems that learn patterns from data rather than being explicitly programmed |
+| OOP | Object-Oriented Programming | A paradigm structuring software around objects that bundle data and behaviour |
+| P-L-A | Predict · Loss · Adjust | The neural-network training loop (forward pass, loss, weight update) |
+| P-S-C-B | Psychological responses · acute Stress response · Cultural protocols · Belief systems | Human-behaviour factors influencing ML/AI design |
+| R-N-L | Root · Node · Leaf | The parts of a (decision) tree |
+| RPA | Robotic Process Automation | Software 'bots' that automate repetitive, rule-based user tasks |
+| S-H-L-M | Sampling · Historical · Labeler · Measurement | The sources of bias in machine learning |
+| S-P-E-E | Safety and access · People and skills · Efficiency and Environment · Economy and wealth | Impact areas when assessing automation |
+| S-U-S-R | Supervised · Unsupervised · Semi-supervised · Reinforcement | The machine-learning training-model types |
+| UI | User Interface | The parts of a system a user directly interacts with |

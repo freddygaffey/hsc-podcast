@@ -71,3 +71,8 @@ COLLABORATION / PM TOOLS — select + JUSTIFY per project:
                    a pull request IS a code-review/collaboration tool
                    (PFW 12-06 + Year 11; deep dive SEE 25-04)
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| TECO | Technical · Economic · Cost-and-schedule · Operational | The dimensions weighed in a feasibility study before committing to a project |

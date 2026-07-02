@@ -85,3 +85,9 @@ project-management and feasibility failure.
 ALSO: late requirement changes + too little testing time. CASHES INTO: SEE 23-01 (feasibility/boundaries),
 23-03 (implementation method/direct-risk). Companion to case_the_healthcare_gov_launch and case_the_knight_capital_glitch.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| DiP-PP | Direct · Phased · Parallel · Pilot | The changeover / implementation (installation) methods for deploying a new system |
+| TECO | Technical · Economic · Cost-and-schedule · Operational | The dimensions weighed in a feasibility study before committing to a project |

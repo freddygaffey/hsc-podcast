@@ -82,3 +82,9 @@ BEGIN ProcessStream
     DISPLAY "Dropped: ", dropped
 END ProcessStream
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| M-M-S | Mining · Metadata · Streaming | Big-data concepts |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

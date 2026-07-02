@@ -88,3 +88,10 @@ biased past and would have automated it at scale.
 CASHES INTO: SA 20-02 (supervised learning learns the labels), 22-03 (bias sources + mitigation).
 Companion to case_the_compas_recidivism (fairness of a risk-scoring model).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AI | Artificial Intelligence | Software that performs tasks normally needing human intelligence |
+| D-R-F | Diverse data · Reweight · Fairness metrics | Techniques to reduce bias in datasets/models |
+| S-H-L-M | Sampling · Historical · Labeler · Measurement | The sources of bias in machine learning |

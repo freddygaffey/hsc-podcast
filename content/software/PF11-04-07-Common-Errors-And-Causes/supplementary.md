@@ -122,3 +122,8 @@ using a never-assigned variable            RUNTIME   NameError
 range(n)  where range(1, n+1) was meant    LOGIC     off-by-one -> wrong result, no crash
 using >  where >= was meant                LOGIC     boundary handled wrong, silently
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| S-L-R | Syntax · Logic · Runtime | The categories of programming error |

@@ -79,3 +79,11 @@ Q4 (3 marks) — Relationship between time, finance & quality.
   Interdependent: a task overrun -> spend more / lower quality / extend time (deadline usually fixed).
   Good management plans realistically & catches slippage early to PROTECT quality within time & budget.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **ATF** | Action, Time, Finance | The three project-management plans (H5.1) |
+| HSC | Higher School Certificate | The NSW senior-secondary credential and its external examination |
+| MDP | Major Design Project | The HSC project — a product, system or environment plus its design folio — that the course is built around |

@@ -102,3 +102,10 @@ Q4 (3 marks) — Why is management ongoing, not a single step?
   Plans change (tasks slip, materials delayed, costs change). Skill = plan/implement/EVALUATE: monitor
   actual progress vs the Gantt & spending vs the finance plan, and adjust to stay on track.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **ATF** | Action, Time, Finance | The three project-management plans (H5.1) |
+| **RV GS-CDT D** | Resources, Values, Goals, Standards, Costs/benefits, Decisions, Tasks, Documentation | The factors affecting project management (P5.1) |

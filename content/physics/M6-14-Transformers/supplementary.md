@@ -187,3 +187,13 @@ Check: \(V\) down \(\times 40\) (\(240 \to 6\)); \(I\) up \(\times 40\) (\(75\ \
 - ✗ "a transformer changes the frequency" (no — only voltage/current change)
 - ✗ "\(V_p I_p = V_s I_s\) for a real transformer" (no — that is the IDEAL model; real: \(V_p I_p > V_s I_s\))
 - ✗ "DC gives literally zero output ever" (imprecise — no SUSTAINED output; brief pulse at switch-on/off)
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| AC | Alternating current | Electric current that periodically reverses direction (mains supply, AC generator output). |
+| DC | Direct current | Electric current that flows in one direction only (from a battery, or a DC generator/motor). |
+| EMF | Electromotive force | The energy supplied per unit charge by a source (unit: volt); it is a voltage, not a force — the name is a misnomer. |
+| FRET | incomplete Flux linkage, Resistive (I²R) heating, Eddy-current (core) losses | The main energy losses in a real (non-ideal) transformer. |
+

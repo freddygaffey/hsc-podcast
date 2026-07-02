@@ -125,3 +125,11 @@ Question: "How does the redshift of galaxies provide evidence the universe is ex
 2. Hubble (1929): redshift INCREASES WITH DISTANCE — recession velocity is PROPORTIONAL to distance (Hubble's law, \(v = H d\)).
 3. Velocity \(\propto\) distance is exactly what UNIFORM EXPANSION OF SPACE predicts (the balloon/raisin-loaf analogy) — space itself stretches and carries galaxies apart, stretching the light's wavelength en route (cosmological redshift). NOT motion through static space; no centre.
 4. Run the expansion backwards ⇒ a hot, dense beginning (Big Bang); the cosmic microwave background (~2.7 K) is the partner evidence.
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| OBAFGKM ("Oh Be A Fine Girl/Guy, Kiss Me") | O, B, A, F, G, K, M | The stellar spectral classes in order of decreasing surface temperature (hottest O to coolest M). |
+| UV | Ultraviolet | EM radiation with wavelength shorter than visible violet light. |
+

@@ -112,3 +112,22 @@ Q8 (3) — Recommend a scale for 200 identical wooden toys + justify.
   Jigs/templates reproduce the 200 consistently & efficiently; design still variable for a future
   batch. Match scale to quantity with a reason.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| AI | Artificial Intelligence | An emerging technology |
+| CAD | Computer-Aided Design | An automated system for the design, drafting and display of graphic information |
+| CAM | Computer-Aided Manufacturing | A computer program that makes manufacturing data from CAD drawings to automate manufacture by a computer-controlled machine |
+| **CPA FACE** | Characteristics, Properties, Availability, Function, Appearance, Cost, Environmental | Criteria for selecting a material (P4.2) |
+| **DCIC** | Domestic, Community, Industrial, Commercial | The four settings in which design and production happen (P2.1) |
+| **ES-EAP** | Eliminate, Substitute, Engineering, Administrative, PPE | The hierarchy of control, most to least effective (PPE last) |
+| **JBM** | Job (one-off), Batch, Mass | The three scales of production (“one, some, millions”) |
+| LCA | Life Cycle Analysis | Evaluation of the resources and impacts across a product's whole life (cradle-to-grave); one of the factors affecting design |
+| MDP | Major Design Project | The HSC project — a product, system or environment plus its design folio — that the course is built around |
+| **MR SCP** | Modelling, Research, Simulation & graphics, Communication, Presentation | The five applications of computer-based technologies (P6.2) |
+| **PC SCIE** | Personal values, Cultural beliefs, Sustainability, Safety & health, Community needs, Individual needs, Equity | The seven environmental & social issues (P2.2) |
+| PPE | Personal Protective Equipment | A device or appliance designed to be worn individually to protect the user against potential hazards (the last resort in the hierarchy of control) |
+| QC | Quality Control | Checking output against quality standards (e.g. line sampling) |
+| WHS | Work Health and Safety | Rights & responsibilities for a safe workplace; the WHS Act 2011 sets the framework of duties workplaces must comply with |

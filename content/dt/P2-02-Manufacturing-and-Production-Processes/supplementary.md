@@ -100,3 +100,11 @@ Q4 (3 marks) — Why does mass production give a lower cost per unit than job pr
   across many units = economies of scale -> low average cost. Job production concentrates time/skill/
   setup into one unique item -> high per-unit cost.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| CNC | Computer Numerical Control | The computer control of machine tools to (repetitively) manufacture complex parts for a product |
+| **JBM** | Job (one-off), Batch, Mass | The three scales of production (“one, some, millions”) |
+| WHS | Work Health and Safety | Rights & responsibilities for a safe workplace; the WHS Act 2011 sets the framework of duties workplaces must comply with |

@@ -63,3 +63,16 @@ V-D-Q — benefits of collaboration (SSA 19-01), but with fairness duties:
   Q  Quality of the solution  diverse review + expertise -> fewer defects, knowledge-sharing
   Ethical duties added: fair attribution of work; equitable contribution; clear team comms.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| C-S-A | Collect · Synthesise · Act | How to handle user feedback (prioritise by impact vs effort) |
+| E-D-P-C-I-D | Employment · Data security · Privacy · Copyright · Intellectual property · Digital disruption | Checklist ("Ed Picid") of the social, ethical and legal issues raised by software |
+| I-F-N | Involve (and empower) · Feedback · Negotiate | Principles for communicating effectively with a client during a project |
+| PABT | Privacy · Accessibility · Bias · Transparency | Checklist of the main ethical issues to weigh in an automated/AI system |
+| PER | Proactive · Embed · Respect | The privacy-by-design principles (act ahead of harm, build privacy in, respect the user) |
+| POUR | Perceivable · Operable · Understandable · Robust | The four WCAG accessibility principles for web content |
+| S-H-L-M | Sampling · Historical · Labeler · Measurement | The sources of bias in machine learning |
+| V-D-Q | Various Views · Delegate by expertise · Quality | The benefits of collaborating in a development team rather than working solo |
+| WCAG | Web Content Accessibility Guidelines | The W3C standard defining how to make web content accessible (see POUR) |

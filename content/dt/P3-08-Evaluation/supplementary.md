@@ -93,3 +93,10 @@ Q4 (3 marks) — Relationship between the brief and evaluation.
   Bookends: the brief SETS the criteria for success at the start; evaluation JUDGES the design
   against exactly those criteria (during & at the end). Hence criteria must be measurable.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **BMA** | Before, Mid, After | Evaluation is continual — before, during and after, not only at the end (H4.3) |
+| **DRIPER** | Define, Research, Ideate, Produce, Evaluate, Refine | The six cyclic stages of the design process (an iterative/cyclical process) |

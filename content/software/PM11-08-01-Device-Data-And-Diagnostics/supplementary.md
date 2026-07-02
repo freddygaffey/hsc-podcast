@@ -94,3 +94,10 @@ STORING it safely (SE-11-04 — collect / use / store):
   Access control (who may read operational vs config data) · backups of calibration/config ·
   a retention policy (how long to keep history). Never trust or store a value you didn't validate.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CPU | Central Processing Unit | The processor that executes program instructions |
+| M-C-D-O | Measurement · Control · Diagnostic · Optimisation | The four data streams a mechatronic system handles |
+| T-I-U | Timestamp · Identity (which sensor) · Units | What to record with device/sensor data |

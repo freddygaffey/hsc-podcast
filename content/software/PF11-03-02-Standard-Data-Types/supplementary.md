@@ -91,3 +91,8 @@ assert type(is_enrolled) is bool
 assert len(initial) == 1                     # a "char" = a single character
 print("Student record types OK.")
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

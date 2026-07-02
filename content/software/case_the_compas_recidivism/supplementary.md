@@ -93,3 +93,8 @@ mathematically incompatible.
 CASHES INTO: SA 22-03 (fairness metrics), 22-01 (impact), 22-02 (human/justice context).
 Companion to case_the_amazon_recruiting_ai (historical bias in a model that judges people).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| COMPAS | Correctional Offender Management Profiling for Alternative Sanctions | A risk-assessment algorithm used in US courts (case study in algorithmic bias) |

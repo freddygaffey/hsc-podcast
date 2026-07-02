@@ -199,3 +199,14 @@ Mnemonic for the order O B A F G K M: "Oh Be A Fine Guy, Kiss Me." (Hottest/blue
 | White-dwarf / supernova mass threshold     | < ~8 M_sun → white dwarf ; > ~8 → supernova |
 | Remnant-core threshold                     | < ~3 M_sun → neutron star ; > ~3 → black hole |
 | H-R diagram authors / dates                | Hertzsprung (~1911), Russell (~1913)       |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| CNO | Carbon–nitrogen–oxygen cycle | Hydrogen-to-helium fusion cycle that uses carbon, nitrogen and oxygen as catalysts; dominant in stars hotter and more massive than the Sun. |
+| HR | Hertzsprung–Russell diagram | Plot of stellar luminosity against surface temperature used to classify stars and trace their life cycles. |
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+| OBAFGKM ("Oh Be A Fine Girl/Guy, Kiss Me") | O, B, A, F, G, K, M | The stellar spectral classes in order of decreasing surface temperature (hottest O to coolest M). |
+| UV | Ultraviolet | EM radiation with wavelength shorter than visible violet light. |
+

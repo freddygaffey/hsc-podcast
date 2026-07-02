@@ -80,3 +80,9 @@ SAFETY FOR AUTONOMY:
 AUTONOMOUS vs REMOTE/MANUAL: autonomy is the DECIDE-without-a-human step. Remote control = a human
 decides and the machine obeys. The motor can be identical; the difference is WHO decides.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| S-D-A-F | Sensing · Decision logic · Adapt/self-correct · Fail-safe | The four features of an autonomous control algorithm |

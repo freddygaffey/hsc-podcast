@@ -115,3 +115,10 @@ TRAP: writing "the electron loses energy" WITHOUT naming the cause (accelerating
 | Proton identified | Rutherford, ~1919 | Positive nuclear constituent | — |
 | Neutron discovered | Chadwick, 1932 | Neutral nuclear constituent (conservation-of-momentum argument) | — |
 | Bohr model (next episode) | Bohr, 1913 | Stationary states fix instability + line spectra | Works mainly for hydrogen |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| EM | Electromagnetic | Describing waves or radiation made of oscillating electric and magnetic fields (the EM spectrum). |
+

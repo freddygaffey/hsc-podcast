@@ -197,3 +197,14 @@ $$
 - DC generator output is PULSATING, not flat. Two humps per revolution.
 - Max flux \(\leftrightarrow\) zero EMF.  Zero flux \(\leftrightarrow\) max EMF. (EMF \(\propto\) rate of change of flux.)
 - Same mechanism in both — only the connector differs.
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| AC | Alternating current | Electric current that periodically reverses direction (mains supply, AC generator output). |
+| DC | Direct current | Electric current that flows in one direction only (from a battery, or a DC generator/motor). |
+| EMF | Electromotive force | The energy supplied per unit charge by a source (unit: volt); it is a voltage, not a force — the name is a misnomer. |
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+| SI | International System of Units (Système International d'Unités) | The standard metric system of units (metre, kilogram, second, ampere, …). |
+

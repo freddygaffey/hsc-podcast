@@ -83,3 +83,14 @@ Q4 (3 marks) — Purpose of the investigative report on an innovation.
   future); builds research & communication skills + understanding of innovation; supports the MDP & the
   HSC innovation study. (Bridge to H2.)
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **CAE** | Clarity, Appropriateness, Ease of interpretation | Criteria for evaluating/justifying a communication method (P5.2) |
+| HSC | Higher School Certificate | The NSW senior-secondary credential and its external examination |
+| MDP | Major Design Project | The HSC project — a product, system or environment plus its design folio — that the course is built around |
+| **QISOTS** | Questionnaires, Interviews, Surveys, Observation, Tests/experiments, Statistical analysis | The research methods, plus secondary information research (P5.3 / H5.2) |
+| **SMMR** | Sender, Message, Medium, Receiver | The elements of the communication process, plus feedback (P5.2) |
+| **V-WGVA** | Verbal, Written, Graphical, Visual, Audio | The forms of communication a designer can use (P5.2) |

@@ -93,3 +93,9 @@ BEGIN ReverifyReusedComponent
     ENDIF
 END ReverifyReusedComponent
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CPU | Central Processing Unit | The processor that executes program instructions |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

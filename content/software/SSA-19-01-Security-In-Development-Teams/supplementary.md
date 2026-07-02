@@ -79,3 +79,18 @@ BEGIN ReviewPullRequest(change, author)
     ENDIF
 END ReviewPullRequest
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| API | Application Programming Interface | A defined contract that lets one piece of software request services from another |
+| DAST | Dynamic Application Security Testing | Testing a running application from the outside for security flaws ("doing") |
+| DB | Database | An organised, queryable store of persistent data |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| S-A-F-E | Status · Abort · Feedback · Errors | Design principles for a safe control interface |
+| SAST | Static Application Security Testing | Analysing source code for security flaws without running it ("source") |
+| SQL | Structured Query Language | The standard language for querying and manipulating relational databases |
+| TOCTOU | Time-Of-Check to Time-Of-Use | A race-condition flaw where state changes between validating and using it |
+| V-D-Q | Various Views · Delegate by expertise · Quality | The benefits of collaborating in a development team rather than working solo |
+| VSE | Validate · Sanitise · handle Errors | How to treat untrusted input at a trust boundary (server-side) |
+| XSS | Cross-Site Scripting | An attack injecting malicious scripts into pages viewed by other users |

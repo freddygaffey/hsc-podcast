@@ -72,3 +72,9 @@ SECURITY IS A BUSINESS ENABLER, NOT JUST A COST:
 TRAPS: "security is pure cost"  ·  "we're too small to be targeted"
        (attacks are AUTOMATED + INDISCRIMINATE; small firms least able to survive one)
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| ROI | Return on Investment | The financial gain from an investment relative to its cost |
+| SQL | Structured Query Language | The standard language for querying and manipulating relational databases |

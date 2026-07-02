@@ -85,3 +85,11 @@ Q4 (3 marks) — Why is protecting IP both legal AND ethical?
   Legal: patents/copyright are enforceable rights. Ethical: copying without permission/credit is unfair,
   denies the creator recognition/reward (esp. cultural property). Dual duty.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| IP | Intellectual Property | Ownership of a product of the intellect with commercial value — copyright, patents, business methods and industrial processes |
+| **ISE** | Individual, Society, Environment | The three levels at which to assess a design's impact (H4.3 / H2.2) |
+| **SIRRI** | Sustainable technologies, Intellectual-property protection, designer Rights & responsibilities, Responsibilities to society, Impact on Australian society | The ethical & environmental issues a designer must weigh (H2.2) |

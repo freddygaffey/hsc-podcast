@@ -112,3 +112,10 @@ $$
 (\(\approx 4.8\times\) the speed of light — IMPOSSIBLE) ✗
 
 Above \(\sim 0.1c\) Newton fails; particles obey the relativistic equations exactly. \(\to\) M8: case_particle_accelerators_quarks
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| PET | Positron emission tomography | Medical imaging technique that uses positron–electron annihilation gamma rays to map metabolic activity. |
+

@@ -344,3 +344,9 @@ class TestStudentRegistrationAcceptance(unittest.TestCase):
         # AND — the original is untouched
         self.assertEqual(self.student_mgr.find_student("S001").name, "Alice")
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| QA | Quality Assurance | The processes that build quality into a product, not just test for defects |
+| U-S-S | Unit · Subsystem · System | The levels of testing |

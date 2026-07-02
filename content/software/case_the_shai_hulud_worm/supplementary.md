@@ -118,3 +118,12 @@ pinning + integrity    locking dependencies to specific versions, with cryptogra
                        fingerprints that reject any package whose contents changed.
 provenance             verifiable proof of where a package was really built/published.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| 2FA | Two-Factor Authentication | Requiring two independent pieces of evidence to log in (e.g. password plus a code) |
+| MFA | Multi-Factor Authentication | Requiring two or more independent factors to verify identity |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| USD | United States Dollars | The currency unit used in cost/impact figures |
+| UTC | Coordinated Universal Time | The primary global time standard, used for unambiguous timestamps |

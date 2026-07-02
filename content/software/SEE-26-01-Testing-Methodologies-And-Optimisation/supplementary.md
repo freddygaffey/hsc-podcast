@@ -128,3 +128,14 @@ OPTIMISATION (SE-12-08):  MEASURE -> optimise -> MEASURE; language-dependent (Py
 TRAPS: testing only the HAPPY PATH (Healthcare.gov had no real load test); optimising WITHOUT
        measuring (PFW 13-03). Forward: test plan + results = evidence in the evaluation (26-03).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| C-U-P-S | Correctness · Usability · Performance · Security | Software quality criteria |
+| DAST | Dynamic Application Security Testing | Testing a running application from the outside for security flaws ("doing") |
+| DB | Database | An organised, queryable store of persistent data |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| O-S-A-E-S | Objectives · Scope · Approaches · Environments · Schedule | The components of a test plan |
+| QA | Quality Assurance | The processes that build quality into a product, not just test for defects |
+| SAST | Static Application Security Testing | Analysing source code for security flaws without running it ("source") |

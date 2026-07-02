@@ -83,3 +83,14 @@ The Cloudflare 2019 outage = one regex's ALGORITHMIC COST x a GLOBAL-all-at-once
 PREVENTION: prefer LINEAR-time regex engines (RE2); cap regex complexity; staged rollout; performance
 budgets; a kill switch. CASHES INTO: PFW 11-04 (architecture/blast radius), 13-03 (performance); SEE testing/deployment.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CDN | Content Delivery Network | Geographically distributed servers that cache and serve content close to the user |
+| CPU | Central Processing Unit | The processor that executes program instructions |
+| DNS | Domain Name System | The system that translates human-readable domain names into IP addresses |
+| HTTP | HyperText Transfer Protocol | The request/response protocol used to transfer web resources |
+| OOP | Object-Oriented Programming | A paradigm structuring software around objects that bundle data and behaviour |
+| UTC | Coordinated Universal Time | The primary global time standard, used for unambiguous timestamps |
+| WAF | Web Application Firewall | A filter that inspects HTTP traffic to block web attacks |

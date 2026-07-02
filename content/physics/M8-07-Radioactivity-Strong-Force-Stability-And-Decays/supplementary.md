@@ -167,3 +167,10 @@ Inverse relationship: ionising power α > β > γ; penetration γ > β > α.
 | Weak-force carriers | W boson (and Z boson) |
 | Neutrino predicted | Wolfgang Pauli, 1930; named by Enrico Fermi; detected 1956 |
 | U-238 α decay energy | ≈ 4.25 MeV |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| EM | Electromagnetic | Describing waves or radiation made of oscillating electric and magnetic fields (the EM spectrum). |
+

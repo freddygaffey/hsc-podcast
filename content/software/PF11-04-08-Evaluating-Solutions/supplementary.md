@@ -130,3 +130,9 @@ DOCUMENTATION
 
 The difference every time: EVIDENCE and SPECIFICS, not adjectives.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| R-D-C | Read-me · Docstring · Comment | Levels of code documentation |

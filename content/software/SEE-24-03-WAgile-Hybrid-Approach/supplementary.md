@@ -62,3 +62,8 @@ DISADVANTAGE / TRAP: more complex to manage; done badly = WORST of both (bureauc
 unpredictability); gate delays can block sprints; overkill for small/simple projects.
 ANSWER SHAPE: mechanism (gates + sprints) + the WHEN and HOW — NOT just "it combines both".
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| UX | User Experience | The overall quality of a user's interaction with a product |

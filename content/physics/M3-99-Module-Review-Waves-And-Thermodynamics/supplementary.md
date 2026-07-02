@@ -102,3 +102,12 @@ THERMAL — ask: is the TEMPERATURE changing, or the STATE?
 GOLDEN RULE: identify what the question is CHANGING (a frequency, a temperature, a state,
    a direction) and the matching equation follows. When stuck, ask "where is the energy going?"
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| EM | Electromagnetic | Describing waves or radiation made of oscillating electric and magnetic fields (the EM spectrum). |
+| KE | Kinetic energy | The energy of a body due to its motion, ½mv². |
+| TIR | Total internal reflection | Complete reflection of light at a boundary when the angle of incidence exceeds the critical angle. |
+

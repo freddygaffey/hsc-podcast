@@ -68,3 +68,11 @@ SNELL'S LAW:   n₁ sin i = n₂ sin r
        I₁ r₁² = I₂ r₂²  →  200 × 1² = I₂ × 4²  →  I₂ = 200 / 16 = 12.5 lux
        (×4 distance → 1/16 intensity — square the ratio!)
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| EM | Electromagnetic | Describing waves or radiation made of oscillating electric and magnetic fields (the EM spectrum). |
+| TIR | Total internal reflection | Complete reflection of light at a boundary when the angle of incidence exceeds the critical angle. |
+

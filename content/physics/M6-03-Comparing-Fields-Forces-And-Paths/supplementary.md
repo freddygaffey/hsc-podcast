@@ -144,3 +144,10 @@ $$
 | Universal gravitational constant G | 6.67 × 10^-11 N m² kg^-2 |
 | g at Earth's surface | 9.8 N kg^-1 (≡ m s^-2) |
 | Orbital speed, ~250 km altitude LEO | ≈ 7.75 × 10^3 m s^-1 (~27 900 km h^-1) |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| LEO | Low Earth orbit | Orbit roughly 200–2000 km in altitude (e.g. the ISS, imaging and weather satellites). |
+

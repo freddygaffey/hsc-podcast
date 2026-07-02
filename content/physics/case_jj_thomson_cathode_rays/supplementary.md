@@ -203,3 +203,10 @@ $$
 This is the modern electron mass, about 1/1836 of a proton and about
 1/1800 of the lightest atom (hydrogen) — the quantitative meaning of
 "a particle nearly two thousand times lighter than the lightest atom."
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+

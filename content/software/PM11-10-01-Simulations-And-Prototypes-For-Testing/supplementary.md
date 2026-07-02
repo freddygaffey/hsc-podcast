@@ -92,3 +92,9 @@ PRINCIPLES OF A GOOD SIMULATION:
 WHY THIS WHOLE MODULE'S CODE IS RUNNABLE SIMULATIONS: you test the control logic in software first;
 the same abstraction patterns and control code then transfer to the real hardware.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| DARPA | Defense Advanced Research Projects Agency | The US defence R&D agency (ran the autonomous-vehicle Grand Challenge) |
+| S-C-F | Safe · Cheap · Fast | Why to simulate before you build |

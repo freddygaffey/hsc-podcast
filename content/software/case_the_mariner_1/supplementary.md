@@ -83,3 +83,8 @@ into code lost a spacecraft.
 "THE MOST EXPENSIVE HYPHEN IN HISTORY" (Arthur C. Clarke). CASHES INTO: PF11 4.7 (errors), 4.6 (test data).
 Companion to case_the_y2k_bug (a representational choice/slip with outsized, delayed cost).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NASA | National Aeronautics and Space Administration | The US space agency (referenced in several engineering-failure case studies) |

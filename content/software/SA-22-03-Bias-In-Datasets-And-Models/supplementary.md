@@ -106,3 +106,14 @@ BEGIN AddressBias(dataset, model, groupAttribute)
     RETURN model
 END AddressBias
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AAA | Authentication · Authorisation · Accountability | The three access-security pillars: prove who you are, check what you may do, and keep a traceable record |
+| AI | Artificial Intelligence | Software that performs tasks normally needing human intelligence |
+| CIA | Confidentiality · Integrity · Availability | The three core information-security properties (the security triad) |
+| D-R-F | Diverse data · Reweight · Fairness metrics | Techniques to reduce bias in datasets/models |
+| ML | Machine Learning | AI systems that learn patterns from data rather than being explicitly programmed |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| S-H-L-M | Sampling · Historical · Labeler · Measurement | The sources of bias in machine learning |

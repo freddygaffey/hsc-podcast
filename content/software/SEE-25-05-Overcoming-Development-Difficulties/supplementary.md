@@ -65,3 +65,12 @@ CROSS-LINKS
 
 TRAPS: lone-wolf debugging for hours; copy-pasting unverified online code.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CVE | Common Vulnerabilities and Exposures | A public catalogue giving each known security flaw a unique identifier |
+| I-F-N | Involve (and empower) · Feedback · Negotiate | Principles for communicating effectively with a client during a project |
+| S-P-O | Self-search · Peers · Outsource/escalate | The help ladder for overcoming development difficulties |
+| T-R-P | Technical · Resource · Process | Types of project blocker |
+| V-D-Q | Various Views · Delegate by expertise · Quality | The benefits of collaborating in a development team rather than working solo |

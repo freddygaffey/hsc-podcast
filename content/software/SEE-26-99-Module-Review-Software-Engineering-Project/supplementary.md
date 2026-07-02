@@ -130,3 +130,40 @@ project succeeds; get them wrong and great code can't save it. Marker: justify, 
 
 COURSE COMPLETE.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AAA | Authentication · Authorisation · Accountability | The three access-security pillars: prove who you are, check what you may do, and keep a traceable record |
+| AI | Artificial Intelligence | Software that performs tasks normally needing human intelligence |
+| B-M-S | Brainstorm · Mind-map · Storyboard | Ideation techniques for generating design ideas |
+| C-E-R | Criteria · Evidence · Reflection | Structure for evaluating a solution against its criteria |
+| C-S-A | Collect · Synthesise · Act | How to handle user feedback (prioritise by impact vs effort) |
+| C-U-P-S | Correctness · Usability · Performance · Security | Software quality criteria |
+| CIA | Confidentiality · Integrity · Availability | The three core information-security properties (the security triad) |
+| DAST | Dynamic Application Security Testing | Testing a running application from the outside for security flaws ("doing") |
+| DiP-PP | Direct · Phased · Parallel · Pilot | The changeover / implementation (installation) methods for deploying a new system |
+| DNS | Domain Name System | The system that translates human-readable domain names into IP addresses |
+| HTTP | HyperText Transfer Protocol | The request/response protocol used to transfer web resources |
+| I-F-N | Involve (and empower) · Feedback · Negotiate | Principles for communicating effectively with a client during a project |
+| M-A-I | Measure · Audit · Improve | The continuous, outcome-based security-evaluation loop |
+| ML | Machine Learning | AI systems that learn patterns from data rather than being explicitly programmed |
+| O-S-A-E-S | Objectives · Scope · Approaches · Environments · Schedule | The components of a test plan |
+| PABT | Privacy · Accessibility · Bias · Transparency | Checklist of the main ethical issues to weigh in an automated/AI system |
+| POUR | Perceivable · Operable · Understandable · Robust | The four WCAG accessibility principles for web content |
+| QA | Quality Assurance | The processes that build quality into a product, not just test for defects |
+| R-C-B-M-T | Repository · Commit · Branch · Merge · Tag | Core version-control concepts |
+| S-H-L-M | Sampling · Historical · Labeler · Measurement | The sources of bias in machine learning |
+| S-P-E-E | Safety and access · People and skills · Efficiency and Environment · Economy and wealth | Impact areas when assessing automation |
+| S-P-O | Self-search · Peers · Outsource/escalate | The help ladder for overcoming development difficulties |
+| S-R-I | Standards · Review · continuous Integration | How to keep quality high while building |
+| S-W-M-P | Sketch · Wireframe · Mockup · Prototype | The prototype fidelity ladder |
+| SAST | Static Application Security Testing | Analysing source code for security flaws without running it ("source") |
+| SQLi | SQL injection | An attack that injects malicious SQL through unvalidated input |
+| T-B-E-D | Technical · Business · End-users · Decision-makers | The presentation audiences |
+| T-E-I-S | Technology · Error handling · Interfacing · Security | Back-end engineering concerns |
+| TCP | Transmission Control Protocol | The protocol providing reliable, ordered delivery of data over IP |
+| TECO | Technical · Economic · Cost-and-schedule · Operational | The dimensions weighed in a feasibility study before committing to a project |
+| TLS | Transport Layer Security | The protocol that encrypts and authenticates data in transit (secures HTTPS) |
+| VSE | Validate · Sanitise · handle Errors | How to treat untrusted input at a trust boundary (server-side) |
+| WCAG | Web Content Accessibility Guidelines | The W3C standard defining how to make web content accessible (see POUR) |

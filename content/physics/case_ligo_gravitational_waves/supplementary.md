@@ -206,3 +206,12 @@ Used in Listing 3. Same relationship the syllabus applies to energy production i
 - Elements up to and including iron are synthesised inside stars; iron is the heaviest element a star can build, because beyond iron, fusion ABSORBS energy rather than releasing it (the "iron limit", set by the binding-energy-per-nucleon curve).
 - Elements heavier than iron (gold, platinum, uranium) form by RAPID NEUTRON CAPTURE (the r-process), which needs an extremely neutron-rich, violent environment — confirmed by GW170817 to be a neutron-star merger (kilonova; strontium identified in the spectrum).
 - Module 5 (gravity drives the inspiral) + Module 7 (\(E = m c^{2}\) powers the radiated energy and the kilonova) + Module 8 (stellar death, neutron stars, nucleosynthesis) all converge in this one event.
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| GW | Gravitational wave | A ripple in spacetime produced by accelerating masses, detected by LIGO. |
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+| LIGO | Laser Interferometer Gravitational-Wave Observatory | The laser interferometer that first directly detected gravitational waves (2015). |
+

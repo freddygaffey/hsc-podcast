@@ -279,3 +279,16 @@ BEGIN BuildAndAssessGradebook
     ENDIF
 END BuildAndAssessGradebook
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| C-C-P-M | Correctness · Clarity · Performance · Maintainability | Dimensions of code quality |
+| DFD | Data Flow Diagram | A model showing how data moves between processes, stores and external entities |
+| I-C-F-S | Integrity · Consistency · Flexibility · Security | Reasons to use a database |
+| L-B-P-E-R | Lookup · Bind self · Pass params · Execute · Return | The steps of a method/subroutine call |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| O-C-G | Objects · Classes · Generalisation | Core object-oriented modelling ideas |
+| OOP | Object-Oriented Programming | A paradigm structuring software around objects that bundle data and behaviour |
+| R-R-C-I | Requirements · Responsibilities · Collaborations · Implementation | The (iterative) object-oriented design pipeline |
+| U-S-S | Unit · Subsystem · System | The levels of testing |

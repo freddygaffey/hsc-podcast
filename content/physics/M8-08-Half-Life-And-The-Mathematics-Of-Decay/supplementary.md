@@ -191,3 +191,12 @@ Industry flips the half-life: a permanent gauge / pipe-leak source needs a LONGE
 |----------------------|-------------------------------------------------------------------------------------|
 | Henri Becquerel      | 1896 — discovered radioactivity (uranium salt fogged a wrapped photographic plate); SI unit of activity (becquerel) named after him |
 | Marie & Pierre Curie | Isolated and identified new radioactive elements (polonium, radium); coined "radioactivity"; pioneered its study and medical use, opening the path to radiotherapy and diagnostic imaging |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| EC | Electron capture | Radioactive decay in which a nucleus captures an inner-shell electron, converting a proton to a neutron and emitting a neutrino. |
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+| SI | International System of Units (Système International d'Unités) | The standard metric system of units (metre, kilogram, second, ampere, …). |
+

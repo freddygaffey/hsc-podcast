@@ -102,3 +102,30 @@ CASE STUDIES (what gets it wrong): 737 MAX MCAS (autonomy on one bad sensor) · 
 BRIDGE TO YEAR 12: control/autonomy -> Software Automation (AI) · safety + safe data -> Secure Software
   Architecture · the build + manage-and-document discipline -> the Software Engineering Project.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AI | Artificial Intelligence | Software that performs tasks normally needing human intelligence |
+| B-P-F | Boundary · Path coverage · Faulty-and-abnormal | Categories of test data (actual vs expected) |
+| CPU | Central Processing Unit | The processor that executes program instructions |
+| DARPA | Defense Advanced Research Projects Agency | The US defence R&D agency (ran the autonomous-vehicle Grand Challenge) |
+| DOF | Degrees Of Freedom | The number of independent movements a mechatronic system (e.g. a robot arm) can make |
+| M-C-C | Measure · Compare · Correct | The closed-loop control cycle (error = setpoint − measured) |
+| M-C-D-O | Measurement · Control · Diagnostic · Optimisation | The four data streams a mechatronic system handles |
+| MCAS | Maneuvering Characteristics Augmentation System | The flight-control software implicated in the Boeing 737 MAX crashes |
+| OOP | Object-Oriented Programming | A paradigm structuring software around objects that bundle data and behaviour |
+| P-C-R-I | Performance · Cost · Reliability · Integration | Criteria for choosing a hardware component |
+| S-A-E | Sensor · Actuator · End-effector | The mechatronic device trio (input, output, tool) |
+| S-A-F-E | Status · Abort · Feedback · Errors | Design principles for a safe control interface |
+| S-A-I-D | Safety · Adaptability · Independence · Diverse I/O | The specialist (accessibility) requirements checklist |
+| S-C-F | Safe · Cheap · Fast | Why to simulate before you build |
+| S-D-A-F | Sensing · Decision logic · Adapt/self-correct · Fail-safe | The four features of an autonomous control algorithm |
+| S-M-E-M | Software · Mechanical · Electronics · Maths | The knowledge fields combined in a mechatronic build |
+| S-T-E-A | States · Transitions · Events · Actions | The parts of a state machine |
+| Sense-Think-Act | Sense · Think · Act | The repeating control loop of an autonomous / mechatronic system |
+| T-I-U | Timestamp · Identity (which sensor) · Units | What to record with device/sensor data |
+| U-S-S | Unit · Subsystem · System | The levels of testing |
+| UI | User Interface | The parts of a system a user directly interacts with |
+| V-A-H | Visual · Audio · Haptic | Multi-modal feedback channels |
+| V-I-P | Voltage · current (I) · Power | The electrical quantities (P = V × I) |

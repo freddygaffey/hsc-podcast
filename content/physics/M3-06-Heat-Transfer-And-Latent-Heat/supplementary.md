@@ -87,3 +87,10 @@ SPECIFIC LATENT HEAT L = energy to change the state of 1 kg (J kg⁻¹), no temp
        total = 377 000 J (377 kJ)
    ⇒ pick m L for each phase change, m c ΔT for each temperature change, then ADD.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| KE | Kinetic energy | The energy of a body due to its motion, ½mv². |
+

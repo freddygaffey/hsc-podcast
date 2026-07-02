@@ -101,3 +101,10 @@ UI TYPES (pick to fit the system + user):
 UI = the MANUAL / human-control complement to AUTONOMOUS control (9.2): even an autonomous system needs a UI to
   monitor it, override it, and stop it. Commands map to actions; sensor data maps to feedback.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| S-A-F-E | Status · Abort · Feedback · Errors | Design principles for a safe control interface |
+| UI | User Interface | The parts of a system a user directly interacts with |
+| V-A-H | Visual · Audio · Haptic | Multi-modal feedback channels |

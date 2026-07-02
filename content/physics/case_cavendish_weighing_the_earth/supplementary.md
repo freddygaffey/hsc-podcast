@@ -197,3 +197,11 @@ $$
 - density of water \(= 1.00\times 10^{3}\ \mathrm{kg\,m^{-3}}\)
 
 (The Jacaranda textbook quotes the more precise \(M_{\text{Earth}} = 5.97\times 10^{24}\ \mathrm{kg}\) and \(R_{\text{Earth}} = 6.37\times 10^{6}\ \mathrm{m}\); the data sheet rounds these for exam use.)
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+| SI | International System of Units (Système International d'Unités) | The standard metric system of units (metre, kilogram, second, ampere, …). |
+

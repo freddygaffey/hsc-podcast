@@ -118,3 +118,19 @@ BEGIN HandleApiRequest(request)
     Respond(200, result)
 END HandleApiRequest
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| A-A-R-T | Authenticate · Authorise · Rate-limit · Transport-secure | Four rules for securing an API endpoint |
+| API | Application Programming Interface | A defined contract that lets one piece of software request services from another |
+| CORS | Cross-Origin Resource Sharing | Browser rules controlling when a page may request resources from another origin |
+| CSRF | Cross-Site Request Forgery | An attack that tricks a logged-in user's browser into sending an unwanted request |
+| HTTPS | HyperText Transfer Protocol Secure | HTTP encrypted with TLS for confidentiality and integrity in transit |
+| JS | JavaScript | The programming language that runs in web browsers |
+| JWT | JSON Web Token | A compact, signed token used to carry authentication/authorisation claims |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| S-A-F-E | Status · Abort · Feedback · Errors | Design principles for a safe control interface |
+| TLS | Transport Layer Security | The protocol that encrypts and authenticates data in transit (secures HTTPS) |
+| VSE | Validate · Sanitise · handle Errors | How to treat untrusted input at a trust boundary (server-side) |
+| XSS | Cross-Site Scripting | An attack injecting malicious scripts into pages viewed by other users |

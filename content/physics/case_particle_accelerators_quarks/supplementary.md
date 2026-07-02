@@ -173,3 +173,13 @@ INTERPRETATION: probing INSIDE the proton (well below its radius) needs energies
 | Top quark mass | ≈ 173 GeV/c² (about as heavy as a tungsten atom) |
 | J/psi mass | ≈ 3 GeV/c² |
 | Nobel Prize: Friedman, Kendall, Taylor | 1990 |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| CERN | European Organization for Nuclear Research | The particle-physics laboratory near Geneva that operates the Large Hadron Collider. |
+| LHC | Large Hadron Collider | CERN's high-energy proton–proton collider used to study fundamental particles. |
+| NESA | NSW Education Standards Authority | The body that sets the NSW syllabus and HSC examinations. |
+| SLAC | Stanford Linear Accelerator Center | US laboratory whose linear accelerator was used in particle-scattering experiments. |
+

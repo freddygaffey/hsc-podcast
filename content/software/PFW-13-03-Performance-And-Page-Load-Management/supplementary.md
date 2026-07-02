@@ -79,3 +79,14 @@ BEGIN OptimisePage
     RE-MEASURE to confirm the win
 END OptimisePage
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| C-C-C-L | Cache · Compress · CDN · Lazy-load | The four levers for faster page loads |
+| CDN | Content Delivery Network | Geographically distributed servers that cache and serve content close to the user |
+| CSS | Cascading Style Sheets | The language that styles and lays out HTML content |
+| DNS | Domain Name System | The system that translates human-readable domain names into IP addresses |
+| HTML | HyperText Markup Language | The language that structures the content of web pages |
+| JS | JavaScript | The programming language that runs in web browsers |
+| JSON | JavaScript Object Notation | A lightweight, human-readable text format for exchanging structured data |

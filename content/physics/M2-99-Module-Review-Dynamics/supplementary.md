@@ -68,3 +68,12 @@ Decision tree:
 All three AGREE (work-energy = 2nd law over distance; impulse = 2nd law over time) —
 use the quickest, and cross-check with a second method if time allows.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| I-F-A | Inertia, F = ma, Action–reaction | Newton's three laws of motion. |
+| KE | Kinetic energy | The energy of a body due to its motion, ½mv². |
+| PE | Potential energy | Stored energy due to position or configuration (e.g. gravitational PE = mgh). |
+

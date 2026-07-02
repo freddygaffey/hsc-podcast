@@ -169,3 +169,17 @@ assert grade_report("Alice", [85, 92, 78]) == ("Alice", 85.0, "B")
 assert determine_grade(55.0) == "D"          # 55 falls in the D band (50-69)
 print("All review-task assertions passed.")
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| A-E-F | Accumulator · Extreme · Flag | Kinds of variable that store data across an algorithm |
+| DFD | Data Flow Diagram | A model showing how data moves between processes, stores and external entities |
+| I-O-L-F | Imperative · Object-oriented · Logic · Functional | The programming paradigms |
+| I-O-P | Inputs · Outputs · Purpose | What to identify when analysing a written algorithm |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| R-D-C | Read-me · Docstring · Comment | Levels of code documentation |
+| R-F-D-C | Requirements · Feedback · Documentation · Change | Axes for comparing Waterfall vs Agile |
+| R-S-D-D-I-T-I-M | Requirements · Specifications · Design · Development · Integration · Testing · Installation · Maintenance | The eight software-development steps |
+| S-S-I | Sequence · Selection · Iteration | The three control structures |
+| W-S-R | Write (working tree) · Stage (index) · Record (repo) | Git's three places |

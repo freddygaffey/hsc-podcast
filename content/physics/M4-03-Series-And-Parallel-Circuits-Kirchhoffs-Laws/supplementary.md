@@ -72,3 +72,11 @@ HOUSEHOLD WIRING is PARALLEL: each appliance gets full voltage, switches
     R_T = 4 + 2 = 6 Ω ;  I = 12/6 = 2 A (through the series 4 Ω)
     V across parallel section = IR = 2×2 = 4 V ; V across series 4 Ω = 2×4 = 8 V ; 8+4 = 12 ✓
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| KCL | Kirchhoff's current law | The sum of currents into a junction equals the sum out (conservation of charge). |
+| KVL | Kirchhoff's voltage law | The sum of EMFs around a loop equals the sum of voltage drops (conservation of energy). |
+

@@ -99,3 +99,19 @@ show_certificate("github.com")
 # The certificate AUTHENTICATES the server and carries its public key —
 # it does not itself encrypt the data; the negotiated keys do that.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| DNS | Domain Name System | The system that translates human-readable domain names into IP addresses |
+| FTP | File Transfer Protocol | A protocol for transferring files between hosts (insecure unless secured) |
+| HTTP | HyperText Transfer Protocol | The request/response protocol used to transfer web resources |
+| HTTPS | HyperText Transfer Protocol Secure | HTTP encrypted with TLS for confidentiality and integrity in transit |
+| IP | Internet Protocol | The protocol that addresses and routes data packets across networks |
+| MGF1 | Mask Generation Function 1 | The mask-generation function used inside RSA OAEP/PSS padding |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| OAEP | Optimal Asymmetric Encryption Padding | The secure padding scheme used with RSA encryption |
+| SFTP | SSH File Transfer Protocol | A secure, encrypted protocol for transferring files over SSH |
+| SHA-256 | Secure Hash Algorithm, 256-bit | A cryptographic hash producing a fixed 256-bit fingerprint of data |
+| SSH | Secure Shell | An encrypted protocol for remote login and command execution |
+| TLS | Transport Layer Security | The protocol that encrypts and authenticates data in transit (secures HTTPS) |

@@ -99,3 +99,10 @@ CHOOSING ANY COMPONENT — balance P-C-R-I:
   Performance (accuracy/speed/range) · Cost · Reliability (durability/environment) · Integration (size/interface)
   Then decide on the task's DOMINANT requirement (precision? force? speed? cost?).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| P-C-R-I | Performance · Cost · Reliability · Integration | Criteria for choosing a hardware component |
+| S-A-E | Sensor · Actuator · End-effector | The mechatronic device trio (input, output, tool) |
+| Sense-Think-Act | Sense · Think · Act | The repeating control loop of an autonomous / mechatronic system |

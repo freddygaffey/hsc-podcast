@@ -81,3 +81,15 @@ return f"<p>You searched for {q}</p>"      # if q contains <script>…</script> 
 rows = conn.execute("SELECT * FROM products WHERE name = ?", (q,))
 # Client-side checks DON'T protect you: an attacker can POST straight to the endpoint.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CI/CD | Continuous Integration / Continuous Deployment (Delivery) | Automating the build-test-deploy pipeline so changes ship frequently and safely |
+| CRUD | Create · Read · Update · Delete | The four basic operations performed on stored (database) records |
+| HTML | HyperText Markup Language | The language that structures the content of web pages |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| R-H-D-R | Route · Handle · Data · Respond | The back-end request lifecycle |
+| SQL | Structured Query Language | The standard language for querying and manipulating relational databases |
+| URL | Uniform Resource Locator | The address that identifies and locates a resource on the web |
+| XSS | Cross-Site Scripting | An attack injecting malicious scripts into pages viewed by other users |

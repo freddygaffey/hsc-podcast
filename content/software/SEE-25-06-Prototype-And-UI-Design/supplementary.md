@@ -83,3 +83,14 @@ PROTOTYPE + UI DESIGN — cross-links
 
 TRAPS: polishing a prototype like production; ignoring accessibility in mockups (retrofitting is hard).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| POUR | Perceivable · Operable · Understandable · Robust | The four WCAG accessibility principles for web content |
+| PWA | Progressive Web App | A website that can install, work offline and behave like a native app |
+| QA | Quality Assurance | The processes that build quality into a product, not just test for defects |
+| S-W-M-P | Sketch · Wireframe · Mockup · Prototype | The prototype fidelity ladder |
+| UI | User Interface | The parts of a system a user directly interacts with |
+| UX | User Experience | The overall quality of a user's interaction with a product |
+| WCAG | Web Content Accessibility Guidelines | The W3C standard defining how to make web content accessible (see POUR) |

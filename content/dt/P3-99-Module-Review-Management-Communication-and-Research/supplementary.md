@@ -109,3 +109,21 @@ Q7 (4) — Why continual evaluation, and its link to the brief?
   Link: the BRIEF sets measurable criteria; EVALUATION judges against them (during & finally) =
   bookends. Criteria must be measurable.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **4 C's** | Common goals, Clear roles, Communication, Commitment | Factors of successful collaboration in a design team (P3.1) |
+| **ATF** | Action, Time, Finance | The three project-management plans (H5.1) |
+| **BMA** | Before, Mid, After | Evaluation is continual — before, during and after, not only at the end (H4.3) |
+| **CAE** | Clarity, Appropriateness, Ease of interpretation | Criteria for evaluating/justifying a communication method (P5.2) |
+| **CVA** | Consent, Voluntary participation, Anonymity | Ethics to observe when researching people, plus honesty and no harm (P5.3) |
+| **Five Ps** | Product, Price, Promotion, Place, Packaging | What to research about competitors / the marketing environment (P4.1) |
+| MDP | Major Design Project | The HSC project — a product, system or environment plus its design folio — that the course is built around |
+| **NCC** | Need, Constraints/parameters, Criteria for success | The parts of a design brief (P4.1) |
+| **QISOTS** | Questionnaires, Interviews, Surveys, Observation, Tests/experiments, Statistical analysis | The research methods, plus secondary information research (P5.3 / H5.2) |
+| **RV GS-CDT D** | Resources, Values, Goals, Standards, Costs/benefits, Decisions, Tasks, Documentation | The factors affecting project management (P5.1) |
+| **SCAMPER** | Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse/Rearrange | Seven prompts to generate ideas by transforming an existing design (P3.1) |
+| **SMMR** | Sender, Message, Medium, Receiver | The elements of the communication process, plus feedback (P5.2) |
+| **V-WGVA** | Verbal, Written, Graphical, Visual, Audio | The forms of communication a designer can use (P5.2) |

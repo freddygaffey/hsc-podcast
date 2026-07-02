@@ -140,3 +140,15 @@ $$
 | Gamma | 7 (shortest λ) | highest | Yes |
 
 Mnemonic (increasing frequency): **R**aging **M**artians **I**nvaded **V**enus **U**sing **X**-ray **G**uns — Radio, Microwave, Infrared, Visible, Ultraviolet, X-ray, Gamma.
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| AC | Alternating current | Electric current that periodically reverses direction (mains supply, AC generator output). |
+| DC | Direct current | Electric current that flows in one direction only (from a battery, or a DC generator/motor). |
+| EM | Electromagnetic | Describing waves or radiation made of oscillating electric and magnetic fields (the EM spectrum). |
+| FAME | Faraday (→ Electric), Ampère–Maxwell (→ Magnetic) | How an EM wave self-propagates — each changing field regenerates the other. |
+| "Raging Martians Invaded Venus Using X-ray Guns" | Radio, Microwave, Infrared, Visible, Ultraviolet, X-ray, Gamma | The EM spectrum in order of increasing frequency. |
+| UV | Ultraviolet | EM radiation with wavelength shorter than visible violet light. |
+

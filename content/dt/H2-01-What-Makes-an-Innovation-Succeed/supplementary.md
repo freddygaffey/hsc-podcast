@@ -83,3 +83,11 @@ Q4 (2 marks) — Distinguish innovation-success factors vs design factors.
   Innovation = 6 (TEMPLE, H3.1) — conditions for market success. Design = 11 (FFA EQ NEW LOAd, H1.1) —
   qualities of the design itself. Conditions around an innovation vs the design itself.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **FFA EQ NEW LOAd** | Function, Needs, Appropriateness, Aesthetics, Ergonomics, Finance, Work health & safety, Quality, Environmental consequences, Obsolescence, Life cycle analysis | The eleven factors affecting designing and producing (P1.1 / H1.1) |
+| IP | Intellectual Property | Ownership of a product of the intellect with commercial value — copyright, patents, business methods and industrial processes |
+| **TEMPLE** | Timing, Emerging technologies, Marketing strategies, Political factors, Legal & economic factors, Era (historical/cultural) | The factors that impact on the success of innovation (H3.1) |

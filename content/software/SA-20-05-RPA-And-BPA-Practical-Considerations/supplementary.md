@@ -89,3 +89,15 @@ RPA = BRITTLE
 
 EVALUATE shape: benefits  ->  costs/risks (brittleness, credentials, employment)  ->  judgement
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| API | Application Programming Interface | A defined contract that lets one piece of software request services from another |
+| BPA | Business Process Automation | Automating whole multi-step business workflows, not just single tasks |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| PER | Proactive · Embed · Respect | The privacy-by-design principles (act ahead of harm, build privacy in, respect the user) |
+| RBAC | Role-Based Access Control | Granting permissions to roles, then assigning users to those roles |
+| RPA | Robotic Process Automation | Software 'bots' that automate repetitive, rule-based user tasks |
+| UI | User Interface | The parts of a system a user directly interacts with |
+| VSE | Validate · Sanitise · handle Errors | How to treat untrusted input at a trust boundary (server-side) |

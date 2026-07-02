@@ -79,3 +79,9 @@ BEGIN HandleRecordRequest
     ENDIF
 END HandleRecordRequest
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| API | Application Programming Interface | A defined contract that lets one piece of software request services from another |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

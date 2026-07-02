@@ -98,3 +98,9 @@ OTHER CONTROL PATTERNS (pick the pattern that fits the job):
 DEVELOP vs MODIFY (the dot-point verbs): DEVELOP = build the machine; MODIFY = change behaviour with a
 small localised edit (Listing 2 added one rule); APPLY = map the pattern onto a real system.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| S-T-E-A | States · Transitions · Events · Actions | The parts of a state machine |

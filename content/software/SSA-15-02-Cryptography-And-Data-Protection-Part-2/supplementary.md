@@ -160,3 +160,16 @@ BEGIN TLSHandshake(server)
     UNTIL connectionClosed
 END TLSHandshake
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AES | Advanced Encryption Standard | The standard symmetric-key algorithm for encrypting data |
+| GB | Gigabyte | A unit of data storage (about one billion bytes) |
+| MGF1 | Mask Generation Function 1 | The mask-generation function used inside RSA OAEP/PSS padding |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| OAEP | Optimal Asymmetric Encryption Padding | The secure padding scheme used with RSA encryption |
+| PSS | Probabilistic Signature Scheme | The secure padding scheme used with RSA digital signatures |
+| RSA | Rivest-Shamir-Adleman | A widely used asymmetric (public-key) encryption and signature algorithm |
+| SHA-256 | Secure Hash Algorithm, 256-bit | A cryptographic hash producing a fixed 256-bit fingerprint of data |
+| TLS | Transport Layer Security | The protocol that encrypts and authenticates data in transit (secures HTTPS) |

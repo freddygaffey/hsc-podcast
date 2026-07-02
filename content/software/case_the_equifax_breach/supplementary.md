@@ -61,3 +61,9 @@ BEGIN MaintenancePhase        // the part Equifax skipped
     NEXT system
 END MaintenancePhase
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CVE | Common Vulnerabilities and Exposures | A public catalogue giving each known security flaw a unique identifier |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

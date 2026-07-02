@@ -129,3 +129,10 @@ General torque definition (slide 171 example):
 $$
 \tau = rF \sin\theta = 2\ \mathrm{m} \times 5\ \mathrm{N} \times \sin 90° = 10\ \mathrm{N\,m}
 $$
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the NSW syllabus and HSC examinations. |
+

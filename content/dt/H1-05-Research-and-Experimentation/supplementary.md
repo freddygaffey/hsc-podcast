@@ -81,3 +81,13 @@ Q4 (2 marks) — Primary vs secondary research for the MDP.
   Primary = gathered first-hand (user surveys, material experiments) — current, specific. Secondary =
   existing sources (specs, standards, studies) — fast, general. Experimentation = a key primary method.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **CVA** | Consent, Voluntary participation, Anonymity | Ethics to observe when researching people, plus honesty and no harm (P5.3) |
+| **DRIPER** | Define, Research, Ideate, Produce, Evaluate, Refine | The six cyclic stages of the design process (an iterative/cyclical process) |
+| HSC | Higher School Certificate | The NSW senior-secondary credential and its external examination |
+| MDP | Major Design Project | The HSC project — a product, system or environment plus its design folio — that the course is built around |
+| **QISOTS** | Questionnaires, Interviews, Surveys, Observation, Tests/experiments, Statistical analysis | The research methods, plus secondary information research (P5.3 / H5.2) |

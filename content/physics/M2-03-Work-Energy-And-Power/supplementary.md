@@ -62,3 +62,11 @@ Trampolinist: chemical → kinetic → gravitational PE → kinetic → elastic 
 Work done AGAINST a resistance (friction/air/rolling) = resistive force × distance
    = mechanical energy transformed to HEAT.  "Transformed, not lost."
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| KE | Kinetic energy | The energy of a body due to its motion, ½mv². |
+| PE | Potential energy | Stored energy due to position or configuration (e.g. gravitational PE = mgh). |
+

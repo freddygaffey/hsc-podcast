@@ -114,3 +114,12 @@ BEGIN HandleTransfer(request, session)
     MoveMoney(session.user, request.to, request.amount)
 END HandleTransfer
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CSRF | Cross-Site Request Forgery | An attack that tricks a logged-in user's browser into sending an unwanted request |
+| HTML | HyperText Markup Language | The language that structures the content of web pages |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| URL | Uniform Resource Locator | The address that identifies and locates a resource on the web |
+| XSS | Cross-Site Scripting | An attack injecting malicious scripts into pages viewed by other users |

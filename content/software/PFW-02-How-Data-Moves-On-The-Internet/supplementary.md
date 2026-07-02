@@ -79,3 +79,13 @@ print("IPv6:", ipv6)        # e.g. ['2606:2800:220:1:248:1893:25c8:1946']
 
 # socket.getaddrinfo() IS a DNS lookup: you hand it a name, it returns the IP address(es).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| DNS | Domain Name System | The system that translates human-readable domain names into IP addresses |
+| HTTP | HyperText Transfer Protocol | The request/response protocol used to transfer web resources |
+| IP | Internet Protocol | The protocol that addresses and routes data packets across networks |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| TCP | Transmission Control Protocol | The protocol providing reliable, ordered delivery of data over IP |
+| TLS | Transport Layer Security | The protocol that encrypts and authenticates data in transit (secures HTTPS) |

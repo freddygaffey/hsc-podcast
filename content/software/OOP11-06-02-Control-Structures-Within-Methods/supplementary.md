@@ -275,3 +275,8 @@ BEGIN ProcessAllItems(processorFunc, maxIterations)
     RETURN processedCount
 END ProcessAllItems
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

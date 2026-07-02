@@ -86,3 +86,13 @@ Q4 (3 marks) — Why document throughout, not at the end?
   The folio must show a genuine ongoing process; in-the-moment documentation captures justification &
   evidence, supports continual evaluation, forgets nothing; end-only = thin, inauthentic, lost marks.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **ATF** | Action, Time, Finance | The three project-management plans (H5.1) |
+| **DRIPER** | Define, Research, Ideate, Produce, Evaluate, Refine | The six cyclic stages of the design process (an iterative/cyclical process) |
+| MDP | Major Design Project | The HSC project — a product, system or environment plus its design folio — that the course is built around |
+| **NICe** | Need, areas of Investigation, Criteria to evaluate success | The three components of the major design project proposal (H4.1) |
+| **SCAMPER** | Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse/Rearrange | Seven prompts to generate ideas by transforming an existing design (P3.1) |

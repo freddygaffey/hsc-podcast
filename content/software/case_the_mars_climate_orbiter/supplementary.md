@@ -87,3 +87,10 @@ Any ONE of these, done properly, would have saved the orbiter:
 [ ] ESCALATION PROCESS: give engineers a formal channel to HALT a critical manoeuvre
     when reality and prediction disagree — don't rely on informal "bad feelings".
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| JPL | Jet Propulsion Laboratory | NASA's centre for robotic space missions (Mars Climate Orbiter case study) |
+| NASA | National Aeronautics and Space Administration | The US space agency (referenced in several engineering-failure case studies) |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

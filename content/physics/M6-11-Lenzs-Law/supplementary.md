@@ -128,3 +128,12 @@ WARNING — use the right-hand GRIP rule (field→current for a coil), NOT the f
 | Flux | Φ = B A cos θ | Wb | max at θ = 0°, zero at θ = 90° |
 | Resistive heating | P = I²R | watt (W) | energy destination |
 | Lenz (person) | — | — | H. F. Lenz, 1804–1864, German |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| EM | Electromagnetic | Describing waves or radiation made of oscillating electric and magnetic fields (the EM spectrum). |
+| EMF | Electromotive force | The energy supplied per unit charge by a source (unit: volt); it is a voltage, not a force — the name is a misnomer. |
+| KE | Kinetic energy | The energy of a body due to its motion, ½mv². |
+

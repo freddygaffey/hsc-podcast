@@ -113,3 +113,25 @@ Q7 (5) — Assess the MDP's impact (individual/society/environment).
   resources/social cost. Environment (local & global): materials/manufacture/disposal footprint |
   offset by renewable/recyclable choices. Balanced overall judgement. (Same skill -> H2.2.)
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **ATF** | Action, Time, Finance | The three project-management plans (H5.1) |
+| **BMA** | Before, Mid, After | Evaluation is continual — before, during and after, not only at the end (H4.3) |
+| **DRIPER** | Define, Research, Ideate, Produce, Evaluate, Refine | The six cyclic stages of the design process (an iterative/cyclical process) |
+| **FFA EQ NEW LOAd** | Function, Needs, Appropriateness, Aesthetics, Ergonomics, Finance, Work health & safety, Quality, Environmental consequences, Obsolescence, Life cycle analysis | The eleven factors affecting designing and producing (P1.1 / H1.1) |
+| HSC | Higher School Certificate | The NSW senior-secondary credential and its external examination |
+| **ISE** | Individual, Society, Environment | The three levels at which to assess a design's impact (H4.3 / H2.2) |
+| MDP | Major Design Project | The HSC project — a product, system or environment plus its design folio — that the course is built around |
+| MSDS | Material Safety Data Sheet | Describes the identity, hazard information, precautions for use and safe handling of a hazardous substance |
+| **NICe** | Need, areas of Investigation, Criteria to evaluate success | The three components of the major design project proposal (H4.1) |
+| PPE | Personal Protective Equipment | A device or appliance designed to be worn individually to protect the user against potential hazards (the last resort in the hierarchy of control) |
+| **QISOTS** | Questionnaires, Interviews, Surveys, Observation, Tests/experiments, Statistical analysis | The research methods, plus secondary information research (P5.3 / H5.2) |
+| **SEE** | Safety, Ethical, Environmental | The factors to consider when selecting resources (H4.2) |
+| **SMMR** | Sender, Message, Medium, Receiver | The elements of the communication process, plus feedback (P5.2) |
+| SOP | Safe Operating Procedure | Step-by-step safe-use instructions for a tool or process |
+| **SPPC** | Safe work practices, Production techniques, Process selection, Collaborative design teams | The industrial & commercial practices related to the MDP (H6.1) |
+| **TEMPLE** | Timing, Emerging technologies, Marketing strategies, Political factors, Legal & economic factors, Era (historical/cultural) | The factors that impact on the success of innovation (H3.1) |
+| WHS | Work Health and Safety | Rights & responsibilities for a safe workplace; the WHS Act 2011 sets the framework of duties workplaces must comply with |

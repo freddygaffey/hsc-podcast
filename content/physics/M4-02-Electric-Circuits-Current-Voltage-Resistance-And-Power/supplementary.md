@@ -81,3 +81,10 @@ CHOOSE THE FORMULA by what's held constant / given:
 MEASURING (investigation): AMMETER in SERIES (same current as component);
    VOLTMETER in PARALLEL (reads p.d. across component). Plot I vs V → straight = ohmic.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| EMF | Electromotive force | The energy supplied per unit charge by a source (unit: volt); it is a voltage, not a force — the name is a misnomer. |
+

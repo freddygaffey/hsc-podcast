@@ -89,3 +89,11 @@ DOUBLE-EXTORTION (data theft + threat to publish), as in Medibank:
     Double-extortion's leverage is the harm of PUBLICATION, not loss of access.
     Refusing to pay avoids funding/rewarding crime, but cannot un-leak the data.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| GB | Gigabyte | A unit of data storage (about one billion bytes) |
+| MFA | Multi-Factor Authentication | Requiring two or more independent factors to verify identity |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| VPN | Virtual Private Network | An encrypted tunnel that extends a private network across a public one |

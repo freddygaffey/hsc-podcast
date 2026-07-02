@@ -146,3 +146,13 @@ $$
 | Speed of light | c | 3.0 × 10⁸ m s⁻¹ |
 | Quantum (photon) energy | E = hf | energy of one quantum, in joules |
 | Celsius → kelvin | T(K) | T(°C) + 273 |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+| IR | Infrared | EM radiation with wavelength longer than visible red light; felt as heat. |
+| NSW | New South Wales | The Australian state whose Education Standards Authority sets this syllabus. |
+| UV | Ultraviolet | EM radiation with wavelength shorter than visible violet light. |
+

@@ -80,3 +80,10 @@ Q4 (3 marks) — Distinguish creativity, innovation & quality.
   Creativity = new ideas. Innovation = idea successfully delivered. Quality = standard/excellence of
   execution. Related but distinct; aimed at together.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **SCAMPER** | Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse/Rearrange | Seven prompts to generate ideas by transforming an existing design (P3.1) |
+| **TEMPLE** | Timing, Emerging technologies, Marketing strategies, Political factors, Legal & economic factors, Era (historical/cultural) | The factors that impact on the success of innovation (H3.1) |

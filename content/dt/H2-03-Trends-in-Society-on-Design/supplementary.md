@@ -84,3 +84,10 @@ Q4 (2 marks) — Why monitor trends?
   Trends shape consumer needs/wants -> monitoring keeps designs relevant & timely; ignoring them risks
   outdated/mistimed products (an innovation launched as the market moves away).
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **SPEEG** | Social, Political, Economic, Environmental, Global | The issues that drive trends in society (H2.1) |
+| **TEMPLE** | Timing, Emerging technologies, Marketing strategies, Political factors, Legal & economic factors, Era (historical/cultural) | The factors that impact on the success of innovation (H3.1) |

@@ -181,3 +181,13 @@ the direct confirmations.
 | Particle accelerators | Relativistic momentum / mass increase; transition rates dilate | Confirmed to v ≈ c/3 measurements (2014) |
 | GPS satellites | Daily proof time dilation is real | Without relativistic correction GPS drifts by > 30 µs/day |
 | Modern laser/cavity Michelson–Morley | Isotropy of c | Confirmed to better than 1 part in 10^17 |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| GPS | Global Positioning System | Satellite navigation system whose atomic clocks require relativistic (special + general) corrections. |
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+| LIGO | Laser Interferometer Gravitational-Wave Observatory | The laser interferometer that first directly detected gravitational waves (2015). |
+| NESA | NSW Education Standards Authority | The body that sets the NSW syllabus and HSC examinations. |
+

@@ -262,3 +262,8 @@ p1 --> payment : "payment request"
 payment --> p1 : "payment confirmation"
 @enduml
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| DFD | Data Flow Diagram | A model showing how data moves between processes, stores and external entities |

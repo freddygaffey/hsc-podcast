@@ -143,3 +143,23 @@ WHEN THE QUESTION SAYS...                          REACH FOR...
 "classify / explain this error"                     S-L-R
 "evaluate the solution"                             F-P-R-D (with EVIDENCE)
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| A-E-F | Accumulator · Extreme · Flag | Kinds of variable that store data across an algorithm |
+| A-R-T-S | Arrays · Records · Trees · Sequential files | The standard data structures |
+| B-P-F | Boundary · Path coverage · Faulty-and-abnormal | Categories of test data (actual vs expected) |
+| DFD | Data Flow Diagram | A model showing how data moves between processes, stores and external entities |
+| F-T-C-R | Field · Type · Constraints · Relationship | The parts of a data-dictionary entry |
+| I-O-L-F | Imperative · Object-oriented · Logic · Functional | The programming paradigms |
+| I-O-P | Inputs · Outputs · Purpose | What to identify when analysing a written algorithm |
+| LIFO | Last In · First Out | Access order of a stack: the most recently added item is removed first |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| P-D-K | Positional · Default · Keyword | The kinds of function parameter/argument |
+| R-D-C | Read-me · Docstring · Comment | Levels of code documentation |
+| R-F-D-C | Requirements · Feedback · Documentation · Change | Axes for comparing Waterfall vs Agile |
+| R-S-D-D-I-T-I-M | Requirements · Specifications · Design · Development · Integration · Testing · Installation · Maintenance | The eight software-development steps |
+| S-L-R | Syntax · Logic · Runtime | The categories of programming error |
+| S-S-I | Sequence · Selection · Iteration | The three control structures |
+| W-S-R | Write (working tree) · Stage (index) · Record (repo) | Git's three places |

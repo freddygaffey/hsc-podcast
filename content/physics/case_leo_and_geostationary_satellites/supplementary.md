@@ -243,3 +243,15 @@ v_{\text{esc}} = \sqrt{\frac{2 \times 3.986\times 10^{14}}{6.378\times 10^{6}}} 
 $$
 
 Compare: at any altitude, orbital speed \(v_{\text{orbit}} = \sqrt{G M / r}\), so \(v_{\text{esc}} = \sqrt{2}\, v_{\text{orbit}}\). Below \(v_{\text{esc}}\) you orbit; at or above it you leave.
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| GEO | Geostationary orbit | Circular equatorial orbit (~35 786 km) with a 24-hour period, so the satellite stays above a fixed point on Earth. |
+| GNSS | Global Navigation Satellite System | General term for satellite positioning systems (e.g. GPS), whose satellites sit in medium Earth orbit. |
+| GPS | Global Positioning System | Satellite navigation system whose atomic clocks require relativistic (special + general) corrections. |
+| ISS | International Space Station | Crewed spacecraft in low Earth orbit (~400 km). |
+| LEO | Low Earth orbit | Orbit roughly 200–2000 km in altitude (e.g. the ISS, imaging and weather satellites). |
+| MEO | Medium Earth orbit | Orbit between LEO and GEO (~20 000 km) used by GPS/GNSS satellites. |
+

@@ -168,3 +168,12 @@ Data/state qualities to argue from (mnemonic I-C-F-S):
   Flexibility — change is allowed, but only through guarded, validated operations.
   Security    — only authorised, validated paths may alter safety-critical state.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| I-C-F-S | Integrity · Consistency · Flexibility · Security | Reasons to use a database |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| OOP | Object-Oriented Programming | A paradigm structuring software around objects that bundle data and behaviour |
+| QA | Quality Assurance | The processes that build quality into a product, not just test for defects |
+| UI | User Interface | The parts of a system a user directly interacts with |

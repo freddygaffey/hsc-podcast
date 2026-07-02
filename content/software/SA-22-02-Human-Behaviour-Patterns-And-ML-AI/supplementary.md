@@ -112,3 +112,12 @@ BEGIN AdaptToUser(session)
     RETURN config                                      // adapt the system to the human, not the reverse
 END AdaptToUser
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AI | Artificial Intelligence | Software that performs tasks normally needing human intelligence |
+| ML | Machine Learning | AI systems that learn patterns from data rather than being explicitly programmed |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| P-S-C-B | Psychological responses · acute Stress response · Cultural protocols · Belief systems | Human-behaviour factors influencing ML/AI design |
+| S-H-L-M | Sampling · Historical · Labeler · Measurement | The sources of bias in machine learning |

@@ -101,3 +101,9 @@ BEGIN ReinforcementLearning(environment, episodes)
     NEXT episode
 END ReinforcementLearning
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| S-U-S-R | Supervised · Unsupervised · Semi-supervised · Reinforcement | The machine-learning training-model types |

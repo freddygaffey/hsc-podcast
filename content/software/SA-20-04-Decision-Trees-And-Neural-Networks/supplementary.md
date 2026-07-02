@@ -88,3 +88,9 @@ print(export_text(tree, feature_names=["urgent","meeting","known_contact"]))  # 
 print(tree.predict([[1,0,1]]))               # -> ["medium"]  (and you can read WHY)
 # export_text prints the learned IF-questions -> the tree is INTERPRETABLE (unlike a neural net).
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| R-N-L | Root · Node · Leaf | The parts of a (decision) tree |

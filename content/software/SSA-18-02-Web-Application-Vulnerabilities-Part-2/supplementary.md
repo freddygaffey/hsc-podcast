@@ -108,3 +108,16 @@ R  Race conditions                        TOCTOU double-spend; fix: ATOMIC op / 
 +  File attacks                           path traversal ("../ climbs out"); fix: canonicalise+allow-list
 +  Side-channel attacks                   timing leak; fix: constant-time comparison
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| B-X-I-R | Broken authentication/session · Cross-site (XSS/CSRF) · Invalid redirect · Race condition | Common web-application vulnerabilities |
+| CSRF | Cross-Site Request Forgery | An attack that tricks a logged-in user's browser into sending an unwanted request |
+| DB | Database | An organised, queryable store of persistent data |
+| HTTPS | HyperText Transfer Protocol Secure | HTTP encrypted with TLS for confidentiality and integrity in transit |
+| JS | JavaScript | The programming language that runs in web browsers |
+| MFA | Multi-Factor Authentication | Requiring two or more independent factors to verify identity |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| TOCTOU | Time-Of-Check to Time-Of-Use | A race-condition flaw where state changes between validating and using it |
+| XSS | Cross-Site Scripting | An attack injecting malicious scripts into pages viewed by other users |

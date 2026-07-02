@@ -68,3 +68,34 @@ Privacy-by-design (12-01)                       Privacy + accountability (SSA 16
     Diagnose anything with dev tools E-N-S-P; 4xx=request, 5xx=server (12-03)
 =>  Everything marked "secure properly later" -> Secure Software Architecture (next module)
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AAA | Authentication · Authorisation · Accountability | The three access-security pillars: prove who you are, check what you may do, and keep a traceable record |
+| C-C-C-L | Cache · Compress · CDN · Lazy-load | The four levers for faster page loads |
+| CDN | Content Delivery Network | Geographically distributed servers that cache and serve content close to the user |
+| CIA | Confidentiality · Integrity · Availability | The three core information-security properties (the security triad) |
+| CRUD | Create · Read · Update · Delete | The four basic operations performed on stored (database) records |
+| DNS | Domain Name System | The system that translates human-readable domain names into IP addresses |
+| E-N-S-P | Elements · Network · Storage · Performance | The browser developer-tool panels (plus Console) |
+| F-T-C | Frameworks · Template engines · predesigned CSS Classes | Front-end tools and libraries |
+| HTML | HyperText Markup Language | The language that structures the content of web pages |
+| HTTP | HyperText Transfer Protocol | The request/response protocol used to transfer web resources |
+| HTTPS | HyperText Transfer Protocol Secure | HTTP encrypted with TLS for confidentiality and integrity in transit |
+| I-E-P | Interactive website · E-commerce · Progressive web app | Applications of web programming |
+| IP | Internet Protocol | The protocol that addresses and routes data packets across networks |
+| L-C-C | Licence · Community · Contribution | Pillars to weigh when choosing open-source software |
+| M-M-S | Mining · Metadata · Streaming | Big-data concepts |
+| MISO | Manifest · Installable · Service worker · Offline | The four capabilities that distinguish a Progressive Web App from an ordinary website |
+| OSS | Open-Source Software | Software whose source code is publicly available and licensed for reuse |
+| POUR | Perceivable · Operable · Understandable · Robust | The four WCAG accessibility principles for web content |
+| PWA | Progressive Web App | A website that can install, work offline and behave like a native app |
+| R-H-D-R | Route · Handle · Data · Respond | The back-end request lifecycle |
+| SQL | Structured Query Language | The standard language for querying and manipulating relational databases |
+| SSL | Secure Sockets Layer | The predecessor to TLS for encrypting network connections |
+| TCP | Transmission Control Protocol | The protocol providing reliable, ordered delivery of data over IP |
+| TLS | Transport Layer Security | The protocol that encrypts and authenticates data in transit (secures HTTPS) |
+| WAI | Web Accessibility Initiative | The W3C effort that produces web accessibility guidelines |
+| WCAG | Web Content Accessibility Guidelines | The W3C standard defining how to make web content accessible (see POUR) |
+| XSS | Cross-Site Scripting | An attack injecting malicious scripts into pages viewed by other users |

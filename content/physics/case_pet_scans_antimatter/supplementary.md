@@ -146,3 +146,13 @@ So it is long enough to ship from cyclotron and scan (uptake takes \(\approx 60\
 | 1974 | First ring PET scanner (Ter-Pogossian, Phelps, Hoffman, Washington Univ. St Louis) |
 | 1976 | First human administration of [18F]FDG (Alavi, Univ. of Pennsylvania, Aug) |
 | ~1980 | Discovery that tumours accumulate FDG -> PET becomes an oncology tool |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| FDG | Fluorodeoxyglucose | A glucose analogue labelled with a positron-emitting isotope (fluorine-18) used as the tracer in PET scans. |
+| LOR | Line of response | The straight line joining the two detectors that register the back-to-back annihilation gamma photons in a PET scan. |
+| PET | Positron emission tomography | Medical imaging technique that uses positron–electron annihilation gamma rays to map metabolic activity. |
+| SI | International System of Units (Système International d'Unités) | The standard metric system of units (metre, kilogram, second, ampere, …). |
+

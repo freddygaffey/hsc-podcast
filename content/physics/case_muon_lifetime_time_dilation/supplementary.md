@@ -194,3 +194,14 @@ Two-frame interpretation (same outcome, both frames agree muons survive):
 - MUON frame: the muons' clocks are normal (only \(\approx 0.7\ \mu\mathrm{s}\) elapses), but the mountain/atmosphere is LENGTH-CONTRACTED to a small hill, so the contracted distance is crossed within a normal lifetime.
 
 This is the syllabus' quantitative muon-lifetime example, and it shows time dilation (Earth frame) and length contraction (muon frame) are two descriptions of one physical result.
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| GPS | Global Positioning System | Satellite navigation system whose atomic clocks require relativistic (special + general) corrections. |
+| GR | General relativity | Einstein's theory of gravity as curved spacetime; clocks run faster where gravity is weaker. |
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+| NESA | NSW Education Standards Authority | The body that sets the NSW syllabus and HSC examinations. |
+| SR | Special relativity | Einstein's theory of motion at constant velocity; predicts time dilation and length contraction. |
+

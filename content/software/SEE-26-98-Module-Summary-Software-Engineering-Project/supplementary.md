@@ -116,3 +116,34 @@ the PFW web stack, SSA security (CIA-AAA), and SA automation/ethics — inside o
         evidence = actual-vs-expected test results + synthesised feedback; reflection = a justified
         judgement, not a feelings summary.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| AAA | Authentication · Authorisation · Accountability | The three access-security pillars: prove who you are, check what you may do, and keep a traceable record |
+| B-M-S | Brainstorm · Mind-map · Storyboard | Ideation techniques for generating design ideas |
+| C-E-R | Criteria · Evidence · Reflection | Structure for evaluating a solution against its criteria |
+| C-S-A | Collect · Synthesise · Act | How to handle user feedback (prioritise by impact vs effort) |
+| C-T-I-M | Code generation · Testing and debugging · Installation · Maintenance | What a build toolkit supports |
+| C-U-P-S | Correctness · Usability · Performance · Security | Software quality criteria |
+| CIA | Confidentiality · Integrity · Availability | The three core information-security properties (the security triad) |
+| DFD | Data Flow Diagram | A model showing how data moves between processes, stores and external entities |
+| DiP-PP | Direct · Phased · Parallel · Pilot | The changeover / implementation (installation) methods for deploying a new system |
+| I-F-N | Involve (and empower) · Feedback · Negotiate | Principles for communicating effectively with a client during a project |
+| O-S-A-E-S | Objectives · Scope · Approaches · Environments · Schedule | The components of a test plan |
+| OOP | Object-Oriented Programming | A paradigm structuring software around objects that bundle data and behaviour |
+| P-S-D-B-N | Problem · Solution · Demo · Benefits · Next steps | The arc of a solution presentation |
+| P-S-R-R | Plan · Standup · Review (product) · Retro (process) | The Agile ceremonies |
+| PABT | Privacy · Accessibility · Bias · Transparency | Checklist of the main ethical issues to weigh in an automated/AI system |
+| POUR | Perceivable · Operable · Understandable · Robust | The four WCAG accessibility principles for web content |
+| QA | Quality Assurance | The processes that build quality into a product, not just test for defects |
+| R-C-B-M-T | Repository · Commit · Branch · Merge · Tag | Core version-control concepts |
+| S-P-O | Self-search · Peers · Outsource/escalate | The help ladder for overcoming development difficulties |
+| S-R-I | Standards · Review · continuous Integration | How to keep quality high while building |
+| S-W-M-P | Sketch · Wireframe · Mockup · Prototype | The prototype fidelity ladder |
+| T-B-E-D | Technical · Business · End-users · Decision-makers | The presentation audiences |
+| T-E-I-S | Technology · Error handling · Interfacing · Security | Back-end engineering concerns |
+| T-R-P | Technical · Resource · Process | Types of project blocker |
+| TECO | Technical · Economic · Cost-and-schedule · Operational | The dimensions weighed in a feasibility study before committing to a project |
+| UI | User Interface | The parts of a system a user directly interacts with |
+| WCAG | Web Content Accessibility Guidelines | The W3C standard defining how to make web content accessible (see POUR) |

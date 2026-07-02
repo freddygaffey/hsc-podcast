@@ -169,3 +169,11 @@ EVALUATE STRUCTURE (plum pudding):
     → Judgement (reasonable for the time; overturned by gold foil).
     Use contrast words: "but", "whereas", "in contrast".
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| CRT | Cathode-ray tube | Evacuated tube in which a beam of electrons (cathode rays) is accelerated and deflected onto a screen. |
+| P-N-L-W | Plum-pudding, Nucleus, Levels, Waves | The order of development of the atomic models. |
+

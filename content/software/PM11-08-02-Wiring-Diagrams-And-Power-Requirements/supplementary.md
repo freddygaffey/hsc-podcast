@@ -98,3 +98,8 @@ WIRING-DIAGRAM = the system's blueprint (data + power):
   SAFE-WIRING checklist: Colour-code · Fuse · Wire-gauge to current · Strain-relief ·
   Isolate high/low voltage · ONE common ground · an emergency-stop on main power.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| V-I-P | Voltage · current (I) · Power | The electrical quantities (P = V × I) |

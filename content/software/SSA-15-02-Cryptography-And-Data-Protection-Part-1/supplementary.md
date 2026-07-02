@@ -83,3 +83,9 @@ BEGIN CheckIntegrity(data, expectedHash)
     ENDIF
 END CheckIntegrity
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| DB | Database | An organised, queryable store of persistent data |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

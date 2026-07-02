@@ -89,3 +89,10 @@ Healthcare.gov is the classic FIXED-DEADLINE + WATERFALL + NO-LOAD-TESTING proje
 CASHES INTO: SEE 23-01 (requirements/feasibility), 24-01 (waterfall risk), 26-01 (testing/load), 26-03
 (evaluation). Companion to case_the_denver_airport_baggage and case_the_knight_capital_glitch.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| C-E-R | Criteria · Evidence · Reflection | Structure for evaluating a solution against its criteria |
+| CMS | Content Management System | Software for creating and managing website content without hand-coding each page |
+| TECO | Technical · Economic · Cost-and-schedule · Operational | The dimensions weighed in a feasibility study before committing to a project |

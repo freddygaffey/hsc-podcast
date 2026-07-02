@@ -91,3 +91,13 @@ BEGIN SearchProducts
     NEXT row
 END SearchProducts
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| DB | Database | An organised, queryable store of persistent data |
+| FK | Foreign Key | A column that references the primary key of another table to link records |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| ORM | Object-Relational Mapping | A layer that maps database tables to program objects so you write code, not raw SQL |
+| PK | Primary Key | The column that uniquely identifies each row in a database table |
+| SQL | Structured Query Language | The standard language for querying and manipulating relational databases |

@@ -175,3 +175,13 @@ Constants (HSC data sheet):
 | M      | Cannot explain line splitting — fine structure and the **M**agnetic (Zeeman) effect |
 | S      | Is a **S**ticky mixture of classical and quantum physics (inelegant)    |
 | W      | Never explains **W**hy orbits are stable / non-radiating — only asserts it |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| HSC | Higher School Certificate | The NSW senior secondary credential and its examinations. |
+| "Hydrogen Is My Sole Why" | Hydrogen-only, Intensities (unexplained), Magnetic (Zeeman) splitting, Sticky classical–quantum mix, Why orbits are stable | The limitations of the Bohr model. |
+| "Little Birds Pause" | Lyman, Balmer, Paschen | The hydrogen spectral series (electrons falling to n = 1, 2, 3). |
+| UV | Ultraviolet | EM radiation with wavelength shorter than visible violet light. |
+

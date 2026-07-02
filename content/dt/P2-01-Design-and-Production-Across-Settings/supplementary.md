@@ -93,3 +93,11 @@ Q5 (3 marks) — Contrast the aims of a community vs a commercial setting.
   service), not to maximise profit. E.g. commercial bakery chain vs community garden. The community
   setting is the deliberate non-profit exception.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| **DCIC** | Domestic, Community, Industrial, Commercial | The four settings in which design and production happen (P2.1) |
+| **DRIPER** | Define, Research, Ideate, Produce, Evaluate, Refine | The six cyclic stages of the design process (an iterative/cyclical process) |
+| QC | Quality Control | Checking output against quality standards (e.g. line sampling) |

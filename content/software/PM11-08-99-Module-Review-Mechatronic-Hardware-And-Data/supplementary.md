@@ -100,3 +100,17 @@ print("Integrated thermostat (sense -> clean -> decide) checks passed.")
 BRIDGE -> Ch 09: we have the devices, their data, and the power/wiring. Next we write the THINK —
 the control algorithms (open vs closed loop, autonomous control) that turn readings into actions.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CPU | Central Processing Unit | The processor that executes program instructions |
+| M-C-D-O | Measurement · Control · Diagnostic · Optimisation | The four data streams a mechatronic system handles |
+| P-C-R-I | Performance · Cost · Reliability · Integration | Criteria for choosing a hardware component |
+| S-A-E | Sensor · Actuator · End-effector | The mechatronic device trio (input, output, tool) |
+| S-A-I-D | Safety · Adaptability · Independence · Diverse I/O | The specialist (accessibility) requirements checklist |
+| S-M-E-M | Software · Mechanical · Electronics · Maths | The knowledge fields combined in a mechatronic build |
+| Sense-Think-Act | Sense · Think · Act | The repeating control loop of an autonomous / mechatronic system |
+| T-I-U | Timestamp · Identity (which sensor) · Units | What to record with device/sensor data |
+| V-A-H | Visual · Audio · Haptic | Multi-modal feedback channels |
+| V-I-P | Voltage · current (I) · Power | The electrical quantities (P = V × I) |

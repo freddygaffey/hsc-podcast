@@ -142,3 +142,8 @@ None — new feature, no change to existing interfaces.
 #
 # The rule: "comment the code, not the coder."
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| API | Application Programming Interface | A defined contract that lets one piece of software request services from another |

@@ -150,3 +150,12 @@ Small-angle relation (alternative): \(\sin\theta \approx \tan\theta = x / L\), s
 | "Evaluate" demands | A stated VERDICT + the LIMITATION (criteria-based judgement) |
 | The wave model's limit | Fails on black-body radiation (UV catastrophe) and the photoelectric effect → photons |
 | Speed of light (vacuum) | c = 3.0 × 10⁸ m s⁻¹ (the contest is about v in water being LESS than c) |
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| DIP ("Don't Ignore Photons") | Diffraction, Interference, Polarisation | The three pillars of evidence for the wave model of light. |
+| EM | Electromagnetic | Describing waves or radiation made of oscillating electric and magnetic fields (the EM spectrum). |
+| UV | Ultraviolet | EM radiation with wavelength shorter than visible violet light. |
+

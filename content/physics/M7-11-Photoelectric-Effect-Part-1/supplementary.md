@@ -113,3 +113,12 @@ CHANGE THE LIGHT:
                           and there is a threshold frequency. These are the four observations.
 1905  Albert Einstein  — explains it with the photon (NEXT EPISODE, M7-12).
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| DENF | no Delay, Energy from frequency, Number from intensity, threshold Frequency | The four photoelectric-effect observations explained by Einstein's photon model. |
+| EM | Electromagnetic | Describing waves or radiation made of oscillating electric and magnetic fields (the EM spectrum). |
+| UV | Ultraviolet | EM radiation with wavelength shorter than visible violet light. |
+

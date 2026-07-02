@@ -66,3 +66,10 @@ Action-reaction pairs (different objects):
   Those act on the SAME object (the book) and are different types — they merely BALANCE
   (equilibrium, net force zero). Action-reaction acts on different objects.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| SUVAT | s, u, v, a, t (displacement, initial velocity, final velocity, acceleration, time) | The five quantities linked by the equations of uniformly accelerated motion. |
+

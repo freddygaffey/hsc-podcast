@@ -134,3 +134,9 @@ BEGIN ConstantTimeEqual(a, b)
     RETURN (diff = 0)                                     // same time regardless of match
 END ConstantTimeEqual
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| M-S-E | Memory · Session · Exception management | Resource-management concerns in secure execution |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |

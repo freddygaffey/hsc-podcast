@@ -326,3 +326,10 @@ BEGIN Constructor BankAccount(accountNumber, ownerName, initialBalance)
     this.transactionHistory ← empty list
 END Constructor
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| CPU | Central Processing Unit | The processor that executes program instructions |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| R-R-C-I | Requirements · Responsibilities · Collaborations · Implementation | The (iterative) object-oriented design pipeline |

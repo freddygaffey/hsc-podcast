@@ -93,3 +93,18 @@ STORY: Healthcare.gov post-mortem = a real C-E-R (criteria=load+workflow; eviden
 
 TRAPS: "evaluation = it works"; no criteria/evidence; skipping the reflection.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| C-E-R | Criteria · Evidence · Reflection | Structure for evaluating a solution against its criteria |
+| C-S-A | Collect · Synthesise · Act | How to handle user feedback (prioritise by impact vs effort) |
+| C-U-P-S | Correctness · Usability · Performance · Security | Software quality criteria |
+| DAST | Dynamic Application Security Testing | Testing a running application from the outside for security flaws ("doing") |
+| GPA | Grade Point Average | A numeric summary of academic grades (used as example data) |
+| M-A-I | Measure · Audit · Improve | The continuous, outcome-based security-evaluation loop |
+| NESA | NSW Education Standards Authority | The body that sets the HSC syllabus and exams in New South Wales |
+| QA | Quality Assurance | The processes that build quality into a product, not just test for defects |
+| RBAC | Role-Based Access Control | Granting permissions to roles, then assigning users to those roles |
+| SAST | Static Application Security Testing | Analysing source code for security flaws without running it ("source") |
+| TLS | Transport Layer Security | The protocol that encrypts and authenticates data in transit (secures HTTPS) |

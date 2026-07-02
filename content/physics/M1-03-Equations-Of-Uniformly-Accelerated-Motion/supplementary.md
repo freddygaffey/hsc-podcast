@@ -75,3 +75,10 @@ Straight v–t line for constant a: from u up to v over time t.
 
 ⇒ The four equations are just the velocity-time graph (M1-02) written as algebra.
 ```
+
+## Glossary
+
+| Term | Expansion | Meaning |
+|---|---|---|
+| SUVAT | s, u, v, a, t (displacement, initial velocity, final velocity, acceleration, time) | The five quantities linked by the equations of uniformly accelerated motion. |
+

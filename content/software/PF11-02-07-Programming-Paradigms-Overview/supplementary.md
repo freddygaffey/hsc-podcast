@@ -98,3 +98,8 @@ A LANGUAGE IS NOT A PARADIGM. Most modern languages are MULTI-PARADIGM:
   JavaScript, C++, Scala ... likewise mix styles.
 The paradigm is the STYLE you write in; the language usually lets you choose.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| OOP | Object-Oriented Programming | A paradigm structuring software around objects that bundle data and behaviour |

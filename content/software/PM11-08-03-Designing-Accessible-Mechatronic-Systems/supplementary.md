@@ -94,3 +94,9 @@ SAFETY for users who can't react quickly:
 WHY (SE-11-05): accessible design is an ETHICAL + LEGAL obligation (equal access, anti-discrimination),
 and good engineering — it makes systems more robust and usable for everyone.
 ```
+
+## Glossary
+| Term | Expansion | Meaning |
+|---|---|---|
+| S-A-I-D | Safety · Adaptability · Independence · Diverse I/O | The specialist (accessibility) requirements checklist |
+| V-A-H | Visual · Audio · Haptic | Multi-modal feedback channels |
