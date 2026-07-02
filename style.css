@@ -1066,6 +1066,15 @@ body.offline .episode-row:not(.ep-downloaded) .ep-play { opacity: 0.4; }
 .advance-cancel:active { background: var(--accent-soft); }
 
 /* ── Stats overlay ──────────────────────────────────────── */
+/* BUG-1: freeze the page behind an open sheet (iOS-safe). JS toggles this class and
+   restores scroll position on close. */
+body.sheet-open {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+}
 .stats-overlay {
   position: fixed;
   inset: 0;
@@ -1082,6 +1091,7 @@ body.offline .episode-row:not(.ep-downloaded) .ep-play { opacity: 0.4; }
   max-width: 540px;
   max-height: 80vh;
   overflow-y: auto;
+  overscroll-behavior: contain; /* don't chain scroll to the page behind */
   padding: 20px 20px 36px;
 }
 .stats-header {

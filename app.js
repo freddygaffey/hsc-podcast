@@ -130,15 +130,32 @@
   // Move focus into the sheet on open and restore it to the opener on close, so
   // keyboard/screen-reader users aren't stranded. Paired with role="dialog".
   let sheetOpener = null;
+  let savedScrollY = 0;
+  // Lock the page behind a sheet so it can't scroll. Uses the position:fixed technique
+  // (iOS Safari ignores `overflow:hidden` on body) and preserves/restores scroll position.
+  function lockBodyScroll() {
+    if (document.body.classList.contains("sheet-open")) return;
+    savedScrollY = window.scrollY || window.pageYOffset || 0;
+    document.body.style.top = `-${savedScrollY}px`;
+    document.body.classList.add("sheet-open");
+  }
+  function unlockBodyScroll() {
+    if (!document.body.classList.contains("sheet-open")) return;
+    document.body.classList.remove("sheet-open");
+    document.body.style.top = "";
+    window.scrollTo(0, savedScrollY);
+  }
   function openSheet(overlay) {
     sheetOpener = document.activeElement;
     setHidden(overlay, false);
+    lockBodyScroll();
     const panel = overlay.querySelector(".stats-panel");
     const target = panel && (panel.querySelector(".sheet-close") || panel);
     if (target) { if (target === panel) panel.tabIndex = -1; target.focus(); }
   }
   function closeSheet(overlay) {
     setHidden(overlay, true);
+    if (!activeSheet()) unlockBodyScroll(); // only release when no sheet remains open
     if (sheetOpener && typeof sheetOpener.focus === "function") sheetOpener.focus();
     sheetOpener = null;
     // If the review sheet was opened via a subject's #/…/quizzes route, drop back to the
