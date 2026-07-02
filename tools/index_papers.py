@@ -70,6 +70,8 @@ def main():
     papers = []
     for pdf in sorted(PAPERS.rglob("*.pdf")):
         rel = pdf.relative_to(PAPERS)
+        if any(part.startswith("_") for part in rel.parts):   # skip _work/, logs, staging
+            continue
         if len(rel.parts) < 3:          # want <subject>/<category>/<file>
             continue
         subject, category = rel.parts[0], rel.parts[1]
