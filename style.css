@@ -438,61 +438,55 @@ button, select, input { font-family: inherit; }
 .subjects-title { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 4px; }
 .subjects-sub { color: var(--text-dim); font-size: 15px; margin: 0; }
 
-/* Daily-quiz box — the headline call-to-action above the subject grid. */
+/* Daily-quiz box — the headline call-to-action above the subject grid.
+   Always a big, solid-blue button so it reads as the primary action. */
 .daily-quiz {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
   width: 100%;
   text-align: left;
-  padding: 18px 20px;
-  margin: 0 0 22px;
-  border: 1px solid var(--accent);
-  border-radius: 16px;
-  background: var(--accent-soft);
-  color: var(--text);
-  cursor: pointer;
-  transition: border-color 0.15s ease, background 0.15s ease, transform 0.05s ease;
-}
-.daily-quiz:hover { background: var(--bg-elevated); }
-.daily-quiz:active { transform: scale(0.99); }
-.daily-quiz.has-due {
+  padding: 22px 24px;
+  margin: 0 0 26px;
+  border: none;
+  border-radius: 18px;
   background: var(--accent);
-  border-color: var(--accent);
   color: #fff;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+  transition: filter 0.15s ease, transform 0.05s ease, box-shadow 0.15s ease;
 }
+.daily-quiz:hover { filter: brightness(1.06); box-shadow: 0 8px 26px rgba(37, 99, 235, 0.45); }
+.daily-quiz:active { transform: scale(0.99); }
 .dq-icon {
   flex: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 46px;
-  height: 46px;
-  border-radius: 12px;
-  background: var(--accent);
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.2);
   color: #fff;
 }
-.daily-quiz.has-due .dq-icon { background: rgba(255, 255, 255, 0.2); }
 .dq-text { display: flex; flex-direction: column; gap: 3px; flex: 1; min-width: 0; }
-.dq-title { font-weight: 700; font-size: 18px; }
-.dq-sub { font-size: 13px; color: var(--text-dim); }
-.daily-quiz.has-due .dq-sub { color: rgba(255, 255, 255, 0.85); }
-.dq-cta { flex: none; display: flex; align-items: center; gap: 8px; }
+.dq-title { font-weight: 800; font-size: 21px; letter-spacing: -0.01em; }
+.dq-sub { font-size: 14px; color: rgba(255, 255, 255, 0.9); }
+.dq-cta { flex: none; display: flex; align-items: center; gap: 10px; }
 .dq-count {
-  min-width: 24px;
-  height: 24px;
-  padding: 0 7px;
-  border-radius: 12px;
+  min-width: 26px;
+  height: 26px;
+  padding: 0 8px;
+  border-radius: 13px;
   background: #fff;
   color: var(--accent);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 800;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.dq-arrow { font-size: 24px; line-height: 1; color: var(--text-dim); }
-.daily-quiz.has-due .dq-arrow { color: rgba(255, 255, 255, 0.9); }
+.dq-arrow { font-size: 26px; line-height: 1; color: rgba(255, 255, 255, 0.9); }
 
 .subjects-grid {
   display: grid;
