@@ -1,6 +1,6 @@
 {
   "subject": "maths-extension-2",
-  "count": 1805,
+  "count": 1982,
   "questions": [
     {
       "id": "8157d2aae521",
@@ -180,6 +180,226 @@
       ],
       "hasStimulus": false,
       "bytes": 77995
+    },
+    {
+      "id": "20d628d8ee7e",
+      "subject": "maths-extension-2",
+      "assetKey": "q_20d628d8ee7e.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2007-w-sol",
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 15,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Polynomial equations with complex roots, multiple root theorem, symmetric functions of roots",
+      "module": "Complex Numbers; Proof",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-P1"
+      ],
+      "hasStimulus": false,
+      "bytes": 9395
+    },
+    {
+      "id": "187b0c5b61e1",
+      "subject": "maths-extension-2",
+      "assetKey": "q_187b0c5b61e1.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2007-w-sol",
+      "questionNumber": "3",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Argand diagram geometry (equal intervals), loci of complex numbers, modulus-argument form and de Moivre's theorem",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 168145
+    },
+    {
+      "id": "e7890c4baf09",
+      "subject": "maths-extension-2",
+      "assetKey": "q_e7890c4baf09.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2007-w-sol",
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 15,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Complex cube roots of unity; rectangular hyperbola tangent/normal geometry (legacy conics topic)",
+      "module": "Complex Numbers; Calculus",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 174736
+    },
+    {
+      "id": "433b28171f6e",
+      "subject": "maths-extension-2",
+      "assetKey": "q_433b28171f6e.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2007-w-sol",
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Ellipse parametric geometry (legacy conics topic); volume of revolution by cylindrical shells with hyperbola tangent",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 9953
+    },
+    {
+      "id": "62a88a1e4d1d",
+      "subject": "maths-extension-2",
+      "assetKey": "q_62a88a1e4d1d.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2007-w-sol",
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 15,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Divisibility proof (number theory); combinatorics (letter arrangements, RENEGADE); simple harmonic motion (tidal harbour problem)",
+      "module": "Proof; Combinatorics; Mechanics",
+      "syllabusRefs": [
+        "ME-P1",
+        "ME-A1",
+        "ME-M1"
+      ],
+      "hasStimulus": false,
+      "bytes": 3575
+    },
+    {
+      "id": "88cae0e99fd1",
+      "subject": "maths-extension-2",
+      "assetKey": "q_88cae0e99fd1.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2007-w-sol",
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Ellipse parametric geometry (legacy conics topic); volume of revolution by cylindrical shells with hyperbola tangent",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 121374
+    },
+    {
+      "id": "eb6cf0c83cc7",
+      "subject": "maths-extension-2",
+      "assetKey": "q_eb6cf0c83cc7.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2007-w-sol",
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Divisibility proof (number theory); combinatorics (letter arrangements, RENEGADE); simple harmonic motion (tidal harbour problem)",
+      "module": "Proof; Combinatorics; Mechanics",
+      "syllabusRefs": [
+        "ME-P1",
+        "ME-A1",
+        "ME-M1"
+      ],
+      "hasStimulus": false,
+      "bytes": 13257
+    },
+    {
+      "id": "631fd111aeb7",
+      "subject": "maths-extension-2",
+      "assetKey": "q_631fd111aeb7.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2007-w-sol",
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": 15,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Areas/volumes by integration: ellipse area via substitution and symmetry; volume of solid with semi-elliptical cross-sections",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 10373
+    },
+    {
+      "id": "1e7af97efb3c",
+      "subject": "maths-extension-2",
+      "assetKey": "q_1e7af97efb3c.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2007-w-sol",
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Divisibility proof (number theory); combinatorics (letter arrangements, RENEGADE); simple harmonic motion (tidal harbour problem)",
+      "module": "Proof; Combinatorics; Mechanics",
+      "syllabusRefs": [
+        "ME-P1",
+        "ME-A1",
+        "ME-M1"
+      ],
+      "hasStimulus": false,
+      "bytes": 182316
+    },
+    {
+      "id": "922beba64457",
+      "subject": "maths-extension-2",
+      "assetKey": "q_922beba64457.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2007-w-sol",
+      "questionNumber": "8",
+      "partLabel": null,
+      "marks": 15,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "De Moivre's theorem to express cos3\u03b8 and solve cubic; reduction formulae for integrals of sec/tan",
+      "module": "Complex Numbers; Calculus",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 110064
+    },
+    {
+      "id": "93b9cb7e68a6",
+      "subject": "maths-extension-2",
+      "assetKey": "q_93b9cb7e68a6.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2007-w-sol",
+      "questionNumber": "3",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Argand diagram geometry (equal intervals), loci of complex numbers, modulus-argument form and de Moivre's theorem",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 225069
     },
     {
       "id": "e76ad4ff6a41",
@@ -3830,6 +4050,314 @@
       ],
       "hasStimulus": true,
       "bytes": 215134
+    },
+    {
+      "id": "7e1c7bf8b97e",
+      "subject": "maths-extension-2",
+      "assetKey": "q_7e1c7bf8b97e.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2003",
+      "questionNumber": "2",
+      "partLabel": "d",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Complex numbers in Cartesian and modulus-argument (polar) form; conjugate root theorem; loci in the Argand plane",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 126525
+    },
+    {
+      "id": "c53bd797a311",
+      "subject": "maths-extension-2",
+      "assetKey": "q_c53bd797a311.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2003",
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Curve sketching using calculus: transformations |g(x)|, 1/g(x), e^g(x); stationary points, local extrema and points of inflexion",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 120039
+    },
+    {
+      "id": "a58a6ae866e0",
+      "subject": "maths-extension-2",
+      "assetKey": "q_a58a6ae866e0.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2003",
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 15,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Ellipse: eccentricity, foci, directrices, focal chord sum property, tangent/directrix intersection; rectangular hyperbola locus of intersecting tangents",
+      "module": "Conics (legacy topic, not in current syllabus)",
+      "syllabusRefs": [],
+      "hasStimulus": false,
+      "bytes": 157195
+    },
+    {
+      "id": "40619bbc1ae4",
+      "subject": "maths-extension-2",
+      "assetKey": "q_40619bbc1ae4.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2003",
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 15,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Volumes of solids of revolution (rotation about x-axis and a vertical line) and by trapezoidal cross-sections",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 194617
+    },
+    {
+      "id": "cc76e08475c1",
+      "subject": "maths-extension-2",
+      "assetKey": "q_cc76e08475c1.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2003",
+      "questionNumber": "6",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Projectile motion (trajectory equation, range) and rectilinear motion with resistance proportional to v + v^3",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-M1"
+      ],
+      "hasStimulus": true,
+      "bytes": 119466
+    },
+    {
+      "id": "62967bee5c81",
+      "subject": "maths-extension-2",
+      "assetKey": "q_62967bee5c81.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2003",
+      "questionNumber": "6",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Projectile motion (trajectory equation, range) and rectilinear motion with resistance proportional to v + v^3",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-M1"
+      ],
+      "hasStimulus": true,
+      "bytes": 107312
+    },
+    {
+      "id": "34cbdab0d8a3",
+      "subject": "maths-extension-2",
+      "assetKey": "q_34cbdab0d8a3.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2003",
+      "questionNumber": "6",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Projectile motion (trajectory equation, range) and rectilinear motion with resistance proportional to v + v^3",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-M1"
+      ],
+      "hasStimulus": true,
+      "bytes": 98967
+    },
+    {
+      "id": "08f714f0226a",
+      "subject": "maths-extension-2",
+      "assetKey": "q_08f714f0226a.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2003",
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": 15,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Proof that binomial probability is maximised at k=n; roots of unity of x^9-1 and factorisation using complex roots",
+      "module": "Proof / Complex Numbers",
+      "syllabusRefs": [
+        "ME-P1",
+        "ME-N2"
+      ],
+      "hasStimulus": false,
+      "bytes": 189567
+    },
+    {
+      "id": "14294d8a7080",
+      "subject": "maths-extension-2",
+      "assetKey": "q_14294d8a7080.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2003",
+      "questionNumber": "8",
+      "partLabel": null,
+      "marks": 15,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "De Moivre's theorem to expand cos7\u03b8 and solve the resulting polynomial; concavity/curve sketching of y=log_e x; trapezoidal rule numerical integration",
+      "module": "Complex Numbers / Calculus",
+      "syllabusRefs": [
+        "ME-N2",
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 157326
+    },
+    {
+      "id": "647bf737b422",
+      "subject": "maths-extension-2",
+      "assetKey": "q_647bf737b422.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2001-w-sol",
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Solving complex quadratics via (x+iy)^2 form; modulus-argument form and De Moivre's theorem; loci in the Argand plane; geometric locus problem (isosceles right triangle)",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": false,
+      "bytes": 16520
+    },
+    {
+      "id": "52e2595b62c5",
+      "subject": "maths-extension-2",
+      "assetKey": "q_52e2595b62c5.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2001-w-sol",
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Curve sketching of rational functions and transformations of f(x) (reciprocal, square, using calculus to find stationary points/asymptotes); sketching a function from the graph of its derivative",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 17673
+    },
+    {
+      "id": "051e62fb756f",
+      "subject": "maths-extension-2",
+      "assetKey": "q_051e62fb756f.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2001-w-sol",
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Ellipse: foci and directrices, parametric tangent equation, tangent intercept properties; rectangular hyperbola locus of a perpendicular-line intersection",
+      "module": "Conics (legacy topic, not in current syllabus)",
+      "syllabusRefs": [],
+      "hasStimulus": false,
+      "bytes": 17629
+    },
+    {
+      "id": "df3519d96eb2",
+      "subject": "maths-extension-2",
+      "assetKey": "q_df3519d96eb2.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2001-w-sol",
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Volumes by cross-sections (equilateral triangle cross-section of an ellipse) and cylindrical shells (torus); 3D trigonometry (angles of elevation to a non-collinear tower base)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 16941
+    },
+    {
+      "id": "e14a6267f019",
+      "subject": "maths-extension-2",
+      "assetKey": "q_e14a6267f019.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2001-w-sol",
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Transforming the roots of a cubic; tan triple-angle identity applied to solve a trigonometric equation; mathematical induction for a telescoping series",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1",
+        "ME-P2"
+      ],
+      "hasStimulus": false,
+      "bytes": 14347
+    },
+    {
+      "id": "3a3d30e3be85",
+      "subject": "maths-extension-2",
+      "assetKey": "q_3a3d30e3be85.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2001-w-sol",
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Reduction formula for \u222bsin^n \u03b8 d\u03b8; De Moivre's theorem to solve a reciprocal polynomial equation; simple harmonic motion (finding period from three positions)",
+      "module": "Calculus / Complex Numbers / Mechanics",
+      "syllabusRefs": [
+        "ME-C1",
+        "ME-N2",
+        "ME-M1"
+      ],
+      "hasStimulus": false,
+      "bytes": 15426
+    },
+    {
+      "id": "1220861a33e3",
+      "subject": "maths-extension-2",
+      "assetKey": "q_1220861a33e3.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2001-w-sol",
+      "questionNumber": "8",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Projectile motion (direction of motion, range formula, overshoot/undershoot problem); probability of coloured faces showing on tetrahedral dice",
+      "module": "Mechanics / Combinatorics",
+      "syllabusRefs": [
+        "ME-M1",
+        "ME-A1"
+      ],
+      "hasStimulus": false,
+      "bytes": 27080
     },
     {
       "id": "42bee14b2503",
@@ -17316,6 +17844,200 @@
       "bytes": 57927
     },
     {
+      "id": "57fb8ee064fb",
+      "subject": "maths-extension-2",
+      "assetKey": "q_57fb8ee064fb.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2002-w-sol",
+      "questionNumber": "2",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Graphing techniques (transformations of functions); implicit differentiation to find horizontal tangents",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-F1",
+        "ME-C2"
+      ],
+      "hasStimulus": true,
+      "bytes": 94791
+    },
+    {
+      "id": "03216f40e714",
+      "subject": "maths-extension-2",
+      "assetKey": "q_03216f40e714.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2002-w-sol",
+      "questionNumber": "3",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "De Moivre's theorem; Argand diagram loci; complex numbers in geometry (isosceles triangle problem)",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "MEX-N1",
+        "MEX-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 119273
+    },
+    {
+      "id": "f530f69c73fe",
+      "subject": "maths-extension-2",
+      "assetKey": "q_f530f69c73fe.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2002-w-sol",
+      "questionNumber": "4",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Volumes of solids using the slicing method and cylindrical shells",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MEX-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 117255
+    },
+    {
+      "id": "e1f268580794",
+      "subject": "maths-extension-2",
+      "assetKey": "q_e1f268580794.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2002-w-sol",
+      "questionNumber": "4",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Volumes of solids using the slicing method and cylindrical shells",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MEX-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 27986
+    },
+    {
+      "id": "66868b0430d6",
+      "subject": "maths-extension-2",
+      "assetKey": "q_66868b0430d6.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2002-w-sol",
+      "questionNumber": "4",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Volumes of solids using the slicing method and cylindrical shells",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MEX-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 77668
+    },
+    {
+      "id": "b55ebf347f24",
+      "subject": "maths-extension-2",
+      "assetKey": "q_b55ebf347f24.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2002-w-sol",
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Hyperbola xy = c^2: equation of the normal, loci, parametric coordinate geometry",
+      "module": "Functions",
+      "syllabusRefs": [],
+      "hasStimulus": false,
+      "bytes": 75208
+    },
+    {
+      "id": "0acf2c2ebd37",
+      "subject": "maths-extension-2",
+      "assetKey": "q_0acf2c2ebd37.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2002-w-sol",
+      "questionNumber": "6",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Complex roots of quadratics; polynomial roots in arithmetic progression; proving a polynomial has no real roots and approximating a root with Newton's method",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "MEX-N1",
+        "ME-F2"
+      ],
+      "hasStimulus": true,
+      "bytes": 97863
+    },
+    {
+      "id": "0a0d07504ad7",
+      "subject": "maths-extension-2",
+      "assetKey": "q_0a0d07504ad7.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2002-w-sol",
+      "questionNumber": "7",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Reduction formulae for integration; related rates involving trigonometric relationships (cable and wheel problem)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MEX-C1",
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 191783
+    },
+    {
+      "id": "fdb8fd3972a1",
+      "subject": "maths-extension-2",
+      "assetKey": "q_fdb8fd3972a1.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2002-w-sol",
+      "questionNumber": "8",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Polynomial double roots and the remainder theorem; trigonometric equations (auxiliary angle); applied 3D geometry (tilted tank)",
+      "module": "Functions",
+      "syllabusRefs": [
+        "ME-F2",
+        "ME-T3"
+      ],
+      "hasStimulus": true,
+      "bytes": 34537
+    },
+    {
+      "id": "ee2575c695a2",
+      "subject": "maths-extension-2",
+      "assetKey": "q_ee2575c695a2.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2002-w-sol",
+      "questionNumber": "8",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Polynomial double roots and the remainder theorem; trigonometric equations (auxiliary angle); applied 3D geometry (tilted tank)",
+      "module": "Functions",
+      "syllabusRefs": [
+        "ME-F2",
+        "ME-T3"
+      ],
+      "hasStimulus": true,
+      "bytes": 153982
+    },
+    {
       "id": "333f5c88bcd9",
       "subject": "maths-extension-2",
       "assetKey": "q_333f5c88bcd9.pdf",
@@ -23147,6 +23869,182 @@
       "bytes": 97515
     },
     {
+      "id": "22e2872ee64b",
+      "subject": "maths-extension-2",
+      "assetKey": "q_22e2872ee64b.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-1999-w-sol",
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Integration techniques: partial fractions and evaluating definite integrals",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 102791
+    },
+    {
+      "id": "5ed2121b2b54",
+      "subject": "maths-extension-2",
+      "assetKey": "q_5ed2121b2b54.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-1999-w-sol",
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Complex number algebra (modulus/argument, complex quadratics) and Argand diagram loci",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": false,
+      "bytes": 117146
+    },
+    {
+      "id": "1191e4280fdb",
+      "subject": "maths-extension-2",
+      "assetKey": "q_1191e4280fdb.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-1999-w-sol",
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Curve sketching relating a function to its derivative graphs",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 142407
+    },
+    {
+      "id": "276436f6f27f",
+      "subject": "maths-extension-2",
+      "assetKey": "q_276436f6f27f.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-1999-w-sol",
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Conic sections: parabola normal/focus property and hyperbola tangent-asymptote triangle area (legacy conics topic)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 131068
+    },
+    {
+      "id": "c86a47b70793",
+      "subject": "maths-extension-2",
+      "assetKey": "q_c86a47b70793.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-1999-w-sol",
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Areas and volumes of solids of revolution (ellipse area, elliptical cross-sections, rotation about an axis)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 153559
+    },
+    {
+      "id": "ea80bb8f124b",
+      "subject": "maths-extension-2",
+      "assetKey": "q_ea80bb8f124b.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-1999-w-sol",
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Complex roots of polynomials, factorisation over complex numbers, and multiplicity of roots",
+      "module": "Complex Numbers and Proof",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-P1"
+      ],
+      "hasStimulus": false,
+      "bytes": 166292
+    },
+    {
+      "id": "bcea193b9a81",
+      "subject": "maths-extension-2",
+      "assetKey": "q_bcea193b9a81.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-1999-w-sol",
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Reduction formulae for integrals and roots of unity on the Argand diagram",
+      "module": "Calculus and Complex Numbers",
+      "syllabusRefs": [
+        "ME-C1",
+        "ME-N1"
+      ],
+      "hasStimulus": false,
+      "bytes": 91904
+    },
+    {
+      "id": "0d79ca94dad0",
+      "subject": "maths-extension-2",
+      "assetKey": "q_0d79ca94dad0.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-1999-w-sol",
+      "questionNumber": "8",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Euclidean geometry proof (cyclic quadrilaterals), trigonometric identities, and calculus proof of a decreasing function",
+      "module": "Proof and Calculus",
+      "syllabusRefs": [
+        "ME-P1",
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 301928
+    },
+    {
+      "id": "307974c4b2fd",
+      "subject": "maths-extension-2",
+      "assetKey": "q_307974c4b2fd.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-1999-w-sol",
+      "questionNumber": "8",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Euclidean geometry proof (cyclic quadrilaterals), trigonometric identities, and calculus proof of a decreasing function",
+      "module": "Proof and Calculus",
+      "syllabusRefs": [
+        "ME-P1",
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 180111
+    },
+    {
       "id": "c5ae91659579",
       "subject": "maths-extension-2",
       "assetKey": "q_c5ae91659579.pdf",
@@ -23302,6 +24200,219 @@
       ],
       "hasStimulus": true,
       "bytes": 264201
+    },
+    {
+      "id": "0cf987101057",
+      "subject": "maths-extension-2",
+      "assetKey": "q_0cf987101057.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2008-w-sol",
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Complex number arithmetic (Cartesian form, real part), loci on the Argand diagram, cube roots of unity and related algebraic identities",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": false,
+      "bytes": 25063
+    },
+    {
+      "id": "8ab06fdce433",
+      "subject": "maths-extension-2",
+      "assetKey": "q_8ab06fdce433.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2008-w-sol",
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Complex number arithmetic (Cartesian form, real part), loci on the Argand diagram, cube roots of unity and related algebraic identities",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": false,
+      "bytes": 89841
+    },
+    {
+      "id": "62d0898cf535",
+      "subject": "maths-extension-2",
+      "assetKey": "q_62d0898cf535.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2008-w-sol",
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 15,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Further integration techniques (substitution, reduction formulae, Weierstrass t-substitution) and volumes of solids (torus by revolution about a line; solid with perpendicular rectangular cross-sections) via partial fractions",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 116413
+    },
+    {
+      "id": "cdb584c17301",
+      "subject": "maths-extension-2",
+      "assetKey": "q_cdb584c17301.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2008-w-sol",
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 15,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Conic sections \u2014 ellipse axis lengths, eccentricity, foci, directrices; hyperbola parametric point, tangent meeting directrix, focus right-angle proof; ellipse tangent condition and director-circle locus",
+      "module": "Conics (legacy \u2014 not in current Extension 2 syllabus)",
+      "syllabusRefs": [],
+      "hasStimulus": false,
+      "bytes": 3468
+    },
+    {
+      "id": "cff59a56fd24",
+      "subject": "maths-extension-2",
+      "assetKey": "q_cff59a56fd24.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2008-w-sol",
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 15,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Polynomial theorems \u2014 integer-root/divisor relationships, factorisation over the reals, finding roots of quartics, symmetric functions of roots and constructing new polynomials from transformed roots",
+      "module": "Proof / Functions (Polynomials)",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "hasStimulus": false,
+      "bytes": 165226
+    },
+    {
+      "id": "e43e2cd15bbe",
+      "subject": "maths-extension-2",
+      "assetKey": "q_e43e2cd15bbe.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2008-w-sol",
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": 15,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Motion of two particles in a vertical line under gravity with resistance proportional to velocity; deriving velocity-time and displacement-time relations and the time to meet",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-M1"
+      ],
+      "hasStimulus": false,
+      "bytes": 11361
+    },
+    {
+      "id": "9d002c61526e",
+      "subject": "maths-extension-2",
+      "assetKey": "q_9d002c61526e.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2008-w-sol",
+      "questionNumber": "8",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Rectilinear motion with variable (position-dependent) acceleration; trapezoidal-rule estimate and inequality proof for ln(n!); inverse trigonometric function identities and equation solving",
+      "module": "Mechanics / Calculus / Functions",
+      "syllabusRefs": [
+        "ME-M1",
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 165497
+    },
+    {
+      "id": "b846d24dd1cf",
+      "subject": "maths-extension-2",
+      "assetKey": "q_b846d24dd1cf.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2008-w-sol",
+      "questionNumber": "8",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Rectilinear motion with variable (position-dependent) acceleration; trapezoidal-rule estimate and inequality proof for ln(n!); inverse trigonometric function identities and equation solving",
+      "module": "Mechanics / Calculus / Functions",
+      "syllabusRefs": [
+        "ME-M1",
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 13126
+    },
+    {
+      "id": "f9895164d2dc",
+      "subject": "maths-extension-2",
+      "assetKey": "q_f9895164d2dc.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2008-w-sol",
+      "questionNumber": "8",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Rectilinear motion with variable (position-dependent) acceleration; trapezoidal-rule estimate and inequality proof for ln(n!); inverse trigonometric function identities and equation solving",
+      "module": "Mechanics / Calculus / Functions",
+      "syllabusRefs": [
+        "ME-M1",
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 68026
+    },
+    {
+      "id": "228429b20e76",
+      "subject": "maths-extension-2",
+      "assetKey": "q_228429b20e76.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2008-w-sol",
+      "questionNumber": "8",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Rectilinear motion with variable (position-dependent) acceleration; trapezoidal-rule estimate and inequality proof for ln(n!); inverse trigonometric function identities and equation solving",
+      "module": "Mechanics / Calculus / Functions",
+      "syllabusRefs": [
+        "ME-M1",
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 53403
+    },
+    {
+      "id": "091288196b4e",
+      "subject": "maths-extension-2",
+      "assetKey": "q_091288196b4e.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2008-w-sol",
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Motion of two particles in a vertical line under gravity with resistance proportional to velocity; deriving velocity-time and displacement-time relations and the time to meet",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-M1"
+      ],
+      "hasStimulus": false,
+      "bytes": 187968
     },
     {
       "id": "dde037b08bb0",
@@ -25449,6 +26560,384 @@
       "bytes": 63360
     },
     {
+      "id": "af001c257c53",
+      "subject": "maths-extension-2",
+      "assetKey": "q_af001c257c53.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "3",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Graphing techniques \u2014 sketching transformed graphs (f(x^2), log[f(x)]) from a given graph; implicit differentiation to find vertical tangents on an implicit curve; using calculus to find stationary points and sketch y = e^x(x^2-2)",
+      "module": "Functions / Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 382032
+    },
+    {
+      "id": "506bc5355ebe",
+      "subject": "maths-extension-2",
+      "assetKey": "q_506bc5355ebe.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Graphing techniques \u2014 sketching transformed graphs (f(x^2), log[f(x)]) from a given graph; implicit differentiation to find vertical tangents on an implicit curve; using calculus to find stationary points and sketch y = e^x(x^2-2)",
+      "module": "Functions / Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 381628
+    },
+    {
+      "id": "509881e22e32",
+      "subject": "maths-extension-2",
+      "assetKey": "q_509881e22e32.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "3",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Graphing techniques \u2014 sketching transformed graphs (f(x^2), log[f(x)]) from a given graph; implicit differentiation to find vertical tangents on an implicit curve; using calculus to find stationary points and sketch y = e^x(x^2-2)",
+      "module": "Functions / Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 197022
+    },
+    {
+      "id": "580742f4a10d",
+      "subject": "maths-extension-2",
+      "assetKey": "q_580742f4a10d.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "4",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Ellipse: eccentricity, foci, directrices, focal-distance property, tangent equation, focus-directrix right-angle proof; rectangular hyperbola xy=c^2: normal line and intersection with y=x",
+      "module": "Conics (legacy \u2014 not in current Extension 2 syllabus)",
+      "syllabusRefs": [],
+      "hasStimulus": true,
+      "bytes": 199828
+    },
+    {
+      "id": "887ea6d6eb7c",
+      "subject": "maths-extension-2",
+      "assetKey": "q_887ea6d6eb7c.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "4",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Ellipse: eccentricity, foci, directrices, focal-distance property, tangent equation, focus-directrix right-angle proof; rectangular hyperbola xy=c^2: normal line and intersection with y=x",
+      "module": "Conics (legacy \u2014 not in current Extension 2 syllabus)",
+      "syllabusRefs": [],
+      "hasStimulus": true,
+      "bytes": 199827
+    },
+    {
+      "id": "9891470f388b",
+      "subject": "maths-extension-2",
+      "assetKey": "q_9891470f388b.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "4",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Ellipse: eccentricity, foci, directrices, focal-distance property, tangent equation, focus-directrix right-angle proof; rectangular hyperbola xy=c^2: normal line and intersection with y=x",
+      "module": "Conics (legacy \u2014 not in current Extension 2 syllabus)",
+      "syllabusRefs": [],
+      "hasStimulus": true,
+      "bytes": 199811
+    },
+    {
+      "id": "2c4934f8175f",
+      "subject": "maths-extension-2",
+      "assetKey": "q_2c4934f8175f.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "5",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Polynomial theorems \u2014 integer-root/divisibility proofs, symmetric functions of roots, forming new polynomial equations from transformed roots (reciprocals, products of pairs)",
+      "module": "Proof / Functions (Polynomials)",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "hasStimulus": true,
+      "bytes": 199548
+    },
+    {
+      "id": "2d27d4eb9422",
+      "subject": "maths-extension-2",
+      "assetKey": "q_2d27d4eb9422.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "5",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Polynomial theorems \u2014 integer-root/divisibility proofs, symmetric functions of roots, forming new polynomial equations from transformed roots (reciprocals, products of pairs)",
+      "module": "Proof / Functions (Polynomials)",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "hasStimulus": true,
+      "bytes": 199547
+    },
+    {
+      "id": "303217c4b5cf",
+      "subject": "maths-extension-2",
+      "assetKey": "q_303217c4b5cf.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Polynomial theorems \u2014 integer-root/divisibility proofs, symmetric functions of roots, forming new polynomial equations from transformed roots (reciprocals, products of pairs)",
+      "module": "Proof / Functions (Polynomials)",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "hasStimulus": false,
+      "bytes": 199142
+    },
+    {
+      "id": "3cf9e914ceb9",
+      "subject": "maths-extension-2",
+      "assetKey": "q_3cf9e914ceb9.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "5",
+      "partLabel": "c",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Polynomial theorems \u2014 integer-root/divisibility proofs, symmetric functions of roots, forming new polynomial equations from transformed roots (reciprocals, products of pairs)",
+      "module": "Proof / Functions (Polynomials)",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "hasStimulus": true,
+      "bytes": 197382
+    },
+    {
+      "id": "cf7a1795412c",
+      "subject": "maths-extension-2",
+      "assetKey": "q_cf7a1795412c.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "5",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Polynomial theorems \u2014 integer-root/divisibility proofs, symmetric functions of roots, forming new polynomial equations from transformed roots (reciprocals, products of pairs)",
+      "module": "Proof / Functions (Polynomials)",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "hasStimulus": true,
+      "bytes": 197386
+    },
+    {
+      "id": "c9619938059b",
+      "subject": "maths-extension-2",
+      "assetKey": "q_c9619938059b.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "5",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Polynomial theorems \u2014 integer-root/divisibility proofs, symmetric functions of roots, forming new polynomial equations from transformed roots (reciprocals, products of pairs)",
+      "module": "Proof / Functions (Polynomials)",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "hasStimulus": true,
+      "bytes": 197365
+    },
+    {
+      "id": "8e1a260dc1cf",
+      "subject": "maths-extension-2",
+      "assetKey": "q_8e1a260dc1cf.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "6",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Volume of a solid of revolution about a vertical line; trigonometric product-to-sum identity and reduction formula for a definite-integral recurrence (u_n)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 200293
+    },
+    {
+      "id": "dec069e9e6f6",
+      "subject": "maths-extension-2",
+      "assetKey": "q_dec069e9e6f6.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "6",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Volume of a solid of revolution about a vertical line; trigonometric product-to-sum identity and reduction formula for a definite-integral recurrence (u_n)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 200278
+    },
+    {
+      "id": "b049f3bc431f",
+      "subject": "maths-extension-2",
+      "assetKey": "q_b049f3bc431f.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "7",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Inverse-square gravitational field and escape velocity of a projectile; geometric series identity, integration to derive the logarithm series, inequality bounds and numerical approximation of log(1.001)",
+      "module": "Mechanics / Calculus",
+      "syllabusRefs": [
+        "ME-M1",
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 197719
+    },
+    {
+      "id": "aec59cdf19d3",
+      "subject": "maths-extension-2",
+      "assetKey": "q_aec59cdf19d3.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "7",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Inverse-square gravitational field and escape velocity of a projectile; geometric series identity, integration to derive the logarithm series, inequality bounds and numerical approximation of log(1.001)",
+      "module": "Mechanics / Calculus",
+      "syllabusRefs": [
+        "ME-M1",
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 197721
+    },
+    {
+      "id": "6d7f0e1f0d89",
+      "subject": "maths-extension-2",
+      "assetKey": "q_6d7f0e1f0d89.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Inverse-square gravitational field and escape velocity of a projectile; geometric series identity, integration to derive the logarithm series, inequality bounds and numerical approximation of log(1.001)",
+      "module": "Mechanics / Calculus",
+      "syllabusRefs": [
+        "ME-M1",
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 197312
+    },
+    {
+      "id": "fe7b4377d716",
+      "subject": "maths-extension-2",
+      "assetKey": "q_fe7b4377d716.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "7",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Inverse-square gravitational field and escape velocity of a projectile; geometric series identity, integration to derive the logarithm series, inequality bounds and numerical approximation of log(1.001)",
+      "module": "Mechanics / Calculus",
+      "syllabusRefs": [
+        "ME-M1",
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 200323
+    },
+    {
+      "id": "72467cb9eab6",
+      "subject": "maths-extension-2",
+      "assetKey": "q_72467cb9eab6.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "8",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Optimisation of a cone's volume circumscribed about a sphere; triple-angle tangent identity leading to a cubic with root tan(pi/9); finite series manipulation (1-x)phi(x); reduction-formula integral of sin^n x",
+      "module": "Calculus / Trigonometric Functions",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 197744
+    },
+    {
+      "id": "4b11415ddc07",
+      "subject": "maths-extension-2",
+      "assetKey": "q_4b11415ddc07.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2011-w-sol",
+      "questionNumber": "8",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Optimisation of a cone's volume circumscribed about a sphere; triple-angle tangent identity leading to a cubic with root tan(pi/9); finite series manipulation (1-x)phi(x); reduction-formula integral of sin^n x",
+      "module": "Calculus / Trigonometric Functions",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 197338
+    },
+    {
       "id": "8fd44373acbe",
       "subject": "maths-extension-2",
       "assetKey": "q_8fd44373acbe.pdf",
@@ -26786,6 +28275,546 @@
       ],
       "hasStimulus": true,
       "bytes": 161690
+    },
+    {
+      "id": "c81dd28a8aa6",
+      "subject": "maths-extension-2",
+      "assetKey": "q_c81dd28a8aa6.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-ascham-2025-w-sol",
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 1,
+      "questionMarks": 1,
+      "type": "mc",
+      "topic": "Position vectors of collinear points (section formula)",
+      "module": "Vectors",
+      "syllabusRefs": [
+        "ME-V1"
+      ],
+      "hasStimulus": false,
+      "bytes": 164737
+    },
+    {
+      "id": "a497a4e15df2",
+      "subject": "maths-extension-2",
+      "assetKey": "q_a497a4e15df2.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-ascham-2025-w-sol",
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 1,
+      "questionMarks": 1,
+      "type": "mc",
+      "topic": "Converse of a logical (if-then) statement",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "hasStimulus": false,
+      "bytes": 60078
+    },
+    {
+      "id": "12802418c05d",
+      "subject": "maths-extension-2",
+      "assetKey": "q_12802418c05d.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-ascham-2025-w-sol",
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": 1,
+      "questionMarks": 1,
+      "type": "mc",
+      "topic": "Vector equation of a line in three dimensions",
+      "module": "Vectors",
+      "syllabusRefs": [
+        "ME-V1"
+      ],
+      "hasStimulus": false,
+      "bytes": 60080
+    },
+    {
+      "id": "b8742ff50e41",
+      "subject": "maths-extension-2",
+      "assetKey": "q_b8742ff50e41.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-ascham-2025-w-sol",
+      "questionNumber": "8",
+      "partLabel": null,
+      "marks": 1,
+      "questionMarks": 1,
+      "type": "mc",
+      "topic": "Definite integral inequalities",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 60063
+    },
+    {
+      "id": "3cbff2f35822",
+      "subject": "maths-extension-2",
+      "assetKey": "q_3cbff2f35822.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-ascham-2025-w-sol",
+      "questionNumber": "9",
+      "partLabel": null,
+      "marks": 1,
+      "questionMarks": 1,
+      "type": "mc",
+      "topic": "Parametric/vector form of a curve",
+      "module": "Vectors",
+      "syllabusRefs": [
+        "ME-V1"
+      ],
+      "hasStimulus": false,
+      "bytes": 131612
+    },
+    {
+      "id": "e73b4e4f9a9b",
+      "subject": "maths-extension-2",
+      "assetKey": "q_e73b4e4f9a9b.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-ascham-2025-w-sol",
+      "questionNumber": "10",
+      "partLabel": null,
+      "marks": 1,
+      "questionMarks": 1,
+      "type": "mc",
+      "topic": "Roots of unity and a related product",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1"
+      ],
+      "hasStimulus": false,
+      "bytes": 131596
+    },
+    {
+      "id": "b26e001c3d7d",
+      "subject": "maths-extension-2",
+      "assetKey": "q_b26e001c3d7d.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-ascham-2025-w-sol",
+      "questionNumber": "11",
+      "partLabel": null,
+      "marks": 15,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Integration by parts and by substitution; converting a Cartesian line to vector form; complex zeroes of a real cubic polynomial",
+      "module": "Calculus / Vectors / Complex Numbers",
+      "syllabusRefs": [
+        "ME-C1",
+        "ME-V1",
+        "ME-N2"
+      ],
+      "hasStimulus": false,
+      "bytes": 45281
+    },
+    {
+      "id": "894cdf8a5ba7",
+      "subject": "maths-extension-2",
+      "assetKey": "q_894cdf8a5ba7.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-ascham-2025-w-sol",
+      "questionNumber": "12",
+      "partLabel": null,
+      "marks": 15,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Complex numbers in polar form, solving z^n = a+bi, sketching and bounding a locus on the Argand plane; proof of an algebraic inequality",
+      "module": "Complex Numbers / Proof",
+      "syllabusRefs": [
+        "ME-N2",
+        "ME-P1"
+      ],
+      "hasStimulus": false,
+      "bytes": 41977
+    },
+    {
+      "id": "374574b393ed",
+      "subject": "maths-extension-2",
+      "assetKey": "q_374574b393ed.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-ascham-2025-w-sol",
+      "questionNumber": "13",
+      "partLabel": null,
+      "marks": 14,
+      "questionMarks": 14,
+      "type": null,
+      "topic": "Simple harmonic motion (amplitude, phase, time to maximum speed); De Moivre's theorem and multiple-angle identities; Argand-diagram geometry of z, z^2 and z+z^2",
+      "module": "Mechanics / Complex Numbers",
+      "syllabusRefs": [
+        "ME-M1",
+        "ME-N2"
+      ],
+      "hasStimulus": false,
+      "bytes": 45473
+    },
+    {
+      "id": "dd411aba765e",
+      "subject": "maths-extension-2",
+      "assetKey": "q_dd411aba765e.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-ascham-2025-w-sol",
+      "questionNumber": "14",
+      "partLabel": null,
+      "marks": 14,
+      "questionMarks": 14,
+      "type": null,
+      "topic": "Inequality proof (AM-GM style); vector projection and reflection of a point in a line; triple-angle trigonometric identities used to solve a cubic",
+      "module": "Proof / Vectors",
+      "syllabusRefs": [
+        "ME-P1",
+        "ME-V1",
+        "ME-P2"
+      ],
+      "hasStimulus": false,
+      "bytes": 46265
+    },
+    {
+      "id": "945bae2c685d",
+      "subject": "maths-extension-2",
+      "assetKey": "q_945bae2c685d.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-ascham-2025-w-sol",
+      "questionNumber": "15",
+      "partLabel": null,
+      "marks": 16,
+      "questionMarks": 16,
+      "type": null,
+      "topic": "Integration by substitution; proof concerning primes; resisted vertical motion under gravity; reduction formula for a trigonometric integral",
+      "module": "Calculus / Proof / Mechanics",
+      "syllabusRefs": [
+        "ME-C1",
+        "ME-P1",
+        "ME-M1"
+      ],
+      "hasStimulus": false,
+      "bytes": 42770
+    },
+    {
+      "id": "57ab031206f0",
+      "subject": "maths-extension-2",
+      "assetKey": "q_57ab031206f0.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-ascham-2025-w-sol",
+      "questionNumber": "16",
+      "partLabel": null,
+      "marks": 16,
+      "questionMarks": 16,
+      "type": null,
+      "topic": "Vector proof that a rectangular prism is a cube; proof by induction of a telescoping sum; algebraic properties of complex numbers satisfying z1+z2+z1z2=0",
+      "module": "Vectors / Proof / Complex Numbers",
+      "syllabusRefs": [
+        "ME-V1",
+        "ME-P1",
+        "ME-N1"
+      ],
+      "hasStimulus": false,
+      "bytes": 127654
+    },
+    {
+      "id": "1bb97347292c",
+      "subject": "maths-extension-2",
+      "assetKey": "q_1bb97347292c.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2006",
+      "questionNumber": "2",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Square roots of a complex number, modulus-argument (polar) form, De Moivre's theorem, and Argand-diagram loci",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 32820
+    },
+    {
+      "id": "4b41c2c2d0bf",
+      "subject": "maths-extension-2",
+      "assetKey": "q_4b41c2c2d0bf.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2006",
+      "questionNumber": "2",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Square roots of a complex number, modulus-argument (polar) form, De Moivre's theorem, and Argand-diagram loci",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 32801
+    },
+    {
+      "id": "112680b97cbb",
+      "subject": "maths-extension-2",
+      "assetKey": "q_112680b97cbb.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2006",
+      "questionNumber": "3",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Graphing techniques: transformations of y=f(x) (|f(x)|, f(|x|), 1/f(x), log f(x), etc.) and analysing y=x+k/x graphically",
+      "module": "Functions",
+      "syllabusRefs": [
+        "ME-F1"
+      ],
+      "hasStimulus": true,
+      "bytes": 29009
+    },
+    {
+      "id": "4c93c4db7d3b",
+      "subject": "maths-extension-2",
+      "assetKey": "q_4c93c4db7d3b.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2006",
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Graphing techniques: transformations of y=f(x) (|f(x)|, f(|x|), 1/f(x), log f(x), etc.) and analysing y=x+k/x graphically",
+      "module": "Functions",
+      "syllabusRefs": [
+        "ME-F1"
+      ],
+      "hasStimulus": false,
+      "bytes": 28613
+    },
+    {
+      "id": "f0ba6610a12f",
+      "subject": "maths-extension-2",
+      "assetKey": "q_f0ba6610a12f.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2006",
+      "questionNumber": "3",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Graphing techniques: transformations of y=f(x) (|f(x)|, f(|x|), 1/f(x), log f(x), etc.) and analysing y=x+k/x graphically",
+      "module": "Functions",
+      "syllabusRefs": [
+        "ME-F1"
+      ],
+      "hasStimulus": true,
+      "bytes": 27082
+    },
+    {
+      "id": "01229b497c9b",
+      "subject": "maths-extension-2",
+      "assetKey": "q_01229b497c9b.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2006",
+      "questionNumber": "4",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Volumes of solids of revolution/known cross-section using slicing and the method of cylindrical shells",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 27367
+    },
+    {
+      "id": "ff6cc794d83b",
+      "subject": "maths-extension-2",
+      "assetKey": "q_ff6cc794d83b.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2006",
+      "questionNumber": "4",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Volumes of solids of revolution/known cross-section using slicing and the method of cylindrical shells",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 27354
+    },
+    {
+      "id": "1a168acaef20",
+      "subject": "maths-extension-2",
+      "assetKey": "q_1a168acaef20.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2006",
+      "questionNumber": "4",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Volumes of solids of revolution/known cross-section using slicing and the method of cylindrical shells",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 31634
+    },
+    {
+      "id": "09abed75daad",
+      "subject": "maths-extension-2",
+      "assetKey": "q_09abed75daad.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2006",
+      "questionNumber": "4",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Volumes of solids of revolution/known cross-section using slicing and the method of cylindrical shells",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 31636
+    },
+    {
+      "id": "cc4606cafe0e",
+      "subject": "maths-extension-2",
+      "assetKey": "q_cc4606cafe0e.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2006",
+      "questionNumber": "4",
+      "partLabel": "d",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Volumes of solids of revolution/known cross-section using slicing and the method of cylindrical shells",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 31618
+    },
+    {
+      "id": "b4ccaeb4049a",
+      "subject": "maths-extension-2",
+      "assetKey": "q_b4ccaeb4049a.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2006",
+      "questionNumber": "6",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Hyperbola/ellipse properties: foci, asymptotes, vertices, tangents/normals and a locus problem (conics content removed from the current syllabus)",
+      "module": "Mixed Topics (Legacy Conics)",
+      "syllabusRefs": [],
+      "hasStimulus": true,
+      "bytes": 29901
+    },
+    {
+      "id": "b1f01eeb4789",
+      "subject": "maths-extension-2",
+      "assetKey": "q_b1f01eeb4789.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2006",
+      "questionNumber": "6",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Hyperbola/ellipse properties: foci, asymptotes, vertices, tangents/normals and a locus problem (conics content removed from the current syllabus)",
+      "module": "Mixed Topics (Legacy Conics)",
+      "syllabusRefs": [],
+      "hasStimulus": true,
+      "bytes": 29884
+    },
+    {
+      "id": "7c9da9daca48",
+      "subject": "maths-extension-2",
+      "assetKey": "q_7c9da9daca48.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2006",
+      "questionNumber": "8",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Nested radical/continued-fraction value, tangent addition formulas, and derivation of a Machin-type formula for pi",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "hasStimulus": true,
+      "bytes": 33698
+    },
+    {
+      "id": "c38cee2fc53f",
+      "subject": "maths-extension-2",
+      "assetKey": "q_c38cee2fc53f.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2006",
+      "questionNumber": "8",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Nested radical/continued-fraction value, tangent addition formulas, and derivation of a Machin-type formula for pi",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "hasStimulus": true,
+      "bytes": 33697
+    },
+    {
+      "id": "8546b36721d8",
+      "subject": "maths-extension-2",
+      "assetKey": "q_8546b36721d8.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2006",
+      "questionNumber": "8",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Nested radical/continued-fraction value, tangent addition formulas, and derivation of a Machin-type formula for pi",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "hasStimulus": false,
+      "bytes": 33296
+    },
+    {
+      "id": "f0fa6df1e3d9",
+      "subject": "maths-extension-2",
+      "assetKey": "q_f0fa6df1e3d9.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2006",
+      "questionNumber": "8",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Nested radical/continued-fraction value, tangent addition formulas, and derivation of a Machin-type formula for pi",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "hasStimulus": false,
+      "bytes": 34109
     },
     {
       "id": "fc69f433d92a",
@@ -30553,6 +32582,338 @@
       "bytes": 120236
     },
     {
+      "id": "435ee4e4fb53",
+      "subject": "maths-extension-2",
+      "assetKey": "q_435ee4e4fb53.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2012",
+      "questionNumber": "12",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Integration techniques (trigonometric substitution, partial fractions) and conic proof (hyperbola tangent/directrix/focus)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 22828
+    },
+    {
+      "id": "4f816d55434b",
+      "subject": "maths-extension-2",
+      "assetKey": "q_4f816d55434b.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2012",
+      "questionNumber": "12",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Integration techniques (trigonometric substitution, partial fractions) and conic proof (hyperbola tangent/directrix/focus)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 60528
+    },
+    {
+      "id": "8cc782242c92",
+      "subject": "maths-extension-2",
+      "assetKey": "q_8cc782242c92.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2012",
+      "questionNumber": "12",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Integration techniques (trigonometric substitution, partial fractions) and conic proof (hyperbola tangent/directrix/focus)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 12599
+    },
+    {
+      "id": "14bf9b9cc285",
+      "subject": "maths-extension-2",
+      "assetKey": "q_14bf9b9cc285.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2012",
+      "questionNumber": "12",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Integration techniques (trigonometric substitution, partial fractions) and conic proof (hyperbola tangent/directrix/focus)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 91561
+    },
+    {
+      "id": "25c891af6e3d",
+      "subject": "maths-extension-2",
+      "assetKey": "q_25c891af6e3d.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2012",
+      "questionNumber": "13",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Polynomial roots and coefficients, complex roots, and volume of revolution by slicing (mixed)",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N2",
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 38007
+    },
+    {
+      "id": "04a4e0e47fc8",
+      "subject": "maths-extension-2",
+      "assetKey": "q_04a4e0e47fc8.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2012",
+      "questionNumber": "13",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Polynomial roots and coefficients, complex roots, and volume of revolution by slicing (mixed)",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N2",
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 102107
+    },
+    {
+      "id": "aa19aae281fc",
+      "subject": "maths-extension-2",
+      "assetKey": "q_aa19aae281fc.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2012",
+      "questionNumber": "13",
+      "partLabel": "d",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Polynomial roots and coefficients, complex roots, and volume of revolution by slicing (mixed)",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N2",
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 47485
+    },
+    {
+      "id": "49e1b9aa546c",
+      "subject": "maths-extension-2",
+      "assetKey": "q_49e1b9aa546c.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2012",
+      "questionNumber": "14",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Loci and geometric representation of complex numbers; volume of a solid by slicing",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 134526
+    },
+    {
+      "id": "b1b3bc061c06",
+      "subject": "maths-extension-2",
+      "assetKey": "q_b1b3bc061c06.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2012",
+      "questionNumber": "14",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Loci and geometric representation of complex numbers; volume of a solid by slicing",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 11109
+    },
+    {
+      "id": "0a18d02b1a81",
+      "subject": "maths-extension-2",
+      "assetKey": "q_0a18d02b1a81.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2012",
+      "questionNumber": "14",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Loci and geometric representation of complex numbers; volume of a solid by slicing",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 105693
+    },
+    {
+      "id": "eb9e346d75d9",
+      "subject": "maths-extension-2",
+      "assetKey": "q_eb9e346d75d9.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2012",
+      "questionNumber": "15",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Projectile motion, circle geometry proof, and trigonometric equations (mixed)",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-M1"
+      ],
+      "hasStimulus": true,
+      "bytes": 134045
+    },
+    {
+      "id": "b6efd73addce",
+      "subject": "maths-extension-2",
+      "assetKey": "q_b6efd73addce.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2012",
+      "questionNumber": "15",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Projectile motion, circle geometry proof, and trigonometric equations (mixed)",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-M1"
+      ],
+      "hasStimulus": false,
+      "bytes": 11468
+    },
+    {
+      "id": "e7ebe5da06b4",
+      "subject": "maths-extension-2",
+      "assetKey": "q_e7ebe5da06b4.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2012",
+      "questionNumber": "15",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Projectile motion, circle geometry proof, and trigonometric equations (mixed)",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-M1"
+      ],
+      "hasStimulus": true,
+      "bytes": 88379
+    },
+    {
+      "id": "d17b404576bd",
+      "subject": "maths-extension-2",
+      "assetKey": "q_d17b404576bd.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2012",
+      "questionNumber": "15",
+      "partLabel": "c",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Projectile motion, circle geometry proof, and trigonometric equations (mixed)",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-M1"
+      ],
+      "hasStimulus": true,
+      "bytes": 24387
+    },
+    {
+      "id": "e5032e750e9f",
+      "subject": "maths-extension-2",
+      "assetKey": "q_e5032e750e9f.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2012",
+      "questionNumber": "16",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Roots of unity, geometric series, and integration technique using a standard integral",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 183685
+    },
+    {
+      "id": "81d6c503c3c3",
+      "subject": "maths-extension-2",
+      "assetKey": "q_81d6c503c3c3.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2012",
+      "questionNumber": "16",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Roots of unity, geometric series, and integration technique using a standard integral",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 11350
+    },
+    {
+      "id": "b7dabe995445",
+      "subject": "maths-extension-2",
+      "assetKey": "q_b7dabe995445.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2012",
+      "questionNumber": "16",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Roots of unity, geometric series, and integration technique using a standard integral",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 109565
+    },
+    {
       "id": "f53818cf2cd1",
       "subject": "maths-extension-2",
       "assetKey": "q_f53818cf2cd1.pdf",
@@ -34161,6 +36522,475 @@
       "bytes": 27128
     },
     {
+      "id": "307ef788e609",
+      "subject": "maths-extension-2",
+      "assetKey": "q_307ef788e609.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "2",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Complex number arithmetic; argument and modulus; loci and regions in the complex plane; roots of a complex equation; De Moivre's theorem (cos3\u03b8 expansion)",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 147003
+    },
+    {
+      "id": "1f1e05e87b6a",
+      "subject": "maths-extension-2",
+      "assetKey": "q_1f1e05e87b6a.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "2",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Complex number arithmetic; argument and modulus; loci and regions in the complex plane; roots of a complex equation; De Moivre's theorem (cos3\u03b8 expansion)",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 147003
+    },
+    {
+      "id": "bbc90a967098",
+      "subject": "maths-extension-2",
+      "assetKey": "q_bbc90a967098.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "2",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Complex number arithmetic; argument and modulus; loci and regions in the complex plane; roots of a complex equation; De Moivre's theorem (cos3\u03b8 expansion)",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 147004
+    },
+    {
+      "id": "f09e148461bb",
+      "subject": "maths-extension-2",
+      "assetKey": "q_f09e148461bb.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "2",
+      "partLabel": "d",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Complex number arithmetic; argument and modulus; loci and regions in the complex plane; roots of a complex equation; De Moivre's theorem (cos3\u03b8 expansion)",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 147004
+    },
+    {
+      "id": "00a53ce03b8b",
+      "subject": "maths-extension-2",
+      "assetKey": "q_00a53ce03b8b.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "2",
+      "partLabel": "e",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Complex number arithmetic; argument and modulus; loci and regions in the complex plane; roots of a complex equation; De Moivre's theorem (cos3\u03b8 expansion)",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 146987
+    },
+    {
+      "id": "1179cf260aa5",
+      "subject": "maths-extension-2",
+      "assetKey": "q_1179cf260aa5.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "3",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Curve sketching: sketching related graphs (e.g. y=1/f(x), y=|f(x)|, y=f(x)^2) from a given graph",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "hasStimulus": true,
+      "bytes": 134407
+    },
+    {
+      "id": "ede3acf6074b",
+      "subject": "maths-extension-2",
+      "assetKey": "q_ede3acf6074b.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Curve sketching: sketching related graphs (continuation)",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "hasStimulus": false,
+      "bytes": 134001
+    },
+    {
+      "id": "b0bbbbe16426",
+      "subject": "maths-extension-2",
+      "assetKey": "q_b0bbbbe16426.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "3",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Complex number loci defined by an argument condition (arc of a circle) - finding the centre and radius",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 137639
+    },
+    {
+      "id": "52ed26fd126a",
+      "subject": "maths-extension-2",
+      "assetKey": "q_52ed26fd126a.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "3",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Complex number loci defined by an argument condition (arc of a circle) - finding the centre and radius",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 137621
+    },
+    {
+      "id": "8ab4896c1dc2",
+      "subject": "maths-extension-2",
+      "assetKey": "q_8ab4896c1dc2.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "4",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Volume of a solid of revolution (torus/ring, via area of an annulus); trigonometric identities (sum-to-product) and equations",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1",
+        "ME-P1"
+      ],
+      "hasStimulus": true,
+      "bytes": 152117
+    },
+    {
+      "id": "8ae30256583e",
+      "subject": "maths-extension-2",
+      "assetKey": "q_8ae30256583e.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Volume of a solid of revolution (torus) - continuation",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 151709
+    },
+    {
+      "id": "916dbfc1e43e",
+      "subject": "maths-extension-2",
+      "assetKey": "q_916dbfc1e43e.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "4",
+      "partLabel": "c",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Volume of a solid with known (triangular) cross-sections, found by integration",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 129083
+    },
+    {
+      "id": "0560cfb4834e",
+      "subject": "maths-extension-2",
+      "assetKey": "q_0560cfb4834e.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "4",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Volume of a solid with known (triangular) cross-sections, found by integration",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 129067
+    },
+    {
+      "id": "fdf4131461fe",
+      "subject": "maths-extension-2",
+      "assetKey": "q_fdf4131461fe.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "5",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Cube roots of unity; curve analysis (horizontal tangent); resisted motion of a particle (differential equations relating velocity, displacement and time)",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-M1"
+      ],
+      "hasStimulus": true,
+      "bytes": 173141
+    },
+    {
+      "id": "1e9886a266ac",
+      "subject": "maths-extension-2",
+      "assetKey": "q_1e9886a266ac.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "5",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Cube roots of unity; curve analysis (horizontal tangent); resisted motion of a particle (differential equations relating velocity, displacement and time)",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-M1"
+      ],
+      "hasStimulus": true,
+      "bytes": 173125
+    },
+    {
+      "id": "4d14f579b2ce",
+      "subject": "maths-extension-2",
+      "assetKey": "q_4d14f579b2ce.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "6",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Complex roots of a real polynomial and the conjugate root theorem (integer proof); roots of unity via De Moivre's theorem; exact trigonometric values from complex number identities",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 160624
+    },
+    {
+      "id": "6741a4a6c462",
+      "subject": "maths-extension-2",
+      "assetKey": "q_6741a4a6c462.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "6",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Complex roots of a real polynomial and the conjugate root theorem (integer proof); roots of unity via De Moivre's theorem; exact trigonometric values from complex number identities",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 160624
+    },
+    {
+      "id": "f37ef93c5cd8",
+      "subject": "maths-extension-2",
+      "assetKey": "q_f37ef93c5cd8.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "6",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Complex roots of a real polynomial and the conjugate root theorem (integer proof); roots of unity via De Moivre's theorem; exact trigonometric values from complex number identities",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 160610
+    },
+    {
+      "id": "9574af78c106",
+      "subject": "maths-extension-2",
+      "assetKey": "q_9574af78c106.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "7",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Conics: hyperbola properties (foci, directrices, eccentricity); tangents/normals to a rectangular hyperbola; locus of a midpoint (proof)",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "hasStimulus": true,
+      "bytes": 131865
+    },
+    {
+      "id": "0c6ec1e3f575",
+      "subject": "maths-extension-2",
+      "assetKey": "q_0c6ec1e3f575.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "7",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Conics: hyperbola properties (foci, directrices, eccentricity); tangents/normals to a rectangular hyperbola; locus of a midpoint (proof)",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "hasStimulus": true,
+      "bytes": 131851
+    },
+    {
+      "id": "f8ee445aa790",
+      "subject": "maths-extension-2",
+      "assetKey": "q_f8ee445aa790.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "8",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Integration reduction formulae (powers of trigonometric functions); probability (repeated independent trials); trigonometry - bearing of the sun from a shadow-length ratio",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 113995
+    },
+    {
+      "id": "c665fc92b0e6",
+      "subject": "maths-extension-2",
+      "assetKey": "q_c665fc92b0e6.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "8",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Integration reduction formulae (powers of trigonometric functions); probability (repeated independent trials); trigonometry - bearing of the sun from a shadow-length ratio",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 113993
+    },
+    {
+      "id": "76f409a29829",
+      "subject": "maths-extension-2",
+      "assetKey": "q_76f409a29829.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "8",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Integration reduction formulae (powers of trigonometric functions); probability (repeated independent trials); trigonometry - bearing of the sun from a shadow-length ratio",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 113996
+    },
+    {
+      "id": "6e905de05b8a",
+      "subject": "maths-extension-2",
+      "assetKey": "q_6e905de05b8a.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2009-w-sol",
+      "questionNumber": "8",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Integration reduction formulae (powers of trigonometric functions); probability (repeated independent trials); trigonometry - bearing of the sun from a shadow-length ratio",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 113979
+    },
+    {
       "id": "a9e9c720c4af",
       "subject": "maths-extension-2",
       "assetKey": "q_a9e9c720c4af.pdf",
@@ -35395,6 +38225,589 @@
       ],
       "hasStimulus": false,
       "bytes": 130480
+    },
+    {
+      "id": "59b5be00940a",
+      "subject": "maths-extension-2",
+      "assetKey": "q_59b5be00940a.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "2",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Integration techniques (Weierstrass t = tan(theta/2) substitution) and the polynomial remainder theorem",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 465766
+    },
+    {
+      "id": "3153c80517f5",
+      "subject": "maths-extension-2",
+      "assetKey": "q_3153c80517f5.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "2",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Integration techniques (Weierstrass t = tan(theta/2) substitution) and the polynomial remainder theorem",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 465768
+    },
+    {
+      "id": "79228b3290ab",
+      "subject": "maths-extension-2",
+      "assetKey": "q_79228b3290ab.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "2",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Integration techniques (Weierstrass t = tan(theta/2) substitution) and the polynomial remainder theorem",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 465768
+    },
+    {
+      "id": "d7fb7665d2b4",
+      "subject": "maths-extension-2",
+      "assetKey": "q_d7fb7665d2b4.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "2",
+      "partLabel": "c",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Integration techniques (Weierstrass t = tan(theta/2) substitution) and the polynomial remainder theorem",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 465768
+    },
+    {
+      "id": "09d317117c6f",
+      "subject": "maths-extension-2",
+      "assetKey": "q_09d317117c6f.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "2",
+      "partLabel": "d",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Integration techniques (Weierstrass t = tan(theta/2) substitution) and the polynomial remainder theorem",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 465751
+    },
+    {
+      "id": "ff66492808a3",
+      "subject": "maths-extension-2",
+      "assetKey": "q_ff66492808a3.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "3",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Complex number arithmetic, regions/loci in the complex plane, and cube roots of unity",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 342129
+    },
+    {
+      "id": "ccd9f20990cb",
+      "subject": "maths-extension-2",
+      "assetKey": "q_ccd9f20990cb.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "3",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Complex number arithmetic, regions/loci in the complex plane, and cube roots of unity",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 342109
+    },
+    {
+      "id": "1cef4e389fb5",
+      "subject": "maths-extension-2",
+      "assetKey": "q_1cef4e389fb5.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "4",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Function analysis and graph sketching (including reciprocal/absolute value transformations) and a differential equation growth model",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 345946
+    },
+    {
+      "id": "5c0c64ae8bb4",
+      "subject": "maths-extension-2",
+      "assetKey": "q_5c0c64ae8bb4.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "4",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Function analysis and graph sketching (including reciprocal/absolute value transformations) and a differential equation growth model",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 345948
+    },
+    {
+      "id": "34e90599db0f",
+      "subject": "maths-extension-2",
+      "assetKey": "q_34e90599db0f.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "4",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Function analysis and graph sketching (including reciprocal/absolute value transformations) and a differential equation growth model",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 345947
+    },
+    {
+      "id": "64c09b18ea32",
+      "subject": "maths-extension-2",
+      "assetKey": "q_64c09b18ea32.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "4",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Function analysis and graph sketching (including reciprocal/absolute value transformations) and a differential equation growth model",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 345945
+    },
+    {
+      "id": "29f86507bb65",
+      "subject": "maths-extension-2",
+      "assetKey": "q_29f86507bb65.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "4",
+      "partLabel": "c",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Function analysis and graph sketching (including reciprocal/absolute value transformations) and a differential equation growth model",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 345929
+    },
+    {
+      "id": "b0f0d65a8a9e",
+      "subject": "maths-extension-2",
+      "assetKey": "q_b0f0d65a8a9e.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "5",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Polynomials with multiple roots, turning points, and Newton's method for root approximation",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 348208
+    },
+    {
+      "id": "59109b709034",
+      "subject": "maths-extension-2",
+      "assetKey": "q_59109b709034.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "5",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Polynomials with multiple roots, turning points, and Newton's method for root approximation",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 348208
+    },
+    {
+      "id": "9eee956be4cb",
+      "subject": "maths-extension-2",
+      "assetKey": "q_9eee956be4cb.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "5",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Polynomials with multiple roots, turning points, and Newton's method for root approximation",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 348207
+    },
+    {
+      "id": "96c8ed6c6a00",
+      "subject": "maths-extension-2",
+      "assetKey": "q_96c8ed6c6a00.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "5",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Polynomials with multiple roots, turning points, and Newton's method for root approximation",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 348211
+    },
+    {
+      "id": "4cbb5a12c9a4",
+      "subject": "maths-extension-2",
+      "assetKey": "q_4cbb5a12c9a4.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "5",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Polynomials with multiple roots, turning points, and Newton's method for root approximation",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 348194
+    },
+    {
+      "id": "8ec290ca1333",
+      "subject": "maths-extension-2",
+      "assetKey": "q_8ec290ca1333.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "6",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Ellipse focus-directrix properties and chords of a rectangular hyperbola",
+      "module": "Conics",
+      "syllabusRefs": [],
+      "hasStimulus": true,
+      "bytes": 463300
+    },
+    {
+      "id": "d1ad3e4c648a",
+      "subject": "maths-extension-2",
+      "assetKey": "q_d1ad3e4c648a.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "6",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Ellipse focus-directrix properties and chords of a rectangular hyperbola",
+      "module": "Conics",
+      "syllabusRefs": [],
+      "hasStimulus": true,
+      "bytes": 463299
+    },
+    {
+      "id": "0220cb1b9c69",
+      "subject": "maths-extension-2",
+      "assetKey": "q_0220cb1b9c69.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "6",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Ellipse focus-directrix properties and chords of a rectangular hyperbola",
+      "module": "Conics",
+      "syllabusRefs": [],
+      "hasStimulus": true,
+      "bytes": 463298
+    },
+    {
+      "id": "d6a3922f530d",
+      "subject": "maths-extension-2",
+      "assetKey": "q_d6a3922f530d.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Ellipse and rectangular hyperbola properties (continued)",
+      "module": "Conics",
+      "syllabusRefs": [],
+      "hasStimulus": false,
+      "bytes": 462891
+    },
+    {
+      "id": "510082ddf38b",
+      "subject": "maths-extension-2",
+      "assetKey": "q_510082ddf38b.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Reduction formulae for integration and volumes of revolution by cylindrical shells",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": false,
+      "bytes": 461151
+    },
+    {
+      "id": "aee7bcbda4b5",
+      "subject": "maths-extension-2",
+      "assetKey": "q_aee7bcbda4b5.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "7",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Volumes of revolution: torus (doughnut), composite solids, and elliptical cross-sections",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 344864
+    },
+    {
+      "id": "e797ffca7a5b",
+      "subject": "maths-extension-2",
+      "assetKey": "q_e797ffca7a5b.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "7",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Volumes of revolution: torus (doughnut), composite solids, and elliptical cross-sections",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 344867
+    },
+    {
+      "id": "ec51f17f7452",
+      "subject": "maths-extension-2",
+      "assetKey": "q_ec51f17f7452.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "7",
+      "partLabel": "v",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Volumes of revolution: torus (doughnut), composite solids, and elliptical cross-sections",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "hasStimulus": true,
+      "bytes": 344862
+    },
+    {
+      "id": "66d83c7389c5",
+      "subject": "maths-extension-2",
+      "assetKey": "q_66d83c7389c5.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "7",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Mathematical induction involving inequalities (sum of square roots)",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P2"
+      ],
+      "hasStimulus": true,
+      "bytes": 399107
+    },
+    {
+      "id": "44520987f0bd",
+      "subject": "maths-extension-2",
+      "assetKey": "q_44520987f0bd.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "7",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": null,
+      "type": null,
+      "topic": "Mathematical induction involving inequalities (sum of square roots)",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P2"
+      ],
+      "hasStimulus": true,
+      "bytes": 399089
+    },
+    {
+      "id": "52fc9891e3f8",
+      "subject": "maths-extension-2",
+      "assetKey": "q_52fc9891e3f8.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "8",
+      "partLabel": "a",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Seventh roots of unity and derivation of a trigonometric identity",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 346200
+    },
+    {
+      "id": "9f9a896b70fa",
+      "subject": "maths-extension-2",
+      "assetKey": "q_9f9a896b70fa.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "8",
+      "partLabel": "b",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Seventh roots of unity and derivation of a trigonometric identity",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 346202
+    },
+    {
+      "id": "37bf880d2ac6",
+      "subject": "maths-extension-2",
+      "assetKey": "q_37bf880d2ac6.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "8",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Seventh roots of unity and derivation of a trigonometric identity",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 346184
+    },
+    {
+      "id": "d342773749a1",
+      "subject": "maths-extension-2",
+      "assetKey": "q_d342773749a1.pdf",
+      "answerKey": null,
+      "paperId": "maths-extension-2-y12-trial-barker-2010-w-sol",
+      "questionNumber": "8",
+      "partLabel": "i",
+      "marks": null,
+      "questionMarks": 15,
+      "type": null,
+      "topic": "Seventh roots of unity and derivation of a trigonometric identity",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N2"
+      ],
+      "hasStimulus": true,
+      "bytes": 460834
     }
   ]
 }
