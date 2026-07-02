@@ -438,6 +438,65 @@ button, select, input { font-family: inherit; }
 .subjects-title { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 4px; }
 .subjects-sub { color: var(--text-dim); font-size: 15px; margin: 0; }
 
+/* Daily-quiz box — the first thing on the home screen. One tap starts a quiz.
+   Always a big, solid-blue button so it reads as the primary action. */
+.daily-quiz {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  text-align: left;
+  padding: 22px 24px;
+  margin: 8px 0 24px;
+  border: none;
+  border-radius: 18px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+  transition: filter 0.15s ease, transform 0.05s ease, box-shadow 0.15s ease;
+}
+.daily-quiz:hover { filter: brightness(1.06); box-shadow: 0 8px 26px rgba(37, 99, 235, 0.45); }
+.daily-quiz:active { transform: scale(0.99); }
+.dq-icon {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.dq-text { display: flex; flex-direction: column; gap: 3px; flex: 1; min-width: 0; }
+.dq-title { font-weight: 800; font-size: 21px; letter-spacing: -0.01em; }
+.dq-sub { font-size: 14px; color: rgba(255, 255, 255, 0.9); }
+.dq-cta { flex: none; display: flex; align-items: center; gap: 10px; }
+.dq-count {
+  min-width: 26px;
+  height: 26px;
+  padding: 0 8px;
+  border-radius: 13px;
+  background: #fff;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dq-start {
+  flex: none;
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
 .subjects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -477,6 +536,44 @@ button, select, input { font-family: inherit; }
   border-radius: 4px;
   transition: width 0.4s ease;
 }
+
+/* Subject hub — the mode tiles (Podcasts / Quizzes / Past Papers). Reuse the
+   subject-tile look but lay out horizontally: icon · text · badge · chevron. */
+.hub-grid { grid-template-columns: 1fr; }
+.hub-tile {
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+}
+.hub-tile-icon {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  background: var(--bg-elevated);
+  color: var(--accent);
+}
+.hub-tile-text { display: flex; flex-direction: column; gap: 3px; flex: 1; min-width: 0; }
+.hub-tile-text .subject-name { font-size: 18px; }
+.hub-tile-badge {
+  flex: none;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 8px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hub-tile-chev { flex: none; font-size: 24px; line-height: 1; color: var(--text-dim); }
 
 .module {
   border: 1px solid var(--border);
@@ -1141,6 +1238,17 @@ body.offline .episode-row:not(.ep-downloaded) .ep-play { opacity: 0.4; }
 }
 .quiz-exit-btn:hover { color: var(--text); }
 .quiz-progress-text { font-size: 12px; color: var(--text-dim); }
+.quiz-subject {
+  margin-right: auto;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+}
 
 .quiz-progress-track {
   height: 3px;

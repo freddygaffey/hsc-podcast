@@ -24,6 +24,7 @@
 
   let fullManifest = null;       // { subjects: [...] } as loaded from manifest.json
   let currentSubject = null;     // id of the subject currently in view
+  let currentLibMode = "podcasts"; // which library mode is showing: "podcasts" | "papers"
   let manifest = null;           // the current subject's view: { modules: [...] }
   let currentEpisode = null;
   let currentVoiceIndex = 0;
@@ -55,9 +56,10 @@
   // native playbackRate handles speed, and <audio>'s Range requests stream cleanly.
   const audio = audioEl;
   const viewSubjects = document.getElementById("view-subjects");
+  const viewSubjectHub = document.getElementById("view-subject-hub");
   const viewLibrary = document.getElementById("view-library");
   const viewEpisode = document.getElementById("view-episode");
-  const views = { subjects: viewSubjects, library: viewLibrary, episode: viewEpisode };
+  const views = { subjects: viewSubjects, hub: viewSubjectHub, library: viewLibrary, episode: viewEpisode };
   const btnBack = document.getElementById("btn-back");
   const btnTheme = document.getElementById("btn-theme");
   const btnSleep = document.getElementById("btn-sleep");
@@ -139,6 +141,12 @@
     setHidden(overlay, true);
     if (sheetOpener && typeof sheetOpener.focus === "function") sheetOpener.focus();
     sheetOpener = null;
+    // If the review sheet was opened via a subject's #/…/quizzes route, drop back to the
+    // hub URL so the hash reflects what's on screen (and re-tapping the tile reopens it).
+    if (overlay === reviewOverlay && /\/quizzes$/.test(window.location.hash)) {
+      const hub = window.location.hash.replace(/\/quizzes$/, "");
+      history.replaceState(null, "", hub);
+    }
   }
   function activeSheet() {
     return [statsOverlay, reviewOverlay, settingsOverlay, queueOverlay].find((o) => o && !o.hidden) || null;
@@ -398,19 +406,30 @@
     }
   }
 
-  // Badge the Review button with how many flashcards are due right now, so the study
-  // loop is visible from the top bar. Counts only started cards (total>0) that are due —
-  // reads localStorage only (no quiz fetch), so it's cheap to call often.
-  function updateReviewBadge() {
-    if (!btnReview) return;
-    let badge = btnReview.querySelector(".queue-badge");
+  // How many started flashcards (total>0) are due right now. Reads localStorage only
+  // (no quiz fetch), so it's cheap to call often. Drives both the top-bar badge and
+  // the home-screen "daily quiz" box.
+  // Count flashcards due right now. Pass a subjectId to count only that subject's cards
+  // (SR keys are "<subject>:<epId>::<qId>", so a prefix match scopes them).
+  function reviewsDueCount(subjectId) {
     let due = 0;
     const sr = loadSR();
     const now = Date.now();
+    const prefix = subjectId ? subjectId + ":" : null;
     for (const k in sr) {
+      if (prefix && !k.startsWith(prefix)) continue;
       const c = sr[k];
       if (c && c.total && c.due && new Date(c.due).getTime() <= now) due++;
     }
+    return due;
+  }
+
+  // Badge the Review button with how many flashcards are due right now, so the study
+  // loop is visible from the top bar.
+  function updateReviewBadge() {
+    if (!btnReview) return;
+    let badge = btnReview.querySelector(".queue-badge");
+    const due = reviewsDueCount();
     if (!badge) {
       badge = document.createElement("span");
       badge.className = "queue-badge";
@@ -1542,6 +1561,25 @@
     if (brandEl) brandEl.textContent = "HSC Study";
     const progress = loadProgress();
 
+    // Daily-quiz box — sits at the very top so it's the first thing you see. One tap
+    // starts a quiz straight away (no config screen): the lowest-barrier way to study.
+    const due = reviewsDueCount();
+    const quizBox = document.createElement("button");
+    quizBox.className = "daily-quiz";
+    quizBox.innerHTML = `
+      <span class="dq-icon">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9z"/></svg>
+      </span>
+      <span class="dq-text">
+        <span class="dq-title">Start your daily quiz</span>
+        <span class="dq-sub">${due > 0
+          ? `${due} due now · keep your knowledge fresh`
+          : "Quick questions to keep your knowledge fresh"}</span>
+      </span>
+      <span class="dq-cta">${due > 0 ? `<span class="dq-count">${due > 99 ? "99+" : due}</span>` : ""}<span class="dq-start">Start now</span></span>`;
+    quizBox.addEventListener("click", () => startDailyQuiz());
+    viewSubjects.appendChild(quizBox);
+
     const intro = document.createElement("div");
     intro.className = "subjects-intro";
     intro.innerHTML = `<h1 class="subjects-title">HSC Study</h1><p class="subjects-sub">Choose a subject</p>`;
@@ -1566,12 +1604,81 @@
     viewSubjects.appendChild(grid);
   }
 
-  function renderLibrary() {
-    viewLibrary.innerHTML = "";
-    const q = ((libSearchInput && libSearchInput.value) || "").trim().toLowerCase();
+  // The per-subject hub: one level below the subject grid. Splits a subject into its
+  // three modes — Podcasts, Quizzes, Past Papers — each opening its own surface.
+  function renderSubjectHub() {
+    if (!viewSubjectHub) return;
+    viewSubjectHub.innerHTML = "";
+    const s = subjectMeta(currentSubject);
+    if (!s) return;
+    const brandEl = document.querySelector(".brand");
+    if (brandEl) brandEl.textContent = s.shortName || s.name || "HSC Study";
+    const progress = loadProgress();
+    const id = encodeURIComponent(s.id);
 
-    // Continue-listening banner — hide it while searching (results are the focus).
-    const lastEp = q ? null : getLastPlayedEpisode();
+    // Podcast episodes exclude the synthetic EXAM (past papers) module.
+    const podModules = s.modules.filter((m) => m.prefix !== "EXAM");
+    const podEps = podModules.flatMap((m) => m.episodes);
+    const podDone = podEps.filter((e) => progress[e.id] && progress[e.id].completed).length;
+    const hasPapers = s.modules.some((m) => m.prefix === "EXAM");
+    const paperCount = s.modules.filter((m) => m.prefix === "EXAM").flatMap((m) => m.episodes).length;
+    const due = reviewsDueCount(s.id);
+
+    const intro = document.createElement("div");
+    intro.className = "subjects-intro";
+    intro.innerHTML = `<h1 class="subjects-title">${s.name}</h1><p class="subjects-sub">Choose what to study</p>`;
+    viewSubjectHub.appendChild(intro);
+
+    const grid = document.createElement("div");
+    grid.className = "subjects-grid hub-grid";
+
+    const podIcon = `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/><path d="M19 10v1a7 7 0 0 1-14 0v-1"/><path d="M12 18v4"/></svg>`;
+    const quizIcon = `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M14 3v5h5"/><path d="M9 13l2 2 4-4"/></svg>`;
+    const paperIcon = `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M14 2v6h6"/><path d="M8 13h8"/><path d="M8 17h8"/></svg>`;
+
+    const makeTile = (icon, name, sub, hash, badge) => {
+      const tile = document.createElement("button");
+      tile.className = "subject-tile hub-tile";
+      tile.innerHTML = `
+        <span class="hub-tile-icon">${icon}</span>
+        <span class="hub-tile-text">
+          <span class="subject-name">${name}</span>
+          <span class="subject-meta">${sub}</span>
+        </span>
+        ${badge ? `<span class="hub-tile-badge">${badge > 99 ? "99+" : badge}</span>` : ""}
+        <span class="hub-tile-chev">&#8250;</span>`;
+      tile.addEventListener("click", () => { window.location.hash = hash; });
+      grid.appendChild(tile);
+    };
+
+    makeTile(podIcon, "Podcasts",
+      `${podEps.length} episode${podEps.length === 1 ? "" : "s"} · ${podDone}/${podEps.length} listened`,
+      `#/s/${id}/podcasts`);
+    makeTile(quizIcon, "Quizzes",
+      due > 0 ? `${due} card${due === 1 ? "" : "s"} due for review` : "Flashcards & spaced repetition",
+      `#/s/${id}/quizzes`, due);
+    if (hasPapers) {
+      makeTile(paperIcon, "Past Papers",
+        `${paperCount} paper${paperCount === 1 ? "" : "s"} · generate & mark`,
+        `#/s/${id}/papers`);
+    }
+
+    viewSubjectHub.appendChild(grid);
+  }
+
+  function renderLibrary(mode) {
+    viewLibrary.innerHTML = "";
+    // Remember the mode so bare re-renders (search input, sync updates) keep it.
+    if (mode) currentLibMode = mode;
+    const papersMode = currentLibMode === "papers";
+    // Podcasts mode shows every module except the synthetic EXAM (past papers) module;
+    // papers mode shows only EXAM. A subject's library is one mode or the other.
+    const srcModules = manifest.modules.filter((m) =>
+      papersMode ? m.prefix === "EXAM" : m.prefix !== "EXAM");
+    const q = papersMode ? "" : ((libSearchInput && libSearchInput.value) || "").trim().toLowerCase();
+
+    // Continue-listening banner — podcasts only, and hidden while searching (results are the focus).
+    const lastEp = (q || papersMode) ? null : getLastPlayedEpisode();
     if (lastEp) {
       const prog = getEpisodeProgress(lastEp.id);
       const pct = Math.round((prog.progressPct || 0) * 100);
@@ -1595,7 +1702,7 @@
     }
 
     const groups = new Map();
-    manifest.modules.forEach((mod) => {
+    srcModules.forEach((mod) => {
       if (!groups.has(mod.prefix)) groups.set(mod.prefix, { prefix: mod.prefix, episodes: [] });
       mod.episodes.forEach((ep) => groups.get(mod.prefix).episodes.push({ ...ep, _moduleNum: mod.moduleNum }));
     });
@@ -1620,17 +1727,21 @@
         .filter((g) => g.hits > 0);
       if (!yearGroups.length) return; // no orphan year header when nothing matches
 
-      const yh = document.createElement("div");
-      yh.className = "year-header";
-      yh.textContent = year;
-      viewLibrary.appendChild(yh);
+      // Papers mode is a single "Past Papers" group; its module name already says so,
+      // so skip the redundant year header.
+      if (!papersMode) {
+        const yh = document.createElement("div");
+        yh.className = "year-header";
+        yh.textContent = year;
+        viewLibrary.appendChild(yh);
+      }
       yearGroups.sort((a, b) => Math.min(...a.group.episodes.map((e) => e._moduleNum)) - Math.min(...b.group.episodes.map((e) => e._moduleNum)));
       yearGroups.forEach(({ group }) => {
       group.episodes.sort((a, b) => (a._moduleNum - b._moduleNum) || ((a.unit || 0) - (b.unit || 0)));
 
       const groupEl = document.createElement("div");
       groupEl.className = "module";
-      if (q) groupEl.classList.add("open"); // auto-expand so matched episodes are visible
+      if (q || papersMode) groupEl.classList.add("open"); // auto-expand matched/paper episodes
 
       const completed = group.episodes.filter((e) => getEpisodeProgress(e.id).completed).length;
       const name = GROUP_NAMES[group.prefix] || group.prefix;
@@ -1760,11 +1871,19 @@
   }
 
   // --- Routing ---
-  // Routes: #/  → subject picker · #/s/<subject> → that subject's library ·
-  //         #/episode/<subject:id> → an episode (subject inferred from its namespaced id).
+  // Routes: #/  → subject picker · #/s/<subject> → that subject's hub (Podcasts /
+  //   Quizzes / Past Papers) · #/s/<subject>/podcasts|papers → that mode's library ·
+  //   #/s/<subject>/quizzes → the subject-scoped review sheet over the hub ·
+  //   #/episode/<subject:id> → an episode (subject inferred from its namespaced id).
   function navigateToEpisode(id) { window.location.hash = `#/episode/${encodeURIComponent(id)}`; }
-  function navigateToLibrary() {
+  function navigateToHub() {
     window.location.hash = currentSubject ? `#/s/${encodeURIComponent(currentSubject)}` : "#/";
+  }
+  // Back to whichever library mode the user is browsing (papers vs podcasts).
+  function navigateToLibrary() {
+    if (!currentSubject) { window.location.hash = "#/"; return; }
+    const mode = currentLibMode === "papers" ? "papers" : "podcasts";
+    window.location.hash = `#/s/${encodeURIComponent(currentSubject)}/${mode}`;
   }
   function navigateToSubjects() { window.location.hash = "#/"; }
 
@@ -1778,14 +1897,21 @@
       const ep = findEpisode(decodeURIComponent(epMatch[1]));
       if (ep) { ensureSubject(ep._subject); showView("episode", ep); return; }
     }
+    // Mode sub-routes must be tested before the bare-subject route (whose `.+` also matches them).
+    const modeMatch = hash.match(/^#\/s\/(.+)\/(podcasts|papers|quizzes)$/);
+    if (modeMatch && setSubject(decodeURIComponent(modeMatch[1]))) {
+      const mode = modeMatch[2];
+      if (mode === "quizzes") { showView("hub"); openReview(currentSubject); return; }
+      showView("library", mode); return;
+    }
     const subMatch = hash.match(/^#\/s\/(.+)$/);
     if (subMatch && setSubject(decodeURIComponent(subMatch[1]))) {
-      showView("library"); return;
+      showView("hub"); return;
     }
     showView("subjects");
   }
 
-  function showView(route, episode) {
+  function showView(route, arg) {
     stopPaperTimer(); // leaving any view kills a running paper clock
     Object.entries(views).forEach(([name, el]) => { el.hidden = name !== route; });
     window.scrollTo({ top: 0, behavior: "instant" });
@@ -1794,16 +1920,25 @@
       setHidden(btnBack, true);
       if (libSearchWrap) setHidden(libSearchWrap, true);
       renderSubjects();
-    } else if (route === "library") {
-      // Only show a "Subjects" back button when there's more than one subject to go back to.
-      const multi = fullManifest && fullManifest.subjects.length > 1;
-      setHidden(btnBack, !multi);
-      if (multi) btnBack.textContent = "← Subjects";
-      if (libSearchWrap) setHidden(libSearchWrap, false);
-      renderLibrary();
-    } else if (route === "episode") {
+    } else if (route === "hub") {
+      // Back to the subject picker (worth a tap even with one subject: the daily quiz lives there).
       setHidden(btnBack, false);
-      btnBack.textContent = "← Library";
+      btnBack.textContent = "← Subjects";
+      if (libSearchWrap) setHidden(libSearchWrap, true);
+      renderSubjectHub();
+    } else if (route === "library") {
+      const mode = arg === "papers" ? "papers" : "podcasts";
+      setHidden(btnBack, false);
+      btnBack.textContent = `← ${subjShort(currentSubject)}`;
+      // Papers have no search; podcasts do.
+      if (libSearchWrap) setHidden(libSearchWrap, mode === "papers");
+      renderLibrary(mode);
+    } else if (route === "episode") {
+      const episode = arg;
+      // Remember which mode this episode belongs to so Back returns to the right library.
+      currentLibMode = episode.paper ? "papers" : "podcasts";
+      setHidden(btnBack, false);
+      btnBack.textContent = episode.paper ? "← Past Papers" : "← Podcasts";
       if (libSearchWrap) setHidden(libSearchWrap, true);
       episodeTitleEl.textContent = episode.title;
       quizState = null;
@@ -2233,6 +2368,14 @@
     const m = ORIGIN_META[s.origin] || { label: s.origin, cls: "src-other" };
     return `<span class="src-badge ${m.cls}">${m.label}</span>`;
   }
+  // Which subject a quiz question belongs to (id from the tag, the episode, or the
+  // namespaced "<subject>:<id>" episode id), as a header chip. Empty if unknown.
+  function quizSubjectHtml(q) {
+    const ep = q && q._ep;
+    const id = (q && q._subject) || (ep && ep._subject) ||
+      (ep && typeof ep.id === "string" && ep.id.includes(":") ? ep.id.split(":")[0] : null);
+    return id ? `<span class="quiz-subject">${subjShort(id)}</span>` : "";
+  }
   // Full provenance line + "View source ↗" link, shown in the answer/reveal panel.
   function sourceLineHtml(q) {
     const s = q && q.source;
@@ -2290,6 +2433,7 @@
       <div class="quiz-session">
         <div class="quiz-header">
           <button class="quiz-exit-btn" id="btn-quiz-exit">✕ Exit</button>
+          ${quizSubjectHtml(q)}
           ${quizState.isPaper && quizState.timerMode !== "off" ? `<span class="paper-timer" id="paper-timer"></span>` : ""}
           <span class="quiz-progress-text">${current + 1} / ${total}</span>
         </div>
@@ -2669,6 +2813,7 @@
       <div class="quiz-session written-session${narrow ? " written-narrow" : ""}">
         <div class="quiz-header">
           <button class="quiz-exit-btn" id="btn-quiz-exit">✕ Exit</button>
+          ${quizSubjectHtml(q)}
           ${quizState.isPaper && quizState.timerMode !== "off" ? `<span class="paper-timer" id="paper-timer"></span>` : ""}
           <span class="quiz-progress-text">${current + 1} / ${total}</span>
         </div>
@@ -2963,22 +3108,25 @@
     return "weak";
   }
 
-  function openReview() {
+  function openReview(subjectScope) {
     if (!fullManifest) return;
     openSheet(reviewOverlay);
-    renderReviewHub();
+    renderReviewHub(subjectScope);
   }
 
   const TOPIC_SEP = "␟";  // composite topic key: "<subject>␟<prefix>"
   const topicKey = (q) => q._subject + TOPIC_SEP + q._prefix;
   const subjShort = (id) => { const s = subjectMeta(id); return s ? (s.shortName || s.name) : id; };
 
-  async function renderReviewHub() {
+  async function renderReviewHub(subjectScope) {
     reviewContent.innerHTML = `<div class="quiz-empty"><p>Loading…</p></div>`;
-    const all = await loadAllQuestions();
+    let all = await loadAllQuestions();
+    // Scoped review (opened from a subject's Quizzes tile): only that subject's cards.
+    if (subjectScope) all = all.filter((q) => q._subject === subjectScope);
     if (!all.length) { reviewContent.innerHTML = `<div class="quiz-empty"><p>No quizzes available yet.</p></div>`; return; }
 
-    const multiSubject = fullManifest.subjects.length > 1;
+    // Treat a scoped hub as single-subject: no per-subject prefixes or collapsible wrappers.
+    const multiSubject = !subjectScope && fullManifest.subjects.length > 1;
     const buckets = { new: 0, weak: 0, known: 0 };
     const groups = {};  // composite topic key -> stats
     all.forEach((q) => {
@@ -3000,7 +3148,9 @@
     // Mix-topic picker grouped Subject → Year → module (each subject uses its own yearMap).
     const present = [...new Set(all.map(topicKey))];
     const presentSet = new Set(present);
-    const subjectsHtml = fullManifest.subjects.map((s) => {
+    const subjectsHtml = fullManifest.subjects
+      .filter((s) => !subjectScope || s.id === subjectScope)
+      .map((s) => {
       const yMap = s.yearMap || {};
       const yOrder = s.yearOrder || YEAR_ORDER;
       const prefixes = [...new Set(s.modules.map((m) => m.prefix))].filter((p) => presentSet.has(s.id + TOPIC_SEP + p));
@@ -3090,6 +3240,33 @@
     if (drill && !drill.disabled) drill.addEventListener("click", () => runMix(present, "weak", 0));
   }
 
+  // One-tap daily quiz — no config screen. Opens the review sheet and jumps straight
+  // into ~12 questions: whatever's due first, topped up with fresh ones so there's
+  // always a full quiz. Lowest-barrier way into the study loop.
+  async function startDailyQuiz() {
+    openSheet(reviewOverlay);
+    reviewContent.innerHTML = `<div class="quiz-empty"><p>Loading…</p></div>`;
+    const all = await loadAllQuestions();
+    if (!all.length) { reviewContent.innerHTML = `<div class="quiz-empty"><p>No quizzes available yet.</p></div>`; return; }
+    const N = 12;
+    // "Due" = a card you've started that's ready for review (matches the top-bar badge).
+    // New/unseen cards don't count here so real reviews come first; we top up with fresh
+    // questions to always fill a quiz.
+    const sr = loadSR();
+    const now = Date.now();
+    const isReviewDue = (q) => { const c = sr[srKey(q._ep, q)]; return !!(c && c.total && c.due && new Date(c.due).getTime() <= now); };
+    const due = shuffle(all.filter(isReviewDue));
+    let pool = due.slice(0, N);
+    if (pool.length < N) {
+      const dueSet = new Set(pool);
+      const fresh = shuffle(all.filter((q) => !dueSet.has(q))).slice(0, N - pool.length);
+      pool = shuffle([...pool, ...fresh]);
+    }
+    quizState = { ep: null, allQuestions: all, items: pool, questions: [], current: 0, score: 0,
+                  answered: false, mode: "mix", missed: [], container: reviewContent, onExit: renderReviewHub };
+    beginSession(pool, "mix");
+  }
+
   async function runMix(topicKeys, scope, n) {
     const all = await loadAllQuestions();
     const keys = new Set(topicKeys);
@@ -3127,8 +3304,10 @@
 
   window.addEventListener("hashchange", handleRoute);
   btnBack.addEventListener("click", () => {
-    // From an episode go back to its subject's library; from the library go to the picker.
+    // Walk one level up the hierarchy: episode → mode library → subject hub → subject picker.
     if (!viewEpisode.hidden) navigateToLibrary();
+    else if (!viewLibrary.hidden) navigateToHub();
+    else if (viewSubjectHub && !viewSubjectHub.hidden) navigateToSubjects();
     else navigateToSubjects();
   });
 
