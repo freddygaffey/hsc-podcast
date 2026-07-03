@@ -51,10 +51,13 @@
   // player that stays audible all the way to 16x. Falls back to the raw <audio>
   // element (silent above 4x) if the browser lacks AudioWorklet.
   const audioEl = document.getElementById("audio");
-  // Use the native <audio> element directly. The Web Audio speed engine is DISABLED — it
-  // introduced playback, transcript-scroll and voice-switch glitches and isn't required:
-  // native playbackRate handles speed, and <audio>'s Range requests stream cleanly.
-  const audio = audioEl;
+  // Hybrid audio: a runtime-switchable wrapper over the native <audio> element AND the
+  // pitch-preserving Web Audio speed engine (speed-engine.js). The engine keeps audio
+  // audible past 4x all the way to 16x (the raw element is muted above ~4x); a Settings
+  // toggle falls back to the native element if the engine misbehaves on a device. In
+  // engine mode a silent looping element anchors the iOS media session so lock-screen /
+  // headphone controls still work. See createHybridAudio.
+  const audio = window.createHybridAudio ? window.createHybridAudio(audioEl) : audioEl;
   const viewSubjects = document.getElementById("view-subjects");
   const viewSubjectHub = document.getElementById("view-subject-hub");
   const viewLibrary = document.getElementById("view-library");
@@ -76,6 +79,7 @@
   const dlAllVoicesToggle = document.getElementById("dl-all-voices");
   const blockMobileToggle = document.getElementById("block-mobile-data");
   const introTitleToggle = document.getElementById("intro-title");
+  const speedEngineToggle = document.getElementById("speed-engine");
   const INTRO_KEY = "podcast-intro";                  // default ON ("0" = off)
   const introEnabled = () => localStorage.getItem(INTRO_KEY) !== "0";
   const fsrsRetentionSelect = document.getElementById("fsrs-retention");
@@ -755,7 +759,11 @@
       return;
     }
     const nextEp = getNextEpisode(currentEpisode);
-    if (!nextEp) return;
+    // Nothing to advance to: pause so the hybrid engine's silent media-session anchor
+    // stops looping (otherwise it keeps the lock-screen "playing" after the last episode).
+    // Harmless for the native backend (already ended). Auto-advance goes through the
+    // nextEp path below, which keeps the anchor running for the next episode.
+    if (!nextEp) { audio.pause(); return; }
     // Screen off / app backgrounded: skip the countdown toast and advance immediately,
     // while the audio session is still warm (gives the next track the best chance of
     // starting in the background on iOS). Foreground keeps the nice "Up next" countdown.
@@ -1457,6 +1465,17 @@
     if (dlAllVoicesToggle) dlAllVoicesToggle.checked = localStorage.getItem(DOWNLOAD_ALL_VOICES_KEY) === "1";
     if (blockMobileToggle) blockMobileToggle.checked = blockMobileData();
     if (introTitleToggle) introTitleToggle.checked = introEnabled();
+    if (speedEngineToggle) {
+      // Only meaningful when the Web Audio engine is available; otherwise hide the row
+      // (the native element can't do audible >4x, but there's nothing to toggle).
+      const supported = audio.engineAvailable === true;
+      speedEngineToggle.checked = audio.engineEnabled === true;
+      speedEngineToggle.disabled = !supported;
+      const row = speedEngineToggle.closest(".setting-row");
+      const hint = row && row.nextElementSibling;
+      if (row) setHidden(row, !supported);
+      if (hint && hint.classList.contains("setting-hint")) setHidden(hint, !supported);
+    }
     if (fsrsRetentionSelect) fsrsRetentionSelect.value = String(fsrsSettings().retention);
     if (fsrsStepsInput) fsrsStepsInput.value = fsrsSettings().steps;
     if (speedUnitSelect) speedUnitSelect.value = speedUnitMode();
@@ -1486,6 +1505,16 @@
   });
   if (introTitleToggle) introTitleToggle.addEventListener("change", () => {
     localStorage.setItem(INTRO_KEY, introTitleToggle.checked ? "1" : "0");
+  });
+  if (speedEngineToggle && audio.setEngineEnabled) speedEngineToggle.addEventListener("change", () => {
+    audio.setEngineEnabled(speedEngineToggle.checked);
+    // Switching backends takes effect on the next load(), so reload the current episode
+    // in place — resume its saved position and keep playing if it was playing.
+    if (currentEpisode) {
+      const playing = !audio.paused;
+      persistProgress(); // capture position so the reload resumes where we are
+      loadEpisode(currentEpisode, { autoplay: playing });
+    }
   });
   if (blockMobileToggle) blockMobileToggle.addEventListener("change", () => {
     // Stored inverted: default (absent) = ON; "0" = off.
