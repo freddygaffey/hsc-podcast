@@ -259,10 +259,11 @@
 <script src="paper-export.js"></script>
 <script>
 "use strict";
+// Fred's current subjects. The other banks (ext-1/2, standard-2, english) stay baked
+// and uploaded — re-add a line here to surface one.
 const SUBJECTS=[
-  ["maths-advanced","Mathematics Advanced"],["maths-extension-1","Mathematics Extension 1"],
-  ["maths-extension-2","Mathematics Extension 2"],["maths-standard-2","Mathematics Standard 2"],
-  ["maths-accelerated","Mathematics (Accelerated)"],["physics","Physics"],
+  ["maths-advanced","Mathematics Advanced"],
+  ["physics","Physics"],
   ["dt","Design and Technology"],
 ];
 const $=s=>document.querySelector(s);
@@ -271,7 +272,7 @@ const PAGE=80;
 
 let SUBJECT="", BASE="", DATA=[], FILTERED=[], shown=PAGE;
 let picked=new Map();           // key -> record (ordered = paper order)
-const F={topics:new Set(), groups:new Set(), sources:new Set(), y0:null,y1:null,
+const F={subs:new Set(), groups:new Set(), sources:new Set(), y0:null,y1:null,
          m0:null,m1:null, ans:false, types:new Set(), era:true};   // era = current-syllabus-only
 
 // First HSC exam year of the CURRENT NESA syllabus, per subject. Questions from earlier
@@ -291,17 +292,51 @@ const REF_TOPICS={
   MEX:{P:"Proof",V:"Vectors",N:"Complex Numbers",C:"Calculus",M:"Mechanics"},
   MS:{M:"Measurement",F:"Financial Mathematics",S:"Statistical Analysis",A:"Algebra",N:"Networks"},
 };
+// Official NESA subtopics per full ref code — the multi-select granularity.
+const SUBTOPICS={
+  "MA-F1":"Working with Functions","MA-F2":"Graphing Techniques",
+  "MA-T1":"Trigonometry and Measure of Angles","MA-T2":"Trigonometric Functions and Identities",
+  "MA-T3":"Trigonometric Functions and Graphs",
+  "MA-C1":"Introduction to Differentiation","MA-C2":"Differential Calculus",
+  "MA-C3":"Applications of Differentiation","MA-C4":"Integral Calculus",
+  "MA-E1":"Logarithms and Exponentials","MA-M1":"Modelling Financial Situations",
+  "MA-S1":"Probability and Discrete Probability Distributions",
+  "MA-S2":"Descriptive Statistics and Bivariate Data Analysis","MA-S3":"Random Variables",
+  "ME-F1":"Further Work with Functions","ME-F2":"Polynomials",
+  "ME-T1":"Inverse Trigonometric Functions","ME-T2":"Further Trigonometric Identities",
+  "ME-T3":"Trigonometric Equations","ME-A1":"Working with Combinatorics",
+  "ME-C1":"Rates of Change","ME-C2":"Further Calculus Skills","ME-C3":"Applications of Calculus",
+  "ME-P1":"Proof by Mathematical Induction","ME-V1":"Introduction to Vectors",
+  "ME-S1":"The Binomial Distribution",
+  "MEX-P1":"The Nature of Proof","MEX-P2":"Further Proof by Mathematical Induction",
+  "MEX-V1":"Further Work with Vectors","MEX-N1":"Introduction to Complex Numbers",
+  "MEX-N2":"Using Complex Numbers","MEX-C1":"Further Integration",
+  "MEX-M1":"Applications of Calculus to Mechanics",
+  "MS-A1":"Formulae and Equations","MS-A2":"Linear Relationships","MS-A4":"Types of Relationships",
+  "MS-M1":"Applications of Measurement","MS-M2":"Working with Time",
+  "MS-M6":"Non-right-angled Trigonometry","MS-M7":"Rates and Ratios",
+  "MS-F1":"Money Matters","MS-F4":"Investments and Loans","MS-F5":"Annuities",
+  "MS-S1":"Data Analysis","MS-S2":"Relative Frequency and Probability",
+  "MS-S4":"Bivariate Data Analysis","MS-S5":"The Normal Distribution",
+  "MS-N2":"Network Concepts","MS-N3":"Critical Path Analysis",
+};
+function refCode(r){
+  const m=/^(MEX|MA|ME|MS)-([A-Z])(\d+)/.exec(String(r).toUpperCase().replace(/\s/g,""));
+  return m?`${m[1]}-${m[2]}${m[3]}`:null;
+}
 function groupsOf(q){
-  const out=new Set();
+  const groups=new Set(), subs=new Set();
   for(const r of q.syllabusRefs||[]){
+    const c=refCode(r);
+    if(c&&SUBTOPICS[c])subs.add(c);
     const m=/^(MEX|MA|ME|MS)-([A-Z])/.exec(String(r).replace(/\s/g,""));
     const name=m&&REF_TOPICS[m[1]]&&REF_TOPICS[m[1]][m[2]];
-    if(name)out.add(name);
+    if(name)groups.add(name);
   }
-  if(!out.size&&q.module)
-    out.add(String(q.module).replace(/^Module\s*(\d+)[:\s]*/,"M$1 · ").trim());
-  if(!out.size)out.add("Unclassified");
-  return [...out];
+  if(!groups.size&&q.module)
+    groups.add(String(q.module).replace(/^Module\s*(\d+)[:\s]*/,"M$1 · ").trim());
+  if(!groups.size)groups.add("Unclassified");
+  return {groups:[...groups],subs:[...subs]};
 }
 const key=q=>q.paperSlug+"/"+q.assetKey;
 const yearOf=q=>{const m=/^(\d{4})/.exec(q.paperSlug||"");return m?+m[1]:null;};
@@ -353,7 +388,7 @@ async function loadSubject(id){
     if(better)byNum.set(nk,q);
   }
   DATA=[...byNum.values()];
-  DATA.forEach(q=>q._groups=groupsOf(q));
+  DATA.forEach(q=>{const g=groupsOf(q);q._groups=g.groups;q._subs=g.subs;});
   resetFilters(false);
   restoreBasket();
   restoreRecipe();
@@ -369,25 +404,27 @@ function buildRail(){
     ?`<button id="era-btn" class="${F.era?"on":""}" title="The current syllabus was first examined in ${cut}">current syllabus only (${cut}+)</button>`:"";
   const eb=$("#era-btn");
   if(eb)eb.onclick=()=>{F.era=!F.era;eb.classList.toggle("on",F.era);apply();};
-  // canonical syllabus-group tree (from syllabusRefs) -> raw classifier topics beneath
+  // syllabus tree: official topic groups -> official SUBTOPICS (both multi-select)
   const groups=new Map();
   for(const q of DATA)for(const g of q._groups){
-    const G=groups.get(g)||{n:0,topics:new Map()};
+    const G=groups.get(g)||{n:0,subs:new Map()};
     G.n++;
-    const t=q.topic||"—";
-    G.topics.set(t,(G.topics.get(t)||0)+1);
+    for(const s of q._subs)
+      if(REF_TOPICS[s.split("-")[0]]?.[s.split("-")[1][0]]===g)
+        G.subs.set(s,(G.subs.get(s)||0)+1);
     groups.set(g,G);
   }
   $("#tree").innerHTML=[...groups.entries()].sort((a,b)=>b[1].n-a[1].n).map(([g,G])=>{
-    const topics=[...G.topics.entries()].sort((a,b)=>b[1]-a[1]).map(([t,c])=>
-      `<label class="t" data-topic="${esc(t)}"><input type="checkbox"><span>${esc(t)}</span><span class="cnt">${c}</span></label>`).join("");
-    return `<div class="mod">
-      <button><span class="arr">▶</span></button>
+    const subs=[...G.subs.entries()].sort().map(([s,c])=>
+      `<label class="t" data-sub="${esc(s)}"><input type="checkbox"><span>${esc(SUBTOPICS[s]||s)}</span><span class="cnt">${c}</span></label>`).join("");
+    return `<div class="mod ${subs?"":"nosub"}">
+      <button ${subs?"":"disabled style='visibility:hidden'"}><span class="arr">▶</span></button>
       <label class="t g" data-group="${esc(g)}" style="flex:1"><input type="checkbox"><span style="font-weight:600">${esc(g)}</span><span class="cnt">${G.n}</span></label>
-      <div class="topics">${topics}</div></div>`;
+      <div class="topics">${subs}</div></div>`;
   }).join("")||'<div class="sub">No topic data yet.</div>';
   $("#tree").querySelectorAll(".mod").forEach(mod=>{
-    mod.querySelector("button").onclick=()=>mod.classList.toggle("open");
+    const btn=mod.querySelector("button");
+    if(btn&&!btn.disabled)btn.onclick=()=>mod.classList.toggle("open");
     mod.querySelector("label.g input").onchange=e=>{
       const g=mod.querySelector("label.g").dataset.group;
       e.target.checked?F.groups.add(g):F.groups.delete(g);
@@ -396,8 +433,8 @@ function buildRail(){
     };
   });
   $("#tree").querySelectorAll(".topics label.t input").forEach(cb=>cb.onchange=e=>{
-    const t=e.target.closest("label").dataset.topic;
-    e.target.checked?F.topics.add(t):F.topics.delete(t);
+    const s=e.target.closest("label").dataset.sub;
+    e.target.checked?F.subs.add(s):F.subs.delete(s);
     e.target.closest("label").classList.toggle("on",e.target.checked);
     apply();
   });
@@ -429,7 +466,7 @@ function buildRail(){
   });
 });
 function resetFilters(re=true){
-  F.topics.clear();F.groups.clear();F.sources.clear();F.types.clear();
+  F.subs.clear();F.groups.clear();F.sources.clear();F.types.clear();
   F.y0=F.y1=F.m0=F.m1=null;F.ans=false;F.era=true;
   ["f-y0","f-y1","f-m0","f-m1"].forEach(id=>$("#"+id).value="");
   if(re){buildRail();apply();}
@@ -441,7 +478,7 @@ function passes(q,ignoreTopics){
   const cut=SYLLABUS_FROM[SUBJECT];
   if(F.era&&cut){const y=yearOf(q);if(!y||y<cut)return false;}
   if(!ignoreTopics){
-    if(F.topics.size){if(!F.topics.has(q.topic||"—"))return false;}
+    if(F.subs.size){if(!q._subs.some(s=>F.subs.has(s)))return false;}
     else if(F.groups.size){if(!q._groups.some(g=>F.groups.has(g)))return false;}
   }
   if(F.sources.size&&!F.sources.has(sourceOf(q)))return false;
@@ -480,7 +517,7 @@ function rowHTML(q,i){
       <input type="checkbox" ${picked.has(k)?"checked":""} title="Add to paper">
       <span class="arr">▶</span>
       <span class="prov"><b>${esc(provOf(q))}</b></span>
-      <span class="rowtopic">${esc(q.topic||q.module||"")}</span>
+      <span class="rowtopic">${esc(q._subs.map(s=>SUBTOPICS[s]||s).join(" · ")||q._groups.join(" · "))}</span>
       <span class="chips">${chips}</span>
     </div>
     <div class="rowbody"></div>
@@ -563,14 +600,14 @@ function renderTray(){
   $("#gen").disabled=!arr.length;
   $("#docket").innerHTML=arr.map((q,i)=>`<li data-k="${esc(key(q))}">
       <span class="dn">${i+1}</span>
-      <span class="dt2">${esc(provOf(q))} — ${esc(q.topic||"")}</span>
+      <span class="dt2">${esc(provOf(q))} — ${esc(q._subs.map(s=>SUBTOPICS[s]||s).join(", ")||q._groups[0]||"")}</span>
       <span class="dm">${q.marks?q.marks+"mk":""}</span>
       <button data-mv="-1" title="Move up">↑</button><button data-mv="1" title="Move down">↓</button>
       <button data-x="1" title="Remove">✕</button>
     </li>`).join("")||'<div class="dockempty">Tick questions on the left, or auto-fill.</div>';
   // composition line: topic mix
   const mix={};
-  arr.forEach(q=>{const t=(q.topic||q.module||"other").split("/")[0].trim();mix[t]=(mix[t]||0)+(q.marks||1);});
+  arr.forEach(q=>{const t=(q._groups&&q._groups[0])||"other";mix[t]=(mix[t]||0)+(q.marks||1);});
   const tot=Object.values(mix).reduce((a,b)=>a+b,0)||1;
   $("#mix").innerHTML=Object.entries(mix).sort((a,b)=>b[1]-a[1]).slice(0,5)
     .map(([t,v])=>`${esc(t)} ${Math.round(v/tot*100)}%`).join(" · ");
@@ -612,15 +649,22 @@ $("#mode-hand").onclick=()=>setMode("hand");
 $("#mode-recipe").onclick=()=>setMode("recipe");
 
 function topicCounts(){
-  const c=new Map();
-  for(const q of DATA)if(passes(q,true)&&q.marks)
-    for(const g of q._groups)c.set(g,(c.get(g)||0)+1);
-  return c;
+  const g=new Map(), s=new Map();
+  for(const q of DATA)if(passes(q,true)&&q.marks){
+    for(const x of q._groups)g.set(x,(g.get(x)||0)+1);
+    for(const x of q._subs)s.set(x,(s.get(x)||0)+1);
+  }
+  return {g,s};
 }
 function renderRecipe(){
   const tc=topicCounts();
-  const opts=[...tc.entries()].sort((a,b)=>a[0].localeCompare(b[0]))
-    .map(([t,n])=>`<option value="${esc(t)}">${esc(t)} (${n})</option>`).join("");
+  const opts=[...tc.g.entries()].sort((a,b)=>b[1]-a[1]).map(([grp,n])=>{
+    const subs=[...tc.s.entries()]
+      .filter(([code])=>REF_TOPICS[code.split("-")[0]]?.[code.split("-")[1][0]]===grp)
+      .sort()
+      .map(([code,c])=>`<option value="s:${esc(code)}">&nbsp;&nbsp;${esc(SUBTOPICS[code]||code)} (${c})</option>`).join("");
+    return `<optgroup label="${esc(grp)}"><option value="g:${esc(grp)}">All ${esc(grp)} (${n})</option>${subs}</optgroup>`;
+  }).join("");
   $("#recipe-rows").innerHTML=RECIPE.map((r,i)=>`<div class="rcrow" data-i="${i}">
       <select>${`<option value="">— topic —</option>`+opts}</select>
       <input type="number" min="1" value="${r.marks||10}" title="marks">
@@ -643,8 +687,10 @@ $("#rc-build").onclick=()=>{
   picked=new Map();                     // Build REPLACES the basket — that's the re-roll
   const usedPapers=new Set();
   const short=[];
+  const inSel=(q,sel)=>sel.startsWith("s:")?q._subs.includes(sel.slice(2))
+                       :q._groups.includes(sel.replace(/^g:/,""));
   for(const row of rows){
-    let pool=DATA.filter(q=>passes(q,true)&&q._groups.includes(row.topic)&&q.marks&&!picked.has(key(q)));
+    let pool=DATA.filter(q=>passes(q,true)&&inSel(q,row.topic)&&q.marks&&!picked.has(key(q)));
     // random order, solutions first-ish
     pool=pool.map(q=>[Math.random()-(q.answerKey?0.3:0),q]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
     let got=0;
@@ -657,7 +703,8 @@ $("#rc-build").onclick=()=>{
       }
       if(got>=row.marks-1)break;
     }
-    if(got<row.marks-1)short.push(`${row.topic} (${got}/${row.marks})`);
+    const label=row.topic.startsWith("s:")?(SUBTOPICS[row.topic.slice(2)]||row.topic):row.topic.replace(/^g:/,"");
+    if(got<row.marks-1)short.push(`${label} (${got}/${row.marks})`);
   }
   syncPicks();
   $("#status").textContent=short.length?`Couldn't fully fill: ${short.join(", ")} — loosen filters?`:"";
