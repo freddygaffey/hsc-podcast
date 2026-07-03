@@ -34,3 +34,7 @@ content/*/textbook/**/*.txt
 content/*/sources/**/*.jpg
 content/*/sources/**/*.jpeg
 content/*/sources/**/*.png
+
+# raw source media never belongs in git (deploys exclude resources/ anyway)
+content/*/resources/**/*.mp4
+content/*/resources/**/*.mov
