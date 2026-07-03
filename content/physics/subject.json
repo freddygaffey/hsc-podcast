@@ -5,7 +5,6 @@
   "description": "HSC Physics podcast episodes",
   "repoUrl": "https://github.com/freddygaffey/hsc-podcast",
   "audioBaseUrl": "https://audio.hsc.pebnum.com",
-
   "groupNames": {
     "M1": "Kinematics",
     "M2": "Dynamics",
@@ -17,12 +16,22 @@
     "M8": "From the Universe to the Atom",
     "CASE": "Case Studies"
   },
-
   "yearMap": {
-    "M1": "Year 11", "M2": "Year 11", "M3": "Year 11", "M4": "Year 11",
-    "M5": "Year 12", "M6": "Year 12", "M7": "Year 12", "M8": "Year 12",
+    "M1": "Year 11",
+    "M2": "Year 11",
+    "M3": "Year 11",
+    "M4": "Year 11",
+    "M5": "Year 12",
+    "M6": "Year 12",
+    "M7": "Year 12",
+    "M8": "Year 12",
     "CASE": "Case Studies"
   },
-
-  "yearOrder": ["Case Studies", "Year 12", "Year 11", "Other"]
+  "yearOrder": [
+    "Case Studies",
+    "Year 12",
+    "Year 11",
+    "Other"
+  ],
+  "assetBaseUrl": "https://pub-b301584310c84f138de6a44a2f6f77e8.r2.dev"
 }

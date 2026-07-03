@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Paper Generator — HSC Study</title>
+<style>
+  :root{
+    --ground:#f5f7fa; --panel:#ffffff; --ink:#1a1d24; --muted:#697386;
+    --line:#e4e8ef; --accent:#2f5bea; --accent-soft:#eaf0ff; --good:#1f9d63;
+    --radius:12px; --pad:16px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+       color:var(--ink);background:var(--ground);-webkit-font-smoothing:antialiased}
+  a{color:var(--accent)}
+  .wrap{max-width:1180px;margin:0 auto;padding:20px}
+  header.top{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+  h1{font-size:22px;margin:0;letter-spacing:-.01em}
+  .sub{color:var(--muted);font-size:13px}
+  select,input,button{font:inherit;color:inherit}
+  .subjectpick{margin-left:auto;display:flex;gap:8px;align-items:center}
+  select.subject{padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+  /* filter bar */
+  .filters{display:flex;gap:10px;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);
+           border-radius:var(--radius);padding:12px;margin:14px 0}
+  .filters label{display:flex;flex-direction:column;gap:4px;font-size:11px;text-transform:uppercase;
+                 letter-spacing:.05em;color:var(--muted)}
+  .filters select,.filters input{padding:8px 10px;border:1px solid var(--line);border-radius:8px;
+                 background:#fff;min-width:150px;font-size:14px;text-transform:none;letter-spacing:0;color:var(--ink)}
+  .grid{display:grid;grid-template-columns:1fr 340px;gap:18px;align-items:start}
+  @media(max-width:820px){.grid{grid-template-columns:1fr}}
+  /* question list */
+  .count{color:var(--muted);font-size:13px;margin:2px 2px 10px}
+  .qlist{display:flex;flex-direction:column;gap:8px;max-height:70vh;overflow:auto;padding-right:4px}
+  .q{display:flex;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);
+     border-radius:10px;padding:10px 12px}
+  .q .no{font-variant-numeric:tabular-nums;font-weight:600;min-width:44px;color:var(--accent)}
+  .q .meta{flex:1;min-width:0}
+  .q .top{font-weight:550}
+  .q .src{color:var(--muted);font-size:12.5px;margin-top:1px}
+  .q .marks{font-variant-numeric:tabular-nums;font-size:13px;color:var(--muted);white-space:nowrap}
+  .chip{display:inline-block;font-size:11px;padding:2px 7px;border-radius:20px;background:var(--accent-soft);
+        color:var(--accent);margin-right:5px}
+  .chip.ans{background:#e6f6ee;color:var(--good)}
+  .add{border:1px solid var(--accent);color:var(--accent);background:#fff;border-radius:8px;
+       padding:6px 12px;cursor:pointer;font-weight:600}
+  .add:hover{background:var(--accent-soft)}
+  .q.picked{border-color:var(--accent);background:var(--accent-soft)}
+  .q.picked .add{background:var(--accent);color:#fff}
+  /* tray */
+  .tray{position:sticky;top:20px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:var(--pad)}
+  .tray h2{font-size:15px;margin:0 0 4px}
+  .stat{display:flex;justify-content:space-between;font-variant-numeric:tabular-nums;padding:4px 0;font-size:14px}
+  .stat b{font-weight:650}
+  .picked-list{max-height:260px;overflow:auto;margin:10px 0;display:flex;flex-direction:column;gap:5px}
+  .pl{display:flex;gap:8px;font-size:13px;align-items:center}
+  .pl .x{margin-left:auto;color:var(--muted);cursor:pointer;border:none;background:none;font-size:15px}
+  .divider{height:1px;background:var(--line);margin:12px 0}
+  .toggle{display:flex;align-items:center;gap:8px;font-size:13.5px;margin:8px 0;color:var(--ink)}
+  .gen{width:100%;padding:12px;background:var(--accent);color:#fff;border:none;border-radius:10px;
+       font-size:15px;font-weight:650;cursor:pointer}
+  .gen:disabled{opacity:.5;cursor:default}
+  .gen:hover:not(:disabled){background:#254bd0}
+  .quick{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+  .quick button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px;cursor:pointer;font-size:13px}
+  .status{font-size:13px;color:var(--muted);margin-top:8px;min-height:18px}
+  .empty{color:var(--muted);padding:30px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Paper Generator</h1>
+    <span class="sub" id="subtitle">Build a custom practice paper from real HSC past-paper questions.</span>
+    <div class="subjectpick">
+      <label class="sub" for="subject">Subject</label>
+      <select id="subject" class="subject"></select>
+    </div>
+  </header>
+
+  <div class="filters">
+    <label>Module<select id="f-module"><option value="">Any module</option></select></label>
+    <label>Topic<input id="f-topic" type="search" placeholder="Any topic — type to filter"></label>
+    <label>Question type<select id="f-type">
+      <option value="">Any type</option><option value="mc">Multiple choice</option>
+      <option value="short">Short answer</option><option value="extended">Extended</option>
+      <option value="calculation">Calculation</option></select></label>
+    <label>Answers<select id="f-ans"><option value="">Any</option><option value="1">With worked answer</option></select></label>
+  </div>
+
+  <div class="grid">
+    <section>
+      <div class="count" id="count">Loading…</div>
+      <div class="qlist" id="qlist"></div>
+    </section>
+
+    <aside class="tray">
+      <h2>Your paper</h2>
+      <div class="quick">
+        <button data-add="5">+5 shown</button>
+        <button data-add="10">+10 shown</button>
+        <button id="clear">Clear</button>
+      </div>
+      <div class="stat"><span>Questions</span><b id="n-q">0</b></div>
+      <div class="stat"><span>Total marks</span><b id="n-m">0</b></div>
+      <div class="stat"><span>Suggested time</span><b id="n-t">0 min</b></div>
+      <div class="picked-list" id="picked"></div>
+      <div class="divider"></div>
+      <label class="toggle"><input type="checkbox" id="inc-ans"> Include answer booklet</label>
+      <button class="gen" id="gen" disabled>Generate paper (PDF)</button>
+      <div class="status" id="status"></div>
+    </aside>
+  </div>
+</div>
+
+<script src="vendor/pdf-lib.min.js"></script>
+<script>
+const SUBJECTS = [
+  ["maths-advanced","Mathematics Advanced"],["maths-extension-1","Mathematics Extension 1"],
+  ["maths-extension-2","Mathematics Extension 2"],["maths-standard-2","Mathematics Standard 2"],
+  ["maths-accelerated","Mathematics (Accelerated)"],["physics","Physics"],
+];
+const $=s=>document.querySelector(s);
+let DATA=[], BASE="", picked=new Map();
+
+function qs(){return new URLSearchParams(location.search);}
+
+async function loadSubject(id){
+  $("#count").textContent="Loading…"; DATA=[]; render();
+  const [subj,man]=await Promise.all([
+    fetch(`content/${id}/subject.json`).then(r=>r.json()).catch(()=>({})),
+    fetch(`content/${id}/questions.json`).then(r=>r.json()),
+  ]);
+  BASE=subj.assetBaseUrl||"";
+  DATA=man.questions.filter(q=>q.assetKey);
+  // module filter options
+  const mods=[...new Set(DATA.map(q=>q.module).filter(Boolean))].sort();
+  $("#f-module").innerHTML='<option value="">Any module</option>'+mods.map(m=>`<option>${esc(m)}</option>`).join("");
+  render();
+}
+function esc(s){return (s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+
+function filtered(){
+  const m=$("#f-module").value, t=$("#f-topic").value.toLowerCase(),
+        ty=$("#f-type").value, an=$("#f-ans").value;
+  return DATA.filter(q=>
+    (!m||q.module===m)&&(!t||(q.topic||"").toLowerCase().includes(t))&&
+    (!ty||q.type===ty)&&(!an||q.answerKey));
+}
+function key(q){return q.paperSlug+"/"+q.assetKey;}
+
+function render(){
+  const list=filtered();
+  $("#count").textContent=`${list.length} questions match`;
+  const el=$("#qlist");
+  if(!list.length){el.innerHTML='<div class="empty">No questions match these filters.</div>';return;}
+  el.innerHTML=list.slice(0,300).map(q=>{
+    const k=key(q), on=picked.has(k);
+    const src=(q.paperSlug||"").replace(/-/g," ");
+    return `<div class="q ${on?'picked':''}" data-k="${k}">
+      <div class="no">Q${esc(String(q.questionNumber||""))}${esc(q.partLabel||"")}</div>
+      <div class="meta"><div class="top">${esc(q.topic||q.module||"Question")}</div>
+        <div class="src"><span class="chip">${esc((q.module||"").split(" ")[0]||"")}</span>
+        ${q.answerKey?'<span class="chip ans">answer</span>':''}${esc(src)}</div></div>
+      <div class="marks">${q.marks?q.marks+"m":""}</div>
+      <button class="add">${on?'Added':'Add'}</button></div>`;
+  }).join("");
+}
+
+function refreshTray(){
+  const arr=[...picked.values()];
+  const marks=arr.reduce((s,q)=>s+(q.marks||0),0);
+  $("#n-q").textContent=arr.length;
+  $("#n-m").textContent=marks;
+  $("#n-t").textContent=Math.round(marks*1.8)+" min";
+  $("#gen").disabled=!arr.length;
+  $("#picked").innerHTML=arr.map(q=>`<div class="pl" data-k="${key(q)}">
+    <span>Q${esc(String(q.questionNumber||""))}${esc(q.partLabel||"")} · ${esc(q.topic||"")}</span>
+    <button class="x" title="Remove">✕</button></div>`).join("")
+    ||'<div class="empty" style="padding:14px">No questions added yet.</div>';
+}
+
+function toggle(k){
+  if(picked.has(k))picked.delete(k);
+  else{const q=DATA.find(x=>key(x)===k); if(q)picked.set(k,q);}
+  render(); refreshTray();
+}
+
+// events
+$("#qlist").addEventListener("click",e=>{
+  const row=e.target.closest(".q"); if(row&&e.target.closest(".add"))toggle(row.dataset.k);
+});
+$("#picked").addEventListener("click",e=>{if(e.target.classList.contains("x"))toggle(e.target.closest(".pl").dataset.k);});
+["f-module","f-type","f-ans"].forEach(id=>$("#"+id).addEventListener("change",render));
+$("#f-topic").addEventListener("input",render);
+$("#clear").addEventListener("click",()=>{picked.clear();render();refreshTray();});
+document.querySelectorAll(".quick [data-add]").forEach(b=>b.addEventListener("click",()=>{
+  filtered().slice(0,+b.dataset.add).forEach(q=>picked.set(key(q),q));render();refreshTray();
+}));
+$("#subject").addEventListener("change",()=>{
+  picked.clear();refreshTray();
+  const id=$("#subject").value;history.replaceState(0,"",`?subject=${id}`);
+  $("#subtitle").textContent=SUBJECTS.find(s=>s[0]===id)[1];
+  loadSubject(id);
+});
+
+// ---- PDF generation (client-side merge with pdf-lib) ----
+const A4=[595.28,841.89], M=42;
+async function generate(){
+  const {PDFDocument,StandardFonts,rgb}=PDFLib;
+  const arr=[...picked.values()];
+  const withAns=$("#inc-ans").checked;
+  const st=$("#status"); st.textContent="Fetching questions…";
+  const out=await PDFDocument.create();
+  const font=await out.embedFont(StandardFonts.Helvetica);
+  const bold=await out.embedFont(StandardFonts.HelveticaBold);
+  const ink=rgb(.1,.11,.14), grey=rgb(.42,.45,.5), accent=rgb(.18,.36,.92), line=rgb(.8,.83,.88);
+  const subjName=SUBJECTS.find(s=>s[0]===$("#subject").value)[1];
+  const totalMarks=arr.reduce((s,q)=>s+(q.marks||0),0);
+  // cover
+  let p=out.addPage(A4);
+  p.drawText("HSC Practice Paper",{x:M,y:A4[1]-130,size:26,font:bold,color:ink});
+  p.drawText(subjName,{x:M,y:A4[1]-160,size:13,font,color:grey});
+  p.drawText(`${arr.length} questions   ·   ${totalMarks} marks   ·   ~${Math.round(totalMarks*1.8)} min`,
+    {x:M,y:A4[1]-200,size:12,font,color:ink});
+  p.drawText("Generated from real HSC past-paper questions — every question traceable to its source.",
+    {x:M,y:56,size:8,font,color:grey});
+
+  async function place(q,n,answer){
+    const k=`${BASE}/${$("#subject").value}/${q.paperSlug}/${answer?q.answerKey:q.assetKey}`;
+    let bytes;try{bytes=await fetch(k).then(r=>{if(!r.ok)throw 0;return r.arrayBuffer();});}
+    catch(e){return;}
+    const src=await PDFDocument.load(bytes);
+    const emb=await out.embedPage(src.getPage(0));
+    const {width:sw,height:sh}=emb;
+    const cw=A4[0]-2*M, scale=Math.min(cw/sw,(A4[1]*0.62)/sh), qh=sh*scale;
+    const page=out.addPage(A4);
+    page.drawText(`${answer?'Answer':'Question'} ${n}`,{x:M,y:A4[1]-M,size:12,font:bold,color:accent});
+    const src2=(q.paperSlug||"").replace(/-/g," ")+(q.marks?`  ·  ${q.marks} mark${q.marks>1?'s':''}`:"");
+    page.drawText(src2,{x:M,y:A4[1]-M-13,size:8.5,font,color:grey});
+    page.drawLine({start:{x:M,y:A4[1]-M-22},end:{x:A4[0]-M,y:A4[1]-M-22},color:line,thickness:.8});
+    const top=A4[1]-M-38;
+    page.drawPage(emb,{x:M,y:top-qh,width:sw*scale,height:qh});
+    if(!answer&&q.type!=="mc"){ // ruled writing space
+      const lines=Math.min(Math.max((q.marks||1)*3,3),Math.floor((top-qh-60)/26));
+      for(let i=0;i<lines;i++){const yy=top-qh-24-i*26;if(yy<50)break;
+        page.drawLine({start:{x:M,y:yy},end:{x:A4[0]-M,y:yy},color:line,thickness:.6});}
+    }
+  }
+  for(let i=0;i<arr.length;i++){st.textContent=`Building question ${i+1}/${arr.length}…`;await place(arr[i],i+1,false);}
+  if(withAns){out.addPage(A4).drawText("Answers",{x:M,y:A4[1]-130,size:22,font:bold,color:ink});
+    for(let i=0;i<arr.length;i++){if(arr[i].answerKey){st.textContent=`Answer ${i+1}/${arr.length}…`;await place(arr[i],i+1,true);}}}
+  st.textContent="Saving…";
+  const pdf=await out.save();
+  const blob=new Blob([pdf],{type:"application/pdf"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);
+  a.download=`practice-paper-${$("#subject").value}.pdf`;a.click();
+  st.textContent=`Done — ${arr.length} questions, ${totalMarks} marks.`;
+}
+$("#gen").addEventListener("click",()=>{$("#gen").disabled=true;
+  generate().catch(e=>{$("#status").textContent="Error: "+e.message;}).finally(()=>$("#gen").disabled=false);});
+
+// init
+(function(){
+  $("#subject").innerHTML=SUBJECTS.map(([id,n])=>`<option value="${id}">${n}</option>`).join("");
+  const want=qs().get("subject")||"maths-advanced";
+  $("#subject").value=SUBJECTS.some(s=>s[0]===want)?want:"maths-advanced";
+  $("#subtitle").textContent=SUBJECTS.find(s=>s[0]===$("#subject").value)[1];
+  loadSubject($("#subject").value); refreshTray();
+})();
+</script>
+</body>
+</html>

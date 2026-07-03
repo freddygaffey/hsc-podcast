@@ -21,7 +21,7 @@ echo "==> Assembling $DIST/ (build $BUILD)"
 rm -rf "$DIST"; mkdir -p "$DIST"
 
 # App shell.
-cp index.html app.js auth.js style.css speed-engine.js app.webmanifest _headers "$DIST/"
+cp index.html generator.html app.js auth.js style.css speed-engine.js app.webmanifest _headers "$DIST/"
 # Service worker — stamp the build version so each deploy gets a fresh APP_SHELL cache.
 sed "s/__BUILD__/$BUILD/" service-worker.js > "$DIST/service-worker.js"
 # Manifest + vendored libs + icons.
@@ -33,8 +33,12 @@ cp -r icons "$DIST/"
 # underscore dirs (the _template-subject scaffold) and never ship audio or voices.json.
 rsync -a --prune-empty-dirs \
   --exclude='_*' \
+  --exclude='resources' \
   --include='*/' \
   --include='script.md' --include='supplementary.md' --include='quiz.json' \
+  --include='questions.json' --include='subject.json' \
+  --include='*.png' --include='*.jpg' --include='*.jpeg' --include='*.webp' --include='*.svg' \
+  --include='paper.pdf' --include='mg.pdf' \
   --exclude='*' \
   content/ "$DIST/content/"
 
@@ -45,5 +49,8 @@ fi
 
 echo "==> dist: $(du -sh "$DIST" | cut -f1), $(find "$DIST" -type f | wc -l | tr -d ' ') files"
 echo "==> Deploying to Pages project: $PAGES_PROJECT"
-wrangler pages deploy "$DIST" --project-name "$PAGES_PROJECT" --commit-dirty=true
+DEPLOY_ARGS=(--project-name "$PAGES_PROJECT" --commit-dirty=true)
+# PAGES_BRANCH=main forces a production deploy even from a feature git branch.
+[ -n "${PAGES_BRANCH:-}" ] && DEPLOY_ARGS+=(--branch "$PAGES_BRANCH")
+wrangler pages deploy "$DIST" "${DEPLOY_ARGS[@]}"
 echo "==> Done."
