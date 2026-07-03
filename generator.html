@@ -46,10 +46,11 @@
   .rail h3{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;
     color:var(--text-dim);margin:18px 0 8px}
   .rail h3:first-child{margin-top:2px}
-  .tree .mod{margin:2px 0}
-  .tree .mod>button{display:flex;width:100%;gap:6px;align-items:center;text-align:left;
-    border:0;background:none;padding:6px 6px;cursor:pointer;border-radius:8px;font-weight:600;font-size:13.5px}
+  .tree .mod{margin:2px 0;display:flex;flex-wrap:wrap;align-items:center}
+  .tree .mod>button{display:flex;gap:4px;align-items:center;border:0;background:none;
+    padding:6px 2px;cursor:pointer;border-radius:8px}
   .tree .mod>button:hover{background:var(--bg-elevated)}
+  .tree .mod .topics{flex-basis:100%}
   .tree .arr{width:12px;color:var(--text-dim);font-size:10px;transition:transform .15s;flex:none}
   .tree .mod.open .arr{transform:rotate(90deg)}
   .tree .cnt{margin-left:auto;font-size:11.5px;color:var(--text-dim);font-variant-numeric:tabular-nums}
@@ -102,7 +103,7 @@
   .chip.a{background:var(--good-soft);color:var(--good);border-color:transparent}
   .rowbody{display:none;border-top:1px solid var(--border);padding:10px 12px 12px}
   .row.open .rowbody{display:block}
-  .rowbody .crop{width:100%;height:min(62vh,540px);border:1px solid var(--border);border-radius:10px;background:#fff}
+  .rowbody .crop{width:100%;border:1px solid var(--border);border-radius:10px;background:#fff;display:block}
   .rowbody .solrow{margin-top:8px}
   .rowbody .solbtn{border:1.5px solid var(--border);background:var(--bg-card);border-radius:999px;
     padding:6px 14px;cursor:pointer;font-size:13px;font-weight:600}
@@ -270,8 +271,8 @@ const PAGE=80;
 
 let SUBJECT="", BASE="", DATA=[], FILTERED=[], shown=PAGE;
 let picked=new Map();           // key -> record (ordered = paper order)
-const F={topics:new Set(), sources:new Set(), y0:null,y1:null, m0:null,m1:null,
-         ans:false, types:new Set(), era:true};   // era = current-syllabus-only
+const F={topics:new Set(), groups:new Set(), sources:new Set(), y0:null,y1:null,
+         m0:null,m1:null, ans:false, types:new Set(), era:true};   // era = current-syllabus-only
 
 // First HSC exam year of the CURRENT NESA syllabus, per subject. Questions from earlier
 // years may cover removed content, so "current syllabus only" defaults ON (spec §5.1).
@@ -279,6 +280,29 @@ const SYLLABUS_FROM={
   "maths-advanced":2020,"maths-extension-1":2020,"maths-extension-2":2020,
   "maths-accelerated":2020,"maths-standard-2":2019,"physics":2019,"dt":null,
 };
+// Official syllabus topic per ref prefix — collapses the classifier's free-text topic
+// strings ("Calculus; Conics (legacy)", "Calculus / Trig / Financial", …) into the
+// handful of real syllabus topics. Physics/others fall back to a normalised module name.
+const REF_TOPICS={
+  MA:{F:"Functions",T:"Trigonometric Functions",C:"Calculus",
+      E:"Exponential and Logarithmic Functions",S:"Statistical Analysis",M:"Financial Mathematics"},
+  ME:{F:"Functions",T:"Trigonometric Functions",C:"Calculus",A:"Combinatorics",
+      P:"Proof",V:"Vectors",S:"Statistical Analysis"},
+  MEX:{P:"Proof",V:"Vectors",N:"Complex Numbers",C:"Calculus",M:"Mechanics"},
+  MS:{M:"Measurement",F:"Financial Mathematics",S:"Statistical Analysis",A:"Algebra",N:"Networks"},
+};
+function groupsOf(q){
+  const out=new Set();
+  for(const r of q.syllabusRefs||[]){
+    const m=/^(MEX|MA|ME|MS)-([A-Z])/.exec(String(r).replace(/\s/g,""));
+    const name=m&&REF_TOPICS[m[1]]&&REF_TOPICS[m[1]][m[2]];
+    if(name)out.add(name);
+  }
+  if(!out.size&&q.module)
+    out.add(String(q.module).replace(/^Module\s*(\d+)[:\s]*/,"M$1 · ").trim());
+  if(!out.size)out.add("Unclassified");
+  return [...out];
+}
 const key=q=>q.paperSlug+"/"+q.assetKey;
 const yearOf=q=>{const m=/^(\d{4})/.exec(q.paperSlug||"");return m?+m[1]:null;};
 const sourceOf=q=>/-hsc\b/.test(q.paperSlug)?"HSC":/-trial\b/.test(q.paperSlug)?"Trial":/-yearly\b/.test(q.paperSlug)?"Yearly":"Other";
@@ -309,13 +333,27 @@ async function loadSubject(id){
   // Whole questions only — letter-part records stay as metadata. Dedupe by
   // (paperSlug, assetKey): re-parses can list the same question under two content-hash
   // ids (byte-level changes like marks badges); prefer the richer record.
+  // Dedupe pass 1 by (paperSlug, assetKey); pass 2 by (paperSlug, questionNumber) —
+  // double-baked entries surface as q11.pdf/q11-1.pdf with identical content. Keep both
+  // only when both carry marks AND the marks differ (legit re-used numbers across
+  // sections in some trials); otherwise prefer the richer record.
   const seen=new Map();
   for(const q of man.questions){
     if(!q.assetKey||q.unit==="part")continue;
     const k=key(q), prev=seen.get(k);
     if(!prev||(q.marks&&!prev.marks))seen.set(k,q);
   }
-  DATA=[...seen.values()];
+  const byNum=new Map();
+  for(const q of seen.values()){
+    const nk=q.paperSlug+"#"+(q.questionNumber??q.assetKey);
+    const prev=byNum.get(nk);
+    if(!prev){byNum.set(nk,q);continue;}
+    if(prev.marks&&q.marks&&prev.marks!==q.marks){byNum.set(nk+"#"+q.assetKey,q);continue;}
+    const better=(q.marks&&!prev.marks)||(!!q.marks===!!prev.marks&&q.answerKey&&!prev.answerKey);
+    if(better)byNum.set(nk,q);
+  }
+  DATA=[...byNum.values()];
+  DATA.forEach(q=>q._groups=groupsOf(q));
   resetFilters(false);
   restoreBasket();
   restoreRecipe();
@@ -331,21 +369,33 @@ function buildRail(){
     ?`<button id="era-btn" class="${F.era?"on":""}" title="The current syllabus was first examined in ${cut}">current syllabus only (${cut}+)</button>`:"";
   const eb=$("#era-btn");
   if(eb)eb.onclick=()=>{F.era=!F.era;eb.classList.toggle("on",F.era);apply();};
-  // module -> topic tree with counts
-  const mods=new Map();
-  for(const q of DATA){
-    const m=q.module||"Unclassified", t=q.topic||"—";
-    if(!mods.has(m))mods.set(m,new Map());
-    mods.get(m).set(t,(mods.get(m).get(t)||0)+1);
+  // canonical syllabus-group tree (from syllabusRefs) -> raw classifier topics beneath
+  const groups=new Map();
+  for(const q of DATA)for(const g of q._groups){
+    const G=groups.get(g)||{n:0,topics:new Map()};
+    G.n++;
+    const t=q.topic||"—";
+    G.topics.set(t,(G.topics.get(t)||0)+1);
+    groups.set(g,G);
   }
-  $("#tree").innerHTML=[...mods.entries()].sort((a,b)=>a[0].localeCompare(b[0])).map(([m,ts])=>{
-    const n=[...ts.values()].reduce((a,b)=>a+b,0);
-    const topics=[...ts.entries()].sort((a,b)=>a[0].localeCompare(b[0])).map(([t,c])=>
+  $("#tree").innerHTML=[...groups.entries()].sort((a,b)=>b[1].n-a[1].n).map(([g,G])=>{
+    const topics=[...G.topics.entries()].sort((a,b)=>b[1]-a[1]).map(([t,c])=>
       `<label class="t" data-topic="${esc(t)}"><input type="checkbox"><span>${esc(t)}</span><span class="cnt">${c}</span></label>`).join("");
-    return `<div class="mod"><button><span class="arr">▶</span><span>${esc(m)}</span><span class="cnt">${n}</span></button><div class="topics">${topics}</div></div>`;
+    return `<div class="mod">
+      <button><span class="arr">▶</span></button>
+      <label class="t g" data-group="${esc(g)}" style="flex:1"><input type="checkbox"><span style="font-weight:600">${esc(g)}</span><span class="cnt">${G.n}</span></label>
+      <div class="topics">${topics}</div></div>`;
   }).join("")||'<div class="sub">No topic data yet.</div>';
-  $("#tree").querySelectorAll(".mod>button").forEach(b=>b.onclick=()=>b.parentElement.classList.toggle("open"));
-  $("#tree").querySelectorAll("label.t input").forEach(cb=>cb.onchange=e=>{
+  $("#tree").querySelectorAll(".mod").forEach(mod=>{
+    mod.querySelector("button").onclick=()=>mod.classList.toggle("open");
+    mod.querySelector("label.g input").onchange=e=>{
+      const g=mod.querySelector("label.g").dataset.group;
+      e.target.checked?F.groups.add(g):F.groups.delete(g);
+      mod.querySelector("label.g").classList.toggle("on",e.target.checked);
+      apply();
+    };
+  });
+  $("#tree").querySelectorAll(".topics label.t input").forEach(cb=>cb.onchange=e=>{
     const t=e.target.closest("label").dataset.topic;
     e.target.checked?F.topics.add(t):F.topics.delete(t);
     e.target.closest("label").classList.toggle("on",e.target.checked);
@@ -379,7 +429,7 @@ function buildRail(){
   });
 });
 function resetFilters(re=true){
-  F.topics.clear();F.sources.clear();F.types.clear();
+  F.topics.clear();F.groups.clear();F.sources.clear();F.types.clear();
   F.y0=F.y1=F.m0=F.m1=null;F.ans=false;F.era=true;
   ["f-y0","f-y1","f-m0","f-m1"].forEach(id=>$("#"+id).value="");
   if(re){buildRail();apply();}
@@ -390,7 +440,10 @@ $("#reset").onclick=()=>resetFilters();
 function passes(q,ignoreTopics){
   const cut=SYLLABUS_FROM[SUBJECT];
   if(F.era&&cut){const y=yearOf(q);if(!y||y<cut)return false;}
-  if(!ignoreTopics&&F.topics.size&&!F.topics.has(q.topic||"—"))return false;
+  if(!ignoreTopics){
+    if(F.topics.size){if(!F.topics.has(q.topic||"—"))return false;}
+    else if(F.groups.size){if(!q._groups.some(g=>F.groups.has(g)))return false;}
+  }
   if(F.sources.size&&!F.sources.has(sourceOf(q)))return false;
   const y=yearOf(q);
   if(F.y0&&(!y||y<F.y0))return false;
@@ -441,19 +494,35 @@ function renderList(){
     ||( `<div class="empty">Nothing matches — loosen the filters on the left.</div>`);
   const more=$("#more"); if(more)more.onclick=()=>{shown+=PAGE;renderList();};
 }
+// Fetch the crop, measure its true page size with pdf-lib, and embed at exactly that
+// height — kills the PDF viewer's dark letterboxing that made previews look terrible.
+async function mountCrop(slot,q,ans){
+  slot.innerHTML='<div class="sub" style="padding:10px">Loading…</div>';
+  try{
+    const r=await fetch(urlOf(q,ans));
+    if(!r.ok)throw new Error("HTTP "+r.status);
+    const bytes=await r.arrayBuffer();
+    const doc=await PDFLib.PDFDocument.load(bytes);
+    const s=doc.getPage(0).getSize();
+    const w=slot.clientWidth||700;
+    const h=Math.min(Math.ceil(w*s.height/s.width)+4,1400);
+    const blob=URL.createObjectURL(new Blob([bytes],{type:"application/pdf"}));
+    slot.innerHTML=`<object class="crop" style="height:${h}px" type="application/pdf" data="${blob}#toolbar=0&navpanes=0&view=Fit"></object>`;
+  }catch(e){slot.innerHTML=`<div class="sub" style="padding:10px">Preview unavailable (${esc(e.message)})</div>`;}
+}
 function openRow(row,q){
   row.classList.add("open");
   const body=row.querySelector(".rowbody");
   if(!body.dataset.loaded){
     body.dataset.loaded="1";
-    body.innerHTML=`<object class="crop" type="application/pdf" data="${esc(urlOf(q))}#toolbar=0&navpanes=0&view=FitH"></object>`
-      +(q.answerKey?`<div class="solrow"><button class="solbtn">Show solution</button></div>`:"");
+    body.innerHTML=`<div class="qslot"></div>`
+      +(q.answerKey?`<div class="solrow"><button class="solbtn">Show solution</button></div><div class="aslot"></div>`:"");
+    mountCrop(body.querySelector(".qslot"),q,false);
     const sb=body.querySelector(".solbtn");
     if(sb)sb.onclick=()=>{
-      if(sb.dataset.on){return;}
+      if(sb.dataset.on)return;
       sb.dataset.on="1";sb.textContent="Solution:";
-      sb.insertAdjacentHTML("afterend",
-        `<object class="crop" style="margin-top:8px" type="application/pdf" data="${esc(urlOf(q,true))}#toolbar=0&view=FitH"></object>`);
+      mountCrop(body.querySelector(".aslot"),q,true);
     };
   }
 }
@@ -545,7 +614,7 @@ $("#mode-recipe").onclick=()=>setMode("recipe");
 function topicCounts(){
   const c=new Map();
   for(const q of DATA)if(passes(q,true)&&q.marks)
-    c.set(q.topic||"—",(c.get(q.topic||"—")||0)+1);
+    for(const g of q._groups)c.set(g,(c.get(g)||0)+1);
   return c;
 }
 function renderRecipe(){
@@ -575,7 +644,7 @@ $("#rc-build").onclick=()=>{
   const usedPapers=new Set();
   const short=[];
   for(const row of rows){
-    let pool=DATA.filter(q=>passes(q,true)&&(q.topic||"—")===row.topic&&q.marks&&!picked.has(key(q)));
+    let pool=DATA.filter(q=>passes(q,true)&&q._groups.includes(row.topic)&&q.marks&&!picked.has(key(q)));
     // random order, solutions first-ish
     pool=pool.map(q=>[Math.random()-(q.answerKey?0.3:0),q]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
     let got=0;
