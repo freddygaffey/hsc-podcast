@@ -27,6 +27,11 @@
 
 html {
   scroll-behavior: smooth;
+  /* Never let the whole page pan sideways (BUG-12). `clip` (not `hidden`) is used on
+     purpose: it stops horizontal scroll WITHOUT turning the root into a scroll
+     container, so the sticky header / fixed player + sheets keep working. Wide content
+     (block math, code, tables) scrolls inside its own box instead — see below. */
+  overflow-x: clip;
 }
 
 body {
@@ -517,6 +522,17 @@ button, select, input { font-family: inherit; }
 }
 .dq-tune:hover { color: var(--accent); background: var(--accent-soft); }
 
+/* Phones: the single-row daily-quiz box gets cramped (icon + title + count + "Start
+   now" pill compete for width). The whole box is already one tap to start, so drop the
+   redundant "Start now" pill and tighten sizing so the title has room. */
+@media (max-width: 480px) {
+  .daily-quiz { padding: 16px 18px; gap: 12px; }
+  .dq-icon { width: 44px; height: 44px; }
+  .dq-title { font-size: 18px; }
+  .dq-sub { font-size: 13px; }
+  .dq-start { display: none; }
+}
+
 .subjects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -713,6 +729,8 @@ button, select, input { font-family: inherit; }
   justify-content: center;
   cursor: pointer;
 }
+/* Past-paper rows have no play button — a chevron shows the row opens (BUG-3). */
+.ep-open-chev { flex: none; color: var(--text-dim); font-size: 22px; line-height: 1; padding: 0 6px; }
 
 /* ── Episode view ───────────────────────────────────────── */
 .episode-heading {
@@ -742,6 +760,9 @@ button, select, input { font-family: inherit; }
 .markdown-body {
   font-size: 16px;
   line-height: 1.75;
+  /* Break long unbreakable tokens (URLs, long identifiers) rather than overflowing the
+     line and forcing the page wider than the viewport (BUG-12). */
+  overflow-wrap: break-word;
 }
 .markdown-body p { margin: 0 0 1em; }
 .markdown-body h1, .markdown-body h2, .markdown-body h3,
@@ -825,7 +846,11 @@ button, select, input { font-family: inherit; }
 .copy-btn.copied { background: #16a34a; color: #fff; border-color: #16a34a; opacity: 1; }
 
 .markdown-body table {
-  width: 100%;
+  /* Scroll a too-wide table inside its own box instead of widening the page (BUG-12).
+     display:block lets the table overflow-scroll; max-width caps it at the viewport. */
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
   border-collapse: collapse;
   margin: 1em 0;
   font-size: 14px;
@@ -839,6 +864,15 @@ button, select, input { font-family: inherit; }
 .markdown-body tr:nth-child(even) td { background: var(--bg-card); }
 
 .markdown-body img { max-width: 100%; border-radius: 8px; }
+/* Wide block equations must scroll inside their own box — otherwise a single long
+   equation widens the whole page and it scrolls sideways on phones, clipping the left
+   edge of all content (BUG-7). */
+.markdown-body .katex-display {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 2px; /* room for the scrollbar so it doesn't cover the equation */
+}
 
 /* Image carousel (consecutive images become a swipeable gallery) */
 .img-carousel { position: relative; margin: 0 0 18px; }
@@ -1075,6 +1109,15 @@ body.offline .episode-row:not(.ep-downloaded) .ep-play { opacity: 0.4; }
 .advance-cancel:active { background: var(--accent-soft); }
 
 /* ── Stats overlay ──────────────────────────────────────── */
+/* BUG-1: freeze the page behind an open sheet (iOS-safe). JS toggles this class and
+   restores scroll position on close. */
+body.sheet-open {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+}
 .stats-overlay {
   position: fixed;
   inset: 0;
@@ -1091,6 +1134,7 @@ body.offline .episode-row:not(.ep-downloaded) .ep-play { opacity: 0.4; }
   max-width: 540px;
   max-height: 80vh;
   overflow-y: auto;
+  overscroll-behavior: contain; /* don't chain scroll to the page behind */
   padding: 20px 20px 36px;
 }
 .stats-header {
@@ -1309,9 +1353,15 @@ body.offline .episode-row:not(.ep-downloaded) .ep-play { opacity: 0.4; }
   line-height: 1.45;
   transition: border-color 0.12s, background 0.12s;
 }
-.quiz-option:not([disabled]):hover {
-  border-color: var(--accent);
-  background: var(--accent-soft);
+/* Hover highlight only on real pointing devices. On touch screens :hover
+   sticks to the last-tapped element after the tap ends, so a fresh question's
+   option (sitting where the Start/grade button was) would stay lit blue —
+   looking exactly like the answer was revealed before the user chose (BUG-20). */
+@media (hover: hover) and (pointer: fine) {
+  .quiz-option:not([disabled]):hover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
 }
 .quiz-option:not([disabled]):active { background: var(--accent-soft); }
 .quiz-option.opt-correct {

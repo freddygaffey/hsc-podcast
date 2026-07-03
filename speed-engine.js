@@ -14,12 +14,16 @@
 //   from it at the requested tempo, so the TTS is never re-run per speed.
 //
 // Integration:
-//   `createSpeedAudio(fallbackEl)` returns an object that quacks like the subset
-//   of the HTMLAudioElement API the player uses (src, load, play, pause, paused,
-//   duration, currentTime, playbackRate, and loadedmetadata/play/pause/ended/
-//   timeupdate events), so app.js swaps it in with a one-line change. If the
-//   browser lacks AudioWorklet, it falls back to the real <audio> element
-//   (which works fine up to 4x).
+//   `createHybridAudio(el)` returns an object that quacks like the subset of the
+//   HTMLAudioElement API the player uses (src, load, play, pause, paused, duration,
+//   currentTime, playbackRate, and loadedmetadata/play/pause/ended/timeupdate events),
+//   so app.js swaps it in with a one-line change. It wraps BOTH the raw <audio> element
+//   and the TSM engine and exposes a runtime toggle (setEngineEnabled / engineEnabled /
+//   engineAvailable): engine mode gives pitch-preserved audio to 16x, native mode is the
+//   plain element (audible to ~4x) as a "go back" fallback. In engine mode the raw element
+//   loops a silent clip to anchor the iOS media session (lock-screen / headphone controls).
+//   `createSpeedAudio(fallbackEl)` remains as a single-backend factory. If the browser
+//   lacks AudioWorklet the engine is unavailable and everything stays on the raw element.
 
 (function () {
   "use strict";
@@ -157,20 +161,21 @@ class StretchProcessor extends AudioWorkletProcessor {
 registerProcessor("stretch-processor", StretchProcessor);
 `;
 
-  function createSpeedAudio(fallbackEl) {
-    // Use `in` — do NOT read `AudioContext.prototype.audioWorklet`. It's a getter that
-    // requires a real context as `this`; touching it on the prototype throws "Illegal
-    // invocation" (Chrome/Safari/iOS), which previously crashed app init on load.
-    const supported =
+  // Use `in` — do NOT read `AudioContext.prototype.audioWorklet`. It's a getter that
+  // requires a real context as `this`; touching it on the prototype throws "Illegal
+  // invocation" (Chrome/Safari/iOS), which previously crashed app init on load.
+  function engineSupported() {
+    return (
       typeof AudioContext !== "undefined" &&
       typeof AudioWorkletNode !== "undefined" &&
-      "audioWorklet" in AudioContext.prototype;
+      "audioWorklet" in AudioContext.prototype
+    );
+  }
 
-    if (!supported) {
-      if (fallbackEl) console.warn("[speed-engine] AudioWorklet unavailable — using <audio> (silent above 4x).");
-      return fallbackEl; // native element already implements the same API
-    }
-
+  // The Web Audio time-stretch backend (assumes engineSupported()). Presents the
+  // subset of the HTMLAudioElement API the player uses, so it can be swapped in for
+  // the raw <audio> element.
+  function buildTsmBackend() {
     const listeners = {};
     function on(type, fn) { (listeners[type] || (listeners[type] = [])).push(fn); }
     function off(type, fn) { const a = listeners[type]; if (a) listeners[type] = a.filter((f) => f !== fn); }
@@ -190,6 +195,18 @@ registerProcessor("stretch-processor", StretchProcessor);
     function ensureContext() {
       if (ctx) return Promise.resolve();
       ctx = new AudioContext({ sampleRate: TARGET_RATE });
+      // BUG-22: iOS suspends the AudioContext on rotation / backgrounding, which stops
+      // playback with no way to resume from the worklet. Auto-resume whenever the context
+      // is suspended but the user still intends to play (_paused === false). Safe: resuming
+      // an already-running context is a no-op, and we never resume against the user's pause.
+      const resumeIfWanted = () => {
+        if (ctx && !_paused && ctx.state === "suspended") ctx.resume().catch(() => {});
+      };
+      try { ctx.addEventListener("statechange", resumeIfWanted); } catch (_) {}
+      document.addEventListener("visibilitychange", resumeIfWanted);
+      window.addEventListener("focus", resumeIfWanted);
+      window.addEventListener("orientationchange", resumeIfWanted);
+      window.addEventListener("pageshow", resumeIfWanted);
       const url = URL.createObjectURL(new Blob([WORKLET_SRC], { type: "application/javascript" }));
       return ctx.audioWorklet.addModule(url).then(() => URL.revokeObjectURL(url));
     }
@@ -272,5 +289,135 @@ registerProcessor("stretch-processor", StretchProcessor);
     };
   }
 
+  // Back-compat single-backend factory: the TSM engine if supported, else the raw element.
+  function createSpeedAudio(fallbackEl) {
+    if (!engineSupported()) {
+      if (fallbackEl) console.warn("[speed-engine] AudioWorklet unavailable — using <audio> (silent above 4x).");
+      return fallbackEl;
+    }
+    return buildTsmBackend();
+  }
+
+  // A tiny (0.05 s) silent WAV. In engine mode the raw <audio> element loops this so
+  // iOS keeps the audio session + lock-screen/headphone controls alive while the Web
+  // Audio engine produces the actual sound (the controls are routed to the engine).
+  const SILENT_LOOP = "data:audio/wav;base64,UklGRkQDAABXQVZFZm10IBAAAAABAAEAQB8AAIA+AAACABAAZGF0YSADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==";
+
+  // Reversible hybrid audio. Wraps BOTH the raw <audio> element (native backend) and
+  // the TSM engine, exposing the same API the player uses so `const audio = ...` is the
+  // only integration point. A runtime toggle (setEngineEnabled) picks which backend is
+  // audible; it takes effect on the next load() (the app reloads the current episode so
+  // the switch feels immediate). Native mode is the exact previous behaviour — the
+  // "go back" escape hatch if the engine misbehaves on a device.
+  function createHybridAudio(el) {
+    const PREF_KEY = "podcast-speed-engine"; // "0" = native; default engine when available
+    const eng = engineSupported() ? buildTsmBackend() : null;
+
+    // App-facing listener registry. Events from a backend are forwarded only while that
+    // backend is the active one, so switching modes just changes which stream passes.
+    const listeners = {};
+    // Honour addEventListener's { once } option — the player attaches one-shot
+    // loadedmetadata handlers on every load (setAudioSource / switchVoice). The raw
+    // element auto-removes them; if we didn't, they'd pile up and re-fire on later
+    // loads, resetting currentTime/rate mid-playback (the old voice-switch glitch).
+    const on = (t, f, opts) => (listeners[t] || (listeners[t] = [])).push({ f, once: !!(opts && opts.once) });
+    const off = (t, f) => { const a = listeners[t]; if (a) listeners[t] = a.filter((r) => r.f !== f); };
+    const emit = (t) => {
+      const arr = listeners[t];
+      if (!arr || !arr.length) return;
+      const snapshot = arr.slice();
+      listeners[t] = arr.filter((r) => !r.once); // drop one-shot handlers before invoking
+      snapshot.forEach((r) => { try { r.f({ type: t }); } catch (e) { console.error(e); } });
+    };
+    const EVENTS = ["loadedmetadata", "play", "pause", "ended", "timeupdate"];
+
+    let engineActive = false;              // is the TSM engine the audible backend right now?
+    let enginePref = !!eng && localStorage.getItem(PREF_KEY) !== "0"; // default ON when available
+    let _src = "";
+    let _rate = 1;
+    let anchoring = false;                 // is the silent-loop anchor currently running on el?
+    let engLoaded = false;                 // has the current src been decoded into the engine yet?
+
+    const wire = (backend, isEng) =>
+      EVENTS.forEach((t) => backend.addEventListener(t, () => { if (engineActive === isEng) emit(t); }));
+    wire(el, false);
+    if (eng) wire(eng, true);
+    // NB: the silent anchor is deliberately left running across an episode's `ended`, so
+    // that background auto-advance keeps the iOS audio session warm (a fresh el.play() in
+    // the background can be rejected). It is stopped by pause() — which the app calls when
+    // playback ends with nothing to advance to.
+
+    const cur = () => (engineActive ? eng : el);
+
+    function startAnchor() {
+      if (!eng || anchoring) return;
+      anchoring = true;
+      try {
+        el.loop = true;
+        el.playbackRate = 1;               // keep the anchor at 1x (>4x would mute/kill it)
+        if (el.src !== SILENT_LOOP) el.src = SILENT_LOOP;
+        const p = el.play(); if (p && p.catch) p.catch(() => {});
+      } catch (e) {}
+    }
+    function stopAnchor() {
+      if (!anchoring) return;
+      anchoring = false;
+      try { el.loop = false; el.pause(); } catch (e) {}
+    }
+
+    return {
+      addEventListener: on,
+      removeEventListener: off,
+      // Resolve the backend from the current preference at load time (this is when a
+      // toggle takes effect). In engine mode el is freed up to be the silent anchor.
+      load() {
+        engineActive = !!enginePref && !!eng;
+        if (engineActive) {
+          // Defer the expensive whole-file decode until play(), so merely VIEWING an
+          // episode (loadEpisode autoplay:false) doesn't fetch + decode ~170 MB of PCM.
+          eng.src = _src;
+          engLoaded = false;
+        } else {
+          stopAnchor();
+          el.playbackRate = _rate;
+          el.src = _src;
+          el.load();
+        }
+      },
+      play() {
+        if (engineActive) {
+          if (!engLoaded) { eng.playbackRate = _rate; eng.load(); engLoaded = true; }
+          startAnchor();
+          return eng.play(); // the engine queues the play if the decode is still in flight
+        }
+        return el.play();
+      },
+      pause() {
+        if (engineActive) { eng.pause(); stopAnchor(); return; }
+        el.pause();
+      },
+      get paused() { return cur().paused; },
+      get duration() { return cur().duration || 0; },
+      get currentTime() { return cur().currentTime || 0; },
+      set currentTime(t) { cur().currentTime = t; },
+      get playbackRate() { return _rate; },
+      set playbackRate(r) {
+        _rate = r;
+        if (eng) eng.playbackRate = r;
+        if (!engineActive) el.playbackRate = r; // in engine mode el stays the 1x anchor
+      },
+      get src() { return _src; },
+      set src(v) { _src = v; },
+      // --- Hybrid controls (used by the Settings toggle) ---
+      get engineAvailable() { return !!eng; },
+      get engineEnabled() { return !!enginePref && !!eng; },
+      setEngineEnabled(b) {
+        enginePref = !!b && !!eng;
+        try { localStorage.setItem(PREF_KEY, enginePref ? "1" : "0"); } catch (e) {}
+      },
+    };
+  }
+
   window.createSpeedAudio = createSpeedAudio;
+  window.createHybridAudio = createHybridAudio;
 })();

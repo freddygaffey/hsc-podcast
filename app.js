@@ -51,10 +51,13 @@
   // player that stays audible all the way to 16x. Falls back to the raw <audio>
   // element (silent above 4x) if the browser lacks AudioWorklet.
   const audioEl = document.getElementById("audio");
-  // Use the native <audio> element directly. The Web Audio speed engine is DISABLED — it
-  // introduced playback, transcript-scroll and voice-switch glitches and isn't required:
-  // native playbackRate handles speed, and <audio>'s Range requests stream cleanly.
-  const audio = audioEl;
+  // Hybrid audio: a runtime-switchable wrapper over the native <audio> element AND the
+  // pitch-preserving Web Audio speed engine (speed-engine.js). The engine keeps audio
+  // audible past 4x all the way to 16x (the raw element is muted above ~4x); a Settings
+  // toggle falls back to the native element if the engine misbehaves on a device. In
+  // engine mode a silent looping element anchors the iOS media session so lock-screen /
+  // headphone controls still work. See createHybridAudio.
+  const audio = window.createHybridAudio ? window.createHybridAudio(audioEl) : audioEl;
   const viewSubjects = document.getElementById("view-subjects");
   const viewSubjectHub = document.getElementById("view-subject-hub");
   const viewLibrary = document.getElementById("view-library");
@@ -76,6 +79,7 @@
   const dlAllVoicesToggle = document.getElementById("dl-all-voices");
   const blockMobileToggle = document.getElementById("block-mobile-data");
   const introTitleToggle = document.getElementById("intro-title");
+  const speedEngineToggle = document.getElementById("speed-engine");
   const INTRO_KEY = "podcast-intro";                  // default ON ("0" = off)
   const introEnabled = () => localStorage.getItem(INTRO_KEY) !== "0";
   const quizSplitToggle = document.getElementById("quiz-split-subject");
@@ -133,15 +137,32 @@
   // Move focus into the sheet on open and restore it to the opener on close, so
   // keyboard/screen-reader users aren't stranded. Paired with role="dialog".
   let sheetOpener = null;
+  let savedScrollY = 0;
+  // Lock the page behind a sheet so it can't scroll. Uses the position:fixed technique
+  // (iOS Safari ignores `overflow:hidden` on body) and preserves/restores scroll position.
+  function lockBodyScroll() {
+    if (document.body.classList.contains("sheet-open")) return;
+    savedScrollY = window.scrollY || window.pageYOffset || 0;
+    document.body.style.top = `-${savedScrollY}px`;
+    document.body.classList.add("sheet-open");
+  }
+  function unlockBodyScroll() {
+    if (!document.body.classList.contains("sheet-open")) return;
+    document.body.classList.remove("sheet-open");
+    document.body.style.top = "";
+    window.scrollTo(0, savedScrollY);
+  }
   function openSheet(overlay) {
     sheetOpener = document.activeElement;
     setHidden(overlay, false);
+    lockBodyScroll();
     const panel = overlay.querySelector(".stats-panel");
     const target = panel && (panel.querySelector(".sheet-close") || panel);
     if (target) { if (target === panel) panel.tabIndex = -1; target.focus(); }
   }
   function closeSheet(overlay) {
     setHidden(overlay, true);
+    if (!activeSheet()) unlockBodyScroll(); // only release when no sheet remains open
     if (sheetOpener && typeof sheetOpener.focus === "function") sheetOpener.focus();
     sheetOpener = null;
     // If the review sheet was opened via a subject's #/…/quizzes route, drop back to the
@@ -741,7 +762,11 @@
       return;
     }
     const nextEp = getNextEpisode(currentEpisode);
-    if (!nextEp) return;
+    // Nothing to advance to: pause so the hybrid engine's silent media-session anchor
+    // stops looping (otherwise it keeps the lock-screen "playing" after the last episode).
+    // Harmless for the native backend (already ended). Auto-advance goes through the
+    // nextEp path below, which keeps the anchor running for the next episode.
+    if (!nextEp) { audio.pause(); return; }
     // Screen off / app backgrounded: skip the countdown toast and advance immediately,
     // while the audio session is still warm (gives the next track the best chance of
     // starting in the background on iOS). Foreground keeps the nice "Up next" countdown.
@@ -841,6 +866,21 @@
 
   function loadEpisode(ep, { autoplay, fromStart }) {
     dismissAdvanceToast(); // a user-initiated load cancels any pending auto-advance
+    // Save the OUTGOING episode's position before we switch. Advancing (auto-advance,
+    // queue, manual next, or tapping another episode) reassigns currentEpisode and
+    // resets audio.src below, which zeroes currentTime — so without this the outgoing
+    // episode's progress is lost. The periodic 5s save doesn't cover the last few
+    // seconds, and there's no network dependency (localStorage), so this matters even
+    // offline. Guards in persistProgress make it a no-op on the very first load. (BUG-19)
+    persistProgress();
+    flushListenLog();
+    // If we're about to speak the title/quiz intro for the new episode, stop the
+    // outgoing episode first so the spoken intro can't play over it. Do it here —
+    // while currentEpisode and the audio position still point at the outgoing
+    // episode — so it composes with the progress-save above; the async 'pause' event
+    // then no-ops (setAudioSource's load() resets audio.duration to NaN before it
+    // fires, and pending listen time was just flushed). (BUG-18)
+    if (autoplay && introEnabled() && ep.titleAudio && !audio.paused) audio.pause();
     currentEpisode = ep;
     // No audio generated for this episode yet — show it read-only (the notes/quiz still
     // render via showView). Hide the player instead of crashing on ep.voices[…].file.
@@ -1362,7 +1402,12 @@
     const modEl = row.closest(".module");
     const mdlBtn = modEl && modEl.querySelector(".module-dl");
     if (!mdlBtn || mdlBtn.classList.contains("dl-busy")) return;
-    const allDl = [...modEl.querySelectorAll(".episode-row")].every((r) => isDownloaded(r.dataset.epId));
+    // Check the module's whole episode set (from the store), not just rendered rows:
+    // a filtered/search view renders a subset, and [].every() is vacuously true, so
+    // the DOM-only check could mis-report the all-downloaded state. (BUG-14)
+    let ids;
+    try { ids = JSON.parse(modEl.dataset.epIds || "[]"); } catch { ids = []; }
+    const allDl = ids.length > 0 && ids.every((id) => isDownloaded(id));
     mdlBtn.classList.toggle("dl-done", allDl);
     mdlBtn.innerHTML = allDl ? checkIcon(16) : downloadIcon(16);
     mdlBtn.setAttribute("aria-label", allDl ? "Delete module download" : "Download module");
@@ -1424,6 +1469,17 @@
     if (blockMobileToggle) blockMobileToggle.checked = blockMobileData();
     if (introTitleToggle) introTitleToggle.checked = introEnabled();
     if (quizSplitToggle) quizSplitToggle.checked = quizSplitBySubject();
+    if (speedEngineToggle) {
+      // Only meaningful when the Web Audio engine is available; otherwise hide the row
+      // (the native element can't do audible >4x, but there's nothing to toggle).
+      const supported = audio.engineAvailable === true;
+      speedEngineToggle.checked = audio.engineEnabled === true;
+      speedEngineToggle.disabled = !supported;
+      const row = speedEngineToggle.closest(".setting-row");
+      const hint = row && row.nextElementSibling;
+      if (row) setHidden(row, !supported);
+      if (hint && hint.classList.contains("setting-hint")) setHidden(hint, !supported);
+    }
     if (fsrsRetentionSelect) fsrsRetentionSelect.value = String(fsrsSettings().retention);
     if (fsrsStepsInput) fsrsStepsInput.value = fsrsSettings().steps;
     if (speedUnitSelect) speedUnitSelect.value = speedUnitMode();
@@ -1456,6 +1512,16 @@
   });
   if (quizSplitToggle) quizSplitToggle.addEventListener("change", () => {
     localStorage.setItem(QUIZ_SPLIT_KEY, quizSplitToggle.checked ? "1" : "0");
+  });
+  if (speedEngineToggle && audio.setEngineEnabled) speedEngineToggle.addEventListener("change", () => {
+    audio.setEngineEnabled(speedEngineToggle.checked);
+    // Switching backends takes effect on the next load(), so reload the current episode
+    // in place — resume its saved position and keep playing if it was playing.
+    if (currentEpisode) {
+      const playing = !audio.paused;
+      persistProgress(); // capture position so the reload resumes where we are
+      loadEpisode(currentEpisode, { autoplay: playing });
+    }
   });
   if (blockMobileToggle) blockMobileToggle.addEventListener("change", () => {
     // Stored inverted: default (absent) = ON; "0" = off.
@@ -1793,6 +1859,10 @@
 
       const groupEl = document.createElement("div");
       groupEl.className = "module";
+      // Full episode-id set for this module, so the module download button can be
+      // synced against the whole module from the store — not just the rows that
+      // happen to be rendered (a search view renders only matching rows). (BUG-14)
+      groupEl.dataset.epIds = JSON.stringify(group.episodes.map((e) => e.id));
       if (q || papersMode) groupEl.classList.add("open"); // auto-expand matched/paper episodes
 
       const completed = group.episodes.filter((e) => getEpisodeProgress(e.id).completed).length;
@@ -1800,30 +1870,34 @@
       const allDl = group.episodes.every((e) => isDownloaded(e.id));
       const head = document.createElement("div");
       head.className = "module-head";
+      // Papers (EXAM) have no audio: no play-all / download controls, and "attempted"
+      // rather than "listened" (BUG-3).
       head.innerHTML = `
-        <button class="module-start" aria-label="Start ${name}">${playIcon(16)}</button>
-        <button class="module-dl${allDl ? " dl-done" : ""}" aria-label="${allDl ? "Delete module download" : "Download module"}">${allDl ? checkIcon(16) : downloadIcon(16)}</button>
+        ${papersMode ? "" : `<button class="module-start" aria-label="Start ${name}">${playIcon(16)}</button>
+        <button class="module-dl${allDl ? " dl-done" : ""}" aria-label="${allDl ? "Delete module download" : "Download module"}">${allDl ? checkIcon(16) : downloadIcon(16)}</button>`}
         <button class="module-toggle">
           <span class="module-name">${name}</span>
-          <span class="module-meta">${completed}/${group.episodes.length} listened</span>
+          <span class="module-meta">${papersMode ? `${group.episodes.length} paper${group.episodes.length === 1 ? "" : "s"}` : `${completed}/${group.episodes.length} listened`}</span>
           <span class="module-chev">&#8250;</span>
         </button>`;
       head.querySelector(".module-toggle").addEventListener("click", () => groupEl.classList.toggle("open"));
-      head.querySelector(".module-start").addEventListener("click", (e) => {
+      head.querySelector(".module-start")?.addEventListener("click", (e) => {
         e.stopPropagation();
         startModule(group);
       });
       const mdlBtn = head.querySelector(".module-dl");
-      mdlBtn.addEventListener("click", (e) => {
+      mdlBtn?.addEventListener("click", (e) => {
         e.stopPropagation();
         handleModuleDownload(group, groupEl, mdlBtn);
       });
       groupEl.appendChild(head);
 
-      const progTrack = document.createElement("div");
-      progTrack.className = "module-progress-track";
-      progTrack.innerHTML = `<div class="module-progress-fill" style="width:${(completed / group.episodes.length) * 100}%"></div>`;
-      groupEl.appendChild(progTrack);
+      if (!papersMode) {
+        const progTrack = document.createElement("div");
+        progTrack.className = "module-progress-track";
+        progTrack.innerHTML = `<div class="module-progress-fill" style="width:${(completed / group.episodes.length) * 100}%"></div>`;
+        groupEl.appendChild(progTrack);
+      }
 
       const episodesEl = document.createElement("div");
       episodesEl.className = "module-episodes";
@@ -1856,9 +1930,12 @@
     const playing = !!currentEpisode && currentEpisode.id === ep.id;
     row.className = "episode-row" + (done ? " ep-row-done" : "") + (dl ? " ep-downloaded" : "") + (playing ? " ep-row-playing" : "");
     const pct = Math.round((progress.progressPct || 0) * 100);
-    const rawDur = ep.voices[0]?.duration;
+    const rawDur = ep.voices?.[0]?.duration;
     const durStr = rawDur ? fmtDuration(rawDur / getCurrentSpeed()) : "";
     const inQueue = queue.includes(ep.id);
+    // Past papers aren't audio — no play / download / queue controls (BUG-3). The row is
+    // still tappable (opens the paper); a chevron signals that.
+    const isPaper = !!ep.paper;
 
     row.innerHTML = `
       <span class="ep-index${done ? " ep-done" : ""}">${done ? "&#10003;" : index}</span>
@@ -1869,12 +1946,13 @@
         </div>
         ${pct > 0 ? `<div class="ep-progress-track"><div class="ep-progress-fill" style="width:${pct}%"></div></div>` : ""}
       </div>
+      ${isPaper ? `<span class="ep-open-chev" aria-hidden="true">&#8250;</span>` : `
       <button class="ep-dl-btn${dl ? " dl-done" : ""}" aria-label="${dl ? "Delete download" : "Download"}">${dl ? checkIcon(15) : downloadIcon(15)}</button>
       <button class="ep-queue-btn${inQueue ? " in-queue" : ""}" aria-label="${inQueue ? "Remove from queue" : "Add to queue"}">${inQueue ? "&#10003;" : "+"}</button>
-      <button class="ep-play" aria-label="Play ${ep.title}">${playIcon(16)}</button>`;
+      <button class="ep-play" aria-label="Play ${ep.title}">${playIcon(16)}</button>`}`;
 
     const dlBtn = row.querySelector(".ep-dl-btn");
-    dlBtn.addEventListener("click", async (e) => {
+    dlBtn?.addEventListener("click", async (e) => {
       e.stopPropagation();
       if (dlBtn.classList.contains("dl-busy")) return;
       if (dlBtn.classList.contains("dl-done")) {
@@ -1899,7 +1977,7 @@
     });
 
     const qBtn = row.querySelector(".ep-queue-btn");
-    qBtn.addEventListener("click", (e) => {
+    qBtn?.addEventListener("click", (e) => {
       e.stopPropagation();
       const idx = queue.indexOf(ep.id);
       const adding = idx < 0;
@@ -1912,7 +1990,7 @@
       qBtn.setAttribute("aria-label", adding ? "Remove from queue" : "Add to queue");
       updateQueueBadge();
     });
-    row.querySelector(".ep-play").addEventListener("click", (e) => {
+    row.querySelector(".ep-play")?.addEventListener("click", (e) => {
       e.stopPropagation();
       if (!guardPlayable(ep)) return;
       loadEpisode(ep, { autoplay: true });
