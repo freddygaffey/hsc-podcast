@@ -112,6 +112,8 @@
     border-radius:999px;padding:9px 26px;cursor:pointer;font-size:13px;font-weight:600}
   .more:hover{border-color:var(--accent)}
   .empty{color:var(--text-dim);text-align:center;padding:60px 20px;font-size:14px}
+  #preview object{width:100%;height:calc(100vh - 110px);border:1px solid var(--border);
+    border-radius:12px;background:#fff;display:block}
 
   /* ── right tray ── */
   .tray{border-left:1px solid var(--border);background:var(--bg);overflow-y:auto;padding:14px 14px 40px}
@@ -188,6 +190,7 @@
   </nav>
 
   <main class="ledger">
+    <div id="preview" hidden><div class="empty">Set your topic quotas on the right, then Build — the assembled paper previews here.</div></div>
     <div class="ledgerbar">
       <span class="n"><b id="n-match">0</b> questions match</span>
       <select id="sort">
@@ -244,6 +247,11 @@
         <option value="none">None</option>
         <option value="appended">Same PDF</option>
         <option value="separate">Separate PDF</option>
+      </select></div>
+    <div class="opt">Paper size
+      <select id="sheet">
+        <option value="a4">A4</option>
+        <option value="a3-2up">A3 · two-up (half size)</option>
       </select></div>
     <button class="gen" id="gen" disabled>Generate PDF</button>
     <div class="status" id="status"></div>
@@ -639,7 +647,13 @@ function setMode(m){
   $("#mode-recipe").classList.toggle("on",m==="recipe");
   $("#hand-panel").hidden=m!=="hand";
   $("#recipe-panel").hidden=m!=="recipe";
-  if(m==="recipe")renderRecipe();
+  // recipe mode batches questions and previews the assembled PDF — the browse list
+  // is a hand-picking tool only
+  const recipe=m==="recipe";
+  $("#preview").hidden=!recipe;
+  document.querySelector(".ledgerbar").hidden=recipe;
+  $("#list").hidden=recipe;
+  if(recipe)renderRecipe();
 }
 $("#mode-hand").onclick=()=>setMode("hand");
 $("#mode-recipe").onclick=()=>setMode("recipe");
@@ -704,6 +718,7 @@ $("#rc-build").onclick=()=>{
   }
   syncPicks();
   $("#status").textContent=short.length?`Couldn't fully fill: ${short.join(", ")} — loosen filters?`:"";
+  previewPaper();
 };
 function saveRecipe(){try{localStorage.setItem("gen-recipe:"+SUBJECT,JSON.stringify(RECIPE));}catch(e){}}
 function restoreRecipe(){
@@ -743,26 +758,48 @@ function download(bytes,name){
   a.download=name;a.click();
 }
 $("#preset").onchange=()=>{$("#ws").checked=$("#preset").value==="practice-exam";};
+function exportItems(){
+  // covers/provenance read `topic` — hand them official subtopic names, not classifier text
+  return [...picked.values()].map(q=>({
+    ...q, topic:q._subs.map(s=>SUBTOPICS[s]||s).join(" / ")||q._groups.join(" / ")||q.topic}));
+}
+function exportOpts(st){
+  const opts={
+    preset:$("#preset").value,
+    subjectName:SUBJECTS.find(s=>s[0]===SUBJECT)?.[1]||SUBJECT,
+    sheet:$("#sheet").value,
+    fetchAsset:(item,kind)=>fetch(urlOf(item,kind==="answer"))
+      .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.arrayBuffer();}),
+    onProgress:p=>{st.textContent=p.stage==="fetch"?`Fetching ${p.done}/${p.total}…`
+      :p.stage==="layout"?`Laying out ${p.done}/${p.total}…`:"Saving…";},
+  };
+  opts.writingSpace=$("#ws").checked
+    ?{linesPerMark:3,minLines:3,maxLines:18,lineGap:26,skipTypes:["mc"]}:false;
+  if($("#ans-mode").value)opts.answers=$("#ans-mode").value;
+  return opts;
+}
+async function previewPaper(){
+  if(MODE!=="recipe"||!picked.size)return;
+  const st=$("#status");
+  $("#preview").innerHTML='<div class="empty">Building preview…</div>';
+  try{
+    const out=await PaperExport.buildPaper(exportItems(),exportOpts(st));
+    const url=URL.createObjectURL(new Blob([out.paper],{type:"application/pdf"}));
+    $("#preview").innerHTML=`<object type="application/pdf" data="${url}#view=FitH"></object>`;
+    st.textContent=`Previewing ${picked.size} questions, ${out.pageCount} A4 pages — Build again to re-roll, Generate to download.`;
+  }catch(e){$("#preview").innerHTML=`<div class="empty">Preview failed: ${esc(e.message)}</div>`;}
+}
+["ws","ans-mode","sheet","preset"].forEach(id=>$("#"+id).addEventListener("change",()=>previewPaper()));
 $("#gen").onclick=async()=>{
-  const st=$("#status"), arr=[...picked.values()];
+  const st=$("#status");
   $("#gen").disabled=true;
   try{
-    const opts={
-      preset:$("#preset").value,
-      subjectName:SUBJECTS.find(s=>s[0]===SUBJECT)?.[1]||SUBJECT,
-      fetchAsset:(item,kind)=>fetch(urlOf(item,kind==="answer"))
-        .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.arrayBuffer();}),
-      onProgress:p=>{st.textContent=p.stage==="fetch"?`Fetching ${p.done}/${p.total}…`
-        :p.stage==="layout"?`Laying out ${p.done}/${p.total}…`:"Saving…";},
-    };
-    opts.writingSpace=$("#ws").checked
-      ?{linesPerMark:3,minLines:3,maxLines:18,lineGap:26,skipTypes:["mc"]}:false;
-    if($("#ans-mode").value)opts.answers=$("#ans-mode").value;
-    const out=await PaperExport.buildPaper(arr,opts);
+    const arr=exportItems();
+    const out=await PaperExport.buildPaper(arr,exportOpts(st));
     download(out.paper,`practice-paper-${SUBJECT}.pdf`);
     if(out.answers)download(out.answers,`practice-paper-${SUBJECT}-answers.pdf`);
     const marks=arr.reduce((s,q)=>s+(q.marks||0),0);
-    st.textContent=`Done — ${arr.length} questions, ${marks} marks, ${out.pageCount} pages`
+    st.textContent=`Done — ${arr.length} questions, ${marks} marks`
       +(out.skipped.length?` · ${out.skipped.length} failed to load`:"");
   }catch(e){st.textContent="Error: "+e.message;}
   finally{$("#gen").disabled=!picked.size;}

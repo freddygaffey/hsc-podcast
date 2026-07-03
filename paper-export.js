@@ -40,6 +40,7 @@
     sliceOverlapPt: 12,
     minWidowPt: 90,
     gapAfterQuestion: 14,
+    sheet: "a4",              // "a4" | "a3-2up" (two A4 pages per A3 landscape sheet)
   };
 
   const PRESETS = {
@@ -62,9 +63,12 @@
   }
 
   function defaultProvenance(item) {
+    // the little header section above each question box: paper · Q# · page · topic · marks
+    // (crops are pure question images — provenance/marks live here, added at render time)
     const src = (item.paperSlug || "").replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
     const bits = [src];
     if (item.questionNumber) bits.push("Q" + item.questionNumber + (item.partLabel || ""));
+    if (item.page) bits.push("p" + item.page);
     if (item.topic || item.module) bits.push(item.topic || item.module);
     if (item.marks) bits.push(item.marks + " mark" + (item.marks > 1 ? "s" : ""));
     return bits.filter(Boolean).join("  ·  ");
@@ -151,11 +155,18 @@
     const srcDoc = await PDFLib.PDFDocument.load(b.asset);
     const p0 = srcDoc.getPage(0);
     const box = p0.getCropBox ? p0.getCropBox() : p0.getMediaBox();
-    const scale = Math.min(ctx.contentW / box.width, o.maxCropScale);
+    let scale = Math.min(ctx.contentW / box.width, o.maxCropScale);
+    const headerH = 30;
+    // A question slightly taller than one page reads far better shrunk onto a single
+    // page than sliced across two — shrink up to 25% before resorting to slicing.
+    const fullAvail = ctx.pageH - 2 * ctx.m - headerH;
+    if (box.height * scale > fullAvail) {
+      const alt = fullAvail / box.height;
+      if (alt >= scale * 0.75) scale = alt;
+    }
     const scaledH = box.height * scale;
 
     // widow control: header + first chunk of crop must fit together
-    const headerH = 30;
     if (!ctx.page || headerH + Math.min(scaledH, o.minWidowPt) > ctx.avail()) ctx.newPage();
     drawQuestionHeader(ctx, b, false);
 
@@ -187,7 +198,14 @@
 
   function drawWritingSpace(ctx, b) {
     const cfg = b.cfg, m = ctx.m;
-    let owed = Math.min(Math.max((b.marks || 1) * cfg.linesPerMark, cfg.minLines), cfg.maxLines);
+    // crops ship without their printed ruled lines. spaceHeight (pt) is the paper's
+    // real provisioned writing space — comparable across papers regardless of their
+    // line spacing — re-ruled here at OUR standard gap. lineCount is the fallback,
+    // then marks-based synthesis.
+    let owed;
+    if (b.item && b.item.spaceHeight) owed = Math.max(cfg.minLines, Math.round(b.item.spaceHeight / cfg.lineGap));
+    else if (b.item && b.item.lineCount) owed = b.item.lineCount;
+    else owed = Math.min(Math.max((b.marks || 1) * cfg.linesPerMark, cfg.minLines), cfg.maxLines);
     // don't orphan a couple of lines at a page bottom
     if (ctx.avail() < cfg.minLines * cfg.lineGap) ctx.newPage();
     while (owed > 0) {
@@ -335,10 +353,31 @@
     if (o.answers === "separate" && answerBlocks.length) {
       const adoc = await renderDoc(PDFLib, [{ type: "sectionHeader", text: "Answers" }, ...answerBlocks], o);
       answersOut = await adoc.save();
+      if (o.sheet === "a3-2up") answersOut = await impose2up(PDFLib, answersOut);
     }
+    const pageCount = doc.getPageCount();
+    let paper = await doc.save();
+    if (o.sheet === "a3-2up") paper = await impose2up(PDFLib, paper);
     if (o.onProgress) o.onProgress({ stage: "save", done: 1, total: 1, item: null });
-    return { paper: await doc.save(), answers: answersOut,
-             skipped, pageCount: doc.getPageCount() };
+    return { paper, answers: answersOut, skipped, pageCount };
+  }
+
+  // Two A4 pages side-by-side on each A3 landscape sheet (595.28×2 = 1190.55 wide) —
+  // print at 50% ("half size") or fold for a booklet feel. Sequential order: 1|2, 3|4.
+  // Takes SAVED pdf bytes: pdf-lib can only embed pages from a serialized document.
+  async function impose2up(PDFLib, srcBytes) {
+    const out = await PDFLib.PDFDocument.create();
+    const src = await PDFLib.PDFDocument.load(srcBytes);
+    const n = src.getPageCount();
+    const embedded = await out.embedPdf(srcBytes, Array.from({ length: n }, (_, i) => i));
+    for (let i = 0; i < n; i += 2) {
+      const sheet = out.addPage([1190.55, 841.89]);
+      sheet.drawPage(embedded[i], { x: 0, y: 0 });
+      if (i + 1 < n) sheet.drawPage(embedded[i + 1], { x: 595.28, y: 0 });
+      sheet.drawLine({ start: { x: 595.28, y: 14 }, end: { x: 595.28, y: 827 },
+        thickness: 0.4, color: PDFLib.rgb(0.85, 0.85, 0.85), dashArray: [4, 5] });
+    }
+    return out.save();
   }
 
   window.PaperExport = { buildPaper, PRESETS, DEFAULTS };
