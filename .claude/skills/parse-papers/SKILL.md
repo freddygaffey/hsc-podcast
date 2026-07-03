@@ -33,6 +33,16 @@ superseded syllabus and are OUT OF SCOPE (skip them; never count them as remaini
 A paper is *unprocessed* when `papers/_work/<paperId>/questions.json` does not exist. Respect `--limit`; process papers one at a time (steps 2–4), but you may
 run step-4 funnels for paper N while paper N+1 goes through step 2–3.
 
+## 1b. Segmentation convention (READ EXAMPLES.md)
+
+Read `EXAMPLES.md` in this skill folder BEFORE any locate/QA/box-drawing step — it holds
+the human ground-truth examples AND counterexamples for what one question-unit is, box
+extents, and metadata. When the deterministic locate output looks wrong for a paper
+(odd question counts, weird layouts), spawn a VISION segmenter instead: an agent that
+Reads the page PNGs and draws boxes per EXAMPLES.md, writing the annotate_app box shape;
+score it with `tools/compare_boxes.py` against any available human annotations, or
+convert and proceed. The regex locate is only the cheap first pass.
+
 ## 2. Deterministic pipeline (per paper)
 
 Run each step; after each, gate with the validator — a failing paper is halted and
