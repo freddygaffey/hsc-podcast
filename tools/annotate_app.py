@@ -83,24 +83,33 @@ PAGE = """<!doctype html><meta charset=utf-8><title>Paper annotator</title>
  .pg{position:relative;margin:0 auto 16px;box-shadow:0 1px 6px rgba(0,0,0,.15);user-select:none}
  .pg img{display:block;width:100%;height:auto;pointer-events:none}
  .pg .num{position:absolute;top:4px;left:-34px;color:#99a;font-size:12px}
- .box{position:absolute;border:2px solid rgba(200,40,40,.85);background:rgba(230,60,60,.08);cursor:pointer}
+ .box{position:absolute;border:2px solid rgba(200,40,40,.85);background:rgba(230,60,60,.08);cursor:move}
+ .box.lines{border-color:rgba(20,140,60,.85);background:rgba(30,170,80,.10)}
+ .box.lines .tag{background:rgba(20,140,60,.9)}
  .box.sel{border-color:#1450d0;background:rgba(40,90,220,.12)}
  .box .tag{position:absolute;top:-18px;left:-2px;background:rgba(200,40,40,.9);color:#fff;
   font-size:11px;padding:0 6px;border-radius:3px;white-space:nowrap}
  .box.sel .tag{background:#1450d0}
  .box .x{position:absolute;top:-18px;right:-2px;background:#333;color:#fff;font-size:11px;
   padding:0 5px;border-radius:3px;cursor:pointer}
+ .box .rs{position:absolute;right:-6px;bottom:-6px;width:12px;height:12px;background:#1450d0;
+  border-radius:3px;cursor:nwse-resize;display:none}
+ .box.sel .rs{display:block}
  .ghost{position:absolute;border:2px dashed #1450d0;background:rgba(40,90,220,.08);pointer-events:none}
  .keys b{border:1px solid #ccd;border-radius:4px;padding:0 5px;background:#fff}
 </style>
 <header>
  <select id=paper></select>
+ <select id=kind>
+  <option value="question">question box</option>
+  <option value="lines">lines box</option>
+ </select>
  <label>Q <input class=small id=qn value="1"></label>
  <label>part <input class=small id=part placeholder="a"></label>
  <label>marks <input class=small id=marks placeholder="?"></label>
  <label><input type=checkbox id=autoq checked> next Q after box</label>
  <span id=count></span><span id=status></span>
- <span class=keys style="margin-left:auto">drag = box · click = select · <b>⌫</b> delete · boxes auto-save</span>
+ <span class=keys style="margin-left:auto">drag = new box · drag a box = move · corner = resize · <b>l</b> lines mode · <b>⌫</b> delete</span>
 </header>
 <main id=pages></main>
 <script>
@@ -130,18 +139,51 @@ function renderBoxes(){
  document.querySelectorAll(".box,.ghost").forEach(e=>e.remove());
  BOXES.forEach((b,idx)=>{
   const pg=document.querySelector(`.pg[data-pg="${b.page}"]`); if(!pg)return;
-  const el=document.createElement("div"); el.className="box"+(idx===sel?" sel":"");
+  const el=document.createElement("div");
+  el.className="box"+(b.kind==="lines"?" lines":"")+(idx===sel?" sel":"");
   el.style.left=(b.bbox[0]*100)+"%"; el.style.top=(b.bbox[1]*100)+"%";
   el.style.width=((b.bbox[2]-b.bbox[0])*100)+"%"; el.style.height=((b.bbox[3]-b.bbox[1])*100)+"%";
-  const lab=`Q${b.number||"?"}${b.part||""}${b.marks?" · "+b.marks+"m":""}`;
-  el.innerHTML=`<span class=tag>${lab}</span><span class=x title=delete>✕</span>`;
-  el.onmousedown=e=>{e.stopPropagation();};
+  const lab=b.kind==="lines"?`lines${b.number?" Q"+b.number:""}`:`Q${b.number||"?"}${b.part||""}${b.marks?" · "+b.marks+"m":""}`;
+  el.innerHTML=`<span class=tag>${lab}</span><span class=x title=delete>✕</span><span class=rs></span>`;
+  el.onmousedown=e=>{
+   e.stopPropagation();e.preventDefault();
+   if(e.target.className==="x")return;
+   sel=idx;
+   if(b.kind!=="lines"){$("#qn").value=b.number||"";$("#part").value=b.part||"";$("#marks").value=b.marks||"";}
+   renderBoxes();
+   startDrag(e,pg,idx,e.target.className==="rs"?"resize":"move");
+  };
   el.onclick=e=>{e.stopPropagation();
-   if(e.target.className==="x"){BOXES.splice(idx,1);sel=-1;renderBoxes();save();return}
-   sel=idx;$("#qn").value=b.number||"";$("#part").value=b.part||"";$("#marks").value=b.marks||"";renderBoxes()};
+   if(e.target.className==="x"){BOXES.splice(idx,1);sel=-1;renderBoxes();save();}};
   pg.appendChild(el);
  });
  updateCount();
+}
+function startDrag(e,pg,idx,mode){
+ const b=BOXES[idx], r=pg.getBoundingClientRect();
+ const sx=(e.clientX-r.left)/r.width, sy=(e.clientY-r.top)/r.height;
+ const orig=[...b.bbox];
+ let moved=false;
+ function mm(ev){
+  const cx=(ev.clientX-r.left)/r.width, cy=(ev.clientY-r.top)/r.height;
+  const dx=cx-sx, dy=cy-sy;
+  if(Math.abs(dx)+Math.abs(dy)>0.002)moved=true;
+  if(!moved)return;
+  if(mode==="move"){
+   const w=orig[2]-orig[0], h=orig[3]-orig[1];
+   let x0=Math.min(Math.max(orig[0]+dx,0),1-w), y0=Math.min(Math.max(orig[1]+dy,0),1-h);
+   b.bbox=[x0,y0,x0+w,y0+h].map(v=>Math.round(v*1e4)/1e4);
+  }else{
+   b.bbox=[orig[0],orig[1],
+    Math.min(Math.max(orig[2]+dx,orig[0]+0.02),1),
+    Math.min(Math.max(orig[3]+dy,orig[1]+0.005),1)].map(v=>Math.round(v*1e4)/1e4);
+  }
+  renderBoxes();
+ }
+ function mu(){document.removeEventListener("mousemove",mm);document.removeEventListener("mouseup",mu);
+  if(moved)save();}
+ document.addEventListener("mousemove",mm);
+ document.addEventListener("mouseup",mu);
 }
 function hookDraw(pg,pageIdx){
  let start=null, ghost=null;
@@ -166,10 +208,11 @@ function hookDraw(pg,pageIdx){
   const b=ghost&&ghost.dataset.b?JSON.parse(ghost.dataset.b):null;
   if(ghost)ghost.remove(); ghost=null; start=null;
   if(!b||(b[2]-b[0])<0.02||(b[3]-b[1])<0.005)return;   // ignore tiny accidental drags
-  BOXES.push({page:pageIdx,bbox:b.map(v=>Math.round(v*1e4)/1e4),
+  const kind=$("#kind").value;
+  BOXES.push({page:pageIdx,bbox:b.map(v=>Math.round(v*1e4)/1e4),kind:kind,
    number:$("#qn").value.trim()||null,part:$("#part").value.trim()||null,
-   marks:parseInt($("#marks").value)||null});
-  if($("#autoq").checked&&!$("#part").value.trim()){
+   marks:kind==="lines"?null:(parseInt($("#marks").value)||null)});
+  if(kind==="question"&&$("#autoq").checked&&!$("#part").value.trim()){
    $("#qn").value=(parseInt($("#qn").value)||0)+1; $("#marks").value="";
   }
   sel=BOXES.length-1; renderBoxes(); save();
@@ -185,9 +228,11 @@ function save(){
  },400);
 }
 document.addEventListener("keydown",e=>{
- if((e.key==="Backspace"||e.key==="Delete")&&sel>=0&&document.activeElement.tagName!=="INPUT"){
+ if(document.activeElement.tagName==="INPUT")return;
+ if((e.key==="Backspace"||e.key==="Delete")&&sel>=0){
   BOXES.splice(sel,1);sel=-1;renderBoxes();save();e.preventDefault();
  }
+ if(e.key==="l"){const k=$("#kind");k.value=k.value==="lines"?"question":"lines";}
 });
 $("#paper").onchange=()=>loadPaper($("#paper").value);
 loadPapers();

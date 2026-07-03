@@ -21,16 +21,17 @@ ROOT = Path(__file__).resolve().parent.parent
 WORK = ROOT / "papers" / "_work"
 
 
-def machine_units(boundaries):
+def machine_units(boundaries, trimmed=True):
     """Display units with per-page y-extents: standalone questions whole, booklet
     questions (>=2 labelled parts) per lettered part."""
     units = []
     for q in boundaries.get("questions", []):
         labelled = [p for p in q.get("parts", []) if p.get("label")]
-        # booklet parts score WITHOUT the shared heading/stimulus — its extent
-        # would stretch every part back to the question heading
+        # same display-unit rule as bake_questions.py: only BOOKLET questions
+        # (>= 2 labelled parts AND >= 10 marks) split into parts
+        booklet = len(labelled) >= 2 and (q.get("marks") or 0) >= 10
         groups = ([("part", p.get("label"), p.get("regions", []))
-                   for p in labelled] if len(labelled) >= 2 else
+                   for p in labelled] if booklet else
                   [("question", None,
                     (q.get("stimulus") or []) + [r for p in q.get("parts", []) for r in p.get("regions", [])])])
         for kind, label, regs in groups:
@@ -40,10 +41,11 @@ def machine_units(boundaries):
             pages = {}
             for r in regs:
                 y1 = r["bbox"][3]
-                # effective crop bottom after line/content trimming (what actually ships)
-                for k in ("linesTopY", "contentBottomY"):
-                    if r.get(k):
-                        y1 = min(y1, r[k])
+                if trimmed:
+                    # effective crop bottom after line/content trimming (what ships)
+                    for k in ("linesTopY", "contentBottomY"):
+                        if r.get(k):
+                            y1 = min(y1, r[k])
                 a = pages.setdefault(r["page"], [1.0, 0.0])
                 a[0] = min(a[0], r["bbox"][1]); a[1] = max(a[1], y1)
             units.append({"number": q.get("number"), "label": label, "pages": pages})
@@ -53,8 +55,11 @@ def machine_units(boundaries):
 def main():
     pid = sys.argv[1]
     wd = WORK / pid
-    ann = json.loads((wd / "annotations.json").read_text())["boxes"]
-    units = machine_units(json.loads((wd / "boundaries.json").read_text()))
+    raw = json.loads((wd / "annotations.json").read_text())["boxes"]
+    ann = [b for b in raw if b.get("kind") != "lines"]   # lines boxes score separately
+    include_lines = any(b.get("kind") == "lines" for b in raw)
+    units = machine_units(json.loads((wd / "boundaries.json").read_text()),
+                          trimmed=not include_lines)
     # judge only pages the human actually annotated — partial ground truth is fine
     ann_pages = {b["page"] for b in ann}
     units = [u for u in units if any(p in ann_pages for p in u["pages"])]
