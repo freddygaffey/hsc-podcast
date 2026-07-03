@@ -1321,9 +1321,15 @@ body.sheet-open {
   line-height: 1.45;
   transition: border-color 0.12s, background 0.12s;
 }
-.quiz-option:not([disabled]):hover {
-  border-color: var(--accent);
-  background: var(--accent-soft);
+/* Hover highlight only on real pointing devices. On touch screens :hover
+   sticks to the last-tapped element after the tap ends, so a fresh question's
+   option (sitting where the Start/grade button was) would stay lit blue —
+   looking exactly like the answer was revealed before the user chose (BUG-20). */
+@media (hover: hover) and (pointer: fine) {
+  .quiz-option:not([disabled]):hover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
 }
 .quiz-option:not([disabled]):active { background: var(--accent-soft); }
 .quiz-option.opt-correct {
