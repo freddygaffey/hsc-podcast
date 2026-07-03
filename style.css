@@ -832,6 +832,15 @@ button, select, input { font-family: inherit; }
 .markdown-body tr:nth-child(even) td { background: var(--bg-card); }
 
 .markdown-body img { max-width: 100%; border-radius: 8px; }
+/* Wide block equations must scroll inside their own box — otherwise a single long
+   equation widens the whole page and it scrolls sideways on phones, clipping the left
+   edge of all content (BUG-7). */
+.markdown-body .katex-display {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 2px; /* room for the scrollbar so it doesn't cover the equation */
+}
 
 /* Image carousel (consecutive images become a swipeable gallery) */
 .img-carousel { position: relative; margin: 0 0 18px; }
