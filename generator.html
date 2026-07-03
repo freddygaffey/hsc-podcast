@@ -128,6 +128,16 @@
   .autofill button{flex:1;border:1.5px solid var(--border);background:var(--bg-card);border-radius:10px;
     padding:7px 8px;cursor:pointer;font-size:13px;font-weight:600}
   .autofill button:hover{border-color:var(--accent);color:var(--accent)}
+  .modes{margin-bottom:10px}
+  .modes button{flex:1}
+  .rcrow{display:flex;gap:6px;align-items:center;margin-bottom:6px}
+  .rcrow select{flex:1;min-width:0;padding:6px;border:1px solid var(--border);border-radius:10px;
+    background:var(--bg-card);font-size:12.5px}
+  .rcrow input{width:52px;padding:6px;border:1px solid var(--border);border-radius:10px;
+    background:var(--bg-card);text-align:center;font-variant-numeric:tabular-nums}
+  .rcrow button{border:0;background:none;color:var(--text-dim);cursor:pointer;font-size:13px;padding:2px}
+  .rcrow button:hover{color:var(--accent)}
+  #rc-note{margin:2px 0 10px}
   .docket{margin:0 0 12px;padding:0;list-style:none;max-height:34vh;overflow-y:auto}
   .docket li{display:flex;gap:7px;align-items:center;padding:6px 4px;border-bottom:1px solid var(--border);font-size:12.5px}
   .docket .dn{font-size:11px;color:var(--text-dim);width:18px;flex:none;text-align:right;font-variant-numeric:tabular-nums}
@@ -205,9 +215,23 @@
       <div><b id="t-m">0</b><span>marks</span></div>
       <div><b id="t-t">0</b><span>≈ min</span></div>
     </div>
-    <div class="autofill">
-      <input id="af-marks" type="number" value="50" min="5">
-      <button id="af-go">Auto-fill to marks</button>
+    <div class="facet modes" id="modes">
+      <button id="mode-hand" class="on">Pick by hand</button>
+      <button id="mode-recipe">Build by recipe</button>
+    </div>
+    <div id="hand-panel">
+      <div class="autofill">
+        <input id="af-marks" type="number" value="50" min="5">
+        <button id="af-go">Auto-fill to marks</button>
+      </div>
+    </div>
+    <div id="recipe-panel" hidden>
+      <div id="recipe-rows"></div>
+      <div class="autofill">
+        <button id="rc-add" style="flex:0 0 auto">＋ topic</button>
+        <button id="rc-build">Build (re-roll)</button>
+      </div>
+      <div class="sub" id="rc-note">Set marks per topic — Build picks random questions each time.</div>
     </div>
     <ol class="docket" id="docket"></ol>
     <div class="mix" id="mix"></div>
@@ -294,6 +318,7 @@ async function loadSubject(id){
   DATA=[...seen.values()];
   resetFilters(false);
   restoreBasket();
+  restoreRecipe();
   buildRail();
   apply();
 }
@@ -362,21 +387,22 @@ function resetFilters(re=true){
 $("#reset").onclick=()=>resetFilters();
 
 /* ── filtering + list ── */
-function apply(){
+function passes(q,ignoreTopics){
   const cut=SYLLABUS_FROM[SUBJECT];
-  FILTERED=DATA.filter(q=>{
-    if(F.era&&cut){const y=yearOf(q);if(!y||y<cut)return false;}
-    if(F.topics.size&&!F.topics.has(q.topic||"—"))return false;
-    if(F.sources.size&&!F.sources.has(sourceOf(q)))return false;
-    const y=yearOf(q);
-    if(F.y0&&(!y||y<F.y0))return false;
-    if(F.y1&&(!y||y>F.y1))return false;
-    if(F.m0&&(!q.marks||q.marks<F.m0))return false;
-    if(F.m1&&(!q.marks||q.marks>F.m1))return false;
-    if(F.ans&&!q.answerKey)return false;
-    if(F.types.size&&!F.types.has(q.type))return false;
-    return true;
-  });
+  if(F.era&&cut){const y=yearOf(q);if(!y||y<cut)return false;}
+  if(!ignoreTopics&&F.topics.size&&!F.topics.has(q.topic||"—"))return false;
+  if(F.sources.size&&!F.sources.has(sourceOf(q)))return false;
+  const y=yearOf(q);
+  if(F.y0&&(!y||y<F.y0))return false;
+  if(F.y1&&(!y||y>F.y1))return false;
+  if(F.m0&&(!q.marks||q.marks<F.m0))return false;
+  if(F.m1&&(!q.marks||q.marks>F.m1))return false;
+  if(F.ans&&!q.answerKey)return false;
+  if(F.types.size&&!F.types.has(q.type))return false;
+  return true;
+}
+function apply(){
+  FILTERED=DATA.filter(q=>passes(q));
   const s=$("#sort").value;
   FILTERED.sort((a,b)=>
     s==="new"?(yearOf(b)||0)-(yearOf(a)||0):
@@ -501,6 +527,76 @@ function restoreBasket(){
     picked=new Map(keys.filter(k=>byKey.has(k)).map(k=>[k,byKey.get(k)]));
   }catch(e){picked=new Map();}
   renderTray();
+}
+
+/* ── recipe mode: marks quota per topic, random fill, re-rollable ── */
+let MODE="hand", RECIPE=[];
+function setMode(m){
+  MODE=m;
+  $("#mode-hand").classList.toggle("on",m==="hand");
+  $("#mode-recipe").classList.toggle("on",m==="recipe");
+  $("#hand-panel").hidden=m!=="hand";
+  $("#recipe-panel").hidden=m!=="recipe";
+  if(m==="recipe")renderRecipe();
+}
+$("#mode-hand").onclick=()=>setMode("hand");
+$("#mode-recipe").onclick=()=>setMode("recipe");
+
+function topicCounts(){
+  const c=new Map();
+  for(const q of DATA)if(passes(q,true)&&q.marks)
+    c.set(q.topic||"—",(c.get(q.topic||"—")||0)+1);
+  return c;
+}
+function renderRecipe(){
+  const tc=topicCounts();
+  const opts=[...tc.entries()].sort((a,b)=>a[0].localeCompare(b[0]))
+    .map(([t,n])=>`<option value="${esc(t)}">${esc(t)} (${n})</option>`).join("");
+  $("#recipe-rows").innerHTML=RECIPE.map((r,i)=>`<div class="rcrow" data-i="${i}">
+      <select>${`<option value="">— topic —</option>`+opts}</select>
+      <input type="number" min="1" value="${r.marks||10}" title="marks">
+      <button title="Remove">✕</button>
+    </div>`).join("");
+  $("#recipe-rows").querySelectorAll(".rcrow").forEach(row=>{
+    const i=+row.dataset.i;
+    row.querySelector("select").value=RECIPE[i].topic||"";
+    row.querySelector("select").onchange=e=>{RECIPE[i].topic=e.target.value;saveRecipe();};
+    row.querySelector("input").onchange=e=>{RECIPE[i].marks=+e.target.value||0;saveRecipe();};
+    row.querySelector("button").onclick=()=>{RECIPE.splice(i,1);saveRecipe();renderRecipe();};
+  });
+  const total=RECIPE.reduce((s,r)=>s+(r.topic?r.marks||0:0),0);
+  $("#rc-build").textContent=total?`Build ${total} marks (re-roll)`:"Build (re-roll)";
+}
+$("#rc-add").onclick=()=>{RECIPE.push({topic:"",marks:10});saveRecipe();renderRecipe();};
+$("#rc-build").onclick=()=>{
+  const rows=RECIPE.filter(r=>r.topic&&r.marks>0);
+  if(!rows.length){$("#status").textContent="Add at least one topic with marks.";return;}
+  picked=new Map();                     // Build REPLACES the basket — that's the re-roll
+  const usedPapers=new Set();
+  const short=[];
+  for(const row of rows){
+    let pool=DATA.filter(q=>passes(q,true)&&(q.topic||"—")===row.topic&&q.marks&&!picked.has(key(q)));
+    // random order, solutions first-ish
+    pool=pool.map(q=>[Math.random()-(q.answerKey?0.3:0),q]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
+    let got=0;
+    for(const spread of [true,false]){   // pass 1: unused papers only, pass 2: any
+      for(const q of pool){
+        if(got>=row.marks-1)break;
+        if(picked.has(key(q)))continue;
+        if(spread&&usedPapers.has(q.paperSlug))continue;
+        if(got+q.marks<=row.marks+2){picked.set(key(q),q);usedPapers.add(q.paperSlug);got+=q.marks;}
+      }
+      if(got>=row.marks-1)break;
+    }
+    if(got<row.marks-1)short.push(`${row.topic} (${got}/${row.marks})`);
+  }
+  syncPicks();
+  $("#status").textContent=short.length?`Couldn't fully fill: ${short.join(", ")} — loosen filters?`:"";
+};
+function saveRecipe(){try{localStorage.setItem("gen-recipe:"+SUBJECT,JSON.stringify(RECIPE));}catch(e){}}
+function restoreRecipe(){
+  try{RECIPE=JSON.parse(localStorage.getItem("gen-recipe:"+SUBJECT)||"[]");}catch(e){RECIPE=[];}
+  if(MODE==="recipe")renderRecipe();
 }
 
 /* auto-fill: round-robin across topics from the current filter, prefer solutions */
