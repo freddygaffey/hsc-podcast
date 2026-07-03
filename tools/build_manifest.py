@@ -34,10 +34,14 @@ def main():
             by_subject[subj][key] = r
         papers += 1
 
+    # only the fields the generator UI needs at runtime — keeps the manifest small.
+    KEEP = ("paperSlug", "assetKey", "answerKey", "questionNumber", "partLabel",
+            "marks", "type", "topic", "module", "syllabusRefs")
+
     for subj, recs in sorted(by_subject.items()):
         out_dir = CONTENT / subj
         out_dir.mkdir(parents=True, exist_ok=True)
-        records = list(recs.values())
+        records = [{k: r[k] for k in KEEP if k in r} for r in recs.values()]
         (out_dir / "questions.json").write_text(json.dumps(
             {"subject": subj, "count": len(records), "questions": records}, indent=2))
         withmod = sum(1 for r in records if r.get("module"))
