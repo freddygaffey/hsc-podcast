@@ -1684,8 +1684,27 @@
       tile.addEventListener("click", () => { window.location.hash = `#/s/${encodeURIComponent(s.id)}`; });
       grid.appendChild(tile);
     });
+    // Question-bank-only subjects (no episodes yet, so absent from the manifest) still get
+    // a tile — it opens the paper generator scoped to that subject.
+    const manifestIds = new Set((fullManifest ? fullManifest.subjects : []).map((s) => s.id));
+    GENERATOR_BANKS.filter(([bid]) => !manifestIds.has(bid)).forEach(([bid, bname]) => {
+      const tile = document.createElement("button");
+      tile.className = "subject-tile";
+      tile.innerHTML = `
+        <span class="subject-name">${bname}</span>
+        <span class="subject-meta">Past-paper question bank · generate practice papers</span>`;
+      tile.addEventListener("click", () => { window.location.href = `generator.html?subject=${encodeURIComponent(bid)}`; });
+      grid.appendChild(tile);
+    });
     viewSubjects.appendChild(grid);
   }
+
+  // Subjects with a baked past-paper question bank (content/<id>/questions.json).
+  const GENERATOR_BANKS = [
+    ["maths-advanced", "Mathematics Advanced"],
+    ["physics", "Physics"],
+    ["dt", "Design & Technology"],
+  ];
 
   // The per-subject hub: one level below the subject grid. Splits a subject into its
   // three modes — Podcasts, Quizzes, Past Papers — each opening its own surface.
@@ -1744,6 +1763,22 @@
       makeTile(paperIcon, "Past Papers",
         `${paperCount} paper${paperCount === 1 ? "" : "s"} · generate & mark`,
         `#/s/${id}/papers`);
+    }
+    // Paper generator entry — subjects with a question bank open the generator scoped
+    // to this subject (full navigation; the generator is its own page).
+    if (GENERATOR_BANKS.some(([bid]) => bid === s.id)) {
+      const genIcon = `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v4H4z"/><path d="M4 12h10"/><path d="M4 16h10"/><path d="M4 20h7"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M18.5 16v3l1.5 1"/></svg>`;
+      const tile = document.createElement("button");
+      tile.className = "subject-tile hub-tile";
+      tile.innerHTML = `
+        <span class="hub-tile-icon">${genIcon}</span>
+        <span class="hub-tile-text">
+          <span class="subject-name">Paper Generator</span>
+          <span class="subject-meta">Build a custom practice paper from real questions</span>
+        </span>
+        <span class="hub-tile-chev">&#8250;</span>`;
+      tile.addEventListener("click", () => { window.location.href = `generator.html?subject=${encodeURIComponent(s.id)}`; });
+      grid.appendChild(tile);
     }
 
     viewSubjectHub.appendChild(grid);
