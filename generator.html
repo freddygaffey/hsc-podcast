@@ -182,10 +182,6 @@
     <div class="range">
       <input id="f-y0" type="number" placeholder="from"> – <input id="f-y1" type="number" placeholder="to">
     </div>
-    <h3>Marks</h3>
-    <div class="range">
-      <input id="f-m0" type="number" min="1" placeholder="min"> – <input id="f-m1" type="number" placeholder="max">
-    </div>
     <h3>Extras</h3>
     <div class="facet" id="f-extra"></div>
     <button class="railreset" id="reset">Clear all filters</button>
@@ -458,17 +454,17 @@ function buildRail(){
   $("#f-y0").placeholder=yrs.length?Math.min(...yrs):"from";
   $("#f-y1").placeholder=yrs.length?Math.max(...yrs):"to";
 }
-["f-y0","f-y1","f-m0","f-m1"].forEach(id=>{
+["f-y0","f-y1"].forEach(id=>{
   document.addEventListener("input",e=>{
     if(e.target.id!==id)return;
-    F[{ "f-y0":"y0","f-y1":"y1","f-m0":"m0","f-m1":"m1"}[id]]=e.target.value?+e.target.value:null;
+    F[{ "f-y0":"y0","f-y1":"y1"}[id]]=e.target.value?+e.target.value:null;
     apply();
   });
 });
 function resetFilters(re=true){
   F.subs.clear();F.groups.clear();F.sources.clear();F.types.clear();
   F.y0=F.y1=F.m0=F.m1=null;F.ans=false;F.era=true;
-  ["f-y0","f-y1","f-m0","f-m1"].forEach(id=>$("#"+id).value="");
+  ["f-y0","f-y1"].forEach(id=>$("#"+id).value="");
   if(re){buildRail();apply();}
 }
 $("#reset").onclick=()=>resetFilters();
