@@ -9,6 +9,10 @@ module, topic, syllabusRefs, marks, …). This merges them all, deduping by cont
 
 which is what the app loads. Run after a bake pass.
 
+Bucket layout is readable per-paper folders under a papers/ prefix (revised D1, see
+docs/past-paper-generator.md): <subject>/papers/<paperSlug>/{paper.pdf,q*.pdf,a*.pdf}.
+The client builds URLs as <assetBaseUrl>/<subject>/papers/<paperSlug>/<assetKey>.
+
     python3 tools/build_manifest.py            # all subjects found in _work
 """
 import json
@@ -30,13 +34,18 @@ def main():
             continue
         subj = data.get("subject") or "misc"
         for r in data.get("questions", []):
-            key = f"{r.get('paperSlug')}/{r['assetKey']}"   # per-paper file (idempotent re-runs)
-            by_subject[subj][key] = r
+            qid = r.get("id")
+            if not qid:
+                continue
+            prev = by_subject[subj].get(qid)
+            # recycled question seen again: prefer the copy that has a baked answer
+            if prev is None or (not prev.get("answerKey") and r.get("answerKey")):
+                by_subject[subj][qid] = r
         papers += 1
 
     # only the fields the generator UI needs at runtime — keeps the manifest small.
     KEEP = ("paperSlug", "assetKey", "answerKey", "questionNumber", "partLabel",
-            "marks", "type", "topic", "module", "syllabusRefs")
+            "marks", "type", "topic", "module", "syllabusRefs", "unit", "parts")
 
     for subj, recs in sorted(by_subject.items()):
         out_dir = CONTENT / subj

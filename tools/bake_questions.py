@@ -5,7 +5,7 @@ Deterministic — no LLM. Reads papers/_work/<paperId>/{info.json,boundaries.jso
 question PART's region(s) from the ORIGINAL PDF. Files are named by QUESTION NUMBER and grouped
 by PAPER, mirroring the UI (subject -> paper -> questions):
 
-  R2 / bucket:  <subject>/<paperSlug>/paper.pdf         (full original exam)
+  R2 / bucket:  <subject>/papers/<paperSlug>/paper.pdf  (full original exam)
                 <subject>/<paperSlug>/q<num><part>.pdf  (question, e.g. q17b.pdf, q01.pdf)
                 <subject>/<paperSlug>/a<num><part>.pdf  (its answer, where a solution exists)
   local stage:  papers/_work/<paperId>/baked/
@@ -130,6 +130,25 @@ def main():
         old.unlink()
     src = fitz.open(ROOT / "papers" / info["path"])
 
+    # Merge continuation entries ("Question 11 (continued)" pages are detected as a second
+    # question with the same number) into their parent so the whole-question bake is complete.
+    merged, by_num = [], {}
+    for q in bounds["questions"]:
+        num = str(q.get("number")) if q.get("number") is not None else None
+        prev = by_num.get(num)
+        if prev is not None and num is not None:
+            prev["stimulus"] = (prev.get("stimulus") or []) + (q.get("stimulus") or [])
+            if prev.get("parts") or q.get("parts"):
+                prev["parts"] = (prev.get("parts") or []) + (q.get("parts") or [])
+            else:
+                prev["regions"] = (prev.get("regions") or []) + (q.get("regions") or [])
+            prev["marks"] = prev.get("marks") or q.get("marks")
+        else:
+            merged.append(q)
+            if num is not None:
+                by_num[num] = q
+    bounds = {**bounds, "questions": merged}
+
     records = []
     used = set()
     for qi, q in enumerate(bounds["questions"]):
@@ -137,6 +156,37 @@ def main():
         parts = q.get("parts") or [{"label": None, "marks": q.get("marks"),
                                     "type": q.get("type"), "regions": q.get("regions", []),
                                     "markingRegions": q.get("markingRegions", [])}]
+        # Whole-question bake (the generator's display unit — parts are metadata only):
+        # stem/stimulus once, then every part's regions in order. Partless questions fall
+        # through to the loop below, which bakes the same thing under the same key.
+        if q.get("parts"):
+            wregions = stim + [r for part in parts for r in part.get("regions", [])]
+            wmarking = [r for part in parts for r in part.get("markingRegions") or []]
+            data = bake_region_pdf(src, info, wregions)
+            qid = hashlib.sha256(data).hexdigest()[:12]
+            name = numkey(q.get("number") or (qi + 1), None)
+            base, k = name, 1
+            while name in used:            # e.g. two number-less parted questions
+                name = f"{base}-{k}"; k += 1
+            used.add(name)
+            (baked / f"q{name}.pdf").write_bytes(data)
+            answer_key = None
+            if wmarking:
+                (baked / f"a{name}.pdf").write_bytes(bake_region_pdf(src, info, wmarking))
+                answer_key = f"a{name}.pdf"
+            pmarks = [p.get("marks") for p in parts]
+            records.append({
+                "id": qid, "subject": subj, "paperSlug": paper_slug,
+                "assetKey": f"q{name}.pdf", "answerKey": answer_key,
+                "paperId": info["paperId"], "questionNumber": q.get("number"),
+                "partLabel": None,
+                "marks": q.get("marks") or (sum(m for m in pmarks if m) or None),
+                "questionMarks": q.get("marks"), "type": q.get("type"),
+                "topic": q.get("topic"), "module": q.get("module"),
+                "syllabusRefs": q.get("syllabusRefs") or [],
+                "hasStimulus": bool(stim), "bytes": len(data),
+                "unit": "question", "parts": [p.get("label") for p in parts if p.get("label")],
+            })
         for part in parts:
             data = bake_region_pdf(src, info, stim + part["regions"])   # stem rides with part
             qid = hashlib.sha256(data).hexdigest()[:12]                 # content id (dedupe)
@@ -164,6 +214,7 @@ def main():
                 "topic": q.get("topic"), "module": q.get("module"),
                 "syllabusRefs": q.get("syllabusRefs") or [],
                 "hasStimulus": bool(stim), "bytes": len(data),
+                "unit": "question" if part.get("label") is None else "part",
             })
 
     (wd / "questions.json").write_text(json.dumps(
@@ -177,12 +228,12 @@ def main():
     if bucket:
         # full original paper
         if src_rel and (PAPERS / src_rel).exists():
-            r2_put(bucket, f"{subj}/{paper_slug}/paper.pdf", PAPERS / src_rel)
+            r2_put(bucket, f"{subj}/papers/{paper_slug}/paper.pdf", PAPERS / src_rel)
         for r in records:
-            r2_put(bucket, f"{subj}/{paper_slug}/{r['assetKey']}", baked / r["assetKey"])
+            r2_put(bucket, f"{subj}/papers/{paper_slug}/{r['assetKey']}", baked / r["assetKey"])
             if r["answerKey"]:
-                r2_put(bucket, f"{subj}/{paper_slug}/{r['answerKey']}", baked / r["answerKey"])
-        print(f"  uploaded to {bucket}/{subj}/{paper_slug}/")
+                r2_put(bucket, f"{subj}/papers/{paper_slug}/{r['answerKey']}", baked / r["answerKey"])
+        print(f"  uploaded to {bucket}/{subj}/papers/{paper_slug}/")
 
 
 if __name__ == "__main__":
