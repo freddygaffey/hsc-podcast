@@ -5,262 +5,570 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Paper Generator — HSC Study</title>
 <style>
+  /* ── Same design system as the main app (style.css tokens + podcast-theme key). ── */
   :root{
-    --ground:#f5f7fa; --panel:#ffffff; --ink:#1a1d24; --muted:#697386;
-    --line:#e4e8ef; --accent:#2f5bea; --accent-soft:#eaf0ff; --good:#1f9d63;
-    --radius:12px; --pad:16px;
+    --bg:#121212; --bg-elevated:#1c1c1e; --bg-card:#1e1e20;
+    --text:#f2f2f2; --text-dim:#9a9a9c;
+    --accent:#3b82f6; --accent-soft:rgba(59,130,246,.15); --border:#2c2c2e;
+    --good:#16a34a; --good-soft:#16a34a15; --warn:#d97706;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  :root[data-theme="light"]{
+    --bg:#ffffff; --bg-elevated:#f5f5f7; --bg-card:#f0f0f2;
+    --text:#1a1a1a; --text-dim:#6e6e73;
+    --accent:#2563eb; --accent-soft:rgba(37,99,235,.1); --border:#d8d8dc;
   }
   *{box-sizing:border-box}
-  body{margin:0;font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-       color:var(--ink);background:var(--ground);-webkit-font-smoothing:antialiased}
-  a{color:var(--accent)}
-  .wrap{max-width:1180px;margin:0 auto;padding:20px}
-  header.top{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px}
-  h1{font-size:22px;margin:0;letter-spacing:-.01em}
-  .sub{color:var(--muted);font-size:13px}
-  select,input,button{font:inherit;color:inherit}
-  .subjectpick{margin-left:auto;display:flex;gap:8px;align-items:center}
-  select.subject{padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
-  /* filter bar */
-  .filters{display:flex;gap:10px;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);
-           border-radius:var(--radius);padding:12px;margin:14px 0}
-  .filters label{display:flex;flex-direction:column;gap:4px;font-size:11px;text-transform:uppercase;
-                 letter-spacing:.05em;color:var(--muted)}
-  .filters select,.filters input{padding:8px 10px;border:1px solid var(--line);border-radius:8px;
-                 background:#fff;min-width:150px;font-size:14px;text-transform:none;letter-spacing:0;color:var(--ink)}
-  .grid{display:grid;grid-template-columns:1fr 340px;gap:18px;align-items:start}
-  @media(max-width:820px){.grid{grid-template-columns:1fr}}
-  /* question list */
-  .count{color:var(--muted);font-size:13px;margin:2px 2px 10px}
-  .qlist{display:flex;flex-direction:column;gap:8px;max-height:70vh;overflow:auto;padding-right:4px}
-  .q{display:flex;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);
-     border-radius:10px;padding:10px 12px}
-  .q .no{font-variant-numeric:tabular-nums;font-weight:600;min-width:44px;color:var(--accent)}
-  .q .meta{flex:1;min-width:0}
-  .q .top{font-weight:550}
-  .q .src{color:var(--muted);font-size:12.5px;margin-top:1px}
-  .q .marks{font-variant-numeric:tabular-nums;font-size:13px;color:var(--muted);white-space:nowrap}
-  .chip{display:inline-block;font-size:11px;padding:2px 7px;border-radius:20px;background:var(--accent-soft);
-        color:var(--accent);margin-right:5px}
-  .chip.ans{background:#e6f6ee;color:var(--good)}
-  .add{border:1px solid var(--accent);color:var(--accent);background:#fff;border-radius:8px;
-       padding:6px 12px;cursor:pointer;font-weight:600}
-  .add:hover{background:var(--accent-soft)}
-  .q.picked{border-color:var(--accent);background:var(--accent-soft)}
-  .q.picked .add{background:var(--accent);color:#fff}
-  /* tray */
-  .tray{position:sticky;top:20px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:var(--pad)}
-  .tray h2{font-size:15px;margin:0 0 4px}
-  .stat{display:flex;justify-content:space-between;font-variant-numeric:tabular-nums;padding:4px 0;font-size:14px}
-  .stat b{font-weight:650}
-  .picked-list{max-height:260px;overflow:auto;margin:10px 0;display:flex;flex-direction:column;gap:5px}
-  .pl{display:flex;gap:8px;font-size:13px;align-items:center}
-  .pl .x{margin-left:auto;color:var(--muted);cursor:pointer;border:none;background:none;font-size:15px}
-  .divider{height:1px;background:var(--line);margin:12px 0}
-  .toggle{display:flex;align-items:center;gap:8px;font-size:13.5px;margin:8px 0;color:var(--ink)}
-  .gen{width:100%;padding:12px;background:var(--accent);color:#fff;border:none;border-radius:10px;
-       font-size:15px;font-weight:650;cursor:pointer}
-  .gen:disabled{opacity:.5;cursor:default}
-  .gen:hover:not(:disabled){background:#254bd0}
-  .quick{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
-  .quick button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px;cursor:pointer;font-size:13px}
-  .status{font-size:13px;color:var(--muted);margin-top:8px;min-height:18px}
-  .empty{color:var(--muted);padding:30px;text-align:center}
+  html,body{height:100%}
+  body{margin:0;font:14px/1.5 var(--font);color:var(--text);background:var(--bg);
+       -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+  button,select,input{font-family:inherit;color:inherit}
+
+  /* header — matches .site-header */
+  header.mast{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+    padding:12px 20px;border-bottom:1px solid var(--border);background:var(--bg)}
+  header.mast .back{color:var(--accent);text-decoration:none;font-weight:600;font-size:14px}
+  header.mast h1{font-size:18px;font-weight:700;margin:0}
+  .mast .sub{color:var(--text-dim);font-size:12.5px}
+  .mast .right{margin-left:auto;display:flex;gap:10px;align-items:center}
+  select.subject{padding:7px 12px;border:1px solid var(--border);border-radius:10px;
+    background:var(--bg-card);font-size:14px}
+  .theme-btn{border:0;background:none;cursor:pointer;font-size:16px;color:var(--text-dim);padding:4px 6px;border-radius:8px}
+  .theme-btn:hover{background:var(--accent-soft)}
+
+  /* 3-panel workspace */
+  .work{display:grid;grid-template-columns:250px minmax(0,1fr) 300px;gap:0;height:calc(100vh - 57px)}
+  @media(max-width:960px){.work{grid-template-columns:1fr;height:auto}
+    .rail,.tray{position:static;height:auto;max-height:none}}
+
+  /* ── left rail ── */
+  .rail{border-right:1px solid var(--border);background:var(--bg);overflow-y:auto;padding:14px 14px 40px}
+  .rail h3{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;
+    color:var(--text-dim);margin:18px 0 8px}
+  .rail h3:first-child{margin-top:2px}
+  .tree .mod{margin:2px 0}
+  .tree .mod>button{display:flex;width:100%;gap:6px;align-items:center;text-align:left;
+    border:0;background:none;padding:6px 6px;cursor:pointer;border-radius:8px;font-weight:600;font-size:13.5px}
+  .tree .mod>button:hover{background:var(--bg-elevated)}
+  .tree .arr{width:12px;color:var(--text-dim);font-size:10px;transition:transform .15s;flex:none}
+  .tree .mod.open .arr{transform:rotate(90deg)}
+  .tree .cnt{margin-left:auto;font-size:11.5px;color:var(--text-dim);font-variant-numeric:tabular-nums}
+  .tree .topics{display:none;margin:1px 0 5px 17px;border-left:1px solid var(--border);padding-left:6px}
+  .tree .mod.open .topics{display:block}
+  .tree label.t{display:flex;gap:7px;align-items:center;padding:4px 6px;border-radius:8px;cursor:pointer;font-size:13px}
+  .tree label.t:hover{background:var(--bg-elevated)}
+  .tree label.t input{accent-color:var(--accent)}
+  .tree label.t .cnt{font-size:11px}
+  .tree label.t.on{color:var(--accent);font-weight:600}
+
+  /* facet pills — same as app .filter-chip */
+  .facet{display:flex;flex-wrap:wrap;gap:6px}
+  .facet button{padding:6px 12px;border-radius:999px;cursor:pointer;font-size:13px;font-weight:600;
+    border:1.5px solid var(--border);background:var(--bg-card);color:var(--text)}
+  .facet button:hover{border-color:var(--accent)}
+  .facet button.on{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}
+  .range{display:flex;gap:6px;align-items:center;font-size:12.5px;color:var(--text-dim)}
+  .range input{width:60px;padding:5px 7px;border:1px solid var(--border);border-radius:8px;
+    background:var(--bg-card);font-size:13px;font-variant-numeric:tabular-nums}
+  .railreset{margin-top:16px;border:0;background:none;color:var(--accent);cursor:pointer;
+    font-size:13px;font-weight:600;padding:0}
+  .railreset:hover{text-decoration:underline}
+
+  /* ── middle list ── */
+  .ledger{overflow-y:auto;padding:14px 20px 80px;background:var(--bg)}
+  .ledgerbar{display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap}
+  .ledgerbar .n{font-size:13px;color:var(--text-dim);font-variant-numeric:tabular-nums}
+  .ledgerbar .n b{color:var(--text)}
+  .ledgerbar select{padding:6px 9px;border:1px solid var(--border);border-radius:10px;background:var(--bg-card);font-size:13px}
+  .ledgerbar .grow{flex:1}
+  .ledgerbar .txt{border:0;background:none;color:var(--accent);cursor:pointer;font-size:13px;font-weight:600;padding:2px}
+  .ledgerbar .txt:hover{text-decoration:underline}
+
+  .row{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;margin-bottom:8px;
+    transition:border-color .12s}
+  .row:hover{border-color:var(--accent)}
+  .row.in{border-color:var(--accent);background:var(--accent-soft)}
+  .rowhead{display:flex;gap:10px;align-items:center;padding:10px 12px;cursor:pointer}
+  .rowhead input[type=checkbox]{width:16px;height:16px;accent-color:var(--accent);flex:none;cursor:pointer}
+  .rowhead .arr{color:var(--text-dim);font-size:10px;width:12px;flex:none;transition:transform .15s}
+  .row.open .rowhead .arr{transform:rotate(90deg)}
+  .prov{font-size:12.5px;color:var(--text-dim);white-space:nowrap;flex:none;font-variant-numeric:tabular-nums}
+  .prov b{color:var(--text);font-weight:600}
+  .rowtopic{font-size:13.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;flex:1}
+  .chips{display:flex;gap:5px;flex:none}
+  .chip{font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;white-space:nowrap;
+    border:1px solid var(--border);color:var(--text-dim);background:var(--bg-elevated)}
+  .chip.m{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+  .chip.a{background:var(--good-soft);color:var(--good);border-color:transparent}
+  .rowbody{display:none;border-top:1px solid var(--border);padding:10px 12px 12px}
+  .row.open .rowbody{display:block}
+  .rowbody .crop{width:100%;height:min(62vh,540px);border:1px solid var(--border);border-radius:10px;background:#fff}
+  .rowbody .solrow{margin-top:8px}
+  .rowbody .solbtn{border:1.5px solid var(--border);background:var(--bg-card);border-radius:999px;
+    padding:6px 14px;cursor:pointer;font-size:13px;font-weight:600}
+  .rowbody .solbtn:hover{border-color:var(--accent)}
+  .more{display:block;margin:14px auto;border:1.5px solid var(--border);background:var(--bg-card);
+    border-radius:999px;padding:9px 26px;cursor:pointer;font-size:13px;font-weight:600}
+  .more:hover{border-color:var(--accent)}
+  .empty{color:var(--text-dim);text-align:center;padding:60px 20px;font-size:14px}
+
+  /* ── right tray ── */
+  .tray{border-left:1px solid var(--border);background:var(--bg);overflow-y:auto;padding:14px 14px 40px}
+  .tray h2{font-size:16px;font-weight:700;margin:2px 0 2px}
+  .tray .sub{font-size:12px;color:var(--text-dim);margin-bottom:10px}
+  .totals{display:flex;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;
+    overflow:hidden;margin-bottom:10px}
+  .totals div{flex:1;text-align:center;padding:9px 2px;border-right:1px solid var(--border)}
+  .totals div:last-child{border-right:0}
+  .totals b{display:block;font-size:17px;font-variant-numeric:tabular-nums}
+  .totals span{font-size:10.5px;color:var(--text-dim);text-transform:uppercase;letter-spacing:.05em}
+  .autofill{display:flex;gap:6px;margin-bottom:12px}
+  .autofill input{width:64px;padding:7px;border:1px solid var(--border);border-radius:10px;
+    background:var(--bg-card);text-align:center;font-variant-numeric:tabular-nums}
+  .autofill button{flex:1;border:1.5px solid var(--border);background:var(--bg-card);border-radius:10px;
+    padding:7px 8px;cursor:pointer;font-size:13px;font-weight:600}
+  .autofill button:hover{border-color:var(--accent);color:var(--accent)}
+  .docket{margin:0 0 12px;padding:0;list-style:none;max-height:34vh;overflow-y:auto}
+  .docket li{display:flex;gap:7px;align-items:center;padding:6px 4px;border-bottom:1px solid var(--border);font-size:12.5px}
+  .docket .dn{font-size:11px;color:var(--text-dim);width:18px;flex:none;text-align:right;font-variant-numeric:tabular-nums}
+  .docket .dt2{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .docket .dm{font-size:11px;color:var(--text-dim);flex:none;font-variant-numeric:tabular-nums}
+  .docket button{border:0;background:none;color:var(--text-dim);cursor:pointer;padding:1px 3px;font-size:12px}
+  .docket button:hover{color:var(--accent)}
+  .dockempty{color:var(--text-dim);font-size:12.5px;text-align:center;padding:18px 4px}
+  .mix{font-size:11.5px;color:var(--text-dim);margin-bottom:12px;line-height:1.7;font-variant-numeric:tabular-nums}
+  .opt{display:flex;align-items:center;gap:8px;font-size:13px;margin:7px 0}
+  .opt select{margin-left:auto;padding:6px 8px;border:1px solid var(--border);border-radius:10px;background:var(--bg-card);font-size:12.5px}
+  .opt input[type=checkbox]{accent-color:var(--accent)}
+  .gen{width:100%;margin-top:10px;padding:12px;background:var(--accent);color:#fff;border:0;border-radius:12px;
+    font-size:14.5px;font-weight:700;cursor:pointer}
+  .gen:hover:not(:disabled){filter:brightness(1.1)}
+  .gen:disabled{opacity:.45;cursor:default}
+  .status{font-size:12.5px;color:var(--text-dim);margin-top:8px;min-height:18px}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <h1>Paper Generator</h1>
-    <span class="sub" id="subtitle">Build a custom practice paper from real HSC past-paper questions.</span>
-    <div class="subjectpick">
-      <label class="sub" for="subject">Subject</label>
-      <select id="subject" class="subject"></select>
+
+<header class="mast">
+  <a class="back" href="index.html">← HSC Study</a>
+  <h1>Paper Generator</h1>
+  <span class="sub" id="subtitle">Build a practice paper from real HSC questions</span>
+  <div class="right">
+    <select id="subject" class="subject"></select>
+    <button class="theme-btn" id="btn-theme" title="Toggle theme">◐</button>
+  </div>
+</header>
+
+<div class="work">
+
+  <nav class="rail" id="rail">
+    <div class="facet" id="f-era" style="margin-bottom:4px"></div>
+    <h3>Syllabus</h3>
+    <div class="tree" id="tree"></div>
+    <h3>Source</h3>
+    <div class="facet" id="f-source"></div>
+    <h3>Years</h3>
+    <div class="range">
+      <input id="f-y0" type="number" placeholder="from"> – <input id="f-y1" type="number" placeholder="to">
     </div>
-  </header>
+    <h3>Marks</h3>
+    <div class="range">
+      <input id="f-m0" type="number" min="1" placeholder="min"> – <input id="f-m1" type="number" placeholder="max">
+    </div>
+    <h3>Extras</h3>
+    <div class="facet" id="f-extra"></div>
+    <button class="railreset" id="reset">Clear all filters</button>
+  </nav>
 
-  <div class="filters">
-    <label>Module<select id="f-module"><option value="">Any module</option></select></label>
-    <label>Topic<input id="f-topic" type="search" placeholder="Any topic — type to filter"></label>
-    <label>Question type<select id="f-type">
-      <option value="">Any type</option><option value="mc">Multiple choice</option>
-      <option value="short">Short answer</option><option value="extended">Extended</option>
-      <option value="calculation">Calculation</option></select></label>
-    <label>Answers<select id="f-ans"><option value="">Any</option><option value="1">With worked answer</option></select></label>
-  </div>
+  <main class="ledger">
+    <div class="ledgerbar">
+      <span class="n"><b id="n-match">0</b> questions match</span>
+      <select id="sort">
+        <option value="new">Newest first</option>
+        <option value="old">Oldest first</option>
+        <option value="marks">Most marks</option>
+        <option value="topic">By topic</option>
+      </select>
+      <span class="grow"></span>
+      <button class="txt" id="xall">Expand all</button>
+      <button class="txt" id="xnone">Collapse</button>
+      <button class="txt" id="addshown">＋ Add all shown</button>
+    </div>
+    <div id="list"></div>
+  </main>
 
-  <div class="grid">
-    <section>
-      <div class="count" id="count">Loading…</div>
-      <div class="qlist" id="qlist"></div>
-    </section>
+  <aside class="tray">
+    <h2>Your paper</h2>
+    <div class="sub" id="tray-sub">Nothing selected yet</div>
+    <div class="totals">
+      <div><b id="t-q">0</b><span>questions</span></div>
+      <div><b id="t-m">0</b><span>marks</span></div>
+      <div><b id="t-t">0</b><span>≈ min</span></div>
+    </div>
+    <div class="autofill">
+      <input id="af-marks" type="number" value="50" min="5">
+      <button id="af-go">Auto-fill to marks</button>
+    </div>
+    <ol class="docket" id="docket"></ol>
+    <div class="mix" id="mix"></div>
+    <div class="opt">Style
+      <select id="preset">
+        <option value="review-sheet">Review sheet (compact)</option>
+        <option value="practice-exam">Practice exam</option>
+      </select></div>
+    <div class="opt"><input type="checkbox" id="ws"> Writing space</div>
+    <div class="opt">Answers
+      <select id="ans-mode">
+        <option value="">Preset default</option>
+        <option value="none">None</option>
+        <option value="appended">Same PDF</option>
+        <option value="separate">Separate PDF</option>
+      </select></div>
+    <button class="gen" id="gen" disabled>Generate PDF</button>
+    <div class="status" id="status"></div>
+  </aside>
 
-    <aside class="tray">
-      <h2>Your paper</h2>
-      <div class="quick">
-        <button data-add="5">+5 shown</button>
-        <button data-add="10">+10 shown</button>
-        <button id="clear">Clear</button>
-      </div>
-      <div class="stat"><span>Questions</span><b id="n-q">0</b></div>
-      <div class="stat"><span>Total marks</span><b id="n-m">0</b></div>
-      <div class="stat"><span>Suggested time</span><b id="n-t">0 min</b></div>
-      <div class="picked-list" id="picked"></div>
-      <div class="divider"></div>
-      <label class="toggle">Style
-        <select id="preset" style="margin-left:auto;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:#fff">
-          <option value="review-sheet">Review sheet (compact)</option>
-          <option value="practice-exam">Practice exam</option>
-        </select></label>
-      <label class="toggle"><input type="checkbox" id="ws"> Writing space</label>
-      <label class="toggle">Answers
-        <select id="ans-mode" style="margin-left:auto;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:#fff">
-          <option value="">Preset default</option>
-          <option value="none">None</option>
-          <option value="appended">Same PDF</option>
-          <option value="separate">Separate PDF</option>
-        </select></label>
-      <button class="gen" id="gen" disabled>Generate paper (PDF)</button>
-      <div class="status" id="status"></div>
-    </aside>
-  </div>
 </div>
 
 <script src="vendor/pdf-lib.min.js"></script>
 <script src="paper-export.js"></script>
 <script>
-const SUBJECTS = [
+"use strict";
+const SUBJECTS=[
   ["maths-advanced","Mathematics Advanced"],["maths-extension-1","Mathematics Extension 1"],
   ["maths-extension-2","Mathematics Extension 2"],["maths-standard-2","Mathematics Standard 2"],
   ["maths-accelerated","Mathematics (Accelerated)"],["physics","Physics"],
+  ["dt","Design and Technology"],
 ];
 const $=s=>document.querySelector(s);
-let DATA=[], BASE="", picked=new Map();
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const PAGE=80;
 
-function qs(){return new URLSearchParams(location.search);}
+let SUBJECT="", BASE="", DATA=[], FILTERED=[], shown=PAGE;
+let picked=new Map();           // key -> record (ordered = paper order)
+const F={topics:new Set(), sources:new Set(), y0:null,y1:null, m0:null,m1:null,
+         ans:false, types:new Set(), era:true};   // era = current-syllabus-only
 
+// First HSC exam year of the CURRENT NESA syllabus, per subject. Questions from earlier
+// years may cover removed content, so "current syllabus only" defaults ON (spec §5.1).
+const SYLLABUS_FROM={
+  "maths-advanced":2020,"maths-extension-1":2020,"maths-extension-2":2020,
+  "maths-accelerated":2020,"maths-standard-2":2019,"physics":2019,"dt":null,
+};
+const key=q=>q.paperSlug+"/"+q.assetKey;
+const yearOf=q=>{const m=/^(\d{4})/.exec(q.paperSlug||"");return m?+m[1]:null;};
+const sourceOf=q=>/-hsc\b/.test(q.paperSlug)?"HSC":/-trial\b/.test(q.paperSlug)?"Trial":/-yearly\b/.test(q.paperSlug)?"Yearly":"Other";
+const minsOf=q=>q.marks?Math.round(q.marks*1.5*10)/10:null;
+const urlOf=(q,ans)=>`${BASE}/${SUBJECT}/papers/${q.paperSlug}/${ans?q.answerKey:q.assetKey}`;
+const provOf=q=>{
+  const y=yearOf(q), src=sourceOf(q);
+  const school=(q.paperSlug||"").replace(/^\d{4}-/,"").replace(/-(hsc|trial|yearly).*$/,"").replace(/-/g," ");
+  const who=src==="HSC"?"HSC":school.replace(/\b\w/g,c=>c.toUpperCase());
+  return `${y??""} ${who}`.trim()+(q.questionNumber?` · Q${q.questionNumber}${q.partLabel||""}`:"");
+};
+
+/* ── data ── */
 async function loadSubject(id){
-  $("#count").textContent="Loading…"; DATA=[]; render();
+  SUBJECT=id; picked=new Map(); DATA=[]; FILTERED=[];
+  document.title=`Paper Generator — ${SUBJECTS.find(s=>s[0]===id)?.[1]||id}`;
+  $("#list").innerHTML='<div class="empty">Opening the filing cabinet…</div>';
   const [subj,man]=await Promise.all([
     fetch(`content/${id}/subject.json`).then(r=>r.json()).catch(()=>({})),
     fetch(`content/${id}/questions.json`).then(r=>r.json()),
   ]);
   BASE=subj.assetBaseUrl||"";
-  // whole questions only — letter-part records stay in the manifest as metadata
   DATA=man.questions.filter(q=>q.assetKey&&q.unit!=="part");
-  // module filter options
-  const mods=[...new Set(DATA.map(q=>q.module).filter(Boolean))].sort();
-  $("#f-module").innerHTML='<option value="">Any module</option>'+mods.map(m=>`<option>${esc(m)}</option>`).join("");
-  render();
-}
-function esc(s){return (s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
-
-function filtered(){
-  const m=$("#f-module").value, t=$("#f-topic").value.toLowerCase(),
-        ty=$("#f-type").value, an=$("#f-ans").value;
-  return DATA.filter(q=>
-    (!m||q.module===m)&&(!t||(q.topic||"").toLowerCase().includes(t))&&
-    (!ty||q.type===ty)&&(!an||q.answerKey));
-}
-function key(q){return q.paperSlug+"/"+q.assetKey;}
-
-function render(){
-  const list=filtered();
-  $("#count").textContent=`${list.length} questions match`;
-  const el=$("#qlist");
-  if(!list.length){el.innerHTML='<div class="empty">No questions match these filters.</div>';return;}
-  el.innerHTML=list.slice(0,300).map(q=>{
-    const k=key(q), on=picked.has(k);
-    const src=(q.paperSlug||"").replace(/-/g," ");
-    return `<div class="q ${on?'picked':''}" data-k="${k}">
-      <div class="no">Q${esc(String(q.questionNumber||""))}${esc(q.partLabel||"")}</div>
-      <div class="meta"><div class="top">${esc(q.topic||q.module||"Question")}</div>
-        <div class="src"><span class="chip">${esc((q.module||"").split(" ")[0]||"")}</span>
-        ${q.answerKey?'<span class="chip ans">answer</span>':''}${esc(src)}</div></div>
-      <div class="marks">${q.marks?q.marks+"m":""}</div>
-      <button class="add">${on?'Added':'Add'}</button></div>`;
-  }).join("");
+  resetFilters(false);
+  restoreBasket();
+  buildRail();
+  apply();
 }
 
-function refreshTray(){
+/* ── left rail ── */
+function buildRail(){
+  // syllabus-era toggle (hidden for subjects whose syllabus never changed in-range)
+  const cut=SYLLABUS_FROM[SUBJECT];
+  $("#f-era").innerHTML=cut
+    ?`<button id="era-btn" class="${F.era?"on":""}" title="The current syllabus was first examined in ${cut}">current syllabus only (${cut}+)</button>`:"";
+  const eb=$("#era-btn");
+  if(eb)eb.onclick=()=>{F.era=!F.era;eb.classList.toggle("on",F.era);apply();};
+  // module -> topic tree with counts
+  const mods=new Map();
+  for(const q of DATA){
+    const m=q.module||"Unclassified", t=q.topic||"—";
+    if(!mods.has(m))mods.set(m,new Map());
+    mods.get(m).set(t,(mods.get(m).get(t)||0)+1);
+  }
+  $("#tree").innerHTML=[...mods.entries()].sort((a,b)=>a[0].localeCompare(b[0])).map(([m,ts])=>{
+    const n=[...ts.values()].reduce((a,b)=>a+b,0);
+    const topics=[...ts.entries()].sort((a,b)=>a[0].localeCompare(b[0])).map(([t,c])=>
+      `<label class="t" data-topic="${esc(t)}"><input type="checkbox"><span>${esc(t)}</span><span class="cnt">${c}</span></label>`).join("");
+    return `<div class="mod"><button><span class="arr">▶</span><span>${esc(m)}</span><span class="cnt">${n}</span></button><div class="topics">${topics}</div></div>`;
+  }).join("")||'<div class="sub">No topic data yet.</div>';
+  $("#tree").querySelectorAll(".mod>button").forEach(b=>b.onclick=()=>b.parentElement.classList.toggle("open"));
+  $("#tree").querySelectorAll("label.t input").forEach(cb=>cb.onchange=e=>{
+    const t=e.target.closest("label").dataset.topic;
+    e.target.checked?F.topics.add(t):F.topics.delete(t);
+    e.target.closest("label").classList.toggle("on",e.target.checked);
+    apply();
+  });
+  // sources
+  const srcs=[...new Set(DATA.map(sourceOf))].sort();
+  $("#f-source").innerHTML=srcs.map(s=>`<button data-s="${esc(s)}">${esc(s)}</button>`).join("");
+  $("#f-source").querySelectorAll("button").forEach(b=>b.onclick=()=>{
+    const s=b.dataset.s; F.sources.has(s)?F.sources.delete(s):F.sources.add(s);
+    b.classList.toggle("on"); apply();
+  });
+  // extras: has-answer + types present in data
+  const types=[...new Set(DATA.map(q=>q.type).filter(Boolean))].sort();
+  $("#f-extra").innerHTML=`<button data-x="ans">has solution</button>`+
+    types.map(t=>`<button data-ty="${esc(t)}">${esc(t)}</button>`).join("");
+  $("#f-extra").querySelectorAll("button").forEach(b=>b.onclick=()=>{
+    if(b.dataset.x==="ans"){F.ans=!F.ans;b.classList.toggle("on",F.ans);}
+    else{const t=b.dataset.ty;F.types.has(t)?F.types.delete(t):F.types.add(t);b.classList.toggle("on");}
+    apply();
+  });
+  const yrs=DATA.map(yearOf).filter(Boolean);
+  $("#f-y0").placeholder=yrs.length?Math.min(...yrs):"from";
+  $("#f-y1").placeholder=yrs.length?Math.max(...yrs):"to";
+}
+["f-y0","f-y1","f-m0","f-m1"].forEach(id=>{
+  document.addEventListener("input",e=>{
+    if(e.target.id!==id)return;
+    F[{ "f-y0":"y0","f-y1":"y1","f-m0":"m0","f-m1":"m1"}[id]]=e.target.value?+e.target.value:null;
+    apply();
+  });
+});
+function resetFilters(re=true){
+  F.topics.clear();F.sources.clear();F.types.clear();
+  F.y0=F.y1=F.m0=F.m1=null;F.ans=false;F.era=true;
+  ["f-y0","f-y1","f-m0","f-m1"].forEach(id=>$("#"+id).value="");
+  if(re){buildRail();apply();}
+}
+$("#reset").onclick=()=>resetFilters();
+
+/* ── filtering + list ── */
+function apply(){
+  const cut=SYLLABUS_FROM[SUBJECT];
+  FILTERED=DATA.filter(q=>{
+    if(F.era&&cut){const y=yearOf(q);if(!y||y<cut)return false;}
+    if(F.topics.size&&!F.topics.has(q.topic||"—"))return false;
+    if(F.sources.size&&!F.sources.has(sourceOf(q)))return false;
+    const y=yearOf(q);
+    if(F.y0&&(!y||y<F.y0))return false;
+    if(F.y1&&(!y||y>F.y1))return false;
+    if(F.m0&&(!q.marks||q.marks<F.m0))return false;
+    if(F.m1&&(!q.marks||q.marks>F.m1))return false;
+    if(F.ans&&!q.answerKey)return false;
+    if(F.types.size&&!F.types.has(q.type))return false;
+    return true;
+  });
+  const s=$("#sort").value;
+  FILTERED.sort((a,b)=>
+    s==="new"?(yearOf(b)||0)-(yearOf(a)||0):
+    s==="old"?(yearOf(a)||0)-(yearOf(b)||0):
+    s==="marks"?(b.marks||0)-(a.marks||0):
+    (a.topic||"").localeCompare(b.topic||""));
+  shown=PAGE;
+  renderList();
+}
+$("#sort").onchange=apply;
+
+function rowHTML(q,i){
+  const k=key(q);
+  const chips=[
+    q.marks?`<span class="chip m">${q.marks} mk</span>`:"",
+    minsOf(q)?`<span class="chip t">${minsOf(q)} min</span>`:"",
+    q.type?`<span class="chip t">${esc(q.type)}</span>`:"",
+    q.answerKey?`<span class="chip a">solution</span>`:"",
+  ].join("");
+  return `<div class="row ${picked.has(k)?"in":""}" data-i="${i}" data-k="${esc(k)}">
+    <div class="rowhead">
+      <input type="checkbox" ${picked.has(k)?"checked":""} title="Add to paper">
+      <span class="arr">▶</span>
+      <span class="prov"><b>${esc(provOf(q))}</b></span>
+      <span class="rowtopic">${esc(q.topic||q.module||"")}</span>
+      <span class="chips">${chips}</span>
+    </div>
+    <div class="rowbody"></div>
+  </div>`;
+}
+function renderList(){
+  $("#n-match").textContent=FILTERED.length;
+  const slice=FILTERED.slice(0,shown);
+  $("#list").innerHTML=slice.map((q,i)=>rowHTML(q,i)).join("")
+    +(FILTERED.length>shown?`<button class="more" id="more">Show ${Math.min(PAGE,FILTERED.length-shown)} more</button>`:"")
+    ||( `<div class="empty">Nothing matches — loosen the filters on the left.</div>`);
+  const more=$("#more"); if(more)more.onclick=()=>{shown+=PAGE;renderList();};
+}
+function openRow(row,q){
+  row.classList.add("open");
+  const body=row.querySelector(".rowbody");
+  if(!body.dataset.loaded){
+    body.dataset.loaded="1";
+    body.innerHTML=`<object class="crop" type="application/pdf" data="${esc(urlOf(q))}#toolbar=0&navpanes=0&view=FitH"></object>`
+      +(q.answerKey?`<div class="solrow"><button class="solbtn">Show solution</button></div>`:"");
+    const sb=body.querySelector(".solbtn");
+    if(sb)sb.onclick=()=>{
+      if(sb.dataset.on){return;}
+      sb.dataset.on="1";sb.textContent="Solution:";
+      sb.insertAdjacentHTML("afterend",
+        `<object class="crop" style="margin-top:8px" type="application/pdf" data="${esc(urlOf(q,true))}#toolbar=0&view=FitH"></object>`);
+    };
+  }
+}
+$("#list").addEventListener("click",e=>{
+  const row=e.target.closest(".row"); if(!row)return;
+  const q=FILTERED[+row.dataset.i];
+  if(e.target.matches("input[type=checkbox]")){toggle(q);return;}
+  if(e.target.closest(".rowbody"))return;
+  row.classList.contains("open")?row.classList.remove("open"):openRow(row,q);
+});
+$("#xall").onclick=()=>{document.querySelectorAll("#list .row").forEach(r=>{
+  if(!r.classList.contains("open"))openRow(r,FILTERED[+r.dataset.i]);});};
+$("#xnone").onclick=()=>document.querySelectorAll("#list .row.open").forEach(r=>r.classList.remove("open"));
+$("#addshown").onclick=()=>{FILTERED.slice(0,shown).forEach(q=>{if(!picked.has(key(q)))picked.set(key(q),q);});
+  syncPicks();};
+
+/* ── basket ── */
+function toggle(q){
+  const k=key(q);
+  picked.has(k)?picked.delete(k):picked.set(k,q);
+  syncPicks();
+}
+function syncPicks(){
+  document.querySelectorAll("#list .row").forEach(r=>{
+    const on=picked.has(r.dataset.k);
+    r.classList.toggle("in",on);
+    r.querySelector("input[type=checkbox]").checked=on;
+  });
+  renderTray(); saveBasket();
+}
+function renderTray(){
   const arr=[...picked.values()];
   const marks=arr.reduce((s,q)=>s+(q.marks||0),0);
-  $("#n-q").textContent=arr.length;
-  $("#n-m").textContent=marks;
-  $("#n-t").textContent=Math.round(marks*1.5)+" min";
+  $("#t-q").textContent=arr.length;
+  $("#t-m").textContent=marks;
+  $("#t-t").textContent=Math.round(marks*1.5);
+  $("#tray-sub").textContent=arr.length?`Exam-equivalent time at 1.5 min/mark`:"Nothing selected yet";
   $("#gen").disabled=!arr.length;
-  $("#picked").innerHTML=arr.map(q=>`<div class="pl" data-k="${key(q)}">
-    <span>Q${esc(String(q.questionNumber||""))}${esc(q.partLabel||"")} · ${esc(q.topic||"")}</span>
-    <button class="x" title="Remove">✕</button></div>`).join("")
-    ||'<div class="empty" style="padding:14px">No questions added yet.</div>';
+  $("#docket").innerHTML=arr.map((q,i)=>`<li data-k="${esc(key(q))}">
+      <span class="dn">${i+1}</span>
+      <span class="dt2">${esc(provOf(q))} — ${esc(q.topic||"")}</span>
+      <span class="dm">${q.marks?q.marks+"mk":""}</span>
+      <button data-mv="-1" title="Move up">↑</button><button data-mv="1" title="Move down">↓</button>
+      <button data-x="1" title="Remove">✕</button>
+    </li>`).join("")||'<div class="dockempty">Tick questions on the left, or auto-fill.</div>';
+  // composition line: topic mix
+  const mix={};
+  arr.forEach(q=>{const t=(q.topic||q.module||"other").split("/")[0].trim();mix[t]=(mix[t]||0)+(q.marks||1);});
+  const tot=Object.values(mix).reduce((a,b)=>a+b,0)||1;
+  $("#mix").innerHTML=Object.entries(mix).sort((a,b)=>b[1]-a[1]).slice(0,5)
+    .map(([t,v])=>`${esc(t)} ${Math.round(v/tot*100)}%`).join(" · ");
+}
+$("#docket").addEventListener("click",e=>{
+  const li=e.target.closest("li"); if(!li)return;
+  const k=li.dataset.k;
+  if(e.target.dataset.x){picked.delete(k);syncPicks();return;}
+  if(e.target.dataset.mv){
+    const keys=[...picked.keys()], i=keys.indexOf(k), j=i+ +e.target.dataset.mv;
+    if(j<0||j>=keys.length)return;
+    [keys[i],keys[j]]=[keys[j],keys[i]];
+    picked=new Map(keys.map(x=>[x,picked.get(x)]));
+    syncPicks();
+  }
+});
+function saveBasket(){try{localStorage.setItem("gen-basket:"+SUBJECT,
+  JSON.stringify([...picked.keys()]));}catch(e){}}
+function restoreBasket(){
+  try{
+    const keys=JSON.parse(localStorage.getItem("gen-basket:"+SUBJECT)||"[]");
+    const byKey=new Map(DATA.map(q=>[key(q),q]));
+    picked=new Map(keys.filter(k=>byKey.has(k)).map(k=>[k,byKey.get(k)]));
+  }catch(e){picked=new Map();}
+  renderTray();
 }
 
-function toggle(k){
-  if(picked.has(k))picked.delete(k);
-  else{const q=DATA.find(x=>key(x)===k); if(q)picked.set(k,q);}
-  render(); refreshTray();
-}
+/* auto-fill: round-robin across topics from the current filter, prefer solutions */
+$("#af-go").onclick=()=>{
+  const target=+$("#af-marks").value||50;
+  let total=[...picked.values()].reduce((s,q)=>s+(q.marks||0),0);
+  const pool=FILTERED.filter(q=>q.marks&&!picked.has(key(q)));
+  const byTopic=new Map();
+  for(const q of pool){const t=q.topic||"—";(byTopic.get(t)||byTopic.set(t,[]).get(t)).push(q);}
+  byTopic.forEach(l=>l.sort((a,b)=>(b.answerKey?1:0)-(a.answerKey?1:0)||Math.random()-.5));
+  const topics=[...byTopic.keys()];
+  let guard=pool.length+1;
+  while(total<target-2&&guard-->0){
+    let added=false;
+    for(const t of topics){
+      const l=byTopic.get(t);
+      while(l.length){
+        const q=l.shift();
+        if(total+(q.marks||0)<=target+3){picked.set(key(q),q);total+=q.marks||0;added=true;break;}
+      }
+      if(total>=target-2)break;
+    }
+    if(!added)break;
+  }
+  syncPicks();
+};
 
-// events
-$("#qlist").addEventListener("click",e=>{
-  const row=e.target.closest(".q"); if(row&&e.target.closest(".add"))toggle(row.dataset.k);
-});
-$("#picked").addEventListener("click",e=>{if(e.target.classList.contains("x"))toggle(e.target.closest(".pl").dataset.k);});
-["f-module","f-type","f-ans"].forEach(id=>$("#"+id).addEventListener("change",render));
-$("#f-topic").addEventListener("input",render);
-$("#clear").addEventListener("click",()=>{picked.clear();render();refreshTray();});
-document.querySelectorAll(".quick [data-add]").forEach(b=>b.addEventListener("click",()=>{
-  filtered().slice(0,+b.dataset.add).forEach(q=>picked.set(key(q),q));render();refreshTray();
-}));
-// the checkbox is the source of truth for writing space; preset change resets it to
-// the preset's default (review sheet: off, practice exam: on)
-$("#preset").addEventListener("change",()=>{$("#ws").checked=$("#preset").value==="practice-exam";});
-$("#subject").addEventListener("change",()=>{
-  picked.clear();refreshTray();
-  const id=$("#subject").value;history.replaceState(0,"",`?subject=${id}`);
-  $("#subtitle").textContent=SUBJECTS.find(s=>s[0]===id)[1];
-  loadSubject(id);
-});
-
-// ---- PDF generation: thin wrapper over the PaperExport engine (paper-export.js) ----
+/* ── export (PaperExport engine) ── */
 function download(bytes,name){
   const a=document.createElement("a");
   a.href=URL.createObjectURL(new Blob([bytes],{type:"application/pdf"}));
   a.download=name;a.click();
 }
-async function generate(){
-  const arr=[...picked.values()];
-  const st=$("#status");
-  const subj=$("#subject").value;
-  const preset=$("#preset").value;
-  const opts={
-    preset,
-    subjectName:SUBJECTS.find(s=>s[0]===subj)[1],
-    fetchAsset:(item,kind)=>fetch(`${BASE}/${subj}/papers/${item.paperSlug}/${kind==="answer"?item.answerKey:item.assetKey}`)
-      .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.arrayBuffer();}),
-    onProgress:p=>{st.textContent=p.stage==="fetch"?`Fetching ${p.done}/${p.total}…`
-      :p.stage==="layout"?`Laying out ${p.done}/${p.total}…`:"Saving…";},
-  };
-  if($("#ws").checked)opts.writingSpace={linesPerMark:3,minLines:3,maxLines:18,lineGap:26,skipTypes:["mc"]};
-  else opts.writingSpace=false;
-  if($("#ans-mode").value)opts.answers=$("#ans-mode").value;
-  const out=await PaperExport.buildPaper(arr,opts);
-  download(out.paper,`practice-paper-${subj}.pdf`);
-  if(out.answers)download(out.answers,`practice-paper-${subj}-answers.pdf`);
-  const marks=arr.reduce((s,q)=>s+(q.marks||0),0);
-  st.textContent=`Done — ${arr.length} questions, ${marks} marks, ${out.pageCount} pages`
-    +(out.skipped.length?` · ${out.skipped.length} failed to load`:"");
-}
-$("#gen").addEventListener("click",()=>{$("#gen").disabled=true;
-  generate().catch(e=>{$("#status").textContent="Error: "+e.message;}).finally(()=>$("#gen").disabled=false);});
+$("#preset").onchange=()=>{$("#ws").checked=$("#preset").value==="practice-exam";};
+$("#gen").onclick=async()=>{
+  const st=$("#status"), arr=[...picked.values()];
+  $("#gen").disabled=true;
+  try{
+    const opts={
+      preset:$("#preset").value,
+      subjectName:SUBJECTS.find(s=>s[0]===SUBJECT)?.[1]||SUBJECT,
+      fetchAsset:(item,kind)=>fetch(urlOf(item,kind==="answer"))
+        .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.arrayBuffer();}),
+      onProgress:p=>{st.textContent=p.stage==="fetch"?`Fetching ${p.done}/${p.total}…`
+        :p.stage==="layout"?`Laying out ${p.done}/${p.total}…`:"Saving…";},
+    };
+    opts.writingSpace=$("#ws").checked
+      ?{linesPerMark:3,minLines:3,maxLines:18,lineGap:26,skipTypes:["mc"]}:false;
+    if($("#ans-mode").value)opts.answers=$("#ans-mode").value;
+    const out=await PaperExport.buildPaper(arr,opts);
+    download(out.paper,`practice-paper-${SUBJECT}.pdf`);
+    if(out.answers)download(out.answers,`practice-paper-${SUBJECT}-answers.pdf`);
+    const marks=arr.reduce((s,q)=>s+(q.marks||0),0);
+    st.textContent=`Done — ${arr.length} questions, ${marks} marks, ${out.pageCount} pages`
+      +(out.skipped.length?` · ${out.skipped.length} failed to load`:"");
+  }catch(e){st.textContent="Error: "+e.message;}
+  finally{$("#gen").disabled=!picked.size;}
+};
 
-// init
+/* ── theme: same key + behaviour as the main app ── */
 (function(){
-  $("#subject").innerHTML=SUBJECTS.map(([id,n])=>`<option value="${id}">${n}</option>`).join("");
-  const want=qs().get("subject")||"maths-advanced";
+  const KEY="podcast-theme";
+  const saved=localStorage.getItem(KEY);
+  const theme=saved||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");
+  document.documentElement.setAttribute("data-theme",theme);
+  $("#btn-theme").onclick=()=>{
+    const next=document.documentElement.getAttribute("data-theme")==="light"?"dark":"light";
+    document.documentElement.setAttribute("data-theme",next);
+    localStorage.setItem(KEY,next);
+  };
+})();
+
+/* ── init ── */
+(function(){
+  $("#subject").innerHTML=SUBJECTS.map(([id,n])=>`<option value="${id}">${esc(n)}</option>`).join("");
+  const want=new URLSearchParams(location.search).get("subject")||"maths-advanced";
   $("#subject").value=SUBJECTS.some(s=>s[0]===want)?want:"maths-advanced";
-  $("#subtitle").textContent=SUBJECTS.find(s=>s[0]===$("#subject").value)[1];
-  loadSubject($("#subject").value); refreshTray();
+  $("#subject").onchange=()=>{
+    history.replaceState(0,"",`?subject=${$("#subject").value}`);
+    loadSubject($("#subject").value);
+  };
+  loadSubject($("#subject").value);
 })();
 </script>
 </body>
