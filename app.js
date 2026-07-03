@@ -855,6 +855,14 @@
 
   function loadEpisode(ep, { autoplay, fromStart }) {
     dismissAdvanceToast(); // a user-initiated load cancels any pending auto-advance
+    // Save the OUTGOING episode's position before we switch. Advancing (auto-advance,
+    // queue, manual next, or tapping another episode) reassigns currentEpisode and
+    // resets audio.src below, which zeroes currentTime — so without this the outgoing
+    // episode's progress is lost. The periodic 5s save doesn't cover the last few
+    // seconds, and there's no network dependency (localStorage), so this matters even
+    // offline. Guards in persistProgress make it a no-op on the very first load. (BUG-19)
+    persistProgress();
+    flushListenLog();
     currentEpisode = ep;
     // No audio generated for this episode yet — show it read-only (the notes/quiz still
     // render via showView). Hide the player instead of crashing on ep.voices[…].file.
