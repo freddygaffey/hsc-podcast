@@ -1,0 +1,32 @@
+{
+  "subject": "maths-extension-1",
+  "syllabusName": "Mathematics Extension 1 Stage 6 (2017)",
+  "minYear": 2020,
+  "outcomes": [
+    {"code": "ME-F1", "description": "Further Work with Functions", "module": "Functions", "topic": "Further Work with Functions"},
+    {"code": "ME-F2", "description": "Polynomials", "module": "Functions", "topic": "Polynomials"},
+    {"code": "ME-T1", "description": "Inverse Trigonometric Functions", "module": "Trigonometric Functions", "topic": "Inverse Trigonometric Functions"},
+    {"code": "ME-T2", "description": "Further Trigonometric Identities", "module": "Trigonometric Functions", "topic": "Further Trigonometric Identities"},
+    {"code": "ME-T3", "description": "Trigonometric Equations", "module": "Trigonometric Functions", "topic": "Trigonometric Equations"},
+    {"code": "ME-C1", "description": "Rates of Change", "module": "Calculus", "topic": "Rates of Change"},
+    {"code": "ME-C2", "description": "Further Calculus Skills", "module": "Calculus", "topic": "Further Calculus Skills"},
+    {"code": "ME-C3", "description": "Applications of Calculus", "module": "Calculus", "topic": "Applications of Calculus"},
+    {"code": "ME-A1", "description": "Working with Combinatorics", "module": "Combinatorics", "topic": "Working with Combinatorics"},
+    {"code": "ME-P1", "description": "Proof by Mathematical Induction", "module": "Proof", "topic": "Proof by Mathematical Induction"},
+    {"code": "ME-V1", "description": "Introduction to Vectors", "module": "Vectors", "topic": "Introduction to Vectors"},
+    {"code": "ME-S1", "description": "The Binomial Distribution", "module": "Statistical Analysis", "topic": "The Binomial Distribution"}
+  ],
+  "modules": ["Functions", "Trigonometric Functions", "Calculus", "Combinatorics", "Proof", "Vectors", "Statistical Analysis"],
+  "topics": [
+    "Further Work with Functions", "Polynomials", "Inverse Trigonometric Functions",
+    "Further Trigonometric Identities", "Trigonometric Equations", "Rates of Change",
+    "Further Calculus Skills", "Applications of Calculus", "Working with Combinatorics",
+    "Proof by Mathematical Induction", "Introduction to Vectors", "The Binomial Distribution"
+  ],
+  "types": ["mc", "calculation", "proof", "graphing", "short", "extended"],
+  "sections": [
+    {"name": "I", "style": "mc", "questions": "1-10", "marks": 10},
+    {"name": "II", "style": "short", "questions": "11-14", "marks": 60}
+  ],
+  "notes": "New syllabus only (minYear 2020) — old 3U papers are out of scope. School trials mostly print '(N marks)' inline; NESA papers use the bare right-margin digit. topics is the CLOSED vocabulary (12 syllabus topics)."
+}

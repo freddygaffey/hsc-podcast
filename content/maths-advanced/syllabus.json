@@ -1,0 +1,144 @@
+{
+  "subject": "maths-advanced",
+  "syllabusName": "Mathematics Advanced Stage 6 (2017)",
+  "outcomes": [
+    {
+      "code": "MA-F1",
+      "description": "Working with Functions",
+      "module": "Functions",
+      "topic": "Working with Functions"
+    },
+    {
+      "code": "MA-F2",
+      "description": "Graphing Techniques",
+      "module": "Functions",
+      "topic": "Graphing Techniques"
+    },
+    {
+      "code": "MA-T1",
+      "description": "Trigonometry and Measure of Angles",
+      "module": "Trigonometric Functions",
+      "topic": "Trigonometry and Measure of Angles"
+    },
+    {
+      "code": "MA-T2",
+      "description": "Trigonometric Functions and Identities",
+      "module": "Trigonometric Functions",
+      "topic": "Trigonometric Functions and Identities"
+    },
+    {
+      "code": "MA-T3",
+      "description": "Trigonometric Functions and Graphs",
+      "module": "Trigonometric Functions",
+      "topic": "Trigonometric Functions and Graphs"
+    },
+    {
+      "code": "MA-C1",
+      "description": "Introduction to Differentiation",
+      "module": "Calculus",
+      "topic": "Introduction to Differentiation"
+    },
+    {
+      "code": "MA-C2",
+      "description": "Differential Calculus",
+      "module": "Calculus",
+      "topic": "Differential Calculus"
+    },
+    {
+      "code": "MA-C3",
+      "description": "Applications of Differentiation",
+      "module": "Calculus",
+      "topic": "Applications of Differentiation"
+    },
+    {
+      "code": "MA-C4",
+      "description": "Integral Calculus",
+      "module": "Calculus",
+      "topic": "Integral Calculus"
+    },
+    {
+      "code": "MA-E1",
+      "description": "Logarithms and Exponentials",
+      "module": "Exponential and Logarithmic Functions",
+      "topic": "Logarithms and Exponentials"
+    },
+    {
+      "code": "MA-M1",
+      "description": "Modelling Financial Situations",
+      "module": "Financial Mathematics",
+      "topic": "Modelling Financial Situations"
+    },
+    {
+      "code": "MA-S1",
+      "description": "Probability and Discrete Probability Distributions",
+      "module": "Statistical Analysis",
+      "topic": "Probability and Discrete Probability Distributions"
+    },
+    {
+      "code": "MA-S2",
+      "description": "Descriptive Statistics and Bivariate Data Analysis",
+      "module": "Statistical Analysis",
+      "topic": "Descriptive Statistics and Bivariate Data Analysis"
+    },
+    {
+      "code": "MA-S3",
+      "description": "Random Variables",
+      "module": "Statistical Analysis",
+      "topic": "Random Variables"
+    },
+    {
+      "code": "MA-A1",
+      "description": "Algebraic techniques (legacy code from earlier tagging pass; kept so the existing corpus validates)",
+      "module": "Functions",
+      "topic": "Algebraic techniques"
+    }
+  ],
+  "modules": [
+    "Functions",
+    "Trigonometric Functions",
+    "Calculus",
+    "Exponential and Logarithmic Functions",
+    "Financial Mathematics",
+    "Statistical Analysis"
+  ],
+  "topics": [
+    "Working with Functions",
+    "Graphing Techniques",
+    "Trigonometry and Measure of Angles",
+    "Trigonometric Functions and Identities",
+    "Trigonometric Functions and Graphs",
+    "Introduction to Differentiation",
+    "Differential Calculus",
+    "Applications of Differentiation",
+    "Integral Calculus",
+    "Logarithms and Exponentials",
+    "Modelling Financial Situations",
+    "Probability and Discrete Probability Distributions",
+    "Descriptive Statistics and Bivariate Data Analysis",
+    "Random Variables"
+  ],
+  "types": [
+    "mc",
+    "calculation",
+    "proof",
+    "graphing",
+    "short",
+    "extended"
+  ],
+  "sections": [
+    {
+      "name": "I",
+      "style": "mc",
+      "questions": "1-10",
+      "marks": 10
+    },
+    {
+      "name": "II",
+      "style": "short",
+      "questions": "11-",
+      "marks": 90
+    }
+  ],
+  "notes": "NESA HSC papers print part marks as a bare digit in the right margin (x/W ~ 0.87); trial papers from schools mostly use '(N marks)' inline. Working space is vector-ruled lines. topics is the CLOSED vocabulary (14 syllabus topics ~ textbook chapters); topic/module are normalised from the primary syllabusRefs code at manifest time.",
+  "minYear": 2020
+}

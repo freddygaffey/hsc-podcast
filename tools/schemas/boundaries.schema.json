@@ -1,0 +1,213 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hsc-podcast/boundaries.schema.json",
+  "title": "Question regions for one paper (papers/_work/<paperId>/boundaries.json)",
+  "type": "object",
+  "required": [
+    "paperId",
+    "questions"
+  ],
+  "properties": {
+    "paperId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subject": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "textlayer",
+        "ocr",
+        "vision",
+        "verified",
+        null
+      ]
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "number",
+          "parts"
+        ],
+        "properties": {
+          "number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "marks": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "marksPrinted": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "lineCount": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "spaceHeight": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "topic": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "module": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "syllabusRefs": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "stimulus": {
+            "$ref": "#/$defs/regionList"
+          },
+          "parts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "label",
+                "regions"
+              ],
+              "properties": {
+                "label": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "marks": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "minimum": 0
+                },
+                "marksPrinted": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "lineCount": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "minimum": 0
+                },
+                "spaceHeight": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "minimum": 0
+                },
+                "type": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "text": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "regions": {
+                  "$ref": "#/$defs/regionList"
+                },
+                "markingRegions": {
+                  "$ref": "#/$defs/regionList"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "regionList": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "page",
+          "bbox"
+        ],
+        "properties": {
+          "page": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "doc": {
+            "type": "string",
+            "enum": [
+              "marking"
+            ]
+          },
+          "bbox": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

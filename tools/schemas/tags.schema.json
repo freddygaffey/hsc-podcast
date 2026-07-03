@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hsc-podcast/tags.schema.json",
+  "title": "AI classification sidecar (papers/_work/<paperId>/tags.json)",
+  "type": "object",
+  "required": ["paperId", "tags"],
+  "properties": {
+    "paperId": {"type": "string", "minLength": 1},
+    "model": {"type": "string"},
+    "ts": {"type": ["integer", "number"]},
+    "tags": {
+      "type": "object",
+      "propertyNames": {"pattern": "^[qa](_[0-9a-f]{12}|[0-9a-z]+(-[0-9a-z]+)?)\\.pdf$"},
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "syllabusRefs": {"type": "array", "items": {"type": "string"}},
+          "type": {"type": ["string", "null"]},
+          "topic": {"type": ["string", "null"]},
+          "module": {"type": ["string", "null"]},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "qaVerdict": {"type": "string", "enum": ["good", "cut-off", "wrong-split", "bad-marks", "other-bad"]},
+          "qaStage": {"type": "string", "enum": ["haiku", "sonnet", "opus"]},
+          "notes": {"type": "string"}
+        }
+      }
+    }
+  }
+}

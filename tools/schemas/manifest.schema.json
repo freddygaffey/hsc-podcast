@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hsc-podcast/manifest.schema.json",
+  "title": "Shipped per-subject question manifest (content/<subject>/questions.json)",
+  "type": "object",
+  "required": [
+    "subject",
+    "count",
+    "questions"
+  ],
+  "properties": {
+    "subject": {
+      "type": "string",
+      "minLength": 1
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "paperSlug",
+          "assetKey"
+        ],
+        "properties": {
+          "paperSlug": {
+            "type": "string",
+            "minLength": 1
+          },
+          "paperId": {
+            "type": "string"
+          },
+          "assetKey": {
+            "type": "string",
+            "pattern": "^[qa](_[0-9a-f]{12}|[0-9a-z]+(-[0-9a-z]+)?)\\.pdf$"
+          },
+          "answerKey": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[qa](_[0-9a-f]{12}|[0-9a-z]+(-[0-9a-z]+)?)\\.pdf$"
+          },
+          "questionNumber": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "partLabel": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "marks": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "lineCount": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "spaceHeight": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "topic": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "module": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "syllabusRefs": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "question",
+              "bundle",
+              "part",
+              null
+            ]
+          },
+          "parts": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "year": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "page": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          }
+        }
+      }
+    }
+  }
+}

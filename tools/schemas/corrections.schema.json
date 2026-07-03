@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hsc-podcast/corrections.schema.json",
+  "title": "One human-correction line (papers/_work/_corrections.jsonl, append-only, latest per (paperId, assetKey, field) wins)",
+  "type": "object",
+  "required": ["paperId", "assetKey", "field", "value"],
+  "properties": {
+    "paperId": {"type": "string", "minLength": 1},
+    "assetKey": {"type": "string", "pattern": "^[qa](_[0-9a-f]{12}|[0-9a-z]+(-[0-9a-z]+)?)\\.pdf$"},
+    "field": {"type": "string", "enum": ["type", "syllabusRefs", "topic", "module", "marks", "lineCount", "tagFlag"]},
+    "value": {},
+    "ts": {"type": ["integer", "number"]}
+  },
+  "allOf": [
+    {"if": {"properties": {"field": {"const": "syllabusRefs"}}},
+     "then": {"properties": {"value": {"type": "array", "items": {"type": "string"}}}}},
+    {"if": {"properties": {"field": {"const": "type"}}},
+     "then": {"properties": {"value": {"type": "string"}}}},
+    {"if": {"properties": {"field": {"enum": ["marks", "lineCount"]}}},
+     "then": {"properties": {"value": {"type": ["integer", "null"], "minimum": 0}}}}
+  ]
+}

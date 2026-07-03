@@ -1,0 +1,15 @@
+{
+  "_comment": "Per-subject config for the paper crop pipeline. Copy to content/<subject>/syllabus.json. outcomes[].code is the CLOSED vocabulary for syllabusRefs (AI tagging validates against it). types is the full question-type taxonomy (structural mc/short/extended plus subject-specific ones). sections describes the exam structure so detection and the skill know what to expect. notes holds layout quirks (how marks print, what answer lines look like).",
+  "subject": "<subject-slug>",
+  "syllabusName": "<Full syllabus name (year)>",
+  "outcomes": [
+    {"code": "H1.1", "description": "what the outcome says a student does"}
+  ],
+  "modules": [],
+  "topics": [],
+  "types": ["mc", "short", "extended"],
+  "sections": [
+    {"name": "I", "style": "mc", "questions": "1-10", "marks": 10}
+  ],
+  "notes": ""
+}

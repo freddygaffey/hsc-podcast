@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hsc-podcast/questions.schema.json",
+  "title": "Per-paper baked question records (papers/_work/<paperId>/questions.json)",
+  "type": "object",
+  "required": [
+    "subject",
+    "paperSlug",
+    "questions"
+  ],
+  "properties": {
+    "subject": {
+      "type": "string",
+      "minLength": 1
+    },
+    "paperSlug": {
+      "type": "string",
+      "minLength": 1
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "assetKey",
+          "paperId"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{12}$"
+          },
+          "subject": {
+            "type": "string"
+          },
+          "paperSlug": {
+            "type": "string"
+          },
+          "paperId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "assetKey": {
+            "$ref": "#/$defs/pdfKey"
+          },
+          "answerKey": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/pdfKey"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "questionNumber": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "partLabel": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "marks": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "questionMarks": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "lineCount": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "spaceHeight": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "marksPrinted": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "topic": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "module": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "syllabusRefs": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "hasStimulus": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "bytes": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "question",
+              "bundle",
+              "part",
+              null
+            ]
+          },
+          "parts": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "year": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "page": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "pdfKey": {
+      "type": "string",
+      "pattern": "^[qa](_[0-9a-f]{12}|[0-9a-z]+(-[0-9a-z]+)?)\\.pdf$"
+    }
+  }
+}

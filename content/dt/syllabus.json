@@ -1,0 +1,110 @@
+{
+  "subject": "dt",
+  "syllabusName": "Design and Technology Stage 6 (2013)",
+  "outcomes": [
+    {
+      "code": "H1.1",
+      "description": "critically analyses the factors affecting design and the development and success of design projects"
+    },
+    {
+      "code": "H1.2",
+      "description": "relates the practices and processes of designers and producers to the major design project"
+    },
+    {
+      "code": "H2.1",
+      "description": "explains the influence of trends in society on design and production"
+    },
+    {
+      "code": "H2.2",
+      "description": "evaluates the impact of design and innovation on society and the environment"
+    },
+    {
+      "code": "H3.1",
+      "description": "analyses the factors that influence innovation and the success of innovation"
+    },
+    {
+      "code": "H3.2",
+      "description": "uses creative and innovative approaches in designing and producing"
+    },
+    {
+      "code": "H4.1",
+      "description": "identifies a need or opportunity and researches and explores ideas for design development and production of the major design project"
+    },
+    {
+      "code": "H4.2",
+      "description": "selects and uses resources responsibly and safely to realise a quality major design project"
+    },
+    {
+      "code": "H4.3",
+      "description": "evaluates the processes undertaken and the impacts of the major design project"
+    },
+    {
+      "code": "H5.1",
+      "description": "manages the development of a quality major design project"
+    },
+    {
+      "code": "H5.2",
+      "description": "selects and uses appropriate research methods and communication techniques"
+    },
+    {
+      "code": "H6.1",
+      "description": "justifies technological activities undertaken in the major design project through the study of industrial and commercial practices"
+    },
+    {
+      "code": "H6.2",
+      "description": "critically assesses the emergence and impact of new technologies, and the factors affecting their development"
+    }
+  ],
+  "modules": [
+    "Designing and Producing",
+    "Innovation and Emerging Technologies"
+  ],
+  "topics": [
+    "Factors affecting design",
+    "Influences on design",
+    "Design processes",
+    "Research in the design process",
+    "Communication",
+    "Collaborative design teams",
+    "Project & time management",
+    "Ergonomics",
+    "Ethics & safety",
+    "Intellectual property",
+    "Life cycle analysis",
+    "Obsolescence & lifespan",
+    "Sustainable design",
+    "Social trends",
+    "Risk in innovation",
+    "Designer bridging discovery to market",
+    "Emerging technologies",
+    "Case study of innovation"
+  ],
+  "types": [
+    "mc",
+    "short",
+    "extended",
+    "case-study"
+  ],
+  "sections": [
+    {
+      "name": "I",
+      "style": "mc",
+      "questions": "1-10",
+      "marks": 10
+    },
+    {
+      "name": "II",
+      "style": "short",
+      "questions": "11-14",
+      "marks": 15
+    },
+    {
+      "name": "III",
+      "style": "extended",
+      "questions": "15",
+      "marks": 15
+    }
+  ],
+  "notes": "NESA HSC exams: Section I is 10 MC items numbered 1-10 (route through locate_ocr.py, which detects MC items). Part marks print as a bare digit in the right margin (x/W ~ 0.87). Answer lines are dot-leader text lines ('.....' x N).",
+  "minYear": 2015
+}
