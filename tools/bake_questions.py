@@ -2,17 +2,17 @@
 """Step 3 of segmentation: bake per-question (and per-answer) PDFs from boundaries.json.
 
 Deterministic — no LLM. Reads papers/_work/<paperId>/{info.json,boundaries.json}, crops each
-question PART's region(s) from the ORIGINAL PDF into an anonymised per-part PDF keyed by
-content hash. If the part has markingRegions (worked solution / marking guide visible in the
-paper), the ANSWER is baked too and PAIRED by the same id: q_<id>.pdf + a_<id>.pdf.
+question PART's region(s) from the ORIGINAL PDF. Files are named by QUESTION NUMBER and grouped
+by PAPER, mirroring the UI (subject -> paper -> questions):
 
-Layout (one folder per subject, mirroring the audio bucket):
-  R2:    <subjectSlug>/q_<id>.pdf   and   <subjectSlug>/a_<id>.pdf
-  local: papers/_work/<paperId>/baked/   (transient staging; gitignored)
-  meta:  content/<subjectSlug>/questions.json  (records; committed)
+  R2 / bucket:  <subject>/<paperSlug>/paper.pdf         (full original exam)
+                <subject>/<paperSlug>/q<num><part>.pdf  (question, e.g. q17b.pdf, q01.pdf)
+                <subject>/<paperSlug>/a<num><part>.pdf  (its answer, where a solution exists)
+  local stage:  papers/_work/<paperId>/baked/
+  meta:         content/<subject>/questions.json
 
-Granularity (D4): atomic unit = LETTER PART (a, b, c). Roman sub-parts (i, ii) stay bundled.
-Top-level question is a metadata GROUP whose shared stem/stimulus rides with every part.
+Each record still carries the content hash as `id` (stable, dedupe-detection), but the file is
+named by number. Granularity (D4): atomic unit = LETTER PART; romans bundled; shared stem rides.
 
     python3 tools/bake_questions.py "<paperId>"                    # bake locally
     python3 tools/bake_questions.py "<paperId>" --upload hsc-questions   # bake + push to R2
@@ -35,14 +35,36 @@ def slug(s):
     return re.sub(r"[^a-z0-9]+", "-", (s or "").lower()).strip("-")
 
 
-def subject_slug_for(paper_id):
-    """Map a paperId → its subject slug via papers/_index.json (fallback: 'misc')."""
+def paper_meta_for(paper_id):
+    """(subjectSlug, paperSlug, sourcePath) from papers/_index.json. paperSlug is a readable
+    folder name, e.g. '2019-hsc' or '2020-barker-trial'."""
     idx = PAPERS / "_index.json"
     if idx.exists():
         for p in json.loads(idx.read_text())["papers"]:
             if p["paperId"] == paper_id:
-                return slug(p["subject"])
-    return "misc"
+                subj = slug(p["subject"])
+                year = p.get("year") or "unknown"
+                sch = slug(p.get("school") or "")
+                kind = p.get("kind") or "paper"
+                var = slug(p.get("variant") or "")
+                if kind == "hsc":
+                    ps = f"{year}-hsc"
+                elif kind in ("trial", "yearly") and sch:
+                    ps = f"{year}-{sch}-{kind}"
+                else:
+                    ps = f"{year}-{kind}"
+                if var:
+                    ps += f"-{var}"
+                return subj, ps, p["path"]
+    return "misc", slug(paper_id), None
+
+
+def numkey(number, label):
+    """'17','b' -> '17b'; '1',None -> '01'; pads the numeric part for sorting."""
+    num = (str(number) if number is not None else "").strip()
+    m = re.match(r"(\d+)(.*)", num)
+    base = (m.group(1).zfill(2) + slug(m.group(2))) if m else (slug(num) or "x")
+    return f"{base}{(label or '').lower()}"
 
 
 def bake_region_pdf(src, info, regions):
@@ -99,32 +121,43 @@ def main():
     wd = WORK / paper_id
     info = json.loads((wd / "info.json").read_text())
     bounds = json.loads((wd / "boundaries.json").read_text())
-    subj = info.get("subject") or subject_slug_for(paper_id)   # R2/manifest folder for this subject
+    subj, paper_slug, src_rel = paper_meta_for(paper_id)
+    if info.get("subject"):
+        subj = info["subject"]
     baked = wd / "baked"
     baked.mkdir(exist_ok=True)
+    for old in baked.glob("*.pdf"):        # clear stale files so re-bakes don't leave orphans
+        old.unlink()
     src = fitz.open(ROOT / "papers" / info["path"])
 
     records = []
-    for q in bounds["questions"]:
+    used = set()
+    for qi, q in enumerate(bounds["questions"]):
         stim = q.get("stimulus", [])
         parts = q.get("parts") or [{"label": None, "marks": q.get("marks"),
                                     "type": q.get("type"), "regions": q.get("regions", []),
                                     "markingRegions": q.get("markingRegions", [])}]
         for part in parts:
             data = bake_region_pdf(src, info, stim + part["regions"])   # stem rides with part
-            qid = hashlib.sha256(data).hexdigest()[:12]                 # shared id for q + a
-            (baked / f"q_{qid}.pdf").write_bytes(data)
+            qid = hashlib.sha256(data).hexdigest()[:12]                 # content id (dedupe)
+            name = numkey(q.get("number") or (qi + 1), part.get("label"))
+            base = name
+            k = 1
+            while name in used:            # disambiguate rare collisions
+                name = f"{base}-{k}"; k += 1
+            used.add(name)
+            (baked / f"q{name}.pdf").write_bytes(data)
 
             answer_key = None
             mr = part.get("markingRegions") or []
             if mr:                                                      # bake the paired answer
                 adata = bake_region_pdf(src, info, mr)
-                (baked / f"a_{qid}.pdf").write_bytes(adata)
-                answer_key = f"a_{qid}.pdf"
+                (baked / f"a{name}.pdf").write_bytes(adata)
+                answer_key = f"a{name}.pdf"
 
             records.append({
-                "id": qid, "subject": subj,
-                "assetKey": f"q_{qid}.pdf", "answerKey": answer_key,
+                "id": qid, "subject": subj, "paperSlug": paper_slug,
+                "assetKey": f"q{name}.pdf", "answerKey": answer_key,
                 "paperId": info["paperId"], "questionNumber": q.get("number"),
                 "partLabel": part.get("label"), "marks": part.get("marks"),
                 "questionMarks": q.get("marks"), "type": part.get("type") or q.get("type"),
@@ -133,24 +166,23 @@ def main():
                 "hasStimulus": bool(stim), "bytes": len(data),
             })
 
-    (wd / "questions.json").write_text(json.dumps({"subject": subj, "questions": records}, indent=2))
+    (wd / "questions.json").write_text(json.dumps(
+        {"subject": subj, "paperSlug": paper_slug, "questions": records}, indent=2))
 
     n_ans = sum(1 for r in records if r["answerKey"])
     total = sum(r["bytes"] for r in records)
-    print(f"{paper_id}: baked {len(records)} parts ({n_ans} with answers) -> {baked.relative_to(ROOT)}")
-    print(f"  subject folder: {subj}/   ({total/1024:.0f} KB questions)")
-    for r in records:
-        lbl = f"Q{r['questionNumber']}{r['partLabel'] or ''}"
-        print(f"  {subj}/q_{r['id']}.pdf  {lbl:7} {str(r['marks'])}m  "
-              f"{'+a' if r['answerKey'] else '  '}  {r['topic']}")
+    print(f"{paper_id}: {len(records)} parts ({n_ans} answers) -> {subj}/{paper_slug}/  "
+          f"({total/1024:.0f} KB)")
 
     if bucket:
-        print(f"Uploading to R2 '{bucket}' under {subj}/ …")
+        # full original paper
+        if src_rel and (PAPERS / src_rel).exists():
+            r2_put(bucket, f"{subj}/{paper_slug}/paper.pdf", PAPERS / src_rel)
         for r in records:
-            r2_put(bucket, f"{subj}/{r['assetKey']}", baked / r["assetKey"])
+            r2_put(bucket, f"{subj}/{paper_slug}/{r['assetKey']}", baked / r["assetKey"])
             if r["answerKey"]:
-                r2_put(bucket, f"{subj}/{r['answerKey']}", baked / r["answerKey"])
-        print("  done.")
+                r2_put(bucket, f"{subj}/{paper_slug}/{r['answerKey']}", baked / r["answerKey"])
+        print(f"  uploaded to {bucket}/{subj}/{paper_slug}/")
 
 
 if __name__ == "__main__":

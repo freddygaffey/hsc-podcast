@@ -30,7 +30,8 @@ def main():
             continue
         subj = data.get("subject") or "misc"
         for r in data.get("questions", []):
-            by_subject[subj][r["id"]] = r      # dedupe by hash id
+            key = f"{r.get('paperSlug')}/{r['assetKey']}"   # per-paper file (idempotent re-runs)
+            by_subject[subj][key] = r
         papers += 1
 
     for subj, recs in sorted(by_subject.items()):
