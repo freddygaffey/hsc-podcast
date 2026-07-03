@@ -127,7 +127,14 @@ def build_subject(subject_dir: Path) -> dict | None:
 
     module_list = []
     for module in sorted(modules.values(), key=lambda m: (m["moduleNum"], m["prefix"])):
-        module["episodes"].sort(key=lambda e: (e["unit"] or 0, e["title"]))
+        # Order by the numeric parts of the folder id (e.g. SA-20-01 -> (20, 1)),
+        # which is the real unit+lesson sequence. The old (unit, title) key sorted
+        # alphabetically within a unit, so e.g. SA-20-01 "What is AI vs ML" fell
+        # last in its unit (W) instead of first, and Module Review (…-99) came
+        # before Module Summary (…-98). Fall back to the title for id-less items
+        # (case studies carry no lesson number). (BUG-11)
+        module["episodes"].sort(
+            key=lambda e: (tuple(int(n) for n in re.findall(r"\d+", e["id"])), e["title"]))
         module_list.append(module)
 
     return {
