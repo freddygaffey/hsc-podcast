@@ -863,6 +863,13 @@
     // offline. Guards in persistProgress make it a no-op on the very first load. (BUG-19)
     persistProgress();
     flushListenLog();
+    // If we're about to speak the title/quiz intro for the new episode, stop the
+    // outgoing episode first so the spoken intro can't play over it. Do it here —
+    // while currentEpisode and the audio position still point at the outgoing
+    // episode — so it composes with the progress-save above; the async 'pause' event
+    // then no-ops (setAudioSource's load() resets audio.duration to NaN before it
+    // fires, and pending listen time was just flushed). (BUG-18)
+    if (autoplay && introEnabled() && ep.titleAudio && !audio.paused) audio.pause();
     currentEpisode = ep;
     // No audio generated for this episode yet — show it read-only (the notes/quiz still
     // render via showView). Hide the player instead of crashing on ep.voices[…].file.
