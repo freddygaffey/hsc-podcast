@@ -21,7 +21,7 @@ echo "==> Assembling $DIST/ (build $BUILD)"
 rm -rf "$DIST"; mkdir -p "$DIST"
 
 # App shell.
-cp index.html generator.html app.js auth.js style.css speed-engine.js app.webmanifest _headers "$DIST/"
+cp index.html generator.html paper-export.js app.js auth.js style.css speed-engine.js app.webmanifest _headers "$DIST/"
 # Service worker — stamp the build version so each deploy gets a fresh APP_SHELL cache.
 sed "s/__BUILD__/$BUILD/" service-worker.js > "$DIST/service-worker.js"
 # Manifest + vendored libs + icons.

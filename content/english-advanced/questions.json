@@ -1,9 +1,10 @@
 {
   "subject": "english-advanced",
-  "count": 320,
+  "count": 376,
   "questions": [
     {
-      "assetKey": "q_2946503d2f49.pdf",
+      "paperSlug": "2021-hsc",
+      "assetKey": "q01.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -11,10 +12,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_bd15310cb6c8.pdf",
+      "paperSlug": "2021-hsc",
+      "assetKey": "q01-1.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 3,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2021-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -22,10 +39,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_1b094844348a.pdf",
+      "paperSlug": "2021-hsc",
+      "assetKey": "q02-1.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 3,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2021-hsc",
+      "assetKey": "q05.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": null,
@@ -33,21 +66,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_1aed90682207.pdf",
+      "paperSlug": "2021-hsc",
+      "assetKey": "q05-1.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": null,
-      "marks": null,
+      "marks": 6,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_8ed48d182141.pdf",
+      "paperSlug": "2021-hsc",
+      "assetKey": "q06.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -55,43 +93,86 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_202ca68be692.pdf",
+      "paperSlug": "2021-hsc",
+      "assetKey": "q06-1.pdf",
       "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": "a",
-      "marks": null,
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 20,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_4421ce26a95c.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": "b",
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_305f1a98737a.pdf",
+      "paperSlug": "2014-hsc",
+      "assetKey": "q01.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2014-hsc",
+      "assetKey": "q01a.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": "a",
       "marks": null,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_10121b8d8cbd.pdf",
+      "paperSlug": "2014-hsc",
+      "assetKey": "q01b.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": "b",
+      "marks": null,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2014-hsc",
+      "assetKey": "q02.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2014-hsc",
+      "assetKey": "q02a.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": "a",
@@ -99,10 +180,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_577393d2da9e.pdf",
+      "paperSlug": "2014-hsc",
+      "assetKey": "q02b.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": "b",
@@ -110,10 +193,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_63d8380c98c1.pdf",
+      "paperSlug": "2014-hsc",
+      "assetKey": "q03.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
@@ -121,10 +206,43 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_37ff463c1a8f.pdf",
+      "paperSlug": "2014-hsc",
+      "assetKey": "q03-1.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2014-hsc",
+      "assetKey": "q04.pdf",
+      "answerKey": null,
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2014-hsc",
+      "assetKey": "q04a.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": "a",
@@ -132,10 +250,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_506d7e92ed10.pdf",
+      "paperSlug": "2014-hsc",
+      "assetKey": "q04b.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": "b",
@@ -143,21 +263,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_d2fb147c6d2d.pdf",
-      "answerKey": null,
-      "questionNumber": "4",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_3af20fea69ef.pdf",
+      "paperSlug": "2014-hsc",
+      "assetKey": "q05.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": null,
@@ -165,10 +276,42 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_74ccf7046403.pdf",
+      "paperSlug": "2014-hsc",
+      "assetKey": "q05-1.pdf",
+      "answerKey": null,
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2014-hsc",
+      "assetKey": "q07.pdf",
+      "answerKey": null,
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a"
+      ]
+    },
+    {
+      "paperSlug": "2014-hsc",
+      "assetKey": "q07a.pdf",
       "answerKey": null,
       "questionNumber": "7",
       "partLabel": "a",
@@ -176,32 +319,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_615dcbc464a8.pdf",
-      "answerKey": null,
-      "questionNumber": "7",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_589c767d6565.pdf",
-      "answerKey": null,
-      "questionNumber": "7",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_5c8e7410c001.pdf",
+      "paperSlug": "2014-hsc",
+      "assetKey": "q09.pdf",
       "answerKey": null,
       "questionNumber": "9",
       "partLabel": null,
@@ -209,10 +332,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_4a83771a3275.pdf",
+      "paperSlug": "2014-hsc",
+      "assetKey": "q09-1.pdf",
+      "answerKey": null,
+      "questionNumber": "9",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2014-hsc",
+      "assetKey": "q10.pdf",
       "answerKey": null,
       "questionNumber": "10",
       "partLabel": null,
@@ -220,10 +359,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_e5b43a1bc990.pdf",
+      "paperSlug": "2014-hsc",
+      "assetKey": "q10-1.pdf",
+      "answerKey": null,
+      "questionNumber": "10",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2014-hsc",
+      "assetKey": "q11.pdf",
       "answerKey": null,
       "questionNumber": "11",
       "partLabel": null,
@@ -231,10 +386,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_966742177a5f.pdf",
+      "paperSlug": "2014-hsc",
+      "assetKey": "q11-1.pdf",
+      "answerKey": null,
+      "questionNumber": "11",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2020-hsc",
+      "assetKey": "q01.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -242,32 +413,44 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_d7535bae1f34.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q01-1.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
-      "marks": null,
+      "marks": 20,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_0a53a92f3cc0.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
-      "questionNumber": "1",
+      "questionNumber": "2",
       "partLabel": null,
-      "marks": null,
+      "marks": 20,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
+      ]
     },
     {
-      "assetKey": "q_66f43e8f9855.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q02a.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": "a",
@@ -275,21 +458,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_f89e66ce993d.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_ef115c201127.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q02b.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": "b",
@@ -297,21 +471,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_01dffc25284b.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_00c58478510b.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q02c.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": "c",
@@ -319,10 +484,29 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_6185141cf8a3.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q03.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2020-hsc",
+      "assetKey": "q03a.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": "a",
@@ -330,21 +514,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_4c589a8ab8dd.pdf",
-      "answerKey": null,
-      "questionNumber": "3",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_1a2d0fdec498.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q03b.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": "b",
@@ -352,10 +527,29 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_584abe9abf8a.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q04.pdf",
+      "answerKey": null,
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2020-hsc",
+      "assetKey": "q04a.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": "a",
@@ -363,21 +557,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_7adf95b0c5a4.pdf",
-      "answerKey": null,
-      "questionNumber": "4",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_c82522806a76.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q04b.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": "b",
@@ -385,10 +570,29 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_48cdfe77745a.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q05.pdf",
+      "answerKey": null,
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2020-hsc",
+      "assetKey": "q05a.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": "a",
@@ -396,21 +600,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_02b85592fb2a.pdf",
-      "answerKey": null,
-      "questionNumber": "5",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_4123c11d7455.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q05b.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": "b",
@@ -418,10 +613,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_d23ca9b91ba4.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q06.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -429,10 +626,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_0d88b797d9a6.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q06-1.pdf",
+      "answerKey": null,
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2020-hsc",
+      "assetKey": "q07.pdf",
       "answerKey": null,
       "questionNumber": "7",
       "partLabel": null,
@@ -440,10 +653,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_8aaef5854cb6.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q07-1.pdf",
+      "answerKey": null,
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2020-hsc",
+      "assetKey": "q08.pdf",
       "answerKey": null,
       "questionNumber": "8",
       "partLabel": null,
@@ -451,10 +680,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_565eaf44cdc5.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q08-1.pdf",
+      "answerKey": null,
+      "questionNumber": "8",
+      "partLabel": null,
+      "marks": null,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2020-hsc",
+      "assetKey": "q09.pdf",
       "answerKey": null,
       "questionNumber": "9",
       "partLabel": null,
@@ -462,10 +707,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_d840cdcc79ff.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q09-1.pdf",
+      "answerKey": null,
+      "questionNumber": "9",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2019-hsc",
+      "assetKey": "q01.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -473,32 +734,44 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_f449c7a8de72.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q01-1.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
-      "marks": null,
+      "marks": 20,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_271977b1ace4.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
-      "questionNumber": "1",
+      "questionNumber": "2",
       "partLabel": null,
-      "marks": null,
+      "marks": 20,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
+      ]
     },
     {
-      "assetKey": "q_21aff57a916d.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q02a.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": "a",
@@ -506,10 +779,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_272b18989c36.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q02b.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": "b",
@@ -517,10 +792,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_3f775a600e31.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q02c.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": "c",
@@ -528,10 +805,29 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_679b77bfefe9.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q03.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2019-hsc",
+      "assetKey": "q03a.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": "a",
@@ -539,10 +835,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_760cc83d6497.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q03b.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": "b",
@@ -550,10 +848,29 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_be8e109b6134.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q04.pdf",
+      "answerKey": null,
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2019-hsc",
+      "assetKey": "q04a.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": "a",
@@ -561,10 +878,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_24a9196412b2.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q04b.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": "b",
@@ -572,10 +891,29 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_4d7d2de0d61f.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q05.pdf",
+      "answerKey": null,
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2019-hsc",
+      "assetKey": "q05a.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": "a",
@@ -583,10 +921,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_fdba65919216.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q05b.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": "b",
@@ -594,10 +934,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_6ea6e24762d1.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q06.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -605,10 +947,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_a3eb5a86ccd4.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q06-1.pdf",
+      "answerKey": null,
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2019-hsc",
+      "assetKey": "q07.pdf",
       "answerKey": null,
       "questionNumber": "7",
       "partLabel": null,
@@ -616,10 +974,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_33e52c3a5f28.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q07-1.pdf",
+      "answerKey": null,
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2019-hsc",
+      "assetKey": "q08.pdf",
       "answerKey": null,
       "questionNumber": "8",
       "partLabel": null,
@@ -627,10 +1001,43 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_e84d78ed1b40.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q08-1.pdf",
+      "answerKey": null,
+      "questionNumber": "8",
+      "partLabel": null,
+      "marks": null,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2019-hsc",
+      "assetKey": "q09.pdf",
+      "answerKey": null,
+      "questionNumber": "9",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2019-hsc",
+      "assetKey": "q09a.pdf",
       "answerKey": null,
       "questionNumber": "9",
       "partLabel": "a",
@@ -638,10 +1045,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_5ae371b9ad81.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q09b.pdf",
       "answerKey": null,
       "questionNumber": "9",
       "partLabel": "b",
@@ -649,32 +1058,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_56cc2d94d5a0.pdf",
-      "answerKey": null,
-      "questionNumber": "9",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_ea4b9eb0a102.pdf",
-      "answerKey": null,
-      "questionNumber": "9",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_b117fa9780be.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q01.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -682,10 +1071,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_fac6e2d526d9.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q01-1.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 3,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2022-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -693,10 +1098,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_f7c27d46f071.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q02-1.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 4,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2022-hsc",
+      "assetKey": "q05.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": null,
@@ -704,32 +1125,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_544a96ba42fc.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q05-1.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": null,
-      "marks": null,
+      "marks": 6,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_c2ceb4635ab7.pdf",
-      "answerKey": null,
-      "questionNumber": "6",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_4a23e5805fe7.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q06.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -737,54 +1152,13 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_8ef6bca48eed.pdf",
-      "answerKey": null,
-      "questionNumber": "6",
-      "partLabel": null,
-      "marks": 20,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_8b167a467aff.pdf",
-      "answerKey": null,
-      "questionNumber": "6",
-      "partLabel": null,
-      "marks": 20,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_ba7ca652c658.pdf",
-      "answerKey": null,
-      "questionNumber": "6",
-      "partLabel": null,
-      "marks": 20,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_e37af8bf07b0.pdf",
-      "answerKey": null,
-      "questionNumber": "6",
-      "partLabel": null,
-      "marks": 20,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_4b3545e74060.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q06-1.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -792,10 +1166,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_24ddbbfb1e9f.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q06-2.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -803,10 +1179,64 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_b4873e84b81c.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q06-3.pdf",
+      "answerKey": null,
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2022-hsc",
+      "assetKey": "q06-4.pdf",
+      "answerKey": null,
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2022-hsc",
+      "assetKey": "q06-5.pdf",
+      "answerKey": null,
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2022-hsc",
+      "assetKey": "q06-6.pdf",
+      "answerKey": null,
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2022-hsc",
+      "assetKey": "q06-7.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -814,10 +1244,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_7f22e6b06474.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q06-8.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -825,10 +1257,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_331a7a73c285.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q06-9.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -836,10 +1270,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_3b030e6896ce.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q06-10.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -847,10 +1283,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_3fabd6c0f632.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q06-11.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -858,10 +1296,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_6de7cc6521e0.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q06-12.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -869,10 +1309,38 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_cdd0c990ee08.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q06-13.pdf",
+      "answerKey": null,
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": null,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2022-hsc",
+      "assetKey": "q06-14.pdf",
+      "answerKey": null,
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2025-hsc",
+      "assetKey": "q01.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -880,10 +1348,13 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_e48b7b47af8e.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q01-1.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -891,10 +1362,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_7aa86c105856.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q01-2.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -902,10 +1375,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_d2cde73618d9.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q01-3.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -913,10 +1388,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_3d4833c76315.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q01-4.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -924,10 +1401,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_f39ab5bb4370.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q01-5.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -935,10 +1414,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_a7e9f91db880.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q01-6.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -946,10 +1427,25 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_342de2cc6af9.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q01-7.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2025-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -957,10 +1453,13 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_6afacb504d51.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q02-1.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -968,10 +1467,25 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_90cc6e068462.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q02-2.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2025-hsc",
+      "assetKey": "q02-3.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -979,10 +1493,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_a6f0ba026cc9.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q02-4.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -990,10 +1506,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_26a2ac369d29.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q02-5.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -1001,10 +1519,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_1e9ffc4cf7ec.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q02-6.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -1012,10 +1532,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_b9cc31570c8a.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q02-7.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -1023,10 +1545,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_5f030c1fad9e.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q02-8.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -1034,10 +1558,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_b92ae85c4341.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q02-9.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -1045,10 +1571,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_7dd7e35c1738.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q02-10.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -1056,10 +1584,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_79ea69d682ed.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q02-11.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -1067,10 +1597,29 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_1a79b6a12c42.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q03.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2025-hsc",
+      "assetKey": "q03a.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": "a",
@@ -1078,10 +1627,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_37c0fa972905.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q03b.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": "b",
@@ -1089,10 +1640,32 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_545c2a81b8dd.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q01.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ]
+    },
+    {
+      "paperSlug": "2016-hsc",
+      "assetKey": "q01a.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "a",
@@ -1100,10 +1673,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_93d48d1d9991.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q01b.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "b",
@@ -1111,10 +1686,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_c4d91bdd819f.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q01c.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "c",
@@ -1122,10 +1699,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_3e0661e6be81.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q01d.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "d",
@@ -1133,10 +1712,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_248beb5f0cee.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q01e.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "e",
@@ -1144,10 +1725,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_d0728eb378cc.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -1155,10 +1738,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_f9f6f559b775.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q02-1.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2016-hsc",
+      "assetKey": "q03.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
@@ -1166,10 +1765,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_7fff9a7815f4.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q03-1.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2023-hsc",
+      "assetKey": "q01.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -1177,10 +1792,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_ec2d0990daec.pdf",
+      "paperSlug": "2023-hsc",
+      "assetKey": "q01-1.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 3,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2023-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -1188,10 +1819,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_0f970a54464a.pdf",
+      "paperSlug": "2023-hsc",
+      "assetKey": "q02-1.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 4,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2023-hsc",
+      "assetKey": "q05.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": null,
@@ -1199,21 +1846,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_8eae27ff76b9.pdf",
+      "paperSlug": "2023-hsc",
+      "assetKey": "q05-1.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": null,
-      "marks": null,
+      "marks": 5,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_1ab077138323.pdf",
+      "paperSlug": "2023-hsc",
+      "assetKey": "q06.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -1221,10 +1873,44 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_7a37f7049973.pdf",
+      "paperSlug": "2023-hsc",
+      "assetKey": "q06-1.pdf",
+      "answerKey": null,
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2016-hsc",
+      "assetKey": "q01.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "d"
+      ]
+    },
+    {
+      "paperSlug": "2016-hsc",
+      "assetKey": "q01a.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "a",
@@ -1232,21 +1918,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_860e49f05be1.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_468a91d33b22.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q01b.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "b",
@@ -1254,21 +1931,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_c6e42f1fd750.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_d79c26618530.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q01d.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "d",
@@ -1276,21 +1944,29 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_e3573891a973.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
-      "questionNumber": "1",
+      "questionNumber": "2",
       "partLabel": null,
-      "marks": null,
+      "marks": 20,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
     },
     {
-      "assetKey": "q_b666d6cfd05c.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q02a.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": "a",
@@ -1298,21 +1974,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_a6bdb906498c.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_e4c624083820.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q02b.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": "b",
@@ -1320,54 +1987,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_b3b87861e4b2.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_8ef961978308.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_661bd4dfb846.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_3aa3209d80f3.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_2cb82fb58556.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q03.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
@@ -1375,10 +2000,44 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_9f9c2693118b.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q03-1.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2016-hsc",
+      "assetKey": "q04.pdf",
+      "answerKey": null,
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "paperSlug": "2016-hsc",
+      "assetKey": "q04a.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": "a",
@@ -1386,10 +2045,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_202f96697535.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q04b.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": "b",
@@ -1397,21 +2058,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_f148cdef8a85.pdf",
-      "answerKey": null,
-      "questionNumber": "4",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_511203e4a110.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q04c.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": "c",
@@ -1419,10 +2071,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_c033eaddf5cc.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q05.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": null,
@@ -1430,10 +2084,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_08c3abb81f75.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q05-1.pdf",
+      "answerKey": null,
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2016-hsc",
+      "assetKey": "q06.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -1441,10 +2111,44 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_b08388804700.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q06-1.pdf",
+      "answerKey": null,
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2016-hsc",
+      "assetKey": "q07.pdf",
+      "answerKey": null,
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "paperSlug": "2016-hsc",
+      "assetKey": "q07a.pdf",
       "answerKey": null,
       "questionNumber": "7",
       "partLabel": "a",
@@ -1452,10 +2156,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_281cb167e1e6.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q07b.pdf",
       "answerKey": null,
       "questionNumber": "7",
       "partLabel": "b",
@@ -1463,21 +2169,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_b0923157368a.pdf",
-      "answerKey": null,
-      "questionNumber": "7",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_f7084b84f217.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q07c.pdf",
       "answerKey": null,
       "questionNumber": "7",
       "partLabel": "c",
@@ -1485,10 +2182,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_bbe9f10737a5.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q08.pdf",
       "answerKey": null,
       "questionNumber": "8",
       "partLabel": null,
@@ -1496,10 +2195,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_b5681437c0dc.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q08-1.pdf",
+      "answerKey": null,
+      "questionNumber": "8",
+      "partLabel": null,
+      "marks": null,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2016-hsc",
+      "assetKey": "q09.pdf",
       "answerKey": null,
       "questionNumber": "9",
       "partLabel": null,
@@ -1507,10 +2222,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_90526c692f6b.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q09-1.pdf",
+      "answerKey": null,
+      "questionNumber": "9",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2016-hsc",
+      "assetKey": "q10.pdf",
       "answerKey": null,
       "questionNumber": "10",
       "partLabel": null,
@@ -1518,10 +2249,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_3f2b72ee89bf.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q10-1.pdf",
+      "answerKey": null,
+      "questionNumber": "10",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2016-hsc",
+      "assetKey": "q11.pdf",
       "answerKey": null,
       "questionNumber": "11",
       "partLabel": null,
@@ -1529,10 +2276,44 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_b8713a6292c5.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q11-1.pdf",
+      "answerKey": null,
+      "questionNumber": "11",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2017-hsc",
+      "assetKey": "q01.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "paperSlug": "2017-hsc",
+      "assetKey": "q01a.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "a",
@@ -1540,10 +2321,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_44b2fb59b397.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q01b.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "b",
@@ -1551,10 +2334,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_707c54d16f4a.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q01c.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "c",
@@ -1562,10 +2347,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_e552476d3b30.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -1573,10 +2360,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_b6ebb6c12522.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q02-1.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2017-hsc",
+      "assetKey": "q03.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
@@ -1584,10 +2387,46 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_7d6bea044aa9.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q03-1.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2015-hsc",
+      "assetKey": "q01.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ]
+    },
+    {
+      "paperSlug": "2015-hsc",
+      "assetKey": "q01a.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "a",
@@ -1595,10 +2434,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_afb705e21b40.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q01b.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "b",
@@ -1606,10 +2447,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_315938148ff9.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q01c.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "c",
@@ -1617,10 +2460,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_8af8184bfd7f.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q01d.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "d",
@@ -1628,10 +2473,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_2c05cc2c9503.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q01e.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "e",
@@ -1639,10 +2486,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_7808fcfd3e9f.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -1650,32 +2499,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_839d8fe8cda0.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q02-1.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
-      "marks": null,
+      "marks": 15,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_9bf8e4f83f1e.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_7b420f0b031a.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q03.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
@@ -1683,219 +2526,175 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_fe203a7696f5.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q03-1.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
-      "marks": null,
+      "marks": 15,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_b50753134e14.pdf",
+      "paperSlug": "2021-hsc",
+      "assetKey": "q01.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2021-hsc",
+      "assetKey": "q01-1.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2021-hsc",
+      "assetKey": "q01-2.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2021-hsc",
+      "assetKey": "q01-3.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2021-hsc",
+      "assetKey": "q01-4.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2021-hsc",
+      "assetKey": "q01-5.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2021-hsc",
+      "assetKey": "q01-6.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2021-hsc",
+      "assetKey": "q01-7.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2021-hsc",
+      "assetKey": "q02.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2021-hsc",
+      "assetKey": "q02-1.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2021-hsc",
+      "assetKey": "q03.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_36b4ba6d36ad.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
       "marks": 20,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
     },
     {
-      "assetKey": "q_e623cbd8b7e5.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_5206da61263e.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_79aecf638dfd.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": 20,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_c09eef54bf3f.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": 20,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_255d79148bda.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": 20,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_ae6940239f17.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_4e5770ec40c8.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_efa77c9bc42a.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": 20,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_1509413446d5.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_1169479dd7f5.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": 20,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_895a4ba65299.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_c828f18410a8.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_89239fa90602.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": 20,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_92a95e0aae42.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": 20,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_4d4ba8210405.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_3d55b6a6be0c.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_a2323870979c.pdf",
+      "paperSlug": "2021-hsc",
+      "assetKey": "q03a.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": "a",
@@ -1903,10 +2702,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_db060446ff82.pdf",
+      "paperSlug": "2021-hsc",
+      "assetKey": "q03b.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": "b",
@@ -1914,10 +2715,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_ff72084fe6cd.pdf",
+      "paperSlug": "2024-hsc",
+      "assetKey": "q01.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -1925,10 +2728,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_2106443e1088.pdf",
+      "paperSlug": "2024-hsc",
+      "assetKey": "q01-1.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2024-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -1936,10 +2755,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_1f8b7b046d83.pdf",
+      "paperSlug": "2024-hsc",
+      "assetKey": "q02-1.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2024-hsc",
+      "assetKey": "q03.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
@@ -1947,87 +2782,13 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_eeb71994c01d.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": "a",
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_88bfa8ca765b.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": "b",
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_fd30b460f88d.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_bb246317aa49.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": "a",
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_22100de04128.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": "b",
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_b1892e6b3149.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_ab52bc8ac004.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_d982af13d3ba.pdf",
+      "paperSlug": "2024-hsc",
+      "assetKey": "q03-1.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
@@ -2035,10 +2796,142 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_7b18baa0c808.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q01.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2015-hsc",
+      "assetKey": "q01a.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": "a",
+      "marks": null,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2015-hsc",
+      "assetKey": "q01b.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": "b",
+      "marks": null,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2015-hsc",
+      "assetKey": "q02.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2015-hsc",
+      "assetKey": "q02a.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": "a",
+      "marks": null,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2015-hsc",
+      "assetKey": "q02b.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": "b",
+      "marks": null,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2015-hsc",
+      "assetKey": "q03.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2015-hsc",
+      "assetKey": "q03-1.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2015-hsc",
+      "assetKey": "q04.pdf",
+      "answerKey": null,
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2015-hsc",
+      "assetKey": "q04a.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": "a",
@@ -2046,10 +2939,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_3f815877d60f.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q04b.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": "b",
@@ -2057,32 +2952,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_77b8c32e929d.pdf",
-      "answerKey": null,
-      "questionNumber": "4",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_acc87a71aae8.pdf",
-      "answerKey": null,
-      "questionNumber": "4",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_f81425899f02.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q05.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": null,
@@ -2090,10 +2965,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_c6f696e93f91.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q05-1.pdf",
+      "answerKey": null,
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2015-hsc",
+      "assetKey": "q06.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -2101,10 +2992,44 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_a4408cf16bf0.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q06-1.pdf",
+      "answerKey": null,
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2015-hsc",
+      "assetKey": "q07.pdf",
+      "answerKey": null,
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "paperSlug": "2015-hsc",
+      "assetKey": "q07a.pdf",
       "answerKey": null,
       "questionNumber": "7",
       "partLabel": "a",
@@ -2112,10 +3037,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_8ff604e3fe1d.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q07b.pdf",
       "answerKey": null,
       "questionNumber": "7",
       "partLabel": "b",
@@ -2123,21 +3050,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_921aa986ced7.pdf",
-      "answerKey": null,
-      "questionNumber": "7",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_d585df26f966.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q07c.pdf",
       "answerKey": null,
       "questionNumber": "7",
       "partLabel": "c",
@@ -2145,10 +3063,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_079b5b592569.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q08.pdf",
       "answerKey": null,
       "questionNumber": "8",
       "partLabel": null,
@@ -2156,10 +3076,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_6f29f9f02699.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q08-1.pdf",
+      "answerKey": null,
+      "questionNumber": "8",
+      "partLabel": null,
+      "marks": null,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2015-hsc",
+      "assetKey": "q09.pdf",
       "answerKey": null,
       "questionNumber": "9",
       "partLabel": null,
@@ -2167,10 +3103,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_f3b912fee3b9.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q09-1.pdf",
+      "answerKey": null,
+      "questionNumber": "9",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2015-hsc",
+      "assetKey": "q10.pdf",
       "answerKey": null,
       "questionNumber": "10",
       "partLabel": null,
@@ -2178,10 +3130,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_50c1eb516144.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q10-1.pdf",
+      "answerKey": null,
+      "questionNumber": "10",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2015-hsc",
+      "assetKey": "q11.pdf",
       "answerKey": null,
       "questionNumber": "11",
       "partLabel": null,
@@ -2189,10 +3157,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_642f0c08e180.pdf",
+      "paperSlug": "2015-hsc",
+      "assetKey": "q11-1.pdf",
+      "answerKey": null,
+      "questionNumber": "11",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2020-hsc",
+      "assetKey": "q01.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -2200,21 +3184,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_c3800267e78b.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q01-1.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
-      "marks": null,
+      "marks": 5,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_fddf6eeb4d3f.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -2222,10 +3211,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_1cea5100355e.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q02-1.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 5,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2020-hsc",
+      "assetKey": "q03.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
@@ -2233,32 +3238,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_d965c1078818.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q03-1.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
-      "marks": null,
+      "marks": 4,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_993b0523d7f7.pdf",
-      "answerKey": null,
-      "questionNumber": "3",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_ee56c110e148.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q04.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": null,
@@ -2266,32 +3265,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_e88b10f619c1.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q04-1.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": null,
-      "marks": null,
+      "marks": 6,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_3cb7fde4b2d6.pdf",
-      "answerKey": null,
-      "questionNumber": "4",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_57c7de8f89b2.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q05.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": null,
@@ -2299,197 +3292,13 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_ac6e44ce7ff0.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": "a",
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_ad7d73e32863.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_ae467d99e34e.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": "b",
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_6439fb73fcd3.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": "c",
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_68133001a15e.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_a05db03d07c5.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_70fe22995b60.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": "a",
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_4862a763716c.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_030983e49316.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": "b",
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_93ea8cc167b4.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_c5933f4afd71.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": "c",
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_cc4d1741bf5e.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_b905a3f16529.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_4dd6f38e0c89.pdf",
-      "answerKey": null,
-      "questionNumber": "3",
-      "partLabel": null,
-      "marks": 20,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_b0278efe65a4.pdf",
-      "answerKey": null,
-      "questionNumber": "3",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_ddeb40f51d91.pdf",
-      "answerKey": null,
-      "questionNumber": "3",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_728a31eb4906.pdf",
-      "answerKey": null,
-      "questionNumber": "4",
-      "partLabel": null,
-      "marks": 20,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_2f6a5cb09d58.pdf",
+      "paperSlug": "2020-hsc",
+      "assetKey": "q05-1.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": null,
@@ -2497,10 +3306,207 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_7c18420fe388.pdf",
+      "paperSlug": "2018-hsc",
+      "assetKey": "q01.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "paperSlug": "2018-hsc",
+      "assetKey": "q01a.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": "a",
+      "marks": null,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2018-hsc",
+      "assetKey": "q01b.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": "b",
+      "marks": null,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2018-hsc",
+      "assetKey": "q01c.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": "c",
+      "marks": null,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2018-hsc",
+      "assetKey": "q02.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "paperSlug": "2018-hsc",
+      "assetKey": "q02a.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": "a",
+      "marks": null,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2018-hsc",
+      "assetKey": "q02b.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": "b",
+      "marks": null,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2018-hsc",
+      "assetKey": "q02c.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": "c",
+      "marks": null,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2018-hsc",
+      "assetKey": "q03.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2018-hsc",
+      "assetKey": "q03-1.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2018-hsc",
+      "assetKey": "q04.pdf",
+      "answerKey": null,
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2018-hsc",
+      "assetKey": "q04-1.pdf",
+      "answerKey": null,
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2018-hsc",
+      "assetKey": "q05.pdf",
+      "answerKey": null,
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2018-hsc",
+      "assetKey": "q05-1.pdf",
+      "answerKey": null,
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2019-hsc",
+      "assetKey": "q01.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -2508,10 +3514,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_220ac9d0f43b.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q01-1.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 3,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2019-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -2519,10 +3541,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_7ce163be94e3.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q02-1.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 5,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2019-hsc",
+      "assetKey": "q03.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
@@ -2530,10 +3568,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_2b917e6e29c3.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q03-1.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 3,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2019-hsc",
+      "assetKey": "q04.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": null,
@@ -2541,10 +3595,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_0df80baa7d52.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q04-1.pdf",
+      "answerKey": null,
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 4,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2019-hsc",
+      "assetKey": "q05.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": null,
@@ -2552,32 +3622,49 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_6a8faa5be0a4.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q05-1.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": null,
-      "marks": null,
+      "marks": 5,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_04a7e3751765.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q06.pdf",
       "answerKey": null,
-      "questionNumber": "5",
+      "questionNumber": "6",
       "partLabel": null,
-      "marks": null,
+      "marks": 20,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "g",
+        "h",
+        "i",
+        "k",
+        "m",
+        "n"
+      ]
     },
     {
-      "assetKey": "q_3dce9bf1d379.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q06a.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": "a",
@@ -2585,10 +3672,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_01e89f939bd7.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q06b.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": "b",
@@ -2596,43 +3685,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_f2ce16a10774.pdf",
-      "answerKey": null,
-      "questionNumber": "6",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_c916c0419379.pdf",
-      "answerKey": null,
-      "questionNumber": "6",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_3df08b956bd7.pdf",
-      "answerKey": null,
-      "questionNumber": "6",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_b68cb52353e9.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q06g.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": "g",
@@ -2640,10 +3698,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_509ca902ce40.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q06h.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": "h",
@@ -2651,10 +3711,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_4917016b6335.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q06i.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": "i",
@@ -2662,21 +3724,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_80217c2384da.pdf",
-      "answerKey": null,
-      "questionNumber": "6",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_d0d576d6cd6f.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q06k.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": "k",
@@ -2684,21 +3737,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_fadab7a5db5a.pdf",
-      "answerKey": null,
-      "questionNumber": "6",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_691e1c8c861c.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q06m.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": "m",
@@ -2706,10 +3750,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_69461f85b64b.pdf",
+      "paperSlug": "2019-hsc",
+      "assetKey": "q06n.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": "n",
@@ -2717,10 +3763,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_eecb67960d05.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q01.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -2728,10 +3776,13 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_0dfdf8f35f53.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q01-1.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -2739,10 +3790,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_af4b6aa6acb9.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q01-2.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -2750,10 +3803,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_476b3e0914c9.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q01-3.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -2761,10 +3816,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_a9d1ed38ad22.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q01-4.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -2772,10 +3829,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_32238e42bf74.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q01-5.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -2783,10 +3842,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_096ce8c8b193.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q01-6.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -2794,10 +3855,25 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_f46296b16446.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q01-7.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2022-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -2805,10 +3881,13 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_7eda62613fa3.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q02-1.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -2816,10 +3895,25 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_944199246ed2.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q02-2.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2022-hsc",
+      "assetKey": "q02-3.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -2827,10 +3921,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_3c62cf83f127.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q02-4.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -2838,10 +3934,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_d1fb9bd86926.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q02-5.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -2849,10 +3947,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_177ca68e4a22.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q02-6.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -2860,10 +3960,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_40c3cd6d8570.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q02-7.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -2871,10 +3973,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_05ea9045b500.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q02-8.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -2882,10 +3986,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_c4696d9d72cb.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q02-9.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -2893,10 +3999,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_c15e88d01c85.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q02-10.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -2904,10 +4012,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_62765eb6e1b3.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q02-11.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -2915,10 +4025,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_297ace5342b6.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q02-12.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -2926,10 +4038,29 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_f0fbf1b35348.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q03.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2022-hsc",
+      "assetKey": "q03a.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": "a",
@@ -2937,10 +4068,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_78b8dae10dd0.pdf",
+      "paperSlug": "2022-hsc",
+      "assetKey": "q03b.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": "b",
@@ -2948,10 +4081,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_e1d2b792cedb.pdf",
+      "paperSlug": "2024-hsc",
+      "assetKey": "q01.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -2959,10 +4094,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_336e58d0b9dd.pdf",
+      "paperSlug": "2024-hsc",
+      "assetKey": "q01-1.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 3,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2024-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -2970,10 +4121,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_f0bde9d6819e.pdf",
+      "paperSlug": "2024-hsc",
+      "assetKey": "q02-1.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 4,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2024-hsc",
+      "assetKey": "q03.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
@@ -2981,10 +4148,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_f67d1460abd2.pdf",
+      "paperSlug": "2024-hsc",
+      "assetKey": "q03-1.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 5,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2024-hsc",
+      "assetKey": "q05.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": null,
@@ -2992,10 +4175,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_63d0e5da982b.pdf",
+      "paperSlug": "2024-hsc",
+      "assetKey": "q05-1.pdf",
+      "answerKey": null,
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 5,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2024-hsc",
+      "assetKey": "q06.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -3003,10 +4202,45 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_120bbd5fc191.pdf",
+      "paperSlug": "2024-hsc",
+      "assetKey": "q06-1.pdf",
+      "answerKey": null,
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2018-hsc",
+      "assetKey": "q01.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "paperSlug": "2018-hsc",
+      "assetKey": "q01a.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "a",
@@ -3014,10 +4248,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_86838792ecd2.pdf",
+      "paperSlug": "2018-hsc",
+      "assetKey": "q01b.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "b",
@@ -3025,10 +4261,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_3a7fba55562d.pdf",
+      "paperSlug": "2018-hsc",
+      "assetKey": "q01c.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "c",
@@ -3036,10 +4274,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_7bc1c8c5ca48.pdf",
+      "paperSlug": "2018-hsc",
+      "assetKey": "q01d.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "d",
@@ -3047,10 +4287,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_be5c0187d2d4.pdf",
+      "paperSlug": "2018-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -3058,10 +4300,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_734ce379d3b7.pdf",
+      "paperSlug": "2018-hsc",
+      "assetKey": "q02-1.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2018-hsc",
+      "assetKey": "q03.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
@@ -3069,10 +4327,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_17887b598fcb.pdf",
+      "paperSlug": "2018-hsc",
+      "assetKey": "q03-1.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2025-hsc",
+      "assetKey": "q01.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -3080,10 +4354,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_7e37c6faf1a8.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q01-1.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 3,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2025-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -3091,10 +4381,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_c063e5284f11.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q02-1.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 4,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2025-hsc",
+      "assetKey": "q04.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": null,
@@ -3102,10 +4408,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_9ed9e5d2ca97.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q04-1.pdf",
+      "answerKey": null,
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 4,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2025-hsc",
+      "assetKey": "q05.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": null,
@@ -3113,10 +4435,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_05d730493191.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q05-1.pdf",
+      "answerKey": null,
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 5,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2025-hsc",
+      "assetKey": "q06.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -3124,10 +4462,43 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_2c64112af904.pdf",
+      "paperSlug": "2025-hsc",
+      "assetKey": "q06-1.pdf",
+      "answerKey": null,
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2017-hsc",
+      "assetKey": "q01.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2017-hsc",
+      "assetKey": "q01a.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "a",
@@ -3135,10 +4506,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_1e0ee74df838.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q01b.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "b",
@@ -3146,21 +4519,29 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_a4d63cb657a8.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
-      "questionNumber": "1",
+      "questionNumber": "2",
       "partLabel": null,
-      "marks": null,
+      "marks": 20,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
     },
     {
-      "assetKey": "q_6ea829cd604f.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q02a.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": "a",
@@ -3168,10 +4549,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_b34fbb5b51fe.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q02b.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": "b",
@@ -3179,32 +4562,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_f951e053d5b9.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_4ac83d91ab12.pdf",
-      "answerKey": null,
-      "questionNumber": "2",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_ef95f76c0b84.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q03.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
@@ -3212,10 +4575,44 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_feb578889bcd.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q03-1.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2017-hsc",
+      "assetKey": "q04.pdf",
+      "answerKey": null,
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "d"
+      ]
+    },
+    {
+      "paperSlug": "2017-hsc",
+      "assetKey": "q04a.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": "a",
@@ -3223,10 +4620,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_ee46dac7da49.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q04b.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": "b",
@@ -3234,10 +4633,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_b0ab71d85454.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q04d.pdf",
       "answerKey": null,
       "questionNumber": "4",
       "partLabel": "d",
@@ -3245,10 +4646,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_33647359b61e.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q05.pdf",
       "answerKey": null,
       "questionNumber": "5",
       "partLabel": null,
@@ -3256,10 +4659,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_444e58eb7d83.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q05-1.pdf",
+      "answerKey": null,
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2017-hsc",
+      "assetKey": "q06.pdf",
       "answerKey": null,
       "questionNumber": "6",
       "partLabel": null,
@@ -3267,10 +4686,43 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_f0a722dd5bbe.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q06-1.pdf",
+      "answerKey": null,
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2017-hsc",
+      "assetKey": "q07.pdf",
+      "answerKey": null,
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2017-hsc",
+      "assetKey": "q07a.pdf",
       "answerKey": null,
       "questionNumber": "7",
       "partLabel": "a",
@@ -3278,21 +4730,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_77296f627ffa.pdf",
-      "answerKey": null,
-      "questionNumber": "7",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_245453716010.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q07b.pdf",
       "answerKey": null,
       "questionNumber": "7",
       "partLabel": "b",
@@ -3300,10 +4743,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_effd77229ff6.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q08.pdf",
       "answerKey": null,
       "questionNumber": "8",
       "partLabel": null,
@@ -3311,10 +4756,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_f42dabe5452a.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q08-1.pdf",
+      "answerKey": null,
+      "questionNumber": "8",
+      "partLabel": null,
+      "marks": null,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2017-hsc",
+      "assetKey": "q09.pdf",
       "answerKey": null,
       "questionNumber": "9",
       "partLabel": null,
@@ -3322,10 +4783,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_73636013e301.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q09-1.pdf",
+      "answerKey": null,
+      "questionNumber": "9",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2017-hsc",
+      "assetKey": "q10.pdf",
       "answerKey": null,
       "questionNumber": "10",
       "partLabel": null,
@@ -3333,10 +4810,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_c035f5b82f21.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q10-1.pdf",
+      "answerKey": null,
+      "questionNumber": "10",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2017-hsc",
+      "assetKey": "q11.pdf",
       "answerKey": null,
       "questionNumber": "11",
       "partLabel": null,
@@ -3344,10 +4837,45 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_feb26625a6fa.pdf",
+      "paperSlug": "2017-hsc",
+      "assetKey": "q11-1.pdf",
+      "answerKey": null,
+      "questionNumber": "11",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2016-hsc",
+      "assetKey": "q01.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "paperSlug": "2016-hsc",
+      "assetKey": "q01a.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "a",
@@ -3355,10 +4883,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_74d4715a49b6.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q01b.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "b",
@@ -3366,10 +4896,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_181323741550.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q01c.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "c",
@@ -3377,10 +4909,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_9059607b2636.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q01d.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": "d",
@@ -3388,10 +4922,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_4d16e5028cb8.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -3399,43 +4935,13 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_7437d25abc30.pdf",
-      "answerKey": null,
-      "questionNumber": "3",
-      "partLabel": null,
-      "marks": 15,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_fe097f8a7a7d.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": 15,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_081c470d7f74.pdf",
-      "answerKey": null,
-      "questionNumber": "1",
-      "partLabel": null,
-      "marks": null,
-      "type": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": []
-    },
-    {
-      "assetKey": "q_eadc310e74fe.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q02-1.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -3443,10 +4949,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_2d912c6f3d43.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q03.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
@@ -3454,32 +4962,107 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_d2ff0f2d6af5.pdf",
+      "paperSlug": "2016-hsc",
+      "assetKey": "q03-1.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
-      "marks": null,
+      "marks": 15,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question"
     },
     {
-      "assetKey": "q_86e6e7efd347.pdf",
+      "paperSlug": "2014-hsc",
+      "assetKey": "q01.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2014-hsc",
+      "assetKey": "q01-1.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2014-hsc",
+      "assetKey": "q02.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2014-hsc",
+      "assetKey": "q02-1.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2014-hsc",
+      "assetKey": "q03.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": null,
-      "marks": null,
+      "marks": 15,
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_173c72fb3819.pdf",
+      "paperSlug": "2014-hsc",
+      "assetKey": "q03-1.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2023-hsc",
+      "assetKey": "q01.pdf",
       "answerKey": null,
       "questionNumber": "1",
       "partLabel": null,
@@ -3487,10 +5070,26 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_9f29b6f0c792.pdf",
+      "paperSlug": "2023-hsc",
+      "assetKey": "q01-1.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2023-hsc",
+      "assetKey": "q02.pdf",
       "answerKey": null,
       "questionNumber": "2",
       "partLabel": null,
@@ -3498,10 +5097,43 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": []
     },
     {
-      "assetKey": "q_7e118b304ddf.pdf",
+      "paperSlug": "2023-hsc",
+      "assetKey": "q02-1.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2023-hsc",
+      "assetKey": "q03.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "paperSlug": "2023-hsc",
+      "assetKey": "q03a.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": "a",
@@ -3509,10 +5141,12 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     },
     {
-      "assetKey": "q_64456ace1e8f.pdf",
+      "paperSlug": "2023-hsc",
+      "assetKey": "q03b.pdf",
       "answerKey": null,
       "questionNumber": "3",
       "partLabel": "b",
@@ -3520,7 +5154,8 @@
       "type": null,
       "topic": null,
       "module": null,
-      "syllabusRefs": []
+      "syllabusRefs": [],
+      "unit": "part"
     }
   ]
 }

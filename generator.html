@@ -107,7 +107,19 @@
       <div class="stat"><span>Suggested time</span><b id="n-t">0 min</b></div>
       <div class="picked-list" id="picked"></div>
       <div class="divider"></div>
-      <label class="toggle"><input type="checkbox" id="inc-ans"> Include answer booklet</label>
+      <label class="toggle">Style
+        <select id="preset" style="margin-left:auto;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:#fff">
+          <option value="review-sheet">Review sheet (compact)</option>
+          <option value="practice-exam">Practice exam</option>
+        </select></label>
+      <label class="toggle"><input type="checkbox" id="ws"> Writing space</label>
+      <label class="toggle">Answers
+        <select id="ans-mode" style="margin-left:auto;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:#fff">
+          <option value="">Preset default</option>
+          <option value="none">None</option>
+          <option value="appended">Same PDF</option>
+          <option value="separate">Separate PDF</option>
+        </select></label>
       <button class="gen" id="gen" disabled>Generate paper (PDF)</button>
       <div class="status" id="status"></div>
     </aside>
@@ -115,6 +127,7 @@
 </div>
 
 <script src="vendor/pdf-lib.min.js"></script>
+<script src="paper-export.js"></script>
 <script>
 const SUBJECTS = [
   ["maths-advanced","Mathematics Advanced"],["maths-extension-1","Mathematics Extension 1"],
@@ -133,7 +146,8 @@ async function loadSubject(id){
     fetch(`content/${id}/questions.json`).then(r=>r.json()),
   ]);
   BASE=subj.assetBaseUrl||"";
-  DATA=man.questions.filter(q=>q.assetKey);
+  // whole questions only — letter-part records stay in the manifest as metadata
+  DATA=man.questions.filter(q=>q.assetKey&&q.unit!=="part");
   // module filter options
   const mods=[...new Set(DATA.map(q=>q.module).filter(Boolean))].sort();
   $("#f-module").innerHTML='<option value="">Any module</option>'+mods.map(m=>`<option>${esc(m)}</option>`).join("");
@@ -173,7 +187,7 @@ function refreshTray(){
   const marks=arr.reduce((s,q)=>s+(q.marks||0),0);
   $("#n-q").textContent=arr.length;
   $("#n-m").textContent=marks;
-  $("#n-t").textContent=Math.round(marks*1.8)+" min";
+  $("#n-t").textContent=Math.round(marks*1.5)+" min";
   $("#gen").disabled=!arr.length;
   $("#picked").innerHTML=arr.map(q=>`<div class="pl" data-k="${key(q)}">
     <span>Q${esc(String(q.questionNumber||""))}${esc(q.partLabel||"")} · ${esc(q.topic||"")}</span>
@@ -198,6 +212,9 @@ $("#clear").addEventListener("click",()=>{picked.clear();render();refreshTray();
 document.querySelectorAll(".quick [data-add]").forEach(b=>b.addEventListener("click",()=>{
   filtered().slice(0,+b.dataset.add).forEach(q=>picked.set(key(q),q));render();refreshTray();
 }));
+// the checkbox is the source of truth for writing space; preset change resets it to
+// the preset's default (review sheet: off, practice exam: on)
+$("#preset").addEventListener("change",()=>{$("#ws").checked=$("#preset").value==="practice-exam";});
 $("#subject").addEventListener("change",()=>{
   picked.clear();refreshTray();
   const id=$("#subject").value;history.replaceState(0,"",`?subject=${id}`);
@@ -205,58 +222,34 @@ $("#subject").addEventListener("change",()=>{
   loadSubject(id);
 });
 
-// ---- PDF generation (client-side merge with pdf-lib) ----
-const A4=[595.28,841.89], M=42;
+// ---- PDF generation: thin wrapper over the PaperExport engine (paper-export.js) ----
+function download(bytes,name){
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([bytes],{type:"application/pdf"}));
+  a.download=name;a.click();
+}
 async function generate(){
-  const {PDFDocument,StandardFonts,rgb}=PDFLib;
   const arr=[...picked.values()];
-  const withAns=$("#inc-ans").checked;
-  const st=$("#status"); st.textContent="Fetching questions…";
-  const out=await PDFDocument.create();
-  const font=await out.embedFont(StandardFonts.Helvetica);
-  const bold=await out.embedFont(StandardFonts.HelveticaBold);
-  const ink=rgb(.1,.11,.14), grey=rgb(.42,.45,.5), accent=rgb(.18,.36,.92), line=rgb(.8,.83,.88);
-  const subjName=SUBJECTS.find(s=>s[0]===$("#subject").value)[1];
-  const totalMarks=arr.reduce((s,q)=>s+(q.marks||0),0);
-  // cover
-  let p=out.addPage(A4);
-  p.drawText("HSC Practice Paper",{x:M,y:A4[1]-130,size:26,font:bold,color:ink});
-  p.drawText(subjName,{x:M,y:A4[1]-160,size:13,font,color:grey});
-  p.drawText(`${arr.length} questions   ·   ${totalMarks} marks   ·   ~${Math.round(totalMarks*1.8)} min`,
-    {x:M,y:A4[1]-200,size:12,font,color:ink});
-  p.drawText("Generated from real HSC past-paper questions — every question traceable to its source.",
-    {x:M,y:56,size:8,font,color:grey});
-
-  async function place(q,n,answer){
-    const k=`${BASE}/${$("#subject").value}/${q.paperSlug}/${answer?q.answerKey:q.assetKey}`;
-    let bytes;try{bytes=await fetch(k).then(r=>{if(!r.ok)throw 0;return r.arrayBuffer();});}
-    catch(e){return;}
-    const src=await PDFDocument.load(bytes);
-    const emb=await out.embedPage(src.getPage(0));
-    const {width:sw,height:sh}=emb;
-    const cw=A4[0]-2*M, scale=Math.min(cw/sw,(A4[1]*0.62)/sh), qh=sh*scale;
-    const page=out.addPage(A4);
-    page.drawText(`${answer?'Answer':'Question'} ${n}`,{x:M,y:A4[1]-M,size:12,font:bold,color:accent});
-    const src2=(q.paperSlug||"").replace(/-/g," ")+(q.marks?`  ·  ${q.marks} mark${q.marks>1?'s':''}`:"");
-    page.drawText(src2,{x:M,y:A4[1]-M-13,size:8.5,font,color:grey});
-    page.drawLine({start:{x:M,y:A4[1]-M-22},end:{x:A4[0]-M,y:A4[1]-M-22},color:line,thickness:.8});
-    const top=A4[1]-M-38;
-    page.drawPage(emb,{x:M,y:top-qh,width:sw*scale,height:qh});
-    if(!answer&&q.type!=="mc"){ // ruled writing space
-      const lines=Math.min(Math.max((q.marks||1)*3,3),Math.floor((top-qh-60)/26));
-      for(let i=0;i<lines;i++){const yy=top-qh-24-i*26;if(yy<50)break;
-        page.drawLine({start:{x:M,y:yy},end:{x:A4[0]-M,y:yy},color:line,thickness:.6});}
-    }
-  }
-  for(let i=0;i<arr.length;i++){st.textContent=`Building question ${i+1}/${arr.length}…`;await place(arr[i],i+1,false);}
-  if(withAns){out.addPage(A4).drawText("Answers",{x:M,y:A4[1]-130,size:22,font:bold,color:ink});
-    for(let i=0;i<arr.length;i++){if(arr[i].answerKey){st.textContent=`Answer ${i+1}/${arr.length}…`;await place(arr[i],i+1,true);}}}
-  st.textContent="Saving…";
-  const pdf=await out.save();
-  const blob=new Blob([pdf],{type:"application/pdf"});
-  const a=document.createElement("a");a.href=URL.createObjectURL(blob);
-  a.download=`practice-paper-${$("#subject").value}.pdf`;a.click();
-  st.textContent=`Done — ${arr.length} questions, ${totalMarks} marks.`;
+  const st=$("#status");
+  const subj=$("#subject").value;
+  const preset=$("#preset").value;
+  const opts={
+    preset,
+    subjectName:SUBJECTS.find(s=>s[0]===subj)[1],
+    fetchAsset:(item,kind)=>fetch(`${BASE}/${subj}/papers/${item.paperSlug}/${kind==="answer"?item.answerKey:item.assetKey}`)
+      .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.arrayBuffer();}),
+    onProgress:p=>{st.textContent=p.stage==="fetch"?`Fetching ${p.done}/${p.total}…`
+      :p.stage==="layout"?`Laying out ${p.done}/${p.total}…`:"Saving…";},
+  };
+  if($("#ws").checked)opts.writingSpace={linesPerMark:3,minLines:3,maxLines:18,lineGap:26,skipTypes:["mc"]};
+  else opts.writingSpace=false;
+  if($("#ans-mode").value)opts.answers=$("#ans-mode").value;
+  const out=await PaperExport.buildPaper(arr,opts);
+  download(out.paper,`practice-paper-${subj}.pdf`);
+  if(out.answers)download(out.answers,`practice-paper-${subj}-answers.pdf`);
+  const marks=arr.reduce((s,q)=>s+(q.marks||0),0);
+  st.textContent=`Done — ${arr.length} questions, ${marks} marks, ${out.pageCount} pages`
+    +(out.skipped.length?` · ${out.skipped.length} failed to load`:"");
 }
 $("#gen").addEventListener("click",()=>{$("#gen").disabled=true;
   generate().catch(e=>{$("#status").textContent="Error: "+e.message;}).finally(()=>$("#gen").disabled=false);});

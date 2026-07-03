@@ -1,7 +1,31 @@
 {
   "subject": "maths-accelerated",
-  "count": 296,
+  "count": 394,
   "questions": [
+    {
+      "paperSlug": "2005-sydney-boys-yearly",
+      "assetKey": "q01.pdf",
+      "answerKey": "a01.pdf",
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 18,
+      "type": null,
+      "topic": "Differentiation Rules and Basic Integration",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C2",
+        "MA-C3",
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ]
+    },
     {
       "paperSlug": "2005-sydney-boys-yearly",
       "assetKey": "q01a.pdf",
@@ -16,7 +40,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2005-sydney-boys-yearly",
@@ -32,7 +57,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2005-sydney-boys-yearly",
@@ -48,7 +74,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2005-sydney-boys-yearly",
@@ -64,7 +91,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2005-sydney-boys-yearly",
@@ -80,6 +108,28 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2005-sydney-boys-yearly",
+      "assetKey": "q02.pdf",
+      "answerKey": "a02.pdf",
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 18,
+      "type": null,
+      "topic": "Integral Calculus and Kinematics",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -95,7 +145,8 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2005-sydney-boys-yearly",
@@ -110,7 +161,8 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2005-sydney-boys-yearly",
@@ -125,6 +177,31 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-C3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2005-sydney-boys-yearly",
+      "assetKey": "q03.pdf",
+      "answerKey": "a03.pdf",
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 18,
+      "type": null,
+      "topic": "Calculus of Trigonometric and Logarithmic Functions",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C2",
+        "MA-C3",
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
       ]
     },
     {
@@ -141,7 +218,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2005-sydney-boys-yearly",
@@ -157,7 +235,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2005-sydney-boys-yearly",
@@ -173,7 +252,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2005-sydney-boys-yearly",
@@ -189,7 +269,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2005-sydney-boys-yearly",
@@ -205,6 +286,30 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2005-sydney-boys-yearly",
+      "assetKey": "q04.pdf",
+      "answerKey": "a04.pdf",
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 18,
+      "type": null,
+      "topic": "Exponential/Logarithmic Applications and Volumes of Revolution",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-E1",
+        "MA-C4",
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d"
       ]
     },
     {
@@ -221,7 +326,8 @@
         "MA-E1",
         "MA-C4",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2005-sydney-boys-yearly",
@@ -237,7 +343,8 @@
         "MA-E1",
         "MA-C4",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2005-sydney-boys-yearly",
@@ -253,7 +360,8 @@
         "MA-E1",
         "MA-C4",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2005-sydney-boys-yearly",
@@ -269,6 +377,31 @@
         "MA-E1",
         "MA-C4",
         "MA-C3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2007-sydney-boys-yearly",
+      "assetKey": "q01.pdf",
+      "answerKey": "a01.pdf",
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 18,
+      "type": null,
+      "topic": "Calculus \u2014 Differentiation and Integration",
+      "module": "MA-C2",
+      "syllabusRefs": [
+        "MA-C2",
+        "MA-C3",
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
       ]
     },
     {
@@ -285,7 +418,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2007-sydney-boys-yearly",
@@ -301,7 +435,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2007-sydney-boys-yearly",
@@ -317,7 +452,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2007-sydney-boys-yearly",
@@ -333,7 +469,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2007-sydney-boys-yearly",
@@ -349,6 +486,29 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2007-sydney-boys-yearly",
+      "assetKey": "q02.pdf",
+      "answerKey": "a02.pdf",
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 18,
+      "type": null,
+      "topic": "Calculus \u2014 Integration and Rates of Change",
+      "module": "MA-C2",
+      "syllabusRefs": [
+        "MA-C2",
+        "MA-C3",
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -365,7 +525,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2007-sydney-boys-yearly",
@@ -381,7 +542,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2007-sydney-boys-yearly",
@@ -397,6 +559,32 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2007-sydney-boys-yearly",
+      "assetKey": "q03.pdf",
+      "answerKey": "a03.pdf",
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 18,
+      "type": null,
+      "topic": "Calculus \u2014 Differentiation, Integration and Curve Sketching",
+      "module": "MA-C2",
+      "syllabusRefs": [
+        "MA-C2",
+        "MA-C3",
+        "MA-C4",
+        "MA-T3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
       ]
     },
     {
@@ -414,7 +602,8 @@
         "MA-C3",
         "MA-C4",
         "MA-T3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2007-sydney-boys-yearly",
@@ -431,7 +620,8 @@
         "MA-C3",
         "MA-C4",
         "MA-T3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2007-sydney-boys-yearly",
@@ -448,7 +638,8 @@
         "MA-C3",
         "MA-C4",
         "MA-T3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2007-sydney-boys-yearly",
@@ -465,7 +656,8 @@
         "MA-C3",
         "MA-C4",
         "MA-T3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2007-sydney-boys-yearly",
@@ -482,6 +674,31 @@
         "MA-C3",
         "MA-C4",
         "MA-T3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2007-sydney-boys-yearly",
+      "assetKey": "q04.pdf",
+      "answerKey": "a04.pdf",
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 18,
+      "type": null,
+      "topic": "Calculus \u2014 Applications (Volumes, Exponential Decay, Optimisation)",
+      "module": "MA-C4",
+      "syllabusRefs": [
+        "MA-F1",
+        "MA-C4",
+        "MA-E1",
+        "MA-C2"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d"
       ]
     },
     {
@@ -499,7 +716,8 @@
         "MA-C4",
         "MA-E1",
         "MA-C2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2007-sydney-boys-yearly",
@@ -516,7 +734,8 @@
         "MA-C4",
         "MA-E1",
         "MA-C2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2007-sydney-boys-yearly",
@@ -533,7 +752,8 @@
         "MA-C4",
         "MA-E1",
         "MA-C2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2007-sydney-boys-yearly",
@@ -550,6 +770,31 @@
         "MA-C4",
         "MA-E1",
         "MA-C2"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2006-sydney-boys-yearly",
+      "assetKey": "q01.pdf",
+      "answerKey": "a01.pdf",
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": "Mixed (Logs, Trig, Calculus, Series)",
+      "module": "MA-F1",
+      "syllabusRefs": [
+        "MA-F1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g"
       ]
     },
     {
@@ -564,7 +809,8 @@
       "module": "MA-F1",
       "syllabusRefs": [
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2006-sydney-boys-yearly",
@@ -578,7 +824,8 @@
       "module": "MA-F1",
       "syllabusRefs": [
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2006-sydney-boys-yearly",
@@ -592,7 +839,8 @@
       "module": "MA-F1",
       "syllabusRefs": [
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2006-sydney-boys-yearly",
@@ -606,7 +854,8 @@
       "module": "MA-F1",
       "syllabusRefs": [
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2006-sydney-boys-yearly",
@@ -620,7 +869,8 @@
       "module": "MA-F1",
       "syllabusRefs": [
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2006-sydney-boys-yearly",
@@ -634,7 +884,8 @@
       "module": "MA-F1",
       "syllabusRefs": [
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2006-sydney-boys-yearly",
@@ -648,6 +899,30 @@
       "module": "MA-F1",
       "syllabusRefs": [
         "MA-F1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2006-sydney-boys-yearly",
+      "assetKey": "q02.pdf",
+      "answerKey": "a02.pdf",
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": "Mixed (Calculus, Financial Maths)",
+      "module": "MA-C3",
+      "syllabusRefs": [
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
       ]
     },
     {
@@ -662,7 +937,8 @@
       "module": "MA-C3",
       "syllabusRefs": [
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2006-sydney-boys-yearly",
@@ -676,7 +952,8 @@
       "module": "MA-C3",
       "syllabusRefs": [
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2006-sydney-boys-yearly",
@@ -690,7 +967,8 @@
       "module": "MA-C3",
       "syllabusRefs": [
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2006-sydney-boys-yearly",
@@ -704,7 +982,8 @@
       "module": "MA-C3",
       "syllabusRefs": [
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2006-sydney-boys-yearly",
@@ -718,7 +997,8 @@
       "module": "MA-C3",
       "syllabusRefs": [
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2006-sydney-boys-yearly",
@@ -732,6 +1012,29 @@
       "module": "MA-C3",
       "syllabusRefs": [
         "MA-C3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2006-sydney-boys-yearly",
+      "assetKey": "q03.pdf",
+      "answerKey": "a03.pdf",
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 21,
+      "type": null,
+      "topic": "Mixed (Calculus, Exponential, Series)",
+      "module": "MA-C3",
+      "syllabusRefs": [
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
       ]
     },
     {
@@ -746,7 +1049,8 @@
       "module": "MA-C3",
       "syllabusRefs": [
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2006-sydney-boys-yearly",
@@ -760,7 +1064,8 @@
       "module": "MA-C3",
       "syllabusRefs": [
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2006-sydney-boys-yearly",
@@ -774,7 +1079,8 @@
       "module": "MA-C3",
       "syllabusRefs": [
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2006-sydney-boys-yearly",
@@ -788,7 +1094,8 @@
       "module": "MA-C3",
       "syllabusRefs": [
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2006-sydney-boys-yearly",
@@ -802,6 +1109,27 @@
       "module": "MA-C3",
       "syllabusRefs": [
         "MA-C3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2006-sydney-boys-yearly",
+      "assetKey": "q04.pdf",
+      "answerKey": "a04.pdf",
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 18,
+      "type": null,
+      "topic": "Mixed (Calculus, Series, Curve Analysis)",
+      "module": "MA-C4",
+      "syllabusRefs": [
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -816,7 +1144,8 @@
       "module": "MA-C4",
       "syllabusRefs": [
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2006-sydney-boys-yearly",
@@ -830,7 +1159,8 @@
       "module": "MA-C4",
       "syllabusRefs": [
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2006-sydney-boys-yearly",
@@ -844,7 +1174,8 @@
       "module": "MA-C4",
       "syllabusRefs": [
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -858,7 +1189,24 @@
       "module": "Trigonometric Functions",
       "syllabusRefs": [
         "MA-T2"
-      ]
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q01-1.pdf",
+      "answerKey": null,
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 1,
+      "type": "mc",
+      "topic": "Trigonometric identities",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [
+        "MA-T2"
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -872,7 +1220,24 @@
       "module": "Trigonometric Functions",
       "syllabusRefs": [
         "MA-T3"
-      ]
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q02-1.pdf",
+      "answerKey": null,
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 1,
+      "type": "mc",
+      "topic": "Trigonometric graphs (amplitude/period/translation)",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [
+        "MA-T3"
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -887,7 +1252,25 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q03-1.pdf",
+      "answerKey": null,
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 1,
+      "type": "mc",
+      "topic": "Stationary points / antidifferentiation",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-C4"
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -901,7 +1284,24 @@
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C2"
-      ]
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q04-1.pdf",
+      "answerKey": null,
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 1,
+      "type": "mc",
+      "topic": "Differentiation of trigonometric functions",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C2"
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -915,7 +1315,24 @@
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C4"
-      ]
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q05-1.pdf",
+      "answerKey": null,
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 1,
+      "type": "mc",
+      "topic": "Area under a curve (definite integral)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4"
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -929,7 +1346,24 @@
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C4"
-      ]
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q06-1.pdf",
+      "answerKey": null,
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 1,
+      "type": "mc",
+      "topic": "Indefinite integrals",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4"
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -943,7 +1377,24 @@
       "module": "Trigonometric Functions",
       "syllabusRefs": [
         "MA-T3"
-      ]
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q07-1.pdf",
+      "answerKey": null,
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": 1,
+      "type": "mc",
+      "topic": "Amplitude, period and range of trig functions",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [
+        "MA-T3"
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -957,6 +1408,51 @@
       "module": "Trigonometric Functions",
       "syllabusRefs": [
         "MA-T2"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q08-1.pdf",
+      "answerKey": null,
+      "questionNumber": "8",
+      "partLabel": null,
+      "marks": 1,
+      "type": "mc",
+      "topic": "Solving trigonometric equations",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [
+        "MA-T2"
+      ],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q09.pdf",
+      "answerKey": null,
+      "questionNumber": "9",
+      "partLabel": null,
+      "marks": 13,
+      "type": null,
+      "topic": "Differentiation, integration, rates of change, exponential functions",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C2",
+        "MA-C4",
+        "MA-C1",
+        "MA-E1",
+        "MA-F1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "i",
+        "c",
+        "i",
+        "d",
+        "i"
       ]
     },
     {
@@ -975,7 +1471,8 @@
         "MA-C1",
         "MA-E1",
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -993,7 +1490,8 @@
         "MA-C1",
         "MA-E1",
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -1011,7 +1509,8 @@
         "MA-C1",
         "MA-E1",
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -1029,7 +1528,8 @@
         "MA-C1",
         "MA-E1",
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -1047,7 +1547,8 @@
         "MA-C1",
         "MA-E1",
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -1065,7 +1566,8 @@
         "MA-C1",
         "MA-E1",
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -1083,6 +1585,31 @@
         "MA-C1",
         "MA-E1",
         "MA-F1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q10.pdf",
+      "answerKey": null,
+      "questionNumber": "10",
+      "partLabel": null,
+      "marks": 12,
+      "type": null,
+      "topic": "Integration, kinematics (particle motion), exponential decay",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-C1",
+        "MA-E1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "i",
+        "b",
+        "i",
+        "c"
       ]
     },
     {
@@ -1099,7 +1626,8 @@
         "MA-C4",
         "MA-C1",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -1115,7 +1643,8 @@
         "MA-C4",
         "MA-C1",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -1131,7 +1660,8 @@
         "MA-C4",
         "MA-C1",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -1147,7 +1677,8 @@
         "MA-C4",
         "MA-C1",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -1163,6 +1694,34 @@
         "MA-C4",
         "MA-C1",
         "MA-E1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q11.pdf",
+      "answerKey": null,
+      "questionNumber": "11",
+      "partLabel": null,
+      "marks": 12,
+      "type": null,
+      "topic": "Curve analysis (concavity/inflection), exponential equations, financial series",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-E1",
+        "MA-M1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "i",
+        "a",
+        "i",
+        "a",
+        "b",
+        "i",
+        "b"
       ]
     },
     {
@@ -1179,7 +1738,8 @@
         "MA-C3",
         "MA-E1",
         "MA-M1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -1195,6 +1755,133 @@
         "MA-C3",
         "MA-E1",
         "MA-M1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q11a-1.pdf",
+      "answerKey": null,
+      "questionNumber": "11",
+      "partLabel": "a",
+      "marks": null,
+      "type": null,
+      "topic": "Curve analysis (concavity/inflection), exponential equations, financial series",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-E1",
+        "MA-M1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q11i-1.pdf",
+      "answerKey": null,
+      "questionNumber": "11",
+      "partLabel": "i",
+      "marks": null,
+      "type": null,
+      "topic": "Curve analysis (concavity/inflection), exponential equations, financial series",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-E1",
+        "MA-M1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q11a-2.pdf",
+      "answerKey": null,
+      "questionNumber": "11",
+      "partLabel": "a",
+      "marks": null,
+      "type": null,
+      "topic": "Curve analysis (concavity/inflection), exponential equations, financial series",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-E1",
+        "MA-M1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q11b.pdf",
+      "answerKey": null,
+      "questionNumber": "11",
+      "partLabel": "b",
+      "marks": null,
+      "type": null,
+      "topic": "Curve analysis (concavity/inflection), exponential equations, financial series",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-E1",
+        "MA-M1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q11i-2.pdf",
+      "answerKey": null,
+      "questionNumber": "11",
+      "partLabel": "i",
+      "marks": null,
+      "type": null,
+      "topic": "Curve analysis (concavity/inflection), exponential equations, financial series",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-E1",
+        "MA-M1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q11b-1.pdf",
+      "answerKey": null,
+      "questionNumber": "11",
+      "partLabel": "b",
+      "marks": null,
+      "type": null,
+      "topic": "Curve analysis (concavity/inflection), exponential equations, financial series",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-E1",
+        "MA-M1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2017-sydney-boys-yearly",
+      "assetKey": "q12.pdf",
+      "answerKey": null,
+      "questionNumber": "12",
+      "partLabel": null,
+      "marks": 12,
+      "type": null,
+      "topic": "Exponential decay, area/volume of revolution, coordinate geometry",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C1",
+        "MA-C4",
+        "MA-F1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "i",
+        "b",
+        "i",
+        "i"
       ]
     },
     {
@@ -1211,7 +1898,8 @@
         "MA-C1",
         "MA-C4",
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -1227,7 +1915,8 @@
         "MA-C1",
         "MA-C4",
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -1243,7 +1932,8 @@
         "MA-C1",
         "MA-C4",
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -1259,7 +1949,8 @@
         "MA-C1",
         "MA-C4",
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2017-sydney-boys-yearly",
@@ -1275,91 +1966,8 @@
         "MA-C1",
         "MA-C4",
         "MA-F1"
-      ]
-    },
-    {
-      "paperSlug": "2017-sydney-boys-yearly",
-      "assetKey": "q11a-1.pdf",
-      "answerKey": null,
-      "questionNumber": "11",
-      "partLabel": "a",
-      "marks": null,
-      "type": null,
-      "topic": "Curve analysis (concavity/inflection)",
-      "module": "Calculus",
-      "syllabusRefs": [
-        "MA-C3"
-      ]
-    },
-    {
-      "paperSlug": "2017-sydney-boys-yearly",
-      "assetKey": "q11i-1.pdf",
-      "answerKey": null,
-      "questionNumber": "11",
-      "partLabel": "i",
-      "marks": null,
-      "type": null,
-      "topic": "Curve analysis (concavity/inflection)",
-      "module": "Calculus",
-      "syllabusRefs": [
-        "MA-C3"
-      ]
-    },
-    {
-      "paperSlug": "2017-sydney-boys-yearly",
-      "assetKey": "q11a-2.pdf",
-      "answerKey": null,
-      "questionNumber": "11",
-      "partLabel": "a",
-      "marks": null,
-      "type": null,
-      "topic": "Exponential equations",
-      "module": "Exponential Functions",
-      "syllabusRefs": [
-        "MA-E1"
-      ]
-    },
-    {
-      "paperSlug": "2017-sydney-boys-yearly",
-      "assetKey": "q11b.pdf",
-      "answerKey": null,
-      "questionNumber": "11",
-      "partLabel": "b",
-      "marks": null,
-      "type": null,
-      "topic": "Arithmetic series (savings)",
-      "module": "Financial Mathematics",
-      "syllabusRefs": [
-        "MA-M1"
-      ]
-    },
-    {
-      "paperSlug": "2017-sydney-boys-yearly",
-      "assetKey": "q11i-2.pdf",
-      "answerKey": null,
-      "questionNumber": "11",
-      "partLabel": "i",
-      "marks": null,
-      "type": null,
-      "topic": "Arithmetic series (savings)",
-      "module": "Financial Mathematics",
-      "syllabusRefs": [
-        "MA-M1"
-      ]
-    },
-    {
-      "paperSlug": "2017-sydney-boys-yearly",
-      "assetKey": "q11b-1.pdf",
-      "answerKey": null,
-      "questionNumber": "11",
-      "partLabel": "b",
-      "marks": null,
-      "type": null,
-      "topic": "Compound interest / geometric series (annuities)",
-      "module": "Financial Mathematics",
-      "syllabusRefs": [
-        "MA-M1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1368,12 +1976,29 @@
       "questionNumber": "1",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Coordinate Geometry \u2014 Linear Functions",
+      "module": "Functions",
+      "syllabusRefs": [
+        "MA-F1"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2015-sydney-boys-yearly",
+      "assetKey": "q01-1.pdf",
+      "answerKey": "a01-1.pdf",
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Coordinate Geometry \u2014 Linear Functions",
       "module": "Functions",
       "syllabusRefs": [
         "MA-F1"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1382,12 +2007,29 @@
       "questionNumber": "2",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Sequences and Series \u2014 Geometric Series",
+      "module": "Functions",
+      "syllabusRefs": [
+        "MA-F1"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2015-sydney-boys-yearly",
+      "assetKey": "q02-1.pdf",
+      "answerKey": "a02-1.pdf",
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Sequences and Series \u2014 Geometric Series",
       "module": "Functions",
       "syllabusRefs": [
         "MA-F1"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1396,12 +2038,29 @@
       "questionNumber": "3",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Trigonometric Identities",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [
+        "MA-T2"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2015-sydney-boys-yearly",
+      "assetKey": "q03-1.pdf",
+      "answerKey": "a03-1.pdf",
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Trigonometric Identities",
       "module": "Trigonometric Functions",
       "syllabusRefs": [
         "MA-T2"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1410,12 +2069,29 @@
       "questionNumber": "4",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Euclidean Geometry \u2014 Angle Properties & Isosceles Triangles",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [
+        "MA-T1"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2015-sydney-boys-yearly",
+      "assetKey": "q04-1.pdf",
+      "answerKey": "a04-1.pdf",
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Euclidean Geometry \u2014 Angle Properties & Isosceles Triangles",
       "module": "Trigonometric Functions",
       "syllabusRefs": [
         "MA-T1"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1424,12 +2100,29 @@
       "questionNumber": "5",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Euclidean Geometry \u2014 Properties of Quadrilaterals",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [
+        "MA-T1"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2015-sydney-boys-yearly",
+      "assetKey": "q05-1.pdf",
+      "answerKey": "a05-1.pdf",
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Euclidean Geometry \u2014 Properties of Quadrilaterals",
       "module": "Trigonometric Functions",
       "syllabusRefs": [
         "MA-T1"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1438,12 +2131,29 @@
       "questionNumber": "6",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Integral Calculus \u2014 Definite Integrals",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2015-sydney-boys-yearly",
+      "assetKey": "q06-1.pdf",
+      "answerKey": "a06-1.pdf",
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Integral Calculus \u2014 Definite Integrals",
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C4"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1452,12 +2162,29 @@
       "questionNumber": "7",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Trigonometric Equations \u2014 Complementary Angles",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [
+        "MA-T3"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2015-sydney-boys-yearly",
+      "assetKey": "q07-1.pdf",
+      "answerKey": "a07-1.pdf",
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Trigonometric Equations \u2014 Complementary Angles",
       "module": "Trigonometric Functions",
       "syllabusRefs": [
         "MA-T3"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1466,12 +2193,29 @@
       "questionNumber": "8",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Probability \u2014 Conditional Probability",
+      "module": "Statistical Analysis",
+      "syllabusRefs": [
+        "MA-S1"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2015-sydney-boys-yearly",
+      "assetKey": "q08-1.pdf",
+      "answerKey": "a08-1.pdf",
+      "questionNumber": "8",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Probability \u2014 Conditional Probability",
       "module": "Statistical Analysis",
       "syllabusRefs": [
         "MA-S1"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1480,12 +2224,29 @@
       "questionNumber": "9",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Logarithm Laws",
+      "module": "Exponential and Logarithmic Functions",
+      "syllabusRefs": [
+        "MA-E1"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2015-sydney-boys-yearly",
+      "assetKey": "q09-1.pdf",
+      "answerKey": "a09-1.pdf",
+      "questionNumber": "9",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Logarithm Laws",
       "module": "Exponential and Logarithmic Functions",
       "syllabusRefs": [
         "MA-E1"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1494,11 +2255,48 @@
       "questionNumber": "10",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Differential Calculus \u2014 First Principles",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C2"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2015-sydney-boys-yearly",
+      "assetKey": "q10-1.pdf",
+      "answerKey": "a10-1.pdf",
+      "questionNumber": "10",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Differential Calculus \u2014 First Principles",
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C2"
+      ],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2015-sydney-boys-yearly",
+      "assetKey": "q11.pdf",
+      "answerKey": "a11.pdf",
+      "questionNumber": "11",
+      "partLabel": null,
+      "marks": 10,
+      "type": null,
+      "topic": "Differential & Integral Calculus \u2014 Differentiation Rules and Definite Integrals",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C2",
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
       ]
     },
     {
@@ -1514,7 +2312,8 @@
       "syllabusRefs": [
         "MA-C2",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1529,6 +2328,28 @@
       "syllabusRefs": [
         "MA-C2",
         "MA-C4"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2015-sydney-boys-yearly",
+      "assetKey": "q12.pdf",
+      "answerKey": "a12.pdf",
+      "questionNumber": "12",
+      "partLabel": null,
+      "marks": 10,
+      "type": null,
+      "topic": "Calculus \u2014 Exponential Growth and Decay",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C1",
+        "MA-E1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -1544,7 +2365,8 @@
       "syllabusRefs": [
         "MA-C1",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1559,7 +2381,8 @@
       "syllabusRefs": [
         "MA-C1",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1574,6 +2397,27 @@
       "syllabusRefs": [
         "MA-C1",
         "MA-E1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2015-sydney-boys-yearly",
+      "assetKey": "q13.pdf",
+      "answerKey": "a13.pdf",
+      "questionNumber": "13",
+      "partLabel": null,
+      "marks": 10,
+      "type": null,
+      "topic": "Euclidean Geometry \u2014 Congruent Triangle Proofs",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [
+        "MA-T1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -1588,7 +2432,8 @@
       "module": "Trigonometric Functions",
       "syllabusRefs": [
         "MA-T1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1602,7 +2447,8 @@
       "module": "Trigonometric Functions",
       "syllabusRefs": [
         "MA-T1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1616,6 +2462,27 @@
       "module": "Trigonometric Functions",
       "syllabusRefs": [
         "MA-T1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2015-sydney-boys-yearly",
+      "assetKey": "q14.pdf",
+      "answerKey": "a14.pdf",
+      "questionNumber": "14",
+      "partLabel": null,
+      "marks": 10,
+      "type": null,
+      "topic": "Calculus \u2014 Rates of Change (Kinematics)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -1630,7 +2497,8 @@
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1644,7 +2512,8 @@
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1658,6 +2527,28 @@
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2015-sydney-boys-yearly",
+      "assetKey": "q15.pdf",
+      "answerKey": "a15.pdf",
+      "questionNumber": "15",
+      "partLabel": null,
+      "marks": 10,
+      "type": null,
+      "topic": "Calculus \u2014 Applications (Volumes of Revolution & Rates of Change)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-C1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -1673,7 +2564,8 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-C1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1688,7 +2580,8 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-C1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1703,6 +2596,26 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-C1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2015-sydney-boys-yearly",
+      "assetKey": "q16.pdf",
+      "answerKey": "a16.pdf",
+      "questionNumber": "16",
+      "partLabel": null,
+      "marks": 10,
+      "type": null,
+      "topic": "Calculus \u2014 Curve Sketching and Optimisation",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
       ]
     },
     {
@@ -1717,7 +2630,8 @@
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2015-sydney-boys-yearly",
@@ -1731,6 +2645,29 @@
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2011-sydney-boys-yearly",
+      "assetKey": "q01.pdf",
+      "answerKey": "a01.pdf",
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 18,
+      "type": null,
+      "topic": "Integration & Differentiation",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C2",
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d"
       ]
     },
     {
@@ -1746,7 +2683,8 @@
       "syllabusRefs": [
         "MA-C2",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2011-sydney-boys-yearly",
@@ -1761,7 +2699,8 @@
       "syllabusRefs": [
         "MA-C2",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2011-sydney-boys-yearly",
@@ -1776,7 +2715,8 @@
       "syllabusRefs": [
         "MA-C2",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2011-sydney-boys-yearly",
@@ -1791,6 +2731,28 @@
       "syllabusRefs": [
         "MA-C2",
         "MA-C4"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2011-sydney-boys-yearly",
+      "assetKey": "q02.pdf",
+      "answerKey": "a02.pdf",
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 13,
+      "type": null,
+      "topic": "Curve Sketching & Integration",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -1806,7 +2768,8 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2011-sydney-boys-yearly",
@@ -1821,7 +2784,8 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2011-sydney-boys-yearly",
@@ -1836,6 +2800,30 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2011-sydney-boys-yearly",
+      "assetKey": "q03.pdf",
+      "answerKey": "a03.pdf",
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 17,
+      "type": null,
+      "topic": "Integral Calculus & Applications",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-E1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
       ]
     },
     {
@@ -1851,7 +2839,8 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2011-sydney-boys-yearly",
@@ -1866,7 +2855,8 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2011-sydney-boys-yearly",
@@ -1881,7 +2871,8 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2011-sydney-boys-yearly",
@@ -1896,7 +2887,8 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2011-sydney-boys-yearly",
@@ -1911,6 +2903,26 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-E1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2011-sydney-boys-yearly",
+      "assetKey": "q04.pdf",
+      "answerKey": "a04.pdf",
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 16,
+      "type": null,
+      "topic": "Applications of Calculus (Kinematics & Curve Sketching)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
       ]
     },
     {
@@ -1925,7 +2937,8 @@
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2011-sydney-boys-yearly",
@@ -1939,6 +2952,28 @@
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2011-sydney-boys-yearly",
+      "assetKey": "q05.pdf",
+      "answerKey": "a05.pdf",
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 16,
+      "type": null,
+      "topic": "Applications of Differentiation & Integration",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -1954,7 +2989,8 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2011-sydney-boys-yearly",
@@ -1969,7 +3005,8 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2011-sydney-boys-yearly",
@@ -1984,6 +3021,31 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2008-sydney-boys-yearly",
+      "assetKey": "q01.pdf",
+      "answerKey": "a01.pdf",
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Calculus - Differentiation and Integration",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C2",
+        "MA-C4",
+        "MA-T1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
       ]
     },
     {
@@ -2000,7 +3062,8 @@
         "MA-C2",
         "MA-C4",
         "MA-T1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2008-sydney-boys-yearly",
@@ -2016,7 +3079,8 @@
         "MA-C2",
         "MA-C4",
         "MA-T1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2008-sydney-boys-yearly",
@@ -2032,7 +3096,8 @@
         "MA-C2",
         "MA-C4",
         "MA-T1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2008-sydney-boys-yearly",
@@ -2048,7 +3113,8 @@
         "MA-C2",
         "MA-C4",
         "MA-T1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2008-sydney-boys-yearly",
@@ -2064,6 +3130,30 @@
         "MA-C2",
         "MA-C4",
         "MA-T1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2008-sydney-boys-yearly",
+      "assetKey": "q02.pdf",
+      "answerKey": "a02.pdf",
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Sequences and Series",
+      "module": "Sequences and Series",
+      "syllabusRefs": [
+        "MA-S1",
+        "MA-C4",
+        "MA-C2"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d"
       ]
     },
     {
@@ -2080,7 +3170,8 @@
         "MA-S1",
         "MA-C4",
         "MA-C2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2008-sydney-boys-yearly",
@@ -2096,7 +3187,8 @@
         "MA-S1",
         "MA-C4",
         "MA-C2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2008-sydney-boys-yearly",
@@ -2112,7 +3204,8 @@
         "MA-S1",
         "MA-C4",
         "MA-C2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2008-sydney-boys-yearly",
@@ -2128,6 +3221,32 @@
         "MA-S1",
         "MA-C4",
         "MA-C2"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2008-sydney-boys-yearly",
+      "assetKey": "q03.pdf",
+      "answerKey": "a03.pdf",
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 13,
+      "type": null,
+      "topic": "Calculus and Series Applications",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-S1",
+        "MA-C4",
+        "MA-E1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
       ]
     },
     {
@@ -2145,7 +3264,8 @@
         "MA-S1",
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2008-sydney-boys-yearly",
@@ -2162,7 +3282,8 @@
         "MA-S1",
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2008-sydney-boys-yearly",
@@ -2179,7 +3300,8 @@
         "MA-S1",
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2008-sydney-boys-yearly",
@@ -2196,7 +3318,8 @@
         "MA-S1",
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2008-sydney-boys-yearly",
@@ -2213,6 +3336,29 @@
         "MA-S1",
         "MA-C4",
         "MA-E1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2008-sydney-boys-yearly",
+      "assetKey": "q04.pdf",
+      "answerKey": "a04.pdf",
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 13,
+      "type": null,
+      "topic": "Calculus - Curve Sketching and Areas",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-E1",
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -2229,7 +3375,8 @@
         "MA-C4",
         "MA-E1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2008-sydney-boys-yearly",
@@ -2245,7 +3392,8 @@
         "MA-C4",
         "MA-E1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2008-sydney-boys-yearly",
@@ -2261,6 +3409,29 @@
         "MA-C4",
         "MA-E1",
         "MA-C3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2008-sydney-boys-yearly",
+      "assetKey": "q05.pdf",
+      "answerKey": "a05.pdf",
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 12,
+      "type": null,
+      "topic": "Calculus Applications and Trigonometry",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-T3",
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -2277,7 +3448,8 @@
         "MA-C4",
         "MA-T3",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2008-sydney-boys-yearly",
@@ -2293,7 +3465,8 @@
         "MA-C4",
         "MA-T3",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2008-sydney-boys-yearly",
@@ -2309,6 +3482,33 @@
         "MA-C4",
         "MA-T3",
         "MA-C3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2013-sydney-boys-yearly",
+      "assetKey": "qa.pdf",
+      "answerKey": "aa.pdf",
+      "questionNumber": "A",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Differentiation, Integration, Rectilinear Motion and Exponential/Logarithmic Functions",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C2",
+        "MA-C4",
+        "MA-E1",
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
       ]
     },
     {
@@ -2326,7 +3526,8 @@
         "MA-C4",
         "MA-E1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2343,7 +3544,8 @@
         "MA-C4",
         "MA-E1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2360,7 +3562,8 @@
         "MA-C4",
         "MA-E1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2377,7 +3580,8 @@
         "MA-C4",
         "MA-E1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2394,7 +3598,8 @@
         "MA-C4",
         "MA-E1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2411,6 +3616,34 @@
         "MA-C4",
         "MA-E1",
         "MA-C3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2013-sydney-boys-yearly",
+      "assetKey": "qb.pdf",
+      "answerKey": "ab.pdf",
+      "questionNumber": "B",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Trigonometric Graphs, Areas Between Curves and Exponential Functions",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-T3",
+        "MA-C4",
+        "MA-E1",
+        "MA-C2",
+        "MA-T2"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
       ]
     },
     {
@@ -2429,7 +3662,8 @@
         "MA-E1",
         "MA-C2",
         "MA-T2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2447,7 +3681,8 @@
         "MA-E1",
         "MA-C2",
         "MA-T2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2465,7 +3700,8 @@
         "MA-E1",
         "MA-C2",
         "MA-T2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2483,7 +3719,8 @@
         "MA-E1",
         "MA-C2",
         "MA-T2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2501,7 +3738,8 @@
         "MA-E1",
         "MA-C2",
         "MA-T2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2519,6 +3757,32 @@
         "MA-E1",
         "MA-C2",
         "MA-T2"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2013-sydney-boys-yearly",
+      "assetKey": "qc.pdf",
+      "answerKey": "ac.pdf",
+      "questionNumber": "C",
+      "partLabel": null,
+      "marks": 17,
+      "type": null,
+      "topic": "Integration, Odd-Function Graphs, Trigonometric Motion, Exponential Equations and Curve Sketching",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-E1",
+        "MA-C3",
+        "MA-T3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
       ]
     },
     {
@@ -2536,7 +3800,8 @@
         "MA-E1",
         "MA-C3",
         "MA-T3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2553,7 +3818,8 @@
         "MA-E1",
         "MA-C3",
         "MA-T3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2570,7 +3836,8 @@
         "MA-E1",
         "MA-C3",
         "MA-T3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2587,7 +3854,8 @@
         "MA-E1",
         "MA-C3",
         "MA-T3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2604,6 +3872,31 @@
         "MA-E1",
         "MA-C3",
         "MA-T3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2013-sydney-boys-yearly",
+      "assetKey": "qd.pdf",
+      "answerKey": "ad.pdf",
+      "questionNumber": "D",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Volumes of Revolution, Differentiation, Rates of Change and Optimisation",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-C2",
+        "MA-E1",
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d"
       ]
     },
     {
@@ -2621,7 +3914,8 @@
         "MA-C2",
         "MA-E1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2638,7 +3932,8 @@
         "MA-C2",
         "MA-E1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2655,7 +3950,8 @@
         "MA-C2",
         "MA-E1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2672,6 +3968,30 @@
         "MA-C2",
         "MA-E1",
         "MA-C3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2013-sydney-boys-yearly",
+      "assetKey": "qe.pdf",
+      "answerKey": "ae.pdf",
+      "questionNumber": "E",
+      "partLabel": null,
+      "marks": 13,
+      "type": null,
+      "topic": "Exponential Function Proof, Trigonometric Area (Arcs/Sectors) and Stationary Points of Trigonometric Functions",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-E1",
+        "MA-T1",
+        "MA-C3",
+        "MA-T2"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -2689,7 +4009,8 @@
         "MA-T1",
         "MA-C3",
         "MA-T2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2706,7 +4027,8 @@
         "MA-T1",
         "MA-C3",
         "MA-T2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2013-sydney-boys-yearly",
@@ -2723,6 +4045,39 @@
         "MA-T1",
         "MA-C3",
         "MA-T2"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2014-sydney-boys-yearly",
+      "assetKey": "q01.pdf",
+      "answerKey": "a01.pdf",
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 30,
+      "type": null,
+      "topic": "Exponential & Logarithmic Functions, Trigonometric Equations/Graphs, Curve Analysis and Introductory Calculus",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-E1",
+        "MA-T3",
+        "MA-C2",
+        "MA-C3",
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k"
       ]
     },
     {
@@ -2741,7 +4096,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -2759,7 +4115,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -2777,7 +4134,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -2795,7 +4153,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -2813,7 +4172,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -2831,7 +4191,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -2849,7 +4210,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -2867,7 +4229,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -2885,7 +4248,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -2903,7 +4267,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -2921,6 +4286,34 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2014-sydney-boys-yearly",
+      "assetKey": "q02.pdf",
+      "answerKey": "a02.pdf",
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 30,
+      "type": null,
+      "topic": "Differentiation and Integration Techniques (including Exponential, Logarithmic and Trigonometric Functions)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C2",
+        "MA-C4",
+        "MA-E1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h"
       ]
     },
     {
@@ -2937,7 +4330,8 @@
         "MA-C2",
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -2953,7 +4347,8 @@
         "MA-C2",
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -2969,7 +4364,8 @@
         "MA-C2",
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -2985,7 +4381,8 @@
         "MA-C2",
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -3001,7 +4398,8 @@
         "MA-C2",
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -3017,7 +4415,8 @@
         "MA-C2",
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -3033,7 +4432,8 @@
         "MA-C2",
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -3049,6 +4449,29 @@
         "MA-C2",
         "MA-C4",
         "MA-E1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2014-sydney-boys-yearly",
+      "assetKey": "q03.pdf",
+      "answerKey": "a03.pdf",
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 20,
+      "type": null,
+      "topic": "Curve Sketching, Areas/Volumes of Revolution and Numerical Integration (Simpson's Rule)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d"
       ]
     },
     {
@@ -3064,7 +4487,8 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -3079,7 +4503,8 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -3094,7 +4519,8 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -3109,6 +4535,30 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2014-sydney-boys-yearly",
+      "assetKey": "q04.pdf",
+      "answerKey": "a04.pdf",
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 16,
+      "type": null,
+      "topic": "Optimisation using Calculus \u2014 Similar Triangles and Perimeter of an Isosceles Triangle",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-T1",
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
       ]
     },
     {
@@ -3124,7 +4574,8 @@
       "syllabusRefs": [
         "MA-T1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -3139,7 +4590,8 @@
       "syllabusRefs": [
         "MA-T1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -3154,7 +4606,8 @@
       "syllabusRefs": [
         "MA-T1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -3169,7 +4622,8 @@
       "syllabusRefs": [
         "MA-T1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -3179,10 +4633,33 @@
       "partLabel": "e",
       "marks": 4,
       "type": "calculation",
-      "topic": "Euclidean Geometry \u2014 Circle Geometry and Pythagoras' Theorem",
-      "module": "Trigonometric Functions",
+      "topic": "Optimisation using Calculus \u2014 Similar Triangles and Perimeter of an Isosceles Triangle",
+      "module": "Calculus",
       "syllabusRefs": [
-        "MA-T1"
+        "MA-T1",
+        "MA-C3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2014-sydney-boys-yearly",
+      "assetKey": "q05.pdf",
+      "answerKey": "a05.pdf",
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 25,
+      "type": null,
+      "topic": "Applications of Calculus \u2014 Exponential Growth/Decay and Rates of Change",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C1",
+        "MA-E1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -3198,7 +4675,8 @@
       "syllabusRefs": [
         "MA-C1",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -3213,7 +4691,8 @@
       "syllabusRefs": [
         "MA-C1",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2014-sydney-boys-yearly",
@@ -3228,7 +4707,8 @@
       "syllabusRefs": [
         "MA-C1",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3237,12 +4717,29 @@
       "questionNumber": "1",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Trigonometric Identities",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [
+        "MA-T2"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2016-sydney-boys-yearly",
+      "assetKey": "q01-1.pdf",
+      "answerKey": "a01-1.pdf",
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Trigonometric Identities",
       "module": "Trigonometric Functions",
       "syllabusRefs": [
         "MA-T2"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3251,12 +4748,29 @@
       "questionNumber": "2",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Non-Right-Angled Triangle Trigonometry \u2014 Sine and Cosine Rules",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [
+        "MA-T1"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2016-sydney-boys-yearly",
+      "assetKey": "q02-1.pdf",
+      "answerKey": "a02-1.pdf",
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Non-Right-Angled Triangle Trigonometry \u2014 Sine and Cosine Rules",
       "module": "Trigonometric Functions",
       "syllabusRefs": [
         "MA-T1"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3265,12 +4779,29 @@
       "questionNumber": "3",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Probability \u2014 Independent Events With Replacement",
+      "module": "Statistical Analysis",
+      "syllabusRefs": [
+        "MA-S1"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2016-sydney-boys-yearly",
+      "assetKey": "q03-1.pdf",
+      "answerKey": "a03-1.pdf",
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Probability \u2014 Independent Events With Replacement",
       "module": "Statistical Analysis",
       "syllabusRefs": [
         "MA-S1"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3279,12 +4810,29 @@
       "questionNumber": "4",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Sequences and Series \u2014 Geometric Series (Limiting Sum)",
+      "module": "Functions",
+      "syllabusRefs": [
+        "MA-F1"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2016-sydney-boys-yearly",
+      "assetKey": "q04-1.pdf",
+      "answerKey": "a04-1.pdf",
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Sequences and Series \u2014 Geometric Series (Limiting Sum)",
       "module": "Functions",
       "syllabusRefs": [
         "MA-F1"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3293,12 +4841,29 @@
       "questionNumber": "5",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Logarithmic Equations",
+      "module": "Exponential and Logarithmic Functions",
+      "syllabusRefs": [
+        "MA-E1"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2016-sydney-boys-yearly",
+      "assetKey": "q05-1.pdf",
+      "answerKey": "a05-1.pdf",
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Logarithmic Equations",
       "module": "Exponential and Logarithmic Functions",
       "syllabusRefs": [
         "MA-E1"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3307,12 +4872,29 @@
       "questionNumber": "6",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Trigonometric Functions and Graphs \u2014 Amplitude and Period",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [
+        "MA-T3"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2016-sydney-boys-yearly",
+      "assetKey": "q06-1.pdf",
+      "answerKey": "a06-1.pdf",
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Trigonometric Functions and Graphs \u2014 Amplitude and Period",
       "module": "Trigonometric Functions",
       "syllabusRefs": [
         "MA-T3"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3321,12 +4903,29 @@
       "questionNumber": "7",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Integral Calculus \u2014 Area Between a Curve and the y-axis",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2016-sydney-boys-yearly",
+      "assetKey": "q07-1.pdf",
+      "answerKey": "a07-1.pdf",
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Integral Calculus \u2014 Area Between a Curve and the y-axis",
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C4"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3335,12 +4934,29 @@
       "questionNumber": "8",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "The Parabola \u2014 Equation From Vertex and a Point",
+      "module": "Functions",
+      "syllabusRefs": [
+        "MA-F1"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2016-sydney-boys-yearly",
+      "assetKey": "q08-1.pdf",
+      "answerKey": "a08-1.pdf",
+      "questionNumber": "8",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "The Parabola \u2014 Equation From Vertex and a Point",
       "module": "Functions",
       "syllabusRefs": [
         "MA-F1"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3349,12 +4965,29 @@
       "questionNumber": "9",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Curve Sketching \u2014 Sign of First and Second Derivative",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2016-sydney-boys-yearly",
+      "assetKey": "q09-1.pdf",
+      "answerKey": "a09-1.pdf",
+      "questionNumber": "9",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Curve Sketching \u2014 Sign of First and Second Derivative",
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C3"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3363,11 +4996,53 @@
       "questionNumber": "10",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Kinematics \u2014 Displacement-Time Graphs",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2016-sydney-boys-yearly",
+      "assetKey": "q10-1.pdf",
+      "answerKey": "a10-1.pdf",
+      "questionNumber": "10",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Kinematics \u2014 Displacement-Time Graphs",
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C3"
+      ],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2016-sydney-boys-yearly",
+      "assetKey": "q11.pdf",
+      "answerKey": "a11.pdf",
+      "questionNumber": "11",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Mixed Application \u2014 Parabola, Similar Triangles, Differentiation & Quadratic Roots",
+      "module": "Functions",
+      "syllabusRefs": [
+        "MA-F1",
+        "MA-T1",
+        "MA-C2",
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
       ]
     },
     {
@@ -3385,7 +5060,8 @@
         "MA-T1",
         "MA-C2",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3402,7 +5078,8 @@
         "MA-T1",
         "MA-C2",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3419,7 +5096,8 @@
         "MA-T1",
         "MA-C2",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3436,7 +5114,8 @@
         "MA-T1",
         "MA-C2",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3453,6 +5132,31 @@
         "MA-T1",
         "MA-C2",
         "MA-C4"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2016-sydney-boys-yearly",
+      "assetKey": "q12.pdf",
+      "answerKey": "a12.pdf",
+      "questionNumber": "12",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Curve Sketching, Numerical Integration, Areas, Kinematics & Quadratic Roots",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-C4",
+        "MA-F1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
       ]
     },
     {
@@ -3469,7 +5173,8 @@
         "MA-C3",
         "MA-C4",
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3485,7 +5190,8 @@
         "MA-C3",
         "MA-C4",
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3501,7 +5207,8 @@
         "MA-C3",
         "MA-C4",
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3517,7 +5224,8 @@
         "MA-C3",
         "MA-C4",
         "MA-F1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3533,6 +5241,31 @@
         "MA-C3",
         "MA-C4",
         "MA-F1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2016-sydney-boys-yearly",
+      "assetKey": "q13.pdf",
+      "answerKey": "a13.pdf",
+      "questionNumber": "13",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Inscribed Circle Trigonometry, Optimisation, Probability & Volumes of Revolution",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [
+        "MA-T1",
+        "MA-C3",
+        "MA-S1",
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d"
       ]
     },
     {
@@ -3550,7 +5283,8 @@
         "MA-C3",
         "MA-S1",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3567,7 +5301,8 @@
         "MA-C3",
         "MA-S1",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3584,7 +5319,8 @@
         "MA-C3",
         "MA-S1",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3601,6 +5337,29 @@
         "MA-C3",
         "MA-S1",
         "MA-C4"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2016-sydney-boys-yearly",
+      "assetKey": "q14.pdf",
+      "answerKey": "a14.pdf",
+      "questionNumber": "14",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Exponential Growth, Areas via Circular Geometry & Logistic Growth Differentiation",
+      "module": "Exponential and Logarithmic Functions",
+      "syllabusRefs": [
+        "MA-E1",
+        "MA-C4",
+        "MA-C2"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -3617,7 +5376,8 @@
         "MA-E1",
         "MA-C4",
         "MA-C2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3633,7 +5393,8 @@
         "MA-E1",
         "MA-C4",
         "MA-C2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2016-sydney-boys-yearly",
@@ -3649,7 +5410,8 @@
         "MA-E1",
         "MA-C4",
         "MA-C2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3658,12 +5420,29 @@
       "questionNumber": "1",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Curve Sketching using Calculus",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2012-sydney-boys-yearly",
+      "assetKey": "q01-1.pdf",
+      "answerKey": "a01-1.pdf",
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Curve Sketching using Calculus",
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C3"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3672,12 +5451,29 @@
       "questionNumber": "2",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Numerical Integration (Trapezoidal Rule)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2012-sydney-boys-yearly",
+      "assetKey": "q02-1.pdf",
+      "answerKey": "a02-1.pdf",
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Numerical Integration (Trapezoidal Rule)",
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C4"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3686,17 +5482,51 @@
       "questionNumber": "3",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Trigonometric Identities",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [
+        "MA-T2"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2012-sydney-boys-yearly",
+      "assetKey": "q03-1.pdf",
+      "answerKey": "a03-1.pdf",
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Trigonometric Identities",
       "module": "Trigonometric Functions",
       "syllabusRefs": [
         "MA-T2"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
       "assetKey": "q04.pdf",
       "answerKey": "a04.pdf",
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 1,
+      "type": null,
+      "topic": "Differentiation of Exponential Functions",
+      "module": "Exponential and Logarithmic Functions",
+      "syllabusRefs": [
+        "MA-E1",
+        "MA-C2"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2012-sydney-boys-yearly",
+      "assetKey": "q04-1.pdf",
+      "answerKey": "a04-1.pdf",
       "questionNumber": "4",
       "partLabel": null,
       "marks": 1,
@@ -3706,7 +5536,8 @@
       "syllabusRefs": [
         "MA-E1",
         "MA-C2"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3715,12 +5546,29 @@
       "questionNumber": "5",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Motion Graphs (Applications of Calculus)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2012-sydney-boys-yearly",
+      "assetKey": "q05-1.pdf",
+      "answerKey": "a05-1.pdf",
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Motion Graphs (Applications of Calculus)",
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C3"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3729,12 +5577,29 @@
       "questionNumber": "6",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Area Under a Curve",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2012-sydney-boys-yearly",
+      "assetKey": "q06-1.pdf",
+      "answerKey": "a06-1.pdf",
+      "questionNumber": "6",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Area Under a Curve",
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C4"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3743,12 +5608,29 @@
       "questionNumber": "7",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Curve Sketching using Calculus",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2012-sydney-boys-yearly",
+      "assetKey": "q07-1.pdf",
+      "answerKey": "a07-1.pdf",
+      "questionNumber": "7",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Curve Sketching using Calculus",
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C3"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3757,12 +5639,29 @@
       "questionNumber": "8",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Integration of Trigonometric Functions",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2012-sydney-boys-yearly",
+      "assetKey": "q08-1.pdf",
+      "answerKey": "a08-1.pdf",
+      "questionNumber": "8",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Integration of Trigonometric Functions",
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C4"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3771,12 +5670,29 @@
       "questionNumber": "9",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Area Under a Curve",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2012-sydney-boys-yearly",
+      "assetKey": "q09-1.pdf",
+      "answerKey": "a09-1.pdf",
+      "questionNumber": "9",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Area Under a Curve",
       "module": "Calculus",
       "syllabusRefs": [
         "MA-C4"
-      ]
+      ],
+      "unit": "question"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3785,11 +5701,54 @@
       "questionNumber": "10",
       "partLabel": null,
       "marks": 1,
+      "type": null,
+      "topic": "Exponential Growth and Decay",
+      "module": "Exponential and Logarithmic Functions",
+      "syllabusRefs": [
+        "MA-E1"
+      ],
+      "unit": "question",
+      "parts": []
+    },
+    {
+      "paperSlug": "2012-sydney-boys-yearly",
+      "assetKey": "q10-1.pdf",
+      "answerKey": "a10-1.pdf",
+      "questionNumber": "10",
+      "partLabel": null,
+      "marks": 1,
       "type": "mc",
       "topic": "Exponential Growth and Decay",
       "module": "Exponential and Logarithmic Functions",
       "syllabusRefs": [
         "MA-E1"
+      ],
+      "unit": "question"
+    },
+    {
+      "paperSlug": "2012-sydney-boys-yearly",
+      "assetKey": "q11.pdf",
+      "answerKey": "a11.pdf",
+      "questionNumber": "11",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Calculus \u2014 Differentiation, Integration and Applications",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C2",
+        "MA-C4",
+        "MA-C3",
+        "MA-T1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
       ]
     },
     {
@@ -3807,7 +5766,8 @@
         "MA-C4",
         "MA-C3",
         "MA-T1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3824,7 +5784,8 @@
         "MA-C4",
         "MA-C3",
         "MA-T1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3841,7 +5802,8 @@
         "MA-C4",
         "MA-C3",
         "MA-T1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3858,7 +5820,8 @@
         "MA-C4",
         "MA-C3",
         "MA-T1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3875,7 +5838,8 @@
         "MA-C4",
         "MA-C3",
         "MA-T1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3892,6 +5856,31 @@
         "MA-C4",
         "MA-C3",
         "MA-T1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2012-sydney-boys-yearly",
+      "assetKey": "q12.pdf",
+      "answerKey": "a12.pdf",
+      "questionNumber": "12",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Calculus \u2014 Differentiation, Integration and Related Rates",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C2",
+        "MA-C4",
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
       ]
     },
     {
@@ -3908,7 +5897,8 @@
         "MA-C2",
         "MA-C4",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3924,7 +5914,8 @@
         "MA-C2",
         "MA-C4",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3940,7 +5931,8 @@
         "MA-C2",
         "MA-C4",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3956,7 +5948,8 @@
         "MA-C2",
         "MA-C4",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -3972,6 +5965,29 @@
         "MA-C2",
         "MA-C4",
         "MA-C3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2012-sydney-boys-yearly",
+      "assetKey": "q13.pdf",
+      "answerKey": "a13.pdf",
+      "questionNumber": "13",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Calculus \u2014 Applications of Differentiation and Integration; Curve Sketching",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-C4",
+        "MA-F2"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -3988,7 +6004,8 @@
         "MA-C3",
         "MA-C4",
         "MA-F2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -4004,7 +6021,8 @@
         "MA-C3",
         "MA-C4",
         "MA-F2"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -4020,6 +6038,30 @@
         "MA-C3",
         "MA-C4",
         "MA-F2"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2012-sydney-boys-yearly",
+      "assetKey": "q14.pdf",
+      "answerKey": "a14.pdf",
+      "questionNumber": "14",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Exponential Functions, Trigonometric Graphs and Optimisation",
+      "module": "Exponential and Logarithmic Functions",
+      "syllabusRefs": [
+        "MA-E1",
+        "MA-T3",
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d"
       ]
     },
     {
@@ -4036,7 +6078,8 @@
         "MA-E1",
         "MA-T3",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -4052,7 +6095,8 @@
         "MA-E1",
         "MA-T3",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -4068,7 +6112,8 @@
         "MA-E1",
         "MA-T3",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2012-sydney-boys-yearly",
@@ -4084,6 +6129,29 @@
         "MA-E1",
         "MA-T3",
         "MA-C3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2010-sydney-boys-yearly",
+      "assetKey": "q01.pdf",
+      "answerKey": "a01.pdf",
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 16,
+      "type": null,
+      "topic": "Calculus \u2014 Integration",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-E1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d"
       ]
     },
     {
@@ -4099,7 +6167,8 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2010-sydney-boys-yearly",
@@ -4114,7 +6183,8 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2010-sydney-boys-yearly",
@@ -4129,7 +6199,8 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-E1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2010-sydney-boys-yearly",
@@ -4144,6 +6215,29 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-E1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2010-sydney-boys-yearly",
+      "assetKey": "q02.pdf",
+      "answerKey": "a02.pdf",
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Calculus \u2014 Applications of Differentiation",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-C1"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d"
       ]
     },
     {
@@ -4159,7 +6253,8 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2010-sydney-boys-yearly",
@@ -4174,7 +6269,8 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2010-sydney-boys-yearly",
@@ -4189,7 +6285,8 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C1"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2010-sydney-boys-yearly",
@@ -4204,6 +6301,30 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C1"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2010-sydney-boys-yearly",
+      "assetKey": "q03.pdf",
+      "answerKey": "a03.pdf",
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Calculus \u2014 Integration and Exponential Growth",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-E1",
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d"
       ]
     },
     {
@@ -4220,7 +6341,8 @@
         "MA-C4",
         "MA-E1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2010-sydney-boys-yearly",
@@ -4236,7 +6358,8 @@
         "MA-C4",
         "MA-E1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2010-sydney-boys-yearly",
@@ -4252,7 +6375,8 @@
         "MA-C4",
         "MA-E1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2010-sydney-boys-yearly",
@@ -4268,6 +6392,28 @@
         "MA-C4",
         "MA-E1",
         "MA-C3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2010-sydney-boys-yearly",
+      "assetKey": "q04.pdf",
+      "answerKey": "a04.pdf",
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 13,
+      "type": null,
+      "topic": "Calculus \u2014 Applications of Differentiation (Optimisation)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -4283,7 +6429,8 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2010-sydney-boys-yearly",
@@ -4298,7 +6445,8 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2010-sydney-boys-yearly",
@@ -4313,6 +6461,27 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2010-sydney-boys-yearly",
+      "assetKey": "q05.pdf",
+      "answerKey": "a05.pdf",
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 13,
+      "type": null,
+      "topic": "Calculus \u2014 Integration (Volumes of Revolution) and Optimisation",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b"
       ]
     },
     {
@@ -4328,7 +6497,8 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2010-sydney-boys-yearly",
@@ -4343,6 +6513,30 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-C3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2009-sydney-boys-yearly",
+      "assetKey": "q01.pdf",
+      "answerKey": "a01.pdf",
+      "questionNumber": "1",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Differential Calculus",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C2",
+        "MA-C3",
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d"
       ]
     },
     {
@@ -4359,7 +6553,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2009-sydney-boys-yearly",
@@ -4375,7 +6570,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2009-sydney-boys-yearly",
@@ -4391,7 +6587,8 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2009-sydney-boys-yearly",
@@ -4407,6 +6604,28 @@
         "MA-C2",
         "MA-C3",
         "MA-C4"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2009-sydney-boys-yearly",
+      "assetKey": "q02.pdf",
+      "answerKey": "a02.pdf",
+      "questionNumber": "2",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Integral Calculus",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -4422,7 +6641,8 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2009-sydney-boys-yearly",
@@ -4437,7 +6657,8 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2009-sydney-boys-yearly",
@@ -4452,6 +6673,29 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-C3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2009-sydney-boys-yearly",
+      "assetKey": "q03.pdf",
+      "answerKey": "a03.pdf",
+      "questionNumber": "3",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Integral Calculus",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-T3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d"
       ]
     },
     {
@@ -4467,7 +6711,8 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-T3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2009-sydney-boys-yearly",
@@ -4482,7 +6727,8 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-T3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2009-sydney-boys-yearly",
@@ -4497,7 +6743,8 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-T3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2009-sydney-boys-yearly",
@@ -4512,6 +6759,29 @@
       "syllabusRefs": [
         "MA-C4",
         "MA-T3"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2009-sydney-boys-yearly",
+      "assetKey": "q04.pdf",
+      "answerKey": "a04.pdf",
+      "questionNumber": "4",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Applications of Differentiation and Integration",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-C4"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c",
+        "d"
       ]
     },
     {
@@ -4527,7 +6797,8 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2009-sydney-boys-yearly",
@@ -4542,7 +6813,8 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2009-sydney-boys-yearly",
@@ -4557,7 +6829,8 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2009-sydney-boys-yearly",
@@ -4572,6 +6845,29 @@
       "syllabusRefs": [
         "MA-C3",
         "MA-C4"
+      ],
+      "unit": "part"
+    },
+    {
+      "paperSlug": "2009-sydney-boys-yearly",
+      "assetKey": "q05.pdf",
+      "answerKey": "a05.pdf",
+      "questionNumber": "5",
+      "partLabel": null,
+      "marks": 15,
+      "type": null,
+      "topic": "Applications of Calculus",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-E1",
+        "MA-C3"
+      ],
+      "unit": "question",
+      "parts": [
+        "a",
+        "b",
+        "c"
       ]
     },
     {
@@ -4588,7 +6884,8 @@
         "MA-C4",
         "MA-E1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2009-sydney-boys-yearly",
@@ -4604,7 +6901,8 @@
         "MA-C4",
         "MA-E1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     },
     {
       "paperSlug": "2009-sydney-boys-yearly",
@@ -4620,7 +6918,8 @@
         "MA-C4",
         "MA-E1",
         "MA-C3"
-      ]
+      ],
+      "unit": "part"
     }
   ]
 }
