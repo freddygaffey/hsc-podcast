@@ -27,6 +27,9 @@ OUTPUT = ROOT / "manifest.json"
 # "CASE" module.
 FOLDER_RE = re.compile(r"^([A-Z]+\d*)-(\d+)(?:-(\d+))?-(.+)$")
 CASE_RE = re.compile(r"^case_(.+)$")
+# Past papers live under content/<subject>/papers/p<N>/ (one folder per exam paper),
+# grouped under a synthetic "EXAM" module. Shared stimulus images sit in papers/images/.
+PAPER_RE = re.compile(r"^p(\d+)$")
 _ACRONYMS = {"ligo": "LIGO", "emf": "EMF", "led": "LED", "uv": "UV", "dc": "DC", "ac": "AC",
              "ai": "AI", "ml": "ML", "ddos": "DDoS", "dns": "DNS", "xz": "XZ", "npm": "npm",
              "y2k": "Y2K", "compas": "COMPAS", "737": "737", "mcas": "MCAS"}
@@ -59,7 +62,8 @@ def build_voices(folder: Path, subject_id: str, audio_base: str) -> list[dict]:
     """Voice list + durations for one episode. Prefer local .m4a (probe); fall back to the
     committed voices.json (name + duration only)."""
     ep = folder.name
-    local = sorted(folder.glob("*.m4a"))
+    # Underscore-prefixed clips (e.g. _title.m4a, the spoken-title intro) are not selectable voices.
+    local = sorted(m for m in folder.glob("*.m4a") if not m.name.startswith("_"))
     if local:
         voices = []
         for m4a in local:
@@ -90,8 +94,56 @@ def build_episode(folder: Path, subject_id: str, audio_base: str, title: str, un
         "scriptPath": f"content/{subject_id}/{ep}/script.md" if (folder / "script.md").exists() else None,
         "supplementaryPath": f"content/{subject_id}/{ep}/supplementary.md" if (folder / "supplementary.md").exists() else None,
         "quizPath": f"content/{subject_id}/{ep}/quiz.json" if (folder / "quiz.json").exists() else None,
+        "titleAudio": audio_url(audio_base, subject_id, ep, "_title") if (folder / "_title.m4a").exists() else None,
         "voices": build_voices(folder, subject_id, audio_base),
     }
+
+
+def build_episode_at(folder: Path, subject_id: str, rel: str, title: str, unit) -> dict:
+    """Like build_episode but for a folder nested under the subject (e.g. papers/p1).
+    `rel` is the path segment under content/<subject>/ (e.g. "papers/p1"). Past papers
+    carry no audio, so voices is always []."""
+    base = f"content/{subject_id}/{rel}"
+    return {
+        "id": f"{subject_id}-{rel.replace('/', '-')}",
+        "title": title,
+        "unit": unit,
+        "scriptPath": f"{base}/script.md" if (folder / "script.md").exists() else None,
+        "supplementaryPath": f"{base}/supplementary.md" if (folder / "supplementary.md").exists() else None,
+        "quizPath": f"{base}/quiz.json" if (folder / "quiz.json").exists() else None,
+        "pdfPath": f"{base}/paper.pdf" if (folder / "paper.pdf").exists() else None,
+        "mgPdfPath": f"{base}/mg.pdf" if (folder / "mg.pdf").exists() else None,
+        "voices": [],
+    }
+
+
+def build_papers_module(subject_dir: Path, subject_id: str) -> dict | None:
+    """Synthetic "EXAM" module from content/<subject>/papers/p<N>/. Each paper folder with a
+    quiz.json becomes an episode; papers/images/ (shared stimulus images) is ignored. Episodes
+    sort newest-first via unit = -year."""
+    papers_dir = subject_dir / "papers"
+    if not papers_dir.is_dir():
+        return None
+    episodes = []
+    for folder in sorted(papers_dir.iterdir()):
+        if not folder.is_dir() or folder.name == "images" or folder.name.startswith("_"):
+            continue
+        if not PAPER_RE.match(folder.name):
+            continue
+        if not (folder / "quiz.json").exists():
+            continue
+        meta = json.loads((folder / "paper.json").read_text()) if (folder / "paper.json").exists() else {}
+        year = meta.get("year")
+        title = meta.get("title") or f"Paper {folder.name[1:]}"
+        ep = build_episode_at(folder, subject_id, f"papers/{folder.name}", title,
+                              unit=(-year if year else 0))
+        ep["paper"] = True
+        if year:
+            ep["year"] = year
+        episodes.append(ep)
+    if not episodes:
+        return None
+    return {"id": "EXAM", "prefix": "EXAM", "moduleNum": 0, "episodes": episodes}
 
 
 def build_subject(subject_dir: Path) -> dict | None:
@@ -124,6 +176,10 @@ def build_subject(subject_dir: Path) -> dict | None:
                 {"id": "CASE", "prefix": "CASE", "moduleNum": 0, "episodes": []})
             module["episodes"].append(
                 build_episode(folder, subject_id, audio_base, case_title(case.group(1)), None))
+
+    papers_module = build_papers_module(subject_dir, subject_id)
+    if papers_module:
+        modules["EXAM"] = papers_module
 
     module_list = []
     for module in sorted(modules.values(), key=lambda m: (m["moduleNum"], m["prefix"])):

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""The generator/converter: build a custom practice paper from the classified question bank.
+"""Dev smoke-tool: build a practice paper from the question bank (local _work files).
 
-Reads content/<subject>/questions.json, filters by module/topic/type, picks questions, and
-merges their baked per-question PDFs into one print-ready paper — provenance label + writing
-space per question, optional answer booklet. This is the engine the UI will wrap.
+NOTE: the CANONICAL export engine is paper-export.js (used by generator.html) — flowing
+review-sheet layout, tall-crop slicing, presets. This CLI keeps the old one-page-per-
+question layout for quick local sanity checks only; don't extend the layout here.
 
     python3 tools/generate_paper.py maths-standard-2 --topic "Financial" --count 6 --answers
     python3 tools/generate_paper.py physics --module "Module 5" --count 8 -o /tmp/paper.pdf

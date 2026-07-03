@@ -3,24 +3,226 @@
   "name": "HSC Mathematics Standard 2",
   "_comment": "NESA Mathematics Standard 2 syllabus map. Questions are classified against these codes for the generate-by-topic feature. code = our stable id (NESA outcome/subtopic); keywords help a first-pass heuristic classifier; an LLM pass on the question text refines module/topic/refs.",
   "modules": [
-    { "code": "MS-A", "module": "Algebra", "topics": [
-      { "code": "MS-A4", "topic": "Types of Relationships", "keywords": ["linear", "simultaneous", "graph", "gradient", "y-intercept", "non-linear", "exponential model"] }
-    ]},
-    { "code": "MS-M", "module": "Measurement", "topics": [
-      { "code": "MS-M6", "topic": "Non-right-angled Trigonometry", "keywords": ["sine rule", "cosine rule", "area of a triangle", "bearing", "compass"] },
-      { "code": "MS-M7", "topic": "Rates and Ratios", "keywords": ["rate", "ratio", "scale", "fuel consumption", "heart rate", "concentration", "kwh", "energy"] }
-    ]},
-    { "code": "MS-F", "module": "Financial Mathematics", "topics": [
-      { "code": "MS-F4", "topic": "Investments and Loans", "keywords": ["compound interest", "depreciation", "loan", "annuity", "future value", "present value", "shares", "dividend"] },
-      { "code": "MS-F5", "topic": "Annuities", "keywords": ["annuity", "superannuation", "future value table", "regular contribution"] }
-    ]},
-    { "code": "MS-S", "module": "Statistical Analysis", "topics": [
-      { "code": "MS-S4", "topic": "Bivariate Data Analysis", "keywords": ["scatterplot", "correlation", "line of best fit", "regression", "bivariate", "association"] },
-      { "code": "MS-S5", "topic": "The Normal Distribution", "keywords": ["normal distribution", "z-score", "standard deviation", "empirical rule", "68", "95", "99.7"] }
-    ]},
-    { "code": "MS-N", "module": "Networks", "topics": [
-      { "code": "MS-N2", "topic": "Network Concepts", "keywords": ["network", "vertex", "edge", "graph theory", "shortest path", "connected"] },
-      { "code": "MS-N3", "topic": "Critical Path Analysis", "keywords": ["critical path", "activity chart", "minimum spanning tree", "earliest start", "float time"] }
-    ]}
-  ]
+    {
+      "code": "MS-A",
+      "module": "Algebra",
+      "topics": [
+        {
+          "code": "MS-A1",
+          "topic": "Formulae and Equations (Year 11)",
+          "keywords": []
+        },
+        {
+          "code": "MS-A2",
+          "topic": "Linear Relationships (Year 11)",
+          "keywords": []
+        },
+        {
+          "code": "MS-A3",
+          "topic": "Types of Relationships (Standard 1)",
+          "keywords": []
+        },
+        {
+          "code": "MS-A4",
+          "topic": "Types of Relationships",
+          "keywords": [
+            "linear",
+            "simultaneous",
+            "graph",
+            "gradient",
+            "y-intercept",
+            "non-linear",
+            "exponential model"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS-M",
+      "module": "Measurement",
+      "topics": [
+        {
+          "code": "MS-M1",
+          "topic": "Applications of Measurement (Year 11)",
+          "keywords": []
+        },
+        {
+          "code": "MS-M2",
+          "topic": "Working with Time (Year 11)",
+          "keywords": []
+        },
+        {
+          "code": "MS-M3",
+          "topic": "Right-angled Triangles (Standard 1)",
+          "keywords": []
+        },
+        {
+          "code": "MS-M4",
+          "topic": "Rates (Standard 1)",
+          "keywords": []
+        },
+        {
+          "code": "MS-M5",
+          "topic": "Scale Drawings (Standard 1)",
+          "keywords": []
+        },
+        {
+          "code": "MS-M6",
+          "topic": "Non-right-angled Trigonometry",
+          "keywords": [
+            "sine rule",
+            "cosine rule",
+            "area of a triangle",
+            "bearing",
+            "compass"
+          ]
+        },
+        {
+          "code": "MS-M7",
+          "topic": "Rates and Ratios",
+          "keywords": [
+            "rate",
+            "ratio",
+            "scale",
+            "fuel consumption",
+            "heart rate",
+            "concentration",
+            "kwh",
+            "energy"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS-F",
+      "module": "Financial Mathematics",
+      "topics": [
+        {
+          "code": "MS-F1",
+          "topic": "Money Matters (Year 11)",
+          "keywords": []
+        },
+        {
+          "code": "MS-F2",
+          "topic": "Investment (Standard 1)",
+          "keywords": []
+        },
+        {
+          "code": "MS-F3",
+          "topic": "Depreciation and Loans (Standard 1)",
+          "keywords": []
+        },
+        {
+          "code": "MS-F4",
+          "topic": "Investments and Loans",
+          "keywords": [
+            "compound interest",
+            "depreciation",
+            "loan",
+            "annuity",
+            "future value",
+            "present value",
+            "shares",
+            "dividend"
+          ]
+        },
+        {
+          "code": "MS-F5",
+          "topic": "Annuities",
+          "keywords": [
+            "annuity",
+            "superannuation",
+            "future value table",
+            "regular contribution"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS-S",
+      "module": "Statistical Analysis",
+      "topics": [
+        {
+          "code": "MS-P1",
+          "topic": "Probability (nonstandard legacy code from earlier tagging pass)",
+          "keywords": []
+        },
+        {
+          "code": "MS-S1",
+          "topic": "Data Analysis (Year 11)",
+          "keywords": []
+        },
+        {
+          "code": "MS-S2",
+          "topic": "Relative Frequency and Probability (Year 11)",
+          "keywords": []
+        },
+        {
+          "code": "MS-S3",
+          "topic": "Further Statistical Analysis (Standard 1)",
+          "keywords": []
+        },
+        {
+          "code": "MS-S4",
+          "topic": "Bivariate Data Analysis",
+          "keywords": [
+            "scatterplot",
+            "correlation",
+            "line of best fit",
+            "regression",
+            "bivariate",
+            "association"
+          ]
+        },
+        {
+          "code": "MS-S5",
+          "topic": "The Normal Distribution",
+          "keywords": [
+            "normal distribution",
+            "z-score",
+            "standard deviation",
+            "empirical rule",
+            "68",
+            "95",
+            "99.7"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS-N",
+      "module": "Networks",
+      "topics": [
+        {
+          "code": "MS-N1",
+          "topic": "Networks and Paths (Standard 1)",
+          "keywords": []
+        },
+        {
+          "code": "MS-N2",
+          "topic": "Network Concepts",
+          "keywords": [
+            "network",
+            "vertex",
+            "edge",
+            "graph theory",
+            "shortest path",
+            "connected"
+          ]
+        },
+        {
+          "code": "MS-N3",
+          "topic": "Critical Path Analysis",
+          "keywords": [
+            "critical path",
+            "activity chart",
+            "minimum spanning tree",
+            "earliest start",
+            "float time"
+          ]
+        }
+      ]
+    }
+  ],
+  "minYear": 2020
 }

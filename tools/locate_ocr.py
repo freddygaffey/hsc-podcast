@@ -20,15 +20,21 @@ from pathlib import Path
 import pytesseract
 from PIL import Image
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _marks import MARGIN_X, apply_margin_marks, finalize_marks_printed, trailing_mark  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 WORK = ROOT / "papers" / "_work"
 
 Q_RE    = re.compile(r"^\s*Question\s+(\d+)\b", re.I)
 MC_RE   = re.compile(r"^\s*(\d{1,2})[.)]\s")            # "4." / "12)" MC item at left margin
+MC_BARE_RE = re.compile(r"^\s*(\d{1,2})(?:\s+\S.*)?\s*$")  # NESA style: bare "1" (maybe + text)
 PART_RE = re.compile(r"^\s*\(([a-z])\)")
 MARKS_RE = re.compile(r"\((\d+)\s*marks?\)", re.I)
 SOLN_RE = re.compile(r"\b(solution|sample answer|marking guidelines?|answers?)\b", re.I)
 OPT_RE  = re.compile(r"^\s*[A-D][.)]\s")                # MC option line
+CONTINUES_RE = re.compile(r"continues on (the )?(next )?page", re.I)  # pure page-referral, no content
+END_RE = re.compile(r"end of (paper|section|question|exam)", re.I)    # terminates the region above it
 
 
 def ocr_lines(img_path):
@@ -40,7 +46,10 @@ def ocr_lines(img_path):
     for i, txt in enumerate(d["text"]):
         if not txt.strip() or int(d["conf"][i]) < 30:
             continue
-        key = (d["block_num"][i], d["par_num"][i], d["line_num"][i])
+        # split right-margin words (NESA bare mark digits) into their own line, so a
+        # "2" printed beside the question text doesn't merge into that text line
+        in_margin = d["left"][i] / W >= MARGIN_X
+        key = (d["block_num"][i], d["par_num"][i], d["line_num"][i], in_margin)
         g = groups.setdefault(key, {"words": [], "x0": 1e9, "y0": 1e9, "x1": 0, "y1": 0})
         g["words"].append(txt)
         g["x0"] = min(g["x0"], d["left"][i]); g["y0"] = min(g["y0"], d["top"][i])
@@ -67,25 +76,51 @@ def segment(info):
 
     anchors = []   # (kind, label, page, y_top, marks, text)
     seen_question_heading = False
+    last_mc = None    # bare-digit MC items must ascend from 1 (rejects "10 marks" etc.)
+    last_part = None  # previous part letter — tells (i) the letter from (i) the roman
     for pg, lines in enumerate(pages):
         if pg in soln:
             continue
         for l in lines:
             t = l["text"]
+            if len(t.strip()) < 45 and (CONTINUES_RE.search(t) or END_RE.search(t)):
+                # standalone referral/terminator line — END anchor caps the region above
+                anchors.append(("END", None, pg, l["y0"], None, t))
+                continue
             mq = Q_RE.match(t)
             if mq:
                 seen_question_heading = True
+                last_part = None
                 mk = MARKS_RE.search(t)
                 anchors.append(("Q", mq.group(1), pg, l["y0"], int(mk.group(1)) if mk else None, t))
                 continue
             mp = PART_RE.match(t)
             if mp and l["x0"] < 0.22:
+                label = mp.group(1)
+                # (i)/(v)/(x) are roman SUBPARTS unless they follow the previous letter —
+                # connected subparts stay inside their parent part
+                if label in ("i", "v", "x") and last_part != chr(ord(label) - 1):
+                    continue
+                last_part = label
                 mk = MARKS_RE.search(t)
-                anchors.append(("P", mp.group(1), pg, l["y0"], int(mk.group(1)) if mk else None, t))
+                # old OCR caches merge the NESA margin mark digit into this line
+                marks = int(mk.group(1)) if mk else trailing_mark(t, l["x1"])
+                anchors.append(("P", label, pg, l["y0"], marks, t))
                 continue
-            mc = MC_RE.match(t)
-            if mc and not seen_question_heading and l["x0"] < 0.16:   # MC section, left margin
-                anchors.append(("MC", mc.group(1), pg, l["y0"], 1, t))
+            if not seen_question_heading and l["x0"] < 0.16:   # MC section, left margin
+                mc = MC_RE.match(t)
+                if mc:
+                    anchors.append(("MC", mc.group(1), pg, l["y0"], 1, t))
+                    last_mc = int(mc.group(1))
+                    continue
+                mcb = MC_BARE_RE.match(t)
+                if mcb:
+                    n = int(mcb.group(1))
+                    # bare digits are ambiguous ("10 marks", "3 hours") — only accept an
+                    # ascending item sequence starting at 1, tolerating small OCR gaps
+                    if (last_mc is None and n == 1) or (last_mc is not None and last_mc < n <= last_mc + 3):
+                        anchors.append(("MC", str(n), pg, l["y0"], 1, t))
+                        last_mc = n
     if not anchors:
         return [], soln, pages
 
@@ -94,6 +129,8 @@ def segment(info):
 
     questions, cur = [], None
     for i, (kind, label, pg, y, marks, text) in enumerate(anchors):
+        if kind == "END":            # terminator only — caps the previous region
+            continue
         y_bot = 1.0
         for (k2, l2, p2, y2, m2, t2) in anchors[i + 1:]:
             if p2 == pg and y2 > y:
@@ -104,24 +141,32 @@ def segment(info):
         if kind in ("Q", "MC"):
             cur = {"number": label, "marks": marks, "topic": None, "module": None,
                    "syllabusRefs": [], "type": "mc" if kind == "MC" else None,
+                   "marksPrinted": True if (kind == "Q" and marks is not None) else None,
                    "stimulus": [] if kind == "MC" else [reg],
                    "text": text,
                    "parts": ([{"label": None, "marks": marks, "type": "mc",
+                               "marksPrinted": None,
                                "regions": [reg], "markingRegions": [], "text": text}]
                              if kind == "MC" else [])}
             questions.append(cur)
         else:
             if cur is None:
                 cur = {"number": None, "marks": None, "topic": None, "module": None,
-                       "syllabusRefs": [], "type": None, "stimulus": [], "text": "", "parts": []}
+                       "syllabusRefs": [], "type": None, "marksPrinted": None,
+                       "stimulus": [], "text": "", "parts": []}
                 questions.append(cur)
             cur["parts"].append({"label": label, "marks": marks, "type": None,
+                                 "marksPrinted": True if marks is not None else None,
                                  "regions": [reg], "markingRegions": [], "text": text})
     for q in questions:
         if not q["parts"]:
             q["parts"] = [{"label": None, "marks": q["marks"], "type": None,
+                           "marksPrinted": True if q.get("marksPrinted") else None,
                            "regions": q["stimulus"], "markingRegions": [], "text": q["text"]}]
             q["stimulus"] = []
+    # NESA papers print part marks as a bare digit in the right margin — sweep those in
+    apply_margin_marks(questions, pages)
+    finalize_marks_printed(questions)
     return questions, soln, pages
 
 

@@ -1258,6 +1258,17 @@ body.offline .episode-row:not(.ep-downloaded) .ep-play { opacity: 0.4; }
 }
 .quiz-exit-btn:hover { color: var(--text); }
 .quiz-progress-text { font-size: 12px; color: var(--text-dim); }
+.quiz-subject {
+  margin-right: auto;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+}
 
 .quiz-progress-track {
   height: 3px;

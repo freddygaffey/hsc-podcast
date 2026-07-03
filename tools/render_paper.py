@@ -18,6 +18,9 @@ from pathlib import Path
 
 import fitz  # pymupdf
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _subjects import content_slug  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 PAPERS = ROOT / "papers"
 WORK = PAPERS / "_work"
@@ -35,7 +38,8 @@ def resolve(arg):
     if idx.exists():
         for p in json.loads(idx.read_text())["papers"]:
             if p["paperId"] == arg or p["path"] == arg:
-                return p["paperId"], PAPERS / p["path"], _slug(p["subject"])
+                # alias tree slugs to the committed content/ slug (design-technology -> dt)
+                return p["paperId"], PAPERS / p["path"], content_slug(_slug(p["subject"]))
     pdf = (PAPERS / arg)
     if pdf.exists():
         return _slug(arg.replace(".pdf", "")), pdf, "misc"

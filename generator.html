@@ -378,7 +378,7 @@ async function loadSubject(id){
   // sections in some trials); otherwise prefer the richer record.
   const seen=new Map();
   for(const q of man.questions){
-    if(!q.assetKey||q.unit==="part")continue;
+    if(!q.assetKey||q.unit==="part"||q.unit==="bundle")continue;
     const k=key(q), prev=seen.get(k);
     if(!prev||(q.marks&&!prev.marks))seen.set(k,q);
   }
