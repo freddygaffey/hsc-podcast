@@ -190,6 +190,18 @@ registerProcessor("stretch-processor", StretchProcessor);
     function ensureContext() {
       if (ctx) return Promise.resolve();
       ctx = new AudioContext({ sampleRate: TARGET_RATE });
+      // BUG-22: iOS suspends the AudioContext on rotation / backgrounding, which stops
+      // playback with no way to resume from the worklet. Auto-resume whenever the context
+      // is suspended but the user still intends to play (_paused === false). Safe: resuming
+      // an already-running context is a no-op, and we never resume against the user's pause.
+      const resumeIfWanted = () => {
+        if (ctx && !_paused && ctx.state === "suspended") ctx.resume().catch(() => {});
+      };
+      try { ctx.addEventListener("statechange", resumeIfWanted); } catch (_) {}
+      document.addEventListener("visibilitychange", resumeIfWanted);
+      window.addEventListener("focus", resumeIfWanted);
+      window.addEventListener("orientationchange", resumeIfWanted);
+      window.addEventListener("pageshow", resumeIfWanted);
       const url = URL.createObjectURL(new Blob([WORKLET_SRC], { type: "application/javascript" }));
       return ctx.audioWorklet.addModule(url).then(() => URL.revokeObjectURL(url));
     }
