@@ -259,7 +259,12 @@ const key=q=>q.paperSlug+"/"+q.assetKey;
 const yearOf=q=>{const m=/^(\d{4})/.exec(q.paperSlug||"");return m?+m[1]:null;};
 const sourceOf=q=>/-hsc\b/.test(q.paperSlug)?"HSC":/-trial\b/.test(q.paperSlug)?"Trial":/-yearly\b/.test(q.paperSlug)?"Yearly":"Other";
 const minsOf=q=>q.marks?Math.round(q.marks*1.5*10)/10:null;
-const urlOf=(q,ans)=>`${BASE}/${SUBJECT}/papers/${q.paperSlug}/${ans?q.answerKey:q.assetKey}`;
+// Local dev (bucket CORS only allows the prod origin): read crops straight from the
+// repo's papers/_work/<paperId>/baked/ — works offline and for un-uploaded bakes.
+const LOCAL=["localhost","127.0.0.1"].includes(location.hostname);
+const urlOf=(q,ans)=>LOCAL&&q.paperId
+  ?`papers/_work/${q.paperId}/baked/${ans?q.answerKey:q.assetKey}`
+  :`${BASE}/${SUBJECT}/papers/${q.paperSlug}/${ans?q.answerKey:q.assetKey}`;
 const provOf=q=>{
   const y=yearOf(q), src=sourceOf(q);
   const school=(q.paperSlug||"").replace(/^\d{4}-/,"").replace(/-(hsc|trial|yearly).*$/,"").replace(/-/g," ");
@@ -277,7 +282,16 @@ async function loadSubject(id){
     fetch(`content/${id}/questions.json`).then(r=>r.json()),
   ]);
   BASE=subj.assetBaseUrl||"";
-  DATA=man.questions.filter(q=>q.assetKey&&q.unit!=="part");
+  // Whole questions only — letter-part records stay as metadata. Dedupe by
+  // (paperSlug, assetKey): re-parses can list the same question under two content-hash
+  // ids (byte-level changes like marks badges); prefer the richer record.
+  const seen=new Map();
+  for(const q of man.questions){
+    if(!q.assetKey||q.unit==="part")continue;
+    const k=key(q), prev=seen.get(k);
+    if(!prev||(q.marks&&!prev.marks))seen.set(k,q);
+  }
+  DATA=[...seen.values()];
   resetFilters(false);
   restoreBasket();
   buildRail();
