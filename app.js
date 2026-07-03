@@ -1376,7 +1376,12 @@
     const modEl = row.closest(".module");
     const mdlBtn = modEl && modEl.querySelector(".module-dl");
     if (!mdlBtn || mdlBtn.classList.contains("dl-busy")) return;
-    const allDl = [...modEl.querySelectorAll(".episode-row")].every((r) => isDownloaded(r.dataset.epId));
+    // Check the module's whole episode set (from the store), not just rendered rows:
+    // a filtered/search view renders a subset, and [].every() is vacuously true, so
+    // the DOM-only check could mis-report the all-downloaded state. (BUG-14)
+    let ids;
+    try { ids = JSON.parse(modEl.dataset.epIds || "[]"); } catch { ids = []; }
+    const allDl = ids.length > 0 && ids.every((id) => isDownloaded(id));
     mdlBtn.classList.toggle("dl-done", allDl);
     mdlBtn.innerHTML = allDl ? checkIcon(16) : downloadIcon(16);
     mdlBtn.setAttribute("aria-label", allDl ? "Delete module download" : "Download module");
@@ -1758,6 +1763,10 @@
 
       const groupEl = document.createElement("div");
       groupEl.className = "module";
+      // Full episode-id set for this module, so the module download button can be
+      // synced against the whole module from the store — not just the rows that
+      // happen to be rendered (a search view renders only matching rows). (BUG-14)
+      groupEl.dataset.epIds = JSON.stringify(group.episodes.map((e) => e.id));
       if (q || papersMode) groupEl.classList.add("open"); // auto-expand matched/paper episodes
 
       const completed = group.episodes.filter((e) => getEpisodeProgress(e.id).completed).length;
