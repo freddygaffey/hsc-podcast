@@ -13,7 +13,7 @@ const DOWNLOADS = 'podcast-downloads-v1';
 // make precache reject and the whole SW install fail (see precache() below). '/' alone
 // carries the document; navigations resolve to it.
 const SHELL = [
-  '/', '/app.js', '/auth.js', '/speed-engine.js', '/style.css', '/app.webmanifest',
+  '/', '/app.js', '/auth.js', '/speed-engine.js', '/style.css', '/app.webmanifest', '/build.json',
   '/vendor/marked.min.js', '/vendor/highlight.min.js', '/vendor/sortable.min.js', '/vendor/fsrs.umd.js',
   '/vendor/github-dark-dimmed.min.css', '/vendor/github.min.css',
   '/vendor/katex/katex.min.css', '/vendor/katex/katex.min.js', '/vendor/katex/auto-render.min.js',

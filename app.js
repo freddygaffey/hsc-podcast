@@ -1460,6 +1460,31 @@
     storageUsage().then(({ usage }) => { storageUsageEl.textContent = fmtBytes(usage); });
   }
 
+  // Settings → About → Build: the git short hash of the running build, tap to reveal that
+  // build's commit message. Sourced from /build.json (written per deploy by deploy.sh) and
+  // precached per-build, so it always matches the shell actually running on this device —
+  // handy for confirming a new deploy has actually installed (PWA updates are sticky).
+  let _buildInfo = null;
+  function refreshBuildVersion() {
+    const el = document.getElementById("build-version");
+    const msg = document.getElementById("build-message");
+    if (msg) msg.hidden = true;
+    if (!el) return;
+    if (_buildInfo) { el.textContent = _buildInfo.build || "unknown"; return; }
+    fetch("/build.json", { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error("no build.json"))))
+      .then((info) => { _buildInfo = info; el.textContent = info.build || "unknown"; })
+      .catch(() => { el.textContent = "dev"; });
+  }
+  const buildVersionBtn = document.getElementById("build-version");
+  if (buildVersionBtn) buildVersionBtn.addEventListener("click", () => {
+    const msg = document.getElementById("build-message");
+    if (!msg || !_buildInfo) return;
+    const date = _buildInfo.date ? new Date(_buildInfo.date).toLocaleString() : "";
+    msg.textContent = (_buildInfo.message || "(no commit message)") + (date ? " · " + date : "");
+    msg.hidden = !msg.hidden;
+  });
+
   btnSettings.addEventListener("click", () => {
     if (!fullManifest) return; // settings are global — available on the picker too
     populateDefaultVoiceSelect();
@@ -1482,6 +1507,7 @@
     if (fsrsStepsInput) fsrsStepsInput.value = fsrsSettings().steps;
     if (speedUnitSelect) speedUnitSelect.value = speedUnitMode();
     refreshStorageUsage();
+    refreshBuildVersion();
     updateInstallUI();
     if (window.Sync) window.Sync.renderPanel();
     openSheet(settingsOverlay);

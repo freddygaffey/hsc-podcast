@@ -24,6 +24,12 @@ rm -rf "$DIST"; mkdir -p "$DIST"
 cp index.html generator.html paper-export.js app.js auth.js style.css speed-engine.js app.webmanifest _headers "$DIST/"
 # Service worker — stamp the build version so each deploy gets a fresh APP_SHELL cache.
 sed "s/__BUILD__/$BUILD/" service-worker.js > "$DIST/service-worker.js"
+# Build info the app reads to show the running version (Settings → About → Build, tap for
+# the commit message). JSON so the commit subject's quotes/newlines escape cleanly.
+BUILD_MSG="$(git log -1 --pretty=%s 2>/dev/null || echo '')"
+BUILD_DATE="$(git log -1 --pretty=%cI 2>/dev/null || date -u +%FT%TZ)"
+python3 -c 'import json,sys; json.dump({"build":sys.argv[1],"message":sys.argv[2],"date":sys.argv[3]}, sys.stdout)' \
+  "$BUILD" "$BUILD_MSG" "$BUILD_DATE" > "$DIST/build.json"
 # Manifest + vendored libs + icons.
 cp manifest.json "$DIST/"
 cp -r vendor "$DIST/"

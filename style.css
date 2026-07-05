@@ -364,6 +364,15 @@ button, select, input { font-family: inherit; }
   margin: 10px 0 0;
 }
 .setting-value { font-size: 14px; color: var(--text-dim); font-variant-numeric: tabular-nums; }
+.setting-build {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+  font-family: inherit;
+}
 .setting-toggle { width: 20px; height: 20px; accent-color: var(--accent); cursor: pointer; }
 .setting-btn-danger {
   margin-top: 14px;
