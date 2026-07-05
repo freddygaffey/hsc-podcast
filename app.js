@@ -47,16 +47,14 @@
   let lastSyncScroll = 0;     // perf.now() of last transcript auto-scroll (throttle)
 
   // --- DOM refs ---
-  // Pitch-preserving speed engine (see speed-engine.js): a Web Audio time-stretch
-  // player that stays audible all the way to 16x. Falls back to the raw <audio>
-  // element (silent above 4x) if the browser lacks AudioWorklet.
   const audioEl = document.getElementById("audio");
-  // Hybrid audio: a runtime-switchable wrapper over the native <audio> element AND the
-  // pitch-preserving Web Audio speed engine (speed-engine.js). The engine keeps audio
-  // audible past 4x all the way to 16x (the raw element is muted above ~4x); a Settings
-  // toggle falls back to the native element if the engine misbehaves on a device. In
-  // engine mode a silent looping element anchors the iOS media session so lock-screen /
-  // headphone controls still work. See createHybridAudio.
+  // Hybrid audio (see speed-engine.js). DEFAULT backend: the native <audio> element with
+  // preservesPitch — the same clean, pitch-preserved high speed the browser speed
+  // extensions use, audible to 16x and able to play with the screen off. FALLBACK (opt-in
+  // Settings toggle): the Web Audio WSOLA time-stretch engine, for devices that mute
+  // native playbackRate at high speed; audible to 16x on any device but no background
+  // playback. In engine mode a silent looping element anchors the iOS media session so
+  // lock-screen / headphone controls still work. See createHybridAudio.
   const audio = window.createHybridAudio ? window.createHybridAudio(audioEl) : audioEl;
   const viewSubjects = document.getElementById("view-subjects");
   const viewSubjectHub = document.getElementById("view-subject-hub");

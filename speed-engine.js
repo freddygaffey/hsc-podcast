@@ -332,7 +332,13 @@ registerProcessor("stretch-processor", StretchProcessor);
     const EVENTS = ["loadedmetadata", "play", "pause", "ended", "timeupdate"];
 
     let engineActive = false;              // is the TSM engine the audible backend right now?
-    let enginePref = !!eng && localStorage.getItem(PREF_KEY) !== "0"; // default ON when available
+    // Default is the NATIVE element with preservesPitch (see setNativePitch) — the same
+    // clean, pitch-preserved high-speed the browser speed extensions use, and it plays in
+    // the background. The WSOLA engine is now the opt-in FALLBACK ("0"=native default;
+    // "1"=force engine), for the edge case where a device mutes native playbackRate at
+    // high speed. Flipped from engine-default: the engine's high-speed twang was the
+    // complaint, and native preservesPitch was never actually tried.
+    let enginePref = !!eng && localStorage.getItem(PREF_KEY) === "1";
     let _src = "";
     let _rate = 1;
     let anchoring = false;                 // is the silent-loop anchor currently running on el?
@@ -348,6 +354,16 @@ registerProcessor("stretch-processor", StretchProcessor);
     // playback ends with nothing to advance to.
 
     const cur = () => (engineActive ? eng : el);
+
+    // Native backend = pitch-preserving high speed, exactly like the browser speed
+    // extensions (playbackRate + preservesPitch). Without this, native speed raises pitch
+    // ("chipmunk"). Browsers may clear the flag on a src change, so (re)apply on every use.
+    function setNativePitch() {
+      ["preservesPitch", "webkitPreservesPitch", "mozPreservesPitch"].forEach((p) => {
+        try { if (p in el) el[p] = true; } catch (e) {}
+      });
+    }
+    setNativePitch();
 
     function startAnchor() {
       if (!eng || anchoring) return;
@@ -379,6 +395,7 @@ registerProcessor("stretch-processor", StretchProcessor);
           engLoaded = false;
         } else {
           stopAnchor();
+          setNativePitch();
           el.playbackRate = _rate;
           el.src = _src;
           el.load();
@@ -390,6 +407,7 @@ registerProcessor("stretch-processor", StretchProcessor);
           startAnchor();
           return eng.play(); // the engine queues the play if the decode is still in flight
         }
+        setNativePitch();
         return el.play();
       },
       pause() {
