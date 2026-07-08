@@ -99,6 +99,25 @@ def build_episode(folder: Path, subject_id: str, audio_base: str, title: str, un
     }
 
 
+def read_frontmatter(folder: Path) -> dict:
+    """Parse simple `key: value` frontmatter from supplementary.md (then script.md).
+    Enough to read a case study's title / module / stars."""
+    for fn in ("supplementary.md", "script.md"):
+        p = folder / fn
+        if not p.exists():
+            continue
+        text = p.read_text(encoding="utf-8", errors="ignore")
+        if not text.startswith("---"):
+            continue
+        out = {}
+        for line in text.split("---", 2)[1].splitlines():
+            if ":" in line:
+                k, v = line.split(":", 1)
+                out[k.strip()] = v.strip().strip('"').strip("'")
+        return out
+    return {}
+
+
 def build_episode_at(folder: Path, subject_id: str, rel: str, title: str, unit) -> dict:
     """Like build_episode but for a folder nested under the subject (e.g. papers/p1).
     `rel` is the path segment under content/<subject>/ (e.g. "papers/p1"). Past papers
@@ -174,8 +193,22 @@ def build_subject(subject_dir: Path) -> dict | None:
         elif case:
             module = modules.setdefault("CASE",
                 {"id": "CASE", "prefix": "CASE", "moduleNum": 0, "episodes": []})
-            module["episodes"].append(
-                build_episode(folder, subject_id, audio_base, case_title(case.group(1)), None))
+            fm = read_frontmatter(folder)
+            stars_raw = fm.get("stars")
+            if stars_raw is not None and str(stars_raw).isdigit():
+                # Case study carries its starred title + topic module + 1-3 star
+                # importance in frontmatter. Title shows the stars; the CASE sort
+                # below groups by topic then puts the most important first.
+                mod = fm.get("module") or ""
+                title = fm.get("title") or case_title(case.group(1))
+                ep = build_episode(folder, subject_id, audio_base, title,
+                                   cfg.get("groupNames", {}).get(mod, mod) or None)
+                ep["stars"] = int(stars_raw)
+                ep["_topicnum"] = int(mod[1:]) if mod[1:].isdigit() else 99
+            else:
+                ep = build_episode(folder, subject_id, audio_base, case_title(case.group(1)), None)
+                ep["_topicnum"] = 999
+            module["episodes"].append(ep)
 
     papers_module = build_papers_module(subject_dir, subject_id)
     if papers_module:
@@ -183,14 +216,22 @@ def build_subject(subject_dir: Path) -> dict | None:
 
     module_list = []
     for module in sorted(modules.values(), key=lambda m: (m["moduleNum"], m["prefix"])):
-        # Order by the numeric parts of the folder id (e.g. SA-20-01 -> (20, 1)),
-        # which is the real unit+lesson sequence. The old (unit, title) key sorted
-        # alphabetically within a unit, so e.g. SA-20-01 "What is AI vs ML" fell
-        # last in its unit (W) instead of first, and Module Review (…-99) came
-        # before Module Summary (…-98). Fall back to the title for id-less items
-        # (case studies carry no lesson number). (BUG-11)
-        module["episodes"].sort(
-            key=lambda e: (tuple(int(n) for n in re.findall(r"\d+", e["id"])), e["title"]))
+        if module["prefix"] == "CASE":
+            # Case studies: group by topic module, then most-important (most stars)
+            # first, then title. Unstarred cases sort last, alphabetically.
+            module["episodes"].sort(
+                key=lambda e: (e.get("_topicnum", 999), -e.get("stars", 0), e["title"]))
+        else:
+            # Order by the numeric parts of the folder id (e.g. SA-20-01 -> (20, 1)),
+            # which is the real unit+lesson sequence. The old (unit, title) key sorted
+            # alphabetically within a unit, so e.g. SA-20-01 "What is AI vs ML" fell
+            # last in its unit (W) instead of first, and Module Review (…-99) came
+            # before Module Summary (…-98). Fall back to the title for id-less items
+            # (case studies carry no lesson number). (BUG-11)
+            module["episodes"].sort(
+                key=lambda e: (tuple(int(n) for n in re.findall(r"\d+", e["id"])), e["title"]))
+        for e in module["episodes"]:
+            e.pop("_topicnum", None)  # temp sort field, not for output
         module_list.append(module)
 
     return {
