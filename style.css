@@ -132,7 +132,7 @@ button, select, input { font-family: inherit; }
    (and can see it change on auto-advance). */
 .player-now {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 8px;
   margin-bottom: 8px;
   min-width: 0;
@@ -144,6 +144,8 @@ button, select, input { font-family: inherit; }
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 .player-ep-sub {
   font-size: 12px;
@@ -151,6 +153,28 @@ button, select, input { font-family: inherit; }
   white-space: nowrap;
   flex: none;
 }
+
+/* Minimise / expand the now-playing bar */
+.player-min-btn {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player-min-btn:hover { color: var(--accent); background: var(--accent-soft); }
+/* The compact play button only appears while the bar is minimised. */
+.player-mini-only { display: none; }
+#btn-play-mini.ctrl-play { width: 30px; height: 30px; }
+.player-bar.min .player-controls,
+.player-bar.min .player-meta { display: none; }
+.player-bar.min .player-now { margin-bottom: 0; cursor: pointer; }
+.player-bar.min .player-mini-only { display: flex; }
 
 .player-controls {
   display: flex;
@@ -346,6 +370,50 @@ button, select, input { font-family: inherit; }
   white-space: nowrap;
   user-select: none;
 }
+
+/* Simple speed picker (opt-in low-speed / screen-off mode): a compact button that
+   opens a dropdown of common speeds, replacing the wide slider. */
+.speed-picker { position: relative; flex: none; }
+.speed-picker-btn {
+  height: 32px;
+  min-width: 56px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 12px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.speed-picker-btn:hover { border-color: var(--accent); color: var(--accent); }
+.speed-picker-menu {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 6px);
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  min-width: 84px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 4px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+}
+.speed-picker-opt {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 13px;
+  text-align: left;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.speed-picker-opt:hover { background: var(--accent-soft); color: var(--accent); }
+.speed-picker-opt.sel { color: var(--accent); font-weight: 700; }
 
 /* ── Settings panel ─────────────────────────────────────── */
 .setting-row {
@@ -1562,6 +1630,78 @@ body.sheet-open {
 }
 .setting-btn-ghost:active { background: var(--accent-soft); }
 
+/* ── Subject picker / first-run onboarding ──────────────── */
+.subjects-search {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 12px 0;
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text);
+  font-size: 15px;
+}
+.subjects-search:focus { outline: none; border-color: var(--accent); }
+.subjects-pick-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-height: 52vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+.subjects-pick-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.subjects-pick-row:hover { background: var(--bg-card); }
+.subjects-pick-name { font-size: 15px; color: var(--text); }
+.subjects-pick-empty { color: var(--text-dim); font-size: 14px; padding: 16px 8px; }
+.subjects-pick-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+  position: sticky;
+  bottom: 0;
+  background: var(--bg-elevated);
+  padding-top: 8px;
+}
+.subjects-pick-save { width: 100%; }
+.setting-btn-plain {
+  width: 100%;
+  padding: 9px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-dim);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.setting-btn-plain:active { background: var(--accent-soft); }
+.subjects-edit-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: -8px 0 16px;
+  padding: 6px 10px;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.subjects-edit-link:hover { color: var(--accent); background: var(--accent-soft); }
+
 /* ── Stats: daily chart + voice breakdown ───────────────── */
 .stats-section-title { margin-top: 24px; }
 .day-chart {
@@ -1758,6 +1898,28 @@ body.sheet-open {
 }
 .sync-para:hover { background: var(--bg-card); }
 .para-active { background: var(--accent-soft); }
+
+/* Floating "jump to where the audio is playing" button (script tab) */
+.jump-current {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 16px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+.jump-current:active { opacity: 0.85; }
 
 /* --- Review / study hub --- */
 .review-hub { display: flex; flex-direction: column; gap: 22px; }

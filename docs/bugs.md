@@ -282,6 +282,111 @@ terms **per episode** as part of the episode pipeline, so coverage can't drift.
 **Type:** feature (not a bug). For the Software Engineering course — an in-app Python runner. Would
 need a sandboxed interpreter (e.g. Pyodide/WASM) loaded on demand. Sizeable; scope separately.
 
+## FEATURE-2 — "Jump to current position" button in the script
+
+**Type:** feature. **Severity:** medium (navigation — easy to get lost after scrolling).
+When reading the episode script/transcript, the user can scroll away from where the audio is
+currently playing and then can't easily get back. Add a button that **scrolls the script back to
+the line/position currently being played**. Should appear (or highlight) when the view is scrolled
+away from the active position; tapping it re-centres on the current playback point.
+
+**Status:** ✅ **Built** (glossary-content, not deployed). Floating "Now playing" pill on the Script
+tab; appears when the active paragraph scrolls off-screen, taps to re-centre. Built on the existing
+`syncActiveEl` transcript sync (`updateJumpCurrentBtn`, `btn-jump-current`). Not yet device-verified.
+
+## FEATURE-3 — Settings toggle: "high-speed" vs "screen-off / low-speed" playback mode
+
+**Type:** feature. **Severity:** medium (the two modes have a real trade-off today).
+Add a toggle switch in **Settings** letting the user choose whether the player is optimised for:
+- **High speed** — the Web Audio pitch-preserving speed engine (`speed-engine.js`), needed above
+  ~4× (see BUG-22), but fragile with screen off / backgrounded.
+- **Low speed, screen-off** — native `<audio>` playback, which keeps playing reliably with the
+  screen off / app backgrounded but can't hit the very high tempos.
+
+The toggle picks which engine drives playback. Ties into BUG-10 / BUG-22 (Media Session +
+AudioContext backgrounding). Should also drive FEATURE-5's speed control (see below).
+
+**Status:** ✅ **Built as a real engine change** (glossary-content, not deployed). Confirmed from the
+code that this *must* be an engine change, not UI-only: native `<audio>` backgrounds but browsers
+mute `playbackRate` >~4×; the Web Audio engine does 16× but its `AudioContext` **cannot** play in the
+background on iOS (OS limit — not fixable). So the **"Screen-off mode" toggle** switches the backend:
+ON → native (0.5–2× dropdown, plays screen-off); OFF → Web Audio engine (to 16×, screen must stay on).
+Reconciler `syncEngine()` + intent key `podcast-hs-engine` so it composes with the old alt-engine
+toggle without clobbering it. **Default: ON (screen-off)** — a one-time migration keeps existing
+high-speed users (engine on, or saved speed >2×) in high-speed mode. ⚠️ Background behaviour needs
+on-device (iOS) verification. NB: contradicts the `audio-speed-priorities` memory (high speed
+imperative) — default was a deliberate user call on 2026-07-08.
+
+## FEATURE-4 — Cross (×) button to minimise the now-playing episode
+
+**Type:** feature. **Severity:** medium (the now-playing panel eats valuable screen space).
+The currently-playing episode panel takes up too much room. Add a **cross / close (×) button** that
+**minimises** it (collapse to a compact mini-player bar) without stopping playback, freeing up the
+space. Tapping the minimised bar should restore the full panel.
+
+**Status:** ✅ **Built** (glossary-content, not deployed). Chevron/✕ button collapses `#player-bar`
+to a slim title + mini play button (`applyPlayerMin`, `PLAYER_MIN_KEY`); tap the bar to expand.
+Persisted. Not yet device-verified.
+
+## FEATURE-5 — Dropdown speed picker (in low-speed mode) instead of the large slider
+
+**Type:** feature. **Severity:** medium. When the user has selected the **low-speed / screen-off**
+option (FEATURE-3), replace the large speed **slider** with a compact **speed button** that, when
+tapped, **opens a dropdown menu** of preset speeds to choose from:
+
+> **0.5 · 0.75 · 1 · 1.25 · 1.5 · 1.75 · 2**
+
+Tapping the button opens the menu; selecting a value sets the speed and closes it. (Preferred over a
+cyclic toggle — direct selection, no tapping through every step.) The large slider stays for
+high-speed mode where the wide continuous range matters.
+
+**Status:** ✅ **Built** (glossary-content, not deployed). In screen-off mode the slider is replaced
+by `#speed-picker-btn`, which opens a dropdown of 0.5·0.75·1·1.25·1.5·1.75·2 (`buildSpeedPickerMenu`).
+Gated by the FEATURE-3 mode (`applySpeedUI`). Not yet device-verified.
+
+## FEATURE-6 — Onboarding: suggest & search subjects when no preferences exist (scales to ~100+ subjects)
+
+**Type:** feature. **Severity:** high (blocker for scaling — the current UI can't handle ~100
+subjects). A large batch of subjects (~100+) is about to be added; the current subject UI (tile
+grid / hub) doesn't scale to that many. Add an **onboarding step** that triggers **when there are no
+preferences at all in `localStorage`** (first run / clean state):
+
+- On first run with no saved preferences, present a **subject picker with search** — the user
+  searches for the subjects they want and selects them, rather than scrolling a wall of ~100 tiles.
+- Persist the chosen subjects to `localStorage`; thereafter the hub shows only the selected
+  subjects (with a way to edit the selection later, e.g. in Settings).
+- This gates the whole app behind a manageable, searchable selection instead of rendering every
+  subject up front.
+
+**Status:** ✅ **Built** (glossary-content, not deployed). First-run picker (`#subjects-overlay`,
+`openSubjectPicker`/`maybeOnboard`) fires when `podcast-onboarded` is unset; searchable checklist of
+all subjects (manifest + generator banks); saves ids to `podcast-subjects`; `renderSubjects()` filters
+to the chosen set; "Edit subjects" in Settings and on the grid re-opens it. Not yet device-verified.
+
+## FEATURE-7 — Transfer the past-paper generator to the canonical papers structure
+
+**Type:** feature / refactor. **Severity:** high (unblocks clean, current-syllabus paper
+generation and scales as papers keep arriving). A canonical papers layout now exists and is
+documented as a contract in [`docs/papers-structure.md`](papers-structure.md): raw ingest lives
+in `papers/` (source of truth), and `tools/organize_papers.py` derives `papers_organized/<Subject>/{Papers/{HSC,Trial,Yearly-Y11}, Other, Resources, Archive-pre-<cutoff>}`
+from it (cutoffs in `tools/syllabus_cutoffs.json`).
+
+The generator ingestion currently reads the **raw** layout via `papers/_index.json`, so it mixes
+syllabus eras and content types (old-syllabus papers, notes, half-yearlies all together). Migrate
+it to consume the **organized contract** instead:
+
+- Build the question bank from **`Papers/**` only** (current-syllabus HSC + Trial + Yearly-Y11);
+  **exclude `Archive-pre-*`** from default generation (optionally selectable as "older syllabus").
+- Treat **`Resources/`** as supplementary (notes/essays) — never questions — and **`Other/`** as
+  opt-in non-standard material, not part of the core exam bank.
+- Drive off the layout / `papers_organized/_MANIFEST.json` (subject + bucket + cutoff), not raw
+  category folders, so new years and new papers flow in with no code change.
+- Update the ingestion stages (`tools/index_papers.py` → parse-papers → generator manifest) and the
+  ingestion section of [`docs/past-paper-generator.md`](past-paper-generator.md) §4 to point at the
+  organized tree.
+- Follow-on: add authoritative syllabus cutoffs for the language/VET subjects (see
+  `docs/papers-structure.md` §4) so their archives are correct too.
+
 ## CONTENT-1 — Verify AI-vs-ML narration accuracy
 
 **Type:** content review. The pasted "AI vs ML" narration is **substantially correct** for HSC
@@ -297,6 +402,11 @@ data (small-data ML exists); big data made *deep learning* powerful. Soften that
 **Type:** playback. **Severity:** medium. When the spoken title-intro / quiz voice starts, the
 currently-playing episode audio doesn't pause — the two overlap. Check `playTitleIntro`
 (`app.js` ~906) and the load path pause the main `audio` before the intro/quiz clip plays.
+
+**Re-reported 2026-07-08 (same bug, raise priority):** on starting an episode the **title TTS and the
+episode audio play at the same time** — two voices at once from the very first moment. Confirms the
+title intro isn't gating the main `audio.play()` (or vice-versa). Ensure the title clip finishes (or
+is skippable) before the episode audio begins.
 
 ## BUG-19 — Progress not saved when advancing to the next episode offline
 
@@ -340,7 +450,168 @@ changed safely blind (risks breaking all audio), needs on-device profiling + lis
 
 ---
 
+## FEATURE-7 — Software study decks (Memorisation + Episode Content) + a "Review deck" setting
+
+**Type:** feature (flashcards / review). **Status:** _content DONE, app-logic NOT started — this is a
+handoff to whoever owns the UI._ Fills out BUG-6 and is the concrete home for the card-type split in
+BUG-21 / `quiz-issues.md` → Q2.
+
+**What already exists (content side, on the `glossary-content` working tree — do not redo):**
+Two new module prefixes under `content/software/`, each a set of **card-only, audio-less** episodes
+(`quiz.json` + a stub `script.md`; picked up by `tools/generate_manifest.py`, already in
+`manifest.json`):
+
+| Prefix | Section name (subject.json `groupNames`) | Episodes | Cards | `source.origin` |
+|---|---|---|---|---|
+| `MEM-*` | **Memorisation** | SSA · PFW · SA · SEE syllabus-list recall + one **Acronyms & Abbreviations** set (5 episodes) | `type:"recall"` rote lists / acronyms | `"syllabus"` |
+| `EPC-*` | **Episode Content** | SSA · PFW · SA · SEE (4 episodes) | `type:"recall"` concept cards distilled from the episode scripts | `"ai"` |
+
+`subject.json` maps both prefixes to a `"Revision decks"` year bucket so they surface as two sections
+above the normal modules. Generator for the rote cards: `tools/build_mem_deck.py`. All cards use the
+existing `type:"recall"` shape (front `q` → reveal `keyPoints[]` → FSRS self-grade), so **no new
+renderer is needed** — DT episodes already render this type.
+
+**What the UI/app needs (deliberately left unimplemented so it doesn't collide with your work):**
+
+1. **Deck tagging.** In `loadAllQuestions()` (~app.js:3232) tag each question by its module prefix, e.g.
+   `q._deck = q.deck || (prefix === "MEM" ? "memorise" : prefix === "EPC" ? "content" : "quiz")`.
+
+2. **"Review deck" setting** in Settings → Flashcards. A `<select id="root-review-deck">` persisted to
+   localStorage key `podcast-root-review-deck`. **Recommended options:** _Memorisation_ (`memorise`),
+   _Episode Content_ (`content`), _Applied — episode questions_ (`quiz`), _All mixed_ (`both`).
+   **Default `memorise`** (confirmed product decision — root review is rote recall by default; the 840
+   applied cards stay reachable per-episode and via this setting). Load the value when the settings
+   sheet opens; save on `change`; refresh the review badge.
+
+3. **Filter the ROOT review only, with per-subject graceful fallback.** Apply the setting where the
+   root pool is built — `startDailyQuiz()` (~app.js:3400) and `renderReviewHub()` (~3275) — via a helper.
+   Fallback is essential: only Software has MEM/EPC decks, so Physics/DT must fall back to their own
+   cards instead of showing an empty review:
+   ```js
+   function applyDeck(list){
+     const d = rootReviewDeck();            // localStorage podcast-root-review-deck, default "memorise"
+     if (d === "both") return list;
+     const by = {};
+     list.forEach(q => (by[q._subject] || (by[q._subject] = [])).push(q));
+     const out = [];
+     Object.values(by).forEach(arr => {
+       const f = arr.filter(q => (q._deck || "quiz") === d);
+       out.push(...(f.length ? f : arr));   // empty in this subject → keep its own cards
+     });
+     return out;
+   }
+   // then:  const all = applyDeck(await loadAllQuestions());
+   ```
+   Verified against the real manifest (Node/Python sim, since the Chrome tool can't reach localhost):
+   default `memorise` → Software root review = its 145 memorisation cards only; Physics/DT fall back to
+   their applied cards; `quiz` → Software's 840 applied cards, no MEM/EPC; `both` → everything.
+
+4. **Do NOT filter the per-episode quiz.** The Quiz tab shown after an episode (`renderQuizTab`) must keep
+   serving that episode's own cards regardless of the setting — don't route it through `applyDeck`.
+
+5. **Two-section browse display.** Render the `MEM` and `EPC` modules as two labelled sections
+   ("Memorisation", "Episode Content"), each listing its topic episodes. They are audio-less/read-only
+   (already handled ~app.js:883) — opening one shows the short intro script + the Quiz tab of recall
+   cards, and must show **no play button** (cf. BUG-3).
+
+6. **Badge (optional).** Decide whether `reviewsDueCount()` counts only the active deck or all decks.
+   Today it scans SR keys by subject prefix and is deck-agnostic; a mismatch (badge counts a card the
+   session won't serve) is acceptable for v1 — just note it.
+
+**Open product call for you/user:** whether the setting exposes Episode Content as its own option (4-way,
+as recommended above) or folds MEM+EPC into a single "revision" value (3-way: Revision / Applied / Both).
+The content supports either; `applyDeck` above handles any `_deck` value.
+
+Cross-refs: **BUG-6** (thin flashcard/memorisation feature set — this is the fill), **BUG-21** (keep MC out
+of the SR flashcard queue / recall-vs-MC card types), `quiz-issues.md` → **Q2**.
+
+---
+
 ## Related (logged elsewhere)
 - **Redundant / unstyled Exit in the Review overlay** — see `quiz-issues.md` → Q3.
 
 _None started — parked for a later session._
+
+---
+
+## FEATURE-8 — Generator top-level mode toggle: "Browse raw papers" vs "Build revision paper"
+
+**Type:** feature (past-paper generator UX). **Severity:** medium — shapes the generator's whole entry point.
+
+**Want.** A toggle at the top of the past-paper generator to choose what you're doing:
+
+1. **Browse raw papers** — view whole past papers *as-is* (the original paper, unmodified), with
+   filters: **school / source**, **year range**, **exam type** (HSC / Trial / Yearly / Half-yearly).
+   Pick a paper → view or print the whole thing (and its solutions, once the solutions pipeline lands).
+   This is for revising a specific real paper, or printing a full paper to sit.
+2. **Build revision paper** — the existing custom-assembly flow (hand-pick basket + "build by recipe")
+   that generates a *new* revision paper from past-paper question material.
+
+**Why.** Right now the generator only does mode 2 (assemble your own). Users often just want to do a
+whole real past paper — browse by school/year and print it — without building anything. The toggle makes
+both first-class instead of burying "view a real paper" inside the question-picker.
+
+**Direction.**
+- Top-level segmented toggle (like the existing hand/recipe control, one level up): **Raw papers | Build paper**.
+- Raw mode = a filtered list of whole papers (reuse the school/year/type facets already in the left rail),
+  each opening to view/print the full paper PDF + solutions.
+- This is also the natural home for the **pre-2020 old-syllabus papers** (out of scope for segmentation):
+  they can't be diced into questions, but they can be listed and printed whole here.
+- Cross-refs: **FEATURE-7** (canonical papers structure), and the solutions pipeline (real + AI-filled
+  solutions become the printable answer pages in raw mode).
+
+_Not started — logged 2026-07-08._
+
+---
+
+_(Numbers below chosen to avoid the concurrent-session collisions above — two FEATURE-7s and a
+FEATURE-8 already exist. Renumber when the branches are reconciled.)_
+
+## FEATURE-9 — Sync must be automatic, not just on button-press
+
+**Type:** sync / persistence. **Severity:** high (without it, cross-device sync is basically useless).
+Right now cloud sync only happens when the user **manually taps the sync button**. It needs to push to
+the cloud **automatically**: after every couple of minutes of playback, after each flashcard review,
+and at the end of a session — so progress actually shows up on other devices without thinking about it.
+As it stands the feature is trivial/pointless because you have to remember to press the button.
+
+**Fix direction.** Add debounced/throttled auto-push triggers to the existing sync (`window.Sync`):
+a periodic timer during playback (~2 min), a hook on flashcard grade/complete, and a flush on
+`pause` / `visibilitychange` (session end / app backgrounded). Reuse the same push the button calls;
+guard against overlapping pushes and no-op when nothing changed. Pair with pull-on-open so a device
+picks up remote progress on launch.
+
+## BUG-23 — TTS voices broken in the installed PWA but fine in the browser (recurring)
+
+**Type:** audio / PWA. **Severity:** medium–high (recurring). The narration **voices break when the app
+is run as an installed PWA**, yet work correctly in a normal browser tab. This keeps coming back.
+**Why it likely recurs:** installed-PWA audio differs from a browser tab — a different service-worker
+cache scope, stricter autoplay/audio-session handling, and (if any voice path uses the Web Speech
+`speechSynthesis` API) the installed standalone context often has **no/limited system voices** where the
+browser does. Investigate: is the broken path the SpeechSynthesis API or a fetched audio file? If the
+former, it can't be relied on in a PWA — bake/serve the audio instead. If the latter, it's a
+service-worker caching/range-request issue specific to standalone mode. Needs on-device (installed PWA)
+repro to pin which. Related: BUG-15 (streaming), BUG-8 (SW caching).
+
+## BUG-24 — Glossaries don't contain the recap acronyms
+
+**Type:** content pipeline. **Severity:** medium. The subject glossaries are **missing the recap
+acronyms/abbreviations** (the short forms introduced in episodes). The FEATURE-7 "Memorisation" deck
+adds an **Acronyms & Abbreviations** MEM set, but the **glossary** itself still doesn't carry those
+terms. Fix: fold acronyms/abbreviations into the per-episode glossary generation so they're defined in
+the glossary too, not only in the flashcard deck. Same root cause as **BUG-17** (glossary built as a
+separate manual step, so coverage drifts) — the durable fix is to generate glossary terms (incl.
+acronyms) per episode as part of the pipeline.
+
+## BUG-25 — Paper generator UI looks bad on iOS; back button hidden under the status-bar clock
+
+**Type:** UI / iOS. **Severity:** medium. The **past-paper generator** (`generator.html`) renders poorly
+on iOS: the layout is messy and the **back button is obscured by the iOS status-bar time** (the header
+sits under the notch/status bar). Almost certainly a **safe-area-inset** problem — the generator's header
+doesn't pad for `env(safe-area-inset-top)` (and the page may be missing `viewport-fit=cover` handling
+that `index.html` has). Fix: apply `padding-top: env(safe-area-inset-top)` to the generator header/top
+bar, verify `viewport-fit=cover` + `apple-mobile-web-app-status-bar-style` are set consistently with the
+main app, and audit the generator's spacing/controls on a real iPhone. The main app's header already
+handles this — port the same treatment to `generator.html`. Related: BUG-2 / BUG-5 (generator UI on iOS).
+
+_Not started — logged 2026-07-08._

@@ -11,6 +11,11 @@
   const LISTEN_LOG_KEY = "podcast-listen-log";        // { "YYYY-MM-DD": wall-clock secondsSpent }
   const VOICE_LOG_KEY = "podcast-voice-log";          // { voiceName: content-seconds actually played }
   const LAST_SUBJECT_KEY = "podcast-last-subject";    // remember which subject was last open
+  const SIMPLE_SPEED_KEY = "podcast-simple-speed";    // "1" = simple dropdown speed picker (screen-off/low-speed mode)
+  const HS_ENGINE_KEY = "podcast-hs-engine";          // "1" = user wants the Web Audio high-speed engine (when NOT in simple mode)
+  const PLAYER_MIN_KEY = "podcast-player-min";        // "1" = now-playing bar minimised to save space
+  const SUBJECTS_KEY = "podcast-subjects";            // JSON array of chosen subject ids (onboarding); absent = show all
+  const ONBOARDED_KEY = "podcast-onboarded";          // "1" once the first-run subject picker has been completed/skipped
 
   // Speed is shown in syllables/second, not "×". BASE_SPS is the narration's
   // natural rate at 1× playback: this content runs ~140 wpm (modules)–177
@@ -226,6 +231,7 @@
     const s = SPEED_OPTIONS[i];
     speedInput.value = speedNum(s);
     if (speedUnitEl) speedUnitEl.textContent = speedUnitLabel();
+    if (speedPickerBtn) speedPickerBtn.textContent = fmtSpeed(s);
     audio.playbackRate = s;
     localStorage.setItem(SPEED_KEY, i);
     if (audio.duration) {
@@ -261,7 +267,110 @@
     if (e.key === "ArrowDown") { e.preventDefault(); setSpeed(getCurrentSpeedIdx() - 1); }
   });
   speedInput.addEventListener("blur", applySpeedInput);
+
+  // --- Simple speed picker (opt-in, "screen-off / low-speed" mode) ---
+  // When enabled in Settings, the wide slider is replaced by a tap-to-open menu of
+  // common speeds. Each preset maps to the nearest SPEED_OPTIONS index (all exact here).
+  const SIMPLE_SPEED_PRESETS = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2];
+  const speedControlEl = document.querySelector(".speed-control");
+  const speedPickerEl = document.getElementById("speed-picker");
+  const speedPickerBtn = document.getElementById("speed-picker-btn");
+  const speedPickerMenu = document.getElementById("speed-picker-menu");
+  const simpleSpeedToggle = document.getElementById("simple-speed");
+  // Default ON (screen-off/native mode) — a one-time migration below opts existing
+  // high-speed users out so they aren't suddenly capped.
+  function simpleSpeedMode() { return localStorage.getItem(SIMPLE_SPEED_KEY) !== "0"; }
+  function speedIdxFor(mult) {
+    return SPEED_OPTIONS.reduce((best, s, i) =>
+      Math.abs(s - mult) < Math.abs(SPEED_OPTIONS[best] - mult) ? i : best, 0);
+  }
+  function buildSpeedPickerMenu() {
+    if (!speedPickerMenu) return;
+    speedPickerMenu.innerHTML = "";
+    const cur = getCurrentSpeed();
+    SIMPLE_SPEED_PRESETS.forEach((mult) => {
+      const opt = document.createElement("button");
+      opt.className = "speed-picker-opt";
+      opt.setAttribute("role", "option");
+      opt.textContent = fmtSpeed(mult);
+      if (Math.abs(mult - cur) < 0.01) { opt.classList.add("sel"); opt.setAttribute("aria-selected", "true"); }
+      opt.addEventListener("click", () => { setSpeed(speedIdxFor(mult)); closeSpeedPicker(); });
+      speedPickerMenu.appendChild(opt);
+    });
+  }
+  function openSpeedPicker() {
+    if (!speedPickerMenu) return;
+    buildSpeedPickerMenu();
+    setHidden(speedPickerMenu, false);
+    if (speedPickerBtn) speedPickerBtn.setAttribute("aria-expanded", "true");
+  }
+  function closeSpeedPicker() {
+    if (!speedPickerMenu) return;
+    setHidden(speedPickerMenu, true);
+    if (speedPickerBtn) speedPickerBtn.setAttribute("aria-expanded", "false");
+  }
+  function applySpeedUI() {
+    const simple = simpleSpeedMode();
+    if (speedControlEl) setHidden(speedControlEl, simple);
+    if (speedPickerEl) setHidden(speedPickerEl, !simple);
+    if (!simple) closeSpeedPicker();
+    // Simple mode caps at the picker's top preset (2×) — clamp down if we were faster,
+    // so we never hand a >4× rate to the native backend (which browsers mute).
+    if (simple) {
+      const cap = SIMPLE_SPEED_PRESETS[SIMPLE_SPEED_PRESETS.length - 1];
+      if (getCurrentSpeed() > cap) setSpeed(speedIdxFor(cap));
+    }
+    setSpeed(getCurrentSpeedIdx()); // refresh both the input and the picker-button label
+  }
+
+  // --- Engine ↔ mode coupling ---
+  // Simple/screen-off mode MUST use the native <audio> backend: it's the only one that
+  // plays with the screen off / app backgrounded (the Web Audio engine's AudioContext
+  // is suspended in the background by iOS and can't be resumed there — an OS limit).
+  // High-speed mode uses the Web Audio engine so it stays audible past ~4× (where
+  // browsers mute native playbackRate). So: effective engine = high-speed mode AND the
+  // user wants it AND the device supports it.
+  function wantsHsEngine() { return localStorage.getItem(HS_ENGINE_KEY) === "1"; }
+  function effectiveEngine() { return !simpleSpeedMode() && wantsHsEngine() && audio.engineAvailable === true; }
+  function syncEngine(reload) {
+    if (!audio.setEngineEnabled) return;
+    const target = effectiveEngine();
+    if (audio.engineEnabled === target) return;
+    audio.setEngineEnabled(target);
+    // The backend switch only takes effect on the next load(); reload in place, resuming
+    // position and keeping play state, so it feels immediate.
+    if (reload && currentEpisode) {
+      const playing = !audio.paused;
+      persistProgress();
+      loadEpisode(currentEpisode, { autoplay: playing });
+    }
+  }
+  if (speedPickerBtn) speedPickerBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    speedPickerMenu && speedPickerMenu.hidden ? openSpeedPicker() : closeSpeedPicker();
+  });
+  document.addEventListener("click", (e) => {
+    if (speedPickerMenu && !speedPickerMenu.hidden && !e.target.closest("#speed-picker")) closeSpeedPicker();
+  });
+
   initSpeed();
+  // One-time migration: screen-off mode is the default, but existing high-speed users
+  // (Web Audio engine on, or a saved speed above the 2× cap) keep high-speed mode so we
+  // don't silently slow them down. Must run before applySpeedUI()/syncEngine() read it.
+  if (localStorage.getItem(SIMPLE_SPEED_KEY) === null) {
+    const storedIdx = parseInt(localStorage.getItem(SPEED_KEY), 10);
+    const storedSpeed = isNaN(storedIdx) ? 1 : (SPEED_OPTIONS[storedIdx] || 1);
+    if (audio.engineEnabled === true || storedSpeed > 2) {
+      try { localStorage.setItem(SIMPLE_SPEED_KEY, "0"); } catch (e) {}
+    }
+  }
+  applySpeedUI();
+  // Seed the high-speed-engine intent from whatever backend is currently active (the old
+  // standalone engine toggle), then reconcile the active backend with the mode.
+  if (localStorage.getItem(HS_ENGINE_KEY) === null) {
+    try { localStorage.setItem(HS_ENGINE_KEY, audio.engineEnabled ? "1" : "0"); } catch (e) {}
+  }
+  syncEngine(false);
 
   // --- Theme ---
   const HLJS_THEMES = {
@@ -801,14 +910,49 @@
   function setPlayState(playing) {
     setHidden(btnPlay.querySelector(".icon-play"), playing);
     setHidden(btnPlay.querySelector(".icon-pause"), !playing);
+    if (btnPlayMini) {
+      setHidden(btnPlayMini.querySelector(".icon-play"), playing);
+      setHidden(btnPlayMini.querySelector(".icon-pause"), !playing);
+    }
     if (queueOverlay && !queueOverlay.hidden) refreshNowRow();
   }
 
+  // --- Minimise / expand the now-playing bar (frees up screen space) ---
+  const btnPlayerMin = document.getElementById("btn-player-min");
+  const btnPlayMini = document.getElementById("btn-play-mini");
+  function applyPlayerMin(min) {
+    playerBar.classList.toggle("min", min);
+    if (btnPlayerMin) {
+      btnPlayerMin.setAttribute("aria-pressed", min ? "true" : "false");
+      btnPlayerMin.setAttribute("aria-label", min ? "Expand player" : "Minimise player");
+      setHidden(btnPlayerMin.querySelector(".icon-min"), min);
+      setHidden(btnPlayerMin.querySelector(".icon-max"), !min);
+    }
+  }
+  function setPlayerMin(min) {
+    localStorage.setItem(PLAYER_MIN_KEY, min ? "1" : "0");
+    applyPlayerMin(min);
+  }
+  applyPlayerMin(localStorage.getItem(PLAYER_MIN_KEY) === "1");
+  if (btnPlayerMin) btnPlayerMin.addEventListener("click", (e) => {
+    e.stopPropagation();
+    setPlayerMin(!playerBar.classList.contains("min"));
+  });
+  // Tapping the title area while minimised expands it again.
+  const playerNowEl = document.querySelector(".player-now");
+  if (playerNowEl) playerNowEl.addEventListener("click", (e) => {
+    if (!playerBar.classList.contains("min")) return;
+    if (e.target.closest("#btn-play-mini, #btn-player-min")) return;
+    setPlayerMin(false);
+  });
+
   // --- Controls ---
-  btnPlay.addEventListener("click", () => {
+  const togglePlay = () => {
     if (!currentEpisode) return;
     audio.paused ? audio.play() : audio.pause();
-  });
+  };
+  btnPlay.addEventListener("click", togglePlay);
+  if (btnPlayMini) btnPlayMini.addEventListener("click", (e) => { e.stopPropagation(); togglePlay(); });
   btnRewind.addEventListener("click", () => {
     audio.currentTime = Math.max(0, audio.currentTime - 30);
   });
@@ -1493,11 +1637,12 @@
     if (introTitleToggle) introTitleToggle.checked = introEnabled();
     if (quizSplitToggle) quizSplitToggle.checked = quizSplitBySubject();
     if (speedEngineToggle) {
-      // Only meaningful when the Web Audio engine is available; otherwise hide the row
-      // (the native element can't do audible >4x, but there's nothing to toggle).
+      // Only meaningful when the Web Audio engine is available; otherwise hide the row.
+      // Reflects the user's high-speed-engine INTENT, and is disabled while simple mode
+      // is on (simple mode forces the native background-capable backend).
       const supported = audio.engineAvailable === true;
-      speedEngineToggle.checked = audio.engineEnabled === true;
-      speedEngineToggle.disabled = !supported;
+      speedEngineToggle.checked = wantsHsEngine();
+      speedEngineToggle.disabled = !supported || simpleSpeedMode();
       const row = speedEngineToggle.closest(".setting-row");
       const hint = row && row.nextElementSibling;
       if (row) setHidden(row, !supported);
@@ -1506,6 +1651,7 @@
     if (fsrsRetentionSelect) fsrsRetentionSelect.value = String(fsrsSettings().retention);
     if (fsrsStepsInput) fsrsStepsInput.value = fsrsSettings().steps;
     if (speedUnitSelect) speedUnitSelect.value = speedUnitMode();
+    if (simpleSpeedToggle) simpleSpeedToggle.checked = simpleSpeedMode();
     refreshStorageUsage();
     refreshBuildVersion();
     updateInstallUI();
@@ -1515,6 +1661,16 @@
   if (speedUnitSelect) speedUnitSelect.addEventListener("change", () => {
     localStorage.setItem(SPEED_UNIT_KEY, speedUnitSelect.value === "sps" ? "sps" : "mult");
     setSpeed(getCurrentSpeedIdx()); // refresh the player display + unit label
+  });
+  if (simpleSpeedToggle) simpleSpeedToggle.addEventListener("change", () => {
+    localStorage.setItem(SIMPLE_SPEED_KEY, simpleSpeedToggle.checked ? "1" : "0");
+    applySpeedUI();
+    syncEngine(true); // simple mode ⇒ native (background); high-speed mode ⇒ Web Audio engine
+  });
+  const btnChooseSubjects = document.getElementById("btn-choose-subjects");
+  if (btnChooseSubjects) btnChooseSubjects.addEventListener("click", () => {
+    closeSheet(settingsOverlay);
+    openSubjectPicker(false);
   });
   settingsOverlay.addEventListener("click", (e) => {
     if (e.target === settingsOverlay) closeSheet(settingsOverlay);
@@ -1538,14 +1694,10 @@
     localStorage.setItem(QUIZ_SPLIT_KEY, quizSplitToggle.checked ? "1" : "0");
   });
   if (speedEngineToggle && audio.setEngineEnabled) speedEngineToggle.addEventListener("change", () => {
-    audio.setEngineEnabled(speedEngineToggle.checked);
-    // Switching backends takes effect on the next load(), so reload the current episode
-    // in place — resume its saved position and keep playing if it was playing.
-    if (currentEpisode) {
-      const playing = !audio.paused;
-      persistProgress(); // capture position so the reload resumes where we are
-      loadEpisode(currentEpisode, { autoplay: playing });
-    }
+    // This toggle records the user's high-speed-engine INTENT; the reconciler decides
+    // whether it's actually active (it's overridden to native while in simple mode).
+    localStorage.setItem(HS_ENGINE_KEY, speedEngineToggle.checked ? "1" : "0");
+    syncEngine(true);
   });
   if (blockMobileToggle) blockMobileToggle.addEventListener("change", () => {
     // Stored inverted: default (absent) = ON; "0" = off.
@@ -1692,9 +1844,21 @@
     intro.innerHTML = `<h1 class="subjects-title">HSC Study</h1><p class="subjects-sub">Choose a subject</p>`;
     viewSubjects.appendChild(intro);
 
+    // "Edit subjects" affordance — lets you reopen the picker to add/remove subjects.
+    const chosen = chosenSubjectIds();
+    if (chosen) {
+      const editBar = document.createElement("button");
+      editBar.className = "subjects-edit-link";
+      editBar.innerHTML = `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></svg><span>Edit subjects</span>`;
+      editBar.addEventListener("click", () => openSubjectPicker(false));
+      viewSubjects.appendChild(editBar);
+    }
+
     const grid = document.createElement("div");
     grid.className = "subjects-grid";
-    (fullManifest ? fullManifest.subjects : []).forEach((s) => {
+    (fullManifest ? fullManifest.subjects : [])
+      .filter((s) => !chosen || chosen.includes(s.id))
+      .forEach((s) => {
       const eps = s.modules.flatMap((m) => m.episodes);
       const total = eps.length;
       const done = eps.filter((e) => progress[e.id] && progress[e.id].completed).length;
@@ -1711,7 +1875,9 @@
     // Question-bank-only subjects (no episodes yet, so absent from the manifest) still get
     // a tile — it opens the paper generator scoped to that subject.
     const manifestIds = new Set((fullManifest ? fullManifest.subjects : []).map((s) => s.id));
-    GENERATOR_BANKS.filter(([bid]) => !manifestIds.has(bid)).forEach(([bid, bname]) => {
+    GENERATOR_BANKS.filter(([bid]) => !manifestIds.has(bid))
+      .filter(([bid]) => !chosen || chosen.includes(bid))
+      .forEach(([bid, bname]) => {
       const tile = document.createElement("button");
       tile.className = "subject-tile";
       tile.innerHTML = `
@@ -1729,6 +1895,106 @@
     ["physics", "Physics"],
     ["dt", "Design & Technology"],
   ];
+
+  // --- Subject selection / first-run onboarding ---
+  // With many subjects a full grid is unusable, so on first run (no stored prefs) we ask the
+  // user to search + pick the subjects they study; the picker box stores an id list in
+  // SUBJECTS_KEY and renderSubjects() then shows only those. Absent = show everything.
+  const subjectsOverlay = document.getElementById("subjects-overlay");
+  const subjectsSearch = document.getElementById("subjects-search");
+  const subjectsPickList = document.getElementById("subjects-pick-list");
+  const subjectsPickSave = document.getElementById("subjects-pick-save");
+  const subjectsPickAll = document.getElementById("subjects-pick-all");
+  const subjectsPickIntro = document.getElementById("subjects-pick-intro");
+  let pickerState = null; // Set<id> of selections while the picker is open
+
+  function chosenSubjectIds() {
+    try { const v = JSON.parse(localStorage.getItem(SUBJECTS_KEY)); return Array.isArray(v) && v.length ? v : null; }
+    catch { return null; }
+  }
+  function isOnboarded() { return localStorage.getItem(ONBOARDED_KEY) === "1"; }
+  function markOnboarded() { try { localStorage.setItem(ONBOARDED_KEY, "1"); } catch {} }
+
+  // All pickable subjects: those with episodes (manifest) plus generator-only banks, in order.
+  function selectableSubjects() {
+    const subs = (fullManifest ? fullManifest.subjects : []).map((s) => ({ id: s.id, name: s.name }));
+    const ids = new Set(subs.map((s) => s.id));
+    GENERATOR_BANKS.filter(([bid]) => !ids.has(bid)).forEach(([bid, bname]) => subs.push({ id: bid, name: bname }));
+    return subs;
+  }
+
+  function renderSubjectPicker(filter) {
+    if (!subjectsPickList) return;
+    const q = (filter || "").trim().toLowerCase();
+    subjectsPickList.innerHTML = "";
+    const matches = selectableSubjects().filter((s) => !q || s.name.toLowerCase().includes(q));
+    if (!matches.length) {
+      subjectsPickList.innerHTML = `<p class="subjects-pick-empty">No subjects match “${q}”.</p>`;
+      return;
+    }
+    matches.forEach((s) => {
+      const row = document.createElement("label");
+      row.className = "subjects-pick-row";
+      const cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.className = "setting-toggle";
+      cb.checked = pickerState.has(s.id);
+      cb.addEventListener("change", () => {
+        cb.checked ? pickerState.add(s.id) : pickerState.delete(s.id);
+        updatePickSave();
+      });
+      const name = document.createElement("span");
+      name.className = "subjects-pick-name";
+      name.textContent = s.name;
+      row.appendChild(cb);
+      row.appendChild(name);
+      subjectsPickList.appendChild(row);
+    });
+  }
+  function updatePickSave() {
+    if (!subjectsPickSave) return;
+    const n = pickerState ? pickerState.size : 0;
+    subjectsPickSave.textContent = n ? `Continue with ${n} subject${n > 1 ? "s" : ""}` : "Continue";
+  }
+  function openSubjectPicker(firstRun) {
+    if (!subjectsOverlay) return;
+    pickerState = new Set(chosenSubjectIds() || []);
+    if (subjectsPickIntro) subjectsPickIntro.textContent = firstRun
+      ? "Welcome! Search and pick the subjects you're studying — just the ones you want on your home screen. You can change these any time in Settings."
+      : "Pick the subjects you want on your home screen. Change these any time.";
+    if (subjectsSearch) subjectsSearch.value = "";
+    renderSubjectPicker("");
+    updatePickSave();
+    openSheet(subjectsOverlay);
+  }
+  function commitSubjectPicker(ids) {
+    try {
+      if (ids && ids.length) localStorage.setItem(SUBJECTS_KEY, JSON.stringify(ids));
+      else localStorage.removeItem(SUBJECTS_KEY); // none chosen ⇒ show all
+    } catch {}
+    markOnboarded();
+    closeSheet(subjectsOverlay);
+    renderSubjects();
+  }
+  if (subjectsSearch) subjectsSearch.addEventListener("input", () => renderSubjectPicker(subjectsSearch.value));
+  if (subjectsPickSave) subjectsPickSave.addEventListener("click", () => {
+    // Preserve manifest order rather than click order.
+    const ids = selectableSubjects().map((s) => s.id).filter((id) => pickerState.has(id));
+    commitSubjectPicker(ids);
+  });
+  if (subjectsPickAll) subjectsPickAll.addEventListener("click", () => commitSubjectPicker(null));
+  if (subjectsOverlay) {
+    subjectsOverlay.addEventListener("click", (e) => { if (e.target === subjectsOverlay) { markOnboarded(); closeSheet(subjectsOverlay); } });
+    enableSheetDismiss(subjectsOverlay);
+    const x = subjectsOverlay.querySelector(".sheet-close");
+    if (x) x.addEventListener("click", () => { markOnboarded(); renderSubjects(); });
+  }
+  // Trigger the first-run picker once the manifest is loaded and we're on the subject grid.
+  function maybeOnboard() {
+    if (isOnboarded()) return;
+    if (!fullManifest || fullManifest.subjects.length <= 1) { markOnboarded(); return; }
+    if (viewSubjects && !viewSubjects.hidden) openSubjectPicker(true);
+  }
 
   // The per-subject hub: one level below the subject grid. Splits a subject into its
   // three modes — Podcasts, Quizzes, Past Papers — each opening its own surface.
@@ -2235,7 +2501,8 @@
       enhanceCodeBlocks();
       buildCarousels(episodeContentEl);
       renderMath(episodeContentEl);
-      if (tab === "script") buildTranscriptSync(); else syncParas = null;
+      if (tab === "script") buildTranscriptSync(); else { syncParas = null; syncActiveEl = null; }
+      updateJumpCurrentBtn();
       window.scrollTo({ top: 0, behavior: "instant" });
     } catch {
       syncParas = null;
@@ -2274,20 +2541,47 @@
     if (!syncParas || episodeContentEl.hidden || !audio.duration) return;
     const frac = audio.currentTime / audio.duration;
     let active = syncParas.find((p) => frac >= p.startFrac && frac < p.endFrac) || syncParas[syncParas.length - 1];
-    if (!active || active.el === syncActiveEl) return;
+    if (!active || active.el === syncActiveEl) { updateJumpCurrentBtn(); return; }
     if (syncActiveEl) syncActiveEl.classList.remove("para-active");
     active.el.classList.add("para-active");
     syncActiveEl = active.el;
     // Auto-scroll to follow along, but throttled so rapid paragraph changes (e.g. at high
     // playback speed) can't make the page jitter around. Only scroll when off-screen.
     const now = performance.now();
-    if (now - lastSyncScroll < 1500) return;
+    if (now - lastSyncScroll < 1500) { updateJumpCurrentBtn(); return; }
     const r = active.el.getBoundingClientRect();
     if (r.top < 130 || r.bottom > window.innerHeight - 40) {
       lastSyncScroll = now;
       active.el.scrollIntoView({ block: "center", behavior: "smooth" });
     }
+    updateJumpCurrentBtn();
   }
+
+  // --- "Jump to where the audio is playing" button ---
+  // Auto-scroll follows along, but if the reader scrolls away (or auto-scroll is throttled
+  // at high speed) this floating button re-centres on the currently-playing paragraph.
+  const btnJumpCurrent = document.getElementById("btn-jump-current");
+  function jumpTargetOffscreen() {
+    if (!syncActiveEl) return false;
+    const r = syncActiveEl.getBoundingClientRect();
+    return r.bottom < 120 || r.top > window.innerHeight - 40;
+  }
+  function updateJumpCurrentBtn() {
+    if (!btnJumpCurrent) return;
+    const onScript = syncParas && !episodeContentEl.hidden && !viewEpisode.hidden;
+    setHidden(btnJumpCurrent, !(onScript && syncActiveEl && jumpTargetOffscreen()));
+  }
+  if (btnJumpCurrent) btnJumpCurrent.addEventListener("click", () => {
+    if (!syncActiveEl) return;
+    lastSyncScroll = performance.now(); // don't let auto-scroll fight this manual jump
+    syncActiveEl.scrollIntoView({ block: "center", behavior: "smooth" });
+    setHidden(btnJumpCurrent, true);
+  });
+  let jumpScrollRaf = 0;
+  window.addEventListener("scroll", () => {
+    if (jumpScrollRaf) return;
+    jumpScrollRaf = requestAnimationFrame(() => { jumpScrollRaf = 0; updateJumpCurrentBtn(); });
+  }, { passive: true });
 
   // === QUIZ ===
   const QUIZ_SR_KEY = "podcast-quiz-sr";
@@ -3664,6 +3958,7 @@
         if (le) loadEpisode(le, { autoplay: false });
       }
       updateReviewBadge();
+      maybeOnboard();
     })
     .catch((err) => {
       console.error("[init] failed to load manifest", err);

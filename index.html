@@ -48,6 +48,14 @@
     <div class="player-now">
       <span id="player-ep-title" class="player-ep-title"></span>
       <span id="player-ep-sub" class="player-ep-sub"></span>
+      <button id="btn-play-mini" class="ctrl-btn ctrl-play play-btn player-mini-only" aria-label="Play/Pause">
+        <svg class="icon-play" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        <svg class="icon-pause" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" hidden><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+      </button>
+      <button id="btn-player-min" class="player-min-btn" aria-label="Minimise player" aria-pressed="false">
+        <svg class="icon-min" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        <svg class="icon-max" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden><path d="M6 15l6-6 6 6"/></svg>
+      </button>
     </div>
     <div class="player-controls">
       <button id="btn-rewind" class="ctrl-btn" aria-label="Back 30 seconds">&#8722;30</button>
@@ -68,6 +76,10 @@
           <button id="btn-speed-up" class="speed-arrow" aria-label="Increase speed">+</button>
           <input id="speed-input" class="speed-input" type="text" value="3.8" aria-label="Speed in syllables per second" inputmode="decimal">
           <span class="speed-unit" id="speed-unit">syl/s</span>
+        </div>
+        <div class="speed-picker" id="speed-picker" hidden>
+          <button id="speed-picker-btn" class="speed-picker-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Playback speed">1×</button>
+          <div id="speed-picker-menu" class="speed-picker-menu" role="listbox" aria-label="Playback speed" hidden></div>
         </div>
       </div>
     </div>
@@ -97,6 +109,10 @@
   </div>
   <article id="episode-content" class="markdown-body"></article>
   <div id="quiz-area" hidden></div>
+  <button id="btn-jump-current" class="jump-current" hidden aria-label="Jump to where the audio is playing">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M19 12l-7 7-7-7"/></svg>
+    <span>Now playing</span>
+  </button>
 </main>
 
 <footer class="app-footer">
@@ -160,6 +176,12 @@
       <p class="setting-hint">Show playback speed as a simple multiplier (1×, 1.5×, 2×) or as syllables per second.</p>
 
       <div class="setting-row">
+        <label for="simple-speed" class="setting-label">Screen-off mode (up to 2×)</label>
+        <input type="checkbox" id="simple-speed" class="setting-toggle" aria-label="Screen-off mode">
+      </div>
+      <p class="setting-hint">Switches to the simple native player: a tap-to-pick speed menu (0.5×–2×) that <strong>keeps playing with the screen off or the app in the background</strong>. Turn this off for high-speed mode — the full slider up to 16× — but that uses the Web Audio engine, which stops when the screen is off (an iOS limitation).</p>
+
+      <div class="setting-row">
         <label for="intro-title" class="setting-label">Announce episode title</label>
         <input type="checkbox" id="intro-title" class="setting-toggle" aria-label="Announce episode title" checked>
       </div>
@@ -169,7 +191,7 @@
         <label for="speed-engine" class="setting-label">Alternate high-speed engine</label>
         <input type="checkbox" id="speed-engine" class="setting-toggle" aria-label="Alternate high-speed engine">
       </div>
-      <p class="setting-hint">High speed normally uses the browser's built-in pitch-preserving playback (clean to 16×, and it keeps playing with the screen off). Only if your device goes silent above ~4× at high speed, turn this on for the built-in Web Audio time-stretch engine — audible to 16× on any device, but it won't play in the background.</p>
+      <p class="setting-hint">For high-speed mode only (has no effect in screen-off mode). If your device goes silent above ~4×, turn this on for the built-in Web Audio time-stretch engine — audible to 16× on any device, but it won't play with the screen off. Leave it off to use the browser's built-in pitch-preserving playback.</p>
 
       <div class="setting-row">
         <label for="dl-all-voices" class="setting-label">Download alternate voices</label>
@@ -212,6 +234,10 @@
       </div>
       <p class="setting-hint">Short steps a new card repeats before graduating, e.g. “1m 10m” or “5m 30m 1h”. Use m / h / d for minutes, hours, days.</p>
 
+      <h3 class="settings-section">Subjects</h3>
+      <button id="btn-choose-subjects" class="setting-btn">Choose subjects</button>
+      <p class="setting-hint">Pick which subjects show on your home screen. Search and tick the ones you study; the rest stay hidden until you add them.</p>
+
       <h3 class="settings-section">Install</h3>
       <button id="btn-install" class="setting-btn" hidden>Install app</button>
       <p class="setting-hint" id="install-hint"></p>
@@ -225,6 +251,24 @@
         <button type="button" id="build-version" class="setting-value setting-build" aria-label="App build — tap to show what changed">—</button>
       </div>
       <p class="setting-hint" id="build-message" hidden></p>
+    </div>
+  </div>
+</div>
+
+<div id="subjects-overlay" class="stats-overlay" hidden>
+  <div class="stats-panel" role="dialog" aria-modal="true" aria-label="Choose subjects">
+    <button class="sheet-close" aria-label="Close">&#10005;</button>
+    <div class="stats-header">
+      <h2 class="stats-heading">Choose your subjects</h2>
+    </div>
+    <div class="stats-content">
+      <p class="setting-hint" id="subjects-pick-intro">Search and pick the subjects you're studying. You can change these any time in Settings.</p>
+      <input id="subjects-search" class="subjects-search" type="search" placeholder="Search subjects…" aria-label="Search subjects" autocomplete="off" enterkeyhint="search">
+      <div id="subjects-pick-list" class="subjects-pick-list"></div>
+      <div class="subjects-pick-actions">
+        <button id="subjects-pick-save" class="setting-btn subjects-pick-save">Continue</button>
+        <button id="subjects-pick-all" class="setting-btn-plain">Show all subjects</button>
+      </div>
     </div>
   </div>
 </div>
