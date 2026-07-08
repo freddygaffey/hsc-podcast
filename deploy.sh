@@ -43,6 +43,7 @@ rsync -a --prune-empty-dirs \
   --include='*/' \
   --include='script.md' --include='supplementary.md' --include='quiz.json' \
   --include='questions.json' --include='subject.json' --include='papers-index.json' \
+  --include='paper-subjects.json' \
   --include='*.png' --include='*.jpg' --include='*.jpeg' --include='*.webp' --include='*.svg' \
   --include='paper.pdf' --include='mg.pdf' \
   --exclude='*' \

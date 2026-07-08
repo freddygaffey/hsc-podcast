@@ -322,6 +322,12 @@ const SUBJECTS=[
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const PAGE=80;
+// FEATURE-8: full paper-subject registry (content/paper-subjects.json) — includes the
+// browse-only subjects that have raw papers but no question bank.
+let REGISTRY=[];
+const DEFAULT_ASSET_BASE="https://papers.hsc.pebnum.com";
+const subjName=id=>REGISTRY.find(r=>r.id===id)?.name||SUBJECTS.find(s=>s[0]===id)?.[1]||id;
+const hasQ=id=>{const r=REGISTRY.find(r=>r.id===id);return r?!!r.hasQuestions:true;};
 
 let SUBJECT="", BASE="", DATA=[], FILTERED=[], shown=PAGE;
 let picked=new Map();           // key -> record (ordered = paper order)
@@ -411,14 +417,19 @@ const provOf=q=>{
 /* ── data ── */
 async function loadSubject(id){
   SUBJECT=id; picked=new Map(); DATA=[]; FILTERED=[];
-  document.title=`Paper Generator — ${SUBJECTS.find(s=>s[0]===id)?.[1]||id}`;
+  document.title=`Paper Generator — ${subjName(id)}`;
   $("#list").innerHTML='<div class="empty">Opening the filing cabinet…</div>';
-  const [subj,man]=await Promise.all([
-    fetch(`content/${id}/subject.json`).then(r=>r.json()).catch(()=>({})),
-    fetch(`content/${id}/questions.json`).then(r=>r.json()),
-  ]);
-  BASE=subj.assetBaseUrl||"";
+  const subj=await fetch(`content/${id}/subject.json`).then(r=>r.json()).catch(()=>({}));
+  BASE=subj.assetBaseUrl||DEFAULT_ASSET_BASE;   // browse-only subjects have no subject.json
   loadPapers(id);   // FEATURE-8: raw-paper browse list (independent of the question builder)
+  // The per-question builder only exists for subjects with a question bank; browse-only
+  // subjects (raw papers only) show just the papers list.
+  const canBuild=hasQ(id);
+  $("#tm-build").hidden=!canBuild;
+  if(!canBuild)setMode("papers");
+  const man=canBuild
+    ? await fetch(`content/${id}/questions.json`).then(r=>r.json()).catch(()=>({questions:[]}))
+    : {questions:[]};
   // Whole questions only — letter-part records stay as metadata. Dedupe by
   // (paperSlug, assetKey): re-parses can list the same question under two content-hash
   // ids (byte-level changes like marks badges); prefer the richer record.
@@ -927,11 +938,14 @@ $("#pf-types").addEventListener("click",e=>{const b=e.target.closest("button");i
   const t=b.dataset.t; PF.types.has(t)?PF.types.delete(t):PF.types.add(t); b.classList.toggle("on"); renderPapers();});
 
 /* ── init ── */
-(function(){
-  $("#subject").innerHTML=SUBJECTS.map(([id,n])=>`<option value="${id}">${esc(n)}</option>`).join("");
+(async function(){
+  try{ REGISTRY=await fetch("content/paper-subjects.json",{cache:"no-store"}).then(r=>r.json()); }
+  catch{ REGISTRY=[]; }
+  const opts=REGISTRY.length?REGISTRY.map(r=>[r.id,r.name]):SUBJECTS;
+  $("#subject").innerHTML=opts.map(([id,n])=>`<option value="${id}">${esc(n)}</option>`).join("");
   setMode("papers");   // default to browsing whole papers (THSC-style)
   const want=new URLSearchParams(location.search).get("subject")||"maths-advanced";
-  $("#subject").value=SUBJECTS.some(s=>s[0]===want)?want:"maths-advanced";
+  $("#subject").value=opts.some(o=>o[0]===want)?want:opts[0][0];
   $("#subject").onchange=()=>{
     history.replaceState(0,"",`?subject=${$("#subject").value}`);
     loadSubject($("#subject").value);
