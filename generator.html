@@ -158,6 +158,34 @@
   .gen:hover:not(:disabled){filter:brightness(1.1)}
   .gen:disabled{opacity:.45;cursor:default}
   .status{font-size:12.5px;color:var(--text-dim);margin-top:8px;min-height:18px}
+  /* ── FEATURE-8: mode toggle + raw-paper browse ── */
+  .topmode{display:flex;gap:6px;padding:10px 16px 0;max-width:1400px;margin:0 auto}
+  .topmode button{flex:0 0 auto;padding:8px 16px;border:1px solid var(--border);background:var(--bg-card);
+    color:var(--text-dim);border-radius:9px;font-size:14px;font-weight:600;cursor:pointer}
+  .topmode button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .papers-view{max-width:1400px;margin:0 auto;padding:14px 16px 40px}
+  .papers-filters{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-bottom:14px;
+    font-size:13px;color:var(--text-dim)}
+  .papers-filters input[type=search]{flex:1 1 220px;min-width:180px;padding:9px 12px;border-radius:9px;
+    border:1px solid var(--border);background:var(--bg-card);color:var(--text);font-size:14px}
+  .papers-filters input[type=number]{width:70px;padding:6px 8px;border-radius:7px;border:1px solid var(--border);
+    background:var(--bg-card);color:var(--text)}
+  .pf-types{display:flex;flex-wrap:wrap;gap:6px}
+  .pf-types button{padding:5px 11px;border-radius:999px;border:1px solid var(--border);background:var(--bg-card);
+    color:var(--text-dim);font-size:12.5px;cursor:pointer}
+  .pf-types button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .pf-count{font-variant-numeric:tabular-nums;font-weight:600;color:var(--text)}
+  .papers-list{display:flex;flex-direction:column;gap:6px}
+  .paper-row{display:flex;align-items:center;gap:12px;padding:11px 14px;border:1px solid var(--border);
+    border-radius:10px;background:var(--bg-card)}
+  .paper-row .py{font-weight:700;font-variant-numeric:tabular-nums;width:44px;flex:none}
+  .paper-row .pn{flex:1;min-width:0;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .paper-row .pt{flex:none;font-size:11.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--text-dim);
+    border:1px solid var(--border);border-radius:6px;padding:2px 7px}
+  .paper-row .psol{flex:none;font-size:11px;color:var(--accent)}
+  .paper-row a.pview{flex:none;padding:7px 13px;border-radius:8px;background:var(--accent);color:#fff;
+    font-size:13px;font-weight:600;text-decoration:none}
+  .papers-empty{padding:40px 10px;text-align:center;color:var(--text-dim)}
 </style>
 </head>
 <body>
@@ -171,6 +199,23 @@
     <button class="theme-btn" id="btn-theme" title="Toggle theme">◐</button>
   </div>
 </header>
+
+<div class="topmode" id="topmode">
+  <button id="tm-papers" class="on">📄 Browse papers</button>
+  <button id="tm-build">🧩 Build a paper</button>
+</div>
+
+<section class="papers-view" id="papers-view">
+  <div class="papers-filters">
+    <input id="pf-search" type="search" placeholder="Search school / paper…" autocomplete="off">
+    <span class="pf-years">Years <input id="pf-y0" type="number" placeholder="from"> – <input id="pf-y1" type="number" placeholder="to"></span>
+    <div id="pf-types" class="pf-types"></div>
+    <label class="pf-sol"><input type="checkbox" id="pf-sol"> With solutions</label>
+    <span class="grow"></span>
+    <span id="pf-count" class="pf-count"></span>
+  </div>
+  <div id="papers-list" class="papers-list"></div>
+</section>
 
 <div class="work">
 
@@ -267,6 +312,10 @@
 // and uploaded — re-add a line here to surface one.
 const SUBJECTS=[
   ["maths-advanced","Mathematics Advanced"],
+  ["maths-extension-1","Mathematics Extension 1"],
+  ["maths-extension-2","Mathematics Extension 2"],
+  ["maths-standard-2","Mathematics Standard 2"],
+  ["maths-accelerated","Mathematics (Accelerated)"],
   ["physics","Physics"],
   ["dt","Design and Technology"],
 ];
@@ -369,6 +418,7 @@ async function loadSubject(id){
     fetch(`content/${id}/questions.json`).then(r=>r.json()),
   ]);
   BASE=subj.assetBaseUrl||"";
+  loadPapers(id);   // FEATURE-8: raw-paper browse list (independent of the question builder)
   // Whole questions only — letter-part records stay as metadata. Dedupe by
   // (paperSlug, assetKey): re-parses can list the same question under two content-hash
   // ids (byte-level changes like marks badges); prefer the richer record.
@@ -818,9 +868,68 @@ $("#gen").onclick=async()=>{
   };
 })();
 
+/* ── FEATURE-8: raw-paper browse ── */
+let PAPERS=[];
+const PF={q:"",y0:null,y1:null,types:new Set(),sol:false};
+const titleCase=s=>String(s||"").replace(/\b\w/g,c=>c.toUpperCase());
+function paperUrl(p){ return `${BASE}/${SUBJECT}/papers/${p.slug}/paper.pdf`; }
+function paperName(p){
+  // Prefer a real school; else derive a readable name from the slug.
+  const school=p.school||titleCase((p.slug||"").replace(/^y?1?2?-?(hsc|trial|yearly|half|ace|assessment)-?/i,"").replace(/-w-sol$/,"").replace(/-/g," "));
+  return (school||"Paper").trim();
+}
+async function loadPapers(id){
+  PAPERS=[]; $("#papers-list").innerHTML='<div class="papers-empty">Loading papers…</div>';
+  try{ const d=await fetch(`content/${id}/papers-index.json`,{cache:"no-store"}).then(r=>r.json()); PAPERS=d.papers||[]; }
+  catch{ PAPERS=[]; }
+  // type chips from the data
+  const types=[...new Set(PAPERS.map(p=>p.type).filter(Boolean))].sort();
+  $("#pf-types").innerHTML=types.map(t=>`<button data-t="${esc(t)}"${PF.types.has(t)?' class="on"':''}>${esc(t)}</button>`).join("");
+  renderPapers();
+}
+function renderPapers(){
+  const q=PF.q.trim().toLowerCase();
+  const rows=PAPERS.filter(p=>{
+    if(PF.y0&&(p.year||0)<PF.y0)return false;
+    if(PF.y1&&(p.year||9999)>PF.y1)return false;
+    if(PF.types.size&&!PF.types.has(p.type))return false;
+    if(PF.sol&&!p.hasSolutions)return false;
+    if(q&&!(`${p.year} ${p.school} ${p.slug}`.toLowerCase().includes(q)))return false;
+    return true;
+  });
+  $("#pf-count").textContent=`${rows.length} paper${rows.length===1?"":"s"}`;
+  if(!PAPERS.length){ $("#papers-list").innerHTML='<div class="papers-empty">No raw papers uploaded for this subject yet.</div>'; return; }
+  if(!rows.length){ $("#papers-list").innerHTML='<div class="papers-empty">No papers match these filters.</div>'; return; }
+  $("#papers-list").innerHTML=rows.slice(0,600).map(p=>`
+    <div class="paper-row">
+      <span class="py">${p.year??""}</span>
+      <span class="pn">${esc(paperName(p))}</span>
+      <span class="pt">${esc(p.type||"paper")}</span>
+      ${p.hasSolutions?'<span class="psol">✓ solutions</span>':''}
+      <a class="pview" href="${esc(paperUrl(p))}" target="_blank" rel="noopener">View PDF ↗</a>
+    </div>`).join("")+(rows.length>600?`<div class="papers-empty">Showing first 600 of ${rows.length} — narrow with filters.</div>`:"");
+}
+function setMode(m){
+  const papers=m==="papers";
+  $("#papers-view").hidden=!papers;
+  $(".work").style.display=papers?"none":"";
+  $("#tm-papers").classList.toggle("on",papers);
+  $("#tm-build").classList.toggle("on",!papers);
+  $("#subtitle").textContent=papers?"Browse and print whole past papers":"Build a practice paper from real HSC questions";
+}
+$("#tm-papers").onclick=()=>setMode("papers");
+$("#tm-build").onclick=()=>setMode("build");
+$("#pf-search").addEventListener("input",e=>{PF.q=e.target.value;renderPapers();});
+$("#pf-y0").addEventListener("input",e=>{PF.y0=+e.target.value||null;renderPapers();});
+$("#pf-y1").addEventListener("input",e=>{PF.y1=+e.target.value||null;renderPapers();});
+$("#pf-sol").addEventListener("change",e=>{PF.sol=e.target.checked;renderPapers();});
+$("#pf-types").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
+  const t=b.dataset.t; PF.types.has(t)?PF.types.delete(t):PF.types.add(t); b.classList.toggle("on"); renderPapers();});
+
 /* ── init ── */
 (function(){
   $("#subject").innerHTML=SUBJECTS.map(([id,n])=>`<option value="${id}">${esc(n)}</option>`).join("");
+  setMode("papers");   // default to browsing whole papers (THSC-style)
   const want=new URLSearchParams(location.search).get("subject")||"maths-advanced";
   $("#subject").value=SUBJECTS.some(s=>s[0]===want)?want:"maths-advanced";
   $("#subject").onchange=()=>{
