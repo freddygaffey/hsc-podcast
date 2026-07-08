@@ -1,0 +1,226 @@
+{
+  "questions": [
+    {
+      "id": "mem-ssa-01",
+      "type": "recall",
+      "q": "Name the two benefits of developing secure software.",
+      "keyPoints": [
+        "Data protection",
+        "Minimising cyber attacks and vulnerabilities"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-ssa-02",
+      "type": "recall",
+      "q": "List the eight fundamental software development steps, in order.",
+      "keyPoints": [
+        "Requirements definition",
+        "Determining specifications",
+        "Design",
+        "Development",
+        "Integration",
+        "Testing and debugging",
+        "Installation",
+        "Maintenance"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: R-S-D-D-I-T-I-M."
+    },
+    {
+      "id": "mem-ssa-03",
+      "type": "recall",
+      "q": "Name the six fundamental software security concepts.",
+      "keyPoints": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Authentication",
+        "Authorisation",
+        "Accountability"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: the CIA triad + AAA (C-I-A-A-A-A)."
+    },
+    {
+      "id": "mem-ssa-04",
+      "type": "recall",
+      "q": "What four security features are incorporated into software?",
+      "keyPoints": [
+        "Data protection",
+        "Security",
+        "Privacy",
+        "Regulatory compliance"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-ssa-05",
+      "type": "recall",
+      "q": "State the three 'privacy by design' principles.",
+      "keyPoints": [
+        "Proactive, not reactive",
+        "Embed privacy into the design",
+        "Respect for user privacy"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: PER — Proactive, Embed, Respect."
+    },
+    {
+      "id": "mem-ssa-06",
+      "type": "recall",
+      "q": "List the five activities that test and maintain a system's security and resilience.",
+      "keyPoints": [
+        "Determine vulnerabilities",
+        "Harden systems",
+        "Handle breaches",
+        "Maintain business continuity",
+        "Conduct disaster recovery"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-ssa-07",
+      "type": "recall",
+      "q": "Name the five strategies developers use to manage the security of code.",
+      "keyPoints": [
+        "Code review",
+        "Static application security testing (SAST)",
+        "Dynamic application security testing (DAST)",
+        "Vulnerability assessment",
+        "Penetration testing"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-ssa-08",
+      "type": "recall",
+      "q": "State the three defensive data-input handling practices.",
+      "keyPoints": [
+        "Input validation",
+        "Input sanitisation",
+        "Error handling"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: VSE — Validate, Sanitise, handle Errors."
+    },
+    {
+      "id": "mem-ssa-09",
+      "type": "recall",
+      "q": "Name the three resource-management concerns for efficient, secure execution.",
+      "keyPoints": [
+        "Memory management",
+        "Session management",
+        "Exception management"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: M-S-E."
+    },
+    {
+      "id": "mem-ssa-10",
+      "type": "recall",
+      "q": "List the four categories of vulnerability in user action controls.",
+      "keyPoints": [
+        "Broken authentication and session management",
+        "Cross-site scripting (XSS) and cross-site request forgery (CSRF)",
+        "Invalid forwarding and redirecting",
+        "Race conditions"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: B-X-I-R."
+    },
+    {
+      "id": "mem-ssa-11",
+      "type": "recall",
+      "q": "What two user file and hardware vulnerabilities must secure code protect against?",
+      "keyPoints": [
+        "File attacks",
+        "Side channel attacks"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-ssa-12",
+      "type": "recall",
+      "q": "Give the three benefits of collaborating to build secure software.",
+      "keyPoints": [
+        "Considering various points of view",
+        "Delegating tasks based on expertise",
+        "Quality of the solution"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: V-D-Q."
+    },
+    {
+      "id": "mem-ssa-13",
+      "type": "recall",
+      "q": "List the five benefits to an enterprise of safe and secure development practices.",
+      "keyPoints": [
+        "Improved products or services",
+        "Influence on future software development",
+        "Improved work practices",
+        "Productivity",
+        "Business interactivity"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: PIP-PB."
+    },
+    {
+      "id": "mem-ssa-14",
+      "type": "recall",
+      "q": "Name the six social, ethical and legal issues raised by software.",
+      "keyPoints": [
+        "Employment",
+        "Data security",
+        "Privacy",
+        "Copyright",
+        "Intellectual property",
+        "Digital disruption"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: 'Ed Picid' — E-D-P-C-I-D."
+    }
+  ]
+}

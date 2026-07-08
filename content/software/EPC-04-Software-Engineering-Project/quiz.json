@@ -1,0 +1,304 @@
+{
+  "questions": [
+    {
+      "id": "see-content-01",
+      "type": "recall",
+      "q": "What is the difference between a functional and a non-functional requirement?",
+      "keyPoints": [
+        "Functional = what the system does: a specific behaviour or feature (e.g. 'a teacher can record a grade')",
+        "Non-functional = how well it does it: a quality attribute like speed, security, reliability, usability",
+        "Think FUN vs PERF: functional is the verbs/features, non-functional is the adjectives and numbers",
+        "Security counts as non-functional even though users don't 'see' it"
+      ],
+      "explanation": "Same system, two questions: what does it do, versus how well does it do it.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-02",
+      "type": "recall",
+      "q": "Why must every requirement be measurable and testable, and what makes one 'strong'?",
+      "keyPoints": [
+        "A testable requirement can be checked at the end for a clear yes/no",
+        "'The system should be fast' is untestable and unprovable",
+        "A strong one has acceptance criteria: a metric, a condition, and how you'd verify it (e.g. 'p95 load under 300ms at 200 users, verified by load testing')",
+        "Vague requirements make it impossible to later prove you succeeded"
+      ],
+      "explanation": "Acceptance criteria are the single biggest mark-earner in requirements.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-03",
+      "type": "recall",
+      "q": "Why is feasibility assessed before a project starts, and what does each dimension ask?",
+      "keyPoints": [
+        "It's an honest go/no-go check that the solution can realistically be delivered within constraints",
+        "Technical: do we have the skills, tools and technology to build it at all?",
+        "Economic: do the benefits justify the cost (cost-benefit / ROI)?",
+        "Cost-and-schedule: can we finish on time and budget, with a risk buffer? Operational: will people actually adopt it?"
+      ],
+      "explanation": "You can have perfect requirements for a system you have no chance of delivering.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-04",
+      "type": "recall",
+      "q": "Why do projects define boundaries, and what problem do they prevent?",
+      "keyPoints": [
+        "Boundaries state what is in scope, out of scope (with a reason), and future scope",
+        "They defend against scope creep: the slow, uncontrolled addition of 'just one more feature'",
+        "When a stakeholder asks for something new, you point to the boundary doc ('that's phase two')",
+        "Unbounded scope blows deadlines and collapses quality (e.g. Denver airport baggage system)"
+      ],
+      "explanation": "Boundaries aren't bureaucracy; they protect the schedule you said was feasible.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-05",
+      "type": "recall",
+      "q": "What is the purpose of a data dictionary in software design?",
+      "keyPoints": [
+        "It documents every data field: name, data type, whether required, constraints, and a description",
+        "Its purpose is to remove ambiguity before building, so everyone shares one view of the data",
+        "Choosing the right type matters (Decimal for money to avoid rounding; Date for date arithmetic)",
+        "It becomes the database schema you later build - a design tool, not end-of-project paperwork"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-06",
+      "type": "recall",
+      "q": "Why should a developer design the algorithm before writing code?",
+      "keyPoints": [
+        "You express the logic in a language-independent form (pseudocode, flowchart, structure chart) first",
+        "This lets you reason about and verify the logic before the syntax gets in the way",
+        "Logic errors are far cheaper to fix on paper than after code is written - the shift-left principle",
+        "The trap is jumping straight to code because you can; modelling is the blueprint the build follows"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-07",
+      "type": "recall",
+      "q": "How does the Waterfall approach differ from Agile?",
+      "keyPoints": [
+        "Waterfall is sequential: each phase finished and signed off before the next ('falls once'), heavy documentation, feedback only near the end",
+        "Agile is iterative: short time-boxed sprints each delivering working software ('goes around'), with continuous client feedback and lighter, evolving docs",
+        "Waterfall is predictable but rigid; Agile is adaptable but has less predictable final scope and cost",
+        "Waterfall suits stable, regulated projects; Agile suits uncertain, fast-moving ones"
+      ],
+      "explanation": "Waterfall Falls once; Agile Goes around - the central contrast of the chapter.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-08",
+      "type": "recall",
+      "q": "Why is Waterfall well-suited to a regulated medical or government system but not a startup app?",
+      "keyPoints": [
+        "Regulated systems have stable requirements and mandatory, auditable documentation - Waterfall's exact strengths",
+        "Predictability is valued over speed, and late change is rare, so the rigidity costs little",
+        "A startup app has uncertain requirements that evolve with user feedback and a fast-moving market",
+        "Waterfall's 'falls once' rigidity and late feedback would make change expensive and risk building the wrong thing"
+      ],
+      "explanation": "'Waterfall is always bad' is the trap; it's right for the stable and regulated.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-09",
+      "type": "recall",
+      "q": "What is the WAgile hybrid, and how do you decide when to use Waterfall versus Agile behaviour within it?",
+      "keyPoints": [
+        "WAgile = Waterfall stage-gates on the outside + Agile sprints inside each stage ('plan big, build small')",
+        "Gates give governance, predictability and documentation; sprints give flexibility and feedback",
+        "Apply Waterfall behaviour where governance dominates (compliance, formal reporting, predictable milestones)",
+        "Apply Agile behaviour where adaptability dominates (changing requirements, essential user feedback) - e.g. run the regulated core Waterfall-heavy, the user-facing app Agile-heavy"
+      ],
+      "explanation": "Done badly it's the worst of both; you must justify the 'when and how', not just say 'it combines both'.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-10",
+      "type": "recall",
+      "q": "In the project management triangle, what happens if a client adds scope but refuses to move the deadline?",
+      "keyPoints": [
+        "Scope, Time and Cost are interdependent, with quality squeezed in the middle - change one and the others must move",
+        "Fixing time while increasing scope forces cost up (more people) or quality down (cut testing/polish)",
+        "If neither cost nor quality is allowed to give, the deadline will slip in reality regardless",
+        "The right response is to make the trade-off explicit and negotiate (defer, drop a feature, or extend)"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-11",
+      "type": "recall",
+      "q": "What is the critical path, and why does a slip on it matter more than a slip elsewhere?",
+      "keyPoints": [
+        "The critical path is the longest chain of dependent tasks, which sets the minimum possible project duration",
+        "Its tasks have zero slack: delay one and the whole project slips by the same amount",
+        "Non-critical tasks have slack and can be delayed within it without moving the finish date",
+        "So when a Gantt task slips, the answer depends entirely on whether it's on the critical path"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-12",
+      "type": "recall",
+      "q": "How do the implementation (changeover) methods trade off risk against cost?",
+      "keyPoints": [
+        "Direct/big-bang: cheapest and fastest but highest risk - no fallback if it fails (Knight Capital, Denver)",
+        "Parallel: safest - old system runs as a live fallback and lets you verify outputs - but most expensive (two systems at once)",
+        "Phased and Pilot sit between; match the method's risk profile to the scenario's stakes",
+        "Key distinction: Phased splits by feature (rolled out to everyone gradually); Pilot splits by user group (whole system to a small group first)"
+      ],
+      "explanation": "Direct is cheap and risky; Parallel is safe and costly - the two ends of the trade-off.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-13",
+      "type": "recall",
+      "q": "What is the difference between quality assurance and testing?",
+      "keyPoints": [
+        "QA is the overall process: standards, reviews, criteria and continual checking across the whole project - it prevents defects",
+        "Testing is one activity within QA: running test cases against the built software to detect defects",
+        "Testing asks 'does this code work?'; QA asks 'do we have a process ensuring the whole solution meets its standards?'",
+        "QA prevents, testing detects; testing is one tool QA uses"
+      ],
+      "explanation": "Conflating the two is the classic lost mark on this dot-point.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-14",
+      "type": "recall",
+      "q": "How does a developer genuinely involve and empower a client, rather than just gathering requirements once?",
+      "keyPoints": [
+        "Treat the client as an ongoing partner, not a one-off source at week one",
+        "Involve: regular demonstrations of working software plus co-design so they help make decisions",
+        "Empower: give their feedback real influence over the product, not just informing them after the fact",
+        "Negotiate new requests around the Scope-Time-Cost triangle: clarify the real need, assess impact, offer options, document the agreement"
+      ],
+      "explanation": "Projects fail more often from poor communication than from technical impossibility.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-15",
+      "type": "recall",
+      "q": "Why must real security live in the back end rather than the front end?",
+      "keyPoints": [
+        "The front end can be bypassed - anyone can call the API directly - so it can never be trusted for security",
+        "Authentication, authorisation, input validation, parameterised queries and password hashing must sit on the server",
+        "The back end is the actual security boundary of the whole system",
+        "It must also fail securely: log error detail internally but return a generic message, so stack traces don't leak structure to attackers"
+      ],
+      "explanation": "Treating the back end as invisible plumbing is the trap that gets projects breached.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-16",
+      "type": "recall",
+      "q": "What is the role of version control, and how does rollback act as a safety net?",
+      "keyPoints": [
+        "Version control (Git) tracks all changes with a recoverable history, letting many developers work via branches and reviewed merges",
+        "Discipline: commit small, branch per feature, never commit to main; pull requests are review gates",
+        "Tagged releases (semantic versioning: major breaks, minor adds, patch fixes) let you return to exactly what was running",
+        "Rollback = redeploy the last known-good tag when a deployment fails - recovering in seconds"
+      ],
+      "explanation": "Knight Capital lost $440M in 45 minutes partly because it had no rehearsed rollback.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-17",
+      "type": "recall",
+      "q": "What is the difference between boundary testing and path testing?",
+      "keyPoints": [
+        "Boundary testing checks values at the edges of a valid range (just below, on, just above) where off-by-one errors hide - it's black-box, from the spec",
+        "For a 1-50 range you'd test 0, 1, 2, 25, 49, 50, 51",
+        "Path testing exercises every execution route: each branch true and false, loops at zero/one/many - it's white-box, needing to see the code",
+        "Together they catch the two big bug families: wrong logic on an untested branch, and errors at a limit"
+      ],
+      "explanation": "Test every road through (path), and test the edges (boundary).",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-18",
+      "type": "recall",
+      "q": "Why should feedback be prioritised by evidence rather than by the loudest voice?",
+      "keyPoints": [
+        "Raw feedback is noisy and contradictory; the skill is turning it into defensible decisions (Collect, Synthesise, Act)",
+        "Triangulate across multiple sources (surveys, analytics, support tickets) before trusting a finding",
+        "Prioritise on an impact-versus-effort matrix: high-impact/low-effort changes are quick wins",
+        "One angry email for a niche feature loses to analytics showing 60% of users abandon signup"
+      ],
+      "explanation": "Also a fairness issue - representative sampling stops you building only for the vocal few.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    },
+    {
+      "id": "see-content-19",
+      "type": "recall",
+      "q": "Why is evaluating a solution more than showing 'it works'?",
+      "keyPoints": [
+        "Evaluation is a justified judgement of effectiveness against defined criteria, with evidence and reflection - not just 'the program runs'",
+        "Criteria come from the requirements and QA quality criteria (correctness, usability, performance, security)",
+        "Evidence comes from testing (comparing actual output with expected output) and synthesised user feedback",
+        "Reflection covers maintainability, deployment readiness and lessons learned - and you report discrepancies honestly, not hide them"
+      ],
+      "explanation": "No measurable criteria means nothing to evaluate against, which is why sloppy requirements make evaluation impossible.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Engineering Project episode scripts"
+      }
+    }
+  ]
+}

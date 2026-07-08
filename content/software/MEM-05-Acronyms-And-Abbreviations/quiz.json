@@ -1,0 +1,1278 @@
+{
+  "questions": [
+    {
+      "id": "mem-acr-001",
+      "type": "recall",
+      "q": "What does **2FA** stand for, and what is it?",
+      "keyPoints": [
+        "Two-Factor Authentication",
+        "Requiring two independent pieces of evidence to log in (e.g. password plus a code)"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-002",
+      "type": "recall",
+      "q": "What does **AES** stand for, and what is it?",
+      "keyPoints": [
+        "Advanced Encryption Standard",
+        "The standard symmetric-key algorithm for encrypting data"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-003",
+      "type": "recall",
+      "q": "What does **AI** stand for, and what is it?",
+      "keyPoints": [
+        "Artificial Intelligence",
+        "Software that performs tasks normally needing human intelligence"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-004",
+      "type": "recall",
+      "q": "What does **API** stand for, and what is it?",
+      "keyPoints": [
+        "Application Programming Interface",
+        "A defined contract that lets one piece of software request services from another"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-005",
+      "type": "recall",
+      "q": "What does **APP** stand for, and what is it?",
+      "keyPoints": [
+        "Australian Privacy Principles",
+        "The 13 principles governing how organisations handle personal information under Australian law"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-006",
+      "type": "recall",
+      "q": "What does **BPA** stand for, and what is it?",
+      "keyPoints": [
+        "Business Process Automation",
+        "Automating whole multi-step business workflows, not just single tasks"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-007",
+      "type": "recall",
+      "q": "What does **BSD** stand for, and what is it?",
+      "keyPoints": [
+        "Berkeley Software Distribution (licence)",
+        "A permissive open-source software licence"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-008",
+      "type": "recall",
+      "q": "What does **CDN** stand for, and what is it?",
+      "keyPoints": [
+        "Content Delivery Network",
+        "Geographically distributed servers that cache and serve content close to the user"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-009",
+      "type": "recall",
+      "q": "What does **CI/CD** stand for, and what is it?",
+      "keyPoints": [
+        "Continuous Integration / Continuous Deployment (Delivery)",
+        "Automating the build-test-deploy pipeline so changes ship frequently and safely"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-010",
+      "type": "recall",
+      "q": "What does **CMS** stand for, and what is it?",
+      "keyPoints": [
+        "Content Management System",
+        "Software for creating and managing website content without hand-coding each page"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-011",
+      "type": "recall",
+      "q": "What does **COMPAS** stand for, and what is it?",
+      "keyPoints": [
+        "Correctional Offender Management Profiling for Alternative Sanctions",
+        "A risk-assessment algorithm used in US courts (case study in algorithmic bias)"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-012",
+      "type": "recall",
+      "q": "What does **CORS** stand for, and what is it?",
+      "keyPoints": [
+        "Cross-Origin Resource Sharing",
+        "Browser rules controlling when a page may request resources from another origin"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-013",
+      "type": "recall",
+      "q": "What does **CPU** stand for, and what is it?",
+      "keyPoints": [
+        "Central Processing Unit",
+        "The processor that executes program instructions"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-014",
+      "type": "recall",
+      "q": "What does **CR** stand for, and what is it?",
+      "keyPoints": [
+        "Code Review",
+        "Manual inspection of source code by other developers to catch defects"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-015",
+      "type": "recall",
+      "q": "What does **CSRF** stand for, and what is it?",
+      "keyPoints": [
+        "Cross-Site Request Forgery",
+        "An attack that tricks a logged-in user's browser into sending an unwanted request"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-016",
+      "type": "recall",
+      "q": "What does **CSS** stand for, and what is it?",
+      "keyPoints": [
+        "Cascading Style Sheets",
+        "The language that styles and lays out HTML content"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-017",
+      "type": "recall",
+      "q": "What does **CSV** stand for, and what is it?",
+      "keyPoints": [
+        "Comma-Separated Values",
+        "A plain-text file format storing tabular data as comma-delimited rows"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-018",
+      "type": "recall",
+      "q": "What does **CVE** stand for, and what is it?",
+      "keyPoints": [
+        "Common Vulnerabilities and Exposures",
+        "A public catalogue giving each known security flaw a unique identifier"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-019",
+      "type": "recall",
+      "q": "What does **CVSS** stand for, and what is it?",
+      "keyPoints": [
+        "Common Vulnerability Scoring System",
+        "A standard 0-10 score rating the severity of a security vulnerability"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-020",
+      "type": "recall",
+      "q": "What does **DARPA** stand for, and what is it?",
+      "keyPoints": [
+        "Defense Advanced Research Projects Agency",
+        "The US defence R&D agency (ran the autonomous-vehicle Grand Challenge)"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-021",
+      "type": "recall",
+      "q": "What does **DAST** stand for, and what is it?",
+      "keyPoints": [
+        "Dynamic Application Security Testing",
+        "Testing a running application from the outside for security flaws (\"doing\")"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-022",
+      "type": "recall",
+      "q": "What does **DB** stand for, and what is it?",
+      "keyPoints": [
+        "Database",
+        "An organised, queryable store of persistent data"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-023",
+      "type": "recall",
+      "q": "What does **DDoS** stand for, and what is it?",
+      "keyPoints": [
+        "Distributed Denial of Service",
+        "Overwhelming a service with traffic from many machines so it becomes unavailable"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-024",
+      "type": "recall",
+      "q": "What does **DevOps** stand for, and what is it?",
+      "keyPoints": [
+        "Development and Operations",
+        "A culture/practice uniting development and operations to automate delivery"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-025",
+      "type": "recall",
+      "q": "What does **DFD** stand for, and what is it?",
+      "keyPoints": [
+        "Data Flow Diagram",
+        "A model showing how data moves between processes, stores and external entities"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-026",
+      "type": "recall",
+      "q": "What does **DNS** stand for, and what is it?",
+      "keyPoints": [
+        "Domain Name System",
+        "The system that translates human-readable domain names into IP addresses"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-027",
+      "type": "recall",
+      "q": "What does **DOF** stand for, and what is it?",
+      "keyPoints": [
+        "Degrees Of Freedom",
+        "The number of independent movements a mechatronic system (e.g. a robot arm) can make"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-028",
+      "type": "recall",
+      "q": "What does **FK** stand for, and what is it?",
+      "keyPoints": [
+        "Foreign Key",
+        "A column that references the primary key of another table to link records"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-029",
+      "type": "recall",
+      "q": "What does **FTP** stand for, and what is it?",
+      "keyPoints": [
+        "File Transfer Protocol",
+        "A protocol for transferring files between hosts (insecure unless secured)"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-030",
+      "type": "recall",
+      "q": "What does **GB** stand for, and what is it?",
+      "keyPoints": [
+        "Gigabyte",
+        "A unit of data storage (about one billion bytes)"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-031",
+      "type": "recall",
+      "q": "What does **GDPR** stand for, and what is it?",
+      "keyPoints": [
+        "General Data Protection Regulation",
+        "The European Union's data-protection and privacy law"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-032",
+      "type": "recall",
+      "q": "What does **GPA** stand for, and what is it?",
+      "keyPoints": [
+        "Grade Point Average",
+        "A numeric summary of academic grades (used as example data)"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-033",
+      "type": "recall",
+      "q": "What does **GPL** stand for, and what is it?",
+      "keyPoints": [
+        "GNU General Public License",
+        "A copyleft open-source licence requiring derivative works to stay open"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-034",
+      "type": "recall",
+      "q": "What does **HMAC** stand for, and what is it?",
+      "keyPoints": [
+        "Hash-based Message Authentication Code",
+        "A keyed hash proving a message's integrity and authenticity"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-035",
+      "type": "recall",
+      "q": "What does **HTML** stand for, and what is it?",
+      "keyPoints": [
+        "HyperText Markup Language",
+        "The language that structures the content of web pages"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-036",
+      "type": "recall",
+      "q": "What does **HTTP** stand for, and what is it?",
+      "keyPoints": [
+        "HyperText Transfer Protocol",
+        "The request/response protocol used to transfer web resources"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-037",
+      "type": "recall",
+      "q": "What does **HTTPS** stand for, and what is it?",
+      "keyPoints": [
+        "HyperText Transfer Protocol Secure",
+        "HTTP encrypted with TLS for confidentiality and integrity in transit"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-038",
+      "type": "recall",
+      "q": "What does **IDE** stand for, and what is it?",
+      "keyPoints": [
+        "Integrated Development Environment",
+        "An editor bundling coding, building, running and debugging tools in one program"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-039",
+      "type": "recall",
+      "q": "What does **IoT** stand for, and what is it?",
+      "keyPoints": [
+        "Internet of Things",
+        "Everyday physical devices (cameras, sensors) connected to the internet"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-040",
+      "type": "recall",
+      "q": "What does **IP** stand for? (it has 2 meanings in this course)",
+      "keyPoints": [
+        "Intellectual Property — Creations of the mind (code, designs, content) protected by copyright, patents and trademarks",
+        "Internet Protocol — The protocol that addresses and routes data packets across networks"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-041",
+      "type": "recall",
+      "q": "What does **JPL** stand for, and what is it?",
+      "keyPoints": [
+        "Jet Propulsion Laboratory",
+        "NASA's centre for robotic space missions (Mars Climate Orbiter case study)"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-042",
+      "type": "recall",
+      "q": "What does **JS** stand for, and what is it?",
+      "keyPoints": [
+        "JavaScript",
+        "The programming language that runs in web browsers"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-043",
+      "type": "recall",
+      "q": "What does **JSON** stand for, and what is it?",
+      "keyPoints": [
+        "JavaScript Object Notation",
+        "A lightweight, human-readable text format for exchanging structured data"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-044",
+      "type": "recall",
+      "q": "What does **JWT** stand for, and what is it?",
+      "keyPoints": [
+        "JSON Web Token",
+        "A compact, signed token used to carry authentication/authorisation claims"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-045",
+      "type": "recall",
+      "q": "What does **MCAS** stand for, and what is it?",
+      "keyPoints": [
+        "Maneuvering Characteristics Augmentation System",
+        "The flight-control software implicated in the Boeing 737 MAX crashes"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-046",
+      "type": "recall",
+      "q": "What does **MFA** stand for, and what is it?",
+      "keyPoints": [
+        "Multi-Factor Authentication",
+        "Requiring two or more independent factors to verify identity"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-047",
+      "type": "recall",
+      "q": "What does **MGF1** stand for, and what is it?",
+      "keyPoints": [
+        "Mask Generation Function 1",
+        "The mask-generation function used inside RSA OAEP/PSS padding"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-048",
+      "type": "recall",
+      "q": "What does **MIT** stand for, and what is it?",
+      "keyPoints": [
+        "Massachusetts Institute of Technology",
+        "In licensing, the MIT License — a short, permissive open-source licence; also the US university it is named after"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-049",
+      "type": "recall",
+      "q": "What does **ML** stand for, and what is it?",
+      "keyPoints": [
+        "Machine Learning",
+        "AI systems that learn patterns from data rather than being explicitly programmed"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-050",
+      "type": "recall",
+      "q": "What does **MTTD** stand for, and what is it?",
+      "keyPoints": [
+        "Mean Time To Detect",
+        "The average time taken to notice a security incident"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-051",
+      "type": "recall",
+      "q": "What does **MTTR** stand for, and what is it?",
+      "keyPoints": [
+        "Mean Time To Respond (Recover)",
+        "The average time taken to respond to and recover from an incident"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-052",
+      "type": "recall",
+      "q": "What does **NASA** stand for, and what is it?",
+      "keyPoints": [
+        "National Aeronautics and Space Administration",
+        "The US space agency (referenced in several engineering-failure case studies)"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-053",
+      "type": "recall",
+      "q": "What does **NESA** stand for, and what is it?",
+      "keyPoints": [
+        "NSW Education Standards Authority",
+        "The body that sets the HSC syllabus and exams in New South Wales"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-054",
+      "type": "recall",
+      "q": "What does **NFR** stand for, and what is it?",
+      "keyPoints": [
+        "Non-Functional Requirement",
+        "A quality constraint (performance, security, usability) rather than a feature"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-055",
+      "type": "recall",
+      "q": "What does **NIST** stand for, and what is it?",
+      "keyPoints": [
+        "National Institute of Standards and Technology",
+        "The US agency that publishes widely used security standards and frameworks"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-056",
+      "type": "recall",
+      "q": "What does **OAEP** stand for, and what is it?",
+      "keyPoints": [
+        "Optimal Asymmetric Encryption Padding",
+        "The secure padding scheme used with RSA encryption"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-057",
+      "type": "recall",
+      "q": "What does **OOP** stand for, and what is it?",
+      "keyPoints": [
+        "Object-Oriented Programming",
+        "A paradigm structuring software around objects that bundle data and behaviour"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-058",
+      "type": "recall",
+      "q": "What does **ORM** stand for, and what is it?",
+      "keyPoints": [
+        "Object-Relational Mapping",
+        "A layer that maps database tables to program objects so you write code, not raw SQL"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-059",
+      "type": "recall",
+      "q": "What does **OSS** stand for, and what is it?",
+      "keyPoints": [
+        "Open-Source Software",
+        "Software whose source code is publicly available and licensed for reuse"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-060",
+      "type": "recall",
+      "q": "What does **PCI** stand for, and what is it?",
+      "keyPoints": [
+        "Payment Card Industry (Data Security Standard)",
+        "The security standard for organisations that handle payment-card data"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-061",
+      "type": "recall",
+      "q": "What does **PEN** stand for, and what is it?",
+      "keyPoints": [
+        "Penetration test",
+        "An authorised simulated attack that chains real exploits to prove impact"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-062",
+      "type": "recall",
+      "q": "What does **PIA** stand for, and what is it?",
+      "keyPoints": [
+        "Privacy Impact Assessment",
+        "A structured review of how a project affects personal privacy"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-063",
+      "type": "recall",
+      "q": "What does **PID** stand for, and what is it?",
+      "keyPoints": [
+        "Proportional-Integral-Derivative (controller)",
+        "A closed-loop control algorithm that corrects error smoothly toward a setpoint"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-064",
+      "type": "recall",
+      "q": "What does **PK** stand for, and what is it?",
+      "keyPoints": [
+        "Primary Key",
+        "The column that uniquely identifies each row in a database table"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-065",
+      "type": "recall",
+      "q": "What does **PSS** stand for, and what is it?",
+      "keyPoints": [
+        "Probabilistic Signature Scheme",
+        "The secure padding scheme used with RSA digital signatures"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-066",
+      "type": "recall",
+      "q": "What does **PWA** stand for, and what is it?",
+      "keyPoints": [
+        "Progressive Web App",
+        "A website that can install, work offline and behave like a native app"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-067",
+      "type": "recall",
+      "q": "What does **QA** stand for, and what is it?",
+      "keyPoints": [
+        "Quality Assurance",
+        "The processes that build quality into a product, not just test for defects"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-068",
+      "type": "recall",
+      "q": "What does **RBAC** stand for, and what is it?",
+      "keyPoints": [
+        "Role-Based Access Control",
+        "Granting permissions to roles, then assigning users to those roles"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-069",
+      "type": "recall",
+      "q": "What does **ROI** stand for, and what is it?",
+      "keyPoints": [
+        "Return on Investment",
+        "The financial gain from an investment relative to its cost"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-070",
+      "type": "recall",
+      "q": "What does **RPA** stand for, and what is it?",
+      "keyPoints": [
+        "Robotic Process Automation",
+        "Software 'bots' that automate repetitive, rule-based user tasks"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-071",
+      "type": "recall",
+      "q": "What does **RSA** stand for, and what is it?",
+      "keyPoints": [
+        "Rivest-Shamir-Adleman",
+        "A widely used asymmetric (public-key) encryption and signature algorithm"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-072",
+      "type": "recall",
+      "q": "What does **SAST** stand for, and what is it?",
+      "keyPoints": [
+        "Static Application Security Testing",
+        "Analysing source code for security flaws without running it (\"source\")"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-073",
+      "type": "recall",
+      "q": "What does **SDLC** stand for, and what is it?",
+      "keyPoints": [
+        "Software Development Life Cycle",
+        "The staged process (requirements → design → build → test → maintain) for building software"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-074",
+      "type": "recall",
+      "q": "What does **SFTP** stand for, and what is it?",
+      "keyPoints": [
+        "SSH File Transfer Protocol",
+        "A secure, encrypted protocol for transferring files over SSH"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-075",
+      "type": "recall",
+      "q": "What does **SHA-256** stand for, and what is it?",
+      "keyPoints": [
+        "Secure Hash Algorithm, 256-bit",
+        "A cryptographic hash producing a fixed 256-bit fingerprint of data"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-076",
+      "type": "recall",
+      "q": "What does **SMB** stand for, and what is it?",
+      "keyPoints": [
+        "Server Message Block",
+        "A network file-sharing protocol (exploited by WannaCry)"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-077",
+      "type": "recall",
+      "q": "What does **SPA** stand for, and what is it?",
+      "keyPoints": [
+        "Single-Page Application",
+        "A web app that loads one page and updates content dynamically via JavaScript"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-078",
+      "type": "recall",
+      "q": "What does **SQL** stand for, and what is it?",
+      "keyPoints": [
+        "Structured Query Language",
+        "The standard language for querying and manipulating relational databases"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-079",
+      "type": "recall",
+      "q": "What does **SQLi** stand for, and what is it?",
+      "keyPoints": [
+        "SQL injection",
+        "An attack that injects malicious SQL through unvalidated input"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-080",
+      "type": "recall",
+      "q": "What does **SSH** stand for, and what is it?",
+      "keyPoints": [
+        "Secure Shell",
+        "An encrypted protocol for remote login and command execution"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-081",
+      "type": "recall",
+      "q": "What does **SSL** stand for, and what is it?",
+      "keyPoints": [
+        "Secure Sockets Layer",
+        "The predecessor to TLS for encrypting network connections"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-082",
+      "type": "recall",
+      "q": "What does **TCP** stand for, and what is it?",
+      "keyPoints": [
+        "Transmission Control Protocol",
+        "The protocol providing reliable, ordered delivery of data over IP"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-083",
+      "type": "recall",
+      "q": "What does **TLS** stand for, and what is it?",
+      "keyPoints": [
+        "Transport Layer Security",
+        "The protocol that encrypts and authenticates data in transit (secures HTTPS)"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-084",
+      "type": "recall",
+      "q": "What does **TOCTOU** stand for, and what is it?",
+      "keyPoints": [
+        "Time-Of-Check to Time-Of-Use",
+        "A race-condition flaw where state changes between validating and using it"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-085",
+      "type": "recall",
+      "q": "What does **UAT** stand for, and what is it?",
+      "keyPoints": [
+        "User Acceptance Testing",
+        "Final testing by end users to confirm the software meets their needs"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-086",
+      "type": "recall",
+      "q": "What does **UI** stand for, and what is it?",
+      "keyPoints": [
+        "User Interface",
+        "The parts of a system a user directly interacts with"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-087",
+      "type": "recall",
+      "q": "What does **URL** stand for, and what is it?",
+      "keyPoints": [
+        "Uniform Resource Locator",
+        "The address that identifies and locates a resource on the web"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-088",
+      "type": "recall",
+      "q": "What does **USD** stand for, and what is it?",
+      "keyPoints": [
+        "United States Dollars",
+        "The currency unit used in cost/impact figures"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-089",
+      "type": "recall",
+      "q": "What does **UTC** stand for, and what is it?",
+      "keyPoints": [
+        "Coordinated Universal Time",
+        "The primary global time standard, used for unambiguous timestamps"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-090",
+      "type": "recall",
+      "q": "What does **UX** stand for, and what is it?",
+      "keyPoints": [
+        "User Experience",
+        "The overall quality of a user's interaction with a product"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-091",
+      "type": "recall",
+      "q": "What does **VA** stand for, and what is it?",
+      "keyPoints": [
+        "Vulnerability Assessment",
+        "Systematically scanning and cataloguing known weaknesses (breadth over depth)"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-092",
+      "type": "recall",
+      "q": "What does **VPN** stand for, and what is it?",
+      "keyPoints": [
+        "Virtual Private Network",
+        "An encrypted tunnel that extends a private network across a public one"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-093",
+      "type": "recall",
+      "q": "What does **W3C** stand for, and what is it?",
+      "keyPoints": [
+        "World Wide Web Consortium",
+        "The body that develops open web standards (HTML, CSS, WCAG)"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-094",
+      "type": "recall",
+      "q": "What does **WAF** stand for, and what is it?",
+      "keyPoints": [
+        "Web Application Firewall",
+        "A filter that inspects HTTP traffic to block web attacks"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-095",
+      "type": "recall",
+      "q": "What does **WAI** stand for, and what is it?",
+      "keyPoints": [
+        "Web Accessibility Initiative",
+        "The W3C effort that produces web accessibility guidelines"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-096",
+      "type": "recall",
+      "q": "What does **WCAG** stand for, and what is it?",
+      "keyPoints": [
+        "Web Content Accessibility Guidelines",
+        "The W3C standard defining how to make web content accessible (see POUR)"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-097",
+      "type": "recall",
+      "q": "What does **XSS** stand for, and what is it?",
+      "keyPoints": [
+        "Cross-Site Scripting",
+        "An attack injecting malicious scripts into pages viewed by other users"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-acr-098",
+      "type": "recall",
+      "q": "What does **Y2K** stand for, and what is it?",
+      "keyPoints": [
+        "Year 2000 (bug)",
+        "The bug from storing years as two digits, feared to break systems in 2000"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    }
+  ]
+}

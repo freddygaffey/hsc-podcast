@@ -1,0 +1,187 @@
+{
+  "questions": [
+    {
+      "id": "mem-pfw-01",
+      "type": "recall",
+      "q": "Name the three applications of web programming.",
+      "keyPoints": [
+        "Interactive websites / webpages",
+        "E-commerce",
+        "Progressive web apps (PWAs)"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: I-E-P."
+    },
+    {
+      "id": "mem-pfw-02",
+      "type": "recall",
+      "q": "How is data transferred on the internet? (three things)",
+      "keyPoints": [
+        "Data packets",
+        "Internet Protocol (IP) addresses, including IPv4",
+        "Domain Name System (DNS)"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-pfw-03",
+      "type": "recall",
+      "q": "List the web protocols (grouped) you must know.",
+      "keyPoints": [
+        "HTTP, HTTPS",
+        "TCP/IP",
+        "DNS",
+        "FTP, SFTP",
+        "SSL, TLS",
+        "SMTP, POP3, IMAP"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-pfw-04",
+      "type": "recall",
+      "q": "Name the seven processes/elements for securing the web.",
+      "keyPoints": [
+        "SSL certificates",
+        "Encryption algorithms",
+        "Encryption keys",
+        "Plain text and cipher text",
+        "Authentication and authorisation",
+        "Hash values",
+        "Digital signatures"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-pfw-05",
+      "type": "recall",
+      "q": "What three big-data concepts affect web architecture?",
+      "keyPoints": [
+        "Data mining",
+        "Metadata",
+        "Streaming service management"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: M-M-S."
+    },
+    {
+      "id": "mem-pfw-06",
+      "type": "recall",
+      "q": "List the five roles of the W3C in web development.",
+      "keyPoints": [
+        "Web Accessibility Initiative (WAI)",
+        "Internationalisation",
+        "Web security",
+        "Privacy",
+        "Machine-readable data"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-pfw-07",
+      "type": "recall",
+      "q": "Name the three elements that form a web development system.",
+      "keyPoints": [
+        "Client-side (front-end) programming",
+        "Server-side (back-end) programming",
+        "Interfacing with SQL or non-SQL databases"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-pfw-08",
+      "type": "recall",
+      "q": "State the three impacts of CSS on web application design.",
+      "keyPoints": [
+        "Consistency of appearance",
+        "Flexibility across browsers / display devices",
+        "CSS maintenance tools"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-pfw-09",
+      "type": "recall",
+      "q": "What three types of code library support front-end development?",
+      "keyPoints": [
+        "Frameworks (control complex web apps)",
+        "Template engines",
+        "Predesigned CSS classes"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: F-T-C."
+    },
+    {
+      "id": "mem-pfw-10",
+      "type": "recall",
+      "q": "List the five parts of the back-end process that manages a web request.",
+      "keyPoints": [
+        "Webserver software",
+        "Web framework",
+        "Objects",
+        "Libraries",
+        "Databases"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-pfw-11",
+      "type": "recall",
+      "q": "Name the SQL query building blocks you must be able to script.",
+      "keyPoints": [
+        "Selecting fields",
+        "GROUP BY",
+        "Common queries",
+        "Constraints using WHERE",
+        "Table joins"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-pfw-12",
+      "type": "recall",
+      "q": "What must a PWA consider in its design?",
+      "keyPoints": [
+        "UI/UX principles of font, colour, audio, video and navigation",
+        "A UI that considers accessibility and inclusivity"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    }
+  ]
+}

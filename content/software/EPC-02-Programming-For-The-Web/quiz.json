@@ -1,0 +1,273 @@
+{
+  "questions": [
+    {
+      "id": "pfw-content-01",
+      "type": "recall",
+      "q": "Why is data broken into small packets before being sent across the internet, rather than sent as one continuous stream?",
+      "keyPoints": [
+        "Sharing/efficiency: packets from many users interleave over the same links, so no single transfer monopolises the connection",
+        "Resilience: each packet carries its destination address and is routed independently, so it can take a different path around congestion or a failed link",
+        "Error recovery: if one packet is lost or corrupted, only that small packet is resent, not the whole file",
+        "Each packet has a sequence number so the receiver can reassemble them in order and detect any missing"
+      ],
+      "explanation": "Packets can arrive out of order, which is exactly why they are numbered.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    },
+    {
+      "id": "pfw-content-02",
+      "type": "recall",
+      "q": "How does DNS resolve a domain name into an IP address?",
+      "keyPoints": [
+        "DNS translates a human-readable domain name into the server's numeric IP address (the 'phone book of the internet')",
+        "It checks caches first; if not found, a recursive resolver walks a hierarchy: root server, then the top-level-domain (e.g. .com) servers, then the authoritative server",
+        "The authoritative server returns the IP, which is cached under a time-to-live (TTL) so later lookups skip the walk",
+        "The browser then uses that IP to connect; DNS itself does not fetch the page"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    },
+    {
+      "id": "pfw-content-03",
+      "type": "recall",
+      "q": "How does HTTPS (via TLS) secure data travelling between a browser and a server?",
+      "keyPoints": [
+        "The server presents a certificate (with its domain and public key) signed by a trusted Certificate Authority, which authenticates the server's identity",
+        "Asymmetric encryption (public/private key pair) is used once to securely agree a shared session key",
+        "Fast symmetric encryption (same key both ways) then protects all the bulk traffic",
+        "The result is that intercepted traffic is unreadable cipher text instead of plain text"
+      ],
+      "explanation": "Asymmetric solves key exchange without prior contact; symmetric makes ongoing traffic fast.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    },
+    {
+      "id": "pfw-content-04",
+      "type": "recall",
+      "q": "What is the difference between authentication and authorisation?",
+      "keyPoints": [
+        "Authentication verifies WHO you are — proving identity, e.g. checking a username and password",
+        "Authorisation determines WHAT you are allowed to do — the permissions your role grants once identified",
+        "Order: identity first, then permission (e.g. logging in vs. being able to see the admin dashboard)"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    },
+    {
+      "id": "pfw-content-05",
+      "type": "recall",
+      "q": "Why is security considered the defining characteristic of e-commerce, rather than just a nice-to-have?",
+      "keyPoints": [
+        "The asset being protected is money and personal identity (card numbers, addresses, purchase history)",
+        "A breach is existential, not merely embarrassing: direct financial loss, legal liability, and destroyed customer trust",
+        "This forces requirements an ordinary site lacks: encrypted transactions, secure storage of payment data, strong authentication, input validation, and regulatory compliance"
+      ],
+      "explanation": "Marks come from arguing consequences and asset value, not just features.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    },
+    {
+      "id": "pfw-content-06",
+      "type": "recall",
+      "q": "What actually distinguishes a Progressive Web App (PWA) from an ordinary responsive website?",
+      "keyPoints": [
+        "Responsive is about APPEARANCE — layout adapting to screen size; an ordinary site can be responsive",
+        "A PWA is about CAPABILITY — it is installable to the device via a manifest and works offline via a service worker",
+        "It can also do app-like things such as push notifications, which a standard site cannot",
+        "Looking good on mobile alone does NOT make something a PWA"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    },
+    {
+      "id": "pfw-content-07",
+      "type": "recall",
+      "q": "How does a service worker give a PWA offline capability?",
+      "keyPoints": [
+        "A service worker is a background script that acts as a programmable proxy, intercepting every network request the app makes",
+        "On first load it caches the 'app shell' — the core HTML, CSS, JavaScript, and icons",
+        "When the network is unavailable, it serves those cached resources instead of failing, so the app still opens",
+        "It is the same caching idea used for performance, repurposed for offline; it requires HTTPS because it can intercept all traffic"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    },
+    {
+      "id": "pfw-content-08",
+      "type": "recall",
+      "q": "Why is client-side (browser) validation not enough — why must the back-end re-validate user input?",
+      "keyPoints": [
+        "Client-side code runs on the user's own device, so it is visible and can be disabled, altered, or bypassed entirely",
+        "An attacker can send a request straight to the server endpoint without ever loading the page or its JavaScript",
+        "So the server (which the developer controls) must re-validate and sanitise everything",
+        "Rule: client-side validation is for convenience/UX; server-side validation is for security"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    },
+    {
+      "id": "pfw-content-09",
+      "type": "recall",
+      "q": "What is the role of the W3C, and does it enforce web standards?",
+      "keyPoints": [
+        "The W3C is the international body (founded by Tim Berners-Lee) that develops open standards like HTML and CSS",
+        "Its main value is interoperability — pages work consistently across browsers, devices, and over time",
+        "Crucially it RECOMMENDS standards; it does not enforce them — browser vendors and developers adopt them voluntarily"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    },
+    {
+      "id": "pfw-content-10",
+      "type": "recall",
+      "q": "How do the characteristics of big data force changes to a web application's architecture?",
+      "keyPoints": [
+        "High volume and velocity mean a single monolithic server cannot cope, so the app is split into independent microservices that each scale separately (e.g. scale video delivery far more than login)",
+        "This also gives fault isolation — one failing service doesn't bring down the whole system",
+        "High global request volume is handled by a CDN caching content on edge servers near users to cut latency",
+        "The exam skill is mapping each big-data property (volume/velocity/variety) to the specific architectural decision it forces"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    },
+    {
+      "id": "pfw-content-11",
+      "type": "recall",
+      "q": "What is the difference between data mining and simply storing or querying data?",
+      "keyPoints": [
+        "Storage just retains data; a normal query retrieves something you already know how to ask for",
+        "Data mining ANALYSES large datasets to discover previously unknown patterns, trends, and relationships",
+        "Mining is discovery of hidden insight (e.g. which shows are watched together); storage/querying is retrieval"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    },
+    {
+      "id": "pfw-content-12",
+      "type": "recall",
+      "q": "When would you choose a NoSQL database over an SQL (relational) database, and why?",
+      "keyPoints": [
+        "Choose SQL when data is highly structured with clear relationships and needs reliable, consistent transactions (ACID) — e.g. banking or e-commerce orders",
+        "Choose NoSQL when data is flexible/semi-structured and must scale to huge volume — e.g. a social-media activity feed where each item may have different fields",
+        "The justification is a property of the DATA (structure vs. flexibility/volume), not 'newer is better'",
+        "NoSQL means 'not only SQL' — a different tool, not a replacement; many systems use both"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    },
+    {
+      "id": "pfw-content-13",
+      "type": "recall",
+      "q": "How does a parameterised query prevent SQL injection?",
+      "keyPoints": [
+        "SQL injection works because gluing user input into a query string mixes data and command — a quote in the input can close the string early and the rest is run as SQL",
+        "A parameterised query (prepared statement) uses a placeholder and passes the value to the database separately",
+        "The database then treats the value strictly as literal data, never as executable SQL, so it cannot alter the command",
+        "Rule: never build SQL by string concatenation with user input — always parameterise"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    },
+    {
+      "id": "pfw-content-14",
+      "type": "recall",
+      "q": "Compare using an ORM with writing raw SQL for a web app's data layer.",
+      "keyPoints": [
+        "An ORM maps tables to classes and rows to objects, generating the SQL automatically",
+        "ORM benefits: faster development, readable object-oriented code, automatic relationships, and database portability",
+        "ORM costs: an abstraction layer with performance overhead, can generate inefficient queries, and doesn't remove the need to understand SQL",
+        "Raw SQL gives maximum control and performance but is more verbose and error-prone; a hybrid (ORM for routine CRUD, raw SQL for complex reports) is common"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    },
+    {
+      "id": "pfw-content-15",
+      "type": "recall",
+      "q": "What is the difference between a library and a framework?",
+      "keyPoints": [
+        "A library is code that YOUR code calls when you want — you keep control of the application's structure",
+        "A framework provides the overall structure and calls YOUR code at defined points — this is inversion of control ('you call a library; a framework calls you')",
+        "Practical trade-off: a framework gives speed and consistency but locks you into its conventions; a library gives freedom but you build more of the structure yourself"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    },
+    {
+      "id": "pfw-content-16",
+      "type": "recall",
+      "q": "How does CSS improve the maintainability of a web application?",
+      "keyPoints": [
+        "It enforces separation of concerns — HTML=structure, CSS=presentation, JavaScript=behaviour — kept in separate layers",
+        "Styling for a whole site lives in one external stylesheet, so a change (e.g. brand colour) is made once and applies everywhere",
+        "Design tokens (CSS custom properties) strengthen this further as single sources of truth",
+        "The opposite — inline styles scattered through the HTML — means editing hundreds of places for one change"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    },
+    {
+      "id": "pfw-content-17",
+      "type": "recall",
+      "q": "What does a web application's back-end actually do with an incoming request?",
+      "keyPoints": [
+        "Route: the framework matches the request's URL to the correct handler function",
+        "Handle: the handler runs the business logic, reading and validating input from the request object",
+        "Data: it queries or updates the database (using parameterised queries) — the only tier that touches the Store",
+        "Respond: it builds and returns a response, e.g. HTML rendered via a template engine, or JSON"
+      ],
+      "explanation": "The web server (nginx) handles the connection and static files and forwards dynamic requests to the framework (Flask).",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    },
+    {
+      "id": "pfw-content-18",
+      "type": "recall",
+      "q": "How do caching and a CDN reduce a web page's load time?",
+      "keyPoints": [
+        "Caching stores frequently used data closer to where it's needed so it needn't be re-downloaded or re-computed (browser caching of assets, server caching of expensive query results)",
+        "A CDN is geographically distributed servers that cache static assets on an edge server near the user, cutting latency and offloading the origin",
+        "Both are the same 'store it closer to the user, reuse it' principle seen in DNS caching",
+        "Caveat: never publicly cache private/per-user or fast-changing content, or you serve stale or leaked data"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Programming for the Web episode scripts"
+      }
+    }
+  ]
+}

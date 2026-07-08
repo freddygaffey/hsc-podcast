@@ -14,14 +14,18 @@
     "SSA": "Software Security Applications",
     "SA": "Software Automation",
     "SEE": "Software Engineering Project",
-    "CASE": "Case Studies"
+    "CASE": "Case Studies",
+    "MEM": "Memorisation",
+    "EPC": "Episode Content"
   },
 
   "yearMap": {
     "PF11": "Year 11", "OOP11": "Year 11", "PM11": "Year 11",
     "PFW": "Year 12", "SSA": "Year 12", "SA": "Year 12", "SEE": "Year 12",
-    "CASE": "Case Studies"
+    "CASE": "Case Studies",
+    "MEM": "Revision decks",
+    "EPC": "Revision decks"
   },
 
-  "yearOrder": ["Case Studies", "Year 12", "Year 11", "Other"]
+  "yearOrder": ["Revision decks", "Case Studies", "Year 12", "Year 11", "Other"]
 }

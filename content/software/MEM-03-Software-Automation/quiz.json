@@ -1,0 +1,137 @@
+{
+  "questions": [
+    {
+      "id": "mem-sa-01",
+      "type": "recall",
+      "q": "How does machine learning support automation? (three ways)",
+      "keyPoints": [
+        "DevOps",
+        "Robotic process automation (RPA)",
+        "Business process automation (BPA)"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-sa-02",
+      "type": "recall",
+      "q": "Name the four models of training machine learning.",
+      "keyPoints": [
+        "Supervised learning",
+        "Unsupervised learning",
+        "Semi-supervised learning",
+        "Reinforcement learning"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: S-U-S-R."
+    },
+    {
+      "id": "mem-sa-03",
+      "type": "recall",
+      "q": "List three common applications of key ML algorithms.",
+      "keyPoints": [
+        "Data analysis and forecasting",
+        "Virtual personal assistants",
+        "Image recognition"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: F-A-I — Forecasting, Assistants, Image recognition."
+    },
+    {
+      "id": "mem-sa-04",
+      "type": "recall",
+      "q": "What two models do engineers use to design and analyse ML?",
+      "keyPoints": [
+        "Decision trees",
+        "Neural networks"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-sa-05",
+      "type": "recall",
+      "q": "Name the three types of algorithm associated with ML.",
+      "keyPoints": [
+        "Linear regression",
+        "Logistic regression",
+        "K-nearest neighbour"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: L-L-K."
+    },
+    {
+      "id": "mem-sa-06",
+      "type": "recall",
+      "q": "List the three regression models built with an OOP approach.",
+      "keyPoints": [
+        "Linear regression",
+        "Polynomial regression",
+        "Logistic regression"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-sa-07",
+      "type": "recall",
+      "q": "Name the five areas where automation's impact is assessed.",
+      "keyPoints": [
+        "Safety of workers",
+        "People with disability",
+        "The nature and skills required for employment",
+        "Production efficiency, waste and the environment",
+        "The economy and distribution of wealth"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: S-P-E-E."
+    },
+    {
+      "id": "mem-sa-08",
+      "type": "recall",
+      "q": "What four human-behaviour patterns influence ML and AI development?",
+      "keyPoints": [
+        "Psychological responses",
+        "Patterns related to acute stress response",
+        "Cultural protocols",
+        "Belief systems"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: P-S-C-B."
+    },
+    {
+      "id": "mem-sa-09",
+      "type": "recall",
+      "q": "What two sources of bias affect ML/AI solutions?",
+      "keyPoints": [
+        "Human source bias",
+        "Dataset source bias"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    }
+  ]
+}

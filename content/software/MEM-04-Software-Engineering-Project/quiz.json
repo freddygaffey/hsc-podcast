@@ -1,0 +1,186 @@
+{
+  "questions": [
+    {
+      "id": "mem-see-01",
+      "type": "recall",
+      "q": "What five things define and analyse the requirements of a problem?",
+      "keyPoints": [
+        "Demonstrate needs or opportunities",
+        "Assess scheduling and financial feasibility",
+        "Generate requirements (functionality and performance)",
+        "Define data structures and data types",
+        "Define boundaries"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-see-02",
+      "type": "recall",
+      "q": "Name the tools used to develop ideas and generate solutions.",
+      "keyPoints": [
+        "Brainstorming, mind-mapping, storyboards",
+        "Data dictionaries",
+        "Algorithm design",
+        "Code generation",
+        "Testing and debugging",
+        "Installation",
+        "Maintenance"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-see-03",
+      "type": "recall",
+      "q": "List the four software implementation (changeover) methods.",
+      "keyPoints": [
+        "Direct",
+        "Phased",
+        "Parallel",
+        "Pilot"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: DiP-PP."
+    },
+    {
+      "id": "mem-see-04",
+      "type": "recall",
+      "q": "What are the key aspects of the Waterfall approach?",
+      "keyPoints": [
+        "Logical progression of life-cycle steps",
+        "The 'falling water' stages",
+        "Advantages and disadvantages",
+        "Scale and types of development"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-see-05",
+      "type": "recall",
+      "q": "What are the key aspects of the Agile approach?",
+      "keyPoints": [
+        "Rate of developing a final solution",
+        "Method tailoring",
+        "Iteration workflow",
+        "Scale and types of development"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-see-06",
+      "type": "recall",
+      "q": "What are the key aspects of the WAgile approach?",
+      "keyPoints": [
+        "It is a hybrid model",
+        "Analysis of when and how intervention is applied in the life cycle",
+        "Scale and types of development"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-see-07",
+      "type": "recall",
+      "q": "What project-management tools plan and track a project?",
+      "keyPoints": [
+        "Scheduling and tracking with a software tool, including Gantt charts",
+        "Collaboration tools"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-see-08",
+      "type": "recall",
+      "q": "Name the three communication issues in project work.",
+      "keyPoints": [
+        "Involving and empowering the client",
+        "Enabling feedback",
+        "Negotiating"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: I-F-N."
+    },
+    {
+      "id": "mem-see-09",
+      "type": "recall",
+      "q": "How is a software engineering solution quality assured? (three things)",
+      "keyPoints": [
+        "Define the criteria on which quality is judged",
+        "Ensure requirements are met with continual checking",
+        "Address compliance and legislative requirements"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    },
+    {
+      "id": "mem-see-10",
+      "type": "recall",
+      "q": "List the four contributions of back-end engineering.",
+      "keyPoints": [
+        "Technology used",
+        "Error handling",
+        "Interfacing with the front end",
+        "Security engineering"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: T-E-I-S."
+    },
+    {
+      "id": "mem-see-11",
+      "type": "recall",
+      "q": "Name the three strategies for responding to development difficulties.",
+      "keyPoints": [
+        "Looking for a solution online",
+        "Collaboration with peers",
+        "Outsourcing"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      },
+      "explanation": "Hook: S-P-O — Self-search, Peers, Outsource."
+    },
+    {
+      "id": "mem-see-12",
+      "type": "recall",
+      "q": "How do you evaluate the effectiveness of a solution?",
+      "keyPoints": [
+        "Develop a report to synthesise feedback",
+        "Develop a test plan",
+        "Test data based on path and boundary testing",
+        "Compare actual vs expected output"
+      ],
+      "source": {
+        "origin": "syllabus",
+        "ref": "NESA Software Engineering 11–12 syllabus"
+      }
+    }
+  ]
+}

@@ -7638,7 +7638,9 @@
         "SSA": "Software Security Applications",
         "SA": "Software Automation",
         "SEE": "Software Engineering Project",
-        "CASE": "Case Studies"
+        "CASE": "Case Studies",
+        "MEM": "Memorisation",
+        "EPC": "Episode Content"
       },
       "yearMap": {
         "PF11": "Year 11",
@@ -7648,9 +7650,12 @@
         "SSA": "Year 12",
         "SA": "Year 12",
         "SEE": "Year 12",
-        "CASE": "Case Studies"
+        "CASE": "Case Studies",
+        "MEM": "Revision decks",
+        "EPC": "Revision decks"
       },
       "yearOrder": [
+        "Revision decks",
         "Case Studies",
         "Year 12",
         "Year 11",
@@ -8850,6 +8855,110 @@
                   "duration": 582.6
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "EPC",
+          "prefix": "EPC",
+          "moduleNum": 0,
+          "episodes": [
+            {
+              "id": "EPC-01-Secure-Software-Architecture",
+              "title": "Secure Software Architecture",
+              "unit": 1,
+              "scriptPath": "content/software/EPC-01-Secure-Software-Architecture/script.md",
+              "supplementaryPath": null,
+              "quizPath": "content/software/EPC-01-Secure-Software-Architecture/quiz.json",
+              "titleAudio": null,
+              "voices": []
+            },
+            {
+              "id": "EPC-02-Programming-For-The-Web",
+              "title": "Programming For The Web",
+              "unit": 2,
+              "scriptPath": "content/software/EPC-02-Programming-For-The-Web/script.md",
+              "supplementaryPath": null,
+              "quizPath": "content/software/EPC-02-Programming-For-The-Web/quiz.json",
+              "titleAudio": null,
+              "voices": []
+            },
+            {
+              "id": "EPC-03-Software-Automation",
+              "title": "Software Automation",
+              "unit": 3,
+              "scriptPath": "content/software/EPC-03-Software-Automation/script.md",
+              "supplementaryPath": null,
+              "quizPath": "content/software/EPC-03-Software-Automation/quiz.json",
+              "titleAudio": null,
+              "voices": []
+            },
+            {
+              "id": "EPC-04-Software-Engineering-Project",
+              "title": "Software Engineering Project",
+              "unit": 4,
+              "scriptPath": "content/software/EPC-04-Software-Engineering-Project/script.md",
+              "supplementaryPath": null,
+              "quizPath": "content/software/EPC-04-Software-Engineering-Project/quiz.json",
+              "titleAudio": null,
+              "voices": []
+            }
+          ]
+        },
+        {
+          "id": "MEM",
+          "prefix": "MEM",
+          "moduleNum": 0,
+          "episodes": [
+            {
+              "id": "MEM-01-Secure-Software-Architecture",
+              "title": "Secure Software Architecture",
+              "unit": 1,
+              "scriptPath": "content/software/MEM-01-Secure-Software-Architecture/script.md",
+              "supplementaryPath": null,
+              "quizPath": "content/software/MEM-01-Secure-Software-Architecture/quiz.json",
+              "titleAudio": null,
+              "voices": []
+            },
+            {
+              "id": "MEM-02-Programming-For-The-Web",
+              "title": "Programming For The Web",
+              "unit": 2,
+              "scriptPath": "content/software/MEM-02-Programming-For-The-Web/script.md",
+              "supplementaryPath": null,
+              "quizPath": "content/software/MEM-02-Programming-For-The-Web/quiz.json",
+              "titleAudio": null,
+              "voices": []
+            },
+            {
+              "id": "MEM-03-Software-Automation",
+              "title": "Software Automation",
+              "unit": 3,
+              "scriptPath": "content/software/MEM-03-Software-Automation/script.md",
+              "supplementaryPath": null,
+              "quizPath": "content/software/MEM-03-Software-Automation/quiz.json",
+              "titleAudio": null,
+              "voices": []
+            },
+            {
+              "id": "MEM-04-Software-Engineering-Project",
+              "title": "Software Engineering Project",
+              "unit": 4,
+              "scriptPath": "content/software/MEM-04-Software-Engineering-Project/script.md",
+              "supplementaryPath": null,
+              "quizPath": "content/software/MEM-04-Software-Engineering-Project/quiz.json",
+              "titleAudio": null,
+              "voices": []
+            },
+            {
+              "id": "MEM-05-Acronyms-And-Abbreviations",
+              "title": "Acronyms And Abbreviations",
+              "unit": 5,
+              "scriptPath": "content/software/MEM-05-Acronyms-And-Abbreviations/script.md",
+              "supplementaryPath": null,
+              "quizPath": "content/software/MEM-05-Acronyms-And-Abbreviations/quiz.json",
+              "titleAudio": null,
+              "voices": []
             }
           ]
         },

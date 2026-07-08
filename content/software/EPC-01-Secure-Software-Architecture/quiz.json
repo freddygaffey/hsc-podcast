@@ -1,0 +1,340 @@
+{
+  "questions": [
+    {
+      "id": "ssa-content-01",
+      "type": "recall",
+      "q": "Why is security best described as a business enabler rather than just a cost?",
+      "keyPoints": [
+        "It actively creates value, not just prevents loss",
+        "Builds the customer trust needed to attract and keep users",
+        "Ensures regulatory compliance so the business can operate",
+        "Differentiates the product and manages risk to protect revenue"
+      ],
+      "explanation": "The naive view treats security as pure overhead; the mature view is that it enables the business to function and grow (hook: T-C-D-R — Trust, Compliance, Differentiation, Risk).",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-02",
+      "type": "recall",
+      "q": "Why is 'prevention is far cheaper than response' the core of justifying security spending?",
+      "keyPoints": [
+        "A breach's cost includes large indirect costs (customer churn, reputation, lost revenue), not just fines and recovery",
+        "Prevention (training, code review, scanning) costs a small fraction of a breach",
+        "So preventing even one breach returns many times its cost",
+        "Prioritise spend with risk = likelihood x impact"
+      ],
+      "explanation": "Quantifying both sides, and naming the indirect costs people forget, is what turns a vague answer into a 'justify' answer.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-03",
+      "type": "recall",
+      "q": "Why is fixing a security flaw during design far cheaper than fixing it in production ('shift left')?",
+      "keyPoints": [
+        "At design a flaw is just a decision to change before code depends on it",
+        "In production it needs emergency patches, downtime, re-testing, and possibly breach response",
+        "Textbook figure: a production fix costs ~63x a design-phase fix",
+        "So security-by-design builds protection into every SDLC phase rather than bolting it on"
+      ],
+      "explanation": "Shift left = move security effort earlier on the timeline, where flaws are cheap to fix.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-04",
+      "type": "recall",
+      "q": "What is the security-usability paradox, and why does it mean usability is a security requirement?",
+      "keyPoints": [
+        "Adding more/harder security steps does not automatically make a system more secure",
+        "If security is too difficult, users circumvent it (sticky-note passwords, disabling MFA)",
+        "Those workarounds create new, often worse vulnerabilities",
+        "So a control users will bypass is no control at all"
+      ],
+      "explanation": "The fix is 'secure default, easy right path' — make the safe option the default and the secure way the easiest way; treat bypasses as a design failure, not a user failure.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-05",
+      "type": "recall",
+      "q": "Distinguish confidentiality from integrity, and explain why they fail independently.",
+      "keyPoints": [
+        "Confidentiality = secrecy: who is allowed to READ the data",
+        "Integrity = accuracy: whether the data can be CHANGED by an unauthorised party",
+        "A spy who reads but changes nothing breaks confidentiality only",
+        "A vandal who scrambles a file they can't read breaks integrity only"
+      ],
+      "explanation": "Confidentiality is protected by encryption and access control; integrity by hashing, digital signatures, and input validation.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-06",
+      "type": "recall",
+      "q": "Distinguish authentication from authorisation, and state which comes first.",
+      "keyPoints": [
+        "Authentication = verifying WHO you are (proving identity)",
+        "Authorisation = determining WHAT you are allowed to do",
+        "Authentication happens first, authorisation second",
+        "Being logged in (authenticated) does not mean being allowed (authorised)"
+      ],
+      "explanation": "Example: logging into a school portal is authentication; being able to see your own grades but not change them or view others' is authorisation.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-07",
+      "type": "recall",
+      "q": "Why are passwords hashed rather than encrypted?",
+      "keyPoints": [
+        "Hashing is one-way (irreversible); encryption is two-way (reversible with a key)",
+        "You never need to recover a password — at login you only VERIFY a match",
+        "Because hashing is irreversible, a database breach doesn't reveal the passwords",
+        "Encryption needs a key that could also be stolen, making passwords recoverable"
+      ],
+      "explanation": "Verification without recovery is exactly what a one-way function provides, so the recoverable form encryption gives is a liability you don't want.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-08",
+      "type": "recall",
+      "q": "What roles do a salt and slow hashing play in secure password storage?",
+      "keyPoints": [
+        "A salt is a unique random value added per user before hashing",
+        "It makes identical passwords produce different hashes, defeating precomputed rainbow tables",
+        "Slow hashing (bcrypt, Argon2, high-iteration PBKDF2) makes each guess expensive",
+        "This defeats brute force, which fast hashes like SHA-256 allow (billions of guesses/sec)"
+      ],
+      "explanation": "The recipe is 'hash it, salt it, slow it' — and use an audited library rather than rolling your own.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-09",
+      "type": "recall",
+      "q": "Distinguish symmetric from asymmetric encryption, and explain why HTTPS uses both.",
+      "keyPoints": [
+        "Symmetric = one shared key (e.g. AES): fast, but has the key-sharing problem",
+        "Asymmetric = a public/private key pair (e.g. RSA): solves sharing, but slow",
+        "HTTPS uses hybrid encryption to get the best of both",
+        "Asymmetric is used once to agree a symmetric session key, then symmetric encrypts all traffic"
+      ],
+      "explanation": "Asymmetric's public key can be shared openly, so it solves key distribution; symmetric's speed then handles the bulk data.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-10",
+      "type": "recall",
+      "q": "How does a digital signature provide non-repudiation?",
+      "keyPoints": [
+        "The sender hashes the document and encrypts that hash with their private key = the signature",
+        "The recipient re-hashes the document and decrypts the signature with the sender's public key",
+        "Matching hashes prove the document is unchanged (integrity) and authentic",
+        "Only the sender's private key could produce a signature their public key verifies, so they can't deny it"
+      ],
+      "explanation": "Signing flips encryption's keys: sign with private, verify with public. Signing proves who and unchanged; it does not hide contents (that's encryption).",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-11",
+      "type": "recall",
+      "q": "How does sandboxing contribute to security by design?",
+      "keyPoints": [
+        "It runs code in a restricted, isolated environment it cannot escape",
+        "Code is blocked from the file system, network, and other processes beyond what's permitted",
+        "It assumes code may be malicious or buggy and contains it from the outset",
+        "This enforces least privilege and limits the blast radius of any compromise"
+      ],
+      "explanation": "Examples: browsers sandbox web-page JavaScript, mobile apps are walled off from each other, and analysts detonate malware in isolated VMs.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-12",
+      "type": "recall",
+      "q": "Distinguish input validation from sanitisation, and explain why an allow-list beats a block-list.",
+      "keyPoints": [
+        "Validation checks input against rules and REJECTS what doesn't conform",
+        "Sanitisation TRANSFORMS/escapes input so it's safe to use rather than rejecting it",
+        "An allow-list defines what's permitted; a block-list defines what's forbidden",
+        "Allow-list is preferred because defining what's good is finite while defining every bad input is impossible"
+      ],
+      "explanation": "Attackers evade block-lists with encoding, mixed case, or new payloads; an allow-list rejects anything unexpected by default, including unknown attacks.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-13",
+      "type": "recall",
+      "q": "How does a parameterised query prevent SQL injection?",
+      "keyPoints": [
+        "SQL injection happens when user input is concatenated into a query and interpreted as code",
+        "A parameterised query uses placeholders and passes the data separately from the query text",
+        "The database compiles the query structure first, then treats the value as pure data",
+        "So input can never alter the command's structure — it's always treated as a literal value"
+      ],
+      "explanation": "Injection and XSS are the same disease — input becoming code — just in different interpreters (database vs browser).",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-14",
+      "type": "recall",
+      "q": "How is privacy distinct from security, and why does data minimisation reduce risk?",
+      "keyPoints": [
+        "Security protects data from unauthorised access; privacy governs whether you should collect it and how it's used",
+        "You can have perfect security and still violate privacy (e.g. secretly harvesting and selling data)",
+        "Data minimisation = collect less, keep less — only what's needed for the purpose",
+        "Data you never collect or have already deleted cannot be breached, misused, or stolen"
+      ],
+      "explanation": "Minimisation directly shrinks the attack surface and the impact of any future breach; it's a security control, not just good manners.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-15",
+      "type": "recall",
+      "q": "Why is 'the user is logged in' not enough to secure an API endpoint?",
+      "keyPoints": [
+        "Authentication proves identity but does not grant permission for a specific resource",
+        "Without a per-request authorisation check, any logged-in user can access others' data",
+        "This is broken access control (insecure direct object reference) — e.g. changing an ID in the URL",
+        "Fix: on every request verify the caller owns the resource or holds a permitting role (least privilege)"
+      ],
+      "explanation": "It's the most common real-world API breach — authenticated but not authorised.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-16",
+      "type": "recall",
+      "q": "How can poor exception handling create a security vulnerability?",
+      "keyPoints": [
+        "Returning a stack trace to the user leaks internals (file paths, library versions, DB structure) — information disclosure",
+        "A failed security check that lets execution continue can 'fail open', granting access it should deny",
+        "Fix: log full detail internally, return only a generic message externally",
+        "Always fail securely — default to denying the action on any error or doubt"
+      ],
+      "explanation": "Log it private, show it generic, fail closed.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-17",
+      "type": "recall",
+      "q": "Distinguish static (SAST) from dynamic (DAST) application security testing.",
+      "keyPoints": [
+        "SAST analyses source code WITHOUT running it — 'Static = Source'",
+        "It finds flaws early and pinpoints the exact line, but produces false positives and misses runtime issues",
+        "DAST attacks the RUNNING app from outside like an attacker — 'Dynamic = Doing'",
+        "It finds genuinely exploitable and configuration flaws but runs late and can't pinpoint the code"
+      ],
+      "explanation": "They're complementary: static finds it in the source early, dynamic proves it's exploitable at runtime — use both.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-18",
+      "type": "recall",
+      "q": "Distinguish cross-site scripting (XSS) from cross-site request forgery (CSRF).",
+      "keyPoints": [
+        "XSS injects a malicious script that runs in the victim's browser (the attacker runs code as you)",
+        "Root cause: untrusted input placed in a page without encoding; fix with output encoding + CSP",
+        "CSRF injects no script — it forges a request that rides the victim's already-authenticated session",
+        "Fix CSRF with an unpredictable anti-CSRF token plus SameSite cookies"
+      ],
+      "explanation": "XSS injects a Script; CSRF rides a Session. Being logged in is exactly what CSRF exploits, so 'require login' does not stop it.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-19",
+      "type": "recall",
+      "q": "How is a race condition (TOCTOU) exploited, and how is it prevented?",
+      "keyPoints": [
+        "Correctness depends on the timing of concurrent operations",
+        "The attacker acts in the gap between a check and the dependent action (time-of-check to time-of-use)",
+        "Classic example: two simultaneous withdrawals both pass the balance check before either deducts — a double-spend",
+        "Fix: make the check and action atomic via a transaction with locking or an atomic conditional update"
+      ],
+      "explanation": "Never assume single-threaded — a web server is always concurrent, handling many requests against the same data at once.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-20",
+      "type": "recall",
+      "q": "Why does collaboration make software more secure, and why isn't it automatic?",
+      "keyPoints": [
+        "Various points of view: a reviewer with different blind spots catches flaws the author couldn't see",
+        "Delegation by expertise: each security-critical part is handled by someone with real depth",
+        "Quality: combining diverse review and expertise yields fewer vulnerabilities and shares knowledge",
+        "Not automatic — the bystander effect and malicious insiders (e.g. the xz backdoor) mean it must be structured and trusted"
+      ],
+      "explanation": "A solo developer can't reliably review their own code because the review carries the same blind spots as the writing.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    },
+    {
+      "id": "ssa-content-21",
+      "type": "recall",
+      "q": "What makes a security metric useful rather than a vanity metric?",
+      "keyPoints": [
+        "Useful metrics measure OUTCOMES that reflect whether you're genuinely safer, and drive a decision",
+        "Vanity metrics measure ACTIVITY that looks impressive but says nothing about real security",
+        "Good examples: mean time to detect/respond, vulnerability remediation time, patch coverage",
+        "Vanity examples: 'attacks blocked' or 'scans run' — mostly noise, no indication of safety"
+      ],
+      "explanation": "Evaluation is a continuous loop — Measure, Audit (independently, against a standard like ISO 27001), Improve — because the threat landscape never stops changing.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Secure Software Architecture episode scripts"
+      }
+    }
+  ]
+}

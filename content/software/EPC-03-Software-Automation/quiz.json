@@ -1,0 +1,248 @@
+{
+  "questions": [
+    {
+      "id": "sa-content-01",
+      "type": "recall",
+      "q": "What is the dividing line between artificial intelligence and machine learning, and how are the two related?",
+      "keyPoints": [
+        "AI is the goal: building systems that behave intelligently (reason, perceive, decide); ML is one way to achieve it",
+        "ML is a subset of AI, so every ML system is AI but not every AI system is ML",
+        "The dividing line is learning: AI may use rules a human wrote, whereas ML learns patterns from data"
+      ],
+      "explanation": "A rule-based expert system is AI but not ML because it never learns.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Automation episode scripts"
+      }
+    },
+    {
+      "id": "sa-content-02",
+      "type": "recall",
+      "q": "How does robotic process automation (RPA) differ from business process automation (BPA)?",
+      "keyPoints": [
+        "RPA is task-level: a software bot mimics a human at the user interface to automate one repetitive task, leaving the process unchanged",
+        "BPA is process-level: it orchestrates and often redesigns a whole end-to-end workflow, integrating systems directly with approvals and an audit trail",
+        "Keyword: RPA is a robot doing a task; BPA is redesigning a process"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Automation episode scripts"
+      }
+    },
+    {
+      "id": "sa-content-03",
+      "type": "recall",
+      "q": "How does machine learning enhance a rule-based automation workflow like invoice processing?",
+      "keyPoints": [
+        "Plain rule-based automation only handles structured, predictable input and breaks on anything needing judgement",
+        "ML adds intelligence at decision points: classifying document type, extracting fields from varied layouts, detecting anomalies",
+        "Effect: the workflow copes with unstructured input and exceptions, raising the share of cases handled without a human"
+      ],
+      "explanation": "Automation provides the hands; ML provides the eyes and judgement.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Automation episode scripts"
+      }
+    },
+    {
+      "id": "sa-content-04",
+      "type": "recall",
+      "q": "How do supervised and unsupervised learning differ?",
+      "keyPoints": [
+        "Supervised trains on labelled data (each input paired with the correct answer) and learns to predict a known output for new inputs",
+        "Unsupervised trains on unlabelled data and discovers hidden structure, such as natural groupings (clustering)",
+        "The deciding question is simply: do you have labels?"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Automation episode scripts"
+      }
+    },
+    {
+      "id": "sa-content-05",
+      "type": "recall",
+      "q": "Why is reinforcement learning not just a form of supervised learning?",
+      "keyPoints": [
+        "Supervised learning is given the correct answer for every example up front, as a fixed answer key",
+        "Reinforcement learning has no answer key: an agent acts in an environment and only gets a reward or penalty after acting",
+        "A reward tells the agent how good the outcome was, never what the right action would have been"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Automation episode scripts"
+      }
+    },
+    {
+      "id": "sa-content-06",
+      "type": "recall",
+      "q": "How does a decision tree make a prediction, and why is that valuable?",
+      "keyPoints": [
+        "It asks a sequence of test questions about the input, following the branch that matches each answer from the root down to a leaf",
+        "The leaf gives the final prediction; the questions and their order are learned from data, not hand-written",
+        "You can state the exact path of answers that produced the prediction, making the tree interpretable"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Automation episode scripts"
+      }
+    },
+    {
+      "id": "sa-content-07",
+      "type": "recall",
+      "q": "What does a single neuron in a neural network compute?",
+      "keyPoints": [
+        "It multiplies each input by a weight and adds them up (with a bias) to form a weighted sum",
+        "It passes that sum through an activation function to produce its output",
+        "Weights say how much each input matters and are the learned parameters; a network is layers of these joined by weighted connections"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Automation episode scripts"
+      }
+    },
+    {
+      "id": "sa-content-08",
+      "type": "recall",
+      "q": "Why does explainability matter when comparing decision trees and neural networks?",
+      "keyPoints": [
+        "A decision tree is interpretable: you can trace the path and say exactly why it decided; a neural network is a black box whose decision is spread across many weights",
+        "The trade-off is transparency versus power: trees are explainable but weaker on complex tasks, networks are powerful but opaque",
+        "Explainability underpins accountability and lets you audit a model for bias, so interpretable models are often preferred for high-stakes decisions"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Automation episode scripts"
+      }
+    },
+    {
+      "id": "sa-content-09",
+      "type": "recall",
+      "q": "Why is RPA considered brittle, and what causes it?",
+      "keyPoints": [
+        "An RPA bot works through the user interface, locating fields and buttons by position or label the way a human would",
+        "When the application is updated (a moved button, renamed field, new step) the bot can no longer find what it expects and fails",
+        "Because it mimics a human at the screen rather than talking to a stable API, it needs ongoing maintenance and is not a permanent fix"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Automation episode scripts"
+      }
+    },
+    {
+      "id": "sa-content-10",
+      "type": "recall",
+      "q": "What is the key difference between linear and logistic regression?",
+      "keyPoints": [
+        "Linear regression predicts a continuous number by fitting a straight line (e.g. a house price)",
+        "Logistic regression, despite its name, performs classification: it predicts a category/yes-or-no",
+        "It uses the sigmoid function to output a probability between 0 and 1, then thresholds it into a class"
+      ],
+      "explanation": "Linear predicts a number; logistic predicts a yes-or-no.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Automation episode scripts"
+      }
+    },
+    {
+      "id": "sa-content-11",
+      "type": "recall",
+      "q": "What is overfitting, and why must you evaluate a model on a separate test set?",
+      "keyPoints": [
+        "Overfitting is when a model fits the training data too closely, memorising its noise rather than the general pattern, so it fails on new data",
+        "A model can memorise its training data, so a high training score proves nothing about real performance",
+        "A train-test split evaluates on unseen data; a big gap between high training and low test accuracy reveals overfitting"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Automation episode scripts"
+      }
+    },
+    {
+      "id": "sa-content-12",
+      "type": "recall",
+      "q": "In plain terms, how does a neural network learn from data?",
+      "keyPoints": [
+        "It repeats a cycle of Predict, Loss, Adjust over many passes (epochs) of the training data",
+        "Predict: run a forward pass to get an output; Loss: measure how far it is from the known correct label",
+        "Adjust: nudge every weight to reduce the error (via backpropagation and gradient descent), so predictions get closer over time"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Automation episode scripts"
+      }
+    },
+    {
+      "id": "sa-content-13",
+      "type": "recall",
+      "q": "Why is it wrong to claim a machine learning model is 'neutral' or 'objective'?",
+      "keyPoints": [
+        "The maths is impartial, but the model faithfully learns the patterns in its training data",
+        "That data is generated by humans and the real world, which carry biases and inequities, so the model mirrors and can amplify them",
+        "Bias appears even when no one intends it and even when the sensitive attribute is not a direct input"
+      ],
+      "explanation": "Amazon's recruiting model penalised resumes mentioning 'women's' because it learned a male-dominated hiring history.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Automation episode scripts"
+      }
+    },
+    {
+      "id": "sa-content-14",
+      "type": "recall",
+      "q": "How does historical bias enter a machine learning system, and why doesn't more data fix it?",
+      "keyPoints": [
+        "Historical bias occurs when the data accurately records a past that was itself unequal, so the model learns and perpetuates that discrimination",
+        "The data isn't 'wrong' — it is a faithful record of an unjust history, which the model reproduces",
+        "Collecting more of the same biased history just deepens the bias; you need contemporary, balanced, or corrected data"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Automation episode scripts"
+      }
+    },
+    {
+      "id": "sa-content-15",
+      "type": "recall",
+      "q": "Why does forecasting sometimes fail badly, even when the model was accurate on past data?",
+      "keyPoints": [
+        "Forecasting (supervised regression) assumes the future will resemble the training data",
+        "When conditions shift into patterns the model never saw, its predictions can be systematically wrong",
+        "So forecasts need human oversight and confidence limits, not blind trust"
+      ],
+      "explanation": "Zillow's price model overpaid for thousands of homes when the market shifted, losing hundreds of millions.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Automation episode scripts"
+      }
+    },
+    {
+      "id": "sa-content-16",
+      "type": "recall",
+      "q": "Why can a model with high overall accuracy still be unfair, and how is bias mitigated?",
+      "keyPoints": [
+        "Overall accuracy can be high while the model performs badly for a minority group, because the average hides the gap",
+        "You must measure fairness per group (e.g. demographic parity or equalised odds), not just overall accuracy",
+        "Mitigate across the pipeline: diverse/representative data at the source, reweighting under-represented groups in training, and fairness metrics after"
+      ],
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Automation episode scripts"
+      }
+    },
+    {
+      "id": "sa-content-17",
+      "type": "recall",
+      "q": "How can patterns in human behaviour, such as acute stress, distort a machine learning system?",
+      "keyPoints": [
+        "Under acute stress people are rushed, less accurate, and inconsistent, so their input differs from calm data",
+        "A model trained only on calm 'happy-path' data performs worst exactly when users are most stressed and need it most",
+        "Fix: train on data reflecting realistic high-pressure use and design interfaces that detect stress and adapt"
+      ],
+      "explanation": "A diagnosis assistant trained on unhurried inputs can fail an exhausted doctor at 3am.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from Software Automation episode scripts"
+      }
+    }
+  ]
+}
