@@ -1670,7 +1670,7 @@
   const btnChooseSubjects = document.getElementById("btn-choose-subjects");
   if (btnChooseSubjects) btnChooseSubjects.addEventListener("click", () => {
     closeSheet(settingsOverlay);
-    openSubjectPicker(false);
+    openSubjectPicker(true);   // re-run the first-run onboarding picker (welcome variant)
   });
   settingsOverlay.addEventListener("click", (e) => {
     if (e.target === settingsOverlay) closeSheet(settingsOverlay);
