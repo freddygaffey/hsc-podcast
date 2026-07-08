@@ -331,7 +331,10 @@
   // browsers mute native playbackRate). So: effective engine = high-speed mode AND the
   // user wants it AND the device supports it.
   function wantsHsEngine() { return localStorage.getItem(HS_ENGINE_KEY) === "1"; }
-  function effectiveEngine() { return !simpleSpeedMode() && wantsHsEngine() && audio.engineAvailable === true; }
+  // Engine retired (Fred, 2026-07-08): native <audio>+preservesPitch does high speed AND streams
+  // AND plays in the background AND sounds better. The Web Audio engine adds nothing and breaks
+  // streaming (BUG-15) + lock-screen resume (BUG-10) + clarity (BUG-28). Always use native.
+  function effectiveEngine() { return false; }
   function syncEngine(reload) {
     if (!audio.setEngineEnabled) return;
     const target = effectiveEngine();
@@ -1650,16 +1653,11 @@
     if (introTitleToggle) introTitleToggle.checked = introEnabled();
     if (quizSplitToggle) quizSplitToggle.checked = quizSplitBySubject();
     if (speedEngineToggle) {
-      // Only meaningful when the Web Audio engine is available; otherwise hide the row.
-      // Reflects the user's high-speed-engine INTENT, and is disabled while simple mode
-      // is on (simple mode forces the native background-capable backend).
-      const supported = audio.engineAvailable === true;
-      speedEngineToggle.checked = wantsHsEngine();
-      speedEngineToggle.disabled = !supported || simpleSpeedMode();
+      // Engine retired — always native. Hide the toggle + its hint (see effectiveEngine).
       const row = speedEngineToggle.closest(".setting-row");
       const hint = row && row.nextElementSibling;
-      if (row) setHidden(row, !supported);
-      if (hint && hint.classList.contains("setting-hint")) setHidden(hint, !supported);
+      if (row) setHidden(row, true);
+      if (hint && hint.classList.contains("setting-hint")) setHidden(hint, true);
     }
     if (fsrsRetentionSelect) fsrsRetentionSelect.value = String(fsrsSettings().retention);
     if (fsrsStepsInput) fsrsStepsInput.value = fsrsSettings().steps;
