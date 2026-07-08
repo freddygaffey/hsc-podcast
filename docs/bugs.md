@@ -603,15 +603,604 @@ the glossary too, not only in the flashcard deck. Same root cause as **BUG-17** 
 separate manual step, so coverage drifts) — the durable fix is to generate glossary terms (incl.
 acronyms) per episode as part of the pipeline.
 
-## BUG-25 — Paper generator UI looks bad on iOS; back button hidden under the status-bar clock
+## BUG-25 — Paper generator UI looks bad on iOS; back button obscured under the status-bar clock and not clickable
 
 **Type:** UI / iOS. **Severity:** medium. The **past-paper generator** (`generator.html`) renders poorly
 on iOS: the layout is messy and the **back button is obscured by the iOS status-bar time** (the header
-sits under the notch/status bar). Almost certainly a **safe-area-inset** problem — the generator's header
-doesn't pad for `env(safe-area-inset-top)` (and the page may be missing `viewport-fit=cover` handling
-that `index.html` has). Fix: apply `padding-top: env(safe-area-inset-top)` to the generator header/top
-bar, verify `viewport-fit=cover` + `apple-mobile-web-app-status-bar-style` are set consistently with the
-main app, and audit the generator's spacing/controls on a real iPhone. The main app's header already
-handles this — port the same treatment to `generator.html`. Related: BUG-2 / BUG-5 (generator UI on iOS).
+sits under the notch/status bar). Crucially, the back button **exists but is not accessible / clickable**
+— it isn't missing; it's hidden under the status-bar region, which both covers it *and* intercepts the
+tap, so you can't press it to leave the generator (you can get stuck). Almost certainly a
+**safe-area-inset** problem — the generator's header doesn't pad for `env(safe-area-inset-top)` (and the
+page may be missing `viewport-fit=cover` handling that `index.html` has).
+
+**Fix.** Apply `padding-top: env(safe-area-inset-top)` to the generator header/top bar, verify
+`viewport-fit=cover` + `apple-mobile-web-app-status-bar-style` are set consistently with the main app,
+and audit the generator's spacing/controls on a real iPhone. The main app's header already handles
+this — port the same treatment to `generator.html`. Then **confirm the back button both clears the notch
+_and_ responds to a tap**; if it's still unclickable after the safe-area fix, check for an overlay /
+`z-index` / `pointer-events` element covering it and intercepting taps. Related: BUG-2 / BUG-5 (generator
+UI on iOS).
+
+_(Merged in the former BUG-29 — "back button present but not clickable" — 2026-07-08; same root cause.)_
 
 _Not started — logged 2026-07-08._
+
+## FEATURE-10 — Drag to reorder subjects (persisted + synced)
+
+**Type:** feature (subject hub UX). **Severity:** medium — with the onboarding picker landing (FEATURE-6)
+and ~100 subjects incoming, users need control over which subjects sit at the top.
+
+**Want.** Let the user **drag subjects to reorder them** in the subject UI (the hub / tile grid), so the
+ones they care about sit where they want. The chosen order must be **saved** (persisted locally) **and
+synced** to the cloud so it carries across devices.
+
+**Fix direction.**
+- Make the subject tiles in `renderSubjects()` drag-reorderable — HTML5 drag-and-drop (or pointer-based
+  drag with a touch fallback, since the primary device is iOS and native DnD is flaky on touch). Add a
+  clear drag affordance (handle) and reorder on drop.
+- Persist the order to a `localStorage` key (e.g. `podcast-subject-order`) as an array of subject ids;
+  `renderSubjects()` sorts the selected set by that order, with any unlisted/new subjects appended.
+- **Sync it.** Fold `podcast-subject-order` into the same `window.Sync` payload as the other prefs so it
+  pushes/pulls with progress — ties into **FEATURE-9** (make sync automatic) so a reorder on one device
+  shows up on the others without a manual push.
+- Compose with **FEATURE-6**: the onboarding subject picker chooses *which* subjects show; this chooses
+  *what order* they show in. Editing the selection later shouldn't clobber an existing order.
+
+_Not started — logged 2026-07-08._
+
+---
+
+## FEATURE-11 — Migrate paper assets to a dedicated `hsc-papers-and-resources` bucket
+
+**Type:** infrastructure / migration. **Design:** parser agent; **implementation:** code-changes agent. **Severity:** high — unblocks clean paper hosting + raw-paper browsing (FEATURE-8).
+
+**Decision (Fred):** separate *paper assets* from *audio*. Audio stays in `hsc-podcast-audio`; ALL paper assets move to a new dedicated bucket **`hsc-papers-and-resources`** (already created, empty). Cleaner lifecycle, and it hosts *every raw paper* — including ones never segmented ("I just want to have papers").
+
+**Current state**
+- App reads `assetBaseUrl = https://audio.hsc.pebnum.com` (= `hsc-podcast-audio`). Paper crops live at `hsc-podcast-audio/<subject>/papers/<slug>/` — old boundaries-pipeline output, patchy, with `-1` dedup cruft.
+- Half-done `hsc-questions` bucket exists (`<subject>/<slug>/` layout, ~2.2k maths-adv files) — NOT wired to the app.
+- New `hsc-papers-and-resources` exists, empty.
+
+**Target layout** (`hsc-papers-and-resources`):
+```
+<subject>/papers/<slug>/
+   paper.pdf          full raw paper — uploaded for EVERY paper, segmented or not
+   q01.pdf q11.pdf …  question crops (with-lines variant)
+   q01-c.pdf …        compact / no-lines variant
+   a01.pdf …          solution crops (real) + AI-generated solutions (watermarked)
+```
+slug = `<year>-<school>-<type>` (e.g. `2024-barker-trial`); one consistent `paperId → slug` map across upload + manifest.
+
+**Migration steps**
+1. Bind a custom domain (e.g. `papers.hsc.pebnum.com`) → `hsc-papers-and-resources` (R2 custom domain + DNS).
+2. Upload every paper's source PDF → `<subject>/papers/<slug>/paper.pdf` (all papers; unblocks raw-browse / FEATURE-8).
+3. Copy existing crops `hsc-podcast-audio/<subject>/papers/` → new bucket; reconcile with `hsc-questions` (dedupe, prefer complete). `rclone copy` (additive).
+4. Bake the 247 verified `split.json` → crops → new bucket (see bake fix below).
+5. Repoint app: `content/*/subject.json` → `assetBaseUrl = https://papers.hsc.pebnum.com`; keep `audioBaseUrl` on audio.hsc.pebnum.com. Check `generator.html` / `app.js` build crop URLs from `assetBaseUrl`.
+6. Point `upload_questions.py`, `sync_bucket.py` (+ deploy scripts) at `hsc-papers-and-resources` for papers; audio tooling unchanged.
+7. Cleanup (after verify — sync-deletes authorized by Fred): remove old paper crops from `hsc-podcast-audio`; fold `hsc-questions` in, then delete it. Do NOT delete `hsc-podcast-audio` (audio). Inventory `hsc-podcast` (54 GB, unknown owner) before touching.
+
+**BLOCKER — fix `bake_split.py` before any crop upload:**
+- **Page off-by-one:** `split.json` `page` is 1-based, but the bake uses it as 0-based for both `fitz.show_pdf_page(...)` and `info["pages"][page]`. Change both to `page-1`. *Verified:* unit `q1` baked as Question 4; rendering `page-1` gives the correct Question 1. Without this, **every crop is one page off.**
+- Only bakes `regions[0]` — must bake **all** regions (multi-page/continued questions lose content).
+- Resolve the source PDF via `_index.json` (paperId→current path), not the frozen `info.json` path (Fred reworked `papers/`; frozen paths go stale).
+- Add the two variants (with-lines / no-lines) from the `writingSpace` bands.
+
+_Not started — logged 2026-07-08. Bucket created; app currently still serves from hsc-podcast-audio._
+
+---
+
+## BUG-26 — "Download all voices" toggle doesn't back-propagate + no large-download warning
+
+**Type:** downloads / settings. **Severity:** medium. Two related gaps in the Settings →
+**"Download all voices"** toggle (`DOWNLOAD_ALL_VOICES_KEY`, `app.js` ~1687):
+
+1. **No back-propagation.** Ticking the box only sets the flag for *future* downloads
+   (`chosenVoiceNames` returns all voices when set). Episodes already saved to disk keep just
+   their single default voice — the extra voices are **never back-filled**. Expected: turning the
+   toggle on should download the missing voices for episodes that are already downloaded (walk the
+   saved-downloads records, fetch each episode's not-yet-cached voices, update its `voices` list).
+2. **No size warning.** Back-filling every voice across all saved episodes can be many GB. It
+   should **warn / confirm before downloading more than ~10 GB** of additional voice data
+   (estimate the extra bytes for the missing voices — cf. `estEpisodeBytes` / `EST_BYTES_PER_SEC` —
+   and gate on a confirm). If the user declines, revert the toggle so it reflects reality.
+
+Should also respect the existing mobile-data guard (`mayDownload`). Cross-ref: BUG-14 (module
+download state), BUG-15 (streaming vs download).
+
+## BUG-27 — Speed picker (≤2× screen-off mode): speed options open off-screen / can't be changed
+
+**Type:** UI / player. **Severity:** medium (you can't change speed at all in this mode). In the
+**low-speed / screen-off** playback mode the large slider is replaced by the dropdown speed picker
+(FEATURE-5, `#speed-picker-btn` / `buildSpeedPickerMenu`, presets 0.5·0.75·1·1.25·1.5·1.75·2). The
+menu of speed options **opens upward / off the top of the screen**, so the options are unreachable
+and the speed can't be changed. Fix direction: position the picker menu within the viewport (open
+downward, or clamp/flip it so it stays on-screen and scrollable). _Needs a screenshot to confirm
+which way it overflows._ Cross-ref: FEATURE-3 / FEATURE-5 (screen-off mode + dropdown picker).
+
+_Not started — logged 2026-07-08._
+
+---
+
+## FEATURE-12 — Usage telemetry: log user activity to a database
+
+**Type:** feature (analytics / instrumentation). **Severity:** medium — no visibility today into how
+the app is actually used; every product decision (which subjects/episodes matter, whether high-speed
+playback is used, where quizzes drop off) is currently guesswork.
+
+**Want.** Client-side event logging that writes to a **server-side database** so you can see *how* and
+*what* people use in the app — which subjects/episodes are opened, play/pause and completion, playback
+speed actually used, downloads, quiz/flashcard starts + grades, onboarding subject choices, PWA vs
+browser, install events, errors.
+
+**Direction (Cloudflare-native — the app already deploys on Cloudflare Pages, `deploy.sh`).**
+- **Ingest endpoint.** A small **Cloudflare Worker** (e.g. `/api/track` route, or a Pages Function) that
+  accepts batched JSON events over `POST` and writes them. Keep it same-origin so no CORS/adblock hit.
+- **Store.** Two sensible options — pick per query pattern:
+  - **Workers Analytics Engine** — purpose-built for high-write, low-cost event telemetry; query with the
+    GraphQL/SQL analytics API. Best if these are fire-and-forget metrics.
+  - **D1** (SQLite) — if you want to run arbitrary SQL / joins over raw events and keep full rows.
+  - (R2 for cheap raw-event archival is a third, if volume grows.)
+- **Client.** A tiny `track(event, props)` helper in `app.js` that buffers events and flushes on a timer
+  and on `visibilitychange`/`pagehide` via `navigator.sendBeacon` (survives backgrounding — matters on
+  iOS). Attach a random, rotating **anonymous client id** (localStorage), session id, app build/commit
+  (already surfaced via `_buildInfo`), and standalone-vs-browser. Instrument the existing choke points:
+  `loadEpisode`, play/pause, completion, `setSpeed`, download start/complete, quiz start + grade,
+  onboarding save, install prompt.
+- **Reliability.** Never block the UI; swallow failures; cap the buffer; drop (don't retry forever) on
+  repeated failure. Works alongside — not through — the sync path (`window.Sync`).
+
+**Privacy / consent (do not skip — this is collecting data about real users).**
+- Keep it **anonymous**: no names/emails, no free-text, no precise content — event names + coarse props
+  only. Rotate the client id; don't join it to the sync account id.
+- **Opt-out (decided by Fred):** telemetry is **ON by default**; add a **Settings toggle to opt out**
+  ("Share anonymous usage data", checked by default) — logging runs unless the user unticks it. Persist
+  the choice to a `localStorage` key and check it in `track()` before buffering/sending. Also honour
+  Do-Not-Track / `navigator.connection.saveData` where present.
+- Respect the mobile-data posture already in the app (BUG-15) — telemetry beacons are tiny, but don't
+  fire chatty logging on a metered link.
+- Note it in a short privacy blurb; if any non-anonymous field is ever added, that changes the consent
+  requirement.
+
+**Open calls for Fred.** (1) Analytics Engine vs D1 (metrics dashboards vs raw-SQL exploration).
+(2) Event taxonomy — the specific list of events/props worth logging.
+_(Decided: opt-out — telemetry on by default, Settings toggle to disable.)_
+
+_Not started — logged 2026-07-08._
+
+---
+
+## FEATURE-13 — In-app feedback box (free text → database Fred can read)
+
+**Type:** feature (feedback). **Severity:** medium — no way today for users to tell you what's broken or
+what they want; pairs with FEATURE-12 (usage telemetry) but is **explicit, user-initiated** input.
+
+**Want.** A **feedback box** somewhere in the app where a user can type **plain text** and send it; the
+message lands in a **database Fred can read**.
+
+**Direction.**
+- **UI.** A "Send feedback" entry in **Settings** (simplest home) opening a small sheet: a `<textarea>`
+  + Send button, with a short "thanks" confirmation and error/retry on failure. Keep it one field —
+  free text only. (Optional later: a category chip — bug / idea / other.)
+- **Backend.** Reuse the **same Cloudflare Worker / Pages Function** stood up for FEATURE-12, with a
+  separate `/api/feedback` route writing to its own table/dataset. **D1** is the better fit here than
+  Analytics Engine (you want to *read individual messages*, not aggregate metrics) — one `feedback`
+  table: `id, created_at, message, app_build, standalone, anon_client_id, user_agent`. Reading = a
+  simple `SELECT … ORDER BY created_at DESC` (via `wrangler d1 execute` or a tiny admin view).
+- **Context to attach (no PII).** App build/commit (`_buildInfo`), standalone-vs-browser, the anonymous
+  client id (so you can tie feedback to a session if the telemetry backend is on), locale/timezone.
+  **No name/email** unless the user volunteers one in the text.
+- **Abuse/robustness.** Cap length (e.g. ≤4 KB), trim empties, basic rate-limit on the Worker, and
+  submit via `fetch` (this is a deliberate user action, so a spinner + success/fail is fine — no need
+  for `sendBeacon`). Don't block the UI; swallow nothing silently — show the user if it failed.
+
+**Open calls for Fred.** (1) Where the entry point lives (Settings vs a floating "Feedback" button).
+(2) Whether to offer an optional contact field so you can reply. (3) Whether to add the category chip.
+
+_Not started — logged 2026-07-08._
+
+---
+
+## FEATURE-14 — Generator toggles: view all past papers · in-syllabus only · build custom paper from multiple tests
+
+**Type:** feature (past-paper generator UX). **Severity:** medium. **Overlaps FEATURE-8** (raw-browse vs
+build-paper mode toggle) and **FEATURE-7 / FEATURE-11** (current-syllabus filtering via
+`tools/syllabus_cutoffs.json` / the organized papers contract) — **build these together, not twice.**
+This entry pins the exact toggles Fred asked for.
+
+**Want — three controls in the generator (`generator.html`):**
+
+1. **Mode toggle: "View all past papers" vs "Build custom paper".** (= FEATURE-8's top-level segmented
+   control.) *View* = list every whole past paper as-is → open to view/print the full paper (+ solutions
+   once that pipeline lands). *Build* = the existing custom-assembly flow.
+2. **In-syllabus toggle.** Filter to **current-syllabus papers only** vs **all papers (incl. old
+   syllabus)**. Drive it off the syllabus cutoffs (`tools/syllabus_cutoffs.json` /
+   `papers_organized/_MANIFEST.json` buckets: `Papers/**` = current, `Archive-pre-<cutoff>` = old — see
+   FEATURE-7). Default **in-syllabus on**. Applies in both modes: hides pre-cutoff papers from the browse
+   list, and excludes their questions from custom-paper generation unless toggled off.
+3. **Build custom practice paper from multiple tests.** In build mode, let the user assemble one practice
+   paper drawing questions from **multiple source papers/tests at once** (mixed by topic/marks/recipe),
+   not just one paper — the multi-paper question bank the generator already assembles.
+
+**Direction.**
+- Put the mode toggle at the top (segmented, like FEATURE-8: **All papers | Build paper**), and the
+  in-syllabus toggle in the left-rail filters alongside school/year/type.
+- The in-syllabus filter is one predicate over the paper's bucket/year; apply it to both the browse list
+  and the question pool so the two modes stay consistent.
+- Multi-test build is largely the existing basket/recipe flow — just make sure the source-paper facet
+  allows selecting across papers rather than scoping to one.
+- Cross-refs: **FEATURE-8** (mode toggle + home for old-syllabus whole papers), **FEATURE-7** (organized
+  papers contract + cutoffs), **FEATURE-11** (paper-asset bucket / raw `paper.pdf` for whole-paper view),
+  **BUG-25** (generator iOS layout).
+
+**Open call for Fred.** Confirm whether FEATURE-14 simply *is* FEATURE-8 with the added in-syllabus
+toggle (merge into one build) or should stay tracked separately.
+
+_Not started — logged 2026-07-08._
+
+---
+
+## FEATURE-15 — Guided onboarding walkthrough (how to use the app)
+
+**Type:** feature (onboarding / first-run). **Severity:** medium — new users land with no idea what the
+app can do; a short guided tour raises activation. **Builds on FEATURE-6** (first-run subject picker) —
+this is the *next* step after subjects are chosen, a walkthrough of the core features. Keep the two as
+one onboarding flow, not two competing first-run experiences.
+
+**Want.** A first-run guided walkthrough that shows the user, step by step, how to:
+
+1. **Install the app** — how to download/install the PWA to the home screen (the platform-specific
+   "Add to Home Screen" step; reuse the existing install prompt / `updateInstallUI`).
+2. **Make an account / log in** — how to sign in so progress syncs across devices (ties to `window.Sync`
+   / the sign-in flow).
+3. **Download past papers** — where to find and save papers for offline use.
+4. **Generate a custom paper** — how to build a practice paper in the generator (cf. FEATURE-8/FEATURE-14).
+5. **Play audio** — how to start an episode, and the speed controls (incl. screen-off vs high-speed modes,
+   FEATURE-3/FEATURE-5).
+6. **How the quizzes work** — the flashcard/quiz + spaced-repetition review loop (recall vs MC, cf.
+   BUG-21 / FEATURE-7 decks).
+7. **Settings** — end by **taking them to the Settings tab** so they see where preferences live (default
+   voice, screen-off mode, download-all-voices, feedback, opt-out telemetry, etc.).
+
+**Direction.**
+- A dismissible **step-through coach-mark / tooltip tour** (spotlight each target control with a short
+  caption + Next/Skip), or a simple sequence of intro cards if per-element anchoring is too fragile on
+  mobile. Ends by opening the Settings sheet.
+- Trigger on first run (after FEATURE-6's subject pick) — gate on a `localStorage` flag (e.g.
+  `podcast-toured`) so it shows once; add a **"Replay walkthrough"** entry in Settings to see it again.
+- Each step should be **skippable** and the whole tour dismissible at any point; never block the app.
+- Steps must degrade gracefully when a target isn't present (e.g. install step hidden if already
+  installed / unsupported; account step reflects signed-in state).
+- Cross-refs: **FEATURE-6** (first-run picker — sequence this right after it), **FEATURE-9** (auto-sync,
+  for the login step's payoff), **FEATURE-3/5** (playback modes), **FEATURE-8/14** (generator),
+  **FEATURE-12/13** (settings items the tour points at).
+
+**Open calls for Fred.** (1) Coach-mark spotlight tour vs plain intro-card carousel (spotlight is nicer
+but fiddlier on iOS). (2) Whether the login/account step is mandatory or skippable at onboarding.
+
+_Not started — logged 2026-07-08._
+
+---
+
+## BUG-28 — High-speed engine makes audio unintelligible
+
+**Type:** audio engine. **Severity:** medium–high (defeats the point of high-speed listening — you can't
+make out the words). Turning on the **high-speed engine** in Settings (the Web Audio pitch-preserving
+speed engine, `speed-engine.js`, intent key `podcast-hs-engine` — the "alt/ultra high-speed" option)
+makes the narration sound **unintelligible / heavily distorted**, not just fast. The words smear rather
+than staying crisp.
+
+**Likely cause.** The WSOLA / time-stretch DSP in the worklet degrades at speed — frame/overlap or
+window parameters produce artefacts (metallic/warbly smearing) that wreck intelligibility even at
+moderate multipliers. Same subsystem as **BUG-22** (dropouts at ~7×) and **BUG-10** (Media Session vs
+AudioContext), but this is a **quality/clarity** fault, not a dropout or control-routing one.
+
+**Suggested resolution (Fred, 2026-07-08).** With the **high-speed-engine tick box _un_ticked**, fast
+playback actually **sounds better** (native `<audio>.playbackRate` — crisp, just pitch-shifted). So the
+preferred fix is to **stop routing normal high-speed listening through the special engine** — i.e.
+default it **off** / de-emphasise it so the clear native path is what users get by default.
+**Do NOT remove the high-speed engine entirely** — it's very good and must stay available (kept as an
+opt-in for the very top speeds / pitch preservation where native can't reach). Net: keep the capability,
+change the default so unticked (native) is the norm.
+
+**Fix direction (needs on-device listening — can't be tuned blind).**
+- **Default the high-speed engine OFF** and make native playback the standard high-speed path; leave the
+  engine as an explicit opt-in tick box for users who want the extreme speeds it enables. (Mind the
+  existing default/migration in FEATURE-3 so this doesn't fight the screen-off-mode default.)
+- Separately, still worth profiling/tuning the engine's time-stretch params (analysis/synthesis frame
+  size, overlap/hop, search window) for clarity when it *is* on — consider speed-dependent parameters, or
+  a better time-stretch algorithm/library if WSOLA can't be made clean.
+- Verify at 1.5×, 2×, 3×, 5× — clarity likely varies a lot across the range.
+
+Cross-refs: **BUG-22** (dropouts/underruns at high tempo), **BUG-10** (headphone/lock-screen pause),
+**FEATURE-3** (screen-off native vs high-speed engine toggle + its default/migration).
+
+_Not started — logged 2026-07-08._
+
+---
+
+## FEATURE-16 — Settings: adjust visible subjects (units-aware, not enforced)
+
+**Type:** feature (subject hub / settings). **Severity:** high (scaling blocker — the catalogue is
+growing to **hundreds of subjects**, so a persistent way to curate which ones show is essential).
+**Extends FEATURE-6** (first-run searchable subject picker, which already saves to `podcast-subjects` and
+exposes an "Edit subjects" entry in Settings) — this makes that Settings control first-class and
+**units-aware**. Build on FEATURE-6's picker; don't create a second one. Pairs with **FEATURE-10**
+(drag-reorder the chosen subjects).
+
+**Want.**
+- An **active Settings control** to add/remove which subjects are visible on the hub — a searchable
+  checklist over the full (hundreds-strong) catalogue, filtering the hub to the selected set (persisted
+  to `podcast-subjects`, ideally synced — FEATURE-9).
+- **Units awareness.** HSC subjects carry a **unit value** (most 2 units; Extension/1-unit courses = 1).
+  A typical student takes **~12 units**, so show a **running units tally** of the current selection as
+  gentle guidance (e.g. "10 / 12 units").
+- **Do NOT enforce the 12-unit cap.** It's informational only — **some people take more**, so never block
+  or hard-limit selection; at most a soft, dismissible hint if they go well over.
+
+**Direction.**
+- Add a `units` field per subject in `content/<subject>/subject.json` (default 2; 1 for Extension/1-unit
+  courses) and surface it through `manifest.json`.
+- In the picker/settings UI, sum `units` across selected subjects and display the tally live; keep it a
+  label, not a gate — selection stays unrestricted.
+- Reuse FEATURE-6's picker component for both first-run and the Settings edit path so there's one
+  implementation; compose with FEATURE-10 (order) so editing the selection doesn't clobber the saved order.
+- Cross-refs: **FEATURE-6** (searchable picker + `podcast-subjects`), **FEATURE-10** (reorder),
+  **FEATURE-9** (sync the selection), **FEATURE-15** (onboarding walkthrough can point at this control).
+
+**Open call for Fred.** Whether to show any soft over-12-units nudge at all, or omit the warning entirely
+and just display the tally.
+
+_Not started — logged 2026-07-08._
+
+---
+
+## BUG-29 — _(merged into BUG-25)_
+
+Merged into **BUG-25** on 2026-07-08 — same root cause (the generator back button is obscured under the
+iOS status-bar/notch and so isn't clickable). See BUG-25 for the description and fix. Number retained to
+avoid renumbering / concurrent-session collisions.
+
+## BUG-30 — Software Engineering: two revision-deck headings show as blank podcast episodes — remove from podcast list, keep flashcards
+
+**Type:** content / UI. **Severity:** medium. In **Software Engineering** there are **two revision-deck
+sections/headings** — **"Memorisation"** (`MEM-*`) and **"Episode Content"** (`EPC-*`) — that surface in
+the **podcast/episode list** but have **no content in the podcast content area** (no audio, only a stub
+`script.md`). So opening one shows a **blank podcast** — the cards live in the Quiz/flashcards tab, but
+the episode itself is empty.
+
+**Want (Fred).** **Remove the two headings from the podcast listing** so they no longer appear as blank,
+audio-less episodes. **Keep the flashcards** — the MEM/EPC cards must stay available in the
+flashcard/review system; only their appearance as empty *podcast* entries should go.
+
+**So:** don't delete the deck content — just stop rendering these card-only decks as podcast episodes.
+
+**Fix direction.**
+- Stop the `MEM-*` / `EPC-*` (audio-less, card-only) modules from rendering as podcast sections/episodes
+  in the Software hub — drop the two "Revision decks" headings from the episode/podcast browse view.
+- Preserve the cards in the flashcard path: they must still feed the Quiz/review decks (cf. FEATURE-7's
+  deck tagging / "Review deck" setting), just not appear as playable episodes.
+- Likely touch points: the "Revision decks" grouping in `content/software/subject.json` (`groupNames` /
+  year bucket that promotes MEM+EPC into two sections) and the render path that lists modules as
+  episodes; or gate audio-less modules out of the podcast list while keeping them in the card pool.
+- Cross-refs: **FEATURE-7** (MEM/EPC card-only deck design — keep the cards), **BUG-3** (hide play
+  controls for non-audio entries — related rendering gap for card-only content).
+
+_Not started — logged 2026-07-08._
+
+---
+
+## BUG-31 — Quiz progress bar: empty/unfilled track invisible (esp. light mode)
+
+**Type:** UI / theming. **Severity:** low–medium (you can't gauge how far through the quiz you are — the
+bar's full length isn't visible). In the quiz UI the **progress bar's unfilled track can't be seen**, so
+the bar reads as "empty" / not there — most notably in **light mode**. The blue fill
+(`.quiz-progress-fill`, `var(--accent)`) shows, but the **track behind it is too low-contrast** to see.
+
+**Cause (confirmed in code).** `.quiz-progress-track` (`style.css:1405`) is only **3px tall** with
+`background: var(--border)`. In light mode `--border` is `#d8d8dc` on a `#ffffff` page background — barely
+distinguishable — so the empty portion of the bar is effectively invisible. (Dark mode `--border`
+`#2c2c2e` on `#121212` is also low-contrast, but the report centres on light mode.)
+
+**Fix direction.**
+- Give the track a more visible background than `var(--border)` — e.g. a dedicated track token, or a
+  translucent overlay (`rgba` of the text colour) that reads in both themes — and/or bump the height
+  (3px → ~5–6px) so the unfilled portion is discernible.
+- Verify the full bar length is visible in **both** light and dark before/at 0% progress.
+- Check the sibling bars that share the pattern (`.module-progress-track` / `.ep-progress-track`, same
+  `var(--border)` track) don't have the same low-contrast issue.
+
+_Not started — logged 2026-07-08._
+
+---
+
+## BUG-32 — Flashcards panel can't be closed unless scrolled to the top; needs an always-reachable grab handle
+
+**Type:** UI / gesture. **Severity:** medium (you can get stuck in the panel after scrolling). The
+**flashcards panel** (sheet overlay) can **only be closed from the top** — the ✕ and the swipe-to-dismiss
+both live in the header. Once you've **scrolled down** inside the panel, the header and ✕ are off-screen,
+so there's **no way to close it without scrolling all the way back up**.
+
+**Cause (confirmed in code).** `enableSheetDismiss()` (`app.js:183`) only starts the swipe-down-dismiss
+drag when the touch begins on the header (`if (!e.target.closest(".q-head, .stats-header")) return;`) — it
+deliberately excludes the scrollable list/body so a scroll gesture isn't hijacked. Correct for the body,
+but it means the **only** dismiss affordances (✕ + header drag) scroll out of reach.
+
+**Want (Fred).**
+- Add an **always-reachable grab handle** — a grabber/pill **in the middle** (i.e. persistent, not only at
+  the very top) that you can **grab and swipe down** to dismiss the panel from anywhere, without scrolling
+  up. (A sticky handle that stays put as the content scrolls.)
+- **Keep the ✕ close button** as well, **especially for iOS**.
+- **iOS may warrant a different design** — Fred noted "iOS might have a different design with the
+  toaster." _⚠️ "toaster" is ambiguous (transcription) — needs clarifying: likely a sticky bottom
+  bar / distinct sheet chrome for iOS? Confirm before building the iOS variant._
+
+**Fix direction.**
+- Add a fixed/sticky **drag handle** element to the sheet (a small centred grabber pill) that stays
+  visible as the body scrolls; wire the existing dismiss-drag (`touchstart/move/end`, `dy > 90` →
+  `closeSheet`) to *that* handle so it works regardless of scroll position — without re-enabling
+  drag-to-dismiss on the scrollable body (which would fight scrolling).
+- Optionally also keep a compact ✕ pinned (sticky header) so a tap-close is always available too.
+- Applies to the shared sheet component (`enableSheetDismiss` / `.stats-panel`), so verify the change
+  doesn't regress the other sheets (Stats, Review, Queue, Settings). Cross-ref: **BUG-1** (sheet
+  scroll-lock), and the Review-overlay Exit note in `quiz-issues.md` → Q3.
+
+_Not started — logged 2026-07-08._
+
+---
+
+## BUG-33 — Papers browse shows (almost) only HSC/NESA papers; trial & other-source papers dropped or mis-typed — SYSTEMATIC across subjects
+
+**Type:** content pipeline / data classification. **Severity:** high (whole categories of downloaded
+papers are invisible in the app). **Reported (Fred):** for **English Standard**, the app looks like it
+**only has HSC papers**, even though trial/other papers were **downloaded from various other websites**
+(ACE / thsconline / school trials).
+
+**What the data shows (investigated 2026-07-08).** Each subject's browse list comes from
+`content/<subject>/papers-index.json` (loaded by `generator.html` ~L898, browse mode). Papers carry a
+`type`: `nesa` (official HSC), `thsc` (trial HSC), `exam` (other exams/assessments), `notes`, `marking`.
+- **`english-standard`**: `nesa: 50, exam: 165, notes: 26` — **zero `thsc` (trial) papers**, and its
+  `exam` bucket is mostly **ACE _assessment_ tasks** (essays/speeches/creative writing, e.g.
+  `ace-assessment-…`), **not** trial exam papers. So the only real *papers* are the 50 NESA/HSC ones →
+  "only HSC".
+- Real trial papers **do exist on disk** but don't surface: raw `papers/English Standard/ACE-Trial/`
+  has school trials (2015 All Saints, Casino, Hurlstone, James Ruse, Ryde; 2019 Baulkham Hills, Sydney
+  Grammar), yet `papers_organized/English Standard/Papers/Trial/` holds only **3** (the pre-2019 ones
+  were archived to `Archive-pre-2019` by the syllabus cutoff).
+
+**Two systematic causes (both need confirming):**
+1. **Mis-classification.** Trial/other-source papers get typed `exam` (lumped with assessment essays) or
+   not recognised as trials — no `thsc` type is assigned for the English subjects. School/source and
+   year are also junk (derived from filenames — see the garbage `school` values in the index).
+2. **Cutoff archiving hides trials.** The syllabus cutoff (`tools/syllabus_cutoffs.json`) archives
+   pre-cutoff papers; English Standard's cutoff (2019) sends the bulk of the ACE trial set (2015) to
+   `Archive-pre-*`, so the browsable trial set is nearly empty even though the files exist.
+
+**Same error is systematic — cross-subject scan (do NOT treat as English-only):** subjects whose
+`papers-index.json` is **all/only NESA-HSC with no trials** — **`english-eal-d`** (72, all `nesa`),
+**`english-studies`** (14, all `nesa`) — plus the English family where trials collapse into `exam`:
+**`english-advanced`** (`nesa:51, exam:619, notes:140` — **no `thsc`**) and **`english-standard`**
+(above). Contrast the sciences/maths, which correctly carry big `thsc` trial buckets (physics 256,
+chemistry 249, maths-ext1 1066). So the fault clusters in the **English subjects** (and the
+`nesa`-only ones) where the classifier never emits `thsc`.
+
+**Action (Fred's ask — audit every subject).** Have the papers/parser agent **audit all subjects** for
+this: (a) trials mis-typed as `exam` or missing entirely; (b) subjects reduced to NESA-only; (c) whether
+the cutoff is wrongly hiding still-relevant trials. Fix the classifier so trials → `thsc` and only true
+assessments → `exam`, recover source/school/year from the organized layout (not filename guessing —
+cf. FEATURE-7 / FEATURE-11 organized contract), and re-evaluate cutoffs for the English subjects.
+
+**Fix touch points.** The index/classification stage that builds `content/<subject>/papers-index.json`
+(the `type`/`school`/`year` assignment), `tools/organize_papers.py` + `tools/syllabus_cutoffs.json`
+(bucketing/cutoffs), and confirm `generator.html` browse surfaces every non-`notes` type. Cross-refs:
+**FEATURE-7** (organized papers contract — source of clean type/school/year), **FEATURE-11** (paper-asset
+bucket + raw `paper.pdf`), **FEATURE-14** (in-syllabus toggle — depends on correct cutoff/type),
+**BUG-11** (another content-classification/order fault).
+
+_Not started — logged 2026-07-08._
+
+---
+
+## BUG-34 — Phantom generic "English" subject in the paper generator (should be split into the real courses)
+
+**Type:** content pipeline / data. **Severity:** medium–high (a non-existent HSC course shows in the
+generator, and it's hoarding the trials that belong to the real English courses). **Reported (Fred):**
+there is **no "English" HSC course — only the typed courses** (Standard, Advanced, EAL/D, Extension 1,
+Extension 2, Studies). Yet the generator lists a plain **"English"** subject.
+
+**What it is (investigated 2026-07-08).** `content/paper-subjects.json` has an entry
+`{id:"english", name:"English", papers:404, hasQuestions:true}` alongside the real
+`english-standard` / `english-advanced` / etc. It's a **browse-only bucket** — `content/english/` has
+only `papers-index.json` + `questions.json`, **no `subject.json`** — so it's not a real subject, just a
+paper pile that leaks into the generator's subject dropdown.
+
+**Why it exists / why it matters.** It's the scraper's **generic English catch-all**: `papers/English/`
+is split `Y12-HSC`, `Y12-Trial-P1`, `Y12-Trial-P2-Adv`, `Y12-Trial-P2-Std`. **Paper 1 (Texts & Human
+Experiences) is common to Standard _and_ Advanced**, so source sites (thsconline) file those trials under
+plain "English" rather than a specific course. Result: **404 papers, 391 of them `thsc` trials**
+(2001–2025) sit here — **almost certainly the missing trials from BUG-33** (why `english-standard` /
+`english-advanced` have zero `thsc`).
+
+**Fix direction.**
+- **Reassign** the generic-English papers into the real courses: Paper 1 / common-module trials → both
+  **English Standard** and **English Advanced** (shared); Paper 2 splits already labelled `-p2-std` /
+  `-p2-adv` → the matching course; EAL/D / Extension where identifiable.
+- Then **remove the phantom `english` subject** from `content/paper-subjects.json` (and its
+  `content/english/` bucket) so only real courses appear.
+- Where a Paper 1 genuinely can't be attributed to one course, decide a rule (surface under both, or a
+  labelled "English (common Paper 1)" grouping) rather than a fake top-level subject.
+- Fixes the root of **BUG-33** for the English family. Cross-refs: **BUG-33** (trials missing/mis-typed),
+  **FEATURE-7 / FEATURE-11** (organized papers contract + correct subject attribution).
+
+_Not started — logged 2026-07-08._
+
+---
+
+## BUG-35 — Paper generator layout is badly organized on phone (wasted space, sparse filters)
+
+**Type:** UI / iOS. **Severity:** medium (looks unpolished and wastes the small screen; filters are hard
+to use). **Reported (Fred) with screenshot (iPhone, "Build a paper" tab, English Standard).** The
+generator (`generator.html`) is **poorly laid out on a phone** — a long, sparse vertical scroll.
+
+**Concrete problems in the screenshot.**
+- **Large wasted vertical whitespace** — a big empty gap between "Clear all filters" and the
+  "111 questions match" results row; the filter column is mostly air.
+- **Sparse single-item filter sections stacked tall** — SYLLABUS / SOURCE / YEARS / EXTRAS each show
+  just one chip (e.g. SOURCE = a lone "HSC"), each taking a full row + heading. Wastes space and buries
+  the results far down the page. Could be a compact filter bar / collapsible row / two-column layout on
+  mobile.
+- **Theme toggle (half-moon) floats awkwardly** next to the subject dropdown, unlabelled and cramped.
+- **Question-row titles truncated** ("Unclass…") — the topic label is clipped so rows aren't
+  distinguishable at a glance.
+
+**Also surfaced by this screen (data, not layout — cross-refs):**
+- SOURCE offers **only "HSC"** for English Standard → confirms **BUG-33** (no trial/other sources).
+- SYLLABUS is **"Unclassified" ×111** → English Standard questions carry **no syllabus-outcome tags**, so
+  the syllabus filter is useless here (worth its own look — question tagging gap; relates to BUG-33's
+  classification theme).
+
+**Fix direction.** Rework the generator's mobile layout: collapse the filter sections into a compact,
+space-efficient control (sticky filter bar or accordion), remove the dead vertical space so results
+appear without a long scroll, give the theme toggle a proper home, and let question titles wrap/ellipsis
+sensibly (show enough to distinguish). Verify on a real iPhone. **Related: BUG-25** (generator iOS layout
+messy + back button under status bar — same page, treat together), **BUG-2 / BUG-5** (generator UI /
+dark mode on iOS).
+
+_Not started — logged 2026-07-08._
+
+---
+
+## BUG-36 — Audio can't be resumed after pausing while the screen is off
+
+**Type:** audio / playback. **Severity:** high (you can't restart playback without waking the phone —
+breaks screen-off / pocket listening, the core use case). **Reported (Fred).** If you **pause** an
+episode while the **screen is off** (phone locked / in pocket), you then **can't resume** it. The same
+pause→resume works fine when the **screen is on**. So resume is specifically broken in the
+locked/background state.
+
+**Likely cause (needs on-device confirmation).** Resuming audio from a **backgrounded / locked** iOS
+context has to come through the **Media Session** lock-screen/headphone control (a real user gesture the
+OS accepts) — an in-page `audio.play()` fired from a background timer/handler is **rejected** because it
+isn't a foreground user gesture, and the audio session may have been suspended by the OS on lock. If the
+Media Session `play` handler isn't wired to the app's real resume path (or the lock-screen controls
+aren't kept live while paused), pressing play with the screen off does nothing; waking the screen gives a
+foreground gesture, so it works there. Same subsystem as **BUG-10** (Media Session play/pause routing)
+and **BUG-22** (AudioContext suspends in background and doesn't resume — partially addressed by auto-
+resume on `visibilitychange`, commit `48dd671`, but that fires on *wake*, not while still off).
+
+**Fix direction (device-specific — can't verify blind).**
+- Ensure the Media Session **`play` handler resumes through the same engine-aware toggle** the on-screen
+  button uses, and keep `navigator.mediaSession.playbackState` accurate while paused so the lock-screen
+  play button stays live and routable.
+- Keep the audio session/element alive across a screen-off pause (don't fully tear down on lock) so a
+  lock-screen play can restart it; resume any suspended AudioContext from the Media Session gesture, not
+  only on `visibilitychange`.
+- Verify on the **native** path specifically — playback is now always native (`<audio>`, commit
+  `410a382`), so this is about the native element + Media Session in the locked state, not the retired
+  Web Audio engine. Test: play → lock screen → pause from lock screen/headphones → press play from lock
+  screen; must resume without waking.
+
+Cross-refs: **BUG-10** (headphone/lock-screen pause not routed), **BUG-22** (AudioContext background
+suspend/resume), **FEATURE-3** (screen-off native playback mode — this is that mode's core promise).
+
+_Not started — logged 2026-07-09._
