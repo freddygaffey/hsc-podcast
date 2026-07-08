@@ -2095,6 +2095,7 @@
     markOnboarded();
     closeSheet(subjectsOverlay);
     renderSubjects();
+    maybeWalkthrough();   // FEATURE-15: show the tour right after first-run subject picking
   }
   if (subjectsSearch) subjectsSearch.addEventListener("input", () => renderSubjectPicker(subjectsSearch.value));
   if (subjectsPickSave) subjectsPickSave.addEventListener("click", () => {
@@ -2111,10 +2112,46 @@
   }
   // Trigger the first-run picker once the manifest is loaded and we're on the subject grid.
   function maybeOnboard() {
-    if (isOnboarded()) return;
-    if (!fullManifest || fullManifest.subjects.length <= 1) { markOnboarded(); return; }
+    if (isOnboarded()) { maybeWalkthrough(); return; }
+    if (!fullManifest || fullManifest.subjects.length <= 1) { markOnboarded(); maybeWalkthrough(); return; }
     if (viewSubjects && !viewSubjects.hidden) openSubjectPicker(true);
+    else maybeWalkthrough();
   }
+
+  // FEATURE-15: quick "how to use the app" walkthrough.
+  const WALKTHROUGH_KEY = "podcast-walkthrough-seen";
+  const walkthroughOverlay = document.getElementById("walkthrough-overlay");
+  const WT_STEPS = [
+    { e: "👋", t: "Welcome to HSC Study", x: "Podcasts, quizzes and past papers for your HSC subjects — all in one place." },
+    { e: "📚", t: "Your subjects", x: "Pick the subjects you study on the home screen. Add/remove them any time in Settings → Subjects, and drag a tile to reorder." },
+    { e: "🎧", t: "Listen your way", x: "Play an episode and set the speed — it goes well past normal and keeps playing with the screen off. Tap ⌄ to shrink the player." },
+    { e: "🧠", t: "Quiz yourself", x: "Every episode has a quiz, and your daily quiz keeps knowledge fresh with spaced repetition." },
+    { e: "📄", t: "Past papers", x: "Open a subject's Paper Generator to browse whole past papers (filter by year/school), or build a custom practice paper from real questions." },
+    { e: "☁️", t: "Sync your progress", x: "Log in under Settings → Sync and your progress follows you to any device." },
+  ];
+  let wtStep = 0;
+  function renderWtStep() {
+    const s = WT_STEPS[wtStep];
+    document.getElementById("wt-emoji").textContent = s.e;
+    document.getElementById("wt-title").textContent = s.t;
+    document.getElementById("wt-text").textContent = s.x;
+    document.getElementById("wt-dots").innerHTML = WT_STEPS.map((_, i) => `<span class="wt-dot${i === wtStep ? " on" : ""}"></span>`).join("");
+    document.getElementById("wt-next").textContent = wtStep === WT_STEPS.length - 1 ? "Done" : "Next";
+  }
+  function openWalkthrough() { if (!walkthroughOverlay) return; wtStep = 0; renderWtStep(); openSheet(walkthroughOverlay); }
+  function finishWalkthrough() { try { localStorage.setItem(WALKTHROUGH_KEY, "1"); } catch (e) {} closeSheet(walkthroughOverlay); }
+  function maybeWalkthrough() { if (localStorage.getItem(WALKTHROUGH_KEY) !== "1") openWalkthrough(); }
+  if (walkthroughOverlay) {
+    document.getElementById("wt-next").addEventListener("click", () => {
+      if (wtStep >= WT_STEPS.length - 1) finishWalkthrough(); else { wtStep++; renderWtStep(); }
+    });
+    document.getElementById("wt-skip").addEventListener("click", finishWalkthrough);
+    const x = walkthroughOverlay.querySelector(".sheet-close");
+    if (x) x.addEventListener("click", finishWalkthrough);
+    walkthroughOverlay.addEventListener("click", (e) => { if (e.target === walkthroughOverlay) finishWalkthrough(); });
+  }
+  const btnWalkthrough = document.getElementById("btn-walkthrough");
+  if (btnWalkthrough) btnWalkthrough.addEventListener("click", () => { closeSheet(settingsOverlay); openWalkthrough(); });
 
   // The per-subject hub: one level below the subject grid. Splits a subject into its
   // three modes — Podcasts, Quizzes, Past Papers — each opening its own surface.

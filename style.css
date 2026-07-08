@@ -1713,6 +1713,18 @@ body.sheet-open {
 }
 .subjects-edit-link:hover { color: var(--accent); background: var(--accent-soft); }
 
+/* FEATURE-15: how-to-use walkthrough */
+.walkthrough-panel { text-align: center; max-width: 460px; }
+.wt-body { padding: 24px 10px 6px; }
+.wt-emoji { font-size: 46px; line-height: 1; margin-bottom: 12px; }
+.wt-title { font-size: 20px; font-weight: 700; margin: 0 0 10px; }
+.wt-text { font-size: 15px; color: var(--text-dim); line-height: 1.5; margin: 0; }
+.wt-dots { display: flex; justify-content: center; gap: 7px; margin: 22px 0 16px; }
+.wt-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--border); }
+.wt-dot.on { background: var(--accent); }
+.wt-actions { display: flex; gap: 10px; }
+.wt-next { flex: 1; }
+
 /* ── Stats: daily chart + voice breakdown ───────────────── */
 .stats-section-title { margin-top: 24px; }
 .day-chart {

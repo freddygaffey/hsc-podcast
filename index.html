@@ -234,6 +234,10 @@
       </div>
       <p class="setting-hint">Short steps a new card repeats before graduating, e.g. “1m 10m” or “5m 30m 1h”. Use m / h / d for minutes, hours, days.</p>
 
+      <h3 class="settings-section">Help</h3>
+      <button id="btn-walkthrough" class="setting-btn">How to use the app</button>
+      <p class="setting-hint">A quick tour of the main features.</p>
+
       <h3 class="settings-section">Subjects</h3>
       <button id="btn-choose-subjects" class="setting-btn">Choose subjects (re-run setup)</button>
       <p class="setting-hint">Re-opens the first-run onboarding picker. Search and tick the subjects you study; only those show on your home screen, the rest stay hidden until you add them.</p>
@@ -256,6 +260,22 @@
         <button type="button" id="build-version" class="setting-value setting-build" aria-label="App build — tap to show what changed">—</button>
       </div>
       <p class="setting-hint" id="build-message" hidden></p>
+    </div>
+  </div>
+</div>
+
+<div id="walkthrough-overlay" class="stats-overlay" hidden>
+  <div class="stats-panel walkthrough-panel" role="dialog" aria-modal="true" aria-label="How to use the app">
+    <button class="sheet-close" aria-label="Close">&#10005;</button>
+    <div class="wt-body">
+      <div class="wt-emoji" id="wt-emoji">👋</div>
+      <h2 class="wt-title" id="wt-title"></h2>
+      <p class="wt-text" id="wt-text"></p>
+    </div>
+    <div class="wt-dots" id="wt-dots"></div>
+    <div class="wt-actions">
+      <button id="wt-skip" class="setting-btn-plain">Skip</button>
+      <button id="wt-next" class="setting-btn wt-next">Next</button>
     </div>
   </div>
 </div>
