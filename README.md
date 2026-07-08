@@ -9,6 +9,32 @@ lives under `content/`, the app shell is the root `index.html` / `app.js` /
 This repo also includes tooling to bulk-download **HSC past exam papers** (see
 below), used as source material.
 
+## By the numbers
+
+Episodes and script content, by subject:
+
+| Subject | Modules | Episodes | Script lines | Script words |
+|---------|:-------:|:--------:|-------------:|-------------:|
+| Software Engineering | 8 | 157 | 11,564 | 504,747 |
+| Physics | 8 | 87 | 9,268 | 484,434 |
+| Design & Technology | 6 | 48 | 2,568 | 105,115 |
+| **Total** | **22** | **292** | **23,400** | **1,094,296** |
+
+Totals across the project:
+
+| Metric | Amount |
+|--------|--------|
+| **Episodes** | **292** across 3 subjects |
+| **Script content** | ~23,400 lines / **~1.1 million words** — roughly **120 hours** of audio at speaking pace |
+| **Supplementary notes** | ~250,000 words on top of the scripts |
+| **Quizzes** | 219 |
+| **Rendered audio** | 2,398 files (~30 GB) |
+| **Hand-written code** | ~16,000 lines (app, parser tools, TTS scripts — JS, Python, CSS, HTML, shell) |
+
+Everything else in the tree — ~350k lines of generated JSON manifests, vendored
+libraries, and Python/Node dependencies — is machine-generated or downloaded, not
+authored here.
+
 ---
 
 # HSC Past-Paper Downloaders
