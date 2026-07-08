@@ -29,6 +29,8 @@
 
   // FEATURE-12: fire-and-forget usage telemetry (auth.js batches + posts to the backend).
   const track = (event, props) => { try { window.Telemetry && window.Telemetry.track(event, props); } catch (e) {} };
+  // BUG-30: audio-less card-only module prefixes — kept as flashcards, hidden from the podcast list.
+  const CARD_ONLY_PREFIXES = new Set(["MEM", "EPC"]);
 
   let fullManifest = null;       // { subjects: [...] } as loaded from manifest.json
   let currentSubject = null;     // id of the subject currently in view
@@ -188,11 +190,21 @@
     if (!panel) return;
     const closeBtn = panel.querySelector(".sheet-close");
     if (closeBtn) closeBtn.addEventListener("click", () => closeSheet(overlay));
+    // BUG-32: an always-reachable sticky grab handle — swipe it down OR tap it to close, from
+    // anywhere in the sheet (the ✕/header scroll out of view once you scroll the body).
+    if (!panel.querySelector(".sheet-grip")) {
+      const grip = document.createElement("div");
+      grip.className = "sheet-grip";
+      grip.setAttribute("role", "button");
+      grip.setAttribute("aria-label", "Close (drag down or tap)");
+      grip.addEventListener("click", () => closeSheet(overlay));
+      panel.insertBefore(grip, panel.firstChild);
+    }
     let startY = 0, dy = 0, dragging = false;
     panel.addEventListener("touchstart", (e) => {
-      // Swipe-down to dismiss still works from the header (bonus); the ✕ is the
-      // primary close. Never start a dismiss-drag on the scrollable list/rows.
-      if (!e.target.closest(".q-head, .stats-header")) { dragging = false; return; }
+      // Swipe-down to dismiss works from the sticky grip (always reachable) or the header.
+      // Never start a dismiss-drag on the scrollable list/rows.
+      if (!e.target.closest(".q-head, .stats-header, .sheet-grip")) { dragging = false; return; }
       startY = e.touches[0].clientY; dy = 0; dragging = true;
     }, { passive: true });
     panel.addEventListener("touchmove", (e) => {
@@ -2166,7 +2178,7 @@
     const id = encodeURIComponent(s.id);
 
     // Podcast episodes exclude the synthetic EXAM (past papers) module.
-    const podModules = s.modules.filter((m) => m.prefix !== "EXAM");
+    const podModules = s.modules.filter((m) => m.prefix !== "EXAM" && !CARD_ONLY_PREFIXES.has(m.prefix));
     const podEps = podModules.flatMap((m) => m.episodes);
     const podDone = podEps.filter((e) => progress[e.id] && progress[e.id].completed).length;
     const hasPapers = s.modules.some((m) => m.prefix === "EXAM");
@@ -2236,10 +2248,12 @@
     // Remember the mode so bare re-renders (search input, sync updates) keep it.
     if (mode) currentLibMode = mode;
     const papersMode = currentLibMode === "papers";
-    // Podcasts mode shows every module except the synthetic EXAM (past papers) module;
-    // papers mode shows only EXAM. A subject's library is one mode or the other.
+    // Podcasts mode shows every module except the synthetic EXAM (past papers) module and the
+    // card-only revision decks (MEM/EPC — audio-less; BUG-30). Their cards still load into the
+    // flashcard/quiz pool from the manifest; they just don't render as blank podcast episodes.
+    // Papers mode shows only EXAM. A subject's library is one mode or the other.
     const srcModules = manifest.modules.filter((m) =>
-      papersMode ? m.prefix === "EXAM" : m.prefix !== "EXAM");
+      papersMode ? m.prefix === "EXAM" : (m.prefix !== "EXAM" && !CARD_ONLY_PREFIXES.has(m.prefix)));
     const q = papersMode ? "" : ((libSearchInput && libSearchInput.value) || "").trim().toLowerCase();
 
     // Continue-listening banner — podcasts only, and hidden while searching (results are the focus).
