@@ -847,6 +847,16 @@
   }
   setupMediaSession();
 
+  // FEATURE-9: flush progress + push a sync when the app is hidden/backgrounded (session end),
+  // so it lands on the server even if the 4s sync debounce hasn't fired. Progress itself is saved
+  // to localStorage first, so it survives even offline.
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState !== "hidden") return;
+    flushListenLog();
+    persistProgress();
+    if (window.Sync && window.Sync.syncNow) window.Sync.syncNow().catch(() => {});
+  });
+
   // --- Audio events ---
   audio.addEventListener("play", () => { setPlayState(true); lastListenTick = Date.now(); if ("mediaSession" in navigator) navigator.mediaSession.playbackState = "playing"; });
   audio.addEventListener("pause", () => { setPlayState(false); flushListenLog(); lastListenTick = 0; persistProgress(); if ("mediaSession" in navigator) navigator.mediaSession.playbackState = "paused"; });
@@ -1091,6 +1101,9 @@
   let introAudioEl = null;
   function playTitleIntro(url, done) {
     try {
+      // BUG-18: make sure the episode audio isn't playing over the spoken title. The intro's
+      // done() callback is the only thing that (re)starts it, so pausing here can't strand it.
+      try { audio.pause(); } catch {}
       if (introAudioEl) { try { introAudioEl.pause(); } catch {} introAudioEl = null; }
       const intro = introAudioEl = new Audio(url);
       let started = false;
@@ -1803,6 +1816,38 @@
   }
 
   // The subject picker (landing screen). One tile per subject with its overall progress.
+  // FEATURE-10: drag-to-reorder subjects. Order is an array of subject ids in the user's
+  // preferred order; unlisted/new subjects are appended. Persisted locally and sync-scheduled.
+  const SUBJECT_ORDER_KEY = "podcast-subject-order";
+  function loadSubjectOrder() {
+    try { const v = JSON.parse(localStorage.getItem(SUBJECT_ORDER_KEY)); return Array.isArray(v) ? v : []; }
+    catch { return []; }
+  }
+  function saveSubjectOrder(ids) {
+    try { localStorage.setItem(SUBJECT_ORDER_KEY, JSON.stringify(ids)); } catch (e) {}
+    window.Sync && window.Sync.scheduleSync();
+  }
+  function sortByOrder(items) {
+    const order = loadSubjectOrder();
+    if (!order.length) return items;
+    const pos = new Map(order.map((id, i) => [id, i]));
+    return items.slice().sort((a, b) =>
+      (pos.has(a.id) ? pos.get(a.id) : 1e9) - (pos.has(b.id) ? pos.get(b.id) : 1e9));
+  }
+  let subjectsSortable = null;
+  function enableSubjectReorder(grid) {
+    if (!window.Sortable) return;
+    if (subjectsSortable) { try { subjectsSortable.destroy(); } catch (e) {} }
+    subjectsSortable = window.Sortable.create(grid, {
+      draggable: ".subject-tile",
+      animation: 160,
+      delay: 250, delayOnTouchOnly: true,   // quick tap = open subject; long-press = drag to reorder
+      forceFallback: true, fallbackOnBody: true, fallbackTolerance: 5,
+      ghostClass: "subject-ghost",
+      onEnd: () => saveSubjectOrder([...grid.querySelectorAll(".subject-tile")].map((t) => t.dataset.subjectId)),
+    });
+  }
+
   function renderSubjects() {
     if (!viewSubjects) return;
     viewSubjects.innerHTML = "";
@@ -1856,37 +1901,41 @@
 
     const grid = document.createElement("div");
     grid.className = "subjects-grid";
+    // Unify the two tile sources (podcast subjects + paper-only banks) into one ordered list
+    // so drag-reorder (FEATURE-10) works across both.
+    const manifestIds = new Set((fullManifest ? fullManifest.subjects : []).map((s) => s.id));
+    const items = [];
     (fullManifest ? fullManifest.subjects : [])
       .filter((s) => !chosen || chosen.includes(s.id))
-      .forEach((s) => {
-      const eps = s.modules.flatMap((m) => m.episodes);
-      const total = eps.length;
-      const done = eps.filter((e) => progress[e.id] && progress[e.id].completed).length;
-      const pct = total ? Math.round((done / total) * 100) : 0;
-      const tile = document.createElement("button");
-      tile.className = "subject-tile";
-      tile.innerHTML = `
-        <span class="subject-name">${s.name}</span>
-        <span class="subject-meta">${total} episodes · ${done}/${total} listened</span>
-        <span class="subject-track"><span class="subject-fill" style="width:${pct}%"></span></span>`;
-      tile.addEventListener("click", () => { window.location.hash = `#/s/${encodeURIComponent(s.id)}`; });
-      grid.appendChild(tile);
-    });
-    // Question-bank-only subjects (no episodes yet, so absent from the manifest) still get
-    // a tile — it opens the paper generator scoped to that subject.
-    const manifestIds = new Set((fullManifest ? fullManifest.subjects : []).map((s) => s.id));
+      .forEach((s) => items.push({ id: s.id, kind: "subject", s }));
     GENERATOR_BANKS.filter(([bid]) => !manifestIds.has(bid))
       .filter(([bid]) => !chosen || chosen.includes(bid))
-      .forEach(([bid, bname]) => {
+      .forEach(([bid, bname]) => items.push({ id: bid, kind: "bank", name: bname }));
+
+    sortByOrder(items).forEach((it) => {
       const tile = document.createElement("button");
       tile.className = "subject-tile";
-      tile.innerHTML = `
-        <span class="subject-name">${bname}</span>
-        <span class="subject-meta">Past-paper question bank · generate practice papers</span>`;
-      tile.addEventListener("click", () => { window.location.href = `generator.html?subject=${encodeURIComponent(bid)}`; });
+      tile.dataset.subjectId = it.id;
+      if (it.kind === "subject") {
+        const eps = it.s.modules.flatMap((m) => m.episodes);
+        const total = eps.length;
+        const done = eps.filter((e) => progress[e.id] && progress[e.id].completed).length;
+        const pct = total ? Math.round((done / total) * 100) : 0;
+        tile.innerHTML = `
+          <span class="subject-name">${it.s.name}</span>
+          <span class="subject-meta">${total} episodes · ${done}/${total} listened</span>
+          <span class="subject-track"><span class="subject-fill" style="width:${pct}%"></span></span>`;
+        tile.addEventListener("click", () => { window.location.hash = `#/s/${encodeURIComponent(it.id)}`; });
+      } else {
+        tile.innerHTML = `
+          <span class="subject-name">${it.name}</span>
+          <span class="subject-meta">Past-paper question bank · generate practice papers</span>`;
+        tile.addEventListener("click", () => { window.location.href = `generator.html?subject=${encodeURIComponent(it.id)}`; });
+      }
       grid.appendChild(tile);
     });
     viewSubjects.appendChild(grid);
+    enableSubjectReorder(grid);   // FEATURE-10: long-press / drag a tile to reorder
   }
 
   // Subjects with a baked past-paper question bank (content/<id>/questions.json).
@@ -3949,8 +3998,32 @@
     return data;
   }
 
-  fetch("manifest.json")
-    .then((r) => { if (!r.ok) throw new Error("manifest HTTP " + r.status); return r.json(); })
+  // BUG-8: the home screen only renders after the manifest loads. A hard reload bypasses the
+  // service worker (so its cache fallback doesn't apply), and a storm of SW-bypassing requests
+  // can fail — leaving a blank home screen. Retry a few times, and keep a last-good copy in
+  // localStorage to fall back on so the app still boots even when every fetch fails.
+  const MANIFEST_CACHE_KEY = "podcast-manifest-cache";
+  async function loadManifestData() {
+    let lastErr;
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        const r = await fetch("manifest.json");
+        if (!r.ok) throw new Error("manifest HTTP " + r.status);
+        const data = await r.json();
+        try { localStorage.setItem(MANIFEST_CACHE_KEY, JSON.stringify(data)); } catch (e) {}
+        return data;
+      } catch (e) {
+        lastErr = e;
+        if (attempt < 2) await new Promise((res) => setTimeout(res, 400 * (attempt + 1)));
+      }
+    }
+    try {
+      const cached = localStorage.getItem(MANIFEST_CACHE_KEY);
+      if (cached) { console.warn("[init] manifest fetch failed — booting from cached copy"); return JSON.parse(cached); }
+    } catch (e) {}
+    throw lastErr;
+  }
+  loadManifestData()
     .then(async (data) => {
       fullManifest = indexManifest(normaliseManifest(data));
       await loadPaperSubjects();   // expand the subject pool to every paper subject before rendering
