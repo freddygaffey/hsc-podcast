@@ -1,0 +1,144 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What was the Hafele-Keating experiment (1971) designed to demonstrate?",
+      "options": [
+        "That atomic clocks are unreliable at high altitude",
+        "That time dilation is real and measurable using actual clocks, not just inferred from particles",
+        "That the Earth's rotation is slowing down over time",
+        "That caesium atoms vibrate faster when moving quickly"
+      ],
+      "answer": 1,
+      "explanation": "The experiment aimed to give tangible evidence for time dilation by flying atomic clocks around the world and comparing them to clocks left on the ground. It succeeded in showing real clocks that had genuinely run at different rates. Option A is wrong: the clocks were not unreliable, they were precise and behaved exactly as relativity predicted.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "Why had time dilation been so hard to observe directly for the ~65 years after Einstein published special relativity in 1905?",
+      "options": [
+        "The mathematics of relativity had not yet been fully worked out",
+        "At everyday speeds the effect is so tiny that no ordinary clock could measure it",
+        "Governments classified all relativity experiments as secret",
+        "Time dilation only occurs in outer space, which was inaccessible"
+      ],
+      "answer": 1,
+      "explanation": "Time dilation is real at every speed, but at the speeds of cars, trains or even bullets it is so unimaginably small that no watch or human sense could catch it. It took the arrival of extremely precise caesium atomic clocks to make the effect measurable. Option A is wrong: the theory was mathematically complete in 1905; the barrier was purely experimental precision.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "The muon experiment is often cited as cleaner evidence for special relativity. According to the episode, what advantage did Hafele-Keating have over the muon evidence?",
+      "options": [
+        "It had much smaller experimental uncertainties",
+        "It used real clocks you could hold and read, making time dilation tangible rather than abstract",
+        "It tested relativity at speeds much closer to the speed of light",
+        "It did not require any prior theoretical prediction"
+      ],
+      "answer": 1,
+      "explanation": "The muon evidence is cleaner and has smaller uncertainties, but it is abstract: you count particles and infer a decayed lifetime from a statistical distribution. Hafele-Keating let you point at two real clocks and see that one had run slow. Option A is the opposite of the truth: Hafele-Keating actually had larger uncertainties.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "Two technological developments made the experiment possible by 1971. What were they?",
+      "options": [
+        "Satellites and GPS receivers",
+        "Commercial jets that could hold speed for hours, and extremely precise caesium atomic clocks",
+        "Particle accelerators and cloud chambers",
+        "Pendulum clocks and hot-air balloons"
+      ],
+      "answer": 1,
+      "explanation": "Commercial jets could hold a relatively high speed steadily for hours all the way around the planet, and caesium atomic clocks kept time with the unwavering vibration of caesium atoms at almost unbelievable precision. Together these finally brought the tiny effect within reach. Option A is wrong: GPS did not exist in 1971 (and in fact relies on relativity, rather than enabling this experiment).",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "Describe the basic method of the experiment.",
+      "options": [
+        "A single clock was dropped from a plane and timed as it fell",
+        "Four atomic clocks were flown around the world eastward and westward, then compared to reference clocks that stayed at the US Naval Observatory",
+        "Clocks were placed at different altitudes on a single mountain and compared",
+        "Two clocks were flown in opposite directions and never compared to any ground clock"
+      ],
+      "answer": 1,
+      "explanation": "They took the same four caesium clocks on two round-the-world trips, one eastward (with Earth's spin) and one westward (against it), and after each trip compared them to reference clocks kept on the ground at the Naval Observatory. Option D is wrong: the whole experiment hinges on comparing the travelling clocks against the stay-at-home ground clocks.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "To analyse the velocity time dilation correctly, which reference frame did Hafele and Keating use?",
+      "options": [
+        "The frame of the aeroplane cockpit",
+        "The frame of the ground clock at the observatory",
+        "A non-rotating frame at the centre of the Earth",
+        "The frame of the Sun"
+      ],
+      "answer": 2,
+      "explanation": "Because you cannot simply call the ground 'still', they used the closest thing to an inertial frame available: a non-rotating frame at the centre of the Earth. From there, even the ground clock is moving east with the planet's spin, so it too runs slightly slow. Option B is wrong: treating the ground as stationary ignores that the surface is itself carried around by Earth's rotation.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Relative to the ground clock, what did relativity predict for the eastward-flying and westward-flying clocks?",
+      "options": [
+        "Both clocks should lose the same amount of time",
+        "The eastward clock should lose time; the westward clock should gain time",
+        "The eastward clock should gain time; the westward clock should lose time",
+        "Neither clock should change relative to the ground"
+      ],
+      "answer": 1,
+      "explanation": "In the Earth-centre frame the eastward plane's speed adds to the rotation speed, so it moves fastest and runs slowest, reading less time (loses time). The westward plane's speed subtracts from the rotation, so it moves slower than even the ground and runs faster, reading more time (gains time). Option A is a giveaway of a sloppy error: a genuine mistake would push both clocks the same way, whereas relativity predicts opposite signs.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "Besides velocity time dilation from special relativity, what second relativistic effect did Hafele and Keating have to account for?",
+      "options": [
+        "A magnetic effect from flying through Earth's magnetic field",
+        "A general-relativity gravitational effect: higher altitude means greater gravitational potential, making the flying clocks run faster",
+        "The Doppler shift of the caesium radiation",
+        "Air resistance slowing the caesium atoms"
+      ],
+      "answer": 1,
+      "explanation": "At cruising altitude the clocks sit higher in Earth's gravitational field (greater gravitational potential), which by general relativity makes them run a little faster than clocks on the surface. This gravitational effect was combined with the velocity effect in their predictions, though the HSC focuses only on the velocity part. Option C is wrong: the relevant effects are gravitational and velocity time dilation, not a Doppler shift.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Explain why the Hafele-Keating experiment became so historically and publicly famous, even though it is not the strongest evidence for special relativity.",
+      "keyPoints": [
+        "It was the first time time dilation was made tangible: real clocks with an actual reading, not particles or a statistical decay curve",
+        "You could stand in an ordinary room and see two identically built, identically set clocks that no longer agreed after one had travelled",
+        "The punchline (put a clock on a plane and it comes back out of step with the world) was simple enough for the public to grasp",
+        "It escaped the physics journals and reached newspapers and the public imagination",
+        "It was remarkably cheap and modest: two men, four clocks, about $8,000, mostly spent on plane tickets"
+      ],
+      "explanation": "The muon evidence is cleaner and its uncertainties smaller, but it is abstract and invisible. Hafele-Keating's power was that it turned Einstein's most intuition-breaking claim into something a person could literally point at, which is a completely different kind of convincing and made it famous beyond physics.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "The experiment is celebrated for its modesty and low cost. Recall the key facts about who did it, what it cost, and how the money was mainly spent.",
+      "keyPoints": [
+        "Joseph Hafele, an assistant professor, did a back-of-the-envelope calculation while preparing lecture notes and realised the effect was just barely measurable with a caesium clock on an airliner",
+        "Richard Keating was an astronomer at the US Naval Observatory who had access to atomic clocks",
+        "Together they secured funding of about $8,000, the cheapest relativity experiment attempted at that time",
+        "Of that, about $7,600 went on plane tickets, because they had to buy paid seats for the clocks as well as themselves",
+        "They committed to quantitative predictions (in billionths of a second) in advance of the flights"
+      ],
+      "explanation": "Hafele supplied the idea and calculation, Keating supplied access to the hardware. The tiny budget, dominated by airline tickets for four machines and two men, is part of the experiment's charm and shows deep truths can be found in ordinary places. Writing predictions down before looking is what makes it science rather than just a good story.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

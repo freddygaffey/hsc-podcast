@@ -1,0 +1,182 @@
+{
+  "questions": [
+    {
+      "id": "m599-q01",
+      "type": "mc",
+      "q": "The episode's first mnemonic, 'split then suvat', tells you how to attack a projectile. Which statement captures the method correctly?",
+      "options": [
+        "Resolve the launch velocity into a horizontal component that moves at constant velocity and a vertical component that accelerates at g, then treat them as two independent 1-D problems sharing one clock (the time)",
+        "Resolve the launch velocity into a component toward the centre and a component along the tangent, and set the inward part equal to mv squared over r",
+        "Add the horizontal and vertical velocities into a single resultant and apply the suvat equations to that resultant",
+        "Solve the horizontal motion first to find the time, then feed that time into the vertical motion to find the range"
+      ],
+      "answer": 0,
+      "explanation": "Split then suvat means resolving into a horizontal component (constant velocity, no horizontal force) and a vertical component (accelerating at g), two independent one-dimensional problems that only ever communicate through the shared time. Option 3 reverses the logic: it is the vertical motion that sets the time (it controls how long the ball is airborne), and the horizontal motion then uses that time to give the range, not the other way round. Resolving toward the centre and tangent is the circular-motion method, not projectiles.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m599-q02",
+      "type": "mc",
+      "q": "At the very top of a projectile's arc, which set of statements is correct?",
+      "options": [
+        "Vertical velocity is zero, horizontal velocity is zero, and acceleration is zero",
+        "Vertical velocity is zero, horizontal velocity is unchanged, and acceleration is still 9.8 m/s squared downward",
+        "Vertical velocity is maximum, horizontal velocity is zero, and acceleration is 9.8 m/s squared downward",
+        "Vertical velocity is unchanged, horizontal velocity is zero, and acceleration is zero"
+      ],
+      "answer": 1,
+      "explanation": "At the top the vertical velocity is momentarily zero (the instant it stops rising and starts falling), but the horizontal velocity is unchanged because nothing acts horizontally, and the acceleration is still g downward because gravity never switches off. The classic mark-losing error, option 1, claims the acceleration is zero because the object is 'momentarily still' vertically; if that were true the object would hover, whereas in fact it is still accelerating, which is exactly why it immediately falls.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m599-q03",
+      "type": "worked",
+      "q": "A projectile is launched from ground level at 25 m/s at 35 degrees above the horizontal over level ground. Ignoring air resistance and taking g = 9.8 m/s squared, calculate its horizontal range.",
+      "given": "u = 25 m/s, launch angle = 35 degrees, level ground, g = 9.8 m/s squared",
+      "working": [
+        "Split the launch velocity into components.",
+        "Vertical: u_y = 25 sin35 = 25 x 0.574 = 14.3 m/s.",
+        "Horizontal: u_x = 25 cos35 = 25 x 0.819 = 20.5 m/s (constant all flight).",
+        "The vertical motion sets the clock. Over level ground the time of flight is t = 2 u_y / g = 2(14.3) / 9.8 = 2.93 s.",
+        "The horizontal motion uses that shared time: Range = u_x x t = 20.5 x 2.93 = 60 m."
+      ],
+      "answerValue": 60,
+      "answerUnit": "m",
+      "tolerance": 2,
+      "explanation": "The vertical component gives the time of flight (2.93 s) and the horizontal component then gives the range through that same clock, so R = u_x x t = 60 m. The trap the episode flags is feeding the full 25 m/s into the range formula: the range uses only the horizontal component (20.5 m/s), never the launch speed.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m599-q04",
+      "type": "mc",
+      "q": "As a car rounds a corner, the passengers feel thrown outward toward the door. What is actually happening?",
+      "options": [
+        "A real centrifugal force pushes the passengers outward, balancing the inward centripetal force",
+        "There is no real outward force; the passengers' inertia keeps them moving straight while the door pushes them inward to supply the centripetal force",
+        "Gravity is redirected sideways during the turn, pulling the passengers toward the door",
+        "The centripetal force reverses direction and points outward while the car is turning"
+      ],
+      "answer": 1,
+      "explanation": "There is no real outward force. By Newton's first law the passengers tend to keep moving in a straight line (inertia); as the car curves inward, the door pushes inward on them to provide the centripetal force. The outward 'centrifugal' feeling is just inertia felt in the rotating frame. Option 1 is the band-losing answer: if a real outward force balanced the inward one, the net force would be zero and the car would travel straight, not turn.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m599-q05",
+      "type": "worked",
+      "q": "A car of mass 1200 kg rounds a flat, unbanked curve of radius 50 m at a constant 15 m/s. Friction provides the centripetal force. Calculate its magnitude.",
+      "given": "m = 1200 kg, r = 50 m, v = 15 m/s, flat (unbanked) curve",
+      "working": [
+        "Net to the centre: gravity (down) and the normal force (up) are vertical and cancel, so the only force pointing toward the centre is friction. Friction is the centripetal force.",
+        "Centripetal acceleration: a_c = v squared / r = 15 squared / 50 = 225 / 50 = 4.5 m/s squared.",
+        "Centripetal force: F_c = m v squared / r = 1200 x 4.5 = 5400 N."
+      ],
+      "answerValue": 5400,
+      "answerUnit": "N",
+      "tolerance": 10,
+      "explanation": "Following 'net to the centre', we identify a real force (friction) as the net inward force, then set it equal to m v squared over r = 5400 N. The point the episode stresses is that no new force is invented; the centripetal force is always a real force in a new role, here friction.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m599-q06",
+      "type": "worked",
+      "q": "A satellite is in a circular orbit of radius 8.0 x 10^6 m from the Earth's centre, where GM for the Earth is 3.98 x 10^14. Calculate its orbital speed.",
+      "given": "r = 8.0 x 10^6 m, GM = 3.98 x 10^14 m^3/s^2",
+      "working": [
+        "For a circular orbit gravity is the centripetal force: GMm/r squared = mv squared/r.",
+        "Cancel m and one r: v squared = GM / r.",
+        "v = sqrt(GM / r) = sqrt(3.98 x 10^14 / 8.0 x 10^6).",
+        "= sqrt(4.98 x 10^7) = 7.05 x 10^3 m/s (about 7.05 km/s)."
+      ],
+      "answerValue": 7050,
+      "answerUnit": "m/s",
+      "tolerance": 100,
+      "explanation": "Treating gravity as the centripetal force and cancelling the satellite's mass gives v = sqrt(GM/r) = about 7050 m/s. Because r is already measured from the Earth's centre here, nothing is added; the trap 'altitude given, add the radius' only applies when a height above the surface is quoted.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m599-q07",
+      "type": "mc",
+      "q": "Setting gravity equal to the centripetal force for a circular orbit gives v_orbit = sqrt(GM/r). What key physical consequence follows from the satellite's own mass cancelling in that derivation?",
+      "options": [
+        "Heavier satellites must orbit at larger radii than lighter ones",
+        "All satellites at a given orbital radius travel at the same speed, regardless of their mass",
+        "The orbital speed depends on the ratio of the satellite's mass to the Earth's mass",
+        "A more massive satellite orbits faster because it feels a stronger gravitational pull"
+      ],
+      "answer": 1,
+      "explanation": "In GMm/r squared = mv squared/r the satellite's mass m appears on both sides and cancels, leaving v = sqrt(GM/r), which contains only G, the central mass M and the radius. So every satellite at a given radius orbits at the same speed no matter how heavy it is. Option 4 is the misconception: a heavier satellite does feel a larger gravitational force, but it also needs proportionally more centripetal force, and the two scale together so mass drops out, the same mass-independence seen in falling projectiles and escape velocity.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m599-q08",
+      "type": "mc",
+      "q": "Kepler's third law can be written T squared / r cubed = 4 pi squared / GM. What does this tell you about a set of satellites orbiting the same planet?",
+      "options": [
+        "Each satellite has its own value of T squared / r cubed depending on its mass",
+        "T squared / r cubed is the same constant for every satellite of that planet, fixed by the central mass alone",
+        "T squared / r cubed decreases as the orbital radius increases",
+        "The constant depends on both the planet's mass and the satellite's mass"
+      ],
+      "answer": 1,
+      "explanation": "The right-hand side, 4 pi squared / GM, contains only constants and the central mass, so T squared / r cubed is the same number for every object orbiting that mass, independent of the satellite. That is why plotting T squared against r cubed for the moons of a planet gives a straight line whose gradient reveals the central mass. The satellite's own mass never enters, ruling out options 1 and 4.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m599-q09",
+      "type": "worked",
+      "q": "Calculate the escape velocity from the Earth's surface. Take the Earth's radius R_E = 6.37 x 10^6 m and GM = 3.98 x 10^14.",
+      "given": "r = R_E = 6.37 x 10^6 m, GM = 3.98 x 10^14 m^3/s^2",
+      "working": [
+        "Set the total energy at the surface to zero (coast to infinity, arriving at rest): 1/2 m v_esc squared + (-GMm/r) = 0.",
+        "The object's mass cancels: v_esc squared = 2GM / r.",
+        "v_esc = sqrt(2GM / r) = sqrt(2 x 3.98 x 10^14 / 6.37 x 10^6).",
+        "= sqrt(1.25 x 10^8) = 1.12 x 10^4 m/s (about 11.2 km/s)."
+      ],
+      "answerValue": 11180,
+      "answerUnit": "m/s",
+      "tolerance": 300,
+      "explanation": "Escape velocity comes from setting the total energy at the surface to zero, giving v_esc = sqrt(2GM/r) = about 11.2 km/s. This is sqrt(2) times the orbital speed at the same radius ('root two to break free') and, like orbital speed, it is independent of the escaping object's mass because m cancels.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m599-q10",
+      "type": "mc",
+      "q": "To move a satellite from a lower circular orbit to a higher circular orbit, what happens to its orbital speed and its total energy?",
+      "options": [
+        "Speed increases and total energy increases, because a higher orbit needs more of both",
+        "Speed decreases but total energy increases toward zero, so you must add energy even though it ends up moving slower",
+        "Speed decreases and total energy decreases, becoming more negative",
+        "Speed and total energy both stay the same, because centripetal force does no work"
+      ],
+      "answer": 1,
+      "explanation": "This is 'higher is slower but bigger-energy'. Orbital speed v = sqrt(GM/r) falls as r grows, yet the total energy E = -GMm/2r becomes less negative (rises toward zero), so you must add energy (a rocket burn) to reach the higher orbit even though the satellite ends up slower. Both hold because the potential energy climbs twice as fast as the kinetic energy drops (the +1, -2, -1 ratio). The episode's rule is to reason from total energy, never from speed alone, which is why option 3 (reasoning that slower means less energy) is wrong.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m599-q11",
+      "type": "recall",
+      "q": "Name all four of Module Five's mnemonics and state in one line what each is for.",
+      "keyPoints": [
+        "Split then suvat - projectile motion: resolve the launch velocity into a horizontal component (constant velocity) and a vertical component (accelerating at g), two independent 1-D problems sharing one clock.",
+        "Net to the centre - circular motion: the centripetal force is the net of the real forces (gravity, tension, normal, friction) resolved toward the centre, set equal to m v squared over r; never a new force.",
+        "Higher is slower but bigger-energy - orbits: raise the orbit and the speed v = sqrt(GM/r) drops while the total energy E = -GMm/2r rises toward zero.",
+        "Zero at infinity, negative everywhere - gravitational energy: potential energy U = -GMm/r, and a bound orbit has negative total energy."
+      ],
+      "explanation": "The four mnemonics are split then suvat (projectiles), net to the centre (circular motion), higher is slower but bigger-energy (orbits), and zero at infinity, negative everywhere (gravitational energy). The episode advises writing all four down in the first minute of the exam. If any came slowly, that is the strand to drill; grade yourself Good or Easy if you named all four with their purpose.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m599-q12",
+      "type": "recall",
+      "q": "Using Newton's cannon, explain why a satellite in orbit is said to be continuously falling yet never gets closer to the Earth.",
+      "keyPoints": [
+        "A satellite is acted on by gravity alone, so it is accelerating toward the Earth's centre, that is, continuously falling (it is just a fast projectile).",
+        "It also has a very large horizontal (tangential) velocity, so in the time it falls, its sideways motion carries it far enough that the curved surface of the Earth drops away by the same amount.",
+        "So although it always falls, the ground curves away beneath it at the same rate and its distance from the Earth's centre stays constant.",
+        "Gravity is the centripetal force ('net to the centre'); because it is perpendicular to the motion it does no work, so the speed never changes and the orbit repeats forever. There is no outward force, and the satellite is not 'beyond gravity'."
+      ],
+      "explanation": "The mark-earning idea is that an orbit is a projectile moving so fast horizontally that it perpetually misses the Earth: it is always falling, but the surface curves away just as fast. Naming gravity as the centripetal force (which does no work) is the key mark. A weak answer claims the satellite is beyond gravity or that an outward force balances gravity; there is no outward force, and gravity is the very thing holding it in orbit.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    }
+  ]
+}

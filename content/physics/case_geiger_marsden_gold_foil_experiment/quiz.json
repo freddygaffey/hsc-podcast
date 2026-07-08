@@ -1,0 +1,145 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "In the Geiger-Marsden gold foil experiment, what were the \"bullets\" fired at the gold foil?",
+      "options": [
+        "Electrons emitted from a heated filament",
+        "Alpha particles emitted by a radioactive source",
+        "X-rays from a discharge tube",
+        "Protons stripped from hydrogen gas"
+      ],
+      "answer": 1,
+      "explanation": "Rutherford used alpha particles, which are small, positively charged and comparatively fast and heavy, emitted by a radioactive source. Electrons are far too light to probe the atom this way, and the proton had not yet been identified as a distinct projectile at this time.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "According to Thomson's \"plum pudding\" model, how was the positive charge arranged in an atom?",
+      "options": [
+        "Concentrated in a tiny dense core at the centre",
+        "Carried entirely by the orbiting electrons",
+        "Spread out smoothly and evenly through the whole volume of the atom",
+        "Located in a thin shell at the atom's surface"
+      ],
+      "answer": 2,
+      "explanation": "In the plum pudding model the positive charge was a smooth, uniform sphere with the tiny negative electrons dotted through it like currants. Option A describes Rutherford's nucleus, which the experiment later established; in Thomson's model there was no concentrated core.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "What did Rutherford ask the undergraduate Ernest Marsden to look for, and why did it seem almost absurd at the time?",
+      "options": [
+        "Alpha particles that bounced back toward the source, which the plum pudding model said should be impossible",
+        "Alpha particles that passed straight through, which everyone expected anyway",
+        "Electrons ejected from the gold foil, which had never been detected",
+        "A change in the colour of the scintillations, which no model predicted"
+      ],
+      "answer": 0,
+      "explanation": "Rutherford suggested searching for back-scattered alpha particles (deflected by more than 90 degrees). In the plum pudding model the spread-out positive charge could give only tiny nudges, so throwing a heavy alpha particle backwards should have been impossible. Option B was expected and would have proved nothing.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "Roughly what fraction of the alpha particles were reflected back (deflected by a large angle) off the gold foil?",
+      "options": [
+        "About 1 in 10",
+        "About 1 in 100",
+        "About 1 in 8000",
+        "About 1 in 10 million"
+      ],
+      "answer": 2,
+      "explanation": "Marsden observed that roughly 1 in 8000 alpha particles underwent a diffuse reflection through a large angle. This is extremely rare, but crucially it is not zero, and even that tiny fraction was impossible to explain with Thomson's model.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "Which observation from the experiment is direct evidence that the atom is mostly empty space?",
+      "options": [
+        "The rare large-angle reflections of alpha particles",
+        "The vast majority of alpha particles passing almost straight through the foil",
+        "The phosphorescent screen glowing continuously",
+        "The alpha particles slowing down as they crossed the tube"
+      ],
+      "answer": 1,
+      "explanation": "Because most alpha particles sailed straight through with little deflection, they must rarely encounter anything substantial, meaning the atom is overwhelmingly empty space. The rare reflections (option A) instead reveal the small, dense, concentrated nucleus.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "Why does a concentrated nucleus, rather than spread-out positive charge, allow an alpha particle to be turned completely around?",
+      "options": [
+        "A concentrated charge is magnetic and attracts the alpha particle back",
+        "Coulomb repulsion follows an inverse-square law, so packing all the charge into a tiny speck lets the alpha particle approach very close and feel a titanic force",
+        "The nucleus physically blocks the alpha particle like a solid wall",
+        "The concentrated charge is negative, so it attracts and slingshots the alpha particle"
+      ],
+      "answer": 1,
+      "explanation": "By Coulomb's law the electrostatic force grows as the inverse square of separation, so it blows up at very small distances. Only if the positive charge is crammed into a tiny nucleus can an alpha particle get close enough to feel a force strong enough to reverse it. The nucleus is positive and repels the (positive) alpha particle; it is not magnetic, attractive, or a physical wall.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "How was the scattering data actually recorded in the experiment?",
+      "options": [
+        "By an automatic electronic particle counter",
+        "By photographing the screen and developing the images later",
+        "By an observer sitting in a dark room counting individual scintillation flashes through a microscope by eye",
+        "By measuring the electric current produced on the metal screen"
+      ],
+      "answer": 2,
+      "explanation": "Each alpha particle hitting the phosphorescent screen produced a tiny flash (scintillation). Marsden had to dark-adapt his eyes and count these pinpricks of light one at a time through a microscope. There was no digital counter or photograph; it was slow, eye-straining manual work in the dark.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "The experiment showed that almost all of an atom's mass is located where?",
+      "options": [
+        "Evenly distributed throughout the atom's volume",
+        "In the cloud of orbiting electrons",
+        "In the tiny, dense, positively charged nucleus at the centre",
+        "In the empty space between the electrons"
+      ],
+      "answer": 2,
+      "explanation": "Rutherford's interpretation was that nearly all the atom's mass, and all its positive charge, is concentrated in the minuscule nucleus, with light electrons orbiting far out in mostly empty space. The electrons are thousands of times lighter and carry almost none of the mass.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Explain why Thomson's plum pudding model could not account for the rare large-angle reflections of alpha particles, and how Rutherford's nuclear model resolved this.",
+      "keyPoints": [
+        "In the plum pudding model positive charge is spread out uniformly, so an alpha particle only ever feels weak, largely cancelling forces",
+        "That spread-out charge could give only small nudges, so a large-angle (>90 degree) deflection should be impossible",
+        "Rutherford proposed all the positive charge (and almost all the mass) is concentrated in a tiny central nucleus",
+        "Because charge is concentrated, an alpha particle aimed near a nucleus can approach very closely",
+        "By Coulomb's inverse-square law the repulsive force becomes enormous at such small distances, enough to reverse the alpha particle",
+        "Mostly empty space explains the majority passing straight through; the concentrated nucleus explains the rare violent reflections"
+      ],
+      "explanation": "The plum pudding model's diffuse charge cannot produce a force large enough to reverse a heavy, fast alpha particle. Concentrating the charge into a tiny nucleus lets the particle approach closely and, via the inverse-square Coulomb force, experience a titanic repulsion. This single idea explains both the many undeflected particles (empty space) and the rare reflections (tiny dense core).",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Describe the role of the earlier 1906-1908 scattering work by Rutherford and Geiger, and how it set the stage for the 1909 experiment.",
+      "keyPoints": [
+        "Geiger's apparatus: a radioactive source, a slit to form a fine beam, and a phosphorescent screen viewed by microscope",
+        "With air pumped out and no foil, alpha particles made a tight, sharp patch of flashes on the screen",
+        "Inserting a thin gold foil made the patch diffuse, showing matter could scatter alpha particles by small angles",
+        "Rutherford concluded atoms must be the seat of very intense electrical forces",
+        "These small-angle scattering results were puzzling enough to prompt the search for back-scattered particles in 1909"
+      ],
+      "explanation": "The 1906 and 1908 experiments established that thin foils spread the alpha beam by small angles, hinting at intense internal electrical forces. This groundwork motivated Rutherford's 1909 suggestion to hunt for the far rarer back-scattered particles, the observation that ultimately overturned the plum pudding model.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

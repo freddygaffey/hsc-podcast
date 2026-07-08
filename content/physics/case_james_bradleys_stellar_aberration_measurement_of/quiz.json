@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What was James Bradley originally trying to achieve when he began his 1728 observations?",
+      "options": [
+        "To measure the speed of light directly",
+        "To detect stellar parallax and so prove the Earth orbits the Sun",
+        "To disprove the heliocentric model favoured by the Church",
+        "To measure the distance from the Earth to the Sun"
+      ],
+      "answer": 1,
+      "explanation": "Bradley set out to observe stellar parallax, the tiny yearly shift of a nearby star, which would be direct physical proof that the Earth moves around the Sun. He was not chasing the speed of light; that fell out of his failed parallax hunt as a bonus. He was trying to support heliocentrism, not disprove it, and the Church officially opposed the idea rather than favoured it.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "How is parallax supposed to reveal that the Earth is moving?",
+      "options": [
+        "A nearby star appears to shift against distant stars because the Earth views it from different positions in its orbit",
+        "A star appears brighter in summer and dimmer in winter as the Earth's distance changes",
+        "Starlight bends as it passes the Sun's gravity, shifting the star's position",
+        "The star appears to tilt in whichever direction the Earth is travelling at that moment"
+      ],
+      "answer": 0,
+      "explanation": "Parallax is like holding a finger at arm's length and blinking each eye: the two viewpoints make it jump against the background. The Earth's orbit provides the two viewpoints, so a nearby star should trace a small ellipse tied to the Earth's POSITION. Option 4 describes aberration (tied to the Earth's velocity, not position), which is exactly what Bradley found instead of parallax.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "What told Bradley that the star's motion he observed was NOT parallax?",
+      "options": [
+        "The star did not move at all over the course of a year",
+        "The shift was far too small to measure with his telescope",
+        "The star reached its extreme positions three months out of step with parallax, tracking the Earth's direction of travel rather than its position",
+        "The star traced a straight line rather than any kind of loop"
+      ],
+      "answer": 2,
+      "explanation": "The star did trace a loop, but its extremes were about three months out of phase with the parallax prediction: the shift always pointed in the direction the Earth was moving (its velocity), not toward where the Earth was in its orbit (its position). That phase mismatch is the signature of aberration, not parallax.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "The boat's flag and the tilted-umbrella-in-rain analogies illustrate stellar aberration. What is the physical cause of the aberration tilt?",
+      "options": [
+        "The starlight physically bends as it enters the Earth's atmosphere",
+        "The star itself is moving, dragging its light sideways",
+        "The observer's sideways motion combines with the incoming light, so the light appears to arrive at a slant",
+        "The Earth's gravity deflects the incoming light toward the surface"
+      ],
+      "answer": 2,
+      "explanation": "Just as a running person must tilt an umbrella forward into vertical rain, an observer moving sideways through space must tip the telescope forward into the starlight. The light's true direction never changes; it only APPEARS tilted because the observer (the Earth) is moving. It is not atmospheric refraction, gravity, or the star's own motion.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "recall",
+      "q": "Explain how the Earth's motion produces stellar aberration and why the effect follows the Earth's velocity rather than its position.",
+      "keyPoints": [
+        "Where a star appears depends on the direction of its light combined with the motion of the observer",
+        "The Earth sweeps sideways through space, so starlight appears to arrive at a slight angle, tilted toward the direction of travel",
+        "The telescope must be tipped forward into the incoming light to catch the star",
+        "As the Earth reverses its direction of travel every six months, the tilt swings with it, so the apparent shift tracks the Earth's velocity",
+        "The star therefore traces a loop tied to velocity, three months out of phase with the position-based parallax prediction"
+      ],
+      "explanation": "Aberration arises from the vector combination of the star's light direction and the observer's velocity. Because the tilt depends on which way the Earth is moving, the apparent shift follows the Earth's velocity, distinguishing it clearly from parallax, which follows the Earth's position.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "Bradley's derivation collapsed to tan θ ≈ (v/c) sin A. According to this relationship, what determines the size of the aberration tilt θ?",
+      "options": [
+        "The distance to the star and the star's brightness",
+        "The ratio of the Earth's speed to the speed of light, and the sine of the angle between the starlight and the Earth's motion",
+        "Only the Earth's orbital speed, independent of the speed of light",
+        "The mass of the Earth and the gravitational pull of the Sun"
+      ],
+      "answer": 1,
+      "explanation": "The whole shifting sky distils to θ depending on just two things multiplied: the ratio v/c (Earth's speed to light's speed) and sin A (the angle the starlight makes with the Earth's motion). Distance and brightness never enter, which is what makes aberration far larger and more universal than parallax; it is the same for all stars regardless of distance.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Why does the existence of a measurable aberration tilt prove that light travels at a finite speed?",
+      "options": [
+        "If light were infinitely fast there would be no tilt at all; a slower light speed produces a bigger tilt",
+        "Aberration only occurs for light slower than the Earth's orbital speed",
+        "The tilt is caused by light slowing down as it enters the telescope",
+        "Infinite-speed light would produce an even larger tilt than finite-speed light"
+      ],
+      "answer": 0,
+      "explanation": "The tilt is a race between the Earth's sideways speed and the speed of light. If light were infinitely fast (c infinite), v/c would be zero and there would be no tilt at all. Because Bradley measured a real, non-zero tilt, light must have a finite speed; and the smaller c is, the larger the tilt, so measuring the tilt lets you solve for c.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "worked",
+      "q": "Using Bradley's relationship for a star viewed at right angles to the Earth's motion (A = 90°, so tan θ = v/c), calculate the maximum aberration angle in arcseconds. Take the Earth's orbital speed as v = 30 km/s and the speed of light as c = 3.0 × 10^5 km/s.",
+      "given": "v = 30 km/s, c = 3.0 × 10^5 km/s, A = 90° so sin A = 1, and 1 radian = 206265 arcseconds",
+      "working": [
+        "For A = 90°, tan θ = (v/c) sin A = v/c",
+        "tan θ = 30 / (3.0 × 10^5) = 1.0 × 10^-4",
+        "θ is tiny, so θ ≈ tan θ = 1.0 × 10^-4 radians",
+        "Convert to arcseconds: θ = 1.0 × 10^-4 × 206265 ≈ 20.6 arcseconds"
+      ],
+      "answerValue": 20.6,
+      "answerUnit": "arcseconds",
+      "tolerance": 1.0,
+      "explanation": "The maximum aberration (when the starlight is perpendicular to the Earth's motion) is about 20.6 arcseconds, matching the real 'constant of aberration' of roughly 20.5 arcseconds. This confirms Bradley could resolve the tilt with a precise telescope, and running the calculation in reverse (from a measured angle to c) is exactly how he obtained the speed of light.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "mc",
+      "q": "What value did Bradley obtain for the speed of light, and how did it compare to the modern accepted value?",
+      "options": [
+        "About 150,000 km/s, roughly half the modern value",
+        "About 301,000 km/s, within a fraction of a percent of the modern value of just under 300,000 km/s",
+        "About 500,000 km/s, far too high because he ignored relativity",
+        "Exactly 299,792 km/s, identical to the modern value"
+      ],
+      "answer": 1,
+      "explanation": "Bradley's 1728 result was 301,000 km/s, astonishingly close (a fraction of a percent) to today's value of just under 300,000 km/s. He achieved this with a telescope and trigonometry, not lab mirrors and lamps. His classical velocity addition is technically forbidden by relativity, but at the Earth's slow speed the error is negligible, so the answer is highly accurate, not far too high.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Describe the central irony of Bradley's investigation and what his work ultimately proved.",
+      "keyPoints": [
+        "Bradley set out to detect parallax but never found it; the stars were too far away for his instruments",
+        "He failed at his stated goal of directly demonstrating the Earth's orbit via parallax",
+        "The stellar aberration that got in his way is itself proof the Earth moves, since a tilt can only exist if the observer is in motion",
+        "So he proved the Earth moves after all, just not in the way he intended",
+        "As a bonus he measured the speed of light (301,000 km/s), showing light is fast but finite"
+      ],
+      "explanation": "The irony is that Bradley failed to find parallax yet still proved the Earth moves, because aberration only occurs for a moving observer. In the process he obtained the first accurate astronomical measurement of the finite speed of light, answering a question he had not even set out to ask.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

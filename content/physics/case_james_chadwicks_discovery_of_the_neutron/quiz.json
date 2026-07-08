@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "Before the neutron was found, physicists faced a persistent puzzle about atoms such as helium (charge 2, mass 4) and carbon (charge 6, mass 12). What was the puzzle?",
+      "options": [
+        "The mass of an atom was always roughly double its nuclear charge, so something added mass without adding charge",
+        "The charge of an atom was always roughly double its mass",
+        "Atomic masses were never whole-number multiples of hydrogen's mass",
+        "The nuclear charge was always larger than the atomic mass"
+      ],
+      "answer": 0,
+      "explanation": "Everywhere physicists looked, mass was about twice the charge (He: 4 vs 2, C: 12 vs 6), meaning some component carried mass but no charge. Option 1 is backwards; masses were in fact whole-number multiples of hydrogen's mass, and charge was always less than mass, not greater.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "What was the leading (but wrong) model of the nucleus in the 1920s that tried to explain the mass-to-charge mismatch?",
+      "options": [
+        "The nucleus contained only protons, and the extra mass came from the protons moving fast",
+        "The nucleus contained extra protons plus electrons, whose negative charge cancelled the surplus positive charge",
+        "The nucleus was made of protons and neutrons in equal numbers",
+        "The nucleus contained protons and photons bound together"
+      ],
+      "answer": 1,
+      "explanation": "The prevailing model paired extra protons with nuclear electrons: an electron subtracts a unit of charge but adds almost no mass, so a helium nucleus was imagined as 4 protons + 2 electrons (mass 4, charge 2). The proton-neutron picture (option 3) is the correct modern one that only emerged after 1932.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Applying Heisenberg's uncertainty principle to an electron confined inside the tiny nucleus led to what damning conclusion?",
+      "options": [
+        "The electron would need around 40 MeV of energy, far more than beta particles (a few MeV) or the ~9 MeV nuclear binding energy per nucleon",
+        "The electron would have essentially zero energy and could not stay in motion",
+        "The electron's charge would have to reverse sign inside the nucleus",
+        "The electron would need exactly the same energy as a proton"
+      ],
+      "answer": 0,
+      "explanation": "Confining the electron to the tiny nucleus pins down its position, so its momentum (and energy) must be enormous — about 40 MeV. But beta-decay electrons leave with only a few MeV, and the binding energy was under 9 MeV per nucleon, so no 40 MeV electron could be held inside. The numbers were absurd.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "In 1930 Bothe and Becker fired polonium's alpha particles at beryllium and produced a mysterious new radiation. What two properties made it so puzzling?",
+      "options": [
+        "It was positively charged and stopped by a sheet of paper",
+        "It carried no charge (undeflected by electric fields) yet was far more penetrating than any known gamma ray",
+        "It was negatively charged and could not penetrate any material",
+        "It carried a charge of +2 and behaved exactly like an alpha particle"
+      ],
+      "answer": 1,
+      "explanation": "The radiation passed straight through an electric field undeflected (so it was neutral) yet ploughed through material that would stop ordinary radiation, being far more penetrating than any gamma ray. Its lack of charge is precisely why it was so hard to detect.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "In 1932 in Paris, Irène Joliot-Curie and Frédéric Joliot let the beryllium radiation strike paraffin wax. What did they observe?",
+      "options": [
+        "The wax absorbed the radiation completely with nothing emerging",
+        "Electrons were ejected from the wax by the photoelectric effect",
+        "High-energy protons were knocked out of the hydrogen-rich wax, some carrying up to about 5 MeV",
+        "The wax became radioactive and emitted alpha particles"
+      ],
+      "answer": 2,
+      "explanation": "The hydrogen-rich wax released fast protons, some with up to ~5 MeV of kinetic energy, like billiard balls scattered on a break. Crucially, the radiation did NOT trigger the photoelectric effect — the wrong signature for gamma rays.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "Why was the 'gamma ray' explanation for this radiation physically untenable once it was seen knocking protons out of wax?",
+      "options": [
+        "Gamma rays are massless, so like a ping-pong ball hitting a bowling ball they could not give a proton several MeV without needing an impossibly high energy (~50 MeV)",
+        "Gamma rays are negatively charged and would be repelled by protons",
+        "Gamma rays travel too slowly to transfer any momentum to a proton",
+        "Gamma rays would have been deflected by the electric field, which was not observed"
+      ],
+      "answer": 0,
+      "explanation": "A massless gamma ray transferring several MeV to a proton is like a ping-pong ball launching a bowling ball — conservation of momentum demands the gamma ray carry an impossible ~50 MeV, far more than any nucleus could supply. Assuming a massive neutral particle instead made the numbers work.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "What was the central technique Chadwick used to determine the mass of the invisible, chargeless particle?",
+      "options": [
+        "He weighed the beryllium target before and after the experiment",
+        "He measured the recoil speeds of different target nuclei (e.g. hydrogen and nitrogen) and applied conservation of momentum to solve for the bullet's mass",
+        "He deflected the particle in a magnetic field and measured its curvature",
+        "He measured how much the particle's charge changed as it slowed down"
+      ],
+      "answer": 1,
+      "explanation": "Since the particle was invisible and uncharged (no magnetic deflection possible), Chadwick watched what it hit: he measured how fast hydrogen and nitrogen nuclei recoiled and used conservation of momentum. Every target agreed on one answer — a mass almost exactly that of a proton.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "Which nuclear reaction summarises what happened at the heart of Chadwick's experiment?",
+      "options": [
+        "An alpha particle strikes beryllium-9, producing carbon-12 plus one neutron",
+        "An alpha particle strikes beryllium-9, producing nitrogen-14 plus one proton",
+        "A proton strikes beryllium-9, producing boron-10 plus one electron",
+        "An alpha particle strikes carbon-12, producing beryllium-9 plus one neutron"
+      ],
+      "answer": 0,
+      "explanation": "The reaction is α + Be-9 → C-12 + n. Mass numbers balance (4+9 = 12+1 = 13) and charges balance (2+4 = 6+0 = 6). The emitted neutral neutron was the ghost sailing through electric fields and knocking protons out of wax.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "mc",
+      "q": "Why did discovering the neutron matter so much beyond simply tidying up the model of the atom?",
+      "options": [
+        "Because the neutron is positively charged, it could be accelerated to enormous speeds",
+        "Because the neutron has no charge, it is not repelled by the nucleus and can drift straight in — enabling nuclear fission, reactors, and the bomb",
+        "Because the neutron proved electrons really did live inside the nucleus after all",
+        "Because the neutron was lighter than an electron and so could escape the atom easily"
+      ],
+      "answer": 1,
+      "explanation": "A neutral neutron feels no electrostatic repulsion from a positive nucleus, so it can slip right in. Within a few years this enabled splitting the atom, nuclear reactors, and the bomb. The neutron is actually about as heavy as a proton (not lighter than an electron) and carries no charge.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "State the main reasons the 'electrons in the nucleus' model was rejected in the years before 1932.",
+      "keyPoints": [
+        "Nuclear spin failure: nitrogen-14 (14 protons + 7 electrons = odd number of particles) should have half-integer spin, but its measured spin was a whole number (1928)",
+        "Quantum tunnelling showed no potential well could confine an electron in so small a nucleus",
+        "Heisenberg's uncertainty principle implied a confined electron would need ~40 MeV of energy",
+        "That 40 MeV is far more than beta-decay electron energies (a few MeV) and the binding energy (under 9 MeV per nucleon), so such an electron could not be held inside"
+      ],
+      "explanation": "The model was attacked from several directions: the wrong nuclear spin for nitrogen-14, the impossibility of confining an electron (quantum tunnelling), and the uncertainty-principle energy of ~40 MeV that vastly exceeded both observed beta energies and nuclear binding energy.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q11",
+      "type": "recall",
+      "q": "List the observations Chadwick used to rule out the gamma-ray hypothesis and establish the neutron.",
+      "keyPoints": [
+        "Far too many particles were detected — gamma rays interact rarely (that's why they penetrate), so this radiation interacted too often to be light",
+        "It did not produce the photoelectric effect, which high-energy gamma rays would trigger",
+        "A gamma ray would need an impossible ~50 MeV to explain the ~5.3 MeV recoil protons, more than any nucleus could supply",
+        "Applying conservation of momentum to a massive neutral particle made the recoils across all targets (hydrogen, nitrogen) agree on a mass nearly equal to the proton's"
+      ],
+      "explanation": "Chadwick dismantled the gamma-ray theory piece by piece: the interaction rate was too high for light, the photoelectric signature was absent, and conservation of momentum demanded an absurd ~50 MeV gamma ray. Only a neutral, proton-mass particle fit every measurement.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

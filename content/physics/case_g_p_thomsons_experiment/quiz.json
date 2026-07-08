@@ -1,0 +1,144 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What did G. P. Thomson's 1927 experiment demonstrate about electrons?",
+      "options": [
+        "That electrons have a wave-like nature and can diffract and interfere",
+        "That electrons are indivisible particles with a fixed charge and mass",
+        "That electrons travel faster than the speed of light in a vacuum",
+        "That electrons are emitted only when a metal is heated"
+      ],
+      "answer": 0,
+      "explanation": "The diffraction rings on the photographic plate were direct, visible evidence that electrons behave as waves, confirming de Broglie's prediction that matter has a wave-like nature. Option 2 describes what his father J. J. Thomson had shown decades earlier (the electron as a particle), which is the opposite of what this experiment revealed.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "What target did G. P. Thomson fire his electron beam at, and why was that target suitable?",
+      "options": [
+        "A thin sheet of gold foil, whose regularly spaced atomic layers act like a diffraction grating",
+        "A block of lead, because its density stops electrons and scatters them randomly",
+        "A charged parallel-plate capacitor, because it deflects the beam into a curve",
+        "A heated tungsten filament, because it emits its own electrons to compare"
+      ],
+      "answer": 0,
+      "explanation": "He used gold foil hammered to just a few hundred atoms thick; the ordered rows of atoms are spaced about the size of the electron's wavelength, so they act as a natural diffraction grating. A dense block of lead (option 1) would simply absorb the beam and could not produce an ordered interference pattern.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Why was the electron beam accelerated inside a near-perfect vacuum?",
+      "options": [
+        "So the electrons could fly cleanly to the foil without colliding with stray gas molecules",
+        "So the electrons would slow down enough to be seen by eye",
+        "Because a vacuum increases the electric charge on each electron",
+        "Because gas molecules are needed to give the electrons their wave nature"
+      ],
+      "answer": 0,
+      "explanation": "Almost all the air was pumped out so the electrons could travel without scattering off gas molecules, keeping the beam sharp. Option 3 is wrong: the wave nature comes from the electron itself (via de Broglie's relation), not from any surrounding gas.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "What pattern appeared on the photographic plate, and what does it prove?",
+      "options": [
+        "Concentric bright and dark rings, which only waves undergoing interference can produce",
+        "A single bright central blob, proving electrons travel in straight lines",
+        "A random scatter of dots, proving electrons move unpredictably",
+        "Two sharp parallel lines, proving electrons carry both charges"
+      ],
+      "answer": 0,
+      "explanation": "Clean concentric rings of light and dark appeared around the central spot. Constructive interference gives bright rings and destructive interference gives dark gaps, a signature that particles moving in straight lines cannot create. Option 1 (a single blob) is exactly what you would expect if the electron were only a particle, which is not what was found.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "If electrons behaved purely as particles, what would have appeared on the plate?",
+      "options": [
+        "A single bright spot in the centre where the electrons piled up",
+        "A wide set of evenly spaced concentric rings",
+        "Alternating bright and dark bands like a double-slit pattern",
+        "Nothing at all, because particles cannot pass through gold"
+      ],
+      "answer": 0,
+      "explanation": "Pure particles would rush through the foil in roughly straight lines and pile up as a single central blob, like bullets through a screen door. The rings actually observed (option 1) are a wave phenomenon, which is precisely why the result was so significant.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "The same kind of ring pattern had been produced earlier using what, which strengthened the wave interpretation?",
+      "options": [
+        "X-rays passed through thin crystals and metal foils",
+        "Sound waves passed through a metal bar",
+        "Alpha particles fired at a gold foil (Rutherford's experiment)",
+        "Visible light shone through a single narrow slit"
+      ],
+      "answer": 0,
+      "explanation": "X-rays, which everyone agreed were waves, had already been fired through thin crystals and foils and came out spread into rings. Electrons making the same pattern showed they too were behaving as waves. Option 2 (Rutherford's alpha scattering) produced deflected particles, not a diffraction ring pattern, so it is not the relevant precedent.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Why is Thomson's experiment described as evidence for the wave nature of matter but NOT as confirmation of the full de Broglie relationship?",
+      "options": [
+        "It showed electrons diffract, but did not measure their exact wavelength and momentum to verify λ = h/p",
+        "It measured the wavelength precisely but used the wrong value of Planck's constant",
+        "It only worked for X-rays, not for electrons",
+        "It disproved de Broglie's equation by finding no rings at all"
+      ],
+      "answer": 0,
+      "explanation": "The rings prove electrons diffract and interfere (wave behaviour), but Thomson did not pin down the exact wavelength and momentum needed to quantitatively test λ = h/p. The experiment that measured those values and confirmed the precise formula was Davisson and Germer's, done at almost the same time.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "In an HSC exam, which experiment should you cite for the QUANTITATIVE confirmation of the de Broglie relationship λ = h/p?",
+      "options": [
+        "The Davisson and Germer experiment",
+        "G. P. Thomson's gold-foil experiment",
+        "J. J. Thomson's cathode-ray-tube experiment",
+        "Millikan's oil-drop experiment"
+      ],
+      "answer": 0,
+      "explanation": "Davisson and Germer measured the wavelength and momentum and confirmed de Broglie's precise formula, so it is the experiment for the quantitative relationship. G. P. Thomson's work (option 1) is your evidence that matter waves are real, but it did not pin down the numbers.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Describe how G. P. Thomson's experiment was set up and what result it produced.",
+      "keyPoints": [
+        "A beam of electrons was accelerated inside a tube evacuated to a near-perfect vacuum",
+        "The beam was fired at a very thin sheet of gold foil (a few hundred atoms thick)",
+        "The electrons passed through and struck a photographic plate on the far side",
+        "The developed plate showed concentric bright and dark rings around a central spot",
+        "The rings are produced by diffraction and interference, evidence of wave behaviour"
+      ],
+      "explanation": "The near-vacuum lets the electrons travel cleanly; the ordered atomic layers of the gold act as a diffraction grating; the resulting ring pattern is the unmistakable fingerprint of waves, mirroring earlier X-ray results.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Explain how the Thomson family story illustrates wave-particle duality.",
+      "keyPoints": [
+        "J. J. Thomson (the father) discovered the electron and showed it behaves as a particle",
+        "G. P. Thomson (the son) showed the same electron can behave as a wave, via diffraction rings",
+        "Both were right: the electron is genuinely both particle and wave",
+        "This is wave-particle duality: a particle when you count it, a wave when you let it spread",
+        "G. P. Thomson received a Nobel Prize in 1937, about 40 years after his father's"
+      ],
+      "explanation": "The father proved the electron is a particle and the son proved it is a wave, with no contradiction, because wave-particle duality means the electron is both depending on how it is observed. The two Nobel Prizes make the duality vivid.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

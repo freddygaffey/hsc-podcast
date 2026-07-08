@@ -1,0 +1,151 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "In the early 1900s, what did most astronomers believe about the size of the universe?",
+      "options": [
+        "That the universe contained billions of galaxies stretching in every direction",
+        "That the Milky Way was the entire universe, a single island of stars in empty dark",
+        "That the universe was expanding from a hot, dense beginning",
+        "That the Sun sat at the exact centre of an infinite field of galaxies"
+      ],
+      "answer": 1,
+      "explanation": "Before Hubble, the Milky Way was thought to be everything there was, a single island of light with nothing beyond it. The idea of countless other galaxies and an expanding universe both came out of Hubble's work, so those options describe the picture only after his observations, not before.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "Why can't the apparent brightness of a light source alone tell you how far away it is?",
+      "options": [
+        "Because brightness always increases with distance in space",
+        "Because all stars emit exactly the same amount of light",
+        "Because a dim nearby source and a brilliant distant source can look identical",
+        "Because light loses its colour but not its brightness over distance"
+      ],
+      "answer": 2,
+      "explanation": "A dim light close to you and a brilliant light far away can look exactly the same, so apparent brightness confuses true output with distance. That is why astronomers need a 'standard candle' whose true brightness is already known; stars do not all emit the same light, which is why option two is wrong.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "What did Henrietta Leavitt discover about Cepheid variable stars that made them useful as standard candles?",
+      "options": [
+        "The redder a Cepheid appeared, the closer it was to Earth",
+        "The slower a Cepheid pulsed, the more light it truly gave off",
+        "All Cepheids pulse at exactly the same steady rate",
+        "A Cepheid's brightness depends only on its distance, not its behaviour"
+      ],
+      "answer": 1,
+      "explanation": "Leavitt found a period-luminosity relation: the slower a Cepheid pulses, the greater its true luminosity. Timing the pulse therefore reveals the true brightness, which compared with how faint it looks gives the distance. Cepheids do not all pulse at the same rate, so option three is wrong.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "Which instrument did Edwin Hubble use to find a Cepheid variable in the Andromeda nebula?",
+      "options": [
+        "The Hubble Space Telescope orbiting above the atmosphere",
+        "A prism spectroscope in a Harvard laboratory",
+        "The 100-inch Hooker telescope on Mount Wilson, California",
+        "A radio dish tuned to hydrogen emission"
+      ],
+      "answer": 2,
+      "explanation": "Hubble used the 100-inch Hooker telescope on Mount Wilson, then the largest telescope in the world, able to resolve individual stars inside the fuzzy nebulae. The space telescope named after him came decades later, and spectroscopes measure redshift rather than resolving Cepheids.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "recall",
+      "q": "Explain why Hubble's measured distance to the Andromeda nebula overturned the old view that the Milky Way was the whole universe.",
+      "keyPoints": [
+        "Using Leavitt's law on a Cepheid, Hubble found Andromeda lay on the order of a million light years away (modern value about 2.5 million)",
+        "The entire Milky Way is only about 100,000 light years across",
+        "So Andromeda sits far outside our galaxy, not within it or at its edge",
+        "It must be a separate galaxy of hundreds of billions of stars in its own right",
+        "This proved the universe contains many galaxies, vastly larger than a single Milky Way"
+      ],
+      "explanation": "Because the measured distance to Andromeda was roughly ten times or more the diameter of the Milky Way, it could not be a cloud inside our galaxy. It had to be an entirely separate galaxy, which in one stroke turned the universe from a single island of stars into a place scattered with countless galaxies.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "A galaxy's spectral absorption lines are all shifted towards longer (redder) wavelengths. What does this redshift indicate?",
+      "options": [
+        "The galaxy is moving away from us, stretching the light waves",
+        "The galaxy is moving towards us, squeezing the light waves",
+        "The galaxy is made mostly of red-coloured stars",
+        "The galaxy is stationary but very hot"
+      ],
+      "answer": 0,
+      "explanation": "When a source recedes, its light waves are stretched to longer wavelengths, shifting the spectral fingerprint towards the red, just as a receding ambulance siren drops in pitch. A source approaching us would be blueshifted (squeezed), so option two describes the opposite case.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "When Hubble plotted galaxy distance against recession speed in 1929, what relationship did the data reveal?",
+      "options": [
+        "Speed was independent of distance; galaxies moved at random",
+        "The nearer a galaxy, the faster it receded",
+        "Recession speed was directly proportional to distance: twice as far, twice as fast",
+        "Only the most distant galaxies were moving, the near ones were static"
+      ],
+      "answer": 2,
+      "explanation": "The points fell on a straight line, showing recession speed is directly proportional to distance, written v = H0 d and called Hubble's law. It is the more distant galaxies that recede fastest, not the nearer ones, so option two has it backwards.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "recall",
+      "q": "Using the raisin-bread analogy, explain why every galaxy sees others receding yet the Milky Way is not the centre of the universe.",
+      "keyPoints": [
+        "As the dough rises it expands everywhere, so every raisin moves away from every other raisin",
+        "From any raisin, all others appear to recede, and the most distant recede fastest because more dough lies between",
+        "Every raisin sees the same view, so there is no special centre raisin",
+        "Galaxies are not flying through space from a central point; space itself is expanding and carrying them along",
+        "This is why recession everywhere does not imply we are at the centre of an explosion"
+      ],
+      "explanation": "The expansion happens throughout space at once, so from any galaxy all others appear to move away and the far ones fastest. Because the view is identical from every point, no galaxy is the centre; it is space itself that stretches, carrying the galaxies like raisins in rising dough.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "worked",
+      "q": "Estimate the age of the universe as roughly 1/H0 using the modern Hubble constant H0 = 70 km/s per megaparsec.",
+      "given": {
+        "H0": "70 km/s/Mpc",
+        "1 Mpc": "3.086e19 km",
+        "1 year": "3.156e7 s"
+      },
+      "working": [
+        "Convert H0 to SI (per second): H0 = 70 km/s/Mpc / (3.086e19 km/Mpc) = 2.27e-18 s^-1",
+        "Age is approximately the reciprocal: t = 1/H0 = 1 / 2.27e-18 s^-1 = 4.41e17 s",
+        "Convert seconds to years: t = 4.41e17 s / (3.156e7 s/year) = 1.40e10 years",
+        "So the estimated age is about 1.4 x 10^10 years, close to 14 billion years"
+      ],
+      "answerValue": 14000000000,
+      "answerUnit": "years",
+      "tolerance": 1000000000,
+      "explanation": "The Hubble constant sets the expansion rate, and one divided by that rate gives a rough time for the expansion to have run, i.e. the age of the universe. With H0 = 70 km/s/Mpc this yields about 14 billion years. Hubble's own first value was about seven times too large, which absurdly made the universe younger than the Earth.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "mc",
+      "q": "How does running Hubble's expanding universe backwards in time lead to the Big Bang?",
+      "options": [
+        "It shows galaxies were always at their present separations, implying a static universe",
+        "Winding the expansion in reverse brings all matter together into a single hot, dense point at a moment of beginning",
+        "It proves the universe has no beginning and is infinitely old",
+        "It shows the Milky Way was once the only object in existence"
+      ],
+      "answer": 1,
+      "explanation": "If everything is flying apart now, then in the past everything was closer together; running the film back far enough crushes all matter into a single unimaginably hot, dense point, a beginning we call the Big Bang. An expanding universe cannot be static or eternal, so those options contradict the observation.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

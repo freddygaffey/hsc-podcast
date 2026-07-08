@@ -1,0 +1,142 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "The electroweak theory that predicted the W and Z bosons was developed in the 1970s by which three theorists?",
+      "options": [
+        "Glashow, Salam, and Weinberg",
+        "Einstein, Bohr, and Heisenberg",
+        "Rubbia, Higgs, and Englert",
+        "Feynman, Gell-Mann, and Dirac"
+      ],
+      "answer": 0,
+      "explanation": "Sheldon Glashow, Abdus Salam, and Steven Weinberg developed the electroweak theory, unifying electromagnetism and the weak force. Rubbia led the CERN experiment that later found the particles, and Higgs and Englert proposed the mass-giving field, but they did not formulate the electroweak unification.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "What did the electroweak theory claim about electromagnetism and the weak force?",
+      "options": [
+        "They are two different faces of a single unified force at very high energies",
+        "The weak force is simply electromagnetism acting inside the nucleus",
+        "They are both carried by the massless photon",
+        "The weak force is stronger than electromagnetism at all energies"
+      ],
+      "answer": 0,
+      "explanation": "The theory's central claim is that at everyday energies electromagnetism and the weak force look completely different, but wound up to enormous energies they merge into one unified electroweak force. They are not the same force at low energy (they look distinct), and the weak force is far feebler than electromagnetism, not stronger.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Why does the very short range of the weak force imply its messenger particles must be extremely heavy?",
+      "options": [
+        "A heavy messenger can only carry the force a tiny distance before it must vanish, strangling the range",
+        "Heavy particles move faster and so cover less ground before decaying",
+        "The mass of the messenger repels the particles, shortening the interaction",
+        "Heavier particles carry more electric charge, which limits their reach"
+      ],
+      "answer": 0,
+      "explanation": "In this picture the reach of a force depends on the mass of its messenger: a massless messenger like the photon gives an unlimited range, while a heavy messenger can only travel a tiny distance before vanishing, confining the force to nuclear scales. Speed, charge, and repulsion are not the mechanism described.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "Which statement correctly describes the three predicted weak-force messenger particles?",
+      "options": [
+        "Two charged W particles (W+ and W-) and one neutral Z particle",
+        "Three neutral Z particles of different masses",
+        "One charged W particle and two neutral Z particles",
+        "Two neutral W particles and one charged Z particle"
+      ],
+      "answer": 0,
+      "explanation": "The theory predicted three messengers: two carrying electric charge (a positive W+ and a negative W-) and one electrically neutral Z. The other combinations misassign the charges; it is the W particles that are charged and the Z that is neutral.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "Approximately what masses did the theory predict (and experiment later confirm) for the W and Z bosons?",
+      "options": [
+        "W around 80 GeV/c² and Z around 91 GeV/c²",
+        "W around 91 GeV/c² and Z around 80 GeV/c²",
+        "Both around 1 GeV/c², similar to a proton",
+        "W around 125 GeV/c² and Z around 200 GeV/c²"
+      ],
+      "answer": 0,
+      "explanation": "The W particles were predicted and measured at about 80 GeV/c² (≈80.4) and the Z, a touch heavier, at about 91 GeV/c² (≈91.2) — roughly a hundred times the mass of a proton. The Z is the heavier of the two, so swapping the values is wrong, and both are far heavier than a proton (~1 GeV/c²).",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "Why did the experiment at CERN collide protons with antiprotons rather than just accelerating protons harder?",
+      "options": [
+        "Matter and antimatter annihilate completely, converting their entire mass into the concentrated energy needed to create a heavy particle",
+        "Antiprotons are much heavier than protons, so they carry more energy",
+        "Protons alone cannot be accelerated to high speeds in a ring",
+        "Antiprotons are electrically neutral and so are easier to steer into a collision"
+      ],
+      "answer": 0,
+      "explanation": "When matter and antimatter meet they annihilate completely, turning their entire being into pure energy — exactly the concentrated flash needed to conjure a particle ~100 times heavier than a proton. Antiprotons have the same mass as protons and carry the opposite charge (they are not neutral), so the other options are false.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "How were the W and Z particles actually detected, given that they exist for only an instant?",
+      "options": [
+        "Huge detectors around the collision point reconstructed each particle's mass from the energy of the fragments it decayed into",
+        "The particles were captured intact and weighed on a sensitive balance",
+        "They were seen directly as flashes of visible light in the detector",
+        "Their mass was calculated purely from theory without any measurement"
+      ],
+      "answer": 0,
+      "explanation": "The W and Z decay almost instantly, so house-sized detectors wrapped around the collision point sifted the debris and reconstructed each particle's mass from the energy of the fragments it left behind. They cannot be captured whole or weighed on a balance, and the whole point was to measure — not just calculate — the mass.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "According to the theory, where do the W and Z bosons get their large mass, given that the most elegant equations start with every messenger massless?",
+      "options": [
+        "From an invisible field filling all of space; particles moving through it feel a drag we experience as mass",
+        "From the kinetic energy they gain while being accelerated at CERN",
+        "From the electric charge carried by the W particles",
+        "From colliding repeatedly with protons inside the nucleus"
+      ],
+      "answer": 0,
+      "explanation": "The theorists proposed a new field filling space (the Higgs field); particles moving through it get dragged, and that drag is experienced as mass. This field should have its own particle, the Higgs. Mass here is intrinsic, not acquired from acceleration, charge, or collisions.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Explain why the 1983 confirmation of the W and Z bosons mattered so much to physics, beyond simply adding three particles to a list.",
+      "keyPoints": [
+        "It confirmed the whole idea of electroweak unification — that electromagnetism and the weak force are one force in disguise",
+        "The masses were predicted with pencil and paper years in advance and confirmed to within a whisker, showing science predicting the unseen",
+        "It gave a window into the early universe: the unified electroweak force broke apart as the cosmos cooled past ~100 GeV",
+        "It earned the experiment's leaders a Nobel Prize the following year (1984)"
+      ],
+      "explanation": "The confirmation validated electroweak unification, demonstrated the predictive power of theory (masses were specified before any particle was seen), and provided evidence about how the young universe changed as it cooled and the electroweak symmetry broke around 100 GeV.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "The prediction of the W and Z came bundled with a further prediction that took far longer to confirm. What was it, and when was it finally found?",
+      "keyPoints": [
+        "The Higgs boson — the particle of the invisible field that gives the W and Z their mass",
+        "Predicted in the 1960s alongside the electroweak framework",
+        "Confirmed in 2012, nearly three decades after the W and Z",
+        "Required an even larger machine, and it was found right where the theory said it should be"
+      ],
+      "explanation": "The final missing piece was the Higgs boson, the particle of the mass-giving field. It stayed hidden far longer than the W and Z and was only cornered in 2012 using a much larger collider, completing a structure whose blueprint had been drawn correctly decades earlier.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

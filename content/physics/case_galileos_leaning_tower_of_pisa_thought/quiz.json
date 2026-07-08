@@ -1,0 +1,143 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What did Aristotle teach about how objects fall, a belief that stood largely unchallenged for nearly two thousand years?",
+      "options": [
+        "The rate at which an object falls is proportional to its weight",
+        "All objects fall at exactly the same rate regardless of weight",
+        "Objects fall at a rate proportional to their surface area",
+        "Heavier objects fall more slowly because they resist motion"
+      ],
+      "answer": 0,
+      "explanation": "Aristotle asserted that falling speed is proportional to weight, so twice the weight meant twice the speed. Option 1 (all objects fall the same) is what Galileo actually concluded, the opposite of Aristotle's teaching.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "According to the episode, why did everyday observation seem to confirm Aristotle's rule that heavy objects fall faster?",
+      "options": [
+        "Air resistance slows light objects like feathers, mimicking a weight effect",
+        "Heavy objects really do experience a stronger acceleration near Earth",
+        "The eye cannot tell the difference between fast and slow falls",
+        "Gravity was genuinely proportional to weight until Newton changed it"
+      ],
+      "answer": 0,
+      "explanation": "Drop a feather and a stone and the stone lands first, but only because air resistance slows the feather like a tiny sail. Aristotle mistook the effect of air for a law of gravity. Option 2 is wrong: in a vacuum all masses accelerate identically.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "In his book On Motion, Galileo tied a heavy ball and a light ball together with a string. Why does this thought experiment disprove Aristotle by contradiction?",
+      "options": [
+        "The lighter ball should drag on the heavier one (slower), yet the combined object is heavier and should fall faster than the heavy ball alone",
+        "The string adds weight, so the pair must fall faster than either ball, proving the rule",
+        "Two balls tied together experience less air resistance, so they fall together",
+        "The heavy ball pulls the light ball, so the pair falls at the average of the two speeds"
+      ],
+      "answer": 0,
+      "explanation": "If Aristotle were right, the slow light ball would hold the heavy ball back so the pair falls slower than the heavy ball, yet the pair is heavier so it should also fall faster. The same object cannot fall both slower and faster, so the assumption must be false. This needs no equipment at all.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "According to the story (told by his student Viviani), how did Galileo stage the dramatic demonstration of his conclusion?",
+      "options": [
+        "He dropped unequal weights of the same material from the Leaning Tower of Pisa and compared their fall times",
+        "He rolled balls of different weights down inclined planes and timed them with a water clock",
+        "He swung pendulums of different masses to compare their periods",
+        "He dropped a feather and a coin inside an evacuated glass tube"
+      ],
+      "answer": 0,
+      "explanation": "The legend has Galileo releasing unequal weights of the same material from the tower and timing how long each took to hit the ground. The inclined-plane and evacuated-tube experiments are different demonstrations, not this tower story.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "What was the result of the Leaning Tower drop, and what did it imply about falling?",
+      "options": [
+        "The two weights landed at essentially the same time, so the rate of falling is independent of mass",
+        "The heavy weight landed noticeably first, confirming a weak dependence on mass",
+        "The light weight landed first because it caught less air",
+        "The fall time was proportional to weight, matching Aristotle"
+      ],
+      "answer": 0,
+      "explanation": "The heavy and light weights hit the ground more or less together. Since the fall time did not depend on weight, the rate of falling could not either, so weight has nothing to do with how fast something falls.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "The episode stresses that the history of the tower drop is uncertain. Why do historians debate whether it actually happened?",
+      "options": [
+        "Galileo never recorded the drop himself; it was described decades later by his student Viviani in a biography",
+        "The Leaning Tower did not yet exist in Galileo's lifetime",
+        "Galileo publicly admitted he had invented the story to fool his rivals",
+        "Church records prove Galileo was never in Pisa during those years"
+      ],
+      "answer": 0,
+      "explanation": "Galileo left no written account of the drop; the tale comes from his student Viviani, who told it decades later in his Life of Galileo. So it may be a legend added to make the story shine, though the physics conclusion holds regardless.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Galileo specified objects 'of the same material.' Why does using dense, smooth objects like spherical wooden balls or lead cannonballs keep air resistance from spoiling the result?",
+      "options": [
+        "For a heavy, compact ball the drag force is only a tiny fraction of its weight, so the fall is almost perfectly clean",
+        "Same-material objects have identical mass, so air resistance affects them equally",
+        "Dense objects experience no air resistance at all",
+        "Air resistance only acts on objects lighter than a feather"
+      ],
+      "answer": 0,
+      "explanation": "Spheres minimise surface area and, being heavy, the drag is a small fraction of the gravitational force, so the net acceleration is barely affected. Same material does not mean same mass, since the heavier ball must be larger, so option 2 is wrong.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "recall",
+      "q": "The heavier ball actually experiences MORE air resistance than the lighter one, yet they still fall together. Explain the near-cancellation that makes this work.",
+      "keyPoints": [
+        "The heavier ball has more surface area/volume, so it does meet more air resistance",
+        "But it also feels a much stronger gravitational pull (greater weight)",
+        "The extra drag and the extra gravitational force very nearly cancel in their effect on acceleration",
+        "So the heavy and light objects end up accelerating together anyway"
+      ],
+      "explanation": "There is a hidden symmetry: more mass means more air resistance but also proportionally more gravitational force, and the two effects roughly offset, leaving essentially the same acceleration. This is why the result survives even without a vacuum.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "State the central conclusion of Galileo's experiment and explain why it is the seed of projectile motion in HSC Mechanics.",
+      "keyPoints": [
+        "Strip away air resistance and every object falls with the same acceleration regardless of mass",
+        "Vertical acceleration due to gravity is constant and equal for all masses",
+        "This lets projectile motion treat vertical acceleration as a fixed constant for any object",
+        "It explains why a thrown ball and a dropped ball follow the same vertical motion",
+        "Newton later explained it via universal gravitation and F = ma"
+      ],
+      "explanation": "Galileo established that mass does not affect the rate of free fall, so vertical acceleration can be treated as constant for every projectile. This underpins the projectile-motion model and was later grounded by Newton's law of universal gravitation and second law, F = ma.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "mc",
+      "q": "Which later physicist explained WHY all masses fall with the same acceleration, weaving it into universal gravitation and F = ma?",
+      "options": [
+        "Isaac Newton",
+        "Albert Einstein",
+        "Aristotle",
+        "Johannes Kepler"
+      ],
+      "answer": 0,
+      "explanation": "Decades after Galileo, Isaac Newton explained the fact using his law of universal gravitation and his second law of motion, force equals mass times acceleration. Aristotle is the one Galileo overturned, and Kepler worked on planetary orbits, not this.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

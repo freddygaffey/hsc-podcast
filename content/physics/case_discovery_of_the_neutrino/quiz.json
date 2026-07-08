@@ -1,0 +1,153 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What observation in beta decay first suggested that a hidden particle might exist?",
+      "options": [
+        "Beta particles were emitted with a continuous spectrum of energies rather than a single fixed value",
+        "Beta particles were always emitted with exactly the same energy, like alpha particles",
+        "The nucleus gained mass every time it emitted a beta particle",
+        "Beta particles curved the wrong way in a magnetic field"
+      ],
+      "answer": 0,
+      "explanation": "Physicists expected beta particles to be monokinetic (one fixed energy) like alpha particles, because the energy difference between reactants and products is fixed. Instead they measured a smear, a whole spectrum, from high energy down to almost none. Option 1 describes the alpha-decay behaviour they wrongly expected; the whole crisis was that beta decay did NOT do this.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "Why is the kinetic energy of an alpha particle from a given decay always the same (monokinetic)?",
+      "options": [
+        "Because the energy difference between the reactants and products is a fixed number, so the leftover kinetic energy is also fixed",
+        "Because alpha particles are much heavier than beta particles and lose no energy",
+        "Because a neutrino is always emitted alongside the alpha particle to balance the energy",
+        "Because the alpha particle is electrically neutral and cannot lose energy"
+      ],
+      "answer": 0,
+      "explanation": "Energy of reactants = energy of products + KE. Since the reactant and product energies are fixed for a given decay, the leftover KE must be a fixed number every time. No neutrino is emitted in alpha decay (that is beta decay), and the alpha particle is not neutral, so options 3 and 4 are wrong.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "The continuous beta-particle energy spectrum threatened which fundamental law of physics?",
+      "options": [
+        "The law of conservation of energy",
+        "Newton's law of universal gravitation",
+        "Ohm's law",
+        "The law of reflection"
+      ],
+      "answer": 0,
+      "explanation": "If the visible products (the electron) sometimes carried less than the full energy, then energy appeared to be disappearing, threatening conservation of energy. Some physicists were even ready to abandon it. Pauli's neutrino restored the balance instead.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "Besides energy, which other conserved quantities required Pauli's proposed neutrino to balance?",
+      "options": [
+        "Momentum and angular momentum (spin)",
+        "Electric charge and mass number only",
+        "Temperature and pressure",
+        "Wavelength and frequency"
+      ],
+      "answer": 0,
+      "explanation": "The script and supplementary note that the same invisible particle was needed to conserve momentum and angular momentum (spin) as well as energy: three separate accounting problems fixed by one ghost. Charge and mass number are already balanced by the visible products, so option 2 is not what the neutrino was invoked for.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "Why did Cowan and Reines build their detector next to a nuclear reactor?",
+      "options": [
+        "A reactor core is a furnace of beta decays that pours out an enormous flux of antineutrinos, raising the chance of a rare interaction",
+        "The reactor provided the electricity needed to power the huge detector tanks",
+        "The reactor's heat was required to make the neutrinos interact with matter",
+        "The reactor shielded the detector from all other background radiation"
+      ],
+      "answer": 0,
+      "explanation": "A single neutrino almost never interacts, so the strategy was to flood the detector with an unimaginable number of them and wait for a rare collision. A reactor is the most intense man-made source of antineutrinos on Earth. The reactor was a source of particles, not merely a power supply or heat source.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "In the inverse beta decay reaction they observed, an antineutrino strikes a proton. What are the products?",
+      "options": [
+        "A neutron and a positron",
+        "A proton and an electron",
+        "An alpha particle and a gamma ray",
+        "Two neutrinos"
+      ],
+      "answer": 0,
+      "explanation": "Inverse beta decay is antineutrino + proton to neutron + positron. The proton transforms into a neutron and a positron (the antimatter twin of the electron) is thrown out. The positron is key because it later annihilates to give the detectable signal.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "How did Cowan and Reines actually detect that an interaction had happened, given the neutrino itself is invisible?",
+      "options": [
+        "By detecting the two gamma-ray photons produced when the positron annihilated with an electron",
+        "By seeing the track left by the antineutrino in a cloud chamber",
+        "By measuring the electric charge deposited by the neutrino",
+        "By weighing the tank of liquid before and after the reaction"
+      ],
+      "answer": 0,
+      "explanation": "You detect the wreckage, not the neutrino. The positron born in the collision almost immediately meets an electron and annihilates, converting their mass into two gamma-ray photons flying apart. That simultaneous double flash is the fingerprint the tanks caught. A neutral, near-massless neutrino leaves no track and no charge, ruling out options 2 and 3.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "What evidence convinced Cowan and Reines that the flashes were genuinely caused by reactor antineutrinos and not background noise?",
+      "options": [
+        "The flash rate rose when the reactor was turned on and fell when it was turned off, matching the predicted rate",
+        "The flashes only appeared during daylight hours",
+        "The flashes changed colour depending on the reactor's power",
+        "The flashes stopped completely whenever anyone entered the room"
+      ],
+      "answer": 0,
+      "explanation": "The signal got louder when the reactor was on and quieter when it was off, and it came at exactly the rate the theory predicted. Tying the count rate to the reactor state is what proved the antineutrinos, not some background, were responsible.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "q09",
+      "type": "worked",
+      "q": "When the positron from inverse beta decay annihilates with an electron, their combined rest mass is converted into two equal gamma-ray photons. Given the electron (and positron) rest mass, calculate the energy of ONE of those gamma-ray photons using E = mc^2. (Use m = 9.11 x 10^-31 kg for each particle and c = 3.00 x 10^8 m/s.)",
+      "given": {
+        "electron rest mass m": "9.11 x 10^-31 kg",
+        "positron rest mass m": "9.11 x 10^-31 kg",
+        "speed of light c": "3.00 x 10^8 m/s",
+        "number of gamma photons produced": 2
+      },
+      "working": [
+        "Rest energy of one particle: E = mc^2 = (9.11 x 10^-31)(3.00 x 10^8)^2",
+        "E = (9.11 x 10^-31)(9.00 x 10^16) = 8.20 x 10^-14 J per particle",
+        "Total energy from annihilating the electron AND the positron = 2 x 8.20 x 10^-14 = 1.64 x 10^-13 J",
+        "This is shared equally between two gamma photons, so each photon carries half: E_gamma = 1.64 x 10^-13 / 2 = 8.20 x 10^-14 J",
+        "(Each photon therefore equals the rest energy of a single electron, about 0.511 MeV.)"
+      ],
+      "answerValue": 8.2e-14,
+      "answerUnit": "J",
+      "tolerance": 0.2e-14,
+      "explanation": "Each gamma-ray photon carries away the rest energy of one electron, mc^2 = 8.2 x 10^-14 J (about 0.511 MeV). The two photons are emitted in opposite directions to conserve momentum, and their precise, fixed energy is exactly the fingerprint the detector was tuned to catch.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Explain how the discovery of the neutrino shows that a conservation law can be used to predict a new particle before it is ever observed. Refer to the beta-decay problem, Pauli's proposal, and the Cowan-Reines confirmation.",
+      "keyPoints": [
+        "Beta particles were measured with a continuous energy spectrum, so energy (and also momentum and angular momentum) appeared to be missing from the visible products",
+        "Rather than abandon conservation of energy, Pauli (1930) proposed a hidden particle: neutral (leaves no track) and almost massless, that carries away the missing energy so the books balance",
+        "The neutrino was foretold purely because the conservation equations demanded it, not stumbled upon",
+        "About 25-26 years later, Cowan and Reines (1956) confirmed it by observing inverse beta decay next to a nuclear reactor, detecting the positron-annihilation gamma rays",
+        "The signal matched the predicted rate and tracked the reactor being on or off, proving the predicted particle was real and vindicating conservation of energy"
+      ],
+      "explanation": "The neutrino is a landmark example of theory-led discovery: trusting conservation of energy so completely that an invisible particle was predicted from the equations alone, then found experimentally decades later. It shows conservation laws are not just bookkeeping, they have real predictive power.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    }
+  ]
+}

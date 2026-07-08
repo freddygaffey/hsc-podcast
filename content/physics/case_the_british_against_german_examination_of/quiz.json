@@ -1,0 +1,144 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What was the central question dividing British and German physicists about cathode rays in the 1890s?",
+      "options": [
+        "Whether the rays were a wave (like light) or a stream of tiny particles",
+        "Whether the rays travelled faster or slower than light",
+        "Whether the rays were emitted by the anode or the cathode",
+        "Whether the rays carried positive or neutral charge"
+      ],
+      "answer": 0,
+      "explanation": "The debate was wave versus particle: the Germans (led by Hertz) argued the rays were a disturbance in the ether like light, while the British (led by J. J. Thomson) argued they were a hail of tiny particles. The other options were not the point of contention; the charge question only arose once the particle case was being built.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "Which observation was originally taken as evidence FOR the wave theory of cathode rays?",
+      "options": [
+        "The rays could pass straight through a thin sheet of aluminium",
+        "A magnetic field bent the beam in proportion to its strength",
+        "The beam balanced when electric and magnetic forces opposed each other",
+        "The charge-to-mass ratio was over a thousand times that of a hydrogen ion"
+      ],
+      "answer": 0,
+      "explanation": "That cathode rays penetrated thin aluminium foil looked wave-like (light passes through glass), so it counted for the German wave side. The other three are Thomson's particle-side evidence, gathered later.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Why did Hertz's electric field fail to deflect the cathode ray beam, according to Thomson's explanation?",
+      "options": [
+        "Residual gas in the tube was ionised, and the ions screened (shielded) the field so it never reached the beam",
+        "The cathode rays were genuinely uncharged and so ignored the field",
+        "The electric field was far stronger than any magnetic field could ever be",
+        "The glass of the tube blocked electric fields but not magnetic fields"
+      ],
+      "answer": 0,
+      "explanation": "Hertz had not evacuated his tube well enough. The strong field ionised the leftover gas; the drifting ions piled up against the tube walls and cancelled the field inside, so the beam felt almost nothing. The rays were in fact charged, which is why Thomson's better vacuum let the field work; glass does not selectively block electric fields.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "How did Thomson determine that the cathode ray particles carried NEGATIVE charge?",
+      "options": [
+        "From the direction the beam bent in a magnetic field, worked out from the geometry of the magnetic force",
+        "From the green colour of the glow at the end of the tube",
+        "From the fact that the rays could pass through aluminium",
+        "From the shadow cast by a Maltese cross placed in the beam"
+      ],
+      "answer": 0,
+      "explanation": "The direction of deflection in a magnetic field, analysed through the geometry of the magnetic force, showed the beam behaved exactly as a stream of negative charges should. The colour, the aluminium penetration, and the shadow indicate the rays travel in straight lines or are being blocked, but none reveals the sign of the charge.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "Thomson noted the beam bent 'in proportion' to the magnetic field: double the field, double the deflection. Why did this matter?",
+      "options": [
+        "A clean proportional response is the fingerprint of a charged particle obeying a force, not a vague wave",
+        "It proved the rays travelled faster than light",
+        "It showed the rays were made of the same metal as the cathode",
+        "It demonstrated the rays carried no charge at all"
+      ],
+      "answer": 0,
+      "explanation": "The predictable, proportional deflection is what you expect from a charged particle responding to a force, which was Thomson's 'tell' that the rays were particles. It says nothing about the rays' speed relative to light or the cathode material, and it argues against, not for, the rays being uncharged.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "Why were magnetic fields able to deflect the fast cathode rays much more noticeably than weak electric fields?",
+      "options": [
+        "The magnetic force depends on the particle's velocity (qv×B), so the rays' huge speed multiplies it, while a weak electric force barely nudges something moving so fast",
+        "Magnetic fields are always stronger than electric fields in a vacuum",
+        "Electric fields cannot exert any force on a moving charge",
+        "The particles were attracted to magnets because they were made of iron"
+      ],
+      "answer": 0,
+      "explanation": "The magnetic force q(v×B) grows with the particle's velocity, so the blistering speed of the electrons boosts it; a weak sideways electric force barely affects something screaming past that fast. Electric fields do act on moving charges (Thomson later showed this with a harder vacuum), magnetic fields are not intrinsically stronger, and the particles are not iron.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "The spinning paddle wheel in the beam was long cited as proof that cathode rays carried momentum and mass. What did physicists later realise?",
+      "options": [
+        "The wheel turned mainly from a heat (thermodynamic) effect, not from being struck by particles — the right answer for the wrong reason",
+        "The paddle wheel never actually moved and the demonstration was faked",
+        "The wheel turned because cathode rays are waves, disproving the particle model",
+        "The momentum of the rays was found to be exactly zero"
+      ],
+      "answer": 0,
+      "explanation": "The wheel was essentially a little heat engine: the beam warmed the gas and vanes and made it spin. Cathode rays do carry momentum, but the paddle wheel demonstrated it for the wrong reason, so Thomson's real case rested on the deflections and charge-to-mass ratio instead. The wheel did move, and the effect does not support a wave model.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "Thomson's measured charge-to-mass ratio for the cathode ray particles was over a thousand times that of a hydrogen ion. What conclusion did he draw?",
+      "options": [
+        "The particles were fantastically light — nearly two thousand times lighter than a hydrogen atom",
+        "The particles carried an enormous charge but had ordinary atomic mass",
+        "The particles were identical to hydrogen ions",
+        "The particles must be a form of light with no mass at all"
+      ],
+      "answer": 0,
+      "explanation": "A charge-to-mass ratio a thousand-plus times that of hydrogen meant either an enormous charge or an incredibly tiny mass. Thomson made the bold call that they were fantastically light, nearly two thousand times lighter than a hydrogen atom — the first subatomic particle, the electron. They were not hydrogen ions and were not massless.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Explain how Thomson used crossed electric and magnetic fields to reach a numerical result about the cathode ray particles, and why that result was so significant.",
+      "keyPoints": [
+        "A magnetic field bent the beam one way and an electric field bent it the other; he tuned them to balance to a standstill",
+        "From this balance (and letting the magnetic force act alone) he extracted the ratio of the particle's charge to its mass",
+        "The charge-to-mass ratio was more than a thousand times larger than that of a hydrogen ion (the lightest known thing)",
+        "This implied the particles were nearly two thousand times lighter than a hydrogen atom",
+        "It was the same particle regardless of the cathode metal or trace gas, so it was universal — a building block inside every atom",
+        "It proved the atom is not indivisible: the first subatomic particle, the electron, had been found"
+      ],
+      "explanation": "By balancing the electric and magnetic deflections and then removing one, Thomson isolated the charge-to-mass ratio. Its enormous value pointed to an impossibly light, universal particle present in all matter — overturning the 2000-year-old idea of the uncuttable atom and launching subatomic physics.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Give the key reason Thomson could claim the electron was a universal building block of matter rather than a property of one particular material.",
+      "keyPoints": [
+        "It did not matter what metal the cathode was made from",
+        "It did not matter what trace of gas remained in the tube",
+        "The same particle appeared every time, with the same tiny mass and the same negative charge",
+        "Therefore the particle was not a property of one material but something common to every atom of every element"
+      ],
+      "explanation": "Because identical particles — same mass, same negative charge — emerged no matter the cathode material or residual gas, Thomson concluded the electron was universal: a piece hiding inside every atom, not a quirk of one substance.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

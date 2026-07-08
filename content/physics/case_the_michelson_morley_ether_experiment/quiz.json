@@ -1,0 +1,142 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "In the 1880s, most physicists insisted there had to be a \"luminiferous ether\". What made them so sure it existed?",
+      "options": [
+        "Telescopes had detected a faint glow filling the space between the stars",
+        "Every wave they had ever studied travelled through a medium, so a light wave seemed to need one too",
+        "Maxwell's equations explicitly required a medium in order to give a wave solution",
+        "The ether had already been weighed and measured in the laboratory"
+      ],
+      "answer": 1,
+      "explanation": "Correct: ripples need water, sound needs air, so by analogy a light wave was assumed to need a medium, named the luminiferous (light-bearing) ether. The option about Maxwell is the reverse of the truth: Maxwell's equations described light propagating through empty vacuum and did NOT ask for any medium, which is precisely what made the ether a problem.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "Why did Maxwell's electromagnetic theory of light actually cause trouble for the ether idea?",
+      "options": [
+        "His equations proved the ether was moving faster than light",
+        "His equations described light as a wave that needs no medium, propagating through pure vacuum",
+        "He showed light was a stream of particles, not a wave at all",
+        "He calculated a speed of light that was different from the measured value"
+      ],
+      "answer": 1,
+      "explanation": "Correct: Maxwell stitched electricity and magnetism into one set of equations, and out fell a wave travelling at the speed of light through empty vacuum, with no ether required. This clashed with the belief that every wave needs a medium, so physicists awkwardly kept the ether anyway. Maxwell confirmed light IS a wave (an electromagnetic one), so the particle option is wrong.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Michelson could not detect the ether directly, so what quantity did his experiment actually set out to measure?",
+      "options": [
+        "The mass of the ether",
+        "The velocity of the Earth relative to the ether",
+        "Whether light is a wave or a particle",
+        "The exact value of the speed of light in a vacuum"
+      ],
+      "answer": 1,
+      "explanation": "Correct: since the ether was undetectable by conventional means, Michelson's clever move was to detect the Earth moving through it, i.e. measure the velocity of the Earth relative to the ether. The aim was not to prove the ether existed nor to find a fresh value for the speed of light, but to measure that relative motion, the ether wind.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "In the river-and-boat analogy Michelson used, what do the river, the current, and the boat represent?",
+      "options": [
+        "The river is light, the current is the Earth, the boat is the ether",
+        "The river is the ether, the current is the ether wind (from Earth's motion), the boat is a beam of light",
+        "The river is the vacuum, the current is gravity, the boat is the observer",
+        "The river is the interferometer, the current is the mirror, the boat is the fringe pattern"
+      ],
+      "answer": 1,
+      "explanation": "Correct: the river is the stationary ether, the current is the ether wind caused by the Earth ploughing through that ether, and the boat is a beam of light that always moves at the same speed relative to the medium. The point of the analogy is that a round trip across the current and a round trip along-and-against it take different times, even over equal distances.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "A light difference too tiny for any stopwatch had to be measured. How did the Michelson interferometer detect it?",
+      "options": [
+        "By using an extremely fast electronic clock to time each beam separately",
+        "By splitting one beam in two with a half-silvered mirror and recombining them so they interfere, producing fringes",
+        "By measuring the temperature rise as the beams struck the far mirrors",
+        "By weighing the apparatus before and after the light passed through it"
+      ],
+      "answer": 1,
+      "explanation": "Correct: Michelson did not try to time the light. A half-silvered (partly reflective) mirror splits a single beam into two perpendicular beams; each runs down an equal-length arm, reflects back, and the two recombine and interfere, using light to measure itself. No clock on Earth was fast enough to catch the difference directly, which is exactly why interference was needed.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "What is a \"fringe shift\", and why was it the signature Michelson was hunting for?",
+      "options": [
+        "The fringes changing colour, showing the light had changed frequency",
+        "The whole striped pattern sliding sideways when one beam is delayed relative to the other, e.g. as the apparatus is rotated in the ether wind",
+        "The fringes disappearing completely whenever the room got too warm",
+        "A permanent change in the number of fringes caused by the mercury bath"
+      ],
+      "answer": 1,
+      "explanation": "Correct: the interference fringes are exquisitely sensitive to timing, so even a fraction-of-a-wavelength delay in one beam slides the whole striped pattern sideways. As Michelson rotated the apparatus, the arm along the ether wind would swing to point against it, reversing the delay and making the fringes crawl side to side. Catching that drift would mean catching the Earth's motion through the ether.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "What was the actual result of the experiment, and what is such a result called?",
+      "options": [
+        "A large fringe shift, called a positive detection of the ether",
+        "No meaningful fringe shift at all, called a null result",
+        "The fringes vanished entirely, called total destructive interference",
+        "A fringe shift exactly matching the prediction, confirming the ether wind"
+      ],
+      "answer": 1,
+      "explanation": "Correct: turning the apparatus through every angle and watching for hours, Michelson saw the fringes sit stubbornly still, with no meaningful shift. A carefully working experiment that detects exactly nothing gives a null result. It is famous precisely because the most sensitive measurement yet attempted was aimed at the ether wind and found nothing there.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "A common exam trap: what did the null result actually establish about the ether?",
+      "options": [
+        "It proved conclusively that the ether does not exist",
+        "It failed to measure any velocity of the Earth relative to the ether and gave no evidence the ether was there",
+        "It proved the ether exists but is dragged along with the Earth",
+        "It proved light does not need a medium and therefore cannot be a wave"
+      ],
+      "answer": 1,
+      "explanation": "Correct: the careful distinction is that the experiment did not prove the ether does not exist; it failed completely to measure its velocity and failed to provide any evidence it was there. It removed the reason to believe in the ether rather than formally disproving it. Ideas like ether-dragging were later rescue attempts, not things the experiment proved.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Explain how the null result of the Michelson-Morley experiment led toward Einstein's special relativity. What did the unmoving fringes really imply about the speed of light?",
+      "keyPoints": [
+        "No matter which direction Michelson measured (along Earth's motion or across it), the light returned in the same time, so its speed did not change with the Earth's motion",
+        "Rather than patching a broken ether, Einstein took the radical view that there is no ether and the speed of light is the same for every observer, however they are moving",
+        "This constant speed of light is one of the two postulates of special relativity",
+        "From it follow consequences such as moving clocks running slow (time dilation) and moving lengths shrinking (length contraction)"
+      ],
+      "explanation": "The null result says light's speed is independent of the observer's motion. Where others tried to save the ether, Einstein discarded it and made the constancy of the speed of light a fundamental law, one of the two postulates of special relativity, from which time dilation and length contraction follow.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "The interferometer was so sensitive that everyday disturbances could ruin the measurement. Describe the practical steps Michelson took to isolate the apparatus and to give the ether wind a chance to reveal itself.",
+      "keyPoints": [
+        "A footstep, a passing carriage, or even the warmth of a hand could blur the fringes, so vibration and disturbance had to be eliminated",
+        "The apparatus was mounted on a massive stone slab floated in a pool of liquid mercury so it could be rotated smoothly and silently without jolts",
+        "Michelson rotated the instrument slowly through many angles so the arms would swing from along the ether wind to across/against it",
+        "Measurements were repeated at many times of day, because as the Earth spins and orbits the direction of the ether wind should keep changing"
+      ],
+      "explanation": "Because the instrument responded to the faintest disturbance, it was floated on mercury on a stone slab for smooth, jolt-free rotation. Rotating through many angles and repeating at many times of day gave the ether wind every chance to shift the fringes; yet they never meaningfully moved.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "In the 1870s, German and British physicists disagreed sharply about the nature of cathode rays. What were the two competing hypotheses?",
+      "options": [
+        "The Germans said the rays were waves (a new kind of light in the ether); the British said they were streams of charged particles",
+        "The Germans said the rays were particles; the British said they were waves in the ether",
+        "Both camps agreed the rays were waves, but disagreed about the wavelength",
+        "Both camps agreed the rays were particles, but disagreed about the charge"
+      ],
+      "answer": 0,
+      "explanation": "The 19th-century worldview split all phenomena into matter (atoms) or waves (light in the ether). German physicists mostly argued cathode rays were some new form of light/wave; British physicists mostly argued they were charged projectiles. Option 1 reverses the two camps.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "The cathode is heated (typically 600-2000 degrees Celsius) to release electrons from its surface. What is this process called?",
+      "options": [
+        "Photoelectric emission",
+        "Field ionisation",
+        "Thermionic emission",
+        "Radioactive decay"
+      ],
+      "answer": 2,
+      "explanation": "Heating the metal gives its electrons enough thermal energy to exceed the work function and escape the surface: thermionic emission. Photoelectric emission (option 2) is electrons released by incident light/photons, not heat, so it is the wrong mechanism here.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Why did the discovery of cathode rays have to wait for Heinrich Geissler's improved vacuum pump?",
+      "options": [
+        "Air molecules in the tube would collide with the fast electrons and dissipate their energy before they could cross; the tube had to be evacuated (to about 0.01% of atmospheric pressure) for the beam to form",
+        "The pump was needed to create the high voltage that accelerates the electrons",
+        "Without the pump the glass tube would implode under atmospheric pressure",
+        "The pump supplied the oxygen the cathode needed to emit electrons"
+      ],
+      "answer": 0,
+      "explanation": "In ordinary air, a fast charge smashes into gas molecules almost immediately and loses its energy. Evacuating the tube to roughly one hundredth of one percent of atmospheric pressure let the charges fly the length of the tube nearly unobstructed so the beam could form. The voltage came from an induction coil, not the pump (option 2).",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "What single observation showed decisively that cathode rays are charged particles rather than a form of light?",
+      "options": [
+        "The beam produced a green glow at the end of the tube",
+        "When a magnet was brought near, the beam bent, and it bent more as the magnet was made stronger",
+        "The beam travelled in straight lines when no field was applied",
+        "The beam appeared only when the tube was evacuated"
+      ],
+      "answer": 1,
+      "explanation": "Light (waves) is unaffected by magnets, but moving charges are deflected by a magnetic field, and the deflection grew with field strength. That magnetic deflection is the decisive evidence. A glow or straight-line travel (options 2 and 3) does not distinguish waves from particles.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "The direction in which the magnetic field deflected the cathode-ray beam told physicists a specific fact about the particles. What was it?",
+      "options": [
+        "They carried negative electric charge",
+        "They carried positive electric charge",
+        "They were electrically neutral",
+        "They had no mass"
+      ],
+      "answer": 0,
+      "explanation": "The beam swerved in exactly the direction expected for a negative charge, showing cathode rays are streams of negatively charged particles (later named electrons). A positive or neutral beam (options 2 and 3) would deflect the opposite way, or not at all.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "The tube is nearly evacuated, yet it still glows. Where does the glow come from?",
+      "options": [
+        "The glass of the tube fluoresces because it is heated by the cathode",
+        "The vacuum itself emits light when a voltage is applied across it",
+        "Fast cathode rays collide with the small amount of remaining gas, exciting or ionising its atoms; when the disturbed electrons fall back to lower energy levels they emit photons",
+        "Air rushing into the tube burns and produces light"
+      ],
+      "answer": 2,
+      "explanation": "A cathode ray slamming into a leftover gas molecule transfers kinetic energy that lifts one of the molecule's electrons to a higher level (or ionises it). When the electron falls back, it releases that borrowed energy as a photon; countless such events give the steady glow. The tube is not perfectly empty, so option 3 (empty vacuum glowing) is wrong.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "The script compares the cathode-ray glow to electron transitions in Bohr's model of the atom. What is the key difference between the two cases?",
+      "options": [
+        "In the tube the electron is lifted to a higher level by the kinetic energy of a colliding cathode ray, not by an absorbed photon as in Bohr's model",
+        "In the tube no photon is ever emitted, unlike in Bohr's model",
+        "In the tube the electron gains energy by absorbing a photon, exactly as in Bohr's model",
+        "In Bohr's model the electron is lifted by a collision, whereas in the tube it absorbs a photon"
+      ],
+      "answer": 0,
+      "explanation": "Both cases involve an electron jumping up and then falling back down while emitting a photon. The difference is the source of the initial kick: in Bohr's model an incoming photon is absorbed, while in the tube the energy comes from the raw kinetic energy of a cathode ray striking the atom. Option 2 is wrong because a photon IS emitted when the electron falls back.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "How was the enormous accelerating voltage generated in these 19th-century experiments, before mains electricity?",
+      "options": [
+        "A large chemical battery of many cells wired in series",
+        "A hand-cranked electrostatic generator storing charge in a Leyden jar",
+        "A hydroelectric turbine feeding the laboratory directly",
+        "An induction coil: a rapidly switched primary coil induces a high voltage in a secondary coil with up to 10,000 times more windings, which is then rectified to DC"
+      ],
+      "answer": 3,
+      "explanation": "The voltage came from an induction coil (essentially a transformer): an interrupter rapidly switches current in a few-turn primary, and the changing magnetic field induces a large voltage in a secondary with far more windings, which is then rectified into steady DC. This matches the script and supplementary; a battery or turbine (options 2 and 4) was not the source described.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "mc",
+      "q": "Cathode rays revealed something that overturned the belief that the atom was indivisible. What was the profound implication?",
+      "options": [
+        "Atoms could be split to release enormous nuclear energy",
+        "Negatively charged pieces smaller than the atom were being boiled out of solid metal, showing the atom is not indivisible and has internal parts",
+        "Light and matter are the same thing",
+        "The atom is mostly empty space with a dense positive nucleus"
+      ],
+      "answer": 1,
+      "explanation": "The rays were negative particles pulled straight out of solid metal, meaning something smaller than the atom lives inside it, the 'uncuttable' had been cut. This was the first glimpse of a subatomic particle (the electron). The nuclear/empty-space picture (option 4) came later from Rutherford, not from this experiment.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Walk through how a beam of cathode rays is produced and made to travel across an evacuated tube.",
+      "keyPoints": [
+        "The cathode (metal) is heated to 600-2000 degrees Celsius so electrons gain energy above the work function and escape by thermionic emission",
+        "A large voltage from an induction coil (rectified to DC) is applied between the cathode and the positive anode",
+        "This sets up an electric field E = V/d, giving a force F = qV/d and acceleration a = qV/(md) on each electron; because both q/m and V/d are very large, the electrons reach very high speeds",
+        "The tube must be evacuated (Geissler's pump, to about 0.01% of atmospheric pressure) so the electrons are not stopped by collisions with air molecules",
+        "The rays are named 'cathode rays' because they stream out of the cathode"
+      ],
+      "explanation": "A full answer links thermionic emission (the launch), the induction-coil voltage and the electric field that accelerates the electrons, and the vacuum that lets them travel unobstructed. Missing the vacuum step is the most common gap, since without it the beam never forms.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

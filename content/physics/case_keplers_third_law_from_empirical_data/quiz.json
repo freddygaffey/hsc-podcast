@@ -1,0 +1,163 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What exact relationship did Kepler discover when he analysed the planets' distances and periods in 1618?",
+      "options": [
+        "A planet's distance from the sun is directly proportional to its orbital period",
+        "The cube of a planet's mean distance from the sun is proportional to the square of its orbital period",
+        "The square of a planet's mean distance is proportional to the cube of its orbital period",
+        "A planet's speed is constant and identical for every planet in the solar system"
+      ],
+      "answer": 1,
+      "explanation": "Kepler found that r³ ∝ T², so r³/T² is the same constant for every planet orbiting the sun. Option A (simple proportionality) is exactly the 'trap' the narrator warns against: Saturn is ~9.5× further than Earth but its year is ~30× longer, not 9.5×. The exponents are cubed-distance over squared-period, not the reverse.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "Why did Kepler think he was 'dreaming' when he looked at his table of numbers?",
+      "options": [
+        "Every planet gave a different, random value with no pattern at all",
+        "The value of r³/T² came out to nearly the same number for all six wildly different planets",
+        "The planets turned out to orbit the Earth after all, confirming the old model",
+        "He realised the planets moved in perfect circles rather than ellipses"
+      ],
+      "answer": 1,
+      "explanation": "Six independent worlds, from scorched Mercury to frozen Saturn, all gave r³/T² ≈ 7.5, agreeing to within a fraction of a percent — a single hidden law nobody had ever seen. Option D is wrong: Kepler's first law had already shown the orbits were ellipses, not circles; this third-law moment was about the distance–period ratio.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Whose decades of precise naked-eye observations gave Kepler the data he needed to test his law?",
+      "options": [
+        "Nicolaus Copernicus",
+        "Isaac Newton",
+        "Tycho Brahe",
+        "Galileo Galilei"
+      ],
+      "answer": 2,
+      "explanation": "The Danish nobleman Tycho Brahe, famous for his silver nose and island observatory, measured planetary positions more accurately than anyone in history using giant metal instruments and his trained eye — all before the telescope. Copernicus proposed the sun-centred model but did not supply this data; Newton came decades later to explain the law.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "Why was the heliocentric model of Copernicus still not widely accepted before Kepler's work?",
+      "options": [
+        "It could not predict planetary positions accurately, because it still assumed circular orbits",
+        "It failed to explain the retrograde (backwards) motion of Mars",
+        "There was no data available to test any model of the sky",
+        "It placed the Earth, not the sun, at the centre of the solar system"
+      ],
+      "answer": 0,
+      "explanation": "Copernicus kept the ancient assumption that orbits must be perfect circles, so his predictions drifted from reality and were no better than the old model. Science runs on prediction, not beauty. Option B is wrong: the sun-centred picture actually explained retrograde motion elegantly (we overtake outer planets on a faster inner track).",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "In the geocentric (Earth-centred) model, retrograde motion — a planet appearing to stop and loop backwards — was explained by:",
+      "options": [
+        "Elliptical orbits with the Earth at one focus",
+        "Epicycles, small circles riding on larger circles, tuned by hand",
+        "The gravitational tug of one planet on another",
+        "The Earth overtaking outer planets on a faster inner orbit"
+      ],
+      "answer": 1,
+      "explanation": "To rescue the Earth-centred theory, astronomers bolted on epicycles — wheels within wheels — tuned by hand to roughly reproduce the observed positions. Option D is the heliocentric (sun-centred) explanation of retrograde motion, not the geocentric one, and it is the correct modern picture.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "How did Kepler treat the small discrepancies in his table (Mercury's ratio slightly high, Saturn's slightly low)?",
+      "options": [
+        "He fudged the data to make every value identical",
+        "He concluded the law was false and abandoned it",
+        "He accepted them as honest results of imperfect instruments and mutual gravitational tugs between planets",
+        "He ignored Saturn and Mercury entirely to keep only the clean values"
+      ],
+      "answer": 2,
+      "explanation": "Kepler recognised that Tycho's instruments were not flawless and that planets gently tug on one another, nudging orbits away from perfect ellipses — so the tiny discrepancies were the fingerprints of a real universe, not a failure of the law. He did not fudge, abandon, or discard data.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Why was Kepler's third law such powerful evidence for the sun-centred model?",
+      "options": [
+        "It proved the planets move in circles as the ancients demanded",
+        "The Earth-centred model gave no reason to expect any distance–period relationship, yet here was an exact universal law that only makes sense if planets orbit the sun",
+        "It was the first idea that was more beautiful than the geocentric model",
+        "It allowed Kepler to calculate the mass of the sun directly"
+      ],
+      "answer": 1,
+      "explanation": "The old Earth-centred model predicted no link at all between a planet's distance and its period, but Kepler found an exact, universal law that only makes sense if planets truly circle the sun, ruled by something reaching from the centre. Beauty (option C) was never the deciding factor — the script stresses science runs on prediction.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "Who later explained WHY Kepler's third law must be true, and with what idea?",
+      "options": [
+        "Copernicus, using the assumption of circular orbits",
+        "Tycho Brahe, using more precise measurements",
+        "Isaac Newton, showing the law drops out of universal gravitation",
+        "Galileo, using observations through his telescope"
+      ],
+      "answer": 2,
+      "explanation": "Kepler found the empirical footprint but could not say what caused it. Decades later Newton showed the law follows inevitably from universal gravitation — the same force that pulls an apple down reaches out to hold Saturn in orbit. Kepler found the footprint; Newton found the creature that made it.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "worked",
+      "q": "Using the constant from Kepler's data, k = r³/T² = 7.50×10⁻⁶ AU³/day², predict the orbital period T of Mars, whose mean distance from the sun is r = 1.524 AU.",
+      "given": [
+        "Kepler's third law: r³/T² = k (a constant for all planets)",
+        "k = 7.50×10⁻⁶ AU³/day²",
+        "Mean distance of Mars: r = 1.524 AU"
+      ],
+      "working": [
+        "Rearrange r³/T² = k for the period: T² = r³ / k",
+        "Cube the distance: r³ = (1.524)³ = 3.540 AU³",
+        "Divide by the constant: T² = 3.540 / (7.50×10⁻⁶) = 4.72×10⁵ day²",
+        "Take the square root: T = √(4.72×10⁵) ≈ 687 days"
+      ],
+      "answerValue": 687,
+      "answerUnit": "days",
+      "tolerance": 10,
+      "explanation": "Rearranging r³/T² = k gives T = √(r³/k). With r = 1.524 AU, r³ = 3.540, so T² = 3.540/7.50×10⁻⁶ ≈ 4.72×10⁵ and T ≈ 687 days — matching Tycho's measured value of 686.95 days. This shows one constant predicts every planet's period from its distance alone.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "How is Kepler's third law still used by engineers today? Give a concrete modern application described in the episode.",
+      "keyPoints": [
+        "The relationship r³ ∝ T² is used to place satellites in the correct orbit",
+        "It tells engineers precisely what altitude gives a desired orbital period",
+        "A geostationary satellite is placed so its period matches one turn of the Earth, hanging motionless over one spot on the equator",
+        "Used for television, weather, and navigation satellites"
+      ],
+      "explanation": "Four centuries on, the same distance-cubed-proportional-to-period-squared law lets engineers choose a satellite's altitude to set its period. For a geostationary satellite, the altitude is chosen so the period equals one Earth day, keeping it fixed above a single point on the equator for TV, weather and navigation.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q11",
+      "type": "recall",
+      "q": "State Kepler's three laws of planetary motion in the order he discovered them, as described in the episode.",
+      "keyPoints": [
+        "First law: planetary orbits are ellipses (gentle ovals), not circles, with the sun sitting slightly off to one side (at a focus)",
+        "Second law: a planet speeds up when it swings close to the sun and slows down when it drifts far away",
+        "Third law: the cube of a planet's mean distance from the sun is directly proportional to the square of its orbital period (r³ ∝ T²), giving the same constant for every planet",
+        "The third law was the prize — a single rule tying ALL the planets together, not a separate law for each"
+      ],
+      "explanation": "Kepler first cracked the shape (ellipses, first law), then how a planet's speed varies around its orbit (second law), and finally the single relationship binding every planet's distance to its period (third law). The third was the one he was really hunting: one law for the entire solar system at once.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

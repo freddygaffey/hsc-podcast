@@ -1,0 +1,148 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What were Davisson and Germer originally trying to do when they set up their experiment?",
+      "options": [
+        "Prove that electrons have a wavelength, as predicted by de Broglie",
+        "Study the surface of a piece of nickel by seeing how electrons scattered off it",
+        "Measure the charge of a single electron",
+        "Test whether light could behave like a stream of particles"
+      ],
+      "answer": 1,
+      "explanation": "They worked for the research arm of Western Electric (later Bell Labs) and were doing a practical study of how electrons bounced off a nickel surface. They were not trying to test de Broglie; measuring electron charge was Millikan's work, and light-as-particles was the photoelectric effect.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "Before the accident, everyone in the lab pictured the electron as a tiny particle. What kind of scattering pattern does firing tiny balls at a lumpy surface produce?",
+      "options": [
+        "Sharp peaks of many electrons at very specific angles",
+        "No electrons returning at all",
+        "A smooth, gentle, featureless hill with no sharp features",
+        "Alternating bright and dark rings"
+      ],
+      "answer": 2,
+      "explanation": "Particles scattering off a surface (like sand off a rock) give a smooth, featureless distribution with no sharp structure. Sharp peaks and rings are wave phenomena (diffraction/interference), which is exactly what should NOT happen for pure particles.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "A flask of liquid air exploded and the nickel rusted, so Davisson and Germer baked the nickel to clean it. What crucial, unintended change did this heating cause?",
+      "options": [
+        "It melted the nickel into a smooth liquid mirror",
+        "It fused the many tiny random crystal grains into a few large, orderly crystals with atoms in regular rows",
+        "It gave the nickel a new electric charge that deflected the electrons",
+        "It coated the nickel in a thin oxide layer that acted like a grating"
+      ],
+      "answer": 1,
+      "explanation": "Prolonged heating recrystallised the nickel: the jumble of tiny grains fused into a few large crystals with atoms in neat, regularly spaced rows. That regular grid is what diffracted the electrons. The oxide layer was the contamination they removed, not the cause of the effect.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "After the recrystallised nickel was back in the machine, what did the scattered electrons do that was impossible for ordinary particles?",
+      "options": [
+        "They all passed straight through the nickel unaffected",
+        "They stopped completely and were absorbed by the metal",
+        "They came out in bright bursts at specific angles and almost none at other angles, forming sharp peaks and valleys",
+        "They came out with much more energy than they went in with"
+      ],
+      "answer": 2,
+      "explanation": "Instead of a smooth hill, they saw strong peaks at certain angles and deep valleys at others, a structured, angle-dependent pattern, the unmistakable fingerprint of wave diffraction and interference, which grains of matter cannot produce.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "The electron scattering pattern was the same signature physicists recognised from which phenomenon?",
+      "options": [
+        "The diffraction and interference of waves, as in Young's double-slit experiment",
+        "The random Brownian motion of pollen grains",
+        "The photoelectric ejection of electrons from a metal by light",
+        "The bending of light by a gravitational field"
+      ],
+      "answer": 0,
+      "explanation": "Sharp peaks and valleys with a strong angular dependence are constructive and destructive interference, the hallmark of waves, exactly as seen in Young's double-slit experiment with light. The other options are unrelated particle or gravitational effects.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "According to de Broglie's equation, why do everyday objects like a cricket ball not show a measurable wavelength, while an electron does?",
+      "options": [
+        "Everyday objects are not made of atoms, so the equation does not apply to them",
+        "The wavelength is Planck's constant divided by momentum; large momentum gives an absurdly tiny wavelength, but a light electron's tiny momentum gives a wavelength comparable to atomic spacing",
+        "Everyday objects move too slowly to have any wavelength at all",
+        "The wavelength depends on charge, and only charged particles like electrons have one"
+      ],
+      "answer": 1,
+      "explanation": "de Broglie's relation is lambda = h/p. Planck's constant is fantastically tiny (~6.6e-34), so a large object's enormous momentum makes the wavelength meaningless. An electron's minuscule momentum yields a wavelength near the atomic spacing in a crystal, so its wave nature becomes observable. The effect is not about charge or being made of atoms.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "How did the experiment let Davisson and Germer actually measure the electrons' wavelength?",
+      "options": [
+        "They timed how long electrons took to cross the vacuum chamber",
+        "They weighed the nickel before and after firing electrons at it",
+        "They used the known atomic spacing d and the measured angles of the bright peaks in the Bragg diffraction relation to solve for the wavelength",
+        "They measured the electrons' charge and divided by their mass"
+      ],
+      "answer": 2,
+      "explanation": "The nickel spacing d was known from other experiments and the peak angles were read directly off the apparatus. Feeding both into the Bragg crystal-diffraction relation lets you solve for the one unknown, the wavelength of the wave producing the pattern.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "recall",
+      "q": "Explain why the Davisson-Germer experiment is described as the mirror image of Young's double-slit experiment, and what deep principle it established.",
+      "keyPoints": [
+        "Young took light, which everyone called a wave, and showed it produced interference (bright and dark bands)",
+        "Davisson and Germer took the electron, which everyone called a particle, and showed it too produced interference and diffraction",
+        "Both show constructive and destructive interference with a sharp dependence on angle, the signature of diffraction",
+        "This confirmed wave-particle duality: matter itself has a wave nature, not just light",
+        "The measured electron wavelength matched de Broglie's prediction lambda = h/p, turning his hypothesis into measured fact"
+      ],
+      "explanation": "Young demonstrated wave behaviour in something thought to be a wave; Davisson-Germer demonstrated identical wave behaviour in something thought to be a particle. Same interference, same angular dependence, opposite starting actor. This established that wave-particle duality is a property of matter itself and validated de Broglie's lambda = h/p.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "mc",
+      "q": "What is the striking irony involving the Thomson family in this story?",
+      "options": [
+        "J. J. Thomson refused to believe his own discovery of the electron",
+        "J. J. Thomson won a Nobel Prize for showing the electron is a particle, while his son George Thomson won a Nobel Prize for showing the electron is a wave",
+        "George Thomson disproved his father's discovery of the electron entirely",
+        "Both Thomsons were awarded the same Nobel Prize for the same experiment"
+      ],
+      "answer": 1,
+      "explanation": "J. J. Thomson discovered the electron as a particle and won a Nobel Prize; his son George Thomson fired electrons through thin films, saw diffraction rings, and won a Nobel Prize for the electron's wave nature. Both were right, which captures wave-particle duality. Davisson shared the 1937 Nobel Prize with George Thomson.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "worked",
+      "q": "In the famous run, electrons were accelerated through about 54 V. Using de Broglie's relation, estimate their wavelength. (Electron charge e = 1.60e-19 C, mass m = 9.11e-31 kg, Planck's constant h = 6.63e-34 J s.)",
+      "given": "V = 54 V, e = 1.60e-19 C, m = 9.11e-31 kg, h = 6.63e-34 J s",
+      "working": [
+        "Kinetic energy gained: E = eV = (1.60e-19)(54) = 8.64e-18 J",
+        "Momentum from kinetic energy: p = sqrt(2 m E) = sqrt(2 x 9.11e-31 x 8.64e-18)",
+        "p = sqrt(1.574e-47) = 3.97e-24 kg m/s",
+        "de Broglie wavelength: lambda = h / p = 6.63e-34 / 3.97e-24",
+        "lambda = 1.67e-10 m (about 0.167 nm, roughly 1.5 tenths of a nanometre)"
+      ],
+      "answerValue": 1.67e-10,
+      "answerUnit": "m",
+      "tolerance": 0.1e-10,
+      "explanation": "Accelerating through 54 V gives each electron kinetic energy eV, fixing its momentum p = sqrt(2mE). de Broglie's lambda = h/p then yields about 1.67e-10 m (~0.17 nm), a wavelength comparable to the atomic spacing in nickel, which is why the crystal diffracts the electrons. This value matched the wavelength read off the diffraction angle, confirming de Broglie's hypothesis.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

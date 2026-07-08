@@ -1,0 +1,150 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What made Rosa and Dorsey's 1907 measurement of the speed of light so remarkable?",
+      "options": [
+        "They measured it without ever observing a beam of light, using only electrical apparatus",
+        "They were the first people ever to estimate the speed of light",
+        "They bounced a laser off a mirror on a distant mountain",
+        "They timed how long sunlight took to reach the Earth"
+      ],
+      "answer": 0,
+      "explanation": "The whole point of their method was that it never involved watching light travel; they used coils, capacitors and electrical measurements alone. It was not the first estimate of c (astronomers and opticians had measured it for centuries), and it used no beams, mirrors or timing of light.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "According to Maxwell's theory, what determines the speed of light in a vacuum?",
+      "options": [
+        "The permittivity and permeability of free space",
+        "The temperature and pressure of the surrounding air",
+        "The brightness and colour of the light source",
+        "The mass of the photons carrying the light"
+      ],
+      "answer": 0,
+      "explanation": "Maxwell showed that c is fixed entirely by two properties of empty space: the permittivity (electrical response) and permeability (magnetic response) of the vacuum. The speed does not depend on the source's brightness or colour, and photons are massless.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Which relationship did Maxwell derive that Rosa and Dorsey exploited?",
+      "options": [
+        "c = 1 / √(ε₀μ₀)",
+        "c = √(ε₀μ₀)",
+        "c = ε₀ / μ₀",
+        "c = ε₀μ₀"
+      ],
+      "answer": 0,
+      "explanation": "Maxwell's equations gave the speed of light as one over the square root of the permittivity multiplied by the permeability of free space. The other forms invert or misplace the square root and give the wrong dimensions and value.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "Why did Rosa and Dorsey only need to measure one of the two vacuum constants?",
+      "options": [
+        "The permeability of free space was already fixed by definition at 4π × 10⁻⁷ through the way the ampere was defined",
+        "The permittivity of free space had already been measured perfectly by Maxwell",
+        "The two constants are equal, so measuring one gives the other",
+        "The permeability could be ignored because it is negligibly small"
+      ],
+      "answer": 0,
+      "explanation": "Because of how the unit of current (the ampere) was defined, the vacuum permeability μ₀ took the exact, defined value 4π × 10⁻⁷, so only the permittivity ε₀ remained unknown. The constants are not equal, and μ₀ is not negligible; it was simply fixed by construction.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "What device did Rosa and Dorsey use to measure the permittivity of the vacuum, ε₀?",
+      "options": [
+        "A capacitor of carefully known dimensions",
+        "A spinning toothed wheel chopping a light beam",
+        "A telescope trained on the moons of Jupiter",
+        "A prism splitting sunlight into a spectrum"
+      ],
+      "answer": 0,
+      "explanation": "How much charge a capacitor stores for a given voltage depends directly on the permittivity of the material in its gap, so a vacuum-gap capacitor of known geometry lets you work back to ε₀. The other options are optical or astronomical methods that watch light directly.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "Rosa and Dorsey's result was 299,710 km/s and the modern value is 299,792 km/s. What was the main source of their small error?",
+      "options": [
+        "The inability to perfectly standardise the resistances in their electrical apparatus",
+        "A fundamental flaw in Maxwell's equations",
+        "The bending of their light beam by the Earth's atmosphere",
+        "The finite time it took light to cross their laboratory"
+      ],
+      "answer": 0,
+      "explanation": "The tiny discrepancy came from practical measurement, chiefly the uncertainty in standardising the resistances used to determine ε₀. Maxwell's theory was sound, and since no light beam was ever used, atmospheric bending and light travel time in the lab were irrelevant.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Why was it significant that Rosa and Dorsey's electrical value for c matched the optical value so closely?",
+      "options": [
+        "Two independent methods reaching the same answer confirmed that light really is an electromagnetic wave",
+        "It proved that light must be a stream of particles rather than a wave",
+        "It showed that the earlier optical measurements had all been wrong",
+        "It meant the speed of light changes depending on how you measure it"
+      ],
+      "answer": 0,
+      "explanation": "When a purely electrical route and a purely optical route converge on the same number, that agreement confirms light is electromagnetism in motion, exactly as Maxwell predicted. It did not overturn the optical work nor imply c is method-dependent, and it supported the wave nature of light.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "worked",
+      "q": "Using Maxwell's relationship, calculate the speed of light from the vacuum constants. Take the permittivity of free space as ε₀ = 8.85 × 10⁻¹² F/m and the permeability as μ₀ = 4π × 10⁻⁷ T·m/A.",
+      "given": [
+        "ε₀ = 8.85 × 10⁻¹² F/m",
+        "μ₀ = 4π × 10⁻⁷ = 1.257 × 10⁻⁶ T·m/A",
+        "c = 1 / √(ε₀μ₀)"
+      ],
+      "working": [
+        "Multiply the constants: ε₀μ₀ = (8.85 × 10⁻¹²)(1.257 × 10⁻⁶) = 1.112 × 10⁻¹⁷",
+        "Take the square root: √(1.112 × 10⁻¹⁷) = 3.335 × 10⁻⁹",
+        "Take the reciprocal: c = 1 / (3.335 × 10⁻⁹)",
+        "c = 2.998 × 10⁸ m/s"
+      ],
+      "answerValue": 2.998e8,
+      "answerUnit": "m/s",
+      "tolerance": 2e6,
+      "explanation": "Multiplying the two vacuum constants, taking the square root and inverting gives c ≈ 3.00 × 10⁸ m/s, matching the accepted speed of light. This is exactly the arithmetic Rosa and Dorsey performed once they had measured ε₀.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Explain how Rosa and Dorsey were able to determine the speed of light without ever observing light itself.",
+      "keyPoints": [
+        "Maxwell's equations give c = 1/√(ε₀μ₀), so c depends only on properties of the vacuum",
+        "The permeability μ₀ was already fixed by definition at 4π × 10⁻⁷",
+        "Only the permittivity ε₀ needed to be measured, which they did using capacitors of known dimensions",
+        "They substituted the measured ε₀ and defined μ₀ into Maxwell's formula and calculated c",
+        "This gave 299,710 ± 22 km/s, agreeing closely with optical measurements and confirming light is an electromagnetic wave"
+      ],
+      "explanation": "Because c is built from the vacuum's electrical and magnetic properties, measuring those properties electrically lets you calculate c without any optical experiment. Only ε₀ had to be measured; μ₀ was defined, and the rest was arithmetic.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "State what the permittivity and permeability of free space each physically represent, and why both matter to the speed of light.",
+      "keyPoints": [
+        "Permittivity of free space (ε₀) measures how strongly the vacuum resists an electric field / how it lets electric charges reach across it",
+        "Permeability of free space (μ₀) measures how the vacuum responds to a magnetic field",
+        "Together they set the speed of an electromagnetic wave via c = 1/√(ε₀μ₀)",
+        "Light's speed is therefore not a free-floating fact but is fixed by the properties of empty space itself"
+      ],
+      "explanation": "ε₀ is the vacuum's electrical response and μ₀ its magnetic response. Since an electromagnetic wave is coupled electric and magnetic fields, both properties control how fast the wave propagates, which is why c is determined entirely by them.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

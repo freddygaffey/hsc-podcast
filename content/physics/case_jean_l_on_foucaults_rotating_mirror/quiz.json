@@ -1,0 +1,152 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What was the main achievement of Foucault's 1862 rotating-mirror experiment?",
+      "options": [
+        "It made the most accurate terrestrial (Earth-based) measurement of the speed of light to that date",
+        "It was the first proof that the speed of light is finite rather than instantaneous",
+        "It measured the distance from the Earth to the Sun using light delay",
+        "It proved that light travels faster in a vacuum than in air"
+      ],
+      "answer": 0,
+      "explanation": "Foucault built on Fizeau's earlier terrestrial method and obtained a far more accurate value, about 298,000 km/s. It was not the first proof that light is finite – Rømer had shown that from Jupiter's moons, and Fizeau had already made a terrestrial measurement a decade earlier; Foucault's contribution was accuracy.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "In the simplified HSC method, what is the basic optical path of the light beam?",
+      "options": [
+        "It is chopped into flashes by a spinning toothed wheel that passes through the gaps between teeth",
+        "It reflects off a rapidly rotating mirror to a distant stationary mirror, which sends it straight back to the rotating mirror",
+        "It passes through two slits and forms an interference pattern on a screen",
+        "It bounces between two stationary mirrors many times to build up a measurable delay"
+      ],
+      "answer": 1,
+      "explanation": "Foucault's design used a fast-spinning mirror that flung the beam to a stationary mirror facing it, which reflected the light straight back toward the rotating mirror. The toothed wheel describes Fizeau's earlier, less precise apparatus, not Foucault's.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Why does the returning beam come back deflected to a slightly different angle rather than exactly retracing its path?",
+      "options": [
+        "The water or air between the mirrors bends the beam as it passes through",
+        "The stationary mirror is tilted slightly so the beam returns at an offset",
+        "During the light's round trip the rotating mirror keeps turning, so it has moved to a new angle by the time the light returns",
+        "The light changes colour and therefore refracts by a different amount on the way back"
+      ],
+      "answer": 2,
+      "explanation": "Because light is fast but finite, the rotating mirror turns through a tiny angle during the time the beam is travelling out and back. The returning light meets a mirror that has rotated, so it is reflected in a new direction. The deflection is caused by the mirror's rotation, not by the medium or the stationary mirror.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "Foucault measured the angular deflection of the returning beam. How does this deflection relate to the angle θ through which the mirror actually rotated?",
+      "options": [
+        "The deflection of the beam equals the mirror's rotation angle θ",
+        "The deflection of the beam is twice the mirror's rotation angle, so θ is half the measured deflection",
+        "The deflection of the beam is half the mirror's rotation angle, so θ is twice the measured deflection",
+        "The deflection is unrelated to θ and depends only on the distance between the mirrors"
+      ],
+      "answer": 1,
+      "explanation": "By the law of reflection, rotating a mirror by θ swings the reflected ray by 2θ. So the measured beam deflection is twice the mirror's rotation, and θ is half of it. Forgetting this factor of two would make the calculated speed of light wrong by a factor of two.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "Which quantity in Foucault's experiment did he NOT need to measure separately, because he set it himself?",
+      "options": [
+        "The angular velocity ω of the rotating mirror",
+        "The angle of deflection of the returning beam",
+        "The rotation angle θ derived from the beam deflection",
+        "The speed of light c"
+      ],
+      "answer": 0,
+      "explanation": "Foucault controlled and therefore knew the mirror's angular velocity ω and the distance d between the mirrors. He measured the beam's deflection (from which θ is found), and c was the unknown output of the experiment – not something he measured directly.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "worked",
+      "q": "Use Foucault's relationship c = 2dω/θ to calculate the speed of light for a setup where the mirror separation is d = 20 m, the mirror's angular velocity is ω = 5000 rad/s, and the mirror rotated through θ = 6.71 × 10⁻⁴ rad during the light's round trip.",
+      "given": {
+        "d": "20 m (distance between rotating and stationary mirror)",
+        "ω": "5000 rad/s (angular velocity of the rotating mirror)",
+        "θ": "6.71 × 10⁻⁴ rad (angle the mirror rotated during the round trip)"
+      },
+      "working": [
+        "The light travels out to the far mirror and back, so the round-trip distance is 2d = 2 × 20 = 40 m.",
+        "The time for the round trip equals the time the mirror takes to rotate through θ: t = θ / ω.",
+        "Speed = distance / time, so c = 2d / t = 2d / (θ / ω) = 2dω / θ.",
+        "Numerator: 2dω = 2 × 20 × 5000 = 200000.",
+        "c = 200000 / (6.71 × 10⁻⁴) ≈ 2.98 × 10⁸ m/s (about 298,000 km/s)."
+      ],
+      "answerValue": 298000000,
+      "answerUnit": "m/s",
+      "tolerance": 3000000,
+      "explanation": "The mirror's own rotation acts as a clock: the round-trip time is the tiny interval it takes to rotate through θ. Combining c = 2d/t with t = θ/ω gives c = 2dω/θ, yielding about 2.98 × 10⁸ m/s, remarkably close to the modern value.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Foucault also filled the space between his mirrors with water. What did he observe, and which theory of light did this support?",
+      "options": [
+        "Light sped up in water, supporting Newton's particle theory",
+        "Light slowed down in water, supporting the wave theory of light",
+        "Light travelled at the same speed in water and air, supporting neither theory",
+        "Light stopped entirely in water, disproving both theories"
+      ],
+      "answer": 1,
+      "explanation": "The particle (Newtonian) theory predicted light would speed up in a denser medium, while the wave theory predicted it would slow down. Foucault measured a slower speed in water, a decisive result in favour of the wave theory – something only a compact terrestrial apparatus could test.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "Roughly how large was the mirror separation Foucault used, and why is this scale significant?",
+      "options": [
+        "About 8 kilometres, matching the range Fizeau needed for his toothed wheel",
+        "About 150 million kilometres, the Earth–Sun distance used to calibrate the result",
+        "About 20 metres, showing the measurement could be done on a bench inside a single room",
+        "About 300,000 kilometres, one light-second, chosen so the beam took exactly one second"
+      ],
+      "answer": 2,
+      "explanation": "Foucault's baseline was only around 20 m – roughly the length of a swimming pool – far shorter than Fizeau's kilometres-long path. Fitting the whole measurement into one room is what made it so impressive and also what allowed the water experiment.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Explain how Foucault's rotating mirror effectively acts as a clock that times the light's flight.",
+      "keyPoints": [
+        "Light is fast but finite, so the round trip out to the stationary mirror and back takes a small but non-zero time",
+        "During that time the mirror keeps spinning and rotates through a small angle θ",
+        "The round-trip time equals the time to rotate through θ, i.e. t = θ / ω, using the known angular velocity ω",
+        "Measuring the beam's deflection gives θ (half the deflection), converting an angle into a measurement of time",
+        "Combined with the known distance, this yields c = 2dω/θ"
+      ],
+      "explanation": "Because the mirror's rotation is steady and its angular velocity is known, the angle it sweeps during the light's absence directly encodes the flight time. The mirror turns 'time into angle', letting Foucault time the fastest thing there is without any external stopwatch.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Why was a terrestrial measurement of the speed of light valued so highly, given that Rømer had already estimated it from Jupiter's moons?",
+      "keyPoints": [
+        "Rømer's method relied on astronomical (solar-system) distances that were not known precisely at the time",
+        "There was a worry that light might behave differently in the vacuum of space than on Earth",
+        "A ground-based experiment used distances that could be measured directly and accurately in the lab",
+        "Foucault's method gave a far more accurate value (about 298,000 km/s) than earlier estimates",
+        "Being on a bench, it could also be modified (e.g. adding water) to test the nature of light"
+      ],
+      "explanation": "Rømer proved light was finite but leaned on uncertain planetary distances and untested assumptions about light in space. A controlled terrestrial measurement removed those uncertainties, delivered higher accuracy, and could be adapted to answer deeper questions such as the particle-versus-wave debate.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

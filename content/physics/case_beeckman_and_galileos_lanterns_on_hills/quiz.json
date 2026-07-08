@@ -1,0 +1,153 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What belief about light did the lanterns-on-hills experiment set out to test?",
+      "options": [
+        "That light travels instantaneously, taking no time at all to cross any distance",
+        "That light is made of tiny particles rather than waves",
+        "That light bends when it passes from air into water",
+        "That the colour of light changes with the speed of its source"
+      ],
+      "answer": 0,
+      "explanation": "For most of history, thinkers like Aristotle, Kepler and Descartes held that light was instantaneous. Galileo and Beeckman designed the experiment to test whether light instead travels very fast but at a finite speed. The other options concern refraction, particle/wave nature and Doppler effects, which the experiment did not address.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "In the method, how was the round-trip time of the light supposed to be measured?",
+      "options": [
+        "The first observer timed from uncovering his own lantern until he saw the second observer's answering light return",
+        "Each observer independently recorded the moment his own lantern was uncovered and the times were compared later",
+        "A single observer measured how long his lantern stayed visible on the far hill",
+        "The observers counted how many times the light bounced between the two hills before fading"
+      ],
+      "answer": 0,
+      "explanation": "The first observer started timing the instant he uncovered his flame and stopped the instant he saw the second observer's reply, capturing one full out-and-back trip. Option 2 fails because there was no way to synchronise two clocks; the whole point was a single observer timing a round trip.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "If d is the distance between the two hills and Δt is the measured round-trip time, which expression gives the intended speed of light?",
+      "options": [
+        "c = 2d / Δt",
+        "c = d / Δt",
+        "c = d / (2Δt)",
+        "c = Δt / (2d)"
+      ],
+      "answer": 0,
+      "explanation": "Because the light travels out to the far hill and back, it covers twice the gap, so the total distance is 2d and c = 2d/Δt. Using just d/Δt would ignore the return leg and halve the true speed.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "What was the dominant reason the experiment could not measure the speed of light?",
+      "options": [
+        "The human reaction time of the second observer was thousands of times longer than the light's actual flight time",
+        "The lanterns were not bright enough to be seen across the valley",
+        "The curvature of the Earth blocked the light between the two hills",
+        "Air between the hills slowed the light down too much to time it"
+      ],
+      "answer": 0,
+      "explanation": "The genuine light travel time over a few kilometres is under a hundred-thousandth of a second, but the second observer's nervous system took roughly a quarter of a second to react and open the reply lantern. That reaction time swamped the tiny signal. Brightness, curvature and air resistance were not the limiting factors described.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "Besides human reaction time, what other practical limitation made the measurement impossible in the 1600s?",
+      "options": [
+        "No clock existed that was precise enough to time a fraction of a second",
+        "There were no hills tall enough in Italy for the two observers",
+        "The observers could not agree on a common unit for distance",
+        "Lanterns of that era produced light that travelled more slowly than sunlight"
+      ],
+      "answer": 0,
+      "explanation": "Even setting aside reaction time, no stopwatch of the era could resolve a fraction of a second, so timing the round trip was hopeless. The distance between hills was known well enough; the barrier was timekeeping precision, and all light travels at the same speed regardless of source.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "What careful conclusion did Galileo draw from the failed attempt?",
+      "options": [
+        "If light's motion is not instantaneous, then it must be extraordinarily fast, but not necessarily infinite",
+        "Light is definitely instantaneous, confirming Aristotle and Descartes",
+        "Light travels at a speed he had precisely measured to be finite",
+        "Light cannot travel across open air, only through solid media"
+      ],
+      "answer": 0,
+      "explanation": "Galileo honestly admitted he could not produce a number, but reasoned that light must be extremely fast, faster than any tool of his could catch, without claiming it was infinite. He neither confirmed instantaneity nor obtained a measured value.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "In 1667 the Accademia del Cimento in Florence repeated the experiment with observers about a mile apart. What did they report?",
+      "options": [
+        "No detectable delay at all",
+        "A clear delay giving a finite speed close to the modern value",
+        "That light travelled faster on the return trip than the outward trip",
+        "That the light failed to reach the second observer entirely"
+      ],
+      "answer": 0,
+      "explanation": "The Florentine academy reported no detectable delay, which does not prove light is instantaneous, only that it was still far too fast for two people and shutters to pin down over a mile. They did not obtain a finite speed.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "What key insight for future physics did the repeated failures point toward?",
+      "options": [
+        "Terrestrial distances are too small; you need the scale of the solar system to give light measurable travel time",
+        "Light should be measured using sound as a comparison signal",
+        "Better lanterns and faster shutters would eventually solve the problem on Earth",
+        "Speed of light is a meaningless quantity and should not be pursued"
+      ],
+      "answer": 0,
+      "explanation": "The failures showed that no Earth-bound experiment was big enough to trap light, implying astronomical distances were needed, which Ole Romer used nine years after Florence by observing a moon of Jupiter. Bigger lanterns and shutters could never overcome reaction time and clock limits on Earth.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "worked",
+      "q": "Suppose two hills are 2.0 km apart. Using the modern value of the speed of light, calculate the true round-trip travel time of the light between the lanterns, to show how small it is compared with human reaction time.",
+      "given": {
+        "distance between hills d": "2.0 km = 2000 m",
+        "round-trip distance": "2d = 4000 m",
+        "speed of light c": "3.0 x 10^8 m/s"
+      },
+      "working": [
+        "The light travels out to the far hill and back, so total distance = 2d = 2 x 2000 = 4000 m",
+        "Rearrange c = 2d / Δt to get Δt = 2d / c",
+        "Δt = 4000 / (3.0 x 10^8)",
+        "Δt = 1.33 x 10^-5 s (about 13 microseconds)",
+        "Compare with a human reaction time of about 0.25 s, which is roughly 19000 times larger"
+      ],
+      "answerValue": 1.33e-5,
+      "answerUnit": "s",
+      "tolerance": 0.1e-5,
+      "explanation": "The real round-trip time is only about 13 millionths of a second, while the observer's reaction time is around a quarter of a second, thousands of times longer. This is exactly why the reaction time completely swamped the light's flight time and the method could never work.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Explain why the lanterns-on-hills experiment failed to measure the speed of light, and why it still mattered to the history of physics.",
+      "keyPoints": [
+        "The intended relation was c = 2d/Δt, timing light over a round trip between two hills",
+        "The second observer's human reaction time (about 0.25 s) was thousands of times longer than the light's actual travel time (well under a hundred-thousandth of a second)",
+        "No clock of the 1600s could resolve a fraction of a second, adding a second fatal limitation",
+        "Galileo concluded that if light is not instantaneous it must be extraordinarily fast, faster than any tool could catch",
+        "The 1667 Accademia del Cimento repeat over about a mile also found no detectable delay",
+        "The failures proved terrestrial distances are too small, pointing physicists toward astronomical scales (Romer, nine years later)"
+      ],
+      "explanation": "The experiment failed because the light's genuine flight time was a vanishingly small fraction of the total delay, which was dominated by human reaction time and worsened by imprecise clocks. Its value lies in demonstrating conclusively that no ground-based method could catch light, which redirected the search to the scale of the solar system.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

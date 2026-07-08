@@ -1,0 +1,145 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "In Einstein's thought experiment, an observer sits on a train moving at nearly the speed of light with a mirror bolted in front of their face. According to the OLD, common-sense (Galilean) physics viewed from the station platform, what happens to the reflection?",
+      "options": [
+        "The mirror works normally because the observer is at rest relative to it",
+        "The mirror goes dark because the light can barely gain on the forward-moving mirror and never catches up",
+        "The reflection appears but shifts to a different colour",
+        "The mirror shatters from the speed of the train"
+      ],
+      "answer": 1,
+      "explanation": "Under Galilean velocity addition, the platform observer sees the observer's face already moving forward at nearly c, and the light leaving the face also moving at c. So the light barely gains on the mirror and, by that reasoning, could take an eternity to catch it, so no reflection forms. Option 0 is what YOU on the train experience, but the whole point is that the platform frame gives the contradictory 'dark' answer under the old rules.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "What is 'Galilean relativity' (the principle of relativity) that the thought experiment relies on?",
+      "options": [
+        "The idea that velocities never add together",
+        "The idea that light always travels at the same speed for everyone",
+        "The idea that the laws of physics are exactly the same in every inertial (constant-velocity) reference frame",
+        "The idea that time slows down for moving objects"
+      ],
+      "answer": 2,
+      "explanation": "Galileo's principle of relativity states the laws of physics are identical in every inertial frame, so no sealed-cabin experiment can reveal your absolute speed (why coffee pours normally on a cruising plane). Option 1 is Einstein's SECOND postulate (a consequence), not Galileo's principle; option 3 (time dilation) is a further consequence, not the principle itself.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "The thought experiment is designed to force two trusted principles into open conflict. Which two?",
+      "options": [
+        "Newton's gravity versus Kepler's laws of planetary motion",
+        "Galileo's principle of relativity versus Maxwell's electromagnetism",
+        "Quantum mechanics versus classical mechanics",
+        "The photoelectric effect versus wave optics"
+      ],
+      "answer": 1,
+      "explanation": "The paradox pits Galileo's principle (physics is the same in all inertial frames) against Maxwell's equations (which fix the speed of light regardless of the observer). Only Einstein's second postulate lets both survive. The other pairs are real physics conflicts but are not what this thought experiment addresses.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "Maxwell's equations predict the speed of light from two fixed properties of empty space. What are they, and what is notably absent from the formula?",
+      "options": [
+        "Mass and gravity; absent is the observer's acceleration",
+        "The permeability and permittivity of free space; absent is any mention of the observer or their speed",
+        "Temperature and pressure of the vacuum; absent is the wavelength of the light",
+        "The charge and mass of the electron; absent is the direction of travel"
+      ],
+      "answer": 1,
+      "explanation": "Maxwell showed light's speed equals 1 divided by the square root of the permeability times the permittivity of free space. Crucially, the formula contains no reference to who is looking or how fast they move, so it hands you one fixed speed. This is exactly why the platform observer's slow-light picture would violate electromagnetism.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "To escape the paradox while keeping Galileo's principle of relativity, what did Einstein conclude we must give up?",
+      "options": [
+        "The idea that light is an electromagnetic wave",
+        "The common-sense rule that velocities simply add together",
+        "The idea that the laws of physics apply inside a moving train",
+        "The existence of mirrors and reflection"
+      ],
+      "answer": 1,
+      "explanation": "Einstein kept the first postulate (physics is the same in all inertial frames) and instead surrendered Galilean velocity addition. Light is not a speed anything adds to: every observer measures light at the same speed. Abandoning Maxwell (option 0) or the principle of relativity (option 2) was precisely what he refused to do.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "Once you accept that the speed of light is the same for every observer, what must 'bend' instead to keep everything consistent?",
+      "options": [
+        "The mass and electric charge of every particle",
+        "The strength of gravity near the moving object",
+        "The flow of time and the lengths of moving objects (moving clocks run slow, moving rulers shrink)",
+        "The colour and brightness of all light sources"
+      ],
+      "answer": 2,
+      "explanation": "If light's speed is fixed for everyone, the quantities we once thought absolute, time and length, must change: moving clocks run slow and moving rulers contract. This is time dilation and length contraction, the price of keeping c constant in every frame.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Why is this described as a 'thought experiment' rather than a laboratory experiment?",
+      "options": [
+        "Because Einstein secretly performed it but hid the results",
+        "Because it uses no apparatus or measurements; it is a machine built purely out of ideas to force two principles into contradiction",
+        "Because the equipment needed had not yet been invented in 1905",
+        "Because it can only be tested on a real near-light-speed train"
+      ],
+      "answer": 1,
+      "explanation": "There is no dial, no reading, no apparatus. The experiment is reasoning alone, constructed to force Galileo's relativity and Maxwell's electromagnetism into open war and reveal that only one escape (constant c) survives. It was never meant to be run in a lab.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "As a sixteen-year-old, what daydream first planted this problem in Einstein's mind?",
+      "options": [
+        "Dropping two different masses from a tower",
+        "Chasing alongside a beam of light and imagining seeing a wave of light frozen and standing still",
+        "Watching an apple fall from a tree",
+        "Splitting sunlight through a prism into colours"
+      ],
+      "answer": 1,
+      "explanation": "Einstein imagined running fast enough to travel beside a light beam. The beam would appear frozen, a standing wave going nowhere, which felt deeply, physically wrong to him. That unease, carried for a decade, led to the 1905 resolution. The other options are famous but belong to Galileo and Newton.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Explain, step by step, why the mirror-in-a-train thought experiment leads to a contradiction under old physics, and how Einstein's second postulate resolves it.",
+      "keyPoints": [
+        "On the train, you are at rest relative to the mirror, so by the principle of relativity the mirror must work normally, just as it does in the station",
+        "From the platform, under Galilean velocity addition, your face and the emitted light both move forward at nearly c, so the light barely gains on the mirror and (by the old rule) never catches it, the mirror goes dark",
+        "A reflection cannot both exist (train frame) and not exist (platform frame), so something is broken",
+        "Maxwell's equations fix light's speed with no reference to the observer, so the platform 'slow light' picture would make electromagnetism different inside the train, violating Galileo's principle",
+        "Einstein's resolution: keep the first postulate (physics same in all inertial frames) and abandon velocity addition, so every observer measures light at the same speed c",
+        "Then the platform observer also sees the light leave at full speed c, it catches the mirror, and the reflection forms in every frame, this is the second postulate of special relativity"
+      ],
+      "explanation": "The experiment shows that if you insist physics is the same in all inertial frames (first postulate), the constancy of the speed of light (second postulate) is not an extra assumption, it follows inevitably. The paradox dissolves only when light stops obeying velocity addition.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "State Einstein's two postulates of special relativity as illustrated by this thought experiment, and describe the logical relationship between them.",
+      "keyPoints": [
+        "First postulate: the laws of physics are the same in every inertial (constant-velocity) reference frame, this is Galileo's principle of relativity",
+        "Second postulate: the speed of light in a vacuum is measured as the same value c by all inertial observers, regardless of their motion or the source's motion",
+        "The value of c is set by Maxwell as 1 divided by the square root of the permeability of free space times the permittivity of free space (about 3 x 10^8 m/s)",
+        "The second postulate is not an independent guess bolted on, if you keep the first postulate, the constancy of light's speed follows inevitably",
+        "The thought experiment is therefore 'evidence' for the second postulate given the first"
+      ],
+      "explanation": "The core lesson of the episode is that the two postulates are logically linked: accepting that physics is identical in all inertial frames forces the speed of light to be constant for everyone. The constancy of c is the price of keeping the universe consistent for every observer.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

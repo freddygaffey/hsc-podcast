@@ -1,0 +1,168 @@
+{
+  "questions": [
+    {
+      "id": "m502-q01",
+      "type": "mc",
+      "q": "A car drives around a roundabout at a perfectly steady 40 km/h. Which statement is correct?",
+      "options": [
+        "The car is not accelerating, because its speed is constant.",
+        "The car is accelerating, because the direction of its velocity is continuously changing.",
+        "The car is accelerating only if it also speeds up or slows down.",
+        "The car has zero net force on it, since the speedometer reading never changes."
+      ],
+      "answer": 1,
+      "explanation": "Velocity is a vector, so a change in EITHER its size or its direction is a change in velocity, and acceleration is the rate of change of velocity. Going round the bend the direction is changing every instant, so the car is accelerating the whole time. Option A (and the idea in C) is the number-one trap the examiners set: equating constant speed with zero acceleration. Constant speed with changing direction still means accelerating, and by Newton's second law a non-zero acceleration means a non-zero net force, so D is wrong too.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m502-q02",
+      "type": "mc",
+      "q": "In which direction does the centripetal acceleration of an object in uniform circular motion point?",
+      "options": [
+        "Along the tangent, in the direction the object is heading.",
+        "Outward, away from the centre of the circle.",
+        "Inward, toward the centre of the circle, perpendicular to the velocity.",
+        "Backward, opposite to the direction of motion."
+      ],
+      "answer": 2,
+      "explanation": "'Centripetal' is Latin for 'centre-seeking': tracking how the velocity vector changes as the object goes round shows the change always points inward, toward the centre, at 90 degrees to the velocity. That perpendicularity is what changes the direction of the velocity without changing its size, which is exactly what constant-speed circular motion requires. Option A confuses acceleration with the velocity (which IS tangential), and B is the centrifugal misconception, an outward force/acceleration that does not exist.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m502-q03",
+      "type": "worked",
+      "q": "A turntable spins at 120 revolutions per minute. Calculate its angular velocity in radians per second.",
+      "given": "\\(120\\ \\text{rev min}^{-1}\\); one revolution \\(= 2\\pi\\ \\text{rad}\\); \\(\\pi \\approx 3.14\\)",
+      "working": [
+        "Convert rev/min to rev/s (frequency): divide by 60. \\(f = 120 / 60 = 2\\ \\text{Hz}\\).",
+        "Angular velocity is \\(\\omega = 2\\pi f\\).",
+        "\\(\\omega = 2\\pi \\times 2 = 4\\pi\\).",
+        "\\(\\omega = 4 \\times 3.14 \\approx 12.6\\ \\text{rad s}^{-1}\\)."
+      ],
+      "answerValue": 12.57,
+      "answerUnit": "rad s⁻¹",
+      "tolerance": 0.1,
+      "explanation": "The standard first step whenever a rate is given in rev/min: divide by 60 to get the frequency in Hz, then multiply by 2π (since one revolution is 2π radians) to get the angular velocity. Here f = 2 Hz and ω = 2πf = 4π ≈ 12.6 rad/s. (The period, if needed, is T = 1/f = 0.5 s.)",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m502-q04",
+      "type": "mc",
+      "q": "A ball is whirled on a string in a horizontal circle. A student's free-body diagram shows the tension pointing inward AND a separate 'centripetal force' also pointing inward. What is wrong with this diagram?",
+      "options": [
+        "Nothing is wrong; both the tension and the centripetal force act on the ball.",
+        "The centripetal force should point outward, not inward.",
+        "Centripetal force is not a new, extra force; it is the NAME for the net of the real forces resolved toward the centre, so it must not be drawn as a separate arrow.",
+        "The tension should be left off, since the centripetal force replaces it."
+      ],
+      "answer": 2,
+      "explanation": "Centripetal force is never an additional force bolted onto the object. It is simply the net of the REAL forces (here, the tension) once they are resolved toward the centre, and drawing it as a second arrow double-counts. The method is 'net to the centre': name the real forces, sum them inward, then SET that net equal to mv²/r. The tension is the centripetal force, so A and D are wrong, and centripetal force is inward by definition, so B is wrong.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m502-q05",
+      "type": "mc",
+      "q": "A ball is swung on a string in a horizontal circle. At one instant the string suddenly snaps. Ignoring gravity's later effect, in which direction does the ball initially travel?",
+      "options": [
+        "Radially outward, straight away from the centre of the circle.",
+        "Along the tangent to the circle, in the direction it was already moving, in a straight line.",
+        "It continues along the circular path for a moment before falling.",
+        "Radially inward, toward where the centre of the circle was."
+      ],
+      "answer": 1,
+      "explanation": "The instant the string is cut there is no net force, so by Newton's first law the ball travels in a straight line along the tangent, the direction it was heading at that instant. This is the hammer-thrower result. Option A is the centrifugal trap: if there really were an outward force the ball would accelerate radially outward, but it does not, which proves the force was inward the whole time and never outward.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m502-q06",
+      "type": "worked",
+      "q": "A ball of mass 0.5 kg is tied to a string of length 1.0 m and swung in a horizontal circle with a period of 2.0 s per revolution. Calculate the tension in the string. (Take π ≈ 3.14.)",
+      "given": "\\(m = 0.5\\ \\text{kg}\\), \\(r = 1.0\\ \\text{m}\\), \\(T = 2.0\\ \\text{s}\\)",
+      "working": [
+        "Speed: \\(v = \\dfrac{2\\pi r}{T} = \\dfrac{2\\pi (1.0)}{2.0} = \\pi \\approx 3.14\\ \\text{m s}^{-1}\\).",
+        "Centripetal acceleration: \\(a_c = \\dfrac{v^2}{r} = \\dfrac{(3.14)^2}{1.0} \\approx 9.87\\ \\text{m s}^{-2}\\).",
+        "The only horizontal force is the tension, which IS the centripetal force: \\(T_{\\text{string}} = F_c = m a_c\\).",
+        "\\(T_{\\text{string}} = 0.5 \\times 9.87 \\approx 4.9\\ \\text{N}\\) (inward, along the string)."
+      ],
+      "answerValue": 4.93,
+      "answerUnit": "N",
+      "tolerance": 0.1,
+      "explanation": "'Net to the centre': no centripetal force is invented. The real force (tension) is identified and set equal to mv²/r. With v = π ≈ 3.14 m/s, a_c ≈ 9.87 m/s², so tension = 0.5 × 9.87 ≈ 4.9 N directed inward.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m502-q07",
+      "type": "worked",
+      "q": "A car of mass 1200 kg travels around a flat, circular bend of radius 50 m at a constant speed of 20 m/s. Calculate the centripetal force acting on the car.",
+      "given": "\\(m = 1200\\ \\text{kg}\\), \\(r = 50\\ \\text{m}\\), \\(v = 20\\ \\text{m s}^{-1}\\)",
+      "working": [
+        "Centripetal acceleration: \\(a_c = \\dfrac{v^2}{r} = \\dfrac{20^2}{50} = \\dfrac{400}{50} = 8\\ \\text{m s}^{-2}\\).",
+        "Centripetal force: \\(F_c = m a_c = 1200 \\times 8\\).",
+        "\\(F_c = 9600\\ \\text{N}\\) (directed inward, toward the centre of the bend)."
+      ],
+      "answerValue": 9600,
+      "answerUnit": "N",
+      "tolerance": 1,
+      "explanation": "F_c = mv²/r = 1200 × 400/50 = 9600 N inward. On a flat road this inward force is provided entirely by the sideways static friction between the tyres and the road, acting toward the centre. If friction cannot supply the full 9600 N (wet or icy road), the car cannot turn tightly enough and slides straight on along the tangent, off the outside of the bend.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m502-q08",
+      "type": "mc",
+      "q": "A passenger in a car turning a sharp corner feels pressed against the door. What is the correct physical explanation in the ground-based frame the HSC requires?",
+      "options": [
+        "An outward centrifugal force pushes the passenger against the door.",
+        "The passenger's inertia keeps them moving straight while the door pushes them inward (the centripetal force) to turn them with the car; there is no outward force.",
+        "The centripetal force acts outward on the passenger, throwing them at the door.",
+        "Friction from the seat pushes the passenger outward toward the door."
+      ],
+      "answer": 1,
+      "explanation": "The 'flung outward' feeling is not a force; it is the passenger's own inertia, their Newton's-first-law tendency to keep going in a straight line, while the door pushes inward to make them turn with the car. The passenger is not thrown at the door; the door is pulled across into them. The centrifugal force in options A and C is fictitious, an artefact of the rotating frame, and must never be drawn on a free-body diagram in this course.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m502-q09",
+      "type": "worked",
+      "q": "A stone of mass 0.2 kg is whirled in a horizontal circle of radius 0.8 m, completing 3 full revolutions every second. Calculate the stone's speed. (Take π ≈ 3.14.)",
+      "given": "\\(m = 0.2\\ \\text{kg}\\), \\(r = 0.8\\ \\text{m}\\), \\(f = 3\\ \\text{Hz}\\)",
+      "working": [
+        "3 revolutions per second means \\(f = 3\\ \\text{Hz}\\), so the period is \\(T = 1/f = 0.333\\ \\text{s}\\).",
+        "Speed: \\(v = \\dfrac{2\\pi r}{T} = 2\\pi r f\\).",
+        "\\(v = 2 \\times 3.14 \\times 0.8 \\times 3\\).",
+        "\\(v \\approx 15.1\\ \\text{m s}^{-1}\\)."
+      ],
+      "answerValue": 15.1,
+      "answerUnit": "m s⁻¹",
+      "tolerance": 0.3,
+      "explanation": "Using v = 2πrf = 2πr/T avoids finding the period separately: v = 2 × 3.14 × 0.8 × 3 ≈ 15.1 m/s. (As a follow-on, the tension would be F_c = mv²/r = 0.2 × 15.1²/0.8 ≈ 57 N inward.)",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m502-q10",
+      "type": "recall",
+      "q": "State the 'net to the centre' method for solving any uniform circular motion problem, in order.",
+      "keyPoints": [
+        "Draw the free-body diagram, showing every REAL force (gravity, tension, normal force, friction) as a labelled arrow, and never adding 'centripetal force' as an extra arrow.",
+        "Find the net force component pointing toward the centre of the circle.",
+        "Set that net inward force equal to mv²/r (equivalently mω²r).",
+        "Solve for the unknown (tension, friction, speed, radius, etc.).",
+        "Remember: centripetal force is the NAME for the net of the real inward forces, not a separate force."
+      ],
+      "explanation": "If you named the four steps, and stressed that centripetal force is the net of the real forces (not an extra one) set equal to mv²/r, grade yourself Good or Easy. The whole topic is just the free-body diagram plus F = ma with a = v²/r toward the centre.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m502-q11",
+      "type": "recall",
+      "q": "Define the three quantities used to describe circular motion (period, frequency, angular velocity) and state how they relate to each other and to the tangential speed.",
+      "keyPoints": [
+        "Period T = the time for one complete revolution, in seconds.",
+        "Frequency f = the number of revolutions per second, in hertz; period and frequency are reciprocals: f = 1/T and T = 1/f.",
+        "Angular velocity ω = the angle swept per second, in radians per second; since one revolution is 2π radians, ω = 2π/T = 2πf.",
+        "Tangential speed v = 2πr/T = ωr; at the same ω, a point further from the centre (larger r) moves faster."
+      ],
+      "explanation": "If you gave the symbol, meaning and unit for all three, plus f = 1/T, ω = 2πf and v = ωr, grade yourself Good or Easy. The relation v = ωr is examinable: it explains why the rim of a spinning disc outruns a point near the axle even though the whole disc turns together.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    }
+  ]
+}

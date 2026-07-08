@@ -1,0 +1,144 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What did Oersted's 1820 experiment demonstrate for the first time with solid experimental evidence?",
+      "options": [
+        "That an electric current in a wire can influence a nearby magnetic compass needle, linking electricity and magnetism",
+        "That a moving magnet can induce an electric current in a wire",
+        "That like electric charges repel and unlike charges attract",
+        "That a compass needle always aligns with the Earth's magnetic field"
+      ],
+      "answer": 0,
+      "explanation": "Oersted showed that a current-carrying wire deflects a nearby compass needle, the first strong experimental evidence that electricity and magnetism are connected. Option 1 (electromagnetic induction) is Faraday's later discovery, not Oersted's; Oersted's current was steady, not a moving magnet.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "Before 1820, what was the prevailing view among the best physicists about electricity and magnetism?",
+      "options": [
+        "That they were two completely separate forces with nothing to do with each other",
+        "That they were already known to be the same phenomenon",
+        "That magnetism was simply a form of gravity",
+        "That electricity could only ever be produced by magnets"
+      ],
+      "answer": 0,
+      "explanation": "The script stresses that electricity and magnetism were treated as separate worlds, and a leading physicist of the previous generation had declared they had nothing to do with each other. This is exactly why the twitching needle was so shocking. Option 1 is wrong because that unification only came after Oersted, through Ampere, Faraday and Maxwell.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "In Oersted's initial setup, how was the wire (the 'uniting conductor') positioned relative to the compass needle?",
+      "options": [
+        "Horizontally above the needle, running parallel to its north-south direction",
+        "Vertically, passing straight down through the centre of the needle",
+        "Wrapped in a tight coil directly around the needle",
+        "Perpendicular to the needle and touching one of its ends"
+      ],
+      "answer": 0,
+      "explanation": "Oersted joined the battery terminals with a wire and laid its straight part horizontally above a freely suspended needle, parallel to its natural north-south alignment. The other options describe arrangements he did not use in the described setup.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "When the current flowed in the original setup, which way did the needle move?",
+      "options": [
+        "The end nearest the negative side of the battery swung westward",
+        "The needle spun a full 360 degrees continuously",
+        "The needle was pulled straight toward the wire",
+        "The needle flipped to point exactly south"
+      ],
+      "answer": 0,
+      "explanation": "Oersted recorded that the end of the needle next to the negative side of the battery went westward. Crucially it swung sideways rather than being pulled straight toward the wire, which is the clue that the force was not a simple attraction.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "Oersted slid glass, wood and metal between the wire and the needle. What did he observe, and what did it imply?",
+      "options": [
+        "The effect scarcely diminished, implying the influence was a field that passed through matter rather than a physical nudge",
+        "Metal completely blocked the effect, proving the influence was electrical charge flowing through the air",
+        "Each material doubled the deflection, proving the materials were themselves magnetic",
+        "Only glass blocked the effect, proving the influence was actually a beam of light"
+      ],
+      "answer": 0,
+      "explanation": "Interposing glass, wood and metal barely weakened the deflection, showing the influence passed straight through solid matter, as a magnetic field does, rather than the wire physically touching or pushing the needle. Option 1 is wrong because the barriers did not block the effect.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "When Oersted moved the wire from above the needle to below it, the deflection reversed direction. What does this reveal about the magnetic field of a current?",
+      "options": [
+        "The field circles around the wire in loops, pointing one way above and the opposite way below",
+        "The field points radially straight outward from the wire like spokes on a wheel",
+        "The wire attracts the needle like an ordinary bar magnet",
+        "The field only exists on the upper side of a horizontal wire"
+      ],
+      "answer": 0,
+      "explanation": "If the wire simply attracted the needle, swapping above for below would not flip the deflection. Because it does flip, the field must wrap around the wire in circular loops, pointing opposite ways above and below. This circling field is also why Oersted's early hunt for a straight-line pull had failed.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "How did the size of the deflection depend on the current and on the distance of the compass from the wire?",
+      "options": [
+        "It grew in proportion to the current and fell off in inverse proportion to the distance",
+        "It grew in proportion to both the current and the distance",
+        "It fell off in inverse proportion to the current and grew with the distance",
+        "It stayed constant regardless of current and distance"
+      ],
+      "answer": 0,
+      "explanation": "Oersted found the effect was stronger with more current and weaker with greater distance: roughly proportional to current I and inversely proportional to distance r. This is an empirical shadow of what we now write as B = mu0*I/(2*pi*r), essentially Ampere's law for a straight wire.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "The relationship Oersted measured by hand is the empirical form of which modern law for the field around a straight current-carrying wire?",
+      "options": [
+        "Ampere's law, B = mu0*I / (2*pi*r), later part of Maxwell's equations",
+        "Coulomb's law for the force between electric charges",
+        "Ohm's law relating voltage, current and resistance",
+        "Faraday's law of electromagnetic induction"
+      ],
+      "answer": 0,
+      "explanation": "The proportionality B proportional to I and inversely proportional to r is captured by Ampere's law, B = mu0*I/(2*pi*r), which became part of Maxwell's fourth equation. Coulomb's, Ohm's and Faraday's laws describe different phenomena (charge forces, circuit resistance and induction respectively).",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Describe Oersted's four key results and, for each, what it demonstrated about the effect of a current on a magnet.",
+      "keyPoints": [
+        "When current flowed the needle deflected (end nearest negative terminal swung west), giving the first evidence that a current can influence a magnet",
+        "Interposing glass, wood and metal scarcely diminished the effect, showing the influence is a field that permeates different materials",
+        "Placing the wire under the needle instead of above reversed the deflection, showing the field wraps around the wire in loops (a radial/circular field) rather than pulling straight toward it",
+        "The deflection increased with current and decreased with distance, roughly proportional to I and inversely proportional to r, an empirical version of Ampere's law"
+      ],
+      "explanation": "These four results together established the current-magnet link, the field-like nature of the influence, the circular geometry of the field, and its quantitative dependence on current and distance, foreshadowing B = mu0*I/(2*pi*r).",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Why did Oersted's experiment shake physics to its foundations, and what did it lead to?",
+      "keyPoints": [
+        "It provided the first solid experimental evidence linking electricity and magnetism, which had been considered separate forces",
+        "It tore down the wall between the two fields, showing they were part of one story",
+        "Within months Ampere built the mathematics of the effect",
+        "Faraday, Lenz and Maxwell followed the thread to unify the two as electromagnetism and show light is an electromagnetic wave",
+        "It underlies modern electromagnetic technology such as electromagnets, transformers and motors",
+        "Oersted even speculated that light and heat involved a 'conflict of electricities', foreshadowing Maxwell's electromagnetic theory of light"
+      ],
+      "explanation": "By experimentally connecting electricity and magnetism, Oersted opened the path to Ampere's mathematics and ultimately Maxwell's unified electromagnetism and theory of light, as well as the electromagnetic devices we rely on today.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

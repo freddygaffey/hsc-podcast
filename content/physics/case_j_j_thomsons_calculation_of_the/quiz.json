@@ -1,0 +1,148 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "In 1897, what was the central dispute about cathode rays that Thomson's experiment set out to settle?",
+      "options": [
+        "Whether they were a wave rippling through a medium or a stream of charged particles",
+        "Whether they were emitted by the positive plate or the negative plate",
+        "Whether they travelled faster or slower than visible light",
+        "Whether they were made of hydrogen atoms or oxygen atoms"
+      ],
+      "answer": 0,
+      "explanation": "German physicists largely held that cathode rays were a wave (a disturbance in some medium, akin to light), while many British physicists argued they were a hail of tiny charged particles. Option 1 is wrong because cathode rays were already known to stream from the negative plate (the cathode); that was not the point in dispute.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "Rather than measuring the mass of a cathode-ray particle directly, what quantity did Thomson set out to measure?",
+      "options": [
+        "The charge-to-mass ratio (q/m) of the particles",
+        "The absolute charge on a single particle",
+        "The wavelength of the ray",
+        "The exact mass of a single particle in kilograms"
+      ],
+      "answer": 0,
+      "explanation": "You cannot weigh an invisible particle directly, so Thomson measured how much it swerved under known electric and magnetic forces, which reveals the ratio of charge to mass (q/m). Options about absolute charge or absolute mass are wrong: his clever design made both of those cancel out, leaving only the ratio.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "In the first stage of the experiment, Thomson tuned his electric and magnetic fields until the glowing spot stopped moving. What did that undeflected beam tell him?",
+      "options": [
+        "The electric and magnetic forces were balanced, so the net force was zero",
+        "The particles had come to a complete stop inside the tube",
+        "The charge on each particle was exactly zero",
+        "The magnetic field had been switched off"
+      ],
+      "answer": 0,
+      "explanation": "When the downward electric force and the upward magnetic force cancel, the net force is zero, so the beam travels straight without accelerating. It does not mean the particles stopped (they still race forward) or that they are uncharged; both forces depend on the charge.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "At the balance point, Thomson set the electric force equal to the magnetic force (qE = qvB). What made this so useful for finding the particle's speed?",
+      "options": [
+        "The charge q cancels from both sides, giving v = E/B from quantities he could read off his apparatus",
+        "The mass appears on both sides and cancels, giving the speed directly",
+        "It gave the charge q directly once the fields were known",
+        "It proved the particles were massless"
+      ],
+      "answer": 0,
+      "explanation": "Because charge appears on both sides of qE = qvB, it cancels, leaving v = E/B. Thomson built both fields and could read their values, so he knew the speed for the first time. Mass does not appear in this balance equation, and the method gives speed, not the charge itself.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "The device that lets only particles of one particular speed pass straight through has a name still used today. What is it?",
+      "options": [
+        "A velocity selector",
+        "A mass spectrometer",
+        "A cyclotron",
+        "A cathode-ray oscilloscope"
+      ],
+      "answer": 0,
+      "explanation": "Only particles moving at exactly v = E/B experience balanced forces and glide through undeflected; faster or slower ones curve away. This crossed-field arrangement is called a velocity selector. A mass spectrometer and cyclotron are different instruments, and an oscilloscope is a display device.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "In the second stage, Thomson switched off the electric field and left only the magnetic field on. Why did the beam bend into a circular arc?",
+      "options": [
+        "The magnetic force always acts perpendicular to the velocity, so it bends the path without speeding it up or slowing it down",
+        "The magnetic force pushed the particles directly forward, accelerating them",
+        "Gravity took over once the electric field was removed",
+        "The particles lost their charge and drifted sideways"
+      ],
+      "answer": 0,
+      "explanation": "A magnetic force acts at right angles to a particle's motion, so it changes direction but not speed, curving the path into a circle. It does not push forward (that would change speed), gravity is negligible here, and the particles keep their charge.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Thomson's measured charge-to-mass ratio came out roughly 2000 times larger than that of the hydrogen ion. He concluded this meant a tiny mass rather than a huge charge. What evidence ruled out a huge charge?",
+      "options": [
+        "A cathode-ray beam (an electric current) barely deflected a nearby compass needle, so the charge streaming past had to be small",
+        "The particles glowed a different colour when a large charge was expected",
+        "The beam refused to bend in the magnetic field at all",
+        "The hydrogen ion's charge had already been measured to be identical"
+      ],
+      "answer": 0,
+      "explanation": "A large charge streaming as a current would generate a strong magnetic field and strongly deflect a compass needle. The cathode ray barely nudged a compass, so the charge could not be huge; the only remaining explanation for the large q/m was an extremely small mass. The other options are not what Thomson observed or argued.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "Thomson tried different cathode metals (aluminium, iron, platinum) and different gases. What did he find, and why did it matter?",
+      "options": [
+        "The same charge-to-mass ratio appeared every time, showing the particle was a universal constituent of all matter",
+        "Each metal gave a different particle, proving atoms were still indivisible",
+        "Only platinum produced cathode rays, so the effect was a quirk of heavy metals",
+        "The ratio changed with the gas, showing the rays were made of the gas atoms"
+      ],
+      "answer": 0,
+      "explanation": "No matter what material he used, the cathode rays had the identical q/m ratio, showing the same tiny particle pours out of every kind of atom, so it is something common to all matter. If the ratio varied by material or only some materials worked, it would not point to a universal subatomic particle.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "worked",
+      "q": "In the circular-motion stage the magnetic force provides the centripetal force, giving q/m = v/(Br). A beam is selected at v = 2.0 x 10^7 m/s. With the magnetic field B = 1.0 x 10^-3 T left on, the beam curves along an arc of radius r = 0.114 m. Calculate the charge-to-mass ratio q/m.",
+      "given": "v = 2.0 x 10^7 m/s, B = 1.0 x 10^-3 T, r = 0.114 m",
+      "working": [
+        "The magnetic force supplies the centripetal force: qvB = mv^2 / r",
+        "Cancel one factor of v from each side: qB = mv / r",
+        "Rearrange for the ratio: q/m = v / (B r)",
+        "Substitute: q/m = (2.0 x 10^7) / (1.0 x 10^-3 x 0.114)",
+        "q/m = (2.0 x 10^7) / (1.14 x 10^-4) = 1.75 x 10^11 C/kg"
+      ],
+      "answerValue": 1.75e11,
+      "answerUnit": "C/kg",
+      "tolerance": 5e9,
+      "explanation": "Setting the magnetic force equal to the centripetal force (qvB = mv^2/r) and cancelling a v gives q/m = v/(Br). The numbers reproduce Thomson's historic result of about 1.76 x 10^11 C/kg, thousands of times larger than any q/m known for matter at the time.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Explain how Thomson's charge-to-mass measurement overturned Dalton's model of the atom and what new model it inspired.",
+      "keyPoints": [
+        "The huge q/m ratio, combined with ruling out a giant charge, meant the particle had an extraordinarily small mass, about 1/2000 that of the lightest atom (hydrogen)",
+        "The identical particle could be knocked out of every material tried, so it must exist inside all atoms",
+        "This meant the atom was not indivisible, directly contradicting Dalton's picture of atoms as the smallest, uncuttable building blocks of matter",
+        "Thomson had found the first subatomic particle, later named the electron",
+        "Because atoms are neutral overall, he proposed the 'plum pudding' model: tiny negative electrons studded through a ball of positive charge"
+      ],
+      "explanation": "A particle far lighter than any atom, extractable from every element, proves the atom has an internal structure, cutting the 'uncuttable' and demolishing Dalton's indivisible-sphere model. To keep atoms neutral, Thomson pictured electrons embedded in a positive background, the plum pudding model, the first attempt ever to draw the inside of an atom.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

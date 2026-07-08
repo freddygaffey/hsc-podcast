@@ -1,0 +1,152 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What was the main purpose of Hertz's 1887 experiment?",
+      "options": [
+        "To invent radio as a means of long-distance communication",
+        "To experimentally verify Maxwell's prediction of electromagnetic waves outside the visible range",
+        "To measure the charge on a single electron",
+        "To prove that light is made of particles rather than waves"
+      ],
+      "answer": 1,
+      "explanation": "Maxwell's equations predicted EM waves at frequencies far below and above visible light, but none had ever been observed. Hertz set out to produce and detect these invisible waves to confirm the theory was describing reality. He was not trying to invent radio (its communication uses came later, via Marconi), and he actually thought his discovery was useless.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "According to Maxwell, why did the electromagnetic wave he predicted have to be a form of light?",
+      "options": [
+        "Because the waves were visible to the naked eye in his experiments",
+        "Because his equations gave the wave a speed of about 3 x 10^8 m/s, matching the known speed of light",
+        "Because the waves could only travel through glass and air like light does",
+        "Because Helmholtz had already proven light was electromagnetic"
+      ],
+      "answer": 1,
+      "explanation": "When Maxwell calculated the speed of his predicted wave from his equations he got roughly 3 x 10^8 m/s, which was already the measured speed of light. This match led him to conclude that light itself is an electromagnetic wave. The waves were not visible, and the speed argument came from theory, not from experiment.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "In Hertz's spark-gap transmitter, what actually produced the radio waves?",
+      "options": [
+        "The spark itself directly radiated the waves as it crossed the gap",
+        "The induction coil emitted the waves as it stepped up the voltage",
+        "The spark kickstarted resonant high-frequency oscillating currents in the conductors, which radiated the waves",
+        "The metal balls glowed and gave off the waves as heat radiation"
+      ],
+      "answer": 2,
+      "explanation": "The spark is only the kickstarter: when the gap breaks down it suddenly closes the circuit, and the piled-up charge surges back and forth at the circuit's natural resonant frequency, like a plucked guitar string. Those rapidly accelerating charges radiate the EM waves. The spark itself is not the wave, and the induction coil only supplies the high charging voltage.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "How did Hertz's receiver (a ring of wire with a small gap) detect the invisible waves?",
+      "options": [
+        "The oscillating fields of the passing wave drove a current in the loop, forcing a tiny spark across its gap",
+        "The wave heated the wire until it glowed visibly",
+        "A physical wire connected the transmitter and receiver, carrying the current across",
+        "The ring vibrated mechanically and struck a bell"
+      ],
+      "answer": 0,
+      "explanation": "When the wave's oscillating electric and magnetic fields washed over the ring, they pushed charges around the loop; tuned to resonate at the transmitter's frequency, this built up enough to jump a faint spark across the ring's gap. Crucially there was no wire between the two devices, only empty air, proving energy crossed the room as a wave.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "Why did Hertz go on to show that his waves could reflect off metal, refract through a pitch prism, and form standing waves?",
+      "options": [
+        "To increase the range of his transmitter for communication",
+        "To demonstrate the waves behaved exactly like light, confirming they were the same kind of phenomenon",
+        "Because a single detected spark could have been caused by a sound wave",
+        "To find a frequency that the human eye could finally see"
+      ],
+      "answer": 1,
+      "explanation": "Detecting a spark once could be a lucky accident. By making the waves reflect, refract, and interfere just as light does, Hertz proved they obeyed every rule of optics and were therefore the same class of phenomenon as visible light, exactly as Maxwell claimed. This is what turned an observation into a proof.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "In Hertz's standing-wave experiment, what did the nodes correspond to and how did they let him measure the wavelength?",
+      "options": [
+        "Nodes were the brightest sparks; the distance between them equalled one full wavelength",
+        "Nodes were points of maximum field; adjacent nodes were one wavelength apart",
+        "Nodes were dead spots where no spark formed; adjacent nodes are half a wavelength apart",
+        "Nodes were where the prism bent the beam; their spacing gave the frequency directly"
+      ],
+      "answer": 2,
+      "explanation": "Reflecting the wave back on itself created a standing wave with fixed nodes (dead spots, no spark) and antinodes (strong sparks). The distance between adjacent nodes is exactly half a wavelength, so Hertz paced out the silent spots with a ruler and doubled the spacing to get the wavelength of an invisible wave.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "worked",
+      "q": "Hertz set up a standing wave and found the dead spots (nodes) were 0.30 m apart. He knew his apparatus oscillated at a frequency of 5.0 x 10^8 Hz. Calculate the speed of the wave.",
+      "given": [
+        "Distance between adjacent nodes = 0.30 m",
+        "Frequency f = 5.0 x 10^8 Hz",
+        "Node spacing = half a wavelength",
+        "Wave equation v = f x lambda"
+      ],
+      "working": [
+        "The distance between adjacent nodes equals lambda/2, so lambda = 2 x 0.30 = 0.60 m",
+        "Apply the wave equation: v = f x lambda",
+        "v = (5.0 x 10^8) x 0.60",
+        "v = 3.0 x 10^8 m/s"
+      ],
+      "answerValue": 300000000,
+      "answerUnit": "m/s",
+      "tolerance": 5000000,
+      "explanation": "Because adjacent nodes are half a wavelength apart, the 0.30 m spacing gives a wavelength of 0.60 m. Multiplying by the known frequency gives v = 3.0 x 10^8 m/s, the speed of light. This match with Maxwell's predicted value proved the invisible waves and visible light are the same phenomenon travelling at the same universal speed.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "Hertz noticed that a glass window placed between the transmitter and detector dimmed the receiver's spark, while a quartz window had no effect. What was actually happening?",
+      "options": [
+        "The glass reflected all the radio waves while quartz let them pass",
+        "The spark emitted some ultraviolet light that helped the receiver spark; glass absorbed this UV but quartz let it through",
+        "The glass changed the frequency of the radio waves, detuning the receiver",
+        "The quartz amplified the radio waves through refraction"
+      ],
+      "answer": 1,
+      "explanation": "The transmitter spark gave off a little ultraviolet light as well as radio waves, and that UV was helping the receiver spark along. Glass absorbs UV, so the spark got dimmer; quartz is transparent to UV, so it made no difference. This was the first hint of the photoelectric effect, not a change in the radio waves themselves.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Explain why Hertz's experiment was so important for physics, even though Hertz himself thought his discovery was useless.",
+      "keyPoints": [
+        "It provided the first experimental confirmation of Maxwell's electromagnetic wave theory",
+        "It proved EM waves exist outside the visible spectrum (invisible light), as Maxwell predicted",
+        "By measuring wavelength (from standing-wave nodes) and knowing the frequency, Hertz found the wave speed equalled the speed of light (~3 x 10^8 m/s)",
+        "This confirmed that light is an electromagnetic wave and that a whole invisible EM spectrum exists",
+        "It laid the foundation for radio, TV, radar and wireless communication (later realised by Marconi)"
+      ],
+      "explanation": "Hertz took Maxwell's equations from pure theory to demonstrated reality: he generated, detected, reflected, refracted and formed standing waves with invisible EM waves, and measured their speed as the speed of light. This validated the electromagnetic theory of light and opened the door to all wireless technology, even though Hertz saw it only as proving a professor right.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "mc",
+      "q": "Why was Maxwell's theory treated with scepticism, especially in Germany, before Hertz's experiment?",
+      "options": [
+        "Because Maxwell had never written down any equations to support it",
+        "Because it claimed empty space could carry a wave with nothing physically waving, and a rival theory of electricity was still taken seriously",
+        "Because the speed of light had not yet been measured by anyone",
+        "Because Hertz had already published results contradicting Maxwell"
+      ],
+      "answer": 1,
+      "explanation": "Maxwell claimed space could carry a wave made of electric and magnetic fields with nothing material vibrating, which many serious scientists found too radical. In Germany a competing theory of electricity was still favoured, and Maxwell's fields were seen as a foreign curiosity, which is why Helmholtz offered a prize for experimental proof, exactly what Hertz delivered.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

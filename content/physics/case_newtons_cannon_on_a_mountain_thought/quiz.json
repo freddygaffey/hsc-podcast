@@ -1,0 +1,146 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What was the central idea Newton's cannon thought experiment was designed to demonstrate?",
+      "options": [
+        "That orbiting is simply falling combined with enough sideways speed, governed by the same gravity that pulls objects to the ground",
+        "That celestial bodies are made of a special fifth element that resists falling",
+        "That a cannonball can escape gravity entirely if fired fast enough",
+        "That the atmosphere is what holds the Moon up in the sky"
+      ],
+      "answer": 0,
+      "explanation": "The experiment shows a cannonball fired fast enough falls toward Earth while the curved surface drops away beneath it, so it orbits without ever landing. Option about the fifth element is the Aristotelian view Newton overturned, not what he demonstrated.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "In the thought experiment, why must the mountain be imagined as impossibly tall, with its peak poking above the atmosphere?",
+      "options": [
+        "So there is no air resistance to slow the cannonball down",
+        "So the cannon is closer to the Moon's orbit",
+        "So gravity is weaker at that height and the ball travels farther",
+        "So the observer can see the entire curvature of the Earth"
+      ],
+      "answer": 0,
+      "explanation": "The peak rises above the air so nothing slows the ball, letting speed alone determine the outcome. Gravity being weaker at altitude is not the point; the setup is about removing drag, and the ball is still fully subject to its weight.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "According to the reasoning, what is the ONLY difference between a cannonball that lands in a field and one that circles the Earth forever?",
+      "options": [
+        "Its speed",
+        "The material it is made of",
+        "The force acting on it",
+        "The direction gravity pulls it"
+      ],
+      "answer": 0,
+      "explanation": "Newton stresses that both balls are simply falling under the same weight and the same force; only the launch speed differs. The material and the gravitational force are identical for both, which is precisely his point about uniting earthly and heavenly physics.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "What did the Aristotelian worldview, which Newton's insight overturned, claim about the heavens and the Earth?",
+      "options": [
+        "They were two separate realms governed by different laws, with heavenly bodies moving in natural eternal circles",
+        "They were a single realm running on identical physical laws that could be written as equations",
+        "The Earth orbited the Sun while the stars remained fixed",
+        "Gravity extended from the Earth out to the Moon but no farther"
+      ],
+      "answer": 0,
+      "explanation": "Aristotle's view held an earthly realm where things fall and decay and a separate perfect heavenly realm of endless circles made of a fifth element. The single-realm, one-set-of-laws picture is exactly the new view Newton established, not the old one.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "In what year and in which work did Newton publish the cannon thought experiment?",
+      "options": [
+        "1687, in the Philosophiae Naturalis Principia Mathematica (the Principia)",
+        "1543, in De Revolutionibus Orbium Coelestium",
+        "1610, in Sidereus Nuncius (The Starry Messenger)",
+        "1704, in Opticks"
+      ],
+      "answer": 0,
+      "explanation": "The experiment appears near the start of Newton's 1687 Principia. De Revolutionibus was Copernicus, Sidereus Nuncius was Galileo, and Opticks was Newton's later optics work, so those are the wrong attributions.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "Why does a fast-enough cannonball never get any closer to the ground even though it is genuinely falling the whole time?",
+      "options": [
+        "The curved surface of the Earth drops away beneath it at exactly the rate the ball falls",
+        "Its horizontal speed cancels out the force of gravity so it stops falling",
+        "It reaches a height where gravity no longer acts on it",
+        "The atmosphere pushes it upward as fast as gravity pulls it down"
+      ],
+      "answer": 0,
+      "explanation": "The ball keeps plunging toward Earth's centre, but because the Earth is a ball its surface curves away underneath at the same rate, so the ball never arrives. Gravity is never cancelled or absent; the ball is falling every second, which is the whole insight.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "How does the script describe what the Moon is actually doing as it circles the Earth?",
+      "options": [
+        "It is falling toward the Earth continuously but moving sideways fast enough that the Earth curves away beneath it forever",
+        "It is held up by a balance between gravity and an outward centrifugal push",
+        "It is drifting freely because gravity does not reach that far into space",
+        "It is suspended motionless by the pull of distant stars"
+      ],
+      "answer": 0,
+      "explanation": "The Moon is Newton's cannonball: perpetually falling toward Earth yet always missing because of its sideways motion. The script explicitly rejects the idea that anything holds it up or that gravity fails to reach it.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "What powerful consequence did uniting terrestrial and celestial physics allow Newton to achieve regarding Kepler's laws?",
+      "options": [
+        "He could derive Kepler's laws from first principles using a single universal gravitational force, rather than just observing them",
+        "He proved Kepler's laws were incorrect and replaced them with new orbital patterns",
+        "He showed Kepler's laws applied only to the Moon and not to the planets",
+        "He measured Kepler's laws for the first time using a telescope"
+      ],
+      "answer": 0,
+      "explanation": "With universal gravitation Newton could derive Kepler's laws mathematically, turning them from catalogued brute facts into consequences of one force. He did not disprove them, and Kepler's laws were already established from Kepler's own decades of data, not first measured by Newton.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Explain the sequence of reasoning in Newton's cannon thought experiment, from a lightly charged cannon to a ball in orbit.",
+      "keyPoints": [
+        "A cannon sits on a mountain so tall its peak is above the atmosphere (no air resistance), pointed level at the horizon",
+        "With a modest charge the ball arcs down and hits the ground after a mile or two, like any projectile forced from a straight line by its own weight",
+        "The greater the launch velocity, the farther the ball travels before it lands (5, 10, 100 miles, etc.)",
+        "Because the Earth is a sphere, its surface curves away beneath the falling ball",
+        "At a great enough speed the ball falls at exactly the rate the surface curves away, so it never lands and circles the Earth: an orbit",
+        "Falling and orbiting are therefore the same act, differing only in speed"
+      ],
+      "explanation": "The chain of reasoning uses only increasing speed plus the Earth's curvature to turn ordinary projectile falling into a stable orbit, with no new force required.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Why was this thought experiment so significant for the development of physics?",
+      "keyPoints": [
+        "It tore down the Aristotelian wall between the earthly and heavenly realms, which had held they obeyed different laws",
+        "It showed one universal gravitational force governs both falling apples and orbiting bodies",
+        "It made the heavens part of the same universe running on the same rules, which could be written as equations",
+        "It let Newton derive Kepler's laws from first principles rather than merely observe them",
+        "It required no observatory, instrument, or expedition: a purely mental picture cracked the cosmos open",
+        "Every modern satellite, space station, and probe is that cannonball fired fast enough"
+      ],
+      "explanation": "The experiment unified terrestrial and celestial mechanics under a single force and set of mathematical laws, a foundational moment in physics achieved entirely through reasoning.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

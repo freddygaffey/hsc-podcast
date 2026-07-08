@@ -1,0 +1,145 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What did the Poisson bright spot experiment provide evidence for?",
+      "options": [
+        "Newton's corpuscular (particle) model of light",
+        "Huygens' wave model of light",
+        "That light travels in perfectly straight lines",
+        "That light has no measurable wavelength"
+      ],
+      "answer": 1,
+      "explanation": "The bright spot could only be explained by diffraction and interference, which are wave properties, so it was strong early evidence for Huygens' wave model. It directly undermined Newton's corpuscular model, because particles fired at a ball are simply blocked and cannot bend into the shadow.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "Where does the bright spot appear, and what makes its location so surprising?",
+      "options": [
+        "At the edge of the shadow, where light naturally leaks past",
+        "In the exact centre of the shadow, the darkest region where no light should reach",
+        "In a ring surrounding the object, but never at the centre",
+        "Everywhere across the screen except the centre of the shadow"
+      ],
+      "answer": 1,
+      "explanation": "The spot appears dead centre of the shadow, the very place that should be pitch black if the ball simply blocks the light. That is why Poisson thought the prediction was absurd. A spot merely at the edge of the shadow would not have been surprising and would not have tested the theory.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Why do the wavelets from the rim of a round ball reinforce each other exactly at the centre of the shadow?",
+      "options": [
+        "Because the centre is the only point the ball does not block",
+        "Because every point on the circular edge is the same distance from the centre, so all wavelets arrive in step (crest with crest)",
+        "Because the ball reflects light forward onto that point",
+        "Because the wavelets slow down and pile up behind the ball"
+      ],
+      "answer": 1,
+      "explanation": "The edge of a perfectly round ball is a circle, so every point on it is equidistant from the centre of the shadow behind. The wavelets therefore travel equal paths, arrive perfectly in phase, and add constructively into a bright point. It is not reflection or a gap in the ball; it is constructive interference of diffracted waves.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "Siméon Denis Poisson worked out this prediction. What was his intention in doing so?",
+      "options": [
+        "To prove Fresnel's wave theory correct",
+        "To expose an absurd consequence of Fresnel's equations and thereby destroy the wave theory",
+        "To measure the wavelength of light precisely",
+        "To defend Huygens against Newton's supporters"
+      ],
+      "answer": 1,
+      "explanation": "Poisson, a committed Newtonian, pushed Fresnel's own equations to an extreme case expecting to reveal a ridiculous result and so discredit the wave theory. The irony is that the 'absurd' spot turned out to be real, handing the wave theory its most dramatic evidence.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "Who actually performed the experiment and observed the bright spot?",
+      "options": [
+        "Siméon Denis Poisson",
+        "Isaac Newton",
+        "François Arago",
+        "Christiaan Huygens"
+      ],
+      "answer": 2,
+      "explanation": "Arago, another judge on the committee, insisted on testing the prediction rather than just arguing on paper. He set up a small metal disc in a beam and found the spot at the centre of the shadow, which is why the effect is sometimes called Arago's spot. Poisson only predicted it; he did not perform the experiment.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "A common objection to the wave model was that light casts sharp-edged shadows. How does Fresnel's theory answer this?",
+      "options": [
+        "Light does not actually diffract at all around edges",
+        "Light does diffract, but its wavelength is so tiny (under a thousandth of a millimetre) that the fuzziness at the edge is too fine for the eye to notice",
+        "Only sound and water waves can diffract, not light",
+        "Shadows are sharp because light particles are blocked by the object"
+      ],
+      "answer": 1,
+      "explanation": "Fresnel argued that light does bend around edges (diffraction), but because the wavelength of light is astonishingly small, the bending is minute and shadows look sharp to the naked eye. Saying light does not diffract, or that only other waves diffract, is exactly the misconception the bright spot disproves.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Which principle explains why every point on the ball's rim can act as a source of a new wavelet?",
+      "options": [
+        "Newton's corpuscular principle",
+        "Huygens' principle, that every point on a wavefront acts as a source of secondary wavelets",
+        "The photoelectric effect",
+        "Snell's law of refraction"
+      ],
+      "answer": 1,
+      "explanation": "Huygens' principle states that every point on a wavefront acts as a tiny new source sending out its own wavelet, and these wavelets combine to form the advancing wave. Applied to the rim of the ball, it is what produces the equidistant, in-phase wavelets that build the bright spot. The other options describe unrelated phenomena.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "Why can Newton's corpuscular (particle) model NOT account for the bright spot?",
+      "options": [
+        "Because particles travel too fast to reach the screen",
+        "Because particles fired at a solid ball are simply blocked, and cannot bend and overlap to add up in the shadow",
+        "Because particles always cancel each other out in a shadow",
+        "Because Newton's model predicts an even brighter spot than the wave model"
+      ],
+      "answer": 1,
+      "explanation": "Solid particles aimed at a ball are stopped by the ball, so nothing should reach the centre of the shadow. Only waves can bend around the rim, overlap, and interfere constructively to light up the dark. This inability is precisely why the spot counts as evidence against the particle model.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Explain how light reaches the centre of the shadow to form the bright spot, naming the two wave behaviours involved.",
+      "keyPoints": [
+        "Light waves diffract (bend) around the entire circular rim of the ball",
+        "The diffracted wavelets curl inward into the shadow region",
+        "Every rim point is equidistant from the centre, so the wavelets travel equal paths and arrive in phase (in step)",
+        "They add together by constructive interference, producing a bright point",
+        "The two wave signatures on display are diffraction and interference"
+      ],
+      "explanation": "The bright spot is a single dot that simultaneously demonstrates diffraction (waves bending around the edge) and interference (equal-path wavelets meeting in phase and reinforcing). Because both are wave-only behaviours, the spot is direct physical evidence for the wave nature of light.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Summarise the historical significance of Poisson's bright spot in the century-long debate about the nature of light.",
+      "keyPoints": [
+        "For over a century Newton's corpuscular (particle) model competed with Huygens' wave model",
+        "In 1818 the French Academy set diffraction as a prize topic, expecting to confirm Newton's particles",
+        "Poisson, a Newtonian, derived the bright spot from Fresnel's equations to ridicule the wave theory",
+        "Arago performed the experiment and found the spot exactly as predicted",
+        "Fresnel won the prize and the result became strong early evidence for the wave model",
+        "The wave model went on to dominate 19th-century physics and led to light as an electromagnetic wave"
+      ],
+      "explanation": "An argument meant to destroy the wave theory instead produced its most dramatic confirmation: the prediction Poisson called impossible was real. This turned the tide of the debate toward Huygens' wave model, which dominated the rest of the century and paved the way for the electromagnetic and later wave-particle understanding of light.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

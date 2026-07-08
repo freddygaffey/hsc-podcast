@@ -1,0 +1,2562 @@
+# Physics Experiments
+
+HSC Physics experiments by module
+To any G24 students reading from the shared drive: All experiments are subjectively rated 1-3 stars by myself based on
+their relevance/importance to hsc studies. That being said, all experiments here, even the “1 star” ones are relevant to a
+significant extent, so probably read over any experiments you aren’t familiar with at least once (some of them i wouldn't
+have thought to be relevant until i saw them in trial exam questions).
+A brief note on the completion of the document thus far:
+At the moment here are the experiments on my “to do list” that I haven’t done yet:
+​ Photoelectric effect analysis (kinda done in notes elsewhere)
+​ Could perchance do more detail on the general nature of cathode rays
+​ Chadwick (I actually gotta get this one done)
+​ De Broglie matter waves (D-G + GP T)
+​ Quarks (SLAC + AB)
+​ Bubble chambers for positron
+​ Neutrino
+​ Hubble’s observations (method with Cepheid variables)
+Everything else in HSC physics SHOULD BE here. Lmk if not.
+A brief note on the speed of light:
+As for the “speed of light experiments”, I include a fair few. I would recommend picking at least ONE historical experiment
+and at least ONE contemporary method to learn completely (making sure you know the context and method and can
+derive the equations they used to calculate the speed of light). If you aren’t sure which “one to pick”, for the historical one,I
+recommend Fizeau’s measurement (it’s the easiest) and for contemporary I personally like Froome/Evansen’s
+interferometry method as it is also quite simple and has simple equations and ideas associated with it. You should be at
+least familiar with all the methods on this document though.
+ A brief note on the mod 5 and 6 experiments:
+While I have seen all of these come up in trial papers/internal assessments before, I think it’s unlikely that we would see
+them in the HSC. If you haven’t looked at experiments since the trials, I recommend studying only the three star mod 5/6
+experiments (at the time of writing I have listed only one such experiment), and otherwise focusing on mod 7/8.
+Also, for those reading in later years, this was written by my HSC student self, so I can’t guarantee that everything is 100%
+accurate.
+Finally, while all necessary EXPERIMENTS should be here, that does not mean that all necessary EVIDENCE for scientific
+theories in the HSC is here. See module specific notes for such information in more detail.
+Contents:
+
+## Module 5 - Important history
+
+⭐Galileo’s “Leaning Tower of Pisa” thought/real experiment (1589-1592)
+⭐⭐⭐Galileo’s demonstration of the principles of projectile motion (reportedly early 1600-1610)
+⭐⭐Kepler’s third law from empirical data (1618)
+⭐⭐Newton’s cannon on a mountain thought experiment (1687)
+⭐Henry Cavendish’s experiment to find “G” from Newton’s law of universal gravitation (1798)
+
+## Module 6 - What we know today as Maxwell’s 3rd and 4th equations
+
+⭐⭐Hans Oersted’s effect of a current on a nearby compass (1820)
+⭐⭐Michael Faraday showing electric fields can be induced by changing magnetic fields (1831)
+
+## Module 7 - Light in general
+
+⭐⭐Evidence of Huygen’s theory: Poisson’s bright spot
+⭐⭐⭐Young’s double slit experiment (1801)
+⭐Beeckman and Galileo’s “lanterns on hills” attempt to measure the speed of light (1629)
+⭐⭐Ole Rømer’s “Io eclipse” evidence of a finite speed of light (1676) (220,000 km/s)
+⭐⭐ James Bradley’s “stellar aberration” measurement of the speed of light (1728) (301,000 km/s)
+⭐⭐⭐Hippolyte Fizeau’s “cogwheel” measurement of the speed of light (1849) (315,000 km/s)
+⭐⭐Jean/Léon Foucault’s “rotating mirror” measurement of the speed of light (1862) (298,000 km/s)
+⭐⭐⭐Heinrich Hertz’s verification of Maxwell’s EM (radio) waves (1887)
+⭐⭐Rosa and Dorsey’s “vacuum constants” calculation of the speed of light (1907) (299,710 km/s)
+⭐⭐Louis Essen’s “cavity resonance” measurement of the speed of light (1950) (299,792.5 km/s)
+⭐⭐Froome / Evansen et al ‘s “interferometry” measurement of the speed of light (1958/72) (299,792.456 km/s)
+⭐⭐Photoelectric effect analysis
+
+## Module 7 - Special relativity
+
+⭐⭐Galileo’s principle of relativity “ship” thought experiment (1632)
+⭐⭐⭐Evidence for Einstein's postulates: The Michelson-Morley “ether” experiment (1887)
+⭐⭐The mirror in a train thought experiment (1905)
+⭐Derivation of time dilation from Einstein's postulates (photon clock) (1905)
+⭐Derivation of length contraction from Einstein's postulates (muon hypothetical) (1905)
+⭐Evidence for relativity of simultaneity: The lights in a box thought experiment
+⭐⭐⭐Evidence for time dilation and length contraction: High altitude muons (Frisch-Smith experiment) (1962)
+⭐⭐⭐Evidence for time dilation: Hafele-Keating Experiment (1971)
+
+## Module 8 - Atomic and subatomic
+
+⭐Discovery of the electron: Behaviour of cathode rays (in general)
+⭐⭐Discovery of the electron:  The British against German examination of cathode rays (1897)
+⭐⭐⭐Discovery of the electron: J.J. Thomson’s calculation of the charge to mass ratio of cathode rays (1897)
+⭐⭐⭐The charge of an electron: Robert Millikan’s “oil drop” experiment (1909)
+⭐⭐⭐Discovery of the nucleus: Geiger-Marsden “gold foil” experiment (1909)
+⭐⭐⭐Evidence for De Broglie matter waves: Davisson-Germer experiment (1927) (To do before HSC)
+⭐Evidence for De Broglie matter waves: G. P. Thomson’s experiment (1927) (Should do briefly incase of a wave
+particle duality high marker)
+⭐⭐Wilson cloud chambers
+⭐⭐⭐James Chadwick’s discovery of the neutron (1932)
+⭐⭐Evidence that protons and neutrons are not fundamental: Alvarez and Bloch (1940)
+⭐⭐⭐Evidence that protons and neutrons are not fundamental: SLAC deep inelastic scattering (1968)
+⭐Standard model prediction of the W and Z bosons, prediction of the Higgs boson
+⭐⭐Bubble chambers and the positron
+⭐⭐Discovery of the neutrino (Cowan-Reines) (1956)
+
+## Module 8 - The universe
+
+⭐⭐⭐Hubble’s observations (to do before HSC, method)
+
+## Module 5 - Important history
+
+⭐Galileo’s “Leaning Tower of Pisa” thought/real experiment (1589-1592)
+Important note:
+Don’t spend too much time reading through this one, it’s got a lot of information compared to how (not very) important it
+is.
+TLDR Summary: Galileo wrote about (and may or may not have actually) dropped two balls of different weights from the
+leaning tower of Pisa and observed that they took the same amount of time to land. This is important for the HSC
+because it is the first evidence for a constant uniform acceleration due to gravity (independent of mass), which is one of
+the principles of ballistic projectile motion. This was later explained by Newton’s law of universal gravitation alongside
+Newton’s second law of motion, F=ma.
+Context:
+The prevailing belief in the late 16th century regarding the acceleration of falling objects was informed by the outdated
+teachings of the famous Philosopher Aristotle (384-322 BC), who asserted that “the rate that objects fall is proportional to
+their weight” (yes from the resources I’ve looked at it appears this truly was the belief, and it just wasn’t questioned so
+much as we see things like feathers fall slower than sticks because of the effects of air resistance). Before the 1564 birth
+of Galileo, Italians had already claimed to have proven this wrong, but there was still some controversy, some questioning
+why two balls, one made of iron and one made of wood, would fall at the same speed, likely due to their common human
+intuition. Galileo countered with the thought experiment, written in his book “On motion”, where he argued that if we
+assume that heavier objects do indeed fall faster than lighter ones, then upon dropping two objects of different weights,
+attached by a loose string, then the spring should soon pull taut as distance between the two objects increases due to the
+disparity in speed, which would create a system heavier than the two objects alone, which should therefore fall faster. He
+argued that this contradiction leads us to conclude that the assumption is false, prompting Galileo to conduct his famous
+experiment to prove once and for all  that the rate that objects fall is independent of their mass.
+IMPORTANT NOTE: It was never confirmed by Galileo himself in his writings that this experiment ACTUALLY OCCURRED,
+it was only written about decades later by one of his students, Viviani in his book “Vita di Galileo” (or Life of Galileo), and
+hence, while I am including this because it is such an iconic experiment in terms of physics, whether it “really happened”
+in terms of history is debated. Nonetheless it is still a valid experiment. Below is a relevant section from an academic
+writing on Viviani’s work (I couldn’t find a copy of the original work in English so I’m using secondary sources):
+
+![](images/img_001.png)
+
+So from here on I will be treating the experiment as if it really happened, but keep in mind that isn’t guaranteed to have
+been the case. In any scenario where an exam question requires justification of the Galilean principles of projectile
+motion I would prefer using the next experiment whenever possible, this one I’d only use if I had to use the
+demonstration of a uniform vertical acceleration for all objects in my argument.
+Aim:
+To demonstrate that the time of a free-falling object’s descent from a particular height is independent of the weight of that
+object, thus showing that (as time is independent), the rate that an object falls is also independent.
+Hypothesis:
+The two objects of unequal weights will take the same amount of time to fall from the same height.
+
+### Experimental setup:
+
+
+![](images/img_002.png)
+
+Rough method:
+Galileo is said to have dropped “unequal weights of the same material” from the same height on the Leaning Tower of
+Pisa, and measured and compared the time taken for the two objects to reach the ground. Exactly how he measured the
+time is not well documented as far as my research went, but some plausible options could include visually/audibly
+witnessing the two objects collide with the ground, or using a secondary observer at the base of the tower.
+
+### Results:
+
+Galileo found that the time taken for the unequal weights of the same material to fall from the same height was (more or
+less) the same.
+Discussion:
+This experiment had some notable concerns. First, something that may seem concerning, but really ends up not being too
+bad is that Galileo, much like all of HSC physics, did not account for air resistance. Galileo specified that the two objects
+were of the same material, so therefore the heavier one would have to have a larger volume, and presumably surface area,
+and experience more air resistance. Although as far as I can find, there is not any definitive record of the specific objects
+drop, it seems likely that the selected objects were spherical wooden balls or lead cannonballs, which would have
+minimised the effects of air resistance (as spherical objects minimise surface area and the fact that they are heavier
+would result in the force of air resistance being a lesser fraction of the gravitational force acting on the ball, hence having
+a smaller effect on the net acceleration). Furthermore, this wouldn’t really matter anyway as while the heavier ball would
+experience more air resistance, its force of gravitational attraction would also be larger, so air resistance would likely
+contribute to lowering the acceleration of the two balls similarly, and hence we can say this is not a concern. Secondly, the
+
+### method of timing may have easily led to an incorrect observation due to the limitations of visually observing the balls
+
+landing due to parallax error and audible clarity when listening to just the sounds they make (if we assume Galileo did the
+experiment alone, which is not confirmed to be true or false).
+Conclusion:
+The experiment demonstrated that the time taken for two objects to fall the same height in a gravitational field is
+independent of the mass of those objects (assuming negligible air resistance). From this, it follows that the acceleration
+due to gravity is the same for all objects.
+Impact:
+This experiment was crucial for laying the groundwork for projectile motion (which assumes a constant, uniform vertical
+acceleration due to gravity for all masses) and for Newton’s law of universal gravitation.
+⭐⭐⭐Galileo’s demonstration of the principles of projectile motion (reportedly early 1600-1610)
+Aim:
+To demonstrate that the vertical and horizontal components of free motion in a gravitational field are independent by
+showing that horizontal velocity does not affect the time taken to fall a given height.
+
+### Method:
+
+A ball is rolled off a plane at varying velocities (velocity is the independent variable). Since we cannot directly measure the
+velocity, we time the how long it takes the ball to roll a specific distance and use the formula
+ to attain our
+𝑣= 𝑠/𝑡
+horizontal velocity. We then plot the range of the projectile (horizontally measured from the point of free fall to the point of
+contact with the ground) against the initial horizontal velocity of the ball. Controlled variables include (most importantly)
+the height of the surface that we roll the ball off. To ensure maximum accuracy of our measurement of initial velocity, the
+surface from which we roll the ball off should be reasonably long, but not too long. The surface (depicted as a black box in
+the desmos diagram) should not be too short, as that would mean any uncertainty in the time due to reaction time with
+the stopwatch would result in a larger percentage error. The box should not be too long as friction between the ball and
+the box could be significant enough such that the velocity that the ball leaves the box at is significantly slower than the
+average, and hence velocity would be overestimated, which may contribute to incorrect horizontal velocities being plotted.
+Most importantly, whatever distance the ball rolls, it should also be controlled.
+
+![](images/img_003.png)
+
+https://www.desmos.com/calculator/0gxnk0raml <- you can run a little animation here
+
+### Results, conclusion and impact:
+
+After plotting range vs initial velocity, we should attain an approximately linear relationship in the form of
+.
+𝑟𝑎𝑛𝑔𝑒= 𝑚* 𝑢𝑥
+Recall that
+. In our equation, range is  and
+ is , so thus the gradient
+ is the time taken for the descent. The fact
+𝑠= 𝑣𝑡
+𝑠
+𝑢𝑥
+𝑣
+𝑚
+that this gradient is a constant shows that no matter the horizontal velocity, the ball takes the same time to fall (as
+𝑚
+represents ). Since the time to fall is related only to the vertical components of velocity/acceleration, we can conclude
+𝑡
+that the vertical components of motion are not influenced by horizontal conditions.
+We can derive that the time taken is:
+𝑠= 1
+2 𝑎𝑡
+2
+𝑡=
+2ℎ
+𝑔
+Where  is the height that the ball was rolled from and  is the acceleration due to gravity (
+)
+ℎ
+𝑔
+9. 8𝑚𝑠
+−1
+This idea is potentially useful, as I could see a HSC question providing us with a graph of range vs x velocity when rolling a
+ball off some slope, and asking us to find the height of the ledge based on the gradient for instance.
+It is important to consider that in real life, the gradient may not be constant, but could decrease as
+ increases. This is
+𝑢𝑥
+because larger speeds will result in greater effects of air resistance (which we do not account for in the HSC), which
+would hinder the range, making the relationship non-linear.
+Since this experiment showed that the  and  components are independent, it allows us to break up any projectile motion
+𝑥
+𝑦
+scenario into an  component and a  component and operate on those components individually, ultimately having the
+𝑥
+𝑦
+impact of allowing us to solve complex problems involving ballistic motion in a uniform gravitational field much more
+easily.
+⭐⭐Kepler’s third law from empirical data (1618)
+Context:
+Johannes Kepler was a strong proponent of the heliocentric model, which rivalled the geocentric model in his time period.
+Scientific models are all about making accurate predictions that reflect experimental data, and Copernicus’s heliocentric
+model, which involved circular orbits, could not always accurately predict the motion of the planets. This led Kepler to
+form his three laws of planetary motion to refine this heliocentric model.
+Aim:
+To attain a quantitative relationship between the (average) radius of a planet from the sun and its orbital period, which
+would provide strong evidence for the heliocentric model whilst improving its ability to make predictions.
+Hypothesis:
+Unlike the geocentric model where stellar bodies orbit around the earth and we would not expect any correlation between
+radius from the sun, Kepler hypothesised that in a heliocentric model (which was the scientific consensus at the time
+despite overall societal controversy) there should be some mathematical relationship between the two variables.
+
+### Results:
+
+Attained from observations of Tycho Brahe:
+Planet
+Mean distance
+to sun (AU)
+Period
+(days)
+𝑟
+3/𝑇
+2
+(10-6 AU3/day2)
+Mercury
+0.389
+87.77
+7.64
+Venus
+0.724
+224.70
+7.52
+Earth
+1
+365.25
+7.50
+Mars
+1.524
+686.95
+7.50
+Jupiter
+5.20
+4332.62
+7.49
+Saturn
+9.510
+10759.2
+7.43
+“I first believed I was dreaming... But it is absolutely certain and exact that the ratio which exists between the period times
+of any two planets is precisely the ratio of the 3/2th power of the mean distance.”
+— translated from “Harmonies of the World” by Johannes Kepler (1619)
+3 = 𝑘𝑇
+2
+𝑟
+3 ∝ 𝑇
+2
+Kepler found that
+, which can also be expressed as
+.
+𝑟
+This is clear when the two variables are plotted graphically: https://www.desmos.com/calculator/etsrsahitm ​
+Discussion:
+Any potential minor discrepancies between measured values and the predictions of this relationship can be accounted for
+by imperfect measuring devices at the time and non-perfect elliptical orbits (due to the planet’s gravitational influence on
+each other).
+Conclusion:
+The third power of (mean) radius is directly proportional to the second power of orbital period.
+Impact:
+Advanced astronomy, improved the heliocentric model, and laid the foundation for the principles that we still use today
+that allow for specific uses of satellites and such.
+⭐⭐Newton’s cannon on a mountain thought experiment (1687)
+Aim and context:
+This thought experiment was published in Newton’s 1687 book, “Philosophiæ Naturalis Principia Mathematica” (commonly
+known as “the Principia”), a work which is known for proposing Newton’s laws of universal gravitation. Newton sought to
+show that the falling of objects here on earth and the elliptical/circular orbits of celestial bodies were both caused and
+governed by one universal gravitational force, so he presents the following thought experiment early in his book.
+The experiment:
+Newton, in his publication, states:
+ “That by means of centripetal forces, the Planets may be retained in certain orbits, we may easily understand, if we
+consider the motions of projectiles. For a stone projected is by the pressure of its own weight forced out of the rectilinear
+path, which by the projection alone should have it pursued, and made to describe a curve line in the air; and though that
+crooked way is last brought down to the ground. And the greater the velocity with which it is projected, the farther it goes
+before it falls to the Earth. We may therefore suppose the velocity to be so increased, that it would describe an arc of 1, 2,
+5, 10, 100, 1000 miles before it arrived at earth, till at last exceeding the limits of the Earth, it should pass by without
+touching it.”
+I included Newton’s exact words (with minor translation from his older english -> modern english) just because his true
+explanation is so intuitive even for someone unfamiliar with physics completely, and reading the original publication really
+helps with your appreciation of the experiment and its historical significance in the development of physical theory.
+
+![](images/img_004.png)
+
+Conclusion and significance:
+Newton was able to conclude that the orbital motion of celestial bodies could be explained by the same force that causes
+objects to fall to the ground. This was particularly significant as it was the first step towards “uniting the laws of the earth
+with the laws of the heavens”, and would allow for the quantitative and physically derived explanation of ideas such as
+Kepler’s third law though Newton’s universal law of gravitation and classical mechanics.
+⭐Henry Cavendish’s experiment to find “G” from Newton’s law of universal gravitation (1798)
+Context:
+Before we knew the value of “G”, we were missing two variables in Newton’s law of universal gravitation, G and M (of the
+Earth, as we had already found ways to measure the Earth’s radius to a reasonable accuracy). Hence, finding “G” by other
+means would allow us to infer the mass of the Earth and other celestial bodies by studying how their gravitational fields
+influence other objects. Hence, Henry Cavendish set out to find this fundamental constant.
+
+### Experimental setup
+
+
+![](images/img_005.png)
+
+(A contemporary illustration of the experimental idea)
+The basic principle was to use an apparatus known as a torsion balance. A torsion balance is essentially just something
+with a restoring force that increases in magnitude as you get progressively further away from its “rest” configuration.
+Cavendish used a type of wire for this, which, when displaced  degrees from its “rest” state, will exert a torque in the
+θ
+opposite direction of its angular displacement given by:
+τ = 𝑘θ
+Where  is some constant of proportionality dependent on the wire, which can be calculated for the specific wire prior to
+𝑘
+the experiment (Cavendish used a method involving measuring the natural resonant oscillation period of the torsion
+balance, way out of the syllabus).  is therefore a known variable, and  is a measured quantity, which was determined by
+𝑘
+θ
+using the reflection of light from a mirror as shown above.
+The point where the system stabilises will be the point of zero net torque, ie:
+τ𝑔= τ𝑟𝑒𝑠𝑡𝑜𝑟𝑖𝑛𝑔
+Where
+ is the torque due to the gravitational attraction between both pairs of the two metal spheres, which can be
+τ𝑔
+expressed as:
+τ𝑔= 𝐹𝑔𝑟𝑠𝑖𝑛θ
+ Can be approximated as 90,
+. Hence:
+θ
+θ ≈90
+τ𝑔= 𝐹𝑔𝑟= 2𝐺𝑀𝑚𝑟
+𝑑
+2
+Assuming the system is symmetric of course (as in the “big masses” on either side are equal and the “small masses” on
+either side are equal, if not, you would have to make four separate variables for the masses and
+ would become
+2𝐺𝑀𝑚
+), also for clarification  is the radius from the pivot and  is the distance between the centres of the
+𝐺(𝑀1𝑚1 + 𝑀2𝑚2)
+𝑟
+𝑑
+spheres. Equating:
+2𝐺𝑀𝑚
+2
+= τ𝑔= τ𝑟𝑒𝑠𝑡𝑜𝑟𝑖𝑛𝑔= 𝑘θ
+𝑟𝑑
+𝐺=
+𝑑
+2𝑘θ
+2𝑀𝑚𝑟
+Since we know , ,
+ and
+, and we can measure  and  (using the mirror, light source, and scale seen in the above
+𝑘𝑟𝑀
+𝑚
+𝑑
+θ
+illustration), we can calculate  based on an experimental setup resembling this.
+𝐺
+
+### Results and impact:
+
+Cavendish originally used his results to calculate the density of the Earth, but converting his experimental data to the form
+we need for  in SI units yields his experimental result of:
+𝐺
+𝐺= 6. 74 * 10
+−11𝑚
+3𝑘𝑔
+−1𝑠
+−2
+Which differs only approximately 1% from our accepted value of
+ that we use in the HSC.
+6. 67 * 10
+−11𝑚
+3𝑘𝑔
+−1𝑠
+−2
+As mentioned earlier, Cavendish used the results to calculate the density of the Earth, which provided significant
+additional evidence for a planetary core made of metal, as Cavendish’s density result was 80% the density of liquid Iron,
+and 80% higher than the density of the Earth’s outer crust. (That bit is not at all important for our HSC studies, just a fun
+fact).
+
+## Module 6 - What we know today as Maxwell’s 3rd and 4th equations
+
+⭐⭐Hans Oersted’s effect of a current on a nearby compass (1820)
+Context:
+Prior to this experiment there had been no links made between electricity and magnetism with significant experimental
+evidence backing them.
+Aim:
+To attain experimental evidence for a link between the two “separate forces” of electricity and magnetism by
+demonstrating that an electric current can influence a nearby magnetic compass needle.
+Hypothesis:
+At the time, the observation was a surprise, but our hypothesis today would be that due to Ampere’s law, the current will
+induce a radial magnetic field, and hence a compass needle placed within a reasonable distance from the wire will
+experience a force, and visually reorient itself.
+
+### Experimental setup:
+
+In article IV of “Annals of Philosophy: Or, Magazine of Chemistry, Mineralogy ..., Volume 16” published in 1820, Oersted
+describes his setup as follows:
+The opposite ends of the galvanic battery were joined by a metallic wire (which he called the “uniting conductor”). Let the
+straight part of this wire be placed horizontally above a magnetic needle, properly suspended and parallel to it.
+Here is a diagram of the initial conditions that I have created to be as Hans describes:
+
+![](images/img_006.png)
+
+Rough method:
+Current was allowed to flow through the conductor depicted above and any deflection of the compass needle was noted.
+This was repeated multiple times with different independent variables to ascertain the effects of the following on the
+deflection experienced by the needle:
+-​
+Changing distance.
+-​
+Changing “power of the battery” i.e. current.
+-​
+Placing different mediums between the needle and the conductor.
+
+### Results:
+
+
+![](images/img_007.png)
+
+Oersted made the following observations:
+-​
+“Things being in this state, (when a current is allowed to flow through the conductor), the needle will be moved
+and the end of it next to the negative side of the battery will go westward” [Shows that the nearby electric current
+is able to influence a magnetic dipole]
+-​
+“Even glass, metal and wood, interposed at once (between the needle and the wire) do not destroy, and indeed
+scarcely diminish the effect” [Shows that this influence can permeate through different mediums]
+-​
+“If the uniting wire be placed in a horizontal plane UNDER the needle, rather than above, the effects are the same,
+only in the opposite direction” [First hint that the wire produced a radial magnetic field]
+-​
+The magnitude of the effect is (approximately) inversely proportional to the distance and proportional to the
+strength of the battery (current in the wire) [The magnitude of the effect is ∝ I and ∝ 1/r, which is essentially an
+empirical version of what we now know as Ampere’s law
+]
+𝐵=
+µ0𝐼
+2π𝑟
+Impact:
+This experiment provided the first ever evidence for a link between the two concepts of electricity and magnetism. The
+findings of this experiment would later be formalised as Ampere’s law, which is a part of Maxwell’s fourth equation. The
+discovery of the production of a magnetic field by a wire is what allows us to have many devices we rely on today, such as
+electromagnets, which are necessary for transformers and universal motors, and it also paved the way for further links by
+Faraday, Lenz and Maxwell, that formed the concept of electromagnetism which progressed our technology and our
+theory of light drastically.
+Just as a historical note, incredibly, Oersted in this paper is already speculating that light and heat may consist of the
+“conflict of electricities”, aka the link between electricity and magnetism, and he somehow speculates (correctly, although
+this was all philosophical) that this could contribute describing the polarisation of light, which Maxwell’s electromagnetic
+wave model for “light and heat” decades later did successfully do. Also don’t mind that his name is stated as “John” there,
+back then there was a common practice of anglicising foreign names. The name "Hans" is a variation of "Johannes,"
+which is related to "John" in English, and hence Oersted appears to have gone by that name in English publications.
+
+![](images/img_008.png)
+
+⭐⭐Michael Faraday showing electric fields can be induced by changing magnetic fields (1831)
+Context:
+Ever since Oersted’s discovery of an electric current’s ability to influence magnets, which was later formalised by Ampere
+as Ampere’s law (which describes the production of a radial magnetic field by a current carrying conductor), it had been
+suspected that similarly, magnetic fields could also, in particular circumstances, “induce” an electric current. The
+observations before Faraday’s experiment had only consisted of weak, temporary induced currents, which were noted by
+Faraday and motivated his experimental endeavours: “the power which electricity of tension possesses of causing an
+opposite electrical state in its vicinity has been expressed by the general term induction”. The source of this information is
+the first series of Michael Faraday’s 1839 publication “Experimental researches in electricity”.
+Aim:
+In the words of Faraday himself:
+ “The hope of obtaining electricity from ordinary magnetism has stimulated me at various times to investigate
+experimentally the inductive effect of electric currents (electromagnets)”.
+ Hence, Faraday set out to observe and determine the nature of the electrically inductive effects of both electromagnets
+(which he refers to as electric currents) and “ordinary magnetism”, aka what we may describe as a bar magnet.
+Faraday’s first important experimental setup: Induction of electricity in a coil by electromagnets
+Faraday describes this experimental setup as follows (experimental diagrams weren’t as common back then and it was
+more popular to include a detailed description of the setup in words):
+ “203 feet of copper wire in one length was coiled round a large block of wood; another 203 feet in similar wire was
+interposed as a spiral between the turns of the first coil, and metallic contact everywhere prevented by twine. One of the
+helices was connected to a galvanometer, and the other to a (voltaic) battery.”
+Below is a diagram I made of what this would actually look like, showing the two coils interposed over each other as
+Faraday described:
+
+![](images/img_009.png)
+
+Faraday’s second important experimental setup: Induction of electricity in a coil by a bar magnet
+Faraday describes this setup as follows:
+ “About 26 feet of copper wire 1/20th of an inch in diameter were round around a cylinder of wood as a helix, the different
+spires of which were prevented from touching by a thin, interposed twine. This helix was covered with calico (an old plain
+fabric), and then a second wire applied in the same manner. In this way, 12 helices were superimposed, each containing
+an average length of wire of 27 feet, and all in the same direction. The first, third, fifth, seventh, ninth, and eleventh of these
+helices were connected at their extremities end to end, so as to form one helix; the other wires connected in a similar
+manner; and thus two principle helices were produced, closely interposed, having the same direction, not touching
+anywhere, and each containing 155 feet in length of wire.” (This description is from earlier in his publication). He then
+follows with: “A combination of helices like that already described were constructed upon a hollow cylinder of
+paste-board: There were 8 lengths of copper wire containing altogether 220 feet of wire… …All 8 of the elementary helices
+were coupled with the galvanometer by two copper wires, each 5 feet in length; and a soft iron cylinder was introduced
+into its axis”. “A cylindrical magnet, 3/4ths of an inch in diameter and 8 ½ inches of length was used. One end of the
+magnet was introduced into the axis of the helix, and then, the galvanometer needle being stationary, the magnet was
+suddenly thrust in”.
+This is essentially just 12 coils of wire all linked together into one long series interposed on each other to create a very
+“turn dense” coil so to speak.
+
+![](images/img_010.png)
+
+^ The apparatus as viewed from the front (you can see the 8 layers of solenoid which were used to maximise the “number
+of turns” and therefore the induced current, as they were all hooked up in series).
+
+![](images/img_011.png)
+
+
+### Results:
+
+Faraday made the following observations and came to the following conclusions, all of which are quoted in his publication
+which after the HSC for those interested I highly recommend reading.
+-​
+In the first experiment, there was only a current induced when the supplied voltage was connected or
+disconnected to the circuit. It was also noted that whatever the direction the induced current was when
+connecting, it was always the opposite when disconnecting.
+-​
+A wooden core was originally used due to its electric insulation abilities, however it was later found that (since the
+magnitude of galvanometer needle deflection was always so small) that a soft iron core could be used to
+maximise the effect.
+-​
+The more coils of wire the greater the magnitude of induced current (I ∝ N).
+-​
+The induced current in the secondary coil flows in the opposite direction of the current in the primary coil (The
+induced current behaves in a way that opposes the change in magnetic field by the electromagnet, later
+formalised as Lenz’s law)
+-​
+While (a constant) voltaic current continued to pass through the helix, no induced current was observed (as there
+was no change in flux)
+-​
+In the second experiment, the induced current depended on the motion of the bar magnet, not its position and
+there was no current induced when the bar magnet was stationary (further evidence for change in magnetic flux
+being the cause).
+-​
+When the bar magnet was passed completely through the solenoid in one motion, the needle of the galvanometer
+was initially deflected one way, then the other.
+Conclusions:
+-​
+As the phenomena can be replicated with both electromagnets and bar magnets, and has a magnitude dependent
+on the magnetic permeability of the core material and also on the current in the primary (electromagnet) coil
+(because the B field produced by the coil was known to be proportional to the current by Ampere’s law), it must be
+an interaction with the magnetic field that causes this phenomenon.
+-​
+As the induced current is only observed when the battery is connected/disconnected or when the bar magnet is in
+motion, and not when the system is in a steady state (no matter the magnetic field in the solenoid or position of
+the bar magnet), so this effect must be due to a change in the magnetic field.
+-​
+The induced current in the secondary coil was in the opposite direction of the change in current in the primary coil
+(therefore inducing flux in the opposite direction to the change in flux) and the induced current in the second
+experiment behaved in a similar manner. Hence this induced current behaves in such a way that it opposes the
+change in magnetic flux that created it (Lenz’s law).
+
+## Module 7 - Light in general
+
+⭐⭐Evidence of Huygen’s theory: Poisson’s bright spot
+This experiment was devised originally to prove Newton’s corpuscular model of light. Poisson suggested that if Huygen’s
+wave model of light were correct, then edge diffraction around a small steel ball bearing should result in a region of
+positive interference of a “bright spot” when specific alignments are achieved. Poisson was a strong endorser of Newton’s
+corpuscular model of light, and expected that no bright spot would be observed. However, the true result did indeed show
+the production of such a “bright spot”, providing evidence for the diffraction and interference of light. As these are wave
+properties, this was strong early evidence for Huygen’s proposed wave model of light.
+
+![](images/img_012.png)
+
+⭐⭐⭐Young’s double slit experiment (1801)
+Context:
+At the time, the two major competing theories of light were Newton’s corpuscular model and Huygens wave model, so
+naturally, scientists were looking for a way to resolve this conflict. The wave properties of diffraction and interference
+were known at the time, so Thomas Young knew that if he could experimentally demonstrate that light possessed such
+properties, it would provide strong evidence for the wave model of light.
+Aim:
+To demonstrate that light exhibits the wave properties of diffraction and interference.
+Hypothesis:
+If Newton’s corpuscular model for light is correct, the two areas directly behind the slits should be illuminated on the
+screen. If Huygen’s wave model is correct, a diffraction pattern should be observed on the screen.
+
+### Experimental setup:
+
+
+![](images/img_013.png)
+
+See mod 7 notes for the reason that the diffraction pattern arises as a result of diffraction and interference (essentially
+due to difference in distances that the waves from each slit travels to each point on the screen being dependent on the
+angle, some angles result in constructive and others destructive interference, making periodic bright and dark patches).
+
+### Results and conclusion:
+
+
+![](images/img_014.png)
+
+The diffraction pattern was observed. Therefore Huygen’s wave model of light is superior to Newton’s when it comes to
+describing how light travels through space, as the observations of interference and diffraction cannot be explained by a
+particle model as such properties are exclusive to waves.
+⭐Beeckman and Galileo’s “lanterns on hills” attempt to measure the speed of light (1629)
+This experiment was unsuccessful at determining the speed of light, but is nice to know as it forms a part of the history of
+the subject. The idea was relatively simple. Two observers would be situated on two different hills, each with an initially
+covered lantern and a way to quickly uncover the lantern. The first observer would uncover his lantern, and the second
+observer would wait until this light reached him and uncover his. The first observer would record the time interval between
+uncovering his own lantern and receiving the light from observer two’s lantern, and this time interval would ideally be the
+time taken for light to travel twice the distance (there and back) between the two points,
+. However, this method is
+𝑐= 2𝑑
+∆𝑡
+obviously unfit to provide an accurate estimate of the speed of light, as the actual time taken for the light itself to travel
+would be responsible for an insignificant fraction of the total observed delay, which would mainly be due to the secondary
+observer needing time to react to the incoming light and subsequently remove their cover, not to mention the lack of
+precision in any timekeeping equipment that they could have used to measure
+. So therefore, Galileo essentially
+∆𝑡
+concluded that if light’s travel was not in fact instantaneous, it must be very fast. In 1667, the “Accademia del Cimento” in
+Florence claimed to have performed a similar experiment with two lanterns approximately one mile away, and they
+reported that there was no delay. So it seems like at this point, no terrestrial methods are accurate enough to provide a
+good estimate of , because at this point in history, estimates range from “very fast” to “infinity”, if only there were some
+𝑐
+way we could use the scale of the solar system to better investigate the speed of light (foreshadowing to Romer 9 years
+later…).
+⭐⭐Ole Rømer’s “Io eclipse” evidence of a finite speed of light (1676) (220,000 km/s)
+This experiment is a bit more annoying to explain in exam conditions as it has a much more complex thought process and
+
+### method than other historical examples. I got away in the trials with simplifying it a bunch, but to know which parts you can
+
+safely cut out you need to have a decent understanding of the experiment. I would recommend learning two “Historical”
+methods and one “Contemporary” method of measuring the speed of light to a solid level of detail, and I’d honestly say
+the better two historical ones are Fizeu and Foucault.
+Context:  Before Romer’s (also spelt Rømer or Roemer) work, it was debated whether or not the speed of light was infinite.
+At the time, astronomers were puzzled by inconsistencies in the observed timings of events such as the eclipses of
+Jupiter's moon Io, as Io’s true period should be quite consistent as predicted by Kepler’s planetary laws of motion. Hence,
+Romer speculated that these inconsistencies may be due to differing times taken for the light to travel from Io to the
+Earth, and set out to attain data to show this.
+Aim: To attain a non-infinite value for the speed of light (and hence deduce that it does not travel instantly) by utilising
+astronomical observations of the orbital period of Jupiter’s closest moon, Io.
+Hypothesis: The deviations in Io’s orbital period are due to a finite speed of light.
+
+### Method:
+
+Consider measuring the period of any local event, the period of the event can be given as follows:
+𝑅𝑒𝑎𝑙 𝑝𝑒𝑟𝑖𝑜𝑑= 𝑡2 −𝑡1
+Where  is the time of any occurrence and  is the time of the subsequent occurrence.
+𝑡1
+𝑡2
+However, the measured period will be dependant on the times we observe, which in turn depend on how long the
+information of each occurrence takes to reach us, and can be given as such:
+𝑀𝑒𝑎𝑠𝑢𝑟𝑒𝑑 𝑝𝑒𝑟𝑖𝑜𝑑 = 𝑡2 𝑜𝑏𝑠𝑒𝑟𝑣𝑒𝑑 𝑡𝑖𝑚𝑒−𝑡1 𝑜𝑏𝑠𝑒𝑟𝑣𝑒𝑑 𝑡𝑖𝑚𝑒
+The time that we observe any given event can be given as the time it truly occurred, which we will call “ ” plus whatever
+𝑡
+amount of time our observation is delayed by (let's call this variable “
+”).
+𝑡𝑑𝑒𝑙𝑎𝑦
+𝑀𝑒𝑎𝑠𝑢𝑟𝑒𝑑 𝑝𝑒𝑟𝑖𝑜𝑑= (𝑡2 + 𝑡𝑑𝑒𝑙𝑎𝑦 2) −(𝑡1 + 𝑡𝑑𝑒𝑙𝑎𝑦 1)
+Where
+ and
+ are the respective time delays between each event’s true occurrence and the time that we
+𝑡𝑑𝑒𝑙𝑎𝑦 1
+𝑡𝑑𝑒𝑙𝑎𝑦 2
+observe it.
+Note that if the two time delays are the same, there is of course no difference in the measured period compared to the
+actual period (although the measurement will occur later in time compared to the actual event).
+Romer noticed that when the Earth was moving away from Jupiter, the measured period was longer than the average
+period (he had found this average period over many months of observations and assumed it to be the “real period”). He
+also noted that conversely, when the Earth was moving towards Jupiter, the measured period was shorter than the “real
+period”. This was not consistent with Kepler’s laws of planetary motion, which predicted that orbital periods were
+constant. While Kepler’s laws are indeed for an ideal scenario and in reality orbital periods are not always exactly
+constant, the fact that the measured orbital period varies with direct respect to Earth’s position in its orbit definitely
+suggests that Earth’s motion is the cause of such deviations, rather than the true period of Io itself changing. From
+Romer’s observations, we can gather the following (Let us consider the portion of Earth’s orbit where it is moving towards
+Jupiter):
+𝑀𝑒𝑎𝑠𝑢𝑟𝑒𝑑 𝑝𝑒𝑟𝑖𝑜𝑑< 𝑅𝑒𝑎𝑙 𝑝𝑒𝑟𝑖𝑜𝑑
+(𝑡2 + 𝑡𝑑𝑒𝑙𝑎𝑦 2) −(𝑡1 + 𝑡𝑑𝑒𝑙𝑎𝑦 1) < 𝑡2 −𝑡1
+Cancel
+ from both sides:
+𝑡2 −𝑡1
+𝑡𝑑𝑒𝑙𝑎𝑦 2 −𝑡𝑑𝑒𝑙𝑎𝑦 1 < 0
+𝑡𝑑𝑒𝑙𝑎𝑦 2 < 𝑡𝑑𝑒𝑙𝑎𝑦 1
+This means that, from Romer’s observations, when the Earth is nearing Jupiter (or when any observer is nearing any
+non-local event for that matter), the time taken for the information of the second instance to reach is less than the time
+taken for the first information to reach us. Since Romer knew that this information was delivered by light, this means that
+the speed of light cannot be infinite, as in such a case the delay in every case would be zero, which does not satisfy our
+observations, as in that case,
+, which is contrary to our observations. So we can conclude that light
+𝑡𝑑𝑒𝑙𝑎𝑦 2 = 𝑡𝑑𝑒𝑙𝑎𝑦 1 = 0
+must travel at a finite speed. Furthermore, each delay must be equal to the time taken for light to travel from Jupiter to
+each corresponding location of measurement. As such:
+𝑀𝑒𝑎𝑠𝑢𝑟𝑒𝑑 𝑝𝑒𝑟𝑖𝑜𝑑= (𝑡2 + 𝑡𝑑𝑒𝑙𝑎𝑦 2) −(𝑡1 + 𝑡𝑑𝑒𝑙𝑎𝑦 1)
+= (𝑡2 −𝑡1) + (𝑡𝑑𝑒𝑙𝑎𝑦 2 −𝑡𝑑𝑒𝑙𝑎𝑦 1)
+𝑅𝑒𝑎𝑙 𝑝𝑒𝑟𝑖𝑜𝑑= (𝑡2 −𝑡1)
+Hence:
+𝑀𝑒𝑎𝑠𝑢𝑟𝑒𝑑 𝑝𝑒𝑟𝑖𝑜𝑑= 𝑅𝑒𝑎𝑙 𝑝𝑒𝑟𝑖𝑜𝑑+ (𝑡𝑑𝑒𝑙𝑎𝑦 2 −𝑡𝑑𝑒𝑙𝑎𝑦 1)
+​
+𝑡𝑑𝑒𝑙𝑎𝑦 2 −𝑡𝑑𝑒𝑙𝑎𝑦 1 = 𝑀𝑒𝑎𝑠𝑢𝑟𝑒𝑑 𝑝𝑒𝑟𝑖𝑜𝑑−𝑅𝑒𝑎𝑙 𝑝𝑒𝑟𝑖𝑜𝑑= 𝐷𝑖𝑓𝑓𝑒𝑟𝑒𝑛𝑐𝑒 𝑖𝑛 𝑡ℎ𝑒 𝑚𝑒𝑎𝑠𝑢𝑟𝑒𝑑 𝑝𝑒𝑟𝑖𝑜𝑑 𝑓𝑟𝑜𝑚 𝑡ℎ𝑒 𝑟𝑒𝑎𝑙 𝑝𝑒𝑟𝑖𝑜𝑑
+Let:
+𝐷𝑖𝑓𝑓𝑒𝑟𝑒𝑛𝑐𝑒 𝑖𝑛 𝑡ℎ𝑒 𝑚𝑒𝑎𝑠𝑢𝑟𝑒𝑑 𝑝𝑒𝑟𝑖𝑜𝑑 𝑓𝑟𝑜𝑚 𝑡ℎ𝑒 𝑟𝑒𝑎𝑙 𝑝𝑒𝑟𝑖𝑜𝑑= ∆𝑇
+ (where “ ” is our unknown speed of light and “ ” is the distance from the event)
+𝑡𝑑𝑒𝑙𝑎𝑦= 𝑑/𝑐
+𝑐
+𝑑
+Hence:
+𝑑2
+𝑑1
+𝑐−
+𝑐= ∆𝑇
+1
+𝑐(𝑑2 −𝑑1) = ∆𝑇
+(𝑑2−𝑑1)
+∆𝑇
+= 𝑐
+𝑑2 −𝑑1 = ∆𝑑
+𝑐= ∆𝑑
+∆𝑇
+Hence we naturally arrive at a form of
+, so if we know
+, we can compute the speed of light. Now obviously this
+𝑣= 𝑠/𝑡
+∆𝑑
+∆𝑇
+could be measured over one single period, but remember, this time delay over each individual period is quite small, and it’s
+annoying to calculate the change in distance between the Earth and Jupiter over one single eclipse cycle, so we can make
+the following assumption and attain a much better method.
+Assumption:
+𝑅𝑎𝑑𝑖𝑢𝑠 𝑜𝑓 𝐸𝑎𝑟𝑡ℎ'𝑠 𝑜𝑟𝑏𝑖𝑡 << 𝑅𝑎𝑑𝑖𝑢𝑠 𝑜𝑓 𝐽𝑢𝑝𝑖𝑡𝑒𝑟'𝑠 𝑜𝑟𝑏𝑖𝑡
+Consequences:
+1: During our interval of measurement, Jupiter remains approximately stationary with respect to the sun (we assume this
+because Jupiter is much further out than the Earth, so thus by Kepler's third law it will have a much longer orbital period
+than the earth,
+) (in reality over Romer’s 6 month interval Juipiter will move around approximately 1/24th of its
+ω =
+𝐺𝑀
+𝑟
+3
+orbital path).
+2: Similarly, the direction from Earth to Jupiter will not significantly change (see the dark red lines).
+We can use the following to construct the diagram below over a 6 month time period with multiple eclipses of Io
+
+![](images/img_015.png)
+
+From the diagram above, we can see that if we sum up the differences in measured orbital period and expected orbital
+period over a 6 month period where the earth is approaching Jupiter, we attain the approximate time it takes for light to
+travel the circumference of the Earth’s radius.
+Hence we return to our formula:
+𝑐= ∆𝑑
+∆𝑇
+Where
+ is approximately equal to the circumference of Earth’s orbit, and
+ is the cumulative time delay over the 6
+∆𝑑
+∆𝑇
+month period (which is the sum of the differences of measured period and “true” period).
+Romer’s data measured
+ at 22 minutes. While Romer himself did not actually provide a quantitative estimate, Dutch
+∆𝑇
+scientist Christian Huygens estimated the Earth’s diameter to be 12,750 km, and the diameter of the Earth’s orbit to be
+approximately 24,000 of such diameters. To keep things simple, as Huygens knew this was only a rough “ballpark” so to
+speak, it is said he rounded this speed down to 1000 diameters per minute, which through
+ yielded an estimate of
+𝑣= 𝑠/𝑡
+212,400 km/s (if he didn’t round it would have been 231,800 km/s). Later in 1694, Edmund Halley found that Romer’s 22
+minutes should instead be 17 minutes, and thus Halley gave the speed of light as approximately 300,000 km/s.
+Conclusion and significance​
+While Romer himself did not give a quantitative value for the speed of light, his evidence that the speed of light was not
+infinite would resolve the old debate of whether light travelled instantly, progressing the field and benefiting the accuracy
+of observational astronomy.
+⭐⭐ James Bradley’s “stellar aberration” measurement of the speed of light (1728) (301,000 km/s)
+Bradley actually discovered “stellar aberration” accidentally when he was attempting to gain even more evidence for the
+heliocentric model, which, while accepted by just about all major astronomers at the time, the church still denied. He
+aimed to do this by measuring the parallax angle, and predicted that the star he observed would appear to trace out a little
+circle in the sky, with a position related to the Earth’s position in its orbit as depicted below:
+
+![](images/img_016.png)
+
+However, the his actual observations looked more like this:
+
+![](images/img_017.png)
+
+This is due to a phenomenon known as stellar aberration, which turns out to be far more significant than the effects of
+parallax in most cases. As you can see from the diagram, this aberration results in the apparent position of the star
+shifting in the direction of the Earth’s velocity. James Bradley came up with an idea to explain this phenomenon, and in
+doing so was able to calculate the speed of light based on his derived relationships.
+Consider light from a star reaching the Earth as illustrated below (from the sun’s frame of reference). We will let the x
+direction be along the plane of the Earth’s orbit and the y direction be normal to the plane of the Earth’s orbit. We will call
+the angle that the light from the star that hits the Earth makes with the direction of the Earth’s velocity “A”. Here,
+. We can also say that
+ and
+, which will be useful in a second.
+𝑡𝑎𝑛𝐴= 𝑢𝑦/𝑢𝑥= 𝑠𝑖𝑛𝐴/𝑐𝑜𝑠𝐴
+𝑠𝑖𝑛𝐴= 𝑢𝑦/𝑐
+𝑐𝑜𝑠𝐴= 𝑢𝑥/𝑐
+
+![](images/img_018.png)
+
+Now consider the same scenario from the Earth’s frame of reference. From the Earth’s perspective, this light will appear to
+have a larger x component of velocity when compared to the sun’s or the “rest” frame. Now obviously due to special
+relativity, the light doesn’t just magically travel faster in this frame, but Bradley was in a time long before special relativity,
+and the model that he used (where he just added the velocities in a classical way) still provides very accurate predictions,
+so that’s what we’ll be going with. In this frame,
+.
+𝑡𝑎𝑛𝐴' = 𝑢𝑦/𝑢𝑥' = 𝑢𝑦/(𝑢𝑥+ 𝑣)
+
+![](images/img_019.png)
+
+ can also be expressed as:
+𝑡𝑎𝑛𝐴' = 𝑢𝑦/𝑢𝑥' = 𝑢𝑦/(𝑢𝑥+ 𝑣)
+𝑢𝑦
+𝑐
+𝑢𝑥
+ (divided numerator and denominator by )
+𝑡𝑎𝑛𝐴' =
+𝑐+ 𝑣
+𝑐
+𝑐
+Recall that
+ and
+, hence:
+𝑠𝑖𝑛𝐴= 𝑢𝑦/𝑐
+𝑐𝑜𝑠𝐴= 𝑢𝑥/𝑐
+𝑡𝑎𝑛𝐴' =
+𝑠𝑖𝑛𝐴
+𝑐𝑜𝑠𝐴+ 𝑣
+𝑐
+
+![](images/img_020.png)
+
+We want to find the displacement of the star due to the Earth’s motion. If we give this the symbol θ, then θ = A’ – A. Using
+the formula (which I will not be deriving, it’s pure maths just trust) for the difference between tangents we can show the
+following:
+ (Where
+)
+𝑡𝑎𝑛θ =
+𝑡𝑎𝑛𝐴'−𝑡𝑎𝑛𝐴
+1+𝑡𝑎𝑛𝐴'𝑡𝑎𝑛𝐴
+θ = 𝐴' −𝐴
+Sub in our expressions for
+ and
+ from earlier.
+𝑡𝑎𝑛𝐴
+𝑡𝑎𝑛𝐴'
+𝑠𝑖𝑛𝐴
+−𝑠𝑖𝑛𝐴
+𝑐𝑜𝑠𝐴+ 𝑣
+𝑐𝑜𝑠𝐴
+𝑡𝑎𝑛θ =
+𝑐
+1+
+𝑠𝑖𝑛𝐴
+𝑐𝑜𝑠𝐴+ 𝑣
+* 𝑠𝑖𝑛𝐴
+𝑐𝑜𝑠𝐴
+𝑐
+Multiply both numerator and denominator by
+.
+(𝑐𝑜𝑠𝐴)(𝑐𝑜𝑠𝐴+ 𝑣
+𝑐)
+𝑠𝑖𝑛𝐴𝑐𝑜𝑠𝐴−𝑠𝑖𝑛𝐴(𝑐𝑜𝑠𝐴+ 𝑣
+𝑐)
+𝑡𝑎𝑛θ =
+𝑐𝑜𝑠𝐴(𝑐𝑜𝑠𝐴+ 𝑣
+𝑐)+𝑠𝑖𝑛
+2𝐴
+Factorise the top and expand the bottom:
+𝑠𝑖𝑛𝐴(𝑐𝑜𝑠𝐴−𝑐𝑜𝑠𝐴−𝑣
+𝑐)
+𝑡𝑎𝑛θ =
+𝑐𝑜𝑠
+2𝐴+ 𝑣
+𝑐𝑐𝑜𝑠𝐴+𝑠𝑖𝑛
+2𝐴
+Since
+ and
+:
+𝑐𝑜𝑠
+2𝐴+ 𝑠𝑖𝑛
+2𝐴= 1
+𝑐𝑜𝑠𝐴−𝑐𝑜𝑠𝐴= 0
+𝑠𝑖𝑛𝐴(−𝑣
+𝑡𝑎𝑛θ =
+𝑐)
+1+ 𝑣
+𝑐𝑐𝑜𝑠𝐴
+Since the velocity  of the Earth is around 30 km/s, which is tiny compared to the speed of light, the term
+,
+𝑣
+𝑣
+𝑐𝑐𝑜𝑠𝐴<< 1
+and hence we can neglect it and simplify, reaching our final expression:
+ (
+This is the important one)
+𝑡𝑎𝑛θ =−𝑣
+𝑐𝑠𝑖𝑛𝐴←
+By using this formula, Bradley was able to attain an estimate for the speed of light, as he could measure any angles he
+needed, and knew the speed of the Earth relative to the sun would range from 29.3 to 30.3 km/s. The value he attained
+was 301,000 km/s, which, for his time and method, is remarkably close to today’s accepted value.
+⭐⭐⭐Hippolyte Fizeau’s “cogwheel” measurement of the speed of light (1849) (315,000 km/s)
+For the record, I think this is usually the “best option” if you have a question where you can choose to discuss multiple
+methods, because this method is BY FAR the simplest compared to the other historical methods (unless you simplify the
+other historical methods a bunch).
+Context:
+This method is particularly significant because it was the first terrestrial method of measuring the speed of light. The idea
+behind Fizeu’s experiment was that since light travelled at a finite speed, if a mirror was situated several kilometres away
+from a source of light, there should be some delay between the light leaving the source and returning to be observed.
+Fizeau realised that he could periodically block and unblock the light source in such a way that by the time the
+“unblocked” light had reached the far away mirror and reflected back, the “blocker” was already in place again.
+
+### Method:
+
+
+![](images/img_021.png)
+
+Fizeau used a precisely machined cog wheel with 720 teeth, with spaces in between them equal to the width of the teeth
+themselves. The cog was spun at a specific speed, such that by the time the first bit of light that had gotten through the
+gap in the teeth of the cog wheel made it to the mirror and back, the next tooth had just spun around enough to block it.
+Here is a 2d animated visualisation I made on desmos: https://www.desmos.com/calculator/yept6tri9e.
+Fizeau was able to use knowledge of the distance between the cogwheel and the mirror (L=8630m), the number of teeth
+on the cogwheel (n=720), and the frequency of the cog wheel’s rotation that blocked all the returning light (f=12.6 Hz) to
+derive an expression for the speed of light:
+𝑐= 𝑠/𝑡
+𝑐= 2𝐿
+𝑡
+ is the time taken for the cogwheel to spin the angular equivalent of half a tooth, as the light starts travelling towards the
+𝑡
+mirror when the gap has just “opened” and reaches the cogwheel again when that same gap is just “closing”. Hence:
+, ​​
+, ​
+𝑡=
+θ
+ω
+ω = 2π𝑓
+θ = 2π/2𝑛
+𝑡=
+1
+2𝑛𝑓
+𝑐=
+2𝐿
+1
+2𝑛𝑓
+𝑐= 4 𝐿𝑛𝑓
+𝑐= 4(8630)(720)(12. 6) = 313, 000 𝑘𝑚/𝑠
+The value of
+ wasn't extremely accurate, but promising for such a new form of terrestrial method, which in
+313, 000 𝑘𝑚/𝑠
+the past had not been successful at all and had plenty of room for improvement (foreshadowing Leon Foucault).
+⭐⭐Jean/Léon Foucault’s “rotating mirror” measurement of the speed of light (1862) (298,000
+km/s)
+This experiment is actually one of the most sophisticated of all the historical methods, and to fully describe requires a lot
+of complex description and an understanding of optics beyond the HSC syllabus. It is for this reason that I am also
+simplifying this experiment to the level that you would answer a HSC question to. Here is a decent video on how the
+
+### method actually works to a good level of depth (that is definitely understandable for a HSC student, but not feasible to talk
+
+about in an exam): https://www.youtube.com/watch?v=okjE2FSnALA. I would personally NOT choose to talk about this
+experiment over Fizeau or even Romer or Bradley in a HSC question just because you have to dumb it down to such a
+large extent (the HSC markers should still accept it though, this is a personal preference).
+Context:
+Hippolyte Fizeau a decade earlier had shown it to be possible to measure the speed of light without using stellar
+observations, however, his method was not particularly accurate. Hence, Leon Foucault sought to attain a more accurate
+terrestrial measurement for the speed of light.
+
+![](images/img_022.png)
+
+Above is a brief look at an illustration of the actual setup (which we will ignore for the sake of the HSC).
+Basic method (this is not what the actual setup looked like):
+
+![](images/img_023.png)
+
+The simplified idea behind Foucault’s experiment was to send light to reflect off a rotating mirror onto a secondary
+stationary mirror directed at the rotating mirror. As the light takes time to travel to the stationary mirror and back, the
+rotating mirror would have rotated a little bit in that time interval, and hence, the beam will return at a different angle to the
+light from the source. Let’s call the angle that the mirror has rotated in this time interval , the distance between the
+θ
+rotating mirror and the stationary mirror , and the angular velocity of the mirror (which is known) .
+𝑑
+ω
+Hence:
+𝑐= 𝑠/𝑡
+, ​
+𝑐= 2𝑑
+𝑡
+𝑡=
+θ
+ω
+It is important to note that  (the angle that the mirror has rotated) will be half the angular difference between the
+θ
+returning light and the original light source. This is due to the law of reflection, rotating the mirror  degrees will not only
+θ
+rotate plane of reflection  degrees, but also reduce the angle of incidence, and therefore the angle of reflection, by a
+θ
+further  degrees relative to the new orientation of the mirror. Finalising our equation:
+θ
+𝑐= 2𝑑ω
+θ
+Since Foucault knew , , and could measure  (although how exactly he measured  is simplified for the HSC), he was
+ω 𝑑
+θ
+θ
+able to attain a highly accurate value of
+. This was by far the most successful of any experiment on
+𝑐= 298, 000 𝑘𝑚/𝑠
+such a small scale (not only was it on Earth, but unlike Fizeau, Foucault’s “distance” was only around 20m).
+⭐⭐⭐Heinrich Hertz’s verification of Maxwell’s EM (radio) waves (1887)
+Context:
+Maxwell’s equations had suggested that oscillating electric charges (or an oscillating electric current) should generate
+waves of oscillating electric and magnetic fields that propagate through space at the speed of light. While we could
+observe electromagnetic radiation in the visible range, Maxwell’s equations had also predicted EM waves of other
+frequencies, that had not been directly observed before, and hence the discovery of such predicted waves would serve as
+a major stepping stone in validating Maxwell’s electromagnetic wave theory of light, so much so that another scientist,
+Hermann Helmholtz, set up a prize for any scientist that could verify Maxwell’s predictions. Hertz had recently built the
+first experimental spark-gap transmitters in 1887, which could produce radio frequency electromagnetic waves through
+the electrical discharge of a capacitor across a “spark gap” between two conductors. The actual radio wave is produced
+not by the spark itself, but the spark actually serves as a “kickstarter” to excite resonant radio frequency oscillating
+electric currents in the conductors of the attached circuit, via a mechanism of inductance that is not covered in the HSC.
+
+### Experimental setup:
+
+
+![](images/img_024.png)
+
+A spark-gap transmitter is connected to an induction coil to supply the high voltage required to charge up the capacitor
+sufficiently. When discharged through an electric spark, resonant radio frequency oscillating electric currents in the
+conductors of the attached circuit are induced, which are predicted by Maxwell’s equations to create electromagnetic
+waves.
+In order to detect these electromagnetic waves, Hertz utilised a receiver tuned to resonate at the same frequency as the
+wave source, such that the presence of the oscillating fields in the electromagnetic waves would create a spark across the
+gap (the mechanisms by which this occurs are beyond the scope of the syllabus).
+
+### Experiment and results:
+
+​
+
+![](images/img_025.png)
+
+-​
+When holding the ring on the other side of the room, a spark in the generator would induce a smaller spark on the
+ring, indicating the presence of some sort of invisible electromagnetic wave.
+
+![](images/img_026.png)
+
+-​
+When placing a sheet of metal in the path of the wave (the wave is simplified to be a straight line in the
+illustrations here), he was able to show that this wave could be reflected.
+
+![](images/img_027.png)
+
+-​
+When imposing a pitch prism, such as illustrated above, he noticed that he would have to reposition his receiver to
+pick up the signal, and hence this wave can be refracted.
+
+![](images/img_028.png)
+
+-​
+When imposing a reflective piece of metal specific distances away (specifically integer multiples of the
+wavelength/2), he was able to form a standing wave, which he could detect, as holding the detector at the nodes
+(such as 1) yielded no spark, but moving it to an antinode ( such as 2) resulted in a spark being induced. This
+illustrates the wave property of interference.
+-​
+Most importantly, Hertz was able to measure the wavelength of this wave, as the distance between each node is
+equal to
+. Hertz also knew the resonant frequency of the detector, and therefore of the wave, so he could
+λ
+2
+calculate the wave’s velocity using
+, and arrived at a value approximately equal to the speed of light
+𝑣= 𝑓λ
+predicted by Maxwell,
+.
+3 * 10
+8𝑚𝑠
+−1
+
+![](images/img_029.png)
+
+-​
+Another important observation Hertz made was that imposing a glass window between the source and the
+detector resulted in a dimmer spark, whereas a quartz window had no effect. Unbenounced to Hertz, this was the
+first observable evidence of a phenomena similar to photoelectric effect, since the spark doesn’t just produce
+radio waves, but also a small amount of light in the uv-vis range, which was absorbed by the glass window
+(electrons are not released here but rather just excited), but not the Quartz window due to it’s different molecular
+structure that makes it transparent to UV.
+Conclusion:
+Hertz was able to detect and verify Maxwell’s prediction of a electromagnetic wave beyond the visible range that travel at
+−1
+𝐻𝑧
+⭐⭐Rosa and Dorsey’s “vacuum constants” calculation of the speed of light (1907) (299,710 km/s)
+This method of measuring the speed of light is one of the simplest, as it does not require actual observations of light
+his predicted velocity . The SI units for frequency (
+) are named after Hertz (
+) for his work in this field.
+𝑐
+𝑠
+itself. Instead, they used Maxwell’s derived relationship,
+. The vacuum magnetic permeability constant
+ had
+𝑐=
+1
+µ0
+ε0µ0
+already been rigorously defined as equal to
+, so all they had to do was accurately measure the vacuum electric
+4π * 10
+−7
+permittivity constant
+, which they did through an experiment on capacitors (which are outside the syllabus). Their
+ε0
+calculations yielded a value of
+. The reason for the slight inaccuracy is primarily due to the inability
+𝑐= 299, 710±22 𝑘𝑚/𝑠
+to perfectly standardise the resistance of elements in the experiment that they used to find
+.
+ε0
+⭐⭐Louis Essen’s “cavity resonance” measurement of the speed of light (1950) (299,792.5 km/s)
+
+### Method:
+
+Louis Essen believed that the analysis of standing waves had the potential to yield more accurate measurements for the
+speed of light. If you set up standing waves in a cavity, you can find out their wavelength by measuring the distance
+between two nodes (points of no amplitude) or anti-nodes (points of maximum amplitude), and multiplying that distance
+by two. If you also know the frequency of these waves, you can then use the relationship for waves
+ to calculate the
+𝑣= 𝑓λ
+velocity of the wave.
+
+![](images/img_030.png)
+
+In principle, this method is trivially simple, which is true to an extent, you can even do it using a microwave appliance and
+a sheet of chocolate (to observe the antinodes) in your own kitchen, but if you want to get a really accurate measurement
+of the speed of light it takes a more complicated setup. Essen used a copper cavity resonator hooked up to an adjustable
+microwave oscillator, and adjusted the frequency until standing waves were formed within the cavity. Knowing the
+dimensions of the box and the number of nodes he was then able to determine the wavelength, and subsequently
+calculate the speed of light to be
+.
+299, 792. 5±1 𝑘𝑚/𝑠
+⭐⭐Froome / Evansen et al ‘s “interferometry” measurement of the speed of light (1958/72)
+(299,792.456 km/s)
+Note:
+Froome’s and Evansen et al’s experiments were done at different times and by different people. The methods were
+extremely similar, and the only major difference as far as we are concerned was that Froome used radio waves and
+attained a highly accurate value of 299,792.5 km/s, whereas Evansen later used visible light and attained a more precise
+result of 299,792.456 km/s.
+
+### Method:
+
+
+![](images/img_031.png)
+
+*The website (scienceready) that I stole this image from (I can’t be bothered to make all the images myself) made the
+silly mistake of
+ here, forgetting that while
+ is the required path length difference for destructive interference, the
+λ/2
+λ/2
+path length difference will actually be twice the distance the mirror is moved back (because the light travels there and
+back), don’t make that mistake in the HSC!
+The experiment uses a device which resembles the illustrations above, which is known as a “Michelson Interferometer”,
+which, using a half-silvered mirror, splits a beam of light into two beams, which are reflected back to this central mirror
+and recombined. As a result, these two new beams will interfere with each other, either completely constructively
+interfering, completely destructively interfering, or somewhere in between. Complete constructive interference will of
+course occur when the two external mirrors are equal distances from the half-silvered mirror, as since the returning waves
+have travelled the same distance, they will naturally be in phase with each other, the peaks will align with the troughs, and
+a maximum amplitude will be observed. When the waves are half a wavelength out of phase, all peaks of any one wave
+will perfectly align with troughs of the other, and vice versa, and there will be complete destructive interference. It is
+relatively simple to observe when this is occurring, and hence we can take the original (constructive/equidistant)
+
+### experimental setup and adjust the distance of one of the mirrors until we observe complete destructive interference.
+
+When we reach complete destructive interference we know that the net path difference between the two waves must be
+equal to
+, and therefore the distance we moved the mirror back must be
+. Since we know the distance, we can
+λ
+2
+λ
+4
+calculate the wavelength of the light, and similarly to the cavity resonance method, since we also know the frequency of
+the light we shone onto the mirror originally, we can use the relationship
+ to calculate the velocity of this wave. As
+𝑣= 𝑓λ
+such:
+𝑑=
+λ
+4
+Where  is the difference in distance between the two mirrors from the central half-silvered mirror.
+𝑑
+λ = 4𝑑
+𝑐= 𝑓λ
+𝑐= 4𝑓𝑑
+Froome in 1958 used radio waves to attain a value of
+. This value was limited by the wavelength of
+𝑐= 299, 792. 5 𝑘𝑚/𝑠
+light used. Logically, you would think the longer the wavelength the more precise you can get (because any fixed
+limitations in your methods of measuring distance will become a smaller fraction of your measured value). However, here
+this is outweighed due to a different factor, being (to simplify it) that interferometric determination of wavelength
+becomes less precise with longer wavelengths because the interference fringes become wider and less sharply defined,
+and hence it is more difficult to exactly determine when full destructive interference is occurring.
+With the invention of the laser, Evansen et al were able to overcome this limitation by using visible light (shorter
+wavelength), and achieved a more precise value of
+, which is only
+ less than the value we
+𝑐= 299, 792. 456 𝑘𝑚/𝑠
+2𝑚𝑠
+−1
+use for the speed of light today.
+⭐⭐Photoelectric effect analysis
+To do
+
+## Module 7 - Special relativity
+
+⭐⭐Galileo’s principle of relativity “ship” thought experiment (1632)
+The “experiment”:
+Galileo's principle of relativity is an early thought experiment illustrating the idea that the laws of physics are the same in
+all inertial (non-accelerating) frames of reference. Galileo proposed a scenario involving a ship moving at a constant
+velocity. An observer on this ship would see everything behave as normal, dropped balls would appear to fall straight
+down (see “Galileo’s demonstration of the principles of projectile motion”), and the observer would feel no physical
+sensation of motion. In fact, if we position our observer in the hull of the ship, with the view of the outside world blocked,
+Galileo asserted that there should be no experiment that observer could do to ascertain whether he is in motion (relative
+to the rest of the world) or not (of course assuming no acceleration, which means perfectly still waters, etc).
+
+![](images/img_032.png)
+
+Here is an excerpt from Galileo's 1632 book “Dialogue Concerning the Two Chief World Systems”, from the section dubbed
+“The Second Day”, which concerns primarily Galileo’s consideration of all the arguments made against the idea (which he
+was a proponent of) that the Earth moved (aka the heliocentric model). The book was in a dialogue fashion, where the
+character “Salviati” represents Galileo’s own thoughts, in discussion with others and it’s actually extremely interesting.
+“Salv: Motion, in so far as it is and acts as motion, to that extent exists relatively to things that lack it; and among things
+which all share equally in any motion, it does not act, and is as if it did not exist. Thus the goods with which a ship is
+laden leaving Venice, pass by Corfu, by Crete, by Cyprus and go to Aleppo. Venice, Corfu, Crete, etc. stand still and do not
+move with the ship; but as to the sacks, boxes, and bundles with which the boat is laden and with respect to the ship itself,
+the motion from Venice to Syria is as nothing, and in no way alters their relation among themselves. This is so because it
+is common to all of them and all share equally in it. If, from the cargo in the ship, a sack were shifted from a chest one
+single inch, this alone would be more of a movement for it than the two-thousand-mile journey made by all of them
+together.”
+“Salv: It is obvious, then, that motion which is common to many moving things is idle and inconsequential to the relation
+of these movables among themselves, nothing being changed among them, and that it is operative only in the relation that
+they have with other bodies lacking that motion, among which their location is changed.”
+He then goes on to use this to counter various common arguments against the heliocentric model (which were supposed
+by his second of three hypothetical characters “Simplicio” who represented “Simplicity” and was characterised as a
+proponent to the existing aristotlian/catholic church views on the subject. There was also a third character “Sagredo” who
+represented a neutral, open minded layperson, “completing” the conversation. A link to the PDF I got this from is here:
+https://rauterberg.employee.id.tue.nl/lecturenotes/DDM110%20CAS/Galilei-1632%20Dialogue%20Concerning%20the%20
+Two%20Chief%20World%20Systems.pdf, obviously now is not the time to fully read it but I think it’s rather interesting even
+for someone not taking HSC physics and I highly recommend (the specific dialogue I used is taken from around page 116
+in the book, page 72 on the PDF). And obviously I should note all this small historical stuff like the characters involved and
+such is not at all relevant to your HSC exam.
+Conclusion and significance:
+Galileo concluded through this thought experiment that motion must be understood as relative and that there is no
+"absolute" stationary frame of reference so to speak. As such, the laws of physics should be the same for all inertial
+observers, and there should be no possible experiment you can perform within an inertial reference frame to determine
+whether you are “stationary or not”, as such concepts are not absolute, but merely relative. This idea provided a strong
+argument for the heliocentric model in Galileo’s time, but the idea that the laws of physics will be the same for all inertial
+observers is also majorly responsible for Einstein's revelation of the postulates from which the theory of special relativity
+arises, as applying this idea to Maxwell’s equations (which provide a description of light based on the fundamental laws of
+electromagnetism) suggests that, if these laws of electromagnetism are invariant with respect to the observer’s frame of
+reference, the speed of light should also be invariant.
+⭐⭐⭐Evidence for Einstein's postulates: The Michelson-Morley “ether” experiment (1887)
+Context:
+The real “Michelson-Morely” experiment is actually different to this one, but from the sources I’ve looked at, it seems as if
+the HSC teaches an experiment performed only by Michelson in 1881 as the “Michelson-Morely” experiment, so we’ll go
+with that.​
+Maxwell’s vacuum wave solutions to his recently established fundamental laws governing electric and magnetic fields
+predicted waves that required no medium to propagate. This sparked some controversy in the scientific community, as
+waves had of course been previously understood as requiring a medium of propagation. Since, if such a medium existed
+for light, we could certainly not detect it by any conventional means, it was dubbed the “luminiferous aether”, and this
+theory was predominant at the time of this experiment.
+Hence, in attempts to detect and measure the speed of this aether (the aim is said to be to measure the velocity of the
+Earth relative to the aether, not actually to verify it’s existence), Albert A. Michelson and Edward W. Morley developed the
+“aether wind hypothesis”. Consider the Earth’s motion, since the Earth is constantly moving through space, we are more
+than likely in a different reference frame to the so called “luminiferous aether” at any given point in time, and we would
+therefore expect that two beams of light travelling perpendicular to each other (at the same velocity relative to such an
+aether) would be observed as travelling at different speeds from our frame of reference (since we are presumably not
+stationary with reference to this aether). This is analogous to a boat travelling in a rapidly flowing river, in which case the
+river would be the “aether” and the boat “light”. In said scenario, the boat always sees itself travelling at the same velocity
+relative to the water medium, but an observer on the shore (which in this experiment represents us taking measurements
+on the Earth) would see a varying velocity of the boat depending on it’s orientation compared to the flow of the medium
+(aka the “aether wind”).
+
+### Experimental setup:
+
+The experimental setup involved a “Michelson interferometer”, similar to that which was later used in Froome’s and
+Evansen’s measurements of the speed of light.
+
+![](images/img_033.png)
+
+
+![](images/img_034.png)
+
+
+![](images/img_035.png)
+
+A beam of white light was split up into two beams travelling perpendicular to each other using a half-silver mirror. Both
+paths of the beam were set up to be the same distance. When the two beams were reunited, they were recombined at
+slightly different angles, creating a stable interference pattern with periodic light and dark fringes that could be observed
+on an interferogram. Michelson and Morely aimed to measure the velocity of the aether by observing the “fringe shift” in
+the interference pattern formed, as when the relative velocity of one of the beams relative to the other changed due to the
+Earth’s motion through the aether, we would expect a changing interference pattern, namely that the fringes would move
+side to side as the period of the waves shift relative to one another.
+
+### Results and conclusion:
+
+Michelson and Morely repeated this experiment at multiple angles at multiple times of day but were not able to observe
+any significant, let alone the expected changes in the interference patterns, constituting a null result. It was speculated
+that this result could be explained by the Earth “dragging” the aether with it, creating no significant “wind”, or perhaps that
+this medium of propagation did not actually influence the speed of light (not much of a medium at that point if you ask
+me), but a generally important distinction to make it that this experiment DID NOT PROVE that the aether did not exist, but
+rather failed to measure it’s velocity / provide evidence for its existence. This result would later support scientists like
+Einstein in abolishing the concept of an “aether”.
+⭐⭐The mirror in a train thought experiment (1905)
+
+![](images/img_036.png)
+
+Einstein imagines an observer in a train moving very close to the speed of light
+. His question is, if a mirror is
+𝑣≈𝑐
+situated in front of an observer in the train, will the observer be able to see his own reflection?
+Newtonian relativity suggests not, as the light “leaving the observer” would be travelling at , a similar velocity to the
+𝑐
+observer and the mirror, and hence would essentially never “catch up” to the mirror. This conflicts the principles of
+relativity proposed by Galieo, that the laws of physics are the same in all inertial reference frames, as an observer inside
+the train would see the light travelling with a velocity
+. Since the fundamental laws of electromagnetism predict a
+𝑐≈0
+speed of light of
+. This would suggest that the laws of electromagnetism would have to be different in this
+𝑐=
+1
+µ0ε0
+frame, contradicting this principle of relativity. In fact, the only “solution” to this problem that upholds the principle of
+relativity is Einstein's second postulate, that the speed of light will always be measured as exactly
+ by all inertial
+𝑐=
+1
+µ0ε0
+observers.
+Thus, this experiment elucidates the paradoxes that can arise when Newtonian relativity is applied to situations with
+velocities approaching the speed of light, and demonstrates the necessity of a constant speed of light in all inertial
+reference frames to maintain adherence to Galileo’s principle of relativity (that the laws of physics are the same in all
+interior reference frames). Therefore this experiment is, in a sense, “evidence” for Einstein’s second postulate (or rather it
+shows that if we take his first postulate to be true, the second postulate inevitably follows).
+⭐Derivation of time dilation from Einstein's postulates (photon clock) (1905)
+Note: This derivation alongside the following two are purely to understand where the HSC equations come from. You will
+never be asked to derive such equations in the HSC exam. For any confusion on special relativity I highly recommend the
+series of videos on the topic by https://www.youtube.com/@Mahesh_Shenoy, he does a great job at intuitively explaining
+them in a digestible way.
+
+![](images/img_037.png)
+
+Consider the scenario above: Two observers witness the same two events: a “beginning event” of a photon being emitted
+from a light source, and subsequently after travelling a length “D” to a mirror and back (perpendicular to the direction of
+relative motion), and an “ending event”, where this photon is received by some receiver. Let out first observer (pictured in
+“a”) be an astronaut moving at a constant velocity  with respect to our second observer on Earth. Let the time interval
+𝑣
+between the two events as measured by the astronaut be
+ and the time interval between the same two events as
+∆τ
+measured by the observer on Earth by
+. As such, invoking Einstein's postulate that the speed of light will always be  no
+∆𝑡
+𝑐
+matter the inertial observer that measures it (refer to the diagrams):
+The astronaut sees the light travel a distance
+ in the time interval
+, hence:
+2𝐷
+∆τ
+2𝐷= 𝑐∆τ
+𝐷= 𝑐∆τ
+2
+The Observer on Earth sees the light travel a distance
+ in the time interval
+, hence:
+2𝑠
+∆𝑡
+2𝑠= 𝑐∆𝑡
+𝑠= 𝑐∆𝑡
+2
+The observer on Earth sees the “photon clock” travel a distance of
+ in the time interval
+, hence:
+2𝐿
+∆𝑡
+2𝐿= 𝑣∆𝑡
+𝐿= 𝑣∆𝑡
+2
+Consider figure (b) from above, we can use that figure to construct a triangle as shown below, and further use
+pythagoras's theorem to attain the equation:
+
+![](images/img_038.png)
+
+𝑠
+2 = 𝐷
+2 + 𝐿
+2
+Subbing in our equations from before:
+(𝑐∆𝑡
+2 )
+2
+= (𝑐∆τ
+2 )
+2
++ (𝑣∆𝑡
+2 )
+2
+Rearranging:
+2 = (𝑐∆𝑡)
+2−(𝑣∆𝑡)
+2
+(𝑐∆τ)
+2 = ∆𝑡
+2(𝑐
+2 −𝑣
+2)
+(𝑐∆τ)
+2 =
+(𝑐∆τ)
+2
+∆𝑡
+2−𝑣
+2)
+(𝑐
+∆𝑡
+2 =
+𝑐
+2∆τ
+2
+𝑐
+2(1−𝑣
+2
+2 )
+𝑐
+∆𝑡
+2 =
+∆τ
+2
+(1−𝑣
+2 )
+2
+𝑐
+​
+∆𝑡=
+∆τ
+1−𝑣
+2
+𝑐
+2
+This can be also expressed as
+, where gamma is the “Lorentz factor”, named after Hendrick Lorentz and is given
+∆𝑡= γ∆τ
+as
+, and can be quite handy in saving time writing.
+γ =
+1
+1−𝑣
+2
+⭐Derivation of length contraction from Einstein's postulates (muon hypothetical) (1905)
+The use of a muon in this specific derivation is entirely arbitrary. This section is not to be confused with “Evidence for
+time dilation and length contraction: High altitude muons”. I took the image from a website, the numerical labels for the
+lengths are also meaningless.
+𝑐
+2
+
+![](images/img_039.png)
+
+Let
+ denote the “rest length” between the two clouds, measured from the inertial reference frame of the observer in (a).
+𝐿0
+Let
+ denote the time interval taken for our muonIn this frame, the velocity of the muon can therefore be given as:
+∆𝑡
+𝑣=
+𝐿0
+∆𝑡
+Now let's consider the same situation but from the inertial reference frame of the moving muon. Let's simply call the
+length that the “two clouds travel” (aka the distance between the two clouds in this frame) . We will let the time interval
+𝐿
+between the second cloud reaching the muon in this frame be
+. As such:
+∆τ
+𝑣=
+𝐿
+∆τ
+The two velocities  will be equal in magnitude, as  is just the difference between the two reference frames. Hence:
+𝑣
+𝑣
+𝐿0
+∆𝑡=
+𝐿
+∆τ
+Consider the muon’s frame. From our earlier derivation of time dilation, we know that the clock of the observer at rest in
+frame (a) will tick slower, or be “dilated”:
+∆𝑡= γ∆τ
+Where
+ (the Lorentz factor). Hence:
+γ =
+1
+1−𝑣
+2
+𝑐
+2
+𝐿0
+∆𝑡=
+𝐿
+∆τ
+γ
+𝐿=
+𝐿0
+γ
+Which can also be expressed as:
+𝐿= 𝐿0
+1 −𝑣
+2
+𝑐
+2
+⭐Evidence for relativity of simultaneity: The lights in a box thought experiment
+
+![](images/img_040.png)
+
+Consider the scenario pictured above. Observer A is situated in a box with two lamps across from each other, such that
+both lamps are equidistant and collinear with respect to observer A. This box whole box is in motion with a constant
+velocity parallel to the line which the two lamps and the observer lay on, with respect to a secondary observer whom we
+shall call observer B. Upon turning on the lamps, in the reference frame of observer A, as both “pulses of light” travel the
+same distance, and we know the speed of light to be constant, any observer will state that in this frame the light from both
+lamps reaches observer A at the same time. However, from observer B’s frame of reference, the two “pulses of light” will
+both travel at the same velocity but travel different distances. This is because during the time that the light is travelling,
+observer A will move some distance towards one of the lamps (in this case towards the lamp on the right), and therefore
+the light from that lamp will have to travel less distance, whereas the light from the other lamp will have to travel further.
+As
+, two different distances travelled will result in the light from the two lamps not reaching the observer
+𝑡= 𝑑
+𝑐
+simultaneously in this frame of reference, despite the fact that they did in the frame of observer A. This elucidates the
+consequence of special relativity that two events that are simultaneous in one inertial reference frame need not be
+simultaneous in another. This concept is important for resolving apparent paradoxes in special relativity, most notably the
+infamous “twins paradox”.
+⭐⭐⭐Evidence for time dilation and length contraction: High altitude muons (Frisch-Smith
+experiment) (1962)
+Similar experiments to this were first conducted in the 1940s.  I am using this particular experiment because it was the
+most accurate at its time and the most well-documented. Here is the (original) documentary I used for my notes on this
+experiment: https://www.youtube.com/watch?v=5wH2UbjGKlw. Note that in the documentary “muons” are repeatedly
+referred to as “mu mesons”, as presumably due to their high mass (as they are second generation particles) they were
+incorrectly thought to be a meson. https://goldphysics.unm.edu/phys330/frisch-time-dilation.pdf
+
+### Method:
+
+
+![](images/img_041.png)
+
+When “cosmic rays” (which are over 99% composed of protons and alpha particles) hit atomic nuclei (primarily those of
+0, π
+−, π
++
+oxygen and nitrogen) at the top of the earth’s atmosphere, it results in the production of all three types of pions (π
+). The mechanism of this is essentially (I sort of guessed this and a top tutoring college head said “yeah that’s pretty much
+how it works”) that the high energy collision “excites” the quarks in the nucleus to the point where they have so much
+energy that they produce a quark-antiquark pair (similar to mediation of the SNF). The
+ pions are called neutral pions
+π
+0
+and have an extremely short half life of 85 attoseconds (
+), and will quickly decay into (in order from
+8. 5 * 10
+−17𝑠
+most->least likely) either two gamma photons, a gamma photon and a positron-electron pair, or two positron-electron
+pairs. The charged pions
+ however will most often undergo a decay that is much more interesting to us, the decay into a
+π
+±
+muon and a muon neutrino, which is due to the weak interaction. Take the decay of a negative pion into a muon and a
+muon antineutrino:
+π
+−→µ
+−+ νµ‾
+The
+ meson has a mass of approximately
+, whereas the muon and muon neutrino pair have a combined
+π
+−
+139. 6 𝑀𝑒𝑉/𝑐
+2
+mass of approximately
+. Hence, due to the law of conservation of energy, we can assume that the muon will
+105. 7 𝑀𝑒𝑉/𝑐
+2
+have quite a bit of kinetic energy. But we only considered the rest energy of the
+ meson, in reality this meson will have a
+π
+−
+lot of its own kinetic energy, which will also be conserved in this interaction. This results in extremely fast, high energy
+muons, moving at mean velocities of
+ to
+, where
+  (just allows us to express velocity in
+β = 0. 995
+β = 0. 9954
+β = 𝑣/𝑐
+terms of the speed of light without repeating “ ” over and over).
+𝑐
+But remember, muons themselves are second generation leptons, and hence tend to decay over time. This decay most
+often involves the production of an electron (first generation lepton), an anti-electron neutrino, and a muon neutrino, as
+such:
+−+ ν𝑒‾ + νµ
+This decay has a consistent rest mean lifetime of around 2.2 microseconds (
+), and hence these muons
+τ = 2. 2µ𝑠
+essentially behave as extremely fast moving clocks, so it’s pretty clear why they are so useful for experiments involving
+special relativity.
+−→𝑒
+µ
+
+![](images/img_042.png)
+
+Note that “mean life” is a little different to “half life”. Half life is essentially “median life”, and for an exponential decay
+relationship we can derive the relationship between the mean life  and the half life
+ to be
+ (I will omit this
+τ
+𝑡1/2
+𝑡1/2 = τ 𝑙𝑛2
+derivation), and so therefore we can express the decay constant as
+, rather than
+, which is what we
+λ = 1/ τ
+λ = 𝑙𝑛2/𝑡1/2
+will be doing for the remainder of this section (because that’s what the researchers did).
+Frisch and Smith aimed to use this property of muons to validate Einstein's theory of time dilation. The first site of the
+experiment was on Mount Washington, which is 1907m above sea level (sea level was their second site). At Mount
+Washington, (as mentioned before), they measured the kinetic energy of the muons and calculated the mean muon
+velocity to range from
+ to
+. They measured approximately 563 muon decays per hour at the top of
+β = 0. 995
+β = 0. 9954
+Mount Washington.
+They then moved down to just above sea level (
+). Approximating the velocity of the muons to , the time
+∆ℎ= 1904𝑚
+𝑐
+taken for the muons to travel from the height of Mount Washington to the new height should be approximately equal to
+. If we assume that special relativity has no effect, we can use the decay formula
+,
+∆𝑡= ∆𝑥
+𝑐=
+1904
+−λ∆𝑡
+3*10
+8 = 6. 34µ𝑠
+𝑁= 𝑁0𝑒
+where Lambda is the decay constant
+ (where  is our mean lifetime, mean lifetime as stated earlier is essentially
+λ = 1/ τ
+τ
+a different way of expressing the decay constant, it’s out of syllabus so don’t worry). Using our decay constant
+−6)
+∆𝑡= 6. 34µ𝑠
+𝑁= 563
+altitude yields a non-relativistic prediction of:
+ alongside the estimated travel time
+ given
+ muons decay per hour at the higher
+λ = 1/(2. 2 * 10
+𝑁= 𝑁0𝑒
+−λ∆𝑡
+−(6.4*10
+−6)/(2.2*10
+−6)
+𝑁= (563)𝑒
+ (Some other figures give 27, not sure why, probably something more complex going on)
+𝑁= 31
+So we have a non-relativistic expected value of 31 muon decays per hour at the lower (almost) sea level site. However, in
+their actual observations they detected approximately 409 decays per hour. This was then compared to the predictions of
+Einstein's theory of relativity. The time dilation factor
+ for the Muons travelling at the height of Mount
+γ =
+1
+1−β
+2
+Washington (
+ to
+) is approximately 10.2. However, between Mount Washington and sea level kinetic
+β = 0. 995
+β = 0. 9954
+energy is dispersed due to interactions with the atmosphere (loss of KE through collisions), and for this reason the kinetic
+energy of the muons was again measured at sea level. Based on these sea level measurements, new sea level velocities
+ranging from
+ to
+ were calculated, which yields a Lorentz factor of approximately
+. Hence,
+β = 0. 9881
+β = 0. 9897
+γ = 6. 8
+the average Lorentz factor over the trip was expected to be around
+.
+γ = 8. 4
+Now we check if Einstein's prediction aligns with our observations. Since
+, where
+ is the time the muons
+∆𝑡= γ∆𝑇
+∆𝑇
+experience and
+ is the lab time, we can rearrange our expression from earlier, this time using the time
+ as “measured
+∆𝑡
+∆𝑇
+by the muons” and substitute in our values:
+𝑁= 𝑁0𝑒
+−λ∆𝑇
+𝑒
+−λ∆𝑇=
+𝑁
+𝑁0
+−λ∆𝑇= 𝑙𝑛( 𝑁
+𝑁0 )
+Sub in for the decay constant:
+1
+τ ∆𝑇=−𝑙𝑛( 𝑁
+𝑁0 )
+Sub in
+ for
+:
+∆𝑡
+γ
+∆𝑇
+∆𝑡
+γ =−τ𝑙𝑛( 𝑁
+𝑁0 )
+∆𝑡
+𝑁0
+γ = τ𝑙𝑛(
+𝑁)
+γ =
+∆𝑡
+𝑁0
+τ𝑙𝑛(
+𝑁)
+γ = 8. 9
+Which confirms Einstein's predictions (as the average Lorentz factor over the trip was expected to be around
+, a
+γ = 8. 4
+value of
+ is pretty close, in the actual paper the researchers made some fancy arguments that based on their
+γ = 8. 9
+methods their true results were actually closer).
+We analysed this situation from the “lab” frame and found evidence for time dilation, but similarly, we can analyse this
+situation from the “muon” frame. From this frame, we can account for these observations via length contraction.
+Instead of travelling a distance of
+, the muons “see” this length contracted by the Lorentz factor, as such:
+∆𝑥
+, ​
+∆𝑇=
+1
+γ ∆𝑥
+𝑐
+∆𝑡= ∆𝑥
+𝑐
+Hence:
+∆𝑇= ∆𝑡
+γ
+And we arrive at the same relationship that we got from analysing time dilation in the other frame.
+Conclusion:
+Therefore, this experiment provides evidence for both length contraction and time dilation, as either can account for the
+observations. In the “lab” frame, the muons are able to “go further” on average before decaying because we see “their
+clocks run slower”. In the muon’s frame, they see their “clocks” run at the rest speed, however they see the distance they
+travel contract, meaning that more can still travel the
+ interval before decaying.
+∆ℎ
+⭐⭐⭐Evidence for time dilation: Hafele-Keating Experiment (1971)
+Note: The muon experiment I would say is superior evidence for special relativity, I would always use it over this one if
+given the choice.
+Context:
+When Einstein formulated special relativity in 1905, it seemed to go against all human intuition. This is of course because
+in our day-to-day lives, we do not experience velocities fast enough or have methods of gauging time or length accurately
+enough to notice any of the effects of special relativity. While by the 1970s, the analysis of muons alongside other
+methods had provided a significant amount of evidence for special relativity, nobody had ever actually seen or measured
+an actual “moving clock running slower” so to speak. However, with the invention of commercial aeroplanes which are
+able to sustain “relatively high” velocities for long periods of time, and more importantly, the development of extremely
+precise atomic clocks, this was about to change. Hafele was an assistant professor preparing notes for a physics lecture
+when he did a back-of-the-envelope calculation which determined that a caesium atomic clock alongside commercial
+airlines should at last have sufficient precision to detect relativistic effects. He was approached by Keating, an astronomer
+at the United States Naval Observatory, who worked with and had access to atomic clocks, and together they attained
+funding of $8,000 for this experiment, making it the most inexpensive experiment on special/general relativity ever at that
+point (of this $8000, $7600 was spent on the eight round the world plane tickets).
+
+![](images/img_043.png)
+
+
+### Method:
+
+The Hafele-Keating experiment was formulated to provide “tangible” evidence for time dilation as described in Einstein's
+theory of relativity (both special relativity and general relativity).
+Two around-the-world trips were made, each with (the same) four atomic clocks. After each trip, the four clocks were
+reunited with and compared with a “stationary” clock at the United States Naval Observatory. Two flights were performed,
+one eastward (in the direction of the Earth’s rotation) and then another westward (against the Earth’s rotation).
+Hafele and Keating predicted that there would be two relativistic effects impacting the time on the moving clocks. Firstly,
+but less importantly, the effects of general relativity should cause both clocks to “gain some time”, or aka “run faster” than
+the clock on Earth’s surface, as they will have a greater gravitational potential. Since in the HSC, we don’t deal with general
+relativity, apart from knowing that it was also examined in this experiment we will be largely ignoring it. Secondly, and
+more importantly, both clocks will have different relative velocities compared to the clock on the ground, and hence we
+expect a time difference between the two clocks that travelled in the planes and the clock that remained on the ground
+when they are eventually reunited. Let's analyse this situation from the closest thing to an inertial reference frame we can
+get to in this situation, the frame of the centre of the Earth. In this frame, we see the clock on the ground travelling with
+some velocity due to the rotation of the Earth, and hence it will “run slower” to an extent. In this frame, the plane travelling
+east will have the plane’s velocity added to the velocity of the rotation of the Earth, and hence we expect this clock to “run
+even slower” than the clock on the ground, resulting in it reading less time when the clocks are reunited. In this frame, the
+westward clock will have the plane’s velocity subtracted from the velocity of the rotation of the earth, as it is heading in the
+opposite direction, and hence, while the clock on this plane will still experience time dilation, it will be less than the clock
+on the Earth’s surface due to a lower average velocity in this frame, and therefore we expect that this clock will “run faster”
+and as a result read a greater time than the ground clock when we reunite them.
+Hafele and Keating made the following quantitative predictions based on calculations using special and general relativity
+(I will omit the general relativity part):
+
+![](images/img_044.png)
+
+Clearly, the results aligned with the predictions of special relativity to a very acceptable extent given the method, providing
+significant evidence for time dilation. This experiment is not the best evidence out there, but it’s quite famous and
+historically significant as it was the first time that we could actually physically see that a real clock had “ran slower” in a
+sense, so it became quite publicly known.
+
+## Module 8 - Atomic and subatomic
+
+⭐Discovery of the electron: Behaviour of cathode rays (in general)
+A brief context on cathode rays:
+Cathode rays are produced through a process that begins with thermionic emission, where a cathode, typically made of
+metal, is heated to high temperatures (usually between 600 and 2000 degrees Celsius), causing electrons to gain enough
+thermal energy to escape from the cathode's surface. Once these electrons are emitted, a high voltage is applied between
+the cathode and an anode located within the same tube, creating an electric field that accelerates the emitted electrons
+toward the positively charged anode. In our case, this high voltage is provided by an induction coil, which is basically just a
+form of a transformer, consisting of a primary coil with a comparatively low number of windings interposed within a
+secondary coil with up to 10,000 times more windings. Current in the primary coil is rapidly switched on and off by an
+interrupter mechanism to create a changing magnetic field and hence induce a high voltage in the secondary coil. The AC
+voltage produced by this inductor coil is then rectified into a steady DC voltage.
+
+![](images/img_045.png)
+
+This voltage is applied between two plates, creating a negatively charged cathode and a positively charged anode. The
+cathode is then heated to sufficient temperatures such that electrons have energy > the work function of the metal and
+can thus be thermionically emitted.
+
+![](images/img_046.png)
+
+Consider a thermionically emitted electron exiting the cathode:
+From the electric component of the Lorentz force:
+𝐹= 𝑞𝐸
+We know
+, thus:
+𝐸= 𝑉/𝑑
+𝐹= 𝑞𝑉/𝑑
+From Newton’s second law:
+𝑚𝑎= 𝑞𝑉/𝑑
+𝑎= 𝑞𝑉/𝑚𝑑
+Hence the large potential difference between the anode and the cathode will accelerate the electrons to quite high
+velocities and kinetic energies (as both the q/m and V/d ratio are very large). Typically in an atmospheric environment,
+collisions with incident gas molecules would dissipate a large fraction of this kinetic energy, however, Heinrich Geissler’s
+development of the vacuum pump allowed for the region in between the cathode and the anode to be evacuated of up to
+0.01% of normal atmospheric pressure, hence minimising the kinetic energy loss of the electrons and allowing the area to
+“conduct” electricity and the cathode rays to properly form. These “cathode rays” were named as such because they were
+quite literally rays that originated from the cathode.
+Below are the appearances of cathode rays as we change the air pressure in the discharge tube (will mostly be explained,
+but there are a lot of interesting cathode ray phenomena that I’ll be skipping over because I can’t see them being useful for
+the HSC at all):
+
+![](images/img_047.png)
+
+Cathode ray phenomena:
+Charge of cathode rays:
+Cathode rays were observed to be deflected by a magnetic field (and electric fields, but not by all historical accounts, see
+the next section). The direction of deflection was consistent with that of a negative charge and extent of deflection was
+dependent on the magnitude of the applied field. Hence, whatever cathode rays are composed of, it must be negatively
+charged.
+
+![](images/img_048.png)
+
+Why do they glow?
+The “glow” in cathode rays is a result of the interaction between the cathode rays and the remnant gas molecules (even
+though the environment is relatively low pressure). The high voltage across the cathode and the anode allows for the
+electrons to be accelerated to rather high velocities. The kinetic energy of the electrons eventually reaches a point where
+collisions with incident gas molecules are enough to ionise them or “excite” their electrons to higher energy levels
+(depending on the KE of the cathode ray), which converts the kinetic energy of the electrons in the cathode ray (obviously
+they didn’t know the cathode rays were electrons just yet) to electric potential energy, overcoming the negative binding
+energy between the electron and the nucleus (scientists of course were not aware of any of this at the time). The ionised
+electrons are eventually recaptured by the nucleus, where they will regain their negative binding energy (falling into a lower
+energy state) and hence emit photons in accordance with the law of conservation of energy. The “excited” electrons
+simply fall straight back into a lower energy state. If this seems hard to digest, it’s extremely similar to electron transitions
+in Bohr’s model of the atom (where a photon knocks the electron into a higher energy state and then the electron “falls
+back down” emitting another photon), the difference being that in our cathode ray case it’s not a the energy being
+absorbed from a photon that allows for the first energy transition, but rather the kinetic energy from one of the electrons
+that makes up our cathode ray. If you don’t understand the “negative binding energy/electric potential energy”, electric
+potential energy between two opposing charged particles is pretty much exactly analogous to gravitational potential
+energy (just a much much higher magnitude of course).
+
+![](images/img_049.png)
+
+Note:
+I spent a decent amount of time researching why these look the way they are and it’s quite complex. I was able to get a
+decent bit of understanding behind some things, but others you simply need more than HSC/1st year uni intuition to get a
+proper understanding of why, and unless you actually know why there isn’t really much of a point trying to explain it. To be
+completely honest this is not going to come up in the HSC, so I’m not going to be including notes explaining all the
+phenomena (I tried trust me). If you just know the reason for the glow and the rough idea you should be fine.
+⭐⭐Discovery of the electron:  The British against German examination of cathode rays (1897)
+The wave or particle debate:
+There was some debate between the British (most notably Thomson) and German (most notably Hertz) when it came to
+the nature of cathode rays. The Germans believed that the cathode rays were waves, whereas the British were proponents
+of the particle model of cathode rays.
+Evidence supporting the wave theory (note that some of these observations are not “true” of cathode rays):
+-​
+The cathode rays could penetrate a thin aluminium plate, it was thought that if cathode rays were waves similar to
+light, they may be able to pass through certain materials.
+-​
+Hertz was unable to experimentally deflect the cathode rays with an electric field, which is not what you would
+expect from a charged particle.
+-​
+Moving charges were known to induce a magnetic field (Ampere’s law), which could influence nearby compass
+needles, and Hertz did not observe such deflection
+Notable evidence supporting the particle theory:
+-​
+While Hertz was unable to deflect the cathode rays with electric fields, Thomson was able to deflect them with
+magnetic fields with ease. The direction of deflection alongside the fact that the extent of deflection would
+increase proportionally with the applied field strength indicated that cathode rays had a negative charge, which is
+a property of particles rather than waves.
+
+![](images/img_048.png)
+
+-​
+Further experiments with electric fields allowed Thomson to observe deflection of cathode rays. The reason that
+electric fields were unable to deflect the cathode rays visibly before is likely due to two main factors. Firstly, if a
+weak external electric field was applied, it would not meaningfully accelerate the charges (as the charges would
+have a much larger magnitude of acceleration perpendicular to the external electric field due to the high potential
+difference). Secondly, if the electric field strength was sufficiently high to theoretically cause an observable
+deflection, it would result in a phenomenon known as “shielding”. Such a strong electric field would ionise/attract
+gaseous ions to either side of the tube, so for instance, the side of the tube with the negative external plate (which
+is meant to be “repelling” the negative cathode rays may attract positive gas ions, which will build up and “pull
+back” the electrons to an extent, minimising the magnitude of overall deflection. It is likely that the deflection of
+→
+→
+)
+proportional to the velocity, and hence the high velocities of the cathode rays act as a “multiplier” on the force so
+to speak.
+-​
+If an opaque object was placed in the path, a sharp shadow would appear (often a maltese cross is used to
+demonstrate this, seen below).
+magnetic fields in any case was also more noticeable than electric fields because it’s magnitude
+ is
+𝑞(𝑣
+× 𝐵
+
+![](images/img_050.png)
+
+-​
+When a small paddle wheel was placed in the path of the cathode ray, it moved, or gained momentum. Due to the
+law of conservation of momentum, it was concluded that the cathode rays had momentum and therefore had to
+have mass, which would be the property of a particle and not a wave. However, it would later be discovered that
+while the cathode rays do indeed have momentum, the true explanation for this experimental result is a
+thermodynamic one (the paddle wheel was essentially acting as a form of heat engine).
+
+![](images/img_051.png)
+
+Conclusion:
+Hence, Thomson concluded that electrons were particles. The consequences of this will be continued at the end of the
+next experiment.
+⭐⭐⭐Discovery of the electron: J.J. Thomson’s calculation of the charge to mass ratio of
+cathode rays (1897)
+This is going to be a really quick and straightforward section, as the method was very simple and we have already
+→
+→
+→
+discussed cathode rays to a decent extent before. Consider the Lorentz force,
+. We can see that the
+𝐹= 𝑞𝐸
++ 𝑞(𝑣
+× 𝐵
+)
+→
+electric component of the Lorentz force
+ will operate parallel to the electric field. However, the magnetic component
+𝑞𝐸
+→
+→
+ involving the cross product of velocity will operate perpendicular to the magnetic field (and velocity). Hence, we
+𝑞(𝑣
+× 𝐵
+)
+can establish an electric field perpendicular to a magnetic field, where both fields are perpendicular to the velocity of the
+cathode rays, and we can have the electric and magnetic components acting along the same axis. We can then setup the
+electric and magnetic field such that they “oppose” each other so to speak, and furthermore (ignoring gravity, as the
+magnitude of
+ is negligible) tweak the magnitude of the magnetic and electric fields such that no net deflection is
+𝐹𝑔
+observed. We can then use the knowledge that at this point
+ (no acceleration) to determine an expression for the
+Σ𝐹= 0
+velocity of the electron:
+𝑞𝐸= 𝑞𝑣𝐵
+𝑣= 𝐸
+𝐵
+Hence, knowing the external applied electric and magnetic field strengths, Thomson could determine the charge to mass
+ratio of the cathode rays.
+Once this velocity was determined, either the electric OR the magnetic field could be removed and the q/m ratio
+determined. First, consider removing the electric field, leaving only the magnetic field (as mentioned earlier, it is much
+easier to observe and measure magnetic deflection, so this is the historically preferred and more practical method):
+The “cathode ray” will then undergo uniform circular motion, with the centripetal force being the magnetic component of
+the Lorentz force, hence:
+𝐹𝑐= 𝑞𝑣𝐵= 𝑚𝑣
+2
+𝑟
+𝑞
+𝑚=
+𝑣
+𝐵𝑟
+In terms of the original electric and magnetic field (equilibrium) measurements, assuming we kept the magnetic field the
+same magnitude:
+2𝑟
+Similarly, if we instead remove the magnetic field and keep the electric field (this is something that was not done
+historically but could maybe come up in questions), there are methods to calculate the q/m ratio of the electron using the
+principles of projectile motion. Such methods are not conventional, but it is possible to construct some pretty interesting
+questions with them (if you see my “diabolical physics question document” I wrote one there).
+Hence Thomson was able to calculate the charge to mass ratio of the particles that made up cathode rays, and the value
+𝑞
+𝑚=
+𝐸
+𝐵
+he attained was
+. This value was quite significant in the development of atomic theory, as it was so so
+1. 76 * 10
+11𝐶 𝑘𝑔
+−1
+much higher than the largest q/m ratios observed at the time (nuclei with the highest q/m ratio is the proton, which has
+the same charge and a mass 4 orders of magnitude larger, but these q/m ratios hadn’t even been measured then, so in
+reality this q/m ratio was likely tens of thousands of times larger than what had ever been observed). This meant one of
+two things: Either a ridiculously high charge, or a ridiculously low mass. Thomson ruled out the idea of a ridiculously high
+charge, as the lack of effect of cathode rays on a nearby magnetic compass needle forbids this (as a greater charge
+magnitude = greater
+ = greater Amperian magnetic field production). Hence the particles that make up cathode rays
+𝐼𝑒𝑛𝑐
+must have a mass, and a mass lower than observed ever before. Moreover, these particles could be emitted from a wide
+range of materials. This meant that Dalton’s model of the atom needed to be completely overturned, as the whole idea
+behind it relied on indivisible, relatively large (at least compared to the speculated mass of the particles that made up
+cathode rays), relatively neutral fundamental building blocks of matter. The discovery of this new particle, termed the
+“electron”, indicated that there was more to the atom, beyond Dalton’s model, inspiring Thomson’s “plum pudding” model
+of the atom (see mod 8 notes).
+⭐⭐⭐The charge of an electron: Robert Millikan’s “oil drop” experiment (1909)
+Context:​
+​
+As we know, at the beginning of the 20th century, the existence of the electron was established by J.J. Thomson through
+his work with cathode rays, and he was able to successfully measure the charge-to-mass ratio of the electron. However,
+the exact charge of a single electron remained unknown. Hence, the primary aim of Millikan’s oil drop experiment was to
+measure this “elementary charge unit” “𝑒” of a single electron, which would in the process confirm the idea that charge is
+quantised, where electrons are the “discrete packets”.
+
+### Method:
+
+
+![](images/img_052.png)
+
+
+![](images/img_053.png)
+
+“Atomised” tiny oil droplets were sprayed into a chamber with a metal plate above and below. Initially the plates were
+turned off and the oil droplets were allowed to free-fall. According to Stokes law (outside syllabus, but it’s good to know he
+used it), the drag force acting on the droplet is proportional to velocity. Hence, as gravity accelerates the droplets down,
+the drag force will increase over time due to the constantly increasing velocity until an equilibrium is established where
+, and no more acceleration is occurring. This velocity is known as the terminal velocity, and it was measured by
+𝐹𝑑𝑟𝑎𝑔= 𝐹𝑔
+Millikan to attain the mass of the specific droplets he experimented on (he had to individually measure the mass of each
+droplet that he performed the experiment on as they were not all of the same mass of course). Stokes law is given as
+follows:
+𝐹𝑑𝑟𝑎𝑔= 6π𝑟η𝑣
+Where  is the terminal velocity,  is the viscosity of the air, and  is the radius of the drop. Equating this to
+ (which will
+𝑣
+η
+𝑟
+𝐹𝑔
+be true at terminal velocity, let us call this
+):
+𝑣1
+Σ𝐹𝑦= 0
+𝐹𝑑𝑟𝑎𝑔= 𝐹𝑔
+6π𝑟η𝑣1 = 𝑚𝑔
+6π𝑟η𝑣1
+𝑚=
+𝑔
+This is the “HSC way” of finding the mass of the droplet, however with such fine droplets we need to also account for the
+“upthrust” due to the displaced air of the droplet, which makes the calculations a little more complex, but we ignore this
+part.
+Since Millikan was able to measure the viscosity of the air prior to the experiment, and measure the radius and the
+terminal velocity of a specific droplet during the experiment, he could hence calculate the mass for that given droplet as
+such.
+The next step was finding the charge on that droplet, which Millikan did by ionising the oil drops through exposure to high
+energy X-rays, resulting in them losing some electrons, which, as the oil drops were originally neutral, would leave them
+with new a positive charge with a magnitude identical to the magnitude of charge of the lost electrons. He then
+established a high voltage across two plates, a positive plate below the space of the oil drops and a negative plate above.
+One way to find the charge (and the way that is often “taught” so I would probably write this in an exam if it came up) is to
+tweak this voltage until his given droplet remained stationary (so not only would this involve balancing out the vertical
+forces such that it was non-accelerating, but also making it actually stationary so there would be no need to account for
+air resistance when equating the vertical forces). At this point:
+Σ𝐹𝑦= 0
+𝐹𝑒= 𝐹𝑔
+𝑞𝐸= 𝑚𝑔
+𝑞𝑉/𝑑= 𝑚𝑔
+𝑞= 𝑑𝑚𝑔
+𝑉
+However, a more practical approach is to turn the voltage up slightly such that the oil drop rises with a new terminal
+velocity
+, however this way is not the way we use in the HSC because to do it properly you need to also calculate the
+𝑣2
+mass/drag force properly in the first step, and it again just makes things more complicated and the point of these
+experiments is mainly to understand their significance rather than the intricacies behind how they worked, at least in this
+course.
+So therefore, Millikan knew the mass of each oil drop he experimented on and knew the distance and voltage applied
+between the two plates, and hence he was able to deduce the charge of oil droplets this way. However, he had not yet
+measured the “elementary charge unit” that he seeked, as all of these oil droplets had lost many electrons, not just one or
+any specific known number.
+However, after performing many measurements of the charge of many different oil drops, Millikan was able to observe
+that their charge always came in integer multiples of
+. This meant that charge was in fact quantised, and that
+1. 6 * 10
+−19𝐶
+ was the “elementary” or “smallest portion” of charge that could be transferred. Hence, this must be the
+1. 6 * 10
+−19𝐶
+charge on one single electron. This value of charge was then able to be used alongside the previously known
+ ratio of
+𝑞/𝑚
+the electron to find the mass of an electron. Further development and experiments in this area would support these
+
+### results and fine-tune our measurement for the charge on an electron to
+
+ over the next decades.
+1. 602 * 10
+−19𝐶
+
+![](images/img_054.png)
+
+⭐⭐⭐Discovery of the nucleus: Geiger-Marsden “gold foil” experiment (1909)
+Context:
+Prior alpha particle scattering experiments had been performed by Rutherford in 1906 and Geiger 1908. Let's consider
+Geiger’s 1908 paper on such experiments, in which he described the following:
+
+![](images/img_055.png)
+
+(Simplified) A radiation source (R) acts as a source of alpha particles. In the middle of the tube there was a thin slit. The
+opposite end of the tube (Z) is covered with a phosphorescent screen, such that any incident alpha particles will produce
+small scintillations on the screen corresponding to the location of impact. A microscope (M) was used to count these
+scintillations and measure their spread. Geiger pumped all of the air out of the tube and noticed that the alpha particles
+travelled straight through the slight and onto the screen, as expected, however when he interposed one or more thin gold
+foils (NOTE THIS IS NOT THE ACTUAL “GOLD FOIL EXPERIMENT” YET, JUST A LITTLE CONTEXT), the pattern became
+more diffuse, suggesting that matter may have the ability to scatter alpha particles. Rutherford himself understood the
+consequences of this, quoting after his 1906 experiment "such a result brings out clearly the fact that the atoms of matter
+must be the seat of very intense electrical forces". This section delves into the 1909 experiment, as that is the important
+one for the HSC, but it was only one (albeit the most significant) of many Rutherford scattering experiments that occurred
+mainly from 1906-1913.
+The 1909 (important) experiment:
+The initial results on alpha particle scattering were confusing enough to prompt Rutherford to suggest to a young student,
+Ernest Marsden, who was studying under Hans Geiger at the time, to search for reflected or back scattered particles. They
+developed the following apparatus, somewhat similar to that used by Geiger in 1908:
+
+![](images/img_056.png)
+
+Thomson’s model predicted that the alpha particles should pass straight through the gold foil, as due to the relatively
+uniform and even distribution of negative and positive charge throughout the plum pudding model of the atom, any
+electrostatic repulsion between the positive alpha particles and the nuclei should be negligible. What the results showed
+however conflicted with this prediction, as while it was true that the most alpha particles passed straight through,
+Thomson's model could not account for the approximately 1/8000 particles that experienced diffuse reflections (a
+significant and varying deflection angle).
+
+![](images/img_057.png)
+
+This prompted the formulation of a new model that could account for this observation, Rutherford’s model. This model
+consisted of a small, positively charged nucleus that contained all of the positive charge of the atom, surrounded by
+electrons orbiting this nucleus similarly to how planets orbit the sun in the solar system. Similarly to Thomson’s model,
+this was able to account for the majority of alpha particles passing straight through, as the vast majority of this atom was
+empty space. Improving on Thomson’s model, it was also able to account for the occasional reflection. Such reflections
+would require a very large acceleration, and hence a relatively large force
+. This force of course is accounted for
+𝑎= 𝐹/𝑚
+by Coulomb’s electrostatic repulsion between the nucleus and the alpha particle,
+. As the nucleus proposed in
+𝐹 ∝ 𝑞
+𝑟
+2
+Rutherford’s model is much smaller than the Thomson atom, the alpha particles can come much closer (without
+penetrating the nucleus), hence experiencing a much smaller radius. This alongside the fact that the charge of the nucleus
+is of a significantly greater magnitude than the “evenly spread out pudding” in Thomson's model was able to
+mathematically allow the deflections that Thomson’s model could not account for. Hence, Rutherford’s model of the atom
+was born.
+⭐⭐⭐Evidence for De Broglie matter waves: Davisson-Germer experiment (1927) (To do before
+HSC)
+This one isn’t really done bcs the real method is kinda confusing. Just know the principle and it should be chill (similar to
+Young’s double slit certain conditions result in regions of constructive and destructive interference with an angular
+dependence, illustrated the properties of diffraction + interference (wave properties) and measurements of the
+wavelength verified the De Broglie hypothesis
+).
+λ = ℎ
+𝑝
+Context:​
+​
+The Davisson-Germer experiment was not originally meant to provide evidence for the wave-particle duality of matter, but
+rather to simply “study the surface of a piece of nickel” by directing a beam of electrons at it and observing how the
+electrons “bounce off” at various angles.
+The experiment:
+
+![](images/img_058.png)
+
+Diffraction pattern:
+
+![](images/img_059.png)
+
+Bragg diffraction:
+
+![](images/img_060.png)
+
+When the angle of incidence is equal to the angle of reflection, Bragg's condition for full constructive interference:
+𝑛λ = 2𝑑𝑠𝑖𝑛θ
+For generally predicting full constructive interference:
+𝑛λ = 𝑑(𝑠𝑖𝑛α + 𝑠𝑖𝑛β)
+Where  and  are the angles of incidence and reflection respectively (for when they aren’t equal, which is in most cases
+α
+β
+because there is only one angle of incidence but the matter wave fully constructively interferes at a number of angles).
+This experiment demonstrates the wave-particle duality of matter itself, as diffraction and interference are fundamentally
+wave properties (similar to Young’s double slit). By knowing “ ” and measuring the angles of incidence and reflection
+𝑑
+where full constructive interference occurs, the wavelength of the electrons could be calculated. When compared to the
+predictions of the De Broglie hypothesis, the relationship
+ was validated.
+λ = ℎ
+𝑝
+This one kinda isn’t fully done (same with the next one)
+⭐Evidence for De Broglie matter waves: G. P. Thomson’s experiment (1927)
+Just going to do this one briefly, if you have to use one experiment for De Broglie matter waves just use Davisson and
+Germer. Only use this one as well if there is like a 7-9 marker on wave particle duality and it’s evidence or smth (I’m killing
+myself if that’s the 9 marker btw).
+
+![](images/img_061.png)
+
+Basically G. P. Thomson got an electron beam in a vacuum (very very very close to a vacuum) and passed it through a very
+thin sheet of gold foil. They then diffract and interfere creating a pattern of concentric uniform rings around a central
+min/max. This experiment had been performed before with X-rays, and similar results were observed. Obviously this
+illustrates the “wave-like” properties of diffraction and interference, further elucidating matter’s wave-like nature (as
+predicted by De Broglie). Unlike the Davisson-Germer experiment, I do not believe that they calculated the actual
+wavelength and momentum of the electrons, so this is only evidence for the wave-like nature, not for the De Broglie
+relationship
+ itself.
+λ = ℎ
+𝑝
+⭐⭐Wilson cloud chambers
+Context:
+Wilson cloud chambers consist of a supersaturated vapour (made possible by low temperatures) of water or alcohol
+(must be highly polar). When any energetic charged particle, such as an alpha or beta particle for instance, passes
+through this chamber, it will naturally transfer its energy to the vapour molecules it collides with, providing sufficient
+energy to ionise them. This results in a trail of positive ions tracing out the path the charged particle took. The polar
+supersaturated vapour will be attracted to this charged trail, resulting in condensation around the trail, making the path the
+energetic particle took visible to the naked eye in proper lighting conditions. C. T. R. Wilson was awarded the nobel prize in
+physics in 1927 for the development of the Wilson cloud chamber.
+
+![](images/img_062.png)
+
+
+![](images/img_063.png)
+
+Contribution of Wilson cloud chambers to physical theory:
+Early evidence of muons:
+Muons produced by cosmic rays (see Frisch-Smith experiment context) are essentially “heavy electrons” so to speak
+(second generation), hence they are able to ionise the vapour in Wilson cloud chambers and produce trails comparable to
+those of high energy electrons. Scientists subjected the Wilson cloud chambers to magnetic fields in and measured the
+radius and were able to note events that appeared to have a negative q/m ratio that had a different magnitude to that of
+electrons, protons and alpha particles (although how they found the velocity to compute the q/m ratio the “classic” way I
+am uncertain of).
+Insight into the nature of radiation:
+
+![](images/img_064.png)
+
+Alpha particle tracks:
+-​
+High thickness/prominence. Due to their high mass and charge, alpha radiation is generally the strongest ioniser.
+With stronger ionisation comes a more prominent trail.
+-​
+The path is straight for the most part, as the high mass means the forces from incident particle collisions have
+less of an effect (
+) on the path.
+𝑎= 𝐹/𝑚
+-​
+As the alpha particles lose kinetic energy relatively quickly (as each collision is quite high energy), the paths are
+typically on the shorter side.
+-​
+Alpha particle paths are typically continuous.
+Beta particle tracks:
+-​
+Thinner than those of alpha particles, as beta particles typically have less energy than alpha particles and ionise
+less particles per unit length travelled (due to their smaller size), resulting in a less prominent trail.
+-​
+The path is usually “wonky” for beta particles, as the lower mass means that incident particle collisions have a
+notable effect on the beta particle’s trajectory.
+-​
+Beta particles lose kinetic energy significantly slower than alpha particles, as due to their smaller size collisions
+are more infrequent and less energy is lost per collision.
+-​
+Beta particle paths are typically continuous.
+Gamma radiation tracks:
+-​
+The gamma radiation itself does not produce tracks in a Wilson cloud chamber, however gamma ray interactions
+can result in low energy beta particles, either from the gamma radiation being absorbed by an electron, “freeing”
+the electron and ionising it, or more occasionally, by spontaneous pair production of an electron and a positron.
+-​
+Hence, the ”gamma radiation tracks” appear as many low energy beta particle tracks.
+⭐⭐⭐James Chadwick’s discovery of the neutron (1932)
+Context:
+Recall where we left off the nucleus, with Rutherford's model, which essentially described the nucleus as a relatively small
+(compared to the size of the overall atom) positive charge, the composition of which was unknown. In 1911, it was
+proposed by Antonius van de Broek that the place of each element in the periodic table was dependent on its nuclear
+charge, an assertion that would be proved two years later by Henry Mosely in 1913, using X-ray spectroscopy. In 1917,
+Rutherford performed experiments which proved that the hydrogen nucleus is present in other nuclei (specific knowledge
+of such procedures I don’t think would be needed for the HSC). Furthermore, it was noted that atomic masses were
+(approximately) integer multiples of the mass of the hydrogen atom, however the charge of the nucleus (known as the
+atomic number) was too low for the nucleus to be composed only of these “proton” building blocks, as we would expect
+the nucleus of every element to have the same q/m ratio as hydrogen in that scenario, which is not the case. The
+prevailing theory was that the nucleus was composed of a mix of protons and electrons, where the cancellation of the
+electron’s positive charge accounted for the q/m ratios of nuclei (basically in this model, for every place we would have a
+“neutron” today there was a proton-electron pair, an “alpha particle” would have consisted of four protons and two
+electrons).
+It’s important to note that there were several problems with the nuclear electrons hypothesis at the time (and many more
+that would be discovered later with the further development of quantum theory. Consider a nitrogen-14 nucleus. The
+nuclear electron model would predict that this would be composed of 14 neutrons and 7 electrons, an odd number of odd
+spin particles, and hence the nucleus itself must have a half integer spin. This was conflicted by a 1928 analysis of
+Nitrogen’s nuclear spin, and it was suggested that perhaps "protons and electrons do not retain their identity to the extent
+they do outside the nucleus". In 1928 through further development of quantum mechanics, namely quantum tunnelling, it
+was predicted that an electron could not be confined within the atomic nucleus by any potential well (don’t worry too
+much about any specifics with quantum mechanics like this; it's fine to rote learn). By 1930, further evidence against this
+hypothesis was devised based on Heisenberg’s uncertainty principle, the relationship
+ suggested that due to the
+∆𝑥∆𝑝≥ħ
+2
+low uncertainty in position of the electron (small
+),
+ must be larger, and hence the electron must have a notably high
+∆𝑥∆𝑝
+amount of energy. Specifically, the model implied that a given electron in the nucleus must have (in the ballpark of)
+ of energy. Such energy is significantly larger than the observed energy of beta particles emitted from the nucleus
+40 𝑀𝑒𝑉
+and much larger than the binding energy of the other nucleons, which had been shown to be less than
+ per nucleon.
+9 𝑀𝑒𝑉
+In 1930 it was discovered that energetic alpha particles emitted from polonium were able to produce an unknown, highly
+penetrating radiation when they fell on certain light elements (most notably Beryllium). Most radiation that had been
+previously observed (alpha and beta) was charged, but this radiation experienced no deflection when passing through an
+electric field. One theory at the time was that this was a form of gamma radiation, however it was significantly more
+penetrating than gamma radiation was known to be. Two years later it was observed that this radiation could eject high
+energy protons, up to around
+ of kinetic energy, when it fell on paraffin wax or any other hydrogen containing
+5 𝑀𝑒𝑉
+compound. For a gamma ray to produce such effects, it would have to have an impossibly high energy, and hence it was
+speculated that this new radiation had to be a neutral particle around the size of a proton.
+James Chadwick also did not believe the “gamma ray” hypothesis, and set out to show experimentally that the gamma ray
+hypothesis was false, and to find the true identity of this radiation.
+
+### Method:
+
+
+![](images/img_065.png)
+
+Chadwick used a setup similar to that depicted above (and described in the context) and made the following
+observations:
+-​
+The number of detected particles was significantly higher than if the neutral radiation were gamma rays, as
+gamma rays have a high level of penetration and therefore interact less with the material.
+-​
+The emitted radiation could not cause the photoelectric effect, which would be expected of high energy gamma
+rays.
+-​
+Ejected protons were detected to have a kinetic energy of
+. It was calculated using the law of
+5. 3 𝑀𝑒𝑉
+conservation of momentum that a gamma ray would need to have approximately
+ of energy to allow for
+50 𝑀𝑒𝑉
+this, which is much greater than the energy of any gamma ray that could come from the nucleus.
+-​
+He was able to determine that the mass of this particle was almost exactly the same as that of a proton.
+2
+4α +
+4
+9𝐵𝑒→
+6
+12𝐶+
+0
+1"𝑛"
+Hence, Chadwick proposed that this radiation was Rutherford’s “Neutron”, and was awarded the nobel prize in physics in
+1935 for this discovery.
+⭐⭐Evidence that protons and neutrons are not fundamental: Alvarez and Bloch (1940)
+In 1940, physicists Luis Alvarez and Felix Bloch conducted an experiment to measure the magnetic moment of the
+neutron using a nuclear magnetic resonance (NMR) technique. In this experiment, neutrons were placed in a magnetic
+field, and radiofrequency waves were applied to cause transitions in their spin states. By observing the frequency at which
+these transitions occurred, they could calculate the neutron’s magnetic moment (out of syllabus, you can just say “they
+used NMR techniques to calculate the spin”). Surprisingly, they found that the neutron has a small but nonzero magnetic
+moment. This result was unexpected because if the neutron were a truly elementary particle without internal structure, it
+should not have a magnetic moment due to its lack of electric charge. The presence of a magnetic moment suggests that
+the neutron has an internal structure, with electrically charged components arranged in a way that produces a net
+magnetic moment (despite the neutron being electrically neutral). This discovery was a significant early indication that
+neutrons (and by extension, protons) are composed of smaller, charged components. This finding would later support the
+development of the quark model in particle physics.
+⭐⭐⭐Evidence that protons and neutrons are not fundamental: SLAC deep inelastic scattering
+(1968)
+These particle accelerator experiments are pretty complex, so there isn’t too much detail needed for the HSC. A simple
+way to consider these experiments is that they are to nucleons and quarks what the Geiger-Marsden experiment was to
+the atom and nucleus. The development of particle accelerators allowed for a series of “deep inelastic scattering”
+experiments to be performed between 1967 and 1973 at the Stanford Linear Accelerator Centre (SLAC). These
+experiments essentially consisted of “probing” nucleons by firing and colliding high energy electron beams at protons and
+neutrons. Similar to the Geiger-Marsden experiment, they observed a scattering pattern that was consistent with what we
+would expect if protons and neutrons were composed of smaller particles (quarks) (they appeared to scatter from three
+different points, indicating three quarks). Hence, this experiment is evidence that protons and neutrons are not
+fundamental, but my best guess would be that you don’t need to know it too deeply.
+⭐⭐Standard model prediction of the W and Z bosons, prediction of the Higgs boson
+The electroweak theory emerged in the 1970s from the work of Glashow, Salam, and Weinberg. How the theory was
+formulated is so far beyond the syllabus that I can't be bothered to learn it, you will never need it in an exam. The theory
+predicted the existence of three massive bosons that mediate the weak force,
+ and
+. The existence of these
+𝑊
++, 𝑊
+−
+𝑍
+0
+bosons was later confirmed in 1983 after years of experiments at Cern, where the masses of the
+ bosons were reported
+𝑊
+at approximately
+ and the  boson at approximately
+. These values correlated with those
+80. 4 𝐺𝑒𝑉/𝑐
+2
+𝑍
+91. 2 𝐺𝑒𝑉/𝑐
+2
+predicted by the standard model. This is all on a level beyond the HSC, but this would allow us to better understand the
+electroweak unification, which occurs in extremely high energy conditions. Hence, we were able to better understand and
+predict the particle interactions that would have occurred in the early universe and the phase changes in the timeline after
+the big bang (the breaking of the electroweak symmetry at a temperature of approximately
+). Again, these notes
+100 𝐺𝑒𝑉
+are very thorough but I highly doubt the HSC demands a decent understanding of gauge electroweak theory considering
+they can’t be bothered to teach motional EMF.
+⭐⭐Wilson cloud chambers and the positron
+Context:
+In 1928 Paul Dirac published a paper introducing the Dirac equation, which unified quantum mechanics and special
+relativity and the idea of electron spin to explain the Zeeman effect (“splitting” of electron energy levels upon exposure to
+an external magnetic field).This equation had a controversial “negative energy” solution, which could not be ignored. This
+solution was eventually interpreted as “electrons moving backwards in time”, which would have a positive charge. This
+idea was used to predict the spontaneous pair production and annihilation that we see in particle-antiparticle interactions.
+The first experimental evidence for this particle came in Wilson cloud chambers, where as early as 1923 particles that
+behaved like electrons, but curled in the opposite direction under an applied magnetic field were observed and noted. The
+positron was officially discovered by Carl David Anderson in 1932 (for which he won a nobel prize). Anderson allowed
+cosmic rays to pass through a Wilson Cloud chamber, which produced particle-antiparticle pairs. Similarly to earlier
+methods, an external magnetic field was applied across the Wilson cloud chamber, and the particle’s path could be
+photographed. The radius of the path indicated an identical charge to mass ratio of an electron, but the deflection was in
+the opposite direction, indicating a positive charge.
+⭐⭐Discovery of the neutrino (Cowan-Reines) (1956)
+Context:
+Consider the law of conservation of energy, every particle interaction must abide by the condition
+. In alpha decay, the energy of the produced alpha particle is
+𝐸𝑛𝑒𝑟𝑔𝑦 𝑜𝑓 "𝑟𝑒𝑎𝑐𝑡𝑎𝑛𝑡𝑠" = 𝐸𝑛𝑒𝑟𝑔𝑦 𝑜𝑓 "𝑝𝑟𝑜𝑑𝑢𝑐𝑡𝑠" + 𝐾𝐸
+monokinetic, meaning for any given alpha decay, the products will always have the same energy. Initially, beta particles
+were thought to be similar, after all, since the difference between reactants and products will be the same for any given
+reaction no matter how many times you perform it, so to abide by the law of conservation of energy, the product must
+have that same missing
+ value from their kinetic energy every single time. However, it was later shown that the energy
+∆𝐸
+of the beta particle emitted in beta decay was NOT monokinetic. This would violate the law of conservation of energy, and
+hence there must be some other form of energy emitted in the products that we were not aware of. Pauli proposed that
+there must be a very small, neutral particle produced in conjunction with the other products. This particle was termed the
+neutrino. (the neutrino also was needed to conserve momentum and angular momentum).
+
+### Method:
+
+You shouldn’t need to know much detail but they basically observed a process called inverse beta decay in a nuclear
+reactor.
+ν𝑒‾ + 𝑝
++ →𝑛
+0 + 𝑒
++
+Such a process, an antineutrino (which from the conservation of energy requirements mentioned before was predicted to
+be necessary in such a reaction) would interact with a proton to form a neutron and a positron. This reaction was able to
+be detected as the positron would quickly interact with an electron and annihilate, producing two gamma rays, which were
+detectable.
+
+## Module 8 - The universe
+
+⭐⭐⭐Hubble’s observations
+Some cathode yap I ended up removing but I want to keep here just in case after the HSC I want to have a better look into
+them:
+We often model the electric field between two oppositely charged plates as uniform (which comes from Gauss’s law for
+electricity), however in reality (I was trying to explain Crookes dark space here)
+Consider an electron that has just been thermionically emitted. Such an electron will have some residual kinetic energy
+from the thermionic emission, which is quickly dissipated by collisions with incident gas molecules, exciting their
+electrons to higher energy levels, resulting in a dim glow pretty much immediately off the cathode. Consider any one of
+these electrons just after the cathode glow, still near the cathode. The electric field at this point would have done minimal
+work on the electron
+, and hence the electron’s kinetic energy will be insufficient to excite electrons and certainly
+𝑊= 𝑞𝐸𝑑
+insufficient to ionise atoms, and therefore we will not see any glow until the electron has gone far enough along the tube
+such that enough of its electric potential energy has been converted to kinetic energy. This region near the cathode where
+electrons are “accelerating up to speed” is known as the “Crookes dark space”. As we increase the pressure in the tube,
+we notice that the “Crookes dark space” will appear longer if we keep the applied voltage constant. This is because more
+collisions with incident gas molecules effectively act as a “drag force” on the electron/cathode ray, which increases the
+distance it takes for the electron to reach a sufficient kinetic energy for the glow to be produced upon interactions with
+atoms. The official way we say “more collisions” in this context uses the idea of a “mean free path”, which is the average
+distance that any given electron travels between collisions. The mean free path of course decreases as we increase the
+pressure, explaining the increase in collisions over any given interval of displacement, accounting for the expansion of the
+Crookes dark space. Consider the region right after the Crookes Dark space. After some displacement, the electrons will
+have gained sufficient kinetic energy to start consistently exciting electrons to higher energy levels. This area is known as
+the “negative glow”, for reasons that should become apparent later, and consists of a constant
+Irrelevant thing
+Basically, consider the binding energy of quarks within nucleons due to the strong force. As we know that the strong force
+is “strong” to put it simply, it will naturally take a lot of energy to overcome this. When such levels of energy are achieved,
+the quarks and gluons can be “liberated” from the confinement of a nucleon (gross oversimplification but it should do),
+resulting in the formation of a quark-gluon plasma. Such conditions were present in the very early universe, but they can
+also be recreated in particle accelerators today.

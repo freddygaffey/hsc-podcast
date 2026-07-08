@@ -1,0 +1,171 @@
+{
+  "questions": [
+    {
+      "id": "m504-q01",
+      "type": "mc",
+      "q": "Two asteroids exert a gravitational force on each other. They then drift apart until the distance between their centres is four times as large. By what factor does the gravitational force change?",
+      "options": [
+        "It becomes 4 times weaker (one quarter)",
+        "It becomes 8 times weaker (one eighth)",
+        "It becomes 16 times weaker (one sixteenth)",
+        "It stays the same, because the masses are unchanged"
+      ],
+      "answer": 2,
+      "explanation": "Gravity is an inverse-square law: F is inversely proportional to r squared, so you square the distance factor and put it underneath. Four times the distance means the force is divided by 4 squared = 16, giving one sixteenth. The tempting wrong answer 'four times weaker' forgets to square the distance factor — that is the single most common slip in this topic. Twice as far, a quarter the pull; four times as far, a sixteenth.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m504-q02",
+      "type": "mc",
+      "q": "A student writes that the gravitational field strength on the Moon's surface is 6.67 × 10⁻¹¹. What error have they made?",
+      "options": [
+        "They have confused big-G (the universal constant) with little-g (the local field strength)",
+        "Nothing — that is the correct value of the Moon's surface gravity",
+        "They forgot to measure the distance centre-to-centre",
+        "They used newtons per kilogram instead of metres per second squared"
+      ],
+      "answer": 0,
+      "explanation": "6.67 × 10⁻¹¹ N m² kg⁻² is big-G, the universal gravitational constant, the same everywhere in the universe. Little-g is the local gravitational field strength, about 1.6 N kg⁻¹ on the Moon and 9.8 N kg⁻¹ at Earth's surface, and it changes from place to place. The student has swapped the two g's — the classic exam trap the markers see constantly. Big-G universal and tiny; little-g local and around 9.8 on Earth.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m504-q03",
+      "type": "mc",
+      "q": "A satellite orbits at an altitude of 600 km above Earth's surface. When you calculate the gravitational field strength there using g = GM/r², what value must you use for r?",
+      "options": [
+        "600 km, the altitude given in the question",
+        "The Earth's radius minus 600 km",
+        "The Earth's radius plus 600 km, measured from the centre of the Earth",
+        "Zero, because the satellite is above the surface"
+      ],
+      "answer": 2,
+      "explanation": "The distance r in both the force law and the field law is always measured from the centre of the mass, not its surface. Altitude is height above the surface, so you must add the Earth's radius (about 6.37 × 10⁶ m) to the 600 km before squaring. Using the altitude alone — forgetting to add the radius — is probably the single most common arithmetic mistake in this topic. Reflex: altitude given, add the radius, then use r.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m504-q04",
+      "type": "mc",
+      "q": "Astronauts aboard the International Space Station (about 400 km up) float freely. What is the correct physical reason?",
+      "options": [
+        "There is no gravity that far from the Earth",
+        "Gravity is still nearly 90% of its surface value; they float because they are in continuous free fall (orbit) with no supporting contact force",
+        "The Earth's rotation cancels gravity at that height",
+        "Their spacecraft generates an anti-gravity field"
+      ],
+      "answer": 1,
+      "explanation": "At 400 km the field strength is about 8.7 N kg⁻¹, nearly 90% of the surface value, so gravity is very much present — it is what curves the station into orbit, acting as the centripetal force. The astronauts, spacecraft and floor all fall together at the same rate, so there is no push between astronaut and floor: this is apparent weightlessness. Writing 'no gravity in space' loses the marks; the right answer is free fall in orbit.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m504-q05",
+      "type": "mc",
+      "q": "On the Moon, an astronaut drops a hammer and a feather together and they hit the ground at the same instant. Why does the gravitational field strength (and hence the acceleration) not depend on which object you drop?",
+      "options": [
+        "Because both objects have the same mass",
+        "Because the Moon has no atmosphere, so there is no gravity to vary",
+        "Because in g = GMm/r² divided by m, the object's own mass m cancels, leaving g = GM/r², which depends only on the planet's mass and r",
+        "Because heavier objects always fall faster, but the difference is too small to see"
+      ],
+      "answer": 2,
+      "explanation": "Field strength is force per unit mass: g = F/m = (GMm/r²)/m = GM/r². The test mass m cancels, so the field — and therefore the acceleration — depends only on the planet's mass M and the distance r from its centre, not on the falling object. That cancellation is why a feather and a hammer accelerate identically. The lack of air resistance lets you see it, but the underlying reason is the mass cancelling, not the vacuum.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m504-q06",
+      "type": "worked",
+      "q": "Calculate the magnitude of the gravitational force between the Earth and the Moon.",
+      "given": "\\(G = 6.67\\times10^{-11}\\,\\mathrm{N\\,m^2\\,kg^{-2}}\\),  \\(M_{\\text{Earth}} = 5.97\\times10^{24}\\,\\mathrm{kg}\\),  \\(m_{\\text{Moon}} = 7.35\\times10^{22}\\,\\mathrm{kg}\\),  \\(r = 3.84\\times10^{8}\\,\\mathrm{m}\\) (centre to centre)",
+      "working": [
+        "\\(F = \\dfrac{G M m}{r^2}\\)",
+        "\\(F = \\dfrac{(6.67\\times10^{-11})(5.97\\times10^{24})(7.35\\times10^{22})}{(3.84\\times10^{8})^2}\\)",
+        "numerator \\(= 2.93\\times10^{37}\\)",
+        "denominator \\(= (3.84\\times10^{8})^2 = 1.47\\times10^{17}\\)",
+        "\\(F = \\dfrac{2.93\\times10^{37}}{1.47\\times10^{17}} \\approx 1.98\\times10^{20}\\,\\mathrm{N}\\)"
+      ],
+      "answerValue": 1.98e20,
+      "answerUnit": "N",
+      "tolerance": 5e18,
+      "explanation": "Substitute directly into F = GMm/r², using the centre-to-centre distance. The commonest errors are forgetting to square the distance (the denominator) and mishandling the powers of ten. The result, about 2 × 10²⁰ N, is the mutual pull each body exerts on the other (Newton's third law — equal and opposite).",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m504-q07",
+      "type": "worked",
+      "q": "Calculate the gravitational field strength at an altitude of 400 km above the Earth's surface (the height of the International Space Station).",
+      "given": "\\(G = 6.67\\times10^{-11}\\),  \\(M_{\\text{Earth}} = 5.97\\times10^{24}\\,\\mathrm{kg}\\),  \\(R_{\\text{Earth}} = 6.37\\times10^{6}\\,\\mathrm{m}\\),  \\(h = 400\\,\\mathrm{km} = 0.40\\times10^{6}\\,\\mathrm{m}\\)",
+      "working": [
+        "\\(r = R + h = 6.37\\times10^{6} + 0.40\\times10^{6} = 6.77\\times10^{6}\\,\\mathrm{m}\\)  (altitude given, add the radius)",
+        "\\(g = \\dfrac{G M}{r^2}\\)",
+        "\\(g = \\dfrac{(6.67\\times10^{-11})(5.97\\times10^{24})}{(6.77\\times10^{6})^2}\\)",
+        "\\(g = \\dfrac{3.98\\times10^{14}}{4.58\\times10^{13}}\\)",
+        "\\(g \\approx 8.7\\,\\mathrm{N\\,kg^{-1}}\\)"
+      ],
+      "answerValue": 8.7,
+      "answerUnit": "N kg⁻¹",
+      "tolerance": 0.2,
+      "explanation": "The critical step is r = R + h: you must add the altitude to the Earth's radius before squaring, because r is measured from the centre. The result, about 8.7 N kg⁻¹, is nearly 90% of the surface value — proof that gravity is still strong in low orbit, so astronauts' weightlessness is free fall, not absence of gravity.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m504-q08",
+      "type": "worked",
+      "q": "Using Newton's law of universal gravitation, calculate the gravitational field strength (acceleration due to gravity) at the Earth's surface, and show that it gives the familiar value.",
+      "given": "\\(G = 6.67\\times10^{-11}\\),  \\(M_{\\text{Earth}} = 5.97\\times10^{24}\\,\\mathrm{kg}\\),  \\(R_{\\text{Earth}} = 6.37\\times10^{6}\\,\\mathrm{m}\\)",
+      "working": [
+        "\\(g = \\dfrac{G M}{R^2}\\)  (r = R at the surface)",
+        "\\(g = \\dfrac{(6.67\\times10^{-11})(5.97\\times10^{24})}{(6.37\\times10^{6})^2}\\)",
+        "\\(g = \\dfrac{3.98\\times10^{14}}{4.06\\times10^{13}}\\)",
+        "\\(g \\approx 9.8\\,\\mathrm{N\\,kg^{-1}} = 9.8\\,\\mathrm{m\\,s^{-2}}\\)"
+      ],
+      "answerValue": 9.8,
+      "answerUnit": "N kg⁻¹",
+      "tolerance": 0.1,
+      "explanation": "The 9.8 you have used all year is nothing more than G times the Earth's mass divided by the Earth's radius squared. It is not a fundamental number — it is a consequence of the Earth's mass and size. Newtons per kilogram and metres per second squared are the same unit in disguise (1 N kg⁻¹ = 1 m s⁻²).",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m504-q09",
+      "type": "worked",
+      "q": "You cannot put the Earth on a set of scales, yet its mass is known. Using the surface value g = 9.8 m s⁻², the Earth's radius, and the measured value of big-G, calculate the mass of the Earth.",
+      "given": "\\(g = 9.8\\,\\mathrm{m\\,s^{-2}}\\),  \\(R_{\\text{Earth}} = 6.37\\times10^{6}\\,\\mathrm{m}\\),  \\(G = 6.67\\times10^{-11}\\)",
+      "working": [
+        "Start from \\(g = \\dfrac{G M}{R^2}\\)",
+        "Rearrange for the mass: \\(M = \\dfrac{g R^2}{G}\\)",
+        "\\(M = \\dfrac{(9.8)(6.37\\times10^{6})^2}{6.67\\times10^{-11}}\\)",
+        "\\(M = \\dfrac{(9.8)(4.06\\times10^{13})}{6.67\\times10^{-11}}\\)",
+        "\\(M \\approx 6.0\\times10^{24}\\,\\mathrm{kg}\\)"
+      ],
+      "answerValue": 6.0e24,
+      "answerUnit": "kg",
+      "tolerance": 2e23,
+      "explanation": "Rearranging g = GM/R² to M = gR²/G lets you 'weigh the Earth' from quantities you can measure: g by dropping objects, R from geometry, and G by Cavendish's 1798 torsion-balance experiment. Measuring G was the last missing piece, and it unlocked the mass of the Earth, Sun and every planet.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m504-q10",
+      "type": "recall",
+      "q": "Define gravitational field strength and state its unit. (2 marks)",
+      "keyPoints": [
+        "Gravitational field strength at a point is the gravitational force experienced per unit mass by a small test mass placed at that point (g = F/m).",
+        "Its unit is newtons per kilogram (N kg⁻¹), which is equivalent to metres per second squared (m s⁻²).",
+        "It is a property of the space around a mass and exists whether or not a test mass is there to feel it.",
+        "Around a planet it equals g = GM/r², depending only on the planet's mass and the distance from its centre."
+      ],
+      "explanation": "The two marks are for (1) force per unit mass and (2) the correct unit, N kg⁻¹ (= m s⁻²). A vague answer like 'how strong the field is' earns nothing because it misses the per-unit-mass definition the marker is looking for. Grade yourself Good or Easy if you gave both beats.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m504-q11",
+      "type": "recall",
+      "q": "From memory, explain why the Moon's surface gravity is only about one sixth of Earth's, even though the Moon has far less than one sixth of Earth's mass. Refer to both its mass and its radius.",
+      "keyPoints": [
+        "Surface gravity is g = GM/R²: the planet's mass sits on top and its radius squared on the bottom.",
+        "The Moon has much less mass — only about 1/80 of Earth's — which on its own would make its gravity far weaker than a sixth.",
+        "But the Moon is also much smaller — about 1/4 of Earth's radius — and because R sits squared on the bottom, a quarter the radius makes the R² term 16 times smaller, pushing the field strength back up by 16.",
+        "The mass factor pulls gravity down and the radius-squared factor pushes it back up; combined they leave the Moon at about 1/6 of Earth's surface gravity (~1.6 N kg⁻¹)."
+      ],
+      "explanation": "The mark-earning point is that surface gravity is a competition between mass and radius squared, not just mass. This is exactly why a small dense planet can have surprisingly strong surface gravity while a huge fluffy one need not. Grade Good or Easy if you named both the mass factor and the radius-squared factor and combined them.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    }
+  ]
+}

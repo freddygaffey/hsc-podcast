@@ -1,0 +1,144 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "At the turn of the 19th century, two rival models of light were in contention. Which pairing correctly matches each scientist to his model?",
+      "options": [
+        "Newton proposed light was a wave; Huygens proposed light was particles",
+        "Newton proposed light was particles (corpuscles); Huygens proposed light was a wave",
+        "Both Newton and Huygens proposed light was a wave",
+        "Both Newton and Huygens proposed light was made of particles"
+      ],
+      "answer": 1,
+      "explanation": "Newton championed the corpuscular model, picturing light as a fine stream of tiny particles or 'corpuscles', while the Dutchman Christiaan Huygens argued light was a wave spreading through space like ripples on a pond. Reversing the two (option 0) is the classic mix-up.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "What was Young's aim in performing the double-slit experiment?",
+      "options": [
+        "To measure the exact speed of light in a vacuum",
+        "To demonstrate that light exhibits the wave properties of diffraction and interference",
+        "To prove that light is made of individual particles called photons",
+        "To show that light travels in perfectly straight lines and casts sharp shadows"
+      ],
+      "answer": 1,
+      "explanation": "Young set out to show light exhibits diffraction and interference, behaviours that belong to waves alone, thereby supporting Huygens' wave model. Photons (option 2) were a much later idea, and straight-line travel with sharp shadows (option 3) is exactly what the particle model already explained.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Why was interference, rather than reflection or refraction, chosen as the decisive test between the particle and wave models?",
+      "options": [
+        "Interference was the only effect that could be seen with the naked eye",
+        "Both models predicted interference, but the wave model predicted it more strongly",
+        "Interference (waves cancelling to darkness) is something particles simply cannot do, so it is the unforgeable fingerprint of a wave",
+        "Reflection and refraction had never been observed for light before Young"
+      ],
+      "answer": 2,
+      "explanation": "Both models could explain reflection and refraction, so those effects could not break the tie. Interference, where two waves cancel to leave darkness, is impossible for particles (two streams of bullets can only ever add up), making it the one behaviour that distinguishes waves from particles.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "According to the hypothesis, what pattern would appear on the screen if Newton's corpuscular model were correct?",
+      "options": [
+        "A single bright band directly in the centre of the screen",
+        "Two bright bands, one directly behind each slit",
+        "A series of many bright and dark bands spreading across the screen",
+        "A uniform, evenly lit screen with no bands at all"
+      ],
+      "answer": 1,
+      "explanation": "If light were particles, they would fly straight through the two slits and illuminate just the two patches directly behind them: two slits, two stripes. The many-band pattern (option 2) is what the wave model predicts and what was actually observed.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "recall",
+      "q": "Describe the experimental setup Young used, in order, and explain the purpose of each part.",
+      "keyPoints": [
+        "A light source provides the light",
+        "A single (first) narrow slit that the light passes through first, making the light behave as if from one clean, well-defined source, all in step (coherent)",
+        "A barrier with two narrow slits set close together, side by side, which splits the light into two overlapping fans",
+        "A screen placed some distance beyond the two slits to catch the resulting pattern",
+        "No lenses or elaborate machinery are needed; the genius is in the idea, not the apparatus"
+      ],
+      "explanation": "The single first slit tidies the light so it is effectively one coherent source, the double slit provides two sources that can interfere, and the screen displays the verdict. The simplicity of the apparatus is part of what makes the experiment so powerful.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "What is the correct explanation for the dark bands in Young's interference pattern?",
+      "options": [
+        "Light from the slits never reaches those points, so they stay dark",
+        "The slits physically block the light that would otherwise reach those points",
+        "Light from both slits reaches those points but arrives exactly out of step (crest meeting trough) and cancels, producing darkness",
+        "The screen absorbs more light at those points than at the bright points"
+      ],
+      "answer": 2,
+      "explanation": "Crucially, light from both slits does arrive at the dark bands, but one wave is cresting as the other is dipping, so they cancel through destructive interference. The common misconception (option 0) is that light simply fails to arrive; in fact it arrives and annihilates itself, which is the whole point.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "At a given point on the screen, what condition on the path difference between the two slits produces a bright band (constructive interference)?",
+      "options": [
+        "The path difference is a whole number of wavelengths (0, 1, 2, ...)",
+        "The path difference is exactly half a wavelength",
+        "The path difference is an odd number of half-wavelengths (1/2, 3/2, 5/2, ...)",
+        "The two path lengths are always exactly equal at bright bands"
+      ],
+      "answer": 0,
+      "explanation": "When the extra distance travelled by one wave is a whole number of wavelengths, the waves arrive crest-lined-with-crest (in step) and reinforce, giving a bright band. A half-wavelength path difference (options 1 and 2) puts them out of step and produces a dark band instead.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "Why does the interference pattern appear as a regular, repeating march of bright and dark bands across the screen?",
+      "options": [
+        "The light source flickers on and off at regular intervals",
+        "As the eye sweeps across the screen the path difference changes smoothly, cycling repeatedly through in-step and out-of-step",
+        "The two slits open and close alternately during the experiment",
+        "The screen is ruled with evenly spaced lines that the light lands between"
+      ],
+      "answer": 1,
+      "explanation": "Because each point on the screen sits at a different angle, the path difference between the two slits changes smoothly as you move across, running through in-step (bright), out-of-step (dark), in-step, out-of-step, over and over. The geometry itself writes the regular striped pattern.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "State the conclusion of Young's experiment and explain why the result could not be accounted for by the particle model of light.",
+      "keyPoints": [
+        "A diffraction/interference pattern (many bright and dark bands) was observed on the screen",
+        "This supports Huygens' wave model over Newton's corpuscular model for how light travels through space",
+        "Diffraction and interference are properties exclusive to waves",
+        "A particle model cannot explain interference: streams of particles can only ever add up, never cancel to produce darkness",
+        "The result overturned a century of belief in Newton's particle model, though it met resistance and took decades to be fully accepted"
+      ],
+      "explanation": "The observed bands showed light diffracting and interfering with itself, cancelling to darkness in places. Since particles can only add, never cancel, the pattern is inexplicable by corpuscles, establishing the wave model as superior for describing how light travels.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "mc",
+      "q": "About a century later, physicists sent light through the two slits one photon at a time. What surprising result emerged, and what field did it help open up?",
+      "options": [
+        "The pattern vanished entirely, confirming Newton's particle model after all",
+        "Only two bright bands appeared, exactly as the corpuscular model predicted",
+        "The interference pattern still built up dot by dot, as if each single photon passed through both slits and interfered with itself, helping open up quantum mechanics",
+        "The photons stuck to the screen at random with no pattern, disproving both models"
+      ],
+      "answer": 2,
+      "explanation": "Even with a single photon in the apparatus at a time, the interference pattern still assembled band by band, as though each photon travelled through both slits and interfered with itself. This bizarre result helped crack open quantum mechanics, a debate physicists continue today.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

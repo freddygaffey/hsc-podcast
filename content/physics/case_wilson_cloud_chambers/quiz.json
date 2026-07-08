@@ -1,0 +1,158 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What was C. T. R. Wilson originally trying to do when he built his sealed, vapour-filled chamber?",
+      "options": [
+        "Detect subatomic particles from radioactive decay",
+        "Recreate clouds and optical effects he had seen on mountaintops",
+        "Measure the charge on a single electron",
+        "Prove that atoms are indivisible, solid balls"
+      ],
+      "answer": 1,
+      "explanation": "Wilson was fascinated by clouds and halos he saw at the Ben Nevis observatory and set out to make clouds in a jar. Detecting particle tracks was an unexpected consequence, not his goal; measuring electron charge was Millikan's work, and the era's discoveries showed atoms were NOT indivisible.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "In a cloud chamber, why must the vapour be supersaturated before a particle can leave a visible track?",
+      "options": [
+        "Supersaturated vapour glows when struck by radiation",
+        "It is holding more moisture than it stably can, so it is primed to condense onto any seed",
+        "Supersaturation makes the vapour electrically conductive",
+        "Only supersaturated vapour can be ionised by a passing particle"
+      ],
+      "answer": 1,
+      "explanation": "Rapidly expanding and cooling the air makes the vapour hold more moisture than it stably can (supersaturated), so it is 'a loaded gun' desperate to condense onto any nucleus. The vapour does not glow, is not made conductive, and ionisation of the vapour is done by the particle, not caused by supersaturation.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "What actually seeds the line of droplets that marks a charged particle's path through the chamber?",
+      "options": [
+        "Specks of dust stirred up by the particle",
+        "A trail of positive ions left where the particle knocked electrons off vapour molecules",
+        "Heat released along the particle's path",
+        "The particle itself picking up water as it travels"
+      ],
+      "answer": 1,
+      "explanation": "The energetic charged particle ionises vapour molecules along its route, leaving a trail of positive ions. Polar vapour molecules are attracted to these charges and condense onto them. Dust is deliberately filtered out; the seed is charge, not heat or the particle physically collecting water.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "Why does Wilson's chamber use a polar vapour such as water or, better, alcohol?",
+      "options": [
+        "Polar molecules are lighter and evaporate faster",
+        "Polar molecules have a positive and negative end, so they are attracted to the ion trail and condense on it",
+        "Polar molecules are the only ones that can be supersaturated",
+        "Polar molecules chemically react with alpha and beta particles"
+      ],
+      "answer": 1,
+      "explanation": "Polar molecules have a positive end and a negative end, making them behave like tiny magnets for electric charge, so they are pulled onto the charged ion trail and condense there. It is this polarity, not weight, exclusivity of supersaturation, or a chemical reaction, that makes the track visible.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "How do alpha-particle tracks typically appear compared with beta-particle tracks?",
+      "options": [
+        "Thin, faint and jagged",
+        "Thick, bold, straight and short",
+        "Long, thin and perfectly straight",
+        "Invisible, appearing only as scattered dots"
+      ],
+      "answer": 1,
+      "explanation": "Alpha particles are heavy and doubly charged, the strongest ionisers, so they leave thick, bold trails; their large mass means collisions barely deflect them (a = F/m) so paths are straight, and they lose energy fast so tracks are short. Thin/faint/jagged describes beta tracks; scattered dots describe gamma-induced electrons.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "Why do beta-particle (fast electron) tracks appear thin, faint and crooked?",
+      "options": [
+        "Electrons carry no charge, so they barely ionise the vapour",
+        "Electrons are very light, so each collision both ionises weakly and deflects them strongly",
+        "Electrons travel slower than alpha particles and so condense less vapour",
+        "Electrons repel the polar vapour molecules"
+      ],
+      "answer": 1,
+      "explanation": "An electron is tiny, so it ionises far less as it goes (thin, faint) and, because a = F/m with a minuscule mass, each collision knocks it well off course (crooked). Electrons do carry charge, they are not repelled by the vapour, and it is their mass, not merely speed, that gives the wandering path.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Gamma radiation itself leaves no track in a cloud chamber. Why, and how is it detected indirectly?",
+      "options": [
+        "It moves too fast to be seen; it is detected by the heat it deposits",
+        "It is uncharged so ionises nothing directly; it reveals itself through electron tracks when it knocks electrons free or produces a particle-antiparticle pair",
+        "It is too weak to ionise; it is detected only by a separate Geiger counter",
+        "It is absorbed by the glass; it is detected by the glass fogging up"
+      ],
+      "answer": 1,
+      "explanation": "Gamma rays carry no charge, so they do not ionise the vapour directly and leave no track of their own. They show up indirectly as short, faint electron tracks produced when a gamma ray frees an electron or, more rarely, undergoes pair production. It is not heat, weakness, or absorption in the glass that reveals it.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "Placing a cloud chamber in a magnetic field made it far more powerful. What extra information did this provide?",
+      "options": [
+        "It made faint gamma rays leave their own tracks",
+        "The direction and tightness of the curved track reveal the charge's sign and the particle's charge-to-mass ratio and speed",
+        "It slowed the particles so their tracks lasted longer",
+        "It removed the need for supersaturated vapour"
+      ],
+      "answer": 1,
+      "explanation": "A magnetic field bends a moving charge into a curve: the direction of bending gives the sign of the charge and the radius reveals the charge-to-mass ratio and speed, so the chamber could weigh and identify particles. Gamma still leaves no direct track, and the field does not slow particles or replace the supersaturated vapour.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "mc",
+      "q": "Cosmic-ray tracks in a magnetised cloud chamber revealed a new particle. What made these tracks so puzzling?",
+      "options": [
+        "They were positive but curved like electrons",
+        "They were negative like electrons but curved too gently, implying a charge-to-mass ratio unlike any known particle",
+        "They were perfectly straight despite the magnetic field",
+        "They left no ionisation trail at all"
+      ],
+      "answer": 1,
+      "explanation": "The tracks were clearly negative, like electrons, but curved too gently, as though too heavy to be electrons, giving a charge-to-mass ratio unlike an electron, proton or alpha. This heavy cousin of the electron was the muon ('who ordered that?'). The tracks were curved (not straight) and did ionise the vapour.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Explain how a Wilson cloud chamber turns the path of an invisible charged particle into a visible track. Cover the state of the vapour, what the particle does to the molecules, and why the vapour then condenses along the path.",
+      "keyPoints": [
+        "The chamber holds a supersaturated vapour of water or alcohol, made possible by rapid expansion and cooling",
+        "An energetic charged particle collides with vapour molecules and transfers energy, ionising them",
+        "This leaves a trail of positive ions marking exactly where the particle travelled",
+        "The vapour is polar, so its molecules are attracted to the charged ion trail",
+        "The polar molecules crowd around the ions and condense into droplets, making the path visible to the naked eye"
+      ],
+      "explanation": "The core mechanism: supersaturated polar vapour is primed to condense; a charged particle ionises molecules along its route, creating a charged trail; the polar vapour is drawn to that charge and condenses on it, so droplets bloom along the exact path, revealing a single particle's flight.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q11",
+      "type": "recall",
+      "q": "Beyond making tracks visible, state the historical significance of the Wilson cloud chamber to physics, including the recognition Wilson received and one major discovery it enabled.",
+      "keyPoints": [
+        "It was the first instrument that let physicists directly see the track of an individual subatomic particle, rather than only infer it",
+        "Different particles leave distinguishable tracks (alpha thick/straight/short, beta thin/faint/crooked, gamma indirect electron tracks)",
+        "C. T. R. Wilson was awarded the 1927 Nobel Prize in Physics for developing the cloud chamber",
+        "Combined with magnetic fields it could identify particles by charge sign and charge-to-mass ratio",
+        "Pointed at cosmic rays it led to the discovery of new particles such as the muon"
+      ],
+      "explanation": "The cloud chamber made single particle tracks directly visible and, especially with magnetic fields, became a tool for identifying particles. Wilson earned the 1927 Nobel Prize, and the device opened up particle physics, including the cosmic-ray discovery of the muon.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

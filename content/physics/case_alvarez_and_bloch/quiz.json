@@ -1,0 +1,144 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What single quantity did Alvarez and Bloch set out to measure in their 1940 experiment?",
+      "options": [
+        "The electric charge of the neutron",
+        "The magnetic moment of the neutron",
+        "The mass of the neutron",
+        "The number of quarks inside the neutron"
+      ],
+      "answer": 1,
+      "explanation": "They measured the neutron's magnetic moment, its strength as a tiny magnet. The neutron's charge was already known to be zero, which is exactly why a nonzero magnetic moment was so surprising. Quarks were not proposed until about 25 years later, so they could not have been counted here.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "According to classical physics, where does all magnetism come from?",
+      "options": [
+        "Any object that has mass",
+        "Moving electric charge, such as a current or a spinning charged particle",
+        "Any particle that is electrically neutral",
+        "Heat flowing through a material"
+      ],
+      "answer": 1,
+      "explanation": "The century-old rule is that magnetism comes from moving electric charge: a current in a wire or a spinning charged particle makes a magnetic field. No charge in motion means no magnetism. This is precisely why a magnetic neutron was a crisis: the neutron has no net charge, yet it is magnetic.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Why did most physicists in the 1930s expect the neutron's magnetic moment to be exactly zero?",
+      "options": [
+        "Because the neutron is much heavier than the proton",
+        "Because they assumed the neutron was a simple, elementary particle with no internal charge and no structure",
+        "Because the neutron does not spin",
+        "Because the neutron decays too quickly to be magnetic"
+      ],
+      "answer": 1,
+      "explanation": "If the neutron were a featureless, elementary point with no charge inside and nothing moving, the rule 'no moving charge, no magnetism' forces its magnetic moment to be zero. The surprise was that it was not zero. The neutron does have a spin, and its mass is irrelevant to the argument.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "The experiment relied on the fact that a tiny magnet in a magnetic field behaves like a spinning top in gravity. What does it do?",
+      "options": [
+        "It instantly snaps into line with the field and stops",
+        "It wobbles, sweeping around in a slow circle (precession) at one specific rate",
+        "It is repelled straight out of the field",
+        "It heats up and emits light"
+      ],
+      "answer": 1,
+      "explanation": "Rather than simply lining up, the little magnet precesses: it wobbles around in a circle at one specific rate set by the magnet's strength and the field's strength. Measuring that precession rate lets you work backwards to the hidden magnet's strength, which is the whole basis of the method.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "recall",
+      "q": "Describe the main stages of the apparatus Alvarez and Bloch built to measure the neutron's magnetism.",
+      "keyPoints": [
+        "A beam of neutrons was pulled out of a cyclotron at Berkeley",
+        "The beam passed through a region of carefully controlled magnetic field",
+        "The neutrons were bathed in radio waves (an oscillating magnetic field flickering millions of times per second)",
+        "The radio frequency was slowly tuned up and down to find the neutron's natural wobble (precession) rate",
+        "A detector at the far end counted the neutrons arriving"
+      ],
+      "explanation": "Neutrons came from a cyclotron, travelled through a controlled magnetic field, and were bathed in tunable radio waves. By sweeping the radio frequency and watching a detector count neutrons, the team could find the exact frequency that matched the neutron's precession, which reveals the magnetic moment.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "The technique used radio waves tuned to the neutron's natural wobble rate. What is this matching of rhythms called, and to what everyday example is it compared?",
+      "options": [
+        "Refraction, like light bending through a lens",
+        "Resonance, like timing your pushes to a child on a swing",
+        "Diffraction, like ripples spreading through a gap",
+        "Conduction, like heat spreading along a metal bar"
+      ],
+      "answer": 1,
+      "explanation": "When the radio wave's flicker matches the neutron's natural precession rate, each push adds up, exactly like timing pushes to a child on a swing so it climbs higher: this is resonance. Refraction, diffraction and conduction are unrelated phenomena that play no role here.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "How did Alvarez and Bloch detect that neutron spins were flipping, without ever seeing a flip directly?",
+      "options": [
+        "The neutrons emitted a flash of light when they flipped",
+        "A flipped neutron took a slightly different path, so fewer neutrons reached the detector and the count dropped at the resonant frequency",
+        "The magnetic field reversed direction each time a neutron flipped",
+        "The neutrons changed colour as they passed the detector"
+      ],
+      "answer": 1,
+      "explanation": "The setup was arranged so a flipped neutron took a slightly different path and missed the detector. So at the exact resonant frequency the neutron count dropped, signalling absorption of energy and spin flips. No light, colour change or field reversal was involved.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "The measured neutron magnetic moment was small but nonzero. What did this force physicists to conclude about the neutron?",
+      "options": [
+        "That the neutron secretly carries a small net positive charge",
+        "That the neutron has internal structure: separated, moving positive and negative charges that cancel to zero overall but produce a magnetic moment",
+        "That the rule linking magnetism to moving charge is simply wrong",
+        "That the neutron is actually a proton in disguise"
+      ],
+      "answer": 1,
+      "explanation": "To keep the magnetism-from-moving-charge rule, the neutron must contain positive and negative charges inside, separated and circulating, whose currents make the little magnet even though the charges cancel to zero net charge. It is not a hidden net charge (the neutron reads as neutral) and the rule itself is upheld, not overturned.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Why did this measurement of one number matter so much to physics?",
+      "keyPoints": [
+        "It showed the neutron is not a point or an elementary, indivisible particle: it has an inside and structure",
+        "By extension the proton, its near-identical twin, must also have internal parts",
+        "It cracked the tidy picture of protons and neutrons as the final, indivisible bricks of matter",
+        "It was an early clue pointing towards the quark model, confirmed about 25 years later",
+        "The proton is two up quarks and one down quark; the neutron is two down and one up, charges that sum to the right total but never cancel their magnetism"
+      ],
+      "explanation": "A single number that was supposed to be zero, but was not, revealed that the neutron has internal structure, and so must the proton. This cracked the idea that nucleons are indivisible bricks and pointed the way to quarks (proton = uud, neutron = udd), confirmed about a quarter century later with the neutron's magnetic moment already waiting as a clue.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "mc",
+      "q": "The tuning-a-radio-frequency-to-a-spinning-particle-in-a-magnetic-field technique used here has a familiar modern descendant. What is it?",
+      "options": [
+        "The X-ray machine",
+        "The MRI scanner found in hospitals (nuclear magnetic resonance)",
+        "The electron microscope",
+        "The Geiger counter"
+      ],
+      "answer": 1,
+      "explanation": "The method is nuclear magnetic resonance (NMR), the same physics that decades later became the hospital MRI scanner. X-ray machines, electron microscopes and Geiger counters rely on entirely different principles and are not descendants of this resonance technique.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

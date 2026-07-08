@@ -1,0 +1,152 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What was the central question that Rømer's Io observations ultimately settled?",
+      "options": [
+        "Whether light travels at a finite speed or arrives instantaneously",
+        "Whether Jupiter obeys Kepler's laws of planetary motion",
+        "Whether the Earth orbits the Sun or the Sun orbits the Earth",
+        "Whether Io's orbit is elliptical or circular"
+      ],
+      "answer": 0,
+      "explanation": "For roughly two thousand years thinkers such as Aristotle, Kepler and Descartes had insisted light was instantaneous (infinite speed). Rømer's work provided the first evidence that light takes a measurable time to travel, i.e. it has a finite speed. It was not about testing Kepler's laws or heliocentrism; those were already assumed as the reliable framework Rømer worked within.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "Why did Galileo's earlier lantern-on-hilltops experiment fail to measure the speed of light?",
+      "options": [
+        "The lanterns were not bright enough to be seen at that distance",
+        "Clouds interfered with the light signals between the hills",
+        "The distance was tiny compared to light's speed, so all he measured was human reaction time",
+        "Light was blocked by the curvature of the Earth over a few miles"
+      ],
+      "answer": 2,
+      "explanation": "Over a few miles light crosses the gap almost instantly, so the light travel time was utterly swamped by the assistant's reaction time. To catch light in transit you do not need a faster stopwatch, you need a far longer 'racetrack' - which is why the answer lay in the solar system, not on a hilltop. The lanterns being seen was never the issue; the delay was simply too small to detect.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Why can the eclipses of Io serve as a natural 'clock in the sky'?",
+      "options": [
+        "Io glows brighter and dimmer on a fixed daily cycle",
+        "Io orbits Jupiter with a regular period (~42 hours), so its disappearances into Jupiter's shadow should recur at predictable intervals",
+        "Io reflects sunlight only when it is directly aligned with the Sun",
+        "Jupiter's rotation causes Io to flash once every Jupiter day"
+      ],
+      "answer": 1,
+      "explanation": "Io, the innermost bright moon, whips around Jupiter roughly every 42 hours and is eclipsed each lap as it passes into the planet's shadow. Because Kepler's laws make its true orbital period essentially constant, the blinking recurs at predictable times - a regular celestial clock. The flashing comes from eclipses by Jupiter's shadow, not from Io itself brightening or from Jupiter's spin.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "What crucial pattern did Rømer notice in the drifting eclipse timings?",
+      "options": [
+        "The drift was random and unpredictable, suggesting instrument error",
+        "The eclipses ran late when Earth moved away from Jupiter and early when Earth moved toward it",
+        "The eclipses always ran progressively later year after year",
+        "The eclipses ran late only during winter months"
+      ],
+      "answer": 1,
+      "explanation": "The drift was not random: it tracked Earth's position in its orbit. When Earth moved away from Jupiter the measured periods stretched (eclipses late); when Earth swung back toward Jupiter they bunched up (eclipses early). This tight correlation with Earth's motion - not the calendar season - is what pointed to changing light-travel distance as the cause rather than a fault in Io's orbit.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "In Rømer's logic, why would the recorded time of an eclipse differ from when it truly occurred?",
+      "options": [
+        "The telescope introduced a fixed mechanical delay",
+        "Jupiter's gravity slowed down the light on its way out",
+        "You see an eclipse only when its light reaches your eye, so each observation carries a hidden light-travel delay",
+        "Earth's atmosphere refracted the light and shifted the timing"
+      ],
+      "answer": 2,
+      "explanation": "The observed time equals the true time of the event plus the time the light took to travel to the observer. If that delay were identical for every eclipse it would cancel out; it only causes a drift because the Earth-Jupiter distance changes between eclipses. The effect is purely geometric light-travel time, not telescope lag, atmospheric refraction, or gravity acting on the light.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "If light were truly instantaneous (infinite speed), what would Rømer have observed?",
+      "options": [
+        "The eclipses would drift even more dramatically",
+        "The eclipses would show no drift at all, recurring at a perfectly constant measured period",
+        "Io would never appear to be eclipsed at all",
+        "The drift would depend on Jupiter's distance from the Sun, not Earth's"
+      ],
+      "answer": 1,
+      "explanation": "With infinite speed the light-travel delay would always be zero regardless of distance, so every eclipse's measured period would equal Io's true period - no drift. The fact that the periods did drift, in step with Earth's changing distance, is precisely the evidence that light takes time to travel. The eclipses still occur regardless; it is the drift, not the eclipsing, that carries the information.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Why did Rømer accumulate the delay over about six months rather than measure it across a single ~42-hour orbit?",
+      "options": [
+        "Io is only visible for six months of each year",
+        "The delay per single orbit is tiny; summing over six months lets the extra distance grow to the full diameter of Earth's orbit, a much larger and more measurable interval",
+        "Jupiter is eclipsed by the Sun for the other six months",
+        "A single orbit's delay is negative and cannot be measured directly"
+      ],
+      "answer": 1,
+      "explanation": "The extra delay added by one 42-hour orbit is maddeningly small. By summing every increment as Earth travels from the near side of its orbit to the far side, the total corresponds to the light-crossing time of the whole diameter of Earth's orbit - about 22 minutes, far easier to work with. It has nothing to do with Io or Jupiter being unobservable for half the year.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "Rømer's speed-of-light figure came out about a third too low. What was the real source of the error?",
+      "options": [
+        "A flaw in the underlying reasoning about light-travel time",
+        "The rough 17th-century estimates of the size of Earth's orbit and a slightly generous delay figure - the 'ruler', not the idea",
+        "Io's orbit was genuinely irregular, corrupting the data",
+        "Kepler's laws turned out not to apply to Jupiter's moons"
+      ],
+      "answer": 1,
+      "explanation": "The physics and method were sound; the inputs were the weak link - crude values for the size of Earth's orbit plus a somewhat large delay (22 min). When Halley later revised the delay to about 17 minutes, the result jumped to roughly 300,000 km/s, nearly the modern value. As the script puts it, the instrument that was wrong was the ruler, never the idea.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "worked",
+      "q": "Estimate the speed of light from Rømer's data using Huygens' figures. The cumulative light delay across the diameter of Earth's orbit is 22 minutes, the Earth's diameter is 12,750 km, and Earth's orbital diameter is about 24,000 Earth diameters.",
+      "given": [
+        "Delay to cross Earth's orbital diameter, ΔT = 22 min",
+        "Earth's diameter = 12,750 km",
+        "Earth's orbital diameter, Δd ≈ 24,000 Earth diameters"
+      ],
+      "working": [
+        "Convert the delay to seconds: ΔT = 22 × 60 = 1320 s",
+        "Find the distance (orbital diameter): Δd = 24,000 × 12,750 km = 306,000,000 km",
+        "Apply c = Δd / ΔT: c = 306,000,000 km / 1320 s",
+        "c ≈ 231,800 km/s"
+      ],
+      "answerValue": 231800,
+      "answerUnit": "km/s",
+      "tolerance": 3000,
+      "explanation": "Speed is distance over time. The light crosses the full diameter of Earth's orbit (306 million km) in the accumulated 22-minute (1320 s) delay, giving about 231,800 km/s - the unrounded Huygens value. Rounding to a clean '1000 Earth-diameters per minute' gave his quoted 212,400 km/s, and the experiment is remembered for roughly 220,000 km/s. All are lower than the modern ~300,000 km/s because of the era's rough orbit size and the generous 22-minute delay.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Explain how Rømer's observations of Io's eclipses provided evidence that the speed of light is finite, and why this mattered to physics.",
+      "keyPoints": [
+        "Io is eclipsed by Jupiter's shadow at regular intervals, acting as a celestial clock whose true period is constant (per Kepler's laws)",
+        "The measured eclipse timings drifted: periods ran long when Earth moved away from Jupiter and short when Earth moved toward it",
+        "An observed time = true time + light-travel delay; the delay changes only because the Earth-Jupiter distance changes",
+        "If light were instantaneous the delay would always be zero and there would be no drift, so the observed drift proves light takes time to travel (finite speed)",
+        "Summing the delays over six months (~22 minutes) equals the light-crossing time of Earth's orbital diameter, allowing a numerical estimate (~220,000 km/s via Huygens)",
+        "Significance: it settled a two-thousand-year debate, turning the speed of light from a philosophical opinion into a measurable physical quantity and improving observational astronomy"
+      ],
+      "explanation": "A complete answer links the regular Io clock, the direction-dependent drift, the light-travel-delay argument (including the instantaneous-light contradiction), and the cumulative 22-minute figure that yields a finite speed - then notes the historical significance of overturning the 'instantaneous light' assumption.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

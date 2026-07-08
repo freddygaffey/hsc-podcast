@@ -1,0 +1,144 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "In Galileo's thought experiment, what is the key condition the ship must satisfy for everything inside to behave exactly as it would on dry land?",
+      "options": [
+        "It must be moving at constant velocity in a straight line, with no acceleration or turning",
+        "It must be completely stationary and anchored in a calm harbour",
+        "It must be accelerating steadily forwards",
+        "It must be moving faster than the wind so no air resistance acts inside"
+      ],
+      "answer": 0,
+      "explanation": "The whole argument depends on the ship gliding smoothly at constant velocity in a straight line (an inertial frame): no acceleration, no lurching, no turning, on dead-calm water. Only then do all experiments come out identically to those on land. A stationary ship (option 2) is just the special case v = 0; the point is that motion at constant velocity is indistinguishable from it. Acceleration (option 3) would be detectable and would break the equivalence.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "A sailor is sealed in a windowless cabin deep in the hold of a smoothly gliding ship. According to Galileo, what can that sailor conclude from experiments done inside the cabin?",
+      "options": [
+        "The direction of motion, but not the speed",
+        "The speed, but not the direction",
+        "Nothing about whether the ship is moving at constant velocity or lying at anchor",
+        "That the ship is definitely moving, because dropped objects drift towards the stern"
+      ],
+      "answer": 2,
+      "explanation": "Galileo asserted there is no experiment the sealed observer could perform to tell whether the ship is gliding at constant velocity or lying perfectly still. The two situations are physically identical from inside. Option 4 is the Aristotelian misconception: objects do NOT drift towards the stern, because they already share the ship's forward motion.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "You jump straight up inside the moving ship's cabin. Why do you land in the same spot rather than being left behind as the floor slides forward?",
+      "options": [
+        "Air trapped in the cabin drags you along with the ship",
+        "You already shared the ship's forward motion, and you keep it while in the air",
+        "The ship slows down briefly each time someone jumps",
+        "Gravity pulls you forward to match the ship's speed"
+      ],
+      "answer": 1,
+      "explanation": "You were never truly still: you, the air, and everything else were already moving forward with the ship. When you jump you carry that forward motion with you through the air, so the floor never gains on you. It is not air drag (option 1) or any change in the ship's speed (option 3), and gravity acts vertically, not forwards (option 4).",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "The Aristotelians argued: 'If the Earth were really moving, we would feel a howling wind and dropped stones would land far behind us. We feel and see none of this, so the Earth is stationary.' How does Galileo's ship argument dismantle this?",
+      "options": [
+        "It proves the Earth's atmosphere is too thin to produce any wind",
+        "It shows that a smoothly moving system feels exactly like a still one, so feeling nothing does not prove the Earth is still",
+        "It shows the Earth actually is stationary after all",
+        "It proves stones do land slightly behind you, just too little to notice"
+      ],
+      "answer": 1,
+      "explanation": "Galileo showed that a system in smooth, constant-velocity motion is indistinguishable from a stationary one, because everything (air, towers, people) shares the common motion. So the absence of wind and the stone landing at your feet is exactly what you'd expect on a smoothly moving Earth, not proof that it is still. The observation is real; the Aristotelian conclusion from it is what fails.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "In Galileo's cargo analogy, a ship carries goods from Venice past Corfu, Crete and Cyprus to Aleppo. He says that if one sack were shifted a single inch across the deck, that inch would be 'more of a movement' for it than the entire two-thousand-mile voyage. What point is he making?",
+      "options": [
+        "Motion shared by everything is idle and inconsequential; only motion relative to other things counts",
+        "Small movements are physically more forceful than large ones",
+        "The sea voyage was actually shorter than two thousand miles",
+        "Ships lose track of their cargo over long distances"
+      ],
+      "answer": 0,
+      "explanation": "Because the 2000-mile voyage is common to all the cargo and the ship, it changes nothing in the relations among the goods, so it is 'idle and inconsequential.' The one-inch shove is NOT shared, so it changes the sack's position relative to everything else and is therefore a real, meaningful movement. Motion is meaningful only relative to things that don't share it.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "What is the general principle Galileo drew from the ship thought experiment, now known as Galileo's principle of relativity?",
+      "options": [
+        "There is a single absolute frame of rest against which all true motion is measured",
+        "Only the Earth provides a valid stationary reference frame",
+        "The laws of physics are the same for all observers moving smoothly and steadily, and there is no absolute state of rest",
+        "Objects in motion always eventually return to rest without a force"
+      ],
+      "answer": 2,
+      "explanation": "Galileo concluded there is no privileged, absolute state of rest: motion is relative, and the laws of physics are identical in every inertial (smoothly, steadily moving) frame. This directly contradicts the idea of a cosmic anchor or absolute rest frame (options 1 and 2).",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "The book in which Galileo presented this argument was written as a conversation between three characters. Which character voiced Galileo's own views?",
+      "options": [
+        "Simplicio",
+        "Sagredo",
+        "Salviati",
+        "Sagredo and Simplicio jointly"
+      ],
+      "answer": 2,
+      "explanation": "In the 1632 'Dialogue Concerning the Two Chief World Systems', Salviati is the sharp character who speaks Galileo's own mind. Simplicio (his name hinting at simplicity) defends the old Aristotelian/Church view, and Sagredo is the open-minded everyman in the middle. (The names themselves are not exam-relevant, but they show how Galileo framed the argument.)",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "Einstein took Galileo's principle and combined it with Maxwell's equations of electromagnetism. What crucial consequence followed for the speed of light?",
+      "options": [
+        "The speed of light must be the same for every inertial observer, regardless of their motion",
+        "The speed of light depends on how fast the observer is moving towards the source",
+        "The speed of light can be exceeded inside a smoothly moving frame",
+        "The speed of light is only constant for observers who are truly at rest"
+      ],
+      "answer": 0,
+      "explanation": "If the laws of physics are identical for all inertial observers, then Maxwell's laws of electromagnetism are too, and the speed of light that falls out of those laws must also be the same for every inertial observer, however fast they move. This invariance of light speed is the seed of Einstein's special relativity. Option 2 describes the pre-relativity (Galilean velocity-addition) intuition, which turns out to be wrong for light.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Explain what an inertial frame of reference is and why the sealed sailor cannot detect the ship's motion within one.",
+      "keyPoints": [
+        "An inertial frame moves at constant velocity (no acceleration, no turning) in a straight line",
+        "Everything inside shares the frame's common motion equally",
+        "Because the motion is shared by all objects, it has no effect on how they behave relative to one another",
+        "All experiments come out identical to those done at rest, so no internal experiment can reveal the motion",
+        "Constant-velocity motion and rest are physically indistinguishable from inside the frame"
+      ],
+      "explanation": "The sailor's cabin is an inertial frame: it glides at constant velocity, so the sailor, the air, dropped water and thrown balls all share that forward motion. Shared motion is 'idle and inconsequential' to the relations among objects, so every experiment behaves exactly as it would at rest, leaving no measurement that could distinguish motion from rest.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Describe why Galileo used a moving ship (rather than a real demonstration on the Earth) to argue that the Earth could be moving without us feeling it.",
+      "keyPoints": [
+        "He could not physically fly a stone off a spinning Earth, so he built the argument in the imagination",
+        "A ship was an everyday machine that could carry a whole small world along smoothly at steady speed",
+        "In a windowless hold, experiments (falling water drops, flies, thrown balls, jumping) behave exactly as on land",
+        "This shows a smoothly moving system feels identical to a stationary one",
+        "By analogy, the Earth can move smoothly through space, carrying its air and people, without us feeling wind or seeing stones fall behind us"
+      ],
+      "explanation": "The ship was the one familiar object that carried a complete little world at constant velocity, letting Galileo make the equivalence of motion and rest concrete. Transferring the conclusion to the Earth defeats the Aristotelian 'common sense' objection: the lack of any felt motion is exactly what a smoothly moving Earth would produce.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "questions": [
+    {
+      "id": "m506-q01",
+      "type": "mc",
+      "q": "Where is gravitational potential energy defined to be zero, and what sign does it therefore take everywhere else?",
+      "options": [
+        "Zero at the planet's surface; positive above the surface and negative below it",
+        "Zero infinitely far away; negative everywhere at a finite distance",
+        "Zero at the centre of the planet; positive everywhere outside it",
+        "Zero infinitely far away; positive everywhere at a finite distance"
+      ],
+      "answer": 1,
+      "explanation": "The one non-arbitrary choice is U = 0 at infinity, where the masses no longer interact. Because gravity is attractive, you must do positive work to drag a mass out to infinity, so every finite point has less energy than zero and U is negative - 'zero at infinity, negative everywhere'. Choosing the surface as zero is the Year-11 mgh habit; it is arbitrary and hides the true structure, so that option is wrong.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m506-q02",
+      "type": "mc",
+      "q": "As a mass moves from a low orbit to a much higher orbit, what happens to its gravitational potential energy U = -GMm/r?",
+      "options": [
+        "It becomes more negative, because the mass is further away",
+        "It stays the same, because U depends only on the masses",
+        "It becomes less negative, rising toward zero as r increases",
+        "It becomes positive once the mass is above the atmosphere"
+      ],
+      "answer": 2,
+      "explanation": "With r on the bottom of a negative fraction, increasing r shrinks the fraction, so U climbs toward zero from below - it becomes less negative (a gain in potential energy). The common error is to think 'further away = more negative'; in fact the deepest (most negative) U is at the smallest r, at the bottom of the well. U never turns positive for gravity because gravity only ever pulls.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m506-q03",
+      "type": "recall",
+      "q": "Explain why the gravitational potential energy of a mass in a gravitational field is always negative, and what it means to say it is zero at infinity.",
+      "keyPoints": [
+        "Gravitational potential energy is defined as zero when the two masses are infinitely far apart, where they no longer interact.",
+        "Gravity is attractive, so positive work must be done on the mass to pull it from a finite distance out to infinity.",
+        "Therefore every point at a finite distance has less energy than at infinity (less than zero), so U is negative.",
+        "The closer in you are (smaller r), the deeper the well and the more negative U becomes. Mnemonic: 'zero at infinity, negative everywhere.'"
+      ],
+      "explanation": "The full-mark answer names infinity as the zero point AND links the negative sign to gravity being attractive (work needed to reach infinity). A weak answer that just says 'it is below the ground' or picks the surface as zero misses the structure and earns nothing.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m506-q04",
+      "type": "mc",
+      "q": "For a satellite in a circular orbit, the kinetic, potential and total energies sit in a fixed ratio. Measured in units of GMm/2r, that ratio (K : U : E) is:",
+      "options": [
+        "+1 : +2 : +3",
+        "+1 : -2 : -1",
+        "-1 : +2 : +1",
+        "+2 : -1 : +1"
+      ],
+      "answer": 1,
+      "explanation": "K = +GMm/2r (that is +1 unit), U = -GMm/r (which is -2 units of GMm/2r), so E = K + U = -GMm/2r (-1 unit): +1, -2, -1. This is the virial pattern - the potential term is twice the kinetic term and opposite in sign, so once you know any one energy the other two are fixed. The distractors miss that U is exactly twice the size of K.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m506-q05",
+      "type": "worked",
+      "q": "A 500 kg satellite is in a circular orbit of radius 7.0 x 10^6 m around the Earth. Calculate its total mechanical energy. Take GM for the Earth as 3.98 x 10^14 m^3 s^-2.",
+      "given": "\\(m = 500\\,\\mathrm{kg}\\),  \\(r = 7.0\\times10^{6}\\,\\mathrm{m}\\),  \\(GM = 3.98\\times10^{14}\\,\\mathrm{m^3\\,s^{-2}}\\)",
+      "working": [
+        "The total energy of a circular orbit is \\(E = -\\dfrac{GMm}{2r}\\).",
+        "\\(GMm = (3.98\\times10^{14})(500) = 1.99\\times10^{17}\\)",
+        "\\(2r = 2(7.0\\times10^{6}) = 1.4\\times10^{7}\\,\\mathrm{m}\\)",
+        "\\(E = -\\dfrac{1.99\\times10^{17}}{1.4\\times10^{7}}\\)",
+        "\\(E \\approx -1.42\\times10^{10}\\,\\mathrm{J}\\)"
+      ],
+      "answerValue": -1.42e10,
+      "answerUnit": "J",
+      "tolerance": 1e8,
+      "explanation": "Using E = -GMm/2r gives -1.42 x 10^10 J. The negative sign is the point: a bound orbit has negative total energy, meaning the satellite lacks the energy to climb out to infinity (where E = 0). Note E equals minus the kinetic energy, a check of the +1, -2, -1 pattern.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m506-q06",
+      "type": "mc",
+      "q": "To move a satellite from a low circular orbit up to a higher circular orbit, what must happen to its total energy, and what happens to its orbital speed?",
+      "options": [
+        "Energy must be added, and the orbital speed increases",
+        "Energy must be removed, and the orbital speed increases",
+        "Energy must be added, yet the orbital speed decreases",
+        "Energy must be removed, and the orbital speed decreases"
+      ],
+      "answer": 2,
+      "explanation": "Since E = -GMm/2r rises toward zero as r grows, raising the orbit requires adding energy. Yet orbital speed v = sqrt(GM/r) falls as r grows, so the satellite ends up slower. Both are true because the potential energy rises twice as fast as the kinetic energy falls (+1, -2, -1), so the total still increases. The trap is reasoning from speed alone and concluding you remove energy - 'higher is slower but bigger-energy'.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m506-q07",
+      "type": "worked",
+      "q": "A 500 kg satellite is to be raised from a low circular orbit of radius 7.0 x 10^6 m to a higher circular orbit of radius 1.4 x 10^7 m. Calculate the energy that must be supplied. Take GM for the Earth as 3.98 x 10^14 m^3 s^-2.",
+      "given": "\\(m = 500\\,\\mathrm{kg}\\),  \\(r_1 = 7.0\\times10^{6}\\,\\mathrm{m}\\),  \\(r_2 = 1.4\\times10^{7}\\,\\mathrm{m}\\),  \\(GM = 3.98\\times10^{14}\\,\\mathrm{m^3\\,s^{-2}}\\)",
+      "working": [
+        "Energy supplied = change in total energy = \\(\\dfrac{GMm}{2}\\left(\\dfrac{1}{r_1} - \\dfrac{1}{r_2}\\right)\\).",
+        "\\(\\dfrac{GMm}{2} = \\dfrac{(3.98\\times10^{14})(500)}{2} = 9.95\\times10^{16}\\)",
+        "\\(\\dfrac{1}{r_1} = \\dfrac{1}{7.0\\times10^{6}} = 1.43\\times10^{-7}\\),  \\(\\dfrac{1}{r_2} = \\dfrac{1}{1.4\\times10^{7}} = 7.14\\times10^{-8}\\)",
+        "bracket \\(= 1.43\\times10^{-7} - 7.14\\times10^{-8} = 7.14\\times10^{-8}\\)",
+        "\\(E_\\text{supplied} = (9.95\\times10^{16})(7.14\\times10^{-8}) \\approx 7.1\\times10^{9}\\,\\mathrm{J}\\)"
+      ],
+      "answerValue": 7.1e9,
+      "answerUnit": "J",
+      "tolerance": 1e8,
+      "explanation": "The energy needed is the difference in total energies, GMm/2 (1/r1 - 1/r2) = 7.1 x 10^9 J, a positive value because r2 > r1. The sting: even though the satellite is slower in the higher orbit, you had to add about 7 billion joules, because total energy rose. Reason from E = -GMm/2r, never from speed alone.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m506-q08",
+      "type": "worked",
+      "q": "Calculate the escape velocity from the surface of the Earth. Take the mass of the Earth as 5.97 x 10^24 kg, the radius of the Earth as 6.37 x 10^6 m, and G as 6.67 x 10^-11 N m^2 kg^-2.",
+      "given": "\\(M = 5.97\\times10^{24}\\,\\mathrm{kg}\\),  \\(r = R = 6.37\\times10^{6}\\,\\mathrm{m}\\),  \\(G = 6.67\\times10^{-11}\\)",
+      "working": [
+        "Escape velocity \\(v_\\text{esc} = \\sqrt{\\dfrac{2GM}{r}}\\), with r = R at the surface (nothing to add).",
+        "\\(2GM = 2(6.67\\times10^{-11})(5.97\\times10^{24}) = 7.96\\times10^{14}\\)",
+        "\\(\\dfrac{2GM}{r} = \\dfrac{7.96\\times10^{14}}{6.37\\times10^{6}} = 1.25\\times10^{8}\\)",
+        "\\(v_\\text{esc} = \\sqrt{1.25\\times10^{8}} \\approx 1.12\\times10^{4}\\,\\mathrm{m\\,s^{-1}}\\)"
+      ],
+      "answerValue": 11200,
+      "answerUnit": "m/s",
+      "tolerance": 200,
+      "explanation": "Using v_esc = sqrt(2GM/r) with r = R gives about 1.12 x 10^4 m/s, i.e. 11.2 km/s. The mass of the escaping object never enters - it cancels from the energy equation - so a feather and a spaceship need the same launch speed. If a question gives you the rocket's mass, it is a distractor.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m506-q09",
+      "type": "mc",
+      "q": "The escape velocity from a planet's surface is 11.2 km/s. What is the orbital velocity of a satellite skimming that same surface, and why?",
+      "options": [
+        "22.4 km/s, because escape needs half the orbital speed",
+        "About 7.9 km/s, because escape velocity is root two times the orbital velocity at the same radius",
+        "11.2 km/s, because the two speeds are always equal",
+        "About 5.6 km/s, because orbital velocity is half the escape velocity"
+      ],
+      "answer": 1,
+      "explanation": "v_esc = sqrt(2GM/r) and v_orbit = sqrt(GM/r), so v_esc = root2 x v_orbit ('root two to break free'). Dividing 11.2 km/s by 1.41 gives about 7.9 km/s. The factor is root two (about 1.41), not 2 or 1/2, so the doubling and halving options are wrong; escape is the bigger of the two speeds.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m506-q10",
+      "type": "recall",
+      "q": "Derive escape velocity from conservation of energy, and explain why it does not depend on the mass of the escaping object.",
+      "keyPoints": [
+        "To just escape, the object reaches infinity with zero speed, so total energy at infinity = K + U = 0 + 0 = 0.",
+        "Gravity is conservative, so total energy is conserved: the total energy at the surface also equals zero.",
+        "Surface energy equation: (1/2)m v_esc^2 + (-GMm/r) = 0, so (1/2)m v_esc^2 = GMm/r.",
+        "The object's mass m appears on both sides and cancels, giving v_esc^2 = 2GM/r and v_esc = sqrt(2GM/r).",
+        "Because m cancels, escape velocity is independent of the escaping object's mass - a heavier object has proportionally more kinetic energy but also sits in a proportionally deeper (more negative) well, and the two scale together."
+      ],
+      "explanation": "Full marks: set total energy to zero from 'reach infinity at rest', write the surface energy equation, cancel m to reach sqrt(2GM/r), and state that the mass cancels so escape speed is mass-independent. This is the same Galilean mass-independence seen for falling and orbiting. Mnemonic: 'root two to break free.'",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    }
+  ]
+}

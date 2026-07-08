@@ -1,0 +1,148 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What is Einstein's key postulate that the photon-clock derivation is built on?",
+      "options": [
+        "The speed of light is the same for every inertial observer, no matter how they are moving",
+        "Time flows at the same rate for everyone everywhere in the universe",
+        "Nothing can ever travel faster than a beam of light",
+        "The speed of light adds to the speed of its source, like a ball thrown from a train"
+      ],
+      "answer": 0,
+      "explanation": "Einstein postulated that light always travels at the same speed c for every inertial observer, regardless of their motion. The whole derivation follows from refusing to let the light speed up for the Earth observer. Option 3 is the Newtonian velocity-addition rule Einstein deliberately rejected, and option 1 describes the old universal-time picture the result overturns.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "In the thought experiment, what is a 'photon clock' (light clock)?",
+      "options": [
+        "A flash of light that bounces from a source up to a mirror and back to a detector, one round trip being one tick",
+        "An atomic clock that counts the vibrations of a caesium atom",
+        "A radioactive particle whose decay marks off equal intervals of time",
+        "A pendulum whose swing is timed by a beam of light passing through it"
+      ],
+      "answer": 0,
+      "explanation": "The light clock is an imaginary device: a light source at the bottom, a mirror a distance above it, and the round trip up-and-back counts as one tick. Its simplicity is what lets the derivation use nothing but geometry. The other options are real timekeepers but not the device used in this derivation.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "For the astronaut travelling with the clock, what path does the light take, and why does she notice nothing unusual?",
+      "options": [
+        "A straight vertical line up and back down, because the clock is at rest relative to her",
+        "A diagonal V-shape, because she is moving with the ship",
+        "A curved arc, because the ship is accelerating",
+        "No path at all, because from her frame the light is frozen in place"
+      ],
+      "answer": 0,
+      "explanation": "In the astronaut's own frame the clock sits right beside her, so the light simply goes straight up to the mirror and straight back down. Nothing seems odd because she is at rest relative to her own clock. The diagonal V-path is what the Earth observer sees, not the astronaut.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "Why does the Earth-based observer see the light travel a longer, diagonal path than the astronaut does?",
+      "options": [
+        "Because the whole ship (and mirror) slides sideways while the light is in flight, so the light must also move sideways to keep up",
+        "Because light bends as it passes near the massive Earth",
+        "Because the Earth observer is further away and the light spreads out",
+        "Because the mirror tilts as the ship speeds up"
+      ],
+      "answer": 0,
+      "explanation": "From Earth the ship moves sideways during the flight time, so by the time the flash reaches the mirror and returns, both have shifted forward. The light therefore traces a stretched-out V (a diagonal) that is longer than the astronaut's straight up-and-down path. This is ordinary relative motion, not gravitational bending or spreading.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "The Earth observer's light covers a greater distance, yet its speed is locked at c. According to the derivation, what must 'give' to make this consistent?",
+      "options": [
+        "The time for one tick must be longer, so the moving clock runs slow as seen from Earth",
+        "The speed of the light must increase to cover the extra distance",
+        "The distance up to the mirror must shrink to compensate",
+        "The mass of the photon must increase"
+      ],
+      "answer": 0,
+      "explanation": "With speed fixed at c and distance increased, time = distance / speed forces the time interval to be larger. So the Earth observer measures a longer tick, meaning the moving clock runs slow. Letting the speed increase (option 1) is exactly what Einstein's postulate forbids.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "Which piece of mathematics is used to turn the light-clock geometry into the time-dilation equation?",
+      "options": [
+        "Pythagoras's theorem, applied to the right-angled triangle formed by the light's path",
+        "Calculus, by integrating the light's velocity over time",
+        "The quadratic formula, applied to the photon's energy",
+        "Trigonometric identities relating the angles of the mirror"
+      ],
+      "answer": 0,
+      "explanation": "The Earth frame sees a right triangle: the vertical side D (straight-up distance), the horizontal side L (how far the ship slid), and the hypotenuse s (the actual diagonal path). Setting s^2 = D^2 + L^2 and substituting the distances as c and v times the time intervals yields the time-dilation relation. No calculus or trig identities are needed.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "In the derivation, the Lorentz factor gamma (γ) relates the two measured times. What is true of γ for a ship moving slower than light?",
+      "options": [
+        "γ is always greater than 1, so Δt (Earth) is always larger than Δτ (astronaut)",
+        "γ is always less than 1, so the Earth time is smaller",
+        "γ equals exactly 1 at all speeds",
+        "γ can be negative when the ship moves fast enough"
+      ],
+      "answer": 0,
+      "explanation": "Since γ = 1/√(1 − v²/c²) and v²/c² is between 0 and 1, the denominator is less than 1, making γ greater than 1. With Δt = γΔτ, the Earth-measured time is always the larger one, and the faster the ship, the bigger the stretch. γ never drops below 1 or goes negative for sub-light speeds.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "The script cites real evidence that time dilation is not just a clever story. Which pair of examples does it give?",
+      "options": [
+        "Cosmic-ray particles from the upper atmosphere reaching the ground, and GPS satellite atomic clocks needing correction",
+        "The bending of starlight during a solar eclipse, and the perihelion of Mercury",
+        "The photoelectric effect, and the emission spectrum of hydrogen",
+        "The double-slit interference of electrons, and the tunnelling of alpha particles"
+      ],
+      "answer": 0,
+      "explanation": "The narration points to fast particles born high in the atmosphere that should decay before reaching the ground but arrive in their millions (their internal clocks run slow), and to GPS atomic clocks whose different tick rate must be corrected or navigation drifts by kilometres a day. The eclipse and Mercury results are evidence for general relativity, not this special-relativity time-dilation result.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "worked",
+      "q": "A spaceship passes Earth at v = 0.80c. The astronaut's photon clock measures a tick of Δτ = 3.0 s. What time interval Δt does the Earth observer measure for that same tick?",
+      "given": ["v = 0.80c", "Δτ = 3.0 s", "Δt = γΔτ, with γ = 1/√(1 − v²/c²)"],
+      "working": [
+        "Compute v²/c² = (0.80)² = 0.64",
+        "1 − v²/c² = 1 − 0.64 = 0.36",
+        "√0.36 = 0.60, so γ = 1/0.60 = 1.667",
+        "Δt = γΔτ = 1.667 × 3.0 s = 5.0 s"
+      ],
+      "answerValue": 5.0,
+      "answerUnit": "s",
+      "tolerance": 0.1,
+      "explanation": "The Lorentz factor at 0.80c is γ = 1/√(1 − 0.64) = 1/0.6 ≈ 1.67. Applying Δt = γΔτ gives 1.67 × 3.0 s = 5.0 s. The Earth observer measures the longer interval, confirming the moving clock runs slow. A common mistake is to divide instead of multiply, or to forget to square v/c.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Explain how the photon-clock thought experiment leads from Einstein's postulate to the conclusion that moving clocks run slow. Summarise the logical chain.",
+      "keyPoints": [
+        "Start from the postulate that light travels at the same speed c for every inertial observer",
+        "The astronaut sees the light go straight up and back a distance 2D in her time Δτ",
+        "The Earth observer sees the ship slide sideways, so the light traces a longer diagonal V-path (2s)",
+        "Because the speed c is fixed but the Earth path is longer, the Earth time interval Δt must be larger",
+        "Pythagoras on the triangle (s² = D² + L²) gives Δt = Δτ/√(1 − v²/c²) = γΔτ",
+        "Since γ > 1, the moving clock is measured to run slow from Earth"
+      ],
+      "explanation": "The derivation needs no experiment or machinery: take the single fixed fact that light's speed is invariant, draw the right triangle the Earth observer sees, apply Pythagoras, and the time-dilation relation Δt = γΔτ falls out. Because γ is always greater than 1, a clock moving relative to you ticks slow. Time is not Newton's universal river; it depends on relative motion.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

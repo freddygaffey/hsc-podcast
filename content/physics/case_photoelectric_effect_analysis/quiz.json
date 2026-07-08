@@ -1,0 +1,158 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What was the central paradox that opened the photoelectric puzzle?",
+      "options": [
+        "A dim violet light ejected electrons from a metal plate, while an intensely bright red light ejected none at all",
+        "A bright red light ejected electrons, but a dim violet light did not",
+        "Electrons were ejected only in complete darkness",
+        "The metal plate glowed but never released any electrons"
+      ],
+      "answer": 0,
+      "explanation": "The script's hook is that a feeble violet (high-frequency) light instantly frees electrons, while a blazing bright red (low-frequency) light frees none. This is impossible under wave theory, where brightness (intensity) alone should determine whether electrons escape. The reversed option is wrong because it contradicts the actual observation: colour (frequency), not brightness, decided whether electrons came off.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "According to the classical wave theory of light held around 1900, what should determine whether a light can knock electrons out of a metal?",
+      "options": [
+        "The frequency (colour) of the light only",
+        "The intensity (brightness) of the light, so a bright enough light of any colour should work",
+        "Planck's constant multiplied by the work function",
+        "Whether the light is a particle or a wave"
+      ],
+      "answer": 1,
+      "explanation": "Wave theory treats a light wave's energy as set by its amplitude, i.e. its brightness, like the height of an ocean wave. So a bright enough light of any colour should eventually free electrons, and a dim light should work if you wait for the electron to 'soak up' energy. Frequency-dependence was exactly what wave theory did NOT predict, which is why the real results were so shocking.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Who first noticed, in 1887, that ultraviolet light made sparks jump more easily across a gap, an accidental first glimpse of the photoelectric effect?",
+      "options": [
+        "Albert Einstein",
+        "Robert Millikan",
+        "Heinrich Hertz",
+        "James Clerk Maxwell"
+      ],
+      "answer": 2,
+      "explanation": "With delicious irony, Hertz spotted the first hint while doing the very experiments that confirmed Maxwell's light-as-a-wave theory: UV light made his sparks leap the gap more easily. He noted it as curious and moved on. Millikan and Einstein came later; Maxwell provided the wave theory the effect would overturn, not the observation.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "In Lenard's apparatus, how did he measure the maximum energy of the ejected electrons?",
+      "options": [
+        "By weighing the metal emitter before and after illumination",
+        "By applying an opposing (repelling) voltage and increasing it until the current fell to zero, the stopping voltage",
+        "By measuring how bright the light needed to be",
+        "By timing how long the electrons took to cross the tube"
+      ],
+      "answer": 1,
+      "explanation": "Lenard put a repelling voltage on the far electrode to push back against the electrons, then turned it up until even the fastest electron was just barely turned around and the current dropped to zero. That stopping voltage is a direct measure of the maximum kinetic energy the electrons had on leaving the metal. Brightness and timing were things he varied, not the energy gauge.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "When Lenard increased the brightness of the light while keeping its colour fixed, what happened?",
+      "options": [
+        "The maximum energy of each electron increased",
+        "The stopping voltage rose steadily",
+        "More electrons were ejected, but each came off with the same maximum energy as before",
+        "Fewer electrons were ejected, each with more energy"
+      ],
+      "answer": 2,
+      "explanation": "Brighter light of the same colour ejected MORE electrons but did not change the maximum energy of any of them, so the stopping voltage did not budge. Wave theory predicted brighter light should mean more energetic electrons, which is why this result was impossible for classical physics. Energy depended on colour (frequency), not brightness.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "What is the 'threshold frequency' revealed by the experiment?",
+      "options": [
+        "The frequency at which the electrons travel fastest",
+        "A minimum frequency below which no electrons are ejected at all, no matter how bright or how long the light shines",
+        "The frequency at which the light becomes a wave rather than a particle",
+        "The frequency equal to Planck's constant"
+      ],
+      "answer": 1,
+      "explanation": "Below a certain frequency (a certain colour, e.g. red) no electrons come off at all, not even a trickle, however intense the light or however long it shines. This 'cliff edge' is the threshold frequency. It cannot be a value of Planck's constant (which is a constant, not a frequency), and it marks a hard cut-off, not a speed maximum.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "In Einstein's 1905 explanation, what does a single photon's energy depend on?",
+      "options": [
+        "Only the light's frequency, given by Planck's constant times the frequency",
+        "Only the light's brightness or intensity",
+        "The work function of the metal it strikes",
+        "The number of other photons arriving at the same time"
+      ],
+      "answer": 0,
+      "explanation": "Einstein proposed light arrives in indivisible packets (photons) whose energy is Planck's constant multiplied by the frequency (E = hf). High-frequency violet photons carry more energy than low-frequency red ones. Brightness only sets how MANY photons arrive, not each one's energy; the work function is a property of the metal, not of the photon.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "In the photon picture, why does an intensely bright red light eject no electrons while a dim violet light does?",
+      "options": [
+        "Red photons are absorbed before they reach the metal",
+        "Each red photon has too little energy to pay the work function 'toll', and an electron cannot combine the energy of two photons, whereas a single violet photon carries enough on its own",
+        "Red light travels too slowly to reach the plate",
+        "Violet light is always brighter than red light"
+      ],
+      "answer": 1,
+      "explanation": "It is one photon, one electron, a private collision. A red photon's energy is below the work function toll, so it fails, and sending a billion of them just gives a billion failed payments because an electron cannot save up energy from two photons. A single higher-frequency violet photon exceeds the toll on its own, so it frees an electron immediately, even from a dim beam.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "mc",
+      "q": "What was the outcome of Robert Millikan's decade-long effort on the photoelectric effect?",
+      "options": [
+        "He disproved Einstein's photon idea and restored wave theory",
+        "He set out to prove Einstein wrong but instead confirmed the theory precisely, and his slope gave a value for Planck's constant that agreed with everything else",
+        "He abandoned the experiments without any clear result",
+        "He discovered the threshold frequency for the first time"
+      ],
+      "answer": 1,
+      "explanation": "Millikan thought the photon was nonsense and spent about ten years trying to demolish it, but his exquisite measurements traced Einstein's straight line perfectly and yielded a value of Planck's constant consistent with other methods. Trying his hardest to bury the theory, he ended up confirming it, which is how you know a result is real. The threshold was already seen in Lenard's earlier work.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "State Einstein's photoelectric equation in words and explain what the slope of an electron-energy-versus-frequency graph reveals.",
+      "keyPoints": [
+        "Maximum kinetic energy of an ejected electron = photon energy minus the work function",
+        "Photon energy = Planck's constant times frequency (E = hf)",
+        "The work function is the fixed energy 'toll' needed to free an electron from the metal surface",
+        "Plotting maximum electron energy against light frequency gives a straight line",
+        "The slope of that straight line equals Planck's constant itself"
+      ],
+      "explanation": "Einstein wrote the result as a straight line: the maximum energy of an ejected electron equals the photon's energy (hf) minus the work function. Graphing electron energy against frequency yields a straight line whose gradient is Planck's constant, the same fundamental number appearing in an experiment about metal plates. This is precisely the line Millikan later confirmed.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q11",
+      "type": "recall",
+      "q": "Why did the photoelectric effect matter so much to physics, and what did it establish about the nature of light?",
+      "keyPoints": [
+        "It showed classical wave theory could not explain the four key results (energy set by frequency not brightness, threshold frequency, instant emission, more electrons with brightness)",
+        "It established that light also arrives as particles (photons) carrying energy in discrete packets set by frequency",
+        "Combined with interference (Young's slits) showing light is a wave, it revealed light's wave-particle duality",
+        "This duality is the foundation of quantum physics",
+        "Einstein won the 1921 Nobel Prize for the law of the photoelectric effect, not for relativity"
+      ],
+      "explanation": "The effect tore a hole in classical physics: none of Lenard's four results were things a wave could do. Einstein's photon explained them all and proved light is not only a wave but also a stream of particles, carrying energy in discrete quanta. Light being both wave and particle is the strange foundation of the whole quantum world, and it earned Einstein his 1921 Nobel Prize.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

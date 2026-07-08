@@ -1,0 +1,160 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "Why couldn't 18th-century scientists determine the mass of the Earth directly from watching objects fall, even though they had Newton's law of universal gravitation?",
+      "options": [
+        "Newton's law was known to be wrong at the time and gave impossible answers",
+        "A falling object only reveals the product of G and the Earth's mass, so the two unknowns could not be separated",
+        "They could not measure how fast objects fall with enough precision",
+        "The radius of the Earth had not yet been measured"
+      ],
+      "answer": 1,
+      "explanation": "The acceleration of a falling stone depends on G multiplied by the Earth's mass as a single lump; measuring the fall only ever gives that product, so the two unknowns stay tangled together. Option 3 is wrong because the fall rate was measurable and precise measurement was not the barrier; the Earth's radius (option 4) was already known reasonably well.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "What was the central purpose of Cavendish's 1798 torsion-balance experiment?",
+      "options": [
+        "To prove that gravity acts between all masses, not just between the Earth and objects",
+        "To measure the gravitational constant G by detecting the tiny attraction between lead balls in the laboratory",
+        "To measure the acceleration due to gravity, g, at the Earth's surface",
+        "To show that the Earth orbits the Sun"
+      ],
+      "answer": 1,
+      "explanation": "By measuring the faint gravitational pull between masses on a tabletop, Cavendish could isolate G by itself. Option 3 is wrong because g was already known; the whole point was that g alone could not separate G from the Earth's mass. The experiment assumed universal gravitation (option 1) rather than trying to prove it.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "How does a torsion balance let you measure an extremely small force?",
+      "options": [
+        "The fibre stretches downward in proportion to the weight hung on it",
+        "A twisted fibre exerts a restoring torque proportional to the angle of twist, so a tiny force produces a measurable rotation",
+        "The rod amplifies the force by acting as a long lever arm against gravity",
+        "The lead spheres become magnetised and repel one another"
+      ],
+      "answer": 1,
+      "explanation": "The fibre resists twisting with a restoring torque equal to a wire constant times the twist angle, so even a whisper of a force twists it to a definite, measurable angle. Option 1 describes a spring balance under weight, not torsion; magnetism (option 4) plays no role, the effect is purely gravitational.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "At the point where the torsion balance settles and stops rotating, what is true?",
+      "options": [
+        "The gravitational torque is much larger than the wire's restoring torque",
+        "The gravitational torque exactly equals the wire's restoring torque (zero net torque)",
+        "There is no gravitational force acting on the small spheres",
+        "The fibre has stopped exerting any torque"
+      ],
+      "answer": 1,
+      "explanation": "The rod turns until the gravitational torque pulling it round is exactly balanced by the restoring torque of the twisted wire, giving zero net torque. Setting these equal (gravitational torque = k times theta) is what lets G be solved for. The forces do not vanish (options 3, 4); they are equal and opposite.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "How did Cavendish make a rotation far too small to see with the naked eye into a readable measurement?",
+      "options": [
+        "He used a powerful microscope aimed directly at the fibre",
+        "He fixed a mirror to the balance and bounced a light beam onto a distant scale, so a tiny twist swept the spot a large distance",
+        "He timed how long the rod took to complete a full rotation",
+        "He weighed the deflected rod on a sensitive balance"
+      ],
+      "answer": 1,
+      "explanation": "A mirror on the balance reflected a beam of light onto a scale far across the room; rotating the mirror by a hair sweeps the far end of the beam through a wide arc, optically amplifying the movement. This lever-of-light trick is why an invisible twist became a visible glide along a ruler.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "Why did Cavendish seal the apparatus in a case and observe it from another room through a telescope?",
+      "options": [
+        "To keep the lead balls from being stolen",
+        "So that air draughts and his own body heat would not disturb a force barely stronger than nothing",
+        "Because the light beam could only be seen in total darkness",
+        "To let the fibre cool down between measurements"
+      ],
+      "answer": 1,
+      "explanation": "The gravitational force he was measuring was so faint that a stray draught or the warmth of his own body could swamp the reading, so he isolated the apparatus and watched remotely. This obsessive control of confounding influences is what made the result trustworthy.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Once Cavendish had a value for G on its own, what could immediately be worked out that had been impossible before?",
+      "options": [
+        "The exact age of the Earth",
+        "The mass of the Earth, by dividing G out of the previously inseparable product of G and Earth's mass",
+        "The distance from the Earth to the Sun",
+        "The speed of light"
+      ],
+      "answer": 1,
+      "explanation": "Gravity had always handed over G times the Earth's mass as one lump; knowing G alone let him divide it out and finally obtain the Earth's mass, effectively weighing the planet. The other quantities do not follow directly from G in this way.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "Cavendish was actually chasing the density of the Earth. What did his density result suggest about the planet's interior?",
+      "options": [
+        "The Earth is uniform rock all the way through",
+        "The Earth is far denser than its surface rocks, hinting at something heavy such as iron at its core",
+        "The Earth is hollow",
+        "The Earth's core is made of water"
+      ],
+      "answer": 1,
+      "explanation": "His result showed the planet was much denser than its crust, evidence for a heavy metallic (iron) core; the supplementary notes his density was about 80% that of liquid iron and 80% above the crust. A uniform rocky Earth would give a much lower average density.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "worked",
+      "q": "Cavendish's experiment yielded G = 6.74 x 10^-11 m^3 kg^-1 s^-2. The modern accepted value used in the HSC is 6.67 x 10^-11 m^3 kg^-1 s^-2. Calculate the percentage difference of Cavendish's value from the accepted value.",
+      "given": "Cavendish's value G = 6.74 x 10^-11; accepted value G = 6.67 x 10^-11 (both in m^3 kg^-1 s^-2)",
+      "working": [
+        "Percentage difference = |experimental - accepted| / accepted x 100%",
+        "Difference = (6.74 - 6.67) x 10^-11 = 0.07 x 10^-11",
+        "Ratio = 0.07 / 6.67 = 0.0105",
+        "0.0105 x 100% = 1.05%"
+      ],
+      "answerValue": 1.05,
+      "answerUnit": "%",
+      "tolerance": 0.15,
+      "explanation": "The difference of 0.07 x 10^-11 over the accepted 6.67 x 10^-11 gives about 1%. That an experiment done in 1798 with wood, wire and candlelight landed within roughly 1% of the value accepted over two centuries later shows the remarkable precision of Cavendish's method.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Explain how Cavendish's torsion balance allowed the value of G to be extracted. Outline the balance of torques and which quantities were known versus measured.",
+      "keyPoints": [
+        "Two large lead masses were placed near two small masses on the ends of a rod hung from a thin fibre, gravitationally pulling the rod round",
+        "The rod rotated until the gravitational torque was balanced by the wire's restoring torque (restoring torque = k times theta)",
+        "The wire constant k was determined beforehand (from the balance's oscillation period)",
+        "The twist angle theta was measured via the reflected light beam on a distant scale; the masses and separation distances were known",
+        "Setting gravitational torque equal to k times theta and rearranging leaves G as the only unknown, so it can be calculated"
+      ],
+      "explanation": "At equilibrium the gravitational torque equals the restoring torque k times theta. Because k, the masses and the geometry are known and theta is measured, rearranging the balance equation isolates G. This is how a tabletop apparatus pinned down a fundamental constant of the universe.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q11",
+      "type": "recall",
+      "q": "Why is measuring the gravitational constant G so significant for physics as a whole, beyond just weighing the Earth?",
+      "keyPoints": [
+        "G is the constant that turns Newton's law of universal gravitation from a shape/relationship into an absolute scale",
+        "Without G, the masses of the Earth, Sun, planets and moons were all unknown because they depended on this one missing constant",
+        "With G known, we can weigh the Sun and distant planets just by watching how their gravity moves other objects",
+        "It lets us determine the mass of bodies we can never touch or reach"
+      ],
+      "explanation": "G is the single number that gives Newton's law absolute magnitude; once it is known, every mass that expresses itself through gravity becomes calculable. Finding it once, on a tabletop, effectively gave the entire cosmos a set of scales.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

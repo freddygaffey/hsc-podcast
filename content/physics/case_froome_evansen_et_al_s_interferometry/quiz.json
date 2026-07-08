@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What was the central strategy that let these interferometry experiments measure the speed of light so precisely?",
+      "options": [
+        "Timing a light pulse over a very long, known distance with an atomic clock",
+        "Never timing the light at all, but making the light interfere with itself and measuring a length instead",
+        "Watching Jupiter's moons appear and disappear to time light across the solar system",
+        "Spinning a toothed wheel fast enough to chop the beam into measurable pulses"
+      ],
+      "answer": 1,
+      "explanation": "The whole point of the method is that it refuses to time the beam. By splitting the light and recombining it, the speed is extracted from a measured distance and a known frequency, turning an impossible timing problem into a careful length measurement. Timing over a distance (option A) and the toothed wheel (option D) are the older, less precise approaches the method was designed to escape; Jupiter's moons only pinned the speed to within a percent.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "In a Michelson interferometer, what is the job of the half-silvered mirror at the centre?",
+      "options": [
+        "It absorbs half the light to dim the beam so the detector is not overwhelmed",
+        "It splits the incoming beam into two, and later recombines the two returning beams",
+        "It changes the frequency of one beam so the two can be compared",
+        "It focuses both beams to a single point to make them brighter"
+      ],
+      "answer": 1,
+      "explanation": "The half-silvered mirror lets half the light pass straight through and reflects the other half at a right angle, creating two beams sent down two arms; when they return it recombines them so they can interfere. It does not absorb the light, change its frequency, or focus it - those are misconceptions about what 'half-silvered' means.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "When one arm of the interferometer is lengthened so the two recombined beams are exactly half a wavelength out of step, what is observed?",
+      "options": [
+        "Maximum brightness, because the beams reinforce",
+        "Complete darkness, because every crest lands on a trough and the beams cancel",
+        "The beam splits into a rainbow of colours",
+        "The frequency of the light doubles"
+      ],
+      "answer": 1,
+      "explanation": "A half-wavelength offset means the crests of one beam land exactly on the troughs of the other, so they cancel completely - destructive interference, giving darkness. Maximum brightness (constructive interference) happens when the arms are equal and crests align. The method works precisely because this moment of darkness is so easy to spot.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "To make the beams fall half a wavelength out of step, how far must the movable mirror actually be moved back, and why?",
+      "options": [
+        "Half a wavelength, because the beam needs a half-wavelength head start",
+        "A quarter of a wavelength, because the light travels the extra path twice (out and back)",
+        "A full wavelength, because a whole cycle is needed to reach darkness",
+        "One eighth of a wavelength, because the beam splits into two halves"
+      ],
+      "answer": 1,
+      "explanation": "The light goes down the arm and comes back, so moving the mirror by a distance d adds 2d to the total path. To make the path difference equal to λ/2, the mirror only moves λ/4. Assuming the mirror moves λ/2 (option A) forgets the round trip and makes every result wrong by a factor of two - exactly the mistake the script warns is worth marks in an exam.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "Once the mirror displacement d has been measured, how is the speed of light calculated?",
+      "options": [
+        "c = d / t, dividing the distance by a measured time",
+        "c = f x 4d, since the wavelength is 4d and c = f x wavelength",
+        "c = f x d, since the wavelength equals the mirror displacement",
+        "c = 2fd, since the light travels the arm twice"
+      ],
+      "answer": 1,
+      "explanation": "The mirror moves d = λ/4, so the wavelength λ = 4d. Using the universal wave relation v = fλ with the known frequency f gives c = f x 4d = 4fd. No time is ever measured, so c = d/t (option A) is not used. Option C forgets the round-trip factor of four; option D uses the wrong factor.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "worked",
+      "q": "In a laser interferometry experiment, the light has frequency 6.00 x 10^14 Hz. The movable mirror is slid back until complete destructive interference is first observed, a displacement of 1.25 x 10^-7 m. Calculate the speed of light this measurement gives.",
+      "given": "f = 6.00 x 10^14 Hz; mirror displacement d = 1.25 x 10^-7 m; first destructive interference means d = λ/4",
+      "working": [
+        "The mirror displacement equals a quarter wavelength: d = λ/4",
+        "So the wavelength is λ = 4d = 4 x 1.25 x 10^-7 = 5.00 x 10^-7 m",
+        "Apply the wave equation c = fλ = (6.00 x 10^14)(5.00 x 10^-7)",
+        "Equivalently c = 4fd = 4 x (6.00 x 10^14) x (1.25 x 10^-7)",
+        "c = 3.00 x 10^8 m/s"
+      ],
+      "answerValue": 300000000,
+      "answerUnit": "m/s",
+      "tolerance": 1000000,
+      "explanation": "Because the light makes a round trip, the mirror moves only λ/4 to create a half-wavelength path difference, so λ = 4d = 5.00 x 10^-7 m. Multiplying by the known frequency via c = fλ (equivalently c = 4fd) gives 3.00 x 10^8 m/s. Forgetting the round trip and using λ = 2d would wrongly halve the answer.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Froome's 1958 experiment used radio (micro) waves rather than visible light. What was the intended advantage of the longer wavelength?",
+      "options": [
+        "Longer waves travel faster, so the speed is easier to reach",
+        "Any fixed error in measuring distance is a smaller fraction of a longer wavelength, improving relative precision",
+        "Radio waves do not interfere, so there is no darkness to misjudge",
+        "Longer waves make the interference fringes sharper and easier to locate"
+      ],
+      "answer": 1,
+      "explanation": "The logic was that a fixed sloppiness in measuring distance becomes a smaller fraction of the whole when the wavelength is large, so the relative error shrinks. All waves travel at the same c regardless of wavelength (option A is wrong), and longer waves actually make the fringes broader and harder to pin down (option D reverses the truth), which is exactly the catch that limited Froome.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "Why did Froome's long radio waves ultimately limit his precision, and how did Evansen et al overcome it in 1972?",
+      "options": [
+        "The radio waves were too weak to detect; a brighter laser fixed the signal strength",
+        "With long waves the interference fringes are broad and blurry, making the dark point hard to locate; a laser's short, pure visible wavelength gave razor-sharp fringes",
+        "The radio waves changed speed in air; the laser was used in a vacuum instead",
+        "Froome's clock was too slow; the laser allowed faster timing of the beam"
+      ],
+      "answer": 1,
+      "explanation": "With long wavelengths the fringes spread out and the moment of complete destructive interference is not sharp, so it is hard to say exactly where the darkness sits - this loss outweighed the ruler advantage. The laser delivered a single pure visible wavelength in a tight beam, so the fringes snapped sharp and the cancellation point could be pinpointed. Neither experiment ever timed the beam (option D), and the limit was fringe sharpness, not signal strength or air.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "mc",
+      "q": "How close was Evansen et al's 1972 value of 299,792.456 km/s to the modern accepted speed of light?",
+      "options": [
+        "Within about 2 metres per second - roughly one part in a hundred million",
+        "Within about 1 percent, the same as the old astronomical methods",
+        "Within about 2 kilometres per second",
+        "Exactly equal, with no difference at all"
+      ],
+      "answer": 0,
+      "explanation": "Their result sits only about 2 m/s from the value used today - a match of nearly one part in a hundred million on something moving at 3 x 10^8 m/s. That is far better than the roughly 1 percent of the old astronomical and rotating-mirror methods (option B), and it was not exactly equal (option D).",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Because the speed of light became so precisely known, how did the scientific community change the definition of the metre? Explain what was flipped around.",
+      "keyPoints": [
+        "Previously the speed of light was measured using the metre as the ruler",
+        "The measurement became so precise and trustworthy that the relationship was reversed",
+        "The metre is now defined in terms of the (fixed) speed of light rather than the reverse",
+        "The quantity we struggled for centuries to measure became the ruler for measuring everything else"
+      ],
+      "explanation": "Once c was one of the most precisely known numbers in science, it made sense to fix its value and define the metre from it, instead of measuring c against a physical metre. The thing we spent 300 years trying to measure became the standard against which length itself is now defined.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

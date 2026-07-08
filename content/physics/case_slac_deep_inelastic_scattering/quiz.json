@@ -1,0 +1,144 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What did the SLAC deep inelastic scattering experiments demonstrate?",
+      "options": [
+        "That protons and neutrons are not fundamental, but are made of smaller point-like particles",
+        "That the electron has internal structure",
+        "That the atom is mostly empty space with a dense nucleus",
+        "That a single free quark can be knocked out of a proton"
+      ],
+      "answer": 0,
+      "explanation": "The scattering pattern showed the proton contained tiny, hard, point-like lumps, meaning protons and neutrons are not fundamental but are composed of quarks. Option 2 is wrong: the electron was used as the probe precisely because it appears to be a structureless point. Option 3 describes Rutherford's earlier gold-foil result, not SLAC.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "Why were high-energy electrons an ideal probe for looking inside the proton?",
+      "options": [
+        "They are heavy, so they smash targets apart easily",
+        "They are point-like with no internal structure, and at high energy have a tiny wavelength that resolves fine detail",
+        "They carry no charge, so they pass cleanly through the proton",
+        "They are made of quarks themselves, so they interact strongly"
+      ],
+      "answer": 1,
+      "explanation": "An electron is as far as we know a structureless point, making it a clean probe with no messy structure of its own; and because a fast, energetic particle behaves like a wave with a tiny wavelength, it can resolve very small structure. Option 3 is wrong because electrons are charged, which is exactly how they interact with the charge inside the proton.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "What does 'deep inelastic scattering' mean in this experiment?",
+      "options": [
+        "The electrons bounced gently off the surface of the proton without losing energy",
+        "The electrons probed deep inside the proton and hit it so hard it shattered, spraying out other particles",
+        "The protons were fired deep into a block of lead",
+        "The scattering only happened at very low electron energies"
+      ],
+      "answer": 1,
+      "explanation": "'Deep' refers to the electrons probing deep inside the proton; 'inelastic' means they struck it hard enough to shatter it and spray out new particles, rather than gently bouncing. Option 1 describes elastic scattering, which is the opposite of what 'inelastic' means.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "Which historical experiment is SLAC deep inelastic scattering most directly analogous to?",
+      "options": [
+        "Millikan's oil-drop experiment measuring the electron's charge",
+        "Young's double-slit experiment",
+        "The Geiger-Marsden (Rutherford) gold-foil experiment that revealed the nucleus",
+        "Michelson-Morley's measurement of the speed of light"
+      ],
+      "answer": 2,
+      "explanation": "SLAC is Rutherford one level deeper: instead of alpha particles bouncing off a dense nucleus to reveal the atom's structure, electrons bounced off dense point-like lumps to reveal the proton's structure. Both used unexpected large-angle scattering to prove a small, hard core existed. Millikan measured charge, not internal structure.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "What result surprised the physicists and pointed to hard structure inside the proton?",
+      "options": [
+        "Electrons were scattered through large angles far more often than a soft, smeared-out proton could explain",
+        "No electrons were scattered at all",
+        "The electrons all passed straight through with zero deflection",
+        "The proton absorbed every electron completely"
+      ],
+      "answer": 0,
+      "explanation": "A soft, spread-out proton should have produced mostly gentle deflections and made big bounces vanishingly rare. Instead the team saw frequent violent, large-angle scattering, and it increased the harder they probed, indicating tiny, hard, point-like objects inside. Option 3 describes what everyone wrongly expected of a squishy proton.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "How many point-like objects did the scattering data indicate were inside a proton, and what were they identified as?",
+      "options": [
+        "One object, identified as the nucleus",
+        "Two objects, identified as electrons",
+        "Three objects, identified as quarks",
+        "Hundreds of objects, identified as atoms"
+      ],
+      "answer": 2,
+      "explanation": "The way electrons scattered and how energy was shared out pointed to three point-like charged pieces inside the proton, matching the three quarks that Gell-Mann's symmetry-based theory had demanded years earlier. The neutron told the same story with three quarks each.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Why can a single free quark never be knocked out and caught on its own?",
+      "options": [
+        "Quarks are too small to detect with any instrument",
+        "The force binding quarks gets stronger the further apart you pull them, so the energy converts into new particles before a quark can escape",
+        "Quarks decay instantly into electrons",
+        "Quarks have no charge, so they cannot be detected"
+      ],
+      "answer": 1,
+      "explanation": "The strong force binding quarks behaves like a spring that pushes back harder the more it is stretched; trying to pull one out pours in so much energy that it converts into brand-new particles, hiding the quark inside fresh clumps of matter. This is why quarks were long dismissed as a 'useful fiction' even though they are real.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "Which best describes the target used and the facility where the experiment ran?",
+      "options": [
+        "A gold foil target at CERN in Switzerland",
+        "A liquid hydrogen target at the Stanford Linear Accelerator Centre, using a two-mile (3.2 km) linear accelerator",
+        "A lead block target at a circular collider in Chicago",
+        "A helium gas target on a tabletop apparatus at Cambridge"
+      ],
+      "answer": 1,
+      "explanation": "Electrons were accelerated down a 3.2 km (two-mile) dead-straight linear accelerator at SLAC and fired into a tank of liquid hydrogen, whose nucleus is a single lonely proton, making it the perfect clean target. Gold foil (option 1) was Rutherford's target, not SLAC's.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Name the three physicists who ran the SLAC experiment, and state what honour they received and when.",
+      "keyPoints": [
+        "Jerome Friedman",
+        "Henry Kendall",
+        "Richard Taylor",
+        "Awarded the Nobel Prize in Physics",
+        "In 1990"
+      ],
+      "explanation": "Friedman, Kendall, and Taylor built and analysed the deep inelastic scattering experiments between 1967 and 1973, and were awarded the 1990 Nobel Prize in Physics for opening up a new layer of structure within matter.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Explain why the SLAC results mattered for the ladder of matter and our understanding of what is 'fundamental'.",
+      "keyPoints": [
+        "Protons and neutrons were shown to have an internal structure",
+        "They are made of quarks, so they are not fundamental",
+        "It confirmed Gell-Mann's quarks (Feynman's 'partons') were real, not just a bookkeeping trick",
+        "It added a new rung: nucleus is made of protons/neutrons, which are made of quarks",
+        "It shows that things once called the smallest, final brick can turn out to have an inside"
+      ],
+      "explanation": "The experiment demonstrated that protons and neutrons, long assumed to be featureless fundamental points, actually contain three point-like quarks. This turned Gell-Mann's mathematical quarks (which Feynman called 'partons') into real objects, extended the ladder of matter one rung deeper, and reinforced the lesson that any particle we call 'fundamental' may still be found to have structure with a more powerful probe.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "questions": [
+    {
+      "id": "m501-q01",
+      "type": "mc",
+      "q": "A projectile is launched at 10 m s⁻¹ at an angle of 30° above the horizontal. Which expression gives its horizontal component of velocity?",
+      "options": [
+        "10 sin 30° ≈ 5.0 m s⁻¹",
+        "10 cos 30° ≈ 8.66 m s⁻¹",
+        "10 tan 30° ≈ 5.77 m s⁻¹",
+        "10 ÷ cos 30° ≈ 11.5 m s⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "When the launch angle is measured from the horizontal, the horizontal side is adjacent to the angle, and adjacent takes the cosine: uₓ = u cos θ = 10 cos 30° ≈ 8.66 m s⁻¹. The tempting wrong choice, 10 sin 30° = 5.0 m s⁻¹, is actually the vertical component u_y — sine is opposite the angle. Mixing up sine and cosine here corrupts every later step, so keep the reflex sharp: horizontal is cosine, vertical is sine.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m501-q02",
+      "type": "mc",
+      "q": "From the edge of a 1.25 m table, one ball is dropped straight down at the exact instant a second ball rolls off horizontally at 3 m s⁻¹. Ignoring air resistance, which ball reaches the floor first?",
+      "options": [
+        "The dropped ball, because it travels the shorter, straight-down path",
+        "The rolling ball, because its extra speed carries it down faster",
+        "They land at the same instant, because their vertical motions are identical free fall",
+        "It depends on the mass of each ball"
+      ],
+      "answer": 2,
+      "explanation": "Horizontal and vertical motion are independent, so the horizontal velocity of the rolling ball has no effect on how fast it falls. Both balls start with zero vertical velocity, both accelerate downward at g through the same 1.25 m, so both take about 0.505 s to land — they hit together. The idea that the rolling ball's forward speed makes it fall faster (or that the dropped ball's shorter path wins) misses the independence principle, which is the single most tested idea in the topic.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m501-q03",
+      "type": "mc",
+      "q": "At the highest point of a projectile's arc (launched at an angle over level ground), what is true of its velocity?",
+      "options": [
+        "The velocity is zero — the projectile is momentarily at rest",
+        "Only the vertical component is zero; the horizontal component is unchanged, so the projectile is still moving",
+        "Only the horizontal component is zero; the vertical component is unchanged",
+        "Both components are at their maximum values"
+      ],
+      "answer": 1,
+      "explanation": "At the top of the arc the vertical velocity is momentarily zero (the object stops rising before it starts falling), but the horizontal velocity is unchanged and still equals u cos θ — so the projectile is definitely still moving. Answering 'velocity is zero' is the classic trap: it confuses the vertical component being zero with the whole velocity being zero. The horizontal component never changes because there is no horizontal force.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m501-q04",
+      "type": "mc",
+      "q": "Two stones are thrown from level ground at the same speed, one at 30° and one at 60° above the horizontal. Without calculating, how do their horizontal ranges compare?",
+      "options": [
+        "The 60° stone has the greater range because it is launched higher",
+        "The 30° stone has the greater range because it is launched flatter and faster",
+        "The ranges are equal, because 30° and 60° are complementary angles",
+        "The ranges are equal, because range does not depend on launch angle at all"
+      ],
+      "answer": 2,
+      "explanation": "For a fixed launch speed on level ground, complementary angles (those adding to 90°) give equal ranges, since R = (u² sin 2θ)/g and sin 2θ = sin(180° − 2θ). Here 30° + 60° = 90°, so the ranges match: the 60° stone takes a tall, slow, long-hanging arc while the 30° stone takes a flat, fast path, and the horizontal distances come out identical. Range does depend on angle (it is maximum at 45°), so the last option is wrong.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m501-q05",
+      "type": "mc",
+      "q": "In an exam, what is the correct word to describe the shape of a projectile's path, and why does it have that shape?",
+      "options": [
+        "'Curved', because gravity bends the motion by an increasing amount",
+        "'Parabolic', because the vertical position depends on the square of the horizontal position",
+        "'Circular', because the projectile follows an arc of constant radius",
+        "'Hyperbolic', because horizontal and vertical motion pull in opposite directions"
+      ],
+      "answer": 1,
+      "explanation": "Horizontal displacement grows in proportion to t (constant velocity) while vertical displacement grows in proportion to t². Eliminating time gives y = (u_y/uₓ)x − (g/2uₓ²)x², where y depends on x² — the definition of a parabola. Markers want the specific word 'parabolic', not vague terms like 'curved' or 'arced'. The path is not circular (the radius is not constant) nor hyperbolic.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m501-q06",
+      "type": "worked",
+      "q": "A ball rolls off the edge of a table 1.25 m high, leaving horizontally at 3.0 m s⁻¹. Taking g = 9.8 m s⁻², how long is the ball in the air before it lands?",
+      "given": "\\(h = 1.25\\,\\mathrm{m}\\), \\(u_x = 3.0\\,\\mathrm{m\\,s^{-1}}\\), \\(u_y = 0\\) (launched horizontally), \\(g = 9.8\\,\\mathrm{m\\,s^{-2}}\\)",
+      "working": [
+        "SPLIT: take the vertical motion first, because it sets the clock. Launched horizontally, so \\(u_y = 0\\).",
+        "Use \\(s = u_y t + \\tfrac{1}{2} g t^2\\): the first term is zero, so \\(1.25 = \\tfrac{1}{2}(9.8)t^2\\).",
+        "\\(t^2 = \\dfrac{2 \\times 1.25}{9.8} = 0.2551\\)",
+        "\\(t = \\sqrt{0.2551} \\approx 0.505\\,\\mathrm{s}\\)"
+      ],
+      "answerValue": 0.505,
+      "answerUnit": "s",
+      "tolerance": 0.01,
+      "explanation": "The time of flight is set entirely by the vertical drop — the 3.0 m s⁻¹ horizontal speed never enters, because horizontal and vertical motion are independent. Doubling the launch speed would leave the time unchanged (still 0.505 s) but double the range. Mass never appears, since g is the same for every object.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m501-q07",
+      "type": "worked",
+      "q": "A ball is thrown horizontally at 8.0 m s⁻¹ from the top of a building 20 m high. Taking g = 9.8 m s⁻², how far from the base of the building does it land?",
+      "given": "\\(u_x = 8.0\\,\\mathrm{m\\,s^{-1}}\\) (constant), \\(u_y = 0\\), drop \\(= 20\\,\\mathrm{m}\\), \\(g = 9.8\\,\\mathrm{m\\,s^{-2}}\\)",
+      "working": [
+        "VERTICAL sets the time: \\(20 = \\tfrac{1}{2}(9.8)t^2\\).",
+        "\\(t^2 = \\dfrac{2 \\times 20}{9.8} = 4.08\\), so \\(t \\approx 2.02\\,\\mathrm{s}\\).",
+        "HORIZONTAL gives the range at constant velocity: \\(R = u_x t\\).",
+        "\\(R = 8.0 \\times 2.02 \\approx 16.2\\,\\mathrm{m}\\)"
+      ],
+      "answerValue": 16.2,
+      "answerUnit": "m",
+      "tolerance": 0.3,
+      "explanation": "This is the standard horizontal-launch method: use the vertical motion (with u_y = 0) to find the shared time, then multiply the constant horizontal velocity by that time. The marks are for setting u_y = 0, extracting t from the vertical equation, and using R = uₓt. Do not try to combine the speeds before finding the time — the two axes are solved separately and joined only by t.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m501-q08",
+      "type": "worked",
+      "q": "A projectile is launched from ground level at 20 m s⁻¹ at 30° above the horizontal. Taking g = 9.8 m s⁻², calculate the maximum height it reaches.",
+      "given": "\\(u = 20\\,\\mathrm{m\\,s^{-1}}\\), \\(\\theta = 30°\\), \\(g = 9.8\\,\\mathrm{m\\,s^{-2}}\\)",
+      "working": [
+        "RESOLVE the vertical component: \\(u_y = u \\sin\\theta = 20 \\sin 30° = 20 \\times 0.5 = 10.0\\,\\mathrm{m\\,s^{-1}}\\).",
+        "At the top of the arc \\(v_y = 0\\). Use \\(v_y^2 = u_y^2 - 2gH\\).",
+        "\\(0 = 10.0^2 - 2(9.8)H\\), so \\(H = \\dfrac{u_y^2}{2g} = \\dfrac{100}{19.6}\\).",
+        "\\(H \\approx 5.10\\,\\mathrm{m}\\)"
+      ],
+      "answerValue": 5.1,
+      "answerUnit": "m",
+      "tolerance": 0.1,
+      "explanation": "Maximum height uses only the vertical component u_y = u sin 30° = 10 m s⁻¹, with v_y = 0 at the top. The horizontal component (20 cos 30° ≈ 17.3 m s⁻¹) plays no part in the height — it only affects the range. A common error is to use the full launch speed of 20 m s⁻¹ instead of the vertical component 10 m s⁻¹, which would quadruple the answer.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m501-q09",
+      "type": "worked",
+      "q": "A stone is launched from ground level at 25 m s⁻¹ at 53° above the horizontal. Taking g = 10 m s⁻², sin 53° = 0.8 and cos 53° = 0.6, calculate its horizontal range.",
+      "given": "\\(u = 25\\,\\mathrm{m\\,s^{-1}}\\), \\(\\theta = 53°\\), \\(g = 10\\,\\mathrm{m\\,s^{-2}}\\), \\(\\sin 53° = 0.8\\), \\(\\cos 53° = 0.6\\)",
+      "working": [
+        "RESOLVE: \\(u_x = 25 \\cos 53° = 25 \\times 0.6 = 15\\,\\mathrm{m\\,s^{-1}}\\) (constant); \\(u_y = 25 \\sin 53° = 25 \\times 0.8 = 20\\,\\mathrm{m\\,s^{-1}}\\) (up).",
+        "TIME TO TOP: \\(t_{top} = \\dfrac{u_y}{g} = \\dfrac{20}{10} = 2\\,\\mathrm{s}\\).",
+        "TIME OF FLIGHT by symmetry (lands at launch height): \\(T = 2 t_{top} = 4\\,\\mathrm{s}\\).",
+        "RANGE: \\(R = u_x T = 15 \\times 4 = 60\\,\\mathrm{m}\\)"
+      ],
+      "answerValue": 60,
+      "answerUnit": "m",
+      "tolerance": 1,
+      "explanation": "The full angled-projectile sequence: resolve into components, use the vertical component to find the time to the top, double it for the total flight time (valid because it lands at the launch height), then multiply the constant horizontal velocity by that total time. Range needs the total flight time (4 s), not the time to the top (2 s) — using 2 s would halve the answer to 30 m. Mass never enters, since g is independent of mass.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m501-q10",
+      "type": "recall",
+      "q": "From memory: state the 'SPLIT then SUVAT' method for solving a projectile problem, including what links the two halves and the usual route to the range.",
+      "keyPoints": [
+        "SPLIT: resolve the motion into a horizontal part with constant velocity (no force) and a vertical part with constant downward acceleration g (free fall).",
+        "SUVAT: treat each part as its own one-dimensional suvat problem — horizontally s = uₓt, vertically use the constant-acceleration equations.",
+        "The two halves are linked by one thing only: the time, because both motions share the same clock.",
+        "Usual route: use the vertical motion to find the time (e.g. via u_y = 0 at the top, or the drop), then feed that time into the horizontal motion R = uₓt to get the range."
+      ],
+      "explanation": "If you stated that you split into an independent constant-velocity horizontal part and a constant-acceleration vertical part, that time is the only bridge between them, and that the standard route is vertical-motion-for-time then horizontal-motion-for-range, grade yourself Good or Easy. 'Split, then suvat, joined by time' is the whole recipe for the topic.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    },
+    {
+      "id": "m501-q11",
+      "type": "recall",
+      "q": "From memory: explain why a heavy ball and a light ball, released from the same height at the same time, reach the ground together (air resistance negligible). Answer for full marks using Newton's second law.",
+      "keyPoints": [
+        "The acceleration due to gravity is independent of mass.",
+        "Although the gravitational force on the heavier ball is larger, its mass (inertia) is larger in exactly the same proportion.",
+        "By Newton's second law, acceleration = force ÷ mass, so the mass cancels and both accelerate at g.",
+        "Starting from rest, falling the same distance with the same acceleration, both take the same time to land."
+      ],
+      "explanation": "The full-mark answer must justify the mass-independence with force ÷ mass, showing the mass cancels — not just say 'gravity pulls them equally', which misses the cancellation and drops a mark. This is exactly why mass never appears in any projectile calculation, and it is the physics behind Galileo's Leaning Tower demonstration.",
+      "source": { "origin": "ai", "ref": "Generated from episode script" }
+    }
+  ]
+}

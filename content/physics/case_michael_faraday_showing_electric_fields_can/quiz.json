@@ -1,0 +1,143 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "A powerful bar magnet is held perfectly still deep inside a coil of wire connected to a galvanometer. According to Faraday's findings, what current is induced in the coil?",
+      "options": [
+        "A large steady current, because the magnetic field inside the coil is strong",
+        "No current at all, because the magnetic field is not changing",
+        "A small steady current proportional to the magnet's strength",
+        "A current that slowly increases the longer the magnet is held there"
+      ],
+      "answer": 1,
+      "explanation": "Correct: a stationary magnet, however strong or however deep in the coil, produces no induced current because there is no change in magnetic flux. The 'strong field' options are the classic misconception the episode opens with; induction depends on change, not on the presence or magnitude of a steady field.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "In Faraday's two-coil experiment, when did the galvanometer needle deflect?",
+      "options": [
+        "Continuously, for as long as the battery stayed connected to the primary coil",
+        "Only at the instant the battery was connected and again when it was disconnected",
+        "Only while a steady current flowed and the field was at full strength",
+        "Only when the two coils were physically touching"
+      ],
+      "answer": 1,
+      "explanation": "Correct: the needle gave one kick when the battery was connected (field building up) and an equal, opposite kick when disconnected (field collapsing); while the current was steady it read nothing. The 'continuous deflection' option is exactly the symmetry-based expectation Faraday's result overturned.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Connecting the battery gave the needle a kick in one direction; disconnecting it gave a kick the other way. What does this reversal tell us?",
+      "options": [
+        "The induced current depends only on the magnitude of the magnetic field",
+        "The direction of the induced current depends on whether the field is growing or collapsing",
+        "The galvanometer was faulty and swinging randomly",
+        "The battery reversed its own polarity when disconnected"
+      ],
+      "answer": 1,
+      "explanation": "Correct: a rising field induces current one way and a falling field induces it the opposite way, so the direction is set by the direction of the change in flux. The magnitude-only option is wrong because a steady (large) field induced nothing at all.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "Faraday found the induced effect was very small at first. Which change did he make to the two-coil apparatus that increased the needle's swing?",
+      "options": [
+        "He replaced the wooden core with a soft iron core",
+        "He replaced the copper wire with wooden rods",
+        "He used a weaker battery to steady the current",
+        "He held the coils perfectly still and waited longer"
+      ],
+      "answer": 0,
+      "explanation": "Correct: swapping the wooden block for a soft iron core concentrated the magnetic field and made the deflection far larger. Wood was originally chosen as an insulator; iron's high magnetic permeability strengthens the field, which is why the effect scaled with the core material.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "Faraday observed that the induced current always flowed in the direction that opposed the change producing it. This behaviour was later formalised as which law?",
+      "options": [
+        "Ohm's law",
+        "Ampere's law",
+        "Lenz's law",
+        "Oersted's law"
+      ],
+      "answer": 2,
+      "explanation": "Correct: the induced current opposing the change in flux (pushing back as the field grows, propping it up as it collapses) is Lenz's law, though Faraday observed it in the swing of the needle before it was named. Ampere's law describes the field made by a current, not the opposition of an induced one.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "When Faraday pushed a bar magnet in one smooth pass completely through the coil, what did the galvanometer needle do?",
+      "options": [
+        "Held a steady deflection the whole time the magnet was inside",
+        "Deflected once as the magnet entered and stayed there",
+        "Swung one way as the magnet plunged in, then the other way as it emerged",
+        "Did not move because a bar magnet is too weak to induce a current"
+      ],
+      "answer": 2,
+      "explanation": "Correct: as the magnet plunged in the flux through the coil grew (one kick), and as it emerged the flux faded (opposite kick), so a single motion produced two opposite deflections. A steady deflection is impossible because at every instant the field was changing, and it reversed as the magnet went from entering to leaving.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Faraday's experiment worked with an electromagnet and also with an ordinary bar magnet, and it scaled with the iron core and with the primary current. What did this combination of facts let him conclude was the true agent of induction?",
+      "options": [
+        "The specific chemistry of the voltaic battery",
+        "Direct electrical contact between the two coils",
+        "The magnetic field (specifically a changing one)",
+        "The heat generated in the copper wire"
+      ],
+      "answer": 2,
+      "explanation": "Correct: because the effect appeared with any magnetic source and scaled with quantities that set field strength (core permeability and primary current), the magnetic field was clearly the agent, and since it appeared only during change, it was specifically a changing field. Direct contact is ruled out because the coils never touched (kept apart by twine).",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "Why did the great experimenters before Faraday repeatedly fail to get magnetism to produce electricity?",
+      "options": [
+        "Their galvanometers were not sensitive enough to detect any current",
+        "They used steady magnets and steady currents, so the field never changed",
+        "They did not have access to strong enough magnets",
+        "Magnetism cannot actually produce electricity under any conditions"
+      ],
+      "answer": 1,
+      "explanation": "Correct: they set up steady magnets and steady currents and waited, so the flux never changed and no current was induced; Faraday's insight was that steadiness itself was the enemy. Sensitivity was not the core issue, since even a strong steady field induces nothing.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Faraday's 1831 result established the principle behind a whole class of technology. State the central conclusion of his experiments and name the kind of device it made possible.",
+      "keyPoints": [
+        "Electricity is induced not by a magnetic field but by a changing magnetic field",
+        "Induction appears only during change: connecting/disconnecting the battery, or moving the magnet, never in the steady state",
+        "A changing field can be manufactured on demand by moving a magnet past a coil",
+        "This is the principle behind the electric generator (dynamo), and also the transformer, which shares energy between two coils that never touch"
+      ],
+      "explanation": "The single conclusion left standing was that a changing magnetic field induces current. Because a changing field can be produced continuously by spinning a magnet past a coil, this is the operating principle of every generator and power station, and of the transformer that couples two separate coils.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Describe the design and method of Faraday's two-coil (electromagnet) experiment, and explain how the pattern of needle deflections revealed that a changing magnetic field is what induces a current.",
+      "keyPoints": [
+        "Two lengths of copper wire (about 203 feet each) wound around a block, interposed through each other but never touching, kept apart by twine",
+        "One coil (primary) connected to a voltaic battery, the other (secondary) connected to a galvanometer",
+        "On connecting the battery the needle kicked once; while current flowed steadily the needle read zero; on disconnecting it kicked the opposite way",
+        "So induction occurred only while the field was building up or collapsing (changing), not while it was steady, showing the change in flux is the cause",
+        "Adding a soft iron core and more turns of wire increased the induced current"
+      ],
+      "explanation": "The two woven-but-insulated coils meant any effect had to travel through the magnetic field, not direct contact. The kick-on, nothing-during-steady-state, kick-the-other-way-on-disconnect pattern isolated change of flux as the cause of induction.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

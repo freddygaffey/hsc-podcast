@@ -1,0 +1,145 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "How did Einstein arrive at length contraction in 1905?",
+      "options": [
+        "By measuring rods fired past a laboratory at high speed",
+        "By reasoning from two postulates and a bit of algebra, with no physical apparatus",
+        "By building a giant machine to accelerate particles",
+        "By observing muons created in the upper atmosphere"
+      ],
+      "answer": 1,
+      "explanation": "Einstein, then a 26-year-old patent clerk in Bern, derived length contraction by taking two simple postulates seriously and doing the algebra. He did not measure a single flying object; the atmospheric-muon evidence is a separate, later confirmation, not the source of the derivation.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "What are the two postulates the derivation rests on?",
+      "options": [
+        "Energy is conserved, and mass is conserved",
+        "The laws of physics are the same for all inertial observers, and the speed of light in a vacuum is the same for everyone",
+        "Space is absolute, and time is absolute",
+        "Nothing can travel faster than light, and gravity bends space"
+      ],
+      "answer": 1,
+      "explanation": "The two postulates are the principle of relativity (physics is the same for every observer moving at a steady speed) and the invariance of the speed of light in a vacuum. Absolute space and time are exactly what the derivation overturns, not what it assumes.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Why does the constancy of the speed of light 'wreck common sense'?",
+      "options": [
+        "Because light has no mass, so it cannot really move",
+        "Because velocities normally subtract, but no matter how fast you chase light it still recedes at the full speed of light",
+        "Because light travels faster inside glass than in a vacuum",
+        "Because light speeds up when you move toward its source"
+      ],
+      "answer": 1,
+      "explanation": "In everyday life velocities add and subtract: chase a 100 km/h car at 90 km/h and it crawls away at 10. Light refuses to obey this; sprint toward a beam at nearly light speed and it still leaves you at the full ~3x10^8 m/s. Since speed is locked, space and time must give instead.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "In the thought experiment, what plays the role of the two 'events' that mark the start and finish?",
+      "options": [
+        "Two mirrors reflecting a light beam",
+        "The muon passing the first cloud, then passing the second cloud",
+        "The muon being created, then decaying",
+        "Two clocks being synchronised on the ground"
+      ],
+      "answer": 1,
+      "explanation": "The muon flies beneath two clouds, passing the first then the second: a start line and a finish line. The muon here is an arbitrary fast-moving stand-in, and this is a pure derivation, not the muon-decay evidence experiment, so creation/decay is not the point.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "What key quantity must both the ground observer and the muon agree on, allowing the two descriptions to be set equal?",
+      "options": [
+        "The distance between the two clouds",
+        "The time taken to cross between the clouds",
+        "The relative speed at which the ground and the muon slide past each other",
+        "The mass of the muon"
+      ],
+      "answer": 2,
+      "explanation": "Speed is just how fast the ground and muon slide past each other, and both frames must agree on that one number. This lets us equate L0/dt (ground) with L/dtau (muon). The two distances and the two times differ between frames; only the relative speed is shared.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "Which earlier result is substituted in to complete the derivation, and what does it say?",
+      "options": [
+        "Time dilation: the ground observer's clock is dilated, so the ground's time interval equals gamma times the muon's",
+        "Mass-energy equivalence: E = mc^2",
+        "The Doppler effect: light shifts to the red when moving away",
+        "Conservation of momentum: mv is the same in both frames"
+      ],
+      "answer": 0,
+      "explanation": "From the muon's frame the ground's clock runs slow (dilated), so dt = gamma x dtau. Substituting this into L0/dt = L/dtau lets the times cancel, leaving L = L0/gamma. E=mc^2 and the Doppler effect are unrelated to this particular algebra.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "recall",
+      "q": "Walk through the derivation of L = L0/gamma. State the key steps that turn the two frame descriptions into the length-contraction result.",
+      "keyPoints": [
+        "Ground frame: rest length L0 between clouds, muon crossing time dt, so v = L0/dt",
+        "Muon frame: cloud separation L, crossing time dtau, so v = L/dtau",
+        "Both observers agree on the relative speed v, so set L0/dt = L/dtau",
+        "Time dilation gives dt = gamma x dtau (the ground clock is dilated as seen from the muon)",
+        "Substitute so the times cancel, leaving L = L0/gamma",
+        "Since gamma > 1 for any motion, L < L0: the moving length is contracted"
+      ],
+      "explanation": "The whole derivation is: equal speeds link the two frames (L0/dt = L/dtau), time dilation supplies dt = gamma x dtau, and substituting cancels the times to give L = L0/gamma. Because gamma is always greater than one when something moves, the length shrinks.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "The Lorentz factor gamma has what property, and how does dividing by it affect the length?",
+      "options": [
+        "Gamma is always less than one, so L = L0/gamma makes the object longer",
+        "Gamma is always greater than one for a moving object, so dividing by it makes the length smaller",
+        "Gamma equals exactly one at all speeds, so the length never changes",
+        "Gamma can be negative, so the length can become negative"
+      ],
+      "answer": 1,
+      "explanation": "Gamma is always greater than one whenever something is actually moving, and it grows toward infinity as the speed approaches c. Since L = L0/gamma, dividing by a number bigger than one always shrinks the length, so the moving length is always less than the rest length.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "mc",
+      "q": "The result can also be written L = L0 x sqrt(1 - v^2/c^2). What happens as the speed v approaches the speed of light c?",
+      "options": [
+        "The square root grows large, so the length stretches toward infinity",
+        "The square root shrinks toward zero, so the length is crushed toward nothing",
+        "The square root stays at one, so the length is unchanged",
+        "The square root becomes negative, so the length reverses direction"
+      ],
+      "answer": 1,
+      "explanation": "As v climbs toward c, the ratio v^2/c^2 approaches one, so 1 - v^2/c^2 approaches zero and its square root shrinks toward zero. The length is therefore crushed toward nothing along the direction of motion. This is the same statement as L = L0/gamma, just written differently.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Why did length contraction matter so much to physics? Explain what it changed about the notion of space.",
+      "keyPoints": [
+        "For centuries space was treated as fixed, absolute, an unchanging stage the universe hands you",
+        "The contraction is real and measurable, not an optical illusion or trick of the eye",
+        "The length you measure and the length another observer measures can genuinely disagree, and both are right",
+        "Distance depends on relative speed: space along the direction of motion actually shrinks",
+        "It made space part of the action rather than a fixed backdrop, forming a ground floor of modern physics"
+      ],
+      "explanation": "Before Einstein, space was the absolute stage on which events played out. Length contraction showed that distance is not something the universe simply hands you; it depends on your relative motion. The shortening is genuine and measurable, and two observers can honestly disagree about a length while both being correct, dissolving the idea of absolute space.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

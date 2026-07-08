@@ -1,0 +1,144 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What feature of Dirac's 1928 equation led him to predict antimatter?",
+      "options": [
+        "It allowed both positive and negative energy solutions, and he refused to discard the negative ones",
+        "It predicted that electrons had no spin",
+        "It showed the electron was heavier than the proton",
+        "It only worked if the electron had zero charge"
+      ],
+      "answer": 0,
+      "explanation": "The Dirac equation, which unified quantum mechanics and relativity, handed back both positive and negative energy solutions. Rather than crossing out the 'unphysical' negative-energy answer, Dirac trusted the mathematics and sought its meaning, leading to the prediction of an oppositely charged twin of the electron. It did not predict the electron was massless or spinless; in fact it successfully explained electron spin.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "In Dirac's picture, what was a 'hole' left behind when an electron was punched out of the sea of negative-energy states?",
+      "options": [
+        "A proton",
+        "A gap that behaves like a particle with positive charge and the same mass as an electron",
+        "A neutron with no charge",
+        "A photon of pure energy"
+      ],
+      "answer": 1,
+      "explanation": "A hole in a uniform sea of negative charge acts like a positively charged particle. Dirac's cleaned-up prediction was that it would have exactly the same mass as an electron but the opposite charge, a mirror-image electron. It could not be the proton because the proton is about 1800 times heavier than an electron.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Why did many physicists initially assume Dirac's positive particle was simply the proton, and why were they wrong?",
+      "options": [
+        "The proton was the only known positive particle, but it is about 1800 times heavier than an electron",
+        "The proton has negative charge, so it could not match",
+        "The proton had never been observed, so it was a guess",
+        "The proton and electron have identical mass, so the two were indistinguishable"
+      ],
+      "answer": 0,
+      "explanation": "The proton was the only positive particle anyone knew, so it was the natural candidate. But Dirac's twin had to have exactly the same mass as an electron, while the proton is roughly 1800 times heavier, so the two could not be the same thing.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "How does a Wilson cloud chamber make the path of a charged particle visible?",
+      "options": [
+        "The particle glows as it heats the air",
+        "The particle leaves a trail of ions onto which supersaturated vapour condenses into droplets",
+        "The particle burns a scorch mark into a photographic plate",
+        "The particle emits visible light directly along its path"
+      ],
+      "answer": 1,
+      "explanation": "The chamber is filled with supersaturated vapour on the edge of condensing. A charged particle rips electrons off atoms in its path, leaving a trail of ions. Vapour condenses onto each ion, forming a visible line of droplets that traces the particle's exact trajectory. The vapour needs the ions as 'seeds'; the particle does not itself glow or scorch a plate.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "Why was a magnetic field applied across the cloud chamber?",
+      "options": [
+        "To speed the particles up so they leave clearer tracks",
+        "To keep the vapour from condensing too early",
+        "To bend each particle's path into a curve, revealing its charge sign and charge-to-mass ratio",
+        "To stop cosmic rays from entering the chamber"
+      ],
+      "answer": 2,
+      "explanation": "A magnetic field pushes a moving charge sideways, bending its path into a curve. The tightness of the curl reveals the particle's charge-to-mass ratio, and the direction of the curve reveals the sign of its charge. A straight track alone tells you only where a particle went, not what it was.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "In the magnetised chamber, how does the tightness of a particle's curved track relate to its energy?",
+      "options": [
+        "Faster, more energetic particles bend gently in a wide arc; slower ones curl up tightly",
+        "All particles curl by the same amount regardless of energy",
+        "Faster particles curl tightly; slower ones travel almost straight",
+        "The curl depends only on charge, never on energy"
+      ],
+      "answer": 0,
+      "explanation": "A faster, more energetic particle bends only gently into a wide, lazy arc, while a slower particle curls up tight. This is exactly why the lead plate worked: a particle loses energy passing through it and so curls more tightly on the far side.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Anderson placed a lead plate across the middle of his cloud chamber. What did it let him determine?",
+      "options": [
+        "The exact mass of the particle in kilograms",
+        "The direction the particle was travelling, since it curls more tightly on the side it is leaving",
+        "The colour of the light emitted by the particle",
+        "Whether the particle was a cosmic ray or not"
+      ],
+      "answer": 1,
+      "explanation": "Passing through solid lead makes a particle lose energy, so it curls more tightly on the far side. The more sharply curved side is the side the particle was leaving, which fixes its direction of travel unambiguously. Only then could Anderson rule out an ordinary electron simply moving the opposite way.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "What two measured properties of Anderson's track together identified it as the positron?",
+      "options": [
+        "A large mass and negative charge",
+        "The mass of a proton and a positive charge",
+        "The mass of an electron and a positive charge",
+        "Zero mass and zero charge"
+      ],
+      "answer": 2,
+      "explanation": "The track was as light and tightly curled as an electron's, giving it the mass of an electron, yet it curved in the direction that made its charge positive. Same mass as an electron, opposite charge: this was Dirac's predicted twin, which Anderson named the positron. A proton would have curled far less tightly because of its much greater mass.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Explain why tracks of positrons had actually been photographed as early as 1923, years before the positron was 'discovered', yet were not recognised.",
+      "keyPoints": [
+        "As early as 1923, cloud-chamber operators saw tracks that behaved exactly like electrons (same tightness of curl, same apparent mass) but curled the wrong way",
+        "A wrong-way curl indicates a positive charge",
+        "Observers assumed these were just ordinary electrons happening to travel in the opposite direction through the chamber",
+        "Because the travel direction was not pinned down, the anomaly was dismissed as trivial noise rather than a new particle",
+        "Anderson's lead plate later fixed the direction of travel, removing this ambiguity"
+      ],
+      "explanation": "The evidence for antimatter existed in laboratory notebooks years before Dirac's 1928 prediction, but without a way to determine the direction of travel, a wrong-way curl could always be explained away as an electron going the other direction. Anderson's insight was to use a lead plate to establish direction, converting an ambiguous anomaly into unambiguous proof.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Why did Anderson use cosmic rays as the source of particles in his 1932 experiment, and what did his discovery reveal about the nature of matter?",
+      "keyPoints": [
+        "Cosmic rays are high-energy particles raining down on Earth from space",
+        "When they slam into the atmosphere they carry enough energy to congeal into fresh particle-antiparticle pairs (pair production), as Dirac predicted",
+        "This provided a natural supply of positrons to photograph in the magnetised chamber",
+        "The discovery proved matter is only half of a symmetry: every particle has an antiparticle twin",
+        "When matter and antimatter meet they annihilate into pure energy, consistent with E = mc^2"
+      ],
+      "explanation": "Cosmic rays carry enough energy to create fresh electron-positron pairs when they hit the atmosphere, giving Anderson a supply of antimatter to observe. His photograph confirmed antimatter as a fact of nature: for every particle there is an oppositely charged mirror twin, and their meeting annihilates matter into pure energy exactly as Einstein's mass-energy relation demands.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What was the primary aim of Millikan's oil drop experiment?",
+      "options": [
+        "To measure the charge of a single electron (the elementary charge) and confirm that charge is quantised",
+        "To discover the electron for the first time",
+        "To measure the charge-to-mass ratio of the electron",
+        "To prove that atoms cannot be divided into smaller pieces"
+      ],
+      "answer": 0,
+      "explanation": "Millikan set out to pin down the elementary charge unit 'e' on a single electron, which in turn showed charge comes in discrete packets (quantisation). The electron had already been discovered by J.J. Thomson in 1897, and it was Thomson who measured the charge-to-mass ratio, not the charge itself; the electron discovery instead revealed that the atom does have internal parts.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "Why was Thomson's measurement of the electron's charge-to-mass ratio, on its own, not enough to reveal the electron's charge or mass?",
+      "options": [
+        "A single ratio welds two unknowns together, so many different charge/mass pairs give the same ratio",
+        "The ratio Thomson measured turned out to be completely wrong",
+        "The ratio only applied to electrons in cathode rays, not to electrons in general",
+        "The ratio changed every time the experiment was repeated"
+      ],
+      "answer": 0,
+      "explanation": "A ratio fixes the relationship between two quantities but not their individual sizes: 6/2, 30/10 and 300/100 all give 3. Knowing charge divided by mass told physicists nothing about either value alone. Only by measuring the charge independently (Millikan) could you divide it back out of the ratio to get the mass. Thomson's ratio was correct and general, not wrong or unstable.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Millikan replaced the water droplets that earlier experimenters used with oil droplets. What was the key advantage of oil?",
+      "options": [
+        "Oil does not evaporate quickly, so a droplet keeps a stable size and mass long enough to study",
+        "Oil is much heavier than water, making the droplets easier to see",
+        "Oil is an electrical conductor, so it holds charge better than water",
+        "Oil droplets are always exactly the same size as each other"
+      ],
+      "answer": 0,
+      "explanation": "Water droplets shrank and vanished as they evaporated, blurring any measurement. Oil droplets stay stable, holding their size and mass for as long as needed, which let Millikan follow a single droplet. Oil is not chosen for being heavy or conductive, and the droplets were not uniform in size, in fact Millikan had to measure each one's mass individually.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "How did the oil droplets end up carrying an electric charge in the first place?",
+      "options": [
+        "The friction of the oil being torn into a fine mist by the atomiser left many droplets charged",
+        "The metal plates injected charge into the droplets as they fell",
+        "The bright observation light electrically charged the droplets",
+        "The oil was pre-charged in a battery before spraying"
+      ],
+      "answer": 0,
+      "explanation": "Spraying the oil through a perfume-style atomiser tore it into tiny droplets, and that frictional process left many of them electrically charged, exactly what Millikan needed. The plates supplied the uniform field but did not charge the droplets; the light was only for viewing; and the oil was not pre-charged. (Later, X-rays were used to change a droplet's charge mid-flight.)",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "With the plates switched off, a droplet falls and quickly reaches terminal velocity. Why did Millikan measure this terminal velocity for each falling droplet?",
+      "options": [
+        "It let him work out the droplet's radius (via Stokes' law), and hence its volume and mass",
+        "It directly gave him the charge on the droplet",
+        "It told him how many electrons the droplet had gained",
+        "It measured the viscosity of the air in the chamber"
+      ],
+      "answer": 0,
+      "explanation": "Stokes' law links the drag on a tiny sphere to its radius, speed and the air's viscosity. Millikan had measured the air's viscosity beforehand and timed the fall to get the terminal velocity, so Stokes' law yielded the radius; with the known density of oil that gives the volume and therefore the mass. The velocity does not give the charge or electron count directly, and the viscosity was measured separately in advance.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "When Millikan tuned the voltage so a charged droplet hung perfectly motionless between the plates, why was that state so useful for finding the charge?",
+      "options": [
+        "With no motion there is no drag, so only two forces remain: the electric force up balancing gravity down",
+        "A motionless droplet has zero charge, simplifying the maths",
+        "The droplet's mass no longer mattered once it was suspended",
+        "It let him ignore the electric field and use gravity alone"
+      ],
+      "answer": 0,
+      "explanation": "A stationary droplet has no velocity and hence no air resistance to untangle, leaving a clean two-force balance: electric force up equals weight down, i.e. qE = mg (with E = V/d). Since m, V and d were all known, he could solve for q. The droplet still carries charge (that is the whole point), its mass is essential to the balance, and the electric field is central, not ignored.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
+    },
+    {
+      "id": "q07",
+      "type": "recall",
+      "q": "Explain how repeating the measurement on hundreds of droplets led Millikan to conclude that electric charge is quantised.",
+      "keyPoints": [
+        "Each droplet carried an unknown number of extra/lost electrons, so their total charges differed",
+        "Millikan measured the charge on many different droplets (and changed charges mid-flight using X-rays)",
+        "Every measured charge turned out to be a whole-number multiple of one small value, never a value in between",
+        "This stepwise pattern showed charge comes in indivisible packets rather than a continuous fluid",
+        "The size of the smallest step, about 1.6 x 10^-19 C, is the charge on a single electron"
+      ],
+      "explanation": "If charge were a smooth, continuous quantity the measured values would scatter across any amount. Instead they clustered at integer multiples of one fundamental unit (1, 2, 3, ... lumps but never fractions). That the charges came in discrete steps of about 1.6 x 10^-19 C is direct evidence that charge is quantised, with the smallest brick being the electron's charge.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "The X-ray irradiation during the experiment served what purpose?",
+      "options": [
+        "It knocked electrons on and off a droplet in flight, letting Millikan watch its charge jump to a new value",
+        "It made the droplets glow so they could be seen through the telescope",
+        "It evaporated any remaining water so only oil was left",
+        "It generated the electric field between the two plates"
+      ],
+      "answer": 0,
+      "explanation": "High-energy X-rays ionised the droplets, adding or removing electrons mid-flight so a single droplet's charge suddenly changed, strengthening the evidence that charge changes in discrete steps. The droplets were made visible by a side light, not X-rays; X-rays did not create the field (the voltage across the plates did) or dry the oil.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Why did Millikan's result matter to physics, and how did it let physicists finally find the mass of the electron?",
+      "keyPoints": [
+        "It proved charge is quantised, coming in indivisible packets rather than a continuous fluid",
+        "The smallest packet is the charge on one electron, e is about 1.6 x 10^-19 C (later refined to 1.602 x 10^-19 C)",
+        "This was the first measurement of the charge on a single, specific object",
+        "Dividing e out of Thomson's charge-to-mass ratio gives the electron's mass (about 9 x 10^-31 kg)",
+        "It earned Millikan the 1923 Nobel Prize in Physics"
+      ],
+      "explanation": "Millikan's value for e was the missing key: Thomson had only the ratio charge/mass, but with e known independently you divide it out of the ratio to get the mass, roughly 9 x 10^-31 kg. Combined with proving charge is grainy and quantised, this fully revealed the electron and won Millikan the 1923 Nobel Prize.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "worked",
+      "q": "Once Millikan had measured the elementary charge, physicists could combine it with Thomson's charge-to-mass ratio to find the electron's mass. Using e = 1.60 x 10^-19 C and Thomson's ratio q/m = 1.76 x 10^11 C/kg, calculate the mass of an electron.",
+      "given": [
+        "Elementary charge e = 1.60 x 10^-19 C",
+        "Charge-to-mass ratio q/m = 1.76 x 10^11 C/kg"
+      ],
+      "working": [
+        "The ratio is q/m, so rearrange to make mass the subject: m = q / (q/m)",
+        "Substitute the electron's charge for q: m = (1.60 x 10^-19) / (1.76 x 10^11)",
+        "Divide: m = 9.09 x 10^-31 kg"
+      ],
+      "answerValue": 9.09e-31,
+      "answerUnit": "kg",
+      "tolerance": 1.5e-32,
+      "explanation": "Thomson's experiment gave only the ratio charge/mass, which locks two unknowns together. Once Millikan supplied the charge e independently, dividing it out of the ratio yields the mass alone: m = e / (q/m) = 1.60 x 10^-19 / 1.76 x 10^11 = 9.09 x 10^-31 kg, matching the accepted electron mass of about 9.1 x 10^-31 kg.",
+      "source": {
+        "origin": "ai",
+        "ref": "Generated from episode script"
+      }
+    }
+  ]
+}

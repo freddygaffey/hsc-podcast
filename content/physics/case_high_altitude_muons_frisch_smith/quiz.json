@@ -1,0 +1,146 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What did the Frisch-Smith muon experiment (1962) set out to test?",
+      "options": [
+        "Whether cosmic rays are made of protons or electrons",
+        "Einstein's prediction of time dilation (and equivalently length contraction)",
+        "The exact rest mass of the muon",
+        "Whether the speed of light depends on the motion of its source"
+      ],
+      "answer": 1,
+      "explanation": "Frisch and Smith used the survival of fast-moving muons across a known distance to test time dilation: a moving clock runs slow. The rest mass of the muon and the composition of cosmic rays are background facts to the experiment, not what it measured, and the constancy of light speed is a postulate the experiment relies on rather than the quantity it checked.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "How are the muons detected in this experiment actually produced?",
+      "options": [
+        "They are emitted directly by the Sun as part of the solar wind",
+        "Cosmic-ray protons strike air nuclei, making pions, and charged pions decay into muons",
+        "They are created when gamma rays are absorbed by mountain rock",
+        "They condense out of the cold air at the top of the atmosphere"
+      ],
+      "answer": 1,
+      "explanation": "Cosmic rays (over 99% protons and alpha particles) hit oxygen and nitrogen nuclei high in the atmosphere, producing pions. Charged pions then decay into a muon and a muon neutrino via the weak interaction. The muons are not emitted by the Sun directly, nor made from gamma-ray absorption or condensation.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "Why is a fast-moving muon an ideal object for testing special relativity?",
+      "options": [
+        "It carries no electric charge, so external fields cannot disturb it",
+        "It is a stable particle that never decays, giving an unlimited observation time",
+        "It behaves like a precise clock (fixed mean lifetime) while travelling at nearly light speed",
+        "It travels far slower than light, making its clock easy to read"
+      ],
+      "answer": 2,
+      "explanation": "A muon has a consistent rest mean lifetime of about 2.2 microseconds, so it acts like a tiny stopwatch, and it moves at about 99.5% of light speed. A perfect clock strapped to something that fast is exactly what you need to test whether time stretches. Muons are unstable (they do decay), can be charged, and move at nearly light speed, not slowly.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "At rest, roughly how long does a muon live on average before it decays?",
+      "options": [
+        "About 85 attoseconds",
+        "About 2.2 microseconds",
+        "About 6.34 microseconds",
+        "About 2.2 seconds"
+      ],
+      "answer": 1,
+      "explanation": "The muon's rest mean lifetime is about 2.2 microseconds (2.2 millionths of a second), measured repeatedly in the lab. 85 attoseconds is the half-life of the neutral pion; 6.34 microseconds is the classical travel time down Mount Washington, not a lifetime; 2.2 seconds is off by a million.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "Frisch and Smith counted about 563 muon decays per hour at the summit of Mount Washington. Non-relativistically (Einstein wrong), how many should have survived to sea level, and how many did they actually observe?",
+      "options": [
+        "Predicted about 409; observed about 31",
+        "Predicted about 31; observed about 409",
+        "Predicted about 280; observed about 563",
+        "Predicted about 563; observed about 563"
+      ],
+      "answer": 1,
+      "explanation": "Without relativity the muons face a journey lasting nearly three lifetimes, so the survivors collapse to about 31 per hour. In reality about 409 per hour reached sea level, more than ten times as many as classical physics allows. The numbers are not reversed, and the count clearly drops from the summit's 563.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "The muons slow slightly as they plough through thickening air. Why did Frisch and Smith re-measure the muon speed at sea level?",
+      "options": [
+        "To confirm the muons never lost any energy on the way down",
+        "Because energy lost to collisions lowers the Lorentz factor, so an averaged gamma over the trip gives a fair comparison",
+        "Because the muon's rest lifetime changes with altitude",
+        "To check that the muons were still travelling faster than light"
+      ],
+      "answer": 1,
+      "explanation": "The muons collide with atoms and lose kinetic energy, dropping from about beta 0.995 (gamma ~10.2) at the top to about beta 0.988 (gamma ~6.8) at the bottom, giving an average gamma of roughly 8.4 for the journey. Re-measuring the speed makes the comparison honest. The muons do lose energy, the rest lifetime is an invariant, and nothing travels faster than light.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "worked",
+      "q": "Assume Einstein is wrong and time is absolute. Starting from 563 muon decays per hour at the summit, and taking the travel time down to sea level as 6.34 microseconds with a muon mean lifetime of 2.2 microseconds, use the decay law N = N0 e^(-Δt/τ) to predict how many decays per hour should survive at sea level.",
+      "given": ["N0 = 563 decays per hour", "Δt = 6.34 microseconds", "τ = 2.2 microseconds", "N = N0 e^(-Δt/τ)"],
+      "working": [
+        "Form the exponent: Δt/τ = 6.34 / 2.2 = 2.88",
+        "Evaluate the decay factor: e^(-2.88) = 0.0560",
+        "Multiply by the starting count: N = 563 × 0.0560",
+        "N = 31 decays per hour"
+      ],
+      "answerValue": 31,
+      "answerUnit": "decays per hour",
+      "tolerance": 3,
+      "explanation": "The journey lasts nearly three muon lifetimes, so classical physics predicts the count crashes from 563 to about 31 per hour. The experiment instead found about 409, and the only way to explain the surplus is that the moving muons' clocks ran slow (time dilation).",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "Turning the decay law around, the observed survival of muons implied a Lorentz factor of about 8.9. How does this compare with Einstein's prediction, and what does that mean?",
+      "options": [
+        "8.9 measured versus 8.4 predicted, a close match confirming time dilation",
+        "8.9 measured versus 31 predicted, a mismatch disproving relativity",
+        "8.9 measured versus 1.0 predicted, showing relativity has no measurable effect",
+        "8.9 measured versus 10.2 predicted, showing the muons were faster than expected"
+      ],
+      "answer": 0,
+      "explanation": "The measured gamma of about 8.9, obtained by feeding the 409-of-563 survival back through the decay law, lands close to the ~8.4 predicted by averaging the summit and sea-level Lorentz factors. Two numbers reached from completely different directions agree, confirming time dilation. 31 is a count of decays not a gamma, gamma of 1 would mean no dilation at all, and 10.2 was only the summit value, not the trip average.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "mc",
+      "q": "From the muon's own reference frame, how does it manage to reach the ground within its ordinary 2.2-microsecond lifetime?",
+      "options": [
+        "Its lifetime is stretched because it feels itself moving very fast",
+        "The mountain's height is length-contracted, so it has far less distance to cross",
+        "It is pushed along faster than light by the incoming cosmic rays",
+        "Time runs faster for it, giving it extra ticks to complete the journey"
+      ],
+      "answer": 1,
+      "explanation": "In the muon's frame it is at rest and its clock ticks normally, only 2.2 microseconds. It survives because the mountain rushes toward it length-contracted by the Lorentz factor, so the distance is short enough to cross. Time dilation is the ground observer's story; from the muon's side the same physics appears as length contraction. Nothing exceeds light speed and the muon's own clock does not speed up.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Explain how the Frisch-Smith experiment provides evidence for BOTH time dilation and length contraction, referring to the two reference frames.",
+      "keyPoints": [
+        "Both observers agree on the one checkable fact: the number of muons (about 409 per hour) that survive to sea level",
+        "Lab (ground) frame: the muons survive because their moving clocks run slow (time dilation), so they age less during the ~6.34 microsecond fall",
+        "Muon frame: the muon's own clock ticks normally (only 2.2 microseconds), but the mountain height is length-contracted, so it has a much shorter distance to travel",
+        "The two descriptions are the same relativity seen from two sides, linked by the same Lorentz factor; neither frame is privileged"
+      ],
+      "explanation": "Time dilation and length contraction are two faces of the same equation. From the ground the muon survives because time stretches; from the muon the mountain is short. Both frames predict the identical measurable outcome, the survival count, which is why the single experiment supports both effects at once.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

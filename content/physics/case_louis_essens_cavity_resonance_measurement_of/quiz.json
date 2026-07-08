@@ -1,0 +1,150 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What was the central idea behind Louis Essen's method for measuring the speed of light?",
+      "options": [
+        "Timing a flash of light as it raced between two distant mountain peaks",
+        "Trapping waves as a standing wave and finding their speed from wavelength and frequency",
+        "Passing light through the gap in a rapidly spinning toothed wheel",
+        "Bouncing light off a fast rotating mirror and measuring its deflection"
+      ],
+      "answer": 1,
+      "explanation": "Essen set up a standing wave, measured its wavelength (from the distance between nodes) and its frequency separately, then multiplied them using v = fλ. The spinning wheel (Fizeau), rotating mirror (Foucault) and distant peaks (Michelson) describe the older timing-based methods Essen was trying to replace.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "Why were the older methods (Fizeau, Foucault, Michelson) fundamentally limited in accuracy?",
+      "options": [
+        "They could only be performed at night when the air was still",
+        "They relied on measuring an enormous distance and an unimaginably short time, both of which carried errors",
+        "They used sound waves rather than genuine electromagnetic waves",
+        "They required a clock that did not yet exist and so gave no result at all"
+      ],
+      "answer": 1,
+      "explanation": "Every timing method depended on a huge distance and a tiny time interval, and uncertainties in both (haze, mirror position, machine flex) piled up and could not be reduced further. They did give results — just ones whose error had hit a wall; and Michelson used light, not sound.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "In a standing wave, what is the relationship between the distance separating two adjacent nodes and the wavelength?",
+      "options": [
+        "The distance between two nodes equals one full wavelength",
+        "The distance between two nodes equals one quarter of a wavelength",
+        "The distance between two nodes equals one half of a wavelength",
+        "The distance between two nodes equals two full wavelengths"
+      ],
+      "answer": 2,
+      "explanation": "Adjacent nodes are separated by exactly half a wavelength, so measuring that gap and doubling it gives the wavelength. This is why Essen could get λ from a simple length measurement inside the cavity.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "Why did Essen use microwaves rather than visible light in his cavity?",
+      "options": [
+        "Microwaves travel measurably faster than visible light, making the effect easier to see",
+        "Microwaves have centimetre-scale wavelengths that can actually be measured with instruments",
+        "Microwaves are not electromagnetic waves, so they behave more simply",
+        "Visible light cannot form standing waves, but microwaves can"
+      ],
+      "answer": 1,
+      "explanation": "Microwaves are the same electromagnetic waves as light travelling at the same speed, but their centimetre wavelengths can be measured with a machined cavity, whereas visible light's wavelengths (millionths of a millimetre) are far too small to lay a ruler against. All EM waves can form standing waves.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "What told Essen that a clean standing wave had formed inside the copper cavity?",
+      "options": [
+        "The cavity grew noticeably warmer to the touch",
+        "At certain exact tuned frequencies a sudden surge appeared as the wave locked into resonance",
+        "The copper walls began to glow with visible light",
+        "The oscillator stopped working until the frequency was changed"
+      ],
+      "answer": 1,
+      "explanation": "Most frequencies produce interfering mush, but at specific resonant frequencies the reflections line up crest-on-crest and a strong standing wave suddenly springs up — Essen watched for that unmistakable surge as he turned the dial. Heat, glow, and oscillator failure were not the signal.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "Why was Essen's approach able to beat the old mirror experiments on precision?",
+      "options": [
+        "Because frequency can be measured far more accurately than any distance or time interval",
+        "Because copper reflects microwaves perfectly with zero energy loss",
+        "Because the speed of light is larger for microwaves, reducing the percentage error",
+        "Because his cavity was much bigger than Michelson's mountain baselines"
+      ],
+      "answer": 0,
+      "explanation": "Essen replaced the error-prone large distance and short time of the timing methods with a superbly precise machined wavelength and, above all, a frequency — the one quantity physicists could already measure with staggering accuracy. The speed is the same for all EM waves, and the cavity was tiny (loaf-of-bread sized).",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "How did Essen's 1950 value compare with the long-accepted figure, and how was the dispute resolved?",
+      "options": [
+        "It was lower by about 17 km/s, and later experiments confirmed the old value instead",
+        "It was higher by about 16–17 km/s, and other labs' cavity experiments closed in on Essen's value",
+        "It matched the old value exactly, ending decades of uncertainty",
+        "It was higher by thousands of km/s, and was quickly dismissed as an error"
+      ],
+      "answer": 1,
+      "explanation": "Essen's 299,792.5 km/s was about 16–17 km/s faster than the accepted ~299,774 km/s — a gap larger than the error bars. Despite initial resistance, other resonant-cavity and microwave experiments through the 1950s converged on Essen's number, not the old one, and the accepted value was revised upward.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "What lasting change to measurement standards followed from having such a trusted value for the speed of light?",
+      "options": [
+        "The speed of light was fixed as an exact defined number and used to define the metre",
+        "The second was redefined in terms of the speed of light",
+        "The kilogram was redefined using a copper cavity resonator",
+        "The speed of light was abandoned as too unreliable to use in equations"
+      ],
+      "answer": 0,
+      "explanation": "The value became so reliable that physicists stopped measuring c and instead fixed it as an exact defined constant, using it to define the metre — the measurement became the ruler. The second is defined by atomic transitions, not by c.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "worked",
+      "q": "You melt a flat sheet of chocolate in a microwave oven with the turntable removed. The melted spots (antinodes) are spaced 6.1 cm apart. The frequency printed on the oven is 2.45 GHz. Estimate the speed of light.",
+      "given": [
+        "Distance between adjacent antinodes = 6.1 cm = 0.061 m",
+        "Frequency f = 2.45 GHz = 2.45 × 10^9 Hz"
+      ],
+      "working": [
+        "Adjacent antinodes are half a wavelength apart, so λ = 2 × 0.061 = 0.122 m",
+        "Apply the wave relationship v = fλ",
+        "v = (2.45 × 10^9) × 0.122",
+        "v ≈ 2.99 × 10^8 m/s"
+      ],
+      "answerValue": 299000000,
+      "answerUnit": "m/s",
+      "tolerance": 10000000,
+      "explanation": "Doubling the antinode spacing gives the wavelength, and v = fλ yields roughly 3 × 10^8 m/s — close to the accepted speed of light. This is the same standing-wave principle Essen used, just with a kitchen microwave instead of a precision copper cavity.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Explain how Essen turned measurements taken inside a copper cavity into a value for the speed of light.",
+      "keyPoints": [
+        "He fed microwaves from a tunable oscillator into a precisely machined copper cavity resonator",
+        "He adjusted the frequency until a standing wave formed at resonance inside the box",
+        "Knowing the cavity dimensions and the number of nodes/loops, he worked out the wavelength",
+        "He measured the frequency accurately from his oscillator",
+        "He multiplied wavelength by frequency (v = fλ) to get 299,792.5 ± 1 km/s"
+      ],
+      "explanation": "The power of the method is that both inputs — a wavelength derived from a self-machined cavity and a directly measured frequency — could be known far more precisely than the distances and times of the older mirror methods, giving a much more accurate speed.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What made Fizeau's 1849 experiment historically significant?",
+      "options": [
+        "It was the first measurement of the speed of light using a terrestrial apparatus, without relying on astronomical observations",
+        "It was the first time anyone proved that light travels at a finite speed rather than instantaneously",
+        "It was the first experiment to show that light is an electromagnetic wave",
+        "It produced the most accurate value for the speed of light ever obtained in the 19th century"
+      ],
+      "answer": 0,
+      "explanation": "Fizeau's method was the first to measure the speed of light on Earth, with gears and mirrors you could build in a workshop, rather than leaning on planetary orbits or the moons of Jupiter. It was NOT the first proof that light is finite (astronomers like Roemer had already shown that from Jupiter's moon Io in the 1670s), and it was Maxwell and later Foucault's water experiment, not Fizeau's cogwheel, that tied light to being a wave.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "Why had earthbound experimenters like Galileo failed to measure the speed of light with lanterns on hilltops?",
+      "options": [
+        "The light delay over such distances was thousands of times shorter than human reaction time",
+        "The lanterns were not bright enough to be seen across the distance",
+        "Light does not actually travel at a finite speed over short distances",
+        "Atmospheric distortion bent the light away from the observer"
+      ],
+      "answer": 0,
+      "explanation": "Galileo's method needed a person to react the instant they saw a flash, but the actual travel-time delay was thousands of times shorter than human reaction time, so all he measured was how slowly people flinch. The lanterns were visible and light really is finite; the fatal problem was the lack of any clock or reflex fast enough to catch the tiny delay.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "What was the key insight behind Fizeau's method that let him avoid needing an impossibly fast clock?",
+      "options": [
+        "He used a rapidly spinning toothed wheel as the clock, so that light itself was timed against teeth and gaps flicking past",
+        "He used a very long baseline so the delay grew large enough for a mechanical clock to register",
+        "He compared the light to the ticking of the most accurate pendulum clock of the era",
+        "He measured the change in the light's colour caused by the delay"
+      ],
+      "answer": 0,
+      "explanation": "Fizeau realised the whole problem was the clock, so he replaced it with a spinning cogwheel whose teeth and gaps sliced time into pieces thin enough that the light's tiny round-trip delay became visible. He did not use a pendulum or any conventional clock, and no practical baseline would make the delay long enough for an 1800s mechanical clock to twitch.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "At the critical rotation speed, what happened to the returning light beam, and why?",
+      "options": [
+        "It was blocked by a tooth, because in the round-trip time the wheel rotated by exactly half a tooth-and-gap step, replacing the open gap with a solid tooth",
+        "It passed straight back through the same gap, because the wheel had rotated by exactly one full tooth-and-gap step",
+        "It reflected off a tooth back toward the mirror, because the wheel rotated by a full tooth width",
+        "It split into two dimmer beams, because the wheel rotated by a quarter of a tooth"
+      ],
+      "answer": 0,
+      "explanation": "At the magic speed the light left through an open gap and, during its round trip, the wheel turned by precisely half a step so a solid tooth had moved into place, blocking the returning beam and making it vanish to the observer. A full step would have brought another gap around and the light would still get through, so eclipse (darkness) occurs at the half-step condition.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "The cogwheel had 720 teeth with gaps equal in width to the teeth. Why was the equal tooth-and-gap spacing important?",
+      "options": [
+        "It meant one full turn equalled 720 identical tooth-plus-gap units, so the geometry of a 'half-step' block was clean and calculable",
+        "It made the wheel perfectly balanced so it would not wobble at high speed",
+        "It doubled the amount of light that could pass through to the mirror",
+        "It allowed the wheel to be spun in either direction with the same result"
+      ],
+      "answer": 0,
+      "explanation": "Equal teeth and gaps mean the rim is 720 repeating tooth-plus-gap units, so blocking the returning light requires rotating exactly half of one such unit, giving the clean geometric time interval used in the calculation. Balance and light throughput are not the reason; the point is a precise, repeatable angular fraction for the timing.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "worked",
+      "q": "Using Fizeau's figures, calculate the speed of light. The mirror was L = 8630 m away, the wheel had n = 720 teeth, and the returning light first vanished at a rotation frequency f = 12.6 Hz.",
+      "given": ["Distance to mirror L = 8630 m", "Number of teeth n = 720", "Rotation frequency at first eclipse f = 12.6 Hz"],
+      "working": [
+        "Speed = round-trip distance / time: c = 2L / t",
+        "The blocking time t is the time for the wheel to rotate half a tooth-and-gap step: t = 1 / (2nf)",
+        "Substitute: c = 2L / (1 / (2nf)) = 4Lnf",
+        "c = 4 x 8630 x 720 x 12.6",
+        "c = 313,165,440 m/s, approximately 313,000 km/s"
+      ],
+      "answerValue": 313000000,
+      "answerUnit": "m/s",
+      "tolerance": 3000000,
+      "explanation": "The algebra collapses to c = 4Lnf. Plugging in 4 x 8630 x 720 x 12.6 gives about 3.13 x 10^8 m/s, or roughly 313,000 km/s. This overshoots the true value (just under 300,000 km/s) by about 4-5%, but it was a remarkable first terrestrial result.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Fizeau's result of about 313,000 km/s was roughly 4-5% too high. How should this error be judged?",
+      "options": [
+        "It was a triumph: after two centuries of complete failure, landing within a few per cent on the first terrestrial attempt was remarkable",
+        "It was a serious failure that discredited the toothed-wheel approach",
+        "It was proof that light does not have a single fixed speed",
+        "It was worse than Galileo's earlier lantern measurement"
+      ],
+      "answer": 0,
+      "explanation": "Every earlier terrestrial attempt, from Galileo onward, had failed outright, so getting within a few per cent with a hand-cranked wheel on the first try was a triumph that left obvious room for improvement. Galileo got no usable value at all, and the small error reflected apparatus limits, not any variability in the speed of light itself.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "How did Léon Foucault improve on and extend Fizeau's work?",
+      "options": [
+        "He swapped the toothed wheel for a rapidly spinning mirror, and later sent light through water to show it slowed, supporting the wave model",
+        "He replaced the mirror with a second cogwheel to double the precision",
+        "He used the moons of Jupiter to check Fizeau's terrestrial value",
+        "He proved light was made of particles by measuring it in a vacuum"
+      ],
+      "answer": 0,
+      "explanation": "Foucault replaced the cogwheel with a fast rotating mirror, which shortened distances and tightened the measurement, and then showed light travels slower in water than in air, a killing blow for the particle theory and a win for the wave model. He did not use a second cogwheel or Jupiter's moons, and his water result argued for waves, not particles.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Explain how Fizeau's spinning cogwheel acted as a 'clock' to measure the round-trip time of a light beam.",
+      "keyPoints": [
+        "Light passes out through a gap between two teeth, travels to a distant mirror and reflects back",
+        "While the light is away, the wheel rotates by a small amount",
+        "At the critical spin rate the wheel turns by exactly half a tooth-and-gap step during the round trip",
+        "A solid tooth then occupies where the open gap was, blocking the returning beam so it vanishes to the observer",
+        "The known rotation rate and tooth count fix the tiny travel time, so the wheel itself serves as the clock (t = 1/(2nf))"
+      ],
+      "explanation": "The wheel is a clock made of teeth and gaps: one 'tick' is tuned to equal the light's round trip. When the returning beam is eclipsed by a tooth, the rotation rate and geometry reveal exactly how long the light took, giving the speed of light from apparatus you could crank by hand.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "Why does the finite, measurable speed of light matter far beyond a single number in a textbook?",
+      "keyPoints": [
+        "It proved light's speed is a real, finite, measurable quantity you can pin down in a laboratory",
+        "Maxwell's equations predicted an electromagnetic wave speed that matched the measured value, showing light is an electromagnetic wave",
+        "Einstein took the fixed, unchanging speed of light as the foundation of the theory of relativity, reshaping ideas of space and time",
+        "Fizeau's experiment was the 'starting gun' that opened the door to Foucault's refinements and everything that followed"
+      ],
+      "explanation": "By establishing that light has a definite finite speed, Fizeau's cogwheel underpinned Maxwell's identification of light as an electromagnetic wave and Einstein's relativity. A clever garden experiment with a 720-tooth wheel thus sits at the root of much of modern physics.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

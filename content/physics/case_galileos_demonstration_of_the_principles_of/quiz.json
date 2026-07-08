@@ -1,0 +1,152 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "A rifle is fired perfectly horizontally at the same instant an identical bullet is dropped from the same height. Ignoring air resistance and Earth's curvature, which reaches the ground first?",
+      "options": [
+        "The dropped bullet, because it has less distance to travel",
+        "The fired bullet, because its high speed keeps it aloft longer",
+        "They land at exactly the same instant",
+        "It depends on how fast the bullet is fired"
+      ],
+      "answer": 2,
+      "explanation": "Both bullets fall from the same height and gravity accelerates each vertically at the same rate, independent of horizontal motion, so they hit the ground together. The intuition that the fast bullet 'stays up longer' is wrong: its horizontal speed has no effect on the vertical fall time.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "According to Aristotle's view of motion, which the experiment overturned, how did a thrown projectile move?",
+      "options": [
+        "It fell and moved sideways simultaneously as independent motions",
+        "It moved forward in a straight line until its 'violent motion' was used up, then fell straight down",
+        "It followed a perfect parabola from launch to landing",
+        "It accelerated horizontally while falling at constant vertical speed"
+      ],
+      "answer": 1,
+      "explanation": "Aristotle held that an object could do only one thing at a time: it travelled forward while the pushing 'violent motion' lasted, then fell straight to earth once that was exhausted (up, over, down). Option A is Galileo's correct independence principle, not Aristotle's; the parabola is the modern description.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "In Galileo's table-top demonstration, what is the independent variable and what is the crucial controlled variable?",
+      "options": [
+        "Independent: table height; controlled: launch speed",
+        "Independent: launch (horizontal) speed; controlled: height of the table above the floor",
+        "Independent: the range; controlled: the time of flight",
+        "Independent: acceleration due to gravity; controlled: the ball's mass"
+      ],
+      "answer": 1,
+      "explanation": "The experimenter deliberately varies the ball's horizontal launch speed (independent variable) while keeping the table height fixed for every trial (controlled variable). Keeping height fixed is essential because the fall time depends only on height and gravity, so it must not be allowed to change between trials.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "Since the ball's launch speed can't be read directly, how is it determined in the method?",
+      "options": [
+        "By timing the ball over a fixed measured run on the surface and using v = distance / time",
+        "By measuring the range and working backwards from the parabola",
+        "By reading it off a speedometer attached to the ball",
+        "By measuring the height of the table and using v = sqrt(2gh)"
+      ],
+      "answer": 0,
+      "explanation": "A fixed run length is marked on the surface and the ball is timed over it, giving horizontal velocity as distance over time. The range is what is being measured against this speed, not used to find it, and sqrt(2gh) gives a vertical fall speed, not the horizontal launch speed.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "Why should the timing run on the surface be 'comfortably long, but not too long'?",
+      "options": [
+        "Too short exaggerates reaction-time error; too long lets friction slow the ball so launch speed is overestimated",
+        "Too short causes air resistance; too long causes reaction-time error",
+        "A longer run always gives a more accurate result with no downside",
+        "The run length has no effect on accuracy, only on convenience"
+      ],
+      "answer": 0,
+      "explanation": "If the run is too short, the stopwatch reaction-time error is a large percentage of a tiny time, ballooning the uncertainty. If it is too long, friction quietly slows the ball so the average speed over the run exceeds the actual launch speed, overestimating the horizontal velocity. A balance is needed.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "When range is plotted against launch (horizontal) speed for a fixed table height, what shape do the points make and what does it mean?",
+      "options": [
+        "A parabola, showing range grows with the square of the speed",
+        "A straight line through the origin, meaning range is directly proportional to launch speed",
+        "A horizontal line, meaning range is independent of speed",
+        "A curve that flattens immediately, meaning friction dominates"
+      ],
+      "answer": 1,
+      "explanation": "The points fall on a straight line rising from the origin: double the speed, double the range. This proportionality (range = constant x speed) is the key result. A parabola would imply a squared dependence, which is not what the ideal (no air resistance) experiment shows.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Physically, what does the gradient of the range-versus-launch-speed graph represent?",
+      "options": [
+        "The acceleration due to gravity",
+        "The height of the table",
+        "The time of flight (the time the ball spends falling)",
+        "The average horizontal velocity of the ball"
+      ],
+      "answer": 2,
+      "explanation": "Horizontally the ball moves at constant speed, so range = launch speed x time of flight. The graph says range = gradient x launch speed. Matching the two, the gradient equals the time of flight. Because that gradient is a single constant, the fall time is the same for every launch speed, proving the motions are independent.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "recall",
+      "q": "Explain how a constant gradient on the range-versus-launch-speed graph proves that the horizontal and vertical motions are independent.",
+      "keyPoints": [
+        "Horizontally the ball travels at constant speed, so range = launch speed x time of flight",
+        "The straight-line graph gives range = gradient x launch speed, so the gradient equals the time of flight",
+        "The gradient is a single constant, identical for slow and fast launches",
+        "Therefore the fall time is the same regardless of horizontal launch speed",
+        "Fall time depends only on the vertical motion (height and gravity), so the vertical motion is unaffected by the horizontal motion: the two are independent"
+      ],
+      "explanation": "The constancy of the gradient is the whole proof: since the gradient is the time of flight and it does not change with launch speed, the horizontal velocity has zero effect on how long the ball takes to fall. That is exactly what independence of the two motions means, overturning Aristotle's idea that horizontal and vertical motion take turns.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "worked",
+      "q": "A ball is rolled off a table and the range-versus-launch-speed graph is a straight line whose gradient is 0.45 s. Since the gradient equals the time of flight, use t = sqrt(2h/g) with g = 9.8 m/s^2 to find the height of the table.",
+      "given": [
+        "Gradient of graph = time of flight t = 0.45 s",
+        "g = 9.8 m/s^2",
+        "Relationship: t = sqrt(2h/g), so h = g*t^2 / 2"
+      ],
+      "working": [
+        "The gradient of range vs launch speed is the time of flight, so t = 0.45 s",
+        "Rearrange t = sqrt(2h/g) for h: h = g * t^2 / 2",
+        "h = 9.8 * (0.45)^2 / 2",
+        "h = 9.8 * 0.2025 / 2",
+        "h = 1.9845 / 2 = 0.992 m"
+      ],
+      "answerValue": 0.99,
+      "answerUnit": "m",
+      "tolerance": 0.03,
+      "explanation": "The gradient of the graph is the fall time (0.45 s). The fall is from rest vertically, so h = (1/2) g t^2 = 0.5 x 9.8 x 0.45^2 = 0.99 m. Notice the launch speed never enters the calculation: a graph about horizontal speed reveals a vertical distance because the two motions are independent.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "mc",
+      "q": "The narration notes that at very high launch speeds the straight-line relationship would begin to bend and sag. Why, and why is this ignored in the HSC?",
+      "options": [
+        "Gravity weakens at high speed; the HSC assumes constant gravity",
+        "Air resistance grows with speed, shortening the range and making the relationship non-linear; the HSC deliberately ignores air resistance",
+        "The ball's mass increases at high speed; the HSC ignores relativity",
+        "The table height effectively changes at high speed; the HSC keeps height fixed"
+      ],
+      "answer": 1,
+      "explanation": "At higher speeds air resistance drags on the ball more strongly, reducing the range below the ideal value and curving the line away from a straight proportionality. The HSC deliberately assumes no air resistance, so the clean straight-line idealisation holds. Gravity and mass do not change here in any relevant way.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

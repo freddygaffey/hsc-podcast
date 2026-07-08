@@ -1,0 +1,144 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "type": "mc",
+      "q": "What core idea about time does the lights-in-a-box thought experiment overturn?",
+      "options": [
+        "That light always travels at a finite speed",
+        "That there is a single universal 'now' shared by all observers",
+        "That time can be measured with clocks",
+        "That two events can ever happen at the same instant"
+      ],
+      "answer": 1,
+      "explanation": "The experiment shows that whether two events are simultaneous depends on the observer's frame of reference, so there is no universal 'now' shared by everyone. It does not claim events can never be simultaneous (they are simultaneous for observer A) nor does it challenge that light has a finite speed.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q02",
+      "type": "mc",
+      "q": "Where is observer A positioned relative to the two lamps inside the box?",
+      "options": [
+        "Closer to the right lamp than the left",
+        "Exactly halfway between them, on the line joining them",
+        "Off to one side, not on the line between them",
+        "Standing at the same lamp as one of the light sources"
+      ],
+      "answer": 1,
+      "explanation": "A is placed exactly midway between the two lamps and collinear with them, so the two flashes travel equal distances to reach A. This equal-distance setup is essential: it is why A measures the flashes as simultaneous. If A were closer to one lamp, the symmetry that makes the argument work would be lost.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q03",
+      "type": "mc",
+      "q": "In observer A's own frame, why do the two flashes reach A at the same instant?",
+      "options": [
+        "Because A speeds up the light coming from behind",
+        "Because the lamps are wired to fire at different times to compensate",
+        "Because the light covers equal distances at the same constant speed",
+        "Because A is moving toward one of the lamps"
+      ],
+      "answer": 2,
+      "explanation": "For A, the light from each lamp travels the same distance at the same speed c, so the two pulses arrive together. A is at rest with respect to the box, so A is not moving toward either lamp in this frame. The constancy of c combined with equal distances forces simultaneous arrival.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q04",
+      "type": "mc",
+      "q": "The box slides to the right. From observer B's platform frame, which flash reaches A first, and why?",
+      "options": [
+        "The right lamp's flash, because A is moving toward it and it covers less distance",
+        "The left lamp's flash, because light from behind travels faster",
+        "Both together, exactly as A sees it",
+        "The left lamp's flash, because A is moving toward the left lamp"
+      ],
+      "answer": 0,
+      "explanation": "In B's frame A moves rightward during the light's flight, so A rushes toward the right lamp's light (shorter distance) and flees the left lamp's light (longer distance). At the same speed c, the shorter path is covered first, so the right flash arrives first. Light does not travel faster from behind; c is the same for both beams.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q05",
+      "type": "mc",
+      "q": "What is the single rule Einstein insisted must never be broken, which drives the whole argument?",
+      "options": [
+        "The distances the light travels are always equal",
+        "Time flows at the same rate for everyone",
+        "The speed of light is the same for every observer, regardless of motion",
+        "The box must be perfectly sealed and at rest"
+      ],
+      "answer": 2,
+      "explanation": "The invariance of the speed of light (about 3 x 10^8 m/s for every observer) is the fixed rule. Because c cannot change, unequal distances in B's frame must produce unequal arrival times. Distances are NOT held equal in B's frame, and it is precisely time flowing at the same rate for everyone that the experiment refutes.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q06",
+      "type": "mc",
+      "q": "Observer A says the flashes arrived together; observer B says they did not. Who is correct?",
+      "options": [
+        "Observer A, because they are inside the box with the lamps",
+        "Observer B, because the platform is a stationary 'true' frame",
+        "Neither, because one of them must be using faulty instruments",
+        "Both, because simultaneity depends on the frame of reference"
+      ],
+      "answer": 3,
+      "explanation": "Both are right. Simultaneity is not a fact about the events themselves but about the observer's inertial frame, and there is no master clock or privileged frame to settle the dispute. B's platform is not a 'true' rest frame; all inertial frames are equally valid, and neither observer is in error.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q07",
+      "type": "mc",
+      "q": "Whose assumption about time did Einstein overturn, and how had that assumption been described?",
+      "options": [
+        "Newton's assumption that time flows equably, the same 'now' everywhere",
+        "Galileo's assumption that light has infinite speed",
+        "Maxwell's assumption that light needs a medium to travel",
+        "Kepler's assumption that time runs faster near massive bodies"
+      ],
+      "answer": 0,
+      "explanation": "For over two centuries physics rested on Newton's view that time flows 'equably, without regard to anything external' - a single universal 'now'. Einstein, then a 26-year-old patent clerk, dismantled this in 1905 by following the constancy of light to its logical end. The other options misattribute or invent claims not made in the episode.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q08",
+      "type": "mc",
+      "q": "According to the episode, how does the relativity of simultaneity help resolve the 'twins paradox'?",
+      "options": [
+        "It proves the travelling twin never actually moved",
+        "It shows the two twins never agreed on what happened 'at the same time', so the paradox dissolves",
+        "It shows light slows down inside the spaceship",
+        "It proves both twins must end up exactly the same age"
+      ],
+      "answer": 1,
+      "explanation": "The twins paradox feels impossible only while we assume a shared universal 'now'. Once simultaneity is frame-dependent, the twins never agreed on which events were simultaneous, and the paradox disappears - the returning twin really is younger. It is not resolved by the twins being the same age or by the travelling twin staying still.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q09",
+      "type": "recall",
+      "q": "Explain why the two light pulses travel different distances to reach observer A in observer B's frame of reference, even though they travelled equal distances in A's frame.",
+      "keyPoints": [
+        "In B's frame the whole box (and observer A) is moving with constant velocity, say to the right",
+        "While the light is in flight, A moves toward the right lamp and away from the left lamp",
+        "The right lamp's light therefore covers a shorter distance; the left lamp's light must chase A and covers a longer distance",
+        "The speed of light c is the same for both beams, so different distances mean different travel times",
+        "Hence the flashes do not reach A simultaneously in B's frame, using t = d/c"
+      ],
+      "explanation": "The key move is that A is stationary in its own frame but moving in B's frame. Because c is invariant, the only thing that can differ between the two beams is the distance each must travel to reach the moving observer, which breaks the simultaneity that held in A's frame.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    },
+    {
+      "id": "q10",
+      "type": "recall",
+      "q": "State the principle of the relativity of simultaneity as demonstrated by this thought experiment.",
+      "keyPoints": [
+        "Whether two events are simultaneous is not an absolute fact about the events",
+        "It depends on the inertial reference frame of the observer",
+        "Two events simultaneous in one inertial frame need not be simultaneous in another",
+        "There is no universal 'now' and no privileged/master frame to settle disagreements",
+        "It follows directly from the constancy of the speed of light for all observers"
+      ],
+      "explanation": "Relativity of simultaneity is a direct consequence of special relativity: because c is the same for everyone, observers in relative motion can correctly disagree about whether two spatially separated events happened at the same time.",
+      "source": {"origin": "ai", "ref": "Generated from episode script"}
+    }
+  ]
+}

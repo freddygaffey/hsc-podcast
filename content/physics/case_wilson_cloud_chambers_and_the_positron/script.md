@@ -1,0 +1,49 @@
+---
+title: "⭐⭐ Wilson cloud chambers and the positron"
+kind: case-study
+supplementary: supplementary.md
+---
+
+NARRATOR: This is part of Module 8, From the Universe to the Atom. And I want to start with an equation that terrified the man who wrote it. Not because it was wrong. Because it was too right.
+
+NARRATOR: Picture a young physicist in Cambridge, quiet, almost painfully quiet, staring at a line of mathematics he has just finished. It describes the electron perfectly. It folds together the two great revolutions of his age, quantum mechanics and Einstein's relativity, into one elegant statement. It even explains something nobody had been able to explain, the way an electron behaves like a tiny spinning magnet. By every measure, it is a triumph. And yet, sitting inside it, like a splinter he cannot pull out, is an answer that should not exist.
+
+QUESTION: What could possibly be wrong with an equation that works?
+
+NARRATOR: The problem was this. When you solve his equation, it hands you back two kinds of energy. Positive energy, which is what every particle we had ever measured actually has. And negative energy. Energy less than nothing. Now, most physicists would look at that and do what physicists usually do with an ugly answer. They cross it out. They say, that solution is not physical, throw it away, keep the part that matches reality. But the man who wrote this equation refused to throw it away. His name was Paul Dirac, and it was nineteen twenty-eight.
+
+NARRATOR: To understand why Dirac wouldn't flinch, you have to understand what kind of mind he had. Dirac trusted mathematics more than he trusted his own intuition. If the equation said negative energy states were allowed, then to Dirac, the universe had some obligation to explain what they were. He didn't get to just delete half of reality because it made him uncomfortable.
+
+NARRATOR: So he asked a stranger question. What if those negative energy states are real, and what if they are already full? Imagine an invisible ocean of negative energy electrons filling all of empty space, every state occupied, so that ordinary electrons, the ones we know, simply float on top of it and never fall in. We can't see this ocean because it is everywhere and uniform, the way a fish doesn't notice the water. But here is the beautiful part. If you could punch a single electron out of that ocean, you'd leave behind a hole. And a hole in a sea of negative charge would behave like a particle with positive charge. A gap that acts like a thing.
+
+QUESTION: So what does a hole in the vacuum actually look like?
+
+NARRATOR: Dirac's answer, once he'd cleaned up the details, was staggering. It would look like a particle with exactly the same mass as an electron, but the opposite charge. A mirror-image electron. A twin, born from nothing, carrying a positive charge instead of a negative one. Today we tell the same idea a little differently, as a particle moving backwards in time, but the prediction is identical. There should exist antimatter. And the equation went further. It said that under the right conditions, energy could congeal into a matched pair, one electron and one of these positive twins, appearing together out of empty space. Pair production. And they could find each other again and vanish in a flash of energy. Annihilation. Matter and antimatter, created and destroyed in balance.
+
+NARRATOR: It was one of the boldest predictions in the history of physics. And the reaction from the community was, roughly, polite silence. A hole in an infinite sea? A positive electron nobody had ever seen? It sounded like numerology dressed up as physics. Even great physicists assumed Dirac had simply mis-identified the proton, the only positive particle anyone knew. The trouble was, the proton is about one thousand eight hundred times heavier than an electron. Dirac's twin had to weigh exactly the same as an electron. The two could not be the same thing. So the prediction just sat there, unproven, waiting for the world to catch up.
+
+NARRATOR: Now here is what makes this story so good. The evidence had already been photographed. Years before Dirac wrote a single symbol, the tracks were sitting in laboratory notebooks, and nobody knew what they were looking at.
+
+NARRATOR: To see how, we need to meet the machine that made antimatter visible. It's called a cloud chamber, invented by a Scottish physicist named Charles Wilson, and it is one of the most beautiful instruments ever built. Wilson had spent his youth on a Scottish mountain watching clouds form, and he became obsessed with a simple question, how do you make a cloud on demand. What he built was a sealed chamber full of air so thick with vapour that it was on the very edge of forming droplets, supersaturated, desperate for any excuse to condense.
+
+QUESTION: So what gives the vapour its excuse?
+
+NARRATOR: A charged particle. When something like an electron comes tearing through that chamber, it doesn't pass silently. It rips electrons off the atoms in its path, leaving a trail of charged fragments behind it, called ions. And each of those ions is a seed. The vapour condenses onto them instantly, so a line of tiny droplets blooms into existence, tracing the exact path the particle took. An invisible subatomic bullet suddenly leaves a visible white streak hanging in the air, like the contrail of a jet you never saw. You point a camera, you open the shutter, and you have photographed the trajectory of a single particle.
+
+NARRATOR: But a straight line only tells you where something went, not what it was. So the experimenters added one more thing. A magnet. They placed the whole chamber inside a strong magnetic field. And a magnetic field does something very particular to a moving charge, it pushes it sideways, bending its path into a curve. The rules here are precise and they are the whole key to the story. A faster, more energetic particle bends only gently, a wide, lazy arc. A slower one curls up tight. And the direction it curves, left or right, is decided entirely by the sign of its charge. Positive one way, negative the other. So now a photograph of a curved track is a fingerprint. From how tightly it curls you can read the particle's charge-to-mass ratio, and from which way it curls you can read the sign of its charge.
+
+NARRATOR: And this is where those old notebooks come back to haunt us. As early as nineteen twenty-three, people running cloud chambers had noticed the occasional track that behaved like an electron in every way, same tightness of curl, same apparent mass, but curled the wrong way. Curved as if it were positive. And almost everyone who saw one assumed it was just an ordinary electron that happened to be travelling in the opposite direction, upward instead of downward through the chamber. A trivial thing. Not worth a second glance. They had photographs of antimatter, filed away as noise.
+
+NARRATOR: The man who refused to look away worked at Caltech, in California. His name was Carl Anderson, and in nineteen thirty-two he built a cloud chamber to study cosmic rays, the sleet of high-energy particles that rains down on Earth from space. Cosmic rays are perfect for this, because when they slam into the atmosphere they carry enormous energy, more than enough to congeal into fresh particle-antiparticle pairs, exactly as Dirac had described. Anderson let those cosmic rays pour through his magnetised chamber, opened his shutter, and started collecting photographs.
+
+NARRATOR: And he kept finding the anomaly. A track with the delicate curl of an electron, bending the wrong way. But Anderson was careful, and he'd thought about the obvious objection. What if it really was just an electron going the other direction? So he did something clever. He put a lead plate straight across the middle of the chamber. Here's the logic. When a particle punches through solid lead, it loses energy. And a particle with less energy curls more tightly on the far side. So the plate acts as an arrow. The side where the track is more sharply curved is the side the particle was leaving, which tells you unambiguously which way it was going.
+
+QUESTION: And once he knew the direction, what was left?
+
+NARRATOR: Only one answer. The particle was moving in the direction that made its charge positive, and yet its track was as light and tight as an electron's, giving it the mass of an electron, not the crushing heaviness of a proton. Same mass as an electron. Opposite charge. It was Dirac's twin, photographed, curling through a bank of Scottish fog physics in a laboratory in California. Anderson called it the positron, the positive electron. The prediction that had sounded like numerology was sitting right there in the emulsion.
+
+NARRATOR: And the meaning of it is hard to overstate. For all of history, matter had been the whole story. Anderson's photograph proved that our world is only half of a symmetry. For every particle, there is an anti-particle, a mirror twin, and where the two meet they annihilate into pure energy, precisely as Einstein's most famous relationship demands. Antimatter stopped being a splinter in an equation and became a fact of nature. Carl Anderson won the Nobel Prize in nineteen thirty-six, and Dirac's refusal to cross out an inconvenient answer became one of the great lessons of physics. Sometimes the equation knows something you don't.
+
+NARRATOR: And that little curl of droplets, bending the wrong way, is why every time you hear about antimatter, about a doctor's positron scan, or the fuel of a science-fiction starship, you're standing downstream of a Scottish cloud, a lonely equation, and a photograph nobody wanted to look at twice.
+
+NARRATOR: For the physics behind the picture, how charged particles move through magnetic fields and how that curl encodes charge and mass, head to the teaching topic on the motion of charged particles in electric and magnetic fields.
