@@ -1890,11 +1890,22 @@
   }
 
   // Subjects with a baked past-paper question bank (content/<id>/questions.json).
-  const GENERATOR_BANKS = [
+  // Paper-only subjects (past papers in R2, no podcast episodes) — shown as generator tiles.
+  // Seeded with the core few; replaced at load by content/paper-subjects.json (all subjects
+  // that have papers in the bucket) so the onboarding picker can offer every one of them.
+  let GENERATOR_BANKS = [
     ["maths-advanced", "Mathematics Advanced"],
     ["physics", "Physics"],
     ["dt", "Design & Technology"],
   ];
+  async function loadPaperSubjects() {
+    try {
+      const reg = await fetch("content/paper-subjects.json", { cache: "no-store" }).then((r) => r.json());
+      if (Array.isArray(reg) && reg.length) {
+        GENERATOR_BANKS = reg.filter((r) => (r.papers || 0) > 0).map((r) => [r.id, r.name]);
+      }
+    } catch (e) { /* keep the seeded fallback */ }
+  }
 
   // --- Subject selection / first-run onboarding ---
   // With many subjects a full grid is unusable, so on first run (no stored prefs) we ask the
@@ -3940,8 +3951,9 @@
 
   fetch("manifest.json")
     .then((r) => { if (!r.ok) throw new Error("manifest HTTP " + r.status); return r.json(); })
-    .then((data) => {
+    .then(async (data) => {
       fullManifest = indexManifest(normaliseManifest(data));
+      await loadPaperSubjects();   // expand the subject pool to every paper subject before rendering
       // If there's exactly one subject, skip the picker and enter it directly.
       if (fullManifest.subjects.length === 1) setSubject(fullManifest.subjects[0].id);
       // Otherwise, if a hash deep-links a subject/episode, handleRoute sets it; if not and
