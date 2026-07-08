@@ -1695,8 +1695,45 @@
       if (idx >= 0) switchVoice(idx);
     }
   });
-  if (dlAllVoicesToggle) dlAllVoicesToggle.addEventListener("change", () => {
-    localStorage.setItem(DOWNLOAD_ALL_VOICES_KEY, dlAllVoicesToggle.checked ? "1" : "");
+  // BUG-26: size helpers for the download/delete warnings.
+  const GB = 1024 * 1024 * 1024;
+  function estDownloadedBytes() {
+    const dls = loadDownloads(); let bytes = 0;
+    for (const id of Object.keys(dls)) {
+      const ep = findEpisode(id); if (!ep) continue;
+      const names = dls[id].voices || ep.voices.map((v) => v.name);
+      for (const n of names) { const v = ep.voices.find((x) => x.name === n); if (v && v.duration) bytes += v.duration * EST_BYTES_PER_SEC; }
+    }
+    return bytes;
+  }
+  function estBackfillBytes() {
+    const dls = loadDownloads(); let bytes = 0;
+    for (const id of Object.keys(dls)) {
+      const ep = findEpisode(id); if (!ep) continue;
+      const have = new Set(dls[id].voices || []);
+      for (const v of ep.voices) if (!have.has(v.name) && v.duration) bytes += v.duration * EST_BYTES_PER_SEC;
+    }
+    return bytes;
+  }
+  async function backfillAllVoices() {
+    const ids = Object.keys(loadDownloads());
+    let n = 0;
+    for (const id of ids) { const ep = findEpisode(id); if (!ep) continue; try { await downloadEpisode(ep); n++; } catch (e) {} }
+    refreshStorageUsage();
+    if (!viewLibrary.hidden) renderLibrary();
+    if (n) showToast("Extra voices downloaded for your saved episodes.");
+  }
+  if (dlAllVoicesToggle) dlAllVoicesToggle.addEventListener("change", async () => {
+    if (!dlAllVoicesToggle.checked) { localStorage.setItem(DOWNLOAD_ALL_VOICES_KEY, ""); return; }
+    // BUG-26: turning it on back-fills the missing voices for already-saved episodes. Warn
+    // before downloading more than ~3 GB, and revert the toggle if the user declines.
+    const extra = estBackfillBytes();
+    if (extra > 3 * GB && !confirm(`This will download about ${fmtBytes(extra)} of extra voices for your saved episodes. Continue?`)) {
+      dlAllVoicesToggle.checked = false;
+      return;
+    }
+    localStorage.setItem(DOWNLOAD_ALL_VOICES_KEY, "1");
+    if (extra > 0) { if (!(await mayDownload(extra))) return; backfillAllVoices(); }
   });
   if (introTitleToggle) introTitleToggle.addEventListener("change", () => {
     localStorage.setItem(INTRO_KEY, introTitleToggle.checked ? "1" : "0");
@@ -1725,7 +1762,11 @@
   if (fsrsRetentionSelect) fsrsRetentionSelect.addEventListener("change", saveFsrsSettings);
   if (fsrsStepsInput) fsrsStepsInput.addEventListener("change", saveFsrsSettings);
   if (btnClearDownloads) btnClearDownloads.addEventListener("click", async () => {
-    if (!confirm("Delete all downloaded episodes? They'll need to be downloaded again for offline use.")) return;
+    const freed = estDownloadedBytes();
+    const msg = freed > 0
+      ? `Delete all downloaded episodes? This frees about ${fmtBytes(freed)} of voice audio. They'll need to be downloaded again for offline use.`
+      : "Delete all downloaded episodes? They'll need to be downloaded again for offline use.";
+    if (!confirm(msg)) return;
     await clearAllDownloads();
     refreshStorageUsage();
     if (!viewLibrary.hidden) renderLibrary();
