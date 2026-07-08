@@ -299,4 +299,42 @@
   loadSession().then((s) => { session = s; if (s) syncNow().catch(() => {}); });
 
   window.Sync = { scheduleSync, syncNow, isLoggedIn, renderPanel };
+
+  // --- FEATURE-12/13: usage telemetry + feedback (public endpoints, plaintext) ---
+  const SESSION_ID = Math.random().toString(36).slice(2) + Date.now().toString(36);
+  const isStandalone = () =>
+    (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) || navigator.standalone === true;
+  let trackQueue = [];
+  let trackTimer = null;
+  function flushTrack() {
+    if (!AUTH_API || !trackQueue.length) return;
+    const events = trackQueue.splice(0, 100);
+    try {
+      fetch(AUTH_API + "/track", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ session: SESSION_ID, standalone: isStandalone(), events }),
+        keepalive: true,
+      }).catch(() => {});
+    } catch (e) {}
+  }
+  function track(event, props) {
+    if (!event) return;
+    trackQueue.push({ event, props });
+    clearTimeout(trackTimer);
+    trackTimer = setTimeout(flushTrack, 5000);
+    if (trackQueue.length >= 25) flushTrack();
+  }
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") flushTrack(); });
+  async function sendFeedback(text) {
+    if (!AUTH_API) throw new Error("no-api");
+    const res = await fetch(AUTH_API + "/feedback", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text, username: session ? session.username : undefined }),
+    });
+    if (!res.ok) throw new Error("feedback-failed");
+  }
+  window.Telemetry = { track, flush: flushTrack };
+  window.Feedback = { send: sendFeedback };
 })();

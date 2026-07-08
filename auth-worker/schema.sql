@@ -19,3 +19,25 @@ CREATE TABLE IF NOT EXISTS events (
 );
 
 CREATE INDEX IF NOT EXISTS idx_events_user ON events (username, subject, id);
+
+-- FEATURE-12: plaintext usage telemetry (Fred-readable analytics; NOT E2E-encrypted).
+CREATE TABLE IF NOT EXISTS telemetry (
+  id         INTEGER PRIMARY KEY AUTOINCREMENT,
+  ts         INTEGER NOT NULL,
+  session    TEXT,                    -- random per-load id (not an account)
+  event      TEXT NOT NULL,           -- e.g. 'subject_open','play','quiz_grade'
+  props      TEXT,                    -- JSON blob of event details
+  standalone INTEGER,                 -- 1 = installed PWA, 0 = browser tab
+  origin     TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_telemetry_event ON telemetry (event, ts);
+
+-- FEATURE-13: free-text feedback (Fred-readable).
+CREATE TABLE IF NOT EXISTS feedback (
+  id       INTEGER PRIMARY KEY AUTOINCREMENT,
+  ts       INTEGER NOT NULL,
+  username TEXT,                      -- optional (if logged in)
+  text     TEXT NOT NULL,
+  origin   TEXT,
+  ua       TEXT
+);

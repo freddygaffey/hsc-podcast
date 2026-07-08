@@ -74,6 +74,36 @@ export default {
         return json({ ok: true }, 201, origin);
       }
 
+      // --- Public: usage telemetry (FEATURE-12). No auth — most users aren't logged in. ---
+      if (req.method === "POST" && url.pathname === "/track") {
+        let body; try { body = await req.json(); } catch { return json({ error: "bad json" }, 400, origin); }
+        const events = Array.isArray(body.events) ? body.events.slice(0, 100) : [];
+        const session = typeof body.session === "string" ? body.session.slice(0, 64) : null;
+        const standalone = body.standalone ? 1 : 0;
+        const org = origin.slice(0, 64);
+        const now = Date.now();
+        const stmts = events
+          .filter((e) => e && typeof e.event === "string")
+          .map((e) => env.DB.prepare(
+            "INSERT INTO telemetry (ts, session, event, props, standalone, origin) VALUES (?,?,?,?,?,?)"
+          ).bind(now, session, String(e.event).slice(0, 64),
+                 e.props != null ? JSON.stringify(e.props).slice(0, 2048) : null, standalone, org));
+        if (stmts.length) await env.DB.batch(stmts);
+        return json({ ok: true }, 200, origin);
+      }
+
+      // --- Public: free-text feedback (FEATURE-13) ---
+      if (req.method === "POST" && url.pathname === "/feedback") {
+        let body; try { body = await req.json(); } catch { return json({ error: "bad json" }, 400, origin); }
+        const text = typeof body.text === "string" ? body.text.trim().slice(0, 4000) : "";
+        if (!text) return json({ error: "empty" }, 400, origin);
+        const username = validUsername((body.username || "").toLowerCase()) ? body.username.toLowerCase() : null;
+        await env.DB.prepare(
+          "INSERT INTO feedback (ts, username, text, origin, ua) VALUES (?,?,?,?,?)"
+        ).bind(Date.now(), username, text, origin.slice(0, 64), (req.headers.get("User-Agent") || "").slice(0, 256)).run();
+        return json({ ok: true }, 200, origin);
+      }
+
       // --- Everything below needs auth (username + Bearer authToken) ---
       const auth = await authenticate(req, url, env);
       if (!auth.ok) return json({ error: "unauthenticated" }, 401, origin);

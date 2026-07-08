@@ -27,6 +27,9 @@
   const SPEED_OPTIONS = [];
   for (let s = 0.25; s <= 16; s += 0.25) SPEED_OPTIONS.push(Math.round(s * 100) / 100);
 
+  // FEATURE-12: fire-and-forget usage telemetry (auth.js batches + posts to the backend).
+  const track = (event, props) => { try { window.Telemetry && window.Telemetry.track(event, props); } catch (e) {} };
+
   let fullManifest = null;       // { subjects: [...] } as loaded from manifest.json
   let currentSubject = null;     // id of the subject currently in view
   let currentLibMode = "podcasts"; // which library mode is showing: "podcasts" | "papers"
@@ -861,7 +864,7 @@
   });
 
   // --- Audio events ---
-  audio.addEventListener("play", () => { setPlayState(true); lastListenTick = Date.now(); if ("mediaSession" in navigator) navigator.mediaSession.playbackState = "playing"; });
+  audio.addEventListener("play", () => { setPlayState(true); lastListenTick = Date.now(); if ("mediaSession" in navigator) navigator.mediaSession.playbackState = "playing"; track("play", { ep: currentEpisode && currentEpisode.id, speed: getCurrentSpeed() }); });
   audio.addEventListener("pause", () => { setPlayState(false); flushListenLog(); lastListenTick = 0; persistProgress(); if ("mediaSession" in navigator) navigator.mediaSession.playbackState = "paused"; });
   audio.addEventListener("ended", () => {
     flushListenLog(); // credit time to the finished episode's voice before advancing
@@ -1208,6 +1211,7 @@
   function setSubject(id) {
     const s = subjectMeta(id);
     if (!s) return false;
+    if (currentSubject !== id) track("subject_open", { id });
     currentSubject = id;
     manifest = { modules: s.modules };
     GROUP_NAMES = s.groupNames || {};
@@ -1682,6 +1686,23 @@
   if (btnChooseSubjects) btnChooseSubjects.addEventListener("click", () => {
     closeSheet(settingsOverlay);
     openSubjectPicker(true);   // re-run the first-run onboarding picker (welcome variant)
+  });
+  // FEATURE-13: send free-text feedback to the backend.
+  const btnFeedbackSend = document.getElementById("btn-feedback-send");
+  const feedbackText = document.getElementById("feedback-text");
+  const feedbackStatus = document.getElementById("feedback-status");
+  if (btnFeedbackSend) btnFeedbackSend.addEventListener("click", async () => {
+    const text = (feedbackText.value || "").trim();
+    if (!text) { if (feedbackStatus) feedbackStatus.textContent = "Type something first."; return; }
+    btnFeedbackSend.disabled = true;
+    try {
+      await window.Feedback.send(text);
+      feedbackText.value = "";
+      if (feedbackStatus) feedbackStatus.textContent = "Thanks — sent! 🙏";
+      track("feedback_sent");
+    } catch (e) {
+      if (feedbackStatus) feedbackStatus.textContent = "Couldn't send — check your connection and retry.";
+    } finally { btnFeedbackSend.disabled = false; }
   });
   settingsOverlay.addEventListener("click", (e) => {
     if (e.target === settingsOverlay) closeSheet(settingsOverlay);
@@ -3022,6 +3043,7 @@
     const q = questions[current];
     const ep = q._ep || quizState.ep;
     const correct = chosen === q.answer;
+    track("quiz_answer", { correct, subject: currentSubject, paper: !!quizState.isPaper });
 
     if (correct) quizState.score++;
     else quizState.missed.push(q);
@@ -4082,6 +4104,7 @@
         if (le) loadEpisode(le, { autoplay: false });
       }
       updateReviewBadge();
+      track("open", { subjects: fullManifest ? fullManifest.subjects.length : 0 });
       maybeOnboard();
     })
     .catch((err) => {
