@@ -131,6 +131,46 @@ a code fix.
 
 ---
 
+## 8. GROUND TRUTH (2026-07-09) — the on-screen log finally showed the failure
+
+Build `6f07703` added a no-behaviour-change diagnostics ring buffer (Settings → About → Audio log).
+Fred captured a full play→lock→pause→resume cycle. The decisive evidence is `currentTime` (`t=`):
+
+```
++15.8  vis:hidden      t=104.0    screen locked, still playing
++17.2  MS:pause        t=109.3    played 104.0→109.3 WHILE LOCKED  → background *playback* works
++17.9  MS:play handler t=109.5    press play from the lock screen
++18.0  evt:playing     t=109.5    element claims playing; promise resolves
++20.3  MS:pause        t=109.5    2.3s later t is UNCHANGED
++23.2  MS:pause        t=109.5    frozen the entire time in background
++23.7  vis:visible                unlock
++24.6  btn:play        t=109.5 → +26.0 t=113.4   foreground: advances again
+```
+
+**Failure mode (confirmed, not hypothesised):** after a **background pause**, the next play is a
+**phantom** — `evt:play`+`evt:playing` fire, `paused=false`, `MS:play resolved` — but `currentTime` is
+**frozen** and there is no sound. iOS deactivates the element's audio session on a backgrounded pause and
+re-playing in the background does **not** reactivate the output. Recovery only happens on a **foreground
+gesture** (wake the screen — see the `+24.6` line). So: background *playback* survives a lock; background
+*pause→resume* does not.
+
+**Why this kills the earlier theories:**
+- It is **not** a rejected `play()` (BUG-36 entry's "likely cause" was wrong) — the promise resolves.
+- The **silent-keepalive** attempts (1, 2) couldn't work: iOS gives the native `<audio>` element its own
+  audio session, *separate* from an AudioContext's. Holding a separate silent session alive does nothing
+  for the element's session. To share one session the **element itself must be routed through the
+  context** (`createMediaElementSource`).
+- Attempt 4 *did* route through a context but (a) had no continuous output to keep that context's session
+  alive across the pause, and (b) `crossOrigin`/routing broke loading → the speed + loop regression.
+
+**Implication for the fix:** the only mechanism that can work is routing the element through **one**
+AudioContext that is kept alive across the pause (a continuous silent source in the same graph). That is
+the correct-but-risky Web-Audio family that regressed before — so it must be done with the diagnostics on
+and a revert ready. The safe alternative is a product decision: accept "wake to resume" and make the
+lock-screen play button wake+resume (the log shows that already works). Decision pending with Fred.
+
+---
+
 ## 7. Verification of the current (reverted) state — `c6c61ca`
 
 - `git diff 410a382 HEAD -- app.js` filtered to audio identifiers → **empty** (audio code == known-good).
