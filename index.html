@@ -260,6 +260,14 @@
         <button type="button" id="build-version" class="setting-value setting-build" aria-label="App build — tap to show what changed">—</button>
       </div>
       <p class="setting-hint" id="build-message" hidden></p>
+      <div class="setting-row">
+        <span class="setting-label">Audio log <span class="setting-hint" style="display:block">BUG-36 diagnostics — play, lock, pause &amp; resume from the lock screen, then open this</span></span>
+        <span>
+          <button type="button" id="audio-log-show" class="setting-value setting-build">Show</button>
+          <button type="button" id="audio-log-copy" class="setting-value setting-build">Copy</button>
+        </span>
+      </div>
+      <pre id="audio-log-out" class="setting-hint" hidden style="white-space:pre-wrap;max-height:40vh;overflow:auto;font-family:ui-monospace,monospace;font-size:11px;line-height:1.35"></pre>
     </div>
   </div>
 </div>

@@ -66,6 +66,37 @@
   // playback. In engine mode a silent looping element anchors the iOS media session so
   // lock-screen / headphone controls still work. See createHybridAudio.
   const audio = window.createHybridAudio ? window.createHybridAudio(audioEl) : audioEl;
+
+  // --- BUG-36 audio diagnostics (ring buffer; no behaviour change) ---
+  // Records timestamped audio/media-session events so we can see what iOS actually does through a
+  // pause→lock→resume cycle instead of guessing. Read/copied from Settings → About → Audio log.
+  const AUDIO_LOG = [];
+  function alog(msg, extra) {
+    let line = msg;
+    try {
+      const bits = [
+        "paused=" + audioEl.paused,
+        "t=" + (audioEl.currentTime || 0).toFixed(1),
+        "rate=" + (audioEl.playbackRate || 1),
+        "ready=" + audioEl.readyState,
+        "net=" + audioEl.networkState,
+        "vis=" + document.visibilityState,
+      ];
+      if (audioEl.error) bits.push("err=" + audioEl.error.code);
+      if ("mediaSession" in navigator) bits.push("ms=" + navigator.mediaSession.playbackState);
+      if (extra) bits.push(extra);
+      line += " {" + bits.join(" ") + "}";
+    } catch (e) {}
+    AUDIO_LOG.push({ t: Date.now(), line });
+    if (AUDIO_LOG.length > 250) AUDIO_LOG.shift();
+  }
+  // Passively record the element's own lifecycle — these fire regardless of who called play().
+  // 'playing' is the key one: it means audio is actually producing output (not just currentTime moving).
+  ["play", "playing", "pause", "waiting", "stalled", "suspend", "ended", "error", "loadstart"].forEach((ev) =>
+    audioEl.addEventListener(ev, () => alog("evt:" + ev))
+  );
+  document.addEventListener("visibilitychange", () => alog("vis:" + document.visibilityState));
+
   const viewSubjects = document.getElementById("view-subjects");
   const viewSubjectHub = document.getElementById("view-subject-hub");
   const viewLibrary = document.getElementById("view-library");
@@ -856,8 +887,8 @@
     if (!("mediaSession" in navigator)) return;
     const ms = navigator.mediaSession;
     const set = (action, fn) => { try { ms.setActionHandler(action, fn); } catch (e) {} };
-    set("play", () => audio.play().catch(() => {}));
-    set("pause", () => audio.pause());
+    set("play", () => { alog("MS:play handler"); audio.play().then(() => alog("MS:play resolved")).catch((e) => alog("MS:play REJECTED", "reason=" + (e && e.name))); });
+    set("pause", () => { alog("MS:pause handler"); audio.pause(); });
     set("seekbackward", (d) => { audio.currentTime = Math.max(0, audio.currentTime - ((d && d.seekOffset) || 30)); });
     set("seekforward", (d) => { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + ((d && d.seekOffset) || 30)); });
     set("seekto", (d) => { if (d && d.seekTime != null && audio.duration) audio.currentTime = d.seekTime; });
@@ -977,7 +1008,8 @@
   // --- Controls ---
   const togglePlay = () => {
     if (!currentEpisode) return;
-    audio.paused ? audio.play() : audio.pause();
+    if (audio.paused) { alog("btn:play"); audio.play().then(() => alog("btn:play resolved")).catch((e) => alog("btn:play REJECTED", "reason=" + (e && e.name))); }
+    else { alog("btn:pause"); audio.pause(); }
   };
   btnPlay.addEventListener("click", togglePlay);
   if (btnPlayMini) btnPlayMini.addEventListener("click", (e) => { e.stopPropagation(); togglePlay(); });
@@ -1659,6 +1691,26 @@
     const date = _buildInfo.date ? new Date(_buildInfo.date).toLocaleString() : "";
     msg.textContent = (_buildInfo.message || "(no commit message)") + (date ? " · " + date : "");
     msg.hidden = !msg.hidden;
+  });
+
+  // BUG-36 audio diagnostics: dump the ring buffer as relative-time lines (t=+Ns).
+  function formatAudioLog() {
+    if (!AUDIO_LOG.length) return "(no audio events yet — play something first)";
+    const t0 = AUDIO_LOG[0].t;
+    return AUDIO_LOG.map((e) => "+" + ((e.t - t0) / 1000).toFixed(1) + "s  " + e.line).join("\n");
+  }
+  const audioLogShow = document.getElementById("audio-log-show");
+  const audioLogOut = document.getElementById("audio-log-out");
+  if (audioLogShow && audioLogOut) audioLogShow.addEventListener("click", () => {
+    audioLogOut.textContent = formatAudioLog();
+    audioLogOut.hidden = !audioLogOut.hidden;
+  });
+  const audioLogCopy = document.getElementById("audio-log-copy");
+  if (audioLogCopy) audioLogCopy.addEventListener("click", () => {
+    const text = formatAudioLog();
+    const done = () => { audioLogCopy.textContent = "Copied"; setTimeout(() => (audioLogCopy.textContent = "Copy"), 1500); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done).catch(() => { audioLogOut.hidden = false; audioLogOut.textContent = text; });
+    else { audioLogOut.hidden = false; audioLogOut.textContent = text; }
   });
 
   btnSettings.addEventListener("click", () => {
