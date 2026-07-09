@@ -2384,6 +2384,14 @@
         episodesEl.appendChild(renderEpisodeRow(ep, i + 1));
         shown++;
       });
+      // Star key at the bottom of each case-study dropdown (one inline row, shown
+      // when the box is open). Case modules are CASE / CASE5-8.
+      if (!q && group.prefix.startsWith("CASE")) {
+        const key = document.createElement("div");
+        key.className = "module-key";
+        key.textContent = "⭐ = HSC importance — ⭐⭐⭐ most important; ⭐⭐ worth knowing; ⭐ least critical (can still appear)";
+        episodesEl.appendChild(key);
+      }
       groupEl.appendChild(episodesEl);
 
       viewLibrary.appendChild(groupEl);
