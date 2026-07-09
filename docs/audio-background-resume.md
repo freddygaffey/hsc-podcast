@@ -239,6 +239,22 @@ change that. BUG-36 is a hard iOS platform limit. Ship clean native audio; backg
 (the primary case); background *pause→resume while still locked* requires a screen wake ("wake to
 resume"). Attempts exhausted: 1, 2, 3, 4, 5, 6/6b/6c/6d (reload+seek kicks), and WebAudio-at-1×.
 
+## 11. "It worked in the git history" — full archaeology (2026-07-09)
+
+Fred was sure a past version resumed from the lock screen. I searched **both** codebases end to end:
+- **This unified repo** (157 commits): the `<audio>` tag, Media Session handlers, and play/pause code
+  are unchanged since commit #1 (`95caf6d`). The raw-element original (`const audio = audioEl`) was even
+  re-tested faithfully in attempt 3 (`10a7c1f`) — same failure.
+- **Legacy physics app** `github.com/freddygaffey/hsc-phy-podcast` (98 commits, cloned + searched): **no**
+  AudioContext, silent-loop, keepalive, or `playsinline` ever existed. Media Session was added in
+  `5301e56` as the identical standard `set("play", () => audio.play())`. Its live audio-control lines
+  diff **identical** to ours.
+
+**Conclusion:** across ~255 commits in two repos, there has never been a background-resume mechanism to
+restore — it's always been plain native `<audio>` + Media Session. So "it worked once" is almost
+certainly (a) an **iOS version change** (same code, different OS behaviour over time — unfixable), or
+(b) memory of background *playback* (lock while playing), which still works. Not a lost commit.
+
 ---
 
 ## 7. Verification of the current (reverted) state — `c6c61ca`
