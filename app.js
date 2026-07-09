@@ -70,7 +70,15 @@
   // --- BUG-36 audio diagnostics (ring buffer; no behaviour change) ---
   // Records timestamped audio/media-session events so we can see what iOS actually does through a
   // pause→lock→resume cycle instead of guessing. Read/copied from Settings → About → Audio log.
-  const AUDIO_LOG = [];
+  // Persisted to localStorage so it SURVIVES a reload/PWA relaunch — critical because iOS may
+  // relaunch a backgrounded PWA on unlock, which would otherwise wipe the in-memory log and hide the
+  // very sequence we're after. A "=== app load ===" marker on startup makes any relaunch visible.
+  const AUDIO_LOG_KEY = "hsc-audio-log";
+  let AUDIO_LOG = [];
+  try { AUDIO_LOG = JSON.parse(localStorage.getItem(AUDIO_LOG_KEY) || "[]"); } catch (e) { AUDIO_LOG = []; }
+  if (!Array.isArray(AUDIO_LOG)) AUDIO_LOG = [];
+  AUDIO_LOG.push({ t: Date.now(), line: "=== app load ===" });
+  function persistAudioLog() { try { localStorage.setItem(AUDIO_LOG_KEY, JSON.stringify(AUDIO_LOG.slice(-250))); } catch (e) {} }
   function alog(msg, extra) {
     let line = msg;
     try {
@@ -89,6 +97,7 @@
     } catch (e) {}
     AUDIO_LOG.push({ t: Date.now(), line });
     if (AUDIO_LOG.length > 250) AUDIO_LOG.shift();
+    persistAudioLog();
   }
   // Passively record the element's own lifecycle — these fire regardless of who called play().
   // 'playing' is the key one: it means audio is actually producing output (not just currentTime moving).
@@ -1735,6 +1744,15 @@
     const done = () => { audioLogCopy.textContent = "Copied"; setTimeout(() => (audioLogCopy.textContent = "Copy"), 1500); };
     if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done).catch(() => { audioLogOut.hidden = false; audioLogOut.textContent = text; });
     else { audioLogOut.hidden = false; audioLogOut.textContent = text; }
+  });
+  const audioLogClear = document.getElementById("audio-log-clear");
+  if (audioLogClear) audioLogClear.addEventListener("click", () => {
+    AUDIO_LOG.length = 0;
+    AUDIO_LOG.push({ t: Date.now(), line: "=== cleared ===" });
+    persistAudioLog();
+    if (audioLogOut && !audioLogOut.hidden) audioLogOut.textContent = formatAudioLog();
+    audioLogClear.textContent = "Cleared";
+    setTimeout(() => (audioLogClear.textContent = "Clear"), 1500);
   });
 
   btnSettings.addEventListener("click", () => {
