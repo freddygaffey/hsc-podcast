@@ -171,6 +171,42 @@ lock-screen play button wake+resume (the log shows that already works). Decision
 
 ---
 
+## 9. Attempt 5 result (2026-07-09) — the fix and the requirement are mutually exclusive
+
+Fred chose to try the real fix. Commit `4e5d542` did it properly this time — CORS verified for ranged
+cross-origin GET (206, `access-control-allow-origin` echoed for both origins, so the media graph is not
+tainted), `crossOrigin` set before any `src`, graph built lazily in the first gesture, silent keepalive
+in the same graph, diagnostics on.
+
+**Result on device: high-speed playback regressed.** Routing the native `<audio>` element through
+`createMediaElementSource` breaks iOS's high-rate `preservesPitch` playback — the exact same symptom as
+attempt 4, now confirmed to be caused by the WebAudio routing itself (not the `crossOrigin`/CORS loading,
+which we'd verified was fine). Reverted in `6e93d29`.
+
+**This is the decisive finding.** The *only* mechanism that can fix BUG-36 (share one audio session via
+the WebAudio graph) is **fundamentally incompatible** with the app's **non-negotiable** requirement
+(clean high-speed playback to 7–8×; see the "Audio speed priorities" memory). You cannot have both on
+iOS today:
+
+- Native `<audio>` → high speed works, background *pause→resume* is dead (iOS kills the element session).
+- Element routed through WebAudio → background resume becomes possible, but high speed breaks.
+
+So BUG-36 is **not solvable in code** without sacrificing the higher-priority feature. Attempts 1–5 have
+now exhausted the WebAudio family. The remaining resolutions are product decisions, not bugs to fix:
+
+1. **Accept "wake to resume"** (recommended): keep native high speed; the lock-screen/pocket case is
+   "wake the screen, then resume" — which the §8 log shows already works instantly. Optionally make the
+   lock-screen play button trigger a wake. Background *playback* (the common case — lock while playing)
+   already works; only *pausing then resuming while still locked* needs a wake.
+2. Ship a low-priority "background-pause mode" toggle that routes through WebAudio *only* at 1× for users
+   who value lock-screen pause over high speed. High complexity for a narrow case — probably not worth it.
+
+**Current state:** native audio restored (working high speed), BUG-36 accepted as an iOS platform limit.
+The on-screen diagnostics + the controlled-update mechanism (swipe-up / 6h) stay, so any future retry is
+cheap and safe to iterate.
+
+---
+
 ## 7. Verification of the current (reverted) state — `c6c61ca`
 
 - `git diff 410a382 HEAD -- app.js` filtered to audio identifiers → **empty** (audio code == known-good).

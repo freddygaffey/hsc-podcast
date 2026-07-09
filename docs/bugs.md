@@ -1215,7 +1215,16 @@ kept circling.
 **Attempt log (all reverted — do not re-try blind):**
 - `72a60ee` silent keepalive → didn't work. `ad5b582` continuous silent anchor → didn't work.
 - `10a7c1f` raw native element → didn't work. `1167c18` AudioContext routing → **regressed** speed + re-armed the auto-advance loop.
-- Reverted in `553670e`/`cfe79d8`/`d55ff50`/`c6c61ca`. Live audio is back to the known-good `410a382` code.
+- `4e5d542` attempt 5: proper WebAudio session-sharing (CORS verified, done right) → **regressed high speed** on device (reverted `6e93d29`).
+- **On-device diagnostics (`6f07703`) pinned the exact failure** — see the trace doc §8/§9.
+
+**CONCLUSION — accepted as an iOS platform limit, not a code bug.** The only mechanism that can fix
+background pause→resume (routing `<audio>` through a WebAudio graph to share the audio session) is
+**fundamentally incompatible** with the app's non-negotiable high-speed playback — routing through
+`createMediaElementSource` breaks iOS's high-rate `preservesPitch`. You can have clean high speed *or*
+lock-screen pause→resume, not both. Resolution is a product decision (recommended: accept "wake to
+resume" — background *playback* already survives a lock; only pausing-then-resuming *while still locked*
+needs a screen wake). Full analysis + the two product options in `audio-background-resume.md` §9.
 
 **Key findings from the git-history trace:**
 1. **No "silent-loop" mechanism ever existed** in committed history — nothing to "bring back." Every
