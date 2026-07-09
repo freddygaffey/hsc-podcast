@@ -70,7 +70,6 @@
   // --- BUG-36 audio diagnostics (ring buffer; no behaviour change) ---
   // Records timestamped audio/media-session events so we can see what iOS actually does through a
   // pause→lock→resume cycle instead of guessing. Read/copied from Settings → About → Audio log.
-  let audioCtx = null, mediaSrcNode = null, silentKeepalive = null; // BUG-36 fix (defined below)
   const AUDIO_LOG = [];
   function alog(msg, extra) {
     let line = msg;
@@ -85,7 +84,6 @@
       ];
       if (audioEl.error) bits.push("err=" + audioEl.error.code);
       if ("mediaSession" in navigator) bits.push("ms=" + navigator.mediaSession.playbackState);
-      if (audioCtx) bits.push("ctx=" + audioCtx.state);
       if (extra) bits.push(extra);
       line += " {" + bits.join(" ") + "}";
     } catch (e) {}
@@ -98,42 +96,6 @@
     audioEl.addEventListener(ev, () => alog("evt:" + ev))
   );
   document.addEventListener("visibilitychange", () => alog("vis:" + document.visibilityState));
-
-  // --- BUG-36 FIX (attempt 5): route <audio> through one persistently-alive AudioContext ---
-  // Ground truth (see docs/audio-background-resume.md §8): iOS tears down the <audio> element's OWN
-  // audio session on a backgrounded pause, so a later background play is a phantom (plays but silent,
-  // currentTime frozen). The element must SHARE a session that we keep alive across the pause. So:
-  //   • route the element through a WebAudio context (createMediaElementSource) — shares one session;
-  //   • keep a continuous silent source running in the same graph so the session never deactivates on
-  //     pause — a background resume then reconnects to a live output instead of a dead one.
-  // Lessons from the failed attempts: crossOrigin must be set BEFORE any src (else CORS re-fetch breaks
-  // loading → the speed/loop regression); the graph is built lazily inside the first user gesture (iOS
-  // autoplay policy); the runaway guard + diagnostics stay on to catch any fast-`ended` loop.
-  audioEl.crossOrigin = "anonymous"; // set before the first src assignment; needs bucket CORS (verified)
-  function ensureAudioGraph() {
-    if (audioCtx) return;
-    const AC = window.AudioContext || window.webkitAudioContext;
-    if (!AC) return;
-    try {
-      audioCtx = new AC();
-      mediaSrcNode = audioCtx.createMediaElementSource(audioEl);
-      mediaSrcNode.connect(audioCtx.destination);
-      // 1s of silence, looped forever — keeps the audio session active while the element is paused.
-      const buf = audioCtx.createBuffer(1, Math.max(1, Math.floor(audioCtx.sampleRate)), audioCtx.sampleRate);
-      silentKeepalive = audioCtx.createBufferSource();
-      silentKeepalive.buffer = buf;
-      silentKeepalive.loop = true;
-      silentKeepalive.connect(audioCtx.destination);
-      silentKeepalive.start(0);
-      alog("graph:created", "sr=" + audioCtx.sampleRate);
-    } catch (e) { audioCtx = null; mediaSrcNode = null; silentKeepalive = null; alog("graph:FAILED", "err=" + (e && e.name)); }
-  }
-  function resumeAudioGraph() {
-    ensureAudioGraph();
-    if (audioCtx && audioCtx.state === "suspended") audioCtx.resume().then(() => alog("ctx:resumed")).catch((e) => alog("ctx:resume-failed", "err=" + (e && e.name)));
-  }
-  // Any in-app gesture resumes the context (idempotent), so no play path is ever routed-but-silent.
-  ["pointerdown", "keydown"].forEach((ev) => document.addEventListener(ev, resumeAudioGraph, { passive: true }));
 
   const viewSubjects = document.getElementById("view-subjects");
   const viewSubjectHub = document.getElementById("view-subject-hub");
@@ -925,7 +887,7 @@
     if (!("mediaSession" in navigator)) return;
     const ms = navigator.mediaSession;
     const set = (action, fn) => { try { ms.setActionHandler(action, fn); } catch (e) {} };
-    set("play", () => { alog("MS:play handler"); resumeAudioGraph(); audio.play().then(() => alog("MS:play resolved")).catch((e) => alog("MS:play REJECTED", "reason=" + (e && e.name))); });
+    set("play", () => { alog("MS:play handler"); audio.play().then(() => alog("MS:play resolved")).catch((e) => alog("MS:play REJECTED", "reason=" + (e && e.name))); });
     set("pause", () => { alog("MS:pause handler"); audio.pause(); });
     set("seekbackward", (d) => { audio.currentTime = Math.max(0, audio.currentTime - ((d && d.seekOffset) || 30)); });
     set("seekforward", (d) => { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + ((d && d.seekOffset) || 30)); });
@@ -1046,7 +1008,7 @@
   // --- Controls ---
   const togglePlay = () => {
     if (!currentEpisode) return;
-    if (audio.paused) { alog("btn:play"); resumeAudioGraph(); audio.play().then(() => alog("btn:play resolved")).catch((e) => alog("btn:play REJECTED", "reason=" + (e && e.name))); }
+    if (audio.paused) { alog("btn:play"); audio.play().then(() => alog("btn:play resolved")).catch((e) => alog("btn:play REJECTED", "reason=" + (e && e.name))); }
     else { alog("btn:pause"); audio.pause(); }
   };
   btnPlay.addEventListener("click", togglePlay);
