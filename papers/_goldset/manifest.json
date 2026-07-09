@@ -1,0 +1,27 @@
+{
+  "_comment": "Frozen human ground truth for the parser pipeline. Each paper's gold.json is an annotate_app box set {boxes:[{page,bbox,kind,number,part,marks}]}. tools/regress.py scores current pipeline output against these on every prompt/rule change. Grow deliberately, one per layout family per subject; every production correction and audit miss should join this set. See docs/parser-pipeline-plan.md.",
+  "bars": {
+    "unit_count_exact": true,
+    "unit_iou_min": 0.4,
+    "question_iou_median_min": 0.90,
+    "lines_iou_median_min": 0.70,
+    "marks_exact_where_printed": true,
+    "stability_runs_identical": true
+  },
+  "papers": [
+    {
+      "paperId": "maths-advanced-hsc-nesa-2024-hsc-maths-adv",
+      "subject": "maths-advanced",
+      "family": "born-digital-nesa-lines-heavy",
+      "expectedUnits": 9,
+      "expectedLines": 7
+    },
+    {
+      "paperId": "maths-advanced-ace-trial-2021-2u-abbotsleigh-trial-paper-w-solutions-6183bdfc0a703",
+      "subject": "maths-advanced",
+      "family": "booklet-no-lines",
+      "expectedUnits": 22,
+      "expectedLines": 0
+    }
+  ]
+}

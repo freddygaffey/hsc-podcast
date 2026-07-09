@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hsc-podcast/split.schema.json",
+  "title": "Question-unit split for one paper (papers/_work/<paperId>/split.json)",
+  "description": "Gen-3 metadata-first SPLIT contract. The unit boundaries are truth; the per-question PDF is a deterministic bake of this. bbox is normalised 0-1 per page (top-left origin), so a unit is resolution-independent and scores directly against annotate_app boxes. A unit may span pages via multiple regions.",
+  "type": "object",
+  "required": ["paperId", "units"],
+  "properties": {
+    "paperId": { "type": "string", "minLength": 1 },
+    "subject": { "type": ["string", "null"] },
+    "source": {
+      "type": ["string", "null"],
+      "enum": ["textlayer", "ocr", "vision", "human", "verified", null]
+    },
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "number", "regions"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Stable unit id, e.g. 'q14' or booklet letter 'q11a'."
+          },
+          "number": { "type": ["string", "null"] },
+          "part": {
+            "type": ["string", "null"],
+            "description": "Lettered part when a >=10-mark booklet was split per letter; else null."
+          },
+          "marks": { "type": ["integer", "null"], "minimum": 0 },
+          "marksPrinted": { "type": ["boolean", "null"] },
+          "type": { "type": ["string", "null"] },
+          "section": {
+            "type": ["string", "null"],
+            "description": "Section name from syllabus.json (e.g. 'I', 'II') this unit falls in."
+          },
+          "ruleId": {
+            "type": ["string", "null"],
+            "description": "Audit: the SPLIT rule that produced this unit (S1 whole-question, S2 booklet-split, ...). Lets regressions diff by rule."
+          },
+          "confidence": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+          "regions": { "$ref": "#/$defs/regionList" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "regionList": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["page", "bbox"],
+        "properties": {
+          "page": { "type": "integer", "minimum": 0 },
+          "bbox": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": { "type": "number", "minimum": 0, "maximum": 1 }
+          }
+        }
+      }
+    }
+  }
+}

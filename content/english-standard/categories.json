@@ -1,0 +1,68 @@
+{
+  "subject": "english-standard",
+  "syllabus": "current (first HSC 2019)",
+  "prescribedTextsCycle": "2019-2025 (identical across this range)",
+  "note": "Canonical controlled vocabulary for categorising English Standard questions. A parser (Haiku pass over source PDFs) classifies each question into one `module` + one `textScope`, and where applicable attaches `textId` (from prescribedTexts) or `textType`. See docs/english-categorisation.md.",
+  "axes": {
+    "module": [
+      { "id": "short-answer", "paper": 1, "section": "I", "name": "Section I — unseen-text short answers" },
+      { "id": "common", "paper": 1, "section": "II", "name": "Common Module — Texts and Human Experiences" },
+      { "id": "module-a", "paper": 2, "section": "I", "name": "Module A — Language, Identity and Culture" },
+      { "id": "module-b", "paper": 2, "section": "II", "name": "Module B — Close Study of Literature" },
+      { "id": "module-c", "paper": 2, "section": "III", "name": "Module C — The Craft of Writing" }
+    ],
+    "textScope": [
+      { "id": "prescribed-text", "desc": "Tied to ONE named prescribed text (the a/b/c branches); attach textId." },
+      { "id": "prescribed-generic", "desc": "One essay valid for any text in the module list ('your prescribed text')." },
+      { "id": "unseen-single", "desc": "Short answer on one unseen stimulus text; attach textType." },
+      { "id": "unseen-multi", "desc": "Short answer comparing 2+ unseen texts; attach textTypes." },
+      { "id": "composition", "desc": "Module C craft-of-writing; no set text; attach writingForms + reflection flag." }
+    ],
+    "textType": ["Prose Fiction", "Poetry", "Drama", "Nonfiction", "Film", "Media"],
+    "unseenTextType": ["Prose fiction extract", "Poem", "Feature article", "Magazine article", "Magazine cover", "Interview", "Memoir", "Internet article", "Nonfiction extract", "Illustration", "Photograph", "Image"],
+    "writingForm": ["imaginative", "discursive", "persuasive"]
+  },
+  "prescribedTexts": {
+    "common": [
+      { "id": "common-doerr-all-the-light", "author": "Anthony Doerr", "title": "All the Light We Cannot See", "textType": "Prose Fiction" },
+      { "id": "common-lohrey-vertigo", "author": "Amanda Lohrey", "title": "Vertigo", "textType": "Prose Fiction" },
+      { "id": "common-orwell-1984", "author": "George Orwell", "title": "Nineteen Eighty-Four", "textType": "Prose Fiction" },
+      { "id": "common-parrett-past-the-shallows", "author": "Favel Parrett", "title": "Past the Shallows", "textType": "Prose Fiction" },
+      { "id": "common-dobson-collected", "author": "Rosemary Dobson", "title": "Rosemary Dobson Collected", "textType": "Poetry", "selection": ["Young Girl at a Window", "Over the Hill", "Summer's End", "The Conversation", "Cock Crow", "Amy Caroline", "Canberra Morning"] },
+      { "id": "common-slessor-selected", "author": "Kenneth Slessor", "title": "Selected Poems", "textType": "Poetry", "selection": ["Wild Grapes", "Gulliver", "Out of Time", "Vesper-Song of the Reverend Samuel Marsden", "William Street", "Beach Burial"] },
+      { "id": "common-harrison-rainbows-end", "author": "Jane Harrison", "title": "Rainbow's End", "textType": "Drama" },
+      { "id": "common-miller-the-crucible", "author": "Arthur Miller", "title": "The Crucible", "textType": "Drama" },
+      { "id": "common-shakespeare-merchant-of-venice", "author": "William Shakespeare", "title": "The Merchant of Venice", "textType": "Drama" },
+      { "id": "common-winton-boy-behind-the-curtain", "author": "Tim Winton", "title": "The Boy Behind the Curtain", "textType": "Nonfiction", "selection": ["Havoc: A Life in Accidents", "Betsy", "Twice on Sundays", "The Wait and the Flow", "In the Shadow of the Hospital", "The Demon Shark", "Barefoot in the Temple of Art"] },
+      { "id": "common-yousafzai-i-am-malala", "author": "Malala Yousafzai and Christina Lamb", "title": "I am Malala", "textType": "Nonfiction" },
+      { "id": "common-daldry-billy-elliot", "author": "Stephen Daldry", "title": "Billy Elliot", "textType": "Film" },
+      { "id": "common-omahoney-go-back", "author": "Ivan O'Mahoney", "title": "Go Back to Where You Came From", "textType": "Media", "selection": ["Series 1: Episodes 1, 2 and 3", "The Response"] },
+      { "id": "common-walker-waste-land", "author": "Lucy Walker", "title": "Waste Land", "textType": "Media" }
+    ],
+    "module-a": [
+      { "id": "moda-lawson-penguin-short-stories", "author": "Henry Lawson", "title": "The Penguin Henry Lawson Short Stories", "textType": "Prose Fiction", "selection": ["The Drover's Wife", "The Union Buries Its Dead", "Shooting the Moon", "Our Pipes", "The Loaded Dog"] },
+      { "id": "moda-levy-small-island", "author": "Andrea Levy", "title": "Small Island", "textType": "Prose Fiction" },
+      { "id": "moda-contemporary-asian-australian-poets", "author": "Adam Aitken, Kim Cheng Boey and Michelle Cahill (eds)", "title": "Contemporary Asian Australian Poets", "textType": "Poetry", "selection": ["Merlinda Bobis, This is where it begins", "Miriam Wei Wei Lo, Home", "Ouyang Yu, New Accents", "Vuong Pham, Mother", "Jaya Savige, Circular Breathing", "Maureen Ten (Ten Ch'in U), Translucent Jade"] },
+      { "id": "moda-eckermann-inside-my-mother", "author": "Ali Cobby Eckermann", "title": "Inside my Mother", "textType": "Poetry", "selection": ["Trance", "Unearth", "Oombulgarri", "Eyes", "Leaves", "Key"] },
+      { "id": "moda-lawler-summer-of-the-seventeenth-doll", "author": "Ray Lawler", "title": "Summer of the Seventeenth Doll", "textType": "Drama" },
+      { "id": "moda-shaw-pygmalion", "author": "Bernard Shaw", "title": "Pygmalion", "textType": "Drama" },
+      { "id": "moda-valentine-shafana-and-aunt-sarrinah", "author": "Alana Valentine", "title": "Shafana and Aunt Sarrinah", "textType": "Drama" },
+      { "id": "moda-pung-unpolished-gem", "author": "Alice Pung", "title": "Unpolished Gem", "textType": "Nonfiction" },
+      { "id": "moda-perkins-one-night-the-moon", "author": "Rachel Perkins", "title": "One Night the Moon", "textType": "Film" },
+      { "id": "moda-sitch-the-castle", "author": "Rob Sitch", "title": "The Castle", "textType": "Film" },
+      { "id": "moda-merewether-reindeer-saami-heart", "author": "Janet Merewether", "title": "Reindeer in my Saami Heart", "textType": "Media" }
+    ],
+    "module-b": [
+      { "id": "modb-anderson-feed", "author": "M T Anderson", "title": "Feed", "textType": "Prose Fiction" },
+      { "id": "modb-haddon-curious-incident", "author": "Mark Haddon", "title": "The Curious Incident of the Dog in the Night-time", "textType": "Prose Fiction" },
+      { "id": "modb-gray-coast-road", "author": "Robert Gray", "title": "Coast Road", "textType": "Poetry", "selection": ["Journey, the North Coast", "Flames and Dangling Wire", "Harbour Dusk", "Byron Bay: Winter", "Description of a Walk", "24 Poems"] },
+      { "id": "modb-noonuccal", "author": "Oodgeroo Noonuccal", "title": "Oodgeroo Noonuccal (selected poems)", "textType": "Poetry", "selection": ["The Past", "China . . . Woman", "Reed Flute Cave", "Entombed Warriors", "Visit to Sun Yat-Sen Memorial Hall", "Sunrise on Huampu River", "A Lake Within a Lake"] },
+      { "id": "modb-rankin-namatjira", "author": "Scott Rankin", "title": "Namatjira", "textType": "Drama" },
+      { "id": "modb-shakespeare-midsummer", "author": "William Shakespeare", "title": "A Midsummer Night's Dream", "textType": "Drama" },
+      { "id": "modb-funder-stasiland", "author": "Anna Funder", "title": "Stasiland", "textType": "Nonfiction" },
+      { "id": "modb-weir-truman-show", "author": "Peter Weir", "title": "The Truman Show", "textType": "Film" },
+      { "id": "modb-nasht-frank-hurley", "author": "Simon Nasht", "title": "Frank Hurley: The Man Who Made History", "textType": "Media" }
+    ],
+    "module-c": []
+  }
+}

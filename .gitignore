@@ -38,3 +38,12 @@ content/*/sources/**/*.png
 # raw source media never belongs in git (deploys exclude resources/ anyway)
 content/*/resources/**/*.mp4
 content/*/resources/**/*.mov
+
+# Past-paper trees are local-only (huge, copyright): raw ingest + derived organized view + snapshots
+papers_organized/
+papers_organized_*.tar.gz
+papers_raw_*.tar.gz
+Standards Material/
+mac_ocr_out/
+mac_ocr.log
+.raw_upload_stage/

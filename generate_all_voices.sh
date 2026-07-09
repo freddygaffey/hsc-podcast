@@ -14,6 +14,10 @@
 #                                                 #   scripts in the background, forever
 #   CONTENT_DIR=content/physics ./generate_all_voices.sh --daemon   # scope to one subject
 #   POLL_INTERVAL=5 ./generate_all_voices.sh --daemon               # poll faster (default 10s)
+#   SSH_TARGET=deb ./generate_all_voices.sh --daemon                # render the neural voices on a
+#                                                                   #   remote GPU (persistent venv,
+#                                                                   #   reused each cycle); Eloquence
+#                                                                   #   still renders locally
 #
 # In --daemon mode this renders audio IN PARALLEL with episode authoring: leave it running
 # and the AI can keep writing scripts while each finished one is turned into audio behind it.
@@ -96,10 +100,19 @@ for arg in "$@"; do
   esac
 done
 
+# Remote neural render: if SSH_TARGET is set, the Kokoro stage runs on that host
+# (see _generate_audio.sh). The eSpeak/Eloquence stage always renders locally.
+[[ -n "${SSH_TARGET:-}" ]] && { export SSH_TARGET; echo "Remote neural render on '$SSH_TARGET' — Eloquence stays local."; }
+
 [[ -d "$CONTENT_DIR" ]] || { echo "ERROR: content dir '$CONTENT_DIR' not found." >&2; exit 1; }
 
 case "$MODE" in
   daemon)
+    # Reuse the remote venv across poll cycles instead of rebuilding it every time.
+    if [[ -n "${SSH_TARGET:-}" ]]; then
+      export REMOTE_KEEP=1
+      echo "  (remote venv persists at $SSH_TARGET:~/${REMOTE_DIR:-.hsc-tts-remote} for reuse — delete it manually when done)"
+    fi
     echo "Voice daemon watching '$CONTENT_DIR' (poll ${POLL_INTERVAL}s) — Ctrl-C to stop."
     trap 'echo; echo "Stopped."; exit 0' INT
     while true; do
@@ -115,7 +128,19 @@ case "$MODE" in
     fi
     ;;
   all)
-    render "${PASS[@]}"
+    if [[ ${#PASS[@]} -gt 0 ]]; then
+      render "${PASS[@]}"
+    else
+      # No explicit episodes: render everything under CONTENT_DIR (so a scoped
+      # CONTENT_DIR=content/<subject> renders just that subject, not all of them).
+      all_eps=()
+      while IFS= read -r ep; do [[ -n "$ep" ]] && all_eps+=("$ep"); done < <(list_episodes)
+      if [[ ${#all_eps[@]} -eq 0 ]]; then
+        echo "No episodes found under $CONTENT_DIR." >&2; exit 0
+      fi
+      echo "Rendering ${#all_eps[@]} episode(s) under $CONTENT_DIR"
+      render "${all_eps[@]}"
+    fi
     echo "All voices done. Each episode folder now holds one .m4a per voice (incl. Eloquence)."
     ;;
 esac

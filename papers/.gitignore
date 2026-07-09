@@ -1,2 +1,5 @@
 *
 !.gitignore
+# Gold set is a permanent regression asset — commit it (see tools/regress.py)
+!_goldset/
+!_goldset/**

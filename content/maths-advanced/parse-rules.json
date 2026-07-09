@@ -1,0 +1,25 @@
+{
+  "subject": "maths-advanced",
+  "_comment": "Per-subject LAYOUT/OCR rules for the Gen-3 splitter (tools/ocr_to_split.py). Section counts, marks and mc/short style live in syllabus.json 'sections' (the single source of truth, also read by invariants.py) — this file holds ONLY the geometry/OCR knobs that vary by paper layout, so a new subject or layout family is a config edit, not a code change.",
+  "leftMarginX": 0.15,
+  "marginMarkX": 0.87,
+  "optionLetters": ["A", "B", "C", "D"],
+  "optionNoise": { "cc": "C", "on": "C", "co": "C" },
+  "furniture": [
+    "^section\\b",
+    "^\\d+\\s*marks\\b",
+    "^attempt\\s+questions",
+    "^allow\\s+about",
+    "^use\\s+the\\s+multiple",
+    "^blank\\s+page",
+    "^do\\s+not\\s+write",
+    "^use\\s+only",
+    "^instructions\\b",
+    "^end\\s+of\\s+(paper|section)",
+    "^[-–—\\s]*\\d+[-–—\\s]*$"
+  ],
+  "families": {
+    "born-digital-nesa-lines-heavy": { "mcDetect": "options", "sectionII": "qhead" },
+    "booklet-no-lines": { "mcDetect": "options", "sectionII": "qhead" }
+  }
+}

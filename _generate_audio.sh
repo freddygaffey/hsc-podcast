@@ -51,6 +51,22 @@
 #                 JOBS. So: JOBS=4 GPU_JOBS=1 uses both the CPU cores and the
 #                 GPU at once (recommended); GPU_JOBS alone with JOBS=0 maxes
 #                 out single-episode latency instead of batch throughput.
+#   SSH_TARGET    run the whole render on a REMOTE host over SSH instead of
+#                 locally. Strips the scripts here, SCPs them + the Kokoro
+#                 driver into a temp dir on the target, builds an EPHEMERAL venv
+#                 there, renders on that machine (its GPU via REMOTE_DEVICE),
+#                 copies the audio back into each episode folder, then deletes
+#                 the remote temp + venv. Kokoro engine only.
+#                 e.g.  SSH_TARGET=deb ./generate_audio.sh SA-20-01-What-is-AI-vs-ML
+#   REMOTE_DEVICE torch device on the remote host: cuda (default) | cpu | mps
+#   REMOTE_KEEP   keep the remote venv after rendering so the next run reuses it
+#                 instead of reinstalling Kokoro (~2GB) — RECOMMENDED for repeated
+#                 or --daemon runs. Default: delete the remote dir when done.
+#   REMOTE_DIR    remote dir (relative to the target's home) holding the venv +
+#                 per-run work files.                     (default: .hsc-tts-remote)
+#   REMOTE_PARALLEL  how many (episode,voice) renders to run at once on the
+#                 remote GPU. Kokoro-82M is small (~2GB each), so ~3 fit an 8GB
+#                 card; raise on a bigger GPU or if CPU-bound.        (default: 3)
 
 set -euo pipefail
 
@@ -100,10 +116,17 @@ KOKORO_MLX_DRIVER="$HERE/kokoro_mlx_tts.py"   # Apple-Silicon (MLX GPU) Kokoro
 # set up, otherwise the script stops and tells you how to fix it.
 ENGINE="${ENGINE:-kokoro}"
 PIPER_BIN="${PIPER_BIN:-piper}"
+SSH_TARGET="${SSH_TARGET:-}"
+
+if [[ -n "$SSH_TARGET" && "$ENGINE" != "kokoro" ]]; then
+  echo "Error: SSH_TARGET remote render only supports ENGINE=kokoro (got '$ENGINE')." >&2
+  exit 1
+fi
 
 case "$ENGINE" in
   kokoro)
-    if ! [[ -x "$KOKORO_PY" ]] || ! "$KOKORO_PY" -c "import kokoro" >/dev/null 2>&1; then
+    # In remote mode the model runs on $SSH_TARGET, so no local Kokoro venv is needed.
+    if [[ -z "$SSH_TARGET" ]] && { ! [[ -x "$KOKORO_PY" ]] || ! "$KOKORO_PY" -c "import kokoro" >/dev/null 2>&1; }; then
       cat >&2 <<EOF
 Error: Kokoro TTS venv not found or broken at $HERE/.tts-venv
 
@@ -179,6 +202,142 @@ fi
 if [[ ${#EPISODES[@]} -eq 0 ]]; then
   echo "No episodes found in $CONTENT_DIR (each needs a <episode>/script.md)." >&2
   exit 0
+fi
+
+# --- Remote render: hand the whole job to another machine over SSH -----------
+# Strips scripts locally, SCPs the text + the Kokoro driver to $SSH_TARGET, builds
+# a venv there ONCE (at ~/$REMOTE_DIR — reused on later calls so the --daemon loop
+# doesn't reinstall Kokoro every cycle), renders on that machine's GPU, copies the
+# audio back into each episode folder, then removes the remote dir — unless
+# REMOTE_KEEP is set, which keeps the venv for reuse. Kokoro only. Skips
+# (episode,voice) pairs already up to date.
+run_remote() {
+  local target="$SSH_TARGET" device="${REMOTE_DEVICE:-cuda}"
+  local base="${REMOTE_DIR:-.hsc-tts-remote}"   # remote dir (relative to home); the venv lives here and is reused
+  local work="work-$$-${RANDOM}"                # unique per-run subdir so concurrent runs don't collide
+  local ep voice staging manifest idx=0 pairs=0
+  if [[ -z "$base" || "$base" == "/" || "$base" == "~" || "$base" == /* ]]; then
+    echo "Error: REMOTE_DIR must be a non-empty path relative to the remote home." >&2; return 1
+  fi
+  echo "Remote render on '$target' (device=$device, dir=~/$base) — voices: ${VOICES[*]}"
+
+  staging="$(mktemp -d -t tts-stage)"
+  manifest="$staging/manifest.tsv"; : > "$manifest"
+  for ep in "${EPISODES[@]}"; do
+    local need=()
+    for voice in "${VOICES[@]}"; do
+      if [[ -e "$ep/$voice.m4a" && "$ep/$voice.m4a" -nt "$ep/script.md" ]]; then
+        echo "  = $(basename "$ep")/$voice.m4a up to date, skipping"
+      else need+=("$voice"); fi
+    done
+    [[ ${#need[@]} -eq 0 ]] && continue
+    python3 "$STRIPPER" "$ep/script.md" > "$staging/$idx.txt"
+    if [[ ! -s "$staging/$idx.txt" ]]; then
+      echo "  ! $(basename "$ep")/script.md produced no text, skipping"; rm -f "$staging/$idx.txt"; continue
+    fi
+    printf '%s\t%s\t%s\n' "$idx" "$ep" "${need[*]}" >> "$manifest"
+    idx=$((idx + 1)); pairs=$((pairs + ${#need[@]}))
+  done
+  if [[ $idx -eq 0 ]]; then echo "Nothing to render (all up to date)."; rm -rf "$staging"; return 0; fi
+  echo "Uploading $idx episode(s) / $pairs (episode,voice) pair(s) to $target"
+
+  # 1. Ensure the remote venv exists (built once, then reused on later calls — this
+  #    is what makes the --daemon loop viable), and give this run a clean work dir.
+  if ! ssh "$target" BASE="$base" WORK="$work" bash -s <<'REMOTE'
+set -e
+cd "$HOME"; mkdir -p "$BASE"; cd "$BASE"
+if [ ! -x venv/bin/python ]; then
+  echo "[remote] building Kokoro venv (first time — slow, pulls ~2GB torch)..."
+  python3 -m venv venv
+  ./venv/bin/pip -q install --upgrade pip
+  ./venv/bin/pip -q install kokoro soundfile
+fi
+mkdir -p "$WORK"
+REMOTE
+  then
+    echo "Error: remote venv setup on $target failed." >&2; rm -rf "$staging"; return 1
+  fi
+
+  # 2. Upload the driver + stripped texts into this run's work dir.
+  if ! scp -q "$staging"/*.txt "$manifest" "$KOKORO_DRIVER" "$target:$base/$work/"; then
+    echo "Error: upload to $target failed." >&2; rm -rf "$staging"; return 1
+  fi
+
+  # 3. Render each (episode,voice) on the remote GPU using the persistent venv.
+  #    Up to REMOTE_PARALLEL run at once (Kokoro-82M is small — several fit on one GPU).
+  echo "Rendering on $target (device=$device, up to ${REMOTE_PARALLEL:-3} in parallel)..."
+  if ! ssh "$target" \
+        BASE="$base" WORK="$work" V2="$KOKORO_VOICE2" SPD="$KOKORO_SPEED" LNG="$KOKORO_LANG" DEV="$device" \
+        PAR="${REMOTE_PARALLEL:-3}" \
+        bash -s <<'REMOTE'
+cd "$HOME/$BASE/$WORK" || { echo "[remote] no work dir" >&2; exit 1; }
+HAVE_FF=0; command -v ffmpeg >/dev/null 2>&1 && HAVE_FF=1
+render_one() {
+  local idx="$1" voice="$2"
+  echo "[remote] render $idx / $voice on $DEV"
+  PYTHONWARNINGS="ignore::UserWarning,ignore::FutureWarning" \
+    ../venv/bin/python kokoro_tts.py "$idx.txt" "${idx}_${voice}.wav" \
+      --voice "$voice" --voice2 "$V2" --speed "$SPD" --lang "$LNG" --device "$DEV" || return 1
+  if [ "$HAVE_FF" = 1 ]; then
+    ffmpeg -y -loglevel error -i "${idx}_${voice}.wav" -c:a aac -b:a 96k \
+      -metadata artist="Kokoro: $voice" \
+      -metadata comment="narrator=$voice question=$V2 speed=$SPD remote=1" \
+      "${idx}_${voice}.m4a" && rm -f "${idx}_${voice}.wav"
+  fi
+}
+running=0
+while IFS=$'\t' read -r idx ep voices; do
+  for voice in $voices; do
+    render_one "$idx" "$voice" &
+    running=$((running + 1))
+    if [ "$running" -ge "$PAR" ]; then wait -n 2>/dev/null || wait; running=$((running - 1)); fi
+  done
+done < manifest.tsv
+wait
+echo "[remote] render done"
+REMOTE
+  then
+    echo "Error: remote render failed on $target." >&2
+    ssh "$target" "rm -rf ~/'$base'/'$work'" 2>/dev/null
+    [[ -z "${REMOTE_KEEP:-}" ]] && ssh "$target" "rm -rf ~/'$base'/venv" 2>/dev/null
+    rm -rf "$staging"; return 1
+  fi
+
+  # Pull outputs back into each episode folder (convert wav->m4a here if the
+  # remote had no ffmpeg).
+  while IFS=$'\t' read -r idx ep voices; do
+    for voice in $voices; do
+      if scp -q "$target:$base/$work/${idx}_${voice}.m4a" "$ep/$voice.m4a" 2>/dev/null; then
+        echo "  <- $(basename "$ep")/$voice.m4a"
+      elif scp -q "$target:$base/$work/${idx}_${voice}.wav" "$ep/$voice.wav" 2>/dev/null; then
+        if command -v ffmpeg >/dev/null 2>&1; then
+          ffmpeg -y -loglevel error -i "$ep/$voice.wav" -c:a aac -b:a 96k \
+            -metadata artist="Kokoro: $voice" \
+            -metadata comment="narrator=$voice question=$KOKORO_VOICE2 speed=$KOKORO_SPEED remote=1" \
+            "$ep/$voice.m4a" && rm -f "$ep/$voice.wav" && echo "  <- $(basename "$ep")/$voice.m4a (converted here)"
+        else
+          echo "  <- $(basename "$ep")/$voice.wav (no local ffmpeg; left as WAV)"
+        fi
+      else
+        echo "  ! no output returned for $(basename "$ep")/$voice" >&2
+      fi
+    done
+  done < "$manifest"
+
+  # Always remove this run's own work dir; keep the shared venv unless REMOTE_KEEP is unset.
+  ssh "$target" "rm -rf ~/'$base'/'$work'" 2>/dev/null
+  if [[ -n "${REMOTE_KEEP:-}" ]]; then
+    echo "REMOTE_KEEP set — kept the venv at $target:~/$base for reuse (daemon-friendly)."
+  else
+    ssh "$target" "rm -rf ~/'$base'/venv" 2>/dev/null && echo "Removed the ephemeral venv on $target (REMOTE_KEEP unset)."
+  fi
+  rm -rf "$staging"
+  echo "Remote render complete. Audio written under $CONTENT_DIR"
+}
+
+if [[ -n "$SSH_TARGET" ]]; then
+  run_remote
+  exit $?
 fi
 
 JOBS="${JOBS:-4}"

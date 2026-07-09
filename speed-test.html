@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Speed engine test — native playbackRate vs preservesPitch</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.5 -apple-system, system-ui, sans-serif; margin: 0; padding: 20px; max-width: 640px; }
+  h1 { font-size: 1.2rem; }
+  .card { border: 1px solid color-mix(in srgb, currentColor 25%, transparent); border-radius: 12px; padding: 16px; margin: 14px 0; }
+  label { display: block; margin: 10px 0 4px; font-weight: 600; }
+  input[type=range] { width: 100%; height: 40px; }
+  .rate { text-align: center; font-size: 3.2rem; font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .presets { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+  .presets button { flex: 1 0 auto; min-width: 60px; padding: 14px 8px; font-size: 1.05rem; font-weight: 700; border-radius: 10px; border: 1px solid currentColor; background: transparent; color: inherit; }
+  .presets button.active { background: LinkText; color: Canvas; border-color: LinkText; }
+  .big { display: block; width: 100%; padding: 18px; font-size: 1.15rem; font-weight: 800; border-radius: 12px; border: none; background: SelectedItem; color: SelectedItemText; margin: 8px 0; }
+  .meter { height: 22px; border-radius: 11px; background: color-mix(in srgb, currentColor 15%, transparent); overflow: hidden; }
+  .meter > i { display: block; height: 100%; width: 0; background: LinkText; transition: width .05s linear; }
+  .row { display: flex; align-items: center; gap: 10px; }
+  .row input[type=checkbox] { width: 24px; height: 24px; }
+  small { opacity: .75; }
+  code { font-family: ui-monospace, monospace; }
+  #status { font-weight: 600; }
+  #support { white-space: pre-wrap; }
+  input[type=url] { width: 100%; padding: 10px; box-sizing: border-box; font-size: .9rem; }
+</style>
+</head>
+<body>
+<h1>Speed engine test</h1>
+<p><small>A real case-study clip is pre-loaded (male voice — the hardest case for artifacts). Just tap <b>Play</b>, crank to 16× with <b>Preserve pitch ON</b>, and listen. This is exactly what the speed extension does: native <code>playbackRate</code> + <code>preservesPitch</code>. Clean here = we can delete the whole Web&nbsp;Audio engine.</small></p>
+
+<div class="card">
+  <div class="rate"><span id="rateNum">1.00</span>×</div>
+  <input type="range" id="rate" min="0.25" max="16" step="0.25" value="1" aria-label="Playback speed">
+  <div class="presets" id="presets"></div>
+
+  <div class="row"><input type="checkbox" id="pp" checked><label for="pp" style="margin:0">Preserve pitch (no chipmunk)</label></div>
+
+  <button class="big" id="play">▶︎ Play / Pause</button>
+  <div id="status">Loading clip…</div>
+
+  <label>Live output level</label>
+  <div class="meter"><i id="meterBar"></i></div>
+  <small id="rms">RMS: —</small>
+</div>
+
+<div class="card">
+  <label>Audio source</label>
+  <input type="url" id="url" value="/hsc-sdd-podcast/content/case_the_shai_hulud_worm/am_onyx.m4a">
+  <div style="margin-top:8px"><small>Or use a local file (best for the meter):</small> <input type="file" id="file" accept="audio/*"></div>
+  <div id="support" style="margin-top:10px"><code>preservesPitch</code>: checking…</div>
+</div>
+
+<script>
+(function () {
+  var audio = new Audio();
+  audio.preload = "auto";
+  var url = document.getElementById("url");
+  var fileInput = document.getElementById("file");
+  var rate = document.getElementById("rate");
+  var rateNum = document.getElementById("rateNum");
+  var pp = document.getElementById("pp");
+  var playBtn = document.getElementById("play");
+  var meterBar = document.getElementById("meterBar");
+  var rmsEl = document.getElementById("rms");
+  var status = document.getElementById("status");
+  var support = document.getElementById("support");
+
+  var props = ["preservesPitch", "webkitPreservesPitch", "mozPreservesPitch"];
+  var found = props.filter(function (p) { return p in audio; });
+  support.innerHTML = "preservesPitch support: " + (found.length ? found.join(", ") : "NONE — pitch WILL rise with speed on this browser");
+
+  function applyPitch() { props.forEach(function (p) { if (p in audio) audio[p] = pp.checked; }); }
+
+  function setRate(v) {
+    v = Math.max(0.25, Math.min(16, Math.round(v * 4) / 4));
+    audio.playbackRate = v;
+    rate.value = v;
+    rateNum.textContent = v.toFixed(2);
+    var kids = presetWrap.children;
+    for (var i = 0; i < kids.length; i++) kids[i].classList.toggle("active", parseFloat(kids[i].dataset.v) === v);
+  }
+
+  var presetWrap = document.getElementById("presets");
+  [1, 2, 3, 4, 6, 8, 12, 16].forEach(function (v) {
+    var b = document.createElement("button");
+    b.textContent = v + "×"; b.dataset.v = v;
+    b.addEventListener("click", function () { setRate(v); });
+    presetWrap.appendChild(b);
+  });
+
+  // Update the number live — bind both events so every browser (incl. iOS) fires.
+  rate.addEventListener("input", function () { setRate(parseFloat(rate.value)); });
+  rate.addEventListener("change", function () { setRate(parseFloat(rate.value)); });
+
+  // --- source loading ---
+  var triedNoCors = false;
+  function load(src, withCors) {
+    triedNoCors = !withCors;
+    try { if (withCors) audio.crossOrigin = "anonymous"; else audio.removeAttribute("crossorigin"); } catch (e) {}
+    audio.src = src;
+    applyPitch();
+    setRate(parseFloat(rate.value));
+    audio.load();
+    status.textContent = "Loading clip…";
+  }
+  audio.addEventListener("loadedmetadata", function () { status.textContent = "Ready — " + Math.round(audio.duration) + "s. Tap Play."; });
+  audio.addEventListener("error", function () {
+    // A cross-origin file with no CORS headers fails under crossOrigin="anonymous".
+    // Retry once without it so playback still works (meter may then read 0 — use your ears).
+    if (!triedNoCors && audio.src) { load(audio.src, false); }
+    else status.textContent = "Couldn't load audio. Try a local file below.";
+  });
+
+  url.addEventListener("change", function () { if (url.value) load(url.value, true); });
+  fileInput.addEventListener("change", function () {
+    if (fileInput.files[0]) { url.value = ""; load(URL.createObjectURL(fileInput.files[0]), true); }
+  });
+  pp.addEventListener("change", applyPitch);
+
+  playBtn.addEventListener("click", function () {
+    if (audio.paused) { setupMeter(); audio.play().then(function () { status.textContent = "Playing at " + audio.playbackRate.toFixed(2) + "×"; }).catch(function (e) { status.textContent = "play() blocked: " + e.message; }); }
+    else { audio.pause(); status.textContent = "Paused"; }
+  });
+
+  // --- level meter (Web Audio analyser tap) ---
+  var actx, analyser, data, tapped = false;
+  function setupMeter() {
+    if (tapped) { if (actx.state === "suspended") actx.resume(); return; }
+    try {
+      actx = new (window.AudioContext || window.webkitAudioContext)();
+      var node = actx.createMediaElementSource(audio);
+      analyser = actx.createAnalyser(); analyser.fftSize = 1024;
+      data = new Float32Array(analyser.fftSize);
+      node.connect(analyser); analyser.connect(actx.destination);
+      tapped = true; requestAnimationFrame(tick);
+    } catch (e) { rmsEl.textContent = "meter unavailable (" + e.message + ") — trust your ears"; }
+  }
+  function tick() {
+    if (!analyser) return;
+    analyser.getFloatTimeDomainData(data);
+    var s = 0; for (var i = 0; i < data.length; i++) s += data[i] * data[i];
+    var rms = Math.sqrt(s / data.length);
+    meterBar.style.width = Math.min(100, rms * 300) + "%";
+    rmsEl.textContent = "RMS: " + rms.toFixed(4) + (rms < 0.001 && !audio.paused ? "  ⚠︎ near-silent — browser may be muting this speed" : "");
+    requestAnimationFrame(tick);
+  }
+
+  // Auto-load the pre-filled case-study clip on open.
+  load(url.value, true);
+})();
+</script>
+</body>
+</html>

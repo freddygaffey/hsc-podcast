@@ -1,0 +1,30 @@
+{
+  "subject": "maths-extension-1",
+  "_comment": "Per-subject LAYOUT/OCR knobs for the Gen-3 splitter. Section counts/marks live in syllabus.json; structure + linkage in structure-guide.md. Ext-1: 70 marks, Section I 10 MC, Section II Q11-14 (15 marks each, multi-page, deeply nested a-e / i-ii).",
+  "leftMarginX": 0.15,
+  "marginMarkX": 0.87,
+  "optionLetters": ["A", "B", "C", "D"],
+  "optionNoise": { "cc": "C", "on": "C", "co": "C" },
+  "furniture": [
+    "^section\\b",
+    "^\\d+\\s*marks\\b",
+    "^attempt\\s+questions",
+    "^allow\\s+about",
+    "^use\\s+the\\s+multiple",
+    "^in\\s+questions\\s+11",
+    "^student\\s+name",
+    "^maths\\s+class",
+    "^reading\\s+time",
+    "^working\\s+time",
+    "^general\\s+instructions",
+    "^blank\\s+page",
+    "^do\\s+not\\s+write",
+    "^end\\s+of\\s+(paper|section)",
+    "\\|\\s*p\\s*a\\s*g\\s*e",
+    "^[-–—\\s]*\\d+[-–—\\s]*$"
+  ],
+  "sectionII": {
+    "questionHeading": "^\\s*Question\\s+(1[1-4])\\b",
+    "note": "Section II questions are Q11-14, each '(15 marks) Start a new page', multi-page; a unit spans all its pages."
+  }
+}

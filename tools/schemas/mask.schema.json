@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hsc-podcast/mask.schema.json",
+  "title": "Region masks per question-unit (papers/_work/<paperId>/mask.json)",
+  "description": "Gen-3 MASK contract. For each SPLIT unit, labels its page area into regions the generator acts on. Non-destructive metadata in paper-normalised coords (0-1) — the crop keeps everything; the generator decides at export. Compact drops writing-space; non-compact re-rules it; answer-structure and content are kept in BOTH modes.",
+  "type": "object",
+  "required": ["paperId", "masks"],
+  "properties": {
+    "paperId": { "type": "string", "minLength": 1 },
+    "source": {
+      "type": ["string", "null"],
+      "enum": ["deterministic", "vision", "human", "verified", null]
+    },
+    "masks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["unitId", "regions"],
+        "properties": {
+          "unitId": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Matches a units[].id in split.json."
+          },
+          "spaceHeight": {
+            "type": ["number", "null"],
+            "minimum": 0,
+            "description": "Total writing-space height in points (sum of writing-space region heights x page hpt). The generator re-rules to this in non-compact mode."
+          },
+          "regions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["page", "bbox", "label"],
+              "properties": {
+                "page": { "type": "integer", "minimum": 0 },
+                "bbox": {
+                  "type": "array",
+                  "minItems": 4,
+                  "maxItems": 4,
+                  "items": { "type": "number", "minimum": 0, "maximum": 1 }
+                },
+                "label": {
+                  "type": "string",
+                  "enum": ["content", "writing-space", "dead-space", "answer-structure"],
+                  "description": "content=keep always; writing-space=drop compact/re-rule non-compact; dead-space=drop always; answer-structure=grids/tables/MC bubbles/number-planes, keep in BOTH modes, never re-rule over."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

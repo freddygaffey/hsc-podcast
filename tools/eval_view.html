@@ -1,0 +1,198 @@
+<!doctype html><meta charset=utf-8><title>Ext-1 segmentation eval</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<style>
+ :root{
+  --bg:#eceff4; --panel:#fff; --ink:#1a1d24; --mut:#6b7688; --line:#dde2ea;
+  --accent:#1450d0; --accentBg:rgba(40,90,220,.06);
+  --ai:#b26a00; --aiBg:rgba(200,130,0,.07);
+  --warn:#c0392b; --ok:#1c8a4a;
+ }
+ *{box-sizing:border-box}
+ body{font:14px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:var(--bg);color:var(--ink)}
+ header{display:flex;gap:12px;align-items:center;padding:9px 16px;background:var(--panel);
+  border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;flex-wrap:wrap}
+ header h1{font-size:14px;font-weight:650;margin:0 8px 0 0;letter-spacing:.01em}
+ select,button{font:inherit;padding:5px 9px;border:1px solid #cbd2df;border-radius:7px;background:#fff;color:inherit}
+ a{color:var(--accent);text-decoration:none}
+ .sum{margin-left:auto;display:flex;gap:14px;font-size:12px;color:var(--mut);align-items:center;flex-wrap:wrap}
+ .sum b{color:var(--ink);font-weight:650}
+ .pill{display:inline-flex;align-items:center;gap:5px;font-size:11px;padding:1px 8px;border-radius:20px;border:1px solid var(--line);background:#fff;color:var(--mut)}
+ .pill.ok{color:var(--ok);border-color:rgba(28,138,74,.35);background:rgba(28,138,74,.06)}
+ .pill.warn{color:var(--warn);border-color:rgba(192,57,43,.35);background:rgba(192,57,43,.06)}
+ main{max-width:1240px;margin:16px auto;padding:0 16px 80px}
+ .sec-head{font-size:12px;font-weight:650;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);
+  margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+ .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:0 0 16px;
+  box-shadow:0 1px 3px rgba(20,30,60,.05)}
+ .card.exc{border-color:rgba(192,57,43,.45)}
+ .chd{display:flex;align-items:center;gap:10px;padding:9px 14px;border-bottom:1px solid var(--line);background:#fafbfd}
+ .qn{font-weight:700;font-size:15px}
+ .chd .meta{color:var(--mut);font-size:12px}
+ .chip{font-size:11px;padding:1px 8px;border-radius:6px;background:#eef1f7;color:var(--mut)}
+ .chip.conf-hi{background:rgba(28,138,74,.10);color:var(--ok)}
+ .chip.conf-mid{background:rgba(200,130,0,.12);color:var(--ai)}
+ .chip.conf-lo{background:rgba(192,57,43,.10);color:var(--warn)}
+ .cols{display:grid;grid-template-columns:1fr 1fr;gap:0}
+ .col{padding:12px 14px}
+ .col+ .col{border-left:1px solid var(--line)}
+ .col .lab{font-size:11px;font-weight:650;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);margin:0 0 8px;display:flex;align-items:center;gap:7px}
+ .col.ans .lab{color:var(--accent)}
+ .col.ans.ai .lab{color:var(--ai)}
+ .crop{position:relative;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:6px;margin:0 0 8px;width:100%}
+ .crop img{position:absolute;top:0;left:0;max-width:none}
+ .crop .pgtag{position:absolute;top:4px;right:6px;font-size:10px;color:#aab;background:rgba(255,255,255,.7);padding:0 5px;border-radius:4px}
+ .pending{color:var(--mut);font-style:italic;padding:22px 8px;text-align:center;border:1px dashed var(--line);border-radius:8px}
+ .exc-note{margin:0 14px 12px;padding:8px 11px;font-size:12px;background:rgba(192,57,43,.06);
+  border:1px solid rgba(192,57,43,.3);border-radius:8px;color:#8a2a20}
+ .exc-note b{color:var(--warn)}
+ .aiflag{display:inline-block;font-size:10px;font-weight:650;letter-spacing:.04em;color:var(--ai);
+  border:1px solid rgba(200,130,0,.4);background:var(--aiBg);padding:0 6px;border-radius:5px}
+ .empty{color:var(--mut);text-align:center;padding:60px 20px}
+ @media(max-width:820px){.cols{grid-template-columns:1fr}.col+.col{border-left:0;border-top:1px solid var(--line)}}
+</style>
+<header>
+ <h1>Segmentation eval</h1>
+ <select id=subject></select>
+ <select id=paper></select>
+ <span class=sum id=sum></span>
+</header>
+<main id=view><div class=empty>Loading…</div></main>
+<script>
+const $=s=>document.querySelector(s);
+let SUBJECT=null, PID=null, DATA=null;
+
+async function loadList(){
+ const q=new URLSearchParams(location.search);
+ SUBJECT=q.get('subject')||'maths-extension-1';
+ const r=await fetch('/api/eval/papers?subject='+encodeURIComponent(SUBJECT)).then(r=>r.json());
+ // subject selector (all subjects that have any split.json)
+ const all=await fetch('/api/eval/papers').then(r=>r.json());
+ $('#subject').innerHTML=all.subjects.map(s=>`<option value="${s}" ${s===SUBJECT?'selected':''}>${s}</option>`).join('');
+ if(!r.papers.length){$('#view').innerHTML=`<div class=empty>No papers with a split.json for <b>${SUBJECT}</b> yet.<br>The Haiku trial is still running — reload when a paper lands.</div>`;$('#paper').innerHTML='';$('#sum').textContent='';return;}
+ $('#paper').innerHTML=r.papers.map(p=>`<option value="${p.paperId}">${p.paperId.replace(SUBJECT+'-','')} · ${p.units}u${p.hasAnswers?'':' · no answers yet'}</option>`).join('');
+ const wp=q.get('paper'); if(wp)$('#paper').value=wp;
+ load($('#paper').value);
+}
+
+async function load(pid){
+ PID=pid;
+ $('#view').innerHTML='<div class=empty>Loading '+pid+'…</div>';
+ DATA=await fetch('/api/eval/paper/'+pid).then(r=>r.json());
+ render();
+}
+
+// client-side crop: show only `bbox` of the page png, scaled to the column width.
+function cropEl(pngName,bbox,pageNum){
+ const wrap=document.createElement('div'); wrap.className='crop';
+ const img=new Image(); img.src='/page/'+PID+'/'+pngName;
+ const [x0,y0,x1,y1]=bbox, bw=Math.max(1e-4,x1-x0), bh=Math.max(1e-4,y1-y0);
+ function place(){
+  const cw=wrap.clientWidth||wrap.parentElement.clientWidth; if(!cw)return;
+  const fullW=cw/bw, fullH=fullW*(img.naturalHeight/img.naturalWidth);
+  img.style.width=fullW+'px'; img.style.height=fullH+'px';
+  img.style.left=(-x0*fullW)+'px'; img.style.top=(-y0*fullH)+'px';
+  wrap.style.height=(bh*fullH)+'px';
+ }
+ img.onload=place; wrap._place=place;
+ wrap.appendChild(img);
+ if(pageNum){const t=document.createElement('span');t.className='pgtag';t.textContent='p'+pageNum;wrap.appendChild(t);}
+ return wrap;
+}
+
+function confChip(c){
+ if(c==null)return '';
+ const cls=c>=0.85?'conf-hi':c>=0.7?'conf-mid':'conf-lo';
+ return `<span class="chip ${cls}">conf ${c.toFixed(2)}</span>`;
+}
+
+function render(){
+ const view=$('#view'); view.innerHTML='';
+ const isII=s=>/II/.test(String(s||'').replace(/\s/g,'').toUpperCase());
+ const units=DATA.units.slice().sort((a,b)=>{
+  const ai=isII(a.section)?1:0, bi=isII(b.section)?1:0;
+  if(ai!==bi)return ai-bi;
+  return (parseInt(a.number)||0)-(parseInt(b.number)||0);
+ });
+ const mc=units.filter(u=>!isII(u.section)), sii=units.filter(u=>isII(u.section));
+ const answered=units.filter(u=>DATA.answers[u.id]).length;
+ const exc=units.filter(u=>u.ruleException).length;
+ const marks=units.reduce((s,u)=>s+(u.marks||0),0);
+ $('#sum').innerHTML=
+  `<span class=pill>${units.length} units</span>`+
+  `<span class="pill ${mc.length===10?'ok':'warn'}">${mc.length} MC</span>`+
+  `<span class=pill>Q11-14: ${sii.length}</span>`+
+  `<span class=pill>${marks} marks</span>`+
+  `<span class="pill ${answered===units.length?'ok':''}">${answered}/${units.length} answers</span>`+
+  (exc?`<span class="pill warn">${exc} rule-exception${exc>1?'s':''}</span>`:'')+
+  `<span class=pill>${DATA.source}</span>`;
+
+ const cards=[];
+ function section(title,list){
+  if(!list.length)return;
+  const h=document.createElement('div'); h.className='sec-head'; h.textContent=title; view.appendChild(h);
+  list.forEach(u=>view.appendChild(card(u)));
+ }
+ section('Section I — Multiple choice',mc);
+ section('Section II — Long response (Q11–14)',sii);
+ // reflow crops after layout settles
+ requestAnimationFrame(()=>document.querySelectorAll('.crop').forEach(c=>c._place&&c._place()));
+}
+
+function card(u){
+ const el=document.createElement('div'); el.className='card'+(u.ruleException?' exc':'');
+ const ans=DATA.answers[u.id];
+ const isImg=ans&&ans.kind==='img';
+ const isAI=ans&&ans.kind==='ai';
+ el.innerHTML=
+  `<div class=chd>
+     <span class=qn>Q${u.number||'?'}${u.part||''}</span>
+     <span class=meta>${isII2(u.section)?'Section II':'MC'}${u.marks!=null?' · '+u.marks+' mark'+(u.marks===1?'':'s'):''}</span>
+     ${confChip(u.confidence)}
+     ${u.note?`<span class=meta title="${esc(u.note)}">· ${esc(u.note.slice(0,60))}</span>`:''}
+   </div>`;
+ if(u.ruleException){
+  const e=u.ruleException;
+  const n=document.createElement('div'); n.className='exc-note';
+  n.innerHTML=`<b>rule-exception (pending review):</b> broke <i>${esc(e.rule||'')}</i> — ${esc(e.reason||'')} <b>→</b> ${esc(e.deviation||'')}`;
+  el.appendChild(n);
+ }
+ const cols=document.createElement('div'); cols.className='cols';
+ // question column
+ const qc=document.createElement('div'); qc.className='col';
+ qc.innerHTML=`<div class=lab>Question</div>`;
+ (u.regions||[]).forEach(r=>{ if(r.bbox) qc.appendChild(cropEl(pngFor(r.page),r.bbox,r.page)); });
+ if(!(u.regions||[]).length) qc.innerHTML+=`<div class=pending>no box</div>`;
+ cols.appendChild(qc);
+ // answer column
+ const ac=document.createElement('div'); ac.className='col ans'+(isAI?' ai':'');
+ const okTag='<span class=aiflag style="color:var(--ok);border-color:rgba(28,138,74,.4);background:rgba(28,138,74,.06)">re-rendered from solutions</span>';
+ ac.innerHTML=`<div class=lab>Answer${isAI?' <span class=aiflag>AI-GENERATED</span>':(isImg?' '+okTag:'')}</div>`;
+ if(isImg&&ans.src){
+  const im=document.createElement('img'); im.src=ans.src; im.loading='lazy';
+  im.style.cssText='width:100%;border:1px solid var(--line);border-radius:6px;background:#fff';
+  ac.appendChild(im);
+  if(ans.note){const n=document.createElement('div');n.style.cssText='font-size:11px;color:var(--mut);margin-top:5px';n.textContent=ans.note;ac.appendChild(n);}
+ }else if(ans&&ans.kind==='crop'&&(ans.regions||[]).length){
+  ans.regions.forEach(r=>{ if(r.bbox) ac.appendChild(cropEl(pngFor(r.page),r.bbox,r.page)); });
+ }else if(ans&&ans.kind==='ai'&&ans.pdf){
+  const f=document.createElement('iframe'); f.src=ans.pdf; f.style.cssText='width:100%;height:360px;border:1px solid var(--line);border-radius:6px';
+  ac.appendChild(f);
+ }else if(ans&&ans.kind==='ai'&&ans.img){
+  const im=document.createElement('img'); im.src=ans.img; im.style.cssText='width:100%;border:1px solid var(--line);border-radius:6px';
+  ac.appendChild(im);
+ }else{
+  ac.innerHTML+=`<div class=pending>answer pending<br><span style="font-size:11px">(solutions pass not run yet)</span></div>`;
+ }
+ cols.appendChild(ac);
+ el.appendChild(cols);
+ return el;
+}
+function isII2(s){return /II/.test(String(s||'').replace(/\s/g,'').toUpperCase());}
+function pngFor(pn){return DATA.pages[pn-1]||('p'+String(pn).padStart(2,'0')+'.png');}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+
+$('#paper').onchange=()=>load($('#paper').value);
+$('#subject').onchange=()=>{location.search='?subject='+encodeURIComponent($('#subject').value);};
+addEventListener('resize',()=>document.querySelectorAll('.crop').forEach(c=>c._place&&c._place()));
+loadList();
+</script>
