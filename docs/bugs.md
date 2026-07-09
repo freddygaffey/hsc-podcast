@@ -1203,4 +1203,54 @@ resume on `visibilitychange`, commit `48dd671`, but that fires on *wake*, not wh
 Cross-refs: **BUG-10** (headphone/lock-screen pause not routed), **BUG-22** (AudioContext background
 suspend/resume), **FEATURE-3** (screen-off native playback mode — this is that mode's core promise).
 
+**⚠️ Full bug trace / post-mortem: [`docs/audio-background-resume.md`](audio-background-resume.md).**
+Read this before touching the audio module again — it records why four fix attempts failed and why we
+kept circling.
+
+**Attempt log (all reverted — do not re-try blind):**
+- `72a60ee` silent keepalive → didn't work. `ad5b582` continuous silent anchor → didn't work.
+- `10a7c1f` raw native element → didn't work. `1167c18` AudioContext routing → **regressed** speed + re-armed the auto-advance loop.
+- Reverted in `553670e`/`cfe79d8`/`d55ff50`/`c6c61ca`. Live audio is back to the known-good `410a382` code.
+
+**Key findings from the git-history trace:**
+1. **No "silent-loop" mechanism ever existed** in committed history — nothing to "bring back." Every
+   attempt was newly-invented code, not a restoration.
+2. The **loop** is a re-appearance of the auto-advance cascade (prior fixes `aa011a6`, `65099bb`); its
+   guards are intact in the current build, and attempt 4 re-triggered it. Fixed again by the revert.
+3. Root cause of the circle is **method, not API**: the bug only repros on the installed iOS PWA with the
+   screen off, which I can't reach, so every fix was a blind guess deployed to prod.
+
+**Next step is NOT another fix** — it's ground truth first: add an on-screen debug log (or USB
+Safari remote-debug) to see what iOS actually does through pause→lock→resume, *then* write one targeted
+fix. May end in a product decision (don't fully pause on lock, or "wake to resume") if iOS won't
+reactivate a deactivated session from the lock screen. See the trace doc §6.
+
+_Unresolved — original bug still present; regressions reverted. Logged 2026-07-09._
+
+---
+
+## BUG-37 — Settings feedback box misaligned; "Send feedback" button should sit below the textarea
+
+**Type:** UI / layout. **Severity:** low (cosmetic, but the feedback control looks broken). **Reported
+(Fred).** The **feedback box in Settings** (FEATURE-13) is **not aligned correctly** — the **"Send
+feedback" button should be below the textarea**, stacked underneath it, not beside/misplaced.
+
+**Where.** `index.html:245–248` — Settings → Feedback section: `#feedback-text` (`textarea.setting-text`)
+then `#btn-feedback-send` (`button.setting-btn`) then `#feedback-status` (`p.setting-hint`). The **DOM
+order is already correct** (button follows the textarea), so this is a **CSS layout** issue — the button
+isn't rendering as a full-width block below the box (likely the settings row/section container lays its
+children out in a row, or `.setting-btn` is inline/auto-width and floats up next to the `width:100%`
+textarea).
+
+**Fix direction.**
+- Make the Feedback controls a **vertical stack**: textarea full-width, then the **Send button on its own
+  line below it**, then the status hint. E.g. wrap the three in a column flex container
+  (`flex-direction: column; align-items: stretch`), or ensure `.setting-btn` here is `display:block` /
+  full-width and clears the textarea.
+- Check whether `.setting-btn` / `.setting-text` inherit a horizontal `.settings-*` row layout that needs
+  overriding just for this section; verify the button spacing (a small `margin-top`) so it doesn't hug
+  the box.
+- Verify on iOS (installed PWA) as well as desktop — the settings sheet is the primary surface. Related:
+  **FEATURE-13** (the feedback box itself), **BUG-2** (settings/dark-mode styling consistency).
+
 _Not started — logged 2026-07-09._
