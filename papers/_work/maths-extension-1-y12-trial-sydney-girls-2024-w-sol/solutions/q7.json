@@ -1,0 +1,26 @@
+{
+  "number": "7",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "7",
+      "marks": 1,
+      "steps": [
+        "Along $y=0$, slopes are positive and increase with $|x|$.",
+        "Test A: $\\frac{dy}{dx}=x^2+1$ on $y=0$ \u2014 matches.",
+        "Test B: $\\frac{dy}{dx}=1$ on $y=0$ \u2014 constant, not matching.",
+        "Test C: $\\frac{dy}{dx}=1$ on $y=0$ \u2014 constant, not matching.",
+        "Test D: $\\frac{dy}{dx}=1$ on $y=0$ \u2014 constant, not matching.",
+        "Along $x=0$, slopes are positive and increase with $y$.",
+        "Test A: $\\frac{dy}{dx}=1$ on $x=0$ \u2014 constant, not matching.",
+        "Test B: $\\frac{dy}{dx}=1$ on $x=0$ \u2014 constant, not matching.",
+        "Test C: $\\frac{dy}{dx}=y^2+1$ on $x=0$ \u2014 increases with $y$, matches.",
+        "Test D: $\\frac{dy}{dx}=\\frac{0}{1+y^2}+1=1$ \u2014 constant, not matching.",
+        "Only option C satisfies both conditions."
+      ],
+      "answer": "C"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

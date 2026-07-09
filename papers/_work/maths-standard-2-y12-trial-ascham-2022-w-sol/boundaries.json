@@ -1,0 +1,946 @@
+{
+  "paperId": "maths-standard-2-y12-trial-ascham-2022-w-sol",
+  "subject": "maths-standard-2",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": null,
+      "marks": null,
+      "topic": "Equations, Linear Cost Functions, Angle Geometry, Probability Trees, Depreciation, Investment Annuities, Critical Path Analysis, Scale Drawings and Network Flow",
+      "module": "Mixed",
+      "syllabusRefs": [
+        "MS-A1",
+        "MS-A4",
+        "MS-M6",
+        "MS-S2",
+        "MS-F4",
+        "MS-N3",
+        "MS-M7",
+        "MS-N2"
+      ],
+      "type": null,
+      "stimulus": [],
+      "text": "",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 11,
+              "bbox": [
+                0.06,
+                0.10078010878010879,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) 8m+2=24-3m"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 13,
+              "bbox": [
+                0.06,
+                0.41624242424242425,
+                0.95,
+                0.5493395493395493
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 13,
+              "bbox": [
+                0.06,
+                0.5413395493395493,
+                0.95,
+                0.7055167055167055
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 13,
+              "bbox": [
+                0.06,
+                0.6975167055167055,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c)"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 21,
+              "bbox": [
+                0.06,
+                0.465970473970474,
+                0.95,
+                0.6394716394716394
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Write the cost function in the form C = mn+c for the cost of making n"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 21,
+              "bbox": [
+                0.06,
+                0.6314716394716394,
+                0.95,
+                0.7917637917637917
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) For how much does Caitlin plan to sell each bedside table?"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 21,
+              "bbox": [
+                0.06,
+                0.7837637917637917,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) If Caitlin sells 30 bedside tables, how much profit or loss will she incur?"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 22,
+              "bbox": [
+                0.06,
+                0.4348904428904429,
+                0.95,
+                0.6324786324786325
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Calculate the size of angle AOD. 1"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 22,
+              "bbox": [
+                0.06,
+                0.6244786324786324,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Calculate the distance along the boundary of the land from A to D, correctto"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 23,
+              "bbox": [
+                0.06,
+                0.11709712509712508,
+                0.95,
+                0.4289044289044289
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 23,
+              "bbox": [
+                0.06,
+                0.4209044289044289,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b)"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 24,
+              "bbox": [
+                0.06,
+                0.1334141414141414,
+                0.95,
+                0.452991452991453
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 24,
+              "bbox": [
+                0.06,
+                0.444991452991453,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) What is the probability that the pens on the table are both red?"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 25,
+              "bbox": [
+                0.06,
+                0.4480994560994561,
+                0.95,
+                0.567987567987568
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 25,
+              "bbox": [
+                0.06,
+                0.559987567987568,
+                0.95,
+                0.679098679098679
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c)"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 25,
+              "bbox": [
+                0.06,
+                0.671098679098679,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d)"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 26,
+              "bbox": [
+                0.06,
+                0.1606091686091686,
+                0.95,
+                0.46853146853146854
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) If the rate of depreciation is 26% per annum, show that the depreciation she 2"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 26,
+              "bbox": [
+                0.06,
+                0.46053146853146854,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Lauren earned for the last financial year. The depreciation for her 3"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 29,
+              "bbox": [
+                0.06,
+                0.43566744366744364,
+                0.95,
+                0.60994560994561
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) If 10 cmon the diagram represents 100 m, what would be the scale of the"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 29,
+              "bbox": [
+                0.06,
+                0.60194560994561,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) If the company’s goal is to collect 1200 KL of water from the roof, how"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 30,
+              "bbox": [
+                0.06,
+                0.35796736596736595,
+                0.95,
+                0.4972804972804973
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find the maximum flow from S to 7."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 30,
+              "bbox": [
+                0.06,
+                0.4892804972804973,
+                0.95,
+                0.7622377622377622
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) On the diagram below, label the flows along each edge that would be"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 30,
+              "bbox": [
+                0.06,
+                0.7542377622377622,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) increasing the capacity of one edge in the network, the maximum flow"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 31,
+              "bbox": [
+                0.06,
+                0.2554032634032634,
+                0.95,
+                0.679098679098679
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Use the recurrence relation to find the amount of money in the account"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 31,
+              "bbox": [
+                0.06,
+                0.671098679098679,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Calculate the amount of interest earned in the first three months."
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 44,
+              "bbox": [
+                0.06,
+                0.100003108003108,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) 8m+2=24—-3m"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 46,
+              "bbox": [
+                0.06,
+                0.41624242424242425,
+                0.95,
+                0.5477855477855478
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 46,
+              "bbox": [
+                0.06,
+                0.5397855477855478,
+                0.95,
+                0.7047397047397047
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 46,
+              "bbox": [
+                0.06,
+                0.6967397047397047,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c)"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 54,
+              "bbox": [
+                0.06,
+                0.4341134421134421,
+                0.95,
+                0.6091686091686092
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Write the cost function in the form C =mn+c for the cost of making n 2"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 54,
+              "bbox": [
+                0.06,
+                0.6011686091686091,
+                0.95,
+                0.763014763014763
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) For how much does Caitlin plan to sell each bedside table? 1"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 54,
+              "bbox": [
+                0.06,
+                0.755014763014763,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) If Caitlin sells 30 bedside tables, how much profit or loss will she incur?"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 55,
+              "bbox": [
+                0.06,
+                0.39759440559440556,
+                0.95,
+                0.5951825951825952
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Calculate the size of angle AOD. 1"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 55,
+              "bbox": [
+                0.06,
+                0.5871825951825952,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Calculate the distance along the boundary of the land from A to D, correctto 2"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 56,
+              "bbox": [
+                0.06,
+                0.11632012432012431,
+                0.95,
+                0.4281274281274281
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Show that at the end of the second month, the future value of Ella’s 2"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 56,
+              "bbox": [
+                0.06,
+                0.4201274281274281,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) After 18 months, the future value of Ella’s investment will be $22 226.19. 2"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 57,
+              "bbox": [
+                0.06,
+                0.1334141414141414,
+                0.95,
+                0.4522144522144522
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Complete the tree diagram below by drawing the missing branches, writing"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 57,
+              "bbox": [
+                0.06,
+                0.4442144522144522,
+                0.95,
+                0.6884226884226884
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) is the probability that the pens on the table are both red? 1"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 57,
+              "bbox": [
+                0.06,
+                0.6804226884226884,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) is the probability that the pens on the table are different colours? 2"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 58,
+              "bbox": [
+                0.06,
+                0.3533053613053613,
+                0.95,
+                0.4716394716394716
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Whatis the earliest start time (EST) of activity H? J AP"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 58,
+              "bbox": [
+                0.06,
+                0.4636394716394716,
+                0.95,
+                0.5695415695415695
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) is minimum completion time for the project?"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 58,
+              "bbox": [
+                0.06,
+                0.5615415695415695,
+                0.95,
+                0.6946386946386947
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) What is the critical path for the project? JV"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 58,
+              "bbox": [
+                0.06,
+                0.6866386946386946,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) is the float time of activity £?"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 59,
+              "bbox": [
+                0.06,
+                0.14118414918414918,
+                0.95,
+                0.45143745143745145
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) If the rate of depreciation is 26% per annum, show that the depreciation she 2"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 59,
+              "bbox": [
+                0.06,
+                0.44343745143745145,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Lauren earned $110 000 for the last financial year. The depreciation for her 3"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 62,
+              "bbox": [
+                0.06,
+                0.4348904428904429,
+                0.95,
+                0.6177156177156177
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) If 10 cmon the diagram represents 100 m, what would be the scale of the 1"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 62,
+              "bbox": [
+                0.06,
+                0.6097156177156177,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) If the company’s goal is to collect 1200 kL of water from the roof, how 3"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 63,
+              "bbox": [
+                0.06,
+                0.3571903651903652,
+                0.95,
+                0.49572649572649574
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find the maximum flow from Sto 7."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 63,
+              "bbox": [
+                0.06,
+                0.48772649572649573,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b)"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 64,
+              "bbox": [
+                0.06,
+                0.25462626262626264,
+                0.95,
+                0.6783216783216783
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) the recurrence relation to find the amount of money in the account"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 64,
+              "bbox": [
+                0.06,
+                0.6703216783216783,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Calculate the amount of interest earned in the first three months."
+        }
+      ]
+    }
+  ]
+}

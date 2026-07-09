@@ -1,0 +1,20 @@
+{
+  "number": "2",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "2",
+      "marks": 1,
+      "steps": [
+        "Option (A): $xy' = 14x^2 + 9y$ can be written as $y' - \\frac{9}{x}y = 14x$, which is linear.",
+        "Option (B): $y'' + 2y' - 8y = 0$ is second-order.",
+        "Option (C): $y^2 + y + x = 0$ is not a differential equation.",
+        "Option (D): $y'y - 2x^2y^2 = 14x$ contains $y'y$ and $y^2$, so it is nonlinear.",
+        "Hence, the correct answer is (A)."
+      ],
+      "answer": "A"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

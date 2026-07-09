@@ -1,0 +1,26 @@
+{
+  "number": "5",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "5",
+      "marks": 1,
+      "steps": [
+        "Let $f(x)=e^x+e^{-x}-x-2$.",
+        "$f'(x)=e^x-e^{-x}-1$.",
+        "$f''(x)=e^x+e^{-x}>0$ so $f$ is convex.",
+        "$f(0)=1+1-0-2=0$.",
+        "$f(1)=e+e^{-1}-1-2\\approx2.718+0.368-3=0.086>0$.",
+        "$f(-1)=e^{-1}+e-(-1)-2\\approx0.368+2.718+1-2=2.086>0$.",
+        "Since $f$ is convex and $f(0)=0$, $f$ has at most two zeros.",
+        "Check $f(2)=e^2+e^{-2}-2-2\\approx7.389+0.135-4=3.524>0$.",
+        "Check $f(-2)=e^{-2}+e^2+2-2\\approx0.135+7.389=7.524>0$.",
+        "Only zero at $x=0$; no other sign change.",
+        "Thus exactly 1 solution."
+      ],
+      "answer": "B"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

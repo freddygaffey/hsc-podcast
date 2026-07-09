@@ -1,0 +1,592 @@
+{
+  "paperId": "maths-extension-2-y12-hsc-1986-hsc",
+  "subject": "maths-extension-2",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": "1",
+      "marks": 1,
+      "topic": "Integration",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MEX-C1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "1. (i) Evaluate f) 2 dr",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.13885314685314684,
+                0.95,
+                0.3581973581973582
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "1. (i) Evaluate f) 2 dr"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": 1,
+      "topic": "Inverse functions and differentiation",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MEX-C1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "2. The functions are defined by the formulae 5(x) =",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.3501973581973582,
+                0.95,
+                0.4017094017094017
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "2. The functions are defined by the formulae 5(x) ="
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.3937094017094017,
+                0.95,
+                0.4281274281274281
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) (a) Verify that ="
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.4201274281274281,
+                0.95,
+                0.45143745143745145
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Show that is an increasing function for all real x."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.44343745143745145,
+                0.95,
+                0.5213675213675214
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Prove that {C(x)}? = 1+"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.5133675213675214,
+                0.95,
+                0.5501165501165501
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Let y = S~"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.5421165501165501,
+                0.95,
+                0.5773115773115773
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Hence, or otherwise, show that S~!(x) = log, [x + VI+ 2? ]."
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.5693115773115773,
+                0.95,
+                0.6130536130536131
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) Show that fj) = log. {"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": 1,
+      "topic": "Conics (hyperbola normal), polynomial multiple roots, and Argand diagram loci",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "MEX-N1",
+        "MEX-N2"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "3. (i) The point P(x1,y1) lies on the hyperbola of equation 27 \u2014 &",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.605053613053613,
+                0.95,
+                0.6425796425796426
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "3. (i) The point P(x1,y1) lies on the hyperbola of equation 27 \u2014 &"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.6345796425796426,
+                0.95,
+                0.6682206682206682
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find the equation of the normal at P."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.6602206682206682,
+                0.95,
+                0.7513597513597513
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) The normal at P meets the z-axis at G, and N"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.7433597513597513,
+                0.95,
+                0.790986790986791
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) The polynomial ax\"*! + Bax\" + 1 is divisible by (\u00ab \u20141)?. Show that a =n, and"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.782986790986791,
+                0.95,
+                0.8749028749028749
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) prove that 1+a+ 4 4+---4+ 2) has no multiple roots for any n > 1."
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.8669028749028749,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) (b) 21/22 (c)"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.14895415695415695,
+                0.95,
+                0.2261072261072261
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) z (b) 27"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.2181072261072261,
+                0.95,
+                0.32944832944832947
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) The curve in the Argand diagram for which |z \u2014 2| + |z \u20144| = 10 i"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": 1,
+      "topic": "Volumes of solids of revolution",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MEX-C1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "5. (i) (a) The coordinates of the vertices of a triangle ABC are (0,2), (1,1), (-1,1)",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.32144832944832946,
+                0.95,
+                0.39704739704739705
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "5. (i) (a) The coordinates of the vertices of a triangle ABC are (0,2), (1,1), (-1,1)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.38904739704739705,
+                0.95,
+                0.533022533022533
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) The region enclosed by the triangle ABC, defined in (a) above, is rotated about"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": 1,
+      "topic": "Circular motion of a cyclist on a banked track",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "MEX-M1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "6. (a) A cyclist is travelling with constant speed v metres per second around a",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.525022533022533,
+                0.95,
+                0.6278166278166278
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "6. (a) A cyclist is travelling with constant speed v metres per second around a"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.6198166278166278,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) The figure represents the front view of a cyclist PQ, with mass centre G, riding"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.10777311577311577,
+                0.95,
+                0.17793317793317792
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Also calculate the force of the wheels on the track at Q in the direction AB,"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": 1,
+      "topic": "Trigonometric equations and circle geometry proof",
+      "module": "Proof",
+      "syllabusRefs": [
+        "MEX-P1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "7. (i) Find all x such that cos 2x = sin 3x, and 0 < < 1/2.",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.16993317793317791,
+                0.95,
+                0.2432012432012432
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "7. (i) Find all x such that cos 2x = sin 3x, and 0 < < 1/2."
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.2352012432012432,
+                0.95,
+                0.37218337218337216
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) In the figure, ZS is the"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.36418337218337216,
+                0.95,
+                0.4972804972804973
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) In the given figure, XY"
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "marks": 1,
+      "topic": "Polynomials: roots and coefficients",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "MEX-N2"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "8. (i) Let a, 3,7 be the roots of the cubic equation + pr? + q = 0, where p,q are",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.4892804972804973,
+                0.95,
+                0.6449106449106449
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "8. (i) Let a, 3,7 be the roots of the cubic equation + pr? + q = 0, where p,q are"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.6369106449106449,
+                0.95,
+                0.6736596736596736
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Show that the only zero of f(a) occurs at 2 = 1."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.6656596736596736,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Let g(x"
+        }
+      ]
+    }
+  ]
+}

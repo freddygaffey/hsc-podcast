@@ -1,0 +1,20 @@
+{
+  "number": "1",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "",
+      "marks": 1,
+      "steps": [
+        "\\sin x = \\frac{2\\sqrt{3}}{4} = \\frac{\\sqrt{3}}{2}",
+        "x \\text{ obtuse} \\Rightarrow \\cos x = -\\sqrt{1-\\sin^2 x}",
+        "\\cos x = -\\sqrt{1-\\frac{3}{4}} = -\\frac{1}{2}",
+        "\\sin 2x = 2\\sin x \\cos x",
+        "= 2 \\times \\frac{\\sqrt{3}}{2} \\times \\left(-\\frac{1}{2}\\right) = -\\frac{\\sqrt{3}}{2}"
+      ],
+      "answer": "B"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

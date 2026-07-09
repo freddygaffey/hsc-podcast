@@ -1,0 +1,20 @@
+{
+  "number": "9",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "9",
+      "marks": null,
+      "steps": [
+        "Total circular arrangements: $(8-1)! = 7!$",
+        "Treat two youngest as a block: $7$ entities circular: $(7-1)! = 6!$",
+        "Within block: $2!$ arrangements",
+        "Probability = $\\dfrac{6! \\times 2!}{7!}$",
+        "Hence answer is (A)"
+      ],
+      "answer": "A"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

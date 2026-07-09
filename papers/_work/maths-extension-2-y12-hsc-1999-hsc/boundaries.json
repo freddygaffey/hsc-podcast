@@ -1,0 +1,761 @@
+{
+  "paperId": "maths-extension-2-y12-hsc-1999-hsc",
+  "subject": "maths-extension-2",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": "1",
+      "marks": null,
+      "topic": "Integration techniques: substitution, partial fractions, integration by parts",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 1,
+          "bbox": [
+            0.06,
+            0.07591608391608393,
+            0.95,
+            0.13752913752913754
+          ]
+        }
+      ],
+      "text": "QUESTION 1 Use a SEPARATE Writing Booklet. Marks",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.12952913752913753,
+                0.95,
+                0.21522921522921523
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Evaluate I xe\" dr, 2"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.20722921522921522,
+                0.95,
+                0.5718725718725719
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Using the substitution \u00ab = e*, or otherwise, find J 2"
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.5638725718725719,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(e) Use integration by parts to evaluate i sinxdx 4"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": null,
+      "topic": "Complex number arithmetic, Argand diagrams, complex equations and loci",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 2,
+          "bbox": [
+            0.06,
+            0.07591608391608393,
+            0.95,
+            0.128982128982129
+          ]
+        }
+      ],
+      "text": "QUESTION 2 Use a SEPARATE Writing Booklet. Marks",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.12098212898212898,
+                0.95,
+                0.27505827505827507
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Let z=3+2i and w=~I1 +i. Express the following in the form a + ib, where 3"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.26705827505827506,
+                0.95,
+                0.30691530691530694
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Let 4"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.29891530691530693,
+                0.95,
+                0.40015540015540013
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Find the exact value of and arg @."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.3921554001554001,
+                0.95,
+                0.5058275058275058
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Sketch the region in the Argand diagram where the two inequalities 2"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.4978275058275058,
+                0.95,
+                0.6013986013986014
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Given that 1 \u2014 3: is a root of the equation, explain why | + 3i is another"
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.5933986013986013,
+                0.95,
+                0.8702408702408703
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(e)"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.8622408702408703,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Explain why P corresponds to the complex number (1 + i) z)."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": null,
+      "topic": "Curve sketching techniques and conic sections (ellipse geometry, eccentricity, foci, directrices)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 3,
+          "bbox": [
+            0.06,
+            0.07591608391608393,
+            0.95,
+            0.13442113442113443
+          ]
+        }
+      ],
+      "text": "QUESTION 3 Use a SEPARATE Writing Booklet. Marks",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.12642113442113442,
+                0.95,
+                0.5516705516705517
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.5436705516705517,
+                0.95,
+                0.6674436674436675
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Consider the ellipse E with equation 9"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.6594436674436674,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Calculate the eccentricity of E."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "marks": null,
+      "topic": "Volumes by cylindrical shells; polynomial double roots; inverse function domain/sketching",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 4,
+          "bbox": [
+            0.06,
+            0.07591608391608393,
+            0.95,
+            0.11732711732711733
+          ]
+        }
+      ],
+      "text": "QUESTION 4 Use a SEPARATE Writing Booklet. Marks",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.10932711732711733,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) y 4"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": null,
+      "topic": "Roots of polynomial equations; conical pendulum (circular motion); rates of change (population growth model)",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-M1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 5,
+          "bbox": [
+            0.06,
+            0.07591608391608393,
+            0.95,
+            0.13131313131313133
+          ]
+        }
+      ],
+      "text": "QUESTION 5 Use a SEPARATE Writing Booklet. Marks",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.12331313131313132,
+                0.95,
+                0.16472416472416473
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) The roots of x7 + 5x7 + 11 =0, are at, Band y. 3"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.15672416472416473,
+                0.95,
+                0.2680652680652681
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Find the polynomial equation whose roots are a, B? and y."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.2600652680652681,
+                0.95,
+                0.6006216006216006
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b)"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.5926216006216006,
+                0.95,
+                0.7272727272727273
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Write down the magnitude, in terms of @, of the force acting on P"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": null,
+      "topic": "Roots of polynomial equations; conical pendulum (circular motion); rates of change (population growth model)",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-M1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 6,
+          "bbox": [
+            0.06,
+            0.07591608391608393,
+            0.95,
+            0.20124320124320125
+          ]
+        }
+      ],
+      "text": "QUESTION 5 (Continued) Marks",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.19324320124320124,
+                0.95,
+                0.6363636363636364
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) For 0 <1 5, suppose that the equations determining the number of"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": null,
+      "topic": "Mathematical induction; resisted vertical motion (mechanics)",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P2",
+        "ME-M1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 6,
+          "bbox": [
+            0.06,
+            0.6283636363636363,
+            0.95,
+            0.6860916860916861
+          ]
+        }
+      ],
+      "text": "QUESTION 6 Use a SEPARATE Writing Booklet.",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.6780916860916861,
+                0.95,
+                0.8935508935508936
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) @_ Let x be a fixed, non-zero number satisfying x > \u20141. Use the method of 4"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": null,
+      "topic": "Mathematical induction; resisted vertical motion (mechanics)",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P2",
+        "ME-M1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 7,
+          "bbox": [
+            0.06,
+            0.07591608391608393,
+            0.95,
+            0.13364413364413363
+          ]
+        }
+      ],
+      "text": "QUESTION 6 (Continued) Marks",
+      "parts": [
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.12564413364413363,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) A ball of unit mass is projected vertically upwards from ground level with initial"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": null,
+      "topic": "Integration inequalities from graphs (ln x); probability of a token game",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 8,
+          "bbox": [
+            0.06,
+            0.07591608391608393,
+            0.95,
+            0.13442113442113443
+          ]
+        }
+      ],
+      "text": "QUESTION 7 Use a SEPARATE Writing Booklet. Marks",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.12642113442113442,
+                0.95,
+                0.6254856254856255
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) @"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": null,
+      "topic": "Integration inequalities from graphs (ln x); probability of a token game",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 9,
+          "bbox": [
+            0.06,
+            0.07591608391608393,
+            0.95,
+            0.13442113442113443
+          ]
+        }
+      ],
+      "text": "QUESTION 7 (Continued) Marks",
+      "parts": [
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 9,
+              "bbox": [
+                0.06,
+                0.12642113442113442,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b)"
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "marks": null,
+      "topic": "Roots of quadratic with complex coefficients; circle geometry and loci (proof)",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-P1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 10,
+          "bbox": [
+            0.06,
+            0.07591608391608393,
+            0.95,
+            0.13364413364413363
+          ]
+        }
+      ],
+      "text": "QUESTION 8 Use a SEPARATE Writing Booklet. Marks",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 10,
+              "bbox": [
+                0.06,
+                0.12564413364413363,
+                0.95,
+                0.1926961926961927
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Let The complex number a = p + + pt is a root 8"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 10,
+              "bbox": [
+                0.06,
+                0.1846961926961927,
+                0.95,
+                0.4125874125874126
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Prove that 1+p+p?+...+p\u00b0=0."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 10,
+              "bbox": [
+                0.06,
+                0.4045874125874126,
+                0.95,
+                0.6604506604506605
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) P 7"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 10,
+              "bbox": [
+                0.06,
+                0.6524506604506605,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Explain why is a constant."
+        }
+      ]
+    }
+  ]
+}

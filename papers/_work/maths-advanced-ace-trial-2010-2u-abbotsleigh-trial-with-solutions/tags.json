@@ -1,0 +1,115 @@
+{
+ "paperId": "maths-advanced-ace-trial-2010-2u-abbotsleigh-trial-with-solutions",
+ "model": "claude-opus-4-8",
+ "ts": 1783077165,
+ "tags": {
+  "q01.pdf": {
+   "syllabusRefs": [
+    "MA-F1",
+    "MA-T2"
+   ],
+   "type": "extended",
+   "topic": "Working with Functions",
+   "module": "Functions",
+   "confidence": 0.5,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q02.pdf": {
+   "syllabusRefs": [
+    "MA-C2",
+    "MA-C4"
+   ],
+   "type": "extended",
+   "topic": "Differential Calculus",
+   "module": "Calculus",
+   "confidence": 0.7,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q03.pdf": {
+   "syllabusRefs": [
+    "MA-F1",
+    "MA-T1"
+   ],
+   "type": "extended",
+   "topic": "Working with Functions",
+   "module": "Functions",
+   "confidence": 0.6,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q04.pdf": {
+   "syllabusRefs": [
+    "MA-M1",
+    "MA-S1"
+   ],
+   "type": "extended",
+   "topic": "Modelling Financial Situations",
+   "module": "Financial Mathematics",
+   "confidence": 0.45,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q05.pdf": {
+   "syllabusRefs": [
+    "MA-C3",
+    "MA-C4"
+   ],
+   "type": "extended",
+   "topic": "Applications of Differentiation",
+   "module": "Calculus",
+   "confidence": 0.6,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q06.pdf": {
+   "syllabusRefs": [
+    "MA-E1",
+    "MA-F2"
+   ],
+   "type": "extended",
+   "topic": "Logarithms and Exponentials",
+   "module": "Exponential and Logarithmic Functions",
+   "confidence": 0.55,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q07.pdf": {
+   "syllabusRefs": [
+    "MA-M1",
+    "MA-T1"
+   ],
+   "type": "extended",
+   "topic": "Modelling Financial Situations",
+   "module": "Financial Mathematics",
+   "confidence": 0.6,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q08.pdf": {
+   "syllabusRefs": [
+    "MA-C4",
+    "MA-F1"
+   ],
+   "type": "extended",
+   "topic": "Integral Calculus",
+   "module": "Calculus",
+   "confidence": 0.7,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q09.pdf": {
+   "syllabusRefs": [
+    "MA-C4",
+    "MA-E1"
+   ],
+   "type": "extended",
+   "topic": "Integral Calculus",
+   "module": "Calculus",
+   "confidence": 0.55,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  }
+ }
+}

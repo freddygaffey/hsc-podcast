@@ -1,0 +1,826 @@
+{
+  "paperId": "maths-extension-1-ace-trial-2020-3u-grafton-hs-trial-paper-with-solutions",
+  "subject": "maths-extension-1",
+  "source": "auto-ext1",
+  "sectionIIStartPage": 6,
+  "solutionsStartPage": 10,
+  "missingMC": [
+    8
+  ],
+  "units": [
+    {
+      "id": "q1",
+      "number": "1",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 2,
+          "bbox": [
+            0.04,
+            0.2217,
+            0.93,
+            0.4447
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "number": "2",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 2,
+          "bbox": [
+            0.04,
+            0.4447,
+            0.93,
+            0.9054
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "number": "3",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 3,
+          "bbox": [
+            0.04,
+            0.0787,
+            0.93,
+            0.506
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "number": "4",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 3,
+          "bbox": [
+            0.04,
+            0.506,
+            0.93,
+            0.7329
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "number": "5",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 3,
+          "bbox": [
+            0.04,
+            0.7329,
+            0.93,
+            0.8044
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "number": "6",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 4,
+          "bbox": [
+            0.04,
+            0.0779,
+            0.93,
+            0.4198
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "number": "7",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 4,
+          "bbox": [
+            0.04,
+            0.4198,
+            0.93,
+            0.59
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "number": "8",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 4,
+          "bbox": [
+            0.04,
+            0.59,
+            0.93,
+            0.8813
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "number": "9",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 5,
+          "bbox": [
+            0.04,
+            0.0715,
+            0.93,
+            0.2953
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "number": "10",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 5,
+          "bbox": [
+            0.0431,
+            0.3013,
+            0.93,
+            0.9079
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q11a",
+      "number": "11",
+      "part": "a",
+      "section": "II",
+      "marks": 1,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 6,
+          "bbox": [
+            0.04,
+            0.2753,
+            0.93,
+            0.334
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q11b",
+      "number": "11",
+      "part": "b",
+      "section": "II",
+      "marks": 3,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 6,
+          "bbox": [
+            0.04,
+            0.334,
+            0.93,
+            0.4144
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q11c",
+      "number": "11",
+      "part": "c",
+      "section": "II",
+      "marks": 3,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 6,
+          "bbox": [
+            0.04,
+            0.4144,
+            0.93,
+            0.59
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q11d",
+      "number": "11",
+      "part": "d",
+      "section": "II",
+      "marks": 4,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 6,
+          "bbox": [
+            0.04,
+            0.59,
+            0.93,
+            0.794
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q11e",
+      "number": "11",
+      "part": "e",
+      "section": "II",
+      "marks": 2,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 6,
+          "bbox": [
+            0.04,
+            0.794,
+            0.93,
+            0.8378
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q12a",
+      "number": "12",
+      "part": "a",
+      "section": "II",
+      "marks": 3,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 7,
+          "bbox": [
+            0.04,
+            0.104,
+            0.93,
+            0.2108
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q12b",
+      "number": "12",
+      "part": "b",
+      "section": "II",
+      "marks": 2,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 7,
+          "bbox": [
+            0.04,
+            0.2108,
+            0.93,
+            0.2939
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q12c",
+      "number": "12",
+      "part": "c",
+      "section": "II",
+      "marks": 5,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 7,
+          "bbox": [
+            0.04,
+            0.2939,
+            0.93,
+            0.6397
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q12d",
+      "number": "12",
+      "part": "d",
+      "section": "II",
+      "marks": 5,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 7,
+          "bbox": [
+            0.04,
+            0.6397,
+            0.93,
+            0.7252
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q13a",
+      "number": "13",
+      "part": "a",
+      "section": "II",
+      "marks": 2,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 8,
+          "bbox": [
+            0.04,
+            0.1183,
+            0.93,
+            0.2116
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q13b",
+      "number": "13",
+      "part": "b",
+      "section": "II",
+      "marks": 3,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 8,
+          "bbox": [
+            0.04,
+            0.2116,
+            0.93,
+            0.3942
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q13c",
+      "number": "13",
+      "part": "c",
+      "section": "II",
+      "marks": 1,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 8,
+          "bbox": [
+            0.04,
+            0.3942,
+            0.93,
+            0.7337
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q13d",
+      "number": "13",
+      "part": "d",
+      "section": "II",
+      "marks": 2,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 8,
+          "bbox": [
+            0.04,
+            0.7337,
+            0.93,
+            0.8068
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q14a",
+      "number": "14",
+      "part": "a",
+      "section": "II",
+      "marks": null,
+      "marksPrinted": false,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 9,
+          "bbox": [
+            0.04,
+            0.1199,
+            0.93,
+            0.1929
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q14b",
+      "number": "14",
+      "part": "b",
+      "section": "II",
+      "marks": null,
+      "marksPrinted": false,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 9,
+          "bbox": [
+            0.04,
+            0.1929,
+            0.93,
+            0.2963
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q14c",
+      "number": "14",
+      "part": "c",
+      "section": "II",
+      "marks": null,
+      "marksPrinted": false,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 9,
+          "bbox": [
+            0.04,
+            0.2963,
+            0.93,
+            0.3825
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q14d",
+      "number": "14",
+      "part": "d",
+      "section": "II",
+      "marks": null,
+      "marksPrinted": false,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 9,
+          "bbox": [
+            0.04,
+            0.3825,
+            0.93,
+            0.6661
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q14e",
+      "number": "14",
+      "part": "e",
+      "section": "II",
+      "marks": null,
+      "marksPrinted": false,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.5,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 9,
+          "bbox": [
+            0.04,
+            0.6661,
+            0.93,
+            0.8371
+          ]
+        }
+      ]
+    }
+  ],
+  "_vision": {
+    "mc": "qwen3vl",
+    "sec2": "qwen3vl-parts"
+  },
+  "semantic": {
+    "ok": false,
+    "issues": [
+      {
+        "unit": "q1",
+        "problem": "Text garbled: 'Whatiis' and 'sin2x given that sinx = 244' is impossible; likely missing fraction or formatting error."
+      },
+      {
+        "unit": "q2",
+        "problem": "Slope field diagram not described; options (A),(B),(C),(D) missing actual equations."
+      },
+      {
+        "unit": "q3",
+        "problem": "Proof cut off mid-sentence; missing conclusion and step 3."
+      },
+      {
+        "unit": "q4",
+        "problem": "Options (A),(B),(C),(D) missing actual differential equations."
+      },
+      {
+        "unit": "q5",
+        "problem": "Question incomplete: 'derivative of ?' missing function; only option (A) shown."
+      },
+      {
+        "unit": "q6",
+        "problem": "Text garbled: 'What is the value of v? x (4) 0 2 \u00a9 2 2 (D) 9' unclear; likely missing vector expression."
+      },
+      {
+        "unit": "q7",
+        "problem": "Remainder question: 'x? \u2014 6x' should be 'x^2 - 6x'? Options include 'x?7-2' garbled."
+      },
+      {
+        "unit": "q8",
+        "problem": "Options (A),(B),(C),(D) missing full equations; text cut off."
+      },
+      {
+        "unit": "q9",
+        "problem": "Options 'w (8) 6! o oO' garbled; missing probability expressions."
+      },
+      {
+        "unit": "q10",
+        "problem": "Graph descriptions missing; options (a),(B),(c),(D) have no actual graphs."
+      },
+      {
+        "unit": "q11a",
+        "problem": "Question incomplete: 'Explain why 7 1' cut off; missing expression."
+      },
+      {
+        "unit": "q11b",
+        "problem": "Only '3' given; no actual question text."
+      },
+      {
+        "unit": "q11c",
+        "problem": "Vector notation garbled; sub-parts (i),(ii),(iii) have only '1' marks but no actual questions."
+      },
+      {
+        "unit": "q11d",
+        "problem": "Part (iii) cut off: 'Find the rate at which t' incomplete."
+      },
+      {
+        "unit": "q11e",
+        "problem": "Expression garbled: 'estan 2 ind' unclear; likely missing integral."
+      },
+      {
+        "unit": "q12a",
+        "problem": "Integral expression garbled: '[/ \"4 3 lo V16 \u2014 x?' unclear."
+      },
+      {
+        "unit": "q12c",
+        "problem": "Substitution part (i) incomplete; (ii) has stray '2 3 3 (a) x'."
+      },
+      {
+        "unit": "q12d",
+        "problem": "Curve equation incomplete: 'y = <x < the xaxis' garbled."
+      },
+      {
+        "unit": "q13c",
+        "problem": "Part (ii) missing marks and full question text."
+      },
+      {
+        "unit": "q13d",
+        "problem": "Part (i) missing marks; part (ii) says '2' but marks may be misassigned."
+      },
+      {
+        "unit": "q14a",
+        "problem": "Marks set to None; question incomplete: 'Using the substitution u =' cut off."
+      },
+      {
+        "unit": "q14b",
+        "problem": "Marks set to None; no actual statement to prove given."
+      },
+      {
+        "unit": "q14c",
+        "problem": "Marks set to None; question appears complete but missing marks."
+      },
+      {
+        "unit": "q14d",
+        "problem": "Marks set to None; diagram description garbled: 'AB isa parallel to OC, DCis parallel OB, OB (d) AB = 0B=0C=DC' unclear."
+      },
+      {
+        "unit": "q14e",
+        "problem": "Marks set to None; vectors not defined: '() and b Consider the vectors' incomplete."
+      },
+      {
+        "unit": "overall",
+        "problem": "Section II marks total cannot be verified due to missing marks in q14; Section I totals 10 marks, but many questions garbled."
+      }
+    ]
+  },
+  "_edited": true
+}

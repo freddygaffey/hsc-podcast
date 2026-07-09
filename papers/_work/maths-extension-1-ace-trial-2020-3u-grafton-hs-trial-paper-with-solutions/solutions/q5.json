@@ -1,0 +1,19 @@
+{
+  "number": "5",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "5",
+      "marks": null,
+      "steps": [
+        "Let $u = 3x$.",
+        "$\\frac{d}{dx}\\cos^{-1}(u) = -\\frac{1}{\\sqrt{1-u^2}}\\frac{du}{dx}$",
+        "$\\frac{du}{dx}=3$",
+        "$\\frac{d}{dx}\\cos^{-1}(3x) = -\\frac{3}{\\sqrt{1-9x^2}}$"
+      ],
+      "answer": "$D$"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

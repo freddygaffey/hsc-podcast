@@ -1,0 +1,877 @@
+{
+  "paperId": "maths-advanced-y12-hsc-1986-hsc",
+  "subject": "maths-advanced",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": "1",
+      "marks": null,
+      "topic": "Front matter / examination instructions (not a real question - boundary detection artifact)",
+      "module": "General",
+      "syllabusRefs": [],
+      "type": null,
+      "stimulus": [],
+      "text": "Question 1, Question 2 etc. on the cover. Each booklet must show your Candidate’s",
+      "parts": [
+        {
+          "label": null,
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.8310357698289269,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "Question 1, Question 2 etc. on the cover. Each booklet must show your Candidate’s"
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "marks": null,
+      "topic": "Algebraic techniques: equations, formulae, evaluation, percentages and probability",
+      "module": "Functions",
+      "syllabusRefs": [
+        "MA-F1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 1,
+          "bbox": [
+            0.06,
+            0.10397511664074649,
+            0.95,
+            0.17651632970451012
+          ]
+        }
+      ],
+      "text": "Question 1. (Use a separate book. ) See page 91 for standard integrals.",
+      "parts": [
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.1685163297045101,
+                0.95,
+                0.2192846034214619
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) The price of an article for sale at $1.60 is to increase by"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.21128460342146188,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Given that"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": null,
+      "topic": "Coordinate geometry of the straight line",
+      "module": "Functions",
+      "syllabusRefs": [
+        "MA-F1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 2,
+          "bbox": [
+            0.06,
+            0.11252877138413686,
+            0.95,
+            0.19362363919129083
+          ]
+        }
+      ],
+      "text": "Question 2. (Use a separate book.)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.18562363919129082,
+                0.95,
+                0.22161741835147744
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find the length AB, and the gradient of AB."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.21361741835147743,
+                0.95,
+                0.2939346811819596
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Show that the equation of the line %, drawn through C parallel"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.2859346811819596,
+                0.95,
+                0.33670295489891133
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Find the coordinates of D, the point where 2% intersects the"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.3287029548989113,
+                0.95,
+                0.3654743390357698
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find the perpendicular distance of the point A from the line 2."
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.3574743390357698,
+                0.95,
+                0.4354587869362364
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(e) Find the area of the quadrilateral ABCD."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": null,
+      "topic": "Differentiation rules (power, chain, quotient) and tangents",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C2"
+      ],
+      "type": null,
+      "stimulus": [],
+      "text": "Question 3. (Use a separate book.)",
+      "parts": [
+        {
+          "label": null,
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.4274587869362364,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "Question 3. (Use a separate book.)"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "marks": null,
+      "topic": "Curve sketching using differentiation and definite integrals",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 3,
+          "bbox": [
+            0.06,
+            0.09231104199066875,
+            0.95,
+            0.13141524105754276
+          ]
+        }
+      ],
+      "text": "Question 4. (Use a separate book.)",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.12341524105754276,
+                0.95,
+                0.14930015552099535
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i)"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.14130015552099534,
+                0.95,
+                0.21384136858475894
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) { de,"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.20584136858475893,
+                0.95,
+                0.3475894245723173
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) { cos (22) dx."
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.3395894245723173,
+                0.95,
+                0.3771384136858476
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.3691384136858476,
+                0.95,
+                0.4261275272161742
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.4181275272161742,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c)"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": null,
+      "topic": "Kinematics: displacement, velocity and acceleration",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 4,
+          "bbox": [
+            0.06,
+            0.12341524105754276,
+            0.95,
+            0.14618973561430793
+          ]
+        }
+      ],
+      "text": "Question 5. (Use a separate book.)",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.13818973561430792,
+                0.95,
+                0.23250388802488337
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) The displacement # metres from the origin at time ¢ seconds,"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.22450388802488336,
+                0.95,
+                0.26127527216174184
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find the acceleration of the particle at time t seconds."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.25327527216174184,
+                0.95,
+                0.5902021772939346
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Find the times at which the particle is stationary."
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.5822021772939346,
+                0.95,
+                0.6181959564541213
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Use the cosine rule for triangle ABD to find the length BD."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.6101959564541213,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Use the sine rule to find /DBC, correct to the nearest"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": null,
+      "topic": "Geometric proof: angle properties, congruence and similarity",
+      "module": "Trigonometry",
+      "syllabusRefs": [],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 5,
+          "bbox": [
+            0.06,
+            0.06353965785381027,
+            0.95,
+            0.10186625194401244
+          ]
+        }
+      ],
+      "text": "Question 6. (Use a separate book.)",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.09386625194401244,
+                0.95,
+                0.3771384136858476
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i)"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.3691384136858476,
+                0.95,
+                0.4059097978227061
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Draw a neat sketch of the above diagram in your answer book."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.3979097978227061,
+                0.95,
+                0.7488335925349923
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Calculate x, giving reasons for each step in your"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.7408335925349923,
+                0.95,
+                0.7807153965785381
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Draw a neat sketch of the diagram in your answer book."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.772715396578538,
+                0.95,
+                0.8079315707620529
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Prove that HK = KQ."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.7999315707620529,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Given that P is the mid-point of LQ, prove that"
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "marks": null,
+      "topic": "Optimisation: maximising area of a sector subject to a perimeter constraint",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 6,
+          "bbox": [
+            0.06,
+            0.11563919129082426,
+            0.95,
+            0.15318818040435458
+          ]
+        }
+      ],
+      "text": "Question 9. (Use a separate book.)",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.14518818040435458,
+                0.95,
+                0.5598755832037325
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.5518755832037325,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b)"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": null,
+      "topic": "Numerical integration: trapezoidal rule and graphing trigonometric functions",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 7,
+          "bbox": [
+            0.06,
+            0.11175116640746502,
+            0.95,
+            0.15085536547433903
+          ]
+        }
+      ],
+      "text": "Question 7. (Use a separate book.)",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.14285536547433902,
+                0.95,
+                0.5279937791601866
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i)"
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "marks": null,
+      "topic": "Probability: sample space analysis and combined probability of two trials",
+      "module": "Statistical Analysis",
+      "syllabusRefs": [
+        "MA-S2"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 7,
+          "bbox": [
+            0.06,
+            0.5199937791601866,
+            0.95,
+            0.5590979782270606
+          ]
+        }
+      ],
+      "text": "Question 8. (Use a separate book.)",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.5510979782270606,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i)"
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "marks": null,
+      "topic": "Exponential growth and decay applications; volume of solids of revolution",
+      "module": "Exponential and Logarithmic Functions",
+      "syllabusRefs": [
+        "MA-E1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 8,
+          "bbox": [
+            0.06,
+            0.09075583203732504,
+            0.95,
+            0.1290824261275272
+          ]
+        }
+      ],
+      "text": "Question 10. (Use a separate book.)",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.1210824261275272,
+                0.95,
+                0.27060653188180406
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) The rate of increase of a population P(t) of persons in a certain"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.26260653188180405,
+                0.95,
+                0.2931570762052877
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find k."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.2851570762052877,
+                0.95,
+                0.33670295489891133
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) In which year will the country reach a population three"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.3287029548989113,
+                0.95,
+                0.4510108864696734
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Given that at the beginning of 1960 the population was 15.1"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.4430108864696734,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) ‘The area enclosed by the curve - the and the"
+        }
+      ]
+    }
+  ]
+}

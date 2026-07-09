@@ -1,0 +1,653 @@
+{
+  "paperId": "maths-extension-2-y12-hsc-1992-hsc",
+  "subject": "maths-extension-2",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": "1",
+      "marks": 1,
+      "topic": "Integration",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MEX-C1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "1. (a) Find: (i) ftan@sec?@ dd (ii) f de.",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.1404071484071484,
+                0.95,
+                0.17793317793317792
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "1. (a) Find: (i) ftan@sec?@ dd (ii) f de."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.16993317793317791,
+                0.95,
+                0.2191142191142191
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Evaluate [7 ; by using the substitution u ="
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.2111142191142191,
+                0.95,
+                0.2501942501942502
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Evaluate dt."
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.24219425019425017,
+                0.95,
+                0.28438228438228436
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) (i) Find fre\u00ae dr (ii) Evaluate de."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": 1,
+      "topic": "Argand diagram, loci, and polynomial roots",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "MEX-N1",
+        "MEX-N2"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "2. (a) The points A and B represent the complex numbers 3",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.27638228438228435,
+                0.95,
+                0.3271173271173271
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "2. (a) The points A and B represent the complex numbers 3"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.3191173271173271,
+                0.95,
+                0.3939393939393939
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Plot the points A and B on an Argand diagram and mark the point P such that"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.3859393939393939,
+                0.95,
+                0.4195804195804196
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Let where a? +b? 0."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.4115804195804196,
+                0.95,
+                0.4755244755244755
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Show that if S(z) > 0 then S(4) <0."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.4675244755244755,
+                0.95,
+                0.49572649572649574
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Describe and sketch the locus of those points z such that:"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.48772649572649573,
+                0.95,
+                0.526029526029526
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) |z- V2"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.518029526029526,
+                0.95,
+                0.5703185703185704
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) It is given that is a root of P(z) = 22\u00b0 \u2014 32? + rz +s where r and s are"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.5623185703185704,
+                0.95,
+                0.6293706293706294
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Explain why 1 is also a root of P(2)."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": 1,
+      "topic": "Conics (ellipse), geometric proof, and resisted vertical motion",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "MEX-M1",
+        "MEX-C1",
+        "MEX-P1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "3. (a) The ellipse \u20ac has equation 25 +2 =1",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.6213706293706294,
+                0.95,
+                0.655011655011655
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "3. (a) The ellipse \u20ac has equation 25 +2 =1"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.647011655011655,
+                0.95,
+                0.7653457653457654
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Sketch he curve &, showing on your diagram the coordinates of the foci and the"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.7573457653457654,
+                0.95,
+                0.8321678321678322
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) In the diagram, the bisector AD of ZBAC has been"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.8241678321678322,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Prove that the triangles ABE and ADE are similar."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.3805003885003885,
+                0.95,
+                0.4801864801864802
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) An object is fired vertically upwards with initial speed 400m/s from the surface"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.4721864801864802,
+                0.95,
+                0.5563325563325563
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Show that = \u201410/[1+ where v is the speed of the object at height"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": 1,
+      "topic": "Trigonometric identities and inequality proof",
+      "module": "Proof",
+      "syllabusRefs": [
+        "MEX-P1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "6. (a) LE",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.5483325563325563,
+                0.95,
+                0.8725718725718725
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "6. (a) LE"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.8645718725718725,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Express 4 in terms of a and u."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.10855011655011654,
+                0.95,
+                0.2634032634032634
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Show that \u2014 4) \u2014 (\u00a9 + a)sm\u00e9d = 0. and deduce that"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.2554032634032634,
+                0.95,
+                0.289044289044289
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Let n be an integer with n > 2"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.281044289044289,
+                0.95,
+                0.41025641025641024
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) For i =1,2,...,n suppose 2; is a real number satisfying 0 <x; <7"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": 1,
+      "topic": "Counting routes (combinatorics) and roots of unity",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "MEX-N1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "7. (a) The diagram shows the road grid __4_",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.40225641025641024,
+                0.95,
+                0.5369075369075369
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "7. (a) The diagram shows the road grid __4_"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.5289075369075369,
+                0.95,
+                0.7288267288267288
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) By how many different routes can Ayrton."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.7208267288267288,
+                0.95,
+                0.7552447552447552
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Suppose that 27 = 1 where z 4 1."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.7472447552447552,
+                0.95,
+                0.8484848484848485
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Deduce that 24+ 2?+2+1+41+4+5=0."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "marks": 1,
+      "topic": "Turning points and iterative approximation inequality (Newton's method)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MEX-C1",
+        "MEX-P1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "8. (a) Consider the function f(x) =",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.8404848484848485,
+                0.95,
+                0.8749028749028749
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "8. (a) Consider the function f(x) ="
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.8669028749028749,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Find the turning points of the graph of y = f(."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.19246620046620047,
+                0.95,
+                0.24087024087024086
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Let n be a positive integer and let x be any positive approximation to \\/n."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.23287024087024086,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Prove that \u201c34 >"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,743 @@
+{
+  "paperId": "maths-extension-1-ace-trial-2020-3u-ace-paper-4-trial-paper",
+  "subject": "maths-extension-1",
+  "source": "auto-ext1",
+  "sectionIIStartPage": 5,
+  "solutionsStartPage": 9,
+  "missingMC": [
+    5,
+    6
+  ],
+  "units": [
+    {
+      "id": "q1",
+      "number": "1",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 2,
+          "bbox": [
+            0.1217,
+            0.226,
+            0.7388,
+            0.3602
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "number": "2",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 2,
+          "bbox": [
+            0.1217,
+            0.3706,
+            0.8772,
+            0.5957
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "number": "3",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 2,
+          "bbox": [
+            0.1217,
+            0.6049,
+            0.8673,
+            0.8156
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "number": "4",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 3,
+          "bbox": [
+            0.1217,
+            0.0733,
+            0.8311,
+            0.5818
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "number": "5",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 3,
+          "bbox": [
+            0.1217,
+            0.5901,
+            0.8465,
+            0.7154
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "number": "6",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 3,
+          "bbox": [
+            0.1217,
+            0.723,
+            0.864,
+            0.9159
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "number": "7",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 4,
+          "bbox": [
+            0.1217,
+            0.0834,
+            0.6926,
+            0.2284
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "number": "8",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 4,
+          "bbox": [
+            0.1217,
+            0.2333,
+            0.7542,
+            0.4256
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "number": "9",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 4,
+          "bbox": [
+            0.1217,
+            0.4347,
+            0.5135,
+            0.6408
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "number": "10",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 4,
+          "bbox": [
+            0.1228,
+            0.6507,
+            0.8069,
+            0.8654
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q11a",
+      "number": "11",
+      "part": "a",
+      "section": "II",
+      "marks": null,
+      "marksPrinted": false,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 5,
+          "bbox": [
+            0.1217,
+            0.2271,
+            0.8728,
+            0.3658
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q11b",
+      "number": "11",
+      "part": "b",
+      "section": "II",
+      "marks": 2,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 5,
+          "bbox": [
+            0.1217,
+            0.3934,
+            0.8509,
+            0.4559
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q11c",
+      "number": "11",
+      "part": "c",
+      "section": "II",
+      "marks": 2,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 5,
+          "bbox": [
+            0.1217,
+            0.4835,
+            0.8509,
+            0.5553
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q11d",
+      "number": "11",
+      "part": "d",
+      "section": "II",
+      "marks": 3,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 5,
+          "bbox": [
+            0.1217,
+            0.5837,
+            0.8509,
+            0.696
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q11e",
+      "number": "11",
+      "part": "e",
+      "section": "II",
+      "marks": 2,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 5,
+          "bbox": [
+            0.1217,
+            0.7174,
+            0.8509,
+            0.7954
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q12a",
+      "number": "12",
+      "part": "a",
+      "section": "II",
+      "marks": 9,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 6,
+          "bbox": [
+            0.1213,
+            0.1075,
+            0.8867,
+            0.3557
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q12b",
+      "number": "12",
+      "part": "b",
+      "section": "II",
+      "marks": 3,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 6,
+          "bbox": [
+            0.1217,
+            0.3934,
+            0.8509,
+            0.5258
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q12c",
+      "number": "12",
+      "part": "c",
+      "section": "II",
+      "marks": 2,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 6,
+          "bbox": [
+            0.1217,
+            0.5635,
+            0.8509,
+            0.6253
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q13a",
+      "number": "13",
+      "part": "a",
+      "section": "II",
+      "marks": 3,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 7,
+          "bbox": [
+            0.1217,
+            0.1036,
+            0.8509,
+            0.439
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q13b",
+      "number": "13",
+      "part": "b",
+      "section": "II",
+      "marks": 5,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 7,
+          "bbox": [
+            0.1217,
+            0.439,
+            0.8509,
+            0.4946
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q13c",
+      "number": "13",
+      "part": "c",
+      "section": "II",
+      "marks": 2,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 7,
+          "bbox": [
+            0.1217,
+            0.4946,
+            0.8509,
+            0.5746
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q13d",
+      "number": "13",
+      "part": "d",
+      "section": "II",
+      "marks": 4,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 7,
+          "bbox": [
+            0.1217,
+            0.5746,
+            0.852,
+            0.8358
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q13e",
+      "number": "13",
+      "part": "e",
+      "section": "II",
+      "marks": 2,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 7,
+          "bbox": [
+            0.1217,
+            0.8388,
+            0.8509,
+            0.8957
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q14a",
+      "number": "14",
+      "part": "a",
+      "section": "II",
+      "marks": 7,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 8,
+          "bbox": [
+            0.1217,
+            0.1036,
+            0.8509,
+            0.3253
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q14b",
+      "number": "14",
+      "part": "b",
+      "section": "II",
+      "marks": 2,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 8,
+          "bbox": [
+            0.1217,
+            0.3437,
+            0.8509,
+            0.4155
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q14c",
+      "number": "14",
+      "part": "c",
+      "section": "II",
+      "marks": 3,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 8,
+          "bbox": [
+            0.1217,
+            0.4338,
+            0.8509,
+            0.5359
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q14d",
+      "number": "14",
+      "part": "d",
+      "section": "II",
+      "marks": 2,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 8,
+          "bbox": [
+            0.1217,
+            0.5534,
+            0.8509,
+            0.6253
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q14e",
+      "number": "14",
+      "part": "e",
+      "section": "II",
+      "marks": 2,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 8,
+          "bbox": [
+            0.1217,
+            0.6436,
+            0.8509,
+            0.7154
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q14f",
+      "number": "14",
+      "part": "f",
+      "section": "II",
+      "marks": 3,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 8,
+          "bbox": [
+            0.1217,
+            0.7337,
+            0.8509,
+            0.8055
+          ]
+        }
+      ]
+    }
+  ],
+  "_vision": {
+    "mc": "qwen3vl",
+    "sec2": "qwen3vl-parts"
+  },
+  "_edited": true
+}

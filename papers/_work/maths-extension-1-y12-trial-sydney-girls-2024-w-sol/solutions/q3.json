@@ -1,0 +1,19 @@
+{
+  "number": "3",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "3",
+      "marks": 1,
+      "steps": [
+        "$\\sin x - \\sqrt{3} \\cos x = R \\sin(x - \\alpha)$",
+        "$R = \\sqrt{1^2 + (\\sqrt{3})^2} = 2$",
+        "$\\tan \\alpha = \\frac{\\sqrt{3}}{1} = \\sqrt{3} \\Rightarrow \\alpha = \\frac{\\pi}{3}$",
+        "$\\sin x - \\sqrt{3} \\cos x = 2 \\sin\\left(x - \\frac{\\pi}{3}\\right)$"
+      ],
+      "answer": "A"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

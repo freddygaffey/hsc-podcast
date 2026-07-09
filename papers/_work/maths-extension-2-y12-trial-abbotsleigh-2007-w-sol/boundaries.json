@@ -1,0 +1,269 @@
+{
+  "paperId": "maths-extension-2-y12-trial-abbotsleigh-2007-w-sol",
+  "questions": [
+    {
+      "number": "1",
+      "marks": 15,
+      "topic": "Integration Techniques",
+      "module": "Calculus",
+      "syllabusRefs": ["ME-C1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2,
+          "type": "calculation",
+          "regions": [{"page": 2, "bbox": [0.06, 0.22, 0.95, 0.295]}],
+          "markingRegions": [{"page": 10, "bbox": [0.02, 0.08, 0.48, 0.20]}]
+        },
+        {
+          "label": "b",
+          "marks": 4,
+          "type": "calculation",
+          "regions": [{"page": 2, "bbox": [0.06, 0.30, 0.95, 0.455]}],
+          "markingRegions": [{"page": 10, "bbox": [0.02, 0.20, 0.48, 0.46]}]
+        },
+        {
+          "label": "c",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [{"page": 2, "bbox": [0.06, 0.475, 0.95, 0.575]}],
+          "markingRegions": [{"page": 10, "bbox": [0.02, 0.475, 0.48, 0.97]}]
+        },
+        {
+          "label": "d",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [{"page": 2, "bbox": [0.06, 0.575, 0.95, 0.675]}],
+          "markingRegions": [{"page": 10, "bbox": [0.50, 0.08, 0.98, 0.35]}]
+        },
+        {
+          "label": "e",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [{"page": 2, "bbox": [0.06, 0.675, 0.95, 0.76]}],
+          "markingRegions": [{"page": 10, "bbox": [0.50, 0.35, 0.98, 0.60]}]
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": 15,
+      "topic": "Curve Sketching and Differentiation",
+      "module": "Calculus",
+      "syllabusRefs": ["ME-C1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 8,
+          "type": "extended",
+          "regions": [{"page": 3, "bbox": [0.06, 0.13, 0.95, 0.695]}],
+          "markingRegions": [
+            {"page": 11, "bbox": [0.02, 0.06, 0.98, 0.32]},
+            {"page": 11, "bbox": [0.02, 0.32, 0.48, 0.90]}
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 7,
+          "type": "extended",
+          "regions": [{"page": 3, "bbox": [0.06, 0.695, 0.95, 0.895]}],
+          "markingRegions": [{"page": 11, "bbox": [0.50, 0.37, 0.98, 0.90]}]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": 15,
+      "topic": "Complex Numbers",
+      "module": "Complex Numbers",
+      "syllabusRefs": ["ME-N1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [{"page": 4, "bbox": [0.06, 0.13, 0.95, 0.195]}],
+          "markingRegions": [{"page": 12, "bbox": [0.02, 0.06, 0.48, 0.28]}]
+        },
+        {
+          "label": "b",
+          "marks": 3,
+          "type": "extended",
+          "regions": [{"page": 4, "bbox": [0.06, 0.195, 0.95, 0.30]}],
+          "markingRegions": [{"page": 12, "bbox": [0.02, 0.28, 0.48, 0.44]}]
+        },
+        {
+          "label": "c",
+          "marks": 3,
+          "type": "extended",
+          "regions": [{"page": 4, "bbox": [0.06, 0.325, 0.95, 0.395]}],
+          "markingRegions": [{"page": 12, "bbox": [0.02, 0.44, 0.48, 0.815]}]
+        },
+        {
+          "label": "d",
+          "marks": 4,
+          "type": "calculation",
+          "regions": [{"page": 4, "bbox": [0.06, 0.42, 0.95, 0.53]}],
+          "markingRegions": [
+            {"page": 12, "bbox": [0.50, 0.06, 0.98, 0.24]},
+            {"page": 12, "bbox": [0.50, 0.80, 0.98, 0.955]}
+          ]
+        },
+        {
+          "label": "e",
+          "marks": 2,
+          "type": "extended",
+          "regions": [{"page": 4, "bbox": [0.06, 0.575, 0.95, 0.885]}],
+          "markingRegions": [{"page": 12, "bbox": [0.50, 0.28, 0.98, 0.60]}]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "marks": 15,
+      "topic": "Complex Numbers and Polynomials",
+      "module": "Complex Numbers",
+      "syllabusRefs": ["ME-N1", "ME-P1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [{"page": 5, "bbox": [0.06, 0.135, 0.95, 0.205]}],
+          "markingRegions": [{"page": 13, "bbox": [0.02, 0.06, 0.48, 0.285]}]
+        },
+        {
+          "label": "b",
+          "marks": 3,
+          "type": "extended",
+          "regions": [{"page": 5, "bbox": [0.06, 0.20, 0.95, 0.30]}],
+          "markingRegions": [{"page": 13, "bbox": [0.02, 0.315, 0.48, 0.755]}]
+        },
+        {
+          "label": "c",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [{"page": 5, "bbox": [0.06, 0.325, 0.95, 0.46]}],
+          "markingRegions": [{"page": 13, "bbox": [0.50, 0.04, 0.98, 0.28]}]
+        },
+        {
+          "label": "d",
+          "marks": 6,
+          "type": "extended",
+          "regions": [{"page": 5, "bbox": [0.06, 0.48, 0.95, 0.685]}],
+          "markingRegions": [{"page": 13, "bbox": [0.50, 0.28, 0.98, 0.89]}]
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": 15,
+      "topic": "Volumes and Geometric Proof",
+      "module": "Calculus",
+      "syllabusRefs": ["ME-C1", "ME-P1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 4,
+          "type": "calculation",
+          "regions": [{"page": 6, "bbox": [0.06, 0.135, 0.95, 0.205]}],
+          "markingRegions": [{"page": 14, "bbox": [0.02, 0.06, 0.48, 0.615]}]
+        },
+        {
+          "label": "b",
+          "marks": 4,
+          "type": "extended",
+          "regions": [{"page": 6, "bbox": [0.06, 0.205, 0.95, 0.475]}],
+          "markingRegions": [{"page": 14, "bbox": [0.02, 0.615, 0.48, 0.94]}]
+        },
+        {
+          "label": "c",
+          "marks": 7,
+          "type": "extended",
+          "regions": [{"page": 6, "bbox": [0.06, 0.50, 0.95, 0.925]}],
+          "markingRegions": [{"page": 14, "bbox": [0.50, 0.04, 0.98, 0.72]}]
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": 15,
+      "topic": "Conics — Ellipse",
+      "module": "Calculus",
+      "syllabusRefs": ["ME-C1", "ME-P1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 10,
+          "type": "extended",
+          "regions": [{"page": 7, "bbox": [0.06, 0.135, 0.95, 0.395]}],
+          "markingRegions": [
+            {"page": 15, "bbox": [0.02, 0.06, 0.48, 0.965]},
+            {"page": 15, "bbox": [0.50, 0.05, 0.98, 0.28]}
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 5,
+          "type": "extended",
+          "regions": [{"page": 7, "bbox": [0.06, 0.415, 0.95, 0.575]}],
+          "markingRegions": [{"page": 15, "bbox": [0.50, 0.28, 0.98, 0.965]}]
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": 15,
+      "topic": "Conics — Hyperbola and Integration",
+      "module": "Calculus",
+      "syllabusRefs": ["ME-C1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 9,
+          "type": "extended",
+          "regions": [{"page": 8, "bbox": [0.06, 0.135, 0.95, 0.775]}],
+          "markingRegions": [{"page": 16, "bbox": [0.02, 0.06, 0.48, 0.775]}]
+        },
+        {
+          "label": "b",
+          "marks": 6,
+          "type": "extended",
+          "regions": [{"page": 8, "bbox": [0.06, 0.795, 0.95, 0.915]}],
+          "markingRegions": [{"page": 16, "bbox": [0.50, 0.06, 0.98, 0.775]}]
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "marks": 15,
+      "topic": "Mechanics and Integration Inequalities",
+      "module": "Mechanics",
+      "syllabusRefs": ["ME-M1", "ME-C1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 10,
+          "type": "extended",
+          "regions": [{"page": 9, "bbox": [0.06, 0.135, 0.95, 0.535]}],
+          "markingRegions": [{"page": 17, "bbox": [0.02, 0.06, 0.48, 0.90]}]
+        },
+        {
+          "label": "b",
+          "marks": 5,
+          "type": "extended",
+          "regions": [{"page": 9, "bbox": [0.06, 0.555, 0.95, 0.835]}],
+          "markingRegions": [{"page": 17, "bbox": [0.50, 0.06, 0.98, 0.775]}]
+        }
+      ]
+    }
+  ]
+}

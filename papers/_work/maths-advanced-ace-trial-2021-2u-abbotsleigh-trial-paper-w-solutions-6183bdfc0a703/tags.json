@@ -1,0 +1,182 @@
+{
+ "paperId": "maths-advanced-ace-trial-2021-2u-abbotsleigh-trial-paper-w-solutions-6183bdfc0a703",
+ "model": "claude-opus-4-8",
+ "ts": 1783077165,
+ "tags": {
+  "q01.pdf": {
+   "syllabusRefs": [
+    "MA-E1",
+    "MA-F1"
+   ],
+   "type": "mc",
+   "topic": "Logarithms and Exponentials",
+   "module": "Exponential and Logarithmic Functions",
+   "confidence": 0.9,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q02.pdf": {
+   "syllabusRefs": [
+    "MA-T2"
+   ],
+   "type": "mc",
+   "topic": "Trigonometric Functions and Identities",
+   "module": "Trigonometric Functions",
+   "confidence": 0.9,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q03.pdf": {
+   "syllabusRefs": [
+    "MA-T1"
+   ],
+   "type": "mc",
+   "topic": "Trigonometry and Measure of Angles",
+   "module": "Trigonometric Functions",
+   "confidence": 0.9,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q05.pdf": {
+   "syllabusRefs": [
+    "MA-C3",
+    "MA-C2"
+   ],
+   "type": "mc",
+   "topic": "Applications of Differentiation",
+   "module": "Calculus",
+   "confidence": 0.88,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q06.pdf": {
+   "syllabusRefs": [
+    "MA-F1"
+   ],
+   "type": "mc",
+   "topic": "Working with Functions",
+   "module": "Functions",
+   "confidence": 0.9,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q07.pdf": {
+   "syllabusRefs": [
+    "MA-C3",
+    "MA-C4"
+   ],
+   "type": "mc",
+   "topic": "Applications of Differentiation",
+   "module": "Calculus",
+   "confidence": 0.8,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q08.pdf": {
+   "syllabusRefs": [
+    "MA-T3"
+   ],
+   "type": "mc",
+   "topic": "Trigonometric Functions and Graphs",
+   "module": "Trigonometric Functions",
+   "confidence": 0.92,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q09.pdf": {
+   "syllabusRefs": [
+    "MA-T3"
+   ],
+   "type": "mc",
+   "topic": "Trigonometric Functions and Graphs",
+   "module": "Trigonometric Functions",
+   "confidence": 0.92,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q10.pdf": {
+   "syllabusRefs": [
+    "MA-E1",
+    "MA-F1"
+   ],
+   "type": "mc",
+   "topic": "Logarithms and Exponentials",
+   "module": "Exponential and Logarithmic Functions",
+   "confidence": 0.82,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q11.pdf": {
+   "syllabusRefs": [
+    "MA-C2",
+    "MA-T2"
+   ],
+   "type": "extended",
+   "topic": "Differential Calculus",
+   "module": "Calculus",
+   "confidence": 0.45,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q12.pdf": {
+   "syllabusRefs": [
+    "MA-S1",
+    "MA-S2"
+   ],
+   "type": "extended",
+   "topic": "Probability and Discrete Probability Distributions",
+   "module": "Statistical Analysis",
+   "confidence": 0.45,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q13.pdf": {
+   "syllabusRefs": [
+    "MA-S2",
+    "MA-S1"
+   ],
+   "type": "extended",
+   "topic": "Descriptive Statistics and Bivariate Data Analysis",
+   "module": "Statistical Analysis",
+   "confidence": 0.55,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q14.pdf": {
+   "syllabusRefs": [
+    "MA-C3",
+    "MA-M1"
+   ],
+   "type": "extended",
+   "topic": "Applications of Differentiation",
+   "module": "Calculus",
+   "confidence": 0.45,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q15.pdf": {
+   "syllabusRefs": [
+    "MA-C3",
+    "MA-E1"
+   ],
+   "type": "extended",
+   "topic": "Applications of Differentiation",
+   "module": "Calculus",
+   "confidence": 0.5,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q16.pdf": {
+   "syllabusRefs": [
+    "MA-C3",
+    "MA-C4"
+   ],
+   "type": "extended",
+   "topic": "Applications of Differentiation",
+   "module": "Calculus",
+   "confidence": 0.5,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  }
+ }
+}

@@ -3,3 +3,13 @@
 # Gold set is a permanent regression asset — commit it (see tools/regress.py)
 !_goldset/
 !_goldset/**
+# Wind-down archive (2026-07-09): our own scripts, indexes, logs, and pipeline metadata
+# stay in git. Copyrighted paper PDFs and page renders stay local-only.
+!_*.py
+!_index.json
+!_duplicates.csv
+!_*.log
+!folder.html
+!_work/
+!_work/**/
+!_work/**/*.json

@@ -1,0 +1,19 @@
+{
+  "number": "9",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "",
+      "marks": 1,
+      "steps": [
+        "$\\operatorname{proj}_{\\underline{v}} \\underline{u} = \\frac{\\underline{u}\\cdot\\underline{v}}{\\underline{v}\\cdot\\underline{v}}\\underline{v}$",
+        "$\\operatorname{proj}_{\\underline{u}} \\underline{v} = \\frac{\\underline{u}\\cdot\\underline{v}}{\\underline{u}\\cdot\\underline{u}}\\underline{u}$",
+        "$(\\operatorname{proj}_{\\underline{v}} \\underline{u})\\cdot(\\operatorname{proj}_{\\underline{u}} \\underline{v}) = \\frac{(\\underline{u}\\cdot\\underline{v})^3}{|\\underline{u}|^2|\\underline{v}|^2}$",
+        "$\\frac{\\underline{u}\\cdot\\underline{v}}{(\\operatorname{proj}_{\\underline{v}} \\underline{u})\\cdot(\\operatorname{proj}_{\\underline{u}} \\underline{v})} = \\frac{|\\underline{u}|^2|\\underline{v}|^2}{(\\underline{u}\\cdot\\underline{v})^2} = \\frac{1}{\\cos^2\\theta} = \\sec^2\\theta$"
+      ],
+      "answer": "D"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

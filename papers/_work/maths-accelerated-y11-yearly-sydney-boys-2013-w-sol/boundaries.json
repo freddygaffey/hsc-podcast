@@ -1,0 +1,246 @@
+{
+  "paperId": "maths-accelerated-y11-yearly-sydney-boys-2013-w-sol",
+  "questions": [
+    {
+      "number": "A",
+      "marks": 15,
+      "module": "Calculus",
+      "topic": "Differentiation, Integration, Rectilinear Motion and Exponential/Logarithmic Functions",
+      "syllabusRefs": ["MA-C2", "MA-C4", "MA-E1", "MA-C3"],
+      "stimulus": [
+        { "page": 2, "bbox": [0.08, 0.07, 0.97, 0.10] }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 3,
+          "type": "short",
+          "regions": [ { "page": 2, "bbox": [0.08, 0.09, 0.97, 0.33] } ],
+          "markingRegions": [ { "page": 11, "bbox": [0.0, 0.06, 1.0, 0.42] } ]
+        },
+        {
+          "label": "b",
+          "marks": 3,
+          "type": "short",
+          "regions": [ { "page": 2, "bbox": [0.08, 0.33, 0.97, 0.565] } ],
+          "markingRegions": [ { "page": 11, "bbox": [0.0, 0.42, 1.0, 0.64] } ]
+        },
+        {
+          "label": "c",
+          "marks": 2,
+          "type": "short",
+          "regions": [ { "page": 2, "bbox": [0.08, 0.565, 0.97, 0.73] } ],
+          "markingRegions": [ { "page": 12, "bbox": [0.0, 0.0, 1.0, 0.27] } ]
+        },
+        {
+          "label": "d",
+          "marks": 2,
+          "type": "calculation",
+          "regions": [ { "page": 2, "bbox": [0.08, 0.73, 0.97, 0.96] } ],
+          "markingRegions": [ { "page": 12, "bbox": [0.0, 0.27, 1.0, 0.75] } ]
+        },
+        {
+          "label": "e",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [ { "page": 3, "bbox": [0.08, 0.07, 0.97, 0.31] } ],
+          "markingRegions": [ { "page": 13, "bbox": [0.0, 0.0, 1.0, 0.255] } ]
+        },
+        {
+          "label": "f",
+          "marks": 2,
+          "type": "short",
+          "regions": [ { "page": 3, "bbox": [0.08, 0.31, 0.97, 0.96] } ],
+          "markingRegions": [ { "page": 13, "bbox": [0.0, 0.255, 1.0, 0.50] } ]
+        }
+      ]
+    },
+    {
+      "number": "B",
+      "marks": 15,
+      "module": "Calculus",
+      "topic": "Trigonometric Graphs, Areas Between Curves and Exponential Functions",
+      "syllabusRefs": ["MA-T3", "MA-C4", "MA-E1", "MA-C2", "MA-T2"],
+      "stimulus": [
+        { "page": 4, "bbox": [0.08, 0.07, 0.97, 0.10] }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2,
+          "type": "short",
+          "regions": [ { "page": 4, "bbox": [0.08, 0.09, 0.97, 0.43] } ],
+          "markingRegions": [ { "page": 14, "bbox": [0.0, 0.07, 1.0, 0.115] } ]
+        },
+        {
+          "label": "b",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [ { "page": 4, "bbox": [0.08, 0.43, 0.97, 0.59] } ],
+          "markingRegions": [ { "page": 14, "bbox": [0.0, 0.115, 1.0, 0.45] } ]
+        },
+        {
+          "label": "c",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [ { "page": 4, "bbox": [0.08, 0.59, 0.97, 0.96] } ],
+          "markingRegions": [ { "page": 14, "bbox": [0.0, 0.45, 1.0, 0.575] } ]
+        },
+        {
+          "label": "d",
+          "marks": 2,
+          "type": "short",
+          "regions": [ { "page": 5, "bbox": [0.08, 0.07, 0.97, 0.17] } ],
+          "markingRegions": [ { "page": 15, "bbox": [0.0, 0.0, 1.0, 0.335] } ]
+        },
+        {
+          "label": "e",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [ { "page": 5, "bbox": [0.08, 0.17, 0.97, 0.45] } ],
+          "markingRegions": [ { "page": 15, "bbox": [0.0, 0.335, 1.0, 0.63] } ]
+        },
+        {
+          "label": "f",
+          "marks": 2,
+          "type": "short",
+          "regions": [ { "page": 5, "bbox": [0.08, 0.45, 0.97, 0.96] } ],
+          "markingRegions": [ { "page": 16, "bbox": [0.0, 0.0, 1.0, 0.15] } ]
+        }
+      ]
+    },
+    {
+      "number": "C",
+      "marks": 17,
+      "module": "Calculus",
+      "topic": "Integration, Odd-Function Graphs, Trigonometric Motion, Exponential Equations and Curve Sketching",
+      "syllabusRefs": ["MA-C4", "MA-E1", "MA-C3", "MA-T3"],
+      "stimulus": [
+        { "page": 6, "bbox": [0.08, 0.07, 0.97, 0.10] }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2,
+          "type": "short",
+          "regions": [ { "page": 6, "bbox": [0.08, 0.09, 0.97, 0.21] } ],
+          "markingRegions": [ { "page": 17, "bbox": [0.0, 0.0, 1.0, 0.205] } ]
+        },
+        {
+          "label": "b",
+          "marks": 4,
+          "type": "extended",
+          "regions": [ { "page": 6, "bbox": [0.08, 0.21, 0.97, 0.59] } ],
+          "markingRegions": [ { "page": 17, "bbox": [0.0, 0.205, 1.0, 1.0] } ]
+        },
+        {
+          "label": "c",
+          "marks": 6,
+          "type": "extended",
+          "regions": [ { "page": 6, "bbox": [0.08, 0.59, 0.97, 0.96] } ],
+          "markingRegions": [ { "page": 18, "bbox": [0.0, 0.0, 1.0, 0.64] } ]
+        },
+        {
+          "label": "d",
+          "marks": 2,
+          "type": "short",
+          "regions": [ { "page": 7, "bbox": [0.08, 0.07, 0.97, 0.195] } ],
+          "markingRegions": [ { "page": 19, "bbox": [0.0, 0.0, 1.0, 0.335] } ]
+        },
+        {
+          "label": "e",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [ { "page": 7, "bbox": [0.08, 0.195, 0.97, 0.96] } ],
+          "markingRegions": [
+            { "page": 19, "bbox": [0.0, 0.335, 1.0, 1.0] },
+            { "page": 20, "bbox": [0.0, 0.0, 1.0, 0.58] }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "D",
+      "marks": 15,
+      "module": "Calculus",
+      "topic": "Volumes of Revolution, Differentiation, Rates of Change and Optimisation",
+      "syllabusRefs": ["MA-C4", "MA-C2", "MA-E1", "MA-C3"],
+      "stimulus": [
+        { "page": 8, "bbox": [0.08, 0.07, 0.97, 0.10] }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [ { "page": 8, "bbox": [0.08, 0.09, 0.97, 0.195] } ],
+          "markingRegions": [ { "page": 21, "bbox": [0.0, 0.0, 1.0, 0.205] } ]
+        },
+        {
+          "label": "b",
+          "marks": 2,
+          "type": "short",
+          "regions": [ { "page": 8, "bbox": [0.08, 0.195, 0.97, 0.39] } ],
+          "markingRegions": [ { "page": 21, "bbox": [0.0, 0.205, 1.0, 0.345] } ]
+        },
+        {
+          "label": "c",
+          "marks": 7,
+          "type": "extended",
+          "regions": [ { "page": 8, "bbox": [0.08, 0.39, 0.97, 0.96] } ],
+          "markingRegions": [
+            { "page": 21, "bbox": [0.0, 0.345, 1.0, 1.0] },
+            { "page": 22, "bbox": [0.0, 0.0, 1.0, 1.0] },
+            { "page": 23, "bbox": [0.0, 0.0, 1.0, 0.35] }
+          ]
+        },
+        {
+          "label": "d",
+          "marks": 3,
+          "type": "extended",
+          "regions": [ { "page": 9, "bbox": [0.08, 0.07, 0.97, 0.96] } ],
+          "markingRegions": [
+            { "page": 24, "bbox": [0.0, 0.0, 1.0, 1.0] },
+            { "page": 25, "bbox": [0.0, 0.0, 1.0, 0.38] }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "E",
+      "marks": 13,
+      "module": "Calculus",
+      "topic": "Exponential Function Proof, Trigonometric Area (Arcs/Sectors) and Stationary Points of Trigonometric Functions",
+      "syllabusRefs": ["MA-E1", "MA-T1", "MA-C3", "MA-T2"],
+      "stimulus": [
+        { "page": 10, "bbox": [0.08, 0.07, 0.97, 0.10] }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [ { "page": 10, "bbox": [0.08, 0.09, 0.97, 0.23] } ],
+          "markingRegions": [ { "page": 26, "bbox": [0.0, 0.0, 0.48, 0.17] } ]
+        },
+        {
+          "label": "b",
+          "marks": 4,
+          "type": "extended",
+          "regions": [ { "page": 10, "bbox": [0.08, 0.23, 0.97, 0.345] } ],
+          "markingRegions": [ { "page": 26, "bbox": [0.0, 0.17, 0.48, 0.52] } ]
+        },
+        {
+          "label": "c",
+          "marks": 6,
+          "type": "extended",
+          "regions": [ { "page": 10, "bbox": [0.08, 0.345, 0.97, 0.87] } ],
+          "markingRegions": [
+            { "page": 26, "bbox": [0.46, 0.0, 1.0, 0.85] },
+            { "page": 26, "bbox": [0.20, 0.83, 1.0, 1.0] }
+          ]
+        }
+      ]
+    }
+  ]
+}

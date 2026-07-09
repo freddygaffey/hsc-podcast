@@ -1,0 +1,156 @@
+{
+  "paperId": "maths-standard-2-y12-trial-abbotsleigh-2025",
+  "questions": [
+    { "number": "1", "marks": 1, "module": "Measurement", "topic": "Measurement Errors", "syllabusRefs": ["MS-M1"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 1, "type": "mc", "regions": [ { "page": 2, "bbox": [0.05,0.39,0.95,0.635] } ] } ] },
+    { "number": "2", "marks": 1, "module": "Financial Mathematics", "topic": "Investments and Loans", "syllabusRefs": ["MS-F4"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 1, "type": "mc", "regions": [ { "page": 2, "bbox": [0.05,0.635,0.95,0.91] } ] } ] },
+    { "number": "3", "marks": 1, "module": "Networks", "topic": "Network Concepts", "syllabusRefs": ["MS-N2"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 1, "type": "mc", "regions": [ { "page": 3, "bbox": [0.05,0.05,0.95,0.545] } ] } ] },
+    { "number": "4", "marks": 1, "module": "Financial Mathematics", "topic": "Earning and Managing Money", "syllabusRefs": ["MS-F1"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 1, "type": "mc", "regions": [ { "page": 3, "bbox": [0.05,0.545,0.95,0.90] } ] } ] },
+    { "number": "5", "marks": 1, "module": "Statistical Analysis", "topic": "The Normal Distribution", "syllabusRefs": ["MS-S5"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 1, "type": "mc", "regions": [ { "page": 4, "bbox": [0.05,0.06,0.95,0.285] } ] } ] },
+    { "number": "6", "marks": 1, "module": "Financial Mathematics", "topic": "Earning and Managing Money", "syllabusRefs": ["MS-F1"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 1, "type": "mc", "regions": [ { "page": 4, "bbox": [0.05,0.285,0.95,0.552] } ] } ] },
+    { "number": "7", "marks": 1, "module": "Measurement", "topic": "Applications of Measurement", "syllabusRefs": ["MS-M1"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 1, "type": "mc", "regions": [ { "page": 4, "bbox": [0.05,0.552,0.95,0.83] } ] } ] },
+    { "number": "8", "marks": 1, "module": "Measurement", "topic": "Measurement Errors", "syllabusRefs": ["MS-M1"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 1, "type": "mc", "regions": [ { "page": 5, "bbox": [0.05,0.06,0.95,0.466] } ] } ] },
+    { "number": "9", "marks": 1, "module": "Measurement", "topic": "Rates and Ratios", "syllabusRefs": ["MS-M7"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 1, "type": "mc", "regions": [ { "page": 5, "bbox": [0.05,0.466,0.95,0.663] } ] } ] },
+    { "number": "10", "marks": 1, "module": "Measurement", "topic": "Right-Angled Trigonometry", "syllabusRefs": ["MS-M2"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 1, "type": "mc", "regions": [ { "page": 5, "bbox": [0.05,0.663,0.95,0.93] } ] } ] },
+    { "number": "11", "marks": 1, "module": "Statistical Analysis", "topic": "Data Analysis", "syllabusRefs": ["MS-S1"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 1, "type": "mc", "regions": [ { "page": 6, "bbox": [0.05,0.06,0.95,0.497] } ] } ] },
+    { "number": "12", "marks": 1, "module": "Financial Mathematics", "topic": "Earning and Managing Money", "syllabusRefs": ["MS-F1"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 1, "type": "mc", "regions": [ { "page": 6, "bbox": [0.05,0.497,0.95,0.80] } ] } ] },
+    { "number": "13", "marks": 1, "module": "Statistical Analysis", "topic": "Data Analysis", "syllabusRefs": ["MS-S1"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 1, "type": "mc", "regions": [ { "page": 7, "bbox": [0.05,0.05,0.95,0.91] } ] } ] },
+    { "number": "14", "marks": 1, "module": "Financial Mathematics", "topic": "Earning and Managing Money", "syllabusRefs": ["MS-F1"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 1, "type": "mc", "regions": [ { "page": 8, "bbox": [0.05,0.06,0.95,0.352] } ] } ] },
+    { "number": "15", "marks": 1, "module": "Statistical Analysis", "topic": "Data Analysis", "syllabusRefs": ["MS-S1"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 1, "type": "mc", "regions": [ { "page": 8, "bbox": [0.05,0.352,0.95,0.905] } ] } ] },
+
+    { "number": "16", "marks": 2, "module": "Algebra", "topic": "Formulae and Equations", "syllabusRefs": ["MS-A1"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 2, "type": "calculation", "regions": [ { "page": 11, "bbox": [0.05,0.055,0.95,0.507] } ] } ] },
+    { "number": "17", "marks": 2, "module": "Measurement", "topic": "Right-Angled Trigonometry", "syllabusRefs": ["MS-M2"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 2, "type": "calculation", "regions": [ { "page": 11, "bbox": [0.05,0.507,0.95,0.915] } ] } ] },
+    { "number": "18", "marks": 4, "module": "Financial Mathematics", "topic": "Earning and Managing Money", "syllabusRefs": ["MS-F1"],
+      "stimulus": [ { "page": 12, "bbox": [0.05,0.055,0.95,0.350] } ],
+      "parts": [
+        { "label": "a", "marks": 1, "type": "calculation", "regions": [ { "page": 12, "bbox": [0.05,0.350,0.95,0.474] } ] },
+        { "label": "b", "marks": 1, "type": "calculation", "regions": [ { "page": 12, "bbox": [0.05,0.474,0.95,0.602] } ] },
+        { "label": "c", "marks": 2, "type": "calculation", "regions": [ { "page": 12, "bbox": [0.05,0.602,0.95,0.94] } ] }
+      ] },
+    { "number": "19", "marks": 3, "module": "Measurement", "topic": "Applications of Measurement", "syllabusRefs": ["MS-M1"],
+      "stimulus": [ { "page": 13, "bbox": [0.05,0.055,0.95,0.151] } ],
+      "parts": [
+        { "label": "a", "marks": 2, "type": "calculation", "regions": [ { "page": 13, "bbox": [0.05,0.151,0.95,0.378] } ] },
+        { "label": "b", "marks": 1, "type": "calculation", "regions": [ { "page": 13, "bbox": [0.05,0.378,0.95,0.605] } ] }
+      ] },
+    { "number": "20", "marks": 2, "module": "Statistical Analysis", "topic": "Data Analysis", "syllabusRefs": ["MS-S1"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 2, "type": "calculation", "regions": [ { "page": 13, "bbox": [0.05,0.605,0.95,0.915] } ] } ] },
+    { "number": "21", "marks": 4, "module": "Probability", "topic": "Relative Frequency and Probability", "syllabusRefs": ["MS-P1"],
+      "stimulus": [ { "page": 14, "bbox": [0.05,0.055,0.95,0.495] } ],
+      "parts": [
+        { "label": "a", "marks": 2, "type": "calculation", "regions": [ { "page": 14, "bbox": [0.05,0.495,0.95,0.722] } ] },
+        { "label": "b", "marks": 2, "type": "calculation", "regions": [ { "page": 14, "bbox": [0.05,0.722,0.95,0.915] } ] }
+      ] },
+    { "number": "22", "marks": 2, "module": "Algebra", "topic": "Types of Relationships", "syllabusRefs": ["MS-A4"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 2, "type": "calculation", "regions": [ { "page": 15, "bbox": [0.05,0.055,0.95,0.273] } ] } ] },
+    { "number": "23", "marks": 2, "module": "Networks", "topic": "Network Concepts", "syllabusRefs": ["MS-N2"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 2, "type": "calculation", "regions": [ { "page": 15, "bbox": [0.05,0.273,0.95,0.93] } ] } ] },
+    { "number": "24", "marks": 4, "module": "Financial Mathematics", "topic": "Investments and Loans", "syllabusRefs": ["MS-F4"],
+      "stimulus": [ { "page": 16, "bbox": [0.05,0.055,0.95,0.318] } ],
+      "parts": [
+        { "label": "a", "marks": 2, "type": "calculation", "regions": [ { "page": 16, "bbox": [0.05,0.318,0.95,0.567] } ] },
+        { "label": "b", "marks": 2, "type": "calculation", "regions": [ { "page": 16, "bbox": [0.05,0.567,0.95,0.88] } ] }
+      ] },
+
+    { "number": "25", "marks": 5, "module": "Statistical Analysis", "topic": "Bivariate Data Analysis", "syllabusRefs": ["MS-S4"],
+      "stimulus": [ { "page": 21, "bbox": [0.05,0.055,0.95,0.396] } ],
+      "parts": [
+        { "label": "a", "marks": 1, "type": "calculation", "regions": [ { "page": 21, "bbox": [0.05,0.396,0.95,0.472] } ] },
+        { "label": "b", "marks": 1, "type": "short", "regions": [ { "page": 21, "bbox": [0.05,0.472,0.95,0.570] } ] },
+        { "label": "c", "marks": 1, "type": "calculation", "regions": [ { "page": 21, "bbox": [0.05,0.570,0.95,0.658] } ] },
+        { "label": "d", "marks": 2, "type": "calculation", "regions": [ { "page": 21, "bbox": [0.05,0.658,0.95,0.915] } ] }
+      ] },
+    { "number": "26", "marks": 4, "module": "Statistical Analysis", "topic": "Data Analysis", "syllabusRefs": ["MS-S1"],
+      "stimulus": [ { "page": 22, "bbox": [0.05,0.055,0.95,0.548] } ],
+      "parts": [
+        { "label": "a", "marks": 2, "type": "extended", "regions": [ { "page": 22, "bbox": [0.05,0.548,0.95,0.615] } ] },
+        { "label": "b", "marks": 2, "type": "extended", "regions": [ { "page": 22, "bbox": [0.05,0.615,0.95,0.935] } ] }
+      ] },
+    { "number": "27", "marks": 4, "module": "Measurement", "topic": "Area and Perimeter", "syllabusRefs": ["MS-M3"],
+      "stimulus": [ { "page": 23, "bbox": [0.05,0.055,0.95,0.388] } ],
+      "parts": [
+        { "label": "a", "marks": 2, "type": "calculation", "regions": [ { "page": 23, "bbox": [0.05,0.388,0.95,0.612] } ] },
+        { "label": "b", "marks": 2, "type": "calculation", "regions": [ { "page": 23, "bbox": [0.05,0.612,0.95,0.85] } ] }
+      ] },
+    { "number": "28", "marks": 4, "module": "Measurement", "topic": "Applications of Measurement", "syllabusRefs": ["MS-M1"],
+      "stimulus": [ { "page": 24, "bbox": [0.05,0.055,0.95,0.294] } ],
+      "parts": [
+        { "label": "a", "marks": 1, "type": "short", "regions": [ { "page": 24, "bbox": [0.05,0.294,0.95,0.399] } ] },
+        { "label": "b", "marks": 1, "type": "short", "regions": [ { "page": 24, "bbox": [0.05,0.399,0.95,0.497] } ] },
+        { "label": "c", "marks": 2, "type": "calculation", "regions": [ { "page": 24, "bbox": [0.05,0.497,0.95,0.755] } ] }
+      ] },
+    { "number": "29", "marks": 4, "module": "Financial Mathematics", "topic": "Earning and Managing Money", "syllabusRefs": ["MS-F1"],
+      "stimulus": [ { "page": 25, "bbox": [0.05,0.058,0.95,0.131] } ],
+      "parts": [
+        { "label": "a", "marks": 2, "type": "calculation", "regions": [ { "page": 25, "bbox": [0.05,0.131,0.95,0.368] } ] },
+        { "label": "b", "marks": 2, "type": "calculation", "regions": [ { "page": 25, "bbox": [0.05,0.368,0.95,0.935] } ] }
+      ] },
+    { "number": "30", "marks": 4, "module": "Measurement", "topic": "Volume", "syllabusRefs": ["MS-M4"],
+      "stimulus": [ { "page": 26, "bbox": [0.05,0.055,0.95,0.396] } ],
+      "parts": [
+        { "label": "a", "marks": 2, "type": "calculation", "regions": [ { "page": 26, "bbox": [0.05,0.396,0.95,0.547] } ] },
+        { "label": "b", "marks": 2, "type": "calculation", "regions": [ { "page": 26, "bbox": [0.05,0.547,0.95,0.94] } ] }
+      ] },
+    { "number": "31", "marks": 3, "module": "Measurement", "topic": "Volume", "syllabusRefs": ["MS-M4"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 3, "type": "calculation", "regions": [ { "page": 27, "bbox": [0.05,0.055,0.95,0.80] } ] } ] },
+    { "number": "32", "marks": 2, "module": "Financial Mathematics", "topic": "Investments and Loans", "syllabusRefs": ["MS-F4"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 2, "type": "calculation", "regions": [ { "page": 28, "bbox": [0.05,0.055,0.95,0.76] } ] } ] },
+
+    { "number": "33", "marks": 6, "module": "Networks", "topic": "Critical Path Analysis", "syllabusRefs": ["MS-N3"],
+      "stimulus": [ { "page": 31, "bbox": [0.05,0.055,0.95,0.461] } ],
+      "parts": [
+        { "label": "a", "marks": 1, "type": "extended", "regions": [ { "page": 31, "bbox": [0.05,0.461,0.95,0.87] } ] },
+        { "label": "b", "marks": 2, "type": "calculation", "regions": [ { "page": 32, "bbox": [0.05,0.075,0.95,0.403] } ] },
+        { "label": "c", "marks": 1, "type": "short", "regions": [ { "page": 32, "bbox": [0.05,0.403,0.95,0.509] } ] },
+        { "label": "d", "marks": 2, "type": "extended", "regions": [ { "page": 32, "bbox": [0.05,0.509,0.95,0.93] } ] }
+      ] },
+    { "number": "34", "marks": 5, "module": "Statistical Analysis", "topic": "The Normal Distribution", "syllabusRefs": ["MS-S5"],
+      "stimulus": [ { "page": 33, "bbox": [0.05,0.055,0.95,0.150] } ],
+      "parts": [
+        { "label": "a", "marks": 2, "type": "calculation", "regions": [ { "page": 33, "bbox": [0.05,0.150,0.95,0.399] } ] },
+        { "label": "b", "marks": 3, "type": "calculation", "regions": [ { "page": 33, "bbox": [0.05,0.399,0.95,0.76] } ] }
+      ] },
+    { "number": "35", "marks": 5, "module": "Measurement", "topic": "Non-right-angled Trigonometry", "syllabusRefs": ["MS-M6"],
+      "stimulus": [ { "page": 34, "bbox": [0.05,0.055,0.95,0.453] } ],
+      "parts": [
+        { "label": "a", "marks": 1, "type": "extended", "regions": [ { "page": 34, "bbox": [0.05,0.453,0.95,0.588] } ] },
+        { "label": "b", "marks": 2, "type": "calculation", "regions": [ { "page": 34, "bbox": [0.05,0.588,0.95,0.756] } ] },
+        { "label": "c", "marks": 2, "type": "calculation", "regions": [ { "page": 34, "bbox": [0.05,0.756,0.95,0.93] } ] }
+      ] },
+    { "number": "36", "marks": 4, "module": "Measurement", "topic": "Rates and Ratios", "syllabusRefs": ["MS-M7"],
+      "stimulus": [ { "page": 35, "bbox": [0.05,0.055,0.95,0.527] } ],
+      "parts": [
+        { "label": "a", "marks": 2, "type": "calculation", "regions": [ { "page": 35, "bbox": [0.05,0.527,0.95,0.731] } ] },
+        { "label": "b", "marks": 2, "type": "calculation", "regions": [ { "page": 35, "bbox": [0.05,0.731,0.95,0.91] } ] }
+      ] },
+    { "number": "37", "marks": 3, "module": "Networks", "topic": "Network Concepts", "syllabusRefs": ["MS-N2"],
+      "stimulus": [ { "page": 36, "bbox": [0.05,0.055,0.95,0.455] } ],
+      "parts": [
+        { "label": "a", "marks": 1, "type": "short", "regions": [ { "page": 36, "bbox": [0.05,0.455,0.95,0.537] } ] },
+        { "label": "b", "marks": 1, "type": "short", "regions": [ { "page": 36, "bbox": [0.05,0.537,0.95,0.710] } ] },
+        { "label": "c", "marks": 1, "type": "extended", "regions": [ { "page": 36, "bbox": [0.05,0.710,0.95,0.91] } ] }
+      ] },
+    { "number": "38", "marks": 3, "module": "Statistical Analysis", "topic": "The Normal Distribution", "syllabusRefs": ["MS-S5"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 3, "type": "calculation", "regions": [ { "page": 37, "bbox": [0.05,0.055,0.95,0.84] } ] } ] },
+    { "number": "39", "marks": 2, "module": "Measurement", "topic": "Area and Perimeter", "syllabusRefs": ["MS-M3"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 2, "type": "calculation", "regions": [ { "page": 38, "bbox": [0.05,0.055,0.95,0.73] } ] } ] },
+    { "number": "40", "marks": 2, "module": "Financial Mathematics", "topic": "Annuities", "syllabusRefs": ["MS-F5"],
+      "stimulus": [], "parts": [ { "label": null, "marks": 2, "type": "calculation", "regions": [ { "page": 39, "bbox": [0.05,0.055,0.95,0.795] } ] } ] }
+  ]
+}

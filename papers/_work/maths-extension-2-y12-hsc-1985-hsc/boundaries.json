@@ -1,0 +1,598 @@
+{
+  "paperId": "maths-extension-2-y12-hsc-1985-hsc",
+  "subject": "maths-extension-2",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": "2",
+      "marks": 1,
+      "topic": "Curve Sketching and Newton's Method",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "2. (i) (a) Find the turning points of the cubic polynomial p(x) = 1,",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.4069184149184149,
+                0.95,
+                0.473970473970474
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "2. (i) (a) Find the turning points of the cubic polynomial p(x) = 1,"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.465970473970474,
+                0.95,
+                0.4965034965034965
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Sketch the graph of p(z)."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.4885034965034965,
+                0.95,
+                0.5431235431235432
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Starting with the approximation x = 0, use one application of Newton’s method"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.5351235431235432,
+                0.95,
+                0.6107226107226107
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) What initial approximation would you use to estimate the positive root of p(x"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.6027226107226107,
+                0.95,
+                0.7536907536907537
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Given g(x) as in (a) above, the function f(x) is given by the rule"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": 1,
+      "topic": "Complex Numbers and Conics",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-F1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "3. (i) Reduce the complex exp!",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.7456907536907537,
+                0.95,
+                0.8174048174048174
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "3. (i) Reduce the complex exp!"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.8094048174048174,
+                0.95,
+                0.85003885003885
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Write down the values of arg z and |2|."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.84203885003885,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Hence, or otherwis"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.10777311577311577,
+                0.95,
+                0.20745920745920746
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Draw a clear sketch to show the important features of the curve defined by"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.19945920745920745,
+                0.95,
+                0.40404040404040403
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) On a separate diagram, draw a clear sketch to show the important feartures of"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.396040404040404,
+                0.95,
+                0.4211344211344211
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Find the equation of the tangent to this ellipse at P."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.4131344211344211,
+                0.95,
+                0.4553224553224553
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Show that the point Q(—3sin 6, 2cos 4) also lies on the same ellipse."
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.4473224553224553,
+                0.95,
+                0.5050505050505051
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) The tangents at P,Q to the ellipse intersect at T. Find the coordinates of T,"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": 1,
+      "topic": "Optimisation and Area of an Ellipse",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "5. (i) A thin wire of length L is cut into two pieces, out of which a circle and a",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.4970505050505051,
+                0.95,
+                0.6736596736596736
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "5. (i) A thin wire of length L is cut into two pieces, out of which a circle and a"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.6656596736596736,
+                0.95,
+                0.7148407148407149
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Deduce that the area enclosed by the ellipse 2 + #2 = 1 is mab."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.7068407148407149,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c)"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": 1,
+      "topic": "Resisted Motion",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-M1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "6. A particle of mass 10 kg is found to experience a resistive force, in newtons, of",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.1637171717171717,
+                0.95,
+                0.31002331002331
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "6. A particle of mass 10 kg is found to experience a resistive force, in newtons, of"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.30202331002331,
+                0.95,
+                0.33255633255633255
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) find the time the particle takes to reach A from O;"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.32455633255633254,
+                0.95,
+                0.3628593628593629
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) show that the height OA is [1 + 10~%u?] metres;"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.35485936285936287,
+                0.95,
+                0.4172494172494173
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) show that the particle’s velocity wm.s~' when it reaches O again is given by"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": 1,
+      "topic": "Trigonometric Identities and Geometry Proof",
+      "module": "Trigonometry",
+      "syllabusRefs": [
+        "ME-T1",
+        "ME-P1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "7. (i) Given that sina + siny = 2sin Acos B, find values for A and B in terms of «",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.40924941724941727,
+                0.95,
+                0.5578865578865578
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "7. (i) Given that sina + siny = 2sin Acos B, find values for A and B in terms of «"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.5498865578865578,
+                0.95,
+                0.6262626262626263
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) In an acute-angled triangle with vertices L, M, N, the foot of the perpendicular"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.6182626262626263,
+                0.95,
+                0.7334887334887334
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Draw a clear diagram showing the given information."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.7254887334887334,
+                0.95,
+                0.77000777000777
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) What general result about triangles is proved in (b)?"
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "marks": 1,
+      "topic": "Combinatorics and Induction",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-A1",
+        "ME-P1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "8. (i) (a) In how many ways can 4 persons be grouped into two pairs to play a set",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.76200777000777,
+                0.95,
+                0.8142968142968143
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "8. (i) (a) In how many ways can 4 persons be grouped into two pairs to play a set"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.8062968142968143,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) The eight members of a tennis club meet to play two simultaneous sets of doubles"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.10855011655011654,
+                0.95,
+                0.20745920745920746
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Hence prove that for n > 1,"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.19945920745920745,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Is the statement that, for all positive integers N,"
+        }
+      ]
+    }
+  ]
+}

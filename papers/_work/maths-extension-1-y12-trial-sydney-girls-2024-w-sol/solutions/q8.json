@@ -1,0 +1,21 @@
+{
+  "number": "8",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "8",
+      "marks": 1,
+      "steps": [
+        "$\\cos^{-1}(\\cos x) = x$ only if $x\\in[0,\\pi]$.",
+        "$a\\in(\\pi,\\frac{3\\pi}{2})$, so $a$ is not in $[0,\\pi]$.",
+        "Use identity $\\cos(2\\pi - a) = \\cos a$.",
+        "$2\\pi - a\\in(\\frac{\\pi}{2},\\pi)\\subset[0,\\pi]$.",
+        "Thus $\\cos^{-1}(\\cos a) = 2\\pi - a$.",
+        "Therefore answer is C."
+      ],
+      "answer": "C"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

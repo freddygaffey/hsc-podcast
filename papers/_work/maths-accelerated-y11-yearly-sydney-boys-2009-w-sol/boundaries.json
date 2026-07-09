@@ -1,0 +1,672 @@
+{
+  "paperId": "maths-accelerated-y11-yearly-sydney-boys-2009-w-sol",
+  "questions": [
+    {
+      "number": "1",
+      "marks": 15,
+      "module": "Calculus",
+      "topic": "Differential Calculus",
+      "syllabusRefs": [
+        "MA-C2",
+        "MA-C3",
+        "MA-C4"
+      ],
+      "type": null,
+      "text": "Question 1. (15 Marks) (Start a new booklet.)",
+      "stimulus": [
+        {
+          "page": 1,
+          "bbox": [
+            0.06,
+            0.06,
+            0.94,
+            0.095
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.095,
+                0.94,
+                0.205
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.04,
+                0.055,
+                0.96,
+                0.555
+              ]
+            }
+          ],
+          "text": "(a) Find the equation of the tangent to y = x^2 + ln x at x = 1."
+        },
+        {
+          "label": "b",
+          "marks": 8,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.205,
+                0.94,
+                0.555
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.04,
+                0.555,
+                0.96,
+                0.89
+              ]
+            },
+            {
+              "page": 9,
+              "bbox": [
+                0.04,
+                0.02,
+                0.96,
+                0.21
+              ]
+            }
+          ],
+          "text": "(b) Differentiate, and simplify where possible (i)-(iv)."
+        },
+        {
+          "label": "c",
+          "marks": 2,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.555,
+                0.94,
+                0.625
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 9,
+              "bbox": [
+                0.04,
+                0.21,
+                0.96,
+                0.475
+              ]
+            }
+          ],
+          "text": "(c) Find the second derivative of (e^x + e^-x)/2."
+        },
+        {
+          "label": "d",
+          "marks": 2,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.625,
+                0.94,
+                0.7
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 9,
+              "bbox": [
+                0.04,
+                0.475,
+                0.96,
+                0.66
+              ]
+            }
+          ],
+          "text": "(d) Write down a primitive of sqrt(1-x)."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": 15,
+      "module": "Calculus",
+      "topic": "Integral Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-C3"
+      ],
+      "type": null,
+      "text": "Question 2. (15 Marks) (Start a new booklet.)",
+      "stimulus": [
+        {
+          "page": 2,
+          "bbox": [
+            0.06,
+            0.06,
+            0.94,
+            0.095
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 6,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.095,
+                0.94,
+                0.335
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 10,
+              "bbox": [
+                0.03,
+                0.04,
+                0.97,
+                0.36
+              ]
+            }
+          ],
+          "text": "(a) Write down primitive functions of (i)-(iii)."
+        },
+        {
+          "label": "b",
+          "marks": 6,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.335,
+                0.94,
+                0.605
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 10,
+              "bbox": [
+                0.03,
+                0.36,
+                0.97,
+                0.56
+              ]
+            },
+            {
+              "page": 11,
+              "bbox": [
+                0.02,
+                0.02,
+                0.98,
+                1.0
+              ]
+            },
+            {
+              "page": 12,
+              "bbox": [
+                0.02,
+                0.02,
+                0.98,
+                0.52
+              ]
+            }
+          ],
+          "text": "(b) Particle x = 2 sin t - t: velocity, direction, rest, acceleration, distance."
+        },
+        {
+          "label": "c",
+          "marks": 3,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.605,
+                0.94,
+                0.75
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 13,
+              "bbox": [
+                0.03,
+                0.02,
+                0.97,
+                0.6
+              ]
+            }
+          ],
+          "text": "(c) Trapezoidal rule approximation and comparison to exact value."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": 15,
+      "module": "Calculus",
+      "topic": "Integral Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-T3"
+      ],
+      "type": null,
+      "text": "Question 3 (15 Marks) (Start a new booklet.)",
+      "stimulus": [
+        {
+          "page": 3,
+          "bbox": [
+            0.06,
+            0.055,
+            0.94,
+            0.075
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 6,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.075,
+                0.94,
+                0.34
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 14,
+              "bbox": [
+                0.03,
+                0.05,
+                0.97,
+                0.9
+              ]
+            }
+          ],
+          "text": "(a) Evaluate (i)-(iii), exact form."
+        },
+        {
+          "label": "b",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.34,
+                0.94,
+                0.465
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 15,
+              "bbox": [
+                0.03,
+                0.06,
+                0.97,
+                0.235
+              ]
+            }
+          ],
+          "text": "(b) Derivative of x ln x; hence find integral of ln x."
+        },
+        {
+          "label": "c",
+          "marks": 3,
+          "type": "short",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.465,
+                0.94,
+                0.535
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 15,
+              "bbox": [
+                0.03,
+                0.235,
+                0.97,
+                0.475
+              ]
+            }
+          ],
+          "text": "(c) Sketch y = 2 sin(1/2 x) + 3 from x = 0 to x = 2 pi."
+        },
+        {
+          "label": "d",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.535,
+                0.94,
+                0.61
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 15,
+              "bbox": [
+                0.03,
+                0.475,
+                0.97,
+                0.9
+              ]
+            }
+          ],
+          "text": "(d) Volume of solid generated rotating y = sqrt(x-1) about x-axis to x = 3."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "marks": 15,
+      "module": "Calculus",
+      "topic": "Applications of Differentiation and Integration",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-C4"
+      ],
+      "type": null,
+      "text": "Question 4 (15 Marks) (Start a new booklet)",
+      "stimulus": [
+        {
+          "page": 4,
+          "bbox": [
+            0.06,
+            0.055,
+            0.94,
+            0.078
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 6,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.078,
+                0.94,
+                0.29
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 16,
+              "bbox": [
+                0.02,
+                0.02,
+                0.98,
+                0.97
+              ]
+            }
+          ],
+          "text": "(a) Curve y = 3x^4 - 16x^3 + 24x^2: x-intercepts, turning points, inflexions, sketch."
+        },
+        {
+          "label": "b",
+          "marks": 4,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.29,
+                0.94,
+                0.565
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 17,
+              "bbox": [
+                0.02,
+                0.02,
+                0.5,
+                0.97
+              ]
+            }
+          ],
+          "text": "(b) Cost of appliance dc/dt = -100/t^2: rate at t=5, equation for c, long-term cost."
+        },
+        {
+          "label": "c",
+          "marks": 2,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.565,
+                0.94,
+                0.685
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 17,
+              "bbox": [
+                0.5,
+                0.02,
+                0.98,
+                0.5
+              ]
+            }
+          ],
+          "text": "(c) f''(x) = 2 - 2/x^2, f'(1)=0, f(1)=-1: find f(x)."
+        },
+        {
+          "label": "d",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.685,
+                0.94,
+                0.775
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 17,
+              "bbox": [
+                0.5,
+                0.5,
+                0.98,
+                0.97
+              ]
+            }
+          ],
+          "text": "(d) Volume of solid generated rotating region between y = sec x and y = x about x-axis."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": 15,
+      "module": "Calculus",
+      "topic": "Applications of Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-E1",
+        "MA-C3"
+      ],
+      "type": null,
+      "text": "Question 5 (15 Marks) (Start a new booklet)",
+      "stimulus": [
+        {
+          "page": 5,
+          "bbox": [
+            0.06,
+            0.055,
+            0.94,
+            0.075
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 5,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.075,
+                0.94,
+                0.555
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 18,
+              "bbox": [
+                0.03,
+                0.02,
+                0.97,
+                0.65
+              ]
+            }
+          ],
+          "text": "(a) Intersection of y = x-5 and y = -x^2+6x-5; area of shaded region A, B."
+        },
+        {
+          "label": "b",
+          "marks": 5,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.555,
+                0.94,
+                0.775
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 19,
+              "bbox": [
+                0.03,
+                0.02,
+                0.97,
+                0.88
+              ]
+            }
+          ],
+          "text": "(b) Bacteria N = N0 e^-kt in oven: find N0, k; time to reach 100 bacteria."
+        },
+        {
+          "label": "c",
+          "marks": 5,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.065,
+                0.94,
+                0.575
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 20,
+              "bbox": [
+                0.03,
+                0.02,
+                0.97,
+                0.97
+              ]
+            },
+            {
+              "page": 21,
+              "bbox": [
+                0.03,
+                0.02,
+                0.97,
+                0.88
+              ]
+            }
+          ],
+          "text": "(c) George swims river at angle theta, Mildred walks: times, show cannot meet, least time to miss."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "boxes": [
+    {"page": 1, "bbox": [0.08, 0.12, 0.92, 0.25], "kind": "question", "number": "1", "part": null, "marks": 1},
+    {"page": 1, "bbox": [0.08, 0.40, 0.92, 0.42], "kind": "question", "number": "2", "part": null, "marks": 1},
+    {"page": 1, "bbox": [0.08, 0.43, 0.92, 0.45], "kind": "question", "number": "3", "part": null, "marks": 1},
+    {"page": 1, "bbox": [0.08, 0.47, 0.92, 0.65], "kind": "question", "number": "4", "part": null, "marks": 1},
+    {"page": 2, "bbox": [0.08, 0.02, 0.92, 0.25], "kind": "question", "number": "5", "part": null, "marks": 1},
+    {"page": 2, "bbox": [0.08, 0.28, 0.92, 0.55], "kind": "question", "number": "6", "part": null, "marks": 1},
+    {"page": 3, "bbox": [0.08, 0.02, 0.92, 0.25], "kind": "question", "number": "7", "part": null, "marks": 1},
+    {"page": 3, "bbox": [0.08, 0.28, 0.92, 0.48], "kind": "question", "number": "8", "part": null, "marks": 1},
+    {"page": 3, "bbox": [0.08, 0.52, 0.92, 0.75], "kind": "question", "number": "9", "part": null, "marks": 1},
+    {"page": 4, "bbox": [0.08, 0.02, 0.92, 0.25], "kind": "question", "number": "10", "part": null, "marks": 1},
+    {"page": 5, "bbox": [0.08, 0.12, 0.92, 0.35], "kind": "question", "number": "11", "part": "a", "marks": 3},
+    {"page": 5, "bbox": [0.08, 0.35, 0.92, 0.65], "kind": "question", "number": "11", "part": "b", "marks": 6},
+    {"page": 5, "bbox": [0.08, 0.65, 0.92, 0.82], "kind": "question", "number": "11", "part": "c", "marks": 3},
+    {"page": 5, "bbox": [0.08, 0.82, 0.92, 0.98], "kind": "question", "number": "11", "part": "d", "marks": 3},
+    {"page": 6, "bbox": [0.08, 0.02, 0.92, 0.35], "kind": "question", "number": "12", "part": "a", "marks": 7},
+    {"page": 6, "bbox": [0.08, 0.35, 0.92, 0.45], "kind": "question", "number": "12", "part": "b", "marks": 3},
+    {"page": 6, "bbox": [0.08, 0.45, 0.92, 0.78], "kind": "question", "number": "12", "part": "c", "marks": 5},
+    {"page": 7, "bbox": [0.08, 0.02, 0.92, 0.25], "kind": "question", "number": "13", "part": "a", "marks": 3},
+    {"page": 7, "bbox": [0.08, 0.25, 0.92, 0.42], "kind": "question", "number": "13", "part": "b", "marks": 3},
+    {"page": 7, "bbox": [0.08, 0.42, 0.92, 0.60], "kind": "question", "number": "13", "part": "c", "marks": 3},
+    {"page": 7, "bbox": [0.08, 0.60, 0.92, 0.78], "kind": "question", "number": "13", "part": "d", "marks": 3},
+    {"page": 7, "bbox": [0.08, 0.78, 0.92, 0.95], "kind": "question", "number": "13", "part": "e", "marks": 3},
+    {"page": 8, "bbox": [0.08, 0.02, 0.92, 0.30], "kind": "question", "number": "14", "part": "a", "marks": 6},
+    {"page": 8, "bbox": [0.08, 0.30, 0.92, 0.65], "kind": "question", "number": "14", "part": "b", "marks": 7},
+    {"page": 8, "bbox": [0.08, 0.65, 0.92, 0.82], "kind": "question", "number": "14", "part": "c", "marks": 2},
+    {"page": 9, "bbox": [0.08, 0.02, 0.92, 0.38], "kind": "question", "number": "15", "part": "a", "marks": 5},
+    {"page": 9, "bbox": [0.08, 0.38, 0.92, 0.90], "kind": "question", "number": "15", "part": "b", "marks": 10},
+    {"page": 10, "bbox": [0.08, 0.02, 0.92, 0.25], "kind": "question", "number": "16", "part": "a", "marks": 4},
+    {"page": 10, "bbox": [0.08, 0.25, 0.92, 0.95], "kind": "question", "number": "16", "part": "b", "marks": 11}
+  ]
+}

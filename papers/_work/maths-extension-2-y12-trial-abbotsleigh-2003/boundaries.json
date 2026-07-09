@@ -1,0 +1,107 @@
+{
+  "paperId": "maths-extension-2-y12-trial-abbotsleigh-2003",
+  "questions": [
+    {
+      "number": "1",
+      "marks": 15,
+      "module": "ME-C1",
+      "topic": "Integration Techniques",
+      "syllabusRefs": ["ME-C1"],
+      "stimulus": [],
+      "parts": [
+        { "label": "a", "marks": 2, "type": "calculation", "regions": [ { "page": 0, "bbox": [0.52, 0.20, 0.99, 0.28] } ] },
+        { "label": "b", "marks": 3, "type": "calculation", "regions": [ { "page": 0, "bbox": [0.52, 0.28, 0.99, 0.365] } ] },
+        { "label": "c", "marks": 3, "type": "calculation", "regions": [ { "page": 0, "bbox": [0.52, 0.365, 0.99, 0.44] } ] },
+        { "label": "d", "marks": 4, "type": "calculation", "regions": [ { "page": 0, "bbox": [0.52, 0.44, 0.99, 0.585] } ] },
+        { "label": "e", "marks": 3, "type": "calculation", "regions": [ { "page": 0, "bbox": [0.52, 0.585, 0.99, 0.68] } ] }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": 15,
+      "module": "ME-N1",
+      "topic": "Complex Numbers",
+      "syllabusRefs": ["ME-N1", "ME-N2"],
+      "stimulus": [],
+      "parts": [
+        { "label": "a", "marks": 5, "type": "extended", "regions": [ { "page": 1, "bbox": [0.02, 0.112, 0.48, 0.192] } ] },
+        { "label": "b", "marks": 7, "type": "extended", "regions": [ { "page": 1, "bbox": [0.02, 0.192, 0.48, 0.300] } ] },
+        { "label": "c", "marks": 3, "type": "extended", "regions": [ { "page": 1, "bbox": [0.02, 0.300, 0.48, 0.408] } ] }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": 15,
+      "module": "ME-C1",
+      "topic": "Curve Sketching and Polynomials",
+      "syllabusRefs": ["ME-C1"],
+      "stimulus": [],
+      "parts": [
+        { "label": "a", "marks": 11, "type": "extended", "regions": [ { "page": 1, "bbox": [0.02, 0.450, 0.48, 0.675] } ] },
+        { "label": "b", "marks": 4, "type": "calculation", "regions": [ { "page": 1, "bbox": [0.02, 0.675, 0.48, 0.735] } ] }
+      ]
+    },
+    {
+      "number": "4",
+      "marks": 15,
+      "module": "ME-C1",
+      "topic": "Conics and Volumes of Solids",
+      "syllabusRefs": ["ME-C1"],
+      "stimulus": [],
+      "parts": [
+        { "label": "a", "marks": 6, "type": "extended", "regions": [ { "page": 1, "bbox": [0.52, 0.126, 0.99, 0.340] } ] },
+        { "label": "b", "marks": 9, "type": "extended", "regions": [ { "page": 1, "bbox": [0.52, 0.340, 0.99, 0.760] } ] }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": 15,
+      "module": "ME-M1",
+      "topic": "Polynomials, Conics and Simple Harmonic Motion",
+      "syllabusRefs": ["ME-M1", "ME-C1"],
+      "stimulus": [],
+      "parts": [
+        { "label": "a", "marks": 4, "type": "calculation", "regions": [ { "page": 2, "bbox": [0.02, 0.112, 0.48, 0.190] } ] },
+        { "label": "b", "marks": 6, "type": "extended", "regions": [ { "page": 2, "bbox": [0.02, 0.190, 0.48, 0.375] } ] },
+        { "label": "c", "marks": 5, "type": "extended", "regions": [ { "page": 2, "bbox": [0.02, 0.375, 0.48, 0.535] } ] }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": 15,
+      "module": "ME-P1",
+      "topic": "Polynomial Roots, Complex Systems and Geometric Proof",
+      "syllabusRefs": ["ME-P1", "ME-N1"],
+      "stimulus": [],
+      "parts": [
+        { "label": "a", "marks": 3, "type": "calculation", "regions": [ { "page": 2, "bbox": [0.52, 0.100, 0.99, 0.185] } ] },
+        { "label": "b", "marks": 4, "type": "calculation", "regions": [ { "page": 2, "bbox": [0.52, 0.185, 0.99, 0.315] } ] },
+        { "label": "c", "marks": 8, "type": "extended", "regions": [ { "page": 2, "bbox": [0.52, 0.315, 0.99, 0.805] } ] }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": 15,
+      "module": "ME-C1",
+      "topic": "Calculus - Related Rates and Integration Inequalities",
+      "syllabusRefs": ["ME-C1"],
+      "stimulus": [],
+      "parts": [
+        { "label": "a", "marks": 5, "type": "extended", "regions": [ { "page": 3, "bbox": [0.02, 0.129, 0.48, 0.328] } ] },
+        { "label": "b", "marks": 10, "type": "extended", "regions": [ { "page": 3, "bbox": [0.02, 0.328, 0.48, 0.705] } ] }
+      ]
+    },
+    {
+      "number": "8",
+      "marks": 15,
+      "module": "ME-M1",
+      "topic": "Projectile Motion and Proof by Induction",
+      "syllabusRefs": ["ME-M1", "ME-P2"],
+      "stimulus": [],
+      "parts": [
+        { "label": "a", "marks": 9, "type": "extended", "regions": [ { "page": 3, "bbox": [0.52, 0.129, 0.99, 0.523] } ] },
+        { "label": "b", "marks": 6, "type": "extended", "regions": [ { "page": 3, "bbox": [0.52, 0.523, 0.99, 0.695] } ] }
+      ]
+    }
+  ]
+}

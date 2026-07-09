@@ -1,0 +1,158 @@
+{
+  "paperId": "maths-extension-2-y12-hsc-1973-hsc",
+  "questions": [
+    {
+      "number": "1",
+      "marks": null,
+      "topic": "Calculus — Curve Sketching and Integration by Parts",
+      "module": "Methods in Calculus",
+      "syllabusRefs": ["ME-C1"],
+      "stimulus": [],
+      "parts": [
+        { "label": "a", "marks": null, "type": "short",
+          "regions": [{ "page": 0, "bbox": [0.13, 0.173, 0.90, 0.219] }] },
+        { "label": "b", "marks": null, "type": "short",
+          "regions": [{ "page": 0, "bbox": [0.13, 0.225, 0.90, 0.244] }] },
+        { "label": "c", "marks": null, "type": "short",
+          "regions": [{ "page": 0, "bbox": [0.13, 0.251, 0.90, 0.270] }] },
+        { "label": "d", "marks": null, "type": "calculation",
+          "regions": [{ "page": 0, "bbox": [0.13, 0.274, 0.90, 0.300] }] }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": null,
+      "topic": "Proof — Co-primality and Greatest Common Divisor",
+      "module": "Proof",
+      "syllabusRefs": ["ME-P1"],
+      "stimulus": [],
+      "parts": [
+        { "label": null, "marks": null, "type": "extended",
+          "regions": [{ "page": 0, "bbox": [0.13, 0.311, 0.90, 0.492] }] }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": null,
+      "topic": "Complex Numbers — Modulus, Products and Möbius Transformations",
+      "module": "Complex Numbers",
+      "syllabusRefs": ["ME-N1"],
+      "stimulus": [],
+      "parts": [
+        { "label": null, "marks": null, "type": "extended",
+          "regions": [{ "page": 0, "bbox": [0.13, 0.508, 0.90, 0.751] }] }
+      ]
+    },
+    {
+      "number": "4",
+      "marks": null,
+      "topic": "Calculus — Areas and Volumes of Revolution (Ellipse)",
+      "module": "Methods in Calculus",
+      "syllabusRefs": ["ME-C1"],
+      "stimulus": [],
+      "parts": [
+        { "label": null, "marks": null, "type": "extended",
+          "regions": [
+            { "page": 0, "bbox": [0.13, 0.768, 0.90, 0.889] },
+            { "page": 1, "bbox": [0.13, 0.114, 0.90, 0.150] }
+          ] }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": null,
+      "topic": "Calculus — Simpson's Rule and Numerical Integration",
+      "module": "Methods in Calculus",
+      "syllabusRefs": ["ME-C1"],
+      "stimulus": [],
+      "parts": [
+        { "label": null, "marks": null, "type": "extended",
+          "regions": [{ "page": 1, "bbox": [0.13, 0.166, 0.90, 0.351] }] }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": null,
+      "topic": "Vectors — Rotation of Axes and Conic Classification",
+      "module": "Vectors",
+      "syllabusRefs": ["ME-V1"],
+      "stimulus": [],
+      "parts": [
+        { "label": null, "marks": null, "type": "extended",
+          "regions": [{ "page": 1, "bbox": [0.13, 0.385, 0.90, 0.857] }] }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": null,
+      "topic": "Vectors — Planes and Spheres; Series Approximation for loge 2",
+      "module": "Vectors",
+      "syllabusRefs": ["ME-V1", "ME-C1"],
+      "stimulus": [],
+      "parts": [
+        { "label": "a", "marks": null, "type": "extended",
+          "regions": [{ "page": 2, "bbox": [0.13, 0.114, 0.90, 0.274] }] },
+        { "label": "b", "marks": null, "type": "extended",
+          "regions": [{ "page": 2, "bbox": [0.13, 0.281, 0.90, 0.317] }] },
+        { "label": "c", "marks": null, "type": "calculation",
+          "regions": [{ "page": 2, "bbox": [0.13, 0.323, 0.90, 0.457] }] },
+        { "label": "d", "marks": null, "type": "extended",
+          "regions": [{ "page": 2, "bbox": [0.13, 0.464, 0.90, 0.500] }] }
+      ]
+    },
+    {
+      "number": "8",
+      "marks": null,
+      "topic": "Mechanics — Oscillatory Motion under Variable Gravity",
+      "module": "Mechanics",
+      "syllabusRefs": ["ME-M1"],
+      "stimulus": [{ "page": 2, "bbox": [0.13, 0.542, 0.90, 0.663] }],
+      "parts": [
+        { "label": "a", "marks": null, "type": "extended",
+          "regions": [{ "page": 2, "bbox": [0.13, 0.670, 0.90, 0.725] }] },
+        { "label": "b", "marks": null, "type": "extended",
+          "regions": [{ "page": 2, "bbox": [0.13, 0.750, 0.90, 0.822] }] },
+        { "label": "c", "marks": null, "type": "short",
+          "regions": [{ "page": 2, "bbox": [0.13, 0.838, 0.90, 0.857] }] }
+      ]
+    },
+    {
+      "number": "9",
+      "marks": null,
+      "topic": "Vectors — Matrix Powers and Recurrence Relations",
+      "module": "Vectors",
+      "syllabusRefs": ["ME-V1"],
+      "stimulus": [
+        { "page": 3, "bbox": [0.13, 0.114, 0.90, 0.167] },
+        { "page": 3, "bbox": [0.13, 0.286, 0.90, 0.325] }
+      ],
+      "parts": [
+        { "label": "a", "marks": null, "type": "calculation",
+          "regions": [{ "page": 3, "bbox": [0.13, 0.182, 0.90, 0.202] }] },
+        { "label": "b", "marks": null, "type": "extended",
+          "regions": [{ "page": 3, "bbox": [0.13, 0.210, 0.90, 0.254] }] },
+        { "label": "c", "marks": null, "type": "extended",
+          "regions": [{ "page": 3, "bbox": [0.13, 0.259, 0.90, 0.282] }] }
+      ]
+    },
+    {
+      "number": "10",
+      "marks": null,
+      "topic": "Proof — Markov Chain Recurrence and Limiting Probability",
+      "module": "Proof",
+      "syllabusRefs": ["ME-P2"],
+      "stimulus": [
+        { "page": 3, "bbox": [0.13, 0.356, 0.90, 0.494] },
+        { "page": 3, "bbox": [0.13, 0.620, 0.90, 0.638] }
+      ],
+      "parts": [
+        { "label": "a", "marks": null, "type": "calculation",
+          "regions": [{ "page": 3, "bbox": [0.13, 0.500, 0.90, 0.545] }] },
+        { "label": "b", "marks": null, "type": "calculation",
+          "regions": [{ "page": 3, "bbox": [0.13, 0.551, 0.90, 0.570] }] },
+        { "label": "c", "marks": null, "type": "calculation",
+          "regions": [{ "page": 3, "bbox": [0.13, 0.577, 0.90, 0.612] }] }
+      ]
+    }
+  ]
+}

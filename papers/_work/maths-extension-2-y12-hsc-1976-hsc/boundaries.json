@@ -1,0 +1,479 @@
+{
+  "paperId": "maths-extension-2-y12-hsc-1976-hsc",
+  "subject": "maths-extension-2",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": "1",
+      "marks": 1,
+      "topic": "Number Theory - Euclid's Algorithm / HCF",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "1. (i) Use Buclid’s algorithm to find the highest common factor the greatest",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.1432396694214876,
+                0.95,
+                0.33884297520661155
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "1. (i) Use Buclid’s algorithm to find the highest common factor the greatest"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": 1,
+      "topic": "Polynomials - Conditions on Coefficients/Roots",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "2. (i) It is given that the constants p,q are such that the equation",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.33084297520661154,
+                0.95,
+                0.43553719008264463
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "2. (i) It is given that the constants p,q are such that the equation"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.4275371900826446,
+                0.95,
+                0.4628099173553719
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) oP +8 49°;"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.4548099173553719,
+                0.95,
+                0.7322314049586777
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) at + 64444;"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": 1,
+      "topic": "Rectilinear Motion Under Variable Force",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-M1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "3. A particle of unit mass is projected vertically upwards from the ground with",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.7242314049586777,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "3. A particle of unit mass is projected vertically upwards from the ground with"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "marks": 1,
+      "topic": "Inequality Proofs",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "4. (i) Using graphical considerations, or otherwise, prove that, for x > 0,",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.11514049586776859,
+                0.95,
+                0.47024793388429753
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "4. (i) Using graphical considerations, or otherwise, prove that, for x > 0,"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": 1,
+      "topic": "Modulus, Conjugate, Real Part",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "5. (i) If z is the complex number a + iy (where x and y are real numbers) define",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.4622479338842975,
+                0.95,
+                0.4975206611570248
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "5. (i) If z is the complex number a + iy (where x and y are real numbers) define"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.4895206611570248,
+                0.95,
+                0.5256198347107438
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) |2| (the modulus of 2);"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.5176198347107438,
+                0.95,
+                0.5520661157024793
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) = (the conjugate of 2);"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.5440661157024793,
+                0.95,
+                0.7495867768595041
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) R(2) (the real part of z)."
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.7415867768595041,
+                0.95,
+                0.7768595041322314
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.7688595041322314,
+                0.95,
+                0.8305785123966942
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b)"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.8225785123966942,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) Rw +7)."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": 1,
+      "topic": "Series and Sequences",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "6. Prove that the series",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.11596694214876033,
+                0.95,
+                0.3371900826446281
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "6. Prove that the series"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": 1,
+      "topic": "Fundamental Theorem of Calculus / Integration",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "7. (i) Describe briefly the content and significance of the Fundamental Theorem of",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.32919008264462807,
+                0.95,
+                0.40743801652892564
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "7. (i) Describe briefly the content and significance of the Fundamental Theorem of"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.39943801652892563,
+                0.95,
+                0.4380165289256198
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) fy de:"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.4300165289256198,
+                0.95,
+                0.4743801652892562
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) fP vlog, de;"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.4663801652892562,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) fo ax;"
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "marks": 1,
+      "topic": "Conics - Ellipse Properties",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "10. In the Cartesian plane prove that",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.17051239669421486,
+                0.95,
+                0.27768595041322314
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "10. In the Cartesian plane prove that"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.26968595041322313,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) the length of its major axis (i.e., the longer axis);"
+        }
+      ]
+    }
+  ]
+}

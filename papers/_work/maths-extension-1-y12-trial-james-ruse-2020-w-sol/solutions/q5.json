@@ -1,0 +1,24 @@
+{
+  "number": "5",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "5",
+      "marks": null,
+      "steps": [
+        "$u = \\frac{3x}{4}$",
+        "$\\frac{d}{dx}\\sin^{-1}u = \\frac{1}{\\sqrt{1-u^2}}\\frac{du}{dx}$",
+        "$\\frac{du}{dx} = \\frac{3}{4}$",
+        "$\\frac{d}{dx} = \\frac{1}{\\sqrt{1-\\left(\\frac{3x}{4}\\right)^2}} \\cdot \\frac{3}{4}$",
+        "$= \\frac{3}{4\\sqrt{1-\\frac{9x^2}{16}}}$",
+        "$= \\frac{3}{4\\sqrt{\\frac{16-9x^2}{16}}}$",
+        "$= \\frac{3}{4} \\cdot \\frac{4}{\\sqrt{16-9x^2}}$",
+        "$= \\frac{3}{\\sqrt{16-9x^2}}$",
+        "Thus the correct option is (B)."
+      ],
+      "answer": "(B)"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

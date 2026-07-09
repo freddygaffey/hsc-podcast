@@ -1,0 +1,21 @@
+{
+  "number": "6",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "6",
+      "marks": null,
+      "steps": [
+        "$u = \\text{ magnitude }3$",
+        "$\\vec{v} = \\text{ magnitude }3$",
+        "$\\text{Angle between }\\vec{u}\\text{ and }\\vec{v} = 60^\\circ$",
+        "$\\vec{u}\\cdot\\vec{v} = |\\vec{u}||\\vec{v}|\\cos\\theta$",
+        "$= 3 \\times 3 \\times \\cos 60^\\circ$",
+        "$= 9 \\times \\frac12 = \\frac92$"
+      ],
+      "answer": "C"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

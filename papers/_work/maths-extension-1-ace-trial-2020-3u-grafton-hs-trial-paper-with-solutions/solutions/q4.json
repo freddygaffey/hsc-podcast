@@ -1,0 +1,20 @@
+{
+  "number": "4",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "4",
+      "marks": 1,
+      "steps": [
+        "Option A: $\\frac{dy}{dx}=x \\Rightarrow dy = x\\,dx$, separable.",
+        "Option B: $\\frac{dy}{dx}=\\frac{x}{y} \\Rightarrow y\\,dy = x\\,dx$, separable.",
+        "Option C: $\\frac{dy}{dx}=xy \\Rightarrow \\frac{1}{y}\\,dy = x\\,dx$, separable.",
+        "Option D: $\\frac{dy}{dx}=x+y$ cannot be written as $f(y)\\,dy = g(x)\\,dx$.",
+        "Thus D is not separable."
+      ],
+      "answer": "D"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

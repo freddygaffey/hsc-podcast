@@ -1,0 +1,405 @@
+{
+  "paperId": "maths-extension-2-y12-hsc-1967-hsc",
+  "questions": [
+    {
+      "number": "1",
+      "topic": "Proof \u2014 Inequalities by Induction",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P2"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": null,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.12,
+                0.1449,
+                0.9,
+                0.427
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "topic": "Proof \u2014 Polynomial Identities",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": null,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.12,
+                0.4454,
+                0.9,
+                0.6196
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "topic": "Complex Numbers \u2014 Argand Diagram Transformations",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "i-a",
+          "type": "extended",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.12,
+                0.6281,
+                0.9,
+                0.6859
+              ]
+            },
+            {
+              "page": 0,
+              "bbox": [
+                0.12,
+                0.6879,
+                0.9,
+                0.7138
+              ]
+            }
+          ]
+        },
+        {
+          "label": "i-b",
+          "type": "extended",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.12,
+                0.6281,
+                0.9,
+                0.6859
+              ]
+            },
+            {
+              "page": 0,
+              "bbox": [
+                0.12,
+                0.7135,
+                0.9,
+                0.7394
+              ]
+            }
+          ]
+        },
+        {
+          "label": "i-c",
+          "type": "extended",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.12,
+                0.6281,
+                0.9,
+                0.6859
+              ]
+            },
+            {
+              "page": 0,
+              "bbox": [
+                0.12,
+                0.7393,
+                0.9,
+                0.7651
+              ]
+            }
+          ]
+        },
+        {
+          "label": "ii",
+          "type": "extended",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.12,
+                0.765,
+                0.9,
+                0.8935
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "topic": "Vectors \u2014 Affine Transformations & Matrices",
+      "module": "Vectors",
+      "syllabusRefs": [
+        "ME-V1"
+      ],
+      "stimulus": [
+        {
+          "page": 1,
+          "bbox": [
+            0.12,
+            0.1106,
+            0.9,
+            0.1938
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "label": "i-a",
+          "type": "extended",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.12,
+                0.1957,
+                0.9,
+                0.2215
+              ]
+            },
+            {
+              "page": 1,
+              "bbox": [
+                0.12,
+                0.2196,
+                0.9,
+                0.2485
+              ]
+            }
+          ]
+        },
+        {
+          "label": "i-b",
+          "type": "extended",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.12,
+                0.1957,
+                0.9,
+                0.2215
+              ]
+            },
+            {
+              "page": 1,
+              "bbox": [
+                0.12,
+                0.2451,
+                0.9,
+                0.2741
+              ]
+            }
+          ]
+        },
+        {
+          "label": "ii",
+          "type": "extended",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.12,
+                0.2707,
+                0.9,
+                0.2996
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "topic": "Vectors \u2014 Matrices & Group of Transformations",
+      "module": "Vectors",
+      "syllabusRefs": [
+        "ME-V1"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": null,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.12,
+                0.3064,
+                0.9,
+                0.5602
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "topic": "Vectors \u2014 Lines and Planes in 3D",
+      "module": "Vectors",
+      "syllabusRefs": [
+        "ME-V1"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": null,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.12,
+                0.5705,
+                0.9,
+                0.7305
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "topic": "Calculus \u2014 Iterative Approximation (Newton's Method)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": null,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.12,
+                0.741,
+                0.9,
+                0.8992
+              ]
+            },
+            {
+              "page": 2,
+              "bbox": [
+                0.12,
+                0.1106,
+                0.9,
+                0.1684
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "topic": "Calculus \u2014 Curves, Tangents and Arc Length",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": null,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.12,
+                0.1787,
+                0.9,
+                0.3954
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "topic": "Calculus \u2014 Integration (Reduction Formulae)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": null,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.12,
+                0.3943,
+                0.9,
+                0.5647
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "topic": "Mechanics \u2014 Resisted Motion",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-M1"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": null,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.12,
+                0.5666,
+                0.9,
+                0.7543
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

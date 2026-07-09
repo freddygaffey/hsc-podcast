@@ -1,0 +1,19 @@
+{
+  "number": "6",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "",
+      "marks": 1,
+      "steps": [
+        "$2\\cos^2 3x - 1 = \\cos 6x$",
+        "$(2\\cos^2 3x - 1)^2 = \\cos^2 6x$",
+        "$\\cos^2 6x = \\frac{1+\\cos 12x}{2}$",
+        "$\\int \\frac{1+\\cos 12x}{2}\\,dx = \\frac{1}{2}x + \\frac{1}{24}\\sin 12x + C$"
+      ],
+      "answer": "B"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

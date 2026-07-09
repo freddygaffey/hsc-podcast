@@ -1,0 +1,100 @@
+{
+ "paperId": "maths-advanced-ace-trial-2015-2u-barker-college-trial-with-solutions",
+ "model": "claude-opus-4-8",
+ "ts": 1783077165,
+ "tags": {
+  "q07.pdf": {
+   "syllabusRefs": [
+    "MA-S1",
+    "MA-F1"
+   ],
+   "type": "mc",
+   "topic": "Probability and Discrete Probability Distributions",
+   "module": "Statistical Analysis",
+   "confidence": 0.95,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q08.pdf": {
+   "syllabusRefs": [
+    "MA-F1"
+   ],
+   "type": "mc",
+   "topic": "Working with Functions",
+   "module": "Functions",
+   "confidence": 0.93,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q09.pdf": {
+   "syllabusRefs": [
+    "MA-F1"
+   ],
+   "type": "mc",
+   "topic": "Working with Functions",
+   "module": "Functions",
+   "confidence": 0.94,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q10.pdf": {
+   "syllabusRefs": [
+    "MA-C4"
+   ],
+   "type": "mc",
+   "topic": "Integral Calculus",
+   "module": "Calculus",
+   "confidence": 0.94,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q13.pdf": {
+   "syllabusRefs": [
+    "MA-C2",
+    "MA-F1"
+   ],
+   "type": "extended",
+   "topic": "Differential Calculus",
+   "module": "Calculus",
+   "confidence": 0.72,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q14.pdf": {
+   "syllabusRefs": [
+    "MA-T1",
+    "MA-C4"
+   ],
+   "type": "extended",
+   "topic": "Trigonometry and Measure of Angles",
+   "module": "Trigonometric Functions",
+   "confidence": 0.7,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q15.pdf": {
+   "syllabusRefs": [
+    "MA-C4",
+    "MA-T1"
+   ],
+   "type": "extended",
+   "topic": "Integral Calculus",
+   "module": "Calculus",
+   "confidence": 0.65,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q16.pdf": {
+   "syllabusRefs": [
+    "MA-C3",
+    "MA-M1"
+   ],
+   "type": "extended",
+   "topic": "Applications of Differentiation",
+   "module": "Calculus",
+   "confidence": 0.72,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  }
+ }
+}

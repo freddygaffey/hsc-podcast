@@ -1,0 +1,18 @@
+{
+  "number": "6",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "6",
+      "marks": null,
+      "steps": [
+        "$X \\sim \\text{Binomial}(n=15, p=0.29)$",
+        "$\\text{Mean} = np = 15 \\times 0.29$",
+        "$= 4.35$"
+      ],
+      "answer": "C"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

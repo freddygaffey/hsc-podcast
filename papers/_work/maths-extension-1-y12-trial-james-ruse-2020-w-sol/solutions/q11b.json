@@ -1,0 +1,26 @@
+{
+  "number": "11",
+  "section": "II",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "(b)",
+      "marks": 3,
+      "steps": [
+        "$P(\\text{success}) = \\frac{4}{36} = \\frac{1}{9}$",
+        "$n = 6$, $p = \\frac{1}{9}$, $q = \\frac{8}{9}$",
+        "$X \\sim \\text{Bin}(6, \\frac{1}{9})$",
+        "$P(X \\geq 5) = P(X=5) + P(X=6)$",
+        "$P(X=5) = \\binom{6}{5} \\left(\\frac{1}{9}\\right)^5 \\left(\\frac{8}{9}\\right)^1 = 6 \\times \\frac{1}{9^5} \\times \\frac{8}{9}$",
+        "$= \\frac{48}{9^6}$",
+        "$P(X=6) = \\binom{6}{6} \\left(\\frac{1}{9}\\right)^6 = \\frac{1}{9^6}$",
+        "$\\text{Sum} = \\frac{48+1}{9^6} = \\frac{49}{9^6}$",
+        "$9^6 = 531441$",
+        "$P = \\frac{49}{531441} \\approx 9.22 \\times 10^{-5}$",
+        "$\\text{Answer: } 9.22 \\times 10^{-5} \\text{ (3 s.f.)}$"
+      ],
+      "answer": "$9.22 \\times 10^{-5}$"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

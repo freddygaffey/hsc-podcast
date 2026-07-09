@@ -1,0 +1,25 @@
+{
+  "number": "10",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "10",
+      "marks": 1,
+      "steps": [
+        "Let $b= k$, $r=4k$, $g=2k$.",
+        "Also $g:y:o = 1:3:6$ gives $g=m$, $y=3m$, $o=6m$.",
+        "$m=2k$ so $y=6k$, $o=12k$.",
+        "Total $k+4k+2k+6k+12k=25k=400$ \u21d2 $k=16$.",
+        "Numbers: $b=16$, $r=64$, $g=32$, $y=96$, $o=192$.",
+        "Worst-case: draw all $16$ blue, $32$ green.",
+        "Then $49$ of each of red, yellow, orange: $49+49+49=147$.",
+        "Total drawn $=16+32+147=195$.",
+        "Next ball forces a colour to $50$.",
+        "Minimum $=196$."
+      ],
+      "answer": "B"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

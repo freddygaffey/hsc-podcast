@@ -1,0 +1,614 @@
+{
+  "paperId": "maths-extension-2-y12-trial-abbotsleigh-2004",
+  "questions": [
+    {
+      "number": "1",
+      "marks": 15,
+      "module": "Calculus",
+      "topic": "Functions, Integration & Trigonometric Identities",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "stimulus": [
+        {
+          "page": 0,
+          "bbox": [
+            0.3108,
+            0.0769,
+            0.9635,
+            0.1462
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 11,
+          "type": "extended",
+          "topic": "Curve Sketching, Inverse Functions & Tangents",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.3108,
+                0.1462,
+                0.9635,
+                0.5462
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 3,
+          "type": "calculation",
+          "topic": "Integration",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.3108,
+                0.5462,
+                0.9635,
+                0.7165
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 1,
+          "type": "short",
+          "topic": "Trigonometric Identities",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.3108,
+                0.7165,
+                0.9635,
+                0.7802
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": 15,
+      "module": "Complex Numbers",
+      "topic": "Complex Numbers, Integration & Rectilinear Motion",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-C1",
+        "ME-M1"
+      ],
+      "stimulus": [
+        {
+          "page": 1,
+          "bbox": [
+            0.0155,
+            0.0659,
+            0.4779,
+            0.1253
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2,
+          "type": "calculation",
+          "topic": "Integration",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.0155,
+                0.1253,
+                0.4779,
+                0.1868
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 2,
+          "type": "calculation",
+          "topic": "Complex Numbers - Arithmetic",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.0155,
+                0.1868,
+                0.4779,
+                0.2396
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Rectilinear Motion",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.0155,
+                0.2396,
+                0.4779,
+                0.5033
+              ]
+            }
+          ]
+        },
+        {
+          "label": "d",
+          "marks": 3,
+          "type": "calculation",
+          "topic": "Complex Numbers - Polar Form",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.0155,
+                0.5033,
+                0.4779,
+                0.6462
+              ]
+            }
+          ]
+        },
+        {
+          "label": "e",
+          "marks": 3,
+          "type": "calculation",
+          "topic": "Complex Numbers - Loci",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.0155,
+                0.6462,
+                0.4779,
+                0.7692
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": 15,
+      "module": "Mechanics",
+      "topic": "Projectile Motion & Complex Roots of Unity",
+      "syllabusRefs": [
+        "ME-M1",
+        "ME-N1"
+      ],
+      "stimulus": [
+        {
+          "page": 1,
+          "bbox": [
+            0.5167,
+            0.0879,
+            0.979,
+            0.1484
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 12,
+          "type": "extended",
+          "topic": "Projectile Motion",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.5167,
+                0.1484,
+                0.979,
+                0.5363
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 3,
+          "type": "extended",
+          "topic": "Complex Numbers - Roots of Unity",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.5167,
+                0.5363,
+                0.979,
+                0.5989
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "marks": 15,
+      "module": "Calculus",
+      "topic": "Volumes by Integration & Polynomial Roots",
+      "syllabusRefs": [
+        "ME-C1",
+        "ME-N2"
+      ],
+      "stimulus": [
+        {
+          "page": 2,
+          "bbox": [
+            0.0155,
+            0.0714,
+            0.4779,
+            0.1231
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Volumes - Cylindrical Shells",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.0155,
+                0.1231,
+                0.4779,
+                0.4264
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 4,
+          "type": "calculation",
+          "topic": "Polynomials - Complex Roots",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.0155,
+                0.4264,
+                0.4779,
+                0.5099
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 6,
+          "type": "extended",
+          "topic": "Polynomials - Roots and Coefficients",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.0155,
+                0.5099,
+                0.4779,
+                0.7692
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": 15,
+      "module": "Mechanics",
+      "topic": "Circular Motion, SHM & Circle Geometry Proof",
+      "syllabusRefs": [
+        "ME-M1",
+        "ME-P1"
+      ],
+      "stimulus": [
+        {
+          "page": 2,
+          "bbox": [
+            0.5167,
+            0.0714,
+            0.979,
+            0.1275
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 6,
+          "type": "extended",
+          "topic": "Circular Motion",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.5167,
+                0.1275,
+                0.979,
+                0.5791
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 3,
+          "type": "extended",
+          "topic": "Circle Geometry Proof",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.5167,
+                0.5791,
+                0.979,
+                0.7978
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 4,
+          "type": "extended",
+          "topic": "Simple Harmonic Motion",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.0155,
+                0.1022,
+                0.4779,
+                0.2593
+              ]
+            }
+          ]
+        },
+        {
+          "label": "d",
+          "marks": 2,
+          "type": "calculation",
+          "topic": "Circular Motion",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.0155,
+                0.2593,
+                0.4779,
+                0.4396
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": 15,
+      "module": "Calculus",
+      "topic": "Volumes by Integration & Resisted Motion",
+      "syllabusRefs": [
+        "ME-C1",
+        "ME-M1"
+      ],
+      "stimulus": [
+        {
+          "page": 3,
+          "bbox": [
+            0.5167,
+            0.0714,
+            0.979,
+            0.122
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 7,
+          "type": "extended",
+          "topic": "Volumes - Slicing Method",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.5167,
+                0.122,
+                0.979,
+                0.5703
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 8,
+          "type": "extended",
+          "topic": "Resisted Motion",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.5167,
+                0.5703,
+                0.979,
+                0.8681
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": 15,
+      "module": "Calculus",
+      "topic": "Parametric Curves, Complex Quadratics & Inverse Trig Functions",
+      "syllabusRefs": [
+        "ME-C1",
+        "ME-N1"
+      ],
+      "stimulus": [
+        {
+          "page": 4,
+          "bbox": [
+            0.0155,
+            0.0692,
+            0.4779,
+            0.1209
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 8,
+          "type": "extended",
+          "topic": "Parametric Curves - Tangents and Loci",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.0155,
+                0.1209,
+                0.4779,
+                0.3527
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 3,
+          "type": "calculation",
+          "topic": "Complex Numbers - Quadratic Equations",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.0155,
+                0.3527,
+                0.4779,
+                0.4187
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 4,
+          "type": "calculation",
+          "topic": "Inverse Trigonometric Functions",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.0155,
+                0.4187,
+                0.4779,
+                0.5495
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "marks": 15,
+      "module": "Calculus",
+      "topic": "Conics, Integration Techniques & Binomial Proof",
+      "syllabusRefs": [
+        "ME-C1",
+        "ME-P1"
+      ],
+      "stimulus": [
+        {
+          "page": 4,
+          "bbox": [
+            0.5167,
+            0.0747,
+            0.979,
+            0.1264
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 6,
+          "type": "extended",
+          "topic": "Conics - Ellipse",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.5167,
+                0.1264,
+                0.979,
+                0.4264
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 6,
+          "type": "extended",
+          "topic": "Integration - Substitution and Symmetry",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.5167,
+                0.4264,
+                0.979,
+                0.667
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 3,
+          "type": "extended",
+          "topic": "Proof - Binomial Coefficients",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.5167,
+                0.667,
+                0.979,
+                0.8044
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

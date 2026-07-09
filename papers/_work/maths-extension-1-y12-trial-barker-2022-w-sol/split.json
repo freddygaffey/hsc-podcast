@@ -1,0 +1,327 @@
+{
+  "paperId": "maths-extension-1-y12-trial-barker-2022-w-sol",
+  "subject": "maths-extension-1",
+  "source": "auto-ext1",
+  "sectionIIStartPage": 5,
+  "solutionsStartPage": null,
+  "missingMC": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10
+  ],
+  "units": [
+    {
+      "id": "q8",
+      "number": "8",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 3,
+          "bbox": [
+            0.0658,
+            0.0731,
+            0.935,
+            0.2742
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "number": "9",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 3,
+          "bbox": [
+            0.0658,
+            0.2742,
+            0.9225,
+            0.428
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "number": "10",
+      "part": null,
+      "section": "I",
+      "marks": 1,
+      "marksPrinted": false,
+      "type": "mc",
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 3,
+          "bbox": [
+            0.0666,
+            0.4413,
+            0.9225,
+            0.8258
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q14a",
+      "number": "14",
+      "part": "a",
+      "section": "II",
+      "marks": 11,
+      "marksPrinted": false,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 5,
+          "bbox": [
+            0.0658,
+            0.0973,
+            0.959,
+            0.29
+          ]
+        },
+        {
+          "page": 7,
+          "bbox": [
+            0.0456,
+            0.0709,
+            0.9552,
+            0.444
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q14b",
+      "number": "14",
+      "part": "b",
+      "section": "II",
+      "marks": null,
+      "marksPrinted": false,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 5,
+          "bbox": [
+            0.0658,
+            0.29,
+            0.9567,
+            0.4225
+          ]
+        },
+        {
+          "page": 7,
+          "bbox": [
+            0.0674,
+            0.444,
+            0.7306,
+            0.7231
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q14c",
+      "number": "14",
+      "part": "c",
+      "section": "II",
+      "marks": 6,
+      "marksPrinted": true,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 5,
+          "bbox": [
+            0.0658,
+            0.4225,
+            0.9567,
+            0.56
+          ]
+        },
+        {
+          "page": 7,
+          "bbox": [
+            0.0845,
+            0.7231,
+            0.7563,
+            0.9225
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q14d",
+      "number": "14",
+      "part": "d",
+      "section": "II",
+      "marks": null,
+      "marksPrinted": false,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 5,
+          "bbox": [
+            0.0658,
+            0.56,
+            0.9567,
+            0.7125
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q14e",
+      "number": "14",
+      "part": "e",
+      "section": "II",
+      "marks": null,
+      "marksPrinted": false,
+      "type": null,
+      "ruleId": "vision-qwen3vl",
+      "confidence": 0.9,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "",
+      "regions": [
+        {
+          "page": 5,
+          "bbox": [
+            0.0658,
+            0.7125,
+            0.9575,
+            0.8928
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q1",
+      "number": "1",
+      "part": null,
+      "section": "I",
+      "marks": null,
+      "marksPrinted": false,
+      "type": null,
+      "ruleId": "manual",
+      "confidence": 1.0,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "added in review",
+      "regions": [
+        {
+          "page": 2,
+          "bbox": [
+            0.0639,
+            0.3044,
+            0.4393,
+            0.8738
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "number": "3",
+      "part": null,
+      "section": "I",
+      "marks": null,
+      "marksPrinted": false,
+      "type": null,
+      "ruleId": "manual",
+      "confidence": 1.0,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "added in review",
+      "regions": [
+        {
+          "page": 2,
+          "bbox": [
+            0.544,
+            0.0726,
+            0.8555,
+            0.4868
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "number": "5",
+      "part": null,
+      "section": "I",
+      "marks": null,
+      "marksPrinted": false,
+      "type": null,
+      "ruleId": "manual",
+      "confidence": 1.0,
+      "ruleException": null,
+      "writingSpace": [],
+      "note": "added in review",
+      "regions": [
+        {
+          "page": 2,
+          "bbox": [
+            0.0594,
+            0.078,
+            0.4096,
+            0.2789
+          ]
+        }
+      ]
+    }
+  ],
+  "_vision": {
+    "mc": "qwen3vl",
+    "sec2": "qwen3vl-parts"
+  },
+  "_edited": true
+}

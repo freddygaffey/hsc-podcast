@@ -1,0 +1,746 @@
+{
+  "paperId": "maths-extension-2-hsc-nesa-2024-hsc-maths-ext-2",
+  "subject": "maths-extension-2",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": "11",
+      "marks": 16,
+      "topic": "Integration; vector calculations & angle between vectors; modulus-argument form and De Moivre's theorem; Argand-diagram region sketch",
+      "module": "Calculus / Vectors / Complex Numbers",
+      "syllabusRefs": [
+        "ME-C1",
+        "ME-V1",
+        "ME-N1",
+        "ME-N2"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 5,
+          "bbox": [
+            0.06,
+            0.27016627816627814,
+            0.95,
+            0.3348873348873349
+          ]
+        }
+      ],
+      "text": "Question 11 (16 marks) Use the Question 11 Writing Booklet",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.3268873348873349,
+                0.95,
+                0.3947163947163947
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find 2"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.3867163947163947,
+                0.95,
+                0.43434343434343436
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Let and"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.42634343434343436,
+                0.95,
+                0.5470085470085471
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Find 1"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.5390085470085471,
+                0.95,
+                0.8562548562548562
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Find the angle between the two vectors 2 \u20144 }, giving your 2"
+        },
+        {
+          "label": "f",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.8482548562548562,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(f) Sketch the region defined by |z| <3 and 0 <arg(z\u2014i) < 3"
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "marks": 14,
+      "topic": "Vector perpendicularity proof and vector equation of a line; partial-fraction integration; complex number equation; divisibility proof",
+      "module": "Vectors / Calculus / Complex Numbers / Proof",
+      "syllabusRefs": [
+        "ME-V1",
+        "ME-C1",
+        "ME-N1",
+        "ME-P1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 6,
+          "bbox": [
+            0.06,
+            0.07358508158508159,
+            0.95,
+            0.13131313131313133
+          ]
+        }
+      ],
+      "text": "Question 12 (14 marks) Use the Question 12 Writing Booklet",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.12331313131313132,
+                0.95,
+                0.351981351981352
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) The vector a +( 2 the vector b 0 )"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.343981351981352,
+                0.95,
+                0.4763014763014763
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Use partial fractions to find"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.4683014763014763,
+                0.95,
+                0.5291375291375291
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Consider the equation | = z+ 8 + 12%, where z= a + bi is number"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.5211375291375291,
+                0.95,
+                0.6262626262626263
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Explain why"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.6182626262626263,
+                0.95,
+                0.7288267288267288
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) Explain why there is no integer n such that (n + 1)*!\u2014 792!"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.7208267288267288,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Find a vector equation of the line"
+        }
+      ]
+    },
+    {
+      "number": "13",
+      "marks": 16,
+      "topic": "Shortest distance from a point to a line (vectors); SHM distance travelled in a period; resisted horizontal motion (acceleration -kv^2); AM-GM style inequality proof",
+      "module": "Vectors / Mechanics / Proof",
+      "syllabusRefs": [
+        "ME-V1",
+        "ME-M1",
+        "ME-P1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 7,
+          "bbox": [
+            0.06,
+            0.07358508158508159,
+            0.95,
+            0.13053613053613053
+          ]
+        }
+      ],
+      "text": "Question 13 (16 marks) Use the Question 13 Writing Booklet",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.12253613053613052,
+                0.95,
+                0.3473193473193473
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) The point A has position vector 8i \u2014 6j + 5k. The line f has vector equation"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.3393193473193473,
+                0.95,
+                0.47863247863247865
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) A particle is moving in simple harmonic motion, described by \u00a5 = \u20144(x +1). 3"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.47063247863247865,
+                0.95,
+                0.6146076146076146
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) A particle of unit mass moves horizontally in a"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.6066076146076146,
+                0.95,
+                0.7692307692307693
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Show that v = 3"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.7612307692307693,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) It is known that for all positive real numbers x, y 3"
+        }
+      ]
+    },
+    {
+      "number": "14",
+      "marks": 15,
+      "topic": "Divisibility proof; induction inequality; complex-number argument; flawed integration-by-parts 'proof' that 0=1; vector ratio proof in a triangle",
+      "module": "Proof / Complex Numbers / Calculus / Vectors",
+      "syllabusRefs": [
+        "ME-P1",
+        "ME-P2",
+        "ME-N1",
+        "ME-C1",
+        "ME-V1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 8,
+          "bbox": [
+            0.06,
+            0.07358508158508159,
+            0.95,
+            0.1282051282051282
+          ]
+        }
+      ],
+      "text": "Question 14 (15 marks) Use the Question 14 Writing Booklet",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.12020512820512819,
+                0.95,
+                0.20202020202020202
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Prove that if a is any odd integer, then a\u201d \u2014 1 is divisible by 8."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.194020202020202,
+                0.95,
+                0.27816627816627815
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Use mathematical induction to prove that 2\"C, < for all integers n= 5."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.27016627816627814,
+                0.95,
+                0.411033411033411
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) For the complex numbers \u00a2 and it is known that are(=) = +"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.403033411033411,
+                0.95,
+                0.8632478632478633
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) The following argument attempts to prove that 0 = 1."
+        }
+      ]
+    },
+    {
+      "number": "14",
+      "marks": null,
+      "topic": "Divisibility proof; induction inequality; complex-number argument; flawed integration-by-parts 'proof' that 0=1; vector ratio proof in a triangle",
+      "module": "Proof / Complex Numbers / Calculus / Vectors",
+      "syllabusRefs": [
+        "ME-P1",
+        "ME-P2",
+        "ME-N1",
+        "ME-C1",
+        "ME-V1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 9,
+          "bbox": [
+            0.06,
+            0.07358508158508159,
+            0.95,
+            0.13131313131313133
+          ]
+        }
+      ],
+      "text": "Question 14 (continued)",
+      "parts": [
+        {
+          "label": "e",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 9,
+              "bbox": [
+                0.06,
+                0.12331313131313132,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(e) The diagram shows triangle OQA."
+        }
+      ]
+    },
+    {
+      "number": "15",
+      "marks": 15,
+      "topic": "Vector collinearity/betweenness proof and link to cube roots of a modulus-1 complex number; reduction-formula integral; motion under a magnetic repulsive force (mechanics)",
+      "module": "Vectors / Complex Numbers / Calculus / Mechanics",
+      "syllabusRefs": [
+        "ME-V1",
+        "ME-N2",
+        "ME-C1",
+        "ME-M1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 10,
+          "bbox": [
+            0.06,
+            0.07358508158508159,
+            0.95,
+            0.1320901320901321
+          ]
+        }
+      ],
+      "text": "Question 15 (15 marks) Use the Question 15 Writing Booklet",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 10,
+              "bbox": [
+                0.06,
+                0.12409013209013209,
+                0.95,
+                0.23620823620823622
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Consider the three vectors a = OA,"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 10,
+              "bbox": [
+                0.06,
+                0.22820823620823621,
+                0.95,
+                0.4933954933954934
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Show that M lies on the line passing through A and B."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 10,
+              "bbox": [
+                0.06,
+                0.48539549339549337,
+                0.95,
+                0.6324786324786325
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Let J, -| x"
+        }
+      ]
+    },
+    {
+      "number": "15",
+      "marks": null,
+      "topic": "Vector collinearity/betweenness proof and link to cube roots of a modulus-1 complex number; reduction-formula integral; motion under a magnetic repulsive force (mechanics)",
+      "module": "Vectors / Complex Numbers / Calculus / Mechanics",
+      "syllabusRefs": [
+        "ME-V1",
+        "ME-N2",
+        "ME-C1",
+        "ME-M1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 11,
+          "bbox": [
+            0.06,
+            0.07358508158508159,
+            0.95,
+            0.13131313131313133
+          ]
+        }
+      ],
+      "text": "Question 15 (continued)",
+      "parts": [
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 11,
+              "bbox": [
+                0.06,
+                0.12331313131313132,
+                0.95,
+                0.5889665889665889
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) A bar magnet is held vertically. An object that is repelled by the magnet is to be"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 11,
+              "bbox": [
+                0.06,
+                0.5809665889665889,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Show that y?= (>"
+        }
+      ]
+    },
+    {
+      "number": "16",
+      "marks": 14,
+      "topic": "Tangent-to-curve/perpendicular-vector condition; complex cube roots of unity and roots of w; resisted vertical motion of two particles meeting",
+      "module": "Calculus / Vectors / Complex Numbers / Mechanics",
+      "syllabusRefs": [
+        "ME-C1",
+        "ME-V1",
+        "ME-N2",
+        "ME-M1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 12,
+          "bbox": [
+            0.06,
+            0.07358508158508159,
+            0.95,
+            0.12432012432012432
+          ]
+        }
+      ],
+      "text": "Question 16 (14 marks) Use the Question 16 Writing Booklet",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 12,
+              "bbox": [
+                0.06,
+                0.11632012432012431,
+                0.95,
+                0.6076146076146076
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Consider the function y = cos(kx), where k > 0. The value of k has been chosen"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 12,
+              "bbox": [
+                0.06,
+                0.5996146076146076,
+                0.95,
+                0.6542346542346542
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) The number w="
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 12,
+              "bbox": [
+                0.06,
+                0.6462346542346542,
+                0.95,
+                0.8414918414918415
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Show that 7 + 7 isa real root of 2"
+        }
+      ]
+    }
+  ]
+}

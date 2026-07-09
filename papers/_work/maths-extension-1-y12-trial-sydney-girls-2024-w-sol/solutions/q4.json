@@ -1,0 +1,18 @@
+{
+  "number": "4",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "4",
+      "marks": 1,
+      "steps": [
+        "$x=1+t$ so $t=x-1$",
+        "$y=\\frac{1-(x-1)}{1+(x-1)}=\\frac{2-x}{x}$",
+        "$y=\\frac{2}{x}-1$"
+      ],
+      "answer": "$A$"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

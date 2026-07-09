@@ -1,0 +1,899 @@
+{
+  "paperId": "maths-extension-2-y12-trial-abbotsleigh-2008-w-sol",
+  "questions": [
+    {
+      "number": "1",
+      "marks": 15,
+      "module": "ME-C1",
+      "topic": "Calculus — Integration",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1,
+          "type": "calculation",
+          "topic": "Calculus — Integration (standard integrals)",
+          "module": "ME-C1",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.05,
+                0.2343,
+                0.95,
+                0.3066
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 12,
+              "bbox": [
+                0.05,
+                0.0602,
+                0.95,
+                0.0851
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 2,
+          "type": "calculation",
+          "topic": "Calculus — Integration (completing the square)",
+          "module": "ME-C1",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.05,
+                0.3066,
+                0.95,
+                0.3877
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 12,
+              "bbox": [
+                0.05,
+                0.0851,
+                0.95,
+                0.1593
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 2,
+          "type": "calculation",
+          "topic": "Calculus — Integration",
+          "module": "ME-C1",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.05,
+                0.3877,
+                0.95,
+                0.4732
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 12,
+              "bbox": [
+                0.05,
+                0.1593,
+                0.95,
+                0.2199
+              ]
+            }
+          ]
+        },
+        {
+          "label": "d",
+          "marks": 2,
+          "type": "calculation",
+          "topic": "Calculus — Integration (trig powers)",
+          "module": "ME-C1",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.05,
+                0.4732,
+                0.95,
+                0.5528
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 12,
+              "bbox": [
+                0.05,
+                0.2199,
+                0.95,
+                0.2821
+              ]
+            }
+          ]
+        },
+        {
+          "label": "e",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Calculus — Integration by substitution",
+          "module": "ME-C1",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.05,
+                0.5528,
+                0.95,
+                0.7245
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 12,
+              "bbox": [
+                0.05,
+                0.2821,
+                0.95,
+                0.6954
+              ]
+            }
+          ]
+        },
+        {
+          "label": "f",
+          "marks": 3,
+          "type": "calculation",
+          "topic": "Calculus — Integration (inverse trig)",
+          "module": "ME-C1",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.05,
+                0.7245,
+                0.95,
+                0.85
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 12,
+              "bbox": [
+                0.05,
+                0.6954,
+                0.95,
+                0.8594
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": 15,
+      "module": "ME-N1",
+      "topic": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 6,
+          "type": "calculation",
+          "topic": "Complex Numbers — Arithmetic",
+          "module": "ME-N1",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.05,
+                0.1372,
+                0.95,
+                0.3714
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 13,
+              "bbox": [
+                0.05,
+                0.0598,
+                0.95,
+                0.1379
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 4,
+          "type": "extended",
+          "topic": "Complex Numbers — Argand Diagram / Loci",
+          "module": "ME-N1",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.05,
+                0.3714,
+                0.95,
+                0.5096
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 13,
+              "bbox": [
+                0.05,
+                0.1379,
+                0.95,
+                0.446
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Complex Numbers — Loci",
+          "module": "ME-N1",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.05,
+                0.5096,
+                0.95,
+                0.7195
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 13,
+              "bbox": [
+                0.05,
+                0.446,
+                0.95,
+                0.9
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": 15,
+      "module": "ME-C1",
+      "topic": "Curve Sketching",
+      "syllabusRefs": [
+        "ME-C1",
+        "ME-N2"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Curve Sketching — Related Graphs",
+          "module": "ME-C1",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.05,
+                0.136,
+                0.95,
+                0.3675
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 14,
+              "bbox": [
+                0.05,
+                0.0602,
+                0.95,
+                0.9
+              ]
+            },
+            {
+              "page": 15,
+              "bbox": [
+                0.05,
+                0.0602,
+                0.95,
+                0.439
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 2,
+          "type": "extended",
+          "topic": "Curve Sketching — Logarithmic Function",
+          "module": "ME-C1",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.05,
+                0.3675,
+                0.95,
+                0.4359
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 15,
+              "bbox": [
+                0.05,
+                0.439,
+                0.95,
+                0.9
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 4,
+          "type": "extended",
+          "topic": "Curve Sketching — Rational Function (Calculus)",
+          "module": "ME-C1",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.05,
+                0.4359,
+                0.95,
+                0.5657
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 16,
+              "bbox": [
+                0.05,
+                0.0598,
+                0.95,
+                0.7222
+              ]
+            }
+          ]
+        },
+        {
+          "label": "d",
+          "marks": 4,
+          "type": "calculation",
+          "topic": "Polynomials — Sums/Products of Roots",
+          "module": "ME-N2",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.05,
+                0.5657,
+                0.95,
+                0.7599
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 16,
+              "bbox": [
+                0.05,
+                0.7222,
+                0.95,
+                0.92
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "marks": 15,
+      "module": "ME-C1",
+      "topic": "Conics",
+      "syllabusRefs": [
+        "ME-C1",
+        "ME-N2"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Conics — Hyperbola",
+          "module": "ME-C1",
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.05,
+                0.1298,
+                0.95,
+                0.3276
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 17,
+              "bbox": [
+                0.05,
+                0.0602,
+                0.95,
+                0.3532
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Conics — Ellipse Tangents",
+          "module": "ME-C1",
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.05,
+                0.3276,
+                0.95,
+                0.5859
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 17,
+              "bbox": [
+                0.05,
+                0.3532,
+                0.95,
+                0.6655
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Complex Numbers — Polynomials",
+          "module": "ME-N2",
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.05,
+                0.5859,
+                0.95,
+                0.7957
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 17,
+              "bbox": [
+                0.05,
+                0.6655,
+                0.95,
+                0.9
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": 15,
+      "module": "ME-C1",
+      "topic": "Calculus — Volumes",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 3,
+          "type": "extended",
+          "topic": "Calculus — Volumes (Slicing)",
+          "module": "ME-C1",
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.05,
+                0.1585,
+                0.95,
+                0.2343
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 18,
+              "bbox": [
+                0.05,
+                0.0602,
+                0.95,
+                0.1391
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 3,
+          "type": "extended",
+          "topic": "Calculus — Volumes (Cylindrical Shells)",
+          "module": "ME-C1",
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.05,
+                0.2343,
+                0.95,
+                0.5451
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 18,
+              "bbox": [
+                0.05,
+                0.1391,
+                0.95,
+                0.6402
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 9,
+          "type": "extended",
+          "topic": "Conics — Rectangular Hyperbola (Parametrics)",
+          "module": "ME-C1",
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.05,
+                0.5451,
+                0.95,
+                0.9
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 18,
+              "bbox": [
+                0.05,
+                0.6402,
+                0.95,
+                0.9
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": 15,
+      "module": "ME-P1",
+      "topic": "Geometry — Circle Geometry Proof",
+      "syllabusRefs": [
+        "ME-P1",
+        "ME-C1"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Geometry — Circle Geometry Proof",
+          "module": "ME-P1",
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.05,
+                0.129,
+                0.95,
+                0.5633
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 19,
+              "bbox": [
+                0.05,
+                0.0602,
+                0.95,
+                0.6542
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Calculus — Reduction Formulae",
+          "module": "ME-C1",
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.05,
+                0.5633,
+                0.95,
+                0.7297
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 19,
+              "bbox": [
+                0.05,
+                0.6542,
+                0.95,
+                0.94
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Calculus — Integration by Substitution",
+          "module": "ME-C1",
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.05,
+                0.7297,
+                0.95,
+                0.905
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 20,
+              "bbox": [
+                0.05,
+                0.055,
+                0.95,
+                0.78
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": 15,
+      "module": "ME-C1",
+      "topic": "Calculus — Inverse & Hyperbolic-type Functions",
+      "syllabusRefs": [
+        "ME-C1",
+        "ME-N2",
+        "ME-P1"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 8,
+          "type": "extended",
+          "topic": "Calculus — Inverse Functions",
+          "module": "ME-C1",
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.05,
+                0.122,
+                0.95,
+                0.5393
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 21,
+              "bbox": [
+                0.05,
+                0.0602,
+                0.95,
+                0.4926
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 4,
+          "type": "extended",
+          "topic": "Polynomials — Factor/Remainder Theorem",
+          "module": "ME-N2",
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.05,
+                0.5393,
+                0.95,
+                0.6667
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 21,
+              "bbox": [
+                0.05,
+                0.4926,
+                0.95,
+                0.6266
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 3,
+          "type": "extended",
+          "topic": "Trigonometry — Sine Rule Ambiguous Case (Proof)",
+          "module": "ME-P1",
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.05,
+                0.6667,
+                0.95,
+                0.93
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 21,
+              "bbox": [
+                0.05,
+                0.6266,
+                0.95,
+                0.89
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "marks": 15,
+      "module": "ME-M1",
+      "topic": "Mechanics — Resisted Motion",
+      "syllabusRefs": [
+        "ME-M1",
+        "ME-P2"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 9,
+          "type": "extended",
+          "topic": "Mechanics — Resisted Motion",
+          "module": "ME-M1",
+          "regions": [
+            {
+              "page": 9,
+              "bbox": [
+                0.05,
+                0.1437,
+                0.95,
+                0.5001
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 22,
+              "bbox": [
+                0.05,
+                0.0598,
+                0.95,
+                0.338
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 6,
+          "type": "extended",
+          "topic": "Series — Algebraic Proof",
+          "module": "ME-P2",
+          "regions": [
+            {
+              "page": 9,
+              "bbox": [
+                0.05,
+                0.5001,
+                0.95,
+                0.7934
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 22,
+              "bbox": [
+                0.05,
+                0.338,
+                0.95,
+                0.732
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

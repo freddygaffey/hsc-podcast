@@ -1,0 +1,614 @@
+{
+  "paperId": "maths-accelerated-y11-yearly-sydney-boys-2008-w-sol",
+  "questions": [
+    {
+      "number": "1",
+      "marks": 15,
+      "topic": "Calculus - Differentiation and Integration",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C2",
+        "MA-C4",
+        "MA-T1"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1,
+          "type": "short",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.08,
+                0.205,
+                0.94,
+                0.285
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.03,
+                0.07,
+                0.46,
+                0.135
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 1,
+          "type": "short",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.08,
+                0.285,
+                0.94,
+                0.35
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.03,
+                0.135,
+                0.46,
+                0.205
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 7,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.08,
+                0.35,
+                0.94,
+                0.545
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.03,
+                0.205,
+                0.46,
+                0.6
+              ]
+            }
+          ]
+        },
+        {
+          "label": "d",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.08,
+                0.545,
+                0.94,
+                0.665
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.03,
+                0.58,
+                0.46,
+                0.78
+              ]
+            }
+          ]
+        },
+        {
+          "label": "e",
+          "marks": 3,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.08,
+                0.665,
+                0.94,
+                0.79
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.52,
+                0.0,
+                0.97,
+                0.52
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": 15,
+      "topic": "Sequences and Series",
+      "module": "Sequences and Series",
+      "syllabusRefs": [
+        "MA-S1",
+        "MA-C4",
+        "MA-C2"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 6,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.08,
+                0.215,
+                0.94,
+                0.385
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.02,
+                0.03,
+                0.49,
+                0.98
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.08,
+                0.385,
+                0.94,
+                0.52
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.5,
+                0.02,
+                0.98,
+                0.44
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.08,
+                0.52,
+                0.94,
+                0.615
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.5,
+                0.44,
+                0.98,
+                0.86
+              ]
+            }
+          ]
+        },
+        {
+          "label": "d",
+          "marks": 3,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.08,
+                0.615,
+                0.94,
+                0.69
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 9,
+              "bbox": [
+                0.02,
+                0.02,
+                0.55,
+                0.65
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": 13,
+      "topic": "Calculus and Series Applications",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-S1",
+        "MA-C4",
+        "MA-E1"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2,
+          "type": "short",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.08,
+                0.215,
+                0.94,
+                0.345
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 10,
+              "bbox": [
+                0.03,
+                0.06,
+                0.97,
+                0.19
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 2,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.08,
+                0.345,
+                0.94,
+                0.415
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 10,
+              "bbox": [
+                0.03,
+                0.19,
+                0.97,
+                0.305
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 2,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.08,
+                0.415,
+                0.94,
+                0.48
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 10,
+              "bbox": [
+                0.03,
+                0.305,
+                0.97,
+                0.425
+              ]
+            }
+          ]
+        },
+        {
+          "label": "d",
+          "marks": 2,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.08,
+                0.48,
+                0.94,
+                0.55
+              ]
+            }
+          ]
+        },
+        {
+          "label": "e",
+          "marks": 5,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.08,
+                0.55,
+                0.94,
+                0.755
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 10,
+              "bbox": [
+                0.03,
+                0.425,
+                0.97,
+                0.97
+              ]
+            },
+            {
+              "page": 11,
+              "bbox": [
+                0.03,
+                0.02,
+                0.97,
+                0.58
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "marks": 13,
+      "topic": "Calculus - Curve Sketching and Areas",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-E1",
+        "MA-C3"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.08,
+                0.205,
+                0.94,
+                0.285
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 12,
+              "bbox": [
+                0.0,
+                0.0,
+                1.0,
+                0.33
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 5,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.08,
+                0.285,
+                0.94,
+                0.415
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 12,
+              "bbox": [
+                0.0,
+                0.0,
+                1.0,
+                0.33
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 6,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.08,
+                0.415,
+                0.94,
+                0.78
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 12,
+              "bbox": [
+                0.0,
+                0.33,
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": 12,
+      "topic": "Calculus Applications and Trigonometry",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MA-C4",
+        "MA-T3",
+        "MA-C3"
+      ],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.08,
+                0.215,
+                0.94,
+                0.315
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 13,
+              "bbox": [
+                0.08,
+                0.05,
+                0.95,
+                0.75
+              ]
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 3,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.08,
+                0.315,
+                0.94,
+                0.41
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 14,
+              "bbox": [
+                0.08,
+                0.08,
+                0.95,
+                0.85
+              ]
+            }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 6,
+          "type": "extended",
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.08,
+                0.41,
+                0.94,
+                0.825
+              ]
+            }
+          ],
+          "markingRegions": [
+            {
+              "page": 15,
+              "bbox": [
+                0.08,
+                0.06,
+                0.95,
+                1.0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

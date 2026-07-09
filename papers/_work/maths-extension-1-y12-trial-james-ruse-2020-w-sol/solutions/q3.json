@@ -1,0 +1,20 @@
+{
+  "number": "3",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "",
+      "marks": null,
+      "steps": [
+        "\\text{Treat C and L as a single block.}",
+        "\\text{Number of objects to arrange: } 5 + 1 = 6",
+        "6! = 720",
+        "\\text{Within the block, C and L can swap: } 2! = 2",
+        "\\text{Total arrangements: } 720 \\times 2 = 1440"
+      ],
+      "answer": "\\text{D}"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

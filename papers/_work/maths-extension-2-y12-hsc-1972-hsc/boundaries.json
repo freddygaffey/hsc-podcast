@@ -1,0 +1,216 @@
+{
+  "paperId": "maths-extension-2-y12-hsc-1972-hsc",
+  "questions": [
+    {
+      "number": "1",
+      "module": "Proof",
+      "topic": "Number Theory — Euclidean Algorithm and Diophantine Equations",
+      "syllabusRefs": ["ME-P1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": null,
+          "type": "extended",
+          "regions": [
+            { "page": 0, "bbox": [0.12, 0.1437, 0.9, 0.3730] }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "module": "Complex Numbers",
+      "topic": "Complex Numbers — Argand Diagram Loci and Transformations",
+      "syllabusRefs": ["ME-N2"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": null,
+          "type": "extended",
+          "regions": [
+            { "page": 0, "bbox": [0.12, 0.3730, 0.9, 0.5083] }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "module": "Calculus",
+      "topic": "Integration Techniques; Domain and Range Analysis",
+      "syllabusRefs": ["ME-C1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "i-a",
+          "type": "extended",
+          "regions": [
+            { "page": 0, "bbox": [0.12, 0.5083, 0.9, 0.5273] },
+            { "page": 0, "bbox": [0.12, 0.5273, 0.9, 0.5558] }
+          ]
+        },
+        {
+          "label": "i-b",
+          "type": "extended",
+          "regions": [
+            { "page": 0, "bbox": [0.12, 0.5083, 0.9, 0.5273] },
+            { "page": 0, "bbox": [0.12, 0.5558, 0.9, 0.5938] }
+          ]
+        },
+        {
+          "label": "ii",
+          "type": "extended",
+          "regions": [
+            { "page": 0, "bbox": [0.12, 0.5938, 0.9, 0.7327] }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "module": "Vectors",
+      "topic": "Matrices and Linear Transformations — Reflection Matrices",
+      "syllabusRefs": ["ME-V1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": null,
+          "type": "extended",
+          "regions": [
+            { "page": 0, "bbox": [0.12, 0.7327, 0.9, 0.9026] },
+            { "page": 1, "bbox": [0.12, 0.1104, 0.9, 0.2435] }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "module": "Vectors",
+      "topic": "Vectors — 3D Geometry: Spheres, Circles and Direction Cosines",
+      "syllabusRefs": ["ME-V1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "i-a",
+          "type": "extended",
+          "regions": [
+            { "page": 1, "bbox": [0.12, 0.2435, 0.9, 0.2827] },
+            { "page": 1, "bbox": [0.12, 0.2827, 0.9, 0.3076] }
+          ]
+        },
+        {
+          "label": "i-b",
+          "type": "extended",
+          "regions": [
+            { "page": 1, "bbox": [0.12, 0.2435, 0.9, 0.2827] },
+            { "page": 1, "bbox": [0.12, 0.3076, 0.9, 0.3373] }
+          ]
+        },
+        {
+          "label": "ii",
+          "type": "extended",
+          "regions": [
+            { "page": 1, "bbox": [0.12, 0.3373, 0.9, 0.4584] }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "module": "Proof",
+      "topic": "Series — Convergence and Geometric Series Summation",
+      "syllabusRefs": ["ME-P1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": null,
+          "type": "extended",
+          "regions": [
+            { "page": 1, "bbox": [0.12, 0.4584, 0.9, 0.6865] }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "module": "Calculus",
+      "topic": "Calculus — Parametric Curves, Tangents and Arc Length",
+      "syllabusRefs": ["ME-C1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": null,
+          "type": "extended",
+          "regions": [
+            { "page": 1, "bbox": [0.12, 0.6865, 0.9, 0.8432] }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "module": "Vectors",
+      "topic": "Vectors — Affine Transformations and Area Scaling",
+      "syllabusRefs": ["ME-V1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "i-a",
+          "type": "extended",
+          "regions": [
+            { "page": 1, "bbox": [0.12, 0.8420, 0.9, 0.9026] },
+            { "page": 2, "bbox": [0.12, 0.1057, 0.9, 0.1520] },
+            { "page": 2, "bbox": [0.12, 0.1520, 0.9, 0.1746] }
+          ]
+        },
+        {
+          "label": "i-b",
+          "type": "extended",
+          "regions": [
+            { "page": 1, "bbox": [0.12, 0.8420, 0.9, 0.9026] },
+            { "page": 2, "bbox": [0.12, 0.1057, 0.9, 0.1520] },
+            { "page": 2, "bbox": [0.12, 0.1746, 0.9, 0.2043] }
+          ]
+        },
+        {
+          "label": "ii",
+          "type": "extended",
+          "regions": [
+            { "page": 2, "bbox": [0.12, 0.2043, 0.9, 0.3373] }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "module": "Mechanics",
+      "topic": "Mechanics — Motion Under Gravity (Inverse Square Law) and Escape Velocity",
+      "syllabusRefs": ["ME-M1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": null,
+          "type": "extended",
+          "regions": [
+            { "page": 2, "bbox": [0.12, 0.3373, 0.9, 0.5689] }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "module": "Complex Numbers",
+      "topic": "Complex Numbers — Polynomial Roots and Multiplicity",
+      "syllabusRefs": ["ME-N1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": null,
+          "type": "extended",
+          "regions": [
+            { "page": 2, "bbox": [0.12, 0.5689, 0.9, 0.7840] }
+          ]
+        }
+      ]
+    }
+  ]
+}

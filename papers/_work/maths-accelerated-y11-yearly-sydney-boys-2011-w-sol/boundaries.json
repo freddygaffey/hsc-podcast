@@ -1,0 +1,177 @@
+{
+  "paperId": "maths-accelerated-y11-yearly-sydney-boys-2011-w-sol",
+  "questions": [
+    {
+      "number": "1",
+      "marks": 18,
+      "module": "Calculus",
+      "topic": "Integration & Differentiation",
+      "syllabusRefs": ["MA-C2", "MA-C4"],
+      "stimulus": [ { "page": 2, "bbox": [0.10, 0.118, 0.92, 0.139] } ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 5,
+          "type": "calculation",
+          "regions": [ { "page": 2, "bbox": [0.10, 0.139, 0.92, 0.340] } ],
+          "markingRegions": [ { "page": 11, "bbox": [0.10, 0.150, 0.95, 0.475] } ]
+        },
+        {
+          "label": "b",
+          "marks": 5,
+          "type": "calculation",
+          "regions": [ { "page": 2, "bbox": [0.10, 0.340, 0.92, 0.505] } ],
+          "markingRegions": [ { "page": 11, "bbox": [0.10, 0.475, 0.95, 0.785] } ]
+        },
+        {
+          "label": "c",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [ { "page": 2, "bbox": [0.10, 0.505, 0.92, 0.608] } ],
+          "markingRegions": [ { "page": 12, "bbox": [0.08, 0.080, 0.95, 0.340] } ]
+        },
+        {
+          "label": "d",
+          "marks": 5,
+          "type": "extended",
+          "regions": [ { "page": 2, "bbox": [0.10, 0.608, 0.92, 0.826] } ],
+          "markingRegions": [ { "page": 12, "bbox": [0.08, 0.340, 0.95, 0.880] } ]
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": 13,
+      "module": "Calculus",
+      "topic": "Curve Sketching & Integration",
+      "syllabusRefs": ["MA-C3", "MA-C4"],
+      "stimulus": [ { "page": 4, "bbox": [0.10, 0.118, 0.92, 0.139] } ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 6,
+          "type": "extended",
+          "regions": [ { "page": 4, "bbox": [0.10, 0.139, 0.92, 0.518] } ],
+          "markingRegions": [ { "page": 13, "bbox": [0.05, 0.040, 0.97, 0.535] } ]
+        },
+        {
+          "label": "b",
+          "marks": 4,
+          "type": "calculation",
+          "regions": [ { "page": 4, "bbox": [0.10, 0.522, 0.92, 0.620] } ],
+          "markingRegions": [ { "page": 13, "bbox": [0.05, 0.535, 0.97, 0.970] } ]
+        },
+        {
+          "label": "c",
+          "marks": 3,
+          "type": "extended",
+          "regions": [ { "page": 4, "bbox": [0.10, 0.628, 0.92, 0.866] } ],
+          "markingRegions": [ { "page": 14, "bbox": [0.05, 0.040, 0.97, 0.780] } ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": 17,
+      "module": "Calculus",
+      "topic": "Integral Calculus & Applications",
+      "syllabusRefs": ["MA-C4", "MA-E1"],
+      "stimulus": [ { "page": 5, "bbox": [0.10, 0.100, 0.92, 0.122] } ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1,
+          "type": "calculation",
+          "regions": [ { "page": 5, "bbox": [0.10, 0.122, 0.92, 0.400] } ],
+          "markingRegions": [ { "page": 15, "bbox": [0.05, 0.080, 0.48, 0.210] } ]
+        },
+        {
+          "label": "b",
+          "marks": 6,
+          "type": "calculation",
+          "regions": [ { "page": 5, "bbox": [0.10, 0.400, 0.92, 0.792] } ],
+          "markingRegions": [ { "page": 15, "bbox": [0.05, 0.210, 0.48, 0.720] } ]
+        },
+        {
+          "label": "c",
+          "marks": 2,
+          "type": "calculation",
+          "regions": [ { "page": 6, "bbox": [0.10, 0.132, 0.92, 0.380] } ],
+          "markingRegions": [ { "page": 15, "bbox": [0.05, 0.720, 0.48, 0.840] } ]
+        },
+        {
+          "label": "d",
+          "marks": 4,
+          "type": "calculation",
+          "regions": [ { "page": 6, "bbox": [0.10, 0.390, 0.92, 0.480] } ],
+          "markingRegions": [ { "page": 15, "bbox": [0.50, 0.030, 0.97, 0.460] } ]
+        },
+        {
+          "label": "e",
+          "marks": 4,
+          "type": "extended",
+          "regions": [ { "page": 6, "bbox": [0.10, 0.488, 0.92, 0.580] } ],
+          "markingRegions": [ { "page": 15, "bbox": [0.50, 0.460, 0.97, 0.970] } ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "marks": 16,
+      "module": "Calculus",
+      "topic": "Applications of Calculus (Kinematics & Curve Sketching)",
+      "syllabusRefs": ["MA-C3"],
+      "stimulus": [ { "page": 8, "bbox": [0.10, 0.118, 0.92, 0.140] } ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 6,
+          "type": "extended",
+          "regions": [ { "page": 8, "bbox": [0.10, 0.140, 0.92, 0.583] } ],
+          "markingRegions": [ { "page": 16, "bbox": [0.05, 0.080, 0.97, 0.970] } ]
+        },
+        {
+          "label": "b",
+          "marks": 10,
+          "type": "extended",
+          "regions": [ { "page": 8, "bbox": [0.10, 0.607, 0.92, 0.790] } ],
+          "markingRegions": [
+            { "page": 17, "bbox": [0.05, 0.050, 0.97, 0.970] },
+            { "page": 18, "bbox": [0.05, 0.350, 0.97, 0.750] }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": 16,
+      "module": "Calculus",
+      "topic": "Applications of Differentiation & Integration",
+      "syllabusRefs": ["MA-C3", "MA-C4"],
+      "stimulus": [ { "page": 10, "bbox": [0.10, 0.100, 0.92, 0.118] } ],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 6,
+          "type": "extended",
+          "regions": [ { "page": 10, "bbox": [0.10, 0.118, 0.92, 0.335] } ],
+          "markingRegions": [ { "page": 19, "bbox": [0.05, 0.030, 0.97, 0.970] } ]
+        },
+        {
+          "label": "b",
+          "marks": 5,
+          "type": "extended",
+          "regions": [ { "page": 10, "bbox": [0.10, 0.335, 0.92, 0.428] } ],
+          "markingRegions": [ { "page": 20, "bbox": [0.05, 0.030, 0.97, 0.970] } ]
+        },
+        {
+          "label": "c",
+          "marks": 5,
+          "type": "calculation",
+          "regions": [ { "page": 10, "bbox": [0.10, 0.428, 0.92, 0.600] } ],
+          "markingRegions": [ { "page": 21, "bbox": [0.05, 0.030, 0.97, 0.970] } ]
+        }
+      ]
+    }
+  ]
+}

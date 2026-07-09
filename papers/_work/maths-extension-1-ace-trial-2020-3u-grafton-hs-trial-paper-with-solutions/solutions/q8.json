@@ -1,0 +1,18 @@
+{
+  "number": "8",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "8",
+      "marks": null,
+      "steps": [
+        "$P(0)=3000 \\Rightarrow \\text{eliminate (B) and (C)}$",
+        "$\\lim_{t\\to\\infty}P(t)=1500 \\Rightarrow \\text{eliminate (D)}$",
+        "$\\text{Only (A) satisfies both: } P(t)=1500+1500e^{-kt}$"
+      ],
+      "answer": "A"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

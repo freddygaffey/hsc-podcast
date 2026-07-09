@@ -1,0 +1,20 @@
+{
+  "number": "7",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "7",
+      "marks": null,
+      "steps": [
+        "$|\\vec{a}|+|\\vec{b}|=|\\vec{a}+\\vec{b}| \\Rightarrow$ same direction: true.",
+        "$|\\vec{a}|+|\\vec{b}|=|\\vec{a}-\\vec{b}| \\Rightarrow$ opposite direction: true.",
+        "$|\\vec{a}|+|\\vec{b}|=|\\vec{a}-\\vec{b}| \\not\\Rightarrow$ same magnitude: false.",
+        "$|\\vec{a}|-|\\vec{b}|=|\\vec{a}-\\vec{b}| \\Rightarrow$ same direction: true.",
+        "Total true: $3$."
+      ],
+      "answer": "C"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

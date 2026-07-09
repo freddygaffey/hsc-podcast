@@ -1,0 +1,65 @@
+{
+  "paperId": "english-extension-1-y12-trial-fort-st-2020",
+  "subject": "english-extension-1",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": "1",
+      "marks": 25,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 2,
+          "bbox": [
+            0.06,
+            0.4387754467754468,
+            0.95,
+            0.5291375291375291
+          ]
+        }
+      ],
+      "text": "Question 1 (25 Marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.5211375291375291,
+                0.95,
+                0.5866355866355867
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Use Text 1 and Text 2 to answer this part. 10"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.5786355866355867,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Use Text 1 to answer this part. 15"
+        }
+      ]
+    }
+  ]
+}

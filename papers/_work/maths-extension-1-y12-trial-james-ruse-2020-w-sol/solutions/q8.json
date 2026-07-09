@@ -1,0 +1,24 @@
+{
+  "number": "8",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "",
+      "marks": null,
+      "steps": [
+        "$\\frac{dy}{dx} = \\frac{x}{2y}$",
+        "$2y\\,dy = x\\,dx$",
+        "$y^2 = \\frac{1}{2}x^2 + C$",
+        "$x^2 - 2y^2 = \\text{constant}$",
+        "Slope is zero when $x=0$ (horizontal on $y$-axis)",
+        "Slope is undefined when $y=0$ (vertical on $x$-axis)",
+        "Slopes are positive in quadrants I and III, negative in II and IV",
+        "The slope field shows hyperbolas opening left/right, symmetric about both axes",
+        "Thus the correct option is (A)"
+      ],
+      "answer": "\\boxed{A}"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

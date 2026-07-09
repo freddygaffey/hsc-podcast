@@ -1,0 +1,457 @@
+{
+  "paperId": "maths-advanced-y12-hsc-1994-hsc",
+  "subject": "maths-advanced",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": null,
+      "marks": null,
+      "topic": "Whole-paper mixed content spanning: algebraic simplification, differentiation, scientific notation, compound interest, coordinate geometry of the straight line (gradient, angle, equation, midpoint, perpendicularity), function evaluation, arithmetic sequences (multiples), quadratic discriminant/values of m, calculus of stationary points on a cubic, optimisation of a cylinder (can), logarithmic equations, exponential decay modelling (Geiger counter), rates of change (unemployment function), and tangent-to-curve proofs",
+      "module": "Multiple Modules (mixed 2 Unit paper)",
+      "syllabusRefs": [
+        "MA-F1",
+        "MA-C1",
+        "MA-C3",
+        "MA-E1",
+        "MA-M1"
+      ],
+      "type": null,
+      "stimulus": [],
+      "text": "",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.2696049766718507,
+                0.95,
+                0.33359253499222397
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find the value of"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.32559253499222396,
+                0.95,
+                0.3608087091757387
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Simplify 2-3(x-5)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.3528087091757387,
+                0.95,
+                0.4175738724727838
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Differentiate"
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.4095738724727838,
+                0.95,
+                0.4813374805598756
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(e) The distance from the Earth to the Sun is"
+        },
+        {
+          "label": "f",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.47333748055987557,
+                0.95,
+                0.8289269051321928
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(f) Kim invests $1000 at 8% per year compound"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.8209269051321928,
+                0.95,
+                0.8499222395023328
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find the gradient of the line AC."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.8419222395023328,
+                0.95,
+                0.8678071539657853
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Calculate the size of angle @ in degrees."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.8598071539657853,
+                0.95,
+                0.8919129082426127
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Find the equation of the line AC."
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.8839129082426127,
+                0.95,
+                0.9129082426127527
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) Find the coordinates of D, the midpoint of AC."
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.9049082426127527,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(e) Show that AC is perpendicular to BD."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.4072410575427683,
+                0.95,
+                0.5038880248833593
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Given that \u00a3( )"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.49588802488335926,
+                0.95,
+                0.5303265940902022
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) The positive multiples of 7 are 7, 14, 21, ..."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.5223265940902022,
+                0.95,
+                0.640746500777605
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) What is the largest multiple of 7 less"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.632746500777605,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find the values of m for which"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.055763608087091764,
+                0.95,
+                0.08709175738724728
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Consider the curve given by y= x\u00b0-6x+4."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.07909175738724727,
+                0.95,
+                0.2682737169517885
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Find the coordinates of the stationary"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.26027371695178847,
+                0.95,
+                0.36236391912908245
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) A can of baked beans"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.35436391912908244,
+                0.95,
+                0.5139968895800933
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) The volume of the can is 500 cm\u2019,"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.5059968895800933,
+                0.95,
+                0.5458786936236392
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Solve 3 = log, x\u2014logs 6."
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.5378786936236392,
+                0.95,
+                0.6804043545878694
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(e) A Geiger counter is taken into a region after a"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.6724043545878694,
+                0.95,
+                0.8048211508553654
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Evaluate the constants 7, and k."
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.7968211508553654,
+                0.95,
+                0.8685847589424572
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) The number of unemployed people u at time t"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.8605847589424572,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Throughout the period, a\u201c <0."
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.07909175738724727,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) (i) Prove that the line y = x+2 is a tangent"
+        }
+      ]
+    }
+  ]
+}

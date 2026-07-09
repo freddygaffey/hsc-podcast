@@ -1,0 +1,468 @@
+{
+  "paperId": "maths-extension-1-hsc-nesa-2023-hsc-maths-ext-1",
+  "subject": "maths-extension-1",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": "11",
+      "marks": 16,
+      "topic": "Parametric equations & permutations of a word with repeated letters",
+      "module": "Functions",
+      "syllabusRefs": [
+        "ME-F1",
+        "ME-A1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 7,
+          "bbox": [
+            0.06,
+            0.27016627816627814,
+            0.95,
+            0.32944832944832947
+          ]
+        }
+      ],
+      "text": "Question 11 (16 marks) Use the Question 11 Writing Booklet",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.32144832944832946,
+                0.95,
+                0.4840714840714841
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.4760714840714841,
+                0.95,
+                0.7839937839937839
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b)"
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "marks": null,
+      "topic": "Normal approximation to sample proportion (variance & probability)",
+      "module": "Statistical Analysis",
+      "syllabusRefs": [
+        "ME-S1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 8,
+          "bbox": [
+            0.06,
+            0.07358508158508159,
+            0.95,
+            0.2905982905982906
+          ]
+        }
+      ],
+      "text": "Question 11 (continued)",
+      "parts": [
+        {
+          "label": "f",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.2825982905982906,
+                0.95,
+                0.43356643356643354
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(f) A recent census found that 30% of Australians were born overseas."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.42556643356643353,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Show that the variance of the random variable p is \u2014\u2014."
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "marks": 15,
+      "topic": "Integration by substitution, mathematical induction, binomial probability & combinatorial identities",
+      "module": "Statistical Analysis",
+      "syllabusRefs": [
+        "ME-C2",
+        "ME-P1",
+        "ME-S1",
+        "ME-A1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 9,
+          "bbox": [
+            0.06,
+            0.07358508158508159,
+            0.95,
+            0.13131313131313133
+          ]
+        }
+      ],
+      "text": "Question 12 (15 marks) Use the Question 12 Writing Booklet",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 9,
+              "bbox": [
+                0.06,
+                0.12331313131313132,
+                0.95,
+                0.22766122766122765
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Evaluate | (x+2)vx\u20143 dx using the substitution 3"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 9,
+              "bbox": [
+                0.06,
+                0.21966122766122764,
+                0.95,
+                0.3613053613053613
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Use mathematical induction to prove that 3"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 9,
+              "bbox": [
+                0.06,
+                0.3533053613053613,
+                0.95,
+                0.4444444444444444
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) A gym has 9 pieces of equipment: 5 treadmills and 4 rowing machines."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 9,
+              "bbox": [
+                0.06,
+                0.4364444444444444,
+                0.95,
+                0.5773115773115773
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Find an expression for the probability that, at a particular time, exactly 3 2"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 9,
+              "bbox": [
+                0.06,
+                0.5693115773115773,
+                0.95,
+                0.7288267288267288
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) It is known that \""
+        }
+      ]
+    },
+    {
+      "number": "13",
+      "marks": 15,
+      "topic": "Related rates and differential equations (draining/filling tank)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C3"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 11,
+          "bbox": [
+            0.06,
+            0.07358508158508159,
+            0.95,
+            0.13131313131313133
+          ]
+        }
+      ],
+      "text": "Question 13 (15 marks) Use the Question 13 Writing Booklet",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 11,
+              "bbox": [
+                0.06,
+                0.12331313131313132,
+                0.95,
+                0.8096348096348096
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) A hemispherical water tank has radius R cm. The tank has a hole at the bottom"
+        }
+      ]
+    },
+    {
+      "number": "13",
+      "marks": null,
+      "topic": "Projectile motion and vector collision problems",
+      "module": "Vectors",
+      "syllabusRefs": [
+        "ME-V1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 12,
+          "bbox": [
+            0.06,
+            0.07358508158508159,
+            0.95,
+            0.1320901320901321
+          ]
+        }
+      ],
+      "text": "Question 13 (continued)",
+      "parts": [
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 12,
+              "bbox": [
+                0.06,
+                0.12409013209013209,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b)"
+        }
+      ]
+    },
+    {
+      "number": "14",
+      "marks": 14,
+      "topic": "Inverse functions & polynomial zeros from curve intersections",
+      "module": "Functions",
+      "syllabusRefs": [
+        "ME-F1",
+        "ME-F2"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 13,
+          "bbox": [
+            0.06,
+            0.07358508158508159,
+            0.95,
+            0.13053613053613053
+          ]
+        }
+      ],
+      "text": "Question 14 (14 marks) Use the Question 14 Writing Booklet",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 13,
+              "bbox": [
+                0.06,
+                0.12253613053613052,
+                0.95,
+                0.16394716394716394
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Let f(x) = 2x+Inx, forx> 0."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 13,
+              "bbox": [
+                0.06,
+                0.15594716394716393,
+                0.95,
+                0.2867132867132867
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Explain why the inverse of f(x) is a function."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 13,
+              "bbox": [
+                0.06,
+                0.2787132867132867,
+                0.95,
+                0.35275835275835277
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Consider the hyperbola y and the circle (x-c)? + y?"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 13,
+              "bbox": [
+                0.06,
+                0.34475835275835276,
+                0.95,
+                0.8601398601398601
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Show that the x-coordinates of any points of intersection of the hyperbola"
+        }
+      ]
+    },
+    {
+      "number": "14",
+      "marks": null,
+      "topic": "Vector geometry: triangle area and optimisation using vectors",
+      "module": "Vectors",
+      "syllabusRefs": [
+        "ME-V1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 14,
+          "bbox": [
+            0.06,
+            0.07358508158508159,
+            0.95,
+            0.37373737373737376
+          ]
+        }
+      ],
+      "text": "Question 14 (continued)",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 14,
+              "bbox": [
+                0.06,
+                0.36573737373737375,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i)"
+        }
+      ]
+    }
+  ]
+}

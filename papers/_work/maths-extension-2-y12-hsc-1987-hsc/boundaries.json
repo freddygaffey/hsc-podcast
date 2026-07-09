@@ -1,0 +1,609 @@
+{
+  "paperId": "maths-extension-2-y12-hsc-1987-hsc",
+  "subject": "maths-extension-2",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": "1",
+      "marks": 1,
+      "topic": "Trigonometric integration",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MEX-C1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "1. (i) Prove that: (a)",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.14196114996114995,
+                0.95,
+                0.21056721056721056
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "1. (i) Prove that: (a)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.20256721056721055,
+                0.95,
+                0.28438228438228436
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Hence, or otherwis"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.27638228438228435,
+                0.95,
+                0.317016317016317
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Hence evaluate cos\u00ae x dr."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": 1,
+      "topic": "Conics: hyperbola properties and tangent",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MEX-C1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "2. The hyperbola h has equation 9x? \u2014 16y? = 144.",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.309016317016317,
+                0.95,
+                0.3434343434343434
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "2. The hyperbola h has equation 9x? \u2014 16y? = 144."
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.3354343434343434,
+                0.95,
+                0.40404040404040403
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Write down its eccentricity, the coordinates of its foci S and S', the equation of"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.396040404040404,
+                0.95,
+                0.4289044289044289
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) is an arbitrary point on h"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.4209044289044289,
+                0.95,
+                0.5151515151515151
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Prove that the equation of the tangent \u00a2 at P is: \u2014 = 144."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": 1,
+      "topic": "Curve sketching and function analysis",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MEX-C1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "3. A function f(x) is defined by f(x) =",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.5071515151515151,
+                0.95,
+                0.5376845376845377
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "3. A function f(x) is defined by f(x) ="
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.5296845376845377,
+                0.95,
+                0.585081585081585
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Prove that the of f(x) has a relative turning point at x =e and a point"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.577081585081585,
+                0.95,
+                0.627039627039627
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Discuss the behaviour of f(z) in the neighbourhood of x = 0 and for large values"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.619039627039627,
+                0.95,
+                0.7296037296037297
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Hence draw a clear sketch of f(r) indicating on it all these features"
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.7216037296037296,
+                0.95,
+                0.7622377622377622
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(e) What is the range of the function y = 525?"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "marks": 1,
+      "topic": "Complex square roots, loci, and rotation",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "MEX-N1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "4. (i) Find the complex square roots of 7 + 6V2i giving your answers in the form",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.7542377622377622,
+                0.95,
+                0.8321678321678322
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "4. (i) Find the complex square roots of 7 + 6V2i giving your answers in the form"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.8241678321678322,
+                0.95,
+                0.8578088578088578
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Draw a neat sketch of the loc"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.8498088578088578,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Show that the locus specified by |z \u2014"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.16915617715617715,
+                0.95,
+                0.22921522921522922
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) The square is now rotated about O through 45\u00b0 in an anticlockwise direction to"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": 1,
+      "topic": "Volumes of solids of revolution (cylindrical shells)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "MEX-C1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "5. (i) (a) On a number plane shade in the region representing the inequality",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.2212152292152292,
+                0.95,
+                0.27350427350427353
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "5. (i) (a) On a number plane shade in the region representing the inequality"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.2655042735042735,
+                0.95,
+                0.3317793317793318
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Show that the volume of a right circular cylindrical shell of height h with inner"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.32377933177933177,
+                0.95,
+                0.48174048174048173
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) The region (x \u2014 2R)? + 4? S R? is rotated about the y-axis forming a solid of"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": 1,
+      "topic": "Resisted motion in a straight line",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "MEX-M1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "6. A particle of unit mass moves in a straight line against 2",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.4737404817404817,
+                0.95,
+                0.5392385392385393
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "6. A particle of unit mass moves in a straight line against 2"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.5312385392385393,
+                0.95,
+                0.5703185703185704
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Show that v is related to the displacement \u00ab by the formula x = tan~! (235)."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.5623185703185704,
+                0.95,
+                0.6184926184926185
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Show that the time t which has elapsed when the particle is travelling with"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.6104926184926185,
+                0.95,
+                0.6495726495726496
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Find v? as a function of t."
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.6415726495726496,
+                0.95,
+                0.6767676767676768
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) Find the limiting values of v and x as t + 0c,"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": 1,
+      "topic": "Geometric proof (similar triangles)",
+      "module": "Proof",
+      "syllabusRefs": [
+        "MEX-P1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "7. (i) ABC is an isosceles triangle with AB = AC. Let @ be a point on the base",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.6687676767676768,
+                0.95,
+                0.7420357420357421
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "7. (i) ABC is an isosceles triangle with AB = AC. Let @ be a point on the base"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.7340357420357421,
+                0.95,
+                0.7723387723387724
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Prove that triangle BQP is similar to triangle AQC."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.7643387723387723,
+                0.95,
+                0.7972027972027972
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Show that BP.CQ = PQ.AC."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.7892027972027972,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Prove that gp + cp"
+        }
+      ]
+    }
+  ]
+}

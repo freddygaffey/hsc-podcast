@@ -1,0 +1,22 @@
+{
+  "number": "11",
+  "section": "II",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "(a)",
+      "marks": 1,
+      "steps": [
+        "$\\text{Vector projection of }\\overrightarrow{AB}\\text{ onto }\\overrightarrow{CD}$",
+        "$\\overrightarrow{AB} = (4-(-2), -5-3) = (6, -8)$",
+        "$\\overrightarrow{CD} = (-5-(-7), -2-(-6)) = (2, 4)$",
+        "$\\text{proj}_{\\overrightarrow{CD}}\\overrightarrow{AB} = \\frac{\\overrightarrow{AB}\\cdot\\overrightarrow{CD}}{|\\overrightarrow{CD}|^2}\\overrightarrow{CD}$",
+        "$\\overrightarrow{AB}\\cdot\\overrightarrow{CD} = 6\\times2 + (-8)\\times4 = 12 - 32 = -20$",
+        "$|\\overrightarrow{CD}|^2 = 2^2 + 4^2 = 4 + 16 = 20$",
+        "$\\text{proj}_{\\overrightarrow{CD}}\\overrightarrow{AB} = \\frac{-20}{20}(2,4) = -1(2,4) = (-2,-4)$"
+      ],
+      "answer": "$(-2,-4)$"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

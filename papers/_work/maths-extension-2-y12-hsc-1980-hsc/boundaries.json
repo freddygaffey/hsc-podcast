@@ -1,0 +1,563 @@
+{
+  "paperId": "maths-extension-2-y12-hsc-1980-hsc",
+  "subject": "maths-extension-2",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": "1",
+      "marks": null,
+      "topic": "Integration Techniques (Partial Fractions) & Polynomial Roots",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 0,
+          "bbox": [
+            0.06,
+            0.15233057851239667,
+            0.95,
+            0.18512396694214875
+          ]
+        }
+      ],
+      "text": "Question 1.",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.17712396694214874,
+                0.95,
+                0.39090909090909093
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Decompose ;* into partial fractions and hence show that"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": null,
+      "topic": "Function Properties (Even/Odd, Differentiability) & Polynomial Roots Proof",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 0,
+          "bbox": [
+            0.06,
+            0.3829090909090909,
+            0.95,
+            0.4
+          ]
+        }
+      ],
+      "text": "Question 2.",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.392,
+                0.95,
+                0.45454545454545453
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) The function f(x), defined for all real 2, is"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.4465454545454545,
+                0.95,
+                0.5380165289256198
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Determine which of these functions is even, odd, or neither:"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.5300165289256198,
+                0.95,
+                0.5661157024793388
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Show that if f(x) is even and is differentiable for all x, then f\"(x) is odd."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.5581157024793388,
+                0.95,
+                0.643801652892562
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) If f(x) is odd and is continuous for all x, and b > a > 0, use a sketch to explain"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.635801652892562,
+                0.95,
+                0.6892561983471074
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) By considering the turning points, prove that if ¢ < 0, P(x) has just one real"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.6812561983471074,
+                0.95,
+                0.7859504132231405
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Prove that P(r) has three distinct real roots if and only if"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": null,
+      "topic": "Number Theory - Divisibility Proof",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 0,
+          "bbox": [
+            0.06,
+            0.7779504132231405,
+            0.95,
+            0.8851239669421488
+          ]
+        }
+      ],
+      "text": "Question 3.",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.8771239669421488,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) show that n(n — 1)(n +1) is always divisible by 6;"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "marks": null,
+      "topic": "Projectile Motion",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-M1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 1,
+          "bbox": [
+            0.06,
+            0.17960330578512396,
+            0.95,
+            0.42396694214876035
+          ]
+        }
+      ],
+      "text": "Question 4.",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.41596694214876034,
+                0.95,
+                0.6305785123966943
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Show that if d < V/g, the particle will strike the wall provided that"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": null,
+      "topic": "Complex Numbers - Modulus, Argument, Roots & Loci",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 1,
+          "bbox": [
+            0.06,
+            0.6225785123966943,
+            0.95,
+            0.7123966942148761
+          ]
+        }
+      ],
+      "text": "Question 5.",
+      "parts": [
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.704396694214876,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Evaluate and arg w."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": null,
+      "topic": "Series Convergence, Comparison Test & Partial Fractions",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1",
+        "ME-P1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 2,
+          "bbox": [
+            0.06,
+            0.11596694214876033,
+            0.95,
+            0.15041322314049588
+          ]
+        }
+      ],
+      "text": "Question 6.",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.14241322314049587,
+                0.95,
+                0.2487603305785124
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) (a) Write down the sum of n terms of the geometric series"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.2407603305785124,
+                0.95,
+                0.40743801652892564
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) State the comparison test for convergence of a series. Illustrate your answer by"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.39943801652892563,
+                0.95,
+                0.6652892561983471
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) The sum S,, of the first n terms of a seri"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": null,
+      "topic": "Integration Techniques - Substitution",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 2,
+          "bbox": [
+            0.06,
+            0.6572892561983471,
+            0.95,
+            0.6925619834710743
+          ]
+        }
+      ],
+      "text": "Question 7.",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.6845619834710743,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Evaluate"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.10852892561983471,
+                0.95,
+                0.16115702479338842
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) or”? cos? x dex."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "marks": null,
+      "topic": "Integration Inequalities & Curve Sketching",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 3,
+          "bbox": [
+            0.06,
+            0.1531570247933884,
+            0.95,
+            0.18760330578512396
+          ]
+        }
+      ],
+      "text": "Question 8.",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.17960330578512396,
+                0.95,
+                0.509090909090909
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Evaluate for c > 1. Assuming that f(x) < g(x) for <2 <b,"
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "marks": null,
+      "topic": "Matrices - Linear Transformations",
+      "module": "Vectors",
+      "syllabusRefs": [
+        "ME-V1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 3,
+          "bbox": [
+            0.06,
+            0.501090909090909,
+            0.95,
+            1.0
+          ]
+        }
+      ],
+      "text": "Question 9.",
+      "parts": [
+        {
+          "label": "v",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.15233057851239667,
+                0.95,
+                0.19669421487603306
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(v) M= My = MoM."
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "marks": null,
+      "topic": "Conics - Classifying and Sketching Curves",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": null,
+      "stimulus": [],
+      "text": "Question 10.",
+      "parts": [
+        {
+          "label": null,
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.18869421487603305,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "Question 10."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "number": "2",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "2",
+      "marks": null,
+      "steps": [
+        "Slope field: horizontal along $x$-axis ($dy/dx=0$ when $y=0$), vertical along $y$-axis ($dy/dx$ undefined when $x=0$).",
+        "For $\\frac{dy}{dx} = -\\frac{y}{x}$: when $y=0$, $dy/dx=0$; when $x=0$, undefined. Matches axis behaviour.",
+        "Check quadrants: Q1 ($x>0,y>0$): $dy/dx<0$; Q2 ($x<0,y>0$): $dy/dx>0$; Q3 ($x<0,y<0$): $dy/dx<0$; Q4 ($x>0,y<0$): $dy/dx>0$. Consistent with description.",
+        "Other options: (A) and (B) give vertical on $x$-axis; (D) gives positive in Q1. Excluded.",
+        "Hence the correct option is (C)."
+      ],
+      "answer": "$\\text{(C)}$"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

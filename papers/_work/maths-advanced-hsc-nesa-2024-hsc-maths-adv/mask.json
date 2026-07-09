@@ -1,0 +1,240 @@
+{
+  "paperId": "maths-advanced-hsc-nesa-2024-hsc-maths-adv",
+  "source": "deterministic",
+  "masks": [
+    {
+      "unitId": "q1",
+      "spaceHeight": null,
+      "regions": [
+        {
+          "page": 1,
+          "bbox": [
+            0.1146,
+            0.2266,
+            0.7021,
+            0.5846
+          ],
+          "label": "content"
+        }
+      ]
+    },
+    {
+      "unitId": "q2",
+      "spaceHeight": null,
+      "regions": [
+        {
+          "page": 2,
+          "bbox": [
+            0.1146,
+            0.0773,
+            0.8917,
+            0.4235
+          ],
+          "label": "content"
+        }
+      ]
+    },
+    {
+      "unitId": "q3",
+      "spaceHeight": null,
+      "regions": [
+        {
+          "page": 4,
+          "bbox": [
+            0.1063,
+            0.0785,
+            0.8969,
+            0.9189
+          ],
+          "label": "content"
+        }
+      ]
+    },
+    {
+      "unitId": "q11",
+      "spaceHeight": 286.5,
+      "regions": [
+        {
+          "page": 11,
+          "bbox": [
+            0.1135,
+            0.0756,
+            0.8791,
+            0.1795
+          ],
+          "label": "content"
+        },
+        {
+          "page": 11,
+          "bbox": [
+            0.1135,
+            0.1795,
+            0.8791,
+            0.5198
+          ],
+          "label": "writing-space"
+        }
+      ]
+    },
+    {
+      "unitId": "q7",
+      "spaceHeight": null,
+      "regions": [
+        {
+          "page": 12,
+          "bbox": [
+            0.1135,
+            0.0744,
+            0.8854,
+            0.7984
+          ],
+          "label": "content"
+        }
+      ]
+    },
+    {
+      "unitId": "q4",
+      "spaceHeight": 394.5,
+      "regions": [
+        {
+          "page": 13,
+          "bbox": [
+            0.1146,
+            0.0783,
+            0.8948,
+            0.4156
+          ],
+          "label": "content"
+        },
+        {
+          "page": 13,
+          "bbox": [
+            0.1146,
+            0.4156,
+            0.8948,
+            0.6005
+          ],
+          "label": "writing-space"
+        },
+        {
+          "page": 13,
+          "bbox": [
+            0.1146,
+            0.6005,
+            0.8948,
+            0.6373
+          ],
+          "label": "content"
+        },
+        {
+          "page": 13,
+          "bbox": [
+            0.1146,
+            0.6373,
+            0.8948,
+            0.9209
+          ],
+          "label": "writing-space"
+        }
+      ]
+    },
+    {
+      "unitId": "q8",
+      "spaceHeight": 356.7,
+      "regions": [
+        {
+          "page": 14,
+          "bbox": [
+            0.1104,
+            0.0719,
+            0.8969,
+            0.2449
+          ],
+          "label": "content"
+        },
+        {
+          "page": 14,
+          "bbox": [
+            0.1104,
+            0.2449,
+            0.8969,
+            0.6685
+          ],
+          "label": "writing-space"
+        }
+      ]
+    },
+    {
+      "unitId": "q9",
+      "spaceHeight": 189.7,
+      "regions": [
+        {
+          "page": 15,
+          "bbox": [
+            0.0865,
+            0.0721,
+            0.9052,
+            0.4109
+          ],
+          "label": "content"
+        },
+        {
+          "page": 15,
+          "bbox": [
+            0.0865,
+            0.4109,
+            0.9052,
+            0.6362
+          ],
+          "label": "writing-space"
+        }
+      ]
+    },
+    {
+      "unitId": "q10",
+      "spaceHeight": 237.5,
+      "regions": [
+        {
+          "page": 16,
+          "bbox": [
+            0.1146,
+            0.0767,
+            0.899,
+            0.5783
+          ],
+          "label": "content"
+        },
+        {
+          "page": 16,
+          "bbox": [
+            0.1146,
+            0.5783,
+            0.899,
+            0.7587
+          ],
+          "label": "writing-space"
+        },
+        {
+          "page": 16,
+          "bbox": [
+            0.1146,
+            0.7587,
+            0.899,
+            0.8206
+          ],
+          "label": "content"
+        },
+        {
+          "page": 16,
+          "bbox": [
+            0.1146,
+            0.8206,
+            0.899,
+            0.9223
+          ],
+          "label": "writing-space"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,837 @@
+{
+  "paperId": "maths-advanced-y11-yearly-ascham-2019-w-sol",
+  "subject": "maths-advanced",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": "9",
+      "marks": 1,
+      "topic": "Function properties (odd/even, domain features)",
+      "module": "MA-F1",
+      "syllabusRefs": [
+        "MA-F1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "9. statement below is TRUE for the graph of f(x):",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.06348407148407148,
+                0.95,
+                0.4794094794094794
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "9. statement below is TRUE for the graph of f(x):"
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "marks": 1,
+      "topic": "Set notation / Venn diagrams",
+      "module": "MA-S1",
+      "syllabusRefs": [
+        "MA-S1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "10. Which Venn diagram represents the shaded region of ANB?",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.4714094794094794,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "10. Which Venn diagram represents the shaded region of ANB?"
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "marks": 15,
+      "topic": "Factorising, function evaluation, differentiation",
+      "module": "Mixed: Functions; Calculus",
+      "syllabusRefs": [
+        "MA-F1",
+        "MA-C2"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 6,
+          "bbox": [
+            0.06,
+            0.29036829836829836,
+            0.95,
+            0.3372183372183372
+          ]
+        }
+      ],
+      "text": "Question 11 (15 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.3292183372183372,
+                0.95,
+                0.46153846153846156
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Factorise a3 —"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.45353846153846156,
+                0.95,
+                0.5843045843045843
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Given that f(x) — 2x—1, evaluate f(2)."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.5763045843045843,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Differentiate:"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.6011686091686091,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d)"
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "marks": 15,
+      "topic": "Algebra, quadratics, graphing, probability",
+      "module": "Mixed: Functions; Graphing; Statistics",
+      "syllabusRefs": [
+        "MA-F1",
+        "MA-F2",
+        "MA-S1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 8,
+          "bbox": [
+            0.06,
+            0.06348407148407148,
+            0.95,
+            0.11033411033411034
+          ]
+        }
+      ],
+      "text": "Question 12 (15 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.10233411033411033,
+                0.95,
+                0.560994560994561
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Simplify"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.552994560994561,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c)"
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 9,
+              "bbox": [
+                0.06,
+                0.7666697746697747,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(e) a standard pack of 52 cards, two cards are drawn at random with replacement. Find"
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 11,
+              "bbox": [
+                0.06,
+                0.3066853146853147,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(e) Solve 2sinx = —1 in the domain (0°, 360°]."
+        }
+      ]
+    },
+    {
+      "number": "14",
+      "marks": 15,
+      "topic": "Circle geometry, tangents/normals, probability distributions, non-right-angled triangles, graph transformations",
+      "module": "Mixed: Coordinate geometry; Calculus; Statistics; Trigonometry",
+      "syllabusRefs": [
+        "MA-F2",
+        "MA-C2",
+        "MA-S1",
+        "MA-T1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 12,
+          "bbox": [
+            0.06,
+            0.06348407148407148,
+            0.95,
+            0.10955710955710955
+          ]
+        }
+      ],
+      "text": "Question 14 (15 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 12,
+              "bbox": [
+                0.06,
+                0.10155710955710956,
+                0.95,
+                0.38461538461538464
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find the centre and radius of the circle with the equation x7 + y? — 6x—4y+4=0. 3"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 12,
+              "bbox": [
+                0.06,
+                0.37661538461538463,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Given that f(x) =. —3x, find the equation of the normal at x = 2. 4"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 13,
+              "bbox": [
+                0.06,
+                0.06348407148407148,
+                0.95,
+                0.3752913752913753
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Construct a probability distribution table for the number of heads when tossing two coins."
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 13,
+              "bbox": [
+                0.06,
+                0.3672913752913753,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) In the diagram, Beth's house B is 22km away from Abby’s house at A, and ZBCA and"
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 14,
+              "bbox": [
+                0.06,
+                0.06348407148407148,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(e) Shown below is the graph of y="
+        }
+      ]
+    },
+    {
+      "number": "15",
+      "marks": 15,
+      "topic": "Stationary points, trig graphs, logarithmic equations, probability",
+      "module": "Mixed: Calculus; Trigonometry; Exponential/Log; Statistics",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-T3",
+        "MA-E1",
+        "MA-S1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 16,
+          "bbox": [
+            0.06,
+            0.06348407148407148,
+            0.95,
+            0.11965811965811966
+          ]
+        }
+      ],
+      "text": "Question 15 (15 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 16,
+              "bbox": [
+                0.06,
+                0.11165811965811967,
+                0.95,
+                0.5415695415695416
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find the points of the curve y = z — 3x where the tangent is horizontal."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 16,
+              "bbox": [
+                0.06,
+                0.5335695415695416,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Sketch the graph y = 3cos(x) +2 in the domain [—180°, 180°] in the space below."
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 17,
+              "bbox": [
+                0.06,
+                0.3354343434343434,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) Jenna tosses three coins. Two of the coins are unbiased however one coin has heads on"
+        }
+      ]
+    },
+    {
+      "number": "16",
+      "marks": 15,
+      "topic": "Discrete probability distributions, angles of elevation, trig identities",
+      "module": "Mixed: Statistics; Trigonometry",
+      "syllabusRefs": [
+        "MA-S3",
+        "MA-T1",
+        "MA-T2"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 18,
+          "bbox": [
+            0.06,
+            0.06348407148407148,
+            0.95,
+            0.11188811188811189
+          ]
+        }
+      ],
+      "text": "Question 16 (15 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 18,
+              "bbox": [
+                0.06,
+                0.1038881118881119,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Construct a probability distribution table given the probability distribution function"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 19,
+              "bbox": [
+                0.06,
+                0.06348407148407148,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) In the diagram BD represents a vertical tower of height 12m standing on level ground."
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "marks": 15,
+      "topic": "Factorising, function evaluation, differentiation",
+      "module": "Mixed: Functions; Calculus",
+      "syllabusRefs": [
+        "MA-F1",
+        "MA-C2"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 36,
+          "bbox": [
+            0.06,
+            0.2970583657587549,
+            0.95,
+            0.3416342412451362
+          ]
+        }
+      ],
+      "text": "Question 11 (15 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 36,
+              "bbox": [
+                0.06,
+                0.3336342412451362,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Factorise a3 ~ a2, 2 2"
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "marks": 15,
+      "topic": "Algebra, quadratics, graphing, probability",
+      "module": "Mixed: Functions; Graphing; Statistics",
+      "syllabusRefs": [
+        "MA-F1",
+        "MA-F2",
+        "MA-S1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 38,
+          "bbox": [
+            0.06,
+            0.06670817120622569,
+            0.95,
+            0.11439688715953307
+          ]
+        }
+      ],
+      "text": "Question 12 (15 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 38,
+              "bbox": [
+                0.06,
+                0.10639688715953308,
+                0.95,
+                0.2926070038910506
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Simplify 2"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 38,
+              "bbox": [
+                0.06,
+                0.2846070038910506,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Write down the discriminant of kx? +2x—1=0, 1"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 39,
+              "bbox": [
+                0.06,
+                0.058926070038910504,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) The mass in grams of a melting ice block is given the formula M = 1 where t"
+        },
+        {
+          "label": "f",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 41,
+              "bbox": [
+                0.06,
+                0.548420233463035,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(f) There are 200 tickets sold in a raffle. The ticket for 2nd prize is drawn first, then the ticket"
+        }
+      ]
+    },
+    {
+      "number": "14",
+      "marks": 15,
+      "topic": "Circle geometry, tangents/normals, probability distributions, non-right-angled triangles, graph transformations",
+      "module": "Mixed: Coordinate geometry; Calculus; Statistics; Trigonometry",
+      "syllabusRefs": [
+        "MA-F2",
+        "MA-C2",
+        "MA-S1",
+        "MA-T1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 42,
+          "bbox": [
+            0.06,
+            0.07137743190661477,
+            0.95,
+            0.11906614785992217
+          ]
+        }
+      ],
+      "text": "Question 14 (15 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 42,
+              "bbox": [
+                0.06,
+                0.11106614785992217,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find the centre and radius of the circle with the equation x2 + y 3"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 43,
+              "bbox": [
+                0.06,
+                0.06592996108949417,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Construct a probability distribution table for the number of heads when tossing two coins."
+        }
+      ]
+    },
+    {
+      "number": "15",
+      "marks": 15,
+      "topic": "Stationary points, trig graphs, logarithmic equations, probability",
+      "module": "Mixed: Calculus; Trigonometry; Exponential/Log; Statistics",
+      "syllabusRefs": [
+        "MA-C3",
+        "MA-T3",
+        "MA-E1",
+        "MA-S1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 45,
+          "bbox": [
+            0.06,
+            0.07293385214007783,
+            0.95,
+            0.12607003891050583
+          ]
+        }
+      ],
+      "text": "Question 15 (15 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 45,
+              "bbox": [
+                0.06,
+                0.11807003891050583,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find the points of the curve y = +x? — 3x where the tangent is horizontal. 3"
+        }
+      ]
+    },
+    {
+      "number": "16",
+      "marks": 15,
+      "topic": "Discrete probability distributions, angles of elevation, trig identities",
+      "module": "Mixed: Statistics; Trigonometry",
+      "syllabusRefs": [
+        "MA-S3",
+        "MA-T1",
+        "MA-T2"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 47,
+          "bbox": [
+            0.06,
+            0.07215564202334632,
+            0.95,
+            0.12062256809338522
+          ]
+        }
+      ],
+      "text": "Question 16 (15 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 47,
+              "bbox": [
+                0.06,
+                0.11262256809338522,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Construct a probability distribution table given the probability distribution function"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 48,
+              "bbox": [
+                0.06,
+                0.06515175097276266,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) In the diagram BD represents a vertical tower of height 12m standing on level ground."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "paperId": "english-extension-1-y12-trial-caringbah-2025",
+  "subject": "english-extension-1",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": "1",
+      "marks": 25,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 3,
+          "bbox": [
+            0.06,
+            0.667990675990676,
+            0.95,
+            0.7078477078477079
+          ]
+        }
+      ],
+      "text": "Question 1 (25 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.6998477078477079,
+                0.95,
+                0.7995337995337995
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.7915337995337995,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b)"
+        }
+      ]
+    }
+  ]
+}

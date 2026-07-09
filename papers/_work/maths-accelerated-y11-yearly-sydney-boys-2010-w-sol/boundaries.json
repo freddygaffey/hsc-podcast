@@ -1,0 +1,189 @@
+{
+  "paperId": "maths-accelerated-y11-yearly-sydney-boys-2010-w-sol",
+  "questions": [
+    {
+      "number": "1",
+      "marks": 16,
+      "module": "Calculus",
+      "topic": "Calculus — Integration",
+      "syllabusRefs": ["MA-C4", "MA-E1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 4,
+          "type": "calculation",
+          "regions": [ { "page": 2, "bbox": [0.10, 0.148, 0.92, 0.278] } ],
+          "markingRegions": [ { "page": 8, "bbox": [0.02, 0.03, 0.50, 0.33] } ]
+        },
+        {
+          "label": "b",
+          "marks": 7,
+          "type": "calculation",
+          "regions": [ { "page": 2, "bbox": [0.10, 0.280, 0.92, 0.508] } ],
+          "markingRegions": [
+            { "page": 8, "bbox": [0.02, 0.34, 0.50, 0.78] },
+            { "page": 8, "bbox": [0.50, 0.03, 0.99, 0.32] }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 2,
+          "type": "short",
+          "regions": [ { "page": 2, "bbox": [0.10, 0.510, 0.92, 0.595] } ],
+          "markingRegions": [ { "page": 8, "bbox": [0.50, 0.33, 0.99, 0.555] } ]
+        },
+        {
+          "label": "d",
+          "marks": 3,
+          "type": "calculation",
+          "regions": [ { "page": 2, "bbox": [0.10, 0.597, 0.92, 0.700] } ],
+          "markingRegions": [ { "page": 8, "bbox": [0.50, 0.53, 0.99, 0.80] } ]
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": 15,
+      "module": "Calculus",
+      "topic": "Calculus — Applications of Differentiation",
+      "syllabusRefs": ["MA-C3", "MA-C1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 5,
+          "type": "extended",
+          "regions": [ { "page": 3, "bbox": [0.10, 0.148, 0.92, 0.350] } ],
+          "markingRegions": [ { "page": 9, "bbox": [0.03, 0.05, 0.98, 0.97] } ]
+        },
+        {
+          "label": "b",
+          "marks": 2,
+          "type": "calculation",
+          "regions": [ { "page": 3, "bbox": [0.10, 0.352, 0.92, 0.415] } ],
+          "markingRegions": [ { "page": 10, "bbox": [0.03, 0.04, 0.99, 0.50] } ]
+        },
+        {
+          "label": "c",
+          "marks": 4,
+          "type": "calculation",
+          "regions": [ { "page": 3, "bbox": [0.10, 0.417, 0.92, 0.595] } ],
+          "markingRegions": [ { "page": 10, "bbox": [0.03, 0.51, 0.99, 0.97] } ]
+        },
+        {
+          "label": "d",
+          "marks": 4,
+          "type": "calculation",
+          "regions": [ { "page": 3, "bbox": [0.10, 0.597, 0.92, 0.760] } ],
+          "markingRegions": [ { "page": 11, "bbox": [0.03, 0.05, 0.99, 0.75] } ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": 15,
+      "module": "Calculus",
+      "topic": "Calculus — Integration and Exponential Growth",
+      "syllabusRefs": ["MA-C4", "MA-E1", "MA-C3"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 4,
+          "type": "calculation",
+          "regions": [ { "page": 4, "bbox": [0.10, 0.148, 0.92, 0.235] } ],
+          "markingRegions": [ { "page": 12, "bbox": [0.03, 0.03, 0.99, 0.62] } ]
+        },
+        {
+          "label": "b",
+          "marks": 5,
+          "type": "extended",
+          "regions": [ { "page": 4, "bbox": [0.10, 0.237, 0.92, 0.495] } ],
+          "markingRegions": [
+            { "page": 12, "bbox": [0.03, 0.63, 0.99, 0.97] },
+            { "page": 13, "bbox": [0.03, 0.03, 0.99, 0.36] }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 3,
+          "type": "short",
+          "regions": [ { "page": 4, "bbox": [0.10, 0.497, 0.92, 0.595] } ],
+          "markingRegions": [ { "page": 13, "bbox": [0.03, 0.38, 0.99, 0.63] } ]
+        },
+        {
+          "label": "d",
+          "marks": 3,
+          "type": "short",
+          "regions": [ { "page": 4, "bbox": [0.10, 0.597, 0.92, 0.650] } ],
+          "markingRegions": [ { "page": 13, "bbox": [0.03, 0.65, 0.99, 0.95] } ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "marks": 13,
+      "module": "Calculus",
+      "topic": "Calculus — Applications of Differentiation (Optimisation)",
+      "syllabusRefs": ["MA-C3", "MA-C4"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2,
+          "type": "short",
+          "regions": [ { "page": 5, "bbox": [0.10, 0.148, 0.92, 0.215] } ],
+          "markingRegions": [ { "page": 14, "bbox": [0.03, 0.03, 0.99, 0.64] } ]
+        },
+        {
+          "label": "b",
+          "marks": 6,
+          "type": "extended",
+          "regions": [ { "page": 5, "bbox": [0.10, 0.217, 0.92, 0.965] } ],
+          "markingRegions": [
+            { "page": 14, "bbox": [0.03, 0.60, 0.99, 0.97] },
+            { "page": 15, "bbox": [0.03, 0.03, 0.99, 0.995] }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 5,
+          "type": "extended",
+          "regions": [ { "page": 6, "bbox": [0.09, 0.09, 0.92, 0.52] } ],
+          "markingRegions": [ { "page": 16, "bbox": [0.03, 0.03, 0.99, 0.68] } ]
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": 13,
+      "module": "Calculus",
+      "topic": "Calculus — Integration (Volumes of Revolution) and Optimisation",
+      "syllabusRefs": ["MA-C4", "MA-C3"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 8,
+          "type": "extended",
+          "regions": [ { "page": 7, "bbox": [0.10, 0.148, 0.92, 0.515] } ],
+          "markingRegions": [
+            { "page": 17, "bbox": [0.03, 0.03, 0.99, 0.97] },
+            { "page": 18, "bbox": [0.03, 0.03, 0.99, 0.87] }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 5,
+          "type": "extended",
+          "regions": [ { "page": 7, "bbox": [0.10, 0.517, 0.92, 0.895] } ],
+          "markingRegions": [
+            { "page": 19, "bbox": [0.03, 0.03, 0.99, 0.97] },
+            { "page": 20, "bbox": [0.03, 0.03, 0.99, 0.60] }
+          ]
+        }
+      ]
+    }
+  ]
+}

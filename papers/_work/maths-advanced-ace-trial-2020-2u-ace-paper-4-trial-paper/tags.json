@@ -1,0 +1,390 @@
+{
+ "paperId": "maths-advanced-ace-trial-2020-2u-ace-paper-4-trial-paper",
+ "model": "claude-opus-4-8",
+ "ts": 1783077165,
+ "tags": {
+  "q04.pdf": {
+   "syllabusRefs": [
+    "MA-C3",
+    "MA-C2"
+   ],
+   "type": "mc",
+   "topic": "Applications of Differentiation",
+   "module": "Calculus",
+   "confidence": 0.94,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q07.pdf": {
+   "syllabusRefs": [
+    "MA-S2"
+   ],
+   "type": "mc",
+   "topic": "Descriptive Statistics and Bivariate Data Analysis",
+   "module": "Statistical Analysis",
+   "confidence": 0.96,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q10.pdf": {
+   "syllabusRefs": [
+    "MA-S3"
+   ],
+   "type": "mc",
+   "topic": "Random Variables",
+   "module": "Statistical Analysis",
+   "confidence": 0.95,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q12.pdf": {
+   "syllabusRefs": [
+    "MA-T3",
+    "MA-T2"
+   ],
+   "type": "calculation",
+   "topic": "Trigonometric Functions and Graphs",
+   "module": "Trigonometric Functions",
+   "confidence": 0.9,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q15.pdf": {
+   "syllabusRefs": [
+    "MA-S2"
+   ],
+   "type": "short",
+   "topic": "Descriptive Statistics and Bivariate Data Analysis",
+   "module": "Statistical Analysis",
+   "confidence": 0.95,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q17.pdf": {
+   "syllabusRefs": [
+    "MA-M1"
+   ],
+   "type": "calculation",
+   "topic": "Modelling Financial Situations",
+   "module": "Financial Mathematics",
+   "confidence": 0.9,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q19.pdf": {
+   "syllabusRefs": [
+    "MA-T3"
+   ],
+   "type": "short",
+   "topic": "Trigonometric Functions and Graphs",
+   "module": "Trigonometric Functions",
+   "confidence": 0.92,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q22.pdf": {
+   "syllabusRefs": [
+    "MA-M1"
+   ],
+   "type": "calculation",
+   "topic": "Modelling Financial Situations",
+   "module": "Financial Mathematics",
+   "confidence": 0.95,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q24.pdf": {
+   "syllabusRefs": [
+    "MA-M1"
+   ],
+   "type": "calculation",
+   "topic": "Modelling Financial Situations",
+   "module": "Financial Mathematics",
+   "confidence": 0.95,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q26.pdf": {
+   "syllabusRefs": [
+    "MA-S3"
+   ],
+   "type": "calculation",
+   "topic": "Random Variables",
+   "module": "Statistical Analysis",
+   "confidence": 0.92,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q28.pdf": {
+   "syllabusRefs": [
+    "MA-C2"
+   ],
+   "type": "calculation",
+   "topic": "Differential Calculus",
+   "module": "Calculus",
+   "confidence": 0.95,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q31.pdf": {
+   "syllabusRefs": [
+    "MA-S3"
+   ],
+   "type": "calculation",
+   "topic": "Random Variables",
+   "module": "Statistical Analysis",
+   "confidence": 0.93,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q35.pdf": {
+   "syllabusRefs": [
+    "MA-E1"
+   ],
+   "type": "calculation",
+   "topic": "Logarithms and Exponentials",
+   "module": "Exponential and Logarithmic Functions",
+   "confidence": 0.9,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q01.pdf": {
+   "syllabusRefs": [
+    "MA-C2",
+    "MA-F1"
+   ],
+   "type": "mc",
+   "topic": "Differential Calculus",
+   "module": "Calculus",
+   "confidence": 0.95,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q03.pdf": {
+   "syllabusRefs": [
+    "MA-T3"
+   ],
+   "type": "mc",
+   "topic": "Trigonometric Functions and Graphs",
+   "module": "Trigonometric Functions",
+   "confidence": 0.95,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q06.pdf": {
+   "syllabusRefs": [
+    "MA-F1"
+   ],
+   "type": "mc",
+   "topic": "Working with Functions",
+   "module": "Functions",
+   "confidence": 0.93,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q09.pdf": {
+   "syllabusRefs": [
+    "MA-M1"
+   ],
+   "type": "mc",
+   "topic": "Modelling Financial Situations",
+   "module": "Financial Mathematics",
+   "confidence": 0.88,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q11.pdf": {
+   "syllabusRefs": [
+    "MA-C3",
+    "MA-E1"
+   ],
+   "type": "extended",
+   "topic": "Applications of Differentiation",
+   "module": "Calculus",
+   "confidence": 0.85,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q14.pdf": {
+   "syllabusRefs": [
+    "MA-C2"
+   ],
+   "type": "calculation",
+   "topic": "Differential Calculus",
+   "module": "Calculus",
+   "confidence": 0.93,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q16.pdf": {
+   "syllabusRefs": [
+    "MA-C4",
+    "MA-F1"
+   ],
+   "type": "extended",
+   "topic": "Integral Calculus",
+   "module": "Calculus",
+   "confidence": 0.9,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q18.pdf": {
+   "syllabusRefs": [
+    "MA-S2"
+   ],
+   "type": "extended",
+   "topic": "Descriptive Statistics and Bivariate Data Analysis",
+   "module": "Statistical Analysis",
+   "confidence": 0.95,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q20.pdf": {
+   "syllabusRefs": [
+    "MA-C3"
+   ],
+   "type": "extended",
+   "topic": "Applications of Differentiation",
+   "module": "Calculus",
+   "confidence": 0.95,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q30.pdf": {
+   "syllabusRefs": [
+    "MA-C3",
+    "MA-E1"
+   ],
+   "type": "calculation",
+   "topic": "Applications of Differentiation",
+   "module": "Calculus",
+   "confidence": 0.88,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q32.pdf": {
+   "syllabusRefs": [
+    "MA-S3"
+   ],
+   "type": "extended",
+   "topic": "Random Variables",
+   "module": "Statistical Analysis",
+   "confidence": 0.94,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q34.pdf": {
+   "syllabusRefs": [
+    "MA-C4"
+   ],
+   "type": "calculation",
+   "topic": "Integral Calculus",
+   "module": "Calculus",
+   "confidence": 0.9,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q36.pdf": {
+   "syllabusRefs": [
+    "MA-C4",
+    "MA-C3"
+   ],
+   "type": "extended",
+   "topic": "Integral Calculus",
+   "module": "Calculus",
+   "confidence": 0.85,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q05.pdf": {
+   "syllabusRefs": [],
+   "type": "mc",
+   "topic": "Random Variables",
+   "module": "Statistical Analysis",
+   "confidence": 0.4,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q08.pdf": {
+   "syllabusRefs": [],
+   "type": "mc",
+   "topic": "Differential Calculus",
+   "module": "Calculus",
+   "confidence": 0.4,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q13.pdf": {
+   "syllabusRefs": [],
+   "type": "calculation",
+   "topic": "Working with Functions",
+   "module": "Functions",
+   "confidence": 0.4,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q21.pdf": {
+   "syllabusRefs": [],
+   "type": "extended",
+   "topic": "Integral Calculus",
+   "module": "Calculus",
+   "confidence": 0.4,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q23.pdf": {
+   "syllabusRefs": [],
+   "type": "calculation",
+   "topic": "Integral Calculus",
+   "module": "Calculus",
+   "confidence": 0.4,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q25.pdf": {
+   "syllabusRefs": [],
+   "type": "graphing",
+   "topic": "Trigonometric Functions and Graphs",
+   "module": "Trigonometric Functions",
+   "confidence": 0.4,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q27.pdf": {
+   "syllabusRefs": [],
+   "type": "calculation",
+   "topic": "Descriptive Statistics and Bivariate Data Analysis",
+   "module": "Statistical Analysis",
+   "confidence": 0.4,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q29.pdf": {
+   "syllabusRefs": [],
+   "type": "short",
+   "topic": "Random Variables",
+   "module": "Statistical Analysis",
+   "confidence": 0.4,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q33.pdf": {
+   "syllabusRefs": [],
+   "type": "extended",
+   "topic": "Applications of Differentiation",
+   "module": "Calculus",
+   "confidence": 0.4,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  },
+  "q37.pdf": {
+   "syllabusRefs": [],
+   "type": "graphing",
+   "topic": "Graphing Techniques",
+   "module": "Functions",
+   "confidence": 0.4,
+   "qaVerdict": "good",
+   "qaStage": "opus"
+  }
+ }
+}

@@ -1,0 +1,876 @@
+{
+  "paperId": "maths-extension-1-y12-trial-abbotsleigh-2007-w-sol",
+  "subject": "maths-extension-1",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": "4",
+      "marks": 12,
+      "topic": "Polynomials, coordinate geometry (division of interval) and limits",
+      "module": "Functions",
+      "syllabusRefs": [
+        "ME-F1",
+        "ME-C1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 2,
+          "bbox": [
+            0.06,
+            0.1372991452991453,
+            0.95,
+            0.1919191919191919
+          ]
+        }
+      ],
+      "text": "Question 4 (12 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.1839191919191919,
+                0.95,
+                0.2828282828282828
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Evaluate tim 292% 1"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.2748282828282828,
+                0.95,
+                0.3954933954933955
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Divide the interval AB externally in the ratio 4:3 where A is the point (2,-1) and B is"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.3874933954933955,
+                0.95,
+                0.47863247863247865
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) The polynomial P(x) =2x\u00b0 +ax?+x+2 has a factor (2x+1). Find the value of a. 2"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.47063247863247865,
+                0.95,
+                0.5703185703185704
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Fina:"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.5623185703185704,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) ae 2"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": 12,
+      "topic": "Differentiation and integration of trigonometric and inverse trigonometric functions",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1",
+        "ME-C2"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 3,
+          "bbox": [
+            0.06,
+            0.106996114996115,
+            0.95,
+            0.18181818181818182
+          ]
+        }
+      ],
+      "text": "Question 2 (12 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.17381818181818182,
+                0.95,
+                0.3667443667443667
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a)"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.17381818181818182,
+                0.95,
+                0.3667443667443667
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Differentiate"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.3587443667443667,
+                0.95,
+                0.4630924630924631
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.4550924630924631,
+                0.95,
+                0.5058275058275058
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c)"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.4978275058275058,
+                0.95,
+                0.682983682983683
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) State the domain and range of f (x)."
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.6749836829836829,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d)"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": 12,
+      "topic": "Polynomials (double roots), circle/rectangle trigonometry, and numerical methods (halving the interval)",
+      "module": "Functions",
+      "syllabusRefs": [
+        "ME-F1",
+        "ME-C1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 4,
+          "bbox": [
+            0.06,
+            0.106996114996115,
+            0.95,
+            0.17016317016317017
+          ]
+        }
+      ],
+      "text": "Question 3 (12 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.16216317016317017,
+                0.95,
+                0.36596736596736595
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) (i) The polynomial equation P(x) =0 has a double root at x=a. by writing"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.35796736596736595,
+                0.95,
+                0.7839937839937839
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) A B"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.7759937839937839,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) (i) Showthat f +1 has a zero between 4.4 and 4.6. 1"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "marks": 12,
+      "topic": "Auxiliary angle method, trigonometric identities and curve sketching",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [
+        "ME-T1",
+        "ME-T2",
+        "ME-C1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 5,
+          "bbox": [
+            0.06,
+            0.106996114996115,
+            0.95,
+            0.18026418026418026
+          ]
+        }
+      ],
+      "text": "Question 4 (12 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.17226418026418025,
+                0.95,
+                0.35664335664335667
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) (i) Express V3cos.x\u2014sin.x in the form Reos(x+@) where 0<a and R>0. 2"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.34864335664335666,
+                0.95,
+                0.4825174825174825
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Prove tan\u201d (3) 3"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.4745174825174825,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Sketch the curve y"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": 12,
+      "topic": "Differential equations (Newton's Law of Cooling), simple harmonic motion, probability and binomial coefficients",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C3",
+        "ME-A1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 6,
+          "bbox": [
+            0.06,
+            0.106996114996115,
+            0.95,
+            0.27816627816627815
+          ]
+        }
+      ],
+      "text": "Question 5 (12 marks)",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.27016627816627814,
+                0.95,
+                0.432012432012432
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Show that where B is a constant, is a solution of the differential"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.424012432012432,
+                0.95,
+                0.6262626262626263
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) with displacement 2 and velocity V , is moving in simple harmonic motion such"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.6182626262626263,
+                0.95,
+                0.7047397047397047
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Aninsurance company has calculated that the probability of a woman being alive in 40"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.6967397047397047,
+                0.95,
+                0.8135198135198135
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) both will be alive? 1"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.8055198135198135,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) Find the coefficient of x\u00b0 in the expansion of 2"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": 12,
+      "topic": "Circle geometry: tangent-chord angle properties",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 7,
+          "bbox": [
+            0.06,
+            0.106996114996115,
+            0.95,
+            0.17482517482517482
+          ]
+        }
+      ],
+      "text": "Question 6 (12 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.1668251748251748,
+                0.95,
+                0.48562548562548563
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a)"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.4776254856254856,
+                0.95,
+                0.7303807303807304
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Find the size of ZEDT , giving reasons 2"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": null,
+      "topic": "Circle geometry: tangent-chord angle properties (continued)",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [],
+      "type": null,
+      "stimulus": [],
+      "text": "Question 6 continued on next page",
+      "parts": [
+        {
+          "label": null,
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.7223807303807304,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "Question 6 continued on next page"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": null,
+      "topic": "Parabola: tangents, normals and locus problems using parametric form",
+      "module": "Calculus",
+      "syllabusRefs": [],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 8,
+          "bbox": [
+            0.06,
+            0.0766930846930847,
+            0.95,
+            0.42735042735042733
+          ]
+        }
+      ],
+      "text": "Question 6 (continued) Marks",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.4193504273504273,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) that the gradient of the tangent to the parabola y* =4ax at the point"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": 12,
+      "topic": "Binomial theorem: general term and largest coefficient",
+      "module": "Combinatorics",
+      "syllabusRefs": [
+        "ME-A1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 9,
+          "bbox": [
+            0.06,
+            0.106996114996115,
+            0.95,
+            0.1655011655011655
+          ]
+        }
+      ],
+      "text": "Question 7 (12 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 9,
+              "bbox": [
+                0.06,
+                0.1575011655011655,
+                0.95,
+                0.21678321678321677
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Suppose (: (5+3x)\""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 9,
+              "bbox": [
+                0.06,
+                0.20878321678321676,
+                0.95,
+                0.2571872571872572
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Use the binomial theorem to write an expression for 0<k <25."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 9,
+              "bbox": [
+                0.06,
+                0.2491872571872572,
+                0.95,
+                0.40792540792540793
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) {t="
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 9,
+              "bbox": [
+                0.06,
+                0.3999254079254079,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b)"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": null,
+      "topic": "Projectile motion: parametric equations and applications of calculus to motion",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C3"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 10,
+          "bbox": [
+            0.06,
+            0.12175912975912975,
+            0.95,
+            0.20512820512820512
+          ]
+        }
+      ],
+      "text": "Question 7 (cont)",
+      "parts": [
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 10,
+              "bbox": [
+                0.06,
+                0.19712820512820511,
+                0.95,
+                0.30691530691530694
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i)"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 10,
+              "bbox": [
+                0.06,
+                0.29891530691530693,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i)"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": null,
+      "topic": "Differentiation and integration of trigonometric and inverse trigonometric functions (continued)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1",
+        "ME-C2"
+      ],
+      "type": null,
+      "stimulus": [],
+      "text": "Question 2 (cm)",
+      "parts": [
+        {
+          "label": null,
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 12,
+              "bbox": [
+                0.06,
+                0.019195027195027196,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "Question 2 (cm)"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": null,
+      "topic": "Circle geometry: tangent-chord angle properties (continued)",
+      "module": "Trigonometric Functions",
+      "syllabusRefs": [],
+      "type": null,
+      "stimulus": [],
+      "text": "Question 6",
+      "parts": [
+        {
+          "label": null,
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 15,
+              "bbox": [
+                0.06,
+                0.2818212898212898,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "Question 6"
+        }
+      ]
+    }
+  ]
+}

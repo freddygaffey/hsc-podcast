@@ -1,0 +1,19 @@
+{
+  "number": "10",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "10",
+      "marks": null,
+      "steps": [
+        "$\\vec{a}\\cdot\\vec{b}=(-3)(4)+(m)(3)=-12+3m$",
+        "Obtuse angle $\\Rightarrow \\vec{a}\\cdot\\vec{b}<0 \\Rightarrow -12+3m<0 \\Rightarrow m<4$",
+        "Exclude opposite direction: $\\vec{a}=k\\vec{b}, k<0 \\Rightarrow (-3,m)=k(4,3) \\Rightarrow k=-\\frac{3}{4}, m=-\\frac{9}{4}$",
+        "Thus $m<4$ and $m\\neq -\\frac{9}{4}$"
+      ],
+      "answer": "$(B)$"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}

@@ -1,0 +1,637 @@
+{
+  "paperId": "maths-extension-2-y12-trial-ascham-2023-w-sol",
+  "subject": "maths-extension-2",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": "11",
+      "marks": 15,
+      "topic": "Angle between vectors; position vectors of points on a line; complex equations; rectilinear motion",
+      "module": "Vectors",
+      "syllabusRefs": [
+        "ME-V1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 5,
+          "bbox": [
+            0.06,
+            0.22976223776223775,
+            0.95,
+            0.2641802641802642
+          ]
+        }
+      ],
+      "text": "Question 11 (15 marks) Use a separate writing booklet.",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.2561802641802642,
+                0.95,
+                0.3954933954933955
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find the acute angle (to the nearest degree) between the vectors 2"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.3874933954933955,
+                0.95,
+                0.4491064491064491
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Solve over the complex plane. 3"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.4411064491064491,
+                0.95,
+                0.5516705516705517
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Relative to a fixed origin O, the point A has position vector the point B"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.5436705516705517,
+                0.95,
+                0.6386946386946387
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Find the position vector of D. 2"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.6306946386946387,
+                0.95,
+                0.7094017094017094
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) A particle is moving on a straight line. Its velocity v is given by"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 5,
+              "bbox": [
+                0.06,
+                0.7014017094017094,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Show that its acceleration is given by 2"
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "marks": 15,
+      "topic": "Complex number simplification (real and imaginary parts); triangle inequality for possible side lengths",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 6,
+          "bbox": [
+            0.06,
+            0.045613053613053615,
+            0.95,
+            0.1857031857031857
+          ]
+        }
+      ],
+      "text": "Question 12 (15 marks) Use a separate writing booklet.",
+      "parts": [
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.1777031857031857,
+                0.95,
+                0.23154623154623155
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) A triangle has side lengths x,5,6. What are the possible values of x?"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.22354623154623154,
+                0.95,
+                0.33022533022533024
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Simplify and hence state its real and imaginary parts."
+        }
+      ]
+    },
+    {
+      "number": "13",
+      "marks": 15,
+      "topic": "Integration by substitution; complex numbers in polar (mod-arg) form; coplanar forces; vector equation of a sphere",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 6,
+          "bbox": [
+            0.06,
+            0.32222533022533023,
+            0.95,
+            0.3628593628593629
+          ]
+        }
+      ],
+      "text": "Question 13 (15 marks) Use a separate writing booklet.",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.35485936285936287,
+                0.95,
+                0.40326340326340326
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find f seexdx by using the substitution + ="
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.39526340326340326,
+                0.95,
+                0.48329448329448327
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) i) Express z= V3 +i in the form re\u201d."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.47529448329448326,
+                0.95,
+                0.7070707070707071
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Three coplanar forces act at a point P. The magnitudes are SN, 6N and 7N."
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.6990707070707071,
+                0.95,
+                0.7972027972027972
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) A sphere has a centre at (3,-3,4) and its radius is 6 units."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 6,
+              "bbox": [
+                0.06,
+                0.7892027972027972,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Write down the vector equation of the sphere."
+        }
+      ]
+    },
+    {
+      "number": "14",
+      "marks": 15,
+      "topic": "Proof by mathematical induction (divisibility); proof by contradiction (irrationality of log_2 7); integration by parts",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 7,
+          "bbox": [
+            0.06,
+            0.045613053613053615,
+            0.95,
+            0.10567210567210568
+          ]
+        }
+      ],
+      "text": "Question 14 (15 marks) Use a separate writing booklet.",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.09767210567210569,
+                0.95,
+                0.16783216783216784
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find J x? Inxdx."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.15983216783216783,
+                0.95,
+                0.3838383838383838
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Prove by induction that _4\"*' +6\u201d is divisible by 10 for all positive even integers 1."
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.3758383838383838,
+                0.95,
+                0.44133644133644134
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(e) Prove by contradiction that log, 7 is irrational."
+        }
+      ]
+    },
+    {
+      "number": "15",
+      "marks": 15,
+      "topic": "Integration; inequality proof for positive integers; complex equations; vector equations of skew lines",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 7,
+          "bbox": [
+            0.06,
+            0.43333644133644134,
+            0.95,
+            0.4988344988344988
+          ]
+        }
+      ],
+      "text": "Question 15 (15 marks) Use a separate writing booklet.",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.4908344988344988,
+                0.95,
+                0.5656565656565656
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Find"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.5576565656565656,
+                0.95,
+                0.6977466977466977
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) (i) Prove for positive integers m and n."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.6897466977466977,
+                0.95,
+                0.7855477855477856
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Solve 227"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                0.06,
+                0.7775477855477856,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) With respect to a fixed origin O, the lines J, and/, are given by the equations:"
+        }
+      ]
+    },
+    {
+      "number": "16",
+      "marks": 15,
+      "topic": "Resisted vertical motion under gravity (differential equations, reduction formulae for integrals)",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-M1"
+      ],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 8,
+          "bbox": [
+            0.06,
+            0.045613053613053615,
+            0.95,
+            0.11655011655011654
+          ]
+        }
+      ],
+      "text": "Question 16 (15 marks) Use a separate writing booklet.",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.10855011655011654,
+                0.95,
+                0.1585081585081585
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Let dx, where n=0,1,2,"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.1505081585081585,
+                0.95,
+                0.24708624708624707
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Show that J, =e\u2014nl,, where n=1,2,..."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.23908624708624707,
+                0.95,
+                0.3605283605283605
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) (Show that 2\u00b0 -"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.3525283605283605,
+                0.95,
+                0.4296814296814297
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) A particle of mass M kilograms is projected vertically upward with a velocity"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 8,
+              "bbox": [
+                0.06,
+                0.4216814296814297,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Show that if the acceleration due to gravity is"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 23,
+              "bbox": [
+                0.06,
+                0.4997760497667185,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d)."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 31,
+              "bbox": [
+                0.06,
+                0.46400622083981335,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) F291)"
+        }
+      ]
+    }
+  ]
+}

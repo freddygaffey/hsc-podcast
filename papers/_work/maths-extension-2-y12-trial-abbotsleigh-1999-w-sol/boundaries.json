@@ -1,0 +1,339 @@
+{
+  "paperId": "maths-extension-2-y12-trial-abbotsleigh-1999-w-sol",
+  "questions": [
+    {
+      "number": "1",
+      "marks": 15,
+      "module": "ME-C1",
+      "topic": "Calculus — Integration Techniques",
+      "syllabusRefs": ["ME-C1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2,
+          "type": "calculation",
+          "topic": "Integration — inverse trig form",
+          "regions": [ { "page": 0, "bbox": [0.09, 0.498, 0.90, 0.562] } ],
+          "markingRegions": [ { "page": 6, "bbox": [0.07, 0.145, 0.35, 0.225] } ]
+        },
+        {
+          "label": "b",
+          "marks": 2,
+          "type": "calculation",
+          "topic": "Integration by parts",
+          "regions": [ { "page": 0, "bbox": [0.09, 0.567, 0.90, 0.618] } ],
+          "markingRegions": [ { "page": 6, "bbox": [0.07, 0.225, 0.35, 0.51] } ]
+        },
+        {
+          "label": "c",
+          "marks": 3,
+          "type": "calculation",
+          "topic": "Integration — trig powers",
+          "regions": [ { "page": 0, "bbox": [0.09, 0.622, 0.90, 0.674] } ],
+          "markingRegions": [ { "page": 6, "bbox": [0.07, 0.51, 0.35, 0.70] } ]
+        },
+        {
+          "label": "d",
+          "marks": 3,
+          "type": "extended",
+          "topic": "Integration by substitution",
+          "regions": [ { "page": 0, "bbox": [0.09, 0.678, 0.90, 0.742] } ],
+          "markingRegions": [ { "page": 6, "bbox": [0.07, 0.70, 0.35, 0.90] } ]
+        },
+        {
+          "label": "e",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Integration by parts — recurring integral",
+          "regions": [ { "page": 0, "bbox": [0.09, 0.748, 0.90, 0.805] } ],
+          "markingRegions": [ { "page": 6, "bbox": [0.36, 0.145, 0.64, 0.36] } ]
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": 15,
+      "module": "ME-N2",
+      "topic": "Complex Numbers — Argand Diagrams, Loci & De Moivre's Theorem",
+      "syllabusRefs": ["ME-N1", "ME-N2"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2,
+          "type": "short",
+          "topic": "Complex numbers — modulus & argument",
+          "regions": [ { "page": 1, "bbox": [0.08, 0.080, 0.90, 0.158] } ],
+          "markingRegions": [ { "page": 6, "bbox": [0.36, 0.36, 0.64, 0.70] } ]
+        },
+        {
+          "label": "b",
+          "marks": 3,
+          "type": "short",
+          "topic": "Complex numbers — loci on Argand diagram",
+          "regions": [ { "page": 1, "bbox": [0.08, 0.163, 0.90, 0.278] } ],
+          "markingRegions": [
+            { "page": 6, "bbox": [0.36, 0.70, 0.64, 0.90] },
+            { "page": 6, "bbox": [0.65, 0.34, 0.93, 0.90] }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 3,
+          "type": "extended",
+          "topic": "Complex numbers — roots of unity",
+          "regions": [ { "page": 1, "bbox": [0.08, 0.283, 0.90, 0.352] } ],
+          "markingRegions": [ { "page": 7, "bbox": [0.07, 0.145, 0.35, 0.51] } ]
+        },
+        {
+          "label": "d",
+          "marks": 3,
+          "type": "extended",
+          "topic": "Complex numbers — De Moivre's Theorem",
+          "regions": [ { "page": 1, "bbox": [0.08, 0.355, 0.90, 0.398] } ],
+          "markingRegions": [ { "page": 7, "bbox": [0.07, 0.51, 0.35, 0.90] } ]
+        },
+        {
+          "label": "e",
+          "marks": 2,
+          "type": "calculation",
+          "topic": "Complex numbers — quadratic with complex coefficients",
+          "regions": [ { "page": 1, "bbox": [0.08, 0.401, 0.90, 0.458] } ],
+          "markingRegions": [ { "page": 7, "bbox": [0.36, 0.145, 0.64, 0.34] } ]
+        },
+        {
+          "label": "f",
+          "marks": 2,
+          "type": "short",
+          "topic": "Complex numbers — regions on Argand diagram",
+          "regions": [ { "page": 1, "bbox": [0.08, 0.461, 0.90, 0.600] } ],
+          "markingRegions": [ { "page": 7, "bbox": [0.36, 0.34, 0.64, 0.70] } ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": 15,
+      "module": "ME-C1",
+      "topic": "Calculus — Integration & Curve Sketching",
+      "syllabusRefs": ["ME-C1", "ME-N1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 4,
+          "type": "short",
+          "topic": "Graph sketching",
+          "regions": [ { "page": 1, "bbox": [0.08, 0.636, 0.90, 0.716] } ],
+          "markingRegions": [ { "page": 7, "bbox": [0.65, 0.145, 0.93, 0.51] } ]
+        },
+        {
+          "label": "b",
+          "marks": 4,
+          "type": "extended",
+          "topic": "Integration — partial fractions",
+          "regions": [ { "page": 1, "bbox": [0.08, 0.721, 0.90, 0.83] } ],
+          "markingRegions": [
+            { "page": 7, "bbox": [0.36, 0.70, 0.64, 0.90] },
+            { "page": 7, "bbox": [0.65, 0.51, 0.93, 0.70] }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 4,
+          "type": "extended",
+          "topic": "Integration — reduction formula",
+          "regions": [
+            { "page": 2, "bbox": [0.10, 0.11, 0.90, 0.205] }
+          ],
+          "markingRegions": [ { "page": 8, "bbox": [0.07, 0.145, 0.35, 0.70] } ]
+        },
+        {
+          "label": "d",
+          "marks": 3,
+          "type": "extended",
+          "topic": "Complex numbers — conjugate root theorem, factorisation",
+          "regions": [
+            { "page": 2, "bbox": [0.10, 0.207, 0.90, 0.30] }
+          ],
+          "markingRegions": [ { "page": 8, "bbox": [0.36, 0.145, 0.64, 0.30] } ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "marks": 15,
+      "module": "ME-C1",
+      "topic": "Conics — Ellipses & Rectangular Hyperbolas",
+      "syllabusRefs": ["ME-C1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 8,
+          "type": "extended",
+          "topic": "Ellipse — tangent, directrix, focus",
+          "regions": [ { "page": 2, "bbox": [0.10, 0.505, 0.90, 0.652] } ],
+          "markingRegions": [ { "page": 8, "bbox": [0.36, 0.30, 0.64, 0.90] } ]
+        },
+        {
+          "label": "b",
+          "marks": 7,
+          "type": "extended",
+          "topic": "Rectangular hyperbola — tangent & locus",
+          "regions": [ { "page": 2, "bbox": [0.10, 0.655, 0.90, 0.86] } ],
+          "markingRegions": [ { "page": 8, "bbox": [0.65, 0.145, 0.93, 0.90] } ]
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": 15,
+      "module": "ME-C1",
+      "topic": "Calculus — Volumes of Revolution",
+      "syllabusRefs": ["ME-C1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Volume by slicing — y = sin⁻¹x",
+          "regions": [ { "page": 3, "bbox": [0.09, 0.095, 0.90, 0.215] } ],
+          "markingRegions": [ { "page": 9, "bbox": [0.07, 0.145, 0.35, 0.40] } ]
+        },
+        {
+          "label": "b",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Volume — cross-sections perpendicular to axis",
+          "regions": [ { "page": 3, "bbox": [0.09, 0.22, 0.90, 0.34] } ],
+          "markingRegions": [
+            { "page": 9, "bbox": [0.07, 0.40, 0.35, 0.90] },
+            { "page": 9, "bbox": [0.36, 0.145, 0.64, 0.55] }
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Volume by cylindrical shells",
+          "regions": [ { "page": 3, "bbox": [0.09, 0.345, 0.90, 0.79] } ],
+          "markingRegions": [
+            { "page": 9, "bbox": [0.36, 0.55, 0.64, 0.90] },
+            { "page": 9, "bbox": [0.65, 0.145, 0.93, 0.65] }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": 15,
+      "module": "ME-N1",
+      "topic": "Polynomials — Roots, Coefficients & Conic Loci",
+      "syllabusRefs": ["ME-N1", "ME-C1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 3,
+          "type": "calculation",
+          "topic": "Polynomials — transforming roots",
+          "regions": [ { "page": 4, "bbox": [0.09, 0.095, 0.90, 0.165] } ],
+          "markingRegions": [ { "page": 9, "bbox": [0.65, 0.65, 0.93, 0.90] } ]
+        },
+        {
+          "label": "b",
+          "marks": 6,
+          "type": "extended",
+          "topic": "Polynomials — root of given multiplicity",
+          "regions": [ { "page": 4, "bbox": [0.09, 0.17, 0.90, 0.245] } ],
+          "markingRegions": [ { "page": 10, "bbox": [0.07, 0.145, 0.35, 0.30] } ]
+        },
+        {
+          "label": "c",
+          "marks": 6,
+          "type": "extended",
+          "topic": "Hyperbola — chord of contact & locus",
+          "regions": [ { "page": 4, "bbox": [0.09, 0.25, 0.90, 0.345] } ],
+          "markingRegions": [ { "page": 10, "bbox": [0.07, 0.30, 0.35, 0.65] } ]
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": 15,
+      "module": "ME-M1",
+      "topic": "Mechanics — Circular Motion & Resisted Motion",
+      "syllabusRefs": ["ME-M1", "ME-P1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 4,
+          "type": "calculation",
+          "topic": "Circular motion — banked track",
+          "regions": [ { "page": 4, "bbox": [0.09, 0.38, 0.90, 0.45] } ],
+          "markingRegions": [
+            { "page": 10, "bbox": [0.07, 0.65, 0.35, 0.90] },
+            { "page": 10, "bbox": [0.36, 0.145, 0.64, 0.42] }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 6,
+          "type": "extended",
+          "topic": "Resisted motion — velocity-dependent force",
+          "regions": [ { "page": 4, "bbox": [0.09, 0.455, 0.90, 0.605] } ],
+          "markingRegions": [ { "page": 10, "bbox": [0.36, 0.42, 0.64, 0.90] } ]
+        },
+        {
+          "label": "c",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Euclidean geometry — circle theorem proof",
+          "regions": [ { "page": 4, "bbox": [0.09, 0.61, 0.90, 0.71] } ],
+          "markingRegions": [ { "page": 10, "bbox": [0.65, 0.145, 0.93, 0.90] } ]
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "marks": 15,
+      "module": "ME-M1",
+      "topic": "Mechanics — Projectiles & Circular Motion",
+      "syllabusRefs": ["ME-M1", "ME-C1"],
+      "stimulus": [],
+      "parts": [
+        {
+          "label": "a",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Ellipse — tangent, normal, eccentricity property",
+          "regions": [ { "page": 5, "bbox": [0.09, 0.095, 0.90, 0.185] } ],
+          "markingRegions": [
+            { "page": 11, "bbox": [0.07, 0.145, 0.35, 0.45] },
+            { "page": 11, "bbox": [0.36, 0.145, 0.64, 0.50] }
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Projectile motion — two trajectories",
+          "regions": [ { "page": 5, "bbox": [0.09, 0.19, 0.90, 0.28] } ],
+          "markingRegions": [ { "page": 11, "bbox": [0.07, 0.45, 0.35, 0.90] } ]
+        },
+        {
+          "label": "c",
+          "marks": 5,
+          "type": "extended",
+          "topic": "Conical pendulum — tension & normal reaction",
+          "regions": [ { "page": 5, "bbox": [0.09, 0.285, 0.90, 0.42] } ],
+          "markingRegions": [ { "page": 11, "bbox": [0.65, 0.145, 0.93, 0.85] } ]
+        }
+      ]
+    }
+  ]
+}

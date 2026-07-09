@@ -1,0 +1,714 @@
+{
+  "paperId": "maths-extension-2-y12-hsc-1988-hsc",
+  "subject": "maths-extension-2",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": "1",
+      "marks": 1,
+      "topic": "Integration Techniques (t = tan(x/2) Substitution)",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "1. (a) Find the exact value of:-",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.14429215229215228,
+                0.95,
+                0.19036519036519037
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "1. (a) Find the exact value of:-"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.18236519036519036,
+                0.95,
+                0.23853923853923853
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) des) FO drs"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.23053923853923852,
+                0.95,
+                0.2766122766122766
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Use the substitution t = tan \u00a7 to find the exact value of"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": 1,
+      "topic": "Curve Sketching and Areas Under Curves",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "2. (a) Draw a neat sketch of the function f(x) = (a \u2014 2)(6 \u2014 x). State the co-",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.2686122766122766,
+                0.95,
+                0.317016317016317
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "2. (a) Draw a neat sketch of the function f(x) = (a \u2014 2)(6 \u2014 x). State the co-"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.309016317016317,
+                0.95,
+                0.3861693861693862
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Hence or otherwise draw a neat sketch of the function = Clearly"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.37816938616938617,
+                0.95,
+                0.44522144522144524
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) The lines with equations = 3 and \u00a2 ="
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.43722144522144524,
+                0.95,
+                0.4801864801864802
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) Prove that the area of R is (#2 \u2014 8log, 3) square units,"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "marks": 1,
+      "topic": "Differential Equations and Exponential Growth",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "3. (a) On a perticular island, twenty per cent of all turtles survive for four weeks",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.4721864801864802,
+                0.95,
+                0.5275835275835276
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "3. (a) On a perticular island, twenty per cent of all turtles survive for four weeks"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.5195835275835275,
+                0.95,
+                0.6076146076146076
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) (@) all fifteen turtles will survive the four weeks;"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.5996146076146076,
+                0.95,
+                0.662004662004662
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) no more than three turtles survive the four weeks;"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.654004662004662,
+                0.95,
+                0.7195027195027195
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) The population P of a town increases at a rate proportional to the number by"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.7115027195027195,
+                0.95,
+                0.8430458430458431
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) By differentiation show that P = 1000+ where A is a constant, is a solution"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "marks": 1,
+      "topic": "Argand Diagram, Loci and Regions",
+      "module": "Complex Numbers",
+      "syllabusRefs": [
+        "ME-N1",
+        "ME-N2"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "4. (a) (i) Express 2 = V2 in a modulus-argument form.",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 0,
+              "bbox": [
+                0.06,
+                0.8350458430458431,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "4. (a) (i) Express 2 = V2 in a modulus-argument form."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.10777311577311577,
+                0.95,
+                0.21756021756021757
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) (i) On an Argand diagram shade in the region R containing all points repre-"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.20956021756021756,
+                0.95,
+                0.2867132867132867
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Show that the locus specified by 3|z \u2014 (4+ 4#)| = |z \u2014 (12 + is a circle."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "marks": 1,
+      "topic": "Coordinate Geometry and Locus Proofs (Conics)",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "5. The hyperbola H has equation ry = 16.",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.2787132867132867,
+                0.95,
+                0.31157731157731156
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "5. The hyperbola H has equation ry = 16."
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.30357731157731155,
+                0.95,
+                0.35275835275835277
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) Sketch this hyperbola and indicate on your diagram the positions and co-"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.34475835275835276,
+                0.95,
+                0.3978243978243978
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) 4), where p > 0, and Q(4q, 4), where q > 0, are two distince arbitrary"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.3898243978243978,
+                0.95,
+                0.41647241647241645
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(c) Prove that the equation of the tangent at P is x + = 8p."
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.40847241647241644,
+                0.95,
+                0.44988344988344986
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(d) The tangents at P and Q inters"
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.44188344988344985,
+                0.95,
+                0.47474747474747475
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(e) The chord PQ produced passes through the point N(0,8)."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.46674747474747474,
+                0.95,
+                0.5345765345765345
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Find the equation of the locus of T."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "marks": 1,
+      "topic": "Resisted Motion (Vertical Motion Under Gravity and Resistance)",
+      "module": "Mechanics",
+      "syllabusRefs": [
+        "ME-M1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "6. A body of mass one kilogram is projected vertically upwards from the ground at",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.5265765345765345,
+                0.95,
+                0.6534576534576535
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "6. A body of mass one kilogram is projected vertically upwards from the ground at"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.6454576534576535,
+                0.95,
+                0.6806526806526807
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a) While the body is travelling upwards the equation of motion is"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.6726526806526807,
+                0.95,
+                0.7342657342657343
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Taking # ="
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.7262657342657343,
+                0.95,
+                0.7933177933177933
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Having reached its greatest height the particle fal"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.7853177933177933,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Write down the equation of motion of the particle as it falls."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "marks": 1,
+      "topic": "Geometric Proof (Similar Triangles, Volumes and Circle Geometry)",
+      "module": "Proof",
+      "syllabusRefs": [
+        "ME-P1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "7. (a) (i) not",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.14118414918414918,
+                0.95,
+                0.43745143745143744
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "7. (a) (i) not"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.42945143745143743,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Figure not"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.12331313131313132,
+                0.95,
+                0.5322455322455323
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b)"
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "marks": 1,
+      "topic": "Newton's Method and Numerical Approximation",
+      "module": "Calculus",
+      "syllabusRefs": [
+        "ME-C1"
+      ],
+      "type": "mc",
+      "stimulus": [],
+      "text": "8. (a) H 0",
+      "parts": [
+        {
+          "label": null,
+          "marks": 1,
+          "type": "mc",
+          "regions": [
+            {
+              "page": 3,
+              "bbox": [
+                0.06,
+                0.5242455322455323,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "8. (a) H 0"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.15283916083916083,
+                0.95,
+                0.24087024087024086
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b) Newton\u2019s method may be used to determine numerical approximations to the"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 4,
+              "bbox": [
+                0.06,
+                0.23287024087024086,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(i) Show that 2,41 = a(en + x):"
+        }
+      ]
+    }
+  ]
+}

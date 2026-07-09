@@ -1,0 +1,95 @@
+{
+  "paperId": "english-extension-1-hsc-nesa-2024-hsc-english-ext-1",
+  "subject": "english-extension-1",
+  "source": "ocr",
+  "questions": [
+    {
+      "number": "1",
+      "marks": 25,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "type": null,
+      "stimulus": [
+        {
+          "page": 1,
+          "bbox": [
+            0.06,
+            0.31834032634032633,
+            0.95,
+            0.8329448329448329
+          ]
+        }
+      ],
+      "text": "Question 1 (25 marks)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.8249448329448329,
+                0.95,
+                0.8997668997668997
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(a)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "type": null,
+          "regions": [
+            {
+              "page": 1,
+              "bbox": [
+                0.06,
+                0.8917668997668997,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "(b)"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "marks": 25,
+      "topic": null,
+      "module": null,
+      "syllabusRefs": [],
+      "type": null,
+      "stimulus": [],
+      "text": "Question 2 (25 marks)",
+      "parts": [
+        {
+          "label": null,
+          "marks": 25,
+          "type": null,
+          "regions": [
+            {
+              "page": 2,
+              "bbox": [
+                0.06,
+                0.34087334887334886,
+                0.95,
+                1.0
+              ]
+            }
+          ],
+          "markingRegions": [],
+          "text": "Question 2 (25 marks)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "number": "1",
+  "section": "I",
+  "aiGenerated": true,
+  "parts": [
+    {
+      "label": "1",
+      "marks": 1,
+      "steps": [
+        "$|2\\mathbf{i} + 3\\mathbf{j}| = \\sqrt{2^2 + 3^2}$",
+        "$= \\sqrt{4 + 9} = \\sqrt{13}$"
+      ],
+      "answer": "D"
+    },
+    {
+      "label": "2",
+      "marks": 1,
+      "steps": [
+        "$\\int \\frac{1}{\\sqrt{9-x^2}} dx = \\arcsin\\left(\\frac{x}{3}\\right) + C$",
+        "$\\left[\\arcsin\\left(\\frac{x}{3}\\right)\\right]_0^{3/2} = \\arcsin\\left(\\frac{1}{2}\\right) - \\arcsin(0)$",
+        "$= \\frac{\\pi}{6} - 0 = \\frac{\\pi}{6}$"
+      ],
+      "answer": "A"
+    }
+  ],
+  "answerNote": "AI-generated worked solution (DeepSeek V4) \u2014 verify"
+}
