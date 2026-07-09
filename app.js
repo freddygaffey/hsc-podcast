@@ -4193,25 +4193,106 @@
   // When a sync pulls remote changes, refresh the library if it's showing.
   window.addEventListener("sync-updated", () => { updateReviewBadge(); if (!viewLibrary.hidden) renderLibrary(); });
 
-  // --- Service worker ---
+  // --- Service worker & controlled updates ---
+  // A new shell no longer force-reloads the page the instant it deploys (that interrupted playback
+  // mid-session and made every deploy a surprise). Instead the new worker sits in "waiting" and the
+  // page applies it only when it's safe/wanted:
+  //   • the user swipes UP (an explicit "refresh now" gesture), or
+  //   • the running build has been in production ≥6 hours (stale enough to auto-update), applied
+  //     while paused so it never cuts off listening.
+  // Applying = postMessage SKIP_WAITING → the worker takes over → controllerchange → one reload.
   if ("serviceWorker" in navigator) {
-    // When a new shell activates (the SW calls skipWaiting + clients.claim), the page keeps
-    // running the OLD app.js until it reloads — and iOS PWAs are brutally sticky about this,
-    // so a deployed fix can sit live for days without the installed app ever picking it up.
-    // Force a one-time reload when an updated worker takes control. Guarded by `hadController`
-    // (don't reload on first-ever install) and a one-shot flag (no reload loops).
-    // updateViaCache:"none" makes the browser bypass its HTTP cache for the worker script so
-    // a new version is always discovered (some edge/browser Cache-Control TTLs would hide it).
-    const hadController = !!navigator.serviceWorker.controller;
+    const SIX_HOURS_MS = 6 * 60 * 60 * 1000;
+    let waitingWorker = null;   // the installed-but-waiting new shell, once one exists
+    let updateReady = false;
     let reloadingForUpdate = false;
-    navigator.serviceWorker.addEventListener("controllerchange", () => {
-      if (reloadingForUpdate || !hadController) return;
+    let runningBuildTime = 0;   // ms epoch the running build was cut (from /build.json .date)
+
+    // Learn how old the running build is, so the 6h rule has a clock. Cheap, one-shot, cached.
+    fetch("/build.json", { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((info) => { const t = info && info.date ? Date.parse(info.date) : NaN; if (isFinite(t)) runningBuildTime = t; maybeAutoUpdate(); })
+      .catch(() => {});
+
+    const buildStaleFor6h = () => runningBuildTime > 0 && Date.now() - runningBuildTime > SIX_HOURS_MS;
+
+    function applyUpdate(reason) {
+      if (reloadingForUpdate || !updateReady) return;
       reloadingForUpdate = true;
+      alog("sw:apply-update", "why=" + reason);
+      // Tell the waiting worker to take over; controllerchange (below) then reloads. If for some
+      // reason there's no waiting worker handle, just reload — the new shell is already cached.
+      if (waitingWorker) waitingWorker.postMessage({ type: "SKIP_WAITING" });
+      else window.location.reload();
+    }
+    function maybeAutoUpdate() {
+      // Auto-apply only when the running build is genuinely stale (≥6h) AND we won't cut off
+      // playback. Swipe-up ignores both conditions — it's an explicit request.
+      if (updateReady && audio.paused && buildStaleFor6h()) applyUpdate("6h-stale");
+    }
+    function markUpdateReady(worker) {
+      waitingWorker = worker || waitingWorker;
+      if (updateReady) return;
+      updateReady = true;
+      alog("sw:update-ready");
+      showUpdateBanner();
+      maybeAutoUpdate();
+    }
+
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      // Fires when the (now-former) waiting worker takes control after SKIP_WAITING. Reload once
+      // onto the new shell. Guarded so we never loop.
+      if (!reloadingForUpdate) return;
       window.location.reload();
     });
+
     navigator.serviceWorker.register("/service-worker.js", { updateViaCache: "none" })
-      .then((reg) => { reg.update().catch(() => {}); })
+      .then((reg) => {
+        // A worker already waiting from a previous visit.
+        if (reg.waiting && navigator.serviceWorker.controller) markUpdateReady(reg.waiting);
+        // A worker that finishes installing while we're running becomes our pending update.
+        reg.addEventListener("updatefound", () => {
+          const nw = reg.installing;
+          if (!nw) return;
+          nw.addEventListener("statechange", () => {
+            if (nw.state === "installed" && navigator.serviceWorker.controller) markUpdateReady(nw);
+          });
+        });
+        reg.update().catch(() => {});
+      })
       .catch(() => {});
+
+    // Swipe UP anywhere = "refresh now", but only does anything once an update is actually waiting,
+    // so it never disturbs normal scrolling on an up-to-date app. A deliberate, mostly-vertical
+    // upward swipe of a good fraction of the screen.
+    let swipeStartY = null, swipeStartX = null;
+    window.addEventListener("touchstart", (e) => {
+      if (!updateReady || e.touches.length !== 1) { swipeStartY = null; return; }
+      swipeStartY = e.touches[0].clientY; swipeStartX = e.touches[0].clientX;
+    }, { passive: true });
+    window.addEventListener("touchend", (e) => {
+      if (swipeStartY == null || !e.changedTouches[0]) return;
+      const dy = swipeStartY - e.changedTouches[0].clientY;      // + = up
+      const dx = Math.abs(e.changedTouches[0].clientX - swipeStartX);
+      swipeStartY = null;
+      if (dy > window.innerHeight * 0.25 && dy > dx * 1.5) applyUpdate("swipe-up");
+    }, { passive: true });
+
+    // Re-check the 6h rule when the app is brought back to the foreground.
+    document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") maybeAutoUpdate(); });
+
+    // Small, dismissible hint so the swipe-up gesture is discoverable (also tappable to apply).
+    function showUpdateBanner() {
+      if (document.getElementById("update-banner")) return;
+      const b = document.createElement("button");
+      b.id = "update-banner";
+      b.type = "button";
+      b.textContent = "Update ready — swipe up to refresh";
+      b.setAttribute("aria-label", "Update ready — tap or swipe up to refresh");
+      b.style.cssText = "position:fixed;left:50%;transform:translateX(-50%);bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:9999;padding:10px 16px;border:none;border-radius:999px;background:#2563eb;color:#fff;font:600 13px/1 system-ui,sans-serif;box-shadow:0 4px 16px rgba(0,0,0,.3)";
+      b.addEventListener("click", () => applyUpdate("banner-tap"));
+      document.body.appendChild(b);
+    }
   }
 
   // --- Init ---

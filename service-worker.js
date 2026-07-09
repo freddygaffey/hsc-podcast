@@ -37,7 +37,17 @@ async function precache() {
 }
 
 self.addEventListener('install', (e) => {
-  e.waitUntil(precache().then(() => self.skipWaiting()));
+  // Precache the new shell, but DO NOT skipWaiting — the new worker sits in "waiting" until the
+  // page explicitly asks it to take over (SKIP_WAITING message below). This is what lets the app
+  // control WHEN it refreshes (user swipe-up, or a build that's been in production ≥6h) instead of
+  // force-reloading mid-session the instant a deploy lands. See the SW block in app.js.
+  e.waitUntil(precache());
+});
+
+// The page sends this when it decides to apply a pending update (swipe-up / 6h-stale). Taking over
+// fires `controllerchange` in the page, which then reloads once onto the new shell.
+self.addEventListener('message', (e) => {
+  if (e.data && e.data.type === 'SKIP_WAITING') self.skipWaiting();
 });
 
 self.addEventListener('activate', (e) => {
