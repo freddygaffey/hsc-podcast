@@ -58,19 +58,14 @@
 
   // --- DOM refs ---
   const audioEl = document.getElementById("audio");
-  // The Web Audio high-speed engine was retired (worse quality, no streaming/background). Use the
-  // RAW native <audio> element directly + preservesPitch for clean high-speed playback. The hybrid
-  // wrapper (speed-engine.js, added 583cc87) is the suspected background-resume regression (BUG-36):
-  // resuming from a lock-screen pause played on but silent. Raw element = the pre-regression object.
-  const audio = audioEl;
-  // Pitch-preserved high speed (no chipmunk). Browsers clear the flag on a src change, so
-  // re-apply it on load + play (the retired hybrid did this on every play()).
-  function setNativePitch() {
-    ["preservesPitch", "webkitPreservesPitch", "mozPreservesPitch"].forEach((p) => {
-      try { if (p in audioEl) audioEl[p] = true; } catch (e) {}
-    });
-  }
-  setNativePitch();
+  // Hybrid audio (see speed-engine.js). DEFAULT backend: the native <audio> element with
+  // preservesPitch — the same clean, pitch-preserved high speed the browser speed
+  // extensions use, audible to 16x and able to play with the screen off. FALLBACK (opt-in
+  // Settings toggle): the Web Audio WSOLA time-stretch engine, for devices that mute
+  // native playbackRate at high speed; audible to 16x on any device but no background
+  // playback. In engine mode a silent looping element anchors the iOS media session so
+  // lock-screen / headphone controls still work. See createHybridAudio.
+  const audio = window.createHybridAudio ? window.createHybridAudio(audioEl) : audioEl;
   const viewSubjects = document.getElementById("view-subjects");
   const viewSubjectHub = document.getElementById("view-subject-hub");
   const viewLibrary = document.getElementById("view-library");
@@ -880,10 +875,25 @@
     if (window.Sync && window.Sync.syncNow) window.Sync.syncNow().catch(() => {});
   });
 
+  // BUG-36: hold the iOS audio session alive so a lock-screen "play" after a screen-off pause
+  // actually produces sound (native <audio> otherwise loses its output route and a *fresh*
+  // background el.play() is rejected — the UI flips but stays silent). A separate silent clip
+  // loops CONTINUOUSLY from the moment playback starts (a foreground gesture, so it's allowed) and
+  // KEEPS RUNNING through pause, keeping the session warm so resume isn't a cold background start.
+  // (Mirrors the retired engine's silent anchor, which worked; needs on-device confirmation.)
+  const SILENT_URI = "data:audio/wav;base64,UklGRkQDAABXQVZFZm10IBAAAAABAAEAQB8AAIA+AAACABAAZGF0YSADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+  let keepAliveEl = null;
+  function startKeepAlive() {
+    if (!currentEpisode) return;
+    if (!keepAliveEl) { keepAliveEl = new Audio(SILENT_URI); keepAliveEl.loop = true; keepAliveEl.volume = 1; }
+    if (!keepAliveEl.paused) return;   // already holding the session — don't restart
+    try { const p = keepAliveEl.play(); if (p && p.catch) p.catch(() => {}); } catch (e) {}
+  }
+  function stopKeepAlive() { if (keepAliveEl) { try { keepAliveEl.pause(); } catch (e) {} } }
 
   // --- Audio events ---
-  audio.addEventListener("play", () => { setNativePitch(); setPlayState(true); lastListenTick = Date.now(); if ("mediaSession" in navigator) navigator.mediaSession.playbackState = "playing"; track("play", { ep: currentEpisode && currentEpisode.id, speed: getCurrentSpeed() }); });
-  audio.addEventListener("pause", () => { setPlayState(false); flushListenLog(); lastListenTick = 0; persistProgress(); if ("mediaSession" in navigator) navigator.mediaSession.playbackState = "paused"; });
+  audio.addEventListener("play", () => { startKeepAlive(); setPlayState(true); lastListenTick = Date.now(); if ("mediaSession" in navigator) navigator.mediaSession.playbackState = "playing"; track("play", { ep: currentEpisode && currentEpisode.id, speed: getCurrentSpeed() }); });
+  audio.addEventListener("pause", () => { setPlayState(false); flushListenLog(); lastListenTick = 0; persistProgress(); if ("mediaSession" in navigator) navigator.mediaSession.playbackState = "paused"; /* keep the silent anchor running — holds the session warm for resume (BUG-36) */ });
   audio.addEventListener("ended", () => {
     flushListenLog(); // credit time to the finished episode's voice before advancing
     if (currentEpisode) saveEpisodeProgress(currentEpisode.id, { progressPct: 1, completed: true });
@@ -1102,7 +1112,6 @@
     const token = ++loadToken;
     audio.src = voice.file;
     audio.load();
-    setNativePitch();   // re-assert pitch-preservation after the src change
     // Start playback as synchronously as possible (don't wait for loadedmetadata) so that,
     // when auto-advancing in the background, iOS still treats the audio session as active.
     if (autoplay) {
@@ -1150,7 +1159,6 @@
     const token = ++loadToken;
     audio.src = voice.file;
     audio.load();
-    setNativePitch();   // re-assert pitch-preservation after the src change
     audio.addEventListener("loadedmetadata", () => {
       if (token !== loadToken) return; // a newer load superseded this one
       if (audio.duration) audio.currentTime = pct * audio.duration;
