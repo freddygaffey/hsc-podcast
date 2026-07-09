@@ -899,17 +899,31 @@
   // position) to re-establish a live session from the lock-screen gesture, instead of a plain play()
   // that reconnects to nothing. Runs ONLY when document.hidden, so normal foreground playback and the
   // native high-speed path are completely untouched (no WebAudio, unlike attempt 5).
+  // Re-entrancy-safe: a rapid play/pause toggle on the lock screen must NOT restart the reload from
+  // scratch (that thrashed and aborted every attempt). One reload runs at a time; we wait for the
+  // element to be READY before playing (no play-before-ready AbortError), then honour the LATEST
+  // intent (`bgWantPlay`) — so a pause during the reload just cancels the pending play, cleanly.
+  let bgResuming = false, bgWantPlay = false;
   function backgroundResumeKick() {
+    bgWantPlay = true;
+    if (bgResuming) { alog("bg:coalesced"); return; } // a reload is already in flight — keep it
+    bgResuming = true;
     const pos = audio.currentTime || 0;
     const rate = getCurrentSpeed();
     alog("bg:kick", "pos=" + pos.toFixed(1));
-    audio.addEventListener("loadedmetadata", function h() {
-      audio.removeEventListener("loadedmetadata", h);
+    const cleanup = () => { audio.removeEventListener("canplay", onReady); audio.removeEventListener("error", onErr); };
+    const onErr = () => { cleanup(); bgResuming = false; alog("bg:load-error"); };
+    const onReady = () => {
+      cleanup();
+      bgResuming = false;
       if (pos && audio.duration) { try { audio.currentTime = pos; } catch (e) {} }
       audio.playbackRate = rate;
-    }, { once: true });
-    try { audio.load(); } catch (e) {}
-    audio.play().then(() => alog("bg:play resolved")).catch((e) => alog("bg:play REJECTED", "reason=" + (e && e.name)));
+      if (!bgWantPlay) { alog("bg:skip (paused during reload)"); return; }
+      audio.play().then(() => alog("bg:play resolved")).catch((e) => alog("bg:play REJECTED", "reason=" + (e && e.name)));
+    };
+    audio.addEventListener("canplay", onReady, { once: true });
+    audio.addEventListener("error", onErr, { once: true });
+    try { audio.load(); } catch (e) { cleanup(); bgResuming = false; }
   }
 
   function setupMediaSession() {
@@ -921,7 +935,7 @@
       if (document.hidden) backgroundResumeKick();
       else audio.play().then(() => alog("MS:play resolved")).catch((e) => alog("MS:play REJECTED", "reason=" + (e && e.name)));
     });
-    set("pause", () => { alog("MS:pause handler"); audio.pause(); });
+    set("pause", () => { alog("MS:pause handler"); bgWantPlay = false; audio.pause(); });
     set("seekbackward", (d) => { audio.currentTime = Math.max(0, audio.currentTime - ((d && d.seekOffset) || 30)); });
     set("seekforward", (d) => { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + ((d && d.seekOffset) || 30)); });
     set("seekto", (d) => { if (d && d.seekTime != null && audio.duration) audio.currentTime = d.seekTime; });
