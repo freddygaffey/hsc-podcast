@@ -114,12 +114,13 @@
   // pre-renders each voice at the target speed, so we can play at 1× AND keep high speed. crossOrigin
   // must be set before the first src, so it's applied at init when the mode is on (toggling reloads).
   const BG_PAUSE_KEY = "hsc-bg-pause";
-  // TEMPORARY (WebAudio 1× test build): forced ON so we can FINALLY validate whether a session-holding
-  // WebAudio graph fixes background resume at 1×. The previous "test" never actually loaded on-device
-  // (controlled-update lag), so this premise is still unconfirmed. Forces 1× + routes through the graph.
-  // TODO before finishing (task #19): real Settings toggle (localStorage BG_PAUSE_KEY, default OFF) +
-  // strip diagnostics.
-  function bgPauseMode() { return true; }
+  // CONCLUDED OFF. The WebAudio 1× test (build 4f9346d) logged ctx=interrupted the moment the app was
+  // backgrounded — iOS suspends the WebAudio context for a backgrounded PWA and the silent keepalive
+  // can't prevent it. So WebAudio can't hold the session either (same wall as native), AND routing
+  // breaks native background *playback* + adds a pause stutter — strictly worse. Left OFF: native high
+  // speed + working background playback. Set localStorage BG_PAUSE_KEY='1' only to re-inspect the graph.
+  // TODO (task #19): strip the dormant WebAudio graph + kicks + diagnostics for good.
+  function bgPauseMode() { return localStorage.getItem(BG_PAUSE_KEY) === "1"; }
   let audioCtx = null, mediaSrcNode = null, silentKeepalive = null;
   if (bgPauseMode()) audioEl.crossOrigin = "anonymous";
   function ensureAudioGraph() {

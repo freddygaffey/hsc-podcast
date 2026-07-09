@@ -207,6 +207,40 @@ cheap and safe to iterate.
 
 ---
 
+## 10. The re-encode idea + the `ctx=interrupted` proof (2026-07-09)
+
+Fred asked the sharp question: since real-time speed is what breaks WebAudio, could we **pre-render each
+file at the target speed and play it at 1×**? Then no speed algorithm runs, WebAudio has nothing to
+break, and (the hope) it holds the session for background resume. Great idea — it hinges on one premise:
+**does a WebAudio context actually survive backgrounding at 1×?**
+
+We tested it directly (build `4f9346d`: forced `bgPauseMode`, routed through `createMediaElementSource` +
+silent keepalive, forced 1×, with a `ctx=` field added to the diagnostics). The log settled it:
+
+```
++15.4  vis:hidden   t=8.0   ctx=running        lock while playing — context alive
++18.6  vis:visible  t=11.2  ctx=interrupted    iOS INTERRUPTED the context while backgrounded
+```
+
+**`ctx=interrupted`** is a WebKit-specific AudioContext state: **iOS suspends the WebAudio context the
+instant a PWA is backgrounded, and the continuous silent keepalive does not prevent it.** So WebAudio
+cannot hold the audio session in the background — the *same* wall as the native element, now proven from
+the WebAudio side too. Therefore **the re-encode idea cannot clear BUG-36**: it removes the speed
+algorithm, but the blocker is session/context suspension, which is speed-independent.
+
+Worse, routing through WebAudio *degraded the one thing that worked* — native **background playback**
+stopped on lock (the interrupt), plus a pause-time stutter (a MediaElementSource artifact). So WebAudio
+is strictly worse than native for this app.
+
+**Final verdict:** iOS suspends the audio session for a backgrounded PWA — native `<audio>` (session
+deactivated on pause) and WebAudio (`ctx=interrupted`) alike — and won't let it be reclaimed without a
+foreground gesture. No web-side mechanism (silent keepalive, reload, re-encode, WebAudio routing) can
+change that. BUG-36 is a hard iOS platform limit. Ship clean native audio; background *playback* works
+(the primary case); background *pause→resume while still locked* requires a screen wake ("wake to
+resume"). Attempts exhausted: 1, 2, 3, 4, 5, 6/6b/6c/6d (reload+seek kicks), and WebAudio-at-1×.
+
+---
+
 ## 7. Verification of the current (reverted) state — `c6c61ca`
 
 - `git diff 410a382 HEAD -- app.js` filtered to audio identifiers → **empty** (audio code == known-good).
