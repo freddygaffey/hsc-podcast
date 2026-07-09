@@ -2362,19 +2362,45 @@
 
       const episodesEl = document.createElement("div");
       episodesEl.className = "module-episodes";
-      // While searching, show only matching rows but keep each episode's real position.
-      group.episodes.forEach((ep, i) => {
-        if (!matches(ep, group)) return;
-        episodesEl.appendChild(renderEpisodeRow(ep, i + 1));
-        shown++;
-      });
-      // Star key at the bottom of each case-study dropdown (one inline row, shown
-      // when the box is open). Case modules are CASE / CASE5-8.
-      if (!q && group.prefix.startsWith("CASE")) {
-        const key = document.createElement("div");
-        key.className = "module-key";
-        key.textContent = "⭐ = HSC importance — ⭐⭐⭐ most important; ⭐⭐ worth knowing; ⭐ least critical (can still appear)";
-        episodesEl.appendChild(key);
+      if (group.prefix === "CASE") {
+        // Case Studies: nest a collapsible sub-dropdown per module/topic
+        // (ep.caseGroup), preserving the manifest's doc order within each.
+        const subs = new Map();
+        group.episodes.forEach((ep) => {
+          if (!matches(ep, group)) return;
+          const gname = ep.caseGroup || "Other";
+          if (!subs.has(gname)) subs.set(gname, []);
+          subs.get(gname).push(ep);
+        });
+        subs.forEach((eps, gname) => {
+          const sub = document.createElement("div");
+          sub.className = "case-subgroup" + (q ? " open" : "");
+          const sdone = eps.filter((e) => getEpisodeProgress(e.id).completed).length;
+          const sh = document.createElement("button");
+          sh.className = "case-subhead";
+          sh.innerHTML = `<span class="case-subchev">&#8250;</span><span class="case-subname">${gname}</span><span class="case-submeta">${sdone}/${eps.length}</span>`;
+          sh.addEventListener("click", () => sub.classList.toggle("open"));
+          sub.appendChild(sh);
+          const seps = document.createElement("div");
+          seps.className = "case-subeps";
+          eps.forEach((ep, i) => { seps.appendChild(renderEpisodeRow(ep, i + 1)); shown++; });
+          sub.appendChild(seps);
+          episodesEl.appendChild(sub);
+        });
+        // Star key as the last row of the Case Studies dropdown.
+        if (!q) {
+          const key = document.createElement("div");
+          key.className = "module-key";
+          key.textContent = "⭐ = HSC importance — ⭐⭐⭐ most important; ⭐⭐ worth knowing; ⭐ least critical (can still appear)";
+          episodesEl.appendChild(key);
+        }
+      } else {
+        // While searching, show only matching rows but keep each episode's real position.
+        group.episodes.forEach((ep, i) => {
+          if (!matches(ep, group)) return;
+          episodesEl.appendChild(renderEpisodeRow(ep, i + 1));
+          shown++;
+        });
       }
       groupEl.appendChild(episodesEl);
 

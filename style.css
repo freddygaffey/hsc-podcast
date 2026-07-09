@@ -795,6 +795,33 @@ button, select, input { font-family: inherit; }
   background: var(--accent-soft);
 }
 
+/* Sub-dropdowns per module inside the single Case Studies dropdown. */
+.case-subgroup { border-top: 1px solid var(--border); }
+.case-subhead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 11px 16px;
+  background: var(--accent-soft);
+  border: none;
+  cursor: pointer;
+  color: var(--text);
+  text-align: left;
+  font: inherit;
+}
+.case-subname { font-weight: 600; font-size: 13px; flex: 1; }
+.case-submeta { font-size: 12px; color: var(--text-dim); white-space: nowrap; }
+.case-subchev {
+  color: var(--text-dim);
+  font-size: 18px;
+  line-height: 1;
+  transition: transform 0.15s ease;
+}
+.case-subgroup.open .case-subchev { transform: rotate(90deg); }
+.case-subeps { display: none; }
+.case-subgroup.open .case-subeps { display: block; }
+
 .ep-index { font-size: 13px; color: var(--text-dim); }
 .ep-index.ep-done { color: #22c55e; font-weight: 700; font-size: 15px; }
 .ep-row-done .ep-title { color: var(--text-dim); }
