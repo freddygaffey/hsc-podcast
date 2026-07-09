@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """Locate questions from the PDF TEXT LAYER — deterministic, ZERO tokens (born-digital only).
 
 For born-digital papers (a text layer exists), we don't need the vision model to find where

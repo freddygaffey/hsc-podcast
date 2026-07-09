@@ -1,3 +1,4 @@
+> ⛔ STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 # Bug-fix handoff — HSC Study PWA
 
 You are picking up a batch of bug fixes for a multi-subject HSC study PWA (podcasts + quizzes +

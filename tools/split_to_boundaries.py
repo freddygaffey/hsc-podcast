@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """Bridge the corrected split.json (vision segmenter + human review in the /review editor) into
 boundaries.json, the input bake_questions.py expects. Groups split units by QUESTION number;
 each unit (a lettered part, or a whole MC question) becomes a PART with its corrected region(s).

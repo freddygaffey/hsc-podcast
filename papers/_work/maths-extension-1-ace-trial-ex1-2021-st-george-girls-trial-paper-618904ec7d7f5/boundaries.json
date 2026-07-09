@@ -1,673 +1,749 @@
 {
-  "paperId": "maths-extension-1-ace-trial-ex1-2021-st-george-girls-trial-paper-618904ec7d7f5",
-  "subject": "maths-extension-1",
-  "source": "ocr",
-  "questions": [
+ "paperId": "maths-extension-1-ace-trial-ex1-2021-st-george-girls-trial-paper-618904ec7d7f5",
+ "subject": "maths-extension-1",
+ "source": "split-corrected",
+ "sectionIIStartPage": 8,
+ "solutionsStartPage": null,
+ "questions": [
+  {
+   "number": "1",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
     {
-      "number": "1",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "1. Consider the vectors a=2i+3/, b=-3i+2j and \u00a2=2i-j.",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 2,
-              "bbox": [
-                0.06,
-                0.21033721833721833,
-                0.95,
-                0.445998445998446
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "1. Consider the vectors a=2i+3/, b=-3i+2j and \u00a2=2i-j."
-        }
-      ]
-    },
-    {
-      "number": "2",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "2. Which of the following is the coefficient of x* in the expansion (x + >)",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 2,
-              "bbox": [
-                0.06,
-                0.437998445998446,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "2. Which of the following is the coefficient of x* in the expansion (x + >)"
-        }
-      ]
-    },
-    {
-      "number": "5",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "5. Forces of magnitude 8 N and 5 N act ona particle The angle between",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 3,
-              "bbox": [
-                0.06,
-                0.4807334887334887,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "5. Forces of magnitude 8 N and 5 N act ona particle The angle between"
-        }
-      ]
-    },
-    {
-      "number": "7",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "7. Which of the following is the primitive of dx ?",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 4,
-              "bbox": [
-                0.06,
-                0.671098679098679,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "7. Which of the following is the primitive of dx ?"
-        }
-      ]
-    },
-    {
-      "number": "8",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "8. Which expression is equivalent to cos 5x cos 2x \u2014 sin 6x sin 3x ?",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 5,
-              "bbox": [
-                0.06,
-                0.13574514374514374,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "8. Which expression is equivalent to cos 5x cos 2x \u2014 sin 6x sin 3x ?"
-        }
-      ]
-    },
-    {
-      "number": "10",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "10. The graph of the function y = tan\u201c? ~ 2) is to be transformed by",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 6,
-              "bbox": [
-                0.06,
-                0.13807614607614607,
-                0.95,
-                0.7443667443667443
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "10. The graph of the function y = tan\u201c? ~ 2) is to be transformed by"
-        }
-      ]
-    },
-    {
-      "number": "11",
-      "marks": 10,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": true,
-      "stimulus": [
-        {
-          "page": 7,
-          "bbox": [
-            0.06,
-            0.2655042735042735,
-            0.95,
-            0.32556332556332557
-          ]
-        }
-      ],
-      "text": "Question 11 (10 marks) Start a NEW Writing Booklet.",
-      "parts": [
-        {
-          "label": "a",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 7,
-              "bbox": [
-                0.06,
-                0.31756332556332556,
-                0.95,
-                0.4630924630924631
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(a) The polynomial 2x3 \u2014 4x? + 3x \u2014 6 = 0 has roots a, B and y."
-        },
-        {
-          "label": "b",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 7,
-              "bbox": [
-                0.06,
-                0.4550924630924631,
-                0.95,
-                0.5446775446775447
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(b) Solve =>"
-        },
-        {
-          "label": "c",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 7,
-              "bbox": [
-                0.06,
-                0.5366775446775447,
-                0.95,
-                0.7575757575757576
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(c) Consider the word STATISTICS."
-        },
-        {
-          "label": "d",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 7,
-              "bbox": [
-                0.06,
-                0.7495757575757576,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(d) Ina barrel there are 50 marbles of various colours. Of these, 5 are green,"
-        }
-      ]
-    },
-    {
-      "number": "12",
-      "marks": 10,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": true,
-      "stimulus": [
-        {
-          "page": 8,
-          "bbox": [
-            0.06,
-            0.08135508935508937,
-            0.95,
-            0.14296814296814297
-          ]
-        }
-      ],
-      "text": "Question 12 (10 marks) Start a NEW Writing Booklet.",
-      "parts": [
-        {
-          "label": "a",
-          "marks": 3,
-          "type": null,
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 8,
-              "bbox": [
-                0.06,
-                0.13496814296814297,
-                0.95,
-                0.21833721833721834
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(a) Express 2V3 sin x \u2014 2 cos x in the form R cos(x + a), where R > O and [0,27]."
-        },
-        {
-          "label": "b",
-          "marks": 2,
-          "type": null,
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 8,
-              "bbox": [
-                0.06,
-                0.21033721833721833,
-                0.95,
-                0.7987567987567987
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(b) A proposed plan for a garden is shown in the diagram. The curved boundary"
-        }
-      ]
-    },
-    {
-      "number": "12",
-      "marks": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": false,
-      "stimulus": [],
-      "text": "Question 12 (continued)",
-      "parts": [
-        {
-          "label": null,
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 9,
-              "bbox": [
-                0.06,
-                0.08135508935508937,
-                0.95,
-                0.8127428127428128
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "Question 12 (continued)"
-        }
-      ]
-    },
-    {
-      "number": "13",
-      "marks": 10,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": true,
-      "stimulus": [
-        {
-          "page": 10,
-          "bbox": [
-            0.06,
-            0.08135508935508937,
-            0.95,
-            0.1414141414141414
-          ]
-        }
-      ],
-      "text": "Question 13 (10 marks) Start a NEW Writing Booklet.",
-      "parts": [
-        {
-          "label": "a",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 10,
-              "bbox": [
-                0.06,
-                0.1334141414141414,
-                0.95,
-                0.21445221445221446
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(a) Find de the substitution u = e*, to two decimal"
-        },
-        {
-          "label": "b",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 10,
-              "bbox": [
-                0.06,
-                0.20645221445221446,
-                0.95,
-                0.29681429681429683
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(b) _ Use the t-formulae to solve the equation cos x \u2014 sinx = 1 where 0 < x"
-        },
-        {
-          "label": "c",
-          "marks": 1,
-          "type": null,
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 10,
-              "bbox": [
-                0.06,
-                0.2888142968142968,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(c) The function f(x) = 1 + Inx is defined in the domain (0,1)."
-        }
-      ]
-    },
-    {
-      "number": "14",
-      "marks": 10,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": true,
-      "stimulus": [
-        {
-          "page": 11,
-          "bbox": [
-            0.06,
-            0.08135508935508937,
-            0.95,
-            0.1561771561771562
-          ]
-        }
-      ],
-      "text": "Question 14 (10 marks) Start a NEW Writing Booklet.",
-      "parts": [
-        {
-          "label": "a",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 11,
-              "bbox": [
-                0.06,
-                0.14817715617715618,
-                0.95,
-                0.26573426573426573
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(a) Use mathematical induction to prove that 33\" + 2\"*? js divisible by 5 for"
-        },
-        {
-          "label": "b",
-          "marks": 1,
-          "type": null,
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 11,
-              "bbox": [
-                0.06,
-                0.2577342657342657,
-                0.95,
-                0.46386946386946387
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(b) Consider the points P(a,2a), Q(\u2014a,5a), R(3a,4a) and S(9a, 12a),"
-        },
-        {
-          "label": "c",
-          "marks": 3,
-          "type": null,
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 11,
-              "bbox": [
-                0.06,
-                0.45586946386946386,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(c) | Inthe diagram, the region bounded by the curve y = 2* \u2014 2 and the x-axis"
-        }
-      ]
-    },
-    {
-      "number": "15",
-      "marks": 10,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": true,
-      "stimulus": [
-        {
-          "page": 12,
-          "bbox": [
-            0.06,
-            0.08135508935508937,
-            0.95,
-            0.1522921522921523
-          ]
-        }
-      ],
-      "text": "Question 15 (10 marks) Start a NEW Writing Booklet.",
-      "parts": [
-        {
-          "label": "a",
-          "marks": 2,
-          "type": null,
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 12,
-              "bbox": [
-                0.06,
-                0.14429215229215228,
-                0.95,
-                0.23776223776223776
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(a) Write your answer correct to 3 significant figures."
-        },
-        {
-          "label": "b",
-          "marks": 1,
-          "type": null,
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 12,
-              "bbox": [
-                0.06,
-                0.22976223776223775,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(b) (i) 2sin x cos(2k + 1)x = sin 2(k + 1)x \u2014 sin 2kx."
-        }
-      ]
-    },
-    {
-      "number": "16",
-      "marks": 10,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": true,
-      "stimulus": [
-        {
-          "page": 13,
-          "bbox": [
-            0.06,
-            0.08135508935508937,
-            0.95,
-            0.1414141414141414
-          ]
-        }
-      ],
-      "text": "Question 16 (10 marks) Start a NEW Writing Booklet.",
-      "parts": [
-        {
-          "label": "a",
-          "marks": 3,
-          "type": null,
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 13,
-              "bbox": [
-                0.06,
-                0.1334141414141414,
-                0.95,
-                0.3620823620823621
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(a) Prove the trigonometric identity sin 3A = 3 sin A \u2014 4sin* A."
-        },
-        {
-          "label": "b",
-          "marks": 1,
-          "type": null,
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 13,
-              "bbox": [
-                0.06,
-                0.3540823620823621,
-                0.95,
-                0.8974358974358975
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(b) For the unit circle, centre 0, OP = p, OQ =q, ZPOR =aand ZQOR"
-        }
-      ]
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 3,
+       "bbox": [
+        0.0491,
+        0.2075,
+        0.9498,
+        0.4256
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
     }
-  ]
+   ]
+  },
+  {
+   "number": "2",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 3,
+       "bbox": [
+        0.0524,
+        0.4338,
+        0.8047,
+        0.6113
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "3",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 3,
+       "bbox": [
+        0.0524,
+        0.6243,
+        0.4476,
+        0.8856
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "4",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 4,
+       "bbox": [
+        0.0524,
+        0.0834,
+        0.7948,
+        0.4458
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "5",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 4,
+       "bbox": [
+        0.0623,
+        0.4734,
+        0.8421,
+        0.8856
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "6",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 5,
+       "bbox": [
+        0.0524,
+        0.1385,
+        0.8981,
+        0.6455
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "7",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 5,
+       "bbox": [
+        0.0524,
+        0.6638,
+        0.6838,
+        0.8957
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "8",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 6,
+       "bbox": [
+        0.0524,
+        0.1238,
+        0.7256,
+        0.3557
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "9",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 6,
+       "bbox": [
+        0.0524,
+        0.374,
+        0.852,
+        0.9353
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "10",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 7,
+       "bbox": [
+        0.0535,
+        0.1339,
+        0.9069,
+        0.466
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "11",
+   "marks": null,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 8,
+       "bbox": [
+        0.0535,
+        0.3133,
+        0.9388,
+        0.4256
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 8,
+       "bbox": [
+        0.0535,
+        0.4439,
+        0.9388,
+        0.5258
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "c",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 8,
+       "bbox": [
+        0.0535,
+        0.5387,
+        0.9388,
+        0.7053
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "d",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 8,
+       "bbox": [
+        0.0535,
+        0.7236,
+        0.9377,
+        0.8755
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "12",
+   "marks": 8,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": true,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": 3,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 9,
+       "bbox": [
+        0.0535,
+        0.1238,
+        0.9344,
+        0.1855
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": 5,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 9,
+       "bbox": [
+        0.0535,
+        0.2038,
+        0.9355,
+        0.7053
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "c",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 10,
+       "bbox": [
+        0.0535,
+        0.1238,
+        0.9025,
+        0.6354
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "13",
+   "marks": 10,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": true,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": 3,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 11,
+       "bbox": [
+        0.0579,
+        0.1238,
+        0.9377,
+        0.1855
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": 3,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 11,
+       "bbox": [
+        0.0535,
+        0.2038,
+        0.9377,
+        0.2655
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "c",
+     "marks": 4,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 11,
+       "bbox": [
+        0.0535,
+        0.2838,
+        0.9388,
+        0.8755
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "14",
+   "marks": 10,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": true,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": 3,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 12,
+       "bbox": [
+        0.0535,
+        0.1339,
+        0.9432,
+        0.236
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": 4,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 12,
+       "bbox": [
+        0.0535,
+        0.2535,
+        0.9443,
+        0.4398
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "c",
+     "marks": 3,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 12,
+       "bbox": [
+        0.0535,
+        0.461,
+        0.9443,
+        0.8972
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "15",
+   "marks": 10,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": true,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": 2,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 13,
+       "bbox": [
+        0.0579,
+        0.1238,
+        0.9399,
+        0.1956
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": 4,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 13,
+       "bbox": [
+        0.0535,
+        0.2139,
+        0.941,
+        0.4054
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "c",
+     "marks": 4,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 13,
+       "bbox": [
+        0.0535,
+        0.4237,
+        0.9399,
+        0.5755
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "16",
+   "marks": 10,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": true,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": 7,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 14,
+       "bbox": [
+        0.0535,
+        0.1238,
+        0.9366,
+        0.3152
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": 3,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 14,
+       "bbox": [
+        0.0535,
+        0.3538,
+        0.9256,
+        0.8156
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  }
+ ]
 }

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """Locate answer regions in a paper's MARKING-GUIDE PDF — deterministic, ZERO tokens.
 
 NESA exams link to a separate marking-guidelines PDF (markingPaperId in papers/_index.json)

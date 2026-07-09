@@ -1,510 +1,685 @@
 {
-  "paperId": "maths-extension-1-y12-trial-baulkham-hills-2022-w-sol",
-  "subject": "maths-extension-1",
-  "source": "ocr",
-  "questions": [
+ "paperId": "maths-extension-1-y12-trial-baulkham-hills-2022-w-sol",
+ "subject": "maths-extension-1",
+ "source": "split-corrected",
+ "sectionIIStartPage": 7,
+ "solutionsStartPage": 14,
+ "questions": [
+  {
+   "number": "1",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
     {
-      "number": "1",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "1 The probability of success in a Bernoulli trial is 0.40. What is the variance of the",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 1,
-              "bbox": [
-                0.06,
-                0.18562363919129082,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "1 The probability of success in a Bernoulli trial is 0.40. What is the variance of the"
-        }
-      ]
-    },
-    {
-      "number": "3",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "3. Given the vectors u = (3) and y = (3) te vector projection of w on v",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 2,
-              "bbox": [
-                0.06,
-                0.07520373250388804,
-                0.95,
-                0.3499222395023328
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "3. Given the vectors u = (3) and y = (3) te vector projection of w on v"
-        }
-      ]
-    },
-    {
-      "number": "4",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "4 Acclass consists of 10 girls and 14 boys. In how many ways can a committee",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 2,
-              "bbox": [
-                0.06,
-                0.3419222395023328,
-                0.95,
-                0.5816485225505443
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "4 Acclass consists of 10 girls and 14 boys. In how many ways can a committee"
-        }
-      ]
-    },
-    {
-      "number": "5",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "5 Which of the following is the derivative of cos ' (2):",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 2,
-              "bbox": [
-                0.06,
-                0.5736485225505443,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "5 Which of the following is the derivative of cos ' (2):"
-        }
-      ]
-    },
-    {
-      "number": "6",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "6 The slope field for a first order differential equation is shown.",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 3,
-              "bbox": [
-                0.06,
-                0.08064696734059099,
-                0.95,
-                0.6158631415241057
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "6 The slope field for a first order differential equation is shown."
-        }
-      ]
-    },
-    {
-      "number": "7",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "7 Each member of a class is instructed to write down a different whole number",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 3,
-              "bbox": [
-                0.06,
-                0.6078631415241057,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "7 Each member of a class is instructed to write down a different whole number"
-        }
-      ]
-    },
-    {
-      "number": "8",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "8 Achemical dissolves in a pool at a rate equal to 5% of the amount of undissolved",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 4,
-              "bbox": [
-                0.06,
-                0.08064696734059099,
-                0.95,
-                0.4105754276827372
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "8 Achemical dissolves in a pool at a rate equal to 5% of the amount of undissolved"
-        }
-      ]
-    },
-    {
-      "number": "9",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "9 In the diagram below, AOB is a diameter of the circle with centre O. C is a point",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 4,
-              "bbox": [
-                0.06,
-                0.4025754276827372,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "9 In the diagram below, AOB is a diameter of the circle with centre O. C is a point"
-        }
-      ]
-    },
-    {
-      "number": "10",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "10 and b are real numbers, and a is non-zero, When the polynomial P(x) = x?",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 5,
-              "bbox": [
-                0.06,
-                0.12186003110419907,
-                0.95,
-                0.5979782270606532
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "10 and b are real numbers, and a is non-zero, When the polynomial P(x) = x?"
-        }
-      ]
-    },
-    {
-      "number": "11",
-      "marks": 16,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": true,
-      "stimulus": [
-        {
-          "page": 6,
-          "bbox": [
-            0.06,
-            0.23850077760497668,
-            0.95,
-            0.4035769828926905
-          ]
-        }
-      ],
-      "text": "Question 11 (16 marks) Use the pages labelled Question 11 in the answer booklet",
-      "parts": [
-        {
-          "label": "b",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 6,
-              "bbox": [
-                0.06,
-                0.3955769828926905,
-                0.95,
-                0.5443234836702955
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(b) By expressing 2cosx + 9sinx in the form Acos(x \u2014 @), solve;"
-        },
-        {
-          "label": "c",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 6,
-              "bbox": [
-                0.06,
-                0.5363234836702955,
-                0.95,
-                0.6586314152410575
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(c) the substitution v = J \u2014 1 to find f"
-        },
-        {
-          "label": "d",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 6,
-              "bbox": [
-                0.06,
-                0.6506314152410575,
-                0.95,
-                0.8219284603421462
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(d) Find the curve that satisfies the differential equation;"
-        },
-        {
-          "label": "c",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 6,
-              "bbox": [
-                0.06,
-                0.8139284603421462,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(c) Using vector techniques, calculate to the nearest degree,"
-        }
-      ]
-    },
-    {
-      "number": "12",
-      "marks": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": false,
-      "stimulus": [],
-      "text": "Question 12 (continued)",
-      "parts": [
-        {
-          "label": null,
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 8,
-              "bbox": [
-                0.06,
-                0.08064696734059099,
-                0.95,
-                0.48367029548989116
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "Question 12 (continued)"
-        }
-      ]
-    },
-    {
-      "number": "13",
-      "marks": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": false,
-      "stimulus": [
-        {
-          "page": 10,
-          "bbox": [
-            0.06,
-            0.08064696734059099,
-            0.95,
-            0.12130637636080871
-          ]
-        }
-      ],
-      "text": "Question 13 (continued)",
-      "parts": [
-        {
-          "label": "c",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 10,
-              "bbox": [
-                0.06,
-                0.1133063763608087,
-                0.95,
-                0.42457231726283046
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(c) given that the angle 0 satisfies the equation;"
-        }
-      ]
-    },
-    {
-      "number": "14",
-      "marks": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": false,
-      "stimulus": [
-        {
-          "page": 12,
-          "bbox": [
-            0.06,
-            0.08064696734059099,
-            0.95,
-            0.3001555209953344
-          ]
-        }
-      ],
-      "text": "Question 14 (continued)",
-      "parts": [
-        {
-          "label": "d",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 12,
-              "bbox": [
-                0.06,
-                0.2921555209953344,
-                0.95,
-                0.6469673405909798
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(d) (i) Show that;"
-        }
-      ]
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 2,
+       "bbox": [
+        0.1019,
+        0.0834,
+        0.8728,
+        0.3653
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
     }
-  ]
+   ]
+  },
+  {
+   "number": "2",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 2,
+       "bbox": [
+        0.0891,
+        0.3796,
+        0.8386,
+        0.8957
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "3",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 3,
+       "bbox": [
+        0.1129,
+        0.0733,
+        0.8069,
+        0.2953
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "4",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 3,
+       "bbox": [
+        0.1129,
+        0.3439,
+        0.8926,
+        0.5355
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "5",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 3,
+       "bbox": [
+        0.114,
+        0.5733,
+        0.6069,
+        0.8559
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "6",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 4,
+       "bbox": [
+        0.114,
+        0.0733,
+        0.73,
+        0.5853
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "7",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 4,
+       "bbox": [
+        0.114,
+        0.5935,
+        0.8585,
+        0.8559
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "8",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 5,
+       "bbox": [
+        0.114,
+        0.064,
+        0.8201,
+        0.3754
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "9",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 5,
+       "bbox": [
+        0.1129,
+        0.3937,
+        0.8377,
+        0.8956
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "10",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 6,
+       "bbox": [
+        0.1151,
+        0.1138,
+        0.9003,
+        0.4057
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "11",
+   "marks": null,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 7,
+       "bbox": [
+        0.114,
+        0.2833,
+        0.852,
+        0.3653
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 7,
+       "bbox": [
+        0.1184,
+        0.3735,
+        0.8531,
+        0.4959
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "c",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 7,
+       "bbox": [
+        0.1184,
+        0.5134,
+        0.852,
+        0.5954
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "d",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 7,
+       "bbox": [
+        0.1184,
+        0.6036,
+        0.852,
+        0.7509
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "e",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 7,
+       "bbox": [
+        0.114,
+        0.7638,
+        0.852,
+        0.8956
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "12",
+   "marks": 12,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": true,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": 3,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 8,
+       "bbox": [
+        0.114,
+        0.134,
+        0.8585,
+        0.2859
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": 3,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 8,
+       "bbox": [
+        0.114,
+        0.2934,
+        0.852,
+        0.5954
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "c",
+     "marks": 6,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 8,
+       "bbox": [
+        0.114,
+        0.6239,
+        0.8575,
+        0.8458
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "d",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 9,
+       "bbox": [
+        0.114,
+        0.0826,
+        0.852,
+        0.3956
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "13",
+   "marks": 9,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": true,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": 3,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 10,
+       "bbox": [
+        0.1184,
+        0.1239,
+        0.8575,
+        0.2111
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": 6,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 10,
+       "bbox": [
+        0.114,
+        0.2234,
+        0.8575,
+        0.7859
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "c",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 11,
+       "bbox": [
+        0.114,
+        0.0826,
+        0.8575,
+        0.3256
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "14",
+   "marks": 8,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": true,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": 3,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 12,
+       "bbox": [
+        0.114,
+        0.0826,
+        0.8575,
+        0.1856
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": 5,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 12,
+       "bbox": [
+        0.105,
+        0.2102,
+        0.9084,
+        0.6377
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "c",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 13,
+       "bbox": [
+        0.114,
+        0.0826,
+        0.852,
+        0.2758
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "d",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 13,
+       "bbox": [
+        0.114,
+        0.2833,
+        0.852,
+        0.4858
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  }
+ ]
 }

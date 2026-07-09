@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """Generate an organized, distributable view of the raw papers/ tree.
 
 The raw `papers/` tree (written by the scrapers + the server sync) is the SOURCE

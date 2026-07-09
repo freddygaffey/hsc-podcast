@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """Render a structured solution -> PNG via KaTeX (real LaTeX) in headless Chrome.
 
 Robust replacement for the matplotlib renderer: DeepSeek emits ordinary FULL LaTeX,

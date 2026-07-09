@@ -1,3 +1,4 @@
+// STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 /* paper-export.js — the paper generator's PDF export engine (canonical).
  *
  * Builds a print-ready practice paper from baked question-crop PDFs (pdf-lib merge,

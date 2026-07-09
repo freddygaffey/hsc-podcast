@@ -1,3 +1,4 @@
+// STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 // hsc-podcast-auth — shared sync backend for the SE + Physics podcast PWAs.
 //
 // Design (decided with the user): end-to-end encrypted, append-only event log.

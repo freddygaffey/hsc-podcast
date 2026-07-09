@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """Upgrade legacy quiz.json files to the new schema (type + source), in place.
 
 Legacy episode quizzes were all AI-generated multiple-choice with no `type` or `source`.

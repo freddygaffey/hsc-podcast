@@ -1,71 +1,336 @@
 {
-  "paperId": "maths-extension-1-y12-trial-barker-2022-w-sol",
-  "subject": "maths-extension-1",
-  "source": "ocr",
-  "questions": [
+ "paperId": "maths-extension-1-y12-trial-barker-2022-w-sol",
+ "subject": "maths-extension-1",
+ "source": "split-corrected",
+ "sectionIIStartPage": 5,
+ "solutionsStartPage": null,
+ "questions": [
+  {
+   "number": "1",
+   "marks": null,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
     {
-      "number": "6",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "6) By solving he deren",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 3,
-              "bbox": [
-                0.06,
-                0.4238681318681319,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "6) By solving he deren"
-        }
-      ]
+     "label": null,
+     "marks": null,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 2,
+       "bbox": [
+        0.0639,
+        0.3044,
+        0.4393,
+        0.8738
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "3",
+   "marks": null,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": null,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 2,
+       "bbox": [
+        0.544,
+        0.0726,
+        0.8555,
+        0.4868
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "5",
+   "marks": null,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": null,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 2,
+       "bbox": [
+        0.0594,
+        0.078,
+        0.4096,
+        0.2789
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "8",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 3,
+       "bbox": [
+        0.0658,
+        0.0731,
+        0.935,
+        0.2742
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "9",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 3,
+       "bbox": [
+        0.0658,
+        0.2742,
+        0.9225,
+        0.428
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "10",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 3,
+       "bbox": [
+        0.0666,
+        0.4413,
+        0.9225,
+        0.8258
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "14",
+   "marks": 17,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": true,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": 11,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 5,
+       "bbox": [
+        0.0658,
+        0.0973,
+        0.959,
+        0.29
+       ]
+      },
+      {
+       "page": 7,
+       "bbox": [
+        0.0456,
+        0.0709,
+        0.9552,
+        0.444
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
     },
     {
-      "number": "9",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "9 ena",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 5,
-              "bbox": [
-                0.06,
-                0.31068131868131865,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "9 ena"
-        }
-      ]
+     "label": "b",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 5,
+       "bbox": [
+        0.0658,
+        0.29,
+        0.9567,
+        0.4225
+       ]
+      },
+      {
+       "page": 7,
+       "bbox": [
+        0.0674,
+        0.444,
+        0.7306,
+        0.7231
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "c",
+     "marks": 6,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 5,
+       "bbox": [
+        0.0658,
+        0.4225,
+        0.9567,
+        0.56
+       ]
+      },
+      {
+       "page": 7,
+       "bbox": [
+        0.0845,
+        0.7231,
+        0.7563,
+        0.9225
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "d",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 5,
+       "bbox": [
+        0.0658,
+        0.56,
+        0.9567,
+        0.7125
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "e",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 5,
+       "bbox": [
+        0.0658,
+        0.7125,
+        0.9575,
+        0.8928
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
     }
-  ]
+   ]
+  }
+ ]
 }

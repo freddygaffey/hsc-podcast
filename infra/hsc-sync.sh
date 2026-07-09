@@ -1,4 +1,5 @@
 #!/bin/bash
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 # Resilient sync: lives OUTSIDE the git repo so `git clean` in the repo can't
 # delete it. Pulls the server's papers into the local (git-ignored) papers dir
 # every 5 min. Merge-only (no --delete): never removes local files.

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """Deterministic Mathematics Extension-1 splitter  (source:"auto-ext1").
 
 Ext-1 papers are formulaic, so segmentation is an ANCHOR problem, not a vision problem:

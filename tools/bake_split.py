@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """split.json + source PDF  ->  one lossless oversized PDF per unit (Gen-3 bake).
 
 The bake is a deterministic *cache* of split.json, not a stage with its own truth: it

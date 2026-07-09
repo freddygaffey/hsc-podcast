@@ -1,290 +1,647 @@
 {
-  "paperId": "maths-extension-1-ace-trial-2021-mfhs-3u-trial-paper-644536a377834",
-  "subject": "maths-extension-1",
-  "source": "ocr",
-  "questions": [
+ "paperId": "maths-extension-1-ace-trial-2021-mfhs-3u-trial-paper-644536a377834",
+ "subject": "maths-extension-1",
+ "source": "split-corrected",
+ "sectionIIStartPage": 6,
+ "solutionsStartPage": null,
+ "questions": [
+  {
+   "number": "1",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
     {
-      "number": "11",
-      "marks": 16,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": true,
-      "stimulus": [
-        {
-          "page": 5,
-          "bbox": [
-            0.06,
-            0.2771592851592852,
-            0.95,
-            0.3682983682983683
-          ]
-        }
-      ],
-      "text": "Question 11: (16 marks) Use the question 11 Writing Booklet",
-      "parts": [
-        {
-          "label": "b",
-          "marks": 2,
-          "type": null,
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 5,
-              "bbox": [
-                0.06,
-                0.3602983682983683,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(b)"
-        }
-      ]
-    },
-    {
-      "number": "12",
-      "marks": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": false,
-      "stimulus": [],
-      "text": "Question 12 on the next page",
-      "parts": [
-        {
-          "label": null,
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 6,
-              "bbox": [
-                0.06,
-                0.7192727272727273,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "Question 12 on the next page"
-        }
-      ]
-    },
-    {
-      "number": "12",
-      "marks": 16,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": true,
-      "stimulus": [
-        {
-          "page": 7,
-          "bbox": [
-            0.06,
-            0.11321212121212121,
-            0.95,
-            0.3084693084693085
-          ]
-        }
-      ],
-      "text": "Question 12: (16 marks) Use the question 12 Writing Booklet",
-      "parts": [
-        {
-          "label": "b",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 7,
-              "bbox": [
-                0.06,
-                0.30046930846930847,
-                0.95,
-                0.7187257187257188
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(b)"
-        }
-      ]
-    },
-    {
-      "number": "13",
-      "marks": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": false,
-      "stimulus": [],
-      "text": "Question 13 on the next page",
-      "parts": [
-        {
-          "label": null,
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 7,
-              "bbox": [
-                0.06,
-                0.7107257187257188,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "Question 13 on the next page"
-        }
-      ]
-    },
-    {
-      "number": "13",
-      "marks": 14,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": true,
-      "stimulus": [
-        {
-          "page": 8,
-          "bbox": [
-            0.06,
-            0.13496814296814297,
-            0.95,
-            0.4763014763014763
-          ]
-        }
-      ],
-      "text": "Question 13: (14 marks) Use the question 13 Writing Booklet",
-      "parts": [
-        {
-          "label": "b",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 8,
-              "bbox": [
-                0.06,
-                0.4683014763014763,
-                0.95,
-                0.717948717948718
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(b)"
-        }
-      ]
-    },
-    {
-      "number": "14",
-      "marks": null,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": false,
-      "stimulus": [],
-      "text": "Question 14 on the next page",
-      "parts": [
-        {
-          "label": null,
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 8,
-              "bbox": [
-                0.06,
-                0.7099487179487179,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "Question 14 on the next page"
-        }
-      ]
-    },
-    {
-      "number": "14",
-      "marks": 14,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": true,
-      "stimulus": [
-        {
-          "page": 9,
-          "bbox": [
-            0.06,
-            0.15672416472416473,
-            0.95,
-            0.19502719502719504
-          ]
-        }
-      ],
-      "text": "Question 14: (14 marks) Use the question 14 Writing Booklet",
-      "parts": [
-        {
-          "label": "a",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 9,
-              "bbox": [
-                0.06,
-                0.18702719502719503,
-                0.95,
-                0.4289044289044289
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(a) Point P(a,b) moves such that the angle between the vectors OP and"
-        },
-        {
-          "label": "b",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 9,
-              "bbox": [
-                0.06,
-                0.4209044289044289,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(b)"
-        }
-      ]
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 2,
+       "bbox": [
+        0.1535,
+        0.1937,
+        0.6058,
+        0.4559
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
     }
-  ]
+   ]
+  },
+  {
+   "number": "2",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 2,
+       "bbox": [
+        0.1524,
+        0.4633,
+        0.6113,
+        0.6758
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "3",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 2,
+       "bbox": [
+        0.1524,
+        0.684,
+        0.8366,
+        0.9058
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "4",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 3,
+       "bbox": [
+        0.1524,
+        0.0834,
+        0.8607,
+        0.3658
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "5",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 3,
+       "bbox": [
+        0.1524,
+        0.3749,
+        0.6344,
+        0.6253
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "6",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 3,
+       "bbox": [
+        0.1524,
+        0.636,
+        0.8454,
+        0.8988
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "7",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 4,
+       "bbox": [
+        0.1535,
+        0.1634,
+        0.5069,
+        0.4054
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "8",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 4,
+       "bbox": [
+        0.1524,
+        0.4136,
+        0.4388,
+        0.6253
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "9",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 4,
+       "bbox": [
+        0.1522,
+        0.6339,
+        0.8353,
+        0.9209
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "10",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 5,
+       "bbox": [
+        0.1535,
+        0.224,
+        0.8575,
+        0.4357
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "11",
+   "marks": 11,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": true,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": 2,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 6,
+       "bbox": [
+        0.1329,
+        0.3061,
+        0.8631,
+        0.3561
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": 5,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 6,
+       "bbox": [
+        0.1461,
+        0.3626,
+        0.8623,
+        0.5541
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "d",
+     "marks": 4,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 7,
+       "bbox": [
+        0.1623,
+        0.0834,
+        0.8629,
+        0.1795
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "e",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 7,
+       "bbox": [
+        0.1327,
+        0.1855,
+        0.8617,
+        0.5755
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "12",
+   "marks": null,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 8,
+       "bbox": [
+        0.1228,
+        0.1152,
+        0.875,
+        0.2922
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 8,
+       "bbox": [
+        0.1535,
+        0.2922,
+        0.875,
+        0.3512
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "c",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 8,
+       "bbox": [
+        0.1535,
+        0.3512,
+        0.875,
+        0.4357
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "d",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 8,
+       "bbox": [
+        0.1535,
+        0.4394,
+        0.875,
+        0.5062
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "e",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 8,
+       "bbox": [
+        0.1535,
+        0.5062,
+        0.875,
+        0.5755
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "13",
+   "marks": null,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 9,
+       "bbox": [
+        0.114,
+        0.137,
+        0.8618,
+        0.4559
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 9,
+       "bbox": [
+        0.1535,
+        0.4633,
+        0.8618,
+        0.6758
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "14",
+   "marks": null,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 10,
+       "bbox": [
+        0.114,
+        0.1587,
+        0.8618,
+        0.4155
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 10,
+       "bbox": [
+        0.17,
+        0.4237,
+        0.8618,
+        0.9058
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "c",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 11,
+       "bbox": [
+        0.17,
+        0.0733,
+        0.8618,
+        0.1653
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  }
+ ]
 }

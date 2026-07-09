@@ -1,4 +1,5 @@
 #!/bin/bash
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 # Pull textbooks downloaded on the server into the local staging dir every 3 min.
 while true; do
   rsync -a --exclude='_*' -e "ssh -o BatchMode=yes -o ConnectTimeout=20" \

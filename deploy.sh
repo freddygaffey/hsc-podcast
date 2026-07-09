@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 #
 # deploy.sh — build a clean dist/ and deploy the unified app to Cloudflare Pages.
 #

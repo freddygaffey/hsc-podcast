@@ -1,3 +1,4 @@
+> ⛔ STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 # Parser pipeline rebuild (Gen 3) — architecture plan
 
 > Status: **Plan, approved-in-principle.** Target: reliable, repeatable, near-100%-

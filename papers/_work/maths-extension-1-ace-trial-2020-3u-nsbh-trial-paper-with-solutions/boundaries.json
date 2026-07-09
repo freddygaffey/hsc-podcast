@@ -1,443 +1,685 @@
 {
-  "paperId": "maths-extension-1-ace-trial-2020-3u-nsbh-trial-paper-with-solutions",
-  "subject": "maths-extension-1",
-  "source": "ocr",
-  "questions": [
+ "paperId": "maths-extension-1-ace-trial-2020-3u-nsbh-trial-paper-with-solutions",
+ "subject": "maths-extension-1",
+ "source": "split-corrected",
+ "sectionIIStartPage": 7,
+ "solutionsStartPage": 13,
+ "questions": [
+  {
+   "number": "1",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
     {
-      "number": "2",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "2. The coefficient of x3 in the expansion of (a + x)\u00b0 is 1280,",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 1,
-              "bbox": [
-                0.06,
-                0.6198166278166278,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "2. The coefficient of x3 in the expansion of (a + x)\u00b0 is 1280,"
-        }
-      ]
-    },
-    {
-      "number": "3",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "3. What is the value of y, if (7\u00b0) and are parallel?",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 2,
-              "bbox": [
-                0.06,
-                0.0867940947940948,
-                0.95,
-                0.27583527583527584
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "3. What is the value of y, if (7\u00b0) and are parallel?"
-        }
-      ]
-    },
-    {
-      "number": "4",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "4. What is the derivative of xsin~13x ?",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 2,
-              "bbox": [
-                0.06,
-                0.26783527583527583,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "4. What is the derivative of xsin~13x ?"
-        }
-      ]
-    },
-    {
-      "number": "6",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "6. Given the velocity time graph below find the acceleration for the first",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 3,
-              "bbox": [
-                0.06,
-                0.11476612276612277,
-                0.95,
-                0.5641025641025641
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "6. Given the velocity time graph below find the acceleration for the first"
-        }
-      ]
-    },
-    {
-      "number": "7",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "7. If two of the roots of 2x3 + bx? + cx + 8 = 0 are -1 and 2, find the",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 3,
-              "bbox": [
-                0.06,
-                0.5561025641025641,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "7. If two of the roots of 2x3 + bx? + cx + 8 = 0 are -1 and 2, find the"
-        }
-      ]
-    },
-    {
-      "number": "10",
-      "marks": 1,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": "mc",
-      "marksPrinted": true,
-      "stimulus": [],
-      "text": "10. Given the parametric equations",
-      "parts": [
-        {
-          "label": null,
-          "marks": 1,
-          "type": "mc",
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 5,
-              "bbox": [
-                0.06,
-                0.12098212898212898,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "10. Given the parametric equations"
-        }
-      ]
-    },
-    {
-      "number": "11",
-      "marks": 15,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": true,
-      "stimulus": [
-        {
-          "page": 6,
-          "bbox": [
-            0.06,
-            0.37506138306138304,
-            0.95,
-            0.47863247863247865
-          ]
-        }
-      ],
-      "text": "Question 11 (15 marks) Use the Question 11 Writing Booklet.",
-      "parts": [
-        {
-          "label": "b",
-          "marks": 3,
-          "type": null,
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 6,
-              "bbox": [
-                0.06,
-                0.47063247863247865,
-                0.95,
-                0.8174048174048174
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(b) Find the term independent of x in the expansion (x?"
-        }
-      ]
-    },
-    {
-      "number": "12",
-      "marks": 15,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": true,
-      "stimulus": [
-        {
-          "page": 7,
-          "bbox": [
-            0.06,
-            0.0867940947940948,
-            0.95,
-            0.14996114996114995
-          ]
-        }
-      ],
-      "text": "Question 12 (15 marks) Use the Question 12 Writing Booklet.",
-      "parts": [
-        {
-          "label": "a",
-          "marks": 2,
-          "type": null,
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 7,
-              "bbox": [
-                0.06,
-                0.14196114996114995,
-                0.95,
-                0.22455322455322455
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(a) ) = (3) and b = (2) find the vector projection ofa ontob."
-        },
-        {
-          "label": "b",
-          "marks": 2,
-          "type": null,
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 7,
-              "bbox": [
-                0.06,
-                0.21655322455322454,
-                0.95,
-                0.857031857031857
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(b) Given the graph of y = f(x) below"
-        }
-      ]
-    },
-    {
-      "number": "13",
-      "marks": 15,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": true,
-      "stimulus": [
-        {
-          "page": 8,
-          "bbox": [
-            0.06,
-            0.31523232323232325,
-            0.95,
-            0.3838383838383838
-          ]
-        }
-      ],
-      "text": "Question 13 (15 marks) Use the Question 13 Writing Booklet.",
-      "parts": [
-        {
-          "label": "a",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 8,
-              "bbox": [
-                0.06,
-                0.3758383838383838,
-                0.95,
-                0.5353535353535354
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(a) (@\u00ae Express \u2014 in the form Rsin(@ + a) where R > 0"
-        },
-        {
-          "label": "b",
-          "marks": 2,
-          "type": null,
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 8,
-              "bbox": [
-                0.06,
-                0.5273535353535354,
-                0.95,
-                0.8679098679098679
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(b) Given a = 3i\u2014 mj and b = ni-6j formn ER"
-        },
-        {
-          "label": "d",
-          "marks": 3,
-          "type": null,
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 9,
-              "bbox": [
-                0.06,
-                0.7076177156177156,
-                0.95,
-                0.8337218337218337
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(d) Prove by the Principle of Mathematical Induction for all integers n > 1"
-        }
-      ]
-    },
-    {
-      "number": "14",
-      "marks": 15,
-      "topic": null,
-      "module": null,
-      "syllabusRefs": [],
-      "type": null,
-      "marksPrinted": true,
-      "stimulus": [
-        {
-          "page": 10,
-          "bbox": [
-            0.06,
-            0.08757109557109558,
-            0.95,
-            0.20046620046620048
-          ]
-        }
-      ],
-      "text": "Question 14 (15 marks) Use the Question 14 Writing Booklet.",
-      "parts": [
-        {
-          "label": "b",
-          "marks": 3,
-          "type": null,
-          "marksPrinted": true,
-          "regions": [
-            {
-              "page": 10,
-              "bbox": [
-                0.06,
-                0.19246620046620047,
-                0.95,
-                0.8228438228438228
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(b) Consider the right angled triangle ABC below."
-        },
-        {
-          "label": "a",
-          "marks": null,
-          "type": null,
-          "marksPrinted": false,
-          "regions": [
-            {
-              "page": 19,
-              "bbox": [
-                0.06,
-                0.08446309246309247,
-                0.95,
-                1.0
-              ]
-            }
-          ],
-          "markingRegions": [],
-          "text": "(a) f2 di urs ttn."
-        }
-      ]
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 2,
+       "bbox": [
+        0.1338,
+        0.2333,
+        0.5937,
+        0.5755
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
     }
-  ]
+   ]
+  },
+  {
+   "number": "2",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 2,
+       "bbox": [
+        0.1294,
+        0.5938,
+        0.719,
+        0.7752
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "3",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 3,
+       "bbox": [
+        0.1371,
+        0.0733,
+        0.6717,
+        0.2259
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "4",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 3,
+       "bbox": [
+        0.1338,
+        0.2636,
+        0.5234,
+        0.5359
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "5",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 3,
+       "bbox": [
+        0.1305,
+        0.5938,
+        0.4981,
+        0.7954
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "6",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 4,
+       "bbox": [
+        0.1338,
+        0.1036,
+        0.8432,
+        0.5359
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "7",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 4,
+       "bbox": [
+        0.1305,
+        0.5534,
+        0.8036,
+        0.7457
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "8",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 5,
+       "bbox": [
+        0.1382,
+        0.1137,
+        0.8454,
+        0.6859
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "9",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 5,
+       "bbox": [
+        0.1272,
+        0.7034,
+        0.352,
+        0.8459
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "10",
+   "marks": 1,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": "mc",
+   "marksPrinted": false,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": null,
+     "marks": 1,
+     "type": "mc",
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 6,
+       "bbox": [
+        0.1404,
+        0.1137,
+        0.5882,
+        0.4357
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "11",
+   "marks": 27,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": true,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": 3,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 7,
+       "bbox": [
+        0.1371,
+        0.4237,
+        0.8333,
+        0.4701
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": 9,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 7,
+       "bbox": [
+        0.136,
+        0.4701,
+        0.8333,
+        0.5113
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "c",
+     "marks": 6,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 7,
+       "bbox": [
+        0.136,
+        0.5113,
+        0.8322,
+        0.5532
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "d",
+     "marks": 3,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 7,
+       "bbox": [
+        0.1349,
+        0.5532,
+        0.8322,
+        0.5973
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "e",
+     "marks": 6,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 7,
+       "bbox": [
+        0.1349,
+        0.6033,
+        0.8311,
+        0.6424
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "12",
+   "marks": 3,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": true,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": 3,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 8,
+       "bbox": [
+        0.1404,
+        0.1339,
+        0.8377,
+        0.2057
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 8,
+       "bbox": [
+        0.1327,
+        0.2139,
+        0.8756,
+        0.5605
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "c",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 8,
+       "bbox": [
+        0.1371,
+        0.5753,
+        0.8542,
+        0.853
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "13",
+   "marks": 11,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": true,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": null,
+     "type": null,
+     "marksPrinted": false,
+     "regions": [
+      {
+       "page": 9,
+       "bbox": [
+        0.1425,
+        0.3639,
+        0.8432,
+        0.4504
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": 2,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 9,
+       "bbox": [
+        0.1404,
+        0.5239,
+        0.8322,
+        0.5957
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "c",
+     "marks": 6,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 10,
+       "bbox": [
+        0.1458,
+        0.0733,
+        0.8432,
+        0.6556
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "d",
+     "marks": 3,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 10,
+       "bbox": [
+        0.1382,
+        0.6933,
+        0.8289,
+        0.8297
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  },
+  {
+   "number": "14",
+   "marks": 15,
+   "topic": null,
+   "module": null,
+   "syllabusRefs": [],
+   "type": null,
+   "marksPrinted": true,
+   "stimulus": [],
+   "text": "",
+   "parts": [
+    {
+     "label": "a",
+     "marks": 2,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 11,
+       "bbox": [
+        0.1019,
+        0.0896,
+        0.8278,
+        0.1752
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "b",
+     "marks": 3,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 11,
+       "bbox": [
+        0.1019,
+        0.1836,
+        0.8278,
+        0.5157
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "c",
+     "marks": 7,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 12,
+       "bbox": [
+        0.1272,
+        0.0733,
+        0.8366,
+        0.4559
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    },
+    {
+     "label": "d",
+     "marks": 3,
+     "type": null,
+     "marksPrinted": true,
+     "regions": [
+      {
+       "page": 12,
+       "bbox": [
+        0.1425,
+        0.4633,
+        0.8399,
+        0.5452
+       ]
+      }
+     ],
+     "markingRegions": [],
+     "text": ""
+    }
+   ]
+  }
+ ]
 }

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """Convert a markdown lecture script into clean, speakable plain text.
 
 Reads markdown from a file (or stdin) and writes narration-ready text to

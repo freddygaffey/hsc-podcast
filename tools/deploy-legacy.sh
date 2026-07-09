@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 #
 # deploy-legacy.sh — repoint a legacy single-subject app at the unified audio bucket
 # (audio.hsc.pebnum.com/<subject>/...) and redeploy it to its existing Pages project.

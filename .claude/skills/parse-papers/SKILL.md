@@ -1,3 +1,4 @@
+> ⛔ STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 ---
 name: parse-papers
 description: Parse a subject's past papers end-to-end — crop every question to its own PDF with metadata (origin paper, marks, working lines, type, syllabus outcomes), QA the crops through a Haiku→Sonnet→Opus vision funnel, and build the generator manifest. Use when the user wants papers parsed, cropped, ingested, tagged, or swept into the question bank.

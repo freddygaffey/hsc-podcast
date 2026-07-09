@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """annotate_app boxes  ->  split.json  (Gen-3 metadata-first SPLIT).
 
 Question boxes (kind != "lines") become units, 1 box = 1 unit, in paper-normalised

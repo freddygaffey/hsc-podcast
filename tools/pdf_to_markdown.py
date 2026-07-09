@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """Convert a PDF to Markdown, keeping images inline in reading order.
 
 Usage: python3 tools/pdf_to_markdown.py <input.pdf> <output_dir>

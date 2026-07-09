@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """Visual review tool for baked question crops (the spec's first-class review gate, §4.1).
 
 Shows each baked q_/a_ PDF as an image; one keypress approves or rejects it with a reason.

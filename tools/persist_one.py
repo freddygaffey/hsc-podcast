@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """Persist ONE paper's verified segmentation to split.json — called incrementally by the
 segmentation workflow's persist stage, so progress is durable per-paper (a stopped run loses
 nothing; a re-run skips papers whose split.json already has source:"agent").

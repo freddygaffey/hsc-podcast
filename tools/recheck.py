@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """Vision RE-CHECK for mis-split Section II questions.
 
 Trigger: a question whose parts OVERLAP (geometry) or whose marks don't add up (with gaps).

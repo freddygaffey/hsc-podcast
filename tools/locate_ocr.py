@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """Locate questions via OCR of the rendered pages — deterministic, ZERO LLM tokens.
 
 Why OCR and not the PDF text layer: many school PDFs have broken/subset font encodings, so

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 #
 # migrate-audio.sh — server-side R2→R2 copy of the legacy per-subject audio buckets into
 # the single unified bucket, one folder per subject:

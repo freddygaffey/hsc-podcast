@@ -1,3 +1,4 @@
+> ⛔ STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 # FEATURE-11 — Paper-assets migration runbook
 
 Move **all paper assets** off the audio bucket into a dedicated bucket

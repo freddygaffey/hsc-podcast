@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """Upload baked papers to R2, one folder per paper under a papers/ prefix:
 
     <subject>/papers/<paperSlug>/q01a.pdf    question crop

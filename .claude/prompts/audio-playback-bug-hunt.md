@@ -1,3 +1,4 @@
+> ⛔ STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 # Audio-playback bug hunt — HSC podcast PWA
 
 You are an expert web-audio / PWA engineer doing an adversarial bug hunt on the **audio

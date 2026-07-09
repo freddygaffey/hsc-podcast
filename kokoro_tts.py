@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """Render a lecture script to speech with the Kokoro local neural TTS model.
 
 Runs fully offline (after the first run downloads the model weights) and

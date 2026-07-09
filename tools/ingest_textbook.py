@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """Ingest a copyright textbook PDF WITHOUT ever exposing the whole book.
 
 The raw PDF and the extracted full text stay LOCAL (gitignored). The only thing that ever

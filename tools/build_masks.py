@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """split.json (+ lines boxes)  ->  mask.json  (Gen-3 MASK, deterministic).
 
 For each unit, partitions its region vertically into labelled bands the generator acts

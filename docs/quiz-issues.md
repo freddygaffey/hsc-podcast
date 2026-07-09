@@ -1,3 +1,4 @@
+> ⛔ STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 # Quiz / Review — known issues (to fix later)
 
 _Logged 2026-07-02. The Review / daily-quiz feature works but needs more design work.

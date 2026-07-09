@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 """Regression harness — score current pipeline output against frozen human ground truth.
 
 The gate that stops a prompt/rule change from silently regressing accuracy

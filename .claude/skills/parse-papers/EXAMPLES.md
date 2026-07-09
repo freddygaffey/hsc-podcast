@@ -1,3 +1,4 @@
+> ⛔ STOP (2026-07-09): Repo locked until 6 Nov 2026 (after the HSC). No work here without tangible study gain. See STOP-UNTIL-NOV-6.md. Go do past papers.
 # Segmentation examples & counterexamples (human ground truth)
 
 Learned from Fred's box annotations (tools/annotate_app.py ground truth on
