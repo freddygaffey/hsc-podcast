@@ -173,6 +173,16 @@ def build_subject(subject_dir: Path) -> dict | None:
     subject_id = cfg.get("id", subject_dir.name)
     audio_base = cfg.get("audioBaseUrl", "content")
 
+    # Case-study display order: the source doc's own sequence, if present, so linked
+    # experiments stay adjacent. Maps folder slug -> position in the doc.
+    case_order: dict[str, int] = {}
+    cmap = subject_dir / "sources" / "experiments" / "case-map.json"
+    if cmap.exists():
+        try:
+            case_order = {c["slug"]: i for i, c in enumerate(json.loads(cmap.read_text(encoding="utf-8")))}
+        except Exception:
+            pass
+
     modules: dict[str, dict] = {}
     for folder in sorted(subject_dir.iterdir()):
         if not folder.is_dir() or folder.name.startswith("_"):
@@ -191,25 +201,20 @@ def build_subject(subject_dir: Path) -> dict | None:
             module["episodes"].append(
                 build_episode(folder, subject_id, audio_base, title_slug.replace("-", " "), int(lesson_num)))
         elif case:
+            # All case studies live in ONE "Case Studies" dropdown. Titles keep their
+            # ⭐ rating; order follows the source doc's own sequence (case_order) so
+            # linked/related experiments stay adjacent — see the CASE sort below.
             fm = read_frontmatter(folder)
+            module = modules.setdefault("CASE",
+                {"id": "CASE", "prefix": "CASE", "moduleNum": 100, "episodes": []})
             stars_raw = fm.get("stars")
             if stars_raw is not None and str(stars_raw).isdigit():
-                # Case study carries its starred title + topic module (e.g. M7) + a
-                # 1-3 star importance. Put it in a PER-TOPIC case module (CASE7…) so the
-                # app shows one collapsible dropdown per topic; the CASE* sort below
-                # puts the most important (most stars) first within each dropdown.
-                mod = fm.get("module") or ""
-                topicnum = int(mod[1:]) if mod[1:].isdigit() else 0
-                prefix = f"CASE{topicnum}" if topicnum else "CASE"
                 title = fm.get("title") or case_title(case.group(1))
-                module = modules.setdefault(prefix,
-                    {"id": prefix, "prefix": prefix, "moduleNum": 100 + topicnum, "episodes": []})
                 ep = build_episode(folder, subject_id, audio_base, title, None)
                 ep["stars"] = int(stars_raw)
             else:
-                module = modules.setdefault("CASE",
-                    {"id": "CASE", "prefix": "CASE", "moduleNum": 100, "episodes": []})
                 ep = build_episode(folder, subject_id, audio_base, case_title(case.group(1)), None)
+            ep["_seq"] = case_order.get(folder.name, 9999)
             module["episodes"].append(ep)
 
     papers_module = build_papers_module(subject_dir, subject_id)
@@ -218,11 +223,11 @@ def build_subject(subject_dir: Path) -> dict | None:
 
     module_list = []
     for module in sorted(modules.values(), key=lambda m: (m["moduleNum"], m["prefix"])):
-        if module["prefix"].startswith("CASE"):
-            # Case studies (per-topic CASE* module): most-important (most stars) first,
-            # then title. Unstarred cases (subjects without ratings) sort by title.
+        if module["prefix"] == "CASE":
+            # Case studies: keep the source doc's own sequence (linked/related
+            # experiments stay adjacent), NOT importance order.
             module["episodes"].sort(
-                key=lambda e: (-e.get("stars", 0), e["title"]))
+                key=lambda e: (e.get("_seq", 9999), e["title"]))
         else:
             # Order by the numeric parts of the folder id (e.g. SA-20-01 -> (20, 1)),
             # which is the real unit+lesson sequence. The old (unit, title) key sorted
@@ -233,7 +238,7 @@ def build_subject(subject_dir: Path) -> dict | None:
             module["episodes"].sort(
                 key=lambda e: (tuple(int(n) for n in re.findall(r"\d+", e["id"])), e["title"]))
         for e in module["episodes"]:
-            e.pop("_topicnum", None)  # temp sort field, not for output
+            e.pop("_seq", None)  # temp sort field, not for output
         module_list.append(module)
 
     return {

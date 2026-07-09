@@ -3979,11 +3979,7 @@
         "M6": "Electromagnetism",
         "M7": "The Nature of Light",
         "M8": "From the Universe to the Atom",
-        "CASE": "Case Studies",
-        "CASE5": "Advanced Mechanics",
-        "CASE6": "Electromagnetism",
-        "CASE7": "The Nature of Light",
-        "CASE8": "From the Universe to the Atom"
+        "CASE": "Case Studies"
       },
       "yearMap": {
         "M1": "Year 11",
@@ -3994,11 +3990,7 @@
         "M6": "Year 12",
         "M7": "Year 12",
         "M8": "Year 12",
-        "CASE": "Case Studies",
-        "CASE5": "Case Studies",
-        "CASE6": "Case Studies",
-        "CASE7": "Case Studies",
-        "CASE8": "Case Studies"
+        "CASE": "Case Studies"
       },
       "yearOrder": [
         "Case Studies",
@@ -6985,10 +6977,62 @@
           ]
         },
         {
-          "id": "CASE5",
-          "prefix": "CASE5",
-          "moduleNum": 105,
+          "id": "CASE",
+          "prefix": "CASE",
+          "moduleNum": 100,
           "episodes": [
+            {
+              "id": "case_galileos_leaning_tower_of_pisa_thought",
+              "title": "\u2b50 Galileo\u2019s \u201cLeaning Tower of Pisa\u201d thought/real experiment (1589-1592)",
+              "unit": null,
+              "scriptPath": "content/physics/case_galileos_leaning_tower_of_pisa_thought/script.md",
+              "supplementaryPath": "content/physics/case_galileos_leaning_tower_of_pisa_thought/supplementary.md",
+              "quizPath": "content/physics/case_galileos_leaning_tower_of_pisa_thought/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_leaning_tower_of_pisa_thought/zz_eloquence_american.m4a",
+                  "duration": 359.9
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_leaning_tower_of_pisa_thought/zz_eloquence_british.m4a",
+                  "duration": 355.8
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_leaning_tower_of_pisa_thought/zz_eloquence_caribbean.m4a",
+                  "duration": 357.8
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_leaning_tower_of_pisa_thought/zz_eloquence_lancaster.m4a",
+                  "duration": 358.3
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_leaning_tower_of_pisa_thought/zz_eloquence_newyork.m4a",
+                  "duration": 353.4
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_leaning_tower_of_pisa_thought/zz_eloquence_received.m4a",
+                  "duration": 354.5
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_leaning_tower_of_pisa_thought/zz_eloquence_scottish.m4a",
+                  "duration": 347.5
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_leaning_tower_of_pisa_thought/zz_eloquence_westmidlands.m4a",
+                  "duration": 358.3
+                }
+              ],
+              "stars": 1
+            },
             {
               "id": "case_galileos_demonstration_of_the_principles_of",
               "title": "\u2b50\u2b50\u2b50 Galileo\u2019s demonstration of the principles of projectile motion (reportedly early 1600-1610)",
@@ -7236,58 +7280,6 @@
               "stars": 2
             },
             {
-              "id": "case_galileos_leaning_tower_of_pisa_thought",
-              "title": "\u2b50 Galileo\u2019s \u201cLeaning Tower of Pisa\u201d thought/real experiment (1589-1592)",
-              "unit": null,
-              "scriptPath": "content/physics/case_galileos_leaning_tower_of_pisa_thought/script.md",
-              "supplementaryPath": "content/physics/case_galileos_leaning_tower_of_pisa_thought/supplementary.md",
-              "quizPath": "content/physics/case_galileos_leaning_tower_of_pisa_thought/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_leaning_tower_of_pisa_thought/zz_eloquence_american.m4a",
-                  "duration": 359.9
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_leaning_tower_of_pisa_thought/zz_eloquence_british.m4a",
-                  "duration": 355.8
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_leaning_tower_of_pisa_thought/zz_eloquence_caribbean.m4a",
-                  "duration": 357.8
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_leaning_tower_of_pisa_thought/zz_eloquence_lancaster.m4a",
-                  "duration": 358.3
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_leaning_tower_of_pisa_thought/zz_eloquence_newyork.m4a",
-                  "duration": 353.4
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_leaning_tower_of_pisa_thought/zz_eloquence_received.m4a",
-                  "duration": 354.5
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_leaning_tower_of_pisa_thought/zz_eloquence_scottish.m4a",
-                  "duration": 347.5
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_leaning_tower_of_pisa_thought/zz_eloquence_westmidlands.m4a",
-                  "duration": 358.3
-                }
-              ],
-              "stars": 1
-            },
-            {
               "id": "case_henry_cavendishs_experiment_to_find_g",
               "title": "\u2b50 Henry Cavendish\u2019s experiment to find \u201cG\u201d from Newton\u2019s law of universal gravitation (1798)",
               "unit": null,
@@ -7338,14 +7330,7 @@
                 }
               ],
               "stars": 1
-            }
-          ]
-        },
-        {
-          "id": "CASE6",
-          "prefix": "CASE6",
-          "moduleNum": 106,
-          "episodes": [
+            },
             {
               "id": "case_hans_oersteds_effect_of_a_current",
               "title": "\u2b50\u2b50 Hans Oersted\u2019s effect of a current on a nearby compass (1820)",
@@ -7509,14 +7494,953 @@
                 }
               ],
               "stars": 2
-            }
-          ]
-        },
-        {
-          "id": "CASE7",
-          "prefix": "CASE7",
-          "moduleNum": 107,
-          "episodes": [
+            },
+            {
+              "id": "case_poissons_bright_spot",
+              "title": "\u2b50\u2b50 Evidence of Huygen\u2019s theory: Poisson\u2019s bright spot",
+              "unit": null,
+              "scriptPath": "content/physics/case_poissons_bright_spot/script.md",
+              "supplementaryPath": "content/physics/case_poissons_bright_spot/supplementary.md",
+              "quizPath": "content/physics/case_poissons_bright_spot/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/af_heart.m4a",
+                  "duration": 528.5
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/am_onyx.m4a",
+                  "duration": 459.8
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/am_santa.m4a",
+                  "duration": 503.7
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/bf_isabella.m4a",
+                  "duration": 505.5
+                },
+                {
+                  "name": "bm_daniel",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/bm_daniel.m4a",
+                  "duration": 451.0
+                },
+                {
+                  "name": "bm_george",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/bm_george.m4a",
+                  "duration": 533.8
+                },
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/zz_eloquence_american.m4a",
+                  "duration": 501.7
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/zz_eloquence_british.m4a",
+                  "duration": 494.7
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/zz_eloquence_caribbean.m4a",
+                  "duration": 500.0
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/zz_eloquence_lancaster.m4a",
+                  "duration": 500.0
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/zz_eloquence_newyork.m4a",
+                  "duration": 493.3
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/zz_eloquence_received.m4a",
+                  "duration": 493.5
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/zz_eloquence_scottish.m4a",
+                  "duration": 483.2
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/zz_eloquence_westmidlands.m4a",
+                  "duration": 501.0
+                }
+              ],
+              "stars": 2
+            },
+            {
+              "id": "case_youngs_double_slit_experiment",
+              "title": "\u2b50\u2b50\u2b50 Young\u2019s double slit experiment (1801)",
+              "unit": null,
+              "scriptPath": "content/physics/case_youngs_double_slit_experiment/script.md",
+              "supplementaryPath": "content/physics/case_youngs_double_slit_experiment/supplementary.md",
+              "quizPath": "content/physics/case_youngs_double_slit_experiment/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/af_heart.m4a",
+                  "duration": 694.7
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/am_onyx.m4a",
+                  "duration": 609.1
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/am_santa.m4a",
+                  "duration": 666.8
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/bf_isabella.m4a",
+                  "duration": 666.1
+                },
+                {
+                  "name": "bm_daniel",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/bm_daniel.m4a",
+                  "duration": 596.5
+                },
+                {
+                  "name": "bm_george",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/bm_george.m4a",
+                  "duration": 713.3
+                },
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/zz_eloquence_american.m4a",
+                  "duration": 660.8
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/zz_eloquence_british.m4a",
+                  "duration": 652.4
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/zz_eloquence_caribbean.m4a",
+                  "duration": 657.3
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/zz_eloquence_lancaster.m4a",
+                  "duration": 657.9
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/zz_eloquence_newyork.m4a",
+                  "duration": 650.3
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/zz_eloquence_received.m4a",
+                  "duration": 650.3
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/zz_eloquence_scottish.m4a",
+                  "duration": 634.6
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/zz_eloquence_westmidlands.m4a",
+                  "duration": 661.4
+                }
+              ],
+              "stars": 3
+            },
+            {
+              "id": "case_beeckman_and_galileos_lanterns_on_hills",
+              "title": "\u2b50 Beeckman and Galileo\u2019s \u201clanterns on hills\u201d attempt to measure the speed of light (1629)",
+              "unit": null,
+              "scriptPath": "content/physics/case_beeckman_and_galileos_lanterns_on_hills/script.md",
+              "supplementaryPath": "content/physics/case_beeckman_and_galileos_lanterns_on_hills/supplementary.md",
+              "quizPath": "content/physics/case_beeckman_and_galileos_lanterns_on_hills/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_beeckman_and_galileos_lanterns_on_hills/zz_eloquence_american.m4a",
+                  "duration": 337.8
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_beeckman_and_galileos_lanterns_on_hills/zz_eloquence_british.m4a",
+                  "duration": 334.3
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_beeckman_and_galileos_lanterns_on_hills/zz_eloquence_caribbean.m4a",
+                  "duration": 335.8
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_beeckman_and_galileos_lanterns_on_hills/zz_eloquence_lancaster.m4a",
+                  "duration": 336.6
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_beeckman_and_galileos_lanterns_on_hills/zz_eloquence_newyork.m4a",
+                  "duration": 332.3
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_beeckman_and_galileos_lanterns_on_hills/zz_eloquence_received.m4a",
+                  "duration": 333.1
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_beeckman_and_galileos_lanterns_on_hills/zz_eloquence_scottish.m4a",
+                  "duration": 324.0
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_beeckman_and_galileos_lanterns_on_hills/zz_eloquence_westmidlands.m4a",
+                  "duration": 335.8
+                }
+              ],
+              "stars": 1
+            },
+            {
+              "id": "case_ole_r_mers_io_eclipse_evidence",
+              "title": "\u2b50\u2b50 Ole R\u00f8mer\u2019s \u201cIo eclipse\u201d evidence of a finite speed of light (1676) (220,000 km/s)",
+              "unit": null,
+              "scriptPath": "content/physics/case_ole_r_mers_io_eclipse_evidence/script.md",
+              "supplementaryPath": "content/physics/case_ole_r_mers_io_eclipse_evidence/supplementary.md",
+              "quizPath": "content/physics/case_ole_r_mers_io_eclipse_evidence/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_ole_r_mers_io_eclipse_evidence/zz_eloquence_american.m4a",
+                  "duration": 525.5
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_ole_r_mers_io_eclipse_evidence/zz_eloquence_british.m4a",
+                  "duration": 519.5
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_ole_r_mers_io_eclipse_evidence/zz_eloquence_caribbean.m4a",
+                  "duration": 522.4
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_ole_r_mers_io_eclipse_evidence/zz_eloquence_lancaster.m4a",
+                  "duration": 524.7
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_ole_r_mers_io_eclipse_evidence/zz_eloquence_newyork.m4a",
+                  "duration": 517.0
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_ole_r_mers_io_eclipse_evidence/zz_eloquence_received.m4a",
+                  "duration": 516.8
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_ole_r_mers_io_eclipse_evidence/zz_eloquence_scottish.m4a",
+                  "duration": 504.0
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_ole_r_mers_io_eclipse_evidence/zz_eloquence_westmidlands.m4a",
+                  "duration": 526.6
+                }
+              ],
+              "stars": 2
+            },
+            {
+              "id": "case_james_bradleys_stellar_aberration_measurement_of",
+              "title": "\u2b50\u2b50 James Bradley\u2019s \u201cstellar aberration\u201d measurement of the speed of light (1728) (301,000 km/s)",
+              "unit": null,
+              "scriptPath": "content/physics/case_james_bradleys_stellar_aberration_measurement_of/script.md",
+              "supplementaryPath": "content/physics/case_james_bradleys_stellar_aberration_measurement_of/supplementary.md",
+              "quizPath": "content/physics/case_james_bradleys_stellar_aberration_measurement_of/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/af_heart.m4a",
+                  "duration": 522.0
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/am_onyx.m4a",
+                  "duration": 459.2
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/am_santa.m4a",
+                  "duration": 503.0
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/bf_isabella.m4a",
+                  "duration": 498.3
+                },
+                {
+                  "name": "bm_daniel",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/bm_daniel.m4a",
+                  "duration": 452.6
+                },
+                {
+                  "name": "bm_george",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/bm_george.m4a",
+                  "duration": 534.9
+                },
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/zz_eloquence_american.m4a",
+                  "duration": 483.5
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/zz_eloquence_british.m4a",
+                  "duration": 478.4
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/zz_eloquence_caribbean.m4a",
+                  "duration": 480.4
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/zz_eloquence_lancaster.m4a",
+                  "duration": 482.8
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/zz_eloquence_newyork.m4a",
+                  "duration": 476.0
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/zz_eloquence_received.m4a",
+                  "duration": 476.1
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/zz_eloquence_scottish.m4a",
+                  "duration": 466.5
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/zz_eloquence_westmidlands.m4a",
+                  "duration": 485.1
+                }
+              ],
+              "stars": 2
+            },
+            {
+              "id": "case_hippolyte_fizeaus_cogwheel_measurement_of_the",
+              "title": "\u2b50\u2b50\u2b50 Hippolyte Fizeau\u2019s \u201ccogwheel\u201d measurement of the speed of light (1849) (315,000 km/s)",
+              "unit": null,
+              "scriptPath": "content/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/script.md",
+              "supplementaryPath": "content/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/supplementary.md",
+              "quizPath": "content/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/af_heart.m4a",
+                  "duration": 690.0
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/am_onyx.m4a",
+                  "duration": 603.1
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/am_santa.m4a",
+                  "duration": 662.2
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/bf_isabella.m4a",
+                  "duration": 659.3
+                },
+                {
+                  "name": "bm_daniel",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/bm_daniel.m4a",
+                  "duration": 590.0
+                },
+                {
+                  "name": "bm_george",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/bm_george.m4a",
+                  "duration": 700.8
+                },
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/zz_eloquence_american.m4a",
+                  "duration": 655.0
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/zz_eloquence_british.m4a",
+                  "duration": 647.3
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/zz_eloquence_caribbean.m4a",
+                  "duration": 651.0
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/zz_eloquence_lancaster.m4a",
+                  "duration": 653.1
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/zz_eloquence_newyork.m4a",
+                  "duration": 645.1
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/zz_eloquence_received.m4a",
+                  "duration": 645.1
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/zz_eloquence_scottish.m4a",
+                  "duration": 630.7
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/zz_eloquence_westmidlands.m4a",
+                  "duration": 653.1
+                }
+              ],
+              "stars": 3
+            },
+            {
+              "id": "case_jean_l_on_foucaults_rotating_mirror",
+              "title": "\u2b50\u2b50 Jean/L\u00e9on Foucault\u2019s \u201crotating mirror\u201d measurement of the speed of light (1862) (298,000",
+              "unit": null,
+              "scriptPath": "content/physics/case_jean_l_on_foucaults_rotating_mirror/script.md",
+              "supplementaryPath": "content/physics/case_jean_l_on_foucaults_rotating_mirror/supplementary.md",
+              "quizPath": "content/physics/case_jean_l_on_foucaults_rotating_mirror/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/af_heart.m4a",
+                  "duration": 547.0
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/am_onyx.m4a",
+                  "duration": 478.6
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/am_santa.m4a",
+                  "duration": 525.2
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/bf_isabella.m4a",
+                  "duration": 523.0
+                },
+                {
+                  "name": "bm_daniel",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/bm_daniel.m4a",
+                  "duration": 469.2
+                },
+                {
+                  "name": "bm_george",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/bm_george.m4a",
+                  "duration": 557.2
+                },
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/zz_eloquence_american.m4a",
+                  "duration": 516.7
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/zz_eloquence_british.m4a",
+                  "duration": 509.9
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/zz_eloquence_caribbean.m4a",
+                  "duration": 514.4
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/zz_eloquence_lancaster.m4a",
+                  "duration": 514.9
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/zz_eloquence_newyork.m4a",
+                  "duration": 508.1
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/zz_eloquence_received.m4a",
+                  "duration": 508.3
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/zz_eloquence_scottish.m4a",
+                  "duration": 495.5
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/zz_eloquence_westmidlands.m4a",
+                  "duration": 515.3
+                }
+              ],
+              "stars": 2
+            },
+            {
+              "id": "case_heinrich_hertzs_verification_of_maxwells_em",
+              "title": "\u2b50\u2b50\u2b50 Heinrich Hertz\u2019s verification of Maxwell\u2019s EM (radio) waves (1887)",
+              "unit": null,
+              "scriptPath": "content/physics/case_heinrich_hertzs_verification_of_maxwells_em/script.md",
+              "supplementaryPath": "content/physics/case_heinrich_hertzs_verification_of_maxwells_em/supplementary.md",
+              "quizPath": "content/physics/case_heinrich_hertzs_verification_of_maxwells_em/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_heinrich_hertzs_verification_of_maxwells_em/zz_eloquence_american.m4a",
+                  "duration": 819.5
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_heinrich_hertzs_verification_of_maxwells_em/zz_eloquence_british.m4a",
+                  "duration": 809.6
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_heinrich_hertzs_verification_of_maxwells_em/zz_eloquence_caribbean.m4a",
+                  "duration": 817.8
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_heinrich_hertzs_verification_of_maxwells_em/zz_eloquence_lancaster.m4a",
+                  "duration": 816.3
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_heinrich_hertzs_verification_of_maxwells_em/zz_eloquence_newyork.m4a",
+                  "duration": 807.7
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_heinrich_hertzs_verification_of_maxwells_em/zz_eloquence_received.m4a",
+                  "duration": 807.6
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_heinrich_hertzs_verification_of_maxwells_em/zz_eloquence_scottish.m4a",
+                  "duration": 790.2
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_heinrich_hertzs_verification_of_maxwells_em/zz_eloquence_westmidlands.m4a",
+                  "duration": 816.9
+                }
+              ],
+              "stars": 3
+            },
+            {
+              "id": "case_rosa_and_dorseys_vacuum_constants_calculation",
+              "title": "\u2b50\u2b50 Rosa and Dorsey\u2019s \u201cvacuum constants\u201d calculation of the speed of light (1907) (299,710 km/s)",
+              "unit": null,
+              "scriptPath": "content/physics/case_rosa_and_dorseys_vacuum_constants_calculation/script.md",
+              "supplementaryPath": "content/physics/case_rosa_and_dorseys_vacuum_constants_calculation/supplementary.md",
+              "quizPath": "content/physics/case_rosa_and_dorseys_vacuum_constants_calculation/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/af_heart.m4a",
+                  "duration": 586.9
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/am_onyx.m4a",
+                  "duration": 514.9
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/am_santa.m4a",
+                  "duration": 562.5
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/bf_isabella.m4a",
+                  "duration": 560.1
+                },
+                {
+                  "name": "bm_daniel",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/bm_daniel.m4a",
+                  "duration": 504.9
+                },
+                {
+                  "name": "bm_george",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/bm_george.m4a",
+                  "duration": 595.9
+                },
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/zz_eloquence_american.m4a",
+                  "duration": 542.3
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/zz_eloquence_british.m4a",
+                  "duration": 537.9
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/zz_eloquence_caribbean.m4a",
+                  "duration": 541.3
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/zz_eloquence_lancaster.m4a",
+                  "duration": 541.0
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/zz_eloquence_newyork.m4a",
+                  "duration": 534.6
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/zz_eloquence_received.m4a",
+                  "duration": 536.8
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/zz_eloquence_scottish.m4a",
+                  "duration": 524.1
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/zz_eloquence_westmidlands.m4a",
+                  "duration": 546.6
+                }
+              ],
+              "stars": 2
+            },
+            {
+              "id": "case_louis_essens_cavity_resonance_measurement_of",
+              "title": "\u2b50\u2b50 Louis Essen\u2019s \u201ccavity resonance\u201d measurement of the speed of light (1950) (299,792.5 km/s)",
+              "unit": null,
+              "scriptPath": "content/physics/case_louis_essens_cavity_resonance_measurement_of/script.md",
+              "supplementaryPath": "content/physics/case_louis_essens_cavity_resonance_measurement_of/supplementary.md",
+              "quizPath": "content/physics/case_louis_essens_cavity_resonance_measurement_of/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/af_heart.m4a",
+                  "duration": 532.7
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/am_onyx.m4a",
+                  "duration": 469.8
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/am_santa.m4a",
+                  "duration": 512.8
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/bf_isabella.m4a",
+                  "duration": 508.8
+                },
+                {
+                  "name": "bm_daniel",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/bm_daniel.m4a",
+                  "duration": 460.2
+                },
+                {
+                  "name": "bm_george",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/bm_george.m4a",
+                  "duration": 545.8
+                },
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/zz_eloquence_american.m4a",
+                  "duration": 496.7
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/zz_eloquence_british.m4a",
+                  "duration": 491.3
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/zz_eloquence_caribbean.m4a",
+                  "duration": 495.1
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/zz_eloquence_lancaster.m4a",
+                  "duration": 494.4
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/zz_eloquence_newyork.m4a",
+                  "duration": 489.6
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/zz_eloquence_received.m4a",
+                  "duration": 489.9
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/zz_eloquence_scottish.m4a",
+                  "duration": 477.6
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/zz_eloquence_westmidlands.m4a",
+                  "duration": 498.4
+                }
+              ],
+              "stars": 2
+            },
+            {
+              "id": "case_froome_evansen_et_al_s_interferometry",
+              "title": "\u2b50\u2b50 Froome / Evansen et al \u2018s \u201cinterferometry\u201d measurement of the speed of light (1958/72)",
+              "unit": null,
+              "scriptPath": "content/physics/case_froome_evansen_et_al_s_interferometry/script.md",
+              "supplementaryPath": "content/physics/case_froome_evansen_et_al_s_interferometry/supplementary.md",
+              "quizPath": "content/physics/case_froome_evansen_et_al_s_interferometry/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_froome_evansen_et_al_s_interferometry/zz_eloquence_american.m4a",
+                  "duration": 525.2
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_froome_evansen_et_al_s_interferometry/zz_eloquence_british.m4a",
+                  "duration": 517.5
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_froome_evansen_et_al_s_interferometry/zz_eloquence_caribbean.m4a",
+                  "duration": 521.1
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_froome_evansen_et_al_s_interferometry/zz_eloquence_lancaster.m4a",
+                  "duration": 522.7
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_froome_evansen_et_al_s_interferometry/zz_eloquence_newyork.m4a",
+                  "duration": 516.5
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_froome_evansen_et_al_s_interferometry/zz_eloquence_received.m4a",
+                  "duration": 515.7
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_froome_evansen_et_al_s_interferometry/zz_eloquence_scottish.m4a",
+                  "duration": 502.5
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_froome_evansen_et_al_s_interferometry/zz_eloquence_westmidlands.m4a",
+                  "duration": 523.4
+                }
+              ],
+              "stars": 2
+            },
+            {
+              "id": "case_photoelectric_effect_analysis",
+              "title": "\u2b50\u2b50 Photoelectric effect analysis",
+              "unit": null,
+              "scriptPath": "content/physics/case_photoelectric_effect_analysis/script.md",
+              "supplementaryPath": "content/physics/case_photoelectric_effect_analysis/supplementary.md",
+              "quizPath": "content/physics/case_photoelectric_effect_analysis/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/af_heart.m4a",
+                  "duration": 609.5
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/am_onyx.m4a",
+                  "duration": 535.2
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/am_santa.m4a",
+                  "duration": 587.7
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/bf_isabella.m4a",
+                  "duration": 581.5
+                },
+                {
+                  "name": "bm_daniel",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/bm_daniel.m4a",
+                  "duration": 521.4
+                },
+                {
+                  "name": "bm_george",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/bm_george.m4a",
+                  "duration": 623.2
+                },
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/zz_eloquence_american.m4a",
+                  "duration": 573.7
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/zz_eloquence_british.m4a",
+                  "duration": 564.7
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/zz_eloquence_caribbean.m4a",
+                  "duration": 568.4
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/zz_eloquence_lancaster.m4a",
+                  "duration": 569.8
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/zz_eloquence_newyork.m4a",
+                  "duration": 564.5
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/zz_eloquence_received.m4a",
+                  "duration": 561.6
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/zz_eloquence_scottish.m4a",
+                  "duration": 551.5
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/zz_eloquence_westmidlands.m4a",
+                  "duration": 572.7
+                }
+              ],
+              "stars": 2
+            },
+            {
+              "id": "case_galileos_principle_of_relativity_ship_thought",
+              "title": "\u2b50\u2b50 Galileo\u2019s principle of relativity \u201cship\u201d thought experiment (1632)",
+              "unit": null,
+              "scriptPath": "content/physics/case_galileos_principle_of_relativity_ship_thought/script.md",
+              "supplementaryPath": "content/physics/case_galileos_principle_of_relativity_ship_thought/supplementary.md",
+              "quizPath": "content/physics/case_galileos_principle_of_relativity_ship_thought/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/af_heart.m4a",
+                  "duration": 571.1
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/am_onyx.m4a",
+                  "duration": 499.6
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/am_santa.m4a",
+                  "duration": 550.2
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/bf_isabella.m4a",
+                  "duration": 541.5
+                },
+                {
+                  "name": "bm_daniel",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/bm_daniel.m4a",
+                  "duration": 491.5
+                },
+                {
+                  "name": "bm_george",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/bm_george.m4a",
+                  "duration": 582.5
+                },
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/zz_eloquence_american.m4a",
+                  "duration": 527.7
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/zz_eloquence_british.m4a",
+                  "duration": 522.8
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/zz_eloquence_caribbean.m4a",
+                  "duration": 524.9
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/zz_eloquence_lancaster.m4a",
+                  "duration": 526.2
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/zz_eloquence_newyork.m4a",
+                  "duration": 519.6
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/zz_eloquence_received.m4a",
+                  "duration": 519.9
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/zz_eloquence_scottish.m4a",
+                  "duration": 507.4
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/zz_eloquence_westmidlands.m4a",
+                  "duration": 532.2
+                }
+              ],
+              "stars": 2
+            },
             {
               "id": "case_the_michelson_morley_ether_experiment",
               "title": "\u2b50\u2b50\u2b50 Evidence for Einstein's postulates: The Michelson-Morley \u201cether\u201d experiment (1887)",
@@ -7568,6 +8492,299 @@
                 }
               ],
               "stars": 3
+            },
+            {
+              "id": "case_the_mirror_in_a_train_thought",
+              "title": "\u2b50\u2b50 The mirror in a train thought experiment (1905)",
+              "unit": null,
+              "scriptPath": "content/physics/case_the_mirror_in_a_train_thought/script.md",
+              "supplementaryPath": "content/physics/case_the_mirror_in_a_train_thought/supplementary.md",
+              "quizPath": "content/physics/case_the_mirror_in_a_train_thought/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/af_heart.m4a",
+                  "duration": 545.7
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/am_onyx.m4a",
+                  "duration": 476.4
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/am_santa.m4a",
+                  "duration": 521.8
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/bf_isabella.m4a",
+                  "duration": 520.8
+                },
+                {
+                  "name": "bm_daniel",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/bm_daniel.m4a",
+                  "duration": 468.5
+                },
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/zz_eloquence_american.m4a",
+                  "duration": 507.4
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/zz_eloquence_british.m4a",
+                  "duration": 502.4
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/zz_eloquence_caribbean.m4a",
+                  "duration": 505.5
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/zz_eloquence_lancaster.m4a",
+                  "duration": 506.4
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/zz_eloquence_newyork.m4a",
+                  "duration": 499.5
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/zz_eloquence_received.m4a",
+                  "duration": 500.2
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/zz_eloquence_scottish.m4a",
+                  "duration": 487.8
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/zz_eloquence_westmidlands.m4a",
+                  "duration": 511.8
+                }
+              ],
+              "stars": 2
+            },
+            {
+              "id": "case_derivation_of_time_dilation_from_einsteins",
+              "title": "\u2b50 Derivation of time dilation from Einstein's postulates (photon clock) (1905)",
+              "unit": null,
+              "scriptPath": "content/physics/case_derivation_of_time_dilation_from_einsteins/script.md",
+              "supplementaryPath": "content/physics/case_derivation_of_time_dilation_from_einsteins/supplementary.md",
+              "quizPath": "content/physics/case_derivation_of_time_dilation_from_einsteins/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_time_dilation_from_einsteins/zz_eloquence_american.m4a",
+                  "duration": 419.4
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_time_dilation_from_einsteins/zz_eloquence_british.m4a",
+                  "duration": 413.9
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_time_dilation_from_einsteins/zz_eloquence_caribbean.m4a",
+                  "duration": 415.1
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_time_dilation_from_einsteins/zz_eloquence_lancaster.m4a",
+                  "duration": 415.9
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_time_dilation_from_einsteins/zz_eloquence_newyork.m4a",
+                  "duration": 412.6
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_time_dilation_from_einsteins/zz_eloquence_received.m4a",
+                  "duration": 412.8
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_time_dilation_from_einsteins/zz_eloquence_scottish.m4a",
+                  "duration": 403.8
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_time_dilation_from_einsteins/zz_eloquence_westmidlands.m4a",
+                  "duration": 420.2
+                }
+              ],
+              "stars": 1
+            },
+            {
+              "id": "case_derivation_of_length_contraction_from_einsteins",
+              "title": "\u2b50 Derivation of length contraction from Einstein's postulates (muon hypothetical) (1905)",
+              "unit": null,
+              "scriptPath": "content/physics/case_derivation_of_length_contraction_from_einsteins/script.md",
+              "supplementaryPath": "content/physics/case_derivation_of_length_contraction_from_einsteins/supplementary.md",
+              "quizPath": "content/physics/case_derivation_of_length_contraction_from_einsteins/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/af_heart.m4a",
+                  "duration": 397.3
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/am_onyx.m4a",
+                  "duration": 344.6
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/am_santa.m4a",
+                  "duration": 379.6
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/bf_isabella.m4a",
+                  "duration": 384.8
+                },
+                {
+                  "name": "bm_daniel",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/bm_daniel.m4a",
+                  "duration": 343.6
+                },
+                {
+                  "name": "bm_george",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/bm_george.m4a",
+                  "duration": 409.5
+                },
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/zz_eloquence_american.m4a",
+                  "duration": 382.8
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/zz_eloquence_british.m4a",
+                  "duration": 378.0
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/zz_eloquence_caribbean.m4a",
+                  "duration": 378.6
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/zz_eloquence_lancaster.m4a",
+                  "duration": 382.7
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/zz_eloquence_newyork.m4a",
+                  "duration": 376.9
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/zz_eloquence_received.m4a",
+                  "duration": 376.6
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/zz_eloquence_scottish.m4a",
+                  "duration": 367.6
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/zz_eloquence_westmidlands.m4a",
+                  "duration": 385.2
+                }
+              ],
+              "stars": 1
+            },
+            {
+              "id": "case_the_lights_in_a_box_thought",
+              "title": "\u2b50 Evidence for relativity of simultaneity: The lights in a box thought experiment",
+              "unit": null,
+              "scriptPath": "content/physics/case_the_lights_in_a_box_thought/script.md",
+              "supplementaryPath": "content/physics/case_the_lights_in_a_box_thought/supplementary.md",
+              "quizPath": "content/physics/case_the_lights_in_a_box_thought/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/af_heart.m4a",
+                  "duration": 543.8
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/am_onyx.m4a",
+                  "duration": 469.8
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/am_santa.m4a",
+                  "duration": 513.7
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/bf_isabella.m4a",
+                  "duration": 519.0
+                },
+                {
+                  "name": "bm_daniel",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/bm_daniel.m4a",
+                  "duration": 457.6
+                },
+                {
+                  "name": "bm_george",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/bm_george.m4a",
+                  "duration": 544.1
+                },
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/zz_eloquence_american.m4a",
+                  "duration": 362.1
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/zz_eloquence_british.m4a",
+                  "duration": 356.7
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/zz_eloquence_caribbean.m4a",
+                  "duration": 357.4
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/zz_eloquence_lancaster.m4a",
+                  "duration": 360.1
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/zz_eloquence_newyork.m4a",
+                  "duration": 355.9
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/zz_eloquence_received.m4a",
+                  "duration": 355.2
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/zz_eloquence_scottish.m4a",
+                  "duration": 348.1
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/zz_eloquence_westmidlands.m4a",
+                  "duration": 362.6
+                }
+              ],
+              "stars": 1
             },
             {
               "id": "case_high_altitude_muons_frisch_smith",
@@ -7674,1251 +8891,139 @@
               "stars": 3
             },
             {
-              "id": "case_heinrich_hertzs_verification_of_maxwells_em",
-              "title": "\u2b50\u2b50\u2b50 Heinrich Hertz\u2019s verification of Maxwell\u2019s EM (radio) waves (1887)",
+              "id": "case_behaviour_of_cathode_rays",
+              "title": "\u2b50 Discovery of the electron: Behaviour of cathode rays (in general)",
               "unit": null,
-              "scriptPath": "content/physics/case_heinrich_hertzs_verification_of_maxwells_em/script.md",
-              "supplementaryPath": "content/physics/case_heinrich_hertzs_verification_of_maxwells_em/supplementary.md",
-              "quizPath": "content/physics/case_heinrich_hertzs_verification_of_maxwells_em/quiz.json",
+              "scriptPath": "content/physics/case_behaviour_of_cathode_rays/script.md",
+              "supplementaryPath": "content/physics/case_behaviour_of_cathode_rays/supplementary.md",
+              "quizPath": "content/physics/case_behaviour_of_cathode_rays/quiz.json",
               "titleAudio": null,
               "voices": [
                 {
                   "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_heinrich_hertzs_verification_of_maxwells_em/zz_eloquence_american.m4a",
-                  "duration": 819.5
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_heinrich_hertzs_verification_of_maxwells_em/zz_eloquence_british.m4a",
-                  "duration": 809.6
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_heinrich_hertzs_verification_of_maxwells_em/zz_eloquence_caribbean.m4a",
-                  "duration": 817.8
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_heinrich_hertzs_verification_of_maxwells_em/zz_eloquence_lancaster.m4a",
-                  "duration": 816.3
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_heinrich_hertzs_verification_of_maxwells_em/zz_eloquence_newyork.m4a",
-                  "duration": 807.7
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_heinrich_hertzs_verification_of_maxwells_em/zz_eloquence_received.m4a",
-                  "duration": 807.6
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_heinrich_hertzs_verification_of_maxwells_em/zz_eloquence_scottish.m4a",
-                  "duration": 790.2
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_heinrich_hertzs_verification_of_maxwells_em/zz_eloquence_westmidlands.m4a",
-                  "duration": 816.9
-                }
-              ],
-              "stars": 3
-            },
-            {
-              "id": "case_hippolyte_fizeaus_cogwheel_measurement_of_the",
-              "title": "\u2b50\u2b50\u2b50 Hippolyte Fizeau\u2019s \u201ccogwheel\u201d measurement of the speed of light (1849) (315,000 km/s)",
-              "unit": null,
-              "scriptPath": "content/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/script.md",
-              "supplementaryPath": "content/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/supplementary.md",
-              "quizPath": "content/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/af_heart.m4a",
-                  "duration": 690.0
-                },
-                {
-                  "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/am_onyx.m4a",
-                  "duration": 603.1
-                },
-                {
-                  "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/am_santa.m4a",
-                  "duration": 662.2
-                },
-                {
-                  "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/bf_isabella.m4a",
-                  "duration": 659.3
-                },
-                {
-                  "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/bm_daniel.m4a",
-                  "duration": 590.0
-                },
-                {
-                  "name": "bm_george",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/bm_george.m4a",
-                  "duration": 700.8
-                },
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/zz_eloquence_american.m4a",
-                  "duration": 655.0
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/zz_eloquence_british.m4a",
-                  "duration": 647.3
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/zz_eloquence_caribbean.m4a",
-                  "duration": 651.0
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/zz_eloquence_lancaster.m4a",
-                  "duration": 653.1
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/zz_eloquence_newyork.m4a",
-                  "duration": 645.1
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/zz_eloquence_received.m4a",
-                  "duration": 645.1
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/zz_eloquence_scottish.m4a",
-                  "duration": 630.7
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hippolyte_fizeaus_cogwheel_measurement_of_the/zz_eloquence_westmidlands.m4a",
-                  "duration": 653.1
-                }
-              ],
-              "stars": 3
-            },
-            {
-              "id": "case_youngs_double_slit_experiment",
-              "title": "\u2b50\u2b50\u2b50 Young\u2019s double slit experiment (1801)",
-              "unit": null,
-              "scriptPath": "content/physics/case_youngs_double_slit_experiment/script.md",
-              "supplementaryPath": "content/physics/case_youngs_double_slit_experiment/supplementary.md",
-              "quizPath": "content/physics/case_youngs_double_slit_experiment/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/af_heart.m4a",
-                  "duration": 694.7
-                },
-                {
-                  "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/am_onyx.m4a",
-                  "duration": 609.1
-                },
-                {
-                  "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/am_santa.m4a",
-                  "duration": 666.8
-                },
-                {
-                  "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/bf_isabella.m4a",
-                  "duration": 666.1
-                },
-                {
-                  "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/bm_daniel.m4a",
-                  "duration": 596.5
-                },
-                {
-                  "name": "bm_george",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/bm_george.m4a",
-                  "duration": 713.3
-                },
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/zz_eloquence_american.m4a",
-                  "duration": 660.8
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/zz_eloquence_british.m4a",
-                  "duration": 652.4
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/zz_eloquence_caribbean.m4a",
-                  "duration": 657.3
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/zz_eloquence_lancaster.m4a",
-                  "duration": 657.9
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/zz_eloquence_newyork.m4a",
-                  "duration": 650.3
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/zz_eloquence_received.m4a",
-                  "duration": 650.3
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/zz_eloquence_scottish.m4a",
-                  "duration": 634.6
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_youngs_double_slit_experiment/zz_eloquence_westmidlands.m4a",
-                  "duration": 661.4
-                }
-              ],
-              "stars": 3
-            },
-            {
-              "id": "case_poissons_bright_spot",
-              "title": "\u2b50\u2b50 Evidence of Huygen\u2019s theory: Poisson\u2019s bright spot",
-              "unit": null,
-              "scriptPath": "content/physics/case_poissons_bright_spot/script.md",
-              "supplementaryPath": "content/physics/case_poissons_bright_spot/supplementary.md",
-              "quizPath": "content/physics/case_poissons_bright_spot/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/af_heart.m4a",
-                  "duration": 528.5
-                },
-                {
-                  "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/am_onyx.m4a",
-                  "duration": 459.8
-                },
-                {
-                  "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/am_santa.m4a",
-                  "duration": 503.7
-                },
-                {
-                  "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/bf_isabella.m4a",
-                  "duration": 505.5
-                },
-                {
-                  "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/bm_daniel.m4a",
-                  "duration": 451.0
-                },
-                {
-                  "name": "bm_george",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/bm_george.m4a",
-                  "duration": 533.8
-                },
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/zz_eloquence_american.m4a",
-                  "duration": 501.7
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/zz_eloquence_british.m4a",
-                  "duration": 494.7
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/zz_eloquence_caribbean.m4a",
-                  "duration": 500.0
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/zz_eloquence_lancaster.m4a",
-                  "duration": 500.0
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/zz_eloquence_newyork.m4a",
-                  "duration": 493.3
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/zz_eloquence_received.m4a",
-                  "duration": 493.5
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/zz_eloquence_scottish.m4a",
-                  "duration": 483.2
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_poissons_bright_spot/zz_eloquence_westmidlands.m4a",
-                  "duration": 501.0
-                }
-              ],
-              "stars": 2
-            },
-            {
-              "id": "case_froome_evansen_et_al_s_interferometry",
-              "title": "\u2b50\u2b50 Froome / Evansen et al \u2018s \u201cinterferometry\u201d measurement of the speed of light (1958/72)",
-              "unit": null,
-              "scriptPath": "content/physics/case_froome_evansen_et_al_s_interferometry/script.md",
-              "supplementaryPath": "content/physics/case_froome_evansen_et_al_s_interferometry/supplementary.md",
-              "quizPath": "content/physics/case_froome_evansen_et_al_s_interferometry/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_froome_evansen_et_al_s_interferometry/zz_eloquence_american.m4a",
-                  "duration": 525.2
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_froome_evansen_et_al_s_interferometry/zz_eloquence_british.m4a",
-                  "duration": 517.5
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_froome_evansen_et_al_s_interferometry/zz_eloquence_caribbean.m4a",
-                  "duration": 521.1
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_froome_evansen_et_al_s_interferometry/zz_eloquence_lancaster.m4a",
-                  "duration": 522.7
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_froome_evansen_et_al_s_interferometry/zz_eloquence_newyork.m4a",
-                  "duration": 516.5
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_froome_evansen_et_al_s_interferometry/zz_eloquence_received.m4a",
-                  "duration": 515.7
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_froome_evansen_et_al_s_interferometry/zz_eloquence_scottish.m4a",
-                  "duration": 502.5
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_froome_evansen_et_al_s_interferometry/zz_eloquence_westmidlands.m4a",
-                  "duration": 523.4
-                }
-              ],
-              "stars": 2
-            },
-            {
-              "id": "case_galileos_principle_of_relativity_ship_thought",
-              "title": "\u2b50\u2b50 Galileo\u2019s principle of relativity \u201cship\u201d thought experiment (1632)",
-              "unit": null,
-              "scriptPath": "content/physics/case_galileos_principle_of_relativity_ship_thought/script.md",
-              "supplementaryPath": "content/physics/case_galileos_principle_of_relativity_ship_thought/supplementary.md",
-              "quizPath": "content/physics/case_galileos_principle_of_relativity_ship_thought/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/af_heart.m4a",
-                  "duration": 571.1
-                },
-                {
-                  "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/am_onyx.m4a",
-                  "duration": 499.6
-                },
-                {
-                  "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/am_santa.m4a",
-                  "duration": 550.2
-                },
-                {
-                  "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/bf_isabella.m4a",
-                  "duration": 541.5
-                },
-                {
-                  "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/bm_daniel.m4a",
-                  "duration": 491.5
-                },
-                {
-                  "name": "bm_george",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/bm_george.m4a",
-                  "duration": 582.5
-                },
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/zz_eloquence_american.m4a",
-                  "duration": 527.7
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/zz_eloquence_british.m4a",
-                  "duration": 522.8
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/zz_eloquence_caribbean.m4a",
-                  "duration": 524.9
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/zz_eloquence_lancaster.m4a",
-                  "duration": 526.2
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/zz_eloquence_newyork.m4a",
-                  "duration": 519.6
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/zz_eloquence_received.m4a",
-                  "duration": 519.9
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/zz_eloquence_scottish.m4a",
-                  "duration": 507.4
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_galileos_principle_of_relativity_ship_thought/zz_eloquence_westmidlands.m4a",
-                  "duration": 532.2
-                }
-              ],
-              "stars": 2
-            },
-            {
-              "id": "case_james_bradleys_stellar_aberration_measurement_of",
-              "title": "\u2b50\u2b50 James Bradley\u2019s \u201cstellar aberration\u201d measurement of the speed of light (1728) (301,000 km/s)",
-              "unit": null,
-              "scriptPath": "content/physics/case_james_bradleys_stellar_aberration_measurement_of/script.md",
-              "supplementaryPath": "content/physics/case_james_bradleys_stellar_aberration_measurement_of/supplementary.md",
-              "quizPath": "content/physics/case_james_bradleys_stellar_aberration_measurement_of/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/af_heart.m4a",
-                  "duration": 522.0
-                },
-                {
-                  "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/am_onyx.m4a",
-                  "duration": 459.2
-                },
-                {
-                  "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/am_santa.m4a",
-                  "duration": 503.0
-                },
-                {
-                  "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/bf_isabella.m4a",
-                  "duration": 498.3
-                },
-                {
-                  "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/bm_daniel.m4a",
-                  "duration": 452.6
-                },
-                {
-                  "name": "bm_george",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/bm_george.m4a",
-                  "duration": 534.9
-                },
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/zz_eloquence_american.m4a",
-                  "duration": 483.5
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/zz_eloquence_british.m4a",
-                  "duration": 478.4
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/zz_eloquence_caribbean.m4a",
-                  "duration": 480.4
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/zz_eloquence_lancaster.m4a",
-                  "duration": 482.8
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/zz_eloquence_newyork.m4a",
-                  "duration": 476.0
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/zz_eloquence_received.m4a",
-                  "duration": 476.1
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/zz_eloquence_scottish.m4a",
-                  "duration": 466.5
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_james_bradleys_stellar_aberration_measurement_of/zz_eloquence_westmidlands.m4a",
-                  "duration": 485.1
-                }
-              ],
-              "stars": 2
-            },
-            {
-              "id": "case_jean_l_on_foucaults_rotating_mirror",
-              "title": "\u2b50\u2b50 Jean/L\u00e9on Foucault\u2019s \u201crotating mirror\u201d measurement of the speed of light (1862) (298,000",
-              "unit": null,
-              "scriptPath": "content/physics/case_jean_l_on_foucaults_rotating_mirror/script.md",
-              "supplementaryPath": "content/physics/case_jean_l_on_foucaults_rotating_mirror/supplementary.md",
-              "quizPath": "content/physics/case_jean_l_on_foucaults_rotating_mirror/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/af_heart.m4a",
-                  "duration": 547.0
-                },
-                {
-                  "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/am_onyx.m4a",
-                  "duration": 478.6
-                },
-                {
-                  "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/am_santa.m4a",
-                  "duration": 525.2
-                },
-                {
-                  "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/bf_isabella.m4a",
-                  "duration": 523.0
-                },
-                {
-                  "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/bm_daniel.m4a",
-                  "duration": 469.2
-                },
-                {
-                  "name": "bm_george",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/bm_george.m4a",
-                  "duration": 557.2
-                },
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/zz_eloquence_american.m4a",
-                  "duration": 516.7
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/zz_eloquence_british.m4a",
-                  "duration": 509.9
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/zz_eloquence_caribbean.m4a",
-                  "duration": 514.4
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/zz_eloquence_lancaster.m4a",
-                  "duration": 514.9
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/zz_eloquence_newyork.m4a",
-                  "duration": 508.1
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/zz_eloquence_received.m4a",
-                  "duration": 508.3
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/zz_eloquence_scottish.m4a",
-                  "duration": 495.5
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_jean_l_on_foucaults_rotating_mirror/zz_eloquence_westmidlands.m4a",
-                  "duration": 515.3
-                }
-              ],
-              "stars": 2
-            },
-            {
-              "id": "case_louis_essens_cavity_resonance_measurement_of",
-              "title": "\u2b50\u2b50 Louis Essen\u2019s \u201ccavity resonance\u201d measurement of the speed of light (1950) (299,792.5 km/s)",
-              "unit": null,
-              "scriptPath": "content/physics/case_louis_essens_cavity_resonance_measurement_of/script.md",
-              "supplementaryPath": "content/physics/case_louis_essens_cavity_resonance_measurement_of/supplementary.md",
-              "quizPath": "content/physics/case_louis_essens_cavity_resonance_measurement_of/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/af_heart.m4a",
-                  "duration": 532.7
-                },
-                {
-                  "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/am_onyx.m4a",
-                  "duration": 469.8
-                },
-                {
-                  "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/am_santa.m4a",
-                  "duration": 512.8
-                },
-                {
-                  "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/bf_isabella.m4a",
-                  "duration": 508.8
-                },
-                {
-                  "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/bm_daniel.m4a",
-                  "duration": 460.2
-                },
-                {
-                  "name": "bm_george",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/bm_george.m4a",
-                  "duration": 545.8
-                },
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/zz_eloquence_american.m4a",
-                  "duration": 496.7
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/zz_eloquence_british.m4a",
-                  "duration": 491.3
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/zz_eloquence_caribbean.m4a",
-                  "duration": 495.1
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/zz_eloquence_lancaster.m4a",
-                  "duration": 494.4
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/zz_eloquence_newyork.m4a",
-                  "duration": 489.6
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/zz_eloquence_received.m4a",
-                  "duration": 489.9
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/zz_eloquence_scottish.m4a",
-                  "duration": 477.6
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_louis_essens_cavity_resonance_measurement_of/zz_eloquence_westmidlands.m4a",
-                  "duration": 498.4
-                }
-              ],
-              "stars": 2
-            },
-            {
-              "id": "case_ole_r_mers_io_eclipse_evidence",
-              "title": "\u2b50\u2b50 Ole R\u00f8mer\u2019s \u201cIo eclipse\u201d evidence of a finite speed of light (1676) (220,000 km/s)",
-              "unit": null,
-              "scriptPath": "content/physics/case_ole_r_mers_io_eclipse_evidence/script.md",
-              "supplementaryPath": "content/physics/case_ole_r_mers_io_eclipse_evidence/supplementary.md",
-              "quizPath": "content/physics/case_ole_r_mers_io_eclipse_evidence/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_ole_r_mers_io_eclipse_evidence/zz_eloquence_american.m4a",
-                  "duration": 525.5
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_ole_r_mers_io_eclipse_evidence/zz_eloquence_british.m4a",
-                  "duration": 519.5
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_ole_r_mers_io_eclipse_evidence/zz_eloquence_caribbean.m4a",
-                  "duration": 522.4
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_ole_r_mers_io_eclipse_evidence/zz_eloquence_lancaster.m4a",
-                  "duration": 524.7
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_ole_r_mers_io_eclipse_evidence/zz_eloquence_newyork.m4a",
-                  "duration": 517.0
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_ole_r_mers_io_eclipse_evidence/zz_eloquence_received.m4a",
-                  "duration": 516.8
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_ole_r_mers_io_eclipse_evidence/zz_eloquence_scottish.m4a",
-                  "duration": 504.0
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_ole_r_mers_io_eclipse_evidence/zz_eloquence_westmidlands.m4a",
-                  "duration": 526.6
-                }
-              ],
-              "stars": 2
-            },
-            {
-              "id": "case_photoelectric_effect_analysis",
-              "title": "\u2b50\u2b50 Photoelectric effect analysis",
-              "unit": null,
-              "scriptPath": "content/physics/case_photoelectric_effect_analysis/script.md",
-              "supplementaryPath": "content/physics/case_photoelectric_effect_analysis/supplementary.md",
-              "quizPath": "content/physics/case_photoelectric_effect_analysis/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/af_heart.m4a",
-                  "duration": 609.5
-                },
-                {
-                  "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/am_onyx.m4a",
-                  "duration": 535.2
-                },
-                {
-                  "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/am_santa.m4a",
-                  "duration": 587.7
-                },
-                {
-                  "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/bf_isabella.m4a",
-                  "duration": 581.5
-                },
-                {
-                  "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/bm_daniel.m4a",
-                  "duration": 521.4
-                },
-                {
-                  "name": "bm_george",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/bm_george.m4a",
-                  "duration": 623.2
-                },
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/zz_eloquence_american.m4a",
-                  "duration": 573.7
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/zz_eloquence_british.m4a",
-                  "duration": 564.7
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/zz_eloquence_caribbean.m4a",
-                  "duration": 568.4
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/zz_eloquence_lancaster.m4a",
-                  "duration": 569.8
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/zz_eloquence_newyork.m4a",
-                  "duration": 564.5
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/zz_eloquence_received.m4a",
-                  "duration": 561.6
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/zz_eloquence_scottish.m4a",
-                  "duration": 551.5
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_photoelectric_effect_analysis/zz_eloquence_westmidlands.m4a",
-                  "duration": 572.7
-                }
-              ],
-              "stars": 2
-            },
-            {
-              "id": "case_rosa_and_dorseys_vacuum_constants_calculation",
-              "title": "\u2b50\u2b50 Rosa and Dorsey\u2019s \u201cvacuum constants\u201d calculation of the speed of light (1907) (299,710 km/s)",
-              "unit": null,
-              "scriptPath": "content/physics/case_rosa_and_dorseys_vacuum_constants_calculation/script.md",
-              "supplementaryPath": "content/physics/case_rosa_and_dorseys_vacuum_constants_calculation/supplementary.md",
-              "quizPath": "content/physics/case_rosa_and_dorseys_vacuum_constants_calculation/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/af_heart.m4a",
-                  "duration": 586.9
-                },
-                {
-                  "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/am_onyx.m4a",
-                  "duration": 514.9
-                },
-                {
-                  "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/am_santa.m4a",
-                  "duration": 562.5
-                },
-                {
-                  "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/bf_isabella.m4a",
-                  "duration": 560.1
-                },
-                {
-                  "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/bm_daniel.m4a",
-                  "duration": 504.9
-                },
-                {
-                  "name": "bm_george",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/bm_george.m4a",
-                  "duration": 595.9
-                },
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/zz_eloquence_american.m4a",
-                  "duration": 542.3
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/zz_eloquence_british.m4a",
-                  "duration": 537.9
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/zz_eloquence_caribbean.m4a",
-                  "duration": 541.3
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/zz_eloquence_lancaster.m4a",
-                  "duration": 541.0
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/zz_eloquence_newyork.m4a",
-                  "duration": 534.6
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/zz_eloquence_received.m4a",
-                  "duration": 536.8
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/zz_eloquence_scottish.m4a",
-                  "duration": 524.1
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_rosa_and_dorseys_vacuum_constants_calculation/zz_eloquence_westmidlands.m4a",
-                  "duration": 546.6
-                }
-              ],
-              "stars": 2
-            },
-            {
-              "id": "case_the_mirror_in_a_train_thought",
-              "title": "\u2b50\u2b50 The mirror in a train thought experiment (1905)",
-              "unit": null,
-              "scriptPath": "content/physics/case_the_mirror_in_a_train_thought/script.md",
-              "supplementaryPath": "content/physics/case_the_mirror_in_a_train_thought/supplementary.md",
-              "quizPath": "content/physics/case_the_mirror_in_a_train_thought/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/af_heart.m4a",
-                  "duration": 545.7
-                },
-                {
-                  "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/am_onyx.m4a",
-                  "duration": 476.4
-                },
-                {
-                  "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/am_santa.m4a",
-                  "duration": 521.8
-                },
-                {
-                  "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/bf_isabella.m4a",
-                  "duration": 520.8
-                },
-                {
-                  "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/bm_daniel.m4a",
-                  "duration": 468.5
-                },
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/zz_eloquence_american.m4a",
-                  "duration": 507.4
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/zz_eloquence_british.m4a",
-                  "duration": 502.4
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/zz_eloquence_caribbean.m4a",
-                  "duration": 505.5
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/zz_eloquence_lancaster.m4a",
-                  "duration": 506.4
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/zz_eloquence_newyork.m4a",
-                  "duration": 499.5
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/zz_eloquence_received.m4a",
-                  "duration": 500.2
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/zz_eloquence_scottish.m4a",
-                  "duration": 487.8
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_mirror_in_a_train_thought/zz_eloquence_westmidlands.m4a",
-                  "duration": 511.8
-                }
-              ],
-              "stars": 2
-            },
-            {
-              "id": "case_beeckman_and_galileos_lanterns_on_hills",
-              "title": "\u2b50 Beeckman and Galileo\u2019s \u201clanterns on hills\u201d attempt to measure the speed of light (1629)",
-              "unit": null,
-              "scriptPath": "content/physics/case_beeckman_and_galileos_lanterns_on_hills/script.md",
-              "supplementaryPath": "content/physics/case_beeckman_and_galileos_lanterns_on_hills/supplementary.md",
-              "quizPath": "content/physics/case_beeckman_and_galileos_lanterns_on_hills/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_beeckman_and_galileos_lanterns_on_hills/zz_eloquence_american.m4a",
-                  "duration": 337.8
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_beeckman_and_galileos_lanterns_on_hills/zz_eloquence_british.m4a",
-                  "duration": 334.3
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_beeckman_and_galileos_lanterns_on_hills/zz_eloquence_caribbean.m4a",
-                  "duration": 335.8
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_beeckman_and_galileos_lanterns_on_hills/zz_eloquence_lancaster.m4a",
-                  "duration": 336.6
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_beeckman_and_galileos_lanterns_on_hills/zz_eloquence_newyork.m4a",
-                  "duration": 332.3
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_beeckman_and_galileos_lanterns_on_hills/zz_eloquence_received.m4a",
-                  "duration": 333.1
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_beeckman_and_galileos_lanterns_on_hills/zz_eloquence_scottish.m4a",
-                  "duration": 324.0
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_beeckman_and_galileos_lanterns_on_hills/zz_eloquence_westmidlands.m4a",
-                  "duration": 335.8
-                }
-              ],
-              "stars": 1
-            },
-            {
-              "id": "case_derivation_of_length_contraction_from_einsteins",
-              "title": "\u2b50 Derivation of length contraction from Einstein's postulates (muon hypothetical) (1905)",
-              "unit": null,
-              "scriptPath": "content/physics/case_derivation_of_length_contraction_from_einsteins/script.md",
-              "supplementaryPath": "content/physics/case_derivation_of_length_contraction_from_einsteins/supplementary.md",
-              "quizPath": "content/physics/case_derivation_of_length_contraction_from_einsteins/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/af_heart.m4a",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_behaviour_of_cathode_rays/zz_eloquence_american.m4a",
                   "duration": 397.3
                 },
                 {
-                  "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/am_onyx.m4a",
-                  "duration": 344.6
-                },
-                {
-                  "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/am_santa.m4a",
-                  "duration": 379.6
-                },
-                {
-                  "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/bf_isabella.m4a",
-                  "duration": 384.8
-                },
-                {
-                  "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/bm_daniel.m4a",
-                  "duration": 343.6
-                },
-                {
-                  "name": "bm_george",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/bm_george.m4a",
-                  "duration": 409.5
-                },
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/zz_eloquence_american.m4a",
-                  "duration": 382.8
-                },
-                {
                   "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/zz_eloquence_british.m4a",
-                  "duration": 378.0
+                  "file": "https://audio.hsc.pebnum.com/physics/case_behaviour_of_cathode_rays/zz_eloquence_british.m4a",
+                  "duration": 393.5
                 },
                 {
                   "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/zz_eloquence_caribbean.m4a",
-                  "duration": 378.6
+                  "file": "https://audio.hsc.pebnum.com/physics/case_behaviour_of_cathode_rays/zz_eloquence_caribbean.m4a",
+                  "duration": 396.2
                 },
                 {
                   "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/zz_eloquence_lancaster.m4a",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_behaviour_of_cathode_rays/zz_eloquence_lancaster.m4a",
+                  "duration": 397.1
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_behaviour_of_cathode_rays/zz_eloquence_newyork.m4a",
+                  "duration": 390.9
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_behaviour_of_cathode_rays/zz_eloquence_received.m4a",
+                  "duration": 392.2
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_behaviour_of_cathode_rays/zz_eloquence_scottish.m4a",
                   "duration": 382.7
                 },
                 {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/zz_eloquence_newyork.m4a",
-                  "duration": 376.9
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/zz_eloquence_received.m4a",
-                  "duration": 376.6
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/zz_eloquence_scottish.m4a",
-                  "duration": 367.6
-                },
-                {
                   "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_length_contraction_from_einsteins/zz_eloquence_westmidlands.m4a",
-                  "duration": 385.2
+                  "file": "https://audio.hsc.pebnum.com/physics/case_behaviour_of_cathode_rays/zz_eloquence_westmidlands.m4a",
+                  "duration": 400.6
                 }
               ],
               "stars": 1
             },
             {
-              "id": "case_derivation_of_time_dilation_from_einsteins",
-              "title": "\u2b50 Derivation of time dilation from Einstein's postulates (photon clock) (1905)",
+              "id": "case_the_british_against_german_examination_of",
+              "title": "\u2b50\u2b50 Discovery of the electron:  The British against German examination of cathode rays (1897)",
               "unit": null,
-              "scriptPath": "content/physics/case_derivation_of_time_dilation_from_einsteins/script.md",
-              "supplementaryPath": "content/physics/case_derivation_of_time_dilation_from_einsteins/supplementary.md",
-              "quizPath": "content/physics/case_derivation_of_time_dilation_from_einsteins/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_time_dilation_from_einsteins/zz_eloquence_american.m4a",
-                  "duration": 419.4
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_time_dilation_from_einsteins/zz_eloquence_british.m4a",
-                  "duration": 413.9
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_time_dilation_from_einsteins/zz_eloquence_caribbean.m4a",
-                  "duration": 415.1
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_time_dilation_from_einsteins/zz_eloquence_lancaster.m4a",
-                  "duration": 415.9
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_time_dilation_from_einsteins/zz_eloquence_newyork.m4a",
-                  "duration": 412.6
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_time_dilation_from_einsteins/zz_eloquence_received.m4a",
-                  "duration": 412.8
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_time_dilation_from_einsteins/zz_eloquence_scottish.m4a",
-                  "duration": 403.8
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_derivation_of_time_dilation_from_einsteins/zz_eloquence_westmidlands.m4a",
-                  "duration": 420.2
-                }
-              ],
-              "stars": 1
-            },
-            {
-              "id": "case_the_lights_in_a_box_thought",
-              "title": "\u2b50 Evidence for relativity of simultaneity: The lights in a box thought experiment",
-              "unit": null,
-              "scriptPath": "content/physics/case_the_lights_in_a_box_thought/script.md",
-              "supplementaryPath": "content/physics/case_the_lights_in_a_box_thought/supplementary.md",
-              "quizPath": "content/physics/case_the_lights_in_a_box_thought/quiz.json",
+              "scriptPath": "content/physics/case_the_british_against_german_examination_of/script.md",
+              "supplementaryPath": "content/physics/case_the_british_against_german_examination_of/supplementary.md",
+              "quizPath": "content/physics/case_the_british_against_german_examination_of/quiz.json",
               "titleAudio": null,
               "voices": [
                 {
                   "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/af_heart.m4a",
-                  "duration": 543.8
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/af_heart.m4a",
+                  "duration": 557.6
                 },
                 {
                   "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/am_onyx.m4a",
-                  "duration": 469.8
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/am_onyx.m4a",
+                  "duration": 486.9
                 },
                 {
                   "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/am_santa.m4a",
-                  "duration": 513.7
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/am_santa.m4a",
+                  "duration": 534.6
                 },
                 {
                   "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/bf_isabella.m4a",
-                  "duration": 519.0
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/bf_isabella.m4a",
+                  "duration": 532.3
                 },
                 {
                   "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/bm_daniel.m4a",
-                  "duration": 457.6
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/bm_daniel.m4a",
+                  "duration": 478.2
                 },
                 {
                   "name": "bm_george",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/bm_george.m4a",
-                  "duration": 544.1
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/bm_george.m4a",
+                  "duration": 568.4
                 },
                 {
                   "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/zz_eloquence_american.m4a",
-                  "duration": 362.1
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/zz_eloquence_american.m4a",
+                  "duration": 525.8
                 },
                 {
                   "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/zz_eloquence_british.m4a",
-                  "duration": 356.7
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/zz_eloquence_british.m4a",
+                  "duration": 519.8
                 },
                 {
                   "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/zz_eloquence_caribbean.m4a",
-                  "duration": 357.4
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/zz_eloquence_caribbean.m4a",
+                  "duration": 523.2
                 },
                 {
                   "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/zz_eloquence_lancaster.m4a",
-                  "duration": 360.1
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/zz_eloquence_lancaster.m4a",
+                  "duration": 525.4
                 },
                 {
                   "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/zz_eloquence_newyork.m4a",
-                  "duration": 355.9
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/zz_eloquence_newyork.m4a",
+                  "duration": 517.2
                 },
                 {
                   "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/zz_eloquence_received.m4a",
-                  "duration": 355.2
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/zz_eloquence_received.m4a",
+                  "duration": 518.6
                 },
                 {
                   "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/zz_eloquence_scottish.m4a",
-                  "duration": 348.1
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/zz_eloquence_scottish.m4a",
+                  "duration": 507.7
                 },
                 {
                   "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_lights_in_a_box_thought/zz_eloquence_westmidlands.m4a",
-                  "duration": 362.6
+                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/zz_eloquence_westmidlands.m4a",
+                  "duration": 526.9
                 }
               ],
-              "stars": 1
-            }
-          ]
-        },
-        {
-          "id": "CASE8",
-          "prefix": "CASE8",
-          "moduleNum": 108,
-          "episodes": [
+              "stars": 2
+            },
             {
               "id": "case_j_j_thomsons_calculation_of_the",
               "title": "\u2b50\u2b50\u2b50 Discovery of the electron: J.J. Thomson\u2019s calculation of the charge to mass ratio of",
@@ -8997,6 +9102,88 @@
                   "name": "zz_eloquence_westmidlands",
                   "file": "https://audio.hsc.pebnum.com/physics/case_j_j_thomsons_calculation_of_the/zz_eloquence_westmidlands.m4a",
                   "duration": 720.9
+                }
+              ],
+              "stars": 3
+            },
+            {
+              "id": "case_robert_millikans_oil_drop_experiment",
+              "title": "\u2b50\u2b50\u2b50 The charge of an electron: Robert Millikan\u2019s \u201coil drop\u201d experiment (1909)",
+              "unit": null,
+              "scriptPath": "content/physics/case_robert_millikans_oil_drop_experiment/script.md",
+              "supplementaryPath": "content/physics/case_robert_millikans_oil_drop_experiment/supplementary.md",
+              "quizPath": "content/physics/case_robert_millikans_oil_drop_experiment/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/af_heart.m4a",
+                  "duration": 804.0
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/am_onyx.m4a",
+                  "duration": 703.8
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/am_santa.m4a",
+                  "duration": 768.5
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/bf_isabella.m4a",
+                  "duration": 764.6
+                },
+                {
+                  "name": "bm_daniel",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/bm_daniel.m4a",
+                  "duration": 684.9
+                },
+                {
+                  "name": "bm_george",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/bm_george.m4a",
+                  "duration": 814.2
+                },
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/zz_eloquence_american.m4a",
+                  "duration": 774.0
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/zz_eloquence_british.m4a",
+                  "duration": 760.5
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/zz_eloquence_caribbean.m4a",
+                  "duration": 767.8
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/zz_eloquence_lancaster.m4a",
+                  "duration": 768.6
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/zz_eloquence_newyork.m4a",
+                  "duration": 759.4
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/zz_eloquence_received.m4a",
+                  "duration": 758.8
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/zz_eloquence_scottish.m4a",
+                  "duration": 741.7
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/zz_eloquence_westmidlands.m4a",
+                  "duration": 771.2
                 }
               ],
               "stars": 3
@@ -9106,168 +9293,138 @@
               "stars": 3
             },
             {
-              "id": "case_slac_deep_inelastic_scattering",
-              "title": "\u2b50\u2b50\u2b50 Evidence that protons and neutrons are not fundamental: SLAC deep inelastic scattering",
+              "id": "case_g_p_thomsons_experiment",
+              "title": "\u2b50 Evidence for De Broglie matter waves: G. P. Thomson\u2019s experiment (1927)",
               "unit": null,
-              "scriptPath": "content/physics/case_slac_deep_inelastic_scattering/script.md",
-              "supplementaryPath": "content/physics/case_slac_deep_inelastic_scattering/supplementary.md",
-              "quizPath": "content/physics/case_slac_deep_inelastic_scattering/quiz.json",
+              "scriptPath": "content/physics/case_g_p_thomsons_experiment/script.md",
+              "supplementaryPath": "content/physics/case_g_p_thomsons_experiment/supplementary.md",
+              "quizPath": "content/physics/case_g_p_thomsons_experiment/quiz.json",
               "titleAudio": null,
               "voices": [
                 {
-                  "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/af_heart.m4a",
-                  "duration": 711.6
-                },
-                {
-                  "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/am_onyx.m4a",
-                  "duration": 617.9
-                },
-                {
-                  "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/am_santa.m4a",
-                  "duration": 678.7
-                },
-                {
-                  "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/bf_isabella.m4a",
-                  "duration": 673.7
-                },
-                {
-                  "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/bm_daniel.m4a",
-                  "duration": 606.6
-                },
-                {
-                  "name": "bm_george",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/bm_george.m4a",
-                  "duration": 719.1
-                },
-                {
                   "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/zz_eloquence_american.m4a",
-                  "duration": 674.4
+                  "file": "https://audio.hsc.pebnum.com/physics/case_g_p_thomsons_experiment/zz_eloquence_american.m4a",
+                  "duration": 385.9
                 },
                 {
                   "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/zz_eloquence_british.m4a",
-                  "duration": 664.2
+                  "file": "https://audio.hsc.pebnum.com/physics/case_g_p_thomsons_experiment/zz_eloquence_british.m4a",
+                  "duration": 380.0
                 },
                 {
                   "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/zz_eloquence_caribbean.m4a",
-                  "duration": 668.2
+                  "file": "https://audio.hsc.pebnum.com/physics/case_g_p_thomsons_experiment/zz_eloquence_caribbean.m4a",
+                  "duration": 384.3
                 },
                 {
                   "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/zz_eloquence_lancaster.m4a",
-                  "duration": 668.3
+                  "file": "https://audio.hsc.pebnum.com/physics/case_g_p_thomsons_experiment/zz_eloquence_lancaster.m4a",
+                  "duration": 383.6
                 },
                 {
                   "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/zz_eloquence_newyork.m4a",
-                  "duration": 661.8
+                  "file": "https://audio.hsc.pebnum.com/physics/case_g_p_thomsons_experiment/zz_eloquence_newyork.m4a",
+                  "duration": 378.8
                 },
                 {
                   "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/zz_eloquence_received.m4a",
-                  "duration": 662.1
+                  "file": "https://audio.hsc.pebnum.com/physics/case_g_p_thomsons_experiment/zz_eloquence_received.m4a",
+                  "duration": 379.6
                 },
                 {
                   "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/zz_eloquence_scottish.m4a",
-                  "duration": 648.8
+                  "file": "https://audio.hsc.pebnum.com/physics/case_g_p_thomsons_experiment/zz_eloquence_scottish.m4a",
+                  "duration": 371.4
                 },
                 {
                   "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/zz_eloquence_westmidlands.m4a",
-                  "duration": 673.3
+                  "file": "https://audio.hsc.pebnum.com/physics/case_g_p_thomsons_experiment/zz_eloquence_westmidlands.m4a",
+                  "duration": 385.2
                 }
               ],
-              "stars": 3
+              "stars": 1
             },
             {
-              "id": "case_hubbles_observations",
-              "title": "\u2b50\u2b50\u2b50 Hubble\u2019s observations",
+              "id": "case_wilson_cloud_chambers",
+              "title": "\u2b50\u2b50 Wilson cloud chambers",
               "unit": null,
-              "scriptPath": "content/physics/case_hubbles_observations/script.md",
-              "supplementaryPath": "content/physics/case_hubbles_observations/supplementary.md",
-              "quizPath": "content/physics/case_hubbles_observations/quiz.json",
+              "scriptPath": "content/physics/case_wilson_cloud_chambers/script.md",
+              "supplementaryPath": "content/physics/case_wilson_cloud_chambers/supplementary.md",
+              "quizPath": "content/physics/case_wilson_cloud_chambers/quiz.json",
               "titleAudio": null,
               "voices": [
                 {
                   "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/af_heart.m4a",
-                  "duration": 710.1
+                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/af_heart.m4a",
+                  "duration": 547.2
                 },
                 {
                   "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/am_onyx.m4a",
-                  "duration": 624.1
+                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/am_onyx.m4a",
+                  "duration": 479.1
                 },
                 {
                   "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/am_santa.m4a",
-                  "duration": 679.9
+                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/am_santa.m4a",
+                  "duration": 524.1
                 },
                 {
                   "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/bf_isabella.m4a",
-                  "duration": 683.2
+                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/bf_isabella.m4a",
+                  "duration": 518.7
                 },
                 {
                   "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/bm_daniel.m4a",
-                  "duration": 612.9
+                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/bm_daniel.m4a",
+                  "duration": 468.2
                 },
                 {
                   "name": "bm_george",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/bm_george.m4a",
-                  "duration": 724.6
+                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/bm_george.m4a",
+                  "duration": 556.0
                 },
                 {
                   "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/zz_eloquence_american.m4a",
-                  "duration": 665.5
+                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/zz_eloquence_american.m4a",
+                  "duration": 515.4
                 },
                 {
                   "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/zz_eloquence_british.m4a",
-                  "duration": 657.0
+                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/zz_eloquence_british.m4a",
+                  "duration": 508.2
                 },
                 {
                   "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/zz_eloquence_caribbean.m4a",
-                  "duration": 661.8
+                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/zz_eloquence_caribbean.m4a",
+                  "duration": 513.3
                 },
                 {
                   "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/zz_eloquence_lancaster.m4a",
-                  "duration": 661.6
+                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/zz_eloquence_lancaster.m4a",
+                  "duration": 511.0
                 },
                 {
                   "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/zz_eloquence_newyork.m4a",
-                  "duration": 655.5
+                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/zz_eloquence_newyork.m4a",
+                  "duration": 505.3
                 },
                 {
                   "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/zz_eloquence_received.m4a",
-                  "duration": 655.2
+                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/zz_eloquence_received.m4a",
+                  "duration": 507.1
                 },
                 {
                   "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/zz_eloquence_scottish.m4a",
-                  "duration": 639.3
+                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/zz_eloquence_scottish.m4a",
+                  "duration": 495.0
                 },
                 {
                   "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/zz_eloquence_westmidlands.m4a",
-                  "duration": 664.1
+                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/zz_eloquence_westmidlands.m4a",
+                  "duration": 514.1
                 }
               ],
-              "stars": 3
+              "stars": 2
             },
             {
               "id": "case_james_chadwicks_discovery_of_the_neutron",
@@ -9352,252 +9509,6 @@
               "stars": 3
             },
             {
-              "id": "case_robert_millikans_oil_drop_experiment",
-              "title": "\u2b50\u2b50\u2b50 The charge of an electron: Robert Millikan\u2019s \u201coil drop\u201d experiment (1909)",
-              "unit": null,
-              "scriptPath": "content/physics/case_robert_millikans_oil_drop_experiment/script.md",
-              "supplementaryPath": "content/physics/case_robert_millikans_oil_drop_experiment/supplementary.md",
-              "quizPath": "content/physics/case_robert_millikans_oil_drop_experiment/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/af_heart.m4a",
-                  "duration": 804.0
-                },
-                {
-                  "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/am_onyx.m4a",
-                  "duration": 703.8
-                },
-                {
-                  "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/am_santa.m4a",
-                  "duration": 768.5
-                },
-                {
-                  "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/bf_isabella.m4a",
-                  "duration": 764.6
-                },
-                {
-                  "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/bm_daniel.m4a",
-                  "duration": 684.9
-                },
-                {
-                  "name": "bm_george",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/bm_george.m4a",
-                  "duration": 814.2
-                },
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/zz_eloquence_american.m4a",
-                  "duration": 774.0
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/zz_eloquence_british.m4a",
-                  "duration": 760.5
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/zz_eloquence_caribbean.m4a",
-                  "duration": 767.8
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/zz_eloquence_lancaster.m4a",
-                  "duration": 768.6
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/zz_eloquence_newyork.m4a",
-                  "duration": 759.4
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/zz_eloquence_received.m4a",
-                  "duration": 758.8
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/zz_eloquence_scottish.m4a",
-                  "duration": 741.7
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_robert_millikans_oil_drop_experiment/zz_eloquence_westmidlands.m4a",
-                  "duration": 771.2
-                }
-              ],
-              "stars": 3
-            },
-            {
-              "id": "case_the_british_against_german_examination_of",
-              "title": "\u2b50\u2b50 Discovery of the electron:  The British against German examination of cathode rays (1897)",
-              "unit": null,
-              "scriptPath": "content/physics/case_the_british_against_german_examination_of/script.md",
-              "supplementaryPath": "content/physics/case_the_british_against_german_examination_of/supplementary.md",
-              "quizPath": "content/physics/case_the_british_against_german_examination_of/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/af_heart.m4a",
-                  "duration": 557.6
-                },
-                {
-                  "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/am_onyx.m4a",
-                  "duration": 486.9
-                },
-                {
-                  "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/am_santa.m4a",
-                  "duration": 534.6
-                },
-                {
-                  "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/bf_isabella.m4a",
-                  "duration": 532.3
-                },
-                {
-                  "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/bm_daniel.m4a",
-                  "duration": 478.2
-                },
-                {
-                  "name": "bm_george",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/bm_george.m4a",
-                  "duration": 568.4
-                },
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/zz_eloquence_american.m4a",
-                  "duration": 525.8
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/zz_eloquence_british.m4a",
-                  "duration": 519.8
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/zz_eloquence_caribbean.m4a",
-                  "duration": 523.2
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/zz_eloquence_lancaster.m4a",
-                  "duration": 525.4
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/zz_eloquence_newyork.m4a",
-                  "duration": 517.2
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/zz_eloquence_received.m4a",
-                  "duration": 518.6
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/zz_eloquence_scottish.m4a",
-                  "duration": 507.7
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_the_british_against_german_examination_of/zz_eloquence_westmidlands.m4a",
-                  "duration": 526.9
-                }
-              ],
-              "stars": 2
-            },
-            {
-              "id": "case_discovery_of_the_neutrino",
-              "title": "\u2b50\u2b50 Discovery of the neutrino (Cowan-Reines) (1956)",
-              "unit": null,
-              "scriptPath": "content/physics/case_discovery_of_the_neutrino/script.md",
-              "supplementaryPath": "content/physics/case_discovery_of_the_neutrino/supplementary.md",
-              "quizPath": "content/physics/case_discovery_of_the_neutrino/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/af_heart.m4a",
-                  "duration": 543.8
-                },
-                {
-                  "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/am_onyx.m4a",
-                  "duration": 469.8
-                },
-                {
-                  "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/am_santa.m4a",
-                  "duration": 513.6
-                },
-                {
-                  "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/bf_isabella.m4a",
-                  "duration": 519.1
-                },
-                {
-                  "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/bm_daniel.m4a",
-                  "duration": 457.7
-                },
-                {
-                  "name": "bm_george",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/bm_george.m4a",
-                  "duration": 544.0
-                },
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/zz_eloquence_american.m4a",
-                  "duration": 515.7
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/zz_eloquence_british.m4a",
-                  "duration": 510.1
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/zz_eloquence_caribbean.m4a",
-                  "duration": 516.3
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/zz_eloquence_lancaster.m4a",
-                  "duration": 513.0
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/zz_eloquence_newyork.m4a",
-                  "duration": 506.6
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/zz_eloquence_received.m4a",
-                  "duration": 509.3
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/zz_eloquence_scottish.m4a",
-                  "duration": 498.4
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/zz_eloquence_westmidlands.m4a",
-                  "duration": 520.4
-                }
-              ],
-              "stars": 2
-            },
-            {
               "id": "case_alvarez_and_bloch",
               "title": "\u2b50\u2b50 Evidence that protons and neutrons are not fundamental: Alvarez and Bloch (1940)",
               "unit": null,
@@ -9668,6 +9579,88 @@
                 }
               ],
               "stars": 2
+            },
+            {
+              "id": "case_slac_deep_inelastic_scattering",
+              "title": "\u2b50\u2b50\u2b50 Evidence that protons and neutrons are not fundamental: SLAC deep inelastic scattering",
+              "unit": null,
+              "scriptPath": "content/physics/case_slac_deep_inelastic_scattering/script.md",
+              "supplementaryPath": "content/physics/case_slac_deep_inelastic_scattering/supplementary.md",
+              "quizPath": "content/physics/case_slac_deep_inelastic_scattering/quiz.json",
+              "titleAudio": null,
+              "voices": [
+                {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/af_heart.m4a",
+                  "duration": 711.6
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/am_onyx.m4a",
+                  "duration": 617.9
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/am_santa.m4a",
+                  "duration": 678.7
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/bf_isabella.m4a",
+                  "duration": 673.7
+                },
+                {
+                  "name": "bm_daniel",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/bm_daniel.m4a",
+                  "duration": 606.6
+                },
+                {
+                  "name": "bm_george",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/bm_george.m4a",
+                  "duration": 719.1
+                },
+                {
+                  "name": "zz_eloquence_american",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/zz_eloquence_american.m4a",
+                  "duration": 674.4
+                },
+                {
+                  "name": "zz_eloquence_british",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/zz_eloquence_british.m4a",
+                  "duration": 664.2
+                },
+                {
+                  "name": "zz_eloquence_caribbean",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/zz_eloquence_caribbean.m4a",
+                  "duration": 668.2
+                },
+                {
+                  "name": "zz_eloquence_lancaster",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/zz_eloquence_lancaster.m4a",
+                  "duration": 668.3
+                },
+                {
+                  "name": "zz_eloquence_newyork",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/zz_eloquence_newyork.m4a",
+                  "duration": 661.8
+                },
+                {
+                  "name": "zz_eloquence_received",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/zz_eloquence_received.m4a",
+                  "duration": 662.1
+                },
+                {
+                  "name": "zz_eloquence_scottish",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/zz_eloquence_scottish.m4a",
+                  "duration": 648.8
+                },
+                {
+                  "name": "zz_eloquence_westmidlands",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_slac_deep_inelastic_scattering/zz_eloquence_westmidlands.m4a",
+                  "duration": 673.3
+                }
+              ],
+              "stars": 3
             },
             {
               "id": "case_standard_model_prediction_of_the_w",
@@ -9747,88 +9740,6 @@
                   "name": "zz_eloquence_westmidlands",
                   "file": "https://audio.hsc.pebnum.com/physics/case_standard_model_prediction_of_the_w/zz_eloquence_westmidlands.m4a",
                   "duration": 541.0
-                }
-              ],
-              "stars": 2
-            },
-            {
-              "id": "case_wilson_cloud_chambers",
-              "title": "\u2b50\u2b50 Wilson cloud chambers",
-              "unit": null,
-              "scriptPath": "content/physics/case_wilson_cloud_chambers/script.md",
-              "supplementaryPath": "content/physics/case_wilson_cloud_chambers/supplementary.md",
-              "quizPath": "content/physics/case_wilson_cloud_chambers/quiz.json",
-              "titleAudio": null,
-              "voices": [
-                {
-                  "name": "af_heart",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/af_heart.m4a",
-                  "duration": 547.2
-                },
-                {
-                  "name": "am_onyx",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/am_onyx.m4a",
-                  "duration": 479.1
-                },
-                {
-                  "name": "am_santa",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/am_santa.m4a",
-                  "duration": 524.1
-                },
-                {
-                  "name": "bf_isabella",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/bf_isabella.m4a",
-                  "duration": 518.7
-                },
-                {
-                  "name": "bm_daniel",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/bm_daniel.m4a",
-                  "duration": 468.2
-                },
-                {
-                  "name": "bm_george",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/bm_george.m4a",
-                  "duration": 556.0
-                },
-                {
-                  "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/zz_eloquence_american.m4a",
-                  "duration": 515.4
-                },
-                {
-                  "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/zz_eloquence_british.m4a",
-                  "duration": 508.2
-                },
-                {
-                  "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/zz_eloquence_caribbean.m4a",
-                  "duration": 513.3
-                },
-                {
-                  "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/zz_eloquence_lancaster.m4a",
-                  "duration": 511.0
-                },
-                {
-                  "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/zz_eloquence_newyork.m4a",
-                  "duration": 505.3
-                },
-                {
-                  "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/zz_eloquence_received.m4a",
-                  "duration": 507.1
-                },
-                {
-                  "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/zz_eloquence_scottish.m4a",
-                  "duration": 495.0
-                },
-                {
-                  "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_wilson_cloud_chambers/zz_eloquence_westmidlands.m4a",
-                  "duration": 514.1
                 }
               ],
               "stars": 2
@@ -9916,108 +9827,168 @@
               "stars": 2
             },
             {
-              "id": "case_behaviour_of_cathode_rays",
-              "title": "\u2b50 Discovery of the electron: Behaviour of cathode rays (in general)",
+              "id": "case_discovery_of_the_neutrino",
+              "title": "\u2b50\u2b50 Discovery of the neutrino (Cowan-Reines) (1956)",
               "unit": null,
-              "scriptPath": "content/physics/case_behaviour_of_cathode_rays/script.md",
-              "supplementaryPath": "content/physics/case_behaviour_of_cathode_rays/supplementary.md",
-              "quizPath": "content/physics/case_behaviour_of_cathode_rays/quiz.json",
+              "scriptPath": "content/physics/case_discovery_of_the_neutrino/script.md",
+              "supplementaryPath": "content/physics/case_discovery_of_the_neutrino/supplementary.md",
+              "quizPath": "content/physics/case_discovery_of_the_neutrino/quiz.json",
               "titleAudio": null,
               "voices": [
                 {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/af_heart.m4a",
+                  "duration": 543.8
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/am_onyx.m4a",
+                  "duration": 469.8
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/am_santa.m4a",
+                  "duration": 513.6
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/bf_isabella.m4a",
+                  "duration": 519.1
+                },
+                {
+                  "name": "bm_daniel",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/bm_daniel.m4a",
+                  "duration": 457.7
+                },
+                {
+                  "name": "bm_george",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/bm_george.m4a",
+                  "duration": 544.0
+                },
+                {
                   "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_behaviour_of_cathode_rays/zz_eloquence_american.m4a",
-                  "duration": 397.3
+                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/zz_eloquence_american.m4a",
+                  "duration": 515.7
                 },
                 {
                   "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_behaviour_of_cathode_rays/zz_eloquence_british.m4a",
-                  "duration": 393.5
+                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/zz_eloquence_british.m4a",
+                  "duration": 510.1
                 },
                 {
                   "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_behaviour_of_cathode_rays/zz_eloquence_caribbean.m4a",
-                  "duration": 396.2
+                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/zz_eloquence_caribbean.m4a",
+                  "duration": 516.3
                 },
                 {
                   "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_behaviour_of_cathode_rays/zz_eloquence_lancaster.m4a",
-                  "duration": 397.1
+                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/zz_eloquence_lancaster.m4a",
+                  "duration": 513.0
                 },
                 {
                   "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_behaviour_of_cathode_rays/zz_eloquence_newyork.m4a",
-                  "duration": 390.9
+                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/zz_eloquence_newyork.m4a",
+                  "duration": 506.6
                 },
                 {
                   "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_behaviour_of_cathode_rays/zz_eloquence_received.m4a",
-                  "duration": 392.2
+                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/zz_eloquence_received.m4a",
+                  "duration": 509.3
                 },
                 {
                   "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_behaviour_of_cathode_rays/zz_eloquence_scottish.m4a",
-                  "duration": 382.7
+                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/zz_eloquence_scottish.m4a",
+                  "duration": 498.4
                 },
                 {
                   "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_behaviour_of_cathode_rays/zz_eloquence_westmidlands.m4a",
-                  "duration": 400.6
+                  "file": "https://audio.hsc.pebnum.com/physics/case_discovery_of_the_neutrino/zz_eloquence_westmidlands.m4a",
+                  "duration": 520.4
                 }
               ],
-              "stars": 1
+              "stars": 2
             },
             {
-              "id": "case_g_p_thomsons_experiment",
-              "title": "\u2b50 Evidence for De Broglie matter waves: G. P. Thomson\u2019s experiment (1927)",
+              "id": "case_hubbles_observations",
+              "title": "\u2b50\u2b50\u2b50 Hubble\u2019s observations",
               "unit": null,
-              "scriptPath": "content/physics/case_g_p_thomsons_experiment/script.md",
-              "supplementaryPath": "content/physics/case_g_p_thomsons_experiment/supplementary.md",
-              "quizPath": "content/physics/case_g_p_thomsons_experiment/quiz.json",
+              "scriptPath": "content/physics/case_hubbles_observations/script.md",
+              "supplementaryPath": "content/physics/case_hubbles_observations/supplementary.md",
+              "quizPath": "content/physics/case_hubbles_observations/quiz.json",
               "titleAudio": null,
               "voices": [
                 {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/af_heart.m4a",
+                  "duration": 710.1
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/am_onyx.m4a",
+                  "duration": 624.1
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/am_santa.m4a",
+                  "duration": 679.9
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/bf_isabella.m4a",
+                  "duration": 683.2
+                },
+                {
+                  "name": "bm_daniel",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/bm_daniel.m4a",
+                  "duration": 612.9
+                },
+                {
+                  "name": "bm_george",
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/bm_george.m4a",
+                  "duration": 724.6
+                },
+                {
                   "name": "zz_eloquence_american",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_g_p_thomsons_experiment/zz_eloquence_american.m4a",
-                  "duration": 385.9
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/zz_eloquence_american.m4a",
+                  "duration": 665.5
                 },
                 {
                   "name": "zz_eloquence_british",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_g_p_thomsons_experiment/zz_eloquence_british.m4a",
-                  "duration": 380.0
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/zz_eloquence_british.m4a",
+                  "duration": 657.0
                 },
                 {
                   "name": "zz_eloquence_caribbean",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_g_p_thomsons_experiment/zz_eloquence_caribbean.m4a",
-                  "duration": 384.3
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/zz_eloquence_caribbean.m4a",
+                  "duration": 661.8
                 },
                 {
                   "name": "zz_eloquence_lancaster",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_g_p_thomsons_experiment/zz_eloquence_lancaster.m4a",
-                  "duration": 383.6
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/zz_eloquence_lancaster.m4a",
+                  "duration": 661.6
                 },
                 {
                   "name": "zz_eloquence_newyork",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_g_p_thomsons_experiment/zz_eloquence_newyork.m4a",
-                  "duration": 378.8
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/zz_eloquence_newyork.m4a",
+                  "duration": 655.5
                 },
                 {
                   "name": "zz_eloquence_received",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_g_p_thomsons_experiment/zz_eloquence_received.m4a",
-                  "duration": 379.6
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/zz_eloquence_received.m4a",
+                  "duration": 655.2
                 },
                 {
                   "name": "zz_eloquence_scottish",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_g_p_thomsons_experiment/zz_eloquence_scottish.m4a",
-                  "duration": 371.4
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/zz_eloquence_scottish.m4a",
+                  "duration": 639.3
                 },
                 {
                   "name": "zz_eloquence_westmidlands",
-                  "file": "https://audio.hsc.pebnum.com/physics/case_g_p_thomsons_experiment/zz_eloquence_westmidlands.m4a",
-                  "duration": 385.2
+                  "file": "https://audio.hsc.pebnum.com/physics/case_hubbles_observations/zz_eloquence_westmidlands.m4a",
+                  "duration": 664.1
                 }
               ],
-              "stars": 1
+              "stars": 3
             }
           ]
         }
