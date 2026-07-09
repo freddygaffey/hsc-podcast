@@ -883,11 +883,35 @@
       });
     } catch (e) { /* MediaMetadata unsupported */ }
   }
+  // BUG-36 (attempt 6): background-resume re-init. Ground truth (docs/audio-background-resume.md §8)
+  // showed a *fresh source* starts fine in the background (auto-advance works when locked) — it's only
+  // *resuming a paused* element that's a phantom (iOS deactivated its session → frozen + silent). So on
+  // the locked/background resume, re-initialise the element like a fresh source (load() + restore
+  // position) to re-establish a live session from the lock-screen gesture, instead of a plain play()
+  // that reconnects to nothing. Runs ONLY when document.hidden, so normal foreground playback and the
+  // native high-speed path are completely untouched (no WebAudio, unlike attempt 5).
+  function backgroundResumeKick() {
+    const pos = audio.currentTime || 0;
+    const rate = getCurrentSpeed();
+    alog("bg:kick", "pos=" + pos.toFixed(1));
+    audio.addEventListener("loadedmetadata", function h() {
+      audio.removeEventListener("loadedmetadata", h);
+      if (pos && audio.duration) { try { audio.currentTime = pos; } catch (e) {} }
+      audio.playbackRate = rate;
+    }, { once: true });
+    try { audio.load(); } catch (e) {}
+    audio.play().then(() => alog("bg:play resolved")).catch((e) => alog("bg:play REJECTED", "reason=" + (e && e.name)));
+  }
+
   function setupMediaSession() {
     if (!("mediaSession" in navigator)) return;
     const ms = navigator.mediaSession;
     const set = (action, fn) => { try { ms.setActionHandler(action, fn); } catch (e) {} };
-    set("play", () => { alog("MS:play handler"); audio.play().then(() => alog("MS:play resolved")).catch((e) => alog("MS:play REJECTED", "reason=" + (e && e.name))); });
+    set("play", () => {
+      alog("MS:play handler");
+      if (document.hidden) backgroundResumeKick();
+      else audio.play().then(() => alog("MS:play resolved")).catch((e) => alog("MS:play REJECTED", "reason=" + (e && e.name)));
+    });
     set("pause", () => { alog("MS:pause handler"); audio.pause(); });
     set("seekbackward", (d) => { audio.currentTime = Math.max(0, audio.currentTime - ((d && d.seekOffset) || 30)); });
     set("seekforward", (d) => { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + ((d && d.seekOffset) || 30)); });
