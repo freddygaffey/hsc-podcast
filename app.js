@@ -903,7 +903,12 @@
   // scratch (that thrashed and aborted every attempt). One reload runs at a time; we wait for the
   // element to be READY before playing (no play-before-ready AbortError), then honour the LATEST
   // intent (`bgWantPlay`) — so a pause during the reload just cancels the pending play, cleanly.
-  let bgResuming = false, bgWantPlay = false;
+  let bgResuming = false, bgWantPlay = false, bgTimer = null;
+  function bgResetGuard(why) {
+    if (bgResuming) alog("bg:reset", "why=" + why);
+    bgResuming = false;
+    if (bgTimer) { clearTimeout(bgTimer); bgTimer = null; }
+  }
   function backgroundResumeKick() {
     bgWantPlay = true;
     if (bgResuming) { alog("bg:coalesced"); return; } // a reload is already in flight — keep it
@@ -911,7 +916,7 @@
     const pos = audio.currentTime || 0;
     const rate = getCurrentSpeed();
     alog("bg:kick", "pos=" + pos.toFixed(1));
-    const cleanup = () => { audio.removeEventListener("canplay", onReady); audio.removeEventListener("error", onErr); };
+    const cleanup = () => { audio.removeEventListener("canplay", onReady); audio.removeEventListener("error", onErr); if (bgTimer) { clearTimeout(bgTimer); bgTimer = null; } };
     const onErr = () => { cleanup(); bgResuming = false; alog("bg:load-error"); };
     const onReady = () => {
       cleanup();
@@ -923,8 +928,12 @@
     };
     audio.addEventListener("canplay", onReady, { once: true });
     audio.addEventListener("error", onErr, { once: true });
+    // Self-heal: if canplay/error never arrive (e.g. a superseded load), never get stuck coalescing.
+    bgTimer = setTimeout(() => { cleanup(); bgResuming = false; alog("bg:timeout"); }, 6000);
     try { audio.load(); } catch (e) { cleanup(); bgResuming = false; }
   }
+  // Returning to the foreground always clears a stuck reload guard (foreground play works anyway).
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") bgResetGuard("visible"); });
 
   function setupMediaSession() {
     if (!("mediaSession" in navigator)) return;
