@@ -71,29 +71,6 @@
     });
   }
   setNativePitch();
-
-  // BUG-36 (attempt 4): route the native element through an AudioContext so its output survives a
-  // background pause. A bare <audio> loses its output route when resumed from a lock-screen pause
-  // (plays on, but silent); resuming the AudioContext reconnects it. The element still decodes
-  // natively — good quality, real preservesPitch. Needs crossOrigin + the audio bucket's CORS
-  // (verified). Resume must happen inside the play gesture (button / lock-screen / headphone).
-  audioEl.crossOrigin = "anonymous";
-  let audioCtx = null;
-  function ensureAudioCtx() {
-    if (audioCtx) return;
-    const AC = window.AudioContext || window.webkitAudioContext;
-    if (!AC) return;
-    try {
-      audioCtx = new AC();
-      audioCtx.createMediaElementSource(audioEl).connect(audioCtx.destination);
-    } catch (e) { audioCtx = null; }
-  }
-  function resumeAudioCtx() {
-    ensureAudioCtx();
-    if (audioCtx && audioCtx.state === "suspended") audioCtx.resume().catch(() => {});
-  }
-  // Any in-app gesture also resumes the context, so no play path is ever left routed-but-silent.
-  ["pointerdown", "keydown"].forEach((ev) => document.addEventListener(ev, resumeAudioCtx, { passive: true }));
   const viewSubjects = document.getElementById("view-subjects");
   const viewSubjectHub = document.getElementById("view-subject-hub");
   const viewLibrary = document.getElementById("view-library");
@@ -884,7 +861,7 @@
     if (!("mediaSession" in navigator)) return;
     const ms = navigator.mediaSession;
     const set = (action, fn) => { try { ms.setActionHandler(action, fn); } catch (e) {} };
-    set("play", () => { resumeAudioCtx(); audio.play().catch(() => {}); });
+    set("play", () => audio.play().catch(() => {}));
     set("pause", () => audio.pause());
     set("seekbackward", (d) => { audio.currentTime = Math.max(0, audio.currentTime - ((d && d.seekOffset) || 30)); });
     set("seekforward", (d) => { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + ((d && d.seekOffset) || 30)); });
@@ -897,7 +874,6 @@
   // so it lands on the server even if the 4s sync debounce hasn't fired. Progress itself is saved
   // to localStorage first, so it survives even offline.
   document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible") { if (!audio.paused) resumeAudioCtx(); return; }
     if (document.visibilityState !== "hidden") return;
     flushListenLog();
     persistProgress();
@@ -906,7 +882,7 @@
 
 
   // --- Audio events ---
-  audio.addEventListener("play", () => { resumeAudioCtx(); setNativePitch(); setPlayState(true); lastListenTick = Date.now(); if ("mediaSession" in navigator) navigator.mediaSession.playbackState = "playing"; track("play", { ep: currentEpisode && currentEpisode.id, speed: getCurrentSpeed() }); });
+  audio.addEventListener("play", () => { setNativePitch(); setPlayState(true); lastListenTick = Date.now(); if ("mediaSession" in navigator) navigator.mediaSession.playbackState = "playing"; track("play", { ep: currentEpisode && currentEpisode.id, speed: getCurrentSpeed() }); });
   audio.addEventListener("pause", () => { setPlayState(false); flushListenLog(); lastListenTick = 0; persistProgress(); if ("mediaSession" in navigator) navigator.mediaSession.playbackState = "paused"; });
   audio.addEventListener("ended", () => {
     flushListenLog(); // credit time to the finished episode's voice before advancing
@@ -1007,7 +983,7 @@
   // --- Controls ---
   const togglePlay = () => {
     if (!currentEpisode) return;
-    if (audio.paused) { resumeAudioCtx(); audio.play(); } else audio.pause();
+    audio.paused ? audio.play() : audio.pause();
   };
   btnPlay.addEventListener("click", togglePlay);
   if (btnPlayMini) btnPlayMini.addEventListener("click", (e) => { e.stopPropagation(); togglePlay(); });
