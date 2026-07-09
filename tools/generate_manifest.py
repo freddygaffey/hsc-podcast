@@ -191,23 +191,25 @@ def build_subject(subject_dir: Path) -> dict | None:
             module["episodes"].append(
                 build_episode(folder, subject_id, audio_base, title_slug.replace("-", " "), int(lesson_num)))
         elif case:
-            module = modules.setdefault("CASE",
-                {"id": "CASE", "prefix": "CASE", "moduleNum": 0, "episodes": []})
             fm = read_frontmatter(folder)
             stars_raw = fm.get("stars")
             if stars_raw is not None and str(stars_raw).isdigit():
-                # Case study carries its starred title + topic module + 1-3 star
-                # importance in frontmatter. Title shows the stars; the CASE sort
-                # below groups by topic then puts the most important first.
+                # Case study carries its starred title + topic module (e.g. M7) + a
+                # 1-3 star importance. Put it in a PER-TOPIC case module (CASE7…) so the
+                # app shows one collapsible dropdown per topic; the CASE* sort below
+                # puts the most important (most stars) first within each dropdown.
                 mod = fm.get("module") or ""
+                topicnum = int(mod[1:]) if mod[1:].isdigit() else 0
+                prefix = f"CASE{topicnum}" if topicnum else "CASE"
                 title = fm.get("title") or case_title(case.group(1))
-                ep = build_episode(folder, subject_id, audio_base, title,
-                                   cfg.get("groupNames", {}).get(mod, mod) or None)
+                module = modules.setdefault(prefix,
+                    {"id": prefix, "prefix": prefix, "moduleNum": 100 + topicnum, "episodes": []})
+                ep = build_episode(folder, subject_id, audio_base, title, None)
                 ep["stars"] = int(stars_raw)
-                ep["_topicnum"] = int(mod[1:]) if mod[1:].isdigit() else 99
             else:
+                module = modules.setdefault("CASE",
+                    {"id": "CASE", "prefix": "CASE", "moduleNum": 100, "episodes": []})
                 ep = build_episode(folder, subject_id, audio_base, case_title(case.group(1)), None)
-                ep["_topicnum"] = 999
             module["episodes"].append(ep)
 
     papers_module = build_papers_module(subject_dir, subject_id)
@@ -216,11 +218,11 @@ def build_subject(subject_dir: Path) -> dict | None:
 
     module_list = []
     for module in sorted(modules.values(), key=lambda m: (m["moduleNum"], m["prefix"])):
-        if module["prefix"] == "CASE":
-            # Case studies: group by topic module, then most-important (most stars)
-            # first, then title. Unstarred cases sort last, alphabetically.
+        if module["prefix"].startswith("CASE"):
+            # Case studies (per-topic CASE* module): most-important (most stars) first,
+            # then title. Unstarred cases (subjects without ratings) sort by title.
             module["episodes"].sort(
-                key=lambda e: (e.get("_topicnum", 999), -e.get("stars", 0), e["title"]))
+                key=lambda e: (-e.get("stars", 0), e["title"]))
         else:
             # Order by the numeric parts of the folder id (e.g. SA-20-01 -> (20, 1)),
             # which is the real unit+lesson sequence. The old (unit, title) key sorted
