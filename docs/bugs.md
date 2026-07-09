@@ -4,6 +4,11 @@ _Running list of concrete UI / behaviour bugs to fix later. Design-level quiz is
 (provenance labelling, flashcards-vs-HSC-drilling) live in [`quiz-issues.md`](quiz-issues.md).
 Logged 2026-07-02._
 
+> **Bugs that came back:** see [`regression-log.md`](regression-log.md) for the five bugs that were
+> fixed, regressed, and re-resolved (the auto-advance loop, sideways scroll, the audio-engine saga,
+> vanishing DT quizzes, parallel-session clobbering) — with the guard that should stop each recurring.
+> The BUG-36 background-audio saga has its own trace: [`audio-background-resume.md`](audio-background-resume.md).
+
 ## Overnight session status (2026-07-02)
 
 **Fixed & committed to `main` (not yet deployed — awaiting go-ahead):**
