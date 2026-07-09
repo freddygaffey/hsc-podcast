@@ -114,10 +114,12 @@
   // pre-renders each voice at the target speed, so we can play at 1× AND keep high speed. crossOrigin
   // must be set before the first src, so it's applied at init when the mode is on (toggling reloads).
   const BG_PAUSE_KEY = "hsc-bg-pause";
-  // TEMPORARY (test build): force the mode ON so we can validate WebAudio background-resume at 1×
-  // without wiring a Settings toggle yet. TODO before finishing: gate this behind a real toggle
-  // (default OFF) — return localStorage.getItem(BG_PAUSE_KEY) === "1" — and strip the diagnostics.
-  function bgPauseMode() { return true; }
+  // Gated by localStorage, DEFAULT OFF: off = native high speed (no WebAudio, no forced 1×). The test
+  // build forced this on to validate WebAudio background-resume at 1×; it still failed (iOS suspends the
+  // session in the background regardless), so it's back off by default to restore high speed + stop the
+  // progress loss. Set localStorage 'hsc-bg-pause'='1' to re-enable the experiment. TODO (task #19):
+  // proper Settings toggle + strip diagnostics once BUG-36 is concluded.
+  function bgPauseMode() { return localStorage.getItem(BG_PAUSE_KEY) === "1"; }
   let audioCtx = null, mediaSrcNode = null, silentKeepalive = null;
   if (bgPauseMode()) audioEl.crossOrigin = "anonymous";
   function ensureAudioGraph() {
