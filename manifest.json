@@ -3634,7 +3634,8 @@
                   "file": "https://audio.hsc.pebnum.com/dt/case_apple_newton/zz_eloquence_westmidlands.m4a",
                   "duration": 346.1
                 }
-              ]
+              ],
+              "caseGroup": ""
             },
             {
               "id": "case_central_park_sydney",
@@ -3715,7 +3716,8 @@
                   "file": "https://audio.hsc.pebnum.com/dt/case_central_park_sydney/zz_eloquence_westmidlands.m4a",
                   "duration": 339.1
                 }
-              ]
+              ],
+              "caseGroup": ""
             },
             {
               "id": "case_flow_hive",
@@ -3796,7 +3798,8 @@
                   "file": "https://audio.hsc.pebnum.com/dt/case_flow_hive/zz_eloquence_westmidlands.m4a",
                   "duration": 444.8
                 }
-              ]
+              ],
+              "caseGroup": ""
             },
             {
               "id": "case_ford_edsel",
@@ -3877,7 +3880,8 @@
                   "file": "https://audio.hsc.pebnum.com/dt/case_ford_edsel/zz_eloquence_westmidlands.m4a",
                   "duration": 372.9
                 }
-              ]
+              ],
+              "caseGroup": ""
             },
             {
               "id": "case_microsoft_zune",
@@ -3958,7 +3962,8 @@
                   "file": "https://audio.hsc.pebnum.com/dt/case_microsoft_zune/zz_eloquence_westmidlands.m4a",
                   "duration": 327.6
                 }
-              ]
+              ],
+              "caseGroup": ""
             }
           ]
         }
@@ -6706,7 +6711,28 @@
               "supplementaryPath": "content/physics/M8-07-Radioactivity-Strong-Force-Stability-And-Decays/supplementary.md",
               "quizPath": "content/physics/M8-07-Radioactivity-Strong-Force-Stability-And-Decays/quiz.json",
               "titleAudio": null,
-              "voices": []
+              "voices": [
+                {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/M8-07-Radioactivity-Strong-Force-Stability-And-Decays/af_heart.m4a",
+                  "duration": 2158.9
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/M8-07-Radioactivity-Strong-Force-Stability-And-Decays/am_onyx.m4a",
+                  "duration": 1890.8
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/M8-07-Radioactivity-Strong-Force-Stability-And-Decays/am_santa.m4a",
+                  "duration": 2057.4
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/M8-07-Radioactivity-Strong-Force-Stability-And-Decays/bf_isabella.m4a",
+                  "duration": 2054.4
+                }
+              ]
             },
             {
               "id": "M8-08-Half-Life-And-The-Mathematics-Of-Decay",
@@ -6880,7 +6906,38 @@
               "supplementaryPath": "content/physics/M8-12-Antimatter-Annihilation-And-The-PET-Scan/supplementary.md",
               "quizPath": "content/physics/M8-12-Antimatter-Annihilation-And-The-PET-Scan/quiz.json",
               "titleAudio": null,
-              "voices": []
+              "voices": [
+                {
+                  "name": "af_heart",
+                  "file": "https://audio.hsc.pebnum.com/physics/M8-12-Antimatter-Annihilation-And-The-PET-Scan/af_heart.m4a",
+                  "duration": 2357.8
+                },
+                {
+                  "name": "am_onyx",
+                  "file": "https://audio.hsc.pebnum.com/physics/M8-12-Antimatter-Annihilation-And-The-PET-Scan/am_onyx.m4a",
+                  "duration": 2068.8
+                },
+                {
+                  "name": "am_santa",
+                  "file": "https://audio.hsc.pebnum.com/physics/M8-12-Antimatter-Annihilation-And-The-PET-Scan/am_santa.m4a",
+                  "duration": 2256.6
+                },
+                {
+                  "name": "bf_isabella",
+                  "file": "https://audio.hsc.pebnum.com/physics/M8-12-Antimatter-Annihilation-And-The-PET-Scan/bf_isabella.m4a",
+                  "duration": 2246.4
+                },
+                {
+                  "name": "bm_daniel",
+                  "file": "https://audio.hsc.pebnum.com/physics/M8-12-Antimatter-Annihilation-And-The-PET-Scan/bm_daniel.m4a",
+                  "duration": 2019.3
+                },
+                {
+                  "name": "bm_george",
+                  "file": "https://audio.hsc.pebnum.com/physics/M8-12-Antimatter-Annihilation-And-The-PET-Scan/bm_george.m4a",
+                  "duration": 2386.8
+                }
+              ]
             },
             {
               "id": "M8-13-Reading-The-Stars-Spectra-And-Redshift",
@@ -7031,7 +7088,8 @@
                   "duration": 358.3
                 }
               ],
-              "stars": 1
+              "stars": 1,
+              "caseGroup": "Advanced Mechanics"
             },
             {
               "id": "case_galileos_demonstration_of_the_principles_of",
@@ -7113,7 +7171,8 @@
                   "duration": 746.3
                 }
               ],
-              "stars": 3
+              "stars": 3,
+              "caseGroup": "Advanced Mechanics"
             },
             {
               "id": "case_keplers_third_law_from_empirical_data",
@@ -7195,7 +7254,8 @@
                   "duration": 586.6
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "Advanced Mechanics"
             },
             {
               "id": "case_newtons_cannon_on_a_mountain_thought",
@@ -7277,7 +7337,8 @@
                   "duration": 480.1
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "Advanced Mechanics"
             },
             {
               "id": "case_henry_cavendishs_experiment_to_find_g",
@@ -7329,7 +7390,8 @@
                   "duration": 408.3
                 }
               ],
-              "stars": 1
+              "stars": 1,
+              "caseGroup": "Advanced Mechanics"
             },
             {
               "id": "case_hans_oersteds_effect_of_a_current",
@@ -7411,7 +7473,8 @@
                   "duration": 536.0
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "Electromagnetism"
             },
             {
               "id": "case_michael_faraday_showing_electric_fields_can",
@@ -7493,7 +7556,8 @@
                   "duration": 541.9
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "Electromagnetism"
             },
             {
               "id": "case_poissons_bright_spot",
@@ -7575,7 +7639,8 @@
                   "duration": 501.0
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_youngs_double_slit_experiment",
@@ -7657,7 +7722,8 @@
                   "duration": 661.4
                 }
               ],
-              "stars": 3
+              "stars": 3,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_beeckman_and_galileos_lanterns_on_hills",
@@ -7709,7 +7775,8 @@
                   "duration": 335.8
                 }
               ],
-              "stars": 1
+              "stars": 1,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_ole_r_mers_io_eclipse_evidence",
@@ -7761,7 +7828,8 @@
                   "duration": 526.6
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_james_bradleys_stellar_aberration_measurement_of",
@@ -7843,7 +7911,8 @@
                   "duration": 485.1
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_hippolyte_fizeaus_cogwheel_measurement_of_the",
@@ -7925,7 +7994,8 @@
                   "duration": 653.1
                 }
               ],
-              "stars": 3
+              "stars": 3,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_jean_l_on_foucaults_rotating_mirror",
@@ -8007,7 +8077,8 @@
                   "duration": 515.3
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_heinrich_hertzs_verification_of_maxwells_em",
@@ -8059,7 +8130,8 @@
                   "duration": 816.9
                 }
               ],
-              "stars": 3
+              "stars": 3,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_rosa_and_dorseys_vacuum_constants_calculation",
@@ -8141,7 +8213,8 @@
                   "duration": 546.6
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_louis_essens_cavity_resonance_measurement_of",
@@ -8223,7 +8296,8 @@
                   "duration": 498.4
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_froome_evansen_et_al_s_interferometry",
@@ -8275,7 +8349,8 @@
                   "duration": 523.4
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_photoelectric_effect_analysis",
@@ -8357,7 +8432,8 @@
                   "duration": 572.7
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_galileos_principle_of_relativity_ship_thought",
@@ -8439,7 +8515,8 @@
                   "duration": 532.2
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_the_michelson_morley_ether_experiment",
@@ -8491,7 +8568,8 @@
                   "duration": 704.3
                 }
               ],
-              "stars": 3
+              "stars": 3,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_the_mirror_in_a_train_thought",
@@ -8568,7 +8646,8 @@
                   "duration": 511.8
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_derivation_of_time_dilation_from_einsteins",
@@ -8620,7 +8699,8 @@
                   "duration": 420.2
                 }
               ],
-              "stars": 1
+              "stars": 1,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_derivation_of_length_contraction_from_einsteins",
@@ -8702,7 +8782,8 @@
                   "duration": 385.2
                 }
               ],
-              "stars": 1
+              "stars": 1,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_the_lights_in_a_box_thought",
@@ -8784,7 +8865,8 @@
                   "duration": 362.6
                 }
               ],
-              "stars": 1
+              "stars": 1,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_high_altitude_muons_frisch_smith",
@@ -8836,7 +8918,8 @@
                   "duration": 652.9
                 }
               ],
-              "stars": 3
+              "stars": 3,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_hafele_keating_experiment",
@@ -8888,7 +8971,8 @@
                   "duration": 674.0
                 }
               ],
-              "stars": 3
+              "stars": 3,
+              "caseGroup": "The Nature of Light"
             },
             {
               "id": "case_behaviour_of_cathode_rays",
@@ -8940,7 +9024,8 @@
                   "duration": 400.6
                 }
               ],
-              "stars": 1
+              "stars": 1,
+              "caseGroup": "From the Universe to the Atom"
             },
             {
               "id": "case_the_british_against_german_examination_of",
@@ -9022,7 +9107,8 @@
                   "duration": 526.9
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "From the Universe to the Atom"
             },
             {
               "id": "case_j_j_thomsons_calculation_of_the",
@@ -9104,7 +9190,8 @@
                   "duration": 720.9
                 }
               ],
-              "stars": 3
+              "stars": 3,
+              "caseGroup": "From the Universe to the Atom"
             },
             {
               "id": "case_robert_millikans_oil_drop_experiment",
@@ -9186,7 +9273,8 @@
                   "duration": 771.2
                 }
               ],
-              "stars": 3
+              "stars": 3,
+              "caseGroup": "From the Universe to the Atom"
             },
             {
               "id": "case_geiger_marsden_gold_foil_experiment",
@@ -9238,7 +9326,8 @@
                   "duration": 678.2
                 }
               ],
-              "stars": 3
+              "stars": 3,
+              "caseGroup": "From the Universe to the Atom"
             },
             {
               "id": "case_davisson_germer_experiment_to_do_before",
@@ -9290,7 +9379,8 @@
                   "duration": 704.5
                 }
               ],
-              "stars": 3
+              "stars": 3,
+              "caseGroup": "From the Universe to the Atom"
             },
             {
               "id": "case_g_p_thomsons_experiment",
@@ -9342,7 +9432,8 @@
                   "duration": 385.2
                 }
               ],
-              "stars": 1
+              "stars": 1,
+              "caseGroup": "From the Universe to the Atom"
             },
             {
               "id": "case_wilson_cloud_chambers",
@@ -9424,7 +9515,8 @@
                   "duration": 514.1
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "From the Universe to the Atom"
             },
             {
               "id": "case_james_chadwicks_discovery_of_the_neutron",
@@ -9506,7 +9598,8 @@
                   "duration": 757.0
                 }
               ],
-              "stars": 3
+              "stars": 3,
+              "caseGroup": "From the Universe to the Atom"
             },
             {
               "id": "case_alvarez_and_bloch",
@@ -9578,7 +9671,8 @@
                   "duration": 484.4
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "From the Universe to the Atom"
             },
             {
               "id": "case_slac_deep_inelastic_scattering",
@@ -9660,7 +9754,8 @@
                   "duration": 673.3
                 }
               ],
-              "stars": 3
+              "stars": 3,
+              "caseGroup": "From the Universe to the Atom"
             },
             {
               "id": "case_standard_model_prediction_of_the_w",
@@ -9742,7 +9837,8 @@
                   "duration": 541.0
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "From the Universe to the Atom"
             },
             {
               "id": "case_wilson_cloud_chambers_and_the_positron",
@@ -9824,7 +9920,8 @@
                   "duration": 543.3
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "From the Universe to the Atom"
             },
             {
               "id": "case_discovery_of_the_neutrino",
@@ -9906,7 +10003,8 @@
                   "duration": 520.4
                 }
               ],
-              "stars": 2
+              "stars": 2,
+              "caseGroup": "From the Universe to the Atom"
             },
             {
               "id": "case_hubbles_observations",
@@ -9988,7 +10086,8 @@
                   "duration": 664.1
                 }
               ],
-              "stars": 3
+              "stars": 3,
+              "caseGroup": "From the Universe to the Atom"
             }
           ]
         }
@@ -21006,7 +21105,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_ariane_5_flight_501/zz_eloquence_westmidlands.m4a",
                   "duration": 1671.1
                 }
-              ]
+              ],
+              "caseGroup": "The Object-Oriented Paradigm"
             },
             {
               "id": "case_colonial_pipeline",
@@ -21087,7 +21187,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_colonial_pipeline/zz_eloquence_westmidlands.m4a",
                   "duration": 1628.2
                 }
-              ]
+              ],
+              "caseGroup": "Software Security Applications"
             },
             {
               "id": "case_darpa_grand_challenge",
@@ -21168,7 +21269,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_darpa_grand_challenge/zz_eloquence_westmidlands.m4a",
                   "duration": 609.9
                 }
-              ]
+              ],
+              "caseGroup": "Programming Mechatronics"
             },
             {
               "id": "case_heartbleed",
@@ -21249,7 +21351,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_heartbleed/zz_eloquence_westmidlands.m4a",
                   "duration": 1618.5
                 }
-              ]
+              ],
+              "caseGroup": "Software Security Applications"
             },
             {
               "id": "case_log4shell",
@@ -21330,7 +21433,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_log4shell/zz_eloquence_westmidlands.m4a",
                   "duration": 1644.0
                 }
-              ]
+              ],
+              "caseGroup": "Software Security Applications"
             },
             {
               "id": "case_stuxnet",
@@ -21411,7 +21515,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_stuxnet/zz_eloquence_westmidlands.m4a",
                   "duration": 1467.6
                 }
-              ]
+              ],
+              "caseGroup": "Software Security Applications"
             },
             {
               "id": "case_the_737_max_mcas",
@@ -21492,7 +21597,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_737_max_mcas/zz_eloquence_westmidlands.m4a",
                   "duration": 963.4
                 }
-              ]
+              ],
+              "caseGroup": "Programming Mechatronics"
             },
             {
               "id": "case_the_amazon_recruiting_ai",
@@ -21573,7 +21679,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_amazon_recruiting_ai/zz_eloquence_westmidlands.m4a",
                   "duration": 498.3
                 }
-              ]
+              ],
+              "caseGroup": "Software Automation"
             },
             {
               "id": "case_the_compas_recidivism",
@@ -21654,7 +21761,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_compas_recidivism/zz_eloquence_westmidlands.m4a",
                   "duration": 520.6
                 }
-              ]
+              ],
+              "caseGroup": "Software Automation"
             },
             {
               "id": "case_the_cloudflare_2019_outage",
@@ -21735,7 +21843,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_cloudflare_2019_outage/zz_eloquence_westmidlands.m4a",
                   "duration": 536.1
                 }
-              ]
+              ],
+              "caseGroup": "Programming for the Web"
             },
             {
               "id": "case_the_denver_airport_baggage",
@@ -21816,7 +21925,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_denver_airport_baggage/zz_eloquence_westmidlands.m4a",
                   "duration": 507.2
                 }
-              ]
+              ],
+              "caseGroup": "Software Engineering Project"
             },
             {
               "id": "case_the_dyn_dns_ddos_2016",
@@ -21897,7 +22007,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_dyn_dns_ddos_2016/zz_eloquence_westmidlands.m4a",
                   "duration": 1682.2
                 }
-              ]
+              ],
+              "caseGroup": "Software Security Applications"
             },
             {
               "id": "case_the_equifax_breach",
@@ -21978,7 +22089,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_equifax_breach/zz_eloquence_westmidlands.m4a",
                   "duration": 1552.8
                 }
-              ]
+              ],
+              "caseGroup": "Software Security Applications"
             },
             {
               "id": "case_the_healthcare_gov_launch",
@@ -22059,7 +22171,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_healthcare_gov_launch/zz_eloquence_westmidlands.m4a",
                   "duration": 497.7
                 }
-              ]
+              ],
+              "caseGroup": "Software Engineering Project"
             },
             {
               "id": "case_the_knight_capital_glitch",
@@ -22140,7 +22253,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_knight_capital_glitch/zz_eloquence_westmidlands.m4a",
                   "duration": 521.3
                 }
-              ]
+              ],
+              "caseGroup": "Software Engineering Project"
             },
             {
               "id": "case_the_linkedin_password_leak",
@@ -22221,7 +22335,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_linkedin_password_leak/zz_eloquence_westmidlands.m4a",
                   "duration": 1631.4
                 }
-              ]
+              ],
+              "caseGroup": "Software Security Applications"
             },
             {
               "id": "case_the_mariner_1",
@@ -22302,7 +22417,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_mariner_1/zz_eloquence_westmidlands.m4a",
                   "duration": 498.6
                 }
-              ]
+              ],
+              "caseGroup": "Programming Fundamentals"
             },
             {
               "id": "case_the_mars_climate_orbiter",
@@ -22383,7 +22499,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_mars_climate_orbiter/zz_eloquence_westmidlands.m4a",
                   "duration": 1623.5
                 }
-              ]
+              ],
+              "caseGroup": "The Object-Oriented Paradigm"
             },
             {
               "id": "case_the_medibank_breach",
@@ -22464,7 +22581,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_medibank_breach/zz_eloquence_westmidlands.m4a",
                   "duration": 1534.9
                 }
-              ]
+              ],
+              "caseGroup": "Software Security Applications"
             },
             {
               "id": "case_the_morris_worm",
@@ -22545,7 +22663,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_morris_worm/zz_eloquence_westmidlands.m4a",
                   "duration": 1519.7
                 }
-              ]
+              ],
+              "caseGroup": "Software Security Applications"
             },
             {
               "id": "case_the_optus_breach",
@@ -22626,7 +22745,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_optus_breach/zz_eloquence_westmidlands.m4a",
                   "duration": 1548.5
                 }
-              ]
+              ],
+              "caseGroup": "Software Security Applications"
             },
             {
               "id": "case_the_shai_hulud_worm",
@@ -22707,7 +22827,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_shai_hulud_worm/zz_eloquence_westmidlands.m4a",
                   "duration": 811.8
                 }
-              ]
+              ],
+              "caseGroup": "Software Security Applications"
             },
             {
               "id": "case_the_target_breach",
@@ -22788,7 +22909,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_target_breach/zz_eloquence_westmidlands.m4a",
                   "duration": 1654.4
                 }
-              ]
+              ],
+              "caseGroup": "Software Security Applications"
             },
             {
               "id": "case_the_xz_backdoor",
@@ -22869,7 +22991,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_xz_backdoor/zz_eloquence_westmidlands.m4a",
                   "duration": 1612.9
                 }
-              ]
+              ],
+              "caseGroup": "Software Security Applications"
             },
             {
               "id": "case_the_y2k_bug",
@@ -22950,7 +23073,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_y2k_bug/zz_eloquence_westmidlands.m4a",
                   "duration": 622.1
                 }
-              ]
+              ],
+              "caseGroup": "Programming Fundamentals"
             },
             {
               "id": "case_the_npm_supply_chain_attacks",
@@ -23031,7 +23155,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_the_npm_supply_chain_attacks/zz_eloquence_westmidlands.m4a",
                   "duration": 1625.7
                 }
-              ]
+              ],
+              "caseGroup": "Software Security Applications"
             },
             {
               "id": "case_therac_25",
@@ -23112,7 +23237,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_therac_25/zz_eloquence_westmidlands.m4a",
                   "duration": 2216.6
                 }
-              ]
+              ],
+              "caseGroup": "The Object-Oriented Paradigm"
             },
             {
               "id": "case_wannacry",
@@ -23193,7 +23319,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_wannacry/zz_eloquence_westmidlands.m4a",
                   "duration": 1478.8
                 }
-              ]
+              ],
+              "caseGroup": "Software Security Applications"
             },
             {
               "id": "case_zillow_offers",
@@ -23274,7 +23401,8 @@
                   "file": "https://audio.hsc.pebnum.com/software/case_zillow_offers/zz_eloquence_westmidlands.m4a",
                   "duration": 478.1
                 }
-              ]
+              ],
+              "caseGroup": "Software Automation"
             }
           ]
         }

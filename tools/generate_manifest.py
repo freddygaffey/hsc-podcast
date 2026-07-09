@@ -207,6 +207,7 @@ def build_subject(subject_dir: Path) -> dict | None:
             fm = read_frontmatter(folder)
             module = modules.setdefault("CASE",
                 {"id": "CASE", "prefix": "CASE", "moduleNum": 100, "episodes": []})
+            mod = fm.get("module") or ""
             stars_raw = fm.get("stars")
             if stars_raw is not None and str(stars_raw).isdigit():
                 title = fm.get("title") or case_title(case.group(1))
@@ -215,6 +216,9 @@ def build_subject(subject_dir: Path) -> dict | None:
             else:
                 ep = build_episode(folder, subject_id, audio_base, case_title(case.group(1)), None)
             ep["_seq"] = case_order.get(folder.name, 9999)
+            # Topic label so the app can render a sub-dropdown per module inside the
+            # single Case Studies dropdown.
+            ep["caseGroup"] = cfg.get("groupNames", {}).get(mod, mod)
             module["episodes"].append(ep)
 
     papers_module = build_papers_module(subject_dir, subject_id)
