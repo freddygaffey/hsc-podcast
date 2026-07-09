@@ -92,6 +92,7 @@
       ];
       if (audioEl.error) bits.push("err=" + audioEl.error.code);
       if ("mediaSession" in navigator) bits.push("ms=" + navigator.mediaSession.playbackState);
+      if (audioCtx) bits.push("ctx=" + audioCtx.state);
       if (extra) bits.push(extra);
       line += " {" + bits.join(" ") + "}";
     } catch (e) {}
@@ -105,6 +106,42 @@
     audioEl.addEventListener(ev, () => alog("evt:" + ev))
   );
   document.addEventListener("visibilitychange", () => alog("vis:" + document.visibilityState));
+
+  // --- BUG-36 experimental "background pause" mode (Settings toggle, default OFF) -------------------
+  // Validates the re-encode plan's premise: does routing <audio> through a session-holding WebAudio
+  // graph actually fix lock-screen pause→resume? Attempt 5 proved this routing only *breaks* HIGH speed
+  // — so this mode forces 1× (see the playbackRate sites). If it confirms resume works at 1×, Step 2
+  // pre-renders each voice at the target speed, so we can play at 1× AND keep high speed. crossOrigin
+  // must be set before the first src, so it's applied at init when the mode is on (toggling reloads).
+  const BG_PAUSE_KEY = "hsc-bg-pause";
+  // TEMPORARY (test build): force the mode ON so we can validate WebAudio background-resume at 1×
+  // without wiring a Settings toggle yet. TODO before finishing: gate this behind a real toggle
+  // (default OFF) — return localStorage.getItem(BG_PAUSE_KEY) === "1" — and strip the diagnostics.
+  function bgPauseMode() { return true; }
+  let audioCtx = null, mediaSrcNode = null, silentKeepalive = null;
+  if (bgPauseMode()) audioEl.crossOrigin = "anonymous";
+  function ensureAudioGraph() {
+    if (audioCtx || !bgPauseMode()) return;
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return;
+    try {
+      audioCtx = new AC();
+      mediaSrcNode = audioCtx.createMediaElementSource(audioEl);
+      mediaSrcNode.connect(audioCtx.destination);
+      // 1s of silence, looped forever — keeps the audio session active while the element is paused.
+      const buf = audioCtx.createBuffer(1, Math.max(1, Math.floor(audioCtx.sampleRate)), audioCtx.sampleRate);
+      silentKeepalive = audioCtx.createBufferSource();
+      silentKeepalive.buffer = buf; silentKeepalive.loop = true;
+      silentKeepalive.connect(audioCtx.destination); silentKeepalive.start(0);
+      alog("graph:created", "sr=" + audioCtx.sampleRate);
+    } catch (e) { audioCtx = null; mediaSrcNode = null; silentKeepalive = null; alog("graph:FAILED", "err=" + (e && e.name)); }
+  }
+  function resumeAudioGraph() {
+    if (!bgPauseMode()) return;
+    ensureAudioGraph();
+    if (audioCtx && audioCtx.state === "suspended") audioCtx.resume().then(() => alog("ctx:resumed")).catch((e) => alog("ctx:resume-failed", "err=" + (e && e.name)));
+  }
+  ["pointerdown", "keydown"].forEach((ev) => document.addEventListener(ev, resumeAudioGraph, { passive: true }));
 
   const viewSubjects = document.getElementById("view-subjects");
   const viewSubjectHub = document.getElementById("view-subject-hub");
@@ -287,7 +324,7 @@
     speedInput.value = speedNum(s);
     if (speedUnitEl) speedUnitEl.textContent = speedUnitLabel();
     if (speedPickerBtn) speedPickerBtn.textContent = fmtSpeed(s);
-    audio.playbackRate = s;
+    audio.playbackRate = bgPauseMode() ? 1 : s; // bg-pause mode plays at 1× (WebAudio can't do high rate)
     localStorage.setItem(SPEED_KEY, i);
     if (audio.duration) {
       timeTotal.textContent = fmtTime(audio.duration / s);
@@ -917,6 +954,8 @@
     const set = (action, fn) => { try { ms.setActionHandler(action, fn); } catch (e) {} };
     set("play", () => {
       alog("MS:play handler");
+      resumeAudioGraph(); // no-op unless bg-pause mode; reconnects the WebAudio session on the lock-screen gesture
+      if (bgPauseMode()) { audio.play().then(() => alog("MS:play resolved")).catch((e) => alog("MS:play REJECTED", "reason=" + (e && e.name))); return; }
       if (document.hidden) backgroundResumeKick();
       else audio.play().then(() => alog("MS:play resolved")).catch((e) => alog("MS:play REJECTED", "reason=" + (e && e.name)));
     });
@@ -1040,7 +1079,7 @@
   // --- Controls ---
   const togglePlay = () => {
     if (!currentEpisode) return;
-    if (audio.paused) { alog("btn:play"); audio.play().then(() => alog("btn:play resolved")).catch((e) => alog("btn:play REJECTED", "reason=" + (e && e.name))); }
+    if (audio.paused) { alog("btn:play"); resumeAudioGraph(); audio.play().then(() => alog("btn:play resolved")).catch((e) => alog("btn:play REJECTED", "reason=" + (e && e.name))); }
     else { alog("btn:pause"); audio.pause(); }
   };
   btnPlay.addEventListener("click", togglePlay);
@@ -1172,7 +1211,7 @@
       // Don't resume at the very end (a completed episode has progressPct≈1) — that
       // would sit at the end and instantly auto-advance instead of replaying.
       if (resumePct && resumePct < 0.999 && audio.duration) audio.currentTime = resumePct * audio.duration;
-      audio.playbackRate = getCurrentSpeed();
+      audio.playbackRate = bgPauseMode() ? 1 : getCurrentSpeed();
       timeTotal.textContent = fmtTime(audio.duration / getCurrentSpeed());
     }, { once: true });
   }
@@ -1210,7 +1249,7 @@
     audio.addEventListener("loadedmetadata", () => {
       if (token !== loadToken) return; // a newer load superseded this one
       if (audio.duration) audio.currentTime = pct * audio.duration;
-      audio.playbackRate = getCurrentSpeed();
+      audio.playbackRate = bgPauseMode() ? 1 : getCurrentSpeed();
       timeTotal.textContent = fmtTime(audio.duration / getCurrentSpeed());
       if (wasPlaying) audio.play().catch(() => {});
     }, { once: true });
