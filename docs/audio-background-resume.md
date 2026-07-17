@@ -258,6 +258,23 @@ certainly (a) an **iOS version change** (same code, different OS behaviour over 
 
 ---
 
+## 12. Gap in the §8 ground truth: standalone PWA vs. plain Safari tab (2026-07-17)
+
+The §8 diagnostic log was only ever captured on the **installed home-screen PWA**
+(`docs/audio-background-resume.md` §8 says so explicitly: "installed iOS PWA"). It never tested the same
+play→lock→pause→resume cycle in a plain Safari tab. Fred reports the plain-Safari-tab case *does* resume
+correctly; only the installed app fails. That's a real, previously-untested gap, not a re-litigation —
+`display: standalone` puts the installed app in its own minimal WKWebView container, which iOS suspends
+more aggressively in the background than an actual Safari tab (Safari's own process gets more lenient
+backgrounding/audio-session treatment).
+
+**Change:** `app.webmanifest` `"display"` set from `"standalone"` to `"browser"`. Tapping the home-screen
+icon now opens the app inside Safari itself (URL bar visible) instead of the isolated standalone
+container, trading the full-screen app look for (reportedly) working background pause/resume. One-line,
+easily reverted (`git revert`) if it turns out not to help.
+
+---
+
 ## 7. Verification of the current (reverted) state — `c6c61ca`
 
 - `git diff 410a382 HEAD -- app.js` filtered to audio identifiers → **empty** (audio code == known-good).
