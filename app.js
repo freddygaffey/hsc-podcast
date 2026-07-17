@@ -4244,24 +4244,14 @@
   // A new shell no longer force-reloads the page the instant it deploys (that interrupted playback
   // mid-session and made every deploy a surprise). Instead the new worker sits in "waiting" and the
   // page applies it only when it's safe/wanted:
-  //   • the user swipes UP (an explicit "refresh now" gesture), or
-  //   • the running build has been in production ≥6 hours (stale enough to auto-update), applied
-  //     while paused so it never cuts off listening.
+  //   • the user swipes UP or taps "Check for update" in Settings → About (explicit "refresh now"), or
+  //   • the app is idle (paused) once an update is ready — applied immediately, no time delay.
   // Applying = postMessage SKIP_WAITING → the worker takes over → controllerchange → one reload.
   if ("serviceWorker" in navigator) {
-    const SIX_HOURS_MS = 6 * 60 * 60 * 1000;
+    let swReg = null;
     let waitingWorker = null;   // the installed-but-waiting new shell, once one exists
     let updateReady = false;
     let reloadingForUpdate = false;
-    let runningBuildTime = 0;   // ms epoch the running build was cut (from /build.json .date)
-
-    // Learn how old the running build is, so the 6h rule has a clock. Cheap, one-shot, cached.
-    fetch("/build.json", { cache: "no-store" })
-      .then((r) => (r.ok ? r.json() : null))
-      .then((info) => { const t = info && info.date ? Date.parse(info.date) : NaN; if (isFinite(t)) runningBuildTime = t; maybeAutoUpdate(); })
-      .catch(() => {});
-
-    const buildStaleFor6h = () => runningBuildTime > 0 && Date.now() - runningBuildTime > SIX_HOURS_MS;
 
     function applyUpdate(reason) {
       if (reloadingForUpdate || !updateReady) return;
@@ -4273,9 +4263,9 @@
       else window.location.reload();
     }
     function maybeAutoUpdate() {
-      // Auto-apply only when the running build is genuinely stale (≥6h) AND we won't cut off
-      // playback. Swipe-up ignores both conditions — it's an explicit request.
-      if (updateReady && audio.paused && buildStaleFor6h()) applyUpdate("6h-stale");
+      // Apply as soon as it's safe (paused, so we never cut off listening). Swipe-up / the
+      // Settings button ignore the paused check — those are explicit requests.
+      if (updateReady && audio.paused) applyUpdate("auto-while-paused");
     }
     function markUpdateReady(worker) {
       waitingWorker = worker || waitingWorker;
@@ -4295,6 +4285,7 @@
 
     navigator.serviceWorker.register("/service-worker.js", { updateViaCache: "none" })
       .then((reg) => {
+        swReg = reg;
         // A worker already waiting from a previous visit.
         if (reg.waiting && navigator.serviceWorker.controller) markUpdateReady(reg.waiting);
         // A worker that finishes installing while we're running becomes our pending update.
@@ -4308,6 +4299,24 @@
         reg.update().catch(() => {});
       })
       .catch(() => {});
+
+    // Settings → About → "Check for update": force a fresh check against service-worker.js right
+    // now (bypassing the browser's own ~24h poll interval) and apply immediately if one's waiting.
+    const checkUpdateBtn = document.getElementById("check-update-btn");
+    if (checkUpdateBtn) checkUpdateBtn.addEventListener("click", () => {
+      if (!swReg) return;
+      checkUpdateBtn.disabled = true;
+      checkUpdateBtn.textContent = "Checking…";
+      swReg.update().catch(() => {}).then(() => {
+        // updatefound/statechange land asynchronously; give them a beat to flip updateReady.
+        setTimeout(() => {
+          if (updateReady) { applyUpdate("manual-check"); return; }
+          checkUpdateBtn.disabled = false;
+          checkUpdateBtn.textContent = "Up to date";
+          setTimeout(() => { checkUpdateBtn.textContent = "Check for update"; }, 1500);
+        }, 1200);
+      });
+    });
 
     // Swipe UP anywhere = "refresh now", but only does anything once an update is actually waiting,
     // so it never disturbs normal scrolling on an up-to-date app. A deliberate, mostly-vertical
@@ -4325,7 +4334,7 @@
       if (dy > window.innerHeight * 0.25 && dy > dx * 1.5) applyUpdate("swipe-up");
     }, { passive: true });
 
-    // Re-check the 6h rule when the app is brought back to the foreground.
+    // Catch an update that arrived while backgrounded, once we're foreground + paused again.
     document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") maybeAutoUpdate(); });
 
     // Small, dismissible hint so the swipe-up gesture is discoverable (also tappable to apply).
