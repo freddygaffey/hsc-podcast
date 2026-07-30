@@ -255,6 +255,7 @@ def build_subject(subject_dir: Path) -> dict | None:
         "groupNames": cfg.get("groupNames", {}),
         "yearMap": cfg.get("yearMap", {}),
         "yearOrder": cfg.get("yearOrder", ["Case Studies", "Year 12", "Year 11", "Other"]),
+        "setTexts": cfg.get("setTexts", {}),
         "modules": module_list,
     }
 
@@ -265,7 +266,11 @@ def build_manifest() -> dict:
         if not subject_dir.is_dir() or subject_dir.name.startswith("_"):
             continue
         subj = build_subject(subject_dir)
-        if subj and subj["modules"]:
+        # Normally a subject needs episodes to be listed. A subject that declares
+        # `setTexts` carries other study content instead (English Standard ships a
+        # set-text plot map, not episodes), so it earns a hub with zero episodes.
+        # Paper-only subjects (the maths ones) declare no setTexts and stay hidden.
+        if subj and (subj["modules"] or subj.get("setTexts")):
             subjects.append(subj)
     return {"subjects": subjects}
 

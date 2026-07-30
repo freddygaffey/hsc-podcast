@@ -1,0 +1,22 @@
+name = "hsc-podcast-private-audio"
+main = "src/index.js"
+compatibility_date = "2026-01-01"
+
+# PRIVATE bucket — deliberately NOT bound to a public r2.dev URL or a custom domain.
+# The only way to read it is through this Worker, which requires a valid session.
+# Create it once:  wrangler r2 bucket create hsc-podcast-private
+[[r2_buckets]]
+binding = "AUDIO"
+bucket_name = "hsc-podcast-private"
+
+# Same D1 database the auth worker uses, so one account works across both.
+# Paste the database_id from `wrangler d1 list`.
+[[d1_databases]]
+binding = "DB"
+database_name = "hsc-podcast-auth"
+database_id = "PASTE-DATABASE-ID-HERE"
+
+# Optional custom route. Without this the worker is reachable at its workers.dev URL.
+# [[routes]]
+# pattern = "private-audio.pebnum.com"
+# custom_domain = true

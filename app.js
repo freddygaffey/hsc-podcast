@@ -32,6 +32,8 @@
   const track = (event, props) => { try { window.Telemetry && window.Telemetry.track(event, props); } catch (e) {} };
   // BUG-30: audio-less card-only module prefixes — kept as flashcards, hidden from the podcast list.
   const CARD_ONLY_PREFIXES = new Set(["MEM", "EPC"]);
+  // Subjects that have a set-text plot map (content/<id>/<text>/scenes.json).
+  const PLOT_MAP_SUBJECTS = new Set(["english-standard"]);
 
   let fullManifest = null;       // { subjects: [...] } as loaded from manifest.json
   let currentSubject = null;     // id of the subject currently in view
@@ -152,7 +154,8 @@
   const viewSubjectHub = document.getElementById("view-subject-hub");
   const viewLibrary = document.getElementById("view-library");
   const viewEpisode = document.getElementById("view-episode");
-  const views = { subjects: viewSubjects, hub: viewSubjectHub, library: viewLibrary, episode: viewEpisode };
+  const viewMap = document.getElementById("view-map");
+  const views = { subjects: viewSubjects, hub: viewSubjectHub, library: viewLibrary, episode: viewEpisode, map: viewMap };
   const btnBack = document.getElementById("btn-back");
   const btnTheme = document.getElementById("btn-theme");
   const btnSleep = document.getElementById("btn-sleep");
@@ -2397,6 +2400,14 @@
         `${paperCount} paper${paperCount === 1 ? "" : "s"} · generate & mark`,
         `#/s/${id}/papers`);
     }
+    // Plot map — set-text scene arc with live position tracking. English Standard only
+    // for now; add the subject id here once another text has a scenes.json.
+    if (PLOT_MAP_SUBJECTS.has(s.id)) {
+      const mapIcon = `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17c3-6 5 2 8-4s5 3 10-6"/><circle cx="3" cy="17" r="1.6"/><circle cx="11" cy="13" r="1.6"/><circle cx="21" cy="7" r="1.6"/></svg>`;
+      makeTile(mapIcon, "Plot Map",
+        "Past the Shallows · 30 scenes · follows your audio",
+        `#/s/${id}/map`);
+    }
     // Paper generator entry — subjects with a question bank open the generator scoped
     // to this subject (full navigation; the generator is its own page).
     if (GENERATOR_BANKS.some(([bid]) => bid === s.id)) {
@@ -2697,10 +2708,11 @@
       if (ep) { ensureSubject(ep._subject); showView("episode", ep); return; }
     }
     // Mode sub-routes must be tested before the bare-subject route (whose `.+` also matches them).
-    const modeMatch = hash.match(/^#\/s\/(.+)\/(podcasts|papers|quizzes)$/);
+    const modeMatch = hash.match(/^#\/s\/(.+)\/(podcasts|papers|quizzes|map)$/);
     if (modeMatch && setSubject(decodeURIComponent(modeMatch[1]))) {
       const mode = modeMatch[2];
       if (mode === "quizzes") { showView("hub"); openReview(currentSubject); return; }
+      if (mode === "map") { showView("map"); return; }
       showView("library", mode); return;
     }
     const subMatch = hash.match(/^#\/s\/(.+)$/);
@@ -2725,6 +2737,13 @@
       btnBack.textContent = "← Subjects";
       if (libSearchWrap) setHidden(libSearchWrap, true);
       renderSubjectHub();
+    } else if (route === "map") {
+      // Plot map for a set text (English Standard). Position-tracked as a percentage
+      // through the book, so it follows whatever audio the listener supplied.
+      setHidden(btnBack, false);
+      btnBack.textContent = `← ${subjShort(currentSubject)}`;
+      if (libSearchWrap) setHidden(libSearchWrap, true);
+      if (window.PlotMap) window.PlotMap.render(viewMap, audio, subjectMeta(currentSubject));
     } else if (route === "library") {
       const mode = arg === "papers" ? "papers" : "podcasts";
       setHidden(btnBack, false);

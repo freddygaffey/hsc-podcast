@@ -1,0 +1,41 @@
+{
+  "id": "english-standard",
+  "name": "English Standard",
+  "shortName": "English Std",
+  "description": "HSC English Standard — set texts, plot maps and past papers",
+  "repoUrl": "https://github.com/freddygaffey/hsc-podcast",
+
+  "audioBaseUrl": "https://audio.hsc.pebnum.com",
+
+  "groupNames": {
+    "EXAM": "Past Papers",
+    "CM": "Common Module: Texts and Human Experiences",
+    "MA": "Module A: Language, Identity and Culture",
+    "MB": "Module B: Close Study of Literature",
+    "MC": "Module C: The Craft of Writing"
+  },
+
+  "yearMap": {
+    "EXAM": "Past Papers",
+    "CM": "Year 12",
+    "MA": "Year 12",
+    "MB": "Year 12",
+    "MC": "Year 12"
+  },
+
+  "yearOrder": ["Year 12", "Past Papers", "Other"],
+
+  "setTexts": {
+    "CM": {
+      "text": "Past the Shallows",
+      "author": "Favel Parrett",
+      "slug": "past-the-shallows",
+      "plotMap": true,
+      "_audioComment": "Path is relative to audioBaseUrl above, so the full URL is https://audio.hsc.pebnum.com/english-standard/past-the-shallows/placeholder.m4a. Upload with tools/upload_pts_placeholder.sh, which writes to exactly this key in the R2 bucket. The novel itself is NOT distributed; this track only tells the listener to load their own file.",
+      "placeholderAudio": "english-standard/past-the-shallows/placeholder.m4a"
+    },
+    "MA": { "text": "Asian Australian poets", "author": "various", "slug": null, "plotMap": false },
+    "MB": { "text": "The Truman Show", "author": "Peter Weir", "slug": null, "plotMap": false },
+    "MC": { "text": "The Craft of Writing", "author": null, "slug": null, "plotMap": false }
+  }
+}

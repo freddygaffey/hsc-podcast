@@ -1,0 +1,919 @@
+{
+ "text": "Past the Shallows",
+ "author": "Favel Parrett",
+ "module": "Common Module: Texts and Human Experiences",
+ "course": "HSC English Standard",
+ "positionBasis": "words through the narrative only (pdf pages 10-143); front and back matter excluded",
+ "sourceNote": "The source PDF has NO chapter markers, so no chapter numbers are asserted. pdfPage values are exact; startPct/endPct are computed from word offsets. Scene boundaries are editorial groupings of the text's own section breaks and are all marked verified:false until checked against a physical copy.",
+ "generated": "2026-07-30",
+ "scenes": [
+  {
+   "id": "pts-01",
+   "order": 1,
+   "title": "Prologue, and the beach",
+   "arcStage": "exposition",
+   "chapters": [
+    0,
+    1
+   ],
+   "chapterAnchors": [
+    {
+     "pdfPage": 9,
+     "chapter": 0
+    },
+    {
+     "pdfPage": 11,
+     "chapter": 1
+    }
+   ],
+   "pdfPageStart": 9,
+   "pdfPageEnd": 12,
+   "startPct": 0.0,
+   "endPct": 2.37,
+   "words": 995,
+   "summary": "Harry and Joe wait on the sand while Miles stays out in the water, refusing to come in. Parrett opens on stillness and looking rather than event, establishing the coast as the novel's real subject and the brothers as small against it.",
+   "characters": [
+    "Harry",
+    "Joe",
+    "Miles"
+   ],
+   "themes": [
+    "The ocean as threat",
+    "Brotherhood"
+   ],
+   "quoteIds": [
+    14,
+    16
+   ],
+   "anchored": true,
+   "verified": false
+  },
+  {
+   "id": "pts-02",
+   "order": 2,
+   "title": "Uncle Nick and the empty dinghy",
+   "arcStage": "exposition",
+   "chapters": [
+    2
+   ],
+   "chapterAnchors": [
+    {
+     "pdfPage": 14,
+     "chapter": 2
+    }
+   ],
+   "pdfPageStart": 13,
+   "pdfPageEnd": 15,
+   "startPct": 2.37,
+   "endPct": 4.16,
+   "words": 750,
+   "summary": "Dad's account of Nick's drowning - a mooring check gone wrong, an empty dinghy - is presented as family lore, not confirmed fact. The novel later reveals this story is a cover-up for what really happened the night Mum died.",
+   "characters": [
+    "Miles",
+    "Dad",
+    "Uncle Nick",
+    "Martin",
+    "Jeff"
+   ],
+   "themes": [
+    "The ocean as threat",
+    "Family secrets"
+   ],
+   "quoteIds": [
+    12
+   ],
+   "anchored": true,
+   "verified": false
+  },
+  {
+   "id": "pts-03",
+   "order": 3,
+   "title": "The show with Aunty Jean",
+   "arcStage": "exposition",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 16,
+   "pdfPageEnd": 24,
+   "startPct": 4.16,
+   "endPct": 11.69,
+   "words": 3153,
+   "summary": "A day out that reads as ordinary childhood and works as characterisation. Harry's longing over showbags and Jean's careful management of money and appearances expose how poor and how watched this family is.",
+   "characters": [
+    "Harry",
+    "Aunty Jean",
+    "Miles"
+   ],
+   "themes": [
+    "Family secrets",
+    "Memory and hope"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-04",
+   "order": 4,
+   "title": "Miles on the abalone boat",
+   "arcStage": "rising",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 25,
+   "pdfPageEnd": 27,
+   "startPct": 11.69,
+   "endPct": 14.6,
+   "words": 1220,
+   "summary": "Miles runs the boat alone at the surface while the men dive - sorting catch, tending airlines. Real risk, but not yet in the water himself: the text notes he will have to dive for real in a few years.",
+   "characters": [
+    "Miles",
+    "Dad",
+    "Martin",
+    "Jeff"
+   ],
+   "themes": [
+    "Responsibility and entrapment",
+    "The ocean as threat"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-05",
+   "order": 5,
+   "title": "No one home, and the shack",
+   "arcStage": "rising",
+   "chapters": [
+    6
+   ],
+   "chapterAnchors": [
+    {
+     "pdfPage": 31,
+     "chapter": 6
+    }
+   ],
+   "pdfPageStart": 28,
+   "pdfPageEnd": 31,
+   "startPct": 14.6,
+   "endPct": 17.81,
+   "words": 1345,
+   "summary": "Harry walks to Stuart's caravan and finds no one home, then follows a stray dog to George Fuller's shack. The town's mythology about the scarred man sets up the novel's central misdirection.",
+   "characters": [
+    "Harry",
+    "George",
+    "Jake"
+   ],
+   "themes": [
+    "Isolation",
+    "Family secrets"
+   ],
+   "quoteIds": [
+    4
+   ],
+   "anchored": true,
+   "verified": false
+  },
+  {
+   "id": "pts-06",
+   "order": 6,
+   "title": "Joe's house, Joe's boat",
+   "arcStage": "rising",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 32,
+   "pdfPageEnd": 36,
+   "startPct": 17.81,
+   "endPct": 20.44,
+   "words": 1099,
+   "summary": "Joe has removed himself - a house of his own, a boat he has spent years building, an exit taking shape in plain sight. For Miles this is both refuge and warning that escape is individual, not collective.",
+   "characters": [
+    "Joe",
+    "Miles",
+    "Harry"
+   ],
+   "themes": [
+    "Brotherhood",
+    "Responsibility and entrapment"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-07",
+   "order": 7,
+   "title": "The wharf, and blood on the deck",
+   "arcStage": "rising",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 37,
+   "pdfPageEnd": 41,
+   "startPct": 20.44,
+   "endPct": 25.19,
+   "words": 1993,
+   "summary": "Work turns violent - an injury, a hospital corridor, men laughing it off. The adults' refusal to treat harm as harm is the pattern the boys are being taught.",
+   "characters": [
+    "Miles",
+    "Jeff",
+    "Martin",
+    "Dad"
+   ],
+   "themes": [
+    "Violence and power",
+    "Responsibility and entrapment"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-08",
+   "order": 8,
+   "title": "George Fuller, and a dog called Jake",
+   "arcStage": "rising",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 42,
+   "pdfPageEnd": 46,
+   "startPct": 25.19,
+   "endPct": 29.72,
+   "words": 1897,
+   "summary": "Harry crosses the verandah and is let in. The dog does the emotional work no adult in Harry's life will do, and George's kindness is offered without conditions.",
+   "characters": [
+    "Harry",
+    "George",
+    "Jake"
+   ],
+   "themes": [
+    "Memory and hope",
+    "Isolation"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-09",
+   "order": 9,
+   "title": "Miles, the dinghy, and Mr Roberts",
+   "arcStage": "rising",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 47,
+   "pdfPageEnd": 51,
+   "startPct": 29.72,
+   "endPct": 33.84,
+   "words": 1727,
+   "summary": "Miles between worlds - school he is losing and the boat he cannot refuse. The adults who notice something is wrong are the ones with no power to intervene.",
+   "characters": [
+    "Miles",
+    "Roberts",
+    "Dad"
+   ],
+   "themes": [
+    "Responsibility and entrapment"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-10",
+   "order": 10,
+   "title": "Mum's things",
+   "arcStage": "rising",
+   "chapters": [
+    13
+   ],
+   "chapterAnchors": [
+    {
+     "pdfPage": 55,
+     "chapter": 13
+    }
+   ],
+   "pdfPageStart": 52,
+   "pdfPageEnd": 56,
+   "startPct": 33.84,
+   "endPct": 37.3,
+   "words": 1447,
+   "summary": "Objects carry what people will not say: cups, a shed of half-emptied boxes, a haircut. Parrett uses domestic detail to measure grief precisely, and to show the mother has been tidied away rather than mourned.",
+   "characters": [
+    "Miles",
+    "Aunty Jean",
+    "Harry"
+   ],
+   "themes": [
+    "Memory and grief",
+    "Family secrets"
+   ],
+   "quoteIds": [
+    5,
+    17,
+    18
+   ],
+   "anchored": true,
+   "verified": false
+  },
+  {
+   "id": "pts-11",
+   "order": 11,
+   "title": "Granddad's shed, and the shark tooth",
+   "arcStage": "rising",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 57,
+   "pdfPageEnd": 60,
+   "startPct": 37.3,
+   "endPct": 40.19,
+   "words": 1212,
+   "summary": "Clearing Granddad's shed, Miles finds the shark tooth among the wreckage of Mum's car. Joe then drives Harry to the tip, where the crash and its aftermath are discussed obliquely.",
+   "characters": [
+    "Miles",
+    "Joe",
+    "Harry"
+   ],
+   "themes": [
+    "Memory and grief",
+    "Family secrets"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-12",
+   "order": 12,
+   "title": "Gary Bones, and what happened to Mum",
+   "arcStage": "rising",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 61,
+   "pdfPageEnd": 64,
+   "startPct": 40.19,
+   "endPct": 43.07,
+   "words": 1205,
+   "summary": "Miles fights Gary Bones to get the found tooth back, then confronts Joe with his fear that Mum crashed on purpose. Joe denies it flatly, insisting it was a heart attack.",
+   "characters": [
+    "Miles",
+    "Joe",
+    "Gary Bones"
+   ],
+   "themes": [
+    "Brotherhood",
+    "Family secrets",
+    "Memory and grief"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-13",
+   "order": 13,
+   "title": "Fishing off the jetty",
+   "arcStage": "rising",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 65,
+   "pdfPageEnd": 68,
+   "startPct": 43.07,
+   "endPct": 46.42,
+   "words": 1405,
+   "summary": "George teaches Harry to fish - patient, unhurried, entirely unlike the boat. The same water can be a place of instruction or of punishment depending on who holds the line.",
+   "characters": [
+    "George",
+    "Harry",
+    "Jake"
+   ],
+   "themes": [
+    "Memory and hope",
+    "The ocean as threat"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-14",
+   "order": 14,
+   "title": "The fire and the billy",
+   "arcStage": "rising",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 69,
+   "pdfPageEnd": 73,
+   "startPct": 46.42,
+   "endPct": 50.14,
+   "words": 1561,
+   "summary": "Harry is taken upstream to cleared land and old ground, and George answers a question about his own parents. The scar tissue is literal and historical, reframing him from local monster to survivor.",
+   "characters": [
+    "Harry",
+    "George"
+   ],
+   "themes": [
+    "Family secrets",
+    "Isolation"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-15",
+   "order": 15,
+   "title": "Fisheries at the door",
+   "arcStage": "rising",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 74,
+   "pdfPageEnd": 76,
+   "startPct": 50.14,
+   "endPct": 51.91,
+   "words": 739,
+   "summary": "Two Fisheries officers come to the door about Dad's invalid licence and unpaid fines - the text is explicit that they are not police. Harry, alone, handles it without giving anything away.",
+   "characters": [
+    "Harry"
+   ],
+   "themes": [
+    "Family secrets",
+    "Responsibility and entrapment"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-16",
+   "order": 16,
+   "title": "Southport Bluff, and Joe leaving",
+   "arcStage": "rising",
+   "chapters": [
+    22
+   ],
+   "chapterAnchors": [
+    {
+     "pdfPage": 79,
+     "chapter": 22
+    }
+   ],
+   "pdfPageStart": 77,
+   "pdfPageEnd": 81,
+   "startPct": 51.91,
+   "endPct": 55.8,
+   "words": 1629,
+   "summary": "Miles overcomes his fear to surf Southport Bluff with Joe - a triumph, not a near-miss. In the car afterwards Joe admits he is leaving immediately, not in some vague future.",
+   "characters": [
+    "Miles",
+    "Joe"
+   ],
+   "themes": [
+    "Brotherhood",
+    "Memory and hope"
+   ],
+   "quoteIds": [
+    10,
+    11
+   ],
+   "anchored": true,
+   "verified": false
+  },
+  {
+   "id": "pts-17",
+   "order": 17,
+   "title": "Splitting the food",
+   "arcStage": "rising",
+   "chapters": [
+    23,
+    24
+   ],
+   "chapterAnchors": [
+    {
+     "pdfPage": 82,
+     "chapter": 23
+    },
+    {
+     "pdfPage": 86,
+     "chapter": 24
+    }
+   ],
+   "pdfPageStart": 82,
+   "pdfPageEnd": 87,
+   "startPct": 55.8,
+   "endPct": 59.9,
+   "words": 1720,
+   "summary": "Hunger managed carefully and quietly: Miles portions the food so Harry's plate looks fuller. Then the drinking, and the violence that follows it. Tenderness and brutality sit in the same few pages deliberately.",
+   "characters": [
+    "Miles",
+    "Harry",
+    "Jeff",
+    "Dad"
+   ],
+   "themes": [
+    "Violence and power",
+    "Brotherhood"
+   ],
+   "quoteIds": [
+    1,
+    8
+   ],
+   "anchored": true,
+   "verified": false
+  },
+  {
+   "id": "pts-18",
+   "order": 18,
+   "title": "George, a cloth, and a bottle",
+   "arcStage": "rising",
+   "chapters": [
+    26
+   ],
+   "chapterAnchors": [
+    {
+     "pdfPage": 90,
+     "chapter": 26
+    }
+   ],
+   "pdfPageStart": 88,
+   "pdfPageEnd": 91,
+   "startPct": 59.9,
+   "endPct": 62.79,
+   "words": 1211,
+   "summary": "Miles is patched up by the man the town fears. Seeing George's face up close, Miles finds only an old man - the myth collapses on contact.",
+   "characters": [
+    "Miles",
+    "George",
+    "Harry"
+   ],
+   "themes": [
+    "Isolation",
+    "Memory and hope"
+   ],
+   "quoteIds": [
+    6
+   ],
+   "anchored": true,
+   "verified": false
+  },
+  {
+   "id": "pts-19",
+   "order": 19,
+   "title": "The woods, and the photograph",
+   "arcStage": "rising",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 92,
+   "pdfPageEnd": 98,
+   "startPct": 62.79,
+   "endPct": 67.43,
+   "words": 1944,
+   "summary": "A disturbing memory surfaces of Mum stopping the car at night and walking into dark woods. Miles then leaves Harry at Stuart's for safety and, back at the empty house, finds a beach photo of Mum that recalls Uncle Nick.",
+   "characters": [
+    "Miles",
+    "Harry"
+   ],
+   "themes": [
+    "Memory and grief",
+    "Family secrets"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-20",
+   "order": 20,
+   "title": "The shop, and the money",
+   "arcStage": "rising",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 99,
+   "pdfPageEnd": 104,
+   "startPct": 67.43,
+   "endPct": 71.92,
+   "words": 1879,
+   "summary": "Small-town economics and small-town shame. Harry's dealings with Stuart and Mrs Martin the shopkeeper show how quickly poverty becomes social currency among children.",
+   "characters": [
+    "Harry",
+    "Stuart",
+    "Mrs Martin (shopkeeper)",
+    "Miles"
+   ],
+   "themes": [
+    "Isolation",
+    "Family secrets"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-21",
+   "order": 21,
+   "title": "The shack, empty",
+   "arcStage": "rising",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 105,
+   "pdfPageEnd": 108,
+   "startPct": 71.92,
+   "endPct": 74.85,
+   "words": 1227,
+   "summary": "No smoke from the chimney, no Jake anywhere. Harry lights a fire and leaves tea for a house with nobody in it - the loneliest image in the book, and it removes his one source of safety just before the crisis.",
+   "characters": [
+    "Harry"
+   ],
+   "themes": [
+    "Isolation",
+    "Memory and hope"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-22",
+   "order": 22,
+   "title": "Shaken, then talking in the dark",
+   "arcStage": "rising",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 109,
+   "pdfPageEnd": 114,
+   "startPct": 74.85,
+   "endPct": 78.15,
+   "words": 1386,
+   "summary": "Dad catches Harry on George's land and hoists him up by his jumper, shaking him, before a tense silent drive home. That night Miles and Harry talk in bed about George's mysterious absence.",
+   "characters": [
+    "Harry",
+    "Miles",
+    "Dad"
+   ],
+   "themes": [
+    "Violence and power",
+    "Brotherhood"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-23",
+   "order": 23,
+   "title": "Onto the boat, and the necklace",
+   "arcStage": "rising",
+   "chapters": [
+    35
+   ],
+   "chapterAnchors": [
+    {
+     "pdfPage": 116,
+     "chapter": 35
+    }
+   ],
+   "pdfPageStart": 115,
+   "pdfPageEnd": 118,
+   "startPct": 78.15,
+   "endPct": 81.76,
+   "words": 1510,
+   "summary": "Dad wakes the boys in the night and forces Harry onto the boat for the first time. Miles gives Harry his own shark-tooth necklace for protection as they head out to the remote Witches islands.",
+   "characters": [
+    "Dad",
+    "Harry",
+    "Miles"
+   ],
+   "themes": [
+    "Brotherhood",
+    "The ocean as threat",
+    "Responsibility and entrapment"
+   ],
+   "quoteIds": [
+    2
+   ],
+   "anchored": true,
+   "verified": false
+  },
+  {
+   "id": "pts-24",
+   "order": 24,
+   "title": "The air pump, and because of you",
+   "arcStage": "rising",
+   "chapters": [
+    36
+   ],
+   "chapterAnchors": [
+    {
+     "pdfPage": 121,
+     "chapter": 36
+    },
+    {
+     "pdfPage": 122,
+     "chapter": 36
+    }
+   ],
+   "pdfPageStart": 119,
+   "pdfPageEnd": 122,
+   "startPct": 81.76,
+   "endPct": 85.09,
+   "words": 1396,
+   "summary": "The air pump fails and nearly kills Jeff, pushing Dad into a rage. He holds Miles's head underwater twice; Harry attacks him and runs for the radio, and Dad shakes Harry like a rag doll. Recognising the tooth at Harry's neck, Dad tells him their mother was leaving because of him - moments before a wave hits and Harry goes overboard.",
+   "characters": [
+    "Dad",
+    "Miles",
+    "Harry",
+    "Jeff"
+   ],
+   "themes": [
+    "Violence and power",
+    "Family secrets",
+    "The ocean as threat"
+   ],
+   "quoteIds": [
+    7,
+    9
+   ],
+   "anchored": true,
+   "verified": false
+  },
+  {
+   "id": "pts-25",
+   "order": 25,
+   "title": "The water takes him",
+   "arcStage": "climax",
+   "chapters": [
+    37
+   ],
+   "chapterAnchors": [
+    {
+     "pdfPage": 125,
+     "chapter": 37
+    }
+   ],
+   "pdfPageStart": 123,
+   "pdfPageEnd": 127,
+   "startPct": 85.09,
+   "endPct": 89.35,
+   "words": 1785,
+   "summary": "Dad holds Miles back, half-confessing in fragments - that they were dead when he found the car, that he had to take him away - before Miles dives in after Harry. Parrett refuses spectacle: the prose goes short, sensory and disordered.",
+   "characters": [
+    "Harry",
+    "Miles",
+    "Dad"
+   ],
+   "themes": [
+    "The ocean as threat",
+    "Family secrets",
+    "Memory and grief"
+   ],
+   "quoteIds": [
+    13
+   ],
+   "anchored": true,
+   "verified": false
+  },
+  {
+   "id": "pts-26",
+   "order": 26,
+   "title": "Cold",
+   "arcStage": "falling",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 128,
+   "pdfPageEnd": 131,
+   "startPct": 89.35,
+   "endPct": 91.03,
+   "words": 703,
+   "summary": "Miles, adrift and hallucinating Mum, Harry and George, nearly drowns himself before being pulled out. He wakes in hospital with Joe at his side.",
+   "characters": [
+    "Miles",
+    "Joe"
+   ],
+   "themes": [
+    "Memory and grief",
+    "The ocean as threat"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-27",
+   "order": 27,
+   "title": "What really happened to Nick",
+   "arcStage": "falling",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 132,
+   "pdfPageEnd": 134,
+   "startPct": 91.03,
+   "endPct": 93.64,
+   "words": 1093,
+   "summary": "Harry's body is found intact on a reef near Acton. Miles's memory of the crash returns and, telling Joe, he pieces together that Uncle Nick was in the car and that Dad hid the body rather than report it.",
+   "characters": [
+    "Miles",
+    "Joe"
+   ],
+   "themes": [
+    "Family secrets",
+    "Memory and grief"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-28",
+   "order": 28,
+   "title": "Do I look like her",
+   "arcStage": "falling",
+   "chapters": [
+    41
+   ],
+   "chapterAnchors": [
+    {
+     "pdfPage": 136,
+     "chapter": 41
+    }
+   ],
+   "pdfPageStart": 135,
+   "pdfPageEnd": 136,
+   "startPct": 93.64,
+   "endPct": 95.08,
+   "words": 603,
+   "summary": "People in the house, a photograph, the question of staying - and the novel's actual resemblance moment, where Miles asks whether he looks like their mother and Joe tells him yes.",
+   "characters": [
+    "Miles",
+    "Joe"
+   ],
+   "themes": [
+    "Memory and grief",
+    "Family secrets"
+   ],
+   "quoteIds": [
+    3
+   ],
+   "anchored": true,
+   "verified": false
+  },
+  {
+   "id": "pts-29",
+   "order": 29,
+   "title": "Justin, and the water again",
+   "arcStage": "resolution",
+   "chapters": null,
+   "chapterAnchors": null,
+   "pdfPageStart": 137,
+   "pdfPageEnd": 140,
+   "startPct": 95.08,
+   "endPct": 97.81,
+   "words": 1147,
+   "summary": "Miles back at the beach, and the sea returned to being merely the sea. That he can enter it again is the novel's argument for survival - not recovery, but continuation.",
+   "characters": [
+    "Miles",
+    "Justin"
+   ],
+   "themes": [
+    "Memory and hope",
+    "The ocean as threat"
+   ],
+   "quoteIds": [],
+   "anchored": false,
+   "verified": false
+  },
+  {
+   "id": "pts-30",
+   "order": 30,
+   "title": "The tooth, and going on",
+   "arcStage": "resolution",
+   "chapters": [
+    43
+   ],
+   "chapterAnchors": [
+    {
+     "pdfPage": 143,
+     "chapter": 43
+    }
+   ],
+   "pdfPageStart": 141,
+   "pdfPageEnd": 143,
+   "startPct": 97.81,
+   "endPct": 100.0,
+   "words": 916,
+   "summary": "The burial at Cloudy gathers Joe, George and the tooth - revealed here to have come from Uncle Nick, given to Miles in the car for luck. Harry appears only in memory. Parrett ends on presence rather than resolution.",
+   "characters": [
+    "Miles",
+    "Joe",
+    "George"
+   ],
+   "themes": [
+    "Memory and hope",
+    "Brotherhood",
+    "Memory and grief"
+   ],
+   "quoteIds": [
+    15
+   ],
+   "anchored": true,
+   "verified": false
+  }
+ ]
+}

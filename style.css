@@ -2299,3 +2299,93 @@ details.mix-subject[open] > .mix-subject-sum .mix-sum-chev { transform: rotate(9
 @media (max-width: 480px) {
   .quiz-option { padding: 16px 16px; font-size: 15px; }
 }
+
+/* ── Plot map (English Standard set texts) ────────────────────────────────── */
+.pm-wrap { padding: 0 0 var(--safe-bottom); }
+
+.pm-source {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 10px; padding: 12px; margin: 12px 0;
+}
+.pm-pick {
+  background: var(--accent); color: #fff; border: 0; border-radius: 8px;
+  padding: 10px 16px; font: inherit; font-weight: 600; cursor: pointer;
+}
+.pm-pick:active { opacity: .85; }
+.pm-source-msg { color: var(--text-dim); font-size: .85rem; margin-top: 8px; line-height: 1.45; }
+.pm-source-msg.pm-ok  { color: var(--accent); }
+.pm-source-msg.pm-err { color: #e5534b; }
+
+.pm-status { color: var(--text-dim); font-size: .8rem; margin: 4px 2px 8px; min-height: 1.2em; }
+
+/* The arc scrolls horizontally on narrow screens rather than squashing. */
+.pm-svgwrap { overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; }
+.pm-svg { display: block; min-width: 760px; width: 100%; height: 300px; }
+
+.pm-band { opacity: .06; }
+.pm-band-exposition { fill: #6b8cff; }
+.pm-band-rising     { fill: #f0a020; }
+.pm-band-climax     { fill: #e5534b; opacity: .16; }
+.pm-band-falling    { fill: #9a7bd0; }
+.pm-band-resolution { fill: #3fa66a; }
+.pm-bandlabel {
+  fill: var(--text-dim); font-size: 13px; text-anchor: middle;
+  text-transform: uppercase; letter-spacing: .08em;
+}
+
+.pm-area { fill: var(--accent); opacity: .10; }
+.pm-line { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linejoin: round; }
+.pm-playhead { stroke: #e5534b; stroke-width: 2; stroke-dasharray: 4 3; }
+
+.pm-node circle { fill: var(--bg-elevated); stroke: var(--accent); stroke-width: 2.5; cursor: pointer; }
+.pm-node:hover circle, .pm-node:focus circle { fill: var(--accent-soft); outline: none; }
+.pm-node:focus { outline: none; }
+.pm-nodenum { fill: var(--text); font-size: 10px; text-anchor: middle; pointer-events: none; }
+.pm-node-climax circle { fill: #e5534b; stroke: #e5534b; }
+.pm-node-active circle { fill: var(--accent); stroke: var(--text); }
+.pm-climaxlabel {
+  fill: #e5534b; font-size: 12px; font-weight: 700; text-anchor: middle;
+  letter-spacing: .1em; pointer-events: none;
+}
+
+.pm-detail {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 10px; padding: 14px; margin-top: 12px;
+}
+.pm-dhead { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.pm-dhead h3 { margin: 0; font-size: 1.05rem; }
+.pm-stage {
+  font-size: .7rem; text-transform: uppercase; letter-spacing: .08em;
+  padding: 3px 8px; border-radius: 20px; background: var(--accent-soft); color: var(--accent);
+}
+.pm-stage-climax { background: rgba(229, 83, 75, .16); color: #e5534b; }
+.pm-dmeta { color: var(--text-dim); font-size: .78rem; margin: 6px 0 10px; }
+.pm-unverified { color: #f0a020; }
+.pm-summary { margin: 0 0 12px; line-height: 1.55; }
+
+.pm-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.pm-tag { font-size: .72rem; padding: 3px 9px; border-radius: 20px; border: 1px solid var(--border); }
+.pm-tag-char  { color: var(--text-dim); }
+.pm-tag-theme { color: var(--accent); border-color: var(--accent-soft); background: var(--accent-soft); }
+
+.pm-jump {
+  background: transparent; color: var(--accent); border: 1px solid var(--accent);
+  border-radius: 8px; padding: 8px 14px; font: inherit; cursor: pointer;
+}
+.pm-qhead { margin: 16px 0 8px; font-size: .8rem; text-transform: uppercase;
+  letter-spacing: .08em; color: var(--text-dim); }
+.pm-quotes { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.pm-quote { border-left: 3px solid var(--border); padding: 2px 0 2px 12px; }
+.pm-quote blockquote { margin: 0; font-size: .95rem; line-height: 1.45; }
+.pm-pri-1 { border-left-color: #e5534b; }
+.pm-pri-2 { border-left-color: #f0a020; }
+.pm-pri-3 { border-left-color: var(--border); }
+.pm-qmeta { color: var(--text-dim); font-size: .72rem; margin-top: 4px; }
+.pm-qmnemonic { color: var(--text-dim); font-size: .78rem; font-style: italic; margin-top: 4px; }
+.pm-noquotes, .pm-hint { color: var(--text-dim); font-size: .85rem; margin: 0; }
+.pm-err { color: #e5534b; }
+
+@media (max-width: 560px) {
+  .pm-svg { height: 260px; }
+  .pm-dhead h3 { font-size: .98rem; }
+}

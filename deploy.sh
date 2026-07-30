@@ -22,7 +22,7 @@ echo "==> Assembling $DIST/ (build $BUILD)"
 rm -rf "$DIST"; mkdir -p "$DIST"
 
 # App shell.
-cp index.html generator.html paper-export.js app.js auth.js style.css speed-engine.js app.webmanifest _headers "$DIST/"
+cp index.html generator.html paper-export.js app.js auth.js gate.js plotmap.js style.css speed-engine.js app.webmanifest _headers "$DIST/"
 # Service worker — stamp the build version so each deploy gets a fresh APP_SHELL cache.
 sed "s/__BUILD__/$BUILD/" service-worker.js > "$DIST/service-worker.js"
 # Build info the app reads to show the running version (Settings → About → Build, tap for
@@ -47,8 +47,19 @@ rsync -a --prune-empty-dirs \
   --include='paper-subjects.json' \
   --include='*.png' --include='*.jpg' --include='*.jpeg' --include='*.webp' --include='*.svg' \
   --include='paper.pdf' --include='mg.pdf' \
+  --include='scenes.json' --include='quotes.json' --include='cards.json' --include='*.apkg' \
   --exclude='*' \
   content/ "$DIST/content/"
+
+# Safety net: if a content folder was encrypted, the plaintext must not ship beside it.
+while IFS= read -r g; do
+  d="$(dirname "$g")"
+  for f in scenes.json quotes.json quiz.json; do
+    if [ -f "$d/$f" ] && [ -f "$d/$f.enc" ]; then
+      echo "ERROR: $d/$f shipped in plaintext next to its .enc — aborting." >&2; exit 1
+    fi
+  done
+done < <(find "$DIST" -name gate.json 2>/dev/null)
 
 # Safety net: no audio in the Pages bundle.
 if find "$DIST" \( -name '*.m4a' -o -name '*.wav' \) | grep -q .; then
