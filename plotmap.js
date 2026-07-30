@@ -296,38 +296,67 @@
     } catch (e) { return null; }
   }
 
-  function unlockPrivate() {
-    if (!priv) return Promise.resolve(false);
-    var tok = storedToken();
-    if (tok) { attachPrivate(tok); return Promise.resolve(true); }
+  // Inline PIN entry rather than window.prompt(): prompts are unreliable inside an
+  // installed iOS PWA and are awkward on a phone keyboard.
+  function showPinForm() {
+    var box = document.getElementById("pm-pinbox");
+    if (!box) return;
+    box.hidden = false;
+    box.innerHTML =
+      '<label class="pm-pinlabel" for="pm-pin">Enter your 4-digit PIN</label>' +
+      '<div class="pm-pinrow">' +
+        '<input id="pm-pin" class="pm-pin" type="text" inputmode="numeric" pattern="[0-9]*" ' +
+          'maxlength="4" autocomplete="one-time-code" aria-label="4-digit PIN">' +
+        '<button class="pm-pick" id="pm-pin-go">Unlock</button>' +
+      '</div>';
+    var input = document.getElementById("pm-pin");
+    input.focus();
+    function submit() {
+      var v = (input.value || "").trim();
+      if (!/^\d{4}$/.test(v)) { setStatus("PIN must be 4 digits.", "pm-err"); return; }
+      redeemPin(v);
+    }
+    document.getElementById("pm-pin-go").addEventListener("click", submit);
+    input.addEventListener("keydown", function (e) { if (e.key === "Enter") submit(); });
+    input.addEventListener("input", function () { if (input.value.length === 4) submit(); });
+  }
 
-    var pin = window.prompt("Enter your 4-digit PIN to unlock your audiobook:");
-    if (!pin) return Promise.resolve(false);
+  function redeemPin(pin) {
     setStatus("Checking PIN\u2026", "");
     return fetch(priv.worker.replace(/\/+$/, "") + "/session", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ pin: String(pin).trim() }),
+      body: JSON.stringify({ pin: pin }),
     }).then(function (r) {
       return r.json().then(function (j) { return { ok: r.ok, status: r.status, body: j }; });
     }).then(function (res) {
       if (res.ok && res.body.token) {
         try { localStorage.setItem(TOKEN_KEY, JSON.stringify(res.body)); } catch (e) {}
         attachPrivate(res.body.token);
-        setStatus("Unlocked \u2014 streaming your own copy.", "pm-ok");
+        var box = document.getElementById("pm-pinbox");
+        if (box) { box.hidden = true; box.innerHTML = ""; }
+        setStatus("Unlocked \u2014 press play. Streaming your own copy.", "pm-ok");
         return true;
       }
       if (res.status === 429) {
-        setStatus("Too many attempts. Locked out for a few minutes.", "pm-err");
+        setStatus("Too many attempts \u2014 locked out for a few minutes.", "pm-err");
       } else {
         var left = res.body && res.body.attemptsRemaining;
-        setStatus("Wrong PIN." + (left != null ? " " + left + " attempts left before lockout." : ""), "pm-err");
+        setStatus("Wrong PIN." + (left != null ? " " + left + " left before lockout." : ""), "pm-err");
       }
       return false;
     }).catch(function (e) {
       setStatus("Could not reach the audio server: " + (e && e.message), "pm-err");
       return false;
     });
+  }
+
+  function unlockPrivate() {
+    if (!priv) return Promise.resolve(false);
+    var tok = storedToken();
+    if (tok) { attachPrivate(tok); setStatus("Unlocked \u2014 press play.", "pm-ok"); return Promise.resolve(true); }
+    showPinForm();
+    return Promise.resolve(false);
   }
 
   function attachPrivate(token) {
@@ -375,6 +404,7 @@
           '<button class="pm-pick" id="pm-pick">Choose your audiobook file</button>' +
           '<button class="pm-pick pm-pick-alt" id="pm-unlock" hidden>Unlock my audiobook (PIN)</button>' +
           '<input type="file" id="pm-file" accept="audio/*,.m4b,.m4a,.mp3" hidden>' +
+          '<div class="pm-pinbox" id="pm-pinbox" hidden></div>' +
           '<div class="pm-source-msg" id="pm-source-msg">Past the Shallows is in copyright, so no recording ships with this app. ' +
             'Load your own file — it stays on this device and is never uploaded.</div>' +
         "</div>" +

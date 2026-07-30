@@ -25,7 +25,9 @@ const MAX_PER_IP = 5;              // failures per IP per window
 const IP_WINDOW_S = 15 * 60;
 const MAX_GLOBAL = 20;             // failures across all IPs per hour (blocks distributed guessing)
 const GLOBAL_WINDOW_S = 60 * 60;
-const TOKEN_TTL_S = 12 * 60 * 60;  // a listening session, not a permanent grant
+const TOKEN_TTL_S = 10 * 365 * 24 * 60 * 60;  // effectively permanent: this is a personal
+                                   // study app, and re-entering a PIN mid-run is the real cost.
+                                   // Kill switch: rotate SESSION_SECRET to invalidate every token.
 const PIN_ITERATIONS = 100000;     // Workers cap PBKDF2 at 100k; rate limiting is the real defence
 
 const ALLOWED_ORIGINS = new Set([

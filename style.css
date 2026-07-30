@@ -2390,3 +2390,11 @@ details.mix-subject[open] > .mix-subject-sum .mix-sum-chev { transform: rotate(9
   .pm-dhead h3 { font-size: .98rem; }
 }
 .pm-pick-alt { background: transparent; color: var(--accent); border: 1px solid var(--accent); margin-left: 8px; }
+.pm-pinbox { margin-top: 10px; }
+.pm-pinlabel { display: block; font-size: .8rem; color: var(--text-dim); margin-bottom: 6px; }
+.pm-pinrow { display: flex; gap: 8px; align-items: center; }
+.pm-pin {
+  width: 6.5ch; font: inherit; font-size: 1.3rem; letter-spacing: .35em; text-align: center;
+  padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--bg-elevated); color: var(--text);
+}
