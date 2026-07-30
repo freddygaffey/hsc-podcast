@@ -388,7 +388,13 @@ registerProcessor("stretch-processor", StretchProcessor);
       // Resolve the backend from the current preference at load time (this is when a
       // toggle takes effect). In engine mode el is freed up to be the silent anchor.
       load() {
-        engineActive = !!enginePref && !!eng;
+        // Long-form audio must never use the TSM engine: it fetches the WHOLE file and
+        // decodeAudioData()s it into PCM. A 5-minute episode is fine; a 3-hour audiobook
+        // is ~96 MB fetched and ~2 GB of PCM, which never completes — the element stays
+        // at readyState 0 with no error because in engine mode it is only the silent
+        // anchor. Callers mark such sources with dataset.noEngine and get the native
+        // player, whose playbackRate handles these speeds without decoding anything.
+        engineActive = !!enginePref && !!eng && el.dataset.noEngine !== "1";
         if (engineActive) {
           // Defer the expensive whole-file decode until play(), so merely VIEWING an
           // episode (loadEpisode autoplay:false) doesn't fetch + decode ~170 MB of PCM.

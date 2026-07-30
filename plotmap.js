@@ -260,7 +260,15 @@
     if (t && !t.textContent) t.textContent = "Past the Shallows";
   }
 
+  // Tell the speed engine to stay out of the way: this is hours of audio, not an
+  // episode. See the dataset.noEngine guard in speed-engine.js.
+  function markLongForm() {
+    var el = document.getElementById("audio");
+    if (el) el.dataset.noEngine = "1";
+  }
+
   function attachBlob(blob) {
+    markLongForm();
     if (!audio) return;
     try { if (audio.src && audio.src.indexOf("blob:") === 0) URL.revokeObjectURL(audio.src); } catch (e) {}
     audio.src = URL.createObjectURL(blob);
@@ -275,6 +283,7 @@
   // load your own file. Picking a file replaces this source entirely.
   function usePlaceholder() {
     if (!audio || loaded || !placeholderUrl) return;
+    markLongForm();
     audio.src = placeholderUrl;
     audio.load();
     document.body.classList.remove("pm-has-audio");
@@ -405,6 +414,7 @@
 
   function attachPrivate(token) {
     if (!audio) return;
+    markLongForm();
     audio.src = privUrl(token);
     audio.load();
     loaded = true;
