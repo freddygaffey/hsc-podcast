@@ -301,6 +301,15 @@
       panel.style.transform = "";
       if (dy > 90) closeSheet(overlay);
     }, { passive: true });
+    // iOS fires touchcancel (not touchend) when the system takes over the touch
+    // (notification pull-down, app switch, palm). Without this the sheet stays stuck
+    // mid-drag: translated down with transition:none and never snapping back.
+    panel.addEventListener("touchcancel", () => {
+      if (!dragging) return;
+      dragging = false;
+      panel.style.transition = "";
+      panel.style.transform = "";
+    }, { passive: true });
   }
 
   // --- Speed control ---
@@ -983,7 +992,11 @@
   });
 
   // --- Audio events ---
-  audio.addEventListener("play", () => { setPlayState(true); lastListenTick = Date.now(); if ("mediaSession" in navigator) navigator.mediaSession.playbackState = "playing"; track("play", { ep: currentEpisode && currentEpisode.id, speed: getCurrentSpeed() }); });
+  // stopTitleIntro first: if the user starts playback while the spoken title intro is
+  // still pending/playing, the intro is cancelled instead of talking over the episode.
+  // (The intro's own done() → play() lands here too, but by then it has already
+  // cleared its cancel handle, so this is a no-op on the normal intro path.)
+  audio.addEventListener("play", () => { stopTitleIntro(); setPlayState(true); lastListenTick = Date.now(); if ("mediaSession" in navigator) navigator.mediaSession.playbackState = "playing"; track("play", { ep: currentEpisode && currentEpisode.id, speed: getCurrentSpeed() }); });
   audio.addEventListener("pause", () => { setPlayState(false); flushListenLog(); lastListenTick = 0; persistProgress(); if ("mediaSession" in navigator) navigator.mediaSession.playbackState = "paused"; });
   audio.addEventListener("ended", () => {
     flushListenLog(); // credit time to the finished episode's voice before advancing
@@ -1144,6 +1157,11 @@
 
   function loadEpisode(ep, { autoplay, fromStart }) {
     dismissAdvanceToast(); // a user-initiated load cancels any pending auto-advance
+    // Kill any in-flight spoken title from the previous load. Loads that go through the
+    // intro path replace it anyway; every other load (no titleAudio, intro turned off,
+    // autoplay:false view, no-voices early return) would otherwise leave the old title
+    // speaking over whatever plays next.
+    stopTitleIntro();
     // Save the OUTGOING episode's position before we switch. Advancing (auto-advance,
     // queue, manual next, or tapping another episode) reassigns currentEpisode and
     // resets audio.src below, which zeroes currentTime — so without this the outgoing
@@ -1225,18 +1243,37 @@
   // then `done()` starts the episode. Falls back to starting immediately on any error so a
   // missing/failed intro never blocks playback.
   let introAudioEl = null;
+  let introCancel = null;
+  // BUG-18 follow-up: the intro must die the moment anything else takes over playback,
+  // or the title keeps talking over the episode. Called when the main audio starts
+  // playing (any play path: button, spacebar, lock screen, transcript tap — especially
+  // during the intro's 1.2s silent lead-in, when a tap on Play races it) and on every
+  // loadEpisode (a new load that skips the intro path would otherwise leave the old
+  // title speaking over the new episode). After a cancel, done() never runs — whoever
+  // cancelled is already driving playback.
+  function stopTitleIntro() { if (introCancel) introCancel(); }
   function playTitleIntro(url, done) {
     try {
       // BUG-18: make sure the episode audio isn't playing over the spoken title. The intro's
       // done() callback is the only thing that (re)starts it, so pausing here can't strand it.
       try { audio.pause(); } catch {}
-      if (introAudioEl) { try { introAudioEl.pause(); } catch {} introAudioEl = null; }
+      stopTitleIntro();
       const intro = introAudioEl = new Audio(url);
-      let started = false;
-      const go = () => { if (started) return; started = true; introAudioEl = null; done(); };
+      let settled = false; // started, errored, or cancelled — whichever comes first wins
+      const finish = (after) => {
+        if (settled) return;
+        settled = true;
+        introAudioEl = null;
+        introCancel = null;
+        if (after) after();
+      };
+      introCancel = () => finish(() => { try { intro.pause(); } catch {} });
+      const go = () => finish(done);
       intro.addEventListener("ended", () => setTimeout(go, 400), { once: true }); // gap after title
       intro.addEventListener("error", go, { once: true });
-      setTimeout(() => { intro.play().catch(go); }, 1200); // the break before the title
+      // The break before the title. The settled check keeps a cancelled intro from
+      // starting to speak when this timer fires.
+      setTimeout(() => { if (!settled) intro.play().catch(go); }, 1200);
     } catch { done(); }
   }
 

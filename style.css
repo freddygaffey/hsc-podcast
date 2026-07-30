@@ -1811,6 +1811,10 @@ body.sheet-open {
   border-radius: 20px 20px 0 0;
   cursor: pointer;
   touch-action: none;
+  /* Own compositing layer: without it, iOS Safari mis-paints sticky-in-a-scroller
+     during momentum/rubber-band — ghost copies of buttons drift above the grip with
+     their text tiles unpainted (the empty blue bars in the Settings sheet). */
+  transform: translateZ(0);
 }
 .sheet-grip::before {
   content: "";
