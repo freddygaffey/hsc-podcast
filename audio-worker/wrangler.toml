@@ -14,7 +14,7 @@ bucket_name = "hsc-podcast-private"
 [[d1_databases]]
 binding = "DB"
 database_name = "hsc-podcast-auth"
-database_id = "PASTE-DATABASE-ID-HERE"
+database_id = "8bb6552b-f098-4563-bdb2-650e62525edb"
 
 # Optional custom route. Without this the worker is reachable at its workers.dev URL.
 # [[routes]]

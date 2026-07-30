@@ -23,7 +23,7 @@
   };
 
   var scenes = [], quotes = [], activeId = null, audio = null, loaded = false;
-  var root, svgWrap, detailEl, statusEl, placeholderUrl = null;
+  var root, svgWrap, detailEl, statusEl, placeholderUrl = null, priv = null;
 
   /* ---------- tiny IndexedDB store for the listener's own audio file ---------- */
   var DB = "pts-audio", STORE = "files";
@@ -261,6 +261,63 @@
     document.body.classList.remove("pm-has-audio");
   }
 
+  var TOKEN_KEY = "pts:audiotoken";
+
+  function privUrl(token) {
+    return priv.worker.replace(/\/+$/, "") + "/" + priv.key.replace(/^\/+/, "") +
+           "?t=" + encodeURIComponent(token);
+  }
+
+  // A stored token is good until it expires; only prompt when there isn't a live one.
+  function storedToken() {
+    try {
+      var v = JSON.parse(localStorage.getItem(TOKEN_KEY) || "null");
+      return v && v.exp > Math.floor(Date.now() / 1000) + 60 ? v.token : null;
+    } catch (e) { return null; }
+  }
+
+  function unlockPrivate() {
+    if (!priv) return Promise.resolve(false);
+    var tok = storedToken();
+    if (tok) { attachPrivate(tok); return Promise.resolve(true); }
+
+    var pin = window.prompt("Enter your 4-digit PIN to unlock your audiobook:");
+    if (!pin) return Promise.resolve(false);
+    setStatus("Checking PIN\u2026", "");
+    return fetch(priv.worker.replace(/\/+$/, "") + "/session", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ pin: String(pin).trim() }),
+    }).then(function (r) {
+      return r.json().then(function (j) { return { ok: r.ok, status: r.status, body: j }; });
+    }).then(function (res) {
+      if (res.ok && res.body.token) {
+        try { localStorage.setItem(TOKEN_KEY, JSON.stringify(res.body)); } catch (e) {}
+        attachPrivate(res.body.token);
+        setStatus("Unlocked \u2014 streaming your own copy.", "pm-ok");
+        return true;
+      }
+      if (res.status === 429) {
+        setStatus("Too many attempts. Locked out for a few minutes.", "pm-err");
+      } else {
+        var left = res.body && res.body.attemptsRemaining;
+        setStatus("Wrong PIN." + (left != null ? " " + left + " attempts left before lockout." : ""), "pm-err");
+      }
+      return false;
+    }).catch(function (e) {
+      setStatus("Could not reach the audio server: " + (e && e.message), "pm-err");
+      return false;
+    });
+  }
+
+  function attachPrivate(token) {
+    if (!audio) return;
+    audio.src = privUrl(token);
+    audio.load();
+    loaded = true;
+    document.body.classList.add("pm-has-audio");
+  }
+
   function restore() {
     return idbGet("audiobook").then(function (f) {
       if (f) {
@@ -268,6 +325,7 @@
         setStatus("Loaded: " + (f.name || "your file") + " — stays on this device.", "pm-ok");
         return true;
       }
+      if (priv && storedToken()) { attachPrivate(storedToken()); return true; }
       usePlaceholder();
       return false;
     }).catch(function () { usePlaceholder(); return false; });
@@ -283,8 +341,9 @@
       var base = (cfg.audioBaseUrl || "content").replace(/\/+$/, "");
       Object.keys(cfg.setTexts).forEach(function (k) {
         var t = cfg.setTexts[k];
-        if (t && t.plotMap && t.placeholderAudio && !placeholderUrl) {
-          placeholderUrl = base + "/" + String(t.placeholderAudio).replace(/^\/+/, "");
+        if (t && t.plotMap && !placeholderUrl) {
+          if (t.placeholderAudio) placeholderUrl = base + "/" + String(t.placeholderAudio).replace(/^\/+/, "");
+          if (t.privateAudio && t.privateAudio.worker) priv = t.privateAudio;
           if (t.slug) TEXT_BASE = "content/" + cfg.id + "/" + t.slug + "/";
         }
       });
@@ -293,6 +352,7 @@
       '<div class="pm-wrap">' +
         '<div class="pm-source">' +
           '<button class="pm-pick" id="pm-pick">Choose your audiobook file</button>' +
+          '<button class="pm-pick pm-pick-alt" id="pm-unlock" hidden>Unlock my audiobook (PIN)</button>' +
           '<input type="file" id="pm-file" accept="audio/*,.m4b,.m4a,.mp3" hidden>' +
           '<div class="pm-source-msg" id="pm-source-msg">Past the Shallows is in copyright, so no recording ships with this app. ' +
             'Load your own file — it stays on this device and is never uploaded.</div>' +
@@ -305,6 +365,11 @@
     detailEl = document.getElementById("pm-detail");
     statusEl = document.getElementById("pm-status");
 
+    if (priv) {
+      var ub = document.getElementById("pm-unlock");
+      ub.hidden = false;
+      ub.addEventListener("click", function () { unlockPrivate(); });
+    }
     document.getElementById("pm-pick").addEventListener("click", function () {
       document.getElementById("pm-file").click();
     });

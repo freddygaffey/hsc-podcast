@@ -2389,3 +2389,4 @@ details.mix-subject[open] > .mix-subject-sum .mix-sum-chev { transform: rotate(9
   .pm-svg { height: 260px; }
   .pm-dhead h3 { font-size: .98rem; }
 }
+.pm-pick-alt { background: transparent; color: var(--accent); border: 1px solid var(--accent); margin-left: 8px; }

@@ -26,7 +26,7 @@ const IP_WINDOW_S = 15 * 60;
 const MAX_GLOBAL = 20;             // failures across all IPs per hour (blocks distributed guessing)
 const GLOBAL_WINDOW_S = 60 * 60;
 const TOKEN_TTL_S = 12 * 60 * 60;  // a listening session, not a permanent grant
-const PIN_ITERATIONS = 600000;     // PBKDF2 rounds — deliberately slow for a 4-digit secret
+const PIN_ITERATIONS = 100000;     // Workers cap PBKDF2 at 100k; rate limiting is the real defence
 
 const ALLOWED_ORIGINS = new Set([
   "https://hsc.pebnum.com",
@@ -146,6 +146,7 @@ export default {
 
     // --- exchange PIN for a session token ---
     if (req.method === "POST" && url.pathname === "/session") {
+     try {
       const fails = await recentFailures(env, ip);
       if (fails.ip >= MAX_PER_IP || fails.global >= MAX_GLOBAL) {
         // Exponential backoff past the threshold, capped at the window.
@@ -173,6 +174,9 @@ export default {
 
       await clearFailures(env, ip);
       return json(await issueToken(env), 200, headers);
+     } catch (err) {
+       return json({ error: "session failed", detail: String(err && err.message || err) }, 500, headers);
+     }
     }
 
     if (req.method !== "GET" && req.method !== "HEAD") {
@@ -180,8 +184,12 @@ export default {
     }
 
     // --- stream, session token required ---
+    // <audio> cannot set an Authorization header, so a short-lived token may also be
+    // passed as ?t=. Same signature and expiry; it just rides in the URL instead. That
+    // is a real tradeoff (URLs leak into history and logs) accepted so the player can
+    // stream and seek natively rather than buffering the whole file into memory.
     const auth = req.headers.get("Authorization") || "";
-    const token = auth.startsWith("Bearer ") ? auth.slice(7) : "";
+    const token = auth.startsWith("Bearer ") ? auth.slice(7) : (url.searchParams.get("t") || "");
     if (!(await verifyToken(env, token))) {
       return json({ error: "unauthorized" }, 401,
         { ...headers, "WWW-Authenticate": "Bearer" });
