@@ -155,7 +155,10 @@
   const viewLibrary = document.getElementById("view-library");
   const viewEpisode = document.getElementById("view-episode");
   const viewMap = document.getElementById("view-map");
-  const views = { subjects: viewSubjects, hub: viewSubjectHub, library: viewLibrary, episode: viewEpisode, map: viewMap };
+  const viewModules = document.getElementById("view-modules");
+  const viewModule = document.getElementById("view-module");
+  const viewCards = document.getElementById("view-cards");
+  const views = { subjects: viewSubjects, hub: viewSubjectHub, library: viewLibrary, episode: viewEpisode, map: viewMap, modules: viewModules, module: viewModule, cards: viewCards };
   const btnBack = document.getElementById("btn-back");
   const btnTheme = document.getElementById("btn-theme");
   const btnSleep = document.getElementById("btn-sleep");
@@ -2404,9 +2407,9 @@
     // for now; add the subject id here once another text has a scenes.json.
     if (PLOT_MAP_SUBJECTS.has(s.id)) {
       const mapIcon = `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17c3-6 5 2 8-4s5 3 10-6"/><circle cx="3" cy="17" r="1.6"/><circle cx="11" cy="13" r="1.6"/><circle cx="21" cy="7" r="1.6"/></svg>`;
-      makeTile(mapIcon, "Plot Map",
-        "Past the Shallows · 30 scenes · follows your audio",
-        `#/s/${id}/map`);
+      makeTile(mapIcon, "Modules",
+        "Common · A · B · C",
+        `#/s/${id}/modules`);
     }
     // Paper generator entry — subjects with a question bank open the generator scoped
     // to this subject (full navigation; the generator is its own page).
@@ -2708,11 +2711,18 @@
       if (ep) { ensureSubject(ep._subject); showView("episode", ep); return; }
     }
     // Mode sub-routes must be tested before the bare-subject route (whose `.+` also matches them).
-    const modeMatch = hash.match(/^#\/s\/(.+)\/(podcasts|papers|quizzes|map)$/);
+    // Module sub-route: #/s/<subject>/m/<CODE>
+    const modMatch = hash.match(/^#\/s\/(.+)\/m\/([A-Z]{2})$/);
+    if (modMatch && setSubject(decodeURIComponent(modMatch[1]))) {
+      showView("module", modMatch[2]); return;
+    }
+    const modeMatch = hash.match(/^#\/s\/(.+)\/(podcasts|papers|quizzes|map|modules|cards)$/);
     if (modeMatch && setSubject(decodeURIComponent(modeMatch[1]))) {
       const mode = modeMatch[2];
       if (mode === "quizzes") { showView("hub"); openReview(currentSubject); return; }
       if (mode === "map") { showView("map"); return; }
+      if (mode === "modules") { showView("modules"); return; }
+      if (mode === "cards") { showView("cards"); return; }
       showView("library", mode); return;
     }
     const subMatch = hash.match(/^#\/s\/(.+)$/);
@@ -2737,6 +2747,21 @@
       btnBack.textContent = "← Subjects";
       if (libSearchWrap) setHidden(libSearchWrap, true);
       renderSubjectHub();
+    } else if (route === "modules") {
+      setHidden(btnBack, false);
+      btnBack.textContent = `← ${subjShort(currentSubject)}`;
+      if (libSearchWrap) setHidden(libSearchWrap, true);
+      if (window.SetTextModules) window.SetTextModules.renderModuleIndex(viewModules, subjectMeta(currentSubject));
+    } else if (route === "module") {
+      setHidden(btnBack, false);
+      btnBack.textContent = "← Modules";
+      if (libSearchWrap) setHidden(libSearchWrap, true);
+      if (window.SetTextModules) window.SetTextModules.renderModule(viewModule, subjectMeta(currentSubject), arg);
+    } else if (route === "cards") {
+      setHidden(btnBack, false);
+      btnBack.textContent = "← Common Module";
+      if (libSearchWrap) setHidden(libSearchWrap, true);
+      if (window.PlotMap) window.PlotMap.renderCards(viewCards);
     } else if (route === "map") {
       // Plot map for a set text (English Standard). Position-tracked as a percentage
       // through the book, so it follows whatever audio the listener supplied.

@@ -2402,3 +2402,23 @@ details.mix-subject[open] > .mix-subject-sum .mix-sum-chev { transform: rotate(9
   font: inherit; padding: 8px 10px; border-radius: 8px; min-width: 9rem;
   border: 1px solid var(--border); background: var(--bg-elevated); color: var(--text);
 }
+
+/* ── Quote flashcards ─────────────────────────────────────────────────────── */
+.fc-wrap { padding: 12px 0 var(--safe-bottom); }
+.fc-bar { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+.fc-count { color: var(--text-dim); font-size: .8rem; }
+.fc-card {
+  background: var(--bg-card); border: 1px solid var(--border); border-left-width: 4px;
+  border-radius: 12px; padding: 22px 18px; min-height: 190px; cursor: pointer;
+  display: flex; flex-direction: column; justify-content: center; gap: 10px;
+}
+.fc-card:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+.fc-cue { font-size: 1.05rem; line-height: 1.5; }
+.fc-tap { color: var(--text-dim); font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; }
+.fc-quote { margin: 0; font-size: 1.25rem; line-height: 1.45; font-weight: 600; }
+.fc-meta { color: var(--text-dim); font-size: .78rem; }
+.fc-core { font-size: .9rem; line-height: 1.5; }
+.fc-mnemonic { font-size: .85rem; font-style: italic; color: var(--text-dim); line-height: 1.5; }
+.fc-nav { display: flex; gap: 10px; margin-top: 14px; }
+.fc-nav button { flex: 1; }
+.hub-tile-dim { opacity: .55; }

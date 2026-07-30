@@ -546,5 +546,85 @@
     return load;
   }
 
-  window.PlotMap = { render: render, select: select, hasAudio: function () { return loaded; } };
+
+  /* ---------- quote flashcards ---------- */
+  // Same quotes.json the map uses, in recall form: cue on the front, quote plus its
+  // technique and mnemonic on the back. Priority 1 is the memorise-first set.
+  var cardIdx = 0, cardDeck = [], cardShown = false;
+
+  function renderCardFace() {
+    var el = document.getElementById("fc-card");
+    if (!el || !cardDeck.length) return;
+    var q = cardDeck[cardIdx];
+    var counter = document.getElementById("fc-count");
+    if (counter) counter.textContent = (cardIdx + 1) + " / " + cardDeck.length;
+    el.className = "fc-card pm-pri-" + esc(q.priority);
+    el.innerHTML = cardShown
+      ? '<blockquote class="fc-quote">&ldquo;' + esc(q.quote) + "&rdquo;</blockquote>" +
+        '<div class="fc-meta">' + esc(q.theme || "") +
+          (q.chapter != null ? " &middot; ch " + esc(q.chapter) : "") +
+          (q.sceneTitle ? " &middot; " + esc(q.sceneTitle) : "") + "</div>" +
+        (q.core ? '<div class="fc-core">' + esc(q.core) + "</div>" : "") +
+        (q.mnemonic ? '<div class="fc-mnemonic">' + esc(q.mnemonic) + "</div>" : "")
+      : '<div class="fc-cue">' + esc(q.cue || q.theme || "Recall the quote") + "</div>" +
+        '<div class="fc-tap">tap to reveal</div>';
+  }
+
+  function stepCard(n) {
+    if (!cardDeck.length) return;
+    cardIdx = (cardIdx + n + cardDeck.length) % cardDeck.length;
+    cardShown = false;
+    renderCardFace();
+  }
+
+  function renderCards(container) {
+    container.innerHTML =
+      '<div class="fc-wrap">' +
+        '<div class="fc-bar">' +
+          '<select id="fc-filter" class="meta-select" aria-label="Filter cards">' +
+            '<option value="all">All quotes</option>' +
+            '<option value="1">Memorise first</option>' +
+            '<option value="2">Next</option>' +
+            '<option value="3">If time</option>' +
+          "</select>" +
+          '<span class="fc-count" id="fc-count"></span>' +
+        "</div>" +
+        '<div class="fc-card" id="fc-card" role="button" tabindex="0"></div>' +
+        '<div class="fc-nav">' +
+          '<button class="pm-pick pm-pick-alt" id="fc-prev">Back</button>' +
+          '<button class="pm-pick" id="fc-next">Next</button>' +
+        "</div>" +
+      "</div>";
+
+    var get = (window.ContentGate && window.ContentGate.getJSON)
+      ? function (n) { return window.ContentGate.getJSON(TEXT_BASE, n); }
+      : function (n) { return fetch(TEXT_BASE + n).then(function (r) { return r.json(); }); };
+
+    var all = [];
+    get("quotes.json").then(function (d) {
+      all = d.quotes || [];
+      cardDeck = all.slice();
+      cardIdx = 0; cardShown = false;
+      renderCardFace();
+    }).catch(function (e) {
+      container.innerHTML = '<p class="pm-err">Could not load quotes. ' + esc(e && e.message) + "</p>";
+    });
+
+    document.getElementById("fc-filter").addEventListener("change", function (e) {
+      var v = e.target.value;
+      cardDeck = v === "all" ? all.slice()
+        : all.filter(function (q) { return String(q.priority) === v; });
+      cardIdx = 0; cardShown = false;
+      renderCardFace();
+    });
+    var card = document.getElementById("fc-card");
+    card.addEventListener("click", function () { cardShown = !cardShown; renderCardFace(); });
+    card.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); cardShown = !cardShown; renderCardFace(); }
+    });
+    document.getElementById("fc-next").addEventListener("click", function () { stepCard(1); });
+    document.getElementById("fc-prev").addEventListener("click", function () { stepCard(-1); });
+  }
+
+  window.PlotMap = { render: render, renderCards: renderCards, select: select, hasAudio: function () { return loaded; } };
 })();
