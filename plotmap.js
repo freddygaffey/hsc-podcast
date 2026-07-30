@@ -129,6 +129,11 @@
     });
     bands += labels;
 
+    // Both the turning point and its aftermath are tagged climax; label the run once
+    // so the two captions don't overprint each other.
+    var climaxScenes = scenes.filter(function (x) { return x.arcStage === "climax"; });
+    var climaxLabelId = climaxScenes.length ? climaxScenes[0].id : null;
+
     var nodes = scenes.map(function (s, i) {
       var cx = xOf((s.startPct + s.endPct) / 2), cy = yOf(s);
       var cls = "pm-node" + (s.arcStage === "climax" ? " pm-node-climax" : "") +
@@ -139,7 +144,7 @@
              (s.arcStage === "climax" ? 11 : 7) + '"/>' +
              '<text class="pm-nodenum" x="' + cx.toFixed(1) + '" y="' + (cy + 4).toFixed(1) + '">' +
              (s.arcStage === "climax" ? "" : s.order) + "</text>" +
-             (s.arcStage === "climax"
+             (s.arcStage === "climax" && s.id === climaxLabelId
                ? '<text class="pm-climaxlabel" x="' + cx.toFixed(1) + '" y="' + (cy - 20).toFixed(1) + '">CLIMAX</text>'
                : "") +
              "</g>";
