@@ -37,8 +37,13 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 
 function cors(origin) {
+  // Media elements (<audio>) fetch no-cors and send NO Origin header. Emitting an EMPTY
+  // Access-Control-Allow-Origin in that case is invalid and makes the browser reject the
+  // stream — the element sits in networkState=LOADING forever with no error. So when the
+  // origin isn't a known one, send no CORS headers at all rather than blank ones.
+  if (!ALLOWED_ORIGINS.has(origin)) return {};
   return {
-    "Access-Control-Allow-Origin": ALLOWED_ORIGINS.has(origin) ? origin : "",
+    "Access-Control-Allow-Origin": origin,
     "Access-Control-Allow-Methods": "GET, HEAD, POST, OPTIONS",
     "Access-Control-Allow-Headers": "Authorization, Content-Type, Range",
     "Access-Control-Expose-Headers": "Content-Length, Content-Range, Accept-Ranges",

@@ -6,6 +6,8 @@
 //                markdown + quiz JSON. Populated on demand (browsing) and by explicit
 //                "download" actions from the page. NEVER wiped on a shell version bump,
 //                so app updates don't delete the user's downloads.
+// Hosts serving authenticated private audio: never intercepted (see fetch handler).
+const PRIVATE_AUDIO_HOSTS = new Set(['hsc-podcast-private-audio.fredgaffey08.workers.dev']);
 const APP_SHELL = 'podcast-shell-__BUILD__'; // __BUILD__ stamped per deploy (tools/deploy.sh)
 const DOWNLOADS = 'podcast-downloads-v1';
 
@@ -161,6 +163,11 @@ self.addEventListener('fetch', (e) => {
   // so this matches by extension regardless of origin and runs BEFORE the same-origin
   // checks below. Range requests (iOS <audio>) are served from a downloaded full body
   // when available; plain GETs (speed engine + downloads) are cache-first in DOWNLOADS.
+  // PIN-gated private audio is authenticated per-request and must never be cached or
+  // range-served from DOWNLOADS: those paths exist for public R2 episodes. Intercepting
+  // it leaves <audio> in networkState=LOADING forever with no error. Straight to network.
+  if (PRIVATE_AUDIO_HOSTS.has(url.hostname)) return;
+
   if (path.endsWith('.m4a')) {
     if (req.headers.get('Range')) e.respondWith(rangeFromCache(req));
     else e.respondWith(cacheFirst(req, DOWNLOADS));
