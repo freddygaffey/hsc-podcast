@@ -305,66 +305,89 @@
     } catch (e) { return null; }
   }
 
-  // Inline PIN entry rather than window.prompt(): prompts are unreliable inside an
-  // installed iOS PWA and are awkward on a phone keyboard.
-  function showPinForm() {
+  // Sign-in uses the SAME derivation as auth.js: authToken = base64(PBKDF2(password,
+  // salt + "|auth", 150k, SHA-256)). The password never leaves the device; the server
+  // only ever compares SHA-256(authToken) against users.auth_hash.
+  function b64(buf) {
+    var b = new Uint8Array(buf), s = "";
+    for (var i = 0; i < b.length; i++) s += String.fromCharCode(b[i]);
+    return btoa(s);
+  }
+  function deriveAuthToken(password, salt) {
+    var te = new TextEncoder();
+    return crypto.subtle.importKey("raw", te.encode(password), "PBKDF2", false, ["deriveBits"])
+      .then(function (base) {
+        return crypto.subtle.deriveBits(
+          { name: "PBKDF2", salt: te.encode(salt + "|auth"), iterations: 150000, hash: "SHA-256" },
+          base, 256);
+      }).then(b64);
+  }
+
+  function showSignIn() {
     var box = document.getElementById("pm-pinbox");
     if (!box) return;
     box.hidden = false;
     box.innerHTML =
-      '<label class="pm-pinlabel" for="pm-pin">Enter your 4-digit PIN</label>' +
+      '<label class="pm-pinlabel" for="pm-user">Sign in to play your copy</label>' +
       '<div class="pm-pinrow">' +
-        '<input id="pm-pin" class="pm-pin" type="text" inputmode="numeric" pattern="[0-9]*" ' +
-          'maxlength="4" autocomplete="one-time-code" aria-label="4-digit PIN">' +
-        '<button class="pm-pick" id="pm-pin-go">Unlock</button>' +
+        '<input id="pm-user" class="pm-field" type="text" autocomplete="username" ' +
+          'autocapitalize="none" spellcheck="false" placeholder="username">' +
+        '<input id="pm-pass" class="pm-field" type="password" autocomplete="current-password" ' +
+          'placeholder="password">' +
+        '<button class="pm-pick" id="pm-signin">Sign in</button>' +
       '</div>';
-    var input = document.getElementById("pm-pin");
-    input.focus();
-    function submit() {
-      var v = (input.value || "").trim();
-      if (!/^\d{4}$/.test(v)) { setStatus("PIN must be 4 digits.", "pm-err"); return; }
-      redeemPin(v);
-    }
-    document.getElementById("pm-pin-go").addEventListener("click", submit);
-    input.addEventListener("keydown", function (e) { if (e.key === "Enter") submit(); });
-    input.addEventListener("input", function () { if (input.value.length === 4) submit(); });
+    var u = document.getElementById("pm-user"), pw = document.getElementById("pm-pass");
+    try { u.value = (JSON.parse(localStorage.getItem("sync:session") || "null") || {}).username || ""; } catch (e) {}
+    (u.value ? pw : u).focus();
+    function submit() { signIn(u.value.trim().toLowerCase(), pw.value); }
+    document.getElementById("pm-signin").addEventListener("click", submit);
+    [u, pw].forEach(function (el) {
+      el.addEventListener("keydown", function (e) { if (e.key === "Enter") submit(); });
+    });
   }
 
-  function redeemPin(pin) {
-    setStatus("Checking PIN\u2026", "");
-    return fetch(priv.worker.replace(/\/+$/, "") + "/session", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ pin: pin }),
-    }).then(function (r) {
-      return r.json().then(function (j) { return { ok: r.ok, status: r.status, body: j }; });
-    }).then(function (res) {
-      if (res.ok && res.body.token) {
-        try { localStorage.setItem(TOKEN_KEY, JSON.stringify(res.body)); } catch (e) {}
-        attachPrivate(res.body.token);
-        var box = document.getElementById("pm-pinbox");
-        if (box) { box.hidden = true; box.innerHTML = ""; }
-        setStatus("Unlocked \u2014 press play. Streaming your own copy.", "pm-ok");
-        return true;
-      }
-      if (res.status === 429) {
-        setStatus("Too many attempts \u2014 locked out for a few minutes.", "pm-err");
-      } else {
-        var left = res.body && res.body.attemptsRemaining;
-        setStatus("Wrong PIN." + (left != null ? " " + left + " left before lockout." : ""), "pm-err");
-      }
-      return false;
-    }).catch(function (e) {
-      setStatus("Could not reach the audio server: " + (e && e.message), "pm-err");
-      return false;
-    });
+  function signIn(username, password) {
+    if (!username || !password) { setStatus("Enter both username and password.", "pm-err"); return; }
+    var base = priv.worker.replace(/\/+$/, "");
+    setStatus("Signing in\u2026", "");
+    return fetch(base + "/salt?username=" + encodeURIComponent(username))
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        if (!j.salt) throw new Error("no such account");
+        return deriveAuthToken(password, j.salt);
+      })
+      .then(function (authToken) {
+        return fetch(base + "/session", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ username: username, authToken: authToken }),
+        });
+      })
+      .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, status: r.status, body: j }; }); })
+      .then(function (res) {
+        if (res.ok && res.body.token) {
+          try { localStorage.setItem(TOKEN_KEY, JSON.stringify(res.body)); } catch (e) {}
+          attachPrivate(res.body.token);
+          var box = document.getElementById("pm-pinbox");
+          if (box) { box.hidden = true; box.innerHTML = ""; }
+          setStatus("Signed in as " + username + " \u2014 press play.", "pm-ok");
+          return true;
+        }
+        if (res.status === 429) setStatus("Too many attempts \u2014 locked out briefly.", "pm-err");
+        else setStatus("Wrong username or password.", "pm-err");
+        return false;
+      })
+      .catch(function (e) {
+        setStatus("Sign-in failed: " + (e && e.message), "pm-err");
+        return false;
+      });
   }
 
   function unlockPrivate() {
     if (!priv) return Promise.resolve(false);
     var tok = storedToken();
     if (tok) { attachPrivate(tok); setStatus("Unlocked \u2014 press play.", "pm-ok"); return Promise.resolve(true); }
-    showPinForm();
+    showSignIn();
     return Promise.resolve(false);
   }
 
@@ -375,7 +398,7 @@
   function downloadOffline() {
     if (!priv) return Promise.resolve(false);
     var tok = storedToken();
-    if (!tok) { showPinForm(); return Promise.resolve(false); }
+    if (!tok) { showSignIn(); return Promise.resolve(false); }
     var btn = document.getElementById("pm-download");
     if (btn) { btn.disabled = true; }
 
@@ -456,7 +479,7 @@
       '<div class="pm-wrap">' +
         '<div class="pm-source">' +
           '<button class="pm-pick" id="pm-pick">Choose your audiobook file</button>' +
-          '<button class="pm-pick pm-pick-alt" id="pm-unlock" hidden>Unlock my audiobook (PIN)</button>' +
+          '<button class="pm-pick pm-pick-alt" id="pm-unlock" hidden>Sign in to play</button>' +
           '<button class="pm-pick pm-pick-alt" id="pm-download" hidden>Save offline</button>' +
           '<input type="file" id="pm-file" accept="audio/*,.m4b,.m4a,.mp3" hidden>' +
           '<div class="pm-pinbox" id="pm-pinbox" hidden></div>' +

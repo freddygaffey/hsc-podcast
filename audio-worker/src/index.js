@@ -1,4 +1,4 @@
-// hsc-podcast-private-audio — PIN-authenticated streaming from a PRIVATE R2 bucket.
+// hsc-podcast-private-audio — account-authenticated streaming from a PRIVATE R2 bucket.
 //
 // The rest of the app is public. This Worker guards one thing: a personal
 // accessible-format copy of a purchased book, which must stay readable by one account
@@ -6,7 +6,8 @@
 // file cannot live there.
 //
 // Flow:
-//   POST /session  {pin}          -> { token, exp }   (rate limited, see below)
+//   GET  /salt?username=          -> { salt }
+//   POST /session  {username, authToken} -> { token, exp }   (rate limited, see below)
 //   GET  /<key>    Bearer <token> -> 200 / 206 with Range support
 //
 // Why a session token rather than sending the PIN each time: seeking an audiobook issues
@@ -14,10 +15,10 @@
 // force trivial to hide inside normal traffic and would put the secret in far more
 // places. The PIN is exchanged once for a short-lived HMAC token.
 //
-// SECURITY NOTE, PLAINLY: a 4-digit PIN is 10,000 possibilities. Rate limiting is the
-// only thing making it viable — without it a script cracks this in seconds. Limits below
-// are deliberately strict: 5 attempts per 15 minutes per IP, 20 per hour globally, then
-// exponential lockout. Do not raise them.
+// Auth reuses the existing account scheme (auth-worker + auth.js): the client derives
+// authToken = PBKDF2(password, salt|auth, 150k) and we compare only SHA-256(authToken)
+// against users.auth_hash. The password itself never reaches the server. Rate limiting
+// stays regardless, since it is cheap and blunts credential stuffing.
 
 const ENC = new TextEncoder();
 
@@ -29,7 +30,7 @@ const TOKEN_TTL_S = 10 * 365 * 24 * 60 * 60;  // effectively permanent: this is 
                                    // study app, and re-entering a PIN mid-run is the real cost.
                                    // Kill switch: rotate SESSION_SECRET to invalidate every token.
 const MAX_CHUNK = 4 * 1024 * 1024;  // cap one range response; see parseRange
-const PIN_ITERATIONS = 100000;     // Workers cap PBKDF2 at 100k; rate limiting is the real defence
+const validUsername = (u) => typeof u === "string" && /^[a-z0-9_-]{3,40}$/.test(u);
 
 const ALLOWED_ORIGINS = new Set([
   "https://hsc.pebnum.com",
@@ -67,12 +68,9 @@ function safeEqual(a, b) {
   return diff === 0;
 }
 
-async function hashPin(pin, salt) {
-  const key = await crypto.subtle.importKey("raw", ENC.encode(pin), "PBKDF2", false, ["deriveBits"]);
-  const bits = await crypto.subtle.deriveBits(
-    { name: "PBKDF2", salt: ENC.encode(salt), iterations: PIN_ITERATIONS, hash: "SHA-256" },
-    key, 256);
-  return hex(bits);
+async function sha256(str) {
+  const buf = await crypto.subtle.digest("SHA-256", ENC.encode(str));
+  return hex(buf);
 }
 
 async function hmac(secret, msg) {
@@ -81,19 +79,20 @@ async function hmac(secret, msg) {
   return hex(await crypto.subtle.sign("HMAC", key, ENC.encode(msg)));
 }
 
-async function issueToken(env) {
+async function issueToken(env, username) {
   const exp = Math.floor(Date.now() / 1000) + TOKEN_TTL_S;
   const nonce = hex(crypto.getRandomValues(new Uint8Array(8)));
-  const body = `${exp}.${nonce}`;
-  return { token: `${body}.${await hmac(env.SESSION_SECRET, body)}`, exp };
+  const body = `${username}.${exp}.${nonce}`;
+  return { token: `${body}.${await hmac(env.SESSION_SECRET, body)}`, exp, username };
 }
 
 async function verifyToken(env, token) {
   const parts = String(token || "").split(".");
-  if (parts.length !== 3) return false;
-  const [exp, nonce, sig] = parts;
+  if (parts.length !== 4) return false;
+  const [username, exp, nonce, sig] = parts;
   if (!/^\d+$/.test(exp) || Number(exp) < Math.floor(Date.now() / 1000)) return false;
-  return safeEqual(sig, await hmac(env.SESSION_SECRET, `${exp}.${nonce}`));
+  if (!validUsername(username)) return false;
+  return safeEqual(sig, await hmac(env.SESSION_SECRET, `${username}.${exp}.${nonce}`));
 }
 
 /* ---------- rate limiting (D1) ---------- */
@@ -158,36 +157,52 @@ export default {
     const url = new URL(req.url);
     const ip = req.headers.get("CF-Connecting-IP") || "0.0.0.0";
 
-    // --- exchange PIN for a session token ---
+    // --- public: salt lookup so a device can derive the authToken ---
+    if (req.method === "GET" && url.pathname === "/salt") {
+      const username = (url.searchParams.get("username") || "").toLowerCase();
+      if (!validUsername(username)) return json({ error: "bad username" }, 400, headers);
+      const row = await env.DB.prepare("SELECT salt FROM users WHERE username=?").bind(username).first();
+      // Always 200 with a salt shape so this can't be used to enumerate accounts.
+      return json({ salt: row ? row.salt : null }, 200, headers);
+    }
+
+    // --- exchange username + authToken for a session token ---
     if (req.method === "POST" && url.pathname === "/session") {
      try {
       const fails = await recentFailures(env, ip);
       if (fails.ip >= MAX_PER_IP || fails.global >= MAX_GLOBAL) {
-        // Exponential backoff past the threshold, capped at the window.
         const over = Math.max(fails.ip - MAX_PER_IP, fails.global - MAX_GLOBAL) + 1;
         const retry = Math.min(IP_WINDOW_S, 30 * Math.pow(2, over));
         return json({ error: "too many attempts" }, 429,
           { ...headers, "Retry-After": String(retry) });
       }
 
-      let pin = "";
-      try { pin = String((await req.json()).pin || ""); } catch { /* falls through */ }
-      if (!/^\d{4}$/.test(pin)) {
+      let username = "", authToken = "";
+      try {
+        const b = await req.json();
+        username = String(b.username || "").toLowerCase();
+        authToken = String(b.authToken || "");
+      } catch { /* handled below */ }
+
+      if (!validUsername(username) || !authToken) {
         await recordFailure(env, ip);
-        return json({ error: "invalid pin" }, 401, headers);
+        return json({ error: "invalid credentials" }, 401, headers);
       }
 
-      const row = await env.DB.prepare("SELECT pin_hash, salt FROM pin_auth WHERE id=1").first();
-      if (!row) return json({ error: "not provisioned" }, 500, headers);
-
-      if (!safeEqual(await hashPin(pin, row.salt), row.pin_hash)) {
+      // Same scheme as auth-worker: the password never reaches the server. The client
+      // derives authToken = PBKDF2(password, salt|auth) and we compare only its SHA-256
+      // against the stored auth_hash.
+      const row = await env.DB.prepare("SELECT auth_hash FROM users WHERE username=?")
+        .bind(username).first();
+      const ok = row && safeEqual(await sha256(authToken), row.auth_hash);
+      if (!ok) {
         await recordFailure(env, ip);
         const left = Math.max(0, MAX_PER_IP - (fails.ip + 1));
-        return json({ error: "invalid pin", attemptsRemaining: left }, 401, headers);
+        return json({ error: "invalid credentials", attemptsRemaining: left }, 401, headers);
       }
 
       await clearFailures(env, ip);
-      return json(await issueToken(env), 200, headers);
+      return json(await issueToken(env, username), 200, headers);
      } catch (err) {
        return json({ error: "session failed", detail: String(err && err.message || err) }, 500, headers);
      }

@@ -2398,3 +2398,7 @@ details.mix-subject[open] > .mix-subject-sum .mix-sum-chev { transform: rotate(9
   padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border);
   background: var(--bg-elevated); color: var(--text);
 }
+.pm-field {
+  font: inherit; padding: 8px 10px; border-radius: 8px; min-width: 9rem;
+  border: 1px solid var(--border); background: var(--bg-elevated); color: var(--text);
+}
