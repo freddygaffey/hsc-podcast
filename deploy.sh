@@ -22,7 +22,7 @@ echo "==> Assembling $DIST/ (build $BUILD)"
 rm -rf "$DIST"; mkdir -p "$DIST"
 
 # App shell.
-cp index.html generator.html paper-export.js app.js auth.js gate.js plotmap.js style.css speed-engine.js app.webmanifest _headers "$DIST/"
+cp index.html generator.html paper-export.js app.js auth.js gate.js plotmap.js modules.js style.css speed-engine.js app.webmanifest _headers "$DIST/"
 # Service worker — stamp the build version so each deploy gets a fresh APP_SHELL cache.
 sed "s/__BUILD__/$BUILD/" service-worker.js > "$DIST/service-worker.js"
 # Build info the app reads to show the running version (Settings → About → Build, tap for
@@ -60,6 +60,15 @@ while IFS= read -r g; do
     fi
   done
 done < <(find "$DIST" -name gate.json 2>/dev/null)
+
+# Safety net: every local <script src> / <link href> in index.html must actually be in
+# dist/. Adding a file to index.html but forgetting the cp line above ships an app that
+# 404s into the SPA fallback and fails at runtime with no build error. (Hit with modules.js.)
+missing=0
+while IFS= read -r asset; do
+  if [ ! -f "$DIST/$asset" ]; then echo "ERROR: $asset referenced by index.html but not in $DIST" >&2; missing=1; fi
+done < <(grep -oE '(src|href)="[A-Za-z0-9_.-]+\.(js|css)"' index.html | sed -E 's/.*="([^"]+)"/\1/' | sort -u)
+[ "$missing" = "1" ] && { echo "ERROR: aborting deploy — missing app shell files." >&2; exit 1; }
 
 # Safety net: no audio in the Pages bundle.
 if find "$DIST" \( -name '*.m4a' -o -name '*.wav' \) | grep -q .; then
