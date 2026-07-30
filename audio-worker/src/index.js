@@ -28,6 +28,7 @@ const GLOBAL_WINDOW_S = 60 * 60;
 const TOKEN_TTL_S = 10 * 365 * 24 * 60 * 60;  // effectively permanent: this is a personal
                                    // study app, and re-entering a PIN mid-run is the real cost.
                                    // Kill switch: rotate SESSION_SECRET to invalidate every token.
+const MAX_CHUNK = 4 * 1024 * 1024;  // cap one range response; see parseRange
 const PIN_ITERATIONS = 100000;     // Workers cap PBKDF2 at 100k; rate limiting is the real defence
 
 const ALLOWED_ORIGINS = new Set([
@@ -139,7 +140,13 @@ function parseRange(header, size) {
     end = e === "" ? size - 1 : parseInt(e, 10);
   }
   if (!isFinite(start) || !isFinite(end) || start > end || start >= size) return null;
-  return { start, end: Math.min(end, size - 1) };
+  end = Math.min(end, size - 1);
+  // A server MAY satisfy a range with fewer bytes than asked for. Browsers open media
+  // with "Range: bytes=0-", meaning "everything"; streaming all 142MB in one response
+  // makes the element sit on `stalled` instead of surfacing metadata. Cap each response
+  // and let the browser walk the file with follow-up ranges, which is what it expects.
+  if (end - start + 1 > MAX_CHUNK) end = start + MAX_CHUNK - 1;
+  return { start, end };
 }
 
 export default {
@@ -213,7 +220,11 @@ export default {
       ...headers,
       "Accept-Ranges": "bytes",
       "Content-Type": head.httpMetadata?.contentType || "audio/mp4",
-      "Cache-Control": "private, no-store",   // never let a shared cache hold this
+      // "private" keeps it out of shared caches. NOT "no-store": that forbids the browser
+      // from buffering the stream at all, which makes <audio> emit loadstart then stall
+      // forever with no error. The token in the URL is what gates access, not the cache
+      // policy, so allowing a private browser buffer costs nothing.
+      "Cache-Control": "private, max-age=0, must-revalidate",
       ETag: head.httpEtag,
     };
 

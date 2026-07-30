@@ -359,6 +359,50 @@
     return Promise.resolve(false);
   }
 
+
+  // Download-for-offline. Streaming 142MB on every run is wasteful and fails on a bad
+  // signal, so pull it once with the session token, keep the blob in IndexedDB, and let
+  // restore() play it locally from then on. Progress is reported from Content-Length.
+  function downloadOffline() {
+    if (!priv) return Promise.resolve(false);
+    var tok = storedToken();
+    if (!tok) { showPinForm(); return Promise.resolve(false); }
+    var btn = document.getElementById("pm-download");
+    if (btn) { btn.disabled = true; }
+
+    var url = priv.worker.replace(/\/+$/, "") + "/" + priv.key.replace(/^\/+/, "");
+    return fetch(url, { headers: { Authorization: "Bearer " + tok } })
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        var total = parseInt(r.headers.get("Content-Length") || "0", 10);
+        if (!r.body || !r.body.getReader) return r.blob();
+        var reader = r.body.getReader(), chunks = [], got = 0;
+        return (function pump() {
+          return reader.read().then(function (res) {
+            if (res.done) return new Blob(chunks, { type: "audio/mp4" });
+            chunks.push(res.value); got += res.value.length;
+            if (total) setStatus("Downloading \u2014 " + Math.round((got / total) * 100) + "%", "");
+            else setStatus("Downloading \u2014 " + (got / 1048576).toFixed(0) + " MB", "");
+            return pump();
+          });
+        })();
+      })
+      .then(function (blob) {
+        return idbPut("audiobook", blob).then(function () {
+          attachBlob(blob);
+          setStatus("Saved offline (" + (blob.size / 1048576).toFixed(0) +
+                    " MB). Works with no signal.", "pm-ok");
+          if (btn) { btn.disabled = false; btn.textContent = "Re-download"; }
+          return true;
+        });
+      })
+      .catch(function (e) {
+        setStatus("Download failed: " + (e && e.message), "pm-err");
+        if (btn) btn.disabled = false;
+        return false;
+      });
+  }
+
   function attachPrivate(token) {
     if (!audio) return;
     audio.src = privUrl(token);
@@ -403,6 +447,7 @@
         '<div class="pm-source">' +
           '<button class="pm-pick" id="pm-pick">Choose your audiobook file</button>' +
           '<button class="pm-pick pm-pick-alt" id="pm-unlock" hidden>Unlock my audiobook (PIN)</button>' +
+          '<button class="pm-pick pm-pick-alt" id="pm-download" hidden>Save offline</button>' +
           '<input type="file" id="pm-file" accept="audio/*,.m4b,.m4a,.mp3" hidden>' +
           '<div class="pm-pinbox" id="pm-pinbox" hidden></div>' +
           '<div class="pm-source-msg" id="pm-source-msg">Past the Shallows is in copyright, so no recording ships with this app. ' +
@@ -420,6 +465,9 @@
       var ub = document.getElementById("pm-unlock");
       ub.hidden = false;
       ub.addEventListener("click", function () { unlockPrivate(); });
+      var db = document.getElementById("pm-download");
+      db.hidden = false;
+      db.addEventListener("click", function () { downloadOffline(); });
     }
     document.getElementById("pm-pick").addEventListener("click", function () {
       document.getElementById("pm-file").click();
