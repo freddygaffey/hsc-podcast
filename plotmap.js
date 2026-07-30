@@ -247,6 +247,19 @@
     setStatus("Loaded: " + file.name + " — stays on this device.", "pm-ok");
   }
 
+
+  // The app only reveals the player bar inside loadEpisode(), which the map never calls.
+  // Its controls are generic (they act on the shared <audio>), so we just show it and
+  // hide the voice picker, which has no meaning for a single user-supplied file.
+  function showPlayer() {
+    var bar = document.getElementById("player-bar");
+    if (bar) bar.hidden = false;
+    var vs = document.getElementById("voice-select");
+    if (vs) vs.style.display = "none";
+    var t = document.getElementById("player-ep-title");
+    if (t && !t.textContent) t.textContent = "Past the Shallows";
+  }
+
   function attachBlob(blob) {
     if (!audio) return;
     try { if (audio.src && audio.src.indexOf("blob:") === 0) URL.revokeObjectURL(audio.src); } catch (e) {}
@@ -254,6 +267,7 @@
     audio.load();
     loaded = true;
     document.body.classList.add("pm-has-audio");
+    showPlayer();
   }
 
   // No local file yet: fall back to the placeholder track so the transport behaves like
@@ -264,6 +278,7 @@
     audio.src = placeholderUrl;
     audio.load();
     document.body.classList.remove("pm-has-audio");
+    showPlayer();
   }
 
   var TOKEN_KEY = "pts:audiotoken";
@@ -321,6 +336,7 @@
     audio.load();
     loaded = true;
     document.body.classList.add("pm-has-audio");
+    showPlayer();
   }
 
   function restore() {
